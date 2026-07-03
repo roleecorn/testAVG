@@ -19,13 +19,15 @@ main.floors.mapo_1_4=
             "name": "keng_portrait.png",
             "canvas": "fg",
             "x": 6,
-            "y": 86
+            "y": 86,
+            "disabled": true
         },
         {
             "name": "mei_portrait.png",
             "canvas": "fg",
             "x": 252,
-            "y": 54
+            "y": 54,
+            "disabled": true
         }
     ],
     "bgm": "bgm.mp3",
