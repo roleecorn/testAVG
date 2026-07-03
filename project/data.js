@@ -5,7 +5,13 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"sample0",
 			"sample1",
 			"sample2",
-			"MT0"
+			"MT0",
+			"mapo_1_1",
+			"mapo_1_2",
+			"mapo_1_3",
+			"mapo_1_4",
+			"mapo_1_5",
+			"mapo_1_6"
 		],
 		"floorPartitions": [],
 		"images": [
@@ -13,6 +19,19 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"bg.jpg",
 			"dragon.png",
 			"hero.png",
+			"keng.png",
+			"keng_portrait.png",
+			"keng.webp",
+			"mei.jpg",
+			"mei.png",
+			"mei_portrait.png",
+			"scene_badend.png",
+			"scene_mapo_cg.png",
+			"scene_mapo_shop.png",
+			"scene_road.png",
+			"scene_station.png",
+			"scene_street.png",
+			"scene_tournament.png",
 			"winskin.png"
 		],
 		"tilesets": [
@@ -163,10 +182,10 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 		]
 	},
 	"firstData": {
-		"title": "魔塔样板",
-		"name": "template",
+		"title": "麻婆豆腐",
+		"name": "mapo_tofu",
 		"version": "Ver 2.10.3",
-		"floorId": "sample0",
+		"floorId": "mapo_1_1",
 		"hero": {
 			"image": "hero.png",
 			"animate": false,
@@ -548,14 +567,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 				"text": "状态栏默认处于隐藏状态；可以使用“显示状态栏”事件进行显示。"
 			}
 		],
-		"startText": [
-			{
-				"type": "comment",
-				"text": "初始剧情"
-			},
-			"Hi，欢迎来到 HTML5 魔塔样板！\n\n本样板由艾之葵制作，可以让你在不会写任何代码\n的情况下也能做出属于自己的H5魔塔！",
-			"这里游戏开始时的剧情。\n\n你可以在这里写上自己的内容。\n赶快来试一试吧！"
-		],
+		"startText": [],
 		"shops": [
 			{
 				"id": "shop1",
