@@ -39,6 +39,8 @@
 		this.destroyed = false;
 		this.lockedBeforeStart = false;
 		this.overlay = null;
+		this.panel = null;
+		this.machine = null;
 		this.cells = [];
 		this.lineLayer = null;
 		this.status = null;
@@ -46,6 +48,7 @@
 		this.actionButton = null;
 		this.finishButton = null;
 		this.keyHandler = null;
+		this.resizeHandler = null;
 		this.spinTimer = null;
 	}
 
@@ -70,10 +73,13 @@
 			"top:0",
 			"width:100%",
 			"height:100%",
+			"box-sizing:border-box",
+			"padding:8px",
 			"z-index:220",
 			"display:flex",
 			"align-items:center",
 			"justify-content:center",
+			"overflow:auto",
 			"background:rgba(10,9,16,0.84)",
 			"font-family:Arial,'Microsoft JhengHei','Microsoft YaHei',sans-serif",
 			"color:#f8fafc",
@@ -83,14 +89,19 @@
 		var panel = document.createElement("div");
 		panel.style.cssText = [
 			"width:430px",
-			"max-width:92%",
+			"max-width:100%",
+			"max-height:100%",
 			"box-sizing:border-box",
 			"padding:16px",
 			"border:1px solid rgba(250,204,21,0.5)",
 			"border-radius:8px",
 			"background:#18111f",
-			"box-shadow:0 18px 46px rgba(0,0,0,0.5)"
+			"box-shadow:0 18px 46px rgba(0,0,0,0.5)",
+			"display:flex",
+			"flex-direction:column",
+			"overflow:hidden"
 		].join(";");
+		this.panel = panel;
 
 		var header = document.createElement("div");
 		header.style.cssText = "display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px";
@@ -118,6 +129,8 @@
 			"grid-template-columns:repeat(3,1fr)",
 			"gap:8px",
 			"width:100%",
+			"height:300px",
+			"flex:0 0 auto",
 			"aspect-ratio:1/1",
 			"box-sizing:border-box",
 			"padding:10px",
@@ -127,6 +140,7 @@
 			"box-shadow:inset 0 0 24px rgba(0,0,0,0.38)",
 			"margin-bottom:12px"
 		].join(";");
+		this.machine = machine;
 
 		for (var i = 0; i < 9; i++) {
 			var cell = document.createElement("div");
@@ -196,6 +210,7 @@
 		overlay.appendChild(panel);
 		(core.dom.gameDraw || document.body).appendChild(overlay);
 		this.overlay = overlay;
+		this.applyResponsiveLayout();
 
 		this.keyHandler = function (e) {
 			if (e.key === "Escape") self.destroy({ result: "cancel", reason: "escape" });
@@ -206,6 +221,40 @@
 			}
 		};
 		document.addEventListener("keydown", this.keyHandler);
+
+		this.resizeHandler = function () {
+			self.applyResponsiveLayout();
+		};
+		window.addEventListener("resize", this.resizeHandler);
+	}
+
+	Slot777Game.prototype.applyResponsiveLayout = function () {
+		if (!this.overlay || !this.panel || !this.machine) return;
+		var overlayWidth = this.overlay.clientWidth || 416;
+		var overlayHeight = this.overlay.clientHeight || 416;
+		var compact = overlayWidth <= 460 || overlayHeight <= 520;
+		var panelPadding = compact ? 10 : 16;
+		var panelWidth = Math.min(compact ? 360 : 430, Math.max(260, overlayWidth - 16));
+		var availableHeight = Math.max(260, overlayHeight - 16);
+		var reservedHeight = panelPadding * 2 + 34 + 8 + 22 + 6 + 20 + 8 + 40 + 8 + 2;
+		var maxMachineSize = Math.max(150, availableHeight - reservedHeight);
+		var machineSize = Math.floor(Math.min(panelWidth - panelPadding * 2, maxMachineSize));
+
+		this.panel.style.width = panelWidth + "px";
+		this.panel.style.padding = panelPadding + "px";
+		this.panel.style.overflow = compact ? "auto" : "hidden";
+		this.machine.style.width = machineSize + "px";
+		this.machine.style.height = machineSize + "px";
+		this.machine.style.alignSelf = "center";
+		this.machine.style.gap = compact ? "6px" : "8px";
+		this.machine.style.padding = compact ? "8px" : "10px";
+		if (this.lineLayer) {
+			var lineInset = compact ? "8px" : "10px";
+			this.lineLayer.style.left = lineInset;
+			this.lineLayer.style.right = lineInset;
+			this.lineLayer.style.top = lineInset;
+			this.lineLayer.style.bottom = lineInset;
+		}
 	}
 
 	Slot777Game.prototype.iconButtonCss = function () {
@@ -232,7 +281,9 @@
 			"color:#fff",
 			"font-size:15px",
 			"font-weight:700",
-			"cursor:pointer"
+			"cursor:pointer",
+			"touch-action:manipulation",
+			"-webkit-tap-highlight-color:transparent"
 		].join(";");
 	}
 
@@ -421,6 +472,7 @@
 		var finalResult = result || this.result || { result: "cancel", reason: "destroy" };
 		if (this.spinTimer) clearInterval(this.spinTimer);
 		if (this.keyHandler) document.removeEventListener("keydown", this.keyHandler);
+		if (this.resizeHandler) window.removeEventListener("resize", this.resizeHandler);
 		if (this.overlay && this.overlay.parentNode) this.overlay.parentNode.removeChild(this.overlay);
 		if (!this.lockedBeforeStart) core.unlockControl();
 		this.onFinish(finalResult);
