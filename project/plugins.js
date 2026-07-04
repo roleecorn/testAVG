@@ -1555,6 +1555,10 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 	"Tic_Tac_Toe": function () {
 		var currentGame = null;
 		var loadingCallbacks = {};
+		var allowedGames = {
+			ticTacToe: true,
+			slot777: true
+		};
 
 		function getMiniGame(gameId) {
 			return window.MotaMiniGames && window.MotaMiniGames[gameId];
@@ -1586,7 +1590,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 		this.startMiniGame = function (gameId, options, callback) {
 			options = options || {};
 			if (currentGame) currentGame.destroy({ result: "cancel", reason: "replaced" });
-			if (gameId !== "ticTacToe") {
+			if (!allowedGames[gameId]) {
 				if (callback) callback({ result: "error", reason: "unknownGame" });
 				return false;
 			}
@@ -1634,6 +1638,43 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 					{
 						"type": "tip",
 						"text": "小遊戲結果：" + result.result
+					},
+					{
+						"type": "update"
+					}
+				]);
+				core.doAction();
+			});
+		}
+	},
+	"Slot_777": function () {
+		this.startSlot777DemoEvent = function () {
+			this.startMiniGame("slot777", { spins: 3 }, function (result) {
+				var reward = result.score || 0;
+				var text = "\t[小遊戲]777 拉霸已結束。";
+				core.setFlag("lastMiniGameResult", result.result);
+				core.setFlag("lastMiniGameScore", reward);
+				core.setFlag("lastSlot777Spins", result.spins || 0);
+				core.setFlag("lastSlot777BestPayout", result.bestPayout || 0);
+
+				if (result.result === "jackpot") {
+					text = "\t[小遊戲]777！大獎命中！獎勵金錢 +" + reward + "。";
+				} else if (result.result === "win") {
+					text = "\t[小遊戲]拉霸中獎！獎勵金錢 +" + reward + "。";
+				} else if (result.result === "lose") {
+					text = "\t[小遊戲]拉霸沒有中獎。";
+				} else if (result.result === "cancel") {
+					text = "\t[小遊戲]你中止了 777 拉霸，沒有獲得獎勵。";
+				} else if (result.result === "error") {
+					text = "\t[小遊戲]777 拉霸載入失敗。";
+				}
+
+				if (reward > 0) core.addStatus("money", reward);
+				core.insertAction([
+					text,
+					{
+						"type": "tip",
+						"text": "777 拉霸結果：" + result.result
 					},
 					{
 						"type": "update"

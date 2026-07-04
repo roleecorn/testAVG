@@ -718,6 +718,16 @@
                     ]
                 },
                 {
+                    "text": "玩 777 拉霸",
+                    "action": [
+                        {
+                            "type": "function",
+                            "function": "function(){core.plugin.startSlot777DemoEvent();}",
+                            "async": true
+                        }
+                    ]
+                },
+                {
                     "text": "直接離開",
                     "action": [
                         "\t[旁白]兩人決定不要被小遊戲機絆住腳步。"
@@ -751,5 +761,4 @@
     "bgmap": [],
     "fgmap": []
 }
-
 
