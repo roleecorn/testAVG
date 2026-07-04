@@ -3,32 +3,47 @@
 
 	window.MotaMiniGames = window.MotaMiniGames || {};
 
+	var SPRITE_URL = "project/images/minigames/slot777/symbols.png";
 	var SYMBOLS = [
-		{ id: "seven", label: "7", weight: 8, color: "#facc15" },
-		{ id: "bar", label: "BAR", weight: 10, color: "#e5e7eb" },
-		{ id: "bell", label: "BELL", weight: 14, color: "#f97316" },
-		{ id: "gem", label: "GEM", weight: 18, color: "#38bdf8" },
-		{ id: "cherry", label: "CHERRY", weight: 22, color: "#fb7185" },
-		{ id: "coin", label: "COIN", weight: 28, color: "#fde68a" }
+		{ id: "seven", label: "7", weight: 8, sx: 0, sy: 0 },
+		{ id: "cherry", label: "Cherry", weight: 20, sx: 1, sy: 0 },
+		{ id: "diamond", label: "Diamond", weight: 14, sx: 2, sy: 0 },
+		{ id: "bell", label: "Bell", weight: 16, sx: 0, sy: 1 },
+		{ id: "coin", label: "Coin", weight: 24, sx: 1, sy: 1 },
+		{ id: "star", label: "Star", weight: 18, sx: 2, sy: 1 }
+	];
+	var LINES = [
+		{ id: "rowTop", cells: [0, 1, 2], name: "Top row" },
+		{ id: "rowMiddle", cells: [3, 4, 5], name: "Middle row" },
+		{ id: "rowBottom", cells: [6, 7, 8], name: "Bottom row" },
+		{ id: "colLeft", cells: [0, 3, 6], name: "Left column" },
+		{ id: "colMiddle", cells: [1, 4, 7], name: "Middle column" },
+		{ id: "colRight", cells: [2, 5, 8], name: "Right column" },
+		{ id: "diagDown", cells: [0, 4, 8], name: "Diagonal" },
+		{ id: "diagUp", cells: [2, 4, 6], name: "Diagonal" }
 	];
 
 	function Slot777Game(options, onFinish) {
 		this.options = options || {};
 		this.onFinish = onFinish || function () {};
-		this.maxSpins = Math.max(1, this.options.spins || 3);
-		this.spinCount = 0;
+		this.maxRounds = Math.max(1, this.options.spins || this.options.rounds || 3);
+		this.round = 0;
 		this.score = 0;
 		this.bestPayout = 0;
-		this.bestLine = null;
+		this.winningLines = [];
+		this.grid = [];
+		this.stoppedReels = [false, false, false];
+		this.nextStopReel = 0;
 		this.spinning = false;
 		this.finished = false;
 		this.destroyed = false;
 		this.lockedBeforeStart = false;
 		this.overlay = null;
-		this.reels = [];
+		this.cells = [];
+		this.lineLayer = null;
 		this.status = null;
 		this.scoreText = null;
-		this.spinButton = null;
+		this.actionButton = null;
 		this.finishButton = null;
 		this.keyHandler = null;
 		this.spinTimer = null;
@@ -37,8 +52,10 @@
 	Slot777Game.prototype.start = function () {
 		this.lockedBeforeStart = core.status.lockControl;
 		core.lockControl();
+		this.randomizeGrid();
 		this.createOverlay();
-		this.renderIdle();
+		this.renderGrid();
+		this.updateText("Press START to spin the 3x3 reels.");
 	}
 
 	Slot777Game.prototype.createOverlay = function () {
@@ -57,7 +74,7 @@
 			"display:flex",
 			"align-items:center",
 			"justify-content:center",
-			"background:rgba(12,10,18,0.82)",
+			"background:rgba(10,9,16,0.84)",
 			"font-family:Arial,'Microsoft JhengHei','Microsoft YaHei',sans-serif",
 			"color:#f8fafc",
 			"pointer-events:auto"
@@ -65,28 +82,28 @@
 
 		var panel = document.createElement("div");
 		panel.style.cssText = [
-			"width:420px",
+			"width:430px",
 			"max-width:92%",
 			"box-sizing:border-box",
-			"padding:18px",
-			"border:1px solid rgba(250,204,21,0.42)",
+			"padding:16px",
+			"border:1px solid rgba(250,204,21,0.5)",
 			"border-radius:8px",
 			"background:#18111f",
-			"box-shadow:0 18px 46px rgba(0,0,0,0.48)"
+			"box-shadow:0 18px 46px rgba(0,0,0,0.5)"
 		].join(";");
 
 		var header = document.createElement("div");
-		header.style.cssText = "display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px";
+		header.style.cssText = "display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px";
 
 		var title = document.createElement("div");
-		title.textContent = "777 拉霸";
+		title.textContent = "777 SLOT";
 		title.style.cssText = "font-size:22px;font-weight:800;line-height:1.2;color:#fde68a";
 		header.appendChild(title);
 
 		var close = document.createElement("button");
 		close.type = "button";
 		close.textContent = "x";
-		close.title = "離開";
+		close.title = "Close";
 		close.style.cssText = this.iconButtonCss();
 		close.onclick = function () {
 			self.destroy(self.result || { result: "cancel", reason: "close" });
@@ -94,35 +111,52 @@
 		header.appendChild(close);
 		panel.appendChild(header);
 
-		var reels = document.createElement("div");
-		reels.style.cssText = [
+		var machine = document.createElement("div");
+		machine.style.cssText = [
+			"position:relative",
 			"display:grid",
 			"grid-template-columns:repeat(3,1fr)",
-			"gap:10px",
+			"gap:8px",
 			"width:100%",
-			"margin-bottom:14px"
+			"aspect-ratio:1/1",
+			"box-sizing:border-box",
+			"padding:10px",
+			"border:2px solid rgba(253,230,138,0.72)",
+			"border-radius:8px",
+			"background:#0f172a",
+			"box-shadow:inset 0 0 24px rgba(0,0,0,0.38)",
+			"margin-bottom:12px"
 		].join(";");
-		for (var i = 0; i < 3; i++) {
-			var reel = document.createElement("div");
-			reel.style.cssText = [
-				"height:104px",
-				"border:1px solid rgba(255,255,255,0.18)",
+
+		for (var i = 0; i < 9; i++) {
+			var cell = document.createElement("div");
+			cell.style.cssText = [
+				"position:relative",
+				"border:1px solid rgba(255,255,255,0.16)",
 				"border-radius:8px",
-				"background:#f8fafc",
-				"color:#111827",
-				"display:flex",
-				"align-items:center",
-				"justify-content:center",
-				"font-size:34px",
-				"font-weight:900",
-				"line-height:1",
-				"text-align:center",
-				"box-shadow:inset 0 8px 20px rgba(0,0,0,0.18)"
+				"background-color:#1f2937",
+				"background-image:url('" + SPRITE_URL + "')",
+				"background-repeat:no-repeat",
+				"background-size:300% 200%",
+				"box-shadow:inset 0 6px 16px rgba(0,0,0,0.26)",
+				"overflow:hidden"
 			].join(";");
-			this.reels.push(reel);
-			reels.appendChild(reel);
+			this.cells.push(cell);
+			machine.appendChild(cell);
 		}
-		panel.appendChild(reels);
+
+		var lineLayer = document.createElement("div");
+		lineLayer.style.cssText = [
+			"position:absolute",
+			"left:10px",
+			"right:10px",
+			"top:10px",
+			"bottom:10px",
+			"pointer-events:none"
+		].join(";");
+		this.lineLayer = lineLayer;
+		machine.appendChild(lineLayer);
+		panel.appendChild(machine);
 
 		var status = document.createElement("div");
 		status.style.cssText = "min-height:24px;margin-bottom:8px;font-size:15px;color:#d1d5db";
@@ -130,26 +164,27 @@
 		this.status = status;
 
 		var score = document.createElement("div");
-		score.style.cssText = "min-height:22px;margin-bottom:14px;font-size:14px;color:#fde68a";
+		score.style.cssText = "min-height:22px;margin-bottom:12px;font-size:14px;color:#fde68a";
 		panel.appendChild(score);
 		this.scoreText = score;
 
 		var footer = document.createElement("div");
 		footer.style.cssText = "display:flex;gap:8px";
 
-		var spin = document.createElement("button");
-		spin.type = "button";
-		spin.textContent = "SPIN";
-		spin.style.cssText = this.buttonCss("#dc2626");
-		spin.onclick = function () {
-			self.spin();
+		var action = document.createElement("button");
+		action.type = "button";
+		action.textContent = "START";
+		action.style.cssText = this.buttonCss("#dc2626");
+		action.onclick = function () {
+			if (self.spinning) self.stopNextReel();
+			else self.startRound();
 		};
-		footer.appendChild(spin);
-		this.spinButton = spin;
+		footer.appendChild(action);
+		this.actionButton = action;
 
 		var finish = document.createElement("button");
 		finish.type = "button";
-		finish.textContent = "結算";
+		finish.textContent = "SETTLE";
 		finish.style.cssText = this.buttonCss("#475569");
 		finish.onclick = function () {
 			self.finish("settle");
@@ -166,7 +201,8 @@
 			if (e.key === "Escape") self.destroy({ result: "cancel", reason: "escape" });
 			if (e.key === " " || e.key === "Enter") {
 				e.preventDefault();
-				self.spin();
+				if (self.spinning) self.stopNextReel();
+				else self.startRound();
 			}
 		};
 		document.addEventListener("keydown", this.keyHandler);
@@ -200,32 +236,6 @@
 		].join(";");
 	}
 
-	Slot777Game.prototype.renderIdle = function () {
-		this.setReels([
-			SYMBOLS[0],
-			SYMBOLS[0],
-			SYMBOLS[0]
-		]);
-		this.updateText("按 SPIN 開始。", true);
-	}
-
-	Slot777Game.prototype.updateText = function (message, canSpin) {
-		if (this.status) this.status.textContent = message;
-		if (this.scoreText) this.scoreText.textContent = "次數 " + this.spinCount + "/" + this.maxSpins + "，目前獎金 +" + this.score;
-		if (this.spinButton) this.spinButton.disabled = !canSpin || this.spinning || this.spinCount >= this.maxSpins;
-		if (this.spinButton) this.spinButton.style.opacity = this.spinButton.disabled ? "0.55" : "1";
-		if (this.finishButton) this.finishButton.disabled = this.spinning;
-		if (this.finishButton) this.finishButton.style.opacity = this.spinning ? "0.55" : "1";
-	}
-
-	Slot777Game.prototype.setReels = function (symbols) {
-		for (var i = 0; i < this.reels.length; i++) {
-			var symbol = symbols[i] || SYMBOLS[0];
-			this.reels[i].textContent = symbol.label;
-			this.reels[i].style.color = symbol.color;
-		}
-	}
-
 	Slot777Game.prototype.randomSymbol = function () {
 		var total = 0;
 		for (var i = 0; i < SYMBOLS.length; i++) total += SYMBOLS[i].weight;
@@ -237,72 +247,168 @@
 		return SYMBOLS[SYMBOLS.length - 1];
 	}
 
-	Slot777Game.prototype.spin = function () {
-		if (this.spinning || this.spinCount >= this.maxSpins) return;
-		var self = this;
-		var ticks = 0;
-		var finalLine = [this.randomSymbol(), this.randomSymbol(), this.randomSymbol()];
-
-		this.spinning = true;
-		this.spinCount++;
-		this.updateText("轉輪旋轉中...", false);
-		this.spinTimer = setInterval(function () {
-			ticks++;
-			self.setReels([self.randomSymbol(), self.randomSymbol(), self.randomSymbol()]);
-			if (ticks >= 14) {
-				clearInterval(self.spinTimer);
-				self.spinTimer = null;
-				self.resolveSpin(finalLine);
-			}
-		}, 70);
+	Slot777Game.prototype.randomizeGrid = function () {
+		this.grid = [];
+		for (var i = 0; i < 9; i++) this.grid.push(this.randomSymbol());
 	}
 
-	Slot777Game.prototype.resolveSpin = function (line) {
-		var payout = this.getPayout(line);
-		this.spinning = false;
-		this.score += payout;
-		if (payout > this.bestPayout) {
-			this.bestPayout = payout;
-			this.bestLine = line.slice();
+	Slot777Game.prototype.renderGrid = function () {
+		for (var i = 0; i < this.cells.length; i++) {
+			var symbol = this.grid[i] || SYMBOLS[0];
+			var x = symbol.sx === 0 ? "0%" : symbol.sx === 1 ? "50%" : "100%";
+			var y = symbol.sy === 0 ? "0%" : "100%";
+			this.cells[i].style.backgroundPosition = x + " " + y;
+			this.cells[i].setAttribute("aria-label", symbol.label);
+			this.cells[i].title = symbol.label;
+			this.cells[i].style.opacity = this.spinning && !this.stoppedReels[i % 3] ? "0.92" : "1";
 		}
-		this.setReels(line);
+	}
 
-		if (this.spinCount >= this.maxSpins) {
+	Slot777Game.prototype.updateText = function (message) {
+		if (this.status) this.status.textContent = message;
+		if (this.scoreText) {
+			this.scoreText.textContent = "Round " + this.round + "/" + this.maxRounds + " - total +" + this.score;
+		}
+		if (this.actionButton) {
+			this.actionButton.disabled = this.finished || (!this.spinning && this.round >= this.maxRounds);
+			this.actionButton.textContent = this.spinning ? "STOP " + (this.nextStopReel + 1) : "START";
+			this.actionButton.style.opacity = this.actionButton.disabled ? "0.55" : "1";
+		}
+		if (this.finishButton) {
+			this.finishButton.disabled = this.spinning || this.finished;
+			this.finishButton.style.opacity = this.finishButton.disabled ? "0.55" : "1";
+		}
+	}
+
+	Slot777Game.prototype.startRound = function () {
+		if (this.spinning || this.finished || this.round >= this.maxRounds) return;
+		var self = this;
+		this.round++;
+		this.spinning = true;
+		this.stoppedReels = [false, false, false];
+		this.nextStopReel = 0;
+		this.clearWinningLines();
+		this.updateText("Spinning. Press STOP to lock each reel.");
+		this.spinTimer = setInterval(function () {
+			for (var col = 0; col < 3; col++) {
+				if (self.stoppedReels[col]) continue;
+				for (var row = 0; row < 3; row++) self.grid[row * 3 + col] = self.randomSymbol();
+			}
+			self.renderGrid();
+		}, 80);
+	}
+
+	Slot777Game.prototype.stopNextReel = function () {
+		if (!this.spinning) return;
+		this.stoppedReels[this.nextStopReel] = true;
+		this.nextStopReel++;
+		this.renderGrid();
+		if (this.nextStopReel >= 3) {
+			this.resolveRound();
+			return;
+		}
+		this.updateText("Reel " + this.nextStopReel + " stopped. Press STOP again.");
+	}
+
+	Slot777Game.prototype.resolveRound = function () {
+		if (this.spinTimer) clearInterval(this.spinTimer);
+		this.spinTimer = null;
+		this.spinning = false;
+
+		var result = this.evaluateGrid();
+		this.score += result.payout;
+		if (result.payout > this.bestPayout) this.bestPayout = result.payout;
+		this.winningLines = this.winningLines.concat(result.lines);
+		this.drawWinningLines(result.lines);
+
+		if (this.round >= this.maxRounds) {
+			this.updateText(result.payout > 0 ? "Final win +" + result.payout + "." : "No winning line this round.");
 			this.finish("complete");
 			return;
 		}
-		this.updateText(this.describeLine(line, payout), true);
+		this.updateText(result.payout > 0 ? "Win +" + result.payout + ". Press START for next round." : "No winning line. Press START for next round.");
 	}
 
-	Slot777Game.prototype.getPayout = function (line) {
-		if (line[0].id === "seven" && line[1].id === "seven" && line[2].id === "seven") return 777;
-		if (line[0].id === line[1].id && line[1].id === line[2].id) return 160;
-		if (line[0].id === line[1].id || line[0].id === line[2].id || line[1].id === line[2].id) return 35;
-		return 0;
+	Slot777Game.prototype.evaluateGrid = function () {
+		var wins = [];
+		var payout = 0;
+		for (var i = 0; i < LINES.length; i++) {
+			var line = LINES[i];
+			var a = this.grid[line.cells[0]];
+			var b = this.grid[line.cells[1]];
+			var c = this.grid[line.cells[2]];
+			if (!a || !b || !c || a.id !== b.id || b.id !== c.id) continue;
+			var linePayout = a.id === "seven" ? 777 : 180;
+			payout += linePayout;
+			wins.push({
+				id: line.id,
+				name: line.name,
+				symbol: a.id,
+				payout: linePayout,
+				cells: line.cells.slice()
+			});
+		}
+		return { payout: payout, lines: wins };
 	}
 
-	Slot777Game.prototype.describeLine = function (line, payout) {
-		var labels = line.map(function (symbol) { return symbol.label; }).join(" / ");
-		if (payout >= 777) return labels + "，777 大獎！+" + payout;
-		if (payout > 0) return labels + "，中獎 +" + payout;
-		return labels + "，沒有中獎。";
+	Slot777Game.prototype.clearWinningLines = function () {
+		if (this.lineLayer) this.lineLayer.innerHTML = "";
+	}
+
+	Slot777Game.prototype.drawWinningLines = function (lines) {
+		this.clearWinningLines();
+		if (!this.lineLayer || !lines.length) return;
+		for (var i = 0; i < lines.length; i++) {
+			var cells = lines[i].cells;
+			var start = this.cellCenter(cells[0]);
+			var end = this.cellCenter(cells[2]);
+			var dx = end.x - start.x;
+			var dy = end.y - start.y;
+			var length = Math.sqrt(dx * dx + dy * dy);
+			var angle = Math.atan2(dy, dx) * 180 / Math.PI;
+			var line = document.createElement("div");
+			line.style.cssText = [
+				"position:absolute",
+				"left:" + start.x + "%",
+				"top:" + start.y + "%",
+				"width:" + length + "%",
+				"height:5px",
+				"border-radius:5px",
+				"background:#facc15",
+				"box-shadow:0 0 10px rgba(250,204,21,0.9)",
+				"transform-origin:left center",
+				"transform:rotate(" + angle + "deg)"
+			].join(";");
+			this.lineLayer.appendChild(line);
+		}
+	}
+
+	Slot777Game.prototype.cellCenter = function (index) {
+		var col = index % 3;
+		var row = Math.floor(index / 3);
+		return {
+			x: 16.6667 + col * 33.3333,
+			y: 16.6667 + row * 33.3333
+		};
 	}
 
 	Slot777Game.prototype.finish = function (reason) {
 		if (this.finished || this.spinning) return;
 		this.finished = true;
-		var result = this.score > 0 ? "win" : "lose";
-		var jackpot = this.bestPayout >= 777;
+		var jackpot = false;
+		for (var i = 0; i < this.winningLines.length; i++) {
+			if (this.winningLines[i].symbol === "seven") jackpot = true;
+		}
 		this.result = {
-			result: jackpot ? "jackpot" : result,
+			result: jackpot ? "jackpot" : this.score > 0 ? "win" : "lose",
 			reason: reason,
 			score: this.score,
-			spins: this.spinCount,
+			spins: this.round,
 			bestPayout: this.bestPayout,
-			bestLine: this.bestLine ? this.bestLine.map(function (symbol) { return symbol.id; }) : []
+			winningLines: this.winningLines,
+			grid: this.grid.map(function (symbol) { return symbol.id; })
 		};
-		if (this.status) this.status.textContent = this.score > 0 ? "結算完成，獎金 +" + this.score + "。" : "結算完成，這次沒有獎金。";
-		if (this.spinButton) this.spinButton.disabled = true;
+		this.updateText(this.score > 0 ? "Settled. Total +" + this.score + "." : "Settled. No prize.");
 		var self = this;
 		setTimeout(function () {
 			self.destroy(self.result);

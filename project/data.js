@@ -31,6 +31,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"mei.jpg",
 			"mei.png",
 			"mei_portrait.png",
+			"minigames/slot777/symbols.png",
 			"scene_badend.png",
 			"scene_mapo_cg.png",
 			"scene_mapo_shop.png",
