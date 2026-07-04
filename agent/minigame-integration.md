@@ -54,6 +54,12 @@
 
 如果專案現有載入流程不會自動載入 `extensions/minigames/*.js`，應在 `project/plugins.js` 中建立薄封裝，動態載入或直接註冊小遊戲入口。
 
+目前採用「一個小遊戲一個檔案」：
+
+- 小遊戲本體只處理自己的畫面、輸入、規則、清理與 result。
+- `project/plugins.js` 只處理載入、事件入口、把 result 寫回魔塔狀態。
+- 不要把每個小遊戲的大段 UI 與規則邏輯都塞進 `project/plugins.js`。
+
 ## 接入原則
 
 小遊戲應以「魔塔事件流暫停，小遊戲接管畫面與輸入，結束後恢復事件流」為基本模型。
@@ -122,7 +128,8 @@ callback({
 - 正常遊戲入口：起始樓層 `project/floors/mapo_1_1.js` 的劇情選項「玩圈圈叉叉」。
 - 事件用封裝入口：`core.plugin.startTicTacToeDemoEvent()`
 - 關閉目前小遊戲：`core.plugin.closeMiniGame()`
-- 實作位置：`project/plugins.js -> Tic_Tac_Toe`
+- 小遊戲本體：`extensions/minigames/ticTacToe.js`
+- 魔塔接回封裝：`project/plugins.js -> Tic_Tac_Toe`
 - 回傳結果：
   - `result: "win"`：有人獲勝，另有 `winner: "X"` 或 `"O"`。
   - `result: "draw"`：平手。
