@@ -238,44 +238,44 @@
 		if (!this.overlay || !this.panel || !this.machine) return;
 		var overlayWidth = this.overlay.clientWidth || 416;
 		var overlayHeight = this.overlay.clientHeight || 416;
-		var unit = Math.max(12, Math.floor(Math.min(overlayWidth, overlayHeight) / 13));
-		unit = Math.min(unit, 32);
-		var panelSize = unit * 13;
-		var panelPadding = Math.max(4, Math.round(unit * 0.35));
-		var headerHeight = Math.round(unit * 1);
-		var machineSize = unit * 8;
-		var statusHeight = Math.max(12, Math.round(unit * 0.7));
-		var scoreHeight = Math.max(11, Math.round(unit * 0.6));
-		var footerHeight = Math.max(28, Math.round(unit * 1.1));
-		var smallGap = Math.max(2, Math.round(unit * 0.12));
-		var largeGap = Math.max(4, Math.round(unit * 0.22));
-		var machinePadding = Math.max(4, Math.round(unit * 0.25));
-		var cellRadius = Math.max(3, Math.round(unit * 0.18));
+		var panelSize = Math.min(416, Math.floor(Math.min(overlayWidth, overlayHeight)));
+		var unit = panelSize / 13;
+		var panelPadding = unit * 0.25;
+		var headerHeight = unit * 0.9;
+		var statusHeight = unit * 0.65;
+		var scoreHeight = unit * 0.55;
+		var footerHeight = unit;
+		var smallGap = unit * 0.08;
+		var largeGap = unit * 0.16;
+		var fixedHeight = panelPadding * 2 + headerHeight + largeGap + largeGap + statusHeight + smallGap + scoreHeight + largeGap + footerHeight;
+		var machineSize = Math.min(unit * 8, panelSize - fixedHeight);
+		var machinePadding = unit * 0.22;
+		var cellRadius = Math.max(2, unit * 0.16);
 
 		this.panel.style.width = panelSize + "px";
 		this.panel.style.height = panelSize + "px";
 		this.panel.style.padding = panelPadding + "px";
 		this.panel.style.overflow = "hidden";
-		this.panel.style.borderRadius = Math.max(4, Math.round(unit * 0.18)) + "px";
+		this.panel.style.borderRadius = Math.max(3, unit * 0.18) + "px";
 		if (this.header) {
 			this.header.style.height = headerHeight + "px";
 			this.header.style.marginBottom = largeGap + "px";
 		}
-		if (this.title) this.title.style.fontSize = Math.max(16, Math.round(unit * 0.68)) + "px";
+		if (this.title) this.title.style.fontSize = Math.max(9, unit * 0.68) + "px";
 		if (this.closeButton) {
-			var closeSize = Math.max(18, Math.round(unit * 0.9));
+			var closeSize = unit * 0.75;
 			this.closeButton.style.width = closeSize + "px";
 			this.closeButton.style.height = closeSize + "px";
-			this.closeButton.style.fontSize = Math.max(14, Math.round(unit * 0.58)) + "px";
+			this.closeButton.style.fontSize = Math.max(8, unit * 0.5) + "px";
 			this.closeButton.style.lineHeight = closeSize + "px";
 		}
 		this.machine.style.width = machineSize + "px";
 		this.machine.style.height = machineSize + "px";
 		this.machine.style.alignSelf = "center";
-		this.machine.style.gap = Math.max(3, Math.round(unit * 0.18)) + "px";
+		this.machine.style.gap = Math.max(2, unit * 0.16) + "px";
 		this.machine.style.padding = machinePadding + "px";
 		this.machine.style.marginBottom = largeGap + "px";
-		this.machine.style.borderRadius = Math.max(4, Math.round(unit * 0.18)) + "px";
+		this.machine.style.borderRadius = Math.max(3, unit * 0.18) + "px";
 		if (this.lineLayer) {
 			var lineInset = machinePadding + "px";
 			this.lineLayer.style.left = lineInset;
@@ -289,12 +289,12 @@
 		if (this.status) {
 			this.status.style.height = statusHeight + "px";
 			this.status.style.marginBottom = smallGap + "px";
-			this.status.style.fontSize = Math.max(10, Math.round(unit * 0.42)) + "px";
+			this.status.style.fontSize = Math.max(8, unit * 0.4) + "px";
 		}
 		if (this.scoreText) {
 			this.scoreText.style.height = scoreHeight + "px";
 			this.scoreText.style.marginBottom = largeGap + "px";
-			this.scoreText.style.fontSize = Math.max(10, Math.round(unit * 0.38)) + "px";
+			this.scoreText.style.fontSize = Math.max(8, unit * 0.36) + "px";
 		}
 		if (this.footer) {
 			this.footer.style.height = footerHeight + "px";
@@ -302,11 +302,11 @@
 		}
 		if (this.actionButton) {
 			this.actionButton.style.height = footerHeight + "px";
-			this.actionButton.style.fontSize = Math.max(11, Math.round(unit * 0.42)) + "px";
+			this.actionButton.style.fontSize = Math.max(8, unit * 0.42) + "px";
 		}
 		if (this.finishButton) {
 			this.finishButton.style.height = footerHeight + "px";
-			this.finishButton.style.fontSize = Math.max(11, Math.round(unit * 0.42)) + "px";
+			this.finishButton.style.fontSize = Math.max(8, unit * 0.42) + "px";
 		}
 	}
 
