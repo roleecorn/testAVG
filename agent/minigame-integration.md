@@ -98,18 +98,19 @@ H5 魔塔的小遊戲 DOM 通常掛在 `core.dom.gameDraw` 裡，而不是整個
 
 本次 `slot777` 的修正方案：
 
-- overlay 設定 `box-sizing: border-box`、固定 padding、`overflow: auto`，避免內容被直接裁掉。
-- panel 設定 `max-height: 100%`、`display: flex`、`flex-direction: column`，並在緊湊畫面允許 panel 內部捲動。
-- 以 JS 讀取 `overlay.clientWidth/clientHeight`，判斷 `overlayWidth <= 460` 或 `overlayHeight <= 520` 時進入 compact layout。
-- compact layout 先預留標題、狀態文字、分數列與底部按鈕高度，再把剩餘高度分配給 3x3 主遊戲區。
-- 主遊戲區不再單純依寬度撐成正方形，而是用 `min(可用寬度, 可用高度)` 計算尺寸，確保 START / STOP / SETTLE 按鈕留在畫面內。
+- 不使用 scrollbar 作為主要解法；overlay 與 panel 都保持 `overflow: hidden`，小遊戲必須完整塞進畫面。
+- 以魔塔 13x13 格為設計基準，讀取 `overlay.clientWidth/clientHeight` 後計算 `unit = min(width, height) / 13`。
+- 桌機模式最多使用 32px 格，也就是整體不超過 416x416；手機模式依短邊縮小，但仍維持同一套 13 格比例。
+- panel、標題、3x3 主遊戲區、狀態列、分數列與底部按鈕全部使用同一個 `unit` 計算尺寸，不再用固定 430px 或只依寬度撐滿。
+- 主遊戲區固定佔 8x8 格左右，寧可縮小轉盤，也要保留 START / STOP / SETTLE 按鈕完整顯示。
+- 邊框不是必要資訊；手機空間不足時優先拿掉或弱化外框、陰影、間距，而不是讓內容溢出。
 - 按鈕加入 `touch-action: manipulation`，手機點擊時不要依賴鍵盤，也不要只做 hover 狀態。
 
 今後製作小遊戲時要注意：
 
 - 手機驗收至少檢查 360x640、390x844，以及魔塔常見的 416x416 遊戲區高度；不要只看桌機瀏覽器。
 - 大型棋盤、轉盤、卡牌區、清單區都要先保留控制列高度，再決定主內容尺寸。
-- 底部主要按鈕不得只靠頁面自然流排版；需要 `max-height`、`overflow` 或明確尺寸計算保護。
+- 底部主要按鈕不得只靠頁面自然流排版；優先使用 13x13 或其他固定單位系統保護版面，避免用 scrollbar 補救。
 - 手機操作必須有可點擊按鈕或觸控區，不可只依賴鍵盤快捷鍵。
 - 彈窗關閉、取消、結算按鈕的高度建議至少 38px，文字不要超出按鈕。
 - 若小遊戲使用 canvas，canvas 的 CSS 尺寸與實際繪圖尺寸要一起縮放；若使用 DOM grid，格子的 `aspect-ratio` 也必須受最大高度限制。

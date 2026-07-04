@@ -40,11 +40,15 @@
 		this.lockedBeforeStart = false;
 		this.overlay = null;
 		this.panel = null;
+		this.header = null;
+		this.title = null;
+		this.closeButton = null;
 		this.machine = null;
 		this.cells = [];
 		this.lineLayer = null;
 		this.status = null;
 		this.scoreText = null;
+		this.footer = null;
 		this.actionButton = null;
 		this.finishButton = null;
 		this.keyHandler = null;
@@ -74,12 +78,12 @@
 			"width:100%",
 			"height:100%",
 			"box-sizing:border-box",
-			"padding:8px",
+			"padding:0",
 			"z-index:220",
 			"display:flex",
 			"align-items:center",
 			"justify-content:center",
-			"overflow:auto",
+			"overflow:hidden",
 			"background:rgba(10,9,16,0.84)",
 			"font-family:Arial,'Microsoft JhengHei','Microsoft YaHei',sans-serif",
 			"color:#f8fafc",
@@ -88,15 +92,14 @@
 
 		var panel = document.createElement("div");
 		panel.style.cssText = [
-			"width:430px",
-			"max-width:100%",
-			"max-height:100%",
+			"width:416px",
+			"height:416px",
 			"box-sizing:border-box",
-			"padding:16px",
-			"border:1px solid rgba(250,204,21,0.5)",
-			"border-radius:8px",
+			"padding:12px",
+			"border:0",
+			"border-radius:6px",
 			"background:#18111f",
-			"box-shadow:0 18px 46px rgba(0,0,0,0.5)",
+			"box-shadow:0 10px 28px rgba(0,0,0,0.45)",
 			"display:flex",
 			"flex-direction:column",
 			"overflow:hidden"
@@ -104,11 +107,13 @@
 		this.panel = panel;
 
 		var header = document.createElement("div");
-		header.style.cssText = "display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px";
+		header.style.cssText = "display:flex;align-items:center;justify-content:space-between;gap:8px;flex:0 0 auto;overflow:hidden";
+		this.header = header;
 
 		var title = document.createElement("div");
 		title.textContent = "777 SLOT";
-		title.style.cssText = "font-size:22px;font-weight:800;line-height:1.2;color:#fde68a";
+		title.style.cssText = "font-size:22px;font-weight:800;line-height:1;color:#fde68a;white-space:nowrap;overflow:hidden";
+		this.title = title;
 		header.appendChild(title);
 
 		var close = document.createElement("button");
@@ -119,6 +124,7 @@
 		close.onclick = function () {
 			self.destroy(self.result || { result: "cancel", reason: "close" });
 		};
+		this.closeButton = close;
 		header.appendChild(close);
 		panel.appendChild(header);
 
@@ -128,17 +134,16 @@
 			"display:grid",
 			"grid-template-columns:repeat(3,1fr)",
 			"gap:8px",
-			"width:100%",
-			"height:300px",
+			"width:256px",
+			"height:256px",
 			"flex:0 0 auto",
-			"aspect-ratio:1/1",
 			"box-sizing:border-box",
 			"padding:10px",
-			"border:2px solid rgba(253,230,138,0.72)",
-			"border-radius:8px",
+			"border:0",
+			"border-radius:6px",
 			"background:#0f172a",
 			"box-shadow:inset 0 0 24px rgba(0,0,0,0.38)",
-			"margin-bottom:12px"
+			"align-self:center"
 		].join(";");
 		this.machine = machine;
 
@@ -173,17 +178,18 @@
 		panel.appendChild(machine);
 
 		var status = document.createElement("div");
-		status.style.cssText = "min-height:24px;margin-bottom:8px;font-size:15px;color:#d1d5db";
+		status.style.cssText = "flex:0 0 auto;font-size:15px;line-height:1;color:#d1d5db;white-space:nowrap;overflow:hidden;text-overflow:ellipsis";
 		panel.appendChild(status);
 		this.status = status;
 
 		var score = document.createElement("div");
-		score.style.cssText = "min-height:22px;margin-bottom:12px;font-size:14px;color:#fde68a";
+		score.style.cssText = "flex:0 0 auto;font-size:14px;line-height:1;color:#fde68a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis";
 		panel.appendChild(score);
 		this.scoreText = score;
 
 		var footer = document.createElement("div");
-		footer.style.cssText = "display:flex;gap:8px";
+		footer.style.cssText = "display:flex;gap:8px;flex:0 0 auto";
+		this.footer = footer;
 
 		var action = document.createElement("button");
 		action.type = "button";
@@ -232,28 +238,75 @@
 		if (!this.overlay || !this.panel || !this.machine) return;
 		var overlayWidth = this.overlay.clientWidth || 416;
 		var overlayHeight = this.overlay.clientHeight || 416;
-		var compact = overlayWidth <= 460 || overlayHeight <= 520;
-		var panelPadding = compact ? 10 : 16;
-		var panelWidth = Math.min(compact ? 360 : 430, Math.max(260, overlayWidth - 16));
-		var availableHeight = Math.max(260, overlayHeight - 16);
-		var reservedHeight = panelPadding * 2 + 34 + 8 + 22 + 6 + 20 + 8 + 40 + 8 + 2;
-		var maxMachineSize = Math.max(150, availableHeight - reservedHeight);
-		var machineSize = Math.floor(Math.min(panelWidth - panelPadding * 2, maxMachineSize));
+		var unit = Math.max(12, Math.floor(Math.min(overlayWidth, overlayHeight) / 13));
+		unit = Math.min(unit, 32);
+		var panelSize = unit * 13;
+		var panelPadding = Math.max(4, Math.round(unit * 0.35));
+		var headerHeight = Math.round(unit * 1);
+		var machineSize = unit * 8;
+		var statusHeight = Math.max(12, Math.round(unit * 0.7));
+		var scoreHeight = Math.max(11, Math.round(unit * 0.6));
+		var footerHeight = Math.max(28, Math.round(unit * 1.1));
+		var smallGap = Math.max(2, Math.round(unit * 0.12));
+		var largeGap = Math.max(4, Math.round(unit * 0.22));
+		var machinePadding = Math.max(4, Math.round(unit * 0.25));
+		var cellRadius = Math.max(3, Math.round(unit * 0.18));
 
-		this.panel.style.width = panelWidth + "px";
+		this.panel.style.width = panelSize + "px";
+		this.panel.style.height = panelSize + "px";
 		this.panel.style.padding = panelPadding + "px";
-		this.panel.style.overflow = compact ? "auto" : "hidden";
+		this.panel.style.overflow = "hidden";
+		this.panel.style.borderRadius = Math.max(4, Math.round(unit * 0.18)) + "px";
+		if (this.header) {
+			this.header.style.height = headerHeight + "px";
+			this.header.style.marginBottom = largeGap + "px";
+		}
+		if (this.title) this.title.style.fontSize = Math.max(16, Math.round(unit * 0.68)) + "px";
+		if (this.closeButton) {
+			var closeSize = Math.max(18, Math.round(unit * 0.9));
+			this.closeButton.style.width = closeSize + "px";
+			this.closeButton.style.height = closeSize + "px";
+			this.closeButton.style.fontSize = Math.max(14, Math.round(unit * 0.58)) + "px";
+			this.closeButton.style.lineHeight = closeSize + "px";
+		}
 		this.machine.style.width = machineSize + "px";
 		this.machine.style.height = machineSize + "px";
 		this.machine.style.alignSelf = "center";
-		this.machine.style.gap = compact ? "6px" : "8px";
-		this.machine.style.padding = compact ? "8px" : "10px";
+		this.machine.style.gap = Math.max(3, Math.round(unit * 0.18)) + "px";
+		this.machine.style.padding = machinePadding + "px";
+		this.machine.style.marginBottom = largeGap + "px";
+		this.machine.style.borderRadius = Math.max(4, Math.round(unit * 0.18)) + "px";
 		if (this.lineLayer) {
-			var lineInset = compact ? "8px" : "10px";
+			var lineInset = machinePadding + "px";
 			this.lineLayer.style.left = lineInset;
 			this.lineLayer.style.right = lineInset;
 			this.lineLayer.style.top = lineInset;
 			this.lineLayer.style.bottom = lineInset;
+		}
+		for (var i = 0; i < this.cells.length; i++) {
+			this.cells[i].style.borderRadius = cellRadius + "px";
+		}
+		if (this.status) {
+			this.status.style.height = statusHeight + "px";
+			this.status.style.marginBottom = smallGap + "px";
+			this.status.style.fontSize = Math.max(10, Math.round(unit * 0.42)) + "px";
+		}
+		if (this.scoreText) {
+			this.scoreText.style.height = scoreHeight + "px";
+			this.scoreText.style.marginBottom = largeGap + "px";
+			this.scoreText.style.fontSize = Math.max(10, Math.round(unit * 0.38)) + "px";
+		}
+		if (this.footer) {
+			this.footer.style.height = footerHeight + "px";
+			this.footer.style.gap = Math.max(4, Math.round(unit * 0.18)) + "px";
+		}
+		if (this.actionButton) {
+			this.actionButton.style.height = footerHeight + "px";
+			this.actionButton.style.fontSize = Math.max(11, Math.round(unit * 0.42)) + "px";
+		}
+		if (this.finishButton) {
+			this.finishButton.style.height = footerHeight + "px";
+			this.finishButton.style.fontSize = Math.max(11, Math.round(unit * 0.42)) + "px";
 		}
 	}
 
