@@ -553,6 +553,28 @@
                 [239,165]
             ]
         },
+        {
+            "type": "choices",
+            "text": "\t[旁白]車站角落有一台看起來不太合時宜的小遊戲機。",
+            "choices": [
+                {
+                    "text": "玩圈圈叉叉",
+                    "action": [
+                        {
+                            "type": "function",
+                            "function": "function(){core.plugin.startTicTacToeDemoEvent();}",
+                            "async": true
+                        }
+                    ]
+                },
+                {
+                    "text": "直接離開",
+                    "action": [
+                        "\t[旁白]兩人決定不要被小遊戲機絆住腳步。"
+                    ]
+                }
+            ]
+        },
         "\t[旁白]兩人邊走邊聊，離開了車站。",
         {
             "type": "changeFloor",
