@@ -23,10 +23,10 @@
             "disabled": true
         },
         {
-            "name": "mei_portrait.png",
+            "name": "suou_sad_portrait.png",
             "canvas": "fg",
-            "x": 239,
-            "y": 165,
+            "x": 260,
+            "y": 185,
             "disabled": true
         }
     ],
@@ -259,139 +259,210 @@
             "animateTime": 120
         },
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_serious_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]這麼說來不知道大家都去哪裡了，看看群組對話有沒有動靜吧。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[A]{救命}",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_serious_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]{你在哪裡}",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[旁白]......",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_angry_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]可惡，沒有回應。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_angry_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]我的假面騎士之魂告訴我 A 肯定是被修卡抓走了。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_serious_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]而 A 在失去意識之前傳出了這則訊息，看來假面騎士要出動了。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]先不論這個結論怎麼來的......所以該去哪裡找 A 呢？",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_angry_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]我的直覺告訴我邪惡組織肯定會在倉庫有秘密基地。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_angry_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]所以我們就去倉庫區找 A 吧，可惡的修卡，我不會讓你們傷害我朋友的。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[旁白]梗平就這麼拉著表妹衝向了城市的倉庫區。",
         {

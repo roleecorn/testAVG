@@ -23,10 +23,10 @@
             "disabled": true
         },
         {
-            "name": "mei_portrait.png",
+            "name": "suou_sad_portrait.png",
             "canvas": "fg",
-            "x": 239,
-            "y": 165,
+            "x": 260,
+            "y": 185,
             "disabled": true
         }
     ],
@@ -259,67 +259,100 @@
             "animateTime": 120
         },
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_surprised_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]好像忘記了甚麼。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]啊對，要來救人的。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_goofy_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]一個一個來好麻煩啊，看來這時候只能使用那招了。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[旁白]表妹走到了倒在地板上的 A 面前。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_angry_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]急救拳！",
         {
@@ -327,99 +360,152 @@
             "name": "attack.mp3"
         },
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[A]啊...總算活過來了。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_smile_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]早安，你還好嗎？",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[A]原本只是來打工的...店長拿給我試吃我就吃了。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[A]沒想到這裡的餐這麼可怕。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]先不聊了，我要趕快去救其他人了。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[旁白]表妹隨後用了一樣的方式「解救」了 B、C。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[旁白]然後，她走到了梗平的前面。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]嗯，考慮到今天的狀況。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_surprised_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]急救拳．十倍出力！",
         {
@@ -427,75 +513,113 @@
             "name": "attack.mp3"
         },
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]啊！我不要渡過三途川啊。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_smile_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]好，你看起來挺精神的。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_angry_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]可惡，沒想到麻婆豆腐如此強大，不想再吃一次了。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_angry_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]我也不想來第二次了。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[旁白]兩人說完後便離開了麻婆豆腐店。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[系統]麻婆豆腐篇結束。",
         {

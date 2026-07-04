@@ -23,10 +23,10 @@
             "disabled": true
         },
         {
-            "name": "mei_portrait.png",
+            "name": "suou_sad_portrait.png",
             "canvas": "fg",
-            "x": 239,
-            "y": 165,
+            "x": 260,
+            "y": 185,
             "disabled": true
         }
     ],
@@ -259,299 +259,449 @@
             "animateTime": 120
         },
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[旁白]在下電車的一群人中，有個與眾不同的男人。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]嘔嘔嘔嘔嘔嘔。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_surprised_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]表哥，你在做甚麼？",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]我只是嘔嘔嘔嘔嘔嘔。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]要塑膠袋...",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]不嘔嘔嘔。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_angry_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]我還是不要靠近你好了。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_serious_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]呼.......",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_serious_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]我只是昨天補充酒精作為假面騎士的燃料時，不小心出了點意外。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]可是你的燃料都在地板上了。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_serious_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]那個...那個是.......對，只是不成熟的騎士系統的副作用而已。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_surprised_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]看來你吐得差不多了，我也要走......大家人呢？",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_smile_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]哼，就由我這個專業人士來教你這個初心者吧。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_smile_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]死宅...是自由的啊，在 Comike 開始前提早來並自由活動才是真正的阿宅。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]所以說嘔嘔嘔。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]怎麼還有第二段啊。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_angry_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]可惡，不成熟的騎士系統副作用竟然如此難以消除。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_happy_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]你開心就好。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [28,210]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_serious_portrait.png",
+            "loc": [28, 210],
+            "opacity": 1,
+            "time": 0
         },
         "\t[梗平]我的事就先到這裡，你先想想接下來要去哪裡。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_surprised_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]第一次來這種大城市想多逛點地方，可惜我們身上都沒什麼錢。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
         {
-            "type": "showFloorImg",
-            "loc": [
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_smile_portrait.png",
+            "loc": [260, 185],
+            "opacity": 1,
+            "time": 0
         },
         "\t[表妹]所以就先隨便亂逛吧。",
         {
-            "type": "hideFloorImg",
-            "loc": [
-                [28,210],
-                [239,165]
-            ]
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         {
             "type": "choices",
