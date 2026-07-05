@@ -836,6 +836,9 @@
         },
         "\t[旁白]兩人朝著手機中的地址走去。",
         {
+            "type": "playTransitionVideo"
+        },
+        {
             "type": "changeFloor",
             "floorId": "mapo_1_5",
             "loc": [
@@ -843,7 +846,7 @@
                 10
             ],
             "direction": "up",
-            "time": 500
+            "time": 0
         }
     ],
     "parallelDo": "",
@@ -859,5 +862,4 @@
     "bgmap": [],
     "fgmap": []
 }
-
 

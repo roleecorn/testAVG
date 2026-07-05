@@ -46,7 +46,8 @@ GOTO scene_002
             }
         ]
     },
-    {"type": "changeFloor", "floorId": "scene_002", "loc": [6, 10], "direction": "up", "time": 500}
+    {"type": "playTransitionVideo"},
+    {"type": "changeFloor", "floorId": "scene_002", "loc": [6, 10], "direction": "up", "time": 0}
 ]
 ```
 

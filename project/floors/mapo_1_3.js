@@ -726,6 +726,9 @@
                                         },
                                         "\t[旁白]梗平一邊說著一邊跟表妹走出了倉庫。",
                                         {
+                                            "type": "playTransitionVideo"
+                                        },
+                                        {
                                             "type": "changeFloor",
                                             "floorId": "mapo_1_4",
                                             "loc": [
@@ -733,7 +736,7 @@
                                                 10
                                             ],
                                             "direction": "up",
-                                            "time": 500
+                                            "time": 0
                                         }
                                     ]
                                 },
@@ -976,6 +979,9 @@
                                             "time": 500
                                         },
                                         {
+                                            "type": "playTransitionVideo"
+                                        },
+                                        {
                                             "type": "changeFloor",
                                             "floorId": "mapo_1_3",
                                             "loc": [
@@ -983,7 +989,7 @@
                                                 10
                                             ],
                                             "direction": "up",
-                                            "time": 500
+                                            "time": 0
                                         }
                                     ]
                                 }
@@ -1296,6 +1302,9 @@
                         },
                         "\t[BE2]不要闖空門。",
                         {
+                            "type": "playTransitionVideo"
+                        },
+                        {
                             "type": "changeFloor",
                             "floorId": "mapo_1_3",
                             "loc": [
@@ -1303,7 +1312,7 @@
                                 10
                             ],
                             "direction": "up",
-                            "time": 500
+                            "time": 0
                         }
                     ]
                 }
@@ -1323,5 +1332,4 @@
     "bgmap": [],
     "fgmap": []
 }
-
 

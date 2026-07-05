@@ -1606,6 +1606,9 @@
                             "time": 200
                         },
                         {
+                            "type": "playTransitionVideo"
+                        },
+                        {
                             "type": "changeFloor",
                             "floorId": "mapo_1_5",
                             "loc": [
@@ -1613,7 +1616,7 @@
                                 10
                             ],
                             "direction": "up",
-                            "time": 500
+                            "time": 0
                         }
                     ]
                 },
@@ -1778,6 +1781,9 @@
                         },
                         "\t[旁白]然後看著他被客人們抬出店外，加入了躺在門口的行列。",
                         {
+                            "type": "playTransitionVideo"
+                        },
+                        {
                             "type": "changeFloor",
                             "floorId": "mapo_1_6",
                             "loc": [
@@ -1785,7 +1791,7 @@
                                 10
                             ],
                             "direction": "up",
-                            "time": 500
+                            "time": 0
                         }
                     ]
                 }
@@ -1805,5 +1811,4 @@
     "bgmap": [],
     "fgmap": []
 }
-
 

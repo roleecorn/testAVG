@@ -693,8 +693,8 @@ events.prototype._sys_changeFloor = function (data, callback) {
 }
 
 ////// 楼层切换 //////
-events.prototype.changeFloor = function (floorId, stair, heroLoc, time, callback) {
-    var info = this._changeFloor_getInfo(floorId, stair, heroLoc, time);
+events.prototype.changeFloor = function (floorId, stair, heroLoc, time, callback, options) {
+    var info = this._changeFloor_getInfo(floorId, stair, heroLoc, time, options);
     if (info == null) {
         if (callback) callback();
         return;
@@ -713,7 +713,8 @@ events.prototype.changeFloor = function (floorId, stair, heroLoc, time, callback
     this._changeFloor_beforeChange(info, callback);
 }
 
-events.prototype._changeFloor_getInfo = function (floorId, stair, heroLoc, time) {
+events.prototype._changeFloor_getInfo = function (floorId, stair, heroLoc, time, options) {
+    options = options || {};
     floorId = floorId || core.status.floorId;
     if (floorId == ':before') {
         var index = core.floorIds.indexOf(core.status.floorId);
@@ -739,6 +740,7 @@ events.prototype._changeFloor_getInfo = function (floorId, stair, heroLoc, time)
     return {
         floorId: floorId,
         time: time,
+        transitionVideo: options.transitionVideo || core.status.__pendingTransitionVideo__,
         heroLoc: core.clone(this._changeFloor_getHeroLoc(floorId, stair, heroLoc))
     };
 }
@@ -809,10 +811,19 @@ events.prototype._changeFloor_playSound = function () {
 }
 
 events.prototype._changeFloor_startVideoTransition = function (info, onCovered) {
-    if (info.time == 0 || main.mode != 'play' || core.isReplaying()) return false;
+    if (!info.transitionVideo) return false;
+    core.status.__pendingTransitionVideo__ = null;
+    if (main.mode != 'play' || core.isReplaying()) return false;
     var group = core.dom.floorMsgGroup;
     var video = document.getElementById('floorTransitionVideo');
-    if (!group || !video || !video.querySelector('source')) return false;
+    if (!group || !video) return false;
+    var videoName = info.transitionVideo === true ? 'floor-transition.mp4' : info.transitionVideo;
+    if (!videoName || !core.material.videos || core.material.videos[videoName] == null) return false;
+    var videoSrc = 'project/videos/' + videoName + "?v=" + main.version;
+    if (video.getAttribute('__src__') != videoSrc) {
+        video.setAttribute('__src__', videoSrc);
+        video.src = videoSrc;
+    }
 
     var state = core.status.__floorTransitionVideo__ = {
         group: group,
@@ -892,14 +903,14 @@ events.prototype._changeFloor_changing = function (info, callback) {
     core.drawHero();
     core.setFlag('__lockViewport__', __lockViewport__);
 
-    if (info.time == 0)
-        this._changeFloor_afterChange(info, callback);
-    else if (core.status.__floorTransitionVideo__) {
+    if (core.status.__floorTransitionVideo__) {
         var state = core.status.__floorTransitionVideo__;
         state.finishCallback = function () {
             core.events._changeFloor_afterChange(info, callback);
         };
     }
+    else if (info.time == 0)
+        this._changeFloor_afterChange(info, callback);
     else
         core.hideWithAnimate(core.dom.floorMsgGroup, info.time / 4, function () {
             core.events._changeFloor_afterChange(info, callback);
@@ -1714,6 +1725,11 @@ events.prototype._action_jumpHero = function (data, x, y, prefix) {
         loc = this.__action_getHeroLoc(data.loc, prefix);
     }
     this.__action_doAsyncFunc(data.async, core.jumpHero, loc[0], loc[1], data.time);
+}
+
+events.prototype._action_playTransitionVideo = function (data, x, y, prefix) {
+    core.status.__pendingTransitionVideo__ = data.name || true;
+    core.doAction();
 }
 
 events.prototype._action_changeFloor = function (data, x, y, prefix) {

@@ -47,3 +47,12 @@ AVG 推薦畫面策略：
 ]
 ```
 
+影片轉場必須用獨立事件 `playTransitionVideo` 明確指定，接著立刻用 `changeFloor` 切樓層，且 `changeFloor.time` 設為 `0`，避免觸發原本樓層淡入淡出。一般 `changeFloor` 不會播放影片轉場。
+
+```js
+[
+    {"type": "playTransitionVideo"},
+    {"type": "changeFloor", "floorId": "scene_002", "loc": [6, 10], "time": 0}
+]
+```
+

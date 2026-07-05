@@ -467,6 +467,9 @@
         },
         "\t[旁白]梗平就這麼拉著表妹衝向了城市的倉庫區。",
         {
+            "type": "playTransitionVideo"
+        },
+        {
             "type": "changeFloor",
             "floorId": "mapo_1_3",
             "loc": [
@@ -474,7 +477,7 @@
                 10
             ],
             "direction": "up",
-            "time": 500
+            "time": 0
         }
     ],
     "parallelDo": "",
@@ -490,5 +493,4 @@
     "bgmap": [],
     "fgmap": []
 }
-
 

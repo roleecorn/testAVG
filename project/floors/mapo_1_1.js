@@ -748,6 +748,9 @@
         },
         "\t[旁白]兩人邊走邊聊，離開了車站。",
         {
+            "type": "playTransitionVideo"
+        },
+        {
             "type": "changeFloor",
             "floorId": "mapo_1_2",
             "loc": [
@@ -755,7 +758,7 @@
                 10
             ],
             "direction": "up",
-            "time": 500
+            "time": 0
         }
     ],
     "parallelDo": "",
