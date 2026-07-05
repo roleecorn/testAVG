@@ -1,6 +1,6 @@
 ﻿# 場景顯示邏輯
 
-## 5. 場景顯示的邏輯
+## 場景顯示的邏輯
 
 畫面是多層 canvas 疊起來的。從下到上大致是：
 
@@ -41,8 +41,8 @@ AVG 推薦畫面策略：
 ```js
 [
     {"type": "playBgm", "name": "opening.mp3", "keep": true},
-    {"type": "showImage", "code": 10, "image": "mio_normal.png", "loc": [32, 36], "opacity": 1, "time": 300},
-    "\t[澪]走吧，故事要開始了。",
+    {"type": "showImage", "code": 10, "image": "keng_neutral_portrait.png", "loc": [28, 210], "opacity": 1, "time": 300},
+    "\t[梗平]走吧，故事要開始了。",
     {"type": "changeFloor", "floorId": "scene_002", "loc": [6, 10], "direction": "up", "time": 500}
 ]
 ```

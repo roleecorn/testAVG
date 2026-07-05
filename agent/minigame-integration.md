@@ -1,33 +1,6 @@
 # 小遊戲新增與接入指南
 
-這份文件給之後新增小遊戲時使用。目標是先判斷外部插件或玩法是否真的是「獨立於魔塔 Grid 系統的小遊戲」，再決定是否下載、改寫與實裝。
-
-## 本次插件判定
-
-來源：
-
-- 插件庫頁面：`https://h5mota.com/plugin/`
-- 插件資料 API：`https://h5mota.com/plugins/getData.php`
-- 實際插件名稱：`仿东方boss战`
-- 作者：`Happy`
-- 上傳時間：`2022-05-06 15:16:40`
-- 插件版本說明：`仿东方BOSS战 Ver 1.1.0`
-
-結論：這個插件不是獨立小遊戲，不應直接作為「非 Grid 小遊戲」下載實裝。
-
-原因：
-
-- 插件註解明確寫著「適配15x15樣板，適用於9*9區域內的回合制特殊戰」。
-- 戰鬥流程依賴魔塔地圖格子與樓層事件，例如 `setBlock`、`jumpHero`、`jump`、`hide`、`getBlockId(x, y)`。
-- 需要把 `core.plugin.doAttack()` 接到「每步後事件」，把 `core.plugin.detectBattle(enemyId, damage)` 接到「戰後事件」。
-- BOSS 階段切換會掃描固定格子區域 `x = 3..11`、`y = 3..11`，本質上仍是格子地圖玩法。
-- 它是魔塔戰鬥/地圖事件的擴充，不是 canvas 或 DOM 上自行管理輸入、碰撞、狀態與結束回呼的獨立小遊戲。
-
-可保留的參考價值：
-
-- 可以參考它的「開始戰鬥、階段資料、結束回呼」結構。
-- 不要把它當作獨立小遊戲模板。
-- 若未來要做「格子制特殊戰」，它可以作為參考；若要做彈幕、節奏、QTE、射擊、躲避等非格子玩法，應走下方接入流程。
+這份文件記錄目前專案的小遊戲接入規範。只有「不依賴魔塔地圖 Grid、自己管理畫面與輸入、結束後回傳結果」的玩法，才放進這套流程。
 
 ## 獨立小遊戲判定標準
 
@@ -36,23 +9,19 @@
 - 主要畫面由獨立 `canvas`、DOM 或 WebGL 場景繪製，而不是魔塔樓層格子。
 - 玩家位置、敵人、子彈、碰撞、倒數、得分等狀態由小遊戲自己管理。
 - 操作輸入直接由小遊戲處理，例如鍵盤、滑鼠、觸控，而不是依靠魔塔移動到某格觸發事件。
-- 可以用單一入口函數開始，例如 `core.plugin.startMiniGame(config, callback)`。
-- 結束時能回報結果，例如 `win`、`lose`、`score`、`hp`、`time`，再交回魔塔事件流。
+- 可以用單一入口函數開始，例如 `core.plugin.startMiniGame(gameId, options, callback)`。
+- 結束時能回報結果，例如 `win`、`lose`、`draw`、`cancel`、`score`，再交回魔塔事件流。
 - 不要求改動樓層 `map` 的大量圖塊，也不需要在特定座標反覆 `setBlock` 才能運作。
 
-若插件主要依賴 `setBlock`、`getBlockId`、`moveHero`、`afterBattle`、每步後事件、樓層格子掃描，通常不是獨立小遊戲。
+若玩法主要依賴 `setBlock`、`getBlockId`、`moveHero`、`afterBattle`、每步後事件或樓層格子掃描，通常應視為魔塔格子玩法，不要放進獨立小遊戲架構。
 
-## 建議檔案位置
-
-未來新增小遊戲時，優先使用以下結構：
+## 檔案位置
 
 - `extensions/minigames/<game-id>.js`：小遊戲主邏輯。
 - `extensions/minigames/<game-id>.css`：小遊戲樣式；只有 DOM UI 需要時才新增。
 - `project/images/minigames/<game-id>/`：小遊戲圖片資源。
 - `project/sounds/minigames/<game-id>/`：小遊戲音效資源。
-- `agent/minigame-integration.md`：記錄接入方法、入口函數與事件範例。
-
-如果專案現有載入流程不會自動載入 `extensions/minigames/*.js`，應在 `project/plugins.js` 中建立薄封裝，動態載入或直接註冊小遊戲入口。
+- `project/plugins.js`：只負責允許清單、動態載入、事件入口與結果回寫。
 
 目前採用「一個小遊戲一個檔案」：
 
@@ -60,27 +29,35 @@
 - `project/plugins.js` 只處理載入、事件入口、把 result 寫回魔塔狀態。
 - 不要把每個小遊戲的大段 UI 與規則邏輯都塞進 `project/plugins.js`。
 
+## 現有入口
+
+`project/plugins.js` 目前允許的小遊戲 ID：
+
+- `ticTacToe`
+- `slot777`
+
+通用入口：
+
+```js
+core.plugin.startMiniGame(gameId, options, callback);
+```
+
+目前封裝好的事件入口：
+
+```js
+core.plugin.startTicTacToeDemoEvent();
+core.plugin.startSlot777DemoEvent();
+core.plugin.closeMiniGame();
+```
+
+起始樓層 `project/floors/mapo_1_1.js` 的小遊戲機選項會呼叫：
+
+- 「玩圈圈叉叉」：`core.plugin.startTicTacToeDemoEvent()`
+- 「玩 777 拉霸」：`core.plugin.startSlot777DemoEvent()`
+
 ## 接入原則
 
 小遊戲應以「魔塔事件流暫停，小遊戲接管畫面與輸入，結束後恢復事件流」為基本模型。
-
-建議入口：
-
-```js
-core.plugin.startMiniGame = function (gameId, options, callback) {
-    // 依 gameId 啟動指定小遊戲
-};
-```
-
-建議回傳：
-
-```js
-callback({
-    result: "win",
-    score: 0,
-    reason: "clear"
-});
-```
 
 接入時要處理：
 
@@ -92,32 +69,39 @@ callback({
 - 結束後依需求呼叫 `core.unlockControl()` 或 `core.events.doAction()` 接回事件。
 - 若小遊戲會進入存檔流程，必須把必要狀態存入 `flag:minigame.xxx`，否則不要允許中途存檔。
 
-## 手機與電腦模式的版面差異
+建議回傳：
 
-H5 魔塔的小遊戲 DOM 通常掛在 `core.dom.gameDraw` 裡，而不是整個瀏覽器 viewport。電腦模式下 `gameDraw` 外圍空間較寬，彈窗可以接近桌機 UI 的 430px 寬度；手機模式下 `gameDraw` 可能被縮放成較小的正方形區域，還可能和系統狀態列、瀏覽器工具列、虛擬按鍵區競爭高度。因此手機模式不能只用 `width: 100%` 加 `aspect-ratio: 1/1` 撐主遊戲區，否則底部按鈕很容易被推出可見範圍。
+```js
+callback({
+    result: "win",
+    score: 0,
+    reason: "clear"
+});
+```
 
-本次 `slot777` 的修正方案：
+若事件需要等待小遊戲結束，自定義 JS 事件應選擇「不執行下一個事件」。目前的封裝入口會在 callback 內寫入結果、改變魔塔狀態、插入結果文字，最後呼叫 `core.doAction()` 接續事件流。
 
-- 不使用 scrollbar 作為主要解法；overlay 與 panel 都保持 `overflow: hidden`，小遊戲必須完整塞進畫面。
-- 以魔塔 13x13 格為設計基準，讀取 `overlay.clientWidth/clientHeight` 後計算 `unit = min(width, height) / 13`。
-- 桌機模式最多使用 32px 格，也就是整體不超過 416x416；手機模式依短邊縮小，但仍維持同一套 13 格比例。
-- panel、標題、3x3 主遊戲區、狀態列、分數列與底部按鈕全部使用同一個 `unit` 計算尺寸，不再用固定 430px 或只依寬度撐滿。
-- 主遊戲區固定佔 8x8 格左右，寧可縮小轉盤，也要保留 START / STOP / SETTLE 按鈕完整顯示。
-- 邊框不是必要資訊；手機空間不足時優先拿掉或弱化外框、陰影、間距，而不是讓內容溢出。
-- 按鈕加入 `touch-action: manipulation`，手機點擊時不要依賴鍵盤，也不要只做 hover 狀態。
+## 版面規範
 
-後續檢查發現：只限制外層 panel 不超過 13x13 還不夠。若內部元件仍使用固定最小高度，例如 `footerHeight = Math.max(28, unit * 1.1)`、狀態列最少 12px、間距最少 4px，當 `gameDraw` 在特殊比例下被壓到較小短邊時，這些固定 px 會加總超過 panel 內高，底部按鈕仍會被裁掉。修正時應讓內部高度也遵守同一個 unit 預算，或在計算主遊戲區尺寸前先扣除所有固定列高，不能混用「外層 13 格」與「內層固定 px 最小值」。
+H5 魔塔的小遊戲 DOM 通常掛在 `core.dom.gameDraw` 裡，而不是整個瀏覽器 viewport。手機模式下 `gameDraw` 可能被縮放成較小的正方形區域，還會和系統狀態列、瀏覽器工具列、虛擬按鍵區競爭高度。因此小遊戲版面要以遊戲區短邊為基準，不要只用桌機寬度設計。
 
-今後製作小遊戲時要注意：
+手機與桌機都要遵守：
 
-- 手機驗收至少檢查 360x640、390x844，以及魔塔常見的 416x416 遊戲區高度；不要只看桌機瀏覽器。
-- 也要檢查橫向或嵌入式比例造成的短邊壓縮，例如 260x416、240x360、208x416；這類尺寸最容易暴露固定 px 最小值造成的溢出。
+- 不使用 scrollbar 作為主要解法；overlay 與 panel 預設保持 `overflow: hidden`，小遊戲必須完整塞進畫面。
+- 以魔塔 13x13 格為優先設計基準，可用 `unit = min(width, height) / 13` 計算尺寸。
+- 主內容、狀態列、分數列、底部按鈕要共享同一個高度預算，不要混用外層格單位與內層固定 px 最小值。
 - 大型棋盤、轉盤、卡牌區、清單區都要先保留控制列高度，再決定主內容尺寸。
-- 底部主要按鈕不得只靠頁面自然流排版；優先使用 13x13 或其他固定單位系統保護版面，避免用 scrollbar 補救。
 - 手機操作必須有可點擊按鈕或觸控區，不可只依賴鍵盤快捷鍵。
 - 彈窗關閉、取消、結算按鈕的高度建議至少 38px，文字不要超出按鈕。
 - 若小遊戲使用 canvas，canvas 的 CSS 尺寸與實際繪圖尺寸要一起縮放；若使用 DOM grid，格子的 `aspect-ratio` 也必須受最大高度限制。
-- 驗收時要測「剛開啟」、「遊戲進行中」、「結算後顯示結果」三種狀態，因為底部按鈕文字長度和狀態列文字可能改變高度。
+
+驗收至少檢查：
+
+- 桌機正常視窗。
+- 手機直向 360x640、390x844。
+- 魔塔常見的 416x416 遊戲區。
+- 短邊被壓縮的嵌入尺寸，例如 260x416、240x360、208x416。
+- 「剛開啟」、「遊戲進行中」、「結算後顯示結果」三種狀態。
 
 ## 實作檢查清單
 
@@ -125,14 +109,15 @@ H5 魔塔的小遊戲 DOM 通常掛在 `core.dom.gameDraw` 裡，而不是整個
 
 - 確認它是否真的非 Grid。
 - 確認授權或來源允許複製、改寫或嵌入。
-- 記錄來源 URL、插件名稱、作者、版本、抓取日期。
+- 記錄來源 URL、名稱、作者、版本、抓取日期。
 - 判斷是否需要圖片、音效、字體或外部函式庫。
 
 新增小遊戲時：
 
 - 小遊戲入口函數名稱固定且可從事件呼叫。
+- `project/plugins.js` 的允許清單加入 `<game-id>`。
 - 所有資源路徑使用專案相對路徑。
-- 不污染全域變數；必要狀態收在單一 namespace。
+- 不污染全域變數；必要狀態收在單一 namespace，例如 `window.MotaMiniGames.<game-id>`。
 - 不覆寫核心 API，除非文件明確說明原因。
 - 結束時能完全清理畫面、動畫與輸入。
 - 失敗與取消路徑也會執行清理。
@@ -146,35 +131,4 @@ H5 魔塔的小遊戲 DOM 通常掛在 `core.dom.gameDraw` 裡，而不是整個
 - 重新開始同一小遊戲不會殘留上一局 canvas、timer、listener 或 flag。
 - 開啟瀏覽器 console，確認沒有未捕捉錯誤。
 
-## 事件呼叫範例
-
-目前已有 demo：
-
-- 小遊戲 ID：`ticTacToe`
-- 入口：`core.plugin.startMiniGame("ticTacToe", options, callback)`
-- 正常遊戲入口：起始樓層 `project/floors/mapo_1_1.js` 的劇情選項「玩圈圈叉叉」。
-- 事件用封裝入口：`core.plugin.startTicTacToeDemoEvent()`
-- 關閉目前小遊戲：`core.plugin.closeMiniGame()`
-- 小遊戲本體：`extensions/minigames/ticTacToe.js`
-- 魔塔接回封裝：`project/plugins.js -> Tic_Tac_Toe`
-- 回傳結果：
-  - `result: "win"`：有人獲勝，另有 `winner: "X"` 或 `"O"`。
-  - `result: "draw"`：平手。
-  - `result: "cancel"`：玩家關閉或返回。
-- 魔塔狀態變化：
-  - 寫入 `flag:lastMiniGameResult`。
-  - 寫入 `flag:lastMiniGameScore`。
-  - 有勝者時寫入 `flag:lastMiniGameWinner`，否則清除該 flag。
-  - 勝利時 `status:money += 100`。
-  - 平手時 `status:money += 20`。
-  - 取消時不變更金錢。
-
 測試前請先依 [專案架構與輸出原則](project-overview.md) 的標準流程啟動根目錄 `启动服务.exe`，從 `http://127.0.0.1:1055/index.html` 進入遊戲，再透過遊戲中的選項啟動小遊戲。不要用 URL query 參數、`8765` 或 `python -m http.server` 測小遊戲，否則不是正常遊戲流程，也可能打到其他專案或缺少魔塔樣板服務路由。
-
-事件中可用自定義 JS 呼叫：
-
-```js
-core.plugin.startTicTacToeDemoEvent();
-```
-
-如果事件需要等待小遊戲結束，自定義 JS 事件應選擇「不執行下一個事件」。`core.plugin.startTicTacToeDemoEvent()` 會在 callback 內寫入結果、改變魔塔狀態、插入結果文字，最後呼叫 `core.doAction()` 接續事件流。

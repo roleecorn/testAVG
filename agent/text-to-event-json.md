@@ -13,10 +13,10 @@ bg: intro_bg.jpg
 bgm: opening.mp3
 
 旁白: 雨停了。
-澪@mio_normal.png: 你終於醒了。
-CHOICE 你相信我嗎？
-- 相信 => flag:trust_mio += 1
-- 還不能 => flag:trust_mio -= 1
+表妹@suou_sad_portrait.png: 所以大家到底去哪裡了？
+CHOICE 要相信梗平的直覺嗎？
+- 相信 => flag:trust_suou += 1
+- 還不能 => flag:trust_suou -= 1
 GOTO scene_002
 ```
 
@@ -26,22 +26,22 @@ GOTO scene_002
 [
     {"type": "playBgm", "name": "opening.mp3", "keep": true},
     "\t[旁白]雨停了。",
-    {"type": "showImage", "code": 10, "image": "mio_normal.png", "loc": [32, 36], "opacity": 1, "time": 200},
-    "\t[澪]你終於醒了。",
+    {"type": "showImage", "code": 11, "image": "suou_sad_portrait.png", "loc": [260, 185], "opacity": 1, "time": 200},
+    "\t[表妹]所以大家到底去哪裡了？",
     {
         "type": "choices",
-        "text": "\t[澪]你相信我嗎？",
+        "text": "\t[表妹]要相信梗平的直覺嗎？",
         "choices": [
             {
                 "text": "相信",
                 "action": [
-                    {"type": "setValue", "name": "flag:trust_mio", "operator": "+=", "value": "1"}
+                    {"type": "setValue", "name": "flag:trust_suou", "operator": "+=", "value": "1"}
                 ]
             },
             {
                 "text": "還不能",
                 "action": [
-                    {"type": "setValue", "name": "flag:trust_mio", "operator": "-=", "value": "1"}
+                    {"type": "setValue", "name": "flag:trust_suou", "operator": "-=", "value": "1"}
                 ]
             }
         ]

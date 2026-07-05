@@ -1,6 +1,6 @@
 ﻿# 圖片與立繪
 
-## 3. 如何顯示/隱藏圖片
+## 如何顯示/隱藏圖片
 
 本專案有三種「顯示/隱藏」，不要混用：
 
@@ -17,12 +17,12 @@
     {
         "type": "showImage",
         "code": 1,
-        "image": "mio_normal.png",
-        "loc": [20, 40],
+        "image": "keng_neutral_portrait.png",
+        "loc": [28, 210],
         "opacity": 1,
         "time": 300
     },
-    "\t[澪]我在這裡。",
+    "\t[梗平]我在這裡。",
     {
         "type": "hideImage",
         "code": 1,
@@ -43,8 +43,8 @@
 ```js
 [
     {"type": "hideImage", "code": 1, "time": 150, "async": true},
-    {"type": "showImage", "code": 1, "image": "mio_smile.png", "loc": [20, 40], "opacity": 1, "time": 150},
-    "\t[澪]這樣就好多了。"
+    {"type": "showImage", "code": 1, "image": "keng_smile_portrait.png", "loc": [28, 210], "opacity": 1, "time": 150},
+    "\t[梗平]這樣就好多了。"
 ]
 ```
 

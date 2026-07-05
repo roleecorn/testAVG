@@ -1,6 +1,6 @@
 ﻿# 對話撰寫
 
-## 2. 如何撰寫對話
+## 如何撰寫對話
 
 事件列表是一個陣列；字串就是「顯示文章」。AVG 劇本的日常格式只需要角色名與正文：
 
@@ -13,9 +13,9 @@
 ```js
 [
     "\t[旁白]雨停了，但街燈還在微微發亮。",
-    "\t[澪]你終於醒了。",
-    "\t[悠真]我剛才...在哪裡？",
-    "\t[澪]不要急，先聽我說。"
+    "\t[梗平]這裡是秋葉原。",
+    "\t[表妹]所以大家到底去哪裡了？",
+    "\t[梗平]這正是我要調查的事。"
 ]
 ```
 
@@ -69,20 +69,20 @@ AVG 規範：
 ```js
 {
     "type": "choices",
-    "text": "\t[澪]你相信我嗎？",
+    "text": "\t[表妹]要相信你的直覺嗎？",
     "choices": [
         {
             "text": "相信",
             "action": [
-                {"type": "setValue", "name": "flag:trust_mio", "operator": "+=", "value": "1"},
-                "\t[澪]謝謝你。"
+                {"type": "setValue", "name": "flag:trust_suou", "operator": "+=", "value": "1"},
+                "\t[表妹]那就先照你說的走。"
             ]
         },
         {
             "text": "還不能",
             "action": [
-                {"type": "setValue", "name": "flag:trust_mio", "operator": "-=", "value": "1"},
-                "\t[澪]我明白。"
+                {"type": "setValue", "name": "flag:trust_suou", "operator": "-=", "value": "1"},
+                "\t[表妹]我就知道不能太相信你。"
             ]
         }
     ]

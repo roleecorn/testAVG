@@ -1,7 +1,5 @@
 ﻿# AI 撰寫檢查清單
 
-## AI 撰寫檢查清單
-
 - 新樓層檔名、`floorId`、`main.floors.<id>` 三者一致。
 - 新樓層 ID 已加入 `project/data.js -> main.floorIds`。
 - 新圖片已放入 `project/images` 並加入 `main.images`。
@@ -16,4 +14,6 @@
 - 劇情分支用 `flag:xxx`；單點一次性狀態用 `switch:A`；跨存檔解鎖用 `global:xxx`。
 - 搜尋 Flag 時使用事件編輯器的「變量出現位置搜索」，搜尋 `flag:xxx`。
 - AVG 場景若不需要地圖玩法，`map` 全填 `0`，背景交給樓層貼圖或 `showImage`。
+- 獨立小遊戲本體放在 `extensions/minigames/`；`project/plugins.js` 只做載入、事件入口與結果回寫。
+- 小遊戲必須從標準服務 `启动服务.exe` 啟動後，在遊戲事件流程中測試，不用 `8765` 或 `python -m http.server` 當作預設測試方式。
 
