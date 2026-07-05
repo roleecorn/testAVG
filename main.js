@@ -735,6 +735,15 @@ main.prototype.listen = function () {
         if (main.core.isPlaying()) main.core.openBook(true);
     };
 
+    var openTimelineFromToolbar = function () {
+        if (!main.core || !main.core.isPlaying()) return false;
+        if (!main.core.plugin || !main.core.plugin.openTimeline) return false;
+        main.core.plugin.openTimeline("project/timeline.json", {
+            source: "toolbar"
+        });
+        return true;
+    };
+
     ////// 点击状态栏中的楼层传送器/装备栏时 //////
     main.statusBar.image.fly.onclick = function (e) {
         e.stopPropagation();
@@ -745,6 +754,7 @@ main.prototype.listen = function () {
             return;
         }
 
+        if (openTimelineFromToolbar()) return;
         if (main.core.isPlaying()) {
             if (!main.core.flags.equipboxButton) {
                 main.core.useFly(true);

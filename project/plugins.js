@@ -1688,6 +1688,23 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 		var timelineLoadingCallbacks = [];
 		var timelineLoading = false;
 
+		function keepFlyIconEnabledForTimeline() {
+			if (!core.control || !core.control._updateStatusBar_setToolboxIcon) return;
+			if (core.control._timelineFlyIconPatched) return;
+			var original = core.control._updateStatusBar_setToolboxIcon;
+			core.control._updateStatusBar_setToolboxIcon = function () {
+				original.apply(this, arguments);
+				if (core.isReplaying() || core.flags.equipboxButton) return;
+				if (!core.statusBar || !core.statusBar.image || !core.statusBar.image.fly) return;
+				core.statusBar.image.fly.src = core.statusBar.icons.fly.src;
+				core.statusBar.image.fly.style.opacity = 1;
+				core.statusBar.image.fly.title = "時間線";
+			};
+			core.control._timelineFlyIconPatched = true;
+		}
+
+		keepFlyIconEnabledForTimeline();
+
 		function getTimeline() {
 			return window.MotaTimeline;
 		}
