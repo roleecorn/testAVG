@@ -37,6 +37,7 @@ function main() {
         logoLabel: document.getElementById('logoLabel'),
         versionLabel: document.getElementById('versionLabel'),
         floorNameLabel: document.getElementById('floorNameLabel'),
+        floorTransitionVideo: document.getElementById('floorTransitionVideo'),
         statusBar: document.getElementById('statusBar'),
         status: document.getElementsByClassName('status'),
         toolBar: document.getElementById('toolBar'),
@@ -269,6 +270,7 @@ main.prototype.init = function (mode, callback) {
                     'animates',
                     'bgms',
                     'sounds',
+                    'videos',
                     'floorIds',
                     'floors',
                     'floorPartitions'

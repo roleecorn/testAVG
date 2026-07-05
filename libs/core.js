@@ -26,6 +26,7 @@ function core () {
         'images': {},
         'bgms': {},
         'sounds': {},
+        'videos': {},
         'items': {},
         'enemys': {},
         'icons': {},

@@ -55,6 +55,7 @@ fabric.properties
 
 
 node_modules
+.tools/
 
 _saves
 dist

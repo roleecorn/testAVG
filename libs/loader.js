@@ -37,7 +37,9 @@ loader.prototype._load_sync = function (callback) {
     core.loader._loadMaterials_sync(function () {
         core.loader._loadExtraImages_sync(function () {
             core.loader._loadAutotiles_sync(function () {
-                core.loader._loadTilesets_sync(callback);
+                core.loader._loadTilesets_sync(function () {
+                    core.loader._loadVideos_sync(callback);
+                });
             })
         })
     });
@@ -87,6 +89,7 @@ loader.prototype._load_async = function (callback) {
     this._loadExtraImages_async(_makeOnProgress('images'), _makeOnFinished('images'));
     this._loadAutotiles_async(_makeOnProgress('autotiles'), _makeOnFinished('autotiles'));
     this._loadTilesets_async(_makeOnProgress('tilesets'), _makeOnFinished('tilesets'));
+    this._loadVideos_async(_makeOnProgress('videos'), _makeOnFinished('videos'));
 }
 
 // ----- 加载资源文件 ------ //
@@ -215,6 +218,59 @@ loader.prototype._loadTilesets_afterLoad = function () {
             console.warn("警告！" + imgName + "上的图块素材个数大于3000！");
         }
     }
+}
+
+// ------ 加载视频素材 ------ //
+
+loader.prototype._loadVideos_sync = function (callback) {
+    this._setStartLoadTipText("正在加载视频文件...");
+    this.loadVideos(core.videos, callback);
+}
+
+loader.prototype._loadVideos_async = function (onprogress, onfinished) {
+    this.loadVideos(core.videos, onfinished, onprogress);
+}
+
+loader.prototype.loadVideos = function (names, callback, onprogress) {
+    core.material.videos = {};
+    if (!names || names.length == 0) {
+        if (onprogress) onprogress(0, 0);
+        if (callback) callback();
+        return;
+    }
+
+    var loaded = 0, total = names.length;
+    var finishOne = function (name, video) {
+        if (core.material.videos[name] !== undefined) return;
+        core.material.videos[name] = video || null;
+        loaded++;
+        core.loader._setStartLoadTipText('正在加载视频 ' + name + "...");
+        core.loader._setStartProgressVal(loaded * (100 / total));
+        if (onprogress) onprogress(loaded, total);
+        if (loaded == total && callback) callback();
+    };
+
+    names.forEach(function (name) {
+        var video = document.createElement('video');
+        var done = false;
+        var finish = function (result) {
+            if (done) return;
+            done = true;
+            video.oncanplaythrough = null;
+            video.onloadeddata = null;
+            video.onerror = null;
+            finishOne(name, result ? video : null);
+        };
+        video.preload = 'auto';
+        video.muted = true;
+        video.playsInline = true;
+        video.oncanplaythrough = function () { finish(true); };
+        video.onloadeddata = function () { finish(true); };
+        video.onerror = function () { finish(false); };
+        video.src = 'project/videos/' + name + "?v=" + main.version;
+        video.load();
+        window.setTimeout(function () { finish(video.readyState >= 2); }, 5000);
+    });
 }
 
 // ------ 实际加载一系列图片 ------ //

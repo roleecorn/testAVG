@@ -81,6 +81,9 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"shop.mp3",
 			"zone.mp3"
 		],
+		"videos": [
+			"floor-transition.mp4"
+		],
 		"fonts": [],
 		"nameMap": {
 			"确定": "confirm.mp3",

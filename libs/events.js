@@ -784,6 +784,9 @@ events.prototype._changeFloor_getHeroLoc = function (floorId, stair, heroLoc) {
 
 events.prototype._changeFloor_beforeChange = function (info, callback) {
     this._changeFloor_playSound();
+    if (this._changeFloor_startVideoTransition(info, function () {
+        core.events._changeFloor_changing(info, callback);
+    })) return;
     // 需要 setTimeout 执行，不然会出错
     window.setTimeout(function () {
         if (info.time == 0)
@@ -805,6 +808,82 @@ events.prototype._changeFloor_playSound = function () {
         core.playSound('上下楼');
 }
 
+events.prototype._changeFloor_startVideoTransition = function (info, onCovered) {
+    if (info.time == 0 || main.mode != 'play' || core.isReplaying()) return false;
+    var group = core.dom.floorMsgGroup;
+    var video = document.getElementById('floorTransitionVideo');
+    if (!group || !video || !video.querySelector('source')) return false;
+
+    var state = core.status.__floorTransitionVideo__ = {
+        group: group,
+        video: video,
+        covered: false,
+        finished: false,
+        finishCallback: null,
+        coverTimer: null,
+        finishTimer: null
+    };
+
+    var cleanup = function () {
+        window.clearTimeout(state.coverTimer);
+        window.clearTimeout(state.finishTimer);
+        video.onended = null;
+        video.onerror = null;
+        video.onloadedmetadata = null;
+        video.pause();
+        group.classList.remove('floor-video-transition');
+        group.style.display = 'none';
+        group.style.opacity = 0;
+        core.status.__floorTransitionVideo__ = null;
+    };
+
+    var cover = function () {
+        if (state.covered) return;
+        state.covered = true;
+        onCovered();
+    };
+
+    var finish = function () {
+        if (state.finished) return;
+        state.finished = true;
+        if (!state.covered) cover();
+        var finishCallback = state.finishCallback;
+        cleanup();
+        if (finishCallback) finishCallback();
+    };
+
+    var schedule = function () {
+        window.clearTimeout(state.coverTimer);
+        window.clearTimeout(state.finishTimer);
+        var duration = isFinite(video.duration) && video.duration > 0 ? video.duration * 1000 : 2200;
+        var coverDelay = Math.max(350, Math.min(duration * 0.5, 1500));
+        state.coverTimer = window.setTimeout(cover, coverDelay);
+        state.finishTimer = window.setTimeout(finish, Math.max(duration + 250, coverDelay + 500));
+    };
+
+    group.classList.add('floor-video-transition');
+    group.style.display = 'block';
+    group.style.opacity = 1;
+    video.muted = true;
+    video.playsInline = true;
+    video.onended = finish;
+    video.onerror = finish;
+    video.onloadedmetadata = schedule;
+    try {
+        video.currentTime = 0;
+    } catch (e) {
+    }
+
+    var played = video.play();
+    schedule();
+    if (played && played.catch) {
+        played.catch(function () {
+            finish();
+        });
+    }
+    return true;
+}
+
 events.prototype._changeFloor_changing = function (info, callback) {
     this.changingFloor(info.floorId, info.heroLoc);
     // 回归视角
@@ -815,6 +894,12 @@ events.prototype._changeFloor_changing = function (info, callback) {
 
     if (info.time == 0)
         this._changeFloor_afterChange(info, callback);
+    else if (core.status.__floorTransitionVideo__) {
+        var state = core.status.__floorTransitionVideo__;
+        state.finishCallback = function () {
+            core.events._changeFloor_afterChange(info, callback);
+        };
+    }
     else
         core.hideWithAnimate(core.dom.floorMsgGroup, info.time / 4, function () {
             core.events._changeFloor_afterChange(info, callback);
