@@ -513,14 +513,13 @@
 		var heroLoc = { x: loc[0], y: loc[1], direction: node.direction || "up" };
 		this.destroy({ result: "changeFloor", floorId: node.floorId });
 		if (core.status.event && core.status.event.id === "action") {
-			core.insertAction({
+			core.events.startEvents([{
 				"type": "changeFloor",
 				"floorId": node.floorId,
 				"loc": loc,
 				"direction": node.direction || "up",
 				"time": node.time
-			});
-			core.doAction();
+			}]);
 			return;
 		}
 		core.changeFloor(node.floorId, null, heroLoc, node.time, function () {

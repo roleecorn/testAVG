@@ -231,7 +231,8 @@
     ],
     "width": 13,
     "height": 13,
-    "firstArrive": [
+    "firstArrive": [],
+    "eachArrive": [
         {
             "type": "setText",
             "position": "down",
@@ -628,7 +629,6 @@
             "norank": true
         }
     ],
-    "eachArrive": [],
     "parallelDo": "",
     "events": {},
     "changeFloor": {},

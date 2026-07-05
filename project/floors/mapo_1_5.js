@@ -231,7 +231,8 @@
     ],
     "width": 13,
     "height": 13,
-    "firstArrive": [
+    "firstArrive": [],
+    "eachArrive": [
         {
             "type": "setText",
             "position": "down",
@@ -627,10 +628,8 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]隨後，一碗紅色的、看起來很不妙的麻婆豆腐被端了上來。"
-    ],
-    "eachArrive": [
-        {
+        "\t[旁白]隨後，一碗紅色的、看起來很不妙的麻婆豆腐被端了上來。",
+{
             "type": "choices",
             "text": "\t[旁白]面對特製麻婆豆腐，梗平決定？",
             "choices": [

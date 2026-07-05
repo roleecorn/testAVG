@@ -66,5 +66,7 @@ main.floors.scene_intro =
 
 `floorId`、檔名、`main.floors.<floorId>` 必須一致。`width/height` 必須符合 `map` 的列數與每列長度。AVG 若只靠背景圖，可固定使用 13x13。
 
+AVG 故事劇情、章節劇情、場景演出一律寫在 `eachArrive`。`firstArrive` 目前不要放故事，只保留給未來明確需要整個存檔只執行一次的指導規則或初始化功能。
+
 在編輯器中新增樓層：資料區切到「地圖編輯」後使用「新建空白地圖」。儲存後編輯器會建立樓層檔並更新 `main.floorIds`。
 

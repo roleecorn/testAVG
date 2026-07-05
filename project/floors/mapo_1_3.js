@@ -231,7 +231,8 @@
     ],
     "width": 13,
     "height": 13,
-    "firstArrive": [
+    "firstArrive": [],
+    "eachArrive": [
         {
             "type": "setText",
             "position": "down",
@@ -430,10 +431,8 @@
             "opacity": 1,
             "time": 0
         },
-        "\t[表妹]你的良心不會痛嗎？"
-    ],
-    "eachArrive": [
-        {
+        "\t[表妹]你的良心不會痛嗎？",
+{
             "type": "choices",
             "text": "\t[旁白]倉庫區的門都緊閉著。要怎麼做？",
             "choices": [
