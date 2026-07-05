@@ -1684,6 +1684,64 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			});
 		}
 	},
+	"Timeline": function () {
+		var timelineLoadingCallbacks = [];
+		var timelineLoading = false;
+
+		function getTimeline() {
+			return window.MotaTimeline;
+		}
+
+		function loadTimeline(callback) {
+			if (getTimeline()) {
+				callback();
+				return;
+			}
+			timelineLoadingCallbacks.push(callback);
+			if (timelineLoading) return;
+			timelineLoading = true;
+
+			var script = document.createElement("script");
+			script.src = "extensions/timeline.js?v=" + Date.now();
+			script.onload = function () {
+				timelineLoading = false;
+				var callbacks = timelineLoadingCallbacks.slice();
+				timelineLoadingCallbacks = [];
+				callbacks.forEach(function (one) { one(); });
+			};
+			script.onerror = function () {
+				timelineLoading = false;
+				var callbacks = timelineLoadingCallbacks.slice();
+				timelineLoadingCallbacks = [];
+				callbacks.forEach(function (one) { one(new Error("loadTimelineFailed")); });
+			};
+			document.body.appendChild(script);
+		}
+
+		this.openTimeline = function (jsonPath, options, callback) {
+			jsonPath = jsonPath || "project/timeline.json";
+			options = options || {};
+			loadTimeline(function (error) {
+				if (error || !getTimeline()) {
+					core.playSound("error.mp3");
+					core.drawTip("時間線讀取失敗");
+					if (callback) callback({ result: "error", reason: "loadFailed" });
+					return;
+				}
+				getTimeline().open(jsonPath, options, callback);
+			});
+			return true;
+		}
+
+		this.openTimelineDemoEvent = function () {
+			this.openTimeline("project/timeline.json", {}, function (result) {
+				if (!result || result.result === "cancel") {
+					core.insertAction({ "type": "update" });
+					core.doAction();
+				}
+			});
+		}
+	},
 	"hotReload": function () {
 		/* ---------- 功能说明 ---------- *
 

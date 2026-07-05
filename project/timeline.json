@@ -1,0 +1,60 @@
+{
+	"title": "章節時間線",
+	"subtitle": "麻婆豆腐篇",
+	"defaultLoc": [6, 10],
+	"defaultDirection": "up",
+	"changeFloorTime": 500,
+	"nodeGap": 188,
+	"laneGap": 126,
+	"chapterPadding": 72,
+	"chapters": [
+		{
+			"id": "mapo",
+			"title": "麻婆豆腐篇",
+			"nodes": [
+				{
+					"id": "mapo_1_1",
+					"title": "1-1 車站",
+					"floorId": "mapo_1_1",
+					"image": "scene_station.png",
+					"alwaysUnlocked": true,
+					"next": "mapo_1_2"
+				},
+				{
+					"id": "mapo_1_2",
+					"title": "1-2 街道",
+					"floorId": "mapo_1_2",
+					"image": "scene_street.png",
+					"next": "mapo_1_3"
+				},
+				{
+					"id": "mapo_1_3",
+					"title": "1-3 道路",
+					"floorId": "mapo_1_3",
+					"image": "scene_road.png",
+					"next": "mapo_1_4"
+				},
+				{
+					"id": "mapo_1_4",
+					"title": "1-4 賽場",
+					"floorId": "mapo_1_4",
+					"image": "scene_tournament.png",
+					"next": "mapo_1_5"
+				},
+				{
+					"id": "mapo_1_5",
+					"title": "1-5 店鋪",
+					"floorId": "mapo_1_5",
+					"image": "scene_mapo_shop.png",
+					"next": "mapo_1_6"
+				},
+				{
+					"id": "mapo_1_6",
+					"title": "1-6 結尾",
+					"floorId": "mapo_1_6",
+					"image": "scene_mapo_cg.png"
+				}
+			]
+		}
+	]
+}
