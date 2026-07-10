@@ -11,7 +11,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"mapo_1_3",
 			"mapo_1_4",
 			"mapo_1_5",
-			"mapo_1_6"
+			"mapo_1_6",
+			"Akiba"
 		],
 		"floorPartitions": [],
 		"images": [
@@ -48,7 +49,9 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"winskin.png"
 		],
 		"tilesets": [
-			"magictower.png"
+			"magictower.png",
+			"025-Castle01.png",
+			"sprites_32x32_unit_sheet.png"
 		],
 		"animates": [
 			"hand",
