@@ -142,6 +142,46 @@ var events_c12a15a8_c380_4b28_8144_256cba95f760 =
 					}
 				]
 			}
+		],
+		"Akiba地點互動": [
+			{
+				"type": "comment",
+				"text": "秋葉原地點事件入口。arg1=x, arg2=y, arg3=floorId, arg4=blockId, arg5=placeName。"
+			},
+			{
+				"type": "setValue",
+				"name": "flag:akiba_last_x",
+				"operator": "=",
+				"value": "flag:arg1"
+			},
+			{
+				"type": "setValue",
+				"name": "flag:akiba_last_y",
+				"operator": "=",
+				"value": "flag:arg2"
+			},
+			{
+				"type": "setValue",
+				"name": "flag:akiba_last_floorId",
+				"operator": "=",
+				"value": "flag:arg3"
+			},
+			{
+				"type": "setValue",
+				"name": "flag:akiba_last_blockId",
+				"operator": "=",
+				"value": "flag:arg4"
+			},
+			{
+				"type": "setValue",
+				"name": "flag:akiba_last_placeName",
+				"operator": "=",
+				"value": "flag:arg5"
+			},
+			{
+				"type": "function",
+				"function": "function () {\n\tvar x = core.getFlag('arg1', core.getHeroLoc('x'));\n\tvar y = core.getFlag('arg2', core.getHeroLoc('y'));\n\tvar name = core.getFlag('arg5', '秋葉原地點');\n\tcore.drawTip(name + '：(' + x + ', ' + y + ')');\n}"
+			}
 		]
 	}
 }
