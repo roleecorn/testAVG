@@ -68,7 +68,21 @@ main.floors.mystery_girl_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 12,
+            "image": "huangmo_smile.png",
+            "loc": [260,185],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[???]您好，請問今天要來點什麼呢?",
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -84,7 +98,21 @@ main.floors.mystery_girl_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 12,
+            "image": "huangmo_surprised.png",
+            "loc": [260,185],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[???]啊...",
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -101,7 +129,21 @@ main.floors.mystery_girl_2=
             "async": true
         },
         "梗平被摀住了嘴。",
+        {
+            "type": "showImage",
+            "code": 12,
+            "image": "huangmo_angry.png",
+            "loc": [260,185],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[???]不要亂說話。",
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -117,7 +159,21 @@ main.floors.mystery_girl_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 12,
+            "image": "huangmo_smile.png",
+            "loc": [260,185],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[???]客人您要來點什麼呢?(下班後再來說)",
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
         "梗平度過了一個難受的午餐。",
         "......",
         {

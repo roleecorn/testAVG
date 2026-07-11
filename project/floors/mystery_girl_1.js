@@ -70,7 +70,21 @@ main.floors.mystery_girl_1=
             "async": true
         },
         "梗平伸出了手，但卻在半空中與另外一隻手碰觸了。",
+        {
+            "type": "showImage",
+            "code": 12,
+            "image": "huangmo_surprised.png",
+            "loc": [260,185],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[???]咦?",
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 10,

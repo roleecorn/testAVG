@@ -7,7 +7,8 @@ The expected order is:
     sad   / happy
     surprised / panic
 
-Each grid cell is cropped inward by a small inset to avoid colored borders.
+Each grid cell is cropped inward by a small inset to avoid colored borders,
+then resized proportionally to fit within a fixed maximum size.
 Output files are written next to the source image as:
 <original_stem>_<emotion><original_suffix>
 
@@ -30,7 +31,11 @@ EMOTIONS = (
 
 
 def split_emotion_sheet(
-    image_path: Path, keep_original: bool = False, inset: int = 10
+    image_path: Path,
+    keep_original: bool = False,
+    inset: int = 10,
+    max_width: int = 195,
+    max_height: int = 195,
 ) -> list[Path]:
     image_path = image_path.expanduser().resolve()
     if not image_path.is_file():
@@ -51,6 +56,10 @@ def split_emotion_sheet(
             raise ValueError(
                 f"Inset {inset} is too large for tile size {tile_width}x{tile_height}."
             )
+        if max_width <= 0 or max_height <= 0:
+            raise ValueError(
+                f"Max size must be positive, got {max_width}x{max_height}."
+            )
 
         outputs: list[Path] = []
 
@@ -61,6 +70,7 @@ def split_emotion_sheet(
                 right = (col + 1) * tile_width - inset
                 lower = (row + 1) * tile_height - inset
                 crop = image.crop((left, upper, right, lower))
+                crop.thumbnail((max_width, max_height), Image.Resampling.LANCZOS)
                 output_path = image_path.with_name(
                     f"{image_path.stem}_{emotion}{image_path.suffix}"
                 )
@@ -89,13 +99,29 @@ def parse_args() -> argparse.Namespace:
         default=10,
         help="Pixels to crop inward from each side of every tile. Defaults to 10.",
     )
+    parser.add_argument(
+        "--max-width",
+        type=int,
+        default=195,
+        help="Maximum output width while preserving aspect ratio. Defaults to 195.",
+    )
+    parser.add_argument(
+        "--max-height",
+        type=int,
+        default=195,
+        help="Maximum output height while preserving aspect ratio. Defaults to 195.",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
     outputs = split_emotion_sheet(
-        args.image, keep_original=args.keep_original, inset=args.inset
+        args.image,
+        keep_original=args.keep_original,
+        inset=args.inset,
+        max_width=args.max_width,
+        max_height=args.max_height,
     )
     for output in outputs:
         print(output)
