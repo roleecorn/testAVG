@@ -1,0 +1,106 @@
+main.floors.lei_1=
+{
+    "floorId": "lei_1",
+    "title": "倉庫警告",
+    "name": "倉庫警告",
+    "canFlyTo": false,
+    "canFlyFrom": false,
+    "canUseQuickShop": false,
+    "cannotViewMap": true,
+    "defaultGround": "ground",
+    "images": [
+        {
+            "name": "scene_street.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "bgm": "bgm.mp3",
+    "ratio": 1,
+    "map": [
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    "width": 13,
+    "height": 13,
+    "firstArrive": [],
+    "eachArrive": [
+        {
+            "type": "setText",
+            "position": "down",
+            "offset": 8,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [255,225,80,1],
+            "text": [255,255,255,1],
+            "titlefont": 22,
+            "textfont": 20,
+            "lineHeight": 30,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {"type": "hideImage", "code": 10, "time": 0, "async": true},
+        {"type": "hideImage", "code": 13, "time": 0, "async": true},
+        {"type": "showImage", "code": 13, "image": "lei_angry.png", "loc": [220,185], "opacity": 1, "time": 0},
+        "\t[累]喂！那邊的小哥，閒雜人等禁止進入！",
+        {"type": "hideImage", "code": 13, "time": 0, "async": true},
+        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        "\t[梗平]不好意思，立刻就走",
+        {"type": "hideImage", "code": 10, "time": 0, "async": true},
+        {"type": "showImage", "code": 13, "image": "lei_surprised.png", "loc": [220,185], "opacity": 1, "time": 0},
+        "\t[累]真是的……嗯？",
+        {"type": "hideImage", "code": 13, "time": 0, "async": true},
+        "累仔細端詳了梗平的臉。",
+        {"type": "showImage", "code": 13, "image": "lei_surprised.png", "loc": [220,185], "opacity": 1, "time": 0},
+        "\t[累]小哥，你是不是有來過這邊？",
+        {"type": "hideImage", "code": 13, "time": 0, "async": true},
+        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        "\t[梗平]沒……沒有",
+        {"type": "hideImage", "code": 10, "time": 0, "async": true},
+        {"type": "showImage", "code": 13, "image": "lei_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
+        "\t[累]真是彆腳的謊話",
+        "\t[累]小哥，你先休息個一天，明天再過來我這，一定要過來，為了你好",
+        {"type": "hideImage", "code": 13, "time": 0, "async": true},
+        {"type": "showImage", "code": 10, "image": "keng_neutral_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        "\t[梗平]噢……",
+        {"type": "hideImage", "code": 10, "time": 0, "async": true},
+        {
+            "type": "function",
+            "function": "function () {\n\tcore.plugin.completeAkibaEvent('lei_1');\n}"
+        },
+        {
+            "type": "function",
+            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"lei_2\",\n\t\t\"title\": \"退魔邀約\",\n\t\t\"locations\": [\"warehouse_district\"],\n\t\t\"floorId\": \"lei_2\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+            "type": "function",
+            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+    ],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": []
+}

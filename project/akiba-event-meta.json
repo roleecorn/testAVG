@@ -14,6 +14,13 @@
       "locations": ["convenience_24h"],
       "floorId": "yuedu_ai_1",
       "once": true
+    },
+    {
+      "id": "lei_1",
+      "title": "倉庫警告",
+      "locations": ["warehouse_district"],
+      "floorId": "lei_1",
+      "once": true
     }
   ]
 }
