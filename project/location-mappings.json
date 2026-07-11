@@ -4,7 +4,7 @@
       "commonEvent": "Akiba地點互動",
       "locations": [
         { "id": "kaidan_cave", "name": "紅色的洋館", "rects": [[0, 0, 3, 2]] },
-        { "id": "apple_store", "name": "Apple", "rects": [[4, 0, 2, 2]] },
+        { "id": "hotel", "name": "旅館", "rects": [[4, 0, 2, 2]] },
         { "id": "used_bookstore", "name": "古書店", "rects": [[6, 0, 2, 2]] },
         { "id": "warehouse_district", "name": "倉庫區", "rects": [[9, 0, 2, 2]] },
         { "id": "elevated_train", "name": "車站", "rects": [[12, 0, 1, 10]] },
