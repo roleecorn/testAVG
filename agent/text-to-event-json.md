@@ -22,10 +22,12 @@ GOTO scene_002
 
 事件輸出範例。所有故事劇情、章節劇情、場景演出都應放進樓層的 `eachArrive`。`firstArrive` 目前不放故事，只保留給未來明確需要整個存檔只執行一次的指導規則或初始化功能。
 
+文字稿中的 `旁白:` 是敘述標記，不是發言者。轉成 scene / event JSON 時要省略發言對象，輸出成普通文字字串；不要寫成 `"\t[旁白]正文"`。
+
 ```js
 [
     {"type": "playBgm", "name": "opening.mp3", "keep": true},
-    "\t[旁白]雨停了。",
+    "雨停了。",
     {"type": "showImage", "code": 11, "image": "suou_sad_portrait.png", "loc": [260, 185], "opacity": 1, "time": 200},
     "\t[表妹]所以大家到底去哪裡了？",
     {

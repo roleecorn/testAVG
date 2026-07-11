@@ -11,6 +11,22 @@
 5. 新增或調整獨立小遊戲時看 [小遊戲新增與接入指南](agent/minigame-integration.md)。
 6. 交付前用 [AI 撰寫檢查清單](agent/checklist.md) 檢查。
 
+## 編碼規則
+
+多數 Markdown 與文字檔使用繁體中文、UTF-8 編碼。不要用 PowerShell 預設解碼讀取 Markdown 或其他文字檔；必須明確指定 UTF-8：
+
+```powershell
+Get-Content <path> -Encoding UTF8
+```
+
+若中文顯示為亂碼，先改用明確 UTF-8 或 Python 重新確認：
+
+```powershell
+python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='utf-8'))"
+```
+
+不要把 PowerShell 預設解碼造成的亂碼當成可信內容，也不要根據不可讀的亂碼修改檔案。
+
 ## 功能區塊
 
 - [專案架構與輸出原則](agent/project-overview.md)

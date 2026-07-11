@@ -132,7 +132,7 @@ core.plugin.returnToAkiba()
 3. 呼叫 `core.plugin.initAkibaEventState()`。
 4. 呼叫 `core.plugin.getActiveAkibaEventsAtLocation(flag:akiba_last_locationId)`。
 5. 如果目前地點沒有可觸發事件：
-   - 顯示 `"\t[旁白]是${flag:akiba_last_placeName}啊，該做什麼呢?"`
+   - 顯示 `"是${flag:akiba_last_placeName}啊，該做什麼呢?"`
    - 可先只提供「離開」或直接結束。
 6. 如果目前地點有可觸發事件：
    - 顯示選項列表。
@@ -144,7 +144,7 @@ core.plugin.returnToAkiba()
 ```js
 {
   "type": "choices",
-  "text": "\t[旁白]是${flag:akiba_last_placeName}啊，該做什麼呢?",
+  "text": "是${flag:akiba_last_placeName}啊，該做什麼呢?",
   "choices": [
     {
       "text": "好感度1：書店邂逅",
@@ -186,7 +186,7 @@ core.plugin.returnToAkiba()
 - 劇情全部寫在 `eachArrive`。
 - 開頭先設定 `setText`，使用下方 AVG 文字框。
 - 普通台詞使用 `"\t[角色]正文"`。
-- 旁白使用 `"\t[旁白]正文"`。
+- 旁白是敘述標記，不是發言者；轉成 scene/event JSON 時直接寫正文，不要輸出成 `"\t[旁白]正文"`。
 - 範例劇本中的無角色敘述，例如「梗平伸出了手...」，轉成旁白。
 - 劇情結束前呼叫 `core.plugin.completeAkibaEvent(eventId)`。
 - 完成後切回 Akiba，可用 `core.plugin.returnToAkiba()` 或事件指令 `changeFloor` 搭配保存座標。
@@ -213,10 +213,10 @@ core.plugin.returnToAkiba()
   },
   "\t[梗平]每個月發行的親熱天堂，就算來了秋葉原還是得買的♪",
   "\t[梗平]找到了!就剩下最後一本了!",
-  "\t[旁白]梗平伸出了手，但卻在半空中與另外一隻手碰觸了。",
+  "梗平伸出了手，但卻在半空中與另外一隻手碰觸了。",
   "\t[???]咦?",
   "\t[梗平]在書店與美少女邂逅...真是美妙的展開，咦不過是黃書...",
-  "\t[旁白]梗平回過神來才發現，那個少女已經紅著臉逃跑了。",
+  "梗平回過神來才發現，那個少女已經紅著臉逃跑了。",
   "\t[梗平]...不必逃得這麼快吧(垂頭喪氣)",
   {
     "type": "function",

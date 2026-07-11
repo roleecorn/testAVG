@@ -29,7 +29,7 @@
 文字中顯示：
 
 ```js
-"\t[旁白]表妹的信任值是 ${flag:trust_suou}。"
+"表妹的信任值是 ${flag:trust_suou}。"
 ```
 
 ### 局部 Flag：獨立開關
