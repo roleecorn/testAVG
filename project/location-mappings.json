@@ -20,9 +20,10 @@
         { "id": "shrine", "name": "神社", "rects": [[0, 11, 2, 2]] },
         { "id": "housing_complex", "name": "公寓", "rects": [[2, 11, 2, 2]] },
         { "id": "convenience_24h", "name": "羅森便利店", "cells": [[4, 11], [5, 11]] },
-        { "id": "tent", "name": "帳篷", "cells": [[6, 11]] },
+        { "id": "tent", "name": "帳篷", "cells": [[12, 11]] },
         { "id": "restaurant", "name": "家庭餐廳", "rects": [[8, 11, 2, 2]] },
-        { "id": "blue_bookstore", "name": "書店A", "rects": [[10, 11, 2, 2]] }
+        { "id": "blue_bookstore", "name": "書店A", "rects": [[10, 11, 2, 2]] },
+        { "id": "rabbit_house", "name": "炭烤蜜瓜兔子", "rects": [[6, 11, 2, 2]] }
       ]
     }
   }
