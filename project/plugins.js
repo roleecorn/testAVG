@@ -77,20 +77,94 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			return (fgmap[y] && fgmap[y][x]) || (map[y] && map[y][x]) || 0;
 		}
 
-		this.triggerLocationInteractionAt = function (floorId, x, y) {
+		this._isValidLocationRestoreLoc = function (floorId, loc) {
+			if (!loc) return false;
+			var floor = ((core.status.maps || {})[floorId] || core.floors[floorId] || {});
+			return loc.floorId === floorId
+				&& loc.x >= 0 && loc.y >= 0
+				&& loc.x < (floor.width || 0) && loc.y < (floor.height || 0);
+		}
+
+		this.recordAkibaPreMoveLocation = function (floorId, x, y, direction) {
+			if (floorId !== 'Akiba') return;
+			core.setFlag('akiba_pre_move_floorId', floorId);
+			core.setFlag('akiba_pre_move_x', x);
+			core.setFlag('akiba_pre_move_y', y);
+			core.setFlag('akiba_pre_move_direction', direction || 'down');
+		}
+
+		this._getRecordedAkibaPreMoveLocation = function (floorId) {
+			return {
+				"floorId": core.getFlag('akiba_pre_move_floorId', ''),
+				"x": core.getFlag('akiba_pre_move_x', -1),
+				"y": core.getFlag('akiba_pre_move_y', -1),
+				"direction": core.getFlag('akiba_pre_move_direction', 'down') || 'down'
+			};
+		}
+
+		this._setAkibaLocationRestoreLoc = function (floorId, x, y, restoreLoc) {
+			var loc = restoreLoc || null;
+			if (!this._isValidLocationRestoreLoc(floorId, loc)) {
+				loc = this._getRecordedAkibaPreMoveLocation(floorId);
+			}
+			if (!this._isValidLocationRestoreLoc(floorId, loc)) {
+				var direction = core.getHeroLoc('direction') || 'down';
+				var way = (core.utils.scan2 || {})[direction] || { x: 0, y: 0 };
+				loc = {
+					"floorId": floorId,
+					"x": x - way.x,
+					"y": y - way.y,
+					"direction": direction
+				};
+			}
+			if (!this._isValidLocationRestoreLoc(floorId, loc)) {
+				loc = {
+					"floorId": floorId,
+					"x": x,
+					"y": y,
+					"direction": core.getHeroLoc('direction') || 'down'
+				};
+			}
+			core.setFlag('akiba_restore_floorId', loc.floorId);
+			core.setFlag('akiba_restore_x', loc.x);
+			core.setFlag('akiba_restore_y', loc.y);
+			core.setFlag('akiba_restore_direction', loc.direction || 'down');
+		}
+
+		this.getAkibaLocationRestoreLoc = function () {
+			return {
+				"floorId": core.getFlag('akiba_restore_floorId', 'Akiba') || 'Akiba',
+				"x": core.getFlag('akiba_restore_x', 6),
+				"y": core.getFlag('akiba_restore_y', 10),
+				"direction": core.getFlag('akiba_restore_direction', 'down') || 'down'
+			};
+		}
+
+		this.restoreAkibaHeroAfterLocationInteraction = function () {
+			var loc = this.getAkibaLocationRestoreLoc();
+			core.insertAction({
+				"type": "changePos",
+				"loc": [loc.x, loc.y],
+				"direction": loc.direction
+			});
+		}
+
+		this.triggerLocationInteractionAt = function (floorId, x, y, restoreLoc) {
 			var info = this.getMappedLocationInfo(floorId, x, y);
 			if (!info) return false;
+			this._setAkibaLocationRestoreLoc(floorId, x, y, restoreLoc);
 			var floors = (this._locationMappings || {}).floors || {};
 			var commonEvent = ((floors[floorId] || {}).commonEvent) || 'Akiba地點互動';
 			core.insertCommonEvent(commonEvent, [x, y, floorId, this.getLocationTileNumber(floorId, x, y)]);
 			return true;
 		}
 
-		this.triggerLocationInteractionAtHero = function () {
+		this.triggerLocationInteractionAtHero = function (restoreLoc) {
 			return this.triggerLocationInteractionAt(
 				core.status.floorId,
 				core.getHeroLoc('x'),
-				core.getHeroLoc('y')
+				core.getHeroLoc('y'),
+				restoreLoc
 			);
 		}
 	},
@@ -217,10 +291,11 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			}
 
 			core.setFlag('akiba_selected_event_id', eventId);
-			core.setFlag('akiba_return_floorId', core.status.floorId || 'Akiba');
-			core.setFlag('akiba_return_x', core.getHeroLoc('x'));
-			core.setFlag('akiba_return_y', core.getHeroLoc('y'));
-			core.setFlag('akiba_return_direction', core.getHeroLoc('direction') || 'down');
+			var restoreLoc = core.plugin.getAkibaLocationRestoreLoc();
+			core.setFlag('akiba_return_floorId', restoreLoc.floorId || core.status.floorId || 'Akiba');
+			core.setFlag('akiba_return_x', restoreLoc.x);
+			core.setFlag('akiba_return_y', restoreLoc.y);
+			core.setFlag('akiba_return_direction', restoreLoc.direction || 'down');
 			core.insertAction({
 				"type": "changeFloor",
 				"floorId": event.floorId,
@@ -267,8 +342,8 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 
 		this.returnToAkiba = function () {
 			var floorId = core.getFlag('akiba_return_floorId', 'Akiba') || 'Akiba';
-			var x = core.getFlag('akiba_return_x', 12);
-			var y = core.getFlag('akiba_return_y', 12);
+			var x = core.getFlag('akiba_return_x', 6);
+			var y = core.getFlag('akiba_return_y', 10);
 			var direction = core.getFlag('akiba_return_direction', 'down') || 'down';
 			core.insertAction({
 				"type": "changeFloor",
@@ -287,7 +362,13 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			var text = "\t[旁白]是" + placeName + "啊，該做什麼呢?";
 
 			if (availableEvents.length === 0) {
-				core.insertAction(text);
+				core.insertAction([
+					text,
+					{
+						"type": "function",
+						"function": "function () { core.plugin.restoreAkibaHeroAfterLocationInteraction(); }"
+					}
+				]);
 				return;
 			}
 
@@ -303,7 +384,8 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			choices.push({
 				"text": "離開",
 				"action": [{
-					"type": "exit"
+					"type": "function",
+					"function": "function () { core.plugin.restoreAkibaHeroAfterLocationInteraction(); }"
 				}]
 			});
 			core.insertAction({

@@ -1512,8 +1512,16 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 			if (!hasTrigger)
 				core.trigger(nowx, nowy, callback);
 
-			if (core.plugin && core.plugin.triggerLocationInteractionAtHero)
-				core.plugin.triggerLocationInteractionAtHero();
+			if (core.plugin && core.plugin.triggerLocationInteractionAtHero) {
+				var direction = core.getHeroLoc('direction') || 'down';
+				var way = (core.utils.scan2 || {})[direction] || { x: 0, y: 0 };
+				core.plugin.triggerLocationInteractionAtHero({
+					"floorId": core.status.floorId,
+					"x": nowx - way.x,
+					"y": nowy - way.y,
+					"direction": direction
+				});
+			}
 
 			// 检查该点是否是滑冰
 			if (core.onSki()) {
@@ -1533,6 +1541,15 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 			// 判定能否瞬移到该点
 			if (ignoreSteps == null) ignoreSteps = core.canMoveDirectly(x, y);
 			if (ignoreSteps >= 0) {
+				if (core.plugin && core.plugin.recordAkibaPreMoveLocation) {
+					core.plugin.recordAkibaPreMoveLocation(
+						core.status.floorId,
+						core.getHeroLoc('x'),
+						core.getHeroLoc('y'),
+						core.getHeroLoc('direction') || 'down'
+					);
+				}
+
 				// 中毒也允许瞬移
 				if (core.hasFlag('poison')) {
 					var damage = ignoreSteps * core.values.poisonDamage;

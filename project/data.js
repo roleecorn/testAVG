@@ -229,8 +229,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			},
 			"loc": {
 				"direction": "up",
-				"x": 4,
-				"y": 8
+				"x": 6,
+				"y": 10
 			},
 			"flags": {},
 			"followers": [],
