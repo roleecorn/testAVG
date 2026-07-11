@@ -1,11 +1,18 @@
 {
-  "version": 1,
+  "version": 2,
   "activeEvents": [
     {
       "id": "mystery_girl_1",
       "title": "書店邂逅",
       "locations": ["blue_bookstore", "used_bookstore"],
       "floorId": "mystery_girl_1",
+      "once": true
+    },
+    {
+      "id": "yuedu_ai_1",
+      "title": "酒友初遇",
+      "locations": ["convenience_24h"],
+      "floorId": "yuedu_ai_1",
       "once": true
     }
   ]

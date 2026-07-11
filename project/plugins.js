@@ -254,7 +254,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 
 		this.initAkibaEventState = function () {
 			var meta = this.getAkibaEventMeta();
-			var stateVersion = 2;
+			var stateVersion = 3;
 			if (core.getFlag('akiba_event_state_initialized', false)
 				&& core.getFlag('akiba_event_state_version', 0) === stateVersion) return;
 			this._setAkibaActiveEvents(meta.activeEvents || []);

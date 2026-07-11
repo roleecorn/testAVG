@@ -14,6 +14,10 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"mapo_1_6",
 			"mystery_girl_1",
 			"mystery_girl_2",
+			"yuedu_ai_1",
+			"yuedu_ai_2",
+			"yuedu_ai_3",
+			"yuedu_ai_4",
 			"Akiba"
 		],
 		"floorPartitions": [],
@@ -54,7 +58,14 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"suou_sad_portrait.png",
 			"suou_smile_portrait.png",
 			"suou_surprised_portrait.png",
-			"winskin.png"
+			"winskin.png",
+			"yuedu_angry.png",
+			"yuedu_happy.png",
+			"yuedu_panic.png",
+			"yuedu_sad.png",
+			"yuedu_smile.png",
+			"yuedu_surprised.png",
+			"yuedu.png"
 		],
 		"tilesets": [
 			"magictower.png",
