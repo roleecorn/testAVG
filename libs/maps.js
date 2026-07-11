@@ -794,13 +794,7 @@ maps.prototype.canMoveDirectlyArray = function (locs, canMoveArray) {
 }
 
 maps.prototype._canMoveDirectly_checkGlobal = function () {
-    // 检查全塔是否禁止瞬间移动
-    if (!core.flags.enableMoveDirectly) return false;
-    // 检查该楼层是否不可瞬间移动
-    if (core.status.thisMap.cannotMoveDirectly) return false;
-    // flag:cannotMoveDirectly为true：不能
-    if (core.hasFlag('cannotMoveDirectly')) return false;
-
+    // This project always allows direct click movement; map reachability is checked later.
     return true;
 }
 
@@ -838,7 +832,7 @@ maps.prototype._canMoveDirectly_bfs = function (sx, sy, locs, number, ans, canMo
                 if (locs[i][0] == nx && locs[i][1] == ny && ans[i] == null) {
                     // 不可以绿点为终点
                     var block = blocksObj[nx + "," + ny];
-                    if (block && !block.disable && block.event.trigger) {
+                    if (block && !block.disable && block.event.trigger && !this._canMoveDirectly_passableActionTrigger(block)) {
                         ans[i] = -1;
                     } else {
                         ans[i] = visited[nindex];
@@ -859,12 +853,15 @@ maps.prototype._canMoveDirectly_bfs = function (sx, sy, locs, number, ans, canMo
 
 maps.prototype._canMoveDirectly_checkNextPoint = function (blocksObj, x, y) {
     var index = x + "," + y;
+    if (core.plugin && core.plugin.getMappedLocationInfo
+        && core.plugin.getMappedLocationInfo(core.status.floorId, x, y)) return true;
     var block = blocksObj[index];
     // 该点是否不可通行或有脚本
     if (block && !block.disable && (block.event.noPass || block.event.script || block.event.event))
         return false;
     // 该点是否是绿点可触发
     if (block && !block.disable && block.event.trigger) {
+        if (this._canMoveDirectly_passableActionTrigger(block)) return true;
         if (block.event.trigger != 'changeFloor') return false;
         var ignore = core.flags.ignoreChangeFloor;
         if (block.event.data && block.event.data.ignoreChangeFloor != null)
@@ -878,6 +875,14 @@ maps.prototype._canMoveDirectly_checkNextPoint = function (blocksObj, x, y) {
     if (core.status.checkBlock.ambush[index]) return false;
 
     return true;
+}
+
+maps.prototype._canMoveDirectly_passableActionTrigger = function (block) {
+    return block && !block.disable && block.event
+        && block.event.noPass === false
+        && block.event.trigger == 'action'
+        && !block.event.script
+        && !block.event.event;
 }
 
 ////// 自动寻路找寻最优路径 //////
@@ -1866,6 +1871,9 @@ maps.prototype._drawThumbnail_drawToTarget = function (floorId, options) {
 
 ////// 某个点是否不可通行 //////
 maps.prototype.noPass = function (x, y, floorId) {
+    floorId = floorId || core.status.floorId;
+    if (core.plugin && core.plugin.getMappedLocationInfo
+        && core.plugin.getMappedLocationInfo(floorId, x, y)) return false;
     var block = core.getBlock(x, y, floorId);
     if (block == null) return false;
     return block.event.noPass;

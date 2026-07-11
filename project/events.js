@@ -146,7 +146,10 @@ var events_c12a15a8_c380_4b28_8144_256cba95f760 =
 		"Akiba地點互動": [
 			{
 				"type": "comment",
-				"text": "秋葉原地點事件入口。arg1=x, arg2=y, arg3=floorId, arg4=blockId, arg5=placeName。"
+				"text": "秋葉原地點事件入口。arg1=x, arg2=y, arg3=floorId, arg4=前景層素材編號；店名由 project/location-mappings.json 維護。"
+			},
+			{
+				"type": "waitAsync"
 			},
 			{
 				"type": "setValue",
@@ -174,13 +177,13 @@ var events_c12a15a8_c380_4b28_8144_256cba95f760 =
 			},
 			{
 				"type": "setValue",
-				"name": "flag:akiba_last_placeName",
+				"name": "flag:akiba_last_tileNumber",
 				"operator": "=",
-				"value": "flag:arg5"
+				"value": "flag:arg4"
 			},
 			{
 				"type": "function",
-				"function": "function () {\n\tvar x = core.getFlag('arg1', core.getHeroLoc('x'));\n\tvar y = core.getFlag('arg2', core.getHeroLoc('y'));\n\tvar name = core.getFlag('arg5', '秋葉原地點');\n\tcore.drawTip(name + '：(' + x + ', ' + y + ')');\n}"
+				"function": "function () {\n\tvar x = core.getFlag('arg1', core.getHeroLoc('x'));\n\tvar y = core.getFlag('arg2', core.getHeroLoc('y'));\n\tvar floorId = core.getFlag('arg3', core.status.floorId);\n\tvar info = core.plugin.getLocationInfo(floorId, x, y);\n\tcore.setFlag('akiba_last_locationId', info.id);\n\tcore.setFlag('akiba_last_placeName', info.name);\n\tcore.setFlag('akiba_last_locationInfo', info);\n\tcore.drawTip(info.name + '：(' + x + ', ' + y + ')');\n}"
 			}
 		]
 	}

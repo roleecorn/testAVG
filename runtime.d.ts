@@ -711,7 +711,7 @@ declare class control {
     isMoving(): boolean
 
     /** 瞬间移动 */
-    moveDirectly(destX?: any, destY?: any, ignoreSteps?: any): void
+    moveDirectly(destX?: any, destY?: any, ignoreSteps?: any, callback?: () => void): void
 
     /** 改变勇士的不透明度 */
     setHeroOpacity(opacity?: number, moveMode?: string, time?: any, callback?: () => any): void

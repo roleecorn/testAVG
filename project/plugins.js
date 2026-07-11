@@ -6,6 +6,94 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			// 本函数将在所有资源加载完毕后，游戏开启前被执行
 		}
 	},
+	"locationMappings": function () {
+		this._locationMappings = null;
+		this._locationMappingIndex = null;
+
+		this._loadLocationMappings = function () {
+			if (this._locationMappings != null) return this._locationMappings;
+			this._locationMappings = { "floors": {} };
+			this._locationMappingIndex = {};
+
+			if (typeof XMLHttpRequest == 'undefined') return this._locationMappings;
+			try {
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', 'project/location-mappings.json?v=' + (main.version || Date.now()), false);
+				xhr.overrideMimeType('application/json');
+				xhr.send(null);
+				if (xhr.status != 200 && xhr.status != 0) throw new Error('HTTP ' + xhr.status);
+				this._locationMappings = JSON.parse(xhr.responseText || '{}');
+			} catch (e) {
+				console.error(e);
+				this._locationMappings = { "floors": {} };
+			}
+			this._buildLocationMappingIndex();
+			return this._locationMappings;
+		}
+
+		this._buildLocationMappingIndex = function () {
+			this._locationMappingIndex = {};
+			var floors = (this._locationMappings || {}).floors || {};
+			for (var floorId in floors) {
+				this._locationMappingIndex[floorId] = {};
+				(floors[floorId].locations || []).forEach(function (location) {
+					var cells = location.cells || [];
+					(location.rects || []).forEach(function (rect) {
+						var x = rect[0], y = rect[1], width = rect[2], height = rect[3];
+						for (var dy = 0; dy < height; dy++) {
+							for (var dx = 0; dx < width; dx++) {
+								cells.push((x + dx) + "," + (y + dy));
+							}
+						}
+					});
+					cells.forEach(function (cell) {
+						this._locationMappingIndex[floorId][cell] = {
+							"id": location.id || cell,
+							"name": location.name || location.id || cell
+						};
+					}, this);
+				}, this);
+			}
+		}
+
+		this.getMappedLocationInfo = function (floorId, x, y) {
+			this._loadLocationMappings();
+			var cell = x + "," + y;
+			return ((this._locationMappingIndex || {})[floorId] || {})[cell] || null;
+		}
+
+		this.getLocationInfo = function (floorId, x, y) {
+			var cell = x + "," + y;
+			return this.getMappedLocationInfo(floorId, x, y) || {
+				"id": cell,
+				"name": "未知地點"
+			};
+		}
+
+		this.getLocationTileNumber = function (floorId, x, y) {
+			var floor = ((core.status.maps || {})[floorId] || core.floors[floorId] || {});
+			var fgmap = floor.fgmap || [];
+			var map = floor.map || [];
+			return (fgmap[y] && fgmap[y][x]) || (map[y] && map[y][x]) || 0;
+		}
+
+		this.triggerLocationInteractionAt = function (floorId, x, y) {
+			var info = this.getMappedLocationInfo(floorId, x, y);
+			if (!info) return false;
+			var floors = (this._locationMappings || {}).floors || {};
+			var commonEvent = ((floors[floorId] || {}).commonEvent) || 'Akiba地點互動';
+			core.insertCommonEvent(commonEvent, [x, y, floorId, this.getLocationTileNumber(floorId, x, y)]);
+			return true;
+		}
+
+		this.triggerLocationInteractionAtHero = function () {
+			return this.triggerLocationInteractionAt(
+				core.status.floorId,
+				core.getHeroLoc('x'),
+				core.getHeroLoc('y')
+			);
+		}
+	},
 	"drawLight": function () {
 
 		// 绘制灯光/漆黑层效果。调用方式 core.plugin.drawLight(...)

@@ -561,7 +561,7 @@ control.prototype._setAutomaticRoute_isTurning = function (destX, destY, stepPos
 control.prototype._setAutomaticRoute_clickMoveDirectly = function (destX, destY, stepPostfix) {
     // 单击瞬间移动
     if (core.status.heroStop && core.status.heroMoving == 0) {
-        if (stepPostfix.length <= 1 && !core.hasFlag('__noClickMove__') && core.control.tryMoveDirectly(destX, destY))
+        if (stepPostfix.length <= 1 && core.control.tryMoveDirectly(destX, destY))
             return true;
     }
     return false;
@@ -784,8 +784,8 @@ control.prototype.turnHero = function (direction) {
 }
 
 ////// 瞬间移动 //////
-control.prototype.moveDirectly = function (destX, destY, ignoreSteps) {
-    return this.controldata.moveDirectly(destX, destY, ignoreSteps);
+control.prototype.moveDirectly = function (destX, destY, ignoreSteps, callback) {
+    return this.controldata.moveDirectly(destX, destY, ignoreSteps, callback);
 }
 
 ////// 尝试瞬间移动 //////
@@ -800,7 +800,10 @@ control.prototype.tryMoveDirectly = function (destX, destY) {
         if (dx < 0 || dx >= core.bigmap.width || dy < 0 || dy >= core.bigmap.height) continue;
         if (dir && !core.inArray(canMoveArray[dx][dy], dir)) continue;
         if (canMoveDirectlyArray[i] < 0) continue;
-        if (core.control.moveDirectly(dx, dy, canMoveDirectlyArray[i])) {
+        if (core.control.moveDirectly(dx, dy, canMoveDirectlyArray[i], function () {
+            if (!dir && core.plugin && core.plugin.triggerLocationInteractionAtHero)
+                core.plugin.triggerLocationInteractionAtHero();
+        })) {
             if (dir) core.moveHero(dir, function () { });
             return true;
         }

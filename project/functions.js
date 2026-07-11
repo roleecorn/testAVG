@@ -1512,6 +1512,9 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 			if (!hasTrigger)
 				core.trigger(nowx, nowy, callback);
 
+			if (core.plugin && core.plugin.triggerLocationInteractionAtHero)
+				core.plugin.triggerLocationInteractionAtHero();
+
 			// 检查该点是否是滑冰
 			if (core.onSki()) {
 				// 延迟到事件最后执行，因为这之前可能有阻激夹域动画
@@ -1523,7 +1526,7 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 			// 如需强行终止行走可以在这里条件判定：
 			// core.stopAutomaticRoute();
 		},
-		"moveDirectly": function (x, y, ignoreSteps) {
+		"moveDirectly": function (x, y, ignoreSteps, callback) {
 			// 瞬间移动；x,y为要瞬间移动的点；ignoreSteps为减少的步数，可能之前已经被计算过
 			// 返回true代表成功瞬移，false代表没有成功瞬移
 
@@ -1558,6 +1561,7 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 				}
 				core.ui.drawStatusBar();
 				core.checkRouteFolding();
+				if (callback) callback();
 				return true;
 			}
 			return false;
