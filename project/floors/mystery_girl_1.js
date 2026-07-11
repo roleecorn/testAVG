@@ -1,7 +1,7 @@
 main.floors.mystery_girl_1=
 {
     "floorId": "mystery_girl_1",
-    "title": "好感度1：書店邂逅",
+    "title": "書店邂逅",
     "name": "書店邂逅",
     "canFlyTo": false,
     "canFlyFrom": false,
@@ -122,7 +122,7 @@ main.floors.mystery_girl_1=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"mystery_girl_2\",\n\t\t\"title\": \"好感度2：家庭餐廳再會\",\n\t\t\"locations\": [\"restaurant\"],\n\t\t\"floorId\": \"mystery_girl_2\",\n\t\t\"once\": true\n\t});\n}"
+            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"mystery_girl_2\",\n\t\t\"title\": \"餐廳再會\",\n\t\t\"locations\": [\"restaurant\"],\n\t\t\"floorId\": \"mystery_girl_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
             "type": "function",

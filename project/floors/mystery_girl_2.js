@@ -1,8 +1,8 @@
 main.floors.mystery_girl_2=
 {
     "floorId": "mystery_girl_2",
-    "title": "好感度2：家庭餐廳再會",
-    "name": "家庭餐廳再會",
+    "title": "餐廳再會",
+    "name": "餐廳再會",
     "canFlyTo": false,
     "canFlyFrom": false,
     "canUseQuickShop": false,

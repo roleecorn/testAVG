@@ -46,7 +46,7 @@
   "activeEvents": [
     {
       "id": "mystery_girl_1",
-      "title": "好感度1：書店邂逅",
+      "title": "書店邂逅",
       "locations": ["blue_bookstore", "used_bookstore"],
       "floorId": "mystery_girl_1",
       "once": true
@@ -147,7 +147,7 @@ core.plugin.returnToAkiba()
   "text": "是${flag:akiba_last_placeName}啊，該做什麼呢?",
   "choices": [
     {
-      "text": "好感度1：書店邂逅",
+      "text": "書店邂逅",
       "action": [
         {
           "type": "function",
@@ -174,6 +174,8 @@ core.plugin.returnToAkiba()
 命名建議：
 
 - 好感度劇情的事件 ID、樓層 ID、檔名一律使用 `角色英文名_好感度數字`。
+- 角色支線章節不一定會寫成 `好感度1/2/3`；若章節已寫明標題，該章節標題就是劇情名稱，應用於事件 `title` / 樓層 `title` / meta `activeEvents[].title` / `addAkibaEvent({ title })` 的可讀名稱。
+- 若章節未命名，或名稱只是 `好感度1`、`好感度2`、`好感度3` 這類序號，可以依劇情內容補一個 7 個中文字以下的短名。可讀 `title` 不要保留 `好感度N：` 前綴。
 - 例如目前角色尚未正式命名，先用 `mystery_girl_1`、`mystery_girl_2`。
 - 事件 ID：`mystery_girl_1`
 - 樓層 ID：`mystery_girl_1`
@@ -224,7 +226,7 @@ core.plugin.returnToAkiba()
   },
   {
     "type": "function",
-    "function": "function () { core.plugin.addAkibaEvent({ id: 'mystery_girl_2', title: '好感度2：家庭餐廳再會', locations: ['restaurant'], floorId: 'mystery_girl_2', once: true }); }"
+    "function": "function () { core.plugin.addAkibaEvent({ id: 'mystery_girl_2', title: '餐廳再會', locations: ['restaurant'], floorId: 'mystery_girl_2', once: true }); }"
   },
   {
     "type": "function",
@@ -241,7 +243,7 @@ core.plugin.returnToAkiba()
 "activeEvents": [
   {
     "id": "mystery_girl_1",
-    "title": "好感度1：書店邂逅",
+    "title": "書店邂逅",
     "locations": ["blue_bookstore", "used_bookstore"],
     "floorId": "mystery_girl_1",
     "once": true
@@ -255,7 +257,7 @@ core.plugin.returnToAkiba()
 2. `mystery_girl_1` 加入 `flag:akiba_completed_events`。
 3. `mystery_girl_1` 的結尾呼叫 `core.plugin.addAkibaEvent(...)`，把 `mystery_girl_2` 加入 `flag:akiba_active_events`。
 4. 玩家回到 Akiba。
-5. 之後玩家到 `restaurant` 時，公共事件選項中出現「好感度2：家庭餐廳再會」。
+5. 之後玩家到 `restaurant` 時，公共事件選項中出現「餐廳再會」。
 
 ## 實作階段
 
@@ -303,9 +305,9 @@ node --check project/floors/mystery_girl_2.js
    - 每個 `locations` 內的 location 都存在於 `project/location-mappings.json`。
 
 3. 遊戲內流程檢查：
-   - 新存檔進入 Akiba，書店地點能看到「好感度1：書店邂逅」。
+   - 新存檔進入 Akiba，書店地點能看到「書店邂逅」。
    - 完成好感度1後，書店不再顯示該事件。
-   - 完成好感度1後，餐廳地點顯示「好感度2：家庭餐廳再會」。
+   - 完成好感度1後，餐廳地點顯示「餐廳再會」。
    - 完成好感度2後，餐廳不再顯示該事件。
 
 ## 需要留意的決策

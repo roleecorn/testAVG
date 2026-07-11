@@ -3,7 +3,7 @@
   "activeEvents": [
     {
       "id": "mystery_girl_1",
-      "title": "好感度1：書店邂逅",
+      "title": "書店邂逅",
       "locations": ["blue_bookstore", "used_bookstore"],
       "floorId": "mystery_girl_1",
       "once": true
