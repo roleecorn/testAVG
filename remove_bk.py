@@ -1,3 +1,5 @@
+import argparse
+
 import cv2
 import numpy as np
 from pathlib import Path
@@ -240,19 +242,38 @@ def suppress_green_spill(
     return result.astype(np.uint8)
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Remove green-screen background from a character image and output a transparent PNG."
+    )
+    parser.add_argument("input", help="Path to the source green-screen image.")
+    parser.add_argument("output", help="Path to the transparent PNG output.")
+    parser.add_argument("--hue-min", type=int, default=35)
+    parser.add_argument("--hue-max", type=int, default=90)
+    parser.add_argument("--saturation-min", type=int, default=70)
+    parser.add_argument("--value-min", type=int, default=40)
+    parser.add_argument("--edge-softness", type=int, default=2)
+    parser.add_argument("--morph-size", type=int, default=3)
+    parser.add_argument("--spill-strength", type=float, default=0.7)
+    parser.add_argument(
+        "--ignore-original-alpha",
+        action="store_true",
+        help="Do not merge the input alpha channel into the generated alpha.",
+    )
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
+    args = parse_args()
     remove_green_screen(
-        input_path="2.png",
-        output_path="output_transparent.png",
-
-        # 一般標準綠幕可先使用這組
-        hue_min=35,
-        hue_max=90,
-        saturation_min=70,
-        value_min=40,
-
-        edge_softness=2,
-        morph_size=3,
-        spill_strength=0.7,
-        preserve_original_alpha=True,
+        input_path=args.input,
+        output_path=args.output,
+        hue_min=args.hue_min,
+        hue_max=args.hue_max,
+        saturation_min=args.saturation_min,
+        value_min=args.value_min,
+        edge_softness=args.edge_softness,
+        morph_size=args.morph_size,
+        spill_strength=args.spill_strength,
+        preserve_original_alpha=not args.ignore_original_alpha,
     )
