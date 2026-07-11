@@ -1,4 +1,4 @@
-﻿main.floors.mapo_1_2=
+main.floors.mapo_1_2=
 {
     "floorId": "mapo_1_2",
     "title": "麻婆豆腐篇 1-2",
@@ -326,7 +326,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]......",
+        "......",
         {
             "type": "hideImage",
             "code": 10,
@@ -465,7 +465,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]梗平就這麼拉著表妹衝向了城市的倉庫區。",
+        "梗平就這麼拉著表妹衝向了城市的倉庫區。",
         {
             "type": "playTransitionVideo"
         },

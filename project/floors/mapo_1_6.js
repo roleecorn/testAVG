@@ -1,4 +1,4 @@
-﻿main.floors.mapo_1_6=
+main.floors.mapo_1_6=
 {
     "floorId": "mapo_1_6",
     "title": "麻婆豆腐篇 1-6",
@@ -334,7 +334,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]表妹走到了倒在地板上的 A 面前。",
+        "表妹走到了倒在地板上的 A 面前。",
         {
             "type": "hideImage",
             "code": 10,
@@ -453,7 +453,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]表妹隨後用了一樣的方式「解救」了 B、C。",
+        "表妹隨後用了一樣的方式「解救」了 B、C。",
         {
             "type": "hideImage",
             "code": 10,
@@ -466,7 +466,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]然後，她走到了梗平的前面。",
+        "然後，她走到了梗平的前面。",
         {
             "type": "hideImage",
             "code": 10,
@@ -609,7 +609,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]兩人說完後便離開了麻婆豆腐店。",
+        "兩人說完後便離開了麻婆豆腐店。",
         {
             "type": "hideImage",
             "code": 10,

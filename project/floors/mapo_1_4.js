@@ -1,4 +1,4 @@
-﻿main.floors.mapo_1_4=
+main.floors.mapo_1_4=
 {
     "floorId": "mapo_1_4",
     "title": "麻婆豆腐篇 1-4",
@@ -271,7 +271,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]從倉庫出來的兩人遇到了同行的 B、C。",
+        "從倉庫出來的兩人遇到了同行的 B、C。",
         {
             "type": "hideImage",
             "code": 10,
@@ -399,7 +399,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]B、C 離開了。",
+        "B、C 離開了。",
         {
             "type": "hideImage",
             "code": 10,
@@ -433,7 +433,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]兩人在秋葉原繞了一段時間過後，依舊不見 A 的蹤影。",
+        "兩人在秋葉原繞了一段時間過後，依舊不見 A 的蹤影。",
         {
             "type": "hideImage",
             "code": 10,
@@ -669,7 +669,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]又過一段時間後。",
+        "又過一段時間後。",
         {
             "type": "hideImage",
             "code": 10,
@@ -716,7 +716,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]......",
+        "......",
         {
             "type": "hideImage",
             "code": 10,
@@ -834,7 +834,7 @@
             "time": 0,
             "async": true
         },
-        "\t[旁白]兩人朝著手機中的地址走去。",
+        "兩人朝著手機中的地址走去。",
         {
             "type": "playTransitionVideo"
         },

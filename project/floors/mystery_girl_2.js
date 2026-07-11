@@ -100,7 +100,7 @@ main.floors.mystery_girl_2=
             "time": 0,
             "async": true
         },
-        "\t[旁白]梗平被摀住了嘴。",
+        "梗平被摀住了嘴。",
         "\t[???]不要亂說話。",
         {
             "type": "showImage",
@@ -118,8 +118,8 @@ main.floors.mystery_girl_2=
             "async": true
         },
         "\t[???]客人您要來點什麼呢?(下班後再來說)",
-        "\t[旁白]梗平度過了一個難受的午餐。",
-        "\t[旁白]......",
+        "梗平度過了一個難受的午餐。",
+        "......",
         {
             "type": "function",
             "function": "function () {\n\tcore.plugin.completeAkibaEvent('mystery_girl_2');\n}"

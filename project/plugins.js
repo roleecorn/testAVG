@@ -359,7 +359,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			var locationId = core.getFlag('akiba_last_locationId', '');
 			var placeName = core.getFlag('akiba_last_placeName', '未知地點');
 			var availableEvents = this.getActiveAkibaEventsAtLocation(locationId);
-			var text = "\t[旁白]是" + placeName + "啊，該做什麼呢?";
+			var text = "是" + placeName + "啊，該做什麼呢?";
 
 			if (availableEvents.length === 0) {
 				core.insertAction([

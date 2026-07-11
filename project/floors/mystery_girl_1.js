@@ -69,7 +69,7 @@ main.floors.mystery_girl_1=
             "time": 0,
             "async": true
         },
-        "\t[旁白]梗平伸出了手，但卻在半空中與另外一隻手碰觸了。",
+        "梗平伸出了手，但卻在半空中與另外一隻手碰觸了。",
         "\t[???]咦?",
         {
             "type": "showImage",
@@ -86,7 +86,7 @@ main.floors.mystery_girl_1=
             "time": 0,
             "async": true
         },
-        "\t[旁白]梗平回過神來才發現，那個少女已經紅著臉逃跑了。",
+        "梗平回過神來才發現，那個少女已經紅著臉逃跑了。",
         {
             "type": "showImage",
             "code": 10,
