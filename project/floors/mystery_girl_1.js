@@ -53,13 +53,55 @@ main.floors.mystery_girl_1=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [28,210],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]每個月發行的親熱天堂，就算來了秋葉原還是得買的♪",
         "\t[梗平]找到了!就剩下最後一本了!",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
         "\t[旁白]梗平伸出了手，但卻在半空中與另外一隻手碰觸了。",
         "\t[???]咦?",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [28,210],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]在書店與美少女邂逅...真是美妙的展開，咦不過是黃書...",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
         "\t[旁白]梗平回過神來才發現，那個少女已經紅著臉逃跑了。",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [28,210],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]...不必逃得這麼快吧(垂頭喪氣)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "function",
             "function": "function () {\n\tcore.plugin.completeAkibaEvent('mystery_girl_1');\n}"
