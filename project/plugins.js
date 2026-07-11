@@ -94,6 +94,225 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			);
 		}
 	},
+	"akibaEventManager": function () {
+		this._akibaEventMeta = null;
+
+		this.getAkibaEventMeta = function () {
+			if (this._akibaEventMeta != null) return this._akibaEventMeta;
+			this._akibaEventMeta = {
+				"version": 1,
+				"activeEvents": []
+			};
+
+			if (typeof XMLHttpRequest == 'undefined') return this._akibaEventMeta;
+			try {
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', 'project/akiba-event-meta.json?v=' + (main.version || Date.now()), false);
+				xhr.overrideMimeType('application/json');
+				xhr.send(null);
+				if (xhr.status != 200 && xhr.status != 0) throw new Error('HTTP ' + xhr.status);
+				this._akibaEventMeta = JSON.parse(xhr.responseText || '{}');
+			} catch (e) {
+				console.error(e);
+				this._akibaEventMeta = {
+					"version": 1,
+					"activeEvents": []
+				};
+			}
+			if (!(this._akibaEventMeta.activeEvents instanceof Array)) this._akibaEventMeta.activeEvents = [];
+			return this._akibaEventMeta;
+		}
+
+		this._normalizeAkibaEventData = function (event) {
+			if (!event || !event.id || !event.floorId) return null;
+			var locations = event.locations instanceof Array ? event.locations.slice() : [];
+			locations = locations.filter(function (locationId, index) {
+				return typeof locationId == 'string' && locationId && locations.indexOf(locationId) === index;
+			});
+			if (locations.length === 0) return null;
+			return {
+				"id": event.id,
+				"title": event.title || event.id,
+				"locations": locations,
+				"floorId": event.floorId,
+				"once": event.once !== false
+			};
+		}
+
+		this._getAkibaActiveEvents = function () {
+			var value = core.getFlag('akiba_active_events', []);
+			if (!(value instanceof Array)) return [];
+			var result = [];
+			value.forEach(function (event) {
+				var normalized = this._normalizeAkibaEventData(event);
+				if (normalized) result.push(normalized);
+			}, this);
+			return result;
+		}
+
+		this._setAkibaActiveEvents = function (events) {
+			var result = [];
+			(events || []).forEach(function (event) {
+				var normalized = this._normalizeAkibaEventData(event);
+				if (!normalized) return;
+				for (var i = 0; i < result.length; i++) {
+					if (result[i].id === normalized.id) return;
+				}
+				result.push(normalized);
+			}, this);
+			core.setFlag('akiba_active_events', result);
+			return result;
+		}
+
+		this._getAkibaEventIdArrayFlag = function (name) {
+			var value = core.getFlag(name, []);
+			return value instanceof Array ? value.slice() : [];
+		}
+
+		this._setAkibaEventIdArrayFlag = function (name, value) {
+			var result = [];
+			(value || []).forEach(function (id) {
+				if (typeof id == 'string' && result.indexOf(id) < 0) result.push(id);
+			});
+			core.setFlag(name, result);
+			return result;
+		}
+
+		this.initAkibaEventState = function () {
+			var meta = this.getAkibaEventMeta();
+			var stateVersion = 2;
+			if (core.getFlag('akiba_event_state_initialized', false)
+				&& core.getFlag('akiba_event_state_version', 0) === stateVersion) return;
+			this._setAkibaActiveEvents(meta.activeEvents || []);
+			this._setAkibaEventIdArrayFlag('akiba_completed_events', []);
+			core.setFlag('akiba_event_state_initialized', true);
+			core.setFlag('akiba_event_state_version', stateVersion);
+		}
+
+		this.getActiveAkibaEventsAtLocation = function (locationId) {
+			this.initAkibaEventState();
+			var activeEvents = this._getAkibaActiveEvents();
+			var result = [];
+
+			activeEvents.forEach(function (event) {
+				if (event.locations.indexOf(locationId) < 0) return;
+				result.push(event);
+			});
+			return result;
+		}
+
+		this.selectAkibaEvent = function (eventId) {
+			this.initAkibaEventState();
+			var activeEvents = this._getAkibaActiveEvents();
+			var event = null;
+			for (var i = 0; i < activeEvents.length; i++) {
+				if (activeEvents[i].id === eventId) {
+					event = activeEvents[i];
+					break;
+				}
+			}
+			if (!event || !event.floorId) {
+				console.warn('Cannot select Akiba event: ' + eventId);
+				return;
+			}
+
+			core.setFlag('akiba_selected_event_id', eventId);
+			core.setFlag('akiba_return_floorId', core.status.floorId || 'Akiba');
+			core.setFlag('akiba_return_x', core.getHeroLoc('x'));
+			core.setFlag('akiba_return_y', core.getHeroLoc('y'));
+			core.setFlag('akiba_return_direction', core.getHeroLoc('direction') || 'down');
+			core.insertAction({
+				"type": "changeFloor",
+				"floorId": event.floorId,
+				"loc": [6, 10],
+				"direction": "down",
+				"time": 500
+			});
+		}
+
+		this.completeAkibaEvent = function (eventId) {
+			this.initAkibaEventState();
+			if (!eventId) {
+				console.warn('Cannot complete Akiba event: ' + eventId);
+				return;
+			}
+
+			var activeEvents = this._getAkibaActiveEvents();
+			var completedEvents = this._getAkibaEventIdArrayFlag('akiba_completed_events');
+			activeEvents = activeEvents.filter(function (event) { return event.id !== eventId; });
+			if (completedEvents.indexOf(eventId) < 0) completedEvents.push(eventId);
+
+			this._setAkibaActiveEvents(activeEvents);
+			this._setAkibaEventIdArrayFlag('akiba_completed_events', completedEvents);
+		}
+
+		this.addAkibaEvent = function (eventData) {
+			this.initAkibaEventState();
+			var event = this._normalizeAkibaEventData(eventData);
+			if (!event) {
+				console.warn('Cannot add Akiba event:', eventData);
+				return false;
+			}
+
+			var activeEvents = this._getAkibaActiveEvents();
+			var completedEvents = this._getAkibaEventIdArrayFlag('akiba_completed_events');
+			if (event.once !== false && completedEvents.indexOf(event.id) >= 0) return false;
+			for (var i = 0; i < activeEvents.length; i++) {
+				if (activeEvents[i].id === event.id) return false;
+			}
+			activeEvents.push(event);
+			this._setAkibaActiveEvents(activeEvents);
+			return true;
+		}
+
+		this.returnToAkiba = function () {
+			var floorId = core.getFlag('akiba_return_floorId', 'Akiba') || 'Akiba';
+			var x = core.getFlag('akiba_return_x', 12);
+			var y = core.getFlag('akiba_return_y', 12);
+			var direction = core.getFlag('akiba_return_direction', 'down') || 'down';
+			core.insertAction({
+				"type": "changeFloor",
+				"floorId": floorId,
+				"loc": [x, y],
+				"direction": direction,
+				"time": 500
+			});
+		}
+
+		this.showAkibaLocationEventChoices = function () {
+			this.initAkibaEventState();
+			var locationId = core.getFlag('akiba_last_locationId', '');
+			var placeName = core.getFlag('akiba_last_placeName', '未知地點');
+			var availableEvents = this.getActiveAkibaEventsAtLocation(locationId);
+			var text = "\t[旁白]是" + placeName + "啊，該做什麼呢?";
+
+			if (availableEvents.length === 0) {
+				core.insertAction(text);
+				return;
+			}
+
+			var choices = availableEvents.map(function (event) {
+				return {
+					"text": event.title,
+					"action": [{
+						"type": "function",
+						"function": "function () { core.plugin.selectAkibaEvent('" + event.id + "'); }"
+					}]
+				};
+			});
+			choices.push({
+				"text": "離開",
+				"action": [{
+					"type": "exit"
+				}]
+			});
+			core.insertAction({
+				"type": "choices",
+				"text": text,
+				"choices": choices
+			});
+		}
+	},
 	"drawLight": function () {
 
 		// 绘制灯光/漆黑层效果。调用方式 core.plugin.drawLight(...)

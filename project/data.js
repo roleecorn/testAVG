@@ -12,6 +12,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"mapo_1_4",
 			"mapo_1_5",
 			"mapo_1_6",
+			"mystery_girl_1",
+			"mystery_girl_2",
 			"Akiba"
 		],
 		"floorPartitions": [],

@@ -31,7 +31,7 @@
 
 後續實作可能修改：
 
-- `project/plugins.js`：新增事件 meta 載入、事件池初始化、查詢地點事件、完成事件與解鎖後續事件等工具。
+- `project/plugins.js`：新增事件 meta 載入、事件池初始化、查詢地點事件、完成事件與插入後續事件等工具。
 - `project/events.js`：擴充公共事件 `Akiba地點互動`，把可觸發事件轉成 `choices`。
 - `project/data.js`：加入每個事件 scene/floor 的 `floorId`。
 - `project/floors/*.js`：每個事件一個樓層。
@@ -43,38 +43,29 @@
 ```json
 {
   "version": 1,
-  "initialActiveEvents": [
-    "affinity_01_bookstore"
-  ],
-  "events": {
-    "affinity_01_bookstore": {
+  "activeEvents": [
+    {
+      "id": "mystery_girl_1",
       "title": "好感度1：書店邂逅",
       "locations": ["blue_bookstore", "used_bookstore"],
-      "floorId": "akiba_affinity_01_bookstore",
-      "nextEvents": ["affinity_02_family_restaurant"],
-      "once": true
-    },
-    "affinity_02_family_restaurant": {
-      "title": "好感度2：家庭餐廳再會",
-      "locations": ["restaurant"],
-      "floorId": "akiba_affinity_02_family_restaurant",
-      "nextEvents": [],
+      "floorId": "mystery_girl_1",
       "once": true
     }
-  }
+  ]
 }
 ```
 
 欄位說明：
 
 - `version`：meta 格式版本，方便未來升級。
-- `initialActiveEvents`：新存檔或第一次初始化時加入「可觸發事件」列表的事件 ID。
-- `events`：事件定義表，key 是穩定事件 ID。
+- `activeEvents`：新存檔或第一次初始化時可觸發的事件資料陣列。meta 只放初始當下可觸發事件，不放尚未出現的後續事件。
+- `id`：穩定事件 ID，用於完成、去重與存檔狀態。
 - `title`：在 Akiba 公共事件選項中顯示的文字。
 - `locations`：可觸發此事件的地點 ID 陣列，需對應 `project/location-mappings.json` 的 location `id`。這是多選欄位，同一個事件可以配置在多個地點；玩家站在任一符合地點時都應看到此事件。
 - `floorId`：事件對應的 scene/floor。每個事件都是一個樓層。
-- `nextEvents`：事件完成後新增到「可觸發事件」列表的後續事件 ID。
 - `once`：預設 `true`。完成後移出可觸發列表，並標記已完成。
+
+後續事件不寫在 meta 中，而是由被觸發的 scene/floor 在結尾用 `core.plugin.addAkibaEvent(eventData)` 插入。
 
 ## 多地點觸發規則
 
@@ -99,7 +90,8 @@
 建議使用以下 flags：
 
 - `flag:akiba_event_state_initialized`：是否已初始化事件池。
-- `flag:akiba_active_events`：目前可觸發事件 ID 陣列。
+- `flag:akiba_event_state_version`：事件池狀態版本；資料格式調整時用來重建 active list，避免舊存檔沿用錯誤結構。
+- `flag:akiba_active_events`：目前可觸發事件資料陣列，每筆包含 `id`、`title`、`locations`、`floorId`、`once`。
 - `flag:akiba_completed_events`：已完成事件 ID 陣列。
 - `flag:akiba_selected_event_id`：玩家剛選擇的事件 ID。
 - `flag:akiba_return_floorId`：事件結束後要回到的地圖，預設 `Akiba`。
@@ -117,16 +109,18 @@ core.plugin.initAkibaEventState()
 core.plugin.getActiveAkibaEventsAtLocation(locationId)
 core.plugin.selectAkibaEvent(eventId)
 core.plugin.completeAkibaEvent(eventId)
+core.plugin.addAkibaEvent(eventData)
 core.plugin.returnToAkiba()
 ```
 
 行為規劃：
 
 - `getAkibaEventMeta()`：同步讀取 `project/akiba-event-meta.json`，並快取結果。
-- `initAkibaEventState()`：若尚未初始化，將 `initialActiveEvents` 寫入 `flag:akiba_active_events`，`flag:akiba_completed_events` 設為空陣列。
+- `initAkibaEventState()`：若尚未初始化，將 meta 的 `activeEvents` 寫入 `flag:akiba_active_events`，`flag:akiba_completed_events` 設為空陣列。
 - `getActiveAkibaEventsAtLocation(locationId)`：從 active list 中篩選 `locations` 包含目前 location 的事件，回傳包含 `id`、`title`、`floorId` 的陣列。
 - `selectAkibaEvent(eventId)`：保存 selected event 與返回 Akiba 所需座標，再切換到該事件的 `floorId`。
-- `completeAkibaEvent(eventId)`：把事件從 active list 移除，加入 completed list，並把 `nextEvents` 中尚未完成、尚未 active 的事件加入 active list。
+- `completeAkibaEvent(eventId)`：把事件從 active list 移除，加入 completed list。此函式不會自動新增後續事件。
+- `addAkibaEvent(eventData)`：將一筆新的事件資料加入 active list；若同 ID 已 active，或已 completed 且 `once` 不是 `false`，則不重複加入。
 - `returnToAkiba()`：使用保存的返回資訊切回 Akiba。
 
 ## Akiba 公共事件流程
@@ -157,7 +151,7 @@ core.plugin.returnToAkiba()
       "action": [
         {
           "type": "function",
-          "function": "function () { core.plugin.selectAkibaEvent('affinity_01_bookstore'); }"
+          "function": "function () { core.plugin.selectAkibaEvent('mystery_girl_1'); }"
         }
       ]
     },
@@ -179,9 +173,11 @@ core.plugin.returnToAkiba()
 
 命名建議：
 
-- 事件 ID：`affinity_01_bookstore`
-- 樓層 ID：`akiba_affinity_01_bookstore`
-- 檔案：`project/floors/akiba_affinity_01_bookstore.js`
+- 好感度劇情的事件 ID、樓層 ID、檔名一律使用 `角色英文名_好感度數字`。
+- 例如目前角色尚未正式命名，先用 `mystery_girl_1`、`mystery_girl_2`。
+- 事件 ID：`mystery_girl_1`
+- 樓層 ID：`mystery_girl_1`
+- 檔案：`project/floors/mystery_girl_1.js`
 
 事件樓層規則：
 
@@ -224,7 +220,11 @@ core.plugin.returnToAkiba()
   "\t[梗平]...不必逃得這麼快吧(垂頭喪氣)",
   {
     "type": "function",
-    "function": "function () { core.plugin.completeAkibaEvent('affinity_01_bookstore'); }"
+    "function": "function () { core.plugin.completeAkibaEvent('mystery_girl_1'); }"
+  },
+  {
+    "type": "function",
+    "function": "function () { core.plugin.addAkibaEvent({ id: 'mystery_girl_2', title: '好感度2：家庭餐廳再會', locations: ['restaurant'], floorId: 'mystery_girl_2', once: true }); }"
   },
   {
     "type": "function",
@@ -238,14 +238,22 @@ core.plugin.returnToAkiba()
 初始狀態：
 
 ```json
-"initialActiveEvents": ["affinity_01_bookstore"]
+"activeEvents": [
+  {
+    "id": "mystery_girl_1",
+    "title": "好感度1：書店邂逅",
+    "locations": ["blue_bookstore", "used_bookstore"],
+    "floorId": "mystery_girl_1",
+    "once": true
+  }
+]
 ```
 
-玩家在 `blue_bookstore` 或 `used_bookstore` 觸發並完成 `affinity_01_bookstore` 後：
+玩家在 `blue_bookstore` 或 `used_bookstore` 觸發並完成 `mystery_girl_1` 後：
 
-1. `affinity_01_bookstore` 從 `flag:akiba_active_events` 移除。
-2. `affinity_01_bookstore` 加入 `flag:akiba_completed_events`。
-3. `affinity_02_family_restaurant` 加入 `flag:akiba_active_events`。
+1. `mystery_girl_1` 從 `flag:akiba_active_events` 移除。
+2. `mystery_girl_1` 加入 `flag:akiba_completed_events`。
+3. `mystery_girl_1` 的結尾呼叫 `core.plugin.addAkibaEvent(...)`，把 `mystery_girl_2` 加入 `flag:akiba_active_events`。
 4. 玩家回到 Akiba。
 5. 之後玩家到 `restaurant` 時，公共事件選項中出現「好感度2：家庭餐廳再會」。
 
@@ -258,8 +266,8 @@ core.plugin.returnToAkiba()
 3. 加入基本防呆：
    - active event 不重複。
    - completed event 不重複。
-   - 已 completed 的事件不再被 nextEvents 加回 active。
-   - meta 找不到事件 ID 時輸出 console warning，不中斷遊戲。
+   - 已 completed 的一次性事件不再被 `addAkibaEvent` 加回 active。
+   - event data 缺少 `id`、`floorId` 或有效 `locations` 時輸出 console warning，不中斷遊戲。
 
 ### 第二階段：公共事件選項
 
@@ -270,10 +278,10 @@ core.plugin.returnToAkiba()
 
 ### 第三階段：事件樓層
 
-1. 新增範例事件樓層 `akiba_affinity_01_bookstore`。
-2. 新增後續事件樓層 `akiba_affinity_02_family_restaurant`。
+1. 新增範例事件樓層 `mystery_girl_1`。
+2. 新增後續事件樓層 `mystery_girl_2`。
 3. 將樓層 ID 加入 `project/data.js -> main.floorIds`。
-4. 確認每個事件樓層結尾都會完成事件並返回 Akiba。
+4. 確認每個事件樓層結尾都會完成事件、依劇情需要插入後續事件，並返回 Akiba。
 
 ### 第四階段：驗證
 
@@ -283,16 +291,16 @@ core.plugin.returnToAkiba()
 node --check project/plugins.js
 node --check project/events.js
 node --check project/floors/Akiba.js
-node --check project/floors/akiba_affinity_01_bookstore.js
-node --check project/floors/akiba_affinity_02_family_restaurant.js
+node --check project/floors/mystery_girl_1.js
+node --check project/floors/mystery_girl_2.js
 ```
 
 2. Meta 檢查：
-   - `initialActiveEvents` 中每個 ID 都存在於 `events`。
+   - `activeEvents` 是陣列。
+   - 每個 event 都有 `id`。
    - 每個 event 的 `floorId` 都存在於 `main.floorIds`。
    - 每個 event 的 `locations` 都是陣列，且至少包含一個地點。
    - 每個 `locations` 內的 location 都存在於 `project/location-mappings.json`。
-   - 每個 `nextEvents` 都存在於 `events`。
 
 3. 遊戲內流程檢查：
    - 新存檔進入 Akiba，書店地點能看到「好感度1：書店邂逅」。
@@ -304,5 +312,5 @@ node --check project/floors/akiba_affinity_02_family_restaurant.js
 
 - 「好感度1 場地: 書店」目前 Akiba 有 `blue_bookstore` 與 `used_bookstore` 兩個書店地點。若要精準指定其中一間，需要在 meta 的 `locations` 中只保留對應地點。
 - 事件結束後是否回到觸發座標，建議先回到原座標與原朝向，避免玩家突然被送到 Akiba 固定入口。
-- 若未來同一地點同時有很多事件，選項排序可以先依 `flag:akiba_active_events` 的順序；需要角色支線優先級時，再在 meta 增加 `priority`。
-- 若未來事件需要條件，例如好感度、時間、道具，可在 meta 增加 `condition`，但第一版先只處理 active/completed/nextEvents，保持可控。
+- 若未來同一地點同時有很多事件，選項排序可以先依 `flag:akiba_active_events` 的順序；需要角色支線優先級時，再在事件資料增加 `priority`。
+- 若未來事件需要條件，例如好感度、時間、道具，可在事件資料增加 `condition`，但第一版先只處理 active/completed/add，保持可控。

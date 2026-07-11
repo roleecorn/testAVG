@@ -185,7 +185,10 @@ var events_c12a15a8_c380_4b28_8144_256cba95f760 =
 				"type": "function",
 				"function": "function () {\n\tvar x = core.getFlag('arg1', core.getHeroLoc('x'));\n\tvar y = core.getFlag('arg2', core.getHeroLoc('y'));\n\tvar floorId = core.getFlag('arg3', core.status.floorId);\n\tvar info = core.plugin.getLocationInfo(floorId, x, y);\n\tcore.setFlag('akiba_last_locationId', info.id);\n\tcore.setFlag('akiba_last_placeName', info.name);\n\tcore.setFlag('akiba_last_locationInfo', info);\n}"
 			},
-			"\t[旁白]是${flag:akiba_last_placeName}啊，該做什麼呢?"
+			{
+				"type": "function",
+				"function": "function () {\n\tcore.plugin.showAkibaLocationEventChoices();\n}"
+			}
 		]
 	}
 }
