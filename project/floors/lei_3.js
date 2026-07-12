@@ -16,7 +16,7 @@ main.floors.lei_3=
             "y": 0
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "great_mission_heroic.mp3",
     "ratio": 1,
     "map": [
         [0,0,0,0,0,0,0,0,0,0,0,0,0],

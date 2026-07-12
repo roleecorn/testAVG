@@ -16,7 +16,7 @@ main.floors.yuedu_ai_4=
             "y": 0
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "next_to_you_emotional.mp3",
     "ratio": 1,
     "map": [
         [0,0,0,0,0,0,0,0,0,0,0,0,0],

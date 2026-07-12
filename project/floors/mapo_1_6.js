@@ -30,7 +30,7 @@ main.floors.mapo_1_6=
             "disabled": true
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "battle_theme_a.mp3",
     "ratio": 1,
     "map": [
         [
@@ -642,5 +642,4 @@ main.floors.mapo_1_6=
     "bgmap": [],
     "fgmap": []
 }
-
 

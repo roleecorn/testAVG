@@ -30,7 +30,7 @@ main.floors.mapo_1_4=
             "disabled": true
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "flags_drama.mp3",
     "ratio": 1,
     "map": [
         [
@@ -862,4 +862,3 @@ main.floors.mapo_1_4=
     "bgmap": [],
     "fgmap": []
 }
-

@@ -16,7 +16,7 @@ main.floors.yuedu_ai_3=
             "y": 0
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "flags_drama.mp3",
     "ratio": 1,
     "map": [
         [0,0,0,0,0,0,0,0,0,0,0,0,0],

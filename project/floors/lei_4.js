@@ -16,7 +16,7 @@ main.floors.lei_4=
             "y": 0
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "battle_theme_a.mp3",
     "ratio": 1,
     "map": [
         [0,0,0,0,0,0,0,0,0,0,0,0,0],

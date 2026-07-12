@@ -4,9 +4,11 @@
 - 新樓層 ID 已加入 `project/data.js -> main.floorIds`。
 - 新圖片已放入 `project/images` 並加入 `main.images`。
 - 新 BGM 已放入 `project/bgms` 並加入 `main.bgms`。
+- 主線或支線樓層已在完整篇劇情處理完後，依整體情境設定合適 `"bgm"`；未指定時依 [BGM 背景音樂](bgm.md) 的風格庫自動選曲。
 - 新音效已放入 `project/sounds` 並加入 `main.sounds`。
 - 所有事件 JSON 都是合法 JS 物件/陣列；字串內換行使用 `\n`。
 - 角色支線輸入應為 `.txt`，且檔名可確認支線持有者；新增支線前必須確認已有對應角色圖，缺圖時拒絕改動。
+- 角色支線事件 ID、樓層 ID、檔名使用 `角色英文名_章節序號`；已知角色不可保留 `mystery_girl`、`unknown` 等中間暫名。
 - 角色支線章節若已寫明標題，該標題就是劇情名稱；若未命名或只叫 `好感度1/2/3`，可依內容補 7 個中文字以下的短名。樓層 `title`、meta `activeEvents[].title`、`addAkibaEvent({ title })` 都使用這個短名，不要保留 `好感度N：` 前綴。
 - 已有角色原始圖時，必須先用 `remove_bk.py` 去背輸出透明 PNG，再用 `split_emotion_image.py` 分割六張表情；不可因為原圖可直接分割或只需裁切就跳過去背。輸出圖預設等比例縮小到不超過 `195x195`，並將輸出圖片加入 `project/data.js -> main.images`。
 - 角色支線文本的 `場地:` 若不存在於 `project/location-mappings.json`，自動選擇最接近的既有地點；沒有合理近似時使用既有地點作為隨機 fallback，並在交付說明中寫明選用的 `location.id`。

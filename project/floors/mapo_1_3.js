@@ -30,7 +30,7 @@ main.floors.mapo_1_3=
             "disabled": true
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "twists_suspense.mp3",
     "ratio": 1,
     "map": [
         [
@@ -1332,4 +1332,3 @@ main.floors.mapo_1_3=
     "bgmap": [],
     "fgmap": []
 }
-

@@ -30,7 +30,7 @@ main.floors.mapo_1_1=
             "disabled": true
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "bossa_casual_shop.mp3",
     "ratio": 1,
     "map": [
         [

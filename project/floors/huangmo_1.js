@@ -1,0 +1,144 @@
+main.floors.huangmo_1=
+{
+    "floorId": "huangmo_1",
+    "title": "書店邂逅",
+    "name": "書店邂逅",
+    "canFlyTo": false,
+    "canFlyFrom": false,
+    "canUseQuickShop": false,
+    "cannotViewMap": true,
+    "defaultGround": "ground",
+    "images": [
+        {
+            "name": "scene_mapo_shop.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "bgm": "bossa_casual_shop.mp3",
+    "ratio": 1,
+    "map": [
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    "width": 13,
+    "height": 13,
+    "firstArrive": [],
+    "eachArrive": [
+        {
+            "type": "setText",
+            "position": "down",
+            "offset": 8,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [255,225,80,1],
+            "text": [255,255,255,1],
+            "titlefont": 22,
+            "textfont": 20,
+            "lineHeight": 30,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [28,210],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]每個月發行的親熱天堂，就算來了秋葉原還是得買的♪",
+        "\t[梗平]找到了!就剩下最後一本了!",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        "梗平伸出了手，但卻在半空中與另外一隻手碰觸了。",
+        {
+            "type": "showImage",
+            "code": 12,
+            "image": "huangmo_surprised.png",
+            "loc": [260,185],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[???]咦?",
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [28,210],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]在書店與美少女邂逅...真是美妙的展開，咦不過是黃書...",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        "梗平回過神來才發現，那個少女已經紅著臉逃跑了。",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [28,210],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]...不必逃得這麼快吧(垂頭喪氣)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "function",
+            "function": "function () {\n\tcore.plugin.completeAkibaEvent('huangmo_1');\n}"
+        },
+        {
+            "type": "function",
+            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"huangmo_2\",\n\t\t\"title\": \"餐廳再會\",\n\t\t\"locations\": [\"restaurant\"],\n\t\t\"floorId\": \"huangmo_2\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+            "type": "function",
+            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+    ],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": []
+}

@@ -16,7 +16,7 @@ main.floors.lei_1=
             "y": 0
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "dark_alleys_tension.ogg",
     "ratio": 1,
     "map": [
         [0,0,0,0,0,0,0,0,0,0,0,0,0],

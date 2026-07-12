@@ -45,10 +45,10 @@
   "version": 1,
   "activeEvents": [
     {
-      "id": "mystery_girl_1",
+      "id": "huangmo_1",
       "title": "書店邂逅",
       "locations": ["blue_bookstore", "used_bookstore"],
-      "floorId": "mystery_girl_1",
+      "floorId": "huangmo_1",
       "once": true
     }
   ]
@@ -151,7 +151,7 @@ core.plugin.returnToAkiba()
       "action": [
         {
           "type": "function",
-          "function": "function () { core.plugin.selectAkibaEvent('mystery_girl_1'); }"
+          "function": "function () { core.plugin.selectAkibaEvent('huangmo_1'); }"
         }
       ]
     },
@@ -176,10 +176,10 @@ core.plugin.returnToAkiba()
 - 好感度劇情的事件 ID、樓層 ID、檔名一律使用 `角色英文名_好感度數字`。
 - 角色支線章節不一定會寫成 `好感度1/2/3`；若章節已寫明標題，該章節標題就是劇情名稱，應用於事件 `title` / 樓層 `title` / meta `activeEvents[].title` / `addAkibaEvent({ title })` 的可讀名稱。
 - 若章節未命名，或名稱只是 `好感度1`、`好感度2`、`好感度3` 這類序號，可以依劇情內容補一個 7 個中文字以下的短名。可讀 `title` 不要保留 `好感度N：` 前綴。
-- 例如目前角色尚未正式命名，先用 `mystery_girl_1`、`mystery_girl_2`。
-- 事件 ID：`mystery_girl_1`
-- 樓層 ID：`mystery_girl_1`
-- 檔案：`project/floors/mystery_girl_1.js`
+- 已知角色支線使用角色 ID 命名，例如荒漠使用 `huangmo_1`、`huangmo_2`。只有劇情中刻意未知且尚未能對應角色時，才可使用暫名，並應在角色確認後改回正式命名。
+- 事件 ID：`huangmo_1`
+- 樓層 ID：`huangmo_1`
+- 檔案：`project/floors/huangmo_1.js`
 
 事件樓層規則：
 
@@ -222,11 +222,11 @@ core.plugin.returnToAkiba()
   "\t[梗平]...不必逃得這麼快吧(垂頭喪氣)",
   {
     "type": "function",
-    "function": "function () { core.plugin.completeAkibaEvent('mystery_girl_1'); }"
+    "function": "function () { core.plugin.completeAkibaEvent('huangmo_1'); }"
   },
   {
     "type": "function",
-    "function": "function () { core.plugin.addAkibaEvent({ id: 'mystery_girl_2', title: '餐廳再會', locations: ['restaurant'], floorId: 'mystery_girl_2', once: true }); }"
+    "function": "function () { core.plugin.addAkibaEvent({ id: 'huangmo_2', title: '餐廳再會', locations: ['restaurant'], floorId: 'huangmo_2', once: true }); }"
   },
   {
     "type": "function",
@@ -242,20 +242,20 @@ core.plugin.returnToAkiba()
 ```json
 "activeEvents": [
   {
-    "id": "mystery_girl_1",
+    "id": "huangmo_1",
     "title": "書店邂逅",
     "locations": ["blue_bookstore", "used_bookstore"],
-    "floorId": "mystery_girl_1",
+    "floorId": "huangmo_1",
     "once": true
   }
 ]
 ```
 
-玩家在 `blue_bookstore` 或 `used_bookstore` 觸發並完成 `mystery_girl_1` 後：
+玩家在 `blue_bookstore` 或 `used_bookstore` 觸發並完成 `huangmo_1` 後：
 
-1. `mystery_girl_1` 從 `flag:akiba_active_events` 移除。
-2. `mystery_girl_1` 加入 `flag:akiba_completed_events`。
-3. `mystery_girl_1` 的結尾呼叫 `core.plugin.addAkibaEvent(...)`，把 `mystery_girl_2` 加入 `flag:akiba_active_events`。
+1. `huangmo_1` 從 `flag:akiba_active_events` 移除。
+2. `huangmo_1` 加入 `flag:akiba_completed_events`。
+3. `huangmo_1` 的結尾呼叫 `core.plugin.addAkibaEvent(...)`，把 `huangmo_2` 加入 `flag:akiba_active_events`。
 4. 玩家回到 Akiba。
 5. 之後玩家到 `restaurant` 時，公共事件選項中出現「餐廳再會」。
 
@@ -280,8 +280,8 @@ core.plugin.returnToAkiba()
 
 ### 第三階段：事件樓層
 
-1. 新增範例事件樓層 `mystery_girl_1`。
-2. 新增後續事件樓層 `mystery_girl_2`。
+1. 新增範例事件樓層 `huangmo_1`。
+2. 新增後續事件樓層 `huangmo_2`。
 3. 將樓層 ID 加入 `project/data.js -> main.floorIds`。
 4. 確認每個事件樓層結尾都會完成事件、依劇情需要插入後續事件，並返回 Akiba。
 
@@ -293,8 +293,8 @@ core.plugin.returnToAkiba()
 node --check project/plugins.js
 node --check project/events.js
 node --check project/floors/Akiba.js
-node --check project/floors/mystery_girl_1.js
-node --check project/floors/mystery_girl_2.js
+node --check project/floors/huangmo_1.js
+node --check project/floors/huangmo_2.js
 ```
 
 2. Meta 檢查：

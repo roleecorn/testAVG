@@ -16,7 +16,7 @@ main.floors.yuedu_ai_2=
             "y": 0
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "bossa_casual_shop.mp3",
     "ratio": 1,
     "map": [
         [0,0,0,0,0,0,0,0,0,0,0,0,0],

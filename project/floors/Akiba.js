@@ -11,6 +11,7 @@ main.floors.Akiba=
     "cannotViewMap": false,
     "cannotMoveDirectly": false,
     "images": [],
+    "bgm": "bossa_casual_shop.mp3",
     "ratio": 1,
     "defaultGround": "ground",
     "firstArrive": [],

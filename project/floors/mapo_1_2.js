@@ -30,7 +30,7 @@ main.floors.mapo_1_2=
             "disabled": true
         }
     ],
-    "bgm": "bgm.mp3",
+    "bgm": "dark_alleys_tension.ogg",
     "ratio": 1,
     "map": [
         [
@@ -493,4 +493,3 @@ main.floors.mapo_1_2=
     "bgmap": [],
     "fgmap": []
 }
-
