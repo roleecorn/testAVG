@@ -81,7 +81,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 		"tilesets": [
 			"magictower.png",
 			"025-Castle01.png",
-			"sprites_32x32_unit_sheet.png"
+			"sprites_32x32_unit_sheet.png",
+			"train_width_64.png"
 		],
 		"animates": [
 			"hand",
