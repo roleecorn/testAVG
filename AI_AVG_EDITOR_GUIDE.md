@@ -10,6 +10,7 @@
 - [圖片與立繪](agent/images.md)
 - [Flag 與狀態管理](agent/flags.md)
 - [場景顯示邏輯](agent/scene-flow.md)
+- [BGM 背景音樂](agent/bgm.md)
 - [音樂與特效](agent/audio-effects.md)
 - [純文字轉事件 JSON](agent/text-to-event-json.md)
 - [小遊戲新增與接入指南](agent/minigame-integration.md)
