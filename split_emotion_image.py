@@ -4,8 +4,8 @@
 The expected order is:
 
     smile / angry
-    sad   / happy
-    surprised / panic
+    sad   / surprised
+    panic / normal
 
 Each grid cell is cropped inward by a small inset to avoid colored borders,
 then resized proportionally to fit within a fixed maximum size.
@@ -25,8 +25,8 @@ from PIL import Image
 
 EMOTIONS = (
     ("smile", "angry"),
-    ("sad", "happy"),
-    ("surprised", "panic"),
+    ("sad", "surprised"),
+    ("panic", "normal"),
 )
 
 
@@ -85,7 +85,7 @@ def split_emotion_sheet(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Split a 2x3 emotion sheet into smile/angry/sad/happy/surprised/panic images."
+        description="Split a 2x3 emotion sheet into smile/angry/sad/surprised/panic/normal images."
     )
     parser.add_argument("image", type=Path, help="Path to the source image.")
     parser.add_argument(

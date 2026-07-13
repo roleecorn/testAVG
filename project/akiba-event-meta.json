@@ -21,6 +21,13 @@
       "locations": ["warehouse_district"],
       "floorId": "lei_1",
       "once": true
+    },
+    {
+      "id": "juju_1",
+      "title": "惡魔迷路",
+      "locations": ["tent"],
+      "floorId": "juju_1",
+      "once": true
     }
   ]
 }

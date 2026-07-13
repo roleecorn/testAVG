@@ -11,6 +11,7 @@
 - 角色支線事件 ID、樓層 ID、檔名使用 `角色英文名_章節序號`；已知角色不可保留 `mystery_girl`、`unknown` 等中間暫名。
 - 角色支線章節若已寫明標題，該標題就是劇情名稱；若未命名或只叫 `好感度1/2/3`，可依內容補 7 個中文字以下的短名。樓層 `title`、meta `activeEvents[].title`、`addAkibaEvent({ title })` 都使用這個短名，不要保留 `好感度N：` 前綴。
 - 已有角色原始圖時，必須先用 `remove_bk.py` 去背輸出透明 PNG，再用 `split_emotion_image.py` 分割六張表情；不可因為原圖可直接分割或只需裁切就跳過去背。輸出圖預設等比例縮小到不超過 `195x195`，並將輸出圖片加入 `project/data.js -> main.images`。
+- 新角色六張表情格順必須是「喜、怒 / 哀、驚訝 / 慌亂、無表情」，輸出檔名為 `smile`、`angry`、`sad`、`surprised`、`panic`、`normal`。
 - 角色支線文本的 `場地:` 若不存在於 `project/location-mappings.json`，自動選擇最接近的既有地點；沒有合理近似時使用既有地點作為隨機 fallback，並在交付說明中寫明選用的 `location.id`。
 - 角色台詞預設用 `\t[角色]正文`；旁白不是發言者，轉 scene 時直接寫正文，不要輸出成 `\t[旁白]正文`；普通 AVG 台詞不要加 `\b[...]`。
 - 立繪切換要遵守「只顯示當前發言者」；旁白前要清空人物圖。
