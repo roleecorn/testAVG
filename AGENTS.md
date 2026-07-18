@@ -2,6 +2,8 @@
 
 這份文件是 AI 協作入口。撰寫或轉換 AVG 劇情、接入小遊戲時，先從此處判斷要查哪個功能區塊。
 
+若執行環境支援 Codex Skills，優先使用專案內的 `.codex/skills/mota-avg-editor`。該 Skill 已把本文件拆出的功能文件整理為 `references/`，並提供載入順序與任務路由。
+
 ## 使用順序
 
 1. 先看 [專案架構與輸出原則](agent/project-overview.md)，確認檔案位置與 AI 產出格式。
