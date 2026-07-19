@@ -236,6 +236,7 @@ function core () {
             "bold": false,
             "time": 0,
             "letterSpacing": 0,
+            "fixedLines": 2,
             "animateTime": 0,
         },
         "globalAttribute": {
