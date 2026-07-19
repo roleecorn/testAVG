@@ -57,6 +57,7 @@ fabric.properties
 node_modules
 .tools/
 local_ai/
+.codex-remote-attachments/
 
 _saves
 dist

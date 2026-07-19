@@ -1479,19 +1479,36 @@ events.prototype._action_text = function (data, x, y, prefix) {
     data.ctx = ctx;
     if (core.getContextByName(ctx) && !data.showAll) {
         core.ui._animateUI('hide', ctx, function () {
-            core.ui.drawTextBox(data.text, data);
+            var result = core.ui.drawTextBox(data.text, data);
+            core.events._action_text_insertOverflow(data, result);
             core.ui._animateUI('show', ctx, function () {
                 if (data.async) core.doAction();
             });
         });
         return;
     }
-    core.ui.drawTextBox(data.text, data);
+    var result = core.ui.drawTextBox(data.text, data);
+    this._action_text_insertOverflow(data, result);
     if (!data.showAll) {
         core.ui._animateUI('show', ctx, function () {
             if (data.async) core.doAction();
         });
     }
+}
+
+events.prototype._action_text_insertOverflow = function (data, result) {
+    if (!result || !result.overflowText || core.status.event.id != 'action') return;
+    var current = core.status.event.data.list[0];
+    if (!current || !current.todo) return;
+    // showAll redraws the current page after a click; keep its existing next page.
+    if (data.showAll && current.todo[0] && current.todo[0].__textOverflow) return;
+    var next = core.clone(data);
+    next.text = result.overflowText;
+    next.__textOverflow = true;
+    delete next.showAll;
+    delete next.ctx;
+    delete next.floorId;
+    current.todo.unshift(next);
 }
 
 events.prototype._action_moveTextBox = function (data, x, y, prefix) {
@@ -3396,10 +3413,10 @@ events.prototype.showImage = function (code, image, sloc, loc, opacityVal, time,
     if (sw == null) sw = image.width;
     if (sh == null) sh = image.height;
     loc = loc || [];
-    var x = core.calValue(loc[0]) || 0, y = core.calValue(loc[1]) || 0;
     var w = core.calValue(loc[2]), h = core.calValue(loc[3]);
     if (w == null) w = sw;
     if (h == null) h = sh;
+    var x = core.calValue(loc[0]) || 0, y = this._resolveImageTextTopLoc(loc[1], h);
     var zIndex = code + 100;
     time = time || 0;
     var name = "image" + zIndex;
@@ -3412,6 +3429,18 @@ events.prototype.showImage = function (code, image, sloc, loc, opacityVal, time,
     }
     core.setOpacity(name, 0);
     this.moveImage(code, null, opacityVal, null, time, callback);
+}
+
+events.prototype._resolveImageTextTopLoc = function (value, imageHeight) {
+    if (typeof value == 'string') {
+        var match = value.match(/^textTop(?:([+-])(\d+))?$/);
+        if (match) {
+            var offset = parseInt(match[2]) || 0;
+            if (match[1] == '-') offset = -offset;
+            return core.ui.getFixedTextBoxTop('down') - imageHeight + offset;
+        }
+    }
+    return core.calValue(value) || 0;
 }
 
 ////// 隐藏图片 //////

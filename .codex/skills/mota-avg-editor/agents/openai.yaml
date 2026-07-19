@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mota AVG Editor"
+  short_description: "H5 魔塔 AVG 劇情、事件 JSON 與小遊戲接入指南"
+  default_prompt: "Use $mota-avg-editor to convert AVG scripts into H5 Mota event JSON or scene files."

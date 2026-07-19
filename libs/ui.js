@@ -747,7 +747,12 @@ ui.prototype.drawText = function (contents, callback) {
 
     var data = core.status.event.data.list.shift();
     if (typeof data == 'string') data = { "text": data };
-    core.ui.drawTextBox(data.text, data);
+    var result = core.ui.drawTextBox(data.text, data);
+    if (result && result.overflowText) {
+        var next = core.clone(data);
+        next.text = result.overflowText;
+        core.status.event.data.list.unshift(next);
+    }
 }
 
 ui.prototype._drawText_setContent = function (contents, callback) {
@@ -769,8 +774,9 @@ ui.prototype._drawText_setContent = function (contents, callback) {
 ////// 正则处理 \t[xx,yy] 问题
 ui.prototype._getTitleAndIcon = function (content) {
     var title = null, image = null, icon = null, height = 32, animate = 1;
-    var bigImage = null, face = null;
+    var bigImage = null, face = null, prefix = "";
     content = content.replace(/(\t|\\t)\[(([^\],]+),)?([^\],]+)\]/g, function (s0, s1, s2, s3, s4) {
+        prefix = s0;
         if (s4) {
             if (s4 == 'hero') {
                 title = core.status.hero.name;
@@ -812,12 +818,13 @@ ui.prototype._getTitleAndIcon = function (content) {
         animate: animate,
         bigImage: bigImage,
         face: face,
+        prefix: prefix,
     };
 }
 
 ////// 正则处理 \b[up,xxx] 问题
 ui.prototype._getPosition = function (content) {
-    var pos = null, px = null, py = null, noPeak = false;
+    var pos = null, px = null, py = null, noPeak = false, prefix = "";
     if (core.status.event.id == 'action') {
         px = core.status.event.data.x;
         py = core.status.event.data.y;
@@ -828,6 +835,7 @@ ui.prototype._getPosition = function (content) {
     }
     content = content.replace("\b", "\\b")
         .replace(/\\b\[(up|center|down|hero|this)(,(hero|null|\d+,\d+|\d+))?]/g, function (s0, s1, s2, s3) {
+            prefix = s0;
             pos = s1;
             if (s3 == 'hero' || s1 == 'hero' && !s3) {
                 px = core.getHeroLoc('x');
@@ -856,7 +864,7 @@ ui.prototype._getPosition = function (content) {
             }
             return "";
         });
-    return { content: content, position: pos, px: px, py: py, noPeak: noPeak };
+    return { content: content, position: pos, px: px, py: py, noPeak: noPeak, prefix: prefix };
 }
 
 ////// 绘制系统选择光标
@@ -1192,6 +1200,10 @@ ui.prototype._drawTextContent_draw = function (ctx, tempCtx, content, config) {
 }
 
 ui.prototype._drawTextContent_next = function (tempCtx, content, config) {
+    if (config.maxLines != null && config.line >= config.maxLines) {
+        config.overflowIndex = config.index;
+        return false;
+    }
     if (config.index >= content.length) {
         this._drawTextContent_newLine(tempCtx, config);
         return false;
@@ -1215,7 +1227,8 @@ ui.prototype._drawTextContent_drawChar = function (tempCtx, content, config, ch)
 
     // \n, \\n
     if (ch == '\n' || (ch == '\\' && content.charAt(config.index) == 'n')) {
-        this._drawTextContent_newLine(tempCtx, config);
+        if (!this._drawTextContent_tryNewLine(tempCtx, config, ch == '\\' ? config.index + 1 : config.index))
+            return false;
         if (ch == '\\') config.index++;
         return this._drawTextContent_next(tempCtx, content, config);
     }
@@ -1246,7 +1259,8 @@ ui.prototype._drawTextContent_drawChar = function (tempCtx, content, config, ch)
             if (!config.forceChangeLine && forbidStart.indexOf(ch) >= 0) {
                 config.forceChangeLine = true;
             } else {
-                this._drawTextContent_newLine(tempCtx, config);
+                if (!this._drawTextContent_tryNewLine(tempCtx, config, config.index - ch.length))
+                    return false;
                 config.index -= ch.length;
                 return this._drawTextContent_next(tempCtx, content, config);
             }
@@ -1259,7 +1273,8 @@ ui.prototype._drawTextContent_drawChar = function (tempCtx, content, config, ch)
                 var nextchwidth = core.calWidth(tempCtx, nextch) + config.letterSpacing;
                 if (config.offsetX + charwidth + nextchwidth > config.maxWidth) {
                     // 下一项会换行，因此在此处换行
-                    this._drawTextContent_newLine(tempCtx, config);
+                    if (!this._drawTextContent_tryNewLine(tempCtx, config, config.index - ch.length))
+                        return false;
                     config.index -= ch.length;
                     return this._drawTextContent_next(tempCtx, content, config);
                 }
@@ -1276,6 +1291,18 @@ ui.prototype._drawTextContent_drawChar = function (tempCtx, content, config, ch)
         line: config.line, marginLeft: 0
     });
     config.offsetX += charwidth;
+    return true;
+}
+
+ui.prototype._drawTextContent_tryNewLine = function (tempCtx, config, overflowIndex) {
+    if (config.maxLines != null && config.line + 1 >= config.maxLines) {
+        // Finish the final visible line before stopping. Without this, its
+        // marginTop remains unset and Canvas receives an invalid draw position.
+        this._drawTextContent_newLine(tempCtx, config);
+        config.overflowIndex = overflowIndex == null ? config.index : overflowIndex;
+        return false;
+    }
+    this._drawTextContent_newLine(tempCtx, config);
     return true;
 }
 
@@ -1378,7 +1405,8 @@ ui.prototype._drawTextContent_drawIcon = function (tempCtx, content, config) {
         // 检查自动换行
         var width = config.currfont + 2, left = config.offsetX + 2, top = config.offsetY + config.topMargin - 1;
         if (config.maxWidth != null && left + width > config.maxWidth) {
-            this._drawTextContent_newLine(tempCtx, config);
+            if (!this._drawTextContent_tryNewLine(tempCtx, config, config.index - 1))
+                return false;
             config.index--;
             return this._drawTextContent_next(tempCtx, content, config);
         }
@@ -1406,6 +1434,37 @@ ui.prototype.getTextContentHeight = function (content, config) {
 
 ui.prototype._getRealContent = function (content) {
     return content.replace(/(\r|\\(r|c|d|e|g|z))(\[.*?])?/g, "").replace(/(\\i)(\[.*?])?/g, "占1");
+}
+
+ui.prototype._drawTextBox_getFixedLines = function (config) {
+    var textAttribute = core.status.textAttribute || core.initStatus.textAttribute;
+    var fixedLines = textAttribute.fixedLines;
+    if (fixedLines == null) fixedLines = 2;
+    fixedLines = parseInt(fixedLines);
+    return fixedLines > 0 ? fixedLines : null;
+}
+
+ui.prototype._drawTextBox_getFixedHeight = function (lineHeight, fixedLines) {
+    var textAttribute = core.status.textAttribute || core.initStatus.textAttribute;
+    return 45 + fixedLines * lineHeight + textAttribute.titlefont + 5;
+}
+
+ui.prototype.getFixedTextBoxTop = function (position, fixedLines) {
+    var textAttribute = core.status.textAttribute || core.initStatus.textAttribute;
+    var lineHeight = textAttribute.lineHeight || (textAttribute.textfont + 6);
+    fixedLines = fixedLines || this._drawTextBox_getFixedLines({});
+    var height = this._drawTextBox_getFixedHeight(lineHeight, fixedLines);
+    position = position || textAttribute.position || 'down';
+    if (position == 'up') return 5 + textAttribute.offset;
+    if (position == 'down') return core._PY_ - height - 5 - textAttribute.offset;
+    return parseInt((core._PY_ - height) / 2);
+}
+
+ui.prototype._drawTextBox_buildOverflowText = function (content, titleInfo, posInfo) {
+    if (!content) return null;
+    content = content.replace(/^((\n|\\n)+)/, "");
+    if (!content) return null;
+    return (posInfo.prefix || "") + (titleInfo.prefix || "") + content;
 }
 
 ui.prototype._animateUI = function (type, ctx, callback) {
@@ -1466,7 +1525,7 @@ ui.prototype.drawTextBox = function (content, config) {
 
     // Step 2: 计算对话框的矩形位置
     var hPos = this._drawTextBox_getHorizontalPosition(content, titleInfo, posInfo);
-    var vPos = this._drawTextBox_getVerticalPosition(content, titleInfo, posInfo, hPos.validWidth);
+    var vPos = this._drawTextBox_getVerticalPosition(content, titleInfo, posInfo, hPos.validWidth, config);
     posInfo.xoffset = hPos.xoffset;
     posInfo.yoffset = vPos.yoffset - 4;
 
@@ -1483,11 +1542,14 @@ ui.prototype.drawTextBox = function (content, config) {
     var content_top = this._drawTextBox_drawTitleAndIcon(titleInfo, hPos, vPos, alpha, config.ctx);
 
     // Step 5: 绘制正文
-    var config = this.drawTextContent(config.ctx || 'ui', content, {
+    var textConfig = this.drawTextContent(config.ctx || 'ui', content, {
         left: hPos.content_left, top: content_top, maxWidth: hPos.validWidth,
-        lineHeight: vPos.lineHeight, time: (config.showAll || config.async || textAttribute.time <= 0 || core.status.event.id != 'action') ? 0 : textAttribute.time
+        lineHeight: vPos.lineHeight, maxLines: vPos.maxLines,
+        time: (config.showAll || config.async || textAttribute.time <= 0 || core.status.event.id != 'action') ? 0 : textAttribute.time
     });
-
+    if (textConfig.overflowIndex != null) {
+        textConfig.overflowText = this._drawTextBox_buildOverflowText(content.substring(textConfig.overflowIndex), titleInfo, posInfo);
+    }
     // Step 6: 绘制光标
     if (main.mode == 'play') {
         main.dom.next.style.display = 'block';
@@ -1498,7 +1560,7 @@ ui.prototype.drawTextBox = function (content, config) {
             left = hPos.right - 64;
         main.dom.next.style.left = left * core.domStyle.scale + "px";
     }
-    return config;
+    return textConfig;
 }
 
 ui.prototype._drawTextBox_drawImages = function (content, ctx) {
@@ -1556,15 +1618,25 @@ ui.prototype._drawTextBox_getHorizontalPosition = function (content, titleInfo, 
     return { left: left, right: right, width: width, validWidth: validWidth, xoffset: 11, content_left: left + paddingLeft };
 }
 
-ui.prototype._drawTextBox_getVerticalPosition = function (content, titleInfo, posInfo, validWidth) {
+ui.prototype._drawTextBox_getVerticalPosition = function (content, titleInfo, posInfo, validWidth, config) {
+    config = config || {};
     var textAttribute = core.status.textAttribute || core.initStatus.textAttribute;
     var lineHeight = textAttribute.lineHeight || (textAttribute.textfont + 6);
-    var height = 45 + this.getTextContentHeight(content, {
-        lineHeight: lineHeight, maxWidth: validWidth
-    });
-    if (titleInfo.title) height += textAttribute.titlefont + 5;
+    var fixedLines = this._drawTextBox_getFixedLines(config || {});
+    // showAll only skips the typewriter animation; it must not change the dialogue layout.
+    var fixed = fixedLines != null && !posInfo.pos && posInfo.px == null && posInfo.py == null;
+    var height, maxLines = null;
+    if (fixed) {
+        height = this._drawTextBox_getFixedHeight(lineHeight, fixedLines);
+        maxLines = fixedLines;
+    } else {
+        height = 45 + this.getTextContentHeight(content, {
+            lineHeight: lineHeight, maxWidth: validWidth
+        });
+        if (titleInfo.title) height += textAttribute.titlefont + 5;
+    }
     if (titleInfo.icon != null) {
-        if (titleInfo.title) height = Math.max(height, titleInfo.height + 50);
+        if (titleInfo.title || fixed) height = Math.max(height, titleInfo.height + 50);
         else height = Math.max(height, titleInfo.height + 30);
     }
     else if (titleInfo.image)
@@ -1591,7 +1663,7 @@ ui.prototype._drawTextBox_getVerticalPosition = function (content, titleInfo, po
         top = core.calValue(posInfo.pos[1]) || 0;
     }
 
-    return { top: top, height: height, bottom: top + height, yoffset: yoffset, lineHeight: lineHeight };
+    return { top: top, height: height, bottom: top + height, yoffset: yoffset, lineHeight: lineHeight, maxLines: maxLines };
 }
 
 ui.prototype._drawTextBox_drawTitleAndIcon = function (titleInfo, hPos, vPos, alpha, ctx) {
