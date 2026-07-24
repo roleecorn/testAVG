@@ -31,6 +31,13 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 
 不要把 PowerShell 預設解碼造成的亂碼當成可信內容，也不要根據不可讀的亂碼修改檔案。
 
+## Git 規範
+
+- 除非使用者主動要求，禁止執行 `git add` 或其他會改變 staged/index 狀態的操作。
+- 使用者要求檢查、檢驗、review、或詢問「改了什麼」時，預設先看 `git diff --cached`，而不是只看 `git diff`。
+- 在本專案中，`git diff --cached` 代表使用者已看過、但仍有疑問或需要 AI 檢查的內容；檢查時要把它視為主要對象。
+- 若需要同時判斷未 staged 的新變動，可以再補看 `git diff` 與 `git status --short`，但不能因此忽略 `git diff --cached`。
+
 ## 功能區塊
 
 - [專案架構與輸出原則](agent/project-overview.md)
