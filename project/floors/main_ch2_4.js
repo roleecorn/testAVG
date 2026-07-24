@@ -2482,7 +2482,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "【人物交流時間】",
+                        "【人物交流時間：待補】",
                         {
                             "type": "hideImage",
                             "code": 10,

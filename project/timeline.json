@@ -82,7 +82,101 @@
 					"id": "main_ch2_4",
 					"title": "2-4 書店A內部",
 					"floorId": "main_ch2_4",
-					"image": "scene_road.png"
+					"image": "scene_road.png",
+					"next": "main_ch3_1"
+				}
+			]
+		},
+		{
+			"id": "main_ch3",
+			"title": "CH3 自爆篇",
+			"nodes": [
+				{
+					"id": "main_ch3_1",
+					"title": "3-1 自爆篇",
+					"floorId": "main_ch3_1",
+					"image": "scene_street.png",
+					"next": "main_ch3_2"
+				},
+				{
+					"id": "main_ch3_2",
+					"title": "3-2 貝琪晚餐",
+					"floorId": "main_ch3_2",
+					"image": "scene_street.png",
+					"next": "main_ch3_3"
+				},
+				{
+					"id": "main_ch3_3",
+					"title": "3-3 傑士塔威會議",
+					"floorId": "main_ch3_3",
+					"image": "scene_road.png",
+					"next": "main_ch4_1"
+				}
+			]
+		},
+		{
+			"id": "main_ch4",
+			"title": "CH4 搶火車篇",
+			"nodes": [
+				{
+					"id": "main_ch4_1",
+					"title": "4-1 搶火車篇",
+					"floorId": "main_ch4_1",
+					"image": "scene_street.png",
+					"next": "main_ch4_2"
+				},
+				{
+					"id": "main_ch4_2",
+					"title": "4-2 修卡已逝",
+					"floorId": "main_ch4_2",
+					"image": "scene_road.png",
+					"next": "main_ch5_1"
+				}
+			]
+		},
+		{
+			"id": "main_ch5",
+			"title": "CH5 五日無戰事篇",
+			"nodes": [
+				{
+					"id": "main_ch5_1",
+					"title": "5-1 五日無戰事篇",
+					"floorId": "main_ch5_1",
+					"image": "scene_street.png",
+					"next": "main_ch6_1"
+				}
+			]
+		},
+		{
+			"id": "main_ch6",
+			"title": "CH6 結婚篇",
+			"nodes": [
+				{
+					"id": "main_ch6_1",
+					"title": "6-1 肥宅潮",
+					"floorId": "main_ch6_1",
+					"image": "scene_road.png",
+					"next": "main_ch6_2"
+				},
+				{
+					"id": "main_ch6_2",
+					"title": "6-2 結婚抉擇",
+					"floorId": "main_ch6_2",
+					"image": "scene_street.png",
+					"next": "main_ch6_3"
+				},
+				{
+					"id": "main_ch6_3",
+					"title": "6-3 逃亡與希望",
+					"floorId": "main_ch6_3",
+					"image": "scene_road.png",
+					"next": "main_ch6_4"
+				},
+				{
+					"id": "main_ch6_4",
+					"title": "6-4 婚禮與終章",
+					"floorId": "main_ch6_4",
+					"image": "scene_tournament.png"
 				}
 			]
 		}

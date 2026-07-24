@@ -1,8 +1,8 @@
-main.floors.mapo_1_3=
+main.floors.main_ch3_1=
 {
-    "floorId": "mapo_1_3",
-    "title": "主線 CH1 1-3 麻婆豆腐店",
-    "name": "1-3",
+    "floorId": "main_ch3_1",
+    "title": "主線 CH3 3-1 自爆篇",
+    "name": "3-1",
     "canFlyTo": false,
     "canFlyFrom": false,
     "canUseQuickShop": false,
@@ -10,7 +10,7 @@ main.floors.mapo_1_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_mapo_shop.png",
+            "name": "scene_street.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -266,7 +266,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_mapo_shop.png",
+            "image": "scene_street.png",
             "loc": [
                 0,
                 0
@@ -286,7 +286,269 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        "【主線 CH1 1-3 麻婆豆腐店】",
+        "【主線 CH3 3-1 自爆篇】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "scene_street.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        "【背景：街道】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "次日凌晨，路邊",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]可惡，來了兩天都沒有躺到床",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]不行，我今天一定要躺到床",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]話說回來，三角店長到底是甚麼東西啊，可惡，不敢問",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]總之先回去咖啡廳工作好了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "隨著梗平的步伐一起到來的還有炎炎夏意，秋葉原的熱直撲臉龐",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "沒錯，肥宅朝梗平的方向撞了過來後迅速離開了現場",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]看路啊，不對，怎麼還是你啊",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "肥宅並沒有理會梗平，只是機械式地往前跑去",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]這群肥宅真是夠了啊",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]不管了，不管了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "梗平邊走邊抱怨，慢慢回到了炭烤蜜瓜兔子",
         {
             "type": "hideImage",
             "code": 10,
@@ -315,7 +577,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 250
         },
-        "【背景：麻婆豆腐店】",
+        "【背景：咖啡廳】",
         {
             "type": "hideImage",
             "code": 10,
@@ -328,7 +590,7 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        "兩人順著地址來到了一間小餐館，有大量的男人整齊地「躺」在店門口",
+        "走進咖啡廳的梗平自顧自地拿起了掃把開始進行打掃工作",
         {
             "type": "hideImage",
             "code": 10,
@@ -341,137 +603,7 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "ms_ch1_mapo_shop_entrance_cg.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_surprised_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]人像沙丁魚一樣躺在這裡啊！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]秋葉原就是這樣的啦",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_smile_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]等等？我好像看到失去聯絡的人了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_smile_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]不好，這家店就是修卡的據點！快，變身！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_surprised_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]原來是吃飯吃到失聯啊，他們",
+        "完全忽視一旁智乃冰冷的視線......嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -495,140 +627,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]等一下，我已經完全明白A之前喊救命的原因了，是好吃到喊救命",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_surprised_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]東京居然有這種等級的料理嗎？難道它會發光？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]表妹你第一次來東京，表哥來請你吃頓好的",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_surprised_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]那你點什麼我就吃什麼",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]既然是中華料理店，那肯定是要...",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]服務員！請先來兩份免費的幸運餅乾！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[麻婆店長]本店沒有提供那種東西",
+        "\t[梗平]「不行，完全不敢對上眼神啊」",
         {
             "type": "hideImage",
             "code": 10,
@@ -652,1979 +651,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]你說...什麼",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_surprised_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]那應該在美國吧…仔細一看這菜單背面還寫著挑戰菜單啊…",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_smile_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]假面騎士不畏懼任何挑戰！老闆，我要點這個",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "隨後，一碗紅色的、看起來很不妙的麻婆豆腐被端了上來",
-        {
-            "type": "choices",
-            "text": "請選擇。",
-            "choices": [
-                {
-                    "text": "假面騎士的意志啊啊啊啊啊！",
-                    "action": [
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]爆發吧我的小宇宙，哦哦哦哦哦！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "梗平一口一口的吃下麻婆豆腐，假面騎士(?)的意志扛住了紅色醬汁的侵襲",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[路人A]那可是特製麻婆豆腐，他吃了不只一口，而是足足三口！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[路人B]大人我敬愛你呀",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[麻婆店長]吼吼，居然是承受我七成功力的好苗子，這位兄弟有沒有興趣精進麻婆道？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]請指導我吧！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 11,
-                            "image": "suou_sad_portrait.png",
-                            "loc": [
-                                260,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[表妹]這個人到底在說甚麼呢",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "經過了這樣那樣的訓練，充滿汗水、淚水、相遇、離別",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 1,
-                            "image": "scene_tournament.png",
-                            "loc": [
-                                0,
-                                0
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
-                        "【背景：大賽場地】",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "隔天，梗平代表麻婆豆腐店出陣",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "參加殺你全家斷你手腳廚藝大賽",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[麻婆店長]記住我的說過的話嗎？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]料理界不是殺就是被殺",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[麻婆店長]沒錯，我們抵達的正是時候，你看",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "群眾的歡呼使整個空間在震動",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "顯然比賽進行到了賽點，會場上方的大螢幕顯示目前正在對決的兩位料理人",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "現代最強麵包師　迪奧",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "對陣",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "史上最強生魚片職人　宿儺",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[迪奧]怎麼可能，我迪奧，居然會敗給區區的海鮮",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[宿儺]這就是你的敗因，抱著你的麵包溺死吧",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[迪奧]咕哇阿阿阿阿！(爆發四散)",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "(主持人 拉麵王 芹澤)",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[芹澤]我們的第一位選手不幸的敗下陣來",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[芹澤]希望下一位選手會更好",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[麻婆店長]還是太輕敵了，他本可以早早結束比賽的",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[麻婆店長]卻偏偏要用最華麗的方式擊敗宿儺大廚",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "隨後一陣激烈的下水餃",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "到場的廚師們一一被宿儺大廚擊敗",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[麻婆店長]哎呀，哥吉拉先生挺可惜的，技術高超但平凡的烤肉，缺乏創新",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[記者]這裡是現場記者，比賽現在進入中場休息，宿儺先生現在是連勝，讓我們訪問一下敗者組",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[記者]你認為剩下的選手中有誰有望衝擊宿儺大廚？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[迪奧]嗯？梗平吧？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[李嚴]要視具體情況而定，不過我認為是梗平。",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[哥吉拉]應該是梗平吧？如果把宿儺手指也計算在內的話可能會有不一樣。",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]除了我和表妹以外的某人吧。",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[麻婆店長]梗平，你去打敗宿儺",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 30,
-                            "image": "ms_ch1_keng_join_placeholder.png",
-                            "loc": [
-                                0,
-                                0
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[芹澤]中場結束，接下來是備受期待的下半場的首戰",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[芹澤]東邊，代表麻婆豆腐店出戰的梗平廚師",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]......我打宿儺？真的假的？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[芹澤]西邊，最強！最兇！最狂！常勝無敗，刀尖上的藝術，宿儺",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[宿儺]別讓我無聊，凡種",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[芹澤]宿儺大廚會保持連勝？還是這個新人會給眾人帶來驚喜",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_smile_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]會贏哦",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "梗平朝著宿儺大廚發起了衝鋒",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "結果是毫不令人意外的",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "梗平，滿身瘡痍",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 30,
-                            "image": "ms_ch1_keng_2_5_cg.png",
-                            "loc": [
-                                0,
-                                0
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_smile_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]到此為止了嗎？拼盡全力無法戰勝",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[不知道是誰的？]你不是還有生命嗎？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "並不存在的回憶，在梗平腦海中湧現",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]我跟著師傅學習了數十年的麻婆道",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]在這個過程，有太多的人將他的意志託付給了我",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]大師兄在吃下第一口麻婆豆腐時，因為承受不住離去了",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]二師兄也因為在煮醬時候，不小心揉到了眼睛早早退場",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]我的表妹，也在修行的過程中離開了我們",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 11,
-                            "image": "suou_sad_portrait.png",
-                            "loc": [
-                                260,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[表妹]我沒死哦",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_serious_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]安靜，這部分很重要",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]說到哪來著？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]......",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]不行，想不起來了",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]不管了，爆發吧我的小宇宙，哦哦哦哦哦！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[宿儺]什麼，不可能，竟然是失傳已久的天使麻婆豆腐！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]接下吧，這就是我跟大家的羈絆啊！！！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[芹澤]恭喜梗平選手擊敗了宿儺大廚，獲得本大賽提供的特殊獎品",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_smile_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]難不成...是假面騎士腰帶嗎？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[芹澤]恭喜他獲得了為期七天的宿儺大廚一對一教學體驗",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]不對，我還要參加Comi…",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[芹澤]該獎品無法拒絕，也不能夠轉讓",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[宿儺]好了，我們現在就開始吧",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]不要啊！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "梗平渡過了有如地獄一般的七天，宿儺大廚傾囊相授",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "等參加完Comike的朋友們再次發現梗平時",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "他已經完全燃盡了",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "梗平，錯過了Comike",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "【BE3：食神】",
-                        {
-                            "type": "changeFloor",
-                            "floorId": "mapo_1_3",
-                            "loc": [
-                                6,
-                                10
-                            ],
-                            "direction": "up",
-                            "time": 0
-                        }
-                    ]
-                },
-                {
-                    "text": "麻婆豆腐強如怪物，梗平拚盡全力無法戰勝",
-                    "action": [
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "梗平夾起了豆腐",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "梗平把麻婆豆腐送進了自己口中",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "梗平倒下了，重複一遍，梗平倒下了",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "麻婆豆腐，勝",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "與此同時的表妹用盡最後一絲力氣擊敗了麻婆豆腐",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 11,
-                            "image": "suou_sad_portrait.png",
-                            "loc": [
-                                260,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[表妹]差點死在這裡，這不愧是東京",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 11,
-                            "image": "suou_surprised_portrait.png",
-                            "loc": [
-                                260,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[表妹]對了，老闆，請問這裡可以拍照嗎？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[麻婆店長]你隨意",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "表妹用手機跟死掉的梗平合照了一張",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "然後看著他被客人們抬出店外，加入了躺在門口的行列"
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "scene_mapo_shop.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        "【背景：麻婆豆腐店】",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_smile_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]好像忘記了甚麼",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_surprised_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]啊對，要來救人的",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_smile_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]一個一個來好麻煩啊，看來這時候只能使用那招了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "表妹走到了倒在地板上了A面前",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_sad_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]急救拳！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[友人A]啊...總算活過來了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_smile_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]早安，你還好嗎？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[友人A]原本只是來打工的...老闆拿給我試吃我就吃了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[友人A]沒想到這裡的餐這麼可怕",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_sad_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]先不聊了，我要趕快去救其他人了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "表妹隨後用了一樣的方式「解救」了B、C",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "然後，她走到了梗平的前面",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_smile_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]嗯，考慮到今天的狀況",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_sad_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]急救拳．十倍出力！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]啊！我不要渡過三途川啊",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_smile_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]好，你看起來挺精神的",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]可惡，沒想到麻婆豆腐如此強大，不想再吃一次了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_sad_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]我也不想來第二次了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]不過時間好像也差不多了，住宿問題該怎麼解決呢？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_surprised_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]表哥你不是找了姨媽問打工換宿的地方嗎？",
+        "\t[梗平]「我得做點什麼來挽回我的風評才行」",
         {
             "type": "hideImage",
             "code": 10,
@@ -2648,7 +675,81 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]......",
+        "\t[梗平]「不過昨天那個警察把我的錢都騙走了，得先去賺錢才行」",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]「該去哪裡好呢？」",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "梗平很自然地坐到了櫃檯附近的桌子上，然後開始吃起了員工餐",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "旁邊的智乃依舊什麼都沒有說，只是眼神變得更加銳利了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]「不行，得趕快找其他地方打工才行」",
         {
             "type": "hideImage",
             "code": 10,
@@ -2672,7 +773,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]對喔，還有這回事",
+        "\t[梗平]「不過都來秋葉原了，還是想多去逛逛」",
         {
             "type": "hideImage",
             "code": 10,
@@ -2696,7 +797,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]那我先走一步",
+        "\t[梗平]我晚點還有事，我先走了",
         {
             "type": "hideImage",
             "code": 10,
@@ -2709,7 +810,59 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        "梗平說完後，便跑出了麻婆豆腐店",
+        "隨後梗平以最快的速度逃離了咖啡廳",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[智乃]店長，他真的靠譜嗎？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[三角]至少人不壞，昨天他其實偷偷自己又去了一趟書店A呢",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[智乃]可是聽IB說他......",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[三角]唉......",
         {
             "type": "hideImage",
             "code": 10,
@@ -2754,7 +907,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 28,
                 "textTop"
@@ -2762,7 +915,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]時間還早，到處晃晃好了",
+        "\t[梗平]該從哪裡開始呢？",
         {
             "type": "hideImage",
             "code": 10,
@@ -2791,7 +944,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 28,
                 "textTop"
@@ -2799,7 +952,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]好像忘記了甚麼",
+        "\t[梗平]不行，得快去籌錢才行",
         {
             "type": "hideImage",
             "code": 10,
@@ -2823,7 +976,1427 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]啊，打工換宿啊！",
+        "\t[梗平]說是這麼說，該去哪裡工作啊",
+        {
+            "type": "choices",
+            "text": "請選擇。",
+            "choices": [
+                {
+                    "text": "這麼說來，第一天好像有看到一間書店在招人",
+                    "action": [
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "scene_street.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        "【背景：馬的膝蓋】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平走入了名為馬的膝蓋的書店裡，店裡的每個人都忙出了殘影",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]你好，我想要來打工",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "其中一個店員，分出了一道分身出現在了梗平前面",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "(店員 腐妞)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[腐妞]太好了，你要來幫忙嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[腐妞]這邊一個小時的酬勞是2000円喔",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_smile_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]沒問題，請交給我吧，前輩！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "店員告訴了梗平需要整理的區域後，便把一個箱子放到了梗平的手中",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "在梗平反應過來之前，眼前的殘就已經消失了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[腐妞]交給你了喔",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_smile_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]喔！這就交給我這個假面騎士吧",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "接著梗平便轉身向書山裡走去，朝無盡的工作發起了衝鋒",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "然後",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "四小時後",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]「這次的敵人竟然如此強大嗎？」",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]「不僅得處理好書，還得一邊應對客人的提問」",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]「不過這一切都是值得的」",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平看著前方堆成了假面騎士形狀的書山感到了無比的自豪",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]「對了，得讓他們看看才行」",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平掏出了自己手機對成果拍了一張照發到了群組裡",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_smile_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）「假面騎士書堆的照片」",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）我果然很有藝術天分啊",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 11,
+                            "image": "suou_surprised_portrait.png",
+                            "loc": [
+                                260,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[表妹]（手機）你不是在書店工作嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_smile_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）沒錯，也正是這個地方才可以欣賞假面騎士的精神",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）我這邊一個小時2000，表妹你那邊怎麼樣",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 11,
+                            "image": "suou_sad_portrait.png",
+                            "loc": [
+                                260,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[表妹]（手機）我打小鋼珠賺到了300000",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 11,
+                            "image": "suou_sad_portrait.png",
+                            "loc": [
+                                260,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[表妹]（手機）「表妹跟機台的合照」",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[友人A]（手機）？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[友人B]（手機）？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[友人C]（手機）？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）你竟然先我一步脫離了窮人的行列嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）太可惡了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "正當梗平準備再說點什麼的時候，遠方的前輩喊了一嗓子",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[腐妞]好像有官員要來檢查了，你去處理一下",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]誒？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "一個留著黑色直髮的女人走進了店，站到了梗平的正前方",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "(官員 色情刊物檢官)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[色情刊物檢官]你是這裡的負責人嗎？我是色情刊物檢官",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[色情刊物檢官]我要搜查這裡有沒有違法的蘿莉色情刊物",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]全......全部嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[色情刊物檢官]全部，就先從那個堆得奇形怪狀的書堆開始",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "檢官指著被梗平堆成假面騎士的書堆，梗平，大危機",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]那個...不可以啊，能不能先從其他地方開始",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[色情刊物檢官]果然有問題，你們這群蘿莉控就該被電死",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[色情刊物檢官]違法書刊一定就藏在裡面，我命令你現在配合行動",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平擋在了假面騎士(書)的前方，嘗試阻止檢官靠近",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_smile_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]可惡，這麼執著要摧毀假面騎士的象徵嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]我知道了，妳果然是修卡的人吧",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]我不會向邪惡屈服的！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[色情刊物檢官]哼，看來就在這個裡面了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[色情刊物檢官]讓開！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "檢官向前突進，梗平處處阻攔",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平展現了昨天的他所沒有的勇氣，接下了每一次的進攻",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "此時，友人A走進了書店當中",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]太好了，友人A你來了，這個人是修卡的人",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]快來幫我一起阻止她！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[色情刊物檢官]還有同夥嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[友人A]你是誰，我不認識你",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[友人A]我要走了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]友人A別走啊，啊，好痛！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[色情刊物檢官]快停止抵抗，乖乖投降",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "接下來的幾個小時哩，書店呈現一副勃勃生機萬物竟發的景象",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "店員們都以極高的效率整理書堆，顧客們也井然有序地挑選自己要的書刊",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "檢官發起了一次又一次完美的攻擊，梗平則用自己的臉完美的接了下來",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "每個人都有自己美好的未來",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[色情刊物檢官]如此頑強，我明天再來一次",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]總算...守住了......",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "檢官不甘心的離開了店裡，梗平心疲力竭的癱倒在地",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平正準備回頭觀賞自己守護的成果時...不是，我書呢？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]不可能，絕對不可能",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_smile_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]前輩，你看見剛剛放在這裡的假面騎士雕塑了嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[腐妞]剛剛你跟檢官玩得很開心的時候，客人們就一本一本拿走了啊",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[腐妞]你幹的真不錯啊，我們第一次頂住她的攻擊呢",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]你說...什麼？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]不不不不不不不不不不！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "於是，梗平發出了悲鳴",
+                        {
+                            "type": "changeFloor",
+                            "floorId": "main_ch3_2",
+                            "loc": [
+                                6,
+                                10
+                            ],
+                            "direction": "up",
+                            "time": 500
+                        }
+                    ]
+                },
+                {
+                    "text": "對了，我可以去街頭賣藝",
+                    "action": [
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "(嘆息寫)",
+                        {
+                            "type": "changeFloor",
+                            "floorId": "main_ch3_1",
+                            "loc": [
+                                6,
+                                10
+                            ],
+                            "direction": "up",
+                            "time": 0
+                        }
+                    ]
+                }
+            ]
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -2835,32 +2408,6 @@ main.floors.mapo_1_3=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        "梗平往母親給的地址跑了過去",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "playTransitionVideo"
-        },
-        {
-            "type": "changeFloor",
-            "floorId": "mapo_1_4",
-            "loc": [
-                6,
-                10
-            ],
-            "direction": "up",
-            "time": 0
         }
     ],
     "parallelDo": "",

@@ -15,15 +15,25 @@ const floors = {
   "2-1": { id: "mapo_1_6", title: "主線 CH2 2-1 咖啡廳早晨", name: "2-1", bg: "scene_street.png", bgm: "bossa_casual_shop.mp3", next: "main_ch2_2" },
   "2-2": { id: "main_ch2_2", title: "主線 CH2 2-2 三過書店", name: "2-2", bg: "scene_road.png", bgm: "twists_suspense.mp3", next: "main_ch2_3" },
   "2-3": { id: "main_ch2_3", title: "主線 CH2 2-3 遊戲中心", name: "2-3", bg: "scene_street.png", bgm: "warped_surreal.mp3", next: "main_ch2_4" },
-  "2-4": { id: "main_ch2_4", title: "主線 CH2 2-4 書店A內部", name: "2-4", bg: "scene_road.png", bgm: "dark_alleys_tension.ogg", next: null },
+  "2-4": { id: "main_ch2_4", title: "主線 CH2 2-4 書店A內部", name: "2-4", bg: "scene_road.png", bgm: "dark_alleys_tension.ogg", next: "main_ch3_1" },
+  "3-1": { id: "main_ch3_1", title: "主線 CH3 3-1 自爆篇", name: "3-1", bg: "scene_street.png", bgm: "bossa_casual_shop.mp3", next: "main_ch3_2" },
+  "3-2": { id: "main_ch3_2", title: "主線 CH3 3-2 貝琪晚餐", name: "3-2", bg: "scene_street.png", bgm: "next_to_you_emotional.mp3", next: "main_ch3_3" },
+  "3-3": { id: "main_ch3_3", title: "主線 CH3 3-3 傑士塔威會議", name: "3-3", bg: "scene_road.png", bgm: "warped_surreal.mp3", next: "main_ch4_1" },
+  "4-1": { id: "main_ch4_1", title: "主線 CH4 4-1 搶火車篇", name: "4-1", bg: "scene_street.png", bgm: "great_mission_heroic.mp3", next: "main_ch4_2" },
+  "4-2": { id: "main_ch4_2", title: "主線 CH4 4-2 修卡已逝", name: "4-2", bg: "scene_road.png", bgm: "flags_drama.mp3", next: "main_ch5_1" },
+  "5-1": { id: "main_ch5_1", title: "主線 CH5 5-1 五日無戰事篇", name: "5-1", bg: "scene_street.png", bgm: "bossa_casual_shop.mp3", next: "main_ch6_1" },
+  "6-1": { id: "main_ch6_1", title: "主線 CH6 6-1 肥宅潮", name: "6-1", bg: "scene_road.png", bgm: "waking_the_devil_crisis.mp3", next: "main_ch6_2" },
+  "6-2": { id: "main_ch6_2", title: "主線 CH6 6-2 結婚抉擇", name: "6-2", bg: "scene_street.png", bgm: "flags_drama.mp3", next: "main_ch6_3" },
+  "6-3": { id: "main_ch6_3", title: "主線 CH6 6-3 逃亡與希望", name: "6-3", bg: "scene_road.png", bgm: "next_to_you_emotional.mp3", next: "main_ch6_4" },
+  "6-4": { id: "main_ch6_4", title: "主線 CH6 6-4 婚禮與終章", name: "6-4", bg: "scene_tournament.png", bgm: "next_to_you_emotional.mp3", next: null },
 };
 
 const bgByName = [
   [/車站/, "scene_station.png"],
-  [/街道|道路|河邊|倉庫|鐵道|書店A/, "scene_street.png"],
+  [/街道|道路|河邊|倉庫|鐵道|書店A|馬的膝蓋|醫院|車上|貝琪宅邸/, "scene_street.png"],
   [/麻婆豆腐店/, "scene_mapo_shop.png"],
-  [/大賽場地|遊戲中心|美術館/, "scene_tournament.png"],
-  [/咖啡廳|便利商店|家庭餐廳|書店A內部/, "scene_mapo_shop.png"],
+  [/大賽場地|遊戲中心|美術館|婚禮/, "scene_tournament.png"],
+  [/咖啡廳|便利商店|家庭餐廳|書店A內部|高級餐廳|僕咖/, "scene_mapo_shop.png"],
 ];
 
 const cgByName = {
@@ -78,6 +88,13 @@ const knownSpeakers = new Map([
   ["肥", "肥宅"],
   ["貝", "貝琪"],
   ["警", "警察"],
+  ["統", "統至"],
+  ["腐", "腐妞"],
+  ["官", "色情刊物檢官"],
+  ["鈴", "鈴仙"],
+  ["修", "修女"],
+  ["店", "書店A店長"],
+  ["416", "416"],
   ["松", "不知道是誰的松"],
   ["416(對講機)", "416(對講機)"],
   ["？", "不知道是誰的？"],
@@ -188,12 +205,27 @@ function lineToEvents(line, ctx) {
     return [...hidePortraits(), t];
   }
 
+  if (/^【人物交流時間/.test(t)) {
+    storyTodos.add(`${ctx.source} ${ctx.section}：${t} 尚未撰寫，已以文字標記保留。`);
+    return [...hidePortraits(), `${t.replace(/】$/, "")}：待補】`];
+  }
+
+  if (t === "【播放炫酷的結尾小動畫】") {
+    storyTodos.add(`${ctx.source} ${ctx.section}：${t} 尚未製作正式結尾動畫，目前用既有轉場影片事件暫代。`);
+    return [...hidePortraits(), { type: "playTransitionVideo" }];
+  }
+
+  if (t === "【後日談時間】") {
+    storyTodos.add(`${ctx.source} ${ctx.section}：${t} 尚未撰寫，已以文字標記保留。`);
+    return [...hidePortraits(), "【後日談時間：待補】"];
+  }
+
   if (/^\[END：/.test(t)) return [...hidePortraits(), t.replace(/^\[/, "【").replace(/\]$/, "】")];
 
   if (/^\[.*\]$/.test(t)) return [...hidePortraits(), t.slice(1, -1)];
 
   if (/^\(.+\)$/.test(t)) {
-    if (/鴿子|沒打完|補|自己補|可以再追加|OOO|音樂/.test(t)) storyTodos.add(`${ctx.source} ${ctx.section}：${t}`);
+    if (/鴿子|沒打完|補|自己補|可以再追加|OOO|音樂|嘆息|小遊戲|動畫|後日談|人物交流/.test(t)) storyTodos.add(`${ctx.source} ${ctx.section}：${t}`);
     if (/美術館開場的音樂/.test(t)) {
       return [{ type: "playBgm", name: "ms_ch2_gallery_opening.mp3", keep: true }, ...hidePortraits(), t];
     }
@@ -240,7 +272,7 @@ function hasChangeFloor(events) {
 
 function containsEnd(events) {
   const text = JSON.stringify(events);
-  return /BE|END|錯過了?\s*Comike|錯過了?COMIKE|錯過了?comike|鴿子|暫未實作/.test(text);
+  return /BE|END|錯過|失去.*權利|Comike早已結束|COMIKE早已結束|comike早已結束|鴿子|嘆息寫|暫未實作/.test(text);
 }
 
 function parseEvents(lines, start, ctx, stopLabels = null) {
@@ -335,7 +367,8 @@ function parseChoice(lines, start, ctx, parentStopLabels = null) {
 
 function buildFloor(section, lines) {
   const meta = floors[section];
-  const ctx = { floorId: meta.id, bg: meta.bg, source: section.startsWith("1-") ? "project/mainStory/CH1" : "project/mainStory/CH2", section };
+  const chapter = section.split("-")[0];
+  const ctx = { floorId: meta.id, bg: meta.bg, source: `project/mainStory/CH${chapter}`, section };
   const parsed = parseEvents(lines, 0, ctx);
   const events = [
     setTextEvent(),
@@ -399,7 +432,7 @@ function ensureAssets() {
 function updateData() {
   const file = p("project", "data.js");
   let text = fs.readFileSync(file, "utf8");
-  const mainStoryOrder = ["mapo_1_1", "mapo_1_2", "mapo_1_3", "mapo_1_4", "mapo_1_5", "mapo_1_6", "main_ch2_2", "main_ch2_3", "main_ch2_4"];
+  const mainStoryOrder = Object.values(floors).map((meta) => meta.id);
   const floorIdsMatch = text.match(/"floorIds": \[\n([\s\S]*?)\n\t\t\]/);
   if (!floorIdsMatch) throw new Error("Cannot locate floorIds in project/data.js");
   const currentFloorIds = Array.from(floorIdsMatch[1].matchAll(/"([^"]+)"/g)).map((m) => m[1]);
@@ -410,7 +443,7 @@ function updateData() {
   reordered.splice(insertAt, 0, ...mainStoryOrder);
   const floorIdsBlock = `"floorIds": [\n${reordered.map((id) => `\t\t\t"${id}"`).join(",\n")}\n\t\t]`;
   text = text.replace(/"floorIds": \[\n[\s\S]*?\n\t\t\]/, floorIdsBlock);
-  for (const id of ["main_ch2_2", "main_ch2_3", "main_ch2_4"]) {
+  for (const id of mainStoryOrder) {
     if (!text.includes(`"${id}"`)) {
       throw new Error(`Failed to insert ${id} into floorIds`);
     }
@@ -430,6 +463,28 @@ function updateData() {
 }
 
 function updateTimeline() {
+  const chapterTitles = {
+    1: "CH1 麻婆豆腐篇",
+    2: "CH2 三過書店而不入篇",
+    3: "CH3 自爆篇",
+    4: "CH4 搶火車篇",
+    5: "CH5 五日無戰事篇",
+    6: "CH6 結婚篇",
+  };
+  const chapters = Object.entries(chapterTitles).map(([chapter, title]) => {
+    const nodes = Object.entries(floors)
+      .filter(([section]) => section.startsWith(`${chapter}-`))
+      .map(([section, meta]) => ({
+        id: meta.id,
+        title: `${section} ${meta.title.replace(/^主線 CH\d+ \d+-\d+ /, "")}`,
+        floorId: meta.id,
+        image: meta.bg,
+        ...(section === "1-1" ? { alwaysUnlocked: true } : {}),
+        ...(meta.next ? { next: meta.next } : {}),
+      }));
+    return { id: `main_ch${chapter}`, title, nodes };
+  });
+
   const timeline = {
     title: "章節時間線",
     subtitle: "秋葉原之旅",
@@ -439,29 +494,7 @@ function updateTimeline() {
     nodeGap: 188,
     laneGap: 126,
     chapterPadding: 72,
-    chapters: [
-      {
-        id: "main_ch1",
-        title: "CH1 麻婆豆腐篇",
-        nodes: [
-          { id: "mapo_1_1", title: "1-1 車站", floorId: "mapo_1_1", image: "scene_station.png", alwaysUnlocked: true, next: "mapo_1_2" },
-          { id: "mapo_1_2", title: "1-2 倉庫區", floorId: "mapo_1_2", image: "scene_road.png", next: "mapo_1_3" },
-          { id: "mapo_1_3", title: "1-3 麻婆豆腐店", floorId: "mapo_1_3", image: "scene_mapo_shop.png", next: "mapo_1_4" },
-          { id: "mapo_1_4", title: "1-4 炭烤蜜瓜兔子", floorId: "mapo_1_4", image: "scene_street.png", next: "mapo_1_5" },
-          { id: "mapo_1_5", title: "1-5 掉落物", floorId: "mapo_1_5", image: "scene_street.png", next: "mapo_1_6" },
-        ],
-      },
-      {
-        id: "main_ch2",
-        title: "CH2 三過書店而不入篇",
-        nodes: [
-          { id: "mapo_1_6", title: "2-1 咖啡廳早晨", floorId: "mapo_1_6", image: "scene_street.png", next: "main_ch2_2" },
-          { id: "main_ch2_2", title: "2-2 三過書店", floorId: "main_ch2_2", image: "scene_road.png", next: "main_ch2_3" },
-          { id: "main_ch2_3", title: "2-3 遊戲中心", floorId: "main_ch2_3", image: "scene_street.png", next: "main_ch2_4" },
-          { id: "main_ch2_4", title: "2-4 書店A內部", floorId: "main_ch2_4", image: "scene_road.png" },
-        ],
-      },
-    ],
+    chapters,
   };
   fs.writeFileSync(p("project", "timeline.json"), JSON.stringify(timeline, null, "\t") + "\n", "utf8");
 }
@@ -483,6 +516,10 @@ function updateTodo() {
     ...Array.from(storyTodos).sort().map((x) => `- ${x}`),
     "- `project/mainStory/CH1 1-4`：人物交流時間尚未實作，已以文字標記保留。",
     "- `project/mainStory/CH2 2-4`：美術館支線後續與動物園/其他怪談類分歧尚未完整撰寫。",
+    "- `project/mainStory/CH3 3-1`：街頭賣藝分歧目前原稿為「嘆息寫」，已保留為可回流分歧。",
+    "- `project/mainStory/CH3 3-3`：傑士塔威會議可追加煩人小遊戲，目前以原劇情旁白接續。",
+    "- `project/mainStory/CH5 5-1`：人物交流時間X2尚未實作，已以文字標記保留。",
+    "- `project/mainStory/CH6 6-4`：後日談時間尚未撰寫，已以文字標記保留。",
     "",
     "## 待補素材",
     "",
@@ -490,15 +527,17 @@ function updateTodo() {
     "- `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。",
     "- `project/images/ms_ch1_keng_join_placeholder.png`：專案目前沒有現有 GIF 可複製，暫用複製靜態圖，來源為 `project/images/scene_tournament.png`；之後需要替換成「梗平參戰」正式 GIF。",
     "- `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。",
-    "- CH1/CH2 多處背景（咖啡廳、便利商店、河邊、書店A、家庭餐廳、遊戲中心、美術館）目前沿用既有背景圖；之後可替換正式背景。",
+    "- CH1-CH6 多處背景（咖啡廳、便利商店、河邊、書店A、家庭餐廳、遊戲中心、美術館、馬的膝蓋、高級餐廳、醫院、車上、貝琪宅邸、僕咖、婚禮）目前沿用既有背景圖；之後可替換正式背景。",
     "",
     "## 待實作演出或小遊戲",
     "",
     "- `project/mainStory/CH1 1-4`：下水道雷霆大鱷魚戰鬥目前依原稿以旁白略過，之後可補正式戰鬥或小遊戲。",
+    "- `project/mainStory/CH3 3-3`：統至分析傑士塔威的橋段可補獨立小遊戲。",
+    "- `project/mainStory/CH6 6-4`：結尾小動畫目前使用既有轉場影片事件暫代，之後可替換正式結尾動畫。",
     "",
     "## 已確認可處理",
     "",
-    "- CH1/CH2 主線已接入樓層與時間線，可先作為可跑版本繼續迭代。",
+    "- CH1-CH6 主線已接入樓層與時間線，可先作為完整可跑版本繼續迭代。",
   ];
   fs.writeFileSync(p("project", "mainStory", "TODO.md"), todoLines.join("\n") + "\n", "utf8");
 }
@@ -508,6 +547,10 @@ function main() {
   const sections = {
     ...readSections(p("project", "mainStory", "CH1")),
     ...readSections(p("project", "mainStory", "CH2")),
+    ...readSections(p("project", "mainStory", "CH3")),
+    ...readSections(p("project", "mainStory", "CH4")),
+    ...readSections(p("project", "mainStory", "CH5")),
+    ...readSections(p("project", "mainStory", "CH6")),
   };
 
   for (const key of Object.keys(floors)) {
