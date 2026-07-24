@@ -1,7 +1,10 @@
 {
 	"title": "章節時間線",
-	"subtitle": "麻婆豆腐篇",
-	"defaultLoc": [6, 10],
+	"subtitle": "秋葉原之旅",
+	"defaultLoc": [
+		6,
+		10
+	],
 	"defaultDirection": "up",
 	"changeFloorTime": 500,
 	"nodeGap": 188,
@@ -9,8 +12,8 @@
 	"chapterPadding": 72,
 	"chapters": [
 		{
-			"id": "mapo",
-			"title": "麻婆豆腐篇",
+			"id": "main_ch1",
+			"title": "CH1 麻婆豆腐篇",
 			"nodes": [
 				{
 					"id": "mapo_1_1",
@@ -22,37 +25,64 @@
 				},
 				{
 					"id": "mapo_1_2",
-					"title": "1-2 街道",
+					"title": "1-2 倉庫區",
 					"floorId": "mapo_1_2",
-					"image": "scene_street.png",
+					"image": "scene_road.png",
 					"next": "mapo_1_3"
 				},
 				{
 					"id": "mapo_1_3",
-					"title": "1-3 道路",
+					"title": "1-3 麻婆豆腐店",
 					"floorId": "mapo_1_3",
-					"image": "scene_road.png",
+					"image": "scene_mapo_shop.png",
 					"next": "mapo_1_4"
 				},
 				{
 					"id": "mapo_1_4",
-					"title": "1-4 賽場",
+					"title": "1-4 炭烤蜜瓜兔子",
 					"floorId": "mapo_1_4",
-					"image": "scene_tournament.png",
+					"image": "scene_street.png",
 					"next": "mapo_1_5"
 				},
 				{
 					"id": "mapo_1_5",
-					"title": "1-5 店鋪",
+					"title": "1-5 掉落物",
 					"floorId": "mapo_1_5",
-					"image": "scene_mapo_shop.png",
+					"image": "scene_street.png",
 					"next": "mapo_1_6"
-				},
+				}
+			]
+		},
+		{
+			"id": "main_ch2",
+			"title": "CH2 三過書店而不入篇",
+			"nodes": [
 				{
 					"id": "mapo_1_6",
-					"title": "1-6 結尾",
+					"title": "2-1 咖啡廳早晨",
 					"floorId": "mapo_1_6",
-					"image": "scene_mapo_cg.png"
+					"image": "scene_street.png",
+					"next": "main_ch2_2"
+				},
+				{
+					"id": "main_ch2_2",
+					"title": "2-2 三過書店",
+					"floorId": "main_ch2_2",
+					"image": "scene_road.png",
+					"next": "main_ch2_3"
+				},
+				{
+					"id": "main_ch2_3",
+					"title": "2-3 遊戲中心",
+					"floorId": "main_ch2_3",
+					"image": "scene_street.png",
+					"next": "main_ch2_4"
+				},
+				{
+					"id": "main_ch2_4",
+					"title": "2-4 書店A內部",
+					"floorId": "main_ch2_4",
+					"image": "scene_road.png"
 				}
 			]
 		}

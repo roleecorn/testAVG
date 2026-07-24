@@ -12,6 +12,9 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"mapo_1_4",
 			"mapo_1_5",
 			"mapo_1_6",
+			"main_ch2_2",
+			"main_ch2_3",
+			"main_ch2_4",
 			"huangmo_1",
 			"huangmo_2",
 			"yuedu_ai_1",
@@ -68,6 +71,9 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"minigames/slot777/symbols.png",
 			"scene_badend.png",
 			"scene_mapo_cg.png",
+			"ms_ch1_keng_join_placeholder.png",
+			"ms_ch1_keng_2_5_cg.png",
+			"ms_ch1_mapo_shop_entrance_cg.png",
 			"scene_mapo_shop.png",
 			"scene_road.png",
 			"scene_station.png",
@@ -111,7 +117,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"spacetime_mystery.mp3",
 			"twists_suspense.mp3",
 			"waking_the_devil_crisis.mp3",
-			"warped_surreal.mp3"
+			"warped_surreal.mp3",
+			"ms_ch2_gallery_opening.mp3"
 		],
 		"sounds": [
 			"attack.mp3",
@@ -264,7 +271,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 		]
 	},
 	"firstData": {
-		"title": "麻婆豆腐",
+		"title": "秋葉原之旅",
 		"name": "mapo_tofu",
 		"version": "Ver 2.10.3",
 		"floorId": "Akiba",
