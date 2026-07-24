@@ -50,6 +50,7 @@ Load only the references needed for the current task:
 - Use the project standard service (`启动服务.exe`) and `http://127.0.0.1:1055/` URLs for manual game/editor verification unless the user asks for server diagnostics.
 - If TODOs, unresolved story gaps, missing assets, or uncertain characters arise, create or update a project TODO list file; do not leave them only in the chat.
 - For uncertain characters, use the searchable placeholder `不知道是誰的<劇本中出現的名稱>` until the user confirms the character identity, then replace text, IDs, and images together.
+- If a required CG, GIF, or BGM asset is missing, copy any existing same-type asset to the required new filename, register and reference that new filename, then record in the TODO list that it is a temporary copied asset that must be replaced later. Do not use this rule for character portraits.
 
 ## Delivery Check
 

@@ -44,3 +44,14 @@ TODO list 使用 Markdown，至少包含：
 ## 素材缺口
 
 缺背景、CG、GIF、立繪、BGM 或音效時，也要寫進 TODO list。缺素材不一定阻擋劇情轉換；可先用可搜尋佔位名稱保留演出意圖，但不得把錯誤角色圖或不相干素材當作正式替代。
+
+缺少 CG、GIF 或 BGM 時，不要只留下缺檔引用。應直接複製任意同類型的現有素材，命名成劇情實際需要的新檔名，並照常寫入事件與 `project/data.js` 登錄。接著在 TODO list 的 `待補素材` 標明該檔案目前是暫用複製素材，之後需要替換正式素材。
+
+範例：
+
+```md
+- `project/images/ms_ch1_mapo_shop_cg.png`：暫用複製 CG，來源為 `project/images/example.png`；之後需要替換成「麻婆豆腐店門口」正式 CG。
+- `project/bgms/ms_ch4_train_tension.mp3`：暫用複製 BGM，來源為 `project/bgms/example.mp3`；之後需要替換成鐵道突入用 BGM。
+```
+
+複製素材時保留檔案類型與副檔名一致：CG 用現有圖片檔複製，GIF 用現有 GIF 複製，BGM 用現有音樂檔複製。這條規則只適用於 CG/GIF/BGM；角色立繪仍需遵守角色對應，不可用其他角色圖片假裝正式立繪。
