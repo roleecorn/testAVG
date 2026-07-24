@@ -52,4 +52,4 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 
 ## 更新
 劇情可能會在某個時間點後更新，如果我要求更新劇情，只需要考慮以下commit後(不含)的劇情即可
-4a42fb1f86600ec35351b75946cedcd3f982cfa7
+5dca3c747071bb2a0f5cddb8f321bf306a2c912b

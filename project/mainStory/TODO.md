@@ -15,7 +15,6 @@
 ## 待補劇情
 
 - project/mainStory/CH1 1-3：【人物交流時間】 尚未撰寫，已以文字標記保留。
-- project/mainStory/CH1 1-4：(戰鬥有人打算寫再自己補，或哪天我想到BY鳥)
 - project/mainStory/CH2 2-2：(鴿子)
 - project/mainStory/CH2 2-4：(美術館開場的音樂.mp3)
 - project/mainStory/CH2 2-4：【人物交流時間】 尚未撰寫，已以文字標記保留。
@@ -39,12 +38,12 @@
 - `project/images/ms_ch1_mapo_shop_entrance_cg.png`：暫用複製 CG，來源為 `project/images/scene_mapo_cg.png`；之後需要替換成「麻婆豆腐店門口」正式 CG。
 - `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。
 - `project/images/ms_ch1_keng_join_placeholder.png`：專案目前沒有現有 GIF 可複製，暫用複製靜態圖，來源為 `project/images/scene_tournament.png`；之後需要替換成「梗平參戰」正式 GIF。
+- `project/images/ms_ch1_thunder_crocodile_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「放大的鱷魚圖」正式 CG。
 - `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。
 - CH1-CH6 多處背景（咖啡廳、便利商店、河邊、書店A、家庭餐廳、遊戲中心、美術館、馬的膝蓋、高級餐廳、醫院、車上、貝琪宅邸、僕咖、婚禮）目前沿用既有背景圖；之後可替換正式背景。
 
 ## 待實作演出或小遊戲
 
-- `project/mainStory/CH1 1-4`：下水道雷霆大鱷魚戰鬥目前依原稿以旁白略過，之後可補正式戰鬥或小遊戲。
 - `project/mainStory/CH3 3-3`：統至分析傑士塔威的橋段可補獨立小遊戲。
 - `project/mainStory/CH6 6-4`：結尾小動畫目前使用既有轉場影片事件暫代，之後可替換正式結尾動畫。
 

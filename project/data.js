@@ -84,6 +84,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"ms_ch1_keng_join_placeholder.png",
 			"ms_ch1_keng_2_5_cg.png",
 			"ms_ch1_mapo_shop_entrance_cg.png",
+			"ms_ch1_thunder_crocodile_cg.png",
 			"scene_mapo_shop.png",
 			"scene_road.png",
 			"scene_station.png",

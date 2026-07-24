@@ -1924,7 +1924,7 @@ main.floors.mapo_1_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]居然是雷霆大鱷魚！(放大的鱷魚圖)",
+                        "\t[梗平]居然是雷霆大鱷魚！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1936,6 +1936,17 @@ main.floors.mapo_1_4=
                             "code": 11,
                             "time": 0,
                             "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "ms_ch1_thunder_crocodile_cg.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
                         },
                         "雷霆大鱷魚不等梗平反應即發起了死亡翻滾",
                         {
@@ -1951,6 +1962,11 @@ main.floors.mapo_1_4=
                             "async": true
                         },
                         {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -1962,19 +1978,6 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]這跟說好的不一樣啊！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "(戰鬥有人打算寫再自己補，或哪天我想到BY鳥)",
                         {
                             "type": "hideImage",
                             "code": 10,
