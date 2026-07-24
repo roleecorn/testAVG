@@ -25,6 +25,7 @@
 - 普通 AVG 對話框維持固定高度，全塔 `fixedLines` 預設 `2`；長句交由引擎自動切到下一個文字框，不要為單句手動撐高對話框。
 - 持續立繪用 `showImage/hideImage` 或 `showFloorImg/hideFloorImg`，不要只用 `\f`。
 - 修改既有樓層或劇本時，優先維持原檔格式與局部修改，避免為了小改動重新序列化整份 JSON/JS 造成大 diff。
+- 修改 `scripts/` 內生成器、轉換器、或任何會批量重建檔案的工具後，必須在交付前檢查 `git diff --name-only` 與 `git diff --stat`，確認實際改動範圍是否符合本次目的。若產生非預期副作用（例如無關樓層被重建、既有 CG/GIF/BGM 事件退化成文字、TODO 被錯誤搬移），先停止並收斂或回報，不可直接交付。
 - AVG 預設英雄圖保持透明；若要做小遊戲需要可見玩家角色，再另備可見英雄圖或用 `showHero`/`setHeroOpacity` 控制。
 - 劇情分支用 `flag:xxx`；單點一次性狀態用 `switch:A`；跨存檔解鎖用 `global:xxx`。
 - 搜尋 Flag 時使用事件編輯器的「變量出現位置搜索」，搜尋 `flag:xxx`。

@@ -365,6 +365,11 @@ main.floors.mapo_1_3=
             "async": true
         },
         {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
             "type": "showImage",
             "code": 11,
             "image": "suou_surprised_portrait.png",
@@ -1308,6 +1313,11 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         "\t[芹澤]中場結束，接下來是備受期待的下半場的首戰",
                         {
                             "type": "hideImage",
@@ -1482,6 +1492,11 @@ main.floors.mapo_1_3=
                             "code": 11,
                             "time": 0,
                             "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "showImage",

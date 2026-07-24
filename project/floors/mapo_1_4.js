@@ -1948,6 +1948,18 @@ main.floors.mapo_1_4=
                             "opacity": 1,
                             "time": 250
                         },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "雷霆大鱷魚不等梗平反應即發起了死亡翻滾",
                         {
                             "type": "hideImage",
@@ -2244,6 +2256,19 @@ main.floors.mapo_1_4=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "playTransitionVideo"
+        },
+        {
+            "type": "changeFloor",
+            "floorId": "mapo_1_5",
+            "loc": [
+                6,
+                10
+            ],
+            "direction": "up",
+            "time": 0
         }
     ],
     "parallelDo": "",

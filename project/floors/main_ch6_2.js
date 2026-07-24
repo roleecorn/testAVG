@@ -2092,6 +2092,19 @@ main.floors.main_ch6_2=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "playTransitionVideo"
+        },
+        {
+            "type": "changeFloor",
+            "floorId": "main_ch6_3",
+            "loc": [
+                6,
+                10
+            ],
+            "direction": "up",
+            "time": 0
         }
     ],
     "parallelDo": "",

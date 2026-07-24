@@ -1573,6 +1573,19 @@ main.floors.mapo_1_6=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "playTransitionVideo"
+        },
+        {
+            "type": "changeFloor",
+            "floorId": "main_ch2_2",
+            "loc": [
+                6,
+                10
+            ],
+            "direction": "up",
+            "time": 0
         }
     ],
     "parallelDo": "",

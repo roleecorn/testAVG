@@ -39,6 +39,7 @@ const bgByName = [
 const cgByName = {
   "麻婆豆腐店門口": "ms_ch1_mapo_shop_entrance_cg.png",
   "2.5梗平": "ms_ch1_keng_2_5_cg.png",
+  "放大的鱷魚圖": "ms_ch1_thunder_crocodile_cg.png",
 };
 
 const gifByName = {
@@ -48,6 +49,7 @@ const gifByName = {
 const placeholderAssets = [
   ["project/images/scene_mapo_cg.png", "project/images/ms_ch1_mapo_shop_entrance_cg.png"],
   ["project/images/scene_badend.png", "project/images/ms_ch1_keng_2_5_cg.png"],
+  ["project/images/scene_badend.png", "project/images/ms_ch1_thunder_crocodile_cg.png"],
   ["project/images/scene_tournament.png", "project/images/ms_ch1_keng_join_placeholder.png"],
   ["project/bgms/spacetime_mystery.mp3", "project/bgms/ms_ch2_gallery_opening.mp3"],
 ];
@@ -55,6 +57,7 @@ const placeholderAssets = [
 const extraImages = [
   "ms_ch1_mapo_shop_entrance_cg.png",
   "ms_ch1_keng_2_5_cg.png",
+  "ms_ch1_thunder_crocodile_cg.png",
   "ms_ch1_keng_join_placeholder.png",
 ];
 
@@ -181,6 +184,7 @@ function lineToEvents(line, ctx) {
   if (/^【背景：/.test(t)) {
     const name = t.replace(/^【背景：/, "").replace(/】$/, "");
     const bg = (bgByName.find(([re]) => re.test(name)) || [null, ctx.bg])[1];
+    ctx.cgVisible = false;
     return [
       ...hidePortraits(),
       { type: "hideImage", code: 30, time: 150 },
@@ -192,12 +196,14 @@ function lineToEvents(line, ctx) {
   if (/^【CG：/.test(t)) {
     const name = t.replace(/^【CG：/, "").replace(/】$/, "");
     const image = cgByName[name] || "scene_mapo_cg.png";
+    ctx.cgVisible = true;
     return [...hidePortraits(), { type: "showImage", code: 30, image, loc: [0, 0], opacity: 1, time: 250 }];
   }
 
   if (/^【GIF /.test(t)) {
     const name = t.replace(/^【GIF\s*/, "").replace(/】$/, "");
     const image = gifByName[name] || "ms_ch1_keng_join_placeholder.png";
+    ctx.cgVisible = true;
     return [...hidePortraits(), { type: "showImage", code: 30, image, loc: [0, 0], opacity: 1, time: 250 }];
   }
 
@@ -225,6 +231,11 @@ function lineToEvents(line, ctx) {
   if (/^\[.*\]$/.test(t)) return [...hidePortraits(), t.slice(1, -1)];
 
   if (/^\(.+\)$/.test(t)) {
+    const mediaName = t.slice(1, -1).trim();
+    if (cgByName[mediaName]) {
+      ctx.cgVisible = true;
+      return [...hidePortraits(), { type: "showImage", code: 30, image: cgByName[mediaName], loc: [0, 0], opacity: 1, time: 250 }];
+    }
     if (/鴿子|沒打完|補|自己補|可以再追加|OOO|音樂|嘆息|小遊戲|動畫|後日談|人物交流/.test(t)) storyTodos.add(`${ctx.source} ${ctx.section}：${t}`);
     if (/美術館開場的音樂/.test(t)) {
       return [{ type: "playBgm", name: "ms_ch2_gallery_opening.mp3", keep: true }, ...hidePortraits(), t];
@@ -241,7 +252,9 @@ function lineToEvents(line, ctx) {
     const display = knownSpeakers.get(rawName) || rawName;
     if (/^不知道是誰的/.test(display)) uncertainSpeakers.add(`${ctx.source} ${ctx.section}：${display}（原始名稱：${rawName}）`);
     const portrait = portraitFor(display, body);
-    return [...hidePortraits(), ...(portrait ? [portrait] : []), `\t[${display}]${body}`];
+    const clearCg = ctx.cgVisible ? [{ type: "hideImage", code: 30, time: 150 }] : [];
+    ctx.cgVisible = false;
+    return [...hidePortraits(), ...clearCg, ...(portrait ? [portrait] : []), `\t[${display}]${body}`];
   }
 
   return [...hidePortraits(), t];
@@ -268,6 +281,10 @@ function hasChangeFloor(events) {
     if (event && typeof event === "object" && event.type === "choices") return event.choices.some((c) => hasChangeFloor(c.action || []));
     return false;
   });
+}
+
+function hasTopLevelChangeFloor(events) {
+  return events.some((event) => event && typeof event === "object" && event.type === "changeFloor");
 }
 
 function containsEnd(events) {
@@ -379,7 +396,7 @@ function buildFloor(section, lines) {
     ...parsed.events,
     ...hidePortraits(),
   ];
-  if (meta.next && !hasChangeFloor(events.slice(-8))) {
+  if (meta.next && !hasTopLevelChangeFloor(events.slice(-8))) {
     events.push({ type: "playTransitionVideo" }, { type: "changeFloor", floorId: meta.next, loc: [6, 10], direction: "up", time: 0 });
   }
 
@@ -525,6 +542,7 @@ function updateTodo() {
     "",
     "- `project/images/ms_ch1_mapo_shop_entrance_cg.png`：暫用複製 CG，來源為 `project/images/scene_mapo_cg.png`；之後需要替換成「麻婆豆腐店門口」正式 CG。",
     "- `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。",
+    "- `project/images/ms_ch1_thunder_crocodile_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「放大的鱷魚圖」正式 CG。",
     "- `project/images/ms_ch1_keng_join_placeholder.png`：專案目前沒有現有 GIF 可複製，暫用複製靜態圖，來源為 `project/images/scene_tournament.png`；之後需要替換成「梗平參戰」正式 GIF。",
     "- `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。",
     "- CH1-CH6 多處背景（咖啡廳、便利商店、河邊、書店A、家庭餐廳、遊戲中心、美術館、馬的膝蓋、高級餐廳、醫院、車上、貝琪宅邸、僕咖、婚禮）目前沿用既有背景圖；之後可替換正式背景。",
