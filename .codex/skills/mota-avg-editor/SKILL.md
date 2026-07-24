@@ -31,6 +31,7 @@ Load only the references needed for the current task:
 - BGM playback, keep behavior, pause/resume, fades, speed, or cache: `references/bgm.md`
 - Sound effects or animation effects: `references/audio-effects.md`
 - Plain script to event JSON conversion: `references/text-to-event-json.md`
+- TODO items, unresolved story gaps, uncertain characters, missing assets, or questions for the user: `references/todo.md`
 - New or changed standalone minigame: `references/minigame-integration.md`
 - Akiba map, Akiba place triggers, or location metadata: `references/akiba.md`
 - Akiba event manager design or implementation planning: `references/akiba-event-manager-plan.md`
@@ -47,6 +48,8 @@ Load only the references needed for the current task:
 - Register new images, BGMs, sounds, and aliases in `project/data.js` when needed.
 - Put standalone minigame logic in `extensions/minigames/`; keep `project/plugins.js` as a thin integration layer.
 - Use the project standard service (`启动服务.exe`) and `http://127.0.0.1:1055/` URLs for manual game/editor verification unless the user asks for server diagnostics.
+- If TODOs, unresolved story gaps, missing assets, or uncertain characters arise, create or update a project TODO list file; do not leave them only in the chat.
+- For uncertain characters, use the searchable placeholder `不知道是誰的<劇本中出現的名稱>` until the user confirms the character identity, then replace text, IDs, and images together.
 
 ## Delivery Check
 
