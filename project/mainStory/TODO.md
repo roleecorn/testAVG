@@ -32,6 +32,7 @@
 - `project/mainStory/CH3 3-3`：傑士塔威會議可追加煩人小遊戲，目前以原劇情旁白接續。
 - `project/mainStory/CH5 5-1`：人物交流時間X2尚未實作，已以文字標記保留。
 - `project/mainStory/CH6 6-4`：後日談時間尚未撰寫，已以文字標記保留。
+- `project/mainStory/`：把所有梗平的我換成在下
 
 ## 待補素材
 
