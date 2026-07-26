@@ -33,6 +33,7 @@
 - `project/mainStory/CH5 5-1`：人物交流時間X2尚未實作，已以文字標記保留。
 - `project/mainStory/CH6 6-4`：後日談時間尚未撰寫，已以文字標記保留。
 - `project/mainStory/`：把所有梗平的我換成在下
+- `project/story/lei.txt`：原作者已修改，整段移除
 
 ## 待補素材
 
