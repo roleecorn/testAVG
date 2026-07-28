@@ -928,7 +928,14 @@ main.floors.main_ch3_1=
             "time": 0,
             "async": true
         },
-        "【人物交流時間：待補】",
+        {
+            "type": "comment",
+            "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch3_1_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
+        },
         {
             "type": "hideImage",
             "code": 10,

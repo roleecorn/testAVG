@@ -107,10 +107,10 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 				if (currentId != null) core.getFlag("__leaveLoc__")[currentId] = core.clone(core.status.hero.loc);
 			}
 
-			// 可以对currentId进行判定，比如删除某些自定义图层等
-			// if (currentId == 'MT0') {
-			//     core.deleteAllCanvas();
-			// }
+			// showImage 會建立 image* 動態畫布；每次換樓層都清掉，避免主線、角色劇情或秋葉原之間殘留舊立繪／背景。
+			core.deleteCanvas(function (name) {
+				return /^image\d+$/.test(name);
+			});
 
 			// 根据分区信息自动砍层与恢复
 			if (core.autoRemoveMaps) core.autoRemoveMaps(floorId);

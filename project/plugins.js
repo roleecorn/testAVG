@@ -314,11 +314,13 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 
 			var activeEvents = this._getAkibaActiveEvents();
 			var completedEvents = this._getAkibaEventIdArrayFlag('akiba_completed_events');
+			var wasActive = activeEvents.some(function (event) { return event.id === eventId; });
 			activeEvents = activeEvents.filter(function (event) { return event.id !== eventId; });
 			if (completedEvents.indexOf(eventId) < 0) completedEvents.push(eventId);
 
 			this._setAkibaActiveEvents(activeEvents);
 			this._setAkibaEventIdArrayFlag('akiba_completed_events', completedEvents);
+			if (wasActive) this._advanceCharacterExchange();
 		}
 
 		this.addAkibaEvent = function (eventData) {
@@ -340,7 +342,95 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			return true;
 		}
 
+		this._normalizeMainlineExchangeDestination = function (destination) {
+			if (!destination || !destination.floorId) return null;
+			var loc = destination.loc instanceof Array ? destination.loc : [6, 10];
+			if (loc.length < 2 || typeof loc[0] != 'number' || typeof loc[1] != 'number') loc = [6, 10];
+			return {
+				"floorId": destination.floorId,
+				"loc": [loc[0], loc[1]],
+				"direction": destination.direction || 'up',
+				"time": destination.time == null ? 0 : destination.time,
+				"transitionVideo": destination.transitionVideo === true
+			};
+		}
+
+		// 主線的「人物交流回合」是 scene 分界標記；完成指定數量的好感劇情後前往標記後的 continuation scene。
+		this.beginCharacterExchange = function (destination, targetCount) {
+			var next = this._normalizeMainlineExchangeDestination(destination);
+			if (!next) {
+				console.warn('Cannot begin character exchange without a mainline destination.');
+				return false;
+			}
+			if (core.getFlag('mainline_exchange_active', false)) {
+				console.warn('A character exchange is already active.');
+				return false;
+			}
+
+			var target = parseInt(targetCount, 10);
+			if (!(target > 0)) target = 2;
+			core.setFlag('mainline_exchange_active', true);
+			core.setFlag('mainline_exchange_count', 0);
+			core.setFlag('mainline_exchange_target', target);
+			core.setFlag('mainline_exchange_destination', next);
+
+			// 清掉離開主線 scene 後不應再執行的殘餘事件，再切換至秋葉原。
+			core.events.setEvents([]);
+			core.insertAction({
+				"type": "changeFloor",
+				"floorId": "Akiba",
+				"loc": [6, 10],
+				"direction": "down",
+				"time": 500
+			});
+			return true;
+		}
+
+		this._advanceCharacterExchange = function () {
+			if (!core.getFlag('mainline_exchange_active', false)) return 0;
+			var count = core.getFlag('mainline_exchange_count', 0) || 0;
+			count++;
+			core.setFlag('mainline_exchange_count', count);
+			return count;
+		}
+
+		this.isCharacterExchangeComplete = function () {
+			if (!core.getFlag('mainline_exchange_active', false)) return false;
+			var count = core.getFlag('mainline_exchange_count', 0) || 0;
+			var target = core.getFlag('mainline_exchange_target', 2) || 2;
+			return count >= target;
+		}
+
+		this.returnToMainlineAfterCharacterExchange = function () {
+			if (!this.isCharacterExchangeComplete()) return false;
+			var next = this._normalizeMainlineExchangeDestination(core.getFlag('mainline_exchange_destination', null));
+			if (!next) {
+				console.warn('Cannot resume mainline: character exchange destination is missing.');
+				return false;
+			}
+
+			core.setFlag('mainline_exchange_active', false);
+			core.setFlag('mainline_exchange_destination', null);
+			var actions = [];
+			if (next.transitionVideo) actions.push({ "type": "playTransitionVideo" });
+			actions.push({
+				"type": "changeFloor",
+				"floorId": next.floorId,
+				"loc": next.loc,
+				"direction": next.direction,
+				"time": next.time
+			});
+
+			core.events.setEvents([]);
+			core.insertAction(actions);
+			return true;
+		}
+
 		this.returnToAkiba = function () {
+			if (this.isCharacterExchangeComplete()) {
+				this.returnToMainlineAfterCharacterExchange();
+				return;
+			}
 			var floorId = core.getFlag('akiba_return_floorId', 'Akiba') || 'Akiba';
 			var x = core.getFlag('akiba_return_x', 6);
 			var y = core.getFlag('akiba_return_y', 10);
