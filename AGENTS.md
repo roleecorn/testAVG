@@ -58,5 +58,8 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 原本集中在 `AI_AVG_EDITOR_GUIDE.md` 的內容已依功能拆分到 `agent/` 目錄；該檔現在保留為轉向入口。
 
 ## 更新
-劇情可能會在某個時間點後更新，如果我要求更新劇情，只需要考慮以下commit後(不含)的劇情即可
-5dca3c747071bb2a0f5cddb8f321bf306a2c912b
+劇情可能會在某個時間點後更新；如果我要求更新劇情，只需要考慮以下 commit 後（不含）的劇情即可：
+
+4152807f25f2706709a6a74951bcd854cef0d60a
+
+每次更新劇情一律建立兩個 commit：第一個 commit 提交實際劇情更新；第二個 commit 僅更新本節的基準 commit，將第一個 commit 的完整雜湊寫入上方。完成第二個 commit 後，下一次更新以該雜湊為新的起點。
