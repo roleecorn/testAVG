@@ -437,7 +437,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]可惡，竟然沒有叫醒我嗎",
+        "\t[梗平]可惡，竟然沒有叫醒在下嗎",
         {
             "type": "hideImage",
             "code": 10,
@@ -513,7 +513,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我好感動，他們居然想的這麼多",
+        "\t[梗平]在下好感動，他們居然想的這麼多",
         {
             "type": "hideImage",
             "code": 10,
@@ -561,7 +561,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]不對，每次我想去咖啡廳的時候一定......",
+        "\t[梗平]不對，每次在下想去咖啡廳的時候一定......",
         {
             "type": "hideImage",
             "code": 10,
@@ -964,7 +964,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（手機）我在找可以和我在一起(解決肥宅)的人",
+        "\t[梗平]（手機）在下在找可以和在下在一起(解決肥宅)的人",
         {
             "type": "hideImage",
             "code": 10,
@@ -988,7 +988,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（手機）(幫忙的事)可以答應我嗎",
+        "\t[梗平]（手機）(幫忙的事)可以答應在下嗎",
         {
             "type": "hideImage",
             "code": 10,
@@ -1012,7 +1012,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（手機）我還有一點事情要忙，十一點後在雜貨店後相見吧",
+        "\t[梗平]（手機）在下還有一點事情要忙，十一點後在雜貨店後相見吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1134,7 +1134,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（手機）這肯定是修卡的造物，我現在就來！",
+        "\t[梗平]（手機）這肯定是修卡的造物，在下現在就來！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1158,7 +1158,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我先走了！",
+        "\t[梗平]在下先走了！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1396,7 +1396,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]表妹，我來助你！",
+        "\t[梗平]表妹，在下來助你！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1433,7 +1433,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]可惡，拖下去只會對我們越來越不利",
+        "\t[梗平]可惡，拖下去只會對在下們越來越不利",
         {
             "type": "hideImage",
             "code": 10,
@@ -1505,7 +1505,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]這個是我們羈絆的力量啊！",
+        "\t[梗平]這個是在下們羈絆的力量啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1734,7 +1734,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]這裡是哪裡，我還要跟雷霆大鱷魚戰鬥啊！",
+        "\t[梗平]這裡是哪裡，在下還要跟雷霆大鱷魚戰鬥啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1784,7 +1784,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]不！我的限量變身腰帶",
+        "\t[梗平]不！在下的限量變身腰帶",
         {
             "type": "hideImage",
             "code": 10,
@@ -1906,7 +1906,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]希望你順便修好了我的假面騎士系統，我先走了",
+        "\t[梗平]希望你順便修好了在下的假面騎士系統，在下先走了",
         {
             "type": "hideImage",
             "code": 10,
@@ -2098,7 +2098,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「要是我能自己一個人把事情解決了，豈不是就是真正的假面騎士了」",
+        "\t[梗平]「要是在下能自己一個人把事情解決了，豈不是就是真正的假面騎士了」",
         {
             "type": "choices",
             "text": "請選擇。",
@@ -2606,7 +2606,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]不！我的假面騎士腰帶！",
+                        "\t[梗平]不！在下的假面騎士腰帶！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2671,7 +2671,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「沒錯，而且這還能挽回我在大家心中的風評」",
+                        "\t[梗平]「沒錯，而且這還能挽回在下在大家心中的風評」",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2811,7 +2811,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「剛好就由我這個假面騎士來幫大家解決問題」",
+                        "\t[梗平]「剛好就由在下這個假面騎士來幫大家解決問題」",
                         {
                             "type": "hideImage",
                             "code": 10,

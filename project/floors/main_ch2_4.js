@@ -454,7 +454,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我們這到底是在哪裡",
+        "\t[梗平]在下們這到底是在哪裡",
         {
             "type": "hideImage",
             "code": 10,
@@ -491,7 +491,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]那看來我們應該就是在書店A內部的某個地方了",
+        "\t[梗平]那看來在下們應該就是在書店A內部的某個地方了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1024,7 +1024,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]這......也不是都是我的錯啊",
+        "\t[梗平]這......也不是都是在下的錯啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -1111,7 +1111,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]這個嘛，你聽我說.......",
+        "\t[梗平]這個嘛，你聽在下說.......",
         {
             "type": "hideImage",
             "code": 10,
@@ -1218,7 +1218,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]（不行，如果再拒絕我的尊嚴就一點都不剩了）",
+                        "\t[梗平]（不行，如果再拒絕在下的尊嚴就一點都不剩了）",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1255,703 +1255,832 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "IB指的方向是——",
+                        "IB指向了一座散發著詭異氣息的美術館",
                         {
-                            "type": "choices",
-                            "text": "請選擇接下來的地點。",
-                            "choices": [
-                                {
-                                    "text": "美術館",
-                                    "action": [
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_neutral_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]（奇怪，這個時間還有營業中的OOO嗎）",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_neutral_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]哈哈哈哈，我們走吧",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "【轉入選項地點】",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "1-1.美術館",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "(美術館死亡速通一日遊)",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "(結局變ib+瑪莉)",
-                                        {
-                                            "type": "playBgm",
-                                            "name": "ms_ch2_gallery_opening.mp3",
-                                            "keep": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "(美術館開場的音樂.mp3)",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "正在舉辦xx=xxxx的個人展",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_panic_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]你喜歡美術嗎？",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "\t[IB]嗯，跟哥哥來過一次",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_neutral_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]那這裡可能會有線索，我有找到導覽手冊，我們分別去搜索吧！",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "於是梗平轉身向出口走去，被IB一把抓住拖了回來",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "\t[IB]一起走吧？",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_neutral_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]但是",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "\t[IB]一起走吧？(字體放大)",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_neutral_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]好",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "梗平在IB逐漸冷淡的視線中拼命的讀著導覽手冊",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_smile_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]出發前往三樓吧！我的假面騎士之魂告訴我那裡肯定有線索",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "梗平指著手冊上寫著的三樓休息室，IB眼神又冷了幾度",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_panic_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]你聽我解釋！我絕對不是打算直接去休息什麼的",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_panic_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]休息室比較多人聚集，你看其他人在欣賞藝術品的時候打擾人家也不好吧？",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "\t[IB]那就去看看吧",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "兩人移動到了三樓休息室",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "與梗平預想的不同，休息室內沒有其他的人",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "巨大的畫作靜靜的在休息室的牆上，畫作中的人彷彿在嘲笑梗平的行動",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_panic_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]可惡，製作這幅畫的藝術家的喜好太糟糕了",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "\t[IB]習慣就好",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "聽完梗平的話，畫中人的笑容變得更深，嘴邊快裂到了耳根旁",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_neutral_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]不對，這畫肯定動了",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "\t[IB]那麼，接下來去這裡找吧",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "IB推了一把梗平，畫如同水面般將梗平包了起來",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "梗平被迫進入了畫中",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "showImage",
-                                            "code": 10,
-                                            "image": "keng_neutral_portrait.png",
-                                            "loc": [
-                                                28,
-                                                "textTop"
-                                            ],
-                                            "opacity": 1,
-                                            "time": 0
-                                        },
-                                        "\t[梗平]",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "\t[IB]這個給你",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "IB將手上拿著插著玫瑰的水瓶，遞給了梗平",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "\t[IB]去找哥哥吧？",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "\t[不知道是誰的梗？]我們走吧！",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "梗平靠著假面騎士的力量突破了畫的封印，但是錯過了Comike",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        "【END：美麗的玫瑰帶刺】",
-                                        {
-                                            "type": "changeFloor",
-                                            "floorId": "main_ch2_4",
-                                            "loc": [
-                                                6,
-                                                10
-                                            ],
-                                            "direction": "up",
-                                            "time": 0
-                                        }
-                                    ]
-                                },
-                                {
-                                    "text": "動物園",
-                                    "action": [
-                                        "【TODO】動物園 尚未撰寫。",
-                                        {
-                                            "type": "changeFloor",
-                                            "floorId": "main_ch2_4",
-                                            "loc": [
-                                                6,
-                                                10
-                                            ],
-                                            "direction": "up",
-                                            "time": 0
-                                        }
-                                    ]
-                                },
-                                {
-                                    "text": "(可以再追加其他怪談類)",
-                                    "action": [
-                                        "【TODO】(可以再追加其他怪談類) 尚未撰寫。",
-                                        {
-                                            "type": "changeFloor",
-                                            "floorId": "main_ch2_4",
-                                            "loc": [
-                                                6,
-                                                10
-                                            ],
-                                            "direction": "up",
-                                            "time": 0
-                                        }
-                                    ]
-                                }
-                            ]
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（奇怪，這個時間還有營業中的美術館嗎）",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]哈哈哈哈，在下們走吧",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "scene_tournament.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        "【背景：美術館】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "正在舉辦某個藝術家的個人展",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]你喜歡藝術嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[IB]嗯",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[IB]跟哥哥來過",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]那這裡可能會有線索，在下有找到導覽手冊，在下們分別去搜索吧！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "於是梗平轉身向出口走去，被IB一把抓住拖了回來",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[IB]一起走吧？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]但是",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[IB]一起走吧？(字體放大)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]好",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平在IB逐漸冷淡的視線中拼命的讀著導覽手冊",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_smile_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]出發前往三樓吧！在下的假面騎士之魂告訴在下那裡肯定有線索",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平指著手冊上寫著的三樓休息室，IB眼神又冷了幾度",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]你聽在下解釋！在下絕對不是打算直接去休息什麼的",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]休息室比較多人聚集，你看其他人在欣賞藝術品的時候打擾人家也不好吧？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[IB]那走吧",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "兩人移動到了三樓休息室",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "與梗平預想的不同，休息室內沒有其他的人",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "牆上掛著衣服金髮女子的畫，彷彿在嘲笑梗平的行動",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]可惡，製作這幅畫的藝術家的喜好太糟糕了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "聽完梗平的話，畫中人的笑容變得更深，嘴邊快裂到了耳根旁",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]不對，這畫肯定動了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "不等梗平反應，畫張開了大嘴把兩人一口吞下",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平被迫進入了畫中",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]唉呦，把在下弄哪來了？這還是秋葉原嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[梅]打擾一下",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]哇啊啊！可惡的修卡終於現身了嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[梅]你在說什麼？不好意思你擋到路了，請你離開一下",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]哦好的",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平默默地移開，看著梅愛莉走進自己進入的畫框",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "然後畫框消失了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]......",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]等等，那在下要怎麼出去？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "IB在美術館二樓尋找無果後又回到了休息室，突然畫作吐出了一個人",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[梅]這裡似乎沒有呢？我們去其他地方找找看",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[IB]？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[梅]你是他的同行者嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梅愛莉指向畫作，畫上面有個微笑的金髮男子",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[梅]看來他沒辦法幫忙了，所以就由我來代替吧！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "IB看著畫思考了一會，然後點了點頭",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[IB]嗯",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[梅]那我們走吧！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "兩人友好的離開了美術館",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "另一邊，梗平靠著假面騎士的力量突破了畫的封印，但是錯過了Comike",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【BE5：美麗的玫瑰帶刺】",
+                        {
+                            "type": "changeFloor",
+                            "floorId": "main_ch2_4",
+                            "loc": [
+                                6,
+                                10
+                            ],
+                            "direction": "up",
+                            "time": 0
                         }
                     ]
                 },
@@ -1981,7 +2110,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]哎呀，咖啡廳那邊出問題了，我得趕快回去才行",
+                        "\t[梗平]哎呀，咖啡廳那邊出問題了，在下得趕快回去才行",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2005,7 +2134,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我們明天見啊",
+                        "\t[梗平]在下們明天見啊",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2234,7 +2363,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]貝琪小姐，假面騎士不需要報答，拯救大家是我的職責",
+                        "\t[梗平]貝琪小姐，假面騎士不需要報答，拯救大家是在下的職責",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2308,7 +2437,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]直接叫我梗平就好了",
+                        "\t[梗平]直接叫在下梗平就好了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2358,7 +2487,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]是說友人A去哪裡了，不是他叫我過來的嗎？",
+                        "\t[梗平]是說友人A去哪裡了，不是他叫在下過來的嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2408,7 +2537,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]不是這樣的，你聽我解釋......啊！",
+                        "\t[梗平]不是這樣的，你聽在下解釋......啊！",
                         {
                             "type": "hideImage",
                             "code": 10,

@@ -843,7 +843,7 @@ main.floors.main_ch5_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我的鼻子啊！",
+        "\t[梗平]在下的鼻子啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -867,7 +867,7 @@ main.floors.main_ch5_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]可惡，我一定要找到方法解決你們",
+        "\t[梗平]可惡，在下一定要找到方法解決你們",
         {
             "type": "hideImage",
             "code": 10,
@@ -941,7 +941,7 @@ main.floors.main_ch5_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（手機）那我跟小朋友們的羈絆與約定該怎麼辦啊",
+        "\t[梗平]（手機）那在下跟小朋友們的羈絆與約定該怎麼辦啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -1364,7 +1364,7 @@ main.floors.main_ch5_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我來了",
+                        "\t[梗平]在下來了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1401,7 +1401,7 @@ main.floors.main_ch5_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]這樣的地方我怎麼沒有早點發現呢",
+                        "\t[梗平]這樣的地方在下怎麼沒有早點發現呢",
                         {
                             "type": "hideImage",
                             "code": 10,

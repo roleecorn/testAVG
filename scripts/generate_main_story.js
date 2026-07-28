@@ -28,6 +28,13 @@ const floors = {
   "6-4": { id: "main_ch6_4", title: "主線 CH6 6-4 婚禮與終章", name: "6-4", bg: "scene_tournament.png", bgm: "next_to_you_emotional.mp3", next: null },
 };
 
+const characterExchanges = {
+  "1-3": { floorId: "mapo_1_3_exchange_1", rounds: 1 },
+  "2-4": { floorId: "main_ch2_4_exchange_1", rounds: 1 },
+  "3-1": { floorId: "main_ch3_1_exchange_1", rounds: 1 },
+  "5-1": { floorId: "main_ch5_1_exchange_1", rounds: 2 },
+};
+
 const bgByName = [
   [/車站/, "scene_station.png"],
   [/街道|道路|河邊|倉庫|鐵道|書店A|馬的膝蓋|醫院|車上|貝琪宅邸/, "scene_street.png"],
@@ -212,6 +219,17 @@ function lineToEvents(line, ctx) {
   }
 
   if (/^【人物交流時間/.test(t)) {
+    const exchange = characterExchanges[ctx.section];
+    if (exchange) {
+      return [
+        ...hidePortraits(),
+        { type: "comment", text: "人物交流回合：完成角色好感劇情後，進入交流後續 scene。" },
+        {
+          type: "function",
+          function: `function () { core.plugin.beginCharacterExchange({ floorId: '${exchange.floorId}', loc: [6, 10], direction: 'up', time: 500 }${exchange.rounds > 1 ? `, ${exchange.rounds}` : ""}); }`,
+        },
+      ];
+    }
     storyTodos.add(`${ctx.source} ${ctx.section}：${t} 尚未撰寫，已以文字標記保留。`);
     return [...hidePortraits(), `${t.replace(/】$/, "")}：待補】`];
   }
@@ -247,6 +265,7 @@ function lineToEvents(line, ctx) {
   if (colon) {
     const rawName = colon[1].trim();
     let body = colon[2].trim();
+    if (rawName === "梗" || rawName === "梗平") body = body.replaceAll("我", "在下");
     const phone = body.match(/^\{(.*)\}$/);
     if (phone) body = `（手機）${phone[1]}`;
     const display = knownSpeakers.get(rawName) || rawName;
@@ -532,10 +551,8 @@ function updateTodo() {
     "",
     ...Array.from(storyTodos).sort().map((x) => `- ${x}`),
     "- `project/mainStory/CH1 1-4`：人物交流時間尚未實作，已以文字標記保留。",
-    "- `project/mainStory/CH2 2-4`：美術館支線後續與動物園/其他怪談類分歧尚未完整撰寫。",
     "- `project/mainStory/CH3 3-1`：街頭賣藝分歧目前原稿為「嘆息寫」，已保留為可回流分歧。",
     "- `project/mainStory/CH3 3-3`：傑士塔威會議可追加煩人小遊戲，目前以原劇情旁白接續。",
-    "- `project/mainStory/CH5 5-1`：人物交流時間X2尚未實作，已以文字標記保留。",
     "- `project/mainStory/CH6 6-4`：後日談時間尚未撰寫，已以文字標記保留。",
     "",
     "## 待補素材",

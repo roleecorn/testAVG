@@ -16,13 +16,6 @@
       "once": true
     },
     {
-      "id": "lei_1",
-      "title": "倉庫警告",
-      "locations": ["warehouse_district"],
-      "floorId": "lei_1",
-      "once": true
-    },
-    {
       "id": "juju_1",
       "title": "惡魔迷路",
       "locations": ["tent"],

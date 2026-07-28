@@ -352,7 +352,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我到底......守護了甚麼啊",
+        "\t[梗平]在下到底......守護了甚麼啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -546,7 +546,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我......",
+        "\t[梗平]在下......",
         {
             "type": "hideImage",
             "code": 10,
@@ -583,7 +583,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]喜歡的女性什麼的......我也不是很清楚",
+        "\t[梗平]喜歡的女性什麼的......在下也不是很清楚",
         {
             "type": "hideImage",
             "code": 10,
@@ -631,7 +631,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我可以跟你分享我喜歡的東西嗎？",
+        "\t[梗平]在下可以跟你分享在下喜歡的東西嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -694,7 +694,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我啊，最喜歡假面騎士了",
+        "\t[梗平]在下啊，最喜歡假面騎士了",
         {
             "type": "hideImage",
             "code": 10,
@@ -766,7 +766,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在這裡面我特別喜歡......",
+        "\t[梗平]在這裡面在下特別喜歡......",
         {
             "type": "hideImage",
             "code": 10,
@@ -892,7 +892,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]嗯，謝謝你願意聽我分享我喜歡的東西",
+        "\t[梗平]嗯，謝謝你願意聽在下分享在下喜歡的東西",
         {
             "type": "hideImage",
             "code": 10,
@@ -916,7 +916,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我有一件很重要的事情要去辦，可以拜託你送我回秋葉原嗎",
+        "\t[梗平]在下有一件很重要的事情要去辦，可以拜託你送在下回秋葉原嗎",
         {
             "type": "hideImage",
             "code": 10,

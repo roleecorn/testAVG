@@ -375,7 +375,7 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]什麼？修卡竟然要放了我嗎？",
+        "\t[梗平]什麼？修卡竟然要放了在下嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -399,7 +399,7 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我終於被改造了嗎？",
+        "\t[梗平]在下終於被改造了嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -436,7 +436,7 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]修卡是存在的啊，我日日夜夜與他們作戰",
+        "\t[梗平]修卡是存在的啊，在下日日夜夜與他們作戰",
         {
             "type": "hideImage",
             "code": 10,
@@ -741,7 +741,7 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]抱歉，可以再給我一點時間嗎？",
+        "\t[梗平]抱歉，可以再給在下一點時間嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -765,7 +765,7 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我還有必須要做的事(參加Comike)，等事情結束之後......",
+        "\t[梗平]在下還有必須要做的事(參加Comike)，等事情結束之後......",
         {
             "type": "hideImage",
             "code": 10,
@@ -789,7 +789,7 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我們在一起(當假面騎士)好嗎？",
+        "\t[梗平]在下們在一起(當假面騎士)好嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -813,7 +813,7 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]你願意成為我的......",
+        "\t[梗平]你願意成為在下的......",
         {
             "type": "hideImage",
             "code": 10,

@@ -413,7 +413,7 @@ main.floors.mapo_1_6=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]必須盡快找到博士幫我解決掉這個問題才行",
+        "\t[梗平]必須盡快找到博士幫在下解決掉這個問題才行",
         {
             "type": "hideImage",
             "code": 10,
@@ -921,7 +921,7 @@ main.floors.mapo_1_6=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]你聽我解釋，大哥哥只是去補充假面騎士的燃料而已",
+        "\t[梗平]你聽在下解釋，大哥哥只是去補充假面騎士的燃料而已",
         {
             "type": "hideImage",
             "code": 10,
@@ -1039,7 +1039,7 @@ main.floors.mapo_1_6=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_smile_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 28,
                 "textTop"
@@ -1047,7 +1047,7 @@ main.floors.mapo_1_6=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]喔，這就交給我吧",
+        "\t[梗平]喔，這就交給在下吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1071,7 +1071,7 @@ main.floors.mapo_1_6=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「不行，得趕快挽回我的形象才行」",
+        "\t[梗平]「不行，得趕快挽回在下的形象才行」",
         {
             "type": "hideImage",
             "code": 10,
@@ -1280,7 +1280,7 @@ main.floors.mapo_1_6=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]等等，讓我把話說完！",
+                        "\t[梗平]等等，讓在下把話說完！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1317,7 +1317,7 @@ main.floors.mapo_1_6=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我只是覺得要培養小朋友的自主......",
+                        "\t[梗平]在下只是覺得要培養小朋友的自主......",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1508,7 +1508,7 @@ main.floors.mapo_1_6=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]走，你們跟著我走",
+                        "\t[梗平]走，你們跟著在下走",
                         {
                             "type": "hideImage",
                             "code": 10,

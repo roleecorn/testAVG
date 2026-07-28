@@ -425,7 +425,7 @@ main.floors.main_ch6_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]為什麼！？連你也背叛我嗎！？",
+        "\t[梗平]為什麼！？連你也背叛在下嗎！？",
         {
             "type": "hideImage",
             "code": 10,
@@ -788,7 +788,7 @@ main.floors.main_ch6_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我願意",
+        "\t[梗平]在下願意",
         {
             "type": "hideImage",
             "code": 10,
@@ -916,7 +916,7 @@ main.floors.main_ch6_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]人好多啊，拜託了，我的限量假面騎士變身腰帶一定還要有啊",
+        "\t[梗平]人好多啊，拜託了，在下的限量假面騎士變身腰帶一定還要有啊",
         {
             "type": "hideImage",
             "code": 10,

@@ -376,7 +376,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]不行，我今天一定要躺到床",
+        "\t[梗平]不行，在下今天一定要躺到床",
         {
             "type": "hideImage",
             "code": 10,
@@ -651,7 +651,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「我得做點什麼來挽回我的風評才行」",
+        "\t[梗平]「在下得做點什麼來挽回在下的風評才行」",
         {
             "type": "hideImage",
             "code": 10,
@@ -675,7 +675,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「不過昨天那個警察把我的錢都騙走了，得先去賺錢才行」",
+        "\t[梗平]「不過昨天那個警察把在下的錢都騙走了，得先去賺錢才行」",
         {
             "type": "hideImage",
             "code": 10,
@@ -797,7 +797,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我晚點還有事，我先走了",
+        "\t[梗平]在下晚點還有事，在下先走了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1056,7 +1056,7 @@ main.floors.main_ch3_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]你好，我想要來打工",
+                        "\t[梗平]你好，在下想要來打工",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1124,7 +1124,7 @@ main.floors.main_ch3_1=
                         {
                             "type": "showImage",
                             "code": 10,
-                            "image": "keng_smile_portrait.png",
+                            "image": "keng_neutral_portrait.png",
                             "loc": [
                                 28,
                                 "textTop"
@@ -1132,7 +1132,7 @@ main.floors.main_ch3_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]沒問題，請交給我吧，前輩！",
+                        "\t[梗平]沒問題，請交給在下吧，前輩！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1195,7 +1195,7 @@ main.floors.main_ch3_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]喔！這就交給我這個假面騎士吧",
+                        "\t[梗平]喔！這就交給在下這個假面騎士吧",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1404,7 +1404,7 @@ main.floors.main_ch3_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]（手機）我果然很有藝術天分啊",
+                        "\t[梗平]（手機）在下果然很有藝術天分啊",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1476,7 +1476,7 @@ main.floors.main_ch3_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]（手機）我這邊一個小時2000，表妹你那邊怎麼樣",
+                        "\t[梗平]（手機）在下這邊一個小時2000，表妹你那邊怎麼樣",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1611,7 +1611,7 @@ main.floors.main_ch3_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]（手機）你竟然先我一步脫離了窮人的行列嗎？",
+                        "\t[梗平]（手機）你竟然先在下一步脫離了窮人的行列嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1898,7 +1898,7 @@ main.floors.main_ch3_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我知道了，妳果然是修卡的人吧",
+                        "\t[梗平]在下知道了，妳果然是修卡的人吧",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1922,7 +1922,7 @@ main.floors.main_ch3_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我不會向邪惡屈服的！",
+                        "\t[梗平]在下不會向邪惡屈服的！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2035,7 +2035,7 @@ main.floors.main_ch3_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]快來幫我一起阻止她！",
+                        "\t[梗平]快來幫在下一起阻止她！",
                         {
                             "type": "hideImage",
                             "code": 10,

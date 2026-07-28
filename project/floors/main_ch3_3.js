@@ -695,7 +695,7 @@ main.floors.main_ch3_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]那我也不知道該怎麼辦了啊",
+        "\t[梗平]那在下也不知道該怎麼辦了啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -1094,7 +1094,7 @@ main.floors.main_ch3_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]學長，那這樣我們該不該丟呢",
+        "\t[梗平]學長，那這樣在下們該不該丟呢",
         {
             "type": "hideImage",
             "code": 10,

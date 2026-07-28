@@ -500,7 +500,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]等一下，我已經完全明白A之前喊救命的原因了，是好吃到喊救命",
+        "\t[梗平]等一下，在下已經完全明白A之前喊救命的原因了，是好吃到喊救命",
         {
             "type": "hideImage",
             "code": 10,
@@ -705,7 +705,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]假面騎士不畏懼任何挑戰！老闆，我要點這個",
+        "\t[梗平]假面騎士不畏懼任何挑戰！老闆，在下要點這個",
         {
             "type": "hideImage",
             "code": 10,
@@ -749,7 +749,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]爆發吧我的小宇宙，哦哦哦哦哦！",
+                        "\t[梗平]爆發吧在下的小宇宙，哦哦哦哦哦！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -825,7 +825,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]請指導我吧！",
+                        "\t[梗平]請指導在下吧！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1264,7 +1264,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]除了我和表妹以外的某人吧。",
+                        "\t[梗平]除了在下和表妹以外的某人吧。",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1355,7 +1355,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]......我打宿儺？真的假的？",
+                        "\t[梗平]......在下打宿儺？真的假的？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1559,7 +1559,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我跟著師傅學習了數十年的麻婆道",
+                        "\t[梗平]在下跟著師傅學習了數十年的麻婆道",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1583,7 +1583,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在這個過程，有太多的人將他的意志託付給了我",
+                        "\t[梗平]在這個過程，有太多的人將他的意志託付給了在下",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1655,7 +1655,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我的表妹，也在修行的過程中離開了我們",
+                        "\t[梗平]在下的表妹，也在修行的過程中離開了在下們",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1799,7 +1799,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]不管了，爆發吧我的小宇宙，哦哦哦哦哦！",
+                        "\t[梗平]不管了，爆發吧在下的小宇宙，哦哦哦哦哦！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1836,7 +1836,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]接下吧，這就是我跟大家的羈絆啊！！！",
+                        "\t[梗平]接下吧，這就是在下跟大家的羈絆啊！！！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1910,7 +1910,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]不對，我還要參加Comi…",
+                        "\t[梗平]不對，在下還要參加Comi…",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2519,7 +2519,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]啊！我不要渡過三途川啊",
+        "\t[梗平]啊！在下不要渡過三途川啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -2711,7 +2711,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]那我先走一步",
+        "\t[梗平]那在下先走一步",
         {
             "type": "hideImage",
             "code": 10,

@@ -504,7 +504,7 @@ main.floors.main_ch2_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我最後的1000円啊！",
+        "\t[梗平]在下最後的1000円啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -567,7 +567,7 @@ main.floors.main_ch2_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我的錢啊！！！",
+        "\t[梗平]在下的錢啊！！！",
         {
             "type": "hideImage",
             "code": 10,
@@ -731,7 +731,7 @@ main.floors.main_ch2_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我......在怎麼說也是個大人啊",
+        "\t[梗平]在下......在怎麼說也是個大人啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -779,7 +779,7 @@ main.floors.main_ch2_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]更何況，我可不能讓孩子們遭遇危險啊",
+        "\t[梗平]更何況，在下可不能讓孩子們遭遇危險啊",
         {
             "type": "hideImage",
             "code": 10,

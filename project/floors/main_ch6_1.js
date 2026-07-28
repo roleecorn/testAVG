@@ -402,7 +402,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]不要小看我這幾天被你們衝撞的經驗啊！",
+        "\t[梗平]不要小看在下這幾天被你們衝撞的經驗啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -463,7 +463,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我必須現在回去，假面騎士有必須守護住的事物啊！",
+        "\t[梗平]在下必須現在回去，假面騎士有必須守護住的事物啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -873,7 +873,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_smile_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 28,
                 "textTop"
@@ -881,7 +881,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]門就放心交給我吧！",
+        "\t[梗平]門就放心交給在下吧！",
         {
             "type": "hideImage",
             "code": 10,
@@ -996,7 +996,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（手機）果然這種時候還是需要假面騎士啊，交給我吧！",
+        "\t[梗平]（手機）果然這種時候還是需要假面騎士啊，交給在下吧！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1160,7 +1160,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]不用再害怕了，因為我來了！",
+        "\t[梗平]不用再害怕了，因為在下來了！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1184,7 +1184,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我們一起把聖物送回去吧！",
+        "\t[梗平]在下們一起把聖物送回去吧！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1436,7 +1436,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我也沒有其他辦法了嘛......",
+        "\t[梗平]在下也沒有其他辦法了嘛......",
         {
             "type": "hideImage",
             "code": 10,

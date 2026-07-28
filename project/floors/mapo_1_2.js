@@ -387,7 +387,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]馬撒卡，A莫非先我一步被修卡抓去改造身體了",
+        "\t[梗平]馬撒卡，A莫非先在下一步被修卡抓去改造身體了",
         {
             "type": "hideImage",
             "code": 10,
@@ -485,7 +485,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]好，我們快去拯救A吧",
+        "\t[梗平]好，在下們快去拯救A吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -612,7 +612,7 @@ main.floors.mapo_1_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]雖然我是假面騎士，但看來還是只能尋求警察的幫助了",
+                        "\t[梗平]雖然在下是假面騎士，但看來還是只能尋求警察的幫助了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -662,7 +662,7 @@ main.floors.mapo_1_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我的朋友被修卡抓走了，假面騎士需要你們的幫助才能......",
+                        "\t[梗平]在下的朋友被修卡抓走了，假面騎士需要你們的幫助才能......",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1124,7 +1124,7 @@ main.floors.mapo_1_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]假面騎士之魂告訴我就是這裡了",
+                        "\t[梗平]假面騎士之魂告訴在下就是這裡了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1329,7 +1329,7 @@ main.floors.mapo_1_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我會記住你的犧牲的",
+                        "\t[梗平]在下會記住你的犧牲的",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1366,7 +1366,7 @@ main.floors.mapo_1_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我還沒參加到Comike，而且我還沒在秋葉原喝到酒，放我走啊！",
+                        "\t[梗平]在下還沒參加到Comike，而且在下還沒在秋葉原喝到酒，放在下走啊！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1842,7 +1842,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]你再說甚麼啊，表哥我才沒有想過在摩托車訓練的途中被修卡抓住並改造",
+        "\t[梗平]你再說甚麼啊，表哥在下才沒有想過在摩托車訓練的途中被修卡抓住並改造",
         {
             "type": "hideImage",
             "code": 10,
@@ -2073,7 +2073,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]什麼！？吃飯竟然不叫我",
+        "\t[梗平]什麼！？吃飯竟然不叫在下",
         {
             "type": "hideImage",
             "code": 10,

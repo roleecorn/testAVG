@@ -352,7 +352,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]前輩！救我！",
+        "\t[梗平]前輩！救在下！",
         {
             "type": "hideImage",
             "code": 10,
@@ -389,7 +389,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]有人要抓我，有沒有地方可以藏起來的",
+        "\t[梗平]有人要抓在下，有沒有地方可以藏起來的",
         {
             "type": "hideImage",
             "code": 10,
@@ -679,7 +679,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我的自由",
+        "\t[梗平]在下的自由",
         {
             "type": "hideImage",
             "code": 10,
@@ -703,7 +703,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我的夢想",
+        "\t[梗平]在下的夢想",
         {
             "type": "hideImage",
             "code": 10,
@@ -727,7 +727,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我的假面騎士精神真的都要在這裡結束了嗎......",
+        "\t[梗平]在下的假面騎士精神真的都要在這裡結束了嗎......",
         {
             "type": "hideImage",
             "code": 10,
@@ -764,7 +764,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]不知道是敵是友，可是現在的我只有一個選擇",
+        "\t[梗平]不知道是敵是友，可是現在的在下只有一個選擇",
         {
             "type": "hideImage",
             "code": 10,
@@ -840,7 +840,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]夥伴，我好感動",
+        "\t[梗平]夥伴，在下好感動",
         {
             "type": "hideImage",
             "code": 10,
@@ -919,7 +919,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]你是我最好的朋友，你怎麼會來這裡",
+        "\t[梗平]你是在下最好的朋友，你怎麼會來這裡",
         {
             "type": "hideImage",
             "code": 10,
@@ -1043,7 +1043,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]而且都給我的話，你該怎麼辦",
+        "\t[梗平]而且都給在下的話，你該怎麼辦",
         {
             "type": "hideImage",
             "code": 10,
@@ -1093,7 +1093,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]夥伴，你的心意與希望，我收下了",
+        "\t[梗平]夥伴，你的心意與希望，在下收下了",
         {
             "type": "hideImage",
             "code": 10,
