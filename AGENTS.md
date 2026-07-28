@@ -38,6 +38,16 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 - 在本專案中，`git diff --cached` 代表使用者已看過、但仍有疑問或需要 AI 檢查的內容；檢查時要把它視為主要對象。
 - 若需要同時判斷未 staged 的新變動，可以再補看 `git diff` 與 `git status --short`，但不能因此忽略 `git diff --cached`。
 
+## Luna 執行限制
+
+本節只適用於使用 Luna 的執行者；Terra 或使用者明確授權時不受本節限制。
+
+- Luna 只可處理使用者已明確指定檔案或場景的局部劇情、對話與事件修改；不得自行把 TODO、commit 訊息或劇本註記視為刪除、改寫或擴大工作範圍的授權。
+- 禁止自行刪除或移動劇情、樓層、角色支線、圖片、BGM 或其他素材；即使 TODO 寫有「移除」也必須取得使用者當次明確指示。
+- 禁止修改 `scripts/`、`extensions/`、`project/plugins.js`、`project/functions.js`、`project/data.js`、`project/akiba-event-meta.json`；需要碰到這些共用或註冊檔時，停止並請使用者改用 Terra 或明確授權。
+- 禁止執行可能批量覆寫樓層、劇本或素材的生成器與重建工具。若局部修改後的 diff 出現未指定的場景、資產或共用檔案，立即停止，不可自行收斂或提交。
+- 若需求包含跨章節重生、既有事件接入保留、支線移除、素材註冊、Git 歷史判讀或多個 commit 的協調，一律建議使用 Terra；Luna 僅可先做唯讀盤點並回報需要的明確指示。
+
 ## 功能區塊
 
 - [專案架構與輸出原則](agent/project-overview.md)
