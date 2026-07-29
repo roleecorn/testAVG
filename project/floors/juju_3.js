@@ -19,19 +19,201 @@ main.floors.juju_3=
     "bgm": "next_to_you_emotional.mp3",
     "ratio": 1,
     "map": [
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0]
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
     ],
     "width": 13,
     "height": 13,
@@ -44,8 +226,18 @@ main.floors.juju_3=
             "align": "left",
             "bold": true,
             "background": "winskin.png",
-            "title": [255,225,80,1],
-            "text": [255,255,255,1],
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
             "titlefont": 22,
             "textfont": 20,
             "lineHeight": 30,
@@ -53,50 +245,504 @@ main.floors.juju_3=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
-        "\t[梗平]啊……累死我了",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 14, "image": "juju_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
-        "\t[茱茱]我對那個店長的記憶做了處理",
-        "\t[茱茱]他一時半回也想不起我們",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "\t[【地點]倉庫區】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_normal.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[茱茱]來啦？還以為你忘了我呢",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]好了，我看這書是真貨，趕緊操作吧！",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_neutral_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]噢好！",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        "梗平按照書上步驟操作，完成法陣。",
-        {"type": "showImage", "code": 10, "image": "keng_surprised_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
-        "\t[梗平]最後一步，施術者須親吻惡魔……啥？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "（梗平按照書上步驟操作，完成法陣）",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]最後一步，施術者須裸體跳舞……啥？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]這書正經嗎！",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 14, "image": "juju_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
-        "\t[茱茱]這有什麼難的！",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        "茱茱抱住梗平，對他來了個法式舌吻。",
-        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
-        "\t[梗平]不是！那個！我想只要親手就好了",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 14, "image": "juju_surprised.png", "loc": [220,185], "opacity": 1, "time": 0},
-        "\t[茱茱]噢……是說這是你的初吻？",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_serious_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
-        "\t[梗平]嗯",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        "法陣開始發光。",
-        {"type": "showImage", "code": 14, "image": "juju_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[茱茱]保真啦！總之你先跳跳看試試？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]不是！那個！不好吧？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[茱茱]沒事，我閱過的屌比你吃的米還多，跳吧！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]不是這個問題好不好！而且我好像聽到了什麼糟糕的東西！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[茱茱]跳！如果你還想要你的一番賞的話！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_normal.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[茱茱]還是你想逼我使用最後手段",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "（茱茱抄起一旁的大斧）",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]好好好！我跳就是了！你冷靜！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]這是第一次在清醒狀態跳啊…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "（梗平脫光衣服，開始跳裸舞，然後法陣開始發光）",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_sad.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]噢！可以回家啦！抱歉啦梗平！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]我會在地獄幫你留個VIP座位，就這樣，掰！",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_surprised_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]慢著！",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        "茱茱消失了。",
-        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "（茱茱消失了）",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]我也想上天堂好不好！",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        "那一夜，梗平無法忘懷惡魔舌尖的觸感。",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "（那一夜，梗平無法忘懷裸舞的屈辱）",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "function",
             "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_3');\n}"

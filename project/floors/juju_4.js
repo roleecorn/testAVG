@@ -19,19 +19,201 @@ main.floors.juju_4=
     "bgm": "waking_the_devil_crisis.mp3",
     "ratio": 1,
     "map": [
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0]
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
     ],
     "width": 13,
     "height": 13,
@@ -44,8 +226,18 @@ main.floors.juju_4=
             "align": "left",
             "bold": true,
             "background": "winskin.png",
-            "title": [255,225,80,1],
-            "text": [255,255,255,1],
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
             "titlefont": 22,
             "textfont": 20,
             "lineHeight": 30,
@@ -53,64 +245,626 @@ main.floors.juju_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        {"type": "showImage", "code": 14, "image": "juju_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "\t[【地點]公園】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]嗨！梗平！",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_surprised_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]茱茱！你怎麼在這！",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 14, "image": "juju_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_normal.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]這次我靠自己的力量上來的",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_normal.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]主要是跟你講一個壞消息和一個好消息",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]呃…先上壞消息吧？",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 14, "image": "juju_sad.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_normal.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]那店長想起來了，現在帶了一大批人在包圍這邊",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]不是吧！那好消息呢？",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 14, "image": "juju_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]我已經想到破局方法啦！",
-        {"type": "showImage", "code": 14, "image": "juju_angry.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]各位！",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        "茱茱開始大喊。",
-        {"type": "showImage", "code": 14, "image": "juju_angry.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "（茱茱開始大喊）",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]我只不過是威脅這個人類，讓他幫我回家！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]請放過他吧！作為交換！我讓你們殺我！",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]茱茱！",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 14, "image": "juju_sad.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_smile.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]我不能放著恩人不管啊，謝謝你",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
-        "店主從草叢走了出來。",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "（店主從草叢走了出來）",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
         "\t[店主]好！我接受！小伙子你滾吧！",
-        {"type": "showImage", "code": 10, "image": "keng_angry_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]我還沒答應呢！",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 14, "image": "juju_sad.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_normal.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]梗平，惡魔在人間是需要他人獻祭的",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_normal.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]如果不是你，我早就死了",
-        "\t[茱茱]這是報答，也是初吻的賠禮",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_normal.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[茱茱]這是報答，也是裸舞的賠禮",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]拜託你回家，好嗎！",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
         "\t[店主]聽到了嗎？滾吧！",
-        {"type": "showImage", "code": 10, "image": "keng_serious_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]我知道了……",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        "梗平沒有回頭，離開了秋葉原，只有茱茱的慘叫聲不絕於耳。",
-        "那一夜，梗平回到了住處。",
-        "然後看到一坨白色的身影。",
-        {"type": "showImage", "code": 14, "image": "juju_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "(梗平沒有回頭，離開了秋葉原，只有茱茱的慘叫聲不絕於耳)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]沒想到bbcall還在我這啊…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "（那一夜，梗平在列車上，出於懷念，按了一下bbcall ）",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "（然後看到一坨白色的身影）",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_angry.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]裝☆死☆大☆成☆功！！！",
-        {"type": "hideImage", "code": 14, "time": 0, "async": true},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "function",
             "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_4');\n}"
