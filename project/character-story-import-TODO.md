@@ -29,3 +29,8 @@
 - 綿貫咲耶：\`watanuki_sakuya_1\`–\`watanuki_sakuya_4\`
 - 御影凛珠：\`mikage_rinju_1\`–\`mikage_rinju_4\`
 - 比那名居地子：\`dizi_1\`–\`dizi_4\`（ID 待確認）
+
+## 故事來源檔
+
+- ZIP 中被分類為角色劇情的 8 份原生 TXT 與 1 份 DOCX 提取 TXT，均已正式放置於 `project/story/`，後續樓層更新以該目錄為故事根本。
+- ZIP 的月讀愛 TXT 與既有 `project/story/月讀愛.txt` 內容不同，ZIP 版本另存為 `project/story/月讀愛-ZIP-20260729T131245Z.txt`，未覆蓋既有檔案。

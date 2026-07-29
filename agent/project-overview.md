@@ -7,6 +7,7 @@
 核心檔案位置：
 
 - `project/floors/*.js`：每個樓層一個 JS 檔，格式是 `main.floors.<floorId> = { ... }`。AVG 可把「樓層」視為「場景」或「章節」。
+- `project/story/*.txt`：角色劇情的正式故事來源。所有被分類為角色劇情的 TXT，無論來自 ZIP、DOCX、PDF 或其他來源，都必須先落地到這裡，再新增或轉換樓層；`tmp/` 僅保存中間提取產物。
 - `project/data.js`：全塔設定。`main.floorIds` 決定樓層順序與可用樓層；`main.images/bgms/sounds/nameMap` 決定圖片、音樂、音效與別名。
 - `project/images/`：自定義圖片，例如背景、立繪、CG、UI 圖。
 - `project/bgms/`：背景音樂。
