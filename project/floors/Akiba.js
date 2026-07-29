@@ -10,7 +10,9 @@ main.floors.Akiba=
     "canUseQuickShop": true,
     "cannotViewMap": false,
     "cannotMoveDirectly": false,
-    "images": [],
+    "images": [
+    {"name": "akiba_idle_clock.png", "canvas": "fg", "x": 384, "y": 384}
+],
     "bgm": "bossa_casual_shop.mp3",
     "ratio": 1,
     "defaultGround": "ground",

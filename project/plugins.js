@@ -394,6 +394,16 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			return count;
 		}
 
+		// 秋葉原右下角的時鐘是人物交流回合的保底推進點。
+		this.advanceCharacterExchangeWithIdleClock = function () {
+			if (this._advanceCharacterExchange() > 0) {
+				this.returnToAkiba();
+				return true;
+			}
+			this.restoreAkibaHeroAfterLocationInteraction();
+			return false;
+		}
+
 		this.isCharacterExchangeComplete = function () {
 			if (!core.getFlag('mainline_exchange_active', false)) return false;
 			var count = core.getFlag('mainline_exchange_count', 0) || 0;
@@ -450,6 +460,17 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			var placeName = core.getFlag('akiba_last_placeName', '未知地點');
 			var availableEvents = this.getActiveAkibaEventsAtLocation(locationId);
 			var text = "是" + placeName + "啊，該做什麼呢?";
+
+			if (locationId === 'idle_clock') {
+				core.insertAction([
+					"\t[梗平]啥也不想做啊",
+					{
+						"type": "function",
+						"function": "function () { core.plugin.advanceCharacterExchangeWithIdleClock(); }"
+					}
+				]);
+				return;
+			}
 
 			if (availableEvents.length === 0) {
 				core.insertAction([
