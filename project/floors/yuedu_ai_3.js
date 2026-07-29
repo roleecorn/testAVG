@@ -19,19 +19,201 @@ main.floors.yuedu_ai_3=
     "bgm": "flags_drama.mp3",
     "ratio": 1,
     "map": [
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0]
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
     ],
     "width": 13,
     "height": 13,
@@ -44,8 +226,18 @@ main.floors.yuedu_ai_3=
             "align": "left",
             "bold": true,
             "background": "winskin.png",
-            "title": [255,225,80,1],
-            "text": [255,255,255,1],
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
             "titlefont": 22,
             "textfont": 20,
             "lineHeight": 30,
@@ -53,51 +245,629 @@ main.floors.yuedu_ai_3=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[月讀愛]哦也？這不是梗平小弟嗎！又遇到什麼好事嗎？",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_surprised_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]啊，不是，怎麼我變小弟了…小愛…",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_happy.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[月讀愛]哇哈哈！這種叫法不是顯得咱像大姐頭嗎？怎麼？不喜歡嗎？",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_neutral_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]嘛，也沒關係吧……今天只是覺得有點不順心就走到這裡了……",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_happy.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[月讀愛]就是把咱這地方當解壓場所嗎！真不錯呢不錯呢！那麼來開喝吧！",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_serious_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]不，整天喝酒對身體不好吧……嗯？為什麼小愛身上沒有酒臭的？",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[月讀愛]哼哼哼，這可是商業機密呢！想知道更多關咱的事就來酒會吧！梗平。",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_smile_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
-        "\t[梗平]哦哦！誰怕誰啊！就喝個痛快吧！",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        "………",
-        "……",
-        "…",
-        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
-        "\t[梗平]修卡那些混…嗝……混帳們…想破壞comike…嗝…我不會讓那種事發生的…",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
-        "\t[月讀愛]哇哈哈，酒量不太好呢！梗平～哦哦，修卡嗎？那是什麼？聽上去真有趣呢！",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
-        "\t[梗平]那是……邪惡……嗝",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_happy.png", "loc": [220,185], "opacity": 1, "time": 0},
-        "\t[月讀愛]乖乖，看來梗平小弟就是對抗邪惡的正義伙伴呢！咱會給你應援喔！加油加油～",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_panic_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
-        "\t[梗平]嗝……",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        "梗平在月讀愛的安慰下，壓力值下降了，把月讀愛視為大姐頭了。",
+        {
+            "type": "choices",
+            "text": "要怎麼回應？",
+            "choices": [
+                {
+                    "text": "果然不能喝酒啊",
+                    "action": [
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        "(果然不能喝酒啊)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_surprised_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]我奶奶說過！行天之道總司一切之人是不能隨便沾染酒精的！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "yuedu_surprised.png",
+                            "loc": [
+                                220,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[月讀愛]哦！哦！真是有趣呢！梗平小弟～上次和我喝的就不行嗎？那麼，有什麼想喝嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]有牛奶嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "yuedu_surprised.png",
+                            "loc": [
+                                220,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[月讀愛]有喔～哇哈哈～那就給梗平小弟喝牛奶，咱就愉快喝酒吧！話說回來～",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]怎麼了？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "yuedu_surprised.png",
+                            "loc": [
+                                220,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[月讀愛]嗯姆嗯姆，細數你的罪業吧～！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_surprised_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]哦哦！是假面騎士Ｗ！事到如今還數得清嗎！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "yuedu_smile.png",
+                            "loc": [
+                                220,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[月讀愛]哇哈哈～猜對了～",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        "「雖然不是兩人一體的假面騎士，但是享用著牛奶卻發著酒瘋的梗平可能是被氣氛感染了吧。」"
+                    ]
+                },
+                {
+                    "text": "不就是喝酒！誰怕誰！",
+                    "action": [
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        "(不就是喝酒！誰怕誰！)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_surprised_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]哦哦！誰怕誰啊！就喝個痛快吧！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        "………",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        "……",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        "…",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]修卡那些混…嗝……混帳們…想破壞comike…嗝…我不會讓那種事發生的…",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "yuedu_surprised.png",
+                            "loc": [
+                                220,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[月讀愛]哇哈哈，酒量不太好呢！梗平～哦哦，修卡嗎？那是什麼？聽上去真有趣呢！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]那是……邪惡……嗝",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "yuedu_surprised.png",
+                            "loc": [
+                                220,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[月讀愛]乖乖，看來梗平小弟就是對抗邪惡的正義伙伴呢！咱會給你應援喔！加油加油～",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]嗝……",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0,
+                            "async": true
+                        },
+                        "「梗平在月讀愛的安慰下，壓力值下降了，把月讀愛視為大姐頭了。」"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "function",
             "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_3');\n}"

@@ -19,19 +19,201 @@ main.floors.yuedu_ai_1=
     "bgm": "bossa_casual_shop.mp3",
     "ratio": 1,
     "map": [
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0]
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
     ],
     "width": 13,
     "height": 13,
@@ -44,8 +226,18 @@ main.floors.yuedu_ai_1=
             "align": "left",
             "bold": true,
             "background": "winskin.png",
-            "title": [255,225,80,1],
-            "text": [255,255,255,1],
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
             "titlefont": 22,
             "textfont": 20,
             "lineHeight": 30,
@@ -53,41 +245,295 @@ main.floors.yuedu_ai_1=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_happy.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[？？？]哇哈哈！怎麼了！是個黃毛小子啊！",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_surprised_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]啊？聲音從哪裡來的？",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[？？？]啊，你有點太高了呢，往下看吧，在這裡呢！",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_surprised_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]啊？好…小的孩子……小孩子出現在這地方不太好吧？",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_happy.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[？？？]哇哈哈～像常人一樣的反應很不錯呢？名字是什麼？",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_smile_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]啊？小孩子問我大哥哥名字嗎？大哥哥我叫梗平啊，要大哥哥為你帶路找媽媽嗎？",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_angry.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[？？？]哇哈哈！一看就知道你不是本地人呢，小子！咱是月讀愛！",
-        {"type": "showImage", "code": 13, "image": "yuedu_happy.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[月讀愛]本地人都知道咱是合法蘿莉呢！梗平嗎？真不錯的名字呢！如果想找酒友就再來這裡吧！",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        {"type": "showImage", "code": 10, "image": "keng_surprised_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_surprised_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]啊？合法蘿莉……？",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-        {"type": "showImage", "code": 13, "image": "yuedu_smile.png", "loc": [220,185], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_surprised.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[月讀愛]什麼，不知道什麼是合法蘿莉嗎……嗯，哇哈哈！關於咱的事就之後再說吧！",
-        {"type": "hideImage", "code": 13, "time": 0, "async": true},
-        "小女孩拿著日本酒大搖大擺地離開了。",
-        {"type": "showImage", "code": 10, "image": "keng_neutral_portrait.png", "loc": [28,210], "opacity": 1, "time": 0},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        "「小女孩拿著日本酒大搖大擺地離開了。」",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]雷厲風行的小女孩啊……",
-        {"type": "hideImage", "code": 10, "time": 0, "async": true},
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "function",
             "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_1');\n}"
