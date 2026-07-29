@@ -42,6 +42,13 @@
       "locations": ["elevated_train"],
       "floorId": "akane_1",
       "once": true
+    },
+    {
+      "id": "watanuki_sakuya_1",
+      "title": "神社初遇",
+      "locations": ["shrine"],
+      "floorId": "watanuki_sakuya_1",
+      "once": true
     }
   ]
 }
