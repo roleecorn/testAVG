@@ -13,7 +13,6 @@
 
 ## 待補劇情
 
-- project/mainStory/CH2 2-2：(鴿子)
 - project/mainStory/CH3 3-1：(嘆息寫)
 - project/mainStory/CH3 3-3：(這裡可以加個煩人小遊戲)
 - project/mainStory/CH6 6-4：【後日談時間】 尚未撰寫，已以文字標記保留。
@@ -29,6 +28,8 @@
 - `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。
 - `project/images/ms_ch1_thunder_crocodile_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「放大的鱷魚圖」正式 CG。
 - `project/images/ms_ch1_keng_join_placeholder.png`：專案目前沒有現有 GIF 可複製，暫用複製靜態圖，來源為 `project/images/scene_tournament.png`；之後需要替換成「梗平參戰」正式 GIF。
+- `project/images/ms_ch2_keng_bicycle_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「梗平被腳踏車撞飛」正式 CG。
+- `project/images/ms_ch2_eri_sunset_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「夕陽下的神祕少女」正式 CG。
 - `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。
 - CH1-CH6 多處背景（咖啡廳、便利商店、河邊、書店A、家庭餐廳、遊戲中心、美術館、馬的膝蓋、高級餐廳、醫院、車上、貝琪宅邸、僕咖、婚禮）目前沿用既有背景圖；之後可替換正式背景。
 
