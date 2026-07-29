@@ -28,6 +28,13 @@
       "locations": ["mahjong_parlor"],
       "floorId": "lanxiang_1",
       "once": true
+    },
+    {
+      "id": "noir_1",
+      "title": "後巷琴聲",
+      "locations": ["music_venue"],
+      "floorId": "noir_1",
+      "once": true
     }
   ]
 }
