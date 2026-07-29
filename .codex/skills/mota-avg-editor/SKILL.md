@@ -25,7 +25,7 @@ Load only the references needed for the current task:
 
 - New floor, scene, chapter, or scene file: `references/floors.md`
 - Dialogue writing or dialogue event format: `references/dialogue.md`
-- Character sprites, standing images, CG, backgrounds, or image mapping: `references/images.md`
+- Character sprites, standing images, CG, backgrounds, or image mapping: `references/images.md`; for a new six-expression 2 × 3 character sheet, also use `anime-expression-grid` as the required generation coordinator.
 - Flags, temporary state, persistent state, or search patterns: `references/flags.md`
 - Scene entry, transitions, show/hide logic, or flow control: `references/scene-flow.md`
 - BGM playback, keep behavior, pause/resume, fades, speed, or cache: `references/bgm.md`
@@ -46,6 +46,7 @@ Load only the references needed for the current task:
 - Use background images, dialogue, standing images, flags, BGM, and sound effects as the main AVG primitives.
 - Keep `map` mostly `0` for AVG scenes, and keep the hero visually hidden unless the task requires gameplay.
 - Register new images, BGMs, sounds, and aliases in `project/data.js` when needed.
+- Route every new project character sheet with six emotions (喜、怒、哀、驚訝、慌亂、無表情) through `anime-expression-grid` before the image processing rules in `references/images.md`. That skill supplies the fixed style reference and exact grid contract; this skill then owns project integration.
 - Put standalone minigame logic in `extensions/minigames/`; keep `project/plugins.js` as a thin integration layer.
 - Use the project standard service (`启动服务.exe`) and `http://127.0.0.1:1055/` URLs for manual game/editor verification unless the user asks for server diagnostics.
 - If TODOs, unresolved story gaps, missing assets, or uncertain characters arise, create or update a project TODO list file; do not leave them only in the chat.
