@@ -44,9 +44,7 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 - 使用單一 ZIP 匯入多位角色時，先建立角色範圍清單，再逐角色完成 A 至 G；任何角色完成 G 後立即提交，不得等全部角色完成才一次提交。
 - 每位角色的劇情樓層、角色立繪、該角色需要的背景／CG、事件入口，以及共用註冊檔中屬於該角色的行，必須放在該角色自己的 commit；一個角色 commit 不得含有另一角色的樓層、立繪、劇情或入口。
 - 只要檔案在 A／B 階段被分類為角色劇情，無論來源是 ZIP 內 TXT、DOCX、PDF 或其他可提取格式，在新增或轉換任何 `project/` 劇情內容前，必須先將其 UTF-8 純文字版本放到 `project/story/`；`tmp/` 只存解壓／提取中間產物，不是故事根本來源。
-- `project/story/` 是角色劇情的正式來源目錄。TXT 來源保留原檔名；DOCX、PDF 或其他來源必須先提取為 UTF-8（無 BOM）TXT 再放入。若正式目錄已有同名檔案，不得覆蓋，改用可追溯的來源後綴並在 TODO／manifest 記錄對應關係。
-- 若提供的劇本可確認是專案已有角色（角色名、正式 ID 或既有 `project/story/`／floor 對應一致），一律視為既有角色劇情修改，不得當成新角色另開支線。先以新稿覆蓋該角色原本的 `project/story/` 正式來源檔，再比較新舊版本差異，依差異修改原有 scene／floor；除非劇本明確新增章節，否則不得新增角色 ID、事件 ID 或 floor。
-- 若只有名稱相同但角色身分無法確認，先停在 TODO／待確認，不得覆蓋原稿，也不得修改既有 scene／floor；確認身分後才可沿用上一條規則。
+- `project/story/` 是角色劇情的正式來源目錄。TXT 來源保留原檔名；DOCX、PDF 或其他來源必須先提取為 UTF-8（無 BOM）TXT 再放入。若尚未確認為既有角色而正式目錄已有同名檔案，不得覆蓋，改用可追溯的來源後綴並在 TODO／manifest 記錄對應關係；既有角色劇情則依下一條規則覆蓋其原本正式來源檔。
 - 若提供的劇本可確認是專案已有角色（角色名、正式 ID 或既有 `project/story/`／floor 對應一致），一律視為既有角色劇情修改，不得當成新角色另開支線。先以新稿覆蓋該角色原本的 `project/story/` 正式來源檔，再比較新舊版本差異，依差異修改原有 scene／floor；除非劇本明確新增章節，否則不得新增角色 ID、事件 ID 或 floor。
 - 若只有名稱相同但角色身分無法確認，先停在 TODO／待確認，不得覆蓋原稿，也不得修改既有 scene／floor；確認身分後才可沿用上一條規則。
 - `project/data.js`、`project/akiba-event-meta.json` 等共用檔案不得整檔加入。必須以 patch／互動式 staging 只加入目前角色的行；若有尚未確認角色的素材，另建「待確認素材」commit，不能塞進任一已確認角色 commit。
