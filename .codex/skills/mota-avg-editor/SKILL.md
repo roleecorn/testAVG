@@ -31,6 +31,7 @@ Load only the references needed for the current task:
 - BGM playback, keep behavior, pause/resume, fades, speed, or cache: `references/bgm.md`
 - Sound effects or animation effects: `references/audio-effects.md`
 - Plain script to event JSON conversion: `references/text-to-event-json.md`
+- A single Google Drive ZIP that may contain character scripts and reference art: `references/archive-story-task-splitting.md`; follow its task contracts before loading the downstream scene, image, or text-conversion references.
 - TODO items, unresolved story gaps, uncertain characters, missing assets, or questions for the user: `references/todo.md`
 - New or changed standalone minigame: `references/minigame-integration.md`
 - Akiba map, Akiba place triggers, or location metadata: `references/akiba.md`

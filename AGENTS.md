@@ -11,9 +11,10 @@
 3. 撰寫劇情事件時依需求查閱對話、圖片、Flag、場景流程與音訊文件。
 4. 插入或控制背景音樂時看 [BGM 背景音樂](agent/bgm.md)。
 5. 將純文字劇本轉成事件時看 [純文字轉事件 JSON](agent/text-to-event-json.md)。
-6. 劇本內有 TODO、待補、待確認人物或素材缺口時看 [TODO 與待確認事項](agent/todo.md)，並落成 TODO list 檔案。
-7. 新增或調整獨立小遊戲時看 [小遊戲新增與接入指南](agent/minigame-integration.md)。
-8. 交付前用 [AI 撰寫檢查清單](agent/checklist.md) 檢查。
+6. 使用者只提供一個 Google Drive ZIP，且其中可能同時有角色劇本與角色圖基準時，先看 [角色劇情壓縮檔任務拆分流程](agent/角色劇情壓縮檔任務拆分流程.md)，依子任務產物串接既有流程。
+7. 劇本內有 TODO、待補、待確認人物或素材缺口時看 [TODO 與待確認事項](agent/todo.md)，並落成 TODO list 檔案。
+8. 新增或調整獨立小遊戲時看 [小遊戲新增與接入指南](agent/minigame-integration.md)。
+9. 交付前用 [AI 撰寫檢查清單](agent/checklist.md) 檢查。
 
 ## 編碼規則
 
@@ -59,6 +60,7 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 - [BGM 背景音樂](agent/bgm.md)
 - [音樂與特效](agent/audio-effects.md)
 - [純文字轉事件 JSON](agent/text-to-event-json.md)
+- [角色劇情壓縮檔任務拆分流程](agent/角色劇情壓縮檔任務拆分流程.md)
 - [TODO 與待確認事項](agent/todo.md)
 - [小遊戲新增與接入指南](agent/minigame-integration.md)
 - [AI 撰寫檢查清單](agent/checklist.md)
