@@ -47,7 +47,17 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
             "noir_2",
             "noir_3",
             "noir_4",
+            "akane_1",
+            "akane_2",
+            "akane_3",
+            "akane_4",
 			"Akiba"
+            "akane_angry.png",
+            "akane_normal.png",
+            "akane_panic.png",
+            "akane_sad.png",
+            "akane_smile.png",
+            "akane_surprised.png",
 		],
 		"floorPartitions": [],
 		"images": [

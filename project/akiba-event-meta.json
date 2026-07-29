@@ -35,6 +35,13 @@
       "locations": ["music_venue"],
       "floorId": "noir_1",
       "once": true
+    },
+    {
+      "id": "akane_1",
+      "title": "廢站歌聲",
+      "locations": ["elevated_train"],
+      "floorId": "akane_1",
+      "once": true
     }
   ]
 }
