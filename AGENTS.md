@@ -85,6 +85,6 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 ## 更新
 劇情可能會在某個時間點後更新；如果我要求更新劇情，只需要考慮以下 commit 後（不含）的劇情即可：
 
-90cb1719d84294f2bda011295eda49c523473e4f
+b51e1af6973b90c407f2e7a2b56ea83567b71f81
 
 每次更新劇情一律建立兩個 commit：第一個 commit 提交實際劇情更新；第二個 commit 僅更新本節的基準 commit，將第一個 commit 的完整雜湊寫入上方。完成第二個 commit 後，下一次更新以該雜湊為新的起點。
