@@ -21,6 +21,13 @@
       "locations": ["tent"],
       "floorId": "juju_1",
       "once": true
+    },
+    {
+      "id": "lanxiang_1",
+      "title": "巷口救星",
+      "locations": ["mahjong_parlor"],
+      "floorId": "lanxiang_1",
+      "once": true
     }
   ]
 }
