@@ -39,6 +39,24 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 - 在本專案中，`git diff --cached` 代表使用者已看過、但仍有疑問或需要 AI 檢查的內容；檢查時要把它視為主要對象。
 - 若需要同時判斷未 staged 的新變動，可以再補看 `git diff` 與 `git status --short`，但不能因此忽略 `git diff --cached`。
 
+### 角色劇情 ZIP 的強制提交流程
+
+- 使用單一 ZIP 匯入多位角色時，先建立角色範圍清單，再逐角色完成 A 至 G；任何角色完成 G 後立即提交，不得等全部角色完成才一次提交。
+- 每位角色的劇情樓層、角色立繪、該角色需要的背景／CG、事件入口，以及共用註冊檔中屬於該角色的行，必須放在該角色自己的 commit；一個角色 commit 不得含有另一角色的樓層、立繪、劇情或入口。
+- `project/data.js`、`project/akiba-event-meta.json` 等共用檔案不得整檔加入。必須以 patch／互動式 staging 只加入目前角色的行；若有尚未確認角色的素材，另建「待確認素材」commit，不能塞進任一已確認角色 commit。
+- 每次提交前都必須檢查 `git diff --cached --name-only` 及 `git diff --cached`；提交後立即用 `git show --stat --name-only <commit>` 複核，確認沒有跨角色或無關檔案。
+- 多角色 ZIP 的基準更新例外：所有角色 commit 完成後，再建立一個只修改本節基準雜湊的最後 commit，將最後一個角色劇情 commit 的完整雜湊寫入本節。基準 commit 不得包含劇情、圖片、註冊或 TODO 以外的變更；下一次更新從該雜湊之後開始。
+- 若未能完成上述逐角色 staging 或驗證，不得宣稱已完成提交；應保留變更並回報阻塞原因。
+
+### 角色劇情 ZIP 的強制提交流程
+
+- 使用單一 ZIP 匯入多位角色時，先建立角色範圍清單，再逐角色完成 A 至 G；任何角色完成 G 後立即提交，不得等全部角色完成才一次提交。
+- 每位角色的劇情樓層、角色立繪、該角色需要的背景／CG、事件入口，以及共用註冊檔中屬於該角色的行，必須放在該角色自己的 commit；一個角色 commit 不得含有另一角色的樓層、立繪、劇情或入口。
+- `project/data.js`、`project/akiba-event-meta.json` 等共用檔案不得整檔加入。必須以 patch／互動式 staging 只加入目前角色的行；若有尚未確認角色的素材，另建「待確認素材」commit，不能塞進任一已確認角色 commit。
+- 每次提交前都必須檢查 `git diff --cached --name-only` 及 `git diff --cached`；提交後立即用 `git show --stat --name-only <commit>` 複核，確認沒有跨角色或無關檔案。
+- 多角色 ZIP 的基準更新例外：所有角色 commit 完成後，再建立一個只修改本節基準雜湊的最後 commit，將最後一個角色劇情 commit 的完整雜湊寫入本節。基準 commit 不得包含劇情、圖片、註冊或 TODO 以外的變更；下一次更新從該雜湊之後開始。
+- 若未能完成上述逐角色 staging 或驗證，不得宣稱已完成提交；應保留變更並回報阻塞原因。
+
 ## Luna 執行限制
 
 本節只適用於使用 Luna 的執行者；Terra 或使用者明確授權時不受本節限制。
