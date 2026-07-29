@@ -49,6 +49,13 @@
       "locations": ["shrine"],
       "floorId": "watanuki_sakuya_1",
       "once": true
+    },
+    {
+      "id": "mikage_rinju_1",
+      "title": "書店初遇",
+      "locations": ["melon_shop"],
+      "floorId": "mikage_rinju_1",
+      "once": true
     }
   ]
 }
