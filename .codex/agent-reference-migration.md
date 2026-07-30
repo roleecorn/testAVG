@@ -4,7 +4,7 @@
 
 | 已移除文件 | Canonical reference |
 | --- | --- |
-| `agent/akiba-event-manager-plan.md` | `.codex/skills/mota-avg-editor/references/akiba-event-manager-plan.md` |
+| `agent/akiba-event-manager-plan.md` | `.codex/skills/mota-avg-editor/references/akiba-event-manager.md` |
 | `agent/akiba.md` | `.codex/skills/mota-avg-editor/references/akiba.md` |
 | `agent/audio-effects.md` | `.codex/skills/mota-avg-editor/references/audio-effects.md` |
 | `agent/bgm.md` | `.codex/skills/mota-avg-editor/references/bgm.md` |

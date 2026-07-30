@@ -1,66 +1,67 @@
 ---
 name: mota-avg-editor
-description: Create, convert, and edit AVG-style story content for this H5 Mota project. Use when working on project/floors scene files, H5 Mota event JSON, dialogue, character images, BGM, flags, scene flow, Akiba map events, or extensions/minigames integration in D:\coding\mota-js.
+description: Root coordinator for creating, converting, and editing AVG content in the H5 Mota project at D:\coding\mota-js. Use for project story, floor, event JSON, dialogue, image, BGM, state, Akiba, minigame, multi-asset ZIP, or integration tasks; route specialized expression-grid and action-CG work to child Skills.
 ---
 
 # Mota AVG Editor
 
-Use this skill to produce H5 Mota-compatible AVG scenes, event JSON, and minigame integrations for this project. Keep map mechanics minimal unless the user explicitly asks for normal tower gameplay.
+Coordinate H5 Mota AVG work from one root and hand atomic artifacts to canonical references or child Skills. Keep map mechanics minimal unless the user explicitly requests normal tower gameplay.
 
-## Required First Read
+## Inputs
 
-Read `references/project-overview.md` before editing or generating project content. It defines file locations, output expectations, server URLs, and the AVG implementation model.
+- Accept a project-scoped request plus any supplied scripts, ZIP files, images, audio, scene IDs, or commit range.
+- Read [project-overview.md](references/project-overview.md) before editing or generating project content.
+- Read Markdown and text as UTF-8. In PowerShell, always use `Get-Content <path> -Encoding UTF8`.
 
-Always read Markdown and text files as UTF-8. In PowerShell, use:
+## Outputs
 
-```powershell
-Get-Content <path> -Encoding UTF8
-```
+- Produce the requested story sources, floor/event changes, registered assets, state changes, or minigame integration.
+- Produce validation results and the exact downstream handoffs used.
+- When any doubt appears, create the timestamped task question file required by `AGENTS.md`; promote unresolved items to the appropriate long-term TODO.
 
-If Chinese text appears corrupted, re-read with explicit UTF-8 before trusting or editing the file.
+## Dependencies
 
-## Reuse and Composition
+- Project Skill: `anime-expression-grid` — generate a project six-expression sheet.
+- Project Skill: `mota-action-cg` — integrate a fixed 4:3 one-second action CG.
+- Load only the canonical references required by the current branch; never copy their rules into another Skill.
+- Never allow a child Skill to load this root again during the same task.
 
-- Before creating or changing a project Skill or workflow, inventory the existing task routes, references, scripts, and assets. Reuse an existing capability whenever it already owns the required work; do not create a parallel Skill or duplicate its rules.
-- Modify an existing Skill only when its own reusable capability, trigger, or shared contract changes. For a special input format or one-off orchestration need, add a small routing/reference layer and compose existing Skills instead of inserting the whole workflow into a generic Skill.
-- Decompose orchestration into atomic stages. Give every stage one responsibility, explicit prerequisites, input, output, acceptance criteria, and downstream receiver, and route it to the existing Skill or reference that owns the implementation.
-- After a Skill change, validate the Skill and verify the complete route from the triggering request through every downstream text, image, scene, and delivery capability.
+## Blocking Conditions
 
-## Task Routing
+- Stop the affected branch when source authority, overwrite permission, deletion scope, required user authority, or a rule conflict is unresolved.
+- Treat uncertain character identity as non-blocking for the batch but blocking for that character's expression generation, image integration, and scene/floor integration.
+- Do not guess a missing character image, story owner, floor identity, or destructive target.
 
-Load only the references needed for the current task:
+## Non-blocking Questions
 
-- New floor, scene, chapter, or scene file: `references/floors.md`
-- Dialogue writing or dialogue event format: `references/dialogue.md`
-- Character sprites, standing images, CG, backgrounds, or image mapping: `references/images.md`; for a new six-expression 2 × 3 character sheet, also use `anime-expression-grid` as the required generation coordinator; for a fixed 4:3 one-second 行為 CG, also use `mota-action-cg`.
-- Flags, temporary state, persistent state, or search patterns: `references/flags.md`
-- Scene entry, transitions, show/hide logic, or flow control: `references/scene-flow.md`
-- BGM playback, keep behavior, pause/resume, fades, speed, or cache: `references/bgm.md`
-- Sound effects or animation effects: `references/audio-effects.md`
-- Plain script to event JSON conversion: `references/text-to-event-json.md`
-- A single Google Drive ZIP that may contain character scripts and reference art: `references/archive-story-task-splitting.md`; use its atomic A–G ownership map to route each accepted artifact into the existing text, image, scene, and validation capabilities. Do not implement those downstream capabilities inside the ZIP orchestration layer.
-- TODO items, unresolved story gaps, uncertain characters, missing assets, or questions for the user: `references/todo.md`
-- New or changed standalone minigame: `references/minigame-integration.md`
-- Akiba map, Akiba place triggers, or location metadata: `references/akiba.md`
-- Akiba event manager design or implementation planning: `references/akiba-event-manager-plan.md`
-- Character art generation/style consistency: `references/character-art-style.md`
-- Final self-check before delivery: `references/checklist.md`
+- Record reversible naming choices, placeholder assets, optional presentation choices, and uncertain character identity in the task question file.
+- Continue only the unaffected or explicitly reversible work. Never use non-blocking status to bypass a locally blocked character branch.
 
-## Core Rules
+## Handoff
 
-- Prefer output that can be pasted into the event JSON editor or directly saved as `project/floors/*.js`.
-- Treat each AVG scene or chapter as a floor unless the user asks for a different structure.
-- Put normal story playback in `eachArrive`; reserve `firstArrive` for explicitly one-time initialization.
-- Use background images, dialogue, standing images, flags, BGM, and sound effects as the main AVG primitives.
-- Keep `map` mostly `0` for AVG scenes, and keep the hero visually hidden unless the task requires gameplay.
-- Register new images, BGMs, sounds, and aliases in `project/data.js` when needed.
-- Route every new project character sheet with six emotions (喜、怒、哀、驚訝、慌亂、無表情) through `anime-expression-grid` before the image processing rules in `references/images.md`. That skill supplies the fixed style reference and exact grid contract; this skill then owns project integration.
-- Put standalone minigame logic in `extensions/minigames/`; keep `project/plugins.js` as a thin integration layer.
-- Use the project standard service (`启动服务.exe`) and `http://127.0.0.1:1055/` URLs for manual game/editor verification unless the user asks for server diagnostics.
-- If TODOs, unresolved story gaps, missing assets, or uncertain characters arise, create or update a project TODO list file; do not leave them only in the chat.
-- For uncertain characters, use the searchable placeholder `不知道是誰的<劇本中出現的名稱>` until the user confirms the character identity, then replace text, IDs, and images together.
-- If a required CG, GIF, or BGM asset is missing, copy any existing same-type asset to the required new filename, register and reference that new filename, then record in the TODO list that it is a temporary copied asset that must be replaced later. Do not use this rule for character portraits.
+Route each task through the smallest applicable branch:
 
-## Delivery Check
+- Floor or scene structure: [floors.md](references/floors.md)
+- Dialogue format: [dialogue.md](references/dialogue.md)
+- Images, portraits, backgrounds, or registration: [images.md](references/images.md)
+- Six-expression sheet: Project Skill `anime-expression-grid`, then [images.md](references/images.md)
+- Fixed action CG: Project Skill `mota-action-cg`
+- Flags and saved state: [flags.md](references/flags.md)
+- Scene entry, transitions, or image cleanup: [scene-flow.md](references/scene-flow.md)
+- BGM: [bgm.md](references/bgm.md)
+- Sound or animation effects: [audio-effects.md](references/audio-effects.md)
+- Plain script conversion: [text-to-event-json.md](references/text-to-event-json.md)
+- Character-story ZIP: [archive-story-task-splitting.md](references/archive-story-task-splitting.md)
+- TODO and unresolved content: [todo.md](references/todo.md)
+- Standalone minigame: [minigame-integration.md](references/minigame-integration.md)
+- Akiba map and locations: [akiba.md](references/akiba.md)
+- Akiba event state and API: [akiba-event-manager.md](references/akiba-event-manager.md)
+- Character art style: [character-art-style.md](references/character-art-style.md)
 
-Before finishing, read `references/checklist.md` and verify the touched content against it. Mention any checks or tests that could not be run.
+Keep `project/story/*.txt` as the character-story source of truth. Treat scene/floor files as derived game implementations.
+
+## Validation
+
+- Read [checklist.md](references/checklist.md) and the validation section of every branch actually used.
+- Inspect the final diff scope, run syntax and data checks relevant to touched files, and report checks that could not run.
+- After changing any project Skill, run its `quick_validate.py` check and `scripts/validate_agent_skill_routes.js`.

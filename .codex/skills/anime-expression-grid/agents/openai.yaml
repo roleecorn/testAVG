@@ -1,4 +1,4 @@
 interface:
   display_name: "動漫表情格生成"
-  short_description: "依固定畫風生成六種情緒並接入專案流程的綠幕表情格素材"
-  default_prompt: "Use $anime-expression-grid with image generation and the Mota image workflow to create an in-game six-expression character sheet from my reference image."
+  short_description: "依固定畫風生成可獨立或向下接入的六表情綠幕圖"
+  default_prompt: "Use $anime-expression-grid to create and validate a six-expression character sheet from my confirmed reference image."

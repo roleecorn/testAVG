@@ -1,4 +1,4 @@
 interface:
   display_name: "行為 CG"
-  short_description: "建立固定位置、4:3 比例且停留一秒後消失的劇情行為 CG"
-  default_prompt: "Use $mota-action-cg to add a fixed 4:3 action CG that stays visible for one second."
+  short_description: "接入固定位置、4:3 且停留一秒的劇情行為 CG"
+  default_prompt: "Use $mota-action-cg to integrate an existing 4:3 action CG that stays visible for one second."

@@ -1,20 +1,37 @@
 ---
 name: mota-action-cg
-description: Add and integrate short action CG cut-ins for H5 Mota AVG scenes in D:\coding\mota-js. Use when a script or request mentions 行為 CG、行為CG、動作 CG、短暫 CG, a centered 4:3 cut-in, or an image that must remain visible for one second and then disappear automatically.
+description: Integrate short action CG cut-ins for H5 Mota AVG scenes in D:\coding\mota-js. Use as a mota-avg-editor child Skill for 行為 CG、動作 CG、短暫 CG, or a centered 4:3 image shown for one unskippable second; use directly only when the user explicitly names this Skill.
 ---
 
 # Mota Action CG
 
-Create a non-interactive CG cut-in with one project-wide layout and timing contract. Use the native event sequence `showImage` → `sleep` → `hideImage`; do not add engine or plugin code for this behavior.
+Integrate a non-interactive CG cut-in with one project-wide layout and timing contract. Own only the asset and event cut-in contract; do not load or re-enter the parent Skill.
 
-## Required reads
+## Inputs
 
-Before editing project content, read these UTF-8 files:
+- Require the scene/floor, the narrative beat that triggers the cut-in, and an existing or explicitly requested CG asset.
+- Treat asset generation as out of scope unless the user also asks to generate the image.
 
-- `.codex/skills/mota-avg-editor/references/project-overview.md`
-- `.codex/skills/mota-avg-editor/references/images.md`
-- `.codex/skills/mota-avg-editor/references/scene-flow.md`
-- `.codex/skills/mota-avg-editor/references/checklist.md`
+## Outputs
+
+- Produce or update one registered 4:3 CG asset and its exact `showImage` → `sleep` → `hideImage` event sequence.
+- Return the touched floor, asset, registration, question/TODO, and validation results to the caller.
+
+## Dependencies
+
+- Read [project-overview.md](../mota-avg-editor/references/project-overview.md), [images.md](../mota-avg-editor/references/images.md), [scene-flow.md](../mota-avg-editor/references/scene-flow.md), and [checklist.md](../mota-avg-editor/references/checklist.md).
+- External Skill: `imagegen` — load only when the user explicitly requests CG generation in addition to integration.
+- Do not load `mota-avg-editor`; hand the completed event artifact back to the caller.
+
+## Blocking Conditions
+
+- Stop the affected CG branch when the scene beat, asset identity, crop authority, or permission to generate a missing image is unresolved.
+- Do not silently generate a new CG, stretch a non-4:3 asset, or modify engine/plugin code.
+
+## Non-blocking Questions
+
+- Record reversible filename choices, placeholder-CG use, and optional crop/padding choices in the task question file.
+- A project-approved placeholder may be integrated when the canonical reference permits it, but it must also be promoted to the appropriate long-term TODO.
 
 ## Fixed contract
 
@@ -39,7 +56,9 @@ Normal replay mode intentionally shortens `sleep` events; the one-second guarant
 
 Use the whole source image as `sloc`. Read its actual dimensions rather than guessing them.
 
-## Insert the event
+## Handoff
+
+Use the native event sequence `showImage` → `sleep` → `hideImage`; do not add engine or plugin code for this behavior. Insert it immediately after the dialogue line or narration beat that triggers the visual, then return the event block and validation evidence to the caller.
 
 For a 1280 × 960 source:
 
@@ -81,9 +100,9 @@ For an exact 320 × 240 source, still include both `sloc` and the four-value `lo
 }
 ```
 
-Insert the sequence immediately after the dialogue line or narration beat that triggers the visual. Do not insert player-visible text such as `【行為CG：...】`.
+Do not insert player-visible text such as `【行為CG：...】`.
 
-## Validate
+## Validation
 
 - Confirm the registered asset exists and its visible area is 4:3.
 - Confirm the event order is exactly `showImage(code 30)` → `sleep(1000, noSkip)` → `hideImage(code 30)`.

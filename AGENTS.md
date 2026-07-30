@@ -31,7 +31,7 @@
 - [TODO 與待確認事項](.codex/skills/mota-avg-editor/references/todo.md)
 - [小遊戲新增與接入](.codex/skills/mota-avg-editor/references/minigame-integration.md)
 - [秋葉原地圖與地點](.codex/skills/mota-avg-editor/references/akiba.md)
-- [Akiba 事件管理](.codex/skills/mota-avg-editor/references/akiba-event-manager-plan.md)
+- [Akiba 事件管理](.codex/skills/mota-avg-editor/references/akiba-event-manager.md)
 - [交付檢查清單](.codex/skills/mota-avg-editor/references/checklist.md)
 
 ## Skill 新增、更新與串接規則
@@ -41,6 +41,12 @@
 - 只有既有 Skill 自身的能力契約、觸發條件或共用規則確實改變時，才修改該 Skill。單一任務的特殊步驟不得直接改寫通用 Skill；需要修改時，先檢查所有入口與引用者，採最小範圍變更，並確認 `agents/openai.yaml` 是否仍與 `SKILL.md` 一致。
 - 每個可執行的專案 Skill 必須具有 `Inputs`、`Outputs`、`Dependencies`、`Blocking Conditions`、`Non-blocking Questions`、`Handoff`、`Validation` 介面。編排流程必須原子化拆分；每個子任務只負責一種產物，並指向實際負責的既有 Skill／reference。
 - Skill 新增或更新完成後，必須執行 Skill 驗證，並檢查任務路由能否從使用者輸入一路到達所有下游能力；不得只驗證 Markdown 格式或單一 Skill 本身可載入。
+
+## 疑慮落檔
+
+- 任務中只要出現疑慮，就必須建立 `.codex/task-questions/YYYYMMDD-HHmmss-<task>.md`，使用 `Asia/Taipei` 日期與時間，格式依 `.codex/task-questions/TEMPLATE.md`。不得只在對話中提出疑慮。
+- 阻塞疑慮停止受影響的範圍；非阻塞疑慮落檔後可在既有授權內繼續。角色身分未確認對整批任務屬非阻塞，但該角色的表情生成、圖片接入與 scene／floor 接入必須局部暫停，其他角色可繼續。
+- 任務結束時永久保留 question file。尚未解決的領域問題匯總到最接近的 `project/*TODO.md`；跨功能 Agent／Skill 問題匯總到 `.codex/TODO.md`。
 
 ## 編碼規則
 
