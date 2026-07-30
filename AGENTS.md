@@ -40,7 +40,7 @@
 - 只有需求本身形成可獨立觸發、可重複使用且既有 Skill 無法承擔的新能力時，才新增 Skill。若新需求只是特殊輸入的前置拆分或多個既有能力的串接，應新增精簡的編排 reference／路由，並重用下游 Skill，不得把整套特殊流程塞進通用 Skill。
 - 只有既有 Skill 自身的能力契約、觸發條件或共用規則確實改變時，才修改該 Skill。單一任務的特殊步驟不得直接改寫通用 Skill；需要修改時，先檢查所有入口與引用者，採最小範圍變更，並確認 `agents/openai.yaml` 是否仍與 `SKILL.md` 一致。
 - 每個可執行的專案 Skill 必須具有 `Inputs`、`Outputs`、`Dependencies`、`Blocking Conditions`、`Non-blocking Questions`、`Handoff`、`Validation` 介面。編排流程必須原子化拆分；每個子任務只負責一種產物，並指向實際負責的既有 Skill／reference。
-- Skill 新增或更新完成後，必須執行 Skill 驗證，並檢查任務路由能否從使用者輸入一路到達所有下游能力；不得只驗證 Markdown 格式或單一 Skill 本身可載入。
+- Skill 新增或更新完成後，必須執行 `node scripts/validate_agent_skill_routes.js`。此驗證器會自動發現現有與將來新增的專案 Skill，檢查統一介面、向下依賴、連結、canonical 文件、遷移與 questions／TODO；不得只驗證 Markdown 格式或單一 Skill 本身可載入。
 
 ## 疑慮落檔
 
