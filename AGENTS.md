@@ -1,27 +1,45 @@
 # AGENTS.md
 
-這份文件是 AI 協作入口。撰寫或轉換 AVG 劇情、接入小遊戲時，先從此處判斷要查哪個功能區塊。
+這份文件是所有 AI Agent 的專案入口，只保留路由、優先序與不可違反的全域規則。功能實作規範的唯一真實來源是 `.codex/skills/mota-avg-editor/references/`；不得在其他目錄維護平行副本。
 
-若執行環境支援 Codex Skills，優先使用專案內的 `.codex/skills/mota-avg-editor`。該 Skill 已把本文件拆出的功能文件整理為 `references/`，並提供載入順序與任務路由。
+## 權威順序與根節點
 
-## 使用順序
+規則衝突時依序採用：
 
-1. 先看 [專案架構與輸出原則](agent/project-overview.md)，確認檔案位置與 AI 產出格式。
-2. 新增場景時看 [樓層與場景](agent/floors.md)。
-3. 撰寫劇情事件時依需求查閱對話、圖片、Flag、場景流程與音訊文件。
-4. 插入或控制背景音樂時看 [BGM 背景音樂](agent/bgm.md)。
-5. 將純文字劇本轉成事件時看 [純文字轉事件 JSON](agent/text-to-event-json.md)。
-6. 使用者只提供一個 Google Drive ZIP，且其中可能同時有角色劇本與角色圖基準時，先看 [角色劇情壓縮檔任務拆分流程](agent/角色劇情壓縮檔任務拆分流程.md)，依子任務產物串接既有流程。
-7. 劇本內有 TODO、待補、待確認人物或素材缺口時看 [TODO 與待確認事項](agent/todo.md)，並落成 TODO list 檔案。
-8. 新增或調整獨立小遊戲時看 [小遊戲新增與接入指南](agent/minigame-integration.md)。
-9. 交付前用 [AI 撰寫檢查清單](agent/checklist.md) 檢查。
+1. 使用者當次明確指示。
+2. 本 `AGENTS.md` 的全域硬規則。
+3. 當次任務的根 Skill。
+4. 根 Skill 向下導向的子 Skill 固定契約。
+5. 功能 reference。
+6. TODO、範例與歷史資料。
+
+一般 Mota 劇情、事件、素材或小遊戲任務以 `.codex/skills/mota-avg-editor` 為根 Skill。使用者明確指定其他 Skill 時可直接使用；未明確指定的專用 Skill 必須由根 Skill 向下導向，不得回指祖先形成循環。若環境不支援 Codex Skills，直接依下列功能入口讀取相同的 canonical references。
+
+## 功能入口
+
+- [專案架構與輸出原則](.codex/skills/mota-avg-editor/references/project-overview.md)
+- [樓層與場景](.codex/skills/mota-avg-editor/references/floors.md)
+- [對話撰寫](.codex/skills/mota-avg-editor/references/dialogue.md)
+- [圖片與立繪](.codex/skills/mota-avg-editor/references/images.md)
+- [角色立繪基礎畫風](.codex/skills/mota-avg-editor/references/character-art-style.md)
+- [Flag 與狀態管理](.codex/skills/mota-avg-editor/references/flags.md)
+- [場景顯示邏輯](.codex/skills/mota-avg-editor/references/scene-flow.md)
+- [BGM 背景音樂](.codex/skills/mota-avg-editor/references/bgm.md)
+- [音樂與特效](.codex/skills/mota-avg-editor/references/audio-effects.md)
+- [純文字轉事件 JSON](.codex/skills/mota-avg-editor/references/text-to-event-json.md)
+- [角色劇情 ZIP 任務拆分](.codex/skills/mota-avg-editor/references/archive-story-task-splitting.md)
+- [TODO 與待確認事項](.codex/skills/mota-avg-editor/references/todo.md)
+- [小遊戲新增與接入](.codex/skills/mota-avg-editor/references/minigame-integration.md)
+- [秋葉原地圖與地點](.codex/skills/mota-avg-editor/references/akiba.md)
+- [Akiba 事件管理](.codex/skills/mota-avg-editor/references/akiba-event-manager-plan.md)
+- [交付檢查清單](.codex/skills/mota-avg-editor/references/checklist.md)
 
 ## Skill 新增、更新與串接規則
 
 - 新增或更新任何專案 Skill 前，必須先盤點 `.codex/skills/` 內既有 Skill、`references/`、`scripts/`、`assets/` 及本文件的任務路由，先寫出這次要重用的既有能力與真正缺少的能力。既有能力已能完成需求時，必須重用，不得另建同功能 Skill 或複製一份平行規範。
 - 只有需求本身形成可獨立觸發、可重複使用且既有 Skill 無法承擔的新能力時，才新增 Skill。若新需求只是特殊輸入的前置拆分或多個既有能力的串接，應新增精簡的編排 reference／路由，並重用下游 Skill，不得把整套特殊流程塞進通用 Skill。
 - 只有既有 Skill 自身的能力契約、觸發條件或共用規則確實改變時，才修改該 Skill。單一任務的特殊步驟不得直接改寫通用 Skill；需要修改時，先檢查所有入口與引用者，採最小範圍變更，並確認 `agents/openai.yaml` 是否仍與 `SKILL.md` 一致。
-- 編排流程必須原子化拆分。每個子任務只負責一種產物，並明列前置依賴、輸入、輸出、驗收條件與下一個接收者；每一步都必須指向實際負責的既有 Skill／reference，不得只寫「後續處理」而沒有文本、圖片、場景或驗收入口。
+- 每個可執行的專案 Skill 必須具有 `Inputs`、`Outputs`、`Dependencies`、`Blocking Conditions`、`Non-blocking Questions`、`Handoff`、`Validation` 介面。編排流程必須原子化拆分；每個子任務只負責一種產物，並指向實際負責的既有 Skill／reference。
 - Skill 新增或更新完成後，必須執行 Skill 驗證，並檢查任務路由能否從使用者輸入一路到達所有下游能力；不得只驗證 Markdown 格式或單一 Skill 本身可載入。
 
 ## 編碼規則
@@ -49,15 +67,9 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 
 ### 角色劇情 ZIP 的強制提交流程
 
-- 使用單一 ZIP 匯入多位角色時，先建立角色範圍清單，再逐角色完成 A 至 G；任何角色完成 G 後立即提交，不得等全部角色完成才一次提交。
-- 每位角色的劇情樓層、角色立繪、該角色需要的背景／CG、事件入口，以及共用註冊檔中屬於該角色的行，必須放在該角色自己的 commit；一個角色 commit 不得含有另一角色的樓層、立繪、劇情或入口。
-- 只要檔案在 A／B 階段被分類為角色劇情，無論來源是 ZIP 內 TXT、DOCX、PDF 或其他可提取格式，在新增或轉換任何 `project/` 劇情內容前，必須先將其 UTF-8 純文字版本放到 `project/story/`；`tmp/` 只存解壓／提取中間產物，不是角色劇情的真實來源。
-- `project/story/` 內的角色劇情文本是角色劇情內容與章節結構的唯一真實來源（source of truth），不是僅供追溯而保留的原始附件。`project/floors/` 內的 scene／floor 是依文本轉換出的遊戲實作；兩者有劇情內容差異時，必須以 `project/story/` 文本為準並修正 scene／floor，不得反向以現有 scene／floor 覆寫或取代文本。TXT 來源保留原檔名；DOCX、PDF 或其他來源必須先提取為 UTF-8（無 BOM）TXT 再放入。若尚未確認為既有角色而正式目錄已有同名檔案，不得覆蓋，改用可追溯的來源後綴並在 TODO／manifest 記錄對應關係；既有角色劇情則依下一條規則覆蓋其原本真實來源文本。
-- 若提供的劇本可確認是專案已有角色（角色名、正式 ID 或既有 `project/story/`／floor 對應一致），一律視為既有角色劇情修改，不得當成新角色另開支線。先以新稿覆蓋該角色原本的 `project/story/` 正式來源檔，再比較新舊版本差異，依差異修改原有 scene／floor；除非劇本明確新增章節，否則不得新增角色 ID、事件 ID 或 floor。
-- 若只有名稱相同但角色身分無法確認，先停在 TODO／待確認，不得覆蓋原稿，也不得修改既有 scene／floor；確認身分後才可沿用上一條規則。
-- `project/data.js`、`project/akiba-event-meta.json` 等共用檔案不得整檔加入。必須以 patch／互動式 staging 只加入目前角色的行；若有尚未確認角色的素材，另建「待確認素材」commit，不能塞進任一已確認角色 commit。
-- 每次提交前都必須檢查 `git diff --cached --name-only` 及 `git diff --cached`；角色劇情 commit 必須包含該角色的 `project/story/` 正式來源檔，提交後立即用 `git show --stat --name-only <commit>` 複核，確認沒有跨角色或無關檔案。
-- 多角色 ZIP 的基準更新例外：所有角色 commit 完成後，再建立一個只修改本節基準雜湊的最後 commit，將最後一個角色劇情 commit 的完整雜湊寫入本節。基準 commit 不得包含劇情、圖片、註冊或 TODO 以外的變更；下一次更新從該雜湊之後開始。
+- 使用單一 ZIP 匯入多位角色時，逐角色完成 A 至 G；每位角色通過 G 後立即建立一個內容 commit，不得跨角色混合。
+- 角色內容 commit 必須包含該角色的 `project/story/` 真實來源文本，以及其 floor、素材、事件入口和共用檔案中只屬於該角色的行。
+- 所有角色完成後，再建立只更新本文件基準雜湊的最後 commit。完整分階段、覆蓋與 staging 規則見 [角色劇情 ZIP 任務拆分](.codex/skills/mota-avg-editor/references/archive-story-task-splitting.md)。
 - 若未能完成上述逐角色 staging 或驗證，不得宣稱已完成提交；應保留變更並回報阻塞原因。
 
 ## Luna 執行限制
@@ -70,25 +82,9 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 - 禁止執行可能批量覆寫樓層、劇本或素材的生成器與重建工具。若局部修改後的 diff 出現未指定的場景、資產或共用檔案，立即停止，不可自行收斂或提交。
 - 若需求包含跨章節重生、既有事件接入保留、支線移除、素材註冊、Git 歷史判讀或多個 commit 的協調，一律建議使用 Terra；Luna 僅可先做唯讀盤點並回報需要的明確指示。
 
-## 功能區塊
-
-- [專案架構與輸出原則](agent/project-overview.md)
-- [樓層與場景](agent/floors.md)
-- [對話撰寫](agent/dialogue.md)
-- [圖片與立繪](agent/images.md)
-- [Flag 與狀態管理](agent/flags.md)
-- [場景顯示邏輯](agent/scene-flow.md)
-- [BGM 背景音樂](agent/bgm.md)
-- [音樂與特效](agent/audio-effects.md)
-- [純文字轉事件 JSON](agent/text-to-event-json.md)
-- [角色劇情壓縮檔任務拆分流程](agent/角色劇情壓縮檔任務拆分流程.md)
-- [TODO 與待確認事項](agent/todo.md)
-- [小遊戲新增與接入指南](agent/minigame-integration.md)
-- [AI 撰寫檢查清單](agent/checklist.md)
-
 ## 原始指南
 
-原本集中在 `AI_AVG_EDITOR_GUIDE.md` 的內容已依功能拆分到 `agent/` 目錄；該檔現在保留為轉向入口。
+`AI_AVG_EDITOR_GUIDE.md` 僅保留為轉向本文件與 canonical references 的相容入口。
 
 ## 更新
 劇情可能會在某個時間點後更新；如果我要求更新劇情，只需要考慮以下 commit 後（不含）的劇情即可：
