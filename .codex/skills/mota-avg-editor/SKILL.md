@@ -19,6 +19,13 @@ Get-Content <path> -Encoding UTF8
 
 If Chinese text appears corrupted, re-read with explicit UTF-8 before trusting or editing the file.
 
+## Reuse and Composition
+
+- Before creating or changing a project Skill or workflow, inventory the existing task routes, references, scripts, and assets. Reuse an existing capability whenever it already owns the required work; do not create a parallel Skill or duplicate its rules.
+- Modify an existing Skill only when its own reusable capability, trigger, or shared contract changes. For a special input format or one-off orchestration need, add a small routing/reference layer and compose existing Skills instead of inserting the whole workflow into a generic Skill.
+- Decompose orchestration into atomic stages. Give every stage one responsibility, explicit prerequisites, input, output, acceptance criteria, and downstream receiver, and route it to the existing Skill or reference that owns the implementation.
+- After a Skill change, validate the Skill and verify the complete route from the triggering request through every downstream text, image, scene, and delivery capability.
+
 ## Task Routing
 
 Load only the references needed for the current task:
@@ -31,7 +38,7 @@ Load only the references needed for the current task:
 - BGM playback, keep behavior, pause/resume, fades, speed, or cache: `references/bgm.md`
 - Sound effects or animation effects: `references/audio-effects.md`
 - Plain script to event JSON conversion: `references/text-to-event-json.md`
-- A single Google Drive ZIP that may contain character scripts and reference art: `references/archive-story-task-splitting.md`; follow its task contracts before loading the downstream scene, image, or text-conversion references.
+- A single Google Drive ZIP that may contain character scripts and reference art: `references/archive-story-task-splitting.md`; use its atomic A–G ownership map to route each accepted artifact into the existing text, image, scene, and validation capabilities. Do not implement those downstream capabilities inside the ZIP orchestration layer.
 - TODO items, unresolved story gaps, uncertain characters, missing assets, or questions for the user: `references/todo.md`
 - New or changed standalone minigame: `references/minigame-integration.md`
 - Akiba map, Akiba place triggers, or location metadata: `references/akiba.md`
