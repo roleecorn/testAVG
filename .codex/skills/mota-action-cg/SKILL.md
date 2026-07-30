@@ -1,6 +1,6 @@
 ---
 name: mota-action-cg
-description: Add and integrate short action CG cut-ins for H5 Mota AVG scenes in D:\coding\mota-js. Use when a script or request mentions 行為 CG、行為CG、動作 CG、短暫 CG, a fixed 4:3 cut-in, or an image that must remain visible for one second and then disappear automatically.
+description: Add and integrate short action CG cut-ins for H5 Mota AVG scenes in D:\coding\mota-js. Use when a script or request mentions 行為 CG、行為CG、動作 CG、短暫 CG, a centered 4:3 cut-in, or an image that must remain visible for one second and then disappear automatically.
 ---
 
 # Mota Action CG
@@ -19,7 +19,8 @@ Before editing project content, read these UTF-8 files:
 ## Fixed contract
 
 - Use image code `30`. It is above color effects and normal portraits but below the dialogue UI.
-- Draw into `loc: [0, 50, 320, 240]`. This is the fixed 4:3 frame on the 416 × 416 game canvas.
+- Treat the reference screenshot as a full-screen placement example, not as the CG source image. Identify only the bordered CG panel when measuring its position.
+- Draw the 4:3 CG into `loc: [48, 50, 320, 240]`. This horizontally centers it on the 416 × 416 UI canvas, leaving 48 pixels on each side; `x: 48` and `y: 50` come from the CG panel's relative position in the reference screenshot.
 - Show and hide instantly with `time: 0`; the one-second hold begins only after the image is fully visible.
 - Hold with `{"type": "sleep", "time": 1000, "noSkip": true}`. Do not use `wait`; `wait` waits for player input.
 - Clear code `30` explicitly after the hold, even though changing floors also clears `image*` canvases.
@@ -49,7 +50,7 @@ For a 1280 × 960 source:
         "code": 30,
         "image": "scene_reaction_action_cg.png",
         "sloc": [0, 0, 1280, 960],
-        "loc": [0, 50, 320, 240],
+        "loc": [48, 50, 320, 240],
         "opacity": 1,
         "time": 0
     },
@@ -74,7 +75,7 @@ For an exact 320 × 240 source, still include both `sloc` and the four-value `lo
     "code": 30,
     "image": "scene_reaction_action_cg.png",
     "sloc": [0, 0, 320, 240],
-    "loc": [0, 50, 320, 240],
+    "loc": [48, 50, 320, 240],
     "opacity": 1,
     "time": 0
 }
@@ -86,6 +87,6 @@ Insert the sequence immediately after the dialogue line or narration beat that t
 
 - Confirm the registered asset exists and its visible area is 4:3.
 - Confirm the event order is exactly `showImage(code 30)` → `sleep(1000, noSkip)` → `hideImage(code 30)`.
-- Confirm `loc` is `[0, 50, 320, 240]` and neither show nor hide uses a fade.
+- Confirm `loc` is `[48, 50, 320, 240]` and neither show nor hide uses a fade.
 - Run `node --check` on each touched floor file.
 - Inspect `git diff --name-only` and `git diff --stat`; do not stage unless the user explicitly asks.
