@@ -425,7 +425,7 @@ main.floors.watanuki_sakuya_4=
                 800
             ],
             "loc": [
-                0,
+                48,
                 50,
                 320,
                 240
