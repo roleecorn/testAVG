@@ -343,13 +343,31 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "ms_ch1_mapo_shop_entrance_cg.png",
+            "image": "ms_ch1_mapo_shop_entrance_action_cg.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                312
+            ],
             "loc": [
                 0,
-                0
+                50,
+                320,
+                240
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
+        },
+        {
+            "type": "sleep",
+            "time": 1000,
+            "noSkip": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0
         },
         {
             "type": "hideImage",
@@ -362,11 +380,6 @@ main.floors.mapo_1_3=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -1291,13 +1304,31 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_keng_join_placeholder.png",
+                            "image": "ms_ch1_keng_join_action_cg.png",
+                            "sloc": [
+                                0,
+                                0,
+                                416,
+                                312
+                            ],
                             "loc": [
                                 0,
-                                0
+                                50,
+                                320,
+                                240
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -1310,11 +1341,6 @@ main.floors.mapo_1_3=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         "\t[芹澤]中場結束，接下來是備受期待的下半場的首戰",
                         {
@@ -1471,13 +1497,31 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_keng_2_5_cg.png",
+                            "image": "ms_ch1_keng_2_5_action_cg.png",
+                            "sloc": [
+                                0,
+                                0,
+                                416,
+                                312
+                            ],
                             "loc": [
                                 0,
-                                0
+                                50,
+                                320,
+                                240
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -1490,11 +1534,6 @@ main.floors.mapo_1_3=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         {
                             "type": "showImage",

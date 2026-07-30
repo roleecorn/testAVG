@@ -1937,13 +1937,31 @@ main.floors.mapo_1_4=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_thunder_crocodile_cg.png",
+                            "image": "ms_ch1_thunder_crocodile_action_cg.png",
+                            "sloc": [
+                                0,
+                                0,
+                                416,
+                                312
+                            ],
                             "loc": [
                                 0,
-                                0
+                                50,
+                                320,
+                                240
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -1969,11 +1987,6 @@ main.floors.mapo_1_4=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         {
                             "type": "showImage",

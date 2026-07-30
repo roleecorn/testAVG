@@ -260,12 +260,30 @@ main.floors.watanuki_sakuya_1=
         {
             "type": "showImage",
             "code": 30,
-            "image": "watanuki_shrine_cg1.jpg",
+            "image": "watanuki_shrine_cg1_action_cg.png",
+            "sloc": [
+                0,
+                0,
+                1066,
+                800
+            ],
             "loc": [
                 0,
-                0
+                50,
+                320,
+                240
             ],
             "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "sleep",
+            "time": 1000,
+            "noSkip": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
             "time": 0
         },
         {
@@ -316,11 +334,6 @@ main.floors.watanuki_sakuya_1=
             "time": 0
         },
         "\t[梗平]叮叮叮噔噔，覺醒吧，我的超能！[梗平擺出空我變身動作]",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0
-        },
         {
             "type": "hideImage",
             "code": 10,

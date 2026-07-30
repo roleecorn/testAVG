@@ -1815,13 +1815,31 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch2_keng_bicycle_cg.png",
+                            "image": "ms_ch2_keng_bicycle_action_cg.png",
+                            "sloc": [
+                                0,
+                                0,
+                                416,
+                                312
+                            ],
                             "loc": [
                                 0,
-                                0
+                                50,
+                                320,
+                                240
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -1834,11 +1852,6 @@ main.floors.main_ch2_2=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         "\t[路人]麥克——！",
                         {
@@ -2019,13 +2032,31 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch2_eri_sunset_cg.png",
+                            "image": "ms_ch2_eri_sunset_action_cg.png",
+                            "sloc": [
+                                0,
+                                0,
+                                416,
+                                312
+                            ],
                             "loc": [
                                 0,
-                                0
+                                50,
+                                320,
+                                240
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -2038,11 +2069,6 @@ main.floors.main_ch2_2=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         {
                             "type": "showImage",
