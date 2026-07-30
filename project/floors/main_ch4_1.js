@@ -315,7 +315,6 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,
@@ -801,7 +800,6 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：馬的膝蓋】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1213,7 +1211,6 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：河邊】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1433,7 +1430,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]可惡，拖下去只會對在下們越來越不利",
+        "\t[梗平]可惡，拖下去只會對我等越來越不利",
         {
             "type": "hideImage",
             "code": 10,
@@ -1505,7 +1502,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]這個是在下們羈絆的力量啊！",
+        "\t[梗平]這個是我等羈絆的力量啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1658,7 +1655,6 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：醫院】",
         {
             "type": "hideImage",
             "code": 10,
@@ -2037,7 +2033,6 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,
@@ -2158,7 +2153,6 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：鐵道】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2391,7 +2385,6 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：貝琪宅邸】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2726,7 +2719,6 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：鐵道】",
                         {
                             "type": "hideImage",
                             "code": 10,

@@ -1,0 +1,195 @@
+const assert = require("assert");
+const fs = require("fs");
+const path = require("path");
+
+const root = path.resolve(__dirname, "..");
+const pluginSource = fs.readFileSync(path.join(root, "project", "plugins.js"), "utf8");
+const pluginVar = pluginSource.match(/var\s+(plugins_[A-Za-z0-9_]+)\s*=/)[1];
+const pluginDefinitions = Function(`${pluginSource}\nreturn ${pluginVar};`)();
+const eventMeta = JSON.parse(fs.readFileSync(path.join(root, "project", "akiba-event-meta.json"), "utf8"));
+
+function createCore(initialFlags = {}, floorIds = []) {
+  const flags = { ...initialFlags };
+  const actions = [];
+  return {
+    flags,
+    actions,
+    floorIds,
+    floors: Object.fromEntries(floorIds.map((id) => [id, {}])),
+    status: { floorId: "Akiba", maps: {} },
+    utils: { scan2: {} },
+    events: {
+      setEvents(value) {
+        this.value = value;
+      },
+    },
+    getFlag(name, fallback) {
+      return Object.prototype.hasOwnProperty.call(flags, name) ? flags[name] : fallback;
+    },
+    setFlag(name, value) {
+      flags[name] = value;
+    },
+    insertAction(action) {
+      actions.push(action);
+    },
+    getHeroLoc(name) {
+      return name === "direction" ? "down" : 0;
+    },
+  };
+}
+
+function createPlugin(initialFlags = {}, extraFloorIds = []) {
+  const metaFloorIds = eventMeta.activeEvents.map((event) => event.floorId);
+  const core = createCore(initialFlags, ["Akiba", ...metaFloorIds, ...extraFloorIds]);
+  const plugin = {};
+  global.core = core;
+  global.main = { version: "test" };
+  pluginDefinitions.locationMappings.call(plugin);
+  pluginDefinitions.akibaEventManager.call(plugin);
+  plugin._akibaEventMeta = eventMeta;
+  core.plugin = plugin;
+  return { core, plugin };
+}
+
+function event(id, floorId = id) {
+  return { id, title: id, locations: ["park"], floorId, once: true };
+}
+
+function testFreshInitialization() {
+  const { core, plugin } = createPlugin();
+  plugin.initAkibaEventState();
+  assert.equal(core.flags.akiba_event_state_version, eventMeta.version);
+  assert.deepEqual(core.flags.akiba_completed_events, []);
+  assert.deepEqual(
+    core.flags.akiba_active_events.map((entry) => entry.id),
+    eventMeta.activeEvents.map((entry) => entry.id),
+  );
+}
+
+function testVersionMigrationPreservesProgress() {
+  const completed = ["huangmo_1", "juju_1"];
+  const { core, plugin } = createPlugin({
+    akiba_event_state_initialized: true,
+    akiba_event_state_version: eventMeta.version - 1,
+    akiba_completed_events: completed,
+    akiba_active_events: [
+      event("huangmo_2"),
+      event("juju_2"),
+      event("lei_2"),
+    ],
+  }, ["huangmo_2", "juju_2"]);
+
+  plugin.initAkibaEventState();
+  const activeIds = core.flags.akiba_active_events.map((entry) => entry.id);
+  assert(activeIds.includes("huangmo_2"));
+  assert(activeIds.includes("juju_2"));
+  assert(!activeIds.includes("lei_2"));
+  assert(!activeIds.includes("huangmo_1"));
+  assert(!activeIds.includes("juju_1"));
+  for (const initial of eventMeta.activeEvents) {
+    if (!completed.includes(initial.id)) assert(activeIds.includes(initial.id));
+  }
+  assert.deepEqual(core.flags.akiba_completed_events, completed);
+}
+
+function testCompletionCountsOnlyOnce() {
+  const { core, plugin } = createPlugin({
+    akiba_event_state_initialized: true,
+    akiba_event_state_version: eventMeta.version,
+    akiba_completed_events: [],
+    akiba_active_events: [event("noir_1")],
+    mainline_exchange_active: true,
+    mainline_exchange_count: 0,
+    mainline_exchange_target: 2,
+  });
+
+  plugin.completeAkibaEvent("noir_1");
+  plugin.completeAkibaEvent("noir_1");
+  assert.equal(core.flags.mainline_exchange_count, 1);
+  assert.deepEqual(core.flags.akiba_completed_events, ["noir_1"]);
+}
+
+function testCharacterExchangeDefaultsToTwoEvents() {
+  const { core, plugin } = createPlugin({}, ["main_ch2_4_exchange_1"]);
+
+  plugin.beginCharacterExchange({
+    floorId: "main_ch2_4_exchange_1",
+    loc: [6, 10],
+    direction: "up",
+  });
+
+  assert.equal(core.flags.mainline_exchange_active, true);
+  assert.equal(core.flags.mainline_exchange_count, 0);
+  assert.equal(core.flags.mainline_exchange_target, 2);
+  assert.deepEqual(core.events.value, []);
+  assert.equal(core.actions.at(-1).type, "changeFloor");
+  assert.equal(core.actions.at(-1).floorId, "Akiba");
+}
+
+function testIdleClockRestoresOrContinues() {
+  const { core, plugin } = createPlugin({
+    akiba_event_state_initialized: true,
+    akiba_event_state_version: eventMeta.version,
+    akiba_completed_events: [],
+    akiba_active_events: [],
+    akiba_restore_floorId: "Akiba",
+    akiba_restore_x: 11,
+    akiba_restore_y: 12,
+    akiba_restore_direction: "left",
+    akiba_return_x: 6,
+    akiba_return_y: 10,
+    mainline_exchange_active: true,
+    mainline_exchange_count: 0,
+    mainline_exchange_target: 2,
+    mainline_exchange_destination: {
+      floorId: "main_ch3_1_exchange_1",
+      loc: [6, 10],
+      direction: "up",
+      time: 0,
+    },
+  }, ["main_ch3_1_exchange_1"]);
+
+  assert.equal(plugin.advanceCharacterExchangeWithIdleClock(), true);
+  assert.equal(core.flags.mainline_exchange_count, 1);
+  assert.deepEqual(core.actions.at(-1), {
+    type: "changePos",
+    loc: [11, 12],
+    direction: "left",
+  });
+
+  core.actions.length = 0;
+  assert.equal(plugin.advanceCharacterExchangeWithIdleClock(), true);
+  assert.equal(core.flags.mainline_exchange_active, false);
+  assert.deepEqual(core.actions.at(-1), [{
+    type: "changeFloor",
+    floorId: "main_ch3_1_exchange_1",
+    loc: [6, 10],
+    direction: "up",
+    time: 0,
+  }]);
+}
+
+function testIdleClockDoesNotAdvanceOutsideExchange() {
+  const { core, plugin } = createPlugin({
+    akiba_restore_floorId: "Akiba",
+    akiba_restore_x: 11,
+    akiba_restore_y: 12,
+    akiba_restore_direction: "left",
+    mainline_exchange_active: false,
+    mainline_exchange_count: 7,
+  });
+  assert.equal(plugin.advanceCharacterExchangeWithIdleClock(), false);
+  assert.equal(core.flags.mainline_exchange_count, 7);
+  assert.equal(core.actions.at(-1).type, "changePos");
+}
+
+testFreshInitialization();
+testVersionMigrationPreservesProgress();
+testCompletionCountsOnlyOnce();
+testCharacterExchangeDefaultsToTwoEvents();
+testIdleClockRestoresOrContinues();
+testIdleClockDoesNotAdvanceOutsideExchange();
+
+delete global.core;
+delete global.main;
+console.log("Akiba event manager tests passed.");

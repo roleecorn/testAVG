@@ -29,7 +29,7 @@
 
 ## 故事來源檔
 
-- ZIP 中被分類為角色劇情的 7 份原生 TXT 與 1 份 DOCX 提取 TXT，均已正式放置於 `project/story/`，後續樓層更新以該目錄為故事根本。
-- ZIP 的月讀愛 TXT 與既有 `project/story/月讀愛.txt` 內容不同；ZIP 原稿保留於 `project/story/月讀愛-ZIP-20260729T131245Z.txt` 作為比對副本，正式來源已覆蓋為 ZIP 版本。
-- 茱茱同樣以 ZIP 新稿覆蓋 `project/story/茱茱-角色劇情.txt`，並同步更新 `juju_1`–`juju_4`。
+- ZIP 中被分類為角色劇情的 7 份原生 TXT 與 1 份 DOCX 提取 TXT，均已各自落成單一正式來源並放置於 `project/story/`；後續樓層更新以該目錄為故事根本。
+- 月讀愛已用 ZIP 新稿覆蓋既有正式來源 `project/story/月讀愛.txt`，並同步更新 `yuedu_ai_1`–`yuedu_ai_4`；舊稿由 Git 歷史追溯。
+- 茱茱已用 ZIP 新稿覆蓋既有正式來源 `project/story/茱茱-角色劇情.txt`，並同步更新 `juju_1`–`juju_4`；舊稿由 Git 歷史追溯。
 - 月讀愛新稿的 `BGM:EXCITE` 目前以既有 `next_to_you_emotional.mp3` 作為可用替代音樂，待取得正式音源後替換。

@@ -17,7 +17,6 @@
 - project/mainStory/CH3 3-3：(這裡可以加個煩人小遊戲)
 - project/mainStory/CH6 6-4：【後日談時間】 尚未撰寫，已以文字標記保留。
 - project/mainStory/CH6 6-4：【播放炫酷的結尾小動畫】 尚未製作正式結尾動畫，目前用既有轉場影片事件暫代。
-- `project/mainStory/CH1 1-4`：人物交流時間尚未實作，已以文字標記保留。
 - `project/mainStory/CH3 3-1`：街頭賣藝分歧目前原稿為「嘆息寫」，已保留為可回流分歧。
 - `project/mainStory/CH3 3-3`：傑士塔威會議可追加煩人小遊戲，目前以原劇情旁白接續。
 - `project/mainStory/CH6 6-4`：後日談時間尚未撰寫，已以文字標記保留。

@@ -260,6 +260,34 @@ main.floors.main_ch5_1_exchange_1=
             "animateTime": 120
         },
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3"
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "scene_street.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【主線 CH5 5-1 五日無戰事篇（交流後）】",
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -287,7 +315,6 @@ main.floors.main_ch5_1_exchange_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,
@@ -485,7 +512,7 @@ main.floors.main_ch5_1_exchange_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我的鼻子啊！",
+        "\t[梗平]在下的鼻子啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -509,7 +536,7 @@ main.floors.main_ch5_1_exchange_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]可惡，我一定要找到方法解決你們",
+        "\t[梗平]可惡，在下一定要找到方法解決你們",
         {
             "type": "hideImage",
             "code": 10,
@@ -583,7 +610,7 @@ main.floors.main_ch5_1_exchange_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（手機）那我跟小朋友們的羈絆與約定該怎麼辦啊",
+        "\t[梗平]（手機）那在下跟小朋友們的羈絆與約定該怎麼辦啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -869,7 +896,6 @@ main.floors.main_ch5_1_exchange_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：遊戲中心】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1006,7 +1032,7 @@ main.floors.main_ch5_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我來了",
+                        "\t[梗平]在下來了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1043,7 +1069,7 @@ main.floors.main_ch5_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]這樣的地方我怎麼沒有早點發現呢",
+                        "\t[梗平]這樣的地方在下怎麼沒有早點發現呢",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1124,7 +1150,7 @@ main.floors.main_ch5_1_exchange_1=
                         "梗平，錯過了Comike",
                         {
                             "type": "changeFloor",
-                            "floorId": "main_ch5_1",
+                            "floorId": "main_ch5_1_exchange_1",
                             "loc": [
                                 6,
                                 10
@@ -1215,7 +1241,6 @@ main.floors.main_ch5_1_exchange_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：馬的膝蓋】",
                         {
                             "type": "hideImage",
                             "code": 10,

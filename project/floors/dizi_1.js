@@ -344,6 +344,17 @@ main.floors.dizi_1=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "dizi_normal.png",
+            "loc": [
+                220,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[比那名居地子]這個世界的人……全都被迫留在自己的位置上，等待著被對話！甚至在被對話時，只能說出那些早被決定好的話語！這太不自由了！",
         {
             "type": "hideImage",

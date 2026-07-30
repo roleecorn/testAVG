@@ -315,7 +315,6 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：車站】",
         {
             "type": "hideImage",
             "code": 10,
@@ -823,7 +822,7 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]反正在下們這次是來陪東山擺攤的，順便逛秋葉原",
+        "\t[梗平]反正我等這次是來陪東山擺攤的，順便逛秋葉原",
         {
             "type": "hideImage",
             "code": 10,
@@ -937,7 +936,6 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1155,7 +1153,7 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]所以在下們就去倉庫區找Ａ吧，可惡的修卡，在下不會讓你們傷害在下朋友的",
+        "\t[梗平]所以我等就去倉庫區找Ａ吧，可惡的修卡，在下不會讓你們傷害在下朋友的",
         {
             "type": "hideImage",
             "code": 10,

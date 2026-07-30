@@ -315,7 +315,6 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,
@@ -485,7 +484,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]好，在下們快去拯救A吧",
+        "\t[梗平]好，我等快去拯救A吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1474,7 +1473,6 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,

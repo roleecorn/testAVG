@@ -22,7 +22,7 @@
 
 ### 人物交流回合保底時鐘
 
-右下角 `(12,12)` 的 `idle_clock` 是人物交流回合的保底互動點，圖示由 `Akiba.js -> images` 的 `akiba_idle_clock.png` 顯示。點擊時梗平會說「啥也不想做啊」；只有 `mainline_exchange_active` 為真時，才會讓 `mainline_exchange_count` 加一，並沿用一般回歸流程：未達標回到秋葉原，達標則前往主線的續接 scene。
+右下角 `(12,12)` 的 `idle_clock` 是人物交流回合的保底互動點，圖示由 `Akiba.js -> images` 的 `akiba_idle_clock.png` 顯示。點擊時梗平會說「啥也不想做啊」；只有 `mainline_exchange_active` 為真時，才會讓 `mainline_exchange_count` 加一。未達標時把角色移回本次時鐘互動前的座標，達標時才前往主線的續接 scene。
 
 它不是一般角色好感事件，不能列入可完成事件或寫入 `akiba_completed_events`。此設計用於可用角色事件不足時，仍讓玩家有明確方式推進交流回合而不會卡關。
 

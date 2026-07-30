@@ -315,7 +315,6 @@ main.floors.mapo_1_5=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,

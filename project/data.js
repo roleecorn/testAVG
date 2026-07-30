@@ -163,8 +163,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"yuedu_panic.png",
 			"yuedu_sad.png",
 			"yuedu_smile.png",
-			"yuedu_surprised.png",
-			"yuedu.png"
+			"yuedu_surprised.png"
 		],
 		"tilesets": [
 			"magictower.png",

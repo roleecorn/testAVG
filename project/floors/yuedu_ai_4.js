@@ -417,7 +417,7 @@ main.floors.yuedu_ai_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "yuedu_normal.png",
+            "image": "yuedu_smile.png",
             "loc": [
                 220,
                 "textTop"
@@ -561,7 +561,7 @@ main.floors.yuedu_ai_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "yuedu_normal.png",
+            "image": "yuedu_smile.png",
             "loc": [
                 220,
                 "textTop"
@@ -609,7 +609,7 @@ main.floors.yuedu_ai_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "yuedu_normal.png",
+            "image": "yuedu_smile.png",
             "loc": [
                 220,
                 "textTop"
@@ -852,7 +852,7 @@ main.floors.yuedu_ai_4=
                         {
                             "type": "showImage",
                             "code": 20,
-                            "image": "yuedu_normal.png",
+                            "image": "yuedu_smile.png",
                             "loc": [
                                 220,
                                 "textTop"
@@ -900,7 +900,7 @@ main.floors.yuedu_ai_4=
                         {
                             "type": "showImage",
                             "code": 20,
-                            "image": "yuedu_normal.png",
+                            "image": "yuedu_smile.png",
                             "loc": [
                                 220,
                                 "textTop"
@@ -1384,7 +1384,7 @@ main.floors.yuedu_ai_4=
                         {
                             "type": "showImage",
                             "code": 20,
-                            "image": "yuedu_normal.png",
+                            "image": "yuedu_smile.png",
                             "loc": [
                                 220,
                                 "textTop"

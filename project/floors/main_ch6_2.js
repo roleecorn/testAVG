@@ -811,7 +811,6 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：街道】",
                         {
                             "type": "hideImage",
                             "code": 10,

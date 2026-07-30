@@ -617,7 +617,6 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 250
         },
-        "【背景：車上】",
         {
             "type": "hideImage",
             "code": 10,
@@ -789,7 +788,7 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下們在一起(當假面騎士)好嗎？",
+        "\t[梗平]我等在一起(當假面騎士)好嗎？",
         {
             "type": "hideImage",
             "code": 10,

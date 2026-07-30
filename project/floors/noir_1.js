@@ -479,18 +479,7 @@ main.floors.noir_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[]匡噹",
+        "匡噹",
         {
             "type": "hideImage",
             "code": 10,

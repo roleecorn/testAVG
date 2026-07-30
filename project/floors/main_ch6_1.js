@@ -315,7 +315,6 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：書店A】",
         {
             "type": "hideImage",
             "code": 10,
@@ -518,7 +517,6 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：咖啡廳】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1123,7 +1121,6 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：僕咖】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1184,7 +1181,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下們一起把聖物送回去吧！",
+        "\t[梗平]我等一起把聖物送回去吧！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1465,7 +1462,6 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 250
         },
-        "【背景：書店A】",
         {
             "type": "hideImage",
             "code": 10,

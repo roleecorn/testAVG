@@ -1094,7 +1094,7 @@ main.floors.main_ch3_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]學長，那這樣在下們該不該丟呢",
+        "\t[梗平]學長，那這樣我等該不該丟呢",
         {
             "type": "hideImage",
             "code": 10,

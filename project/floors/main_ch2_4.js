@@ -315,7 +315,6 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 250
         },
-        "【背景：書店A內部】",
         {
             "type": "hideImage",
             "code": 10,
@@ -454,7 +453,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下們這到底是在哪裡",
+        "\t[梗平]我等這到底是在哪裡",
         {
             "type": "hideImage",
             "code": 10,
@@ -491,7 +490,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]那看來在下們應該就是在書店A內部的某個地方了",
+        "\t[梗平]那看來我等應該就是在書店A內部的某個地方了",
         {
             "type": "hideImage",
             "code": 10,
@@ -961,7 +960,6 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 250
         },
-        "【背景：書店A】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1303,7 +1301,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]哈哈哈哈，在下們走吧",
+                        "\t[梗平]哈哈哈哈，我等走吧",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1332,7 +1330,6 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：美術館】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1419,7 +1416,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]那這裡可能會有線索，在下有找到導覽手冊，在下們分別去搜索吧！",
+                        "\t[梗平]那這裡可能會有線索，在下有找到導覽手冊，我等分別去搜索吧！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2134,7 +2131,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下們明天見啊",
+                        "\t[梗平]我等明天見啊",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2226,7 +2223,6 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：咖啡廳】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2618,94 +2614,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "function",
                             "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch2_4_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]不行，好想睡",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                28,
-                                "textTop"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]可惡，眼皮好重",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "下一秒的梗平就這麼安穩的睡在了路邊",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "第二天，打工沒有換宿",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "【第二章結束】"
+                        }
                     ]
                 }
             ]
@@ -2721,19 +2630,6 @@ main.floors.main_ch2_4=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "playTransitionVideo"
-        },
-        {
-            "type": "changeFloor",
-            "floorId": "main_ch3_1",
-            "loc": [
-                6,
-                10
-            ],
-            "direction": "up",
-            "time": 0
         }
     ],
     "parallelDo": "",

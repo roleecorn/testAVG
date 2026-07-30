@@ -29,10 +29,10 @@ const floors = {
 };
 
 const characterExchanges = {
-  "1-3": { floorId: "mapo_1_3_exchange_1", rounds: 1 },
-  "2-4": { floorId: "main_ch2_4_exchange_1", rounds: 1 },
-  "3-1": { floorId: "main_ch3_1_exchange_1", rounds: 1 },
-  "5-1": { floorId: "main_ch5_1_exchange_1", rounds: 2 },
+  "1-3": { floorId: "mapo_1_3_exchange_1" },
+  "2-4": { floorId: "main_ch2_4_exchange_1" },
+  "3-1": { floorId: "main_ch3_1_exchange_1" },
+  "5-1": { floorId: "main_ch5_1_exchange_1", targetCount: 2 },
 };
 
 const bgByName = [
@@ -47,6 +47,8 @@ const cgByName = {
   "麻婆豆腐店門口": "ms_ch1_mapo_shop_entrance_cg.png",
   "2.5梗平": "ms_ch1_keng_2_5_cg.png",
   "放大的鱷魚圖": "ms_ch1_thunder_crocodile_cg.png",
+  "梗平被腳踏車撞飛": "ms_ch2_keng_bicycle_cg.png",
+  "夕陽下的神祕少女": "ms_ch2_eri_sunset_cg.png",
 };
 
 const gifByName = {
@@ -196,7 +198,6 @@ function lineToEvents(line, ctx) {
       ...hidePortraits(),
       { type: "hideImage", code: 30, time: 150 },
       { type: "showImage", code: 1, image: bg, loc: [0, 0], opacity: 1, time: 250 },
-      `【背景：${name}】`,
     ];
   }
 
@@ -226,7 +227,7 @@ function lineToEvents(line, ctx) {
         { type: "comment", text: "人物交流回合：完成角色好感劇情後，進入交流後續 scene。" },
         {
           type: "function",
-          function: `function () { core.plugin.beginCharacterExchange({ floorId: '${exchange.floorId}', loc: [6, 10], direction: 'up', time: 500 }${exchange.rounds > 1 ? `, ${exchange.rounds}` : ""}); }`,
+          function: `function () { core.plugin.beginCharacterExchange({ floorId: '${exchange.floorId}', loc: [6, 10], direction: 'up', time: 500 }${exchange.targetCount != null ? `, ${exchange.targetCount}` : ""}); }`,
         },
       ];
     }
@@ -265,7 +266,10 @@ function lineToEvents(line, ctx) {
   if (colon) {
     const rawName = colon[1].trim();
     let body = colon[2].trim();
-    if (rawName === "梗" || rawName === "梗平") body = body.replaceAll("我", "在下");
+    if (rawName === "梗" || rawName === "梗平") {
+      body = body.replace(/在我(?=\d+歲)/g, "在下");
+      body = body.replaceAll("我們", "\uFFFF").replaceAll("我", "在下").replaceAll("\uFFFF", "我等");
+    }
     const phone = body.match(/^\{(.*)\}$/);
     if (phone) body = `（手機）${phone[1]}`;
     const display = knownSpeakers.get(rawName) || rawName;
@@ -401,8 +405,8 @@ function parseChoice(lines, start, ctx, parentStopLabels = null) {
   return { choice: { type: "choices", text: "請選擇。", choices }, index: i };
 }
 
-function buildFloor(section, lines) {
-  const meta = floors[section];
+function buildFloor(section, lines, overrides = {}) {
+  const meta = { ...floors[section], ...overrides };
   const chapter = section.split("-")[0];
   const ctx = { floorId: meta.id, bg: meta.bg, source: `project/mainStory/CH${chapter}`, section };
   const parsed = parseEvents(lines, 0, ctx);
@@ -550,7 +554,6 @@ function updateTodo() {
     "## 待補劇情",
     "",
     ...Array.from(storyTodos).sort().map((x) => `- ${x}`),
-    "- `project/mainStory/CH1 1-4`：人物交流時間尚未實作，已以文字標記保留。",
     "- `project/mainStory/CH3 3-1`：街頭賣藝分歧目前原稿為「嘆息寫」，已保留為可回流分歧。",
     "- `project/mainStory/CH3 3-3`：傑士塔威會議可追加煩人小遊戲，目前以原劇情旁白接續。",
     "- `project/mainStory/CH6 6-4`：後日談時間尚未撰寫，已以文字標記保留。",
@@ -561,6 +564,8 @@ function updateTodo() {
     "- `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。",
     "- `project/images/ms_ch1_thunder_crocodile_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「放大的鱷魚圖」正式 CG。",
     "- `project/images/ms_ch1_keng_join_placeholder.png`：專案目前沒有現有 GIF 可複製，暫用複製靜態圖，來源為 `project/images/scene_tournament.png`；之後需要替換成「梗平參戰」正式 GIF。",
+    "- `project/images/ms_ch2_keng_bicycle_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「梗平被腳踏車撞飛」正式 CG。",
+    "- `project/images/ms_ch2_eri_sunset_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「夕陽下的神祕少女」正式 CG。",
     "- `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。",
     "- CH1-CH6 多處背景（咖啡廳、便利商店、河邊、書店A、家庭餐廳、遊戲中心、美術館、馬的膝蓋、高級餐廳、醫院、車上、貝琪宅邸、僕咖、婚禮）目前沿用既有背景圖；之後可替換正式背景。",
     "",
@@ -592,7 +597,20 @@ function main() {
     const content = sections[key];
     if (!content) throw new Error(`Missing section ${key}`);
     const file = p("project", "floors", `${floors[key].id}.js`);
-    fs.writeFileSync(file, buildFloor(key, content), "utf8");
+    const exchange = characterExchanges[key];
+    if (!exchange) {
+      fs.writeFileSync(file, buildFloor(key, content), "utf8");
+      continue;
+    }
+
+    const markerIndex = content.findIndex((line) => /^【人物交流時間/.test(line.trim()));
+    if (markerIndex < 0) throw new Error(`Missing character exchange marker in section ${key}`);
+    fs.writeFileSync(file, buildFloor(key, content.slice(0, markerIndex + 1), { next: null }), "utf8");
+    const continuationFile = p("project", "floors", `${exchange.floorId}.js`);
+    fs.writeFileSync(continuationFile, buildFloor(key, content.slice(markerIndex + 1), {
+      id: exchange.floorId,
+      title: `${floors[key].title}（交流後）`,
+    }), "utf8");
   }
 
   updateData();

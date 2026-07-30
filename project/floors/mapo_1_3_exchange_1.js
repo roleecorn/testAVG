@@ -260,9 +260,13 @@ main.floors.mapo_1_3_exchange_1=
             "animateTime": 120
         },
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "scene_mapo_shop.png",
             "loc": [
                 0,
                 0
@@ -270,6 +274,19 @@ main.floors.mapo_1_3_exchange_1=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【主線 CH1 1-3 麻婆豆腐店（交流後）】",
         {
             "type": "hideImage",
             "code": 10,

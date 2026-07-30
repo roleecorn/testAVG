@@ -315,7 +315,6 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 250
         },
-        "【背景：麻婆豆腐店】",
         {
             "type": "hideImage",
             "code": 10,
@@ -891,7 +890,6 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：大賽場地】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1655,7 +1653,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下的表妹，也在修行的過程中離開了在下們",
+                        "\t[梗平]在下的表妹，也在修行的過程中離開了我等",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2225,7 +2223,6 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 250
         },
-        "【背景：麻婆豆腐店】",
         {
             "type": "hideImage",
             "code": 10,
@@ -2753,7 +2750,6 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,
@@ -2809,80 +2805,6 @@ main.floors.mapo_1_3=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]好像忘記了甚麼",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]啊，打工換宿啊！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "梗平往母親給的地址跑了過去",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "playTransitionVideo"
-        },
-        {
-            "type": "changeFloor",
-            "floorId": "mapo_1_4",
-            "loc": [
-                6,
-                10
-            ],
-            "direction": "up",
-            "time": 0
         }
     ],
     "parallelDo": "",

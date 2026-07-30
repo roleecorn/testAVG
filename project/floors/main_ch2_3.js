@@ -315,7 +315,6 @@ main.floors.main_ch2_3=
             "opacity": 1,
             "time": 250
         },
-        "【背景：遊戲中心】",
         {
             "type": "hideImage",
             "code": 10,
@@ -694,7 +693,6 @@ main.floors.main_ch2_3=
             "opacity": 1,
             "time": 250
         },
-        "【背景：書店A】",
         {
             "type": "hideImage",
             "code": 10,

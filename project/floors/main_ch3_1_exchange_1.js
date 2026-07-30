@@ -260,6 +260,10 @@ main.floors.main_ch3_1_exchange_1=
             "animateTime": 120
         },
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "scene_street.png",
@@ -270,6 +274,19 @@ main.floors.main_ch3_1_exchange_1=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【主線 CH3 3-1 自爆篇（交流後）】",
         {
             "type": "hideImage",
             "code": 10,
@@ -353,7 +370,6 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：馬的膝蓋】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -390,7 +406,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]你好，我想要來打工",
+                        "\t[梗平]你好，在下想要來打工",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -458,7 +474,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 10,
-                            "image": "keng_smile_portrait.png",
+                            "image": "keng_neutral_portrait.png",
                             "loc": [
                                 28,
                                 "textTop"
@@ -466,7 +482,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]沒問題，請交給我吧，前輩！",
+                        "\t[梗平]沒問題，請交給在下吧，前輩！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -529,7 +545,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]喔！這就交給我這個假面騎士吧",
+                        "\t[梗平]喔！這就交給在下這個假面騎士吧",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -738,7 +754,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]（手機）我果然很有藝術天分啊",
+                        "\t[梗平]（手機）在下果然很有藝術天分啊",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -810,7 +826,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]（手機）我這邊一個小時2000，表妹你那邊怎麼樣",
+                        "\t[梗平]（手機）在下這邊一個小時2000，表妹你那邊怎麼樣",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -945,7 +961,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]（手機）你竟然先我一步脫離了窮人的行列嗎？",
+                        "\t[梗平]（手機）你竟然先在下一步脫離了窮人的行列嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1232,7 +1248,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我知道了，妳果然是修卡的人吧",
+                        "\t[梗平]在下知道了，妳果然是修卡的人吧",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1256,7 +1272,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我不會向邪惡屈服的！",
+                        "\t[梗平]在下不會向邪惡屈服的！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1369,7 +1385,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]快來幫我一起阻止她！",
+                        "\t[梗平]快來幫在下一起阻止她！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1726,7 +1742,7 @@ main.floors.main_ch3_1_exchange_1=
                         "(嘆息寫)",
                         {
                             "type": "changeFloor",
-                            "floorId": "main_ch3_1",
+                            "floorId": "main_ch3_1_exchange_1",
                             "loc": [
                                 6,
                                 10

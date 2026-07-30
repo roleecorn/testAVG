@@ -254,11 +254,35 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 
 		this.initAkibaEventState = function () {
 			var meta = this.getAkibaEventMeta();
-			var stateVersion = 3;
-			if (core.getFlag('akiba_event_state_initialized', false)
-				&& core.getFlag('akiba_event_state_version', 0) === stateVersion) return;
-			this._setAkibaActiveEvents(meta.activeEvents || []);
-			this._setAkibaEventIdArrayFlag('akiba_completed_events', []);
+			var stateVersion = meta.version || 1;
+			var initialized = core.getFlag('akiba_event_state_initialized', false);
+			if (initialized && core.getFlag('akiba_event_state_version', 0) === stateVersion) return;
+
+			if (!initialized) {
+				this._setAkibaActiveEvents(meta.activeEvents || []);
+				this._setAkibaEventIdArrayFlag('akiba_completed_events', []);
+			} else {
+				// 升版時保留既有進度，只補進新加入的初始事件；已完成事件不可重新啟用。
+				var completedEvents = this._getAkibaEventIdArrayFlag('akiba_completed_events');
+				var activeEvents = this._getAkibaActiveEvents().filter(function (event) {
+					if (event.once !== false && completedEvents.indexOf(event.id) >= 0) return false;
+					var floorIds = core.floorIds instanceof Array ? core.floorIds : [];
+					if (floorIds.length > 0) return floorIds.indexOf(event.floorId) >= 0;
+					if (core.floors && Object.keys(core.floors).length > 0) {
+						return core.floors[event.floorId] != null;
+					}
+					return true;
+				});
+				(meta.activeEvents || []).forEach(function (eventData) {
+					var event = this._normalizeAkibaEventData(eventData);
+					if (!event) return;
+					if (event.once !== false && completedEvents.indexOf(event.id) >= 0) return;
+					if (activeEvents.some(function (activeEvent) { return activeEvent.id === event.id; })) return;
+					activeEvents.push(event);
+				}, this);
+				this._setAkibaActiveEvents(activeEvents);
+				this._setAkibaEventIdArrayFlag('akiba_completed_events', completedEvents);
+			}
 			core.setFlag('akiba_event_state_initialized', true);
 			core.setFlag('akiba_event_state_version', stateVersion);
 		}
@@ -397,7 +421,11 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 		// 秋葉原右下角的時鐘是人物交流回合的保底推進點。
 		this.advanceCharacterExchangeWithIdleClock = function () {
 			if (this._advanceCharacterExchange() > 0) {
-				this.returnToAkiba();
+				if (this.isCharacterExchangeComplete()) {
+					this.returnToMainlineAfterCharacterExchange();
+				} else {
+					this.restoreAkibaHeroAfterLocationInteraction();
+				}
 				return true;
 			}
 			this.restoreAkibaHeroAfterLocationInteraction();

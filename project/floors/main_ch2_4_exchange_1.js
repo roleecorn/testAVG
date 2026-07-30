@@ -260,9 +260,13 @@ main.floors.main_ch2_4_exchange_1=
             "animateTime": 120
         },
         {
+            "type": "playBgm",
+            "name": "dark_alleys_tension.ogg"
+        },
+        {
             "type": "showImage",
             "code": 1,
-            "image": "scene_mapo_shop.png",
+            "image": "scene_road.png",
             "loc": [
                 0,
                 0
@@ -270,6 +274,19 @@ main.floors.main_ch2_4_exchange_1=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【主線 CH2 2-4 書店A內部（交流後）】",
         {
             "type": "hideImage",
             "code": 10,

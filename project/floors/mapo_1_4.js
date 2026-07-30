@@ -315,7 +315,6 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 250
         },
-        "【背景：咖啡廳】",
         {
             "type": "hideImage",
             "code": 10,
@@ -933,7 +932,6 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 250
         },
-        "【背景：便利商店】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1164,7 +1162,6 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 250
         },
-        "【背景：河邊】",
         {
             "type": "hideImage",
             "code": 10,

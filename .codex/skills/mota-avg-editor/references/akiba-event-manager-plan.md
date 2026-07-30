@@ -97,6 +97,13 @@
 - `flag:akiba_return_floorId`：事件結束後要回到的地圖，預設 `Akiba`。
 - `flag:akiba_return_x`、`flag:akiba_return_y`、`flag:akiba_return_direction`：事件結束後回到 Akiba 的位置與朝向。
 
+主線人物交流回合另外使用以下存檔 flag，由 Plugin 管理，不要在劇情事件中手動修改：
+
+- `flag:mainline_exchange_active`：目前是否正在角色好感交流回合中。
+- `flag:mainline_exchange_count`：本輪已完成的角色好感劇情數量。
+- `flag:mainline_exchange_target`：本輪需要完成的數量；未指定時為 `2`。
+- `flag:mainline_exchange_destination`：完成交流回合後要進入的標記後 continuation scene，以及其座標、方向與轉場設定。
+
 `flag:akiba_active_events` 與 `flag:akiba_completed_events` 建議由 plugin 以陣列讀寫，不在事件 JSON 中手動拼接字串。
 
 ## Plugin API 規劃
@@ -111,6 +118,9 @@ core.plugin.selectAkibaEvent(eventId)
 core.plugin.completeAkibaEvent(eventId)
 core.plugin.addAkibaEvent(eventData)
 core.plugin.returnToAkiba()
+core.plugin.beginCharacterExchange(destination, targetCount)
+core.plugin.isCharacterExchangeComplete()
+core.plugin.returnToMainlineAfterCharacterExchange()
 ```
 
 行為規劃：
@@ -122,6 +132,19 @@ core.plugin.returnToAkiba()
 - `completeAkibaEvent(eventId)`：把事件從 active list 移除，加入 completed list。此函式不會自動新增後續事件。
 - `addAkibaEvent(eventData)`：將一筆新的事件資料加入 active list；若同 ID 已 active，或已 completed 且 `once` 不是 `false`，則不重複加入。
 - `returnToAkiba()`：使用保存的返回資訊切回 Akiba。
+- `beginCharacterExchange(destination, targetCount)`：於主線的「人物交流回合」標記啟動；保存標記後的 continuation scene，預設要求完成兩段角色好感劇情，再切至 `Akiba`。此函式會清掉舊 scene 的剩餘事件。
+- `completeAkibaEvent(eventId)`：若目前正在人物交流回合中，且事件原本仍在 active list，才將交流 `count` 加一；重複完成同一事件不會重複計數。
+- `returnToAkiba()`：交流回合尚未達標時回到 Akiba；達標時改呼叫 `returnToMainlineAfterCharacterExchange()`。
+- `returnToMainlineAfterCharacterExchange()`：使用 `mainline_exchange_destination` 切換至標記後的 continuation scene，並恢復原本的影片／一般轉場設定。
+
+## 主線人物交流回合規則
+
+主線與角色好感劇情是兩種不同的流程。主線文本出現「人物交流回合」時，代表該主線 scene 暫時告一段落，玩家會前往秋葉原完成角色好感劇情。
+
+- 「人物交流回合」是獨立流程標記，不是標題。標記前與標記後必須拆為不同的 floor/scene：標記前 scene 在標記處結束，標記後文本放入 continuation scene；不得跳回同一個 floor 或重播標記前內容。
+- 未指定次數時，完成 `2` 段角色好感劇情後才進入下一段主線；文字指定 `X` 時以 `X` 為準。
+- 每段角色好感劇情結尾必須先 `completeAkibaEvent(eventId)`、再 `returnToAkiba()`，讓 Plugin 能決定回秋葉原或續接主線。
+- 交流回合結束後前往的是標記後的 **continuation scene**，不是重新載入交流標記所在的 scene；continuation scene 自己負責後續主線轉場。
 
 ## Akiba 公共事件流程
 

@@ -315,7 +315,6 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 250
         },
-        "【背景：書店A】",
         {
             "type": "hideImage",
             "code": 10,
@@ -465,7 +464,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]擅闖別人的店可不好，在下們先去其他地方找找吧",
+        "\t[梗平]擅闖別人的店可不好，我等先去其他地方找找吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -533,7 +532,6 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 250
         },
-        "【背景：倉庫】",
         {
             "type": "hideImage",
             "code": 10,
@@ -736,7 +734,6 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,
@@ -971,7 +968,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]時間也差不多了，在下們先去吃飯吧，晚點再繼續",
+        "\t[梗平]時間也差不多了，我等先去吃飯吧，晚點再繼續",
         {
             "type": "hideImage",
             "code": 10,
@@ -1065,7 +1062,6 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 250
         },
-        "【背景：家庭餐廳】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1370,170 +1366,837 @@ main.floors.main_ch2_2=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": [28, "textTop"],
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
                         "\t[梗平]只有外星人才能不被人發現的情況下抓走你哥哥",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
-                        "\t[柯]才沒有那種東西呢",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
-                        "\t[智]大哥哥......",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[柯南]才沒有那種東西呢",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[智乃]大哥哥......",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "\t[IB]（用鄙夷的眼神看梗平）",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": [28, "textTop"],
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]不要用那種眼神看我啊哈斯哈斯",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
+                        "\t[梗平]不要用那種眼神看在下啊哈斯哈斯",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "\t[IB]變態……",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": [28, "textTop"],
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
                         "\t[梗平]咳，玩笑就先到這裡",
-                        "\t[梗平]但秋葉原一定潛藏不為人知的魔物，那是在我8歲的時候，老爸老媽第一次帶我來東京",
-                        "\t[梗平]當我被假面騎士吸引，跑到小巷裡時我看到了",
-                        "\t[梗平]就在那裏！有個男人被拉進屋裡，然後就再也沒出來了！",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
-                        "梗平高舉雙手，相當激動地說著",
-                        "但其他人完全沒在聽，都在看菜單",
-                        "\t[友人B]我推薦這裡的芭非喔，水果給很足",
-                        "\t[友人B]放心吧，梗平的錢包有錢",
-                        "\t[柯]那我就不客氣了",
-                        "\t[IB]加一",
-                        "\t[智]欸……那我也",
                         {
-                            "type": "showImage",
+                            "type": "hideImage",
                             "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [28, "textTop"],
-                            "opacity": 1,
-                            "time": 0
+                            "time": 0,
+                            "async": true
                         },
-                        "\t[梗平]聽我說話！",
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": [28, "textTop"],
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]沒辦法了，看來我只剩下一個選擇，他們就交給你了，Ｂ",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
+                        "\t[梗平]但秋葉原一定潛藏不為人知的魔物，那是在下8歲的時候，老爸老媽第一次帶在下來東京",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_smile_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]當在下被假面騎士吸引，跑到小巷裡時在下看到了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]就在那裏！有個男人被拉進屋裡，然後就再也沒出來了！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]所以你的哥哥和那個男人一樣，都是被外星人誘拐了！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平高舉雙手，相當激動地說著",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "但其他人完全沒在聽，都在看菜單",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[友人B]我推薦這裡的芭非喔，水果給很足",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[友人B]放心吧，梗平的錢包有錢",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[柯南]那我就不客氣了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[IB]加一",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[智乃]欸……那我也",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]聽在下說話！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]沒辦法了，看來在下只剩下一個選擇，他們就交給你了，Ｂ",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "\t[友人B]慢走～",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 30, "time": 150},
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "showImage",
                             "code": 1,
                             "image": "scene_street.png",
-                            "loc": [0, 0],
+                            "loc": [
+                                0,
+                                0
+                            ],
                             "opacity": 1,
                             "time": 250
                         },
-                        "【背景：倉庫區】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平離開家庭餐廳，一路朝倉庫區奔去",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": [28, "textTop"],
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]只要我找到外星人，我的尊嚴也能被找回來的！",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
+                        "\t[梗平]只要在下找到外星人，在下的尊嚴也能被找回來的！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "就在梗平穿過巷口時，側邊突然冒出一台腳踏車直接把梗平撞飛",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "showImage",
                             "code": 30,
                             "image": "ms_ch2_keng_bicycle_cg.png",
-                            "loc": [0, 0],
+                            "loc": [
+                                0,
+                                0
+                            ],
                             "opacity": 1,
                             "time": 250
                         },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         "\t[路人]麥克——！",
-                        {"type": "hideImage", "code": 30, "time": 150},
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": [28, "textTop"],
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
                         "\t[梗平]誰是麥克啊！好危險啊！誰騎這麼……",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[梗平]這是甚麼？",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "一個包裹棉被的神祕生物在地上蠕動，看來騎腳踏車的人撞到梗平後自己也跌倒了",
-                        "（棉被怪形象藤崎艾利歐）",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "(棉被怪形象藤崎艾利歐)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "\t[棉被怪]姆、姆姆，受到來自小行星群的碰撞，抗衝擊裝備啟動",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "梗平　的　青春點數下降了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": [28, "textTop"],
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
                         "\t[梗平]你沒事吧",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "梗平將手伸向神祕生物棉被怪試圖拉他起來",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "綁住棉被的繩子因為撞擊而鬆脫，然後梗平看到了棉被怪的真面目",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "在夕陽照射下，彷彿散發著粒子的藍髮少女",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "showImage",
                             "code": 30,
                             "image": "ms_ch2_eri_sunset_cg.png",
-                            "loc": [0, 0],
+                            "loc": [
+                                0,
+                                0
+                            ],
                             "opacity": 1,
                             "time": 250
                         },
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
-                            "image": "keng_surprised_portrait.png",
-                            "loc": [28, "textTop"],
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
                         "\t[梗平]外、外星人？",
-                        {"type": "hideImage", "code": 30, "time": 150},
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "\t[棉被怪]被被……",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[梗平]被被？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "\t[棉被怪]被被被被被發現啦！！！！！！！！！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "棉被怪裹上棉被用出乎預料的速度跑走了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "梗平追上去了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "\t[棉被怪]救命啊有怪人在追我！！！！！！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "棉被怪呼救了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "梗平被逮捕了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "因為涉嫌尾隨未成年女性所以被通知家長而被帶回老家的梗平當然也無緣參加本屆Comiket了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "【END：第三類接觸？】",
-                        {"type": "hideImage", "code": 10, "time": 0, "async": true},
-                        {"type": "hideImage", "code": 11, "time": 0, "async": true},
                         {
                             "type": "changeFloor",
                             "floorId": "main_ch2_2",

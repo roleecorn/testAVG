@@ -584,7 +584,6 @@ main.floors.main_ch6_4=
             "opacity": 1,
             "time": 250
         },
-        "【背景：婚禮】",
         {
             "type": "hideImage",
             "code": 10,

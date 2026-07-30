@@ -315,7 +315,6 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,
@@ -470,7 +469,6 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 250
         },
-        "【背景：高級餐廳】",
         {
             "type": "hideImage",
             "code": 10,
@@ -971,7 +969,6 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,

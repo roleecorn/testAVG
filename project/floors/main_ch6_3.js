@@ -315,7 +315,6 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 250
         },
-        "【背景：馬的膝蓋】",
         {
             "type": "hideImage",
             "code": 10,
@@ -531,7 +530,6 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 250
         },
-        "【背景：倉庫區】",
         {
             "type": "hideImage",
             "code": 10,
@@ -882,7 +880,6 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 250
         },
-        "【背景：街道】",
         {
             "type": "hideImage",
             "code": 10,
