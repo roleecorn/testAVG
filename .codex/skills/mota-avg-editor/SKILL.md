@@ -25,7 +25,7 @@ Load only the references needed for the current task:
 
 - New floor, scene, chapter, or scene file: `references/floors.md`
 - Dialogue writing or dialogue event format: `references/dialogue.md`
-- Character sprites, standing images, CG, backgrounds, or image mapping: `references/images.md`; for a new six-expression 2 × 3 character sheet, also use `anime-expression-grid` as the required generation coordinator.
+- Character sprites, standing images, CG, backgrounds, or image mapping: `references/images.md`; for a new six-expression 2 × 3 character sheet, also use `anime-expression-grid` as the required generation coordinator; for a fixed 4:3 one-second 行為 CG, also use `mota-action-cg`.
 - Flags, temporary state, persistent state, or search patterns: `references/flags.md`
 - Scene entry, transitions, show/hide logic, or flow control: `references/scene-flow.md`
 - BGM playback, keep behavior, pause/resume, fades, speed, or cache: `references/bgm.md`
