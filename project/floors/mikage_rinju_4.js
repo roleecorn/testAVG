@@ -33,7 +33,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -48,7 +48,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -63,7 +63,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -78,7 +78,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -93,7 +93,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -108,7 +108,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -123,7 +123,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -138,7 +138,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -153,7 +153,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -168,7 +168,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -183,7 +183,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -198,7 +198,7 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ],
+        , 0, 0, 0, 0],
         [
             0,
             0,
@@ -213,9 +213,9 @@ main.floors.mikage_rinju_4=
             0,
             0,
             0
-        ]
+        , 0, 0, 0, 0]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [

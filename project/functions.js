@@ -1614,6 +1614,12 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 		},
 		"drawStatusBar": function () {
 			// 这真的是人能写出来的东西？
+			if (core.flags.hideLeftStatusBar) {
+				// This layout has no in-canvas status overlay. Remove a canvas that
+				// may have been created before the flag or layout changed.
+				if (core.dymCanvas.status) core.deleteCanvas('status');
+				return;
+			}
 			var ctx, fill = function (text, x, y, style) {
 				core.ui.setFont(ctx, (/\w+/.test(text) ? 'italic ' : '') + 'bold 18px Verdana');
 				core.ui.fillBoldText(ctx, text, x, y, style);
@@ -1655,32 +1661,6 @@ var functions_d6ad677b_427a_4623_b50f_a445a3b0ef8a =
 					fill(core.setTwoDigits(core.itemCount('blueKey')), 46, 267, '#AAAADD');
 					fill(core.setTwoDigits(core.itemCount('redKey')), 81, 267, '#FF8888');
 				}
-			} else if (core.flags.hideLeftStatusBar && !core.domStyle.isVertical) { // 横屏且隐藏状态栏
-				if (!core.dymCanvas['status'])
-					core.ui.createCanvas('status', 0, 0, core._PX_, core._PY_, 66); // 刚好盖过显伤层
-				core.ui.clearMap(ctx = core.dymCanvas['status']);
-				core.ui.setFillStyle(ctx, core.status.globalAttribute.statusBarColor);
-				var offset = core.status.hero.loc.x - core.bigmap.offsetX / 32 >= core._HEIGHT_ ? 0 : core._PY_;
-				core.ui.setAlpha(ctx, 0.75);
-				core.ui.drawWindowSkin('winskin.png', ctx, offset, 0, core._PX_ - core._PY_, core._PY_);
-				core.ui.setAlpha(ctx, 1);
-				core.drawImage(ctx, core.statusBar.icons.floor, 6 + offset, 9, 25, 25);
-				fill((core.status.thisMap || {}).name || "Loading", 42 + offset, 29);
-				core.drawImage(ctx, core.statusBar.icons.hp, 6 + offset, 43, 25, 25);
-				fill(core.formatBigNumber(core.getRealStatus('hp')), 42 + offset, 63);
-				core.drawImage(ctx, core.statusBar.icons.atk, 6 + offset, 77, 25, 25);
-				fill(core.formatBigNumber(core.getRealStatus('atk')), 42 + offset, 97);
-				core.drawImage(ctx, core.statusBar.icons.def, 6 + offset, 111, 25, 25);
-				fill(core.formatBigNumber(core.getRealStatus('def')), 42 + offset, 131);
-				core.drawImage(ctx, core.statusBar.icons.mdef, 6 + offset, 145, 25, 25);
-				fill(core.formatBigNumber(core.getRealStatus('mdef')), 42 + offset, 165);
-				core.drawImage(ctx, core.statusBar.icons.money, 6 + offset, 179, 25, 25);
-				fill(core.formatBigNumber(core.status.hero.money), 42 + offset, 199);
-				core.drawImage(ctx, core.statusBar.icons.exp, 6 + offset, 213, 25, 25);
-				fill(core.formatBigNumber(core.status.hero.exp), 42 + offset, 233);
-				fill(core.setTwoDigits(core.itemCount('yellowKey')), 11 + offset, 267, '#FFCCAA');
-				fill(core.setTwoDigits(core.itemCount('blueKey')), 46 + offset, 267, '#AAAADD');
-				fill(core.setTwoDigits(core.itemCount('redKey')), 81 + offset, 267, '#FF8888');
 			}
 		},
 		"drawStatistics": function () {

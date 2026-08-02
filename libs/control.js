@@ -3136,11 +3136,11 @@ control.prototype.hideStatusBar = function (showToolbox) {
     // 隐藏
     for (var i = 0; i < statusItems.length; ++i)
         statusItems[i].style.opacity = 0;
-    if ((!core.domStyle.isVertical && !core.flags.extendToolbar) || !showToolbox) {
+    if ((!core.domStyle.isVertical && !core.flags.extendToolbar && !core.flags.hideLeftStatusBar) || !showToolbox) {
         for (var i = 0; i < toolItems.length; ++i)
             toolItems[i].style.display = 'none';
     }
-    if (!core.domStyle.isVertical && !core.flags.extendToolbar) {
+    if (!core.domStyle.isVertical && !core.flags.extendToolbar && !core.flags.hideLeftStatusBar) {
         core.dom.toolBar.style.display = 'none';
     }
 }
@@ -3170,7 +3170,7 @@ control.prototype.updateHeroIcon = function (name) {
 control.prototype.setToolbarButton = function (useButton) {
     if (!core.domStyle.showStatusBar) {
         // 隐藏状态栏时检查竖屏
-        if (!core.domStyle.isVertical && !core.flags.extendToolbar) {
+        if (!core.domStyle.isVertical && !core.flags.extendToolbar && !core.flags.hideLeftStatusBar) {
             for (var i = 0; i < core.dom.tools.length; ++i)
                 core.dom.tools[i].style.display = 'none';
             return;
@@ -3180,7 +3180,7 @@ control.prototype.setToolbarButton = function (useButton) {
     }
 
     if (useButton == null) useButton = core.domStyle.toolbarBtn;
-    if ((!core.domStyle.isVertical && !core.flags.extendToolbar)) useButton = false;
+    if ((!core.domStyle.isVertical && !core.flags.extendToolbar && !core.flags.hideLeftStatusBar)) useButton = false;
     core.domStyle.toolbarBtn = useButton;
 
     if (useButton) {
@@ -3201,7 +3201,7 @@ control.prototype.setToolbarButton = function (useButton) {
         });
         core.statusBar.image.keyboard.style.display
             = core.statusBar.image.shop.style.display
-            = core.domStyle.isVertical || core.flags.extendToolbar ? "block" : "none";
+            = core.domStyle.isVertical || core.flags.extendToolbar || core.flags.hideLeftStatusBar ? "block" : "none";
     }
 }
 
@@ -3278,19 +3278,20 @@ control.prototype.resize = function () {
     var BAR_WIDTH = hideLeftStatusBar ? 0 : Math.round(core._PY_ * 0.31);
 
     var horizontalMaxRatio = (clientHeight - 2 * BORDER - (hideLeftStatusBar ? BORDER : 0)) / (core._PY_ + (hideLeftStatusBar ? 38 : 0));
+    var horizontalWidthRatio = (clientWidth - (hideLeftStatusBar ? 2 : 3) * BORDER) / (core._PX_ + BAR_WIDTH);
 
-    if (clientWidth - 3 * BORDER >= core._PX_ + BAR_WIDTH || (clientWidth > clientHeight && horizontalMaxRatio < 1)) {
+    if (hideLeftStatusBar || clientWidth - 3 * BORDER >= core._PX_ + BAR_WIDTH || (clientWidth > clientHeight && horizontalMaxRatio < 1)) {
         // 横屏
         core.domStyle.isVertical = false;
 
         core.domStyle.availableScale = [];
         [1, 1.25, 1.5, 1.75, 2, 2.25, 2.5].forEach(function (v) {
-            if (clientWidth - 3 * BORDER >= v * (core._PX_ + BAR_WIDTH) && horizontalMaxRatio >= v) {
+            if (horizontalWidthRatio >= v && horizontalMaxRatio >= v) {
                 core.domStyle.availableScale.push(v);
             }
         });
         if (core.domStyle.availableScale.indexOf(core.domStyle.scale) < 0) {
-            core.domStyle.scale = Math.min(1, horizontalMaxRatio);
+            core.domStyle.scale = Math.min(1, horizontalWidthRatio, horizontalMaxRatio);
         }
     }
     else {
@@ -3352,7 +3353,7 @@ control.prototype._resize_gameGroup = function (obj) {
     }
     else {
         totalWidth = obj.outerWidth + obj.BAR_WIDTH * core.domStyle.scale + (obj.hideLeftStatusBar ? 0 : obj.BORDER);
-        totalHeight = obj.outerHeight + (obj.extendToolbar ? obj.TOOLBAR_HEIGHT * core.domStyle.scale + obj.BORDER : 0);
+        totalHeight = obj.outerHeight + (obj.extendToolbar || obj.hideLeftStatusBar ? obj.TOOLBAR_HEIGHT * core.domStyle.scale + obj.BORDER : 0);
     }
     gameGroup.style.width = totalWidth + "px";
     gameGroup.style.height = totalHeight + "px";
@@ -3534,10 +3535,10 @@ control.prototype._resize_toolBar = function (obj) {
         }
     }
     toolBar.style.borderLeft = obj.border;
-    toolBar.style.borderRight = toolBar.style.borderBottom = core.domStyle.isVertical || obj.extendToolbar ? obj.border : '';
+    toolBar.style.borderRight = toolBar.style.borderBottom = core.domStyle.isVertical || obj.extendToolbar || obj.hideLeftStatusBar ? obj.border : '';
     toolBar.style.fontSize = 16 * core.domStyle.scale + "px";
 
-    if (!core.domStyle.showStatusBar && !core.domStyle.isVertical && !obj.extendToolbar) {
+    if (!core.domStyle.showStatusBar && !core.domStyle.isVertical && !obj.extendToolbar && !obj.hideLeftStatusBar) {
         toolBar.style.display = 'none';
     } else {
         toolBar.style.display = 'block';
@@ -3545,9 +3546,9 @@ control.prototype._resize_toolBar = function (obj) {
 }
 
 control.prototype._resize_tools = function (obj) {
-    var toolsHeight = 32 * core.domStyle.scale * ((core.domStyle.isVertical || obj.extendToolbar) && !obj.is15x15 ? 0.95 : 1);
+    var toolsHeight = 32 * core.domStyle.scale * ((core.domStyle.isVertical || obj.extendToolbar || obj.hideLeftStatusBar) && !obj.is15x15 ? 0.95 : 1);
     var toolsMarginLeft;
-    if (core.domStyle.isVertical || obj.extendToolbar)
+    if (core.domStyle.isVertical || obj.extendToolbar || obj.hideLeftStatusBar)
         toolsMarginLeft = (core._HALF_WIDTH_ - 3) * 3 * core.domStyle.scale;
     else
         toolsMarginLeft = (obj.BAR_WIDTH * core.domStyle.scale - 9 - toolsHeight * 3) / 4;
@@ -3558,7 +3559,7 @@ control.prototype._resize_tools = function (obj) {
         style.marginTop = 3 * core.domStyle.scale + "px"
     }
     core.dom.hard.style.lineHeight = toolsHeight + "px";
-    if (core.domStyle.isVertical || obj.extendToolbar) {
+    if (core.domStyle.isVertical || obj.extendToolbar || obj.hideLeftStatusBar) {
         core.dom.hard.style.width = obj.outerWidth - 9 * toolsMarginLeft - 8.5 * toolsHeight - 12 + "px";
     }
     else {
