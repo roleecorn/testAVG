@@ -76,19 +76,21 @@ portraitY = portraitBottom - renderedPortraitHeight
 
 `portraitBottomGap` 必須只有一個全局來源；不得在角色 mapping、floor、scene 或逐句事件另加角色專屬 gap。調整此參數後，所有不同高度人物的底部都立即一起移動，人物圖片仍保持原比例。
 
-整份 layout config 集中保存下列語意欄位。目前數字是 `huangmo_1` 的試作值，不是已定稿規格：
+整份 layout config 集中保存下列語意欄位。以下是下一次 `huangmo_1` 預覽要採用的目標值；`portraitRight=0` 已由使用者確認，其餘數字仍是待定稿試作值：
 
 ```js
 {
     portraitBottomGap: 8,
     portraitLeft: 16,
-    portraitRight: 16,
+    portraitRight: 0,
     dialogueX: 96,
     dialogueY: 295,
     dialogueWidth: 352,
     dialogueFixedLines: 2
 }
 ```
+
+`portraitRight: 0` 是已確認的目標規範，表示右側 PNG 畫布直接貼齊 544px 畫布右緣，不另留槽位 inset；PNG 自身的透明 padding 仍可能形成可見 gap。`libs/core.js` 的試作 runtime 在下一次實作與視覺預覽前仍保留舊值 `16`，不得把現況誤記為已同步。
 
 若視覺驗收證明需要限制人物最大寬度，必須再新增全局槽位參數與等比例縮放規則；不得先在單一 floor 寫角色專屬寬度。
 
