@@ -1438,7 +1438,7 @@ ui.prototype._getRealContent = function (content) {
 
 ui.prototype._drawTextBox_getFixedLines = function (config) {
     var textAttribute = core.status.textAttribute || core.initStatus.textAttribute;
-    var fixedLines = textAttribute.fixedLines;
+    var fixedLines = config && config.fixedLines != null ? config.fixedLines : textAttribute.fixedLines;
     if (fixedLines == null) fixedLines = 2;
     fixedLines = parseInt(fixedLines);
     return fixedLines > 0 ? fixedLines : null;
@@ -1499,6 +1499,13 @@ ui.prototype._animateUI = function (type, ctx, callback) {
 ////// 绘制一个对话框 //////
 ui.prototype.drawTextBox = function (content, config) {
     config = config || {};
+
+    if (config.pos === 'avg') {
+        config = core.clone(config);
+        var avgLayout = this.getAvgLayout();
+        config.pos = [avgLayout.dialogueX, avgLayout.dialogueY, avgLayout.dialogueWidth];
+        if (config.fixedLines == null) config.fixedLines = avgLayout.dialogueFixedLines;
+    }
 
     this.clearUI();
     content = core.replaceText(content);
@@ -1624,7 +1631,7 @@ ui.prototype._drawTextBox_getVerticalPosition = function (content, titleInfo, po
     var lineHeight = textAttribute.lineHeight || (textAttribute.textfont + 6);
     var fixedLines = this._drawTextBox_getFixedLines(config || {});
     // showAll only skips the typewriter animation; it must not change the dialogue layout.
-    var fixed = fixedLines != null && !posInfo.pos && posInfo.px == null && posInfo.py == null;
+    var fixed = fixedLines != null && (config.fixedLines != null || (!posInfo.pos && posInfo.px == null && posInfo.py == null));
     var height, maxLines = null;
     if (fixed) {
         height = this._drawTextBox_getFixedHeight(lineHeight, fixedLines);
@@ -1664,6 +1671,12 @@ ui.prototype._drawTextBox_getVerticalPosition = function (content, titleInfo, po
     }
 
     return { top: top, height: height, bottom: top + height, yoffset: yoffset, lineHeight: lineHeight, maxLines: maxLines };
+}
+
+ui.prototype.getAvgLayout = function () {
+    var statusText = core.status.textAttribute || {};
+    var initText = core.initStatus.textAttribute || {};
+    return statusText.avgLayout || initText.avgLayout;
 }
 
 ui.prototype._drawTextBox_drawTitleAndIcon = function (titleInfo, hPos, vPos, alpha, ctx) {

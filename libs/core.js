@@ -238,6 +238,15 @@ function core () {
             "letterSpacing": 0,
             "fixedLines": 2,
             "animateTime": 0,
+            "avgLayout": {
+                "portraitBottomGap": 8,
+                "portraitLeft": 16,
+                "portraitRight": 16,
+                "dialogueX": 96,
+                "dialogueY": 295,
+                "dialogueWidth": 352,
+                "dialogueFixedLines": 2
+            },
         },
         "globalAttribute": {
             'equipName': main.equipName || [],

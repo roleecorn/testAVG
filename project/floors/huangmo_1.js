@@ -40,45 +40,117 @@ main.floors.huangmo_1=
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
             "title": [255,225,80,1],
             "text": [255,255,255,1],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
         },
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [28,210],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]每個月發行的親熱天堂，就算來了秋葉原還是得買的♪",
-        "\t[梗平]找到了!就剩下最後一本了!",
+        {
+            "type": "text",
+            "text": "\t[梗平]每個月發行的親熱天堂，就算來了秋葉原還是得買的♪",
+            "pos": "avg"
+        },
         {
             "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
         },
-        "梗平伸出了手，但卻在半空中與另外一隻手碰觸了。",
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": ["portraitLeft","portraitBottom"],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "text",
+            "text": "\t[梗平]找到了!就剩下最後一本了!",
+            "pos": "avg"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "text",
+            "text": "梗平伸出了手，但卻在半空中與另外一隻手碰觸了。",
+            "pos": "avg"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 12,
             "image": "huangmo_surprised.png",
-            "loc": [260,185],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
-        "\t[???]咦?",
+        {
+            "type": "text",
+            "text": "\t[???]咦?",
+            "pos": "avg"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 12,
@@ -89,27 +161,57 @@ main.floors.huangmo_1=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [28,210],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在書店與美少女邂逅...真是美妙的展開，咦不過是黃書...",
+        {
+            "type": "text",
+            "text": "\t[梗平]在書店與美少女邂逅...真是美妙的展開，咦不過是黃書...",
+            "pos": "avg"
+        },
         {
             "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
         },
-        "梗平回過神來才發現，那個少女已經紅著臉逃跑了。",
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "text",
+            "text": "梗平回過神來才發現，那個少女已經紅著臉逃跑了。",
+            "pos": "avg"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [28,210],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]...不必逃得這麼快吧(垂頭喪氣)",
+        {
+            "type": "text",
+            "text": "\t[梗平]...不必逃得這麼快吧(垂頭喪氣)",
+            "pos": "avg"
+        },
         {
             "type": "hideImage",
             "code": 10,

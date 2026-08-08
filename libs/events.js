@@ -3416,7 +3416,7 @@ events.prototype.showImage = function (code, image, sloc, loc, opacityVal, time,
     var w = core.calValue(loc[2]), h = core.calValue(loc[3]);
     if (w == null) w = sw;
     if (h == null) h = sh;
-    var x = core.calValue(loc[0]) || 0, y = this._resolveImageTextTopLoc(loc[1], h);
+    var x = this._resolveImageAvgXLoc(loc[0], w), y = this._resolveImageTextTopLoc(loc[1], h);
     var zIndex = code + 100;
     time = time || 0;
     var name = "image" + zIndex;
@@ -3433,6 +3433,9 @@ events.prototype.showImage = function (code, image, sloc, loc, opacityVal, time,
 
 events.prototype._resolveImageTextTopLoc = function (value, imageHeight) {
     if (typeof value == 'string') {
+        if (value == 'portraitBottom') {
+            return core._PY_ - core.ui.getAvgLayout().portraitBottomGap - imageHeight;
+        }
         var match = value.match(/^textTop(?:([+-])(\d+))?$/);
         if (match) {
             var offset = parseInt(match[2]) || 0;
@@ -3440,6 +3443,12 @@ events.prototype._resolveImageTextTopLoc = function (value, imageHeight) {
             return core.ui.getFixedTextBoxTop('down') - imageHeight + offset;
         }
     }
+    return core.calValue(value) || 0;
+}
+
+events.prototype._resolveImageAvgXLoc = function (value, imageWidth) {
+    if (value == 'portraitLeft') return core.ui.getAvgLayout().portraitLeft;
+    if (value == 'portraitRight') return core._PX_ - core.ui.getAvgLayout().portraitRight - imageWidth;
     return core.calValue(value) || 0;
 }
 
