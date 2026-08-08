@@ -47,7 +47,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.main_ch3_1=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -625,7 +625,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「不行，完全不敢對上眼神啊」",
+        "\t[梗平](不行，完全不敢對上眼神啊)",
         {
             "type": "hideImage",
             "code": 10,
@@ -649,7 +649,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「在下得做點什麼來挽回在下的風評才行」",
+        "\t[梗平](在下得做點什麼來挽回在下的風評才行)",
         {
             "type": "hideImage",
             "code": 10,
@@ -673,7 +673,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「不過昨天那個警察把在下的錢都騙走了，得先去賺錢才行」",
+        "\t[梗平](不過昨天那個警察把在下的錢都騙走了，得先去賺錢才行)",
         {
             "type": "hideImage",
             "code": 10,
@@ -697,7 +697,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「該去哪裡好呢？」",
+        "\t[梗平](該去哪裡好呢？)",
         {
             "type": "hideImage",
             "code": 10,
@@ -747,7 +747,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「不行，得趕快找其他地方打工才行」",
+        "\t[梗平](不行，得趕快找其他地方打工才行)",
         {
             "type": "hideImage",
             "code": 10,
@@ -771,7 +771,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「不過都來秋葉原了，還是想多去逛逛」",
+        "\t[梗平](不過都來秋葉原了，還是想多去逛逛)",
         {
             "type": "hideImage",
             "code": 10,
@@ -795,7 +795,7 @@ main.floors.main_ch3_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下晚點還有事，在下先走了",
+        "\t[梗平]在下晚點還有事，先走了",
         {
             "type": "hideImage",
             "code": 10,

@@ -47,7 +47,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.mapo_1_4=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -442,7 +442,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "(咖啡廳店長　三角·四系乃)",
+        "【咖啡廳店長　三角·四系乃】",
         {
             "type": "hideImage",
             "code": 10,
@@ -556,6 +556,34 @@ main.floors.mapo_1_4=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
         },
         {
             "type": "showImage",
@@ -1353,7 +1381,7 @@ main.floors.mapo_1_4=
                             "time": 0,
                             "async": true
                         },
-                        "梗平與啤酒進入了追逐輪，隨後來到了一處下水道旁，啤酒滾進了水溝內，梗跪在地",
+                        "梗平與啤酒進入了追逐輪，隨後來到了一處下水道旁，啤酒滾進了水溝內，梗平跪在地",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1623,7 +1651,7 @@ main.floors.mapo_1_4=
                             "time": 0,
                             "async": true
                         },
-                        "(梗平的立繪平移)",
+                        "【梗平的立繪左右平移】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1937,31 +1965,13 @@ main.floors.mapo_1_4=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_thunder_crocodile_action_cg.png",
-                            "sloc": [
-                                0,
-                                0,
-                                416,
-                                312
-                            ],
+                            "image": "scene_mapo_cg.png",
                             "loc": [
-                                48,
-                                50,
-                                320,
-                                240
+                                0,
+                                0
                             ],
                             "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 0
+                            "time": 250
                         },
                         {
                             "type": "hideImage",
@@ -1987,6 +1997,11 @@ main.floors.mapo_1_4=
                             "code": 11,
                             "time": 0,
                             "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -2176,6 +2191,19 @@ main.floors.mapo_1_4=
                             "async": true
                         },
                         "梗平證明了自己沒有說謊，但還是錯過了Comike",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【BE：大鱷魚之戀】",
                         {
                             "type": "changeFloor",
                             "floorId": "mapo_1_4",

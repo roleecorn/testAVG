@@ -47,7 +47,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.main_ch3_2=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -642,7 +642,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "\t[貝琪]嗯",
+        "\t[貝琪]嗯......",
         {
             "type": "hideImage",
             "code": 10,
@@ -764,7 +764,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在這裡面在下特別喜歡......",
+        "\t[梗平]在這裡面，在下特別喜歡......",
         {
             "type": "hideImage",
             "code": 10,
@@ -829,7 +829,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）梗平，你在哪裡？",
+        "友人B：梗平，你在哪裡？",
         {
             "type": "hideImage",
             "code": 10,
@@ -842,7 +842,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）我們在書店A前面要討論怎麼樣攻進去了",
+        "友人B：我們在書店A前面要討論怎麼樣攻進去了",
         {
             "type": "hideImage",
             "code": 10,
@@ -855,18 +855,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）馬上過來",
+        "梗平：馬上過來",
         {
             "type": "hideImage",
             "code": 10,
@@ -1055,7 +1044,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「太好了，假面騎士又有新的夥伴了」",
+        "\t[梗平](太好了，假面騎士又有新的夥伴了)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1079,7 +1068,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「這下擊敗修卡指日可待」",
+        "\t[梗平](這下擊敗修卡指日可待)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1116,7 +1105,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）梗平，剩你還沒到了",
+        "友人B：梗平，剩你還沒到了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1129,18 +1118,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）馬上來",
+        "梗平：馬上來",
         {
             "type": "hideImage",
             "code": 10,

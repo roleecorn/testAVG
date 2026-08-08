@@ -47,7 +47,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.main_ch2_2=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -870,7 +870,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「可惡，書店A一看就有問題，在下不要進去啊」",
+        "\t[梗平](可惡，書店A一看就有問題，在下不要進去啊)",
         {
             "type": "hideImage",
             "code": 10,
@@ -894,7 +894,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「得趕快找個理由跑掉才行」",
+        "\t[梗平](得趕快找個理由跑掉才行)",
         {
             "type": "hideImage",
             "code": 10,
@@ -944,7 +944,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「有了，就是現在」",
+        "\t[梗平](有了，就是現在)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1412,7 +1412,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[IB]（用鄙夷的眼神看梗平）",
+                        "IB用著冰冷的目光看著梗平",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1815,31 +1815,13 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch2_keng_bicycle_action_cg.png",
-                            "sloc": [
-                                0,
-                                0,
-                                416,
-                                312
-                            ],
+                            "image": "ms_ch2_keng_bicycle_cg.png",
                             "loc": [
-                                48,
-                                50,
-                                320,
-                                240
+                                0,
+                                0
                             ],
                             "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 0
+                            "time": 250
                         },
                         {
                             "type": "hideImage",
@@ -1852,6 +1834,11 @@ main.floors.main_ch2_2=
                             "code": 11,
                             "time": 0,
                             "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         "\t[路人]麥克——！",
                         {
@@ -1927,7 +1914,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "(棉被怪形象藤崎艾利歐)",
+                        "【棉被怪　藤和艾莉歐】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2032,31 +2019,13 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch2_eri_sunset_action_cg.png",
-                            "sloc": [
-                                0,
-                                0,
-                                416,
-                                312
-                            ],
+                            "image": "ms_ch2_eri_sunset_cg.png",
                             "loc": [
-                                48,
-                                50,
-                                320,
-                                240
+                                0,
+                                0
                             ],
                             "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 0
+                            "time": 250
                         },
                         {
                             "type": "hideImage",
@@ -2069,6 +2038,11 @@ main.floors.main_ch2_2=
                             "code": 11,
                             "time": 0,
                             "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -2222,7 +2196,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "【END：第三類接觸？】",
+                        "【BE：第三類接觸？】",
                         {
                             "type": "changeFloor",
                             "floorId": "main_ch2_2",
@@ -2387,7 +2361,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[智乃]大姊姊，你是他的朋友嗎？",
+                        "\t[智乃]大哥哥，你是他的朋友嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2400,7 +2374,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人B]雖然很不想承認，但是是",
+                        "\t[友人B]雖然很不想承認，但是，是",
                         {
                             "type": "hideImage",
                             "code": 10,

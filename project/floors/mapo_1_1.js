@@ -47,7 +47,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.mapo_1_1=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -972,7 +972,7 @@ main.floors.mapo_1_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）救命",
+        "\t[[友人A]救命}",
         {
             "type": "hideImage",
             "code": 10,
@@ -985,18 +985,7 @@ main.floors.mapo_1_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）你在哪裡",
+        "梗平：你在哪裡",
         {
             "type": "hideImage",
             "code": 10,
@@ -1153,7 +1142,7 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]所以我等就去倉庫區找Ａ吧，可惡的修卡，在下不會讓你們傷害在下朋友的",
+        "\t[梗平]所以我等就去倉庫區找Ａ吧，可惡的修卡，在下不會讓你們傷害在下的朋友",
         {
             "type": "hideImage",
             "code": 10,

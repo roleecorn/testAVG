@@ -47,7 +47,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.main_ch4_2=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -338,7 +338,7 @@ main.floors.main_ch4_2=
             "time": 0,
             "async": true
         },
-        "(修女 荒川爆笑團 修女)",
+        "【修女　荒川爆笑團 修女】",
         {
             "type": "hideImage",
             "code": 10,
@@ -679,7 +679,7 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「這個方向的話......會離開秋葉原吧」",
+        "\t[梗平](這個方向的話......會離開秋葉原吧)",
         {
             "type": "hideImage",
             "code": 10,
@@ -703,7 +703,7 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「不行，事情還沒有做完」",
+        "\t[梗平](不行，事情還沒有做完)",
         {
             "type": "hideImage",
             "code": 10,
@@ -728,6 +728,34 @@ main.floors.main_ch4_2=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
         },
         {
             "type": "showImage",

@@ -47,7 +47,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.mapo_1_3=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -343,31 +343,13 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "ms_ch1_mapo_shop_entrance_action_cg.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                312
-            ],
+            "image": "scene_mapo_cg.png",
             "loc": [
-                48,
-                50,
-                320,
-                240
+                0,
+                0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "sleep",
-            "time": 1000,
-            "noSkip": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0
+            "time": 250
         },
         {
             "type": "hideImage",
@@ -380,6 +362,11 @@ main.floors.mapo_1_3=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
         },
         {
             "type": "showImage",
@@ -1095,7 +1082,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "(主持人 拉麵王 芹澤)",
+                        "【主持人 拉麵王 芹澤】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1304,31 +1291,13 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_keng_join_action_cg.png",
-                            "sloc": [
-                                0,
-                                0,
-                                416,
-                                312
-                            ],
+                            "image": "scene_mapo_cg.png",
                             "loc": [
-                                48,
-                                50,
-                                320,
-                                240
+                                0,
+                                0
                             ],
                             "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 0
+                            "time": 250
                         },
                         {
                             "type": "hideImage",
@@ -1341,6 +1310,11 @@ main.floors.mapo_1_3=
                             "code": 11,
                             "time": 0,
                             "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         "\t[芹澤]中場結束，接下來是備受期待的下半場的首戰",
                         {
@@ -1418,7 +1392,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[芹澤]宿儺大廚會保持連勝？還是這個新人會給眾人帶來驚喜",
+                        "\t[芹澤]究竟是宿儺大廚會保持連勝？還是這個新人會給眾人帶來驚喜",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1497,31 +1471,13 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_keng_2_5_action_cg.png",
-                            "sloc": [
-                                0,
-                                0,
-                                416,
-                                312
-                            ],
+                            "image": "ms_ch1_keng_2_5_cg.png",
                             "loc": [
-                                48,
-                                50,
-                                320,
-                                240
+                                0,
+                                0
                             ],
                             "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 0
+                            "time": 250
                         },
                         {
                             "type": "hideImage",
@@ -1534,6 +1490,11 @@ main.floors.mapo_1_3=
                             "code": 11,
                             "time": 0,
                             "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -2062,7 +2023,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "【BE3：食神】",
+                        "【BE：食神】",
                         {
                             "type": "changeFloor",
                             "floorId": "mapo_1_3",

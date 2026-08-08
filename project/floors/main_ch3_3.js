@@ -47,7 +47,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.main_ch3_3=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -760,7 +760,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]應該只要拔下他的頭丟出去就可以爆炸了",
+        "\t[統至]應該只要按下他的頭就會爆炸了",
         {
             "type": "hideImage",
             "code": 10,
@@ -773,18 +773,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]太好了，這應該能清掉一部份的肥宅並爭取空間",
+        "\t[友人A]這應該能清掉一部份的肥宅並爭取空間",
         {
             "type": "hideImage",
             "code": 10,
@@ -797,7 +786,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]不過只有一個呢，我們必須要審慎的思考如何使用他",
+        "\t[統至]你只買了一個嗎？那我們必須要審慎的思考如何使用他",
         {
             "type": "hideImage",
             "code": 10,
@@ -850,19 +839,6 @@ main.floors.main_ch3_3=
             "async": true
         },
         "\t[統至]好了，我們開始討論吧",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "(這裡可以加個煩人小遊戲)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1324,6 +1300,29 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "然後傑士塔威從窗戶彈開了，完美的落到了一群人的中央",
         {
             "type": "hideImage",
@@ -1349,6 +1348,11 @@ main.floors.main_ch3_3=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
         },
         {
             "type": "showImage",

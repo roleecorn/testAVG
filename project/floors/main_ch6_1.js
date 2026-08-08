@@ -47,7 +47,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.main_ch6_1=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -389,6 +389,34 @@ main.floors.main_ch6_1=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
         },
         {
             "type": "showImage",
@@ -716,18 +744,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）肥宅們從書店A裡湧出來了，不要隨便出門啊",
+        "梗平：肥宅們從書店A裡湧出來了，不要隨便出門啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -740,7 +757,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）認真？現在？",
+        "友人A：認真？現在？",
         {
             "type": "hideImage",
             "code": 10,
@@ -753,7 +770,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人C]（手機）不是吧......",
+        "友人C：不是吧......",
         {
             "type": "hideImage",
             "code": 10,
@@ -766,7 +783,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）看來得加快動作了",
+        "友人B：看來得加快動作了",
         {
             "type": "hideImage",
             "code": 10,
@@ -779,18 +796,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_sad_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]（手機）剛剛試著走出去，差點被撞暈",
+        "表妹：剛剛試著走出去，差點被撞暈",
         {
             "type": "hideImage",
             "code": 10,
@@ -957,7 +963,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人C]（手機）我們拿到肥宅們的聖物了，但是沒辦法過去書店A",
+        "友人Ｃ：我們拿到肥宅們的聖物了，但是沒辦法過去書店A",
         {
             "type": "hideImage",
             "code": 10,
@@ -970,7 +976,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）我們都在旅館卡住了，梗平你找找方法過來",
+        "友人Ａ：我們都在旅館卡住了，梗平你找找方法過來",
         {
             "type": "hideImage",
             "code": 10,
@@ -983,18 +989,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_smile_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）果然這種時候還是需要假面騎士啊，交給在下吧！",
+        "梗平：果然這種時候還是需要假面騎士啊，交給我吧！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1018,7 +1013,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「不過說是這麼說，該怎麼通過肥宅群啊」",
+        "\t[梗平](不過說是這麼說，該怎麼通過肥宅群啊)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1055,7 +1050,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「這種時候要是有個小女孩就好了......」",
+        "\t[梗平](這種時候要是有個小女孩就好了......)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1232,6 +1227,47 @@ main.floors.main_ch6_1=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        "在場的其他人，此刻發現了梗平的手上抱著不應該出現的東西",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
         },
         {
             "type": "showImage",

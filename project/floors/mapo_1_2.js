@@ -47,7 +47,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.mapo_1_2=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -1080,7 +1080,7 @@ main.floors.mapo_1_2=
                                             "time": 0,
                                             "async": true
                                         },
-                                        "【BE1：這裡不是米O市吧？！】",
+                                        "【BE：這裡不是米O市吧？！】",
                                         {
                                             "type": "changeFloor",
                                             "floorId": "mapo_1_2",
@@ -1391,7 +1391,46 @@ main.floors.mapo_1_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[不知道是誰的？]還是沒靈感呢，希望編輯不要找到我",
+                        "\t[哈]啊，一不小心把這兩個人抓進來了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[哈]不過還是沒有靈感呢，希望編輯不要找到我",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[哈]好苦惱啊",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【哈　哈斯太】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1430,7 +1469,7 @@ main.floors.mapo_1_2=
                             "time": 0,
                             "async": true
                         },
-                        "【BE2：不要闖空門】",
+                        "【BE：不要闖空門】",
                         {
                             "type": "changeFloor",
                             "floorId": "mapo_1_2",
@@ -1672,7 +1711,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）還沒找到A，我先吃飯，傳地址給你們",
+        "友人B：還沒找到A，我先吃飯，傳地址給你們",
         {
             "type": "hideImage",
             "code": 10,
@@ -1938,7 +1977,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "\t[友人C]（手機）餓了、我也先吃個飯…",
+        "友人C：餓了、我也先吃個飯…",
         {
             "type": "hideImage",
             "code": 10,
@@ -1951,18 +1990,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）你們有看到修卡的蹤跡嗎?",
+        "梗平：你們有看到修卡的蹤跡嗎?",
         {
             "type": "hideImage",
             "code": 10,

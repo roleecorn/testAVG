@@ -47,7 +47,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.main_ch4_1=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -462,7 +462,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）梗平，我們先走了喔",
+        "B：梗平，我們先走了喔",
         {
             "type": "hideImage",
             "code": 10,
@@ -475,7 +475,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）我們要去找其他能夠進入書店A的方式了",
+        "B：我們要去找其他能夠進入書店A的方式了",
         {
             "type": "hideImage",
             "code": 10,
@@ -488,7 +488,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）看你睡得很香就沒有叫醒你了",
+        "A：看你睡得很香就沒吵你了",
         {
             "type": "hideImage",
             "code": 10,
@@ -747,7 +747,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「錢還是很缺啊，小鋼珠肯定是不能碰的」",
+        "\t[梗平](錢還是很缺啊，小鋼珠肯定是不能碰的)",
         {
             "type": "hideImage",
             "code": 10,
@@ -771,7 +771,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「好像還是只能去那個書店工作了」",
+        "\t[梗平](好像還是只能去那個書店工作了)",
         {
             "type": "hideImage",
             "code": 10,
@@ -851,7 +851,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）找到能解決書店A問題的方式了",
+        "友人A：找到能解決書店A問題的方式了",
         {
             "type": "hideImage",
             "code": 10,
@@ -864,7 +864,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）可以的話晚上11點在雜貨店集合",
+        "友人A：可以的話晚上11點在雜貨店集合",
         {
             "type": "hideImage",
             "code": 10,
@@ -877,18 +877,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）一定到",
+        "梗平：一定到",
         {
             "type": "hideImage",
             "code": 10,
@@ -901,7 +890,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）如果可以的話幫忙多找一點人手",
+        "友人A：如果可以的話幫忙多找一點人手",
         {
             "type": "hideImage",
             "code": 10,
@@ -925,7 +914,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「人手......她的話應該可以的」",
+        "\t[梗平](人手......她的話應該可以的)",
         {
             "type": "hideImage",
             "code": 10,
@@ -951,18 +940,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）在下在找可以和在下在一起(解決肥宅)的人",
+        "梗平：我在找可以和我在一起(解決肥宅)的人",
         {
             "type": "hideImage",
             "code": 10,
@@ -975,18 +953,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）(幫忙的事)可以答應在下嗎",
+        "梗平：(幫忙的事)可以答應我嗎",
         {
             "type": "hideImage",
             "code": 10,
@@ -999,18 +966,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）在下還有一點事情要忙，十一點後在雜貨店後相見吧",
+        "梗平：我還有一點事情要忙，十一點後在雜貨店後相見吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1023,7 +979,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[貝琪]（手機）太好了，我願意",
+        "貝琪：太好了，我願意",
         {
             "type": "hideImage",
             "code": 10,
@@ -1049,18 +1005,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_sad_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]（手機）表哥，我在河邊找到了一條奇怪的大鱷魚",
+        "表妹：表哥，我在河邊找到了一條奇怪的大鱷魚",
         {
             "type": "hideImage",
             "code": 10,
@@ -1073,18 +1018,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_sad_portrait.png",
-            "loc": [
-                260,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]（手機）如果你有空的話就來幫我吧",
+        "表妹：如果你有空的話就來幫我吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1097,18 +1031,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）什麼奇怪的大鱷魚？",
+        "梗平：什麼奇怪的大鱷魚？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1121,18 +1044,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（手機）這肯定是修卡的造物，在下現在就來！",
+        "梗平：這肯定是修卡的造物，我現在就來！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1515,6 +1427,29 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "梗平與表妹喊著甚麼愛、羈絆、勇氣的，便把大鱷魚從河裡拉了出來",
         {
             "type": "hideImage",
@@ -1540,6 +1475,11 @@ main.floors.main_ch4_1=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
         },
         {
             "type": "showImage",
@@ -1693,7 +1633,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "(醫生 鈴仙)",
+        "【醫生 鈴仙】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1954,7 +1894,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "梗平的隔壁床上，一起昏厥的表妹也醒了過來",
+        "一段時間後，一起送進去的表妹也醒了過來",
         {
             "type": "hideImage",
             "code": 10,
@@ -2069,7 +2009,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「嗯......離預定的時間還有一個小時」",
+        "\t[梗平](嗯......離預定的時間還有一個小時)",
         {
             "type": "hideImage",
             "code": 10,
@@ -2093,7 +2033,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「要是在下能自己一個人把事情解決了，豈不是就是真正的假面騎士了」",
+        "\t[梗平](要是在下能自己一個人把事情解決了，豈不是就是真正的假面騎士了)",
         {
             "type": "choices",
             "text": "請選擇。",
@@ -2124,7 +2064,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「自己去太危險了，等11點更好一點」",
+                        "\t[梗平](自己去太危險了，等11點更好一點)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2331,6 +2271,29 @@ main.floors.main_ch4_1=
                             "async": true
                         },
                         "\t[修女]最大火力，開始壓制",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2627,6 +2590,19 @@ main.floors.main_ch4_1=
                         },
                         "梗平，失去了參加Comike的權利",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【BE：一波送完】",
+                        {
                             "type": "changeFloor",
                             "floorId": "main_ch4_1",
                             "loc": [
@@ -2905,15 +2881,18 @@ main.floors.main_ch4_1=
                         },
                         "梗平，影逝二度",
                         {
-                            "type": "changeFloor",
-                            "floorId": "main_ch4_2",
-                            "loc": [
-                                6,
-                                10
-                            ],
-                            "direction": "up",
-                            "time": 500
-                        }
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【劇情推進】"
                     ]
                 }
             ]

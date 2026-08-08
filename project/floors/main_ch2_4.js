@@ -47,7 +47,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.main_ch2_4=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -403,7 +403,7 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "\t[416(對講機)]你是不是又去打小鋼珠了，30分鐘內沒看到你就死定了",
+        "416：你是不是又去打小鋼珠了，30分鐘內沒看到你就死定了",
         {
             "type": "hideImage",
             "code": 10,
@@ -866,7 +866,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「這時候只能靠那一招了」",
+        "\t[梗平](這時候只能靠那一招了)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1216,7 +1216,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]（不行，如果再拒絕在下的尊嚴就一點都不剩了）",
+                        "\t[梗平](不行，如果再拒絕，在下的尊嚴就一點都不剩了)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1277,7 +1277,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]（奇怪，這個時間還有營業中的美術館嗎）",
+                        "\t[梗平](奇怪，這個時間還有營業中的美術館嗎)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1479,7 +1479,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "\t[IB]一起走吧？(字體放大)",
+                        "\t[IB]一起走吧？【字體放大】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2068,7 +2068,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "【BE5：美麗的玫瑰帶刺】",
+                        "【BE：美麗的玫瑰帶刺】",
                         {
                             "type": "changeFloor",
                             "floorId": "main_ch2_4",
@@ -2155,7 +2155,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]友人B就在附近喔，千萬不要自己再跑進去囉",
+                        "\t[梗平]蘭斯剛好在附近，很快就來，千萬不要自己再跑進去囉",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2313,6 +2313,34 @@ main.floors.main_ch2_4=
                         },
                         {
                             "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
                             "loc": [
@@ -2433,7 +2461,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]直接叫在下梗平就好了",
+                        "\t[梗平]在下的名字是梗平",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2446,7 +2474,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "\t[貝琪]那我們約好了，明天下午見喔，耿平先生",
+                        "\t[貝琪]那我們約好了，明天下午見喔，梗平先生",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2558,6 +2586,34 @@ main.floors.main_ch2_4=
                             "code": 11,
                             "time": 0,
                             "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "showImage",

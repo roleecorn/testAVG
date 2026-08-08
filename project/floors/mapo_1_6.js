@@ -47,7 +47,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,7 +62,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,7 +77,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,7 +92,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,7 +107,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,7 +122,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,7 +137,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,7 +152,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,7 +167,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,7 +182,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,7 +197,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,7 +212,7 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -227,9 +227,9 @@ main.floors.mapo_1_6=
             0,
             0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
-    "width": 17,
+    "width": 13,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
@@ -743,6 +743,34 @@ main.floors.mapo_1_6=
             "code": 11,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
         },
         {
             "type": "showImage",
@@ -1327,7 +1355,30 @@ main.floors.mapo_1_6=
                             "time": 0,
                             "async": true
                         },
-                        "\t[三角]小兔子黑暗無限破",
+                        "\t[三角]小兔子黑暗無限破！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1381,6 +1432,19 @@ main.floors.mapo_1_6=
                         },
                         "梗平，錯過了Comike",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【BE：臨陣脫逃】",
+                        {
                             "type": "changeFloor",
                             "floorId": "mapo_1_6",
                             "loc": [
@@ -1406,6 +1470,11 @@ main.floors.mapo_1_6=
                             "code": 11,
                             "time": 0,
                             "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -1546,15 +1615,18 @@ main.floors.mapo_1_6=
                         },
                         "\t[三角]算了，應該是錯覺",
                         {
-                            "type": "changeFloor",
-                            "floorId": "main_ch2_2",
-                            "loc": [
-                                6,
-                                10
-                            ],
-                            "direction": "up",
-                            "time": 500
-                        }
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【劇情推進】"
                     ]
                 }
             ]
