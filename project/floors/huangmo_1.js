@@ -39,6 +39,7 @@ main.floors.huangmo_1=
     "eachArrive": [
         {
             "type": "setText",
+            "avg": true,
             "position": "down",
             "offset": 0,
             "align": "left",

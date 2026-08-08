@@ -3257,7 +3257,7 @@ events.prototype.setNameMap = function (name, value) {
 ////// 设置剧情文本的属性 //////
 events.prototype.setTextAttribute = function (data) {
     if (!core.isPlaying()) return;
-    ["position", "offset", "align", "bold", "titlefont", "textfont", "lineHeight", "time", "letterSpacing", "animateTime"].forEach(function (t) {
+    ["position", "offset", "align", "bold", "titlefont", "textfont", "lineHeight", "time", "letterSpacing", "animateTime", "avg", "fixedLines"].forEach(function (t) {
         if (data[t] != null) core.status.textAttribute[t] = data[t];
     });
     ["background", "title", "text"].forEach(function (t) {

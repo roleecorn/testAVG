@@ -339,6 +339,15 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 		],
 		"startBgm": null,
 		"styles": {
+			"avgLayout": {
+				"portraitBottomGap": 8,
+				"portraitLeft": 16,
+				"portraitRight": 0,
+				"dialogueX": 96,
+				"dialogueY": 295,
+				"dialogueWidth": 352,
+				"dialogueFixedLines": 2
+			},
 			"startBackground": "project/images/bg.jpg",
 			"startVerticalBackground": "project/images/bg.jpg",
 			"startLogoStyle": "color: black",

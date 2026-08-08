@@ -1500,7 +1500,8 @@ ui.prototype._animateUI = function (type, ctx, callback) {
 ui.prototype.drawTextBox = function (content, config) {
     config = config || {};
 
-    if (config.pos === 'avg') {
+    var textAttribute = core.status.textAttribute || core.initStatus.textAttribute || {};
+    if (config.pos === 'avg' || (config.pos == null && textAttribute.avg)) {
         config = core.clone(config);
         var avgLayout = this.getAvgLayout();
         config.pos = [avgLayout.dialogueX, avgLayout.dialogueY, avgLayout.dialogueWidth];

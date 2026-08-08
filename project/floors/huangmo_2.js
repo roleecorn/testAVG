@@ -39,25 +39,38 @@ main.floors.huangmo_2=
     "eachArrive": [
         {
             "type": "setText",
+            "avg": true,
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
             "title": [255,225,80,1],
             "text": [255,255,255,1],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
         },
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [28,210],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -69,10 +82,16 @@ main.floors.huangmo_2=
             "async": true
         },
         {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "showImage",
             "code": 12,
             "image": "huangmo_smile.png",
-            "loc": [260,185],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -84,10 +103,16 @@ main.floors.huangmo_2=
             "async": true
         },
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [28,210],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -99,10 +124,16 @@ main.floors.huangmo_2=
             "async": true
         },
         {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "showImage",
             "code": 12,
             "image": "huangmo_surprised.png",
-            "loc": [260,185],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -114,10 +145,16 @@ main.floors.huangmo_2=
             "async": true
         },
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [28,210],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -128,12 +165,30 @@ main.floors.huangmo_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
         "梗平被摀住了嘴。",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 12,
             "image": "huangmo_angry.png",
-            "loc": [260,185],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -145,10 +200,16 @@ main.floors.huangmo_2=
             "async": true
         },
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [28,210],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -160,10 +221,16 @@ main.floors.huangmo_2=
             "async": true
         },
         {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "showImage",
             "code": 12,
             "image": "huangmo_smile.png",
-            "loc": [260,185],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -174,7 +241,25 @@ main.floors.huangmo_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
         "梗平度過了一個難受的午餐。",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 12,
+            "time": 0,
+            "async": true
+        },
         "......",
         {
             "type": "function",

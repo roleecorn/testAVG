@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
+const vm = require("vm");
 
 const root = path.resolve(__dirname, "..");
 const p = (...parts) => path.join(root, ...parts);
@@ -13,6 +14,15 @@ const LEGACY_STAGE_WIDTH = 416;
 const BACKGROUND_LOC = [0, 0];
 const CG_LOC = [112, 50, 320, 220];
 const GENERAL_CG_SLOC = [0, 65, 416, 286];
+
+function readAvgLayout() {
+  const context = {};
+  vm.runInNewContext(fs.readFileSync(p("project", "data.js"), "utf8"), context);
+  const data = Object.values(context)[0];
+  return data.main.styles.avgLayout;
+}
+
+const AVG_LAYOUT = readAvgLayout();
 
 const MAP = Array.from({ length: MAP_HEIGHT }, () => Array(MAP_WIDTH).fill(0));
 
@@ -217,6 +227,7 @@ function normalizeSourceLine(line) {
 function setTextEvent() {
   return {
     type: "setText",
+    avg: true,
     position: "down",
     offset: 0,
     align: "left",
@@ -227,6 +238,7 @@ function setTextEvent() {
     titlefont: 22,
     textfont: 16,
     lineHeight: 22,
+    fixedLines: AVG_LAYOUT.dialogueFixedLines,
     time: 10,
     letterSpacing: 0,
     animateTime: 120,
@@ -265,14 +277,14 @@ function portraitFor(speaker, text) {
     if (/嘔|不要|可惡|痛|啊|不行|錯愕|什麼|？|\?|救命|死/.test(text)) img = "keng_panic_portrait.png";
     if (/哼|專業|有道理|假面騎士|變身|騎士|勝|交給我|會贏/.test(text)) img = "keng_smile_portrait.png";
     if (/嚴肅|重要|守護|責任/.test(text)) img = "keng_serious_portrait.png";
-    return { type: "showImage", code: 10, image: img, loc: [28, "textTop"], opacity: 1, time: 0 };
+    return { type: "showImage", code: 10, image: img, loc: ["portraitLeft", "portraitBottom"], opacity: 1, time: 0 };
   }
   if (speaker === "表妹") {
     let img = "suou_sad_portrait.png";
     if (/痛|你的良心|垃圾|人渣|太詳細|不要|騙|冷/.test(text)) img = "suou_angry_portrait.png";
     if (/誒|等等|什麼|啊|？|\?/.test(text)) img = "suou_surprised_portrait.png";
     if (/嘿|笑|好|嗯/.test(text)) img = "suou_smile_portrait.png";
-    return { type: "showImage", code: 11, image: img, loc: [260, "textTop"], opacity: 1, time: 0 };
+    return { type: "showImage", code: 11, image: img, loc: ["portraitRight", "portraitBottom"], opacity: 1, time: 0 };
   }
   return null;
 }
@@ -574,8 +586,6 @@ function buildFloor(section, lines, overrides = {}) {
     defaultGround: "ground",
     images: [
       { name: meta.bg, canvas: "bg", x: 0, y: 0 },
-      { name: "keng_portrait.png", canvas: "fg", x: 28, y: 210, disabled: true },
-      { name: "suou_sad_portrait.png", canvas: "fg", x: 260, y: 185, disabled: true },
     ],
     bgm: meta.bgm,
     ratio: 1,
@@ -810,13 +820,10 @@ function validateRuntimeRegistrations(expectedPhoneLineCount) {
     throw new Error("General CG crop must be the centered 16:11 crop of a 416x416 source");
   }
   const text = setTextEvent();
-  const fixedLines = 2;
-  const dialogueHeight = 45 + fixedLines * text.lineHeight + text.titlefont + 5;
-  const dialogueTop = VIEWPORT_HEIGHT - dialogueHeight - 5 - text.offset;
-  const dialogueLeft = 7 + 3 * (Math.floor(MAP_WIDTH / 2) - 6);
-  const dialogueRight = VIEWPORT_WIDTH - dialogueLeft;
-  if ([dialogueLeft, dialogueTop, dialogueRight - dialogueLeft, dialogueHeight].join(",") !== "13,295,518,116") {
-    throw new Error("Dialogue box must match the 544x416 reference layout");
+  if (!text.avg || text.fixedLines !== AVG_LAYOUT.dialogueFixedLines ||
+      AVG_LAYOUT.dialogueX !== 96 || AVG_LAYOUT.dialogueY !== 295 ||
+      AVG_LAYOUT.dialogueWidth !== 352 || AVG_LAYOUT.portraitRight !== 0) {
+    throw new Error("AVG layout contract is stale");
   }
   const missingActionCg = requiredActionCgImages.filter((image) => !usedActionCgImages.has(image));
   if (missingActionCg.length) {

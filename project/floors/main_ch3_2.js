@@ -14,20 +14,6 @@ main.floors.main_ch3_2=
             "canvas": "bg",
             "x": 0,
             "y": 0
-        },
-        {
-            "name": "keng_portrait.png",
-            "canvas": "fg",
-            "x": 28,
-            "y": 210,
-            "disabled": true
-        },
-        {
-            "name": "suou_sad_portrait.png",
-            "canvas": "fg",
-            "x": 260,
-            "y": 185,
-            "disabled": true
         }
     ],
     "bgm": "next_to_you_emotional.mp3",
@@ -287,6 +273,7 @@ main.floors.main_ch3_2=
     "eachArrive": [
         {
             "type": "setText",
+            "avg": true,
             "position": "down",
             "offset": 0,
             "align": "left",
@@ -307,6 +294,7 @@ main.floors.main_ch3_2=
             "titlefont": 22,
             "textfont": 16,
             "lineHeight": 22,
+            "fixedLines": 2,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -396,10 +384,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_serious_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -472,10 +457,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -589,10 +571,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -626,10 +605,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -650,10 +626,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -674,10 +647,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -737,10 +707,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_smile_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -761,10 +728,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -785,10 +749,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_serious_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -809,10 +770,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -911,10 +869,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -935,10 +890,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -959,10 +911,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_serious_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1050,10 +999,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1100,10 +1046,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_smile_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1124,10 +1067,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1148,10 +1088,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1185,10 +1122,7 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },

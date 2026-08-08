@@ -221,8 +221,9 @@ main.floors.mikage_rinju_4=
     "eachArrive": [
         {
             "type": "setText",
+            "avg": true,
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -239,8 +240,8 @@ main.floors.mikage_rinju_4=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -274,10 +275,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_surprised_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -311,10 +309,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -348,10 +343,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -372,10 +364,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -422,10 +411,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_surprised.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -446,10 +432,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -470,10 +453,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -507,10 +487,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_surprised.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -531,10 +508,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -555,10 +529,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_surprised.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -579,10 +550,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -603,10 +571,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_surprised.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -627,10 +592,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_surprised.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -651,10 +613,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -675,10 +634,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -699,10 +655,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_angry_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -723,10 +676,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -747,10 +697,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -784,10 +731,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -808,10 +752,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -832,10 +773,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -856,10 +794,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_surprised_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -880,10 +815,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_surprised.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -904,10 +836,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -928,10 +857,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_surprised.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -952,10 +878,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_surprised_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -976,10 +899,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1013,10 +933,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1037,10 +954,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1061,10 +975,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1085,10 +996,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1109,10 +1017,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1133,10 +1038,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_surprised.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1157,10 +1059,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_surprised_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1181,10 +1080,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1205,10 +1101,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_surprised.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1229,10 +1122,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1253,10 +1143,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1277,10 +1164,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1314,10 +1198,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_surprised.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1338,10 +1219,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1362,10 +1240,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1386,10 +1261,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1410,10 +1282,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1460,10 +1329,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1484,10 +1350,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1508,10 +1371,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_smile.png",
-            "loc": [
-                220,
-                "textTop"
-            ],
+            "loc": ["portraitRight","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1571,10 +1431,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1608,10 +1465,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_smile_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1645,10 +1499,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
@@ -1695,10 +1546,7 @@ main.floors.mikage_rinju_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                28,
-                "textTop"
-            ],
+            "loc": ["portraitLeft","portraitBottom"],
             "opacity": 1,
             "time": 0
         },
