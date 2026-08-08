@@ -10,7 +10,8 @@
 - `project/mainStory/CH1`～`CH6`：現行主線劇情的唯一真實來源。主線更新由 `scripts/generate_main_story.js` 讀取這些文本，經格式預處理後重建主線 floor；不得把生成後的 floor 反向當成主線來源。
 - `project/story/*.txt`：角色劇情內容與章節結構的唯一真實來源（source of truth），不是僅供追溯而保留的原始附件。所有被分類為角色劇情的 TXT，無論來自 ZIP、DOCX、PDF 或其他來源，都必須先落地到這裡，再新增或轉換樓層。`project/floors/*.js` 中的 scene／floor 是依文本轉換出的遊戲實作；兩者有劇情內容差異時，必須以文本為準並修正 scene／floor。`tmp/` 僅保存中間提取產物。
 - `project/data.js`：全塔設定。`main.floorIds` 決定樓層順序與可用樓層；`main.images/bgms/sounds/nameMap` 決定圖片、音樂、音效與別名。
-- `project/images/`：自定義圖片，例如背景、立繪、CG、UI 圖。
+- `project/images/`：自定義圖片，例如背景、立繪、CG、UI 圖。動作 CG 的 `*_cg.png` 是母檔，`*_action_cg.png` 是衍生 runtime 檔；地點背景必須每個地點各用唯一檔名。
+- `project/action-cg-manifest.json`：由 `scripts/build_action_cgs.py` 產生的動作 CG 母檔／輸出同步雜湊，不可手改。
 - `project/bgms/`：背景音樂。
 - `project/sounds/`：音效。
 - `project/maps.js`：圖塊數字到圖塊 ID 的對照。AVG 通常不需要大量改這裡。
@@ -20,14 +21,16 @@
 - `extensions/minigames/*.js`：獨立小遊戲本體。接入規範見 [小遊戲新增與接入指南](minigame-integration.md)。
 - `project/plugins.js`：小遊戲載入、事件入口與回寫魔塔狀態的封裝位置。
 
-主線生成器是 JavaScript，不是 Python：
+主線文本生成器是 JavaScript，不是 Python；但動作 CG 在交給生成器前有獨立的固定圖片預處理：
 
 ```powershell
+python scripts/build_action_cgs.py
+python scripts/build_action_cgs.py --check
 node scripts/generate_main_story.js --check
 node scripts/generate_main_story.js
 ```
 
-第一個命令只驗證來源、17×13 尺寸、事件轉換與素材註冊，不寫入檔案；第二個命令才重建主線 floor、時間線與主線 TODO。`remove_bk.py`、`split_emotion_image.py` 只屬於角色圖片處理，不是主線文本生成器。
+只有母檔新增或變更時才執行第一個命令；它固定產生 416×286 的 `*_action_cg.png` 與 manifest。第二個命令可單獨驗證圖片同步。第三個命令只驗證來源、17×13 尺寸、事件轉換、背景一對一 mapping、動作 CG 同步與素材註冊，不寫入檔案；第四個命令才重建主線 floor、時間線與主線 TODO。`remove_bk.py`、`split_emotion_image.py` 只屬於角色圖片處理，不是主線文本生成器。
 
 啟動服務與編輯器：
 
@@ -54,7 +57,9 @@ AI 產生內容時，優先產生「可貼進事件 JSON 區」或「可直接�
 對 AVG 最穩定的做法：
 
 - 每個場景用一個樓層，或每個章節用一個樓層。
-- 標準 AVG floor 使用 `17x13`；`map` 全部填 `0`，只保留一張背景圖和劇情事件。既有 13 格內容保留在左側，右側四格補 `0`。
+- 全專案只有一套標準 AVG 版面，主線與角色支線都使用 `17x13`；兩者只在觸發方式與來源檔案位置不同。`map` 全部填 `0`，只保留一張背景圖和劇情事件。既有 13 格內容保留在左側，右側四格補 `0`。
+- 現有舊角色支線尚未批量遷移，因為 544×416 版面仍待最後確認。這些舊座標是待遷移實作債，不是允許長期並存的第二套規格；本次只記錄原則，不追溯改寫舊 floor。
+- 每個劇本地點都使用獨立背景檔名與精確 mapping。正式背景只替換該地點檔；`scene_street.png`、`scene_mapo_shop.png`、`scene_tournament.png` 等 generic 圖只可作為初始 placeholder 來源，不得因單一地點到件而覆寫。
 - 所有故事劇情、章節劇情、場景演出都放在樓層 `eachArrive`，讓每次進入章節都從頭播放。
 - `firstArrive` 目前不放故事，也不要放一般章節內容；只保留給未來明確需要「整個存檔只執行一次」的指導規則或初始化功能。
 - 選項與分支放在 `choices`、`if`、`switch`、`setValue`。

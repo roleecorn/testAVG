@@ -10,7 +10,7 @@ main.floors.main_ch2_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_street.png",
+            "name": "ms_bg_arcade.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch2_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_arcade.png",
             "loc": [
                 0,
                 0
@@ -359,7 +359,7 @@ main.floors.main_ch2_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_tournament.png",
+            "image": "ms_bg_arcade.png",
             "loc": [
                 0,
                 0
@@ -737,7 +737,7 @@ main.floors.main_ch2_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_bookstore_a.png",
             "loc": [
                 0,
                 0

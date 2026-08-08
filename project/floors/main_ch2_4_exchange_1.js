@@ -10,7 +10,7 @@ main.floors.main_ch2_4_exchange_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_road.png",
+            "name": "ms_bg_bookstore_a_interior.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch2_4_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_road.png",
+            "image": "ms_bg_bookstore_a_interior.png",
             "loc": [
                 0,
                 0

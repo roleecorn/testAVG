@@ -10,7 +10,7 @@ main.floors.main_ch3_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_road.png",
+            "name": "ms_bg_street.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch3_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_road.png",
+            "image": "ms_bg_street.png",
             "loc": [
                 0,
                 0

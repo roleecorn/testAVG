@@ -14,7 +14,7 @@ Integrate a non-interactive CG cut-in with one project-wide layout and timing co
 
 ## Outputs
 
-- Produce or update one registered CG asset, a 16:11 visible crop, and its exact `showImage` → `sleep` → `hideImage` event sequence.
+- Produce or update one authoritative `*_cg.png` master, its generated 416×286 `*_action_cg.png` runtime asset, and the exact `showImage` → `sleep` → `hideImage` event sequence.
 - Return the touched floor, asset, registration, question/TODO, and validation results to the caller.
 
 ## Dependencies
@@ -25,8 +25,8 @@ Integrate a non-interactive CG cut-in with one project-wide layout and timing co
 
 ## Blocking Conditions
 
-- Stop the affected CG branch when the scene beat, asset identity, crop authority, or permission to generate a missing image is unresolved.
-- Do not silently generate a new CG, stretch an asset to the panel ratio, or modify engine/plugin code.
+- Stop the affected CG branch when the scene beat, master asset identity, crop authority, or permission to generate a missing image is unresolved.
+- Do not silently generate a new CG, stretch an asset to the panel ratio, hand-edit `*_action_cg.png`, or modify engine/plugin code.
 
 ## Non-blocking Questions
 
@@ -48,19 +48,17 @@ Normal replay mode intentionally shortens `sleep` events; the one-second guarant
 
 ## Prepare the asset
 
-1. Put the image in `project/images/`.
-2. Use a descriptive filename such as `<scene>_<beat>_action_cg.png`.
-3. Verify that the visible source area is exactly 16:11. Prefer a 320 × 220 source; larger sources are allowed when `sloc` selects a 16:11 crop.
-4. Do not stretch a source into 16:11. Crop or pad it first. For a 416 × 312 source, the standard centered crop is `sloc: [0, 13, 416, 286]`. If the correct asset is missing, follow the project placeholder-CG and TODO rules.
-5. Add a new filename to `project/data.js -> main.images`; do not duplicate an existing registration.
-
-Read the source image's actual dimensions, then set `sloc` to the exact 16:11 visible crop. Use the whole image only when the source itself is already 16:11.
+1. Put the authoritative master in `project/images/` and name it `<scene>_<beat>_cg.png`.
+2. Add the master/output pair to `scripts/build_action_cgs.py`; the runtime filename is `<scene>_<beat>_action_cg.png`.
+3. Run `python scripts/build_action_cgs.py`. The script centrally crops the master to 16:11, resizes the result to exactly 416×286, and updates `project/action-cg-manifest.json` with both hashes. Do not edit the output or manifest by hand.
+4. Register both filenames in `project/data.js -> main.images`; do not duplicate an existing registration. If the correct master is missing, follow the project placeholder-CG and TODO rules on the master filename.
+5. Runtime always displays the full generated output with `sloc: [0, 0, 416, 286]`; source crop coordinates belong only to the preprocessing manifest, not the floor event.
 
 ## Handoff
 
 Use the native event sequence `showImage` → `sleep` → `hideImage`; do not add engine or plugin code for this behavior. Insert it immediately after the dialogue line or narration beat that triggers the visual, then return the event block and validation evidence to the caller.
 
-For a 1280 × 960 source, crop 40 pixels from both the top and bottom:
+The runtime event always consumes the full generated 416×286 image:
 
 ```js
 [
@@ -68,7 +66,7 @@ For a 1280 × 960 source, crop 40 pixels from both the top and bottom:
         "type": "showImage",
         "code": 30,
         "image": "scene_reaction_action_cg.png",
-        "sloc": [0, 40, 1280, 880],
+        "sloc": [0, 0, 416, 286],
         "loc": [112, 50, 320, 220],
         "opacity": 1,
         "time": 0
@@ -86,26 +84,14 @@ For a 1280 × 960 source, crop 40 pixels from both the top and bottom:
 ]
 ```
 
-For an exact 320 × 220 source, still include both `sloc` and the four-value `loc` so the action-CG contract is explicit:
-
-```js
-{
-    "type": "showImage",
-    "code": 30,
-    "image": "scene_reaction_action_cg.png",
-    "sloc": [0, 0, 320, 220],
-    "loc": [112, 50, 320, 220],
-    "opacity": 1,
-    "time": 0
-}
-```
-
 Do not insert player-visible text such as `【行為CG：...】`.
 
 ## Validation
 
-- Confirm the registered asset exists and its `sloc` visible area is 16:11.
+- Run `python scripts/build_action_cgs.py --check` and confirm the master/output hashes, pair list, and 416×286 output size are synchronized.
+- Confirm the registered runtime asset exists and uses `sloc: [0, 0, 416, 286]`.
 - Confirm the event order is exactly `showImage(code 30)` → `sleep(1000, noSkip)` → `hideImage(code 30)`.
 - Confirm `loc` is `[112, 50, 320, 220]` and neither show nor hide uses a fade.
+- For main-story assets, run `node scripts/generate_main_story.js --check`; it must independently reject a changed master, changed output, or stale manifest.
 - Run `node --check` on each touched floor file.
 - Inspect `git diff --name-only` and `git diff --stat`; do not stage unless the user explicitly asks.

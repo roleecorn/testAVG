@@ -10,7 +10,7 @@ main.floors.main_ch3_1_exchange_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_street.png",
+            "name": "ms_bg_street.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch3_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_street.png",
             "loc": [
                 0,
                 0
@@ -414,7 +414,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_horses_knee.png",
                             "loc": [
                                 0,
                                 0
@@ -1885,7 +1885,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_street_night.png",
                             "loc": [
                                 0,
                                 0
@@ -2124,7 +2124,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_bar.png",
                             "loc": [
                                 0,
                                 0
@@ -2291,7 +2291,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_street_night.png",
                             "loc": [
                                 0,
                                 0
@@ -2508,7 +2508,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_training_room.png",
                             "loc": [
                                 0,
                                 0
@@ -2864,7 +2864,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_street_night.png",
                             "loc": [
                                 0,
                                 0
@@ -3748,7 +3748,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_training_room.png",
                             "loc": [
                                 0,
                                 0
@@ -4562,7 +4562,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_bar.png",
                             "loc": [
                                 0,
                                 0
@@ -4790,7 +4790,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_street_night.png",
                             "loc": [
                                 0,
                                 0
@@ -5046,7 +5046,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_mapo_shop.png",
+                            "image": "ms_bg_family_restaurant_interior.png",
                             "loc": [
                                 0,
                                 0
@@ -5222,7 +5222,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_tokyo_big_sight.png",
                             "loc": [
                                 0,
                                 0
@@ -5663,7 +5663,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_street_night.png",
                             "loc": [
                                 0,
                                 0
@@ -6480,7 +6480,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_street.png",
                             "loc": [
                                 0,
                                 0

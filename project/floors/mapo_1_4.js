@@ -10,7 +10,7 @@ main.floors.mapo_1_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_street.png",
+            "name": "ms_bg_cafe.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_cafe.png",
             "loc": [
                 0,
                 0
@@ -359,7 +359,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_mapo_shop.png",
+            "image": "ms_bg_cafe.png",
             "loc": [
                 0,
                 0
@@ -1012,7 +1012,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_mapo_shop.png",
+            "image": "ms_bg_convenience_store.png",
             "loc": [
                 0,
                 0
@@ -1242,7 +1242,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_riverside.png",
             "loc": [
                 0,
                 0
@@ -2019,7 +2019,7 @@ main.floors.mapo_1_4=
                             "image": "ms_ch1_thunder_crocodile_action_cg.png",
                             "sloc": [
                                 0,
-                                13,
+                                0,
                                 416,
                                 286
                             ],

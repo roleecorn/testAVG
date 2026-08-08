@@ -10,7 +10,7 @@ main.floors.mapo_1_3_exchange_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_mapo_shop.png",
+            "name": "ms_bg_mapo_shop.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.mapo_1_3_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_mapo_shop.png",
+            "image": "ms_bg_mapo_shop.png",
             "loc": [
                 0,
                 0

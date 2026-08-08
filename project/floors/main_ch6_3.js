@@ -10,7 +10,7 @@ main.floors.main_ch6_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_road.png",
+            "name": "ms_bg_horses_knee.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch6_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_road.png",
+            "image": "ms_bg_horses_knee.png",
             "loc": [
                 0,
                 0
@@ -359,7 +359,7 @@ main.floors.main_ch6_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_horses_knee.png",
             "loc": [
                 0,
                 0
@@ -574,7 +574,7 @@ main.floors.main_ch6_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_warehouse_district.png",
             "loc": [
                 0,
                 0
@@ -924,7 +924,7 @@ main.floors.main_ch6_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_street.png",
             "loc": [
                 0,
                 0

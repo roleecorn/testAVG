@@ -10,7 +10,7 @@ main.floors.main_ch6_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_tournament.png",
+            "name": "ms_bg_wedding.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch6_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_tournament.png",
+            "image": "ms_bg_wedding.png",
             "loc": [
                 0,
                 0
@@ -628,7 +628,7 @@ main.floors.main_ch6_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_tournament.png",
+            "image": "ms_bg_wedding.png",
             "loc": [
                 0,
                 0

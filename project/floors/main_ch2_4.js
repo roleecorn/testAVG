@@ -10,7 +10,7 @@ main.floors.main_ch2_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_road.png",
+            "name": "ms_bg_bookstore_a_interior.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch2_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_road.png",
+            "image": "ms_bg_bookstore_a_interior.png",
             "loc": [
                 0,
                 0
@@ -359,7 +359,7 @@ main.floors.main_ch2_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_bookstore_a_interior.png",
             "loc": [
                 0,
                 0
@@ -1004,7 +1004,7 @@ main.floors.main_ch2_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_bookstore_a.png",
             "loc": [
                 0,
                 0
@@ -1374,7 +1374,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_tournament.png",
+                            "image": "ms_bg_museum.png",
                             "loc": [
                                 0,
                                 0
@@ -2267,7 +2267,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_mapo_shop.png",
+                            "image": "ms_bg_cafe.png",
                             "loc": [
                                 0,
                                 0

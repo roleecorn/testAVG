@@ -2,9 +2,11 @@
 
 ## 主線生成前預處理
 
-主線來源是 `project/mainStory/CH1`～`CH6`，由 `scripts/generate_main_story.js` 處理。生成器是 JavaScript，不要另建一份 Python 版本。執行寫入前先跑：
+主線來源是 `project/mainStory/CH1`～`CH6`，由 `scripts/generate_main_story.js` 處理。文本生成器是 JavaScript，不要另建一份 Python 版本。Python 只負責在文本生成器之前，把權威 `*_cg.png` 母檔固定衍生為 runtime action CG。母檔有變動時依序執行，未變動時至少執行兩個 `--check`：
 
 ```powershell
+python scripts/build_action_cgs.py
+python scripts/build_action_cgs.py --check
 node scripts/generate_main_story.js --check
 ```
 
@@ -19,10 +21,11 @@ node scripts/generate_main_story.js --check
 7. `【CG：...】`、`【GIF ...】`、`【背景：...】` 與立繪／替換／動畫標記必須先於普通文字處理。已支援的指令轉為事件；未支援的製作指令改成非玩家可見 `comment` 並寫入主線 TODO，不得直接顯示。
 8. `【劇情推進】`、`【推進劇情】`、`【接2-3】`、`【接續2-3】` 等同義流程標記要正規化為同一控制流程。
 9. CG／GIF 對照表要以目前來源文字為準；來源更名時可保留歷史別名，但 `--check` 必須確認所有已登錄的主線動作 CG 都仍有實際輸出，避免素材存在卻因標記改名而靜默退回 placeholder。
+10. 背景名稱以完整名稱精確查表；每個地點映射到唯一背景檔。遇到未登錄名稱必須失敗並補 mapping，不可靜默退回 generic 圖。
 
 主線開場的 `setText` 必須保持參考截圖規格：`position: "down"`、`offset: 0`、`titlefont: 22`、`textfont: 16`、`lineHeight: 22`。配合 `fixedLines: 2`，544×416 畫布上的對話框範圍為 `x: 13, y: 295, width: 518, height: 116`；人物位置使用左 `[28, "textTop"]`、右 `[260, "textTop"]`。
 
-固定一秒動作 CG 必須交給 `mota-action-cg` 契約：`showImage(code 30)` → `sleep(1000, noSkip)` → `hideImage(code 30)`，在 544×416 畫布使用 `loc: [112, 50, 320, 220]`。一般持續劇情 CG 使用同一個中央面板，但不可誤套一秒自動隱藏。來源可見區必須先裁成 16:11；416×312 來源使用 `sloc: [0, 13, 416, 286]`。
+固定一秒動作 CG 必須交給 `mota-action-cg` 契約：`*_cg.png` 為母檔，`scripts/build_action_cgs.py` 產生固定 416×286 的 `*_action_cg.png`；事件使用 `sloc: [0, 0, 416, 286]`、`loc: [112, 50, 320, 220]`，順序為 `showImage(code 30)` → `sleep(1000, noSkip)` → `hideImage(code 30)`。一般持續劇情 CG 使用同一個中央面板，但不可誤套一秒自動隱藏。
 
 ## 純文字到事件 JSON 的建議格式
 

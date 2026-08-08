@@ -10,7 +10,7 @@ main.floors.main_ch4_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_road.png",
+            "name": "ms_bg_vehicle_interior.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch4_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_road.png",
+            "image": "ms_bg_vehicle_interior.png",
             "loc": [
                 0,
                 0
@@ -661,7 +661,7 @@ main.floors.main_ch4_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_vehicle_interior.png",
             "loc": [
                 0,
                 0

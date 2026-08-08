@@ -10,7 +10,7 @@ main.floors.main_ch3_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_street.png",
+            "name": "ms_bg_street.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch3_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_street.png",
             "loc": [
                 0,
                 0
@@ -359,7 +359,7 @@ main.floors.main_ch3_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_street.png",
             "loc": [
                 0,
                 0
@@ -620,7 +620,7 @@ main.floors.main_ch3_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_mapo_shop.png",
+            "image": "ms_bg_cafe.png",
             "loc": [
                 0,
                 0
@@ -933,7 +933,7 @@ main.floors.main_ch3_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_street.png",
             "loc": [
                 0,
                 0

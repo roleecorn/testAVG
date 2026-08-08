@@ -10,7 +10,7 @@ main.floors.main_ch5_1_exchange_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_street.png",
+            "name": "ms_bg_vehicle_interior.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch5_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_vehicle_interior.png",
             "loc": [
                 0,
                 0
@@ -359,7 +359,7 @@ main.floors.main_ch5_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_street.png",
             "loc": [
                 0,
                 0
@@ -940,7 +940,7 @@ main.floors.main_ch5_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_tournament.png",
+                            "image": "ms_bg_arcade.png",
                             "loc": [
                                 0,
                                 0
@@ -1334,7 +1334,7 @@ main.floors.main_ch5_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_horses_knee.png",
                             "loc": [
                                 0,
                                 0

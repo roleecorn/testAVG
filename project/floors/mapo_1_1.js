@@ -10,7 +10,7 @@ main.floors.mapo_1_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_station.png",
+            "name": "ms_bg_station.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.mapo_1_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_station.png",
+            "image": "ms_bg_station.png",
             "loc": [
                 0,
                 0
@@ -359,7 +359,7 @@ main.floors.mapo_1_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_station.png",
+            "image": "ms_bg_station.png",
             "loc": [
                 0,
                 0
@@ -980,7 +980,7 @@ main.floors.mapo_1_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_street.png",
             "loc": [
                 0,
                 0

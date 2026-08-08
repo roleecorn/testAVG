@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const root = path.resolve(__dirname, "..");
 const p = (...parts) => path.join(root, ...parts);
@@ -16,25 +17,25 @@ const GENERAL_CG_SLOC = [0, 65, 416, 286];
 const MAP = Array.from({ length: MAP_HEIGHT }, () => Array(MAP_WIDTH).fill(0));
 
 const floors = {
-  "1-1": { id: "mapo_1_1", title: "主線 CH1 1-1 車站", name: "1-1", bg: "scene_station.png", bgm: "bossa_casual_shop.mp3", next: "mapo_1_2" },
-  "1-2": { id: "mapo_1_2", title: "主線 CH1 1-2 倉庫區", name: "1-2", bg: "scene_road.png", bgm: "dark_alleys_tension.ogg", next: "mapo_1_3" },
-  "1-3": { id: "mapo_1_3", title: "主線 CH1 1-3 麻婆豆腐店", name: "1-3", bg: "scene_mapo_shop.png", bgm: "bossa_casual_shop.mp3", next: "mapo_1_4" },
-  "1-4": { id: "mapo_1_4", title: "主線 CH1 1-4 炭烤蜜瓜兔子", name: "1-4", bg: "scene_street.png", bgm: "flags_drama.mp3", next: "mapo_1_5" },
-  "1-5": { id: "mapo_1_5", title: "主線 CH1 1-5 掉落物", name: "1-5", bg: "scene_street.png", bgm: "twists_suspense.mp3", next: "mapo_1_6" },
-  "2-1": { id: "mapo_1_6", title: "主線 CH2 2-1 咖啡廳早晨", name: "2-1", bg: "scene_street.png", bgm: "bossa_casual_shop.mp3", next: "main_ch2_2" },
-  "2-2": { id: "main_ch2_2", title: "主線 CH2 2-2 三過書店", name: "2-2", bg: "scene_road.png", bgm: "twists_suspense.mp3", next: "main_ch2_3" },
-  "2-3": { id: "main_ch2_3", title: "主線 CH2 2-3 遊戲中心", name: "2-3", bg: "scene_street.png", bgm: "warped_surreal.mp3", next: "main_ch2_4" },
-  "2-4": { id: "main_ch2_4", title: "主線 CH2 2-4 書店A內部", name: "2-4", bg: "scene_road.png", bgm: "dark_alleys_tension.ogg", next: "main_ch3_1" },
-  "3-1": { id: "main_ch3_1", title: "主線 CH3 3-1 自爆篇", name: "3-1", bg: "scene_street.png", bgm: "bossa_casual_shop.mp3", next: "main_ch3_2" },
-  "3-2": { id: "main_ch3_2", title: "主線 CH3 3-2 貝琪晚餐", name: "3-2", bg: "scene_street.png", bgm: "next_to_you_emotional.mp3", next: "main_ch3_3" },
-  "3-3": { id: "main_ch3_3", title: "主線 CH3 3-3 傑士塔威會議", name: "3-3", bg: "scene_road.png", bgm: "warped_surreal.mp3", next: "main_ch4_1" },
-  "4-1": { id: "main_ch4_1", title: "主線 CH4 4-1 搶火車篇", name: "4-1", bg: "scene_street.png", bgm: "great_mission_heroic.mp3", next: "main_ch4_2" },
-  "4-2": { id: "main_ch4_2", title: "主線 CH4 4-2 修卡已逝", name: "4-2", bg: "scene_road.png", bgm: "flags_drama.mp3", next: "main_ch5_1" },
-  "5-1": { id: "main_ch5_1", title: "主線 CH5 5-1 五日無戰事篇", name: "5-1", bg: "scene_street.png", bgm: "bossa_casual_shop.mp3", next: "main_ch6_1" },
-  "6-1": { id: "main_ch6_1", title: "主線 CH6 6-1 肥宅潮", name: "6-1", bg: "scene_road.png", bgm: "waking_the_devil_crisis.mp3", next: "main_ch6_2" },
-  "6-2": { id: "main_ch6_2", title: "主線 CH6 6-2 結婚抉擇", name: "6-2", bg: "scene_street.png", bgm: "flags_drama.mp3", next: "main_ch6_3" },
-  "6-3": { id: "main_ch6_3", title: "主線 CH6 6-3 逃亡與希望", name: "6-3", bg: "scene_road.png", bgm: "next_to_you_emotional.mp3", next: "main_ch6_4" },
-  "6-4": { id: "main_ch6_4", title: "主線 CH6 6-4 婚禮與終章", name: "6-4", bg: "scene_tournament.png", bgm: "next_to_you_emotional.mp3", next: null },
+  "1-1": { id: "mapo_1_1", title: "主線 CH1 1-1 車站", name: "1-1", bg: "ms_bg_station.png", bgm: "bossa_casual_shop.mp3", next: "mapo_1_2" },
+  "1-2": { id: "mapo_1_2", title: "主線 CH1 1-2 倉庫區", name: "1-2", bg: "ms_bg_street.png", bgm: "dark_alleys_tension.ogg", next: "mapo_1_3" },
+  "1-3": { id: "mapo_1_3", title: "主線 CH1 1-3 麻婆豆腐店", name: "1-3", bg: "ms_bg_mapo_shop.png", bgm: "bossa_casual_shop.mp3", next: "mapo_1_4" },
+  "1-4": { id: "mapo_1_4", title: "主線 CH1 1-4 炭烤蜜瓜兔子", name: "1-4", bg: "ms_bg_cafe.png", bgm: "flags_drama.mp3", next: "mapo_1_5" },
+  "1-5": { id: "mapo_1_5", title: "主線 CH1 1-5 掉落物", name: "1-5", bg: "ms_bg_street.png", bgm: "twists_suspense.mp3", next: "mapo_1_6" },
+  "2-1": { id: "mapo_1_6", title: "主線 CH2 2-1 咖啡廳早晨", name: "2-1", bg: "ms_bg_riverside.png", bgm: "bossa_casual_shop.mp3", next: "main_ch2_2" },
+  "2-2": { id: "main_ch2_2", title: "主線 CH2 2-2 三過書店", name: "2-2", bg: "ms_bg_bookstore_a.png", bgm: "twists_suspense.mp3", next: "main_ch2_3" },
+  "2-3": { id: "main_ch2_3", title: "主線 CH2 2-3 遊戲中心", name: "2-3", bg: "ms_bg_arcade.png", bgm: "warped_surreal.mp3", next: "main_ch2_4" },
+  "2-4": { id: "main_ch2_4", title: "主線 CH2 2-4 書店A內部", name: "2-4", bg: "ms_bg_bookstore_a_interior.png", bgm: "dark_alleys_tension.ogg", next: "main_ch3_1" },
+  "3-1": { id: "main_ch3_1", title: "主線 CH3 3-1 自爆篇", name: "3-1", bg: "ms_bg_street.png", bgm: "bossa_casual_shop.mp3", next: "main_ch3_2" },
+  "3-2": { id: "main_ch3_2", title: "主線 CH3 3-2 貝琪晚餐", name: "3-2", bg: "ms_bg_street.png", bgm: "next_to_you_emotional.mp3", next: "main_ch3_3" },
+  "3-3": { id: "main_ch3_3", title: "主線 CH3 3-3 傑士塔威會議", name: "3-3", bg: "ms_bg_street.png", bgm: "warped_surreal.mp3", next: "main_ch4_1" },
+  "4-1": { id: "main_ch4_1", title: "主線 CH4 4-1 搶火車篇", name: "4-1", bg: "ms_bg_street.png", bgm: "great_mission_heroic.mp3", next: "main_ch4_2" },
+  "4-2": { id: "main_ch4_2", title: "主線 CH4 4-2 修卡已逝", name: "4-2", bg: "ms_bg_vehicle_interior.png", bgm: "flags_drama.mp3", next: "main_ch5_1" },
+  "5-1": { id: "main_ch5_1", title: "主線 CH5 5-1 五日無戰事篇", name: "5-1", bg: "ms_bg_vehicle_interior.png", bgm: "bossa_casual_shop.mp3", next: "main_ch6_1" },
+  "6-1": { id: "main_ch6_1", title: "主線 CH6 6-1 肥宅潮", name: "6-1", bg: "ms_bg_bookstore_a.png", bgm: "waking_the_devil_crisis.mp3", next: "main_ch6_2" },
+  "6-2": { id: "main_ch6_2", title: "主線 CH6 6-2 結婚抉擇", name: "6-2", bg: "ms_bg_street.png", bgm: "flags_drama.mp3", next: "main_ch6_3" },
+  "6-3": { id: "main_ch6_3", title: "主線 CH6 6-3 逃亡與希望", name: "6-3", bg: "ms_bg_horses_knee.png", bgm: "next_to_you_emotional.mp3", next: "main_ch6_4" },
+  "6-4": { id: "main_ch6_4", title: "主線 CH6 6-4 婚禮與終章", name: "6-4", bg: "ms_bg_wedding.png", bgm: "next_to_you_emotional.mp3", next: null },
 };
 
 const characterExchanges = {
@@ -44,27 +45,50 @@ const characterExchanges = {
   "5-1": { floorId: "main_ch5_1_exchange_1", targetCount: 2 },
 };
 
-const bgByName = [
-  [/車站/, "scene_station.png"],
-  [/街道|道路|河邊|倉庫|鐵道|書店A|馬的膝蓋|醫院|車上|貝琪宅邸/, "scene_street.png"],
-  [/麻婆豆腐店/, "scene_mapo_shop.png"],
-  [/大賽場地|遊戲中心|美術館|婚禮/, "scene_tournament.png"],
-  [/咖啡廳|便利商店|家庭餐廳|書店A內部|高級餐廳|僕咖/, "scene_mapo_shop.png"],
+const backgroundAssets = [
+  { name: "車站", image: "ms_bg_station.png", placeholder: "scene_station.png" },
+  { name: "街道", image: "ms_bg_street.png", placeholder: "scene_street.png" },
+  { name: "麻婆豆腐店", image: "ms_bg_mapo_shop.png", placeholder: "scene_mapo_shop.png" },
+  { name: "大賽場地", image: "ms_bg_tournament_venue.png", placeholder: "scene_tournament.png" },
+  { name: "咖啡廳", image: "ms_bg_cafe.png", placeholder: "scene_mapo_shop.png" },
+  { name: "便利商店", image: "ms_bg_convenience_store.png", placeholder: "scene_mapo_shop.png" },
+  { name: "河邊", image: "ms_bg_riverside.png", placeholder: "scene_street.png" },
+  { name: "書店A", image: "ms_bg_bookstore_a.png", placeholder: "scene_street.png" },
+  { name: "倉庫", image: "ms_bg_warehouse.png", placeholder: "scene_street.png" },
+  { name: "家庭餐廳", image: "ms_bg_family_restaurant.png", placeholder: "scene_mapo_shop.png" },
+  { name: "倉庫區", image: "ms_bg_warehouse_district.png", placeholder: "scene_street.png" },
+  { name: "遊戲中心", image: "ms_bg_arcade.png", placeholder: "scene_tournament.png" },
+  { name: "書店A內部", image: "ms_bg_bookstore_a_interior.png", placeholder: "scene_street.png" },
+  { name: "美術館", image: "ms_bg_museum.png", placeholder: "scene_tournament.png" },
+  { name: "馬的膝蓋", image: "ms_bg_horses_knee.png", placeholder: "scene_street.png" },
+  { name: "街道(夜)", image: "ms_bg_street_night.png", placeholder: "scene_street.png" },
+  { name: "酒吧", image: "ms_bg_bar.png", placeholder: "scene_mapo_shop.png" },
+  { name: "訓練室", image: "ms_bg_training_room.png", placeholder: "scene_tournament.png" },
+  { name: "家庭餐廳內部", image: "ms_bg_family_restaurant_interior.png", placeholder: "scene_mapo_shop.png" },
+  { name: "COMIKE倒三角建築", image: "ms_bg_tokyo_big_sight.png", placeholder: "scene_tournament.png" },
+  { name: "高級餐廳", image: "ms_bg_fine_dining.png", placeholder: "scene_mapo_shop.png" },
+  { name: "醫院", image: "ms_bg_hospital.png", placeholder: "scene_street.png" },
+  { name: "鐵道", image: "ms_bg_railway.png", placeholder: "scene_street.png" },
+  { name: "貝琪宅邸", image: "ms_bg_becky_mansion.png", placeholder: "scene_street.png" },
+  { name: "車上", image: "ms_bg_vehicle_interior.png", placeholder: "scene_street.png" },
+  { name: "僕咖", image: "ms_bg_maid_cafe.png", placeholder: "scene_mapo_shop.png" },
+  { name: "婚禮", image: "ms_bg_wedding.png", placeholder: "scene_tournament.png" },
 ];
+const bgByName = new Map(backgroundAssets.map(({ name, image }) => [name, image]));
 
 const actionCgByName = {
-  "麻婆豆腐店門口": { image: "ms_ch1_mapo_shop_entrance_action_cg.png", sloc: [0, 13, 416, 286] },
-  "店門口的沙丁魚們": { image: "ms_ch1_mapo_shop_entrance_action_cg.png", sloc: [0, 13, 416, 286] },
-  "梗平參戰": { image: "ms_ch1_keng_join_action_cg.png", sloc: [0, 13, 416, 286] },
-  "2.5梗平": { image: "ms_ch1_keng_2_5_action_cg.png", sloc: [0, 13, 416, 286] },
-  "放大的鱷魚圖": { image: "ms_ch1_thunder_crocodile_action_cg.png", sloc: [0, 13, 416, 286] },
-  "雷霆大鱷魚與梗平對峙": { image: "ms_ch1_thunder_crocodile_action_cg.png", sloc: [0, 13, 416, 286] },
-  "梗平被腳踏車撞飛": { image: "ms_ch2_keng_bicycle_action_cg.png", sloc: [0, 13, 416, 286] },
-  "夕陽下的神祕少女": { image: "ms_ch2_eri_sunset_action_cg.png", sloc: [0, 13, 416, 286] },
+  "麻婆豆腐店門口": { image: "ms_ch1_mapo_shop_entrance_action_cg.png", sloc: [0, 0, 416, 286] },
+  "店門口的沙丁魚們": { image: "ms_ch1_mapo_shop_entrance_action_cg.png", sloc: [0, 0, 416, 286] },
+  "梗平參戰": { image: "ms_ch1_keng_join_action_cg.png", sloc: [0, 0, 416, 286] },
+  "2.5梗平": { image: "ms_ch1_keng_2_5_action_cg.png", sloc: [0, 0, 416, 286] },
+  "放大的鱷魚圖": { image: "ms_ch1_thunder_crocodile_action_cg.png", sloc: [0, 0, 416, 286] },
+  "雷霆大鱷魚與梗平對峙": { image: "ms_ch1_thunder_crocodile_action_cg.png", sloc: [0, 0, 416, 286] },
+  "梗平被腳踏車撞飛": { image: "ms_ch2_keng_bicycle_action_cg.png", sloc: [0, 0, 416, 286] },
+  "夕陽下的神祕少女": { image: "ms_ch2_eri_sunset_action_cg.png", sloc: [0, 0, 416, 286] },
 };
 
 const actionGifByName = {
-  "梗平參戰": { image: "ms_ch1_keng_join_action_cg.png", sloc: [0, 13, 416, 286] },
+  "梗平參戰": { image: "ms_ch1_keng_join_action_cg.png", sloc: [0, 0, 416, 286] },
 };
 
 const requiredActionCgImages = [
@@ -75,23 +99,33 @@ const requiredActionCgImages = [
   "ms_ch2_keng_bicycle_action_cg.png",
   "ms_ch2_eri_sunset_action_cg.png",
 ];
+const requiredActionCgPairs = new Map([
+  ["ms_ch1_mapo_shop_entrance_cg.png", "ms_ch1_mapo_shop_entrance_action_cg.png"],
+  ["ms_ch1_keng_join_cg.png", "ms_ch1_keng_join_action_cg.png"],
+  ["ms_ch1_keng_2_5_cg.png", "ms_ch1_keng_2_5_action_cg.png"],
+  ["ms_ch1_thunder_crocodile_cg.png", "ms_ch1_thunder_crocodile_action_cg.png"],
+  ["ms_ch2_keng_bicycle_cg.png", "ms_ch2_keng_bicycle_action_cg.png"],
+  ["ms_ch2_eri_sunset_cg.png", "ms_ch2_eri_sunset_action_cg.png"],
+]);
 const usedActionCgImages = new Set();
 let generatedActionCgCount = 0;
 let generatedPhoneLineCount = 0;
 
 const placeholderAssets = [
+  ...backgroundAssets.map(({ image, placeholder }) => [`project/images/${placeholder}`, `project/images/${image}`]),
   ["project/images/scene_mapo_cg.png", "project/images/ms_ch1_mapo_shop_entrance_cg.png"],
   ["project/images/scene_badend.png", "project/images/ms_ch1_keng_2_5_cg.png"],
   ["project/images/scene_badend.png", "project/images/ms_ch1_thunder_crocodile_cg.png"],
-  ["project/images/scene_tournament.png", "project/images/ms_ch1_keng_join_placeholder.png"],
+  ["project/images/scene_tournament.png", "project/images/ms_ch1_keng_join_cg.png"],
   ["project/bgms/spacetime_mystery.mp3", "project/bgms/ms_ch2_gallery_opening.mp3"],
 ];
 
 const extraImages = [
+  ...backgroundAssets.map(({ image }) => image),
   "ms_ch1_mapo_shop_entrance_cg.png",
   "ms_ch1_keng_2_5_cg.png",
   "ms_ch1_thunder_crocodile_cg.png",
-  "ms_ch1_keng_join_placeholder.png",
+  "ms_ch1_keng_join_cg.png",
   "ms_ch1_mapo_shop_entrance_action_cg.png",
   "ms_ch1_keng_2_5_action_cg.png",
   "ms_ch1_thunder_crocodile_action_cg.png",
@@ -287,7 +321,8 @@ function lineToEvents(line, ctx) {
 
   if (/^【背景：/.test(t)) {
     const name = t.replace(/^【背景：/, "").replace(/】$/, "");
-    const bg = (bgByName.find(([re]) => re.test(name)) || [null, ctx.bg])[1];
+    const bg = bgByName.get(name);
+    if (!bg) throw new Error(`${ctx.source} ${ctx.section}: unknown background directive: ${name}`);
     ctx.cgVisible = false;
     return [
       ...hidePortraits(),
@@ -316,7 +351,7 @@ function lineToEvents(line, ctx) {
       ctx.cgVisible = false;
       return actionCgEvents(actionCg);
     }
-    const image = "ms_ch1_keng_join_placeholder.png";
+    const image = "ms_ch1_keng_join_cg.png";
     storyTodos.add(`${ctx.source} ${ctx.section}：【GIF ${name}】尚無專用素材，暫用 ${image}。`);
     ctx.cgVisible = true;
     return [...hidePortraits(), { type: "showImage", code: 30, image, sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
@@ -602,6 +637,44 @@ function ensureAssets() {
   }
 }
 
+function sha256(file) {
+  return crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
+}
+
+function pngSize(file) {
+  const data = fs.readFileSync(file);
+  if (data.length < 24 || data.toString("ascii", 1, 4) !== "PNG") throw new Error(`Not a PNG file: ${file}`);
+  return [data.readUInt32BE(16), data.readUInt32BE(20)];
+}
+
+function validateActionCgSync() {
+  const manifestFile = p("project", "action-cg-manifest.json");
+  if (!fs.existsSync(manifestFile)) {
+    throw new Error("Missing project/action-cg-manifest.json; run python scripts/build_action_cgs.py");
+  }
+  const manifest = JSON.parse(fs.readFileSync(manifestFile, "utf8"));
+  if (manifest.version !== 1 || manifest.targetRatio !== "16:11" || (manifest.outputSize || []).join(",") !== "416,286") {
+    throw new Error("Action-CG manifest contract is stale; run python scripts/build_action_cgs.py");
+  }
+  const actualPairs = new Map();
+  for (const entry of manifest.assets || []) {
+    if (actualPairs.has(entry.master)) throw new Error(`Duplicate action-CG master in manifest: ${entry.master}`);
+    actualPairs.set(entry.master, entry.output);
+    const master = p("project", "images", entry.master);
+    const output = p("project", "images", entry.output);
+    if (!fs.existsSync(master) || !fs.existsSync(output)) throw new Error(`Missing action-CG pair: ${entry.master} -> ${entry.output}`);
+    if (sha256(master) !== entry.masterSha256) throw new Error(`Action-CG master changed; run python scripts/build_action_cgs.py: ${entry.master}`);
+    if (sha256(output) !== entry.outputSha256) throw new Error(`Generated action CG is stale; run python scripts/build_action_cgs.py: ${entry.output}`);
+    if (pngSize(output).join(",") !== "416,286" || (entry.outputSize || []).join(",") !== "416,286") {
+      throw new Error(`Action CG must be 416x286: ${entry.output}`);
+    }
+  }
+  if (actualPairs.size !== requiredActionCgPairs.size) throw new Error("Action-CG manifest asset count is stale");
+  for (const [master, output] of requiredActionCgPairs) {
+    if (actualPairs.get(master) !== output) throw new Error(`Action-CG manifest is missing ${master} -> ${output}`);
+  }
+}
+
 function updateData() {
   const file = p("project", "data.js");
   let text = fs.readFileSync(file, "utf8");
@@ -696,11 +769,11 @@ function updateTodo() {
     "- `project/images/ms_ch1_mapo_shop_entrance_cg.png`：暫用複製 CG，來源為 `project/images/scene_mapo_cg.png`；之後需要替換成「麻婆豆腐店門口」正式 CG。",
     "- `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。",
     "- `project/images/ms_ch1_thunder_crocodile_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「放大的鱷魚圖」正式 CG。",
-    "- `project/images/ms_ch1_keng_join_placeholder.png`：專案目前沒有現有 GIF 可複製，暫用複製靜態圖，來源為 `project/images/scene_tournament.png`；之後需要替換成「梗平參戰」正式 GIF。",
+    "- `project/images/ms_ch1_keng_join_cg.png`：專案目前沒有現有 GIF 可複製，母檔暫用複製靜態圖，來源為 `project/images/scene_tournament.png`；之後需要替換成「梗平參戰」正式 CG，再執行 `python scripts/build_action_cgs.py`。",
     "- `project/images/ms_ch2_keng_bicycle_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「梗平被腳踏車撞飛」正式 CG。",
     "- `project/images/ms_ch2_eri_sunset_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「夕陽下的神祕少女」正式 CG。",
     "- `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。",
-    "- CH1-CH6 多處背景（咖啡廳、便利商店、河邊、書店A、家庭餐廳、遊戲中心、美術館、馬的膝蓋、高級餐廳、醫院、車上、貝琪宅邸、僕咖、婚禮）目前沿用既有背景圖；之後可替換正式背景。",
+    ...backgroundAssets.map(({ name, image, placeholder }) => `- \`project/images/${image}\`：${name}的獨立背景檔目前暫用 \`project/images/${placeholder}\` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。`),
     "",
     "## 待實作演出或小遊戲",
     "",
@@ -720,6 +793,9 @@ function validateRuntimeRegistrations(expectedPhoneLineCount) {
   for (const image of extraImages) {
     if (!fs.existsSync(p("project", "images", image))) throw new Error(`Missing image asset: ${image}`);
     if (!dataText.includes(`"${image}"`)) throw new Error(`Image is not registered in project/data.js: ${image}`);
+  }
+  if (bgByName.size !== backgroundAssets.length || new Set(backgroundAssets.map(({ image }) => image)).size !== backgroundAssets.length) {
+    throw new Error("Each background directive must map one-to-one to a unique image filename");
   }
   if (VIEWPORT_WIDTH !== MAP_WIDTH * 32 || VIEWPORT_HEIGHT !== MAP_HEIGHT * 32) {
     throw new Error("Viewport constants do not match map dimensions");
@@ -749,6 +825,9 @@ function validateRuntimeRegistrations(expectedPhoneLineCount) {
   if (generatedActionCgCount !== requiredActionCgImages.length) {
     throw new Error(`Expected ${requiredActionCgImages.length} action CG events, got ${generatedActionCgCount}`);
   }
+  for (const spec of [...Object.values(actionCgByName), ...Object.values(actionGifByName)]) {
+    if (spec.sloc.join(",") !== "0,0,416,286") throw new Error(`Generated action CG must use its full 416x286 canvas: ${spec.image}`);
+  }
   if (generatedPhoneLineCount !== expectedPhoneLineCount) {
     throw new Error(`Expected ${expectedPhoneLineCount} phone lines, got ${generatedPhoneLineCount}`);
   }
@@ -757,6 +836,7 @@ function validateRuntimeRegistrations(expectedPhoneLineCount) {
 function main() {
   const checkOnly = process.argv.includes("--check");
   if (!checkOnly) ensureAssets();
+  validateActionCgSync();
   const sections = {
     ...readSections(p("project", "mainStory", "CH1")),
     ...readSections(p("project", "mainStory", "CH2")),

@@ -10,7 +10,7 @@ main.floors.main_ch2_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_road.png",
+            "name": "ms_bg_bookstore_a.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_road.png",
+            "image": "ms_bg_bookstore_a.png",
             "loc": [
                 0,
                 0
@@ -359,7 +359,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_bookstore_a.png",
             "loc": [
                 0,
                 0
@@ -576,7 +576,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_warehouse.png",
             "loc": [
                 0,
                 0
@@ -778,7 +778,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_street.png",
+            "image": "ms_bg_street.png",
             "loc": [
                 0,
                 0
@@ -1106,7 +1106,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "scene_mapo_shop.png",
+            "image": "ms_bg_family_restaurant.png",
             "loc": [
                 0,
                 0
@@ -1794,7 +1794,7 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "scene_street.png",
+                            "image": "ms_bg_warehouse_district.png",
                             "loc": [
                                 0,
                                 0
@@ -1870,7 +1870,7 @@ main.floors.main_ch2_2=
                             "image": "ms_ch2_keng_bicycle_action_cg.png",
                             "sloc": [
                                 0,
-                                13,
+                                0,
                                 416,
                                 286
                             ],
@@ -2087,7 +2087,7 @@ main.floors.main_ch2_2=
                             "image": "ms_ch2_eri_sunset_action_cg.png",
                             "sloc": [
                                 0,
-                                13,
+                                0,
                                 416,
                                 286
                             ],

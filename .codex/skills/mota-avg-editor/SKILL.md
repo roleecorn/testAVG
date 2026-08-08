@@ -58,7 +58,9 @@ Route each task through the smallest applicable branch:
 - Akiba event state and API: [akiba-event-manager.md](references/akiba-event-manager.md)
 - Character art style: [character-art-style.md](references/character-art-style.md)
 
-Keep `project/mainStory/CH1`–`CH6` as the main-story source of truth and `project/story/*.txt` as the character-story source of truth. Treat scene/floor files as derived game implementations. Main-story regeneration must pass `node scripts/generate_main_story.js --check` before writing floors.
+Keep `project/mainStory/CH1`–`CH6` as the main-story source of truth and `project/story/*.txt` as the character-story source of truth. Treat scene/floor files as derived game implementations. Main story and character stories share one global AVG layout contract; only their trigger flow and source-file location differ. Existing legacy character-story floors are deferred migration debt while the layout is still being finalized, not an allowed alternate layout.
+
+For registered action CGs, `*_cg.png` is the authoritative master and `*_action_cg.png` is generated. Rebuild changed masters with `python scripts/build_action_cgs.py`, then require `node scripts/generate_main_story.js --check` to pass before writing main-story floors. Each named location also owns one unique background filename; generic `scene_*.png` files may seed placeholders but must never be overwritten to update a single location.
 
 ## Validation
 
