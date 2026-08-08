@@ -13,6 +13,24 @@
 
 ## 待補劇情
 
+- project/mainStory/CH1 1-4：【CG：小兔子黑暗無限破】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH1 1-4：製作指令「【梗平的立繪左右平移】」尚未轉成正式事件。
+- project/mainStory/CH2 2-1：【CG：小兔子黑暗無限破】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-4：【CG：小兔子黑暗無限破】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-4：【CG：梗平英雄救美(？】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-4：行內製作指令「【字體放大】」尚未轉成正式事件。
+- project/mainStory/CH3 3-1：【CG：梗平癱倒在地看著檢官離開】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-1：【CG：魔法少女梗平衝向觸手怪】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-1：製作指令「【梗平(女)替換為梗平】」尚未轉成正式事件。
+- project/mainStory/CH3 3-1：製作指令「【梗平替換為梗平(女)】」尚未轉成正式事件。
+- project/mainStory/CH3 3-3：【CG：一群人中間的發光傑士塔威】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH4 4-1：【CG：梗平、表妹對決大鱷魚】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH4 4-1：【CG：黑衣大漢包圍眾人】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH4 4-2：【CG：梗平雙手放在貝琪肩上】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH5 5-1：【CG：書店裡的小薄本山】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH5 5-1：【CG：梗平與警察肩並肩向前】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-1：【CG：梗平高舉智乃】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-1：【CG：肥宅湧出書店A】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH6 6-4：【後日談時間】 尚未撰寫，已以文字標記保留。
 - project/mainStory/CH6 6-4：【播放炫酷的結尾小動畫】 尚未製作正式結尾動畫，目前用既有轉場影片事件暫代。
 - `project/mainStory/CH3 3-1`：街頭賣藝分歧目前原稿為「嘆息寫」，已保留為可回流分歧。

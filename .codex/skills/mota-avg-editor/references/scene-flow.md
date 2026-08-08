@@ -18,11 +18,13 @@
 
 AVG 推薦畫面策略：
 
-- 場景背景：放樓層 `images` 的 `canvas: "bg"`，或用 `showImage` 編號 1 顯示。
+- 現行畫布：544×416（17×13）；舊 416×416 舞台位於左側，新增的 128 像素在右側。
+- 場景背景：既有 416×416 背景放樓層 `images` 的 `canvas: "bg"`、`x: 0, y: 0`，或用 `showImage` 編號 1、`loc: [0, 0]` 顯示；不要自動拉伸。
 - 角色立繪：每句對話只顯示當前發言者；可用 `showImage/hideImage`，或用樓層 `images` 搭配 `showFloorImg/hideFloorImg` 切換。站位以下方對話框遮住下半身、上半身露出為準。
-- CG：用 `showImage` 編號 25-40，必要時蓋過色調。
+- CG：用 `showImage` 編號 25-40，中央面板固定為 `loc: [112, 50, 320, 220]`；來源先以 16:11 的 `sloc` 裁切，必要時蓋過色調。
+- 固定一秒動作 CG：沿用同一個 320×220 面板，事件順序固定為 `showImage` → `sleep(1000, noSkip)` → `hideImage`。
 - 黑幕/白幕轉場：用 `setCurtain` 或高編號 `showImage`。
-- 對話框：用顯示文章字串，不要用圖片蓋住 UI。
+- 對話框：使用 `setText.position: "down"` 與顯示文章字串；標準範圍為 `(13,295)–(531,411)`，不要用圖片蓋住 UI。
 - 地圖本身：全部用 `0` 即可；若需要點擊或移動觸發，再放 NPC 或透明事件點。
 - 地圖英雄：本專案預設以透明 `hero.png` 隱形；引擎也支援 `hideHero/showHero`，底層是切換 `flag:__heroOpacity__`，但 AVG 預設不依賴事件逐場隱藏。
 
@@ -41,7 +43,7 @@ AVG 推薦畫面策略：
 ```js
 [
     {"type": "playBgm", "name": "opening.mp3", "keep": true},
-    {"type": "showImage", "code": 10, "image": "keng_neutral_portrait.png", "loc": [28, 210], "opacity": 1, "time": 300},
+    {"type": "showImage", "code": 10, "image": "keng_neutral_portrait.png", "loc": [28, "textTop"], "opacity": 1, "time": 300},
     "\t[梗平]走吧，故事要開始了。",
     {"type": "changeFloor", "floorId": "scene_002", "loc": [6, 10], "direction": "up", "time": 500}
 ]

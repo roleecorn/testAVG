@@ -46,17 +46,6 @@ main.floors.main_ch4_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.main_ch4_1=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.main_ch4_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.main_ch4_1=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.main_ch4_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.main_ch4_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.main_ch4_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.main_ch4_1=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.main_ch4_1=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -462,7 +514,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "B：梗平，我們先走了喔",
+        "\t[友人B]（手機）梗平，我們先走了喔",
         {
             "type": "hideImage",
             "code": 10,
@@ -475,7 +527,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "B：我們要去找其他能夠進入書店A的方式了",
+        "\t[友人B]（手機）我們要去找其他能夠進入書店A的方式了",
         {
             "type": "hideImage",
             "code": 10,
@@ -488,7 +540,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "A：看你睡得很香就沒吵你了",
+        "\t[友人A]（手機）看你睡得很香就沒吵你了",
         {
             "type": "hideImage",
             "code": 10,
@@ -851,7 +903,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "友人A：找到能解決書店A問題的方式了",
+        "\t[友人A]（手機）找到能解決書店A問題的方式了",
         {
             "type": "hideImage",
             "code": 10,
@@ -864,7 +916,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "友人A：可以的話晚上11點在雜貨店集合",
+        "\t[友人A]（手機）可以的話晚上11點在雜貨店集合",
         {
             "type": "hideImage",
             "code": 10,
@@ -877,7 +929,18 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "梗平：一定到",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]（手機）一定到",
         {
             "type": "hideImage",
             "code": 10,
@@ -890,7 +953,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "友人A：如果可以的話幫忙多找一點人手",
+        "\t[友人A]（手機）如果可以的話幫忙多找一點人手",
         {
             "type": "hideImage",
             "code": 10,
@@ -940,7 +1003,18 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "梗平：我在找可以和我在一起(解決肥宅)的人",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]（手機）我在找可以和我在一起(解決肥宅)的人",
         {
             "type": "hideImage",
             "code": 10,
@@ -953,7 +1027,18 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "梗平：(幫忙的事)可以答應我嗎",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]（手機）(幫忙的事)可以答應我嗎",
         {
             "type": "hideImage",
             "code": 10,
@@ -966,7 +1051,18 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "梗平：我還有一點事情要忙，十一點後在雜貨店後相見吧",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]（手機）我還有一點事情要忙，十一點後在雜貨店後相見吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -979,7 +1075,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "貝琪：太好了，我願意",
+        "\t[貝琪]（手機）太好了，我願意",
         {
             "type": "hideImage",
             "code": 10,
@@ -1005,7 +1101,18 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "表妹：表哥，我在河邊找到了一條奇怪的大鱷魚",
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [
+                260,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[表妹]（手機）表哥，我在河邊找到了一條奇怪的大鱷魚",
         {
             "type": "hideImage",
             "code": 10,
@@ -1018,7 +1125,18 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "表妹：如果你有空的話就來幫我吧",
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [
+                260,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[表妹]（手機）如果你有空的話就來幫我吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1031,20 +1149,18 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "梗平：什麼奇怪的大鱷魚？",
         {
-            "type": "hideImage",
+            "type": "showImage",
             "code": 10,
-            "time": 0,
-            "async": true
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
         },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "梗平：這肯定是修卡的造物，我現在就來！",
+        "\t[梗平]（手機）什麼奇怪的大鱷魚？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1068,7 +1184,31 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下先走了！",
+        "\t[梗平]（手機）這肯定是修卡的造物，我現在就來！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]我先走了！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1342,7 +1482,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]可惡，拖下去只會對我等越來越不利",
+        "\t[梗平]可惡，拖下去只會對我們越來越不利",
         {
             "type": "hideImage",
             "code": 10,
@@ -1414,7 +1554,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]這個是我等羈絆的力量啊！",
+        "\t[梗平]這個是我們羈絆的力量啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1431,9 +1571,17 @@ main.floors.main_ch4_1=
             "type": "showImage",
             "code": 30,
             "image": "scene_mapo_cg.png",
-            "loc": [
+            "sloc": [
                 0,
-                0
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
             "time": 250
@@ -1720,7 +1868,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]不！在下的限量變身腰帶",
+        "\t[梗平]不！我的限量變身腰帶",
         {
             "type": "hideImage",
             "code": 10,
@@ -1842,7 +1990,7 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]希望你順便修好了在下的假面騎士系統，在下先走了",
+        "\t[梗平]希望你順便修好了在下的假面騎士系統，我先走了",
         {
             "type": "hideImage",
             "code": 10,
@@ -2287,9 +2435,17 @@ main.floors.main_ch4_1=
                             "type": "showImage",
                             "code": 30,
                             "image": "scene_mapo_cg.png",
-                            "loc": [
+                            "sloc": [
                                 0,
-                                0
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
                             "time": 250
@@ -2562,7 +2718,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]不！在下的假面騎士腰帶！",
+                        "\t[梗平]不！我的假面騎士腰帶！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2640,7 +2796,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「沒錯，而且這還能挽回在下在大家心中的風評」",
+                        "\t[梗平]「沒錯，而且這還能挽回我在大家心中的風評」",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2779,7 +2935,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「剛好就由在下這個假面騎士來幫大家解決問題」",
+                        "\t[梗平]「剛好就由我這個假面騎士來幫大家解決問題」",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2879,20 +3035,7 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平，影逝二度",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "【劇情推進】"
+                        "梗平，影逝二度"
                     ]
                 }
             ]

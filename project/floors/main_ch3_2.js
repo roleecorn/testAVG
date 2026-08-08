@@ -46,17 +46,6 @@ main.floors.main_ch3_2=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.main_ch3_2=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.main_ch3_2=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.main_ch3_2=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.main_ch3_2=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.main_ch3_2=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.main_ch3_2=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.main_ch3_2=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.main_ch3_2=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -581,7 +633,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]喜歡的女性什麼的......在下也不是很清楚",
+        "\t[梗平]喜歡的女性什麼的......我也不是很清楚",
         {
             "type": "hideImage",
             "code": 10,
@@ -829,7 +881,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "友人B：梗平，你在哪裡？",
+        "\t[友人B]（手機）梗平，你在哪裡？",
         {
             "type": "hideImage",
             "code": 10,
@@ -842,20 +894,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "友人B：我們在書店A前面要討論怎麼樣攻進去了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "梗平：馬上過來",
+        "\t[友人B]（手機）我們在書店A前面要討論怎麼樣攻進去了",
         {
             "type": "hideImage",
             "code": 10,
@@ -879,7 +918,31 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]嗯，謝謝你願意聽在下分享在下喜歡的東西",
+        "\t[梗平]（手機）馬上過來",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]嗯，謝謝你願意聽我分享我喜歡的東西",
         {
             "type": "hideImage",
             "code": 10,
@@ -903,7 +966,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下有一件很重要的事情要去辦，可以拜託你送在下回秋葉原嗎",
+        "\t[梗平]我有一件很重要的事情要去辦，可以拜託你送我回秋葉原嗎",
         {
             "type": "hideImage",
             "code": 10,
@@ -1105,7 +1168,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "友人B：梗平，剩你還沒到了",
+        "\t[友人B]（手機）梗平，剩你還沒到了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1118,7 +1181,18 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "梗平：馬上來",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]（手機）馬上來",
         {
             "type": "hideImage",
             "code": 10,

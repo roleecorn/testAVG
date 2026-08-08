@@ -1,6 +1,6 @@
 ---
 name: mota-action-cg
-description: Integrate short action CG cut-ins for H5 Mota AVG scenes in D:\coding\mota-js. Use as a mota-avg-editor child Skill for 行為 CG、動作 CG、短暫 CG, or a centered 4:3 image shown for one unskippable second; use directly only when the user explicitly names this Skill.
+description: Integrate short action CG cut-ins for H5 Mota AVG scenes in D:\coding\mota-js. Use as a mota-avg-editor child Skill for 行為 CG、動作 CG、短暫 CG, or a centered 16:11 panel shown for one unskippable second; use directly only when the user explicitly names this Skill.
 ---
 
 # Mota Action CG
@@ -14,7 +14,7 @@ Integrate a non-interactive CG cut-in with one project-wide layout and timing co
 
 ## Outputs
 
-- Produce or update one registered 4:3 CG asset and its exact `showImage` → `sleep` → `hideImage` event sequence.
+- Produce or update one registered CG asset, a 16:11 visible crop, and its exact `showImage` → `sleep` → `hideImage` event sequence.
 - Return the touched floor, asset, registration, question/TODO, and validation results to the caller.
 
 ## Dependencies
@@ -26,7 +26,7 @@ Integrate a non-interactive CG cut-in with one project-wide layout and timing co
 ## Blocking Conditions
 
 - Stop the affected CG branch when the scene beat, asset identity, crop authority, or permission to generate a missing image is unresolved.
-- Do not silently generate a new CG, stretch a non-4:3 asset, or modify engine/plugin code.
+- Do not silently generate a new CG, stretch an asset to the panel ratio, or modify engine/plugin code.
 
 ## Non-blocking Questions
 
@@ -37,7 +37,7 @@ Integrate a non-interactive CG cut-in with one project-wide layout and timing co
 
 - Use image code `30`. It is above color effects and normal portraits but below the dialogue UI.
 - Treat the reference screenshot as a full-screen placement example, not as the CG source image. Identify only the bordered CG panel when measuring its position.
-- Draw the 4:3 CG into `loc: [48, 50, 320, 240]`. This horizontally centers it on the 416 × 416 UI canvas, leaving 48 pixels on each side; `x: 48` and `y: 50` come from the CG panel's relative position in the reference screenshot.
+- Draw the visible CG crop into `loc: [112, 50, 320, 220]`. This matches the measured panel in the 544 × 416 reference screenshot: `x: 112` horizontally centers the 320-pixel panel, while `y: 50` and height `220` preserve its vertical range.
 - Show and hide instantly with `time: 0`; the one-second hold begins only after the image is fully visible.
 - Hold with `{"type": "sleep", "time": 1000, "noSkip": true}`. Do not use `wait`; `wait` waits for player input.
 - Clear code `30` explicitly after the hold, even though changing floors also clears `image*` canvases.
@@ -50,17 +50,17 @@ Normal replay mode intentionally shortens `sleep` events; the one-second guarant
 
 1. Put the image in `project/images/`.
 2. Use a descriptive filename such as `<scene>_<beat>_action_cg.png`.
-3. Verify that the visible source area is exactly 4:3. Prefer a 320 × 240 source; larger 4:3 sources are allowed.
-4. Do not stretch a non-4:3 source. Crop or pad it to 4:3 first. If the correct asset is missing, follow the project placeholder-CG and TODO rules.
+3. Verify that the visible source area is exactly 16:11. Prefer a 320 × 220 source; larger sources are allowed when `sloc` selects a 16:11 crop.
+4. Do not stretch a source into 16:11. Crop or pad it first. For a 416 × 312 source, the standard centered crop is `sloc: [0, 13, 416, 286]`. If the correct asset is missing, follow the project placeholder-CG and TODO rules.
 5. Add a new filename to `project/data.js -> main.images`; do not duplicate an existing registration.
 
-Use the whole source image as `sloc`. Read its actual dimensions rather than guessing them.
+Read the source image's actual dimensions, then set `sloc` to the exact 16:11 visible crop. Use the whole image only when the source itself is already 16:11.
 
 ## Handoff
 
 Use the native event sequence `showImage` → `sleep` → `hideImage`; do not add engine or plugin code for this behavior. Insert it immediately after the dialogue line or narration beat that triggers the visual, then return the event block and validation evidence to the caller.
 
-For a 1280 × 960 source:
+For a 1280 × 960 source, crop 40 pixels from both the top and bottom:
 
 ```js
 [
@@ -68,8 +68,8 @@ For a 1280 × 960 source:
         "type": "showImage",
         "code": 30,
         "image": "scene_reaction_action_cg.png",
-        "sloc": [0, 0, 1280, 960],
-        "loc": [48, 50, 320, 240],
+        "sloc": [0, 40, 1280, 880],
+        "loc": [112, 50, 320, 220],
         "opacity": 1,
         "time": 0
     },
@@ -86,15 +86,15 @@ For a 1280 × 960 source:
 ]
 ```
 
-For an exact 320 × 240 source, still include both `sloc` and the four-value `loc` so the action-CG contract is explicit:
+For an exact 320 × 220 source, still include both `sloc` and the four-value `loc` so the action-CG contract is explicit:
 
 ```js
 {
     "type": "showImage",
     "code": 30,
     "image": "scene_reaction_action_cg.png",
-    "sloc": [0, 0, 320, 240],
-    "loc": [48, 50, 320, 240],
+    "sloc": [0, 0, 320, 220],
+    "loc": [112, 50, 320, 220],
     "opacity": 1,
     "time": 0
 }
@@ -104,8 +104,8 @@ Do not insert player-visible text such as `【行為CG：...】`.
 
 ## Validation
 
-- Confirm the registered asset exists and its visible area is 4:3.
+- Confirm the registered asset exists and its `sloc` visible area is 16:11.
 - Confirm the event order is exactly `showImage(code 30)` → `sleep(1000, noSkip)` → `hideImage(code 30)`.
-- Confirm `loc` is `[48, 50, 320, 240]` and neither show nor hide uses a fade.
+- Confirm `loc` is `[112, 50, 320, 220]` and neither show nor hide uses a fade.
 - Run `node --check` on each touched floor file.
 - Inspect `git diff --name-only` and `git diff --stat`; do not stage unless the user explicitly asks.

@@ -22,7 +22,7 @@ Coordinate H5 Mota AVG work from one root and hand atomic artifacts to canonical
 ## Dependencies
 
 - Project Skill: `anime-expression-grid` — generate a project six-expression sheet.
-- Project Skill: `mota-action-cg` — integrate a fixed 4:3 one-second action CG.
+- Project Skill: `mota-action-cg` — integrate a fixed 16:11 one-second action CG panel.
 - Load only the canonical references required by the current branch; never copy their rules into another Skill.
 - Never allow a child Skill to load this root again during the same task.
 
@@ -58,7 +58,7 @@ Route each task through the smallest applicable branch:
 - Akiba event state and API: [akiba-event-manager.md](references/akiba-event-manager.md)
 - Character art style: [character-art-style.md](references/character-art-style.md)
 
-Keep `project/story/*.txt` as the character-story source of truth. Treat scene/floor files as derived game implementations.
+Keep `project/mainStory/CH1`–`CH6` as the main-story source of truth and `project/story/*.txt` as the character-story source of truth. Treat scene/floor files as derived game implementations. Main-story regeneration must pass `node scripts/generate_main_story.js --check` before writing floors.
 
 ## Validation
 

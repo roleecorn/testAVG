@@ -46,17 +46,6 @@ main.floors.main_ch2_4=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.main_ch2_4=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.main_ch2_4=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.main_ch2_4=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.main_ch2_4=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.main_ch2_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.main_ch2_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.main_ch2_4=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.main_ch2_4=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -403,7 +455,7 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "416：你是不是又去打小鋼珠了，30分鐘內沒看到你就死定了",
+        "\t[416]（手機）你是不是又去打小鋼珠了，30分鐘內沒看到你就死定了",
         {
             "type": "hideImage",
             "code": 10,
@@ -453,7 +505,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我等這到底是在哪裡",
+        "\t[梗平]我們這到底是在哪裡",
         {
             "type": "hideImage",
             "code": 10,
@@ -490,7 +542,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]那看來我等應該就是在書店A內部的某個地方了",
+        "\t[梗平]那看來我們應該就是在書店A內部的某個地方了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1301,7 +1353,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]哈哈哈哈，我等走吧",
+                        "\t[梗平]哈哈哈哈，我們走吧",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1416,7 +1468,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]那這裡可能會有線索，在下有找到導覽手冊，我等分別去搜索吧！",
+                        "\t[梗平]那這裡可能會有線索，我有找到導覽手冊，我們分別去搜索吧！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1479,7 +1531,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "\t[IB]一起走吧？【字體放大】",
+                        "\t[IB]一起走吧？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1540,7 +1592,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]出發前往三樓吧！在下的假面騎士之魂告訴在下那裡肯定有線索",
+                        "\t[梗平]出發前往三樓吧！我的假面騎士之魂告訴我那裡肯定有線索",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1764,7 +1816,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]唉呦，把在下弄哪來了？這還是秋葉原嗎？",
+                        "\t[梗平]唉呦，把我弄哪來了？這還是秋葉原嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2131,7 +2183,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我等明天見啊",
+                        "\t[梗平]我們明天見啊",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2315,9 +2367,17 @@ main.floors.main_ch2_4=
                             "type": "showImage",
                             "code": 30,
                             "image": "scene_mapo_cg.png",
-                            "loc": [
+                            "sloc": [
                                 0,
-                                0
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
                             "time": 250
@@ -2511,7 +2571,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]是說友人A去哪裡了，不是他叫在下過來的嗎？",
+                        "\t[梗平]是說友人A去哪裡了，不是他叫我過來的嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2591,9 +2651,17 @@ main.floors.main_ch2_4=
                             "type": "showImage",
                             "code": 30,
                             "image": "scene_mapo_cg.png",
-                            "loc": [
+                            "sloc": [
                                 0,
-                                0
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
                             "time": 250

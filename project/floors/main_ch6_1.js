@@ -46,17 +46,6 @@ main.floors.main_ch6_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.main_ch6_1=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.main_ch6_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.main_ch6_1=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.main_ch6_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.main_ch6_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.main_ch6_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.main_ch6_1=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.main_ch6_1=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -394,9 +446,17 @@ main.floors.main_ch6_1=
             "type": "showImage",
             "code": 30,
             "image": "scene_mapo_cg.png",
-            "loc": [
+            "sloc": [
                 0,
-                0
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
             "time": 250
@@ -429,7 +489,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]不要小看在下這幾天被你們衝撞的經驗啊！",
+        "\t[梗平]不要小看我這幾天被你們衝撞的經驗啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -490,7 +550,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下必須現在回去，假面騎士有必須守護住的事物啊！",
+        "\t[梗平]我必須現在回去，假面騎士有必須守護住的事物啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -744,7 +804,18 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "梗平：肥宅們從書店A裡湧出來了，不要隨便出門啊",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]（手機）肥宅們從書店A裡湧出來了，不要隨便出門啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -757,7 +828,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "友人A：認真？現在？",
+        "\t[友人A]（手機）認真？現在？",
         {
             "type": "hideImage",
             "code": 10,
@@ -770,7 +841,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "友人C：不是吧......",
+        "\t[友人C]（手機）不是吧......",
         {
             "type": "hideImage",
             "code": 10,
@@ -783,7 +854,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "友人B：看來得加快動作了",
+        "\t[友人B]（手機）看來得加快動作了",
         {
             "type": "hideImage",
             "code": 10,
@@ -796,7 +867,18 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "表妹：剛剛試著走出去，差點被撞暈",
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [
+                260,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[表妹]（手機）剛剛試著走出去，差點被撞暈",
         {
             "type": "hideImage",
             "code": 10,
@@ -963,7 +1045,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "友人Ｃ：我們拿到肥宅們的聖物了，但是沒辦法過去書店A",
+        "\t[友人Ｃ]（手機）我們拿到肥宅們的聖物了，但是沒辦法過去書店A",
         {
             "type": "hideImage",
             "code": 10,
@@ -976,7 +1058,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "友人Ａ：我們都在旅館卡住了，梗平你找找方法過來",
+        "\t[友人Ａ]（手機）我們都在旅館卡住了，梗平你找找方法過來",
         {
             "type": "hideImage",
             "code": 10,
@@ -989,7 +1071,18 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "梗平：果然這種時候還是需要假面騎士啊，交給我吧！",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_smile_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]（手機）果然這種時候還是需要假面騎士啊，交給我吧！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1176,7 +1269,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我等一起把聖物送回去吧！",
+        "\t[梗平]我們一起把聖物送回去吧！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1245,9 +1338,17 @@ main.floors.main_ch6_1=
             "type": "showImage",
             "code": 30,
             "image": "scene_mapo_cg.png",
-            "loc": [
+            "sloc": [
                 0,
-                0
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
             "time": 250

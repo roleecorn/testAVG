@@ -46,17 +46,6 @@ main.floors.main_ch5_1_exchange_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.main_ch5_1_exchange_1=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.main_ch5_1_exchange_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.main_ch5_1_exchange_1=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.main_ch5_1_exchange_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.main_ch5_1_exchange_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.main_ch5_1_exchange_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.main_ch5_1_exchange_1=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.main_ch5_1_exchange_1=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -512,7 +564,7 @@ main.floors.main_ch5_1_exchange_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下的鼻子啊！",
+        "\t[梗平]我的鼻子啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -536,7 +588,7 @@ main.floors.main_ch5_1_exchange_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]可惡，在下一定要找到方法解決你們",
+        "\t[梗平]可惡，我一定要找到方法解決你們",
         {
             "type": "hideImage",
             "code": 10,
@@ -562,7 +614,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "友人A：好，從剛剛救出來了IB的哥哥得到了很有用的資訊",
+        "\t[友人A]（手機）好，從剛剛救出來了IB的哥哥得到了很有用的資訊",
         {
             "type": "hideImage",
             "code": 10,
@@ -575,7 +627,18 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "梗平：什麼？他已經被救出來了！？",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]（手機）什麼？他已經被救出來了！？",
         {
             "type": "hideImage",
             "code": 10,
@@ -588,7 +651,18 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "梗平：那我跟小朋友們的羈絆與約定該怎麼辦啊",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]（手機）那我跟小朋友們的羈絆與約定該怎麼辦啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -601,7 +675,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "友人A：那種東西怎麼樣都好吧",
+        "\t[友人A]（手機）那種東西怎麼樣都好吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -614,7 +688,18 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "梗平：可......可惡",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                28,
+                "textTop"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]（手機）可......可惡",
         {
             "type": "hideImage",
             "code": 10,
@@ -627,7 +712,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "友人A：好消息是我們知道肥宅們為甚麼會這樣了",
+        "\t[友人A]（手機）好消息是我們知道肥宅們為甚麼會這樣了",
         {
             "type": "hideImage",
             "code": 10,
@@ -640,7 +725,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "友人A：他們是因為一個叫「聖物」的東西不見了才會發瘋的",
+        "\t[友人A]（手機）他們是因為一個叫「聖物」的東西不見了才會發瘋的",
         {
             "type": "hideImage",
             "code": 10,
@@ -653,7 +738,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "友人A：所以只要找回聖物就好了",
+        "\t[友人A]（手機）所以只要找回聖物就好了",
         {
             "type": "hideImage",
             "code": 10,
@@ -666,7 +751,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "友人B：那壞消息是什麼呢？",
+        "\t[友人B]（手機）那壞消息是什麼呢？",
         {
             "type": "hideImage",
             "code": 10,
@@ -679,7 +764,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "友人A：聖物被掛在拍賣網站上，要200萬",
+        "\t[友人A]（手機）聖物被掛在拍賣網站上，要200萬",
         {
             "type": "hideImage",
             "code": 10,
@@ -692,7 +777,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "友人C：多...多少？",
+        "\t[友人C]（手機）多...多少？",
         {
             "type": "hideImage",
             "code": 10,
@@ -705,7 +790,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "友人A：200萬，所以沒錯，各位我們要趕快去籌錢了",
+        "\t[友人A]（手機）200萬，所以沒錯，各位我們要趕快去籌錢了",
         {
             "type": "hideImage",
             "code": 10,
@@ -718,7 +803,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "友人A：我要去想辦法賺錢了，再見",
+        "\t[友人A]（手機）我要去想辦法賺錢了，再見",
         {
             "type": "hideImage",
             "code": 10,
@@ -1066,9 +1151,17 @@ main.floors.main_ch5_1_exchange_1=
                             "type": "showImage",
                             "code": 30,
                             "image": "scene_mapo_cg.png",
-                            "loc": [
+                            "sloc": [
                                 0,
-                                0
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
                             "time": 250
@@ -1304,9 +1397,17 @@ main.floors.main_ch5_1_exchange_1=
                             "type": "showImage",
                             "code": 30,
                             "image": "scene_mapo_cg.png",
-                            "loc": [
+                            "sloc": [
                                 0,
-                                0
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
                             "time": 250

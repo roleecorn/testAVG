@@ -46,17 +46,6 @@ main.floors.mapo_1_6=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.mapo_1_6=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.mapo_1_6=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.mapo_1_6=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.mapo_1_6=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.mapo_1_6=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.mapo_1_6=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.mapo_1_6=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.mapo_1_6=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -412,7 +464,7 @@ main.floors.mapo_1_6=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]必須盡快找到博士幫在下解決掉這個問題才行",
+        "\t[梗平]必須盡快找到博士幫我解決掉這個問題才行",
         {
             "type": "hideImage",
             "code": 10,
@@ -748,9 +800,17 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 30,
             "image": "scene_mapo_cg.png",
-            "loc": [
+            "sloc": [
                 0,
-                0
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
             "time": 250
@@ -946,7 +1006,7 @@ main.floors.mapo_1_6=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]你聽在下解釋，大哥哥只是去補充假面騎士的燃料而已",
+        "\t[梗平]你聽我解釋，大哥哥只是去補充假面騎士的燃料而已",
         {
             "type": "hideImage",
             "code": 10,
@@ -1064,7 +1124,7 @@ main.floors.mapo_1_6=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_smile_portrait.png",
             "loc": [
                 28,
                 "textTop"
@@ -1072,7 +1132,7 @@ main.floors.mapo_1_6=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]喔，這就交給在下吧",
+        "\t[梗平]喔，這就交給我吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1305,7 +1365,7 @@ main.floors.mapo_1_6=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]等等，讓在下把話說完！",
+                        "\t[梗平]等等，讓我把話說完！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1342,7 +1402,7 @@ main.floors.mapo_1_6=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下只是覺得要培養小朋友的自主......",
+                        "\t[梗平]我只是覺得要培養小朋友的自主......",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1372,9 +1432,17 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 30,
                             "image": "scene_mapo_cg.png",
-                            "loc": [
+                            "sloc": [
                                 0,
-                                0
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
                             "time": 250
@@ -1613,20 +1681,7 @@ main.floors.mapo_1_6=
                             "time": 0,
                             "async": true
                         },
-                        "\t[三角]算了，應該是錯覺",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "【劇情推進】"
+                        "\t[三角]算了，應該是錯覺"
                     ]
                 }
             ]

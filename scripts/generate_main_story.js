@@ -4,7 +4,16 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const p = (...parts) => path.join(root, ...parts);
 
-const MAP = Array.from({ length: 13 }, () => Array(13).fill(0));
+const MAP_WIDTH = 17;
+const MAP_HEIGHT = 13;
+const VIEWPORT_WIDTH = 544;
+const VIEWPORT_HEIGHT = 416;
+const LEGACY_STAGE_WIDTH = 416;
+const BACKGROUND_LOC = [0, 0];
+const CG_LOC = [112, 50, 320, 220];
+const GENERAL_CG_SLOC = [0, 65, 416, 286];
+
+const MAP = Array.from({ length: MAP_HEIGHT }, () => Array(MAP_WIDTH).fill(0));
 
 const floors = {
   "1-1": { id: "mapo_1_1", title: "主線 CH1 1-1 車站", name: "1-1", bg: "scene_station.png", bgm: "bossa_casual_shop.mp3", next: "mapo_1_2" },
@@ -43,17 +52,32 @@ const bgByName = [
   [/咖啡廳|便利商店|家庭餐廳|書店A內部|高級餐廳|僕咖/, "scene_mapo_shop.png"],
 ];
 
-const cgByName = {
-  "麻婆豆腐店門口": "ms_ch1_mapo_shop_entrance_cg.png",
-  "2.5梗平": "ms_ch1_keng_2_5_cg.png",
-  "放大的鱷魚圖": "ms_ch1_thunder_crocodile_cg.png",
-  "梗平被腳踏車撞飛": "ms_ch2_keng_bicycle_cg.png",
-  "夕陽下的神祕少女": "ms_ch2_eri_sunset_cg.png",
+const actionCgByName = {
+  "麻婆豆腐店門口": { image: "ms_ch1_mapo_shop_entrance_action_cg.png", sloc: [0, 13, 416, 286] },
+  "店門口的沙丁魚們": { image: "ms_ch1_mapo_shop_entrance_action_cg.png", sloc: [0, 13, 416, 286] },
+  "梗平參戰": { image: "ms_ch1_keng_join_action_cg.png", sloc: [0, 13, 416, 286] },
+  "2.5梗平": { image: "ms_ch1_keng_2_5_action_cg.png", sloc: [0, 13, 416, 286] },
+  "放大的鱷魚圖": { image: "ms_ch1_thunder_crocodile_action_cg.png", sloc: [0, 13, 416, 286] },
+  "雷霆大鱷魚與梗平對峙": { image: "ms_ch1_thunder_crocodile_action_cg.png", sloc: [0, 13, 416, 286] },
+  "梗平被腳踏車撞飛": { image: "ms_ch2_keng_bicycle_action_cg.png", sloc: [0, 13, 416, 286] },
+  "夕陽下的神祕少女": { image: "ms_ch2_eri_sunset_action_cg.png", sloc: [0, 13, 416, 286] },
 };
 
-const gifByName = {
-  "梗平參戰": "ms_ch1_keng_join_placeholder.png",
+const actionGifByName = {
+  "梗平參戰": { image: "ms_ch1_keng_join_action_cg.png", sloc: [0, 13, 416, 286] },
 };
+
+const requiredActionCgImages = [
+  "ms_ch1_mapo_shop_entrance_action_cg.png",
+  "ms_ch1_keng_join_action_cg.png",
+  "ms_ch1_keng_2_5_action_cg.png",
+  "ms_ch1_thunder_crocodile_action_cg.png",
+  "ms_ch2_keng_bicycle_action_cg.png",
+  "ms_ch2_eri_sunset_action_cg.png",
+];
+const usedActionCgImages = new Set();
+let generatedActionCgCount = 0;
+let generatedPhoneLineCount = 0;
 
 const placeholderAssets = [
   ["project/images/scene_mapo_cg.png", "project/images/ms_ch1_mapo_shop_entrance_cg.png"],
@@ -68,6 +92,12 @@ const extraImages = [
   "ms_ch1_keng_2_5_cg.png",
   "ms_ch1_thunder_crocodile_cg.png",
   "ms_ch1_keng_join_placeholder.png",
+  "ms_ch1_mapo_shop_entrance_action_cg.png",
+  "ms_ch1_keng_2_5_action_cg.png",
+  "ms_ch1_thunder_crocodile_action_cg.png",
+  "ms_ch1_keng_join_action_cg.png",
+  "ms_ch2_keng_bicycle_action_cg.png",
+  "ms_ch2_eri_sunset_action_cg.png",
 ];
 
 const extraBgms = ["ms_ch2_gallery_opening.mp3"];
@@ -142,19 +172,27 @@ function readSections(file) {
   return sections;
 }
 
+function normalizeSourceLine(line) {
+  return line
+    .trim()
+    .replace(/^【背景\s*[：:]\s*/, "【背景：")
+    .replace(/^【CG\s*[：:]\s*/, "【CG：")
+    .replace(/^【GIF\s*[：:]?\s*/, "【GIF ");
+}
+
 function setTextEvent() {
   return {
     type: "setText",
     position: "down",
-    offset: 8,
+    offset: 0,
     align: "left",
     bold: true,
     background: "winskin.png",
     title: [255, 225, 80, 1],
     text: [255, 255, 255, 1],
     titlefont: 22,
-    textfont: 20,
-    lineHeight: 30,
+    textfont: 16,
+    lineHeight: 22,
     time: 10,
     letterSpacing: 0,
     animateTime: 120,
@@ -165,6 +203,25 @@ function hidePortraits() {
   return [
     { type: "hideImage", code: 10, time: 0, async: true },
     { type: "hideImage", code: 11, time: 0, async: true },
+  ];
+}
+
+function actionCgEvents(spec) {
+  usedActionCgImages.add(spec.image);
+  generatedActionCgCount += 1;
+  return [
+    ...hidePortraits(),
+    {
+      type: "showImage",
+      code: 30,
+      image: spec.image,
+      sloc: [...spec.sloc],
+      loc: [...CG_LOC],
+      opacity: 1,
+      time: 0,
+    },
+    { type: "sleep", time: 1000, noSkip: true },
+    { type: "hideImage", code: 30, time: 0 },
   ];
 }
 
@@ -186,8 +243,46 @@ function portraitFor(speaker, text) {
   return null;
 }
 
+function removeInlineProductionDirectives(body, ctx) {
+  return body.replace(/【([^】]+)】/g, (whole, directive) => {
+    if (!/字體|立繪|替換|動畫|CG|GIF|背景/.test(directive)) return whole;
+    storyTodos.add(`${ctx.source} ${ctx.section}：行內製作指令「【${directive}】」尚未轉成正式事件。`);
+    return "";
+  }).trim();
+}
+
+function isBracketedPhoneSpeaker(label) {
+  const normalized = label.trim();
+  return knownSpeakers.has(normalized)
+    || ([...normalized].length <= 8 && !/[，。！？、]/.test(normalized));
+}
+
+function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
+  let body = rawBody.trim();
+  let phone = forcePhone;
+  const phoneBody = body.match(/^\{(.*)\}$/);
+  if (phoneBody) {
+    body = phoneBody[1];
+    phone = true;
+  }
+  body = removeInlineProductionDirectives(body, ctx);
+  if (phone) {
+    body = `（手機）${body}`;
+    generatedPhoneLineCount += 1;
+  }
+
+  const display = knownSpeakers.get(rawName) || rawName;
+  if (/^不知道是誰的/.test(display)) {
+    uncertainSpeakers.add(`${ctx.source} ${ctx.section}：${display}（原始名稱：${rawName}）`);
+  }
+  const portrait = portraitFor(display, body);
+  const clearCg = ctx.cgVisible ? [{ type: "hideImage", code: 30, time: 150 }] : [];
+  ctx.cgVisible = false;
+  return [...hidePortraits(), ...clearCg, ...(portrait ? [portrait] : []), `\t[${display}]${body}`];
+}
+
 function lineToEvents(line, ctx) {
-  const t = line.trim();
+  const t = normalizeSourceLine(line);
   if (!t) return [];
 
   if (/^【背景：/.test(t)) {
@@ -197,22 +292,34 @@ function lineToEvents(line, ctx) {
     return [
       ...hidePortraits(),
       { type: "hideImage", code: 30, time: 150 },
-      { type: "showImage", code: 1, image: bg, loc: [0, 0], opacity: 1, time: 250 },
+      { type: "showImage", code: 1, image: bg, loc: [...BACKGROUND_LOC], opacity: 1, time: 250 },
     ];
   }
 
   if (/^【CG：/.test(t)) {
     const name = t.replace(/^【CG：/, "").replace(/】$/, "");
-    const image = cgByName[name] || "scene_mapo_cg.png";
+    const actionCg = actionCgByName[name];
+    if (actionCg) {
+      ctx.cgVisible = false;
+      return actionCgEvents(actionCg);
+    }
+    const image = "scene_mapo_cg.png";
+    storyTodos.add(`${ctx.source} ${ctx.section}：【CG：${name}】尚無專用素材，暫用 ${image}。`);
     ctx.cgVisible = true;
-    return [...hidePortraits(), { type: "showImage", code: 30, image, loc: [0, 0], opacity: 1, time: 250 }];
+    return [...hidePortraits(), { type: "showImage", code: 30, image, sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
   }
 
   if (/^【GIF /.test(t)) {
     const name = t.replace(/^【GIF\s*/, "").replace(/】$/, "");
-    const image = gifByName[name] || "ms_ch1_keng_join_placeholder.png";
+    const actionCg = actionGifByName[name];
+    if (actionCg) {
+      ctx.cgVisible = false;
+      return actionCgEvents(actionCg);
+    }
+    const image = "ms_ch1_keng_join_placeholder.png";
+    storyTodos.add(`${ctx.source} ${ctx.section}：【GIF ${name}】尚無專用素材，暫用 ${image}。`);
     ctx.cgVisible = true;
-    return [...hidePortraits(), { type: "showImage", code: 30, image, loc: [0, 0], opacity: 1, time: 250 }];
+    return [...hidePortraits(), { type: "showImage", code: 30, image, sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
   }
 
   if (/^【BE/.test(t) || /^【.*結束】$/.test(t) || /^【.*END.*】$/.test(t)) {
@@ -247,13 +354,23 @@ function lineToEvents(line, ctx) {
 
   if (/^\[END：/.test(t)) return [...hidePortraits(), t.replace(/^\[/, "【").replace(/\]$/, "】")];
 
+  const bracketedDialogue = t.match(/^\[([^\[\]]+?)[：:](.*)\]$/);
+  if (bracketedDialogue && isBracketedPhoneSpeaker(bracketedDialogue[1])) {
+    return dialogueToEvents(bracketedDialogue[1].trim(), bracketedDialogue[2], ctx, true);
+  }
+
   if (/^\[.*\]$/.test(t)) return [...hidePortraits(), t.slice(1, -1)];
+
+  if (/^【.*(?:立繪|替換|字體|動畫|小遊戲).*】$/.test(t)) {
+    storyTodos.add(`${ctx.source} ${ctx.section}：製作指令「${t}」尚未轉成正式事件。`);
+    return [{ type: "comment", text: `TODO: ${t}` }];
+  }
 
   if (/^\(.+\)$/.test(t)) {
     const mediaName = t.slice(1, -1).trim();
-    if (cgByName[mediaName]) {
-      ctx.cgVisible = true;
-      return [...hidePortraits(), { type: "showImage", code: 30, image: cgByName[mediaName], loc: [0, 0], opacity: 1, time: 250 }];
+    if (actionCgByName[mediaName]) {
+      ctx.cgVisible = false;
+      return actionCgEvents(actionCgByName[mediaName]);
     }
     if (/鴿子|沒打完|補|自己補|可以再追加|OOO|音樂|嘆息|小遊戲|動畫|後日談|人物交流/.test(t)) storyTodos.add(`${ctx.source} ${ctx.section}：${t}`);
     if (/美術館開場的音樂/.test(t)) {
@@ -265,19 +382,7 @@ function lineToEvents(line, ctx) {
   const colon = t.match(/^(.+?)[：:](.*)$/);
   if (colon) {
     const rawName = colon[1].trim();
-    let body = colon[2].trim();
-    if (rawName === "梗" || rawName === "梗平") {
-      body = body.replace(/在我(?=\d+歲)/g, "在下");
-      body = body.replaceAll("我們", "\uFFFF").replaceAll("我", "在下").replaceAll("\uFFFF", "我等");
-    }
-    const phone = body.match(/^\{(.*)\}$/);
-    if (phone) body = `（手機）${phone[1]}`;
-    const display = knownSpeakers.get(rawName) || rawName;
-    if (/^不知道是誰的/.test(display)) uncertainSpeakers.add(`${ctx.source} ${ctx.section}：${display}（原始名稱：${rawName}）`);
-    const portrait = portraitFor(display, body);
-    const clearCg = ctx.cgVisible ? [{ type: "hideImage", code: 30, time: 150 }] : [];
-    ctx.cgVisible = false;
-    return [...hidePortraits(), ...clearCg, ...(portrait ? [portrait] : []), `\t[${display}]${body}`];
+    return dialogueToEvents(rawName, colon[2], ctx);
   }
 
   return [...hidePortraits(), t];
@@ -342,7 +447,7 @@ function parseEvents(lines, start, ctx, stopLabels = null) {
       events.push({ type: "changeFloor", floorId: ctx.floorId, loc: [6, 10], direction: "up", time: 0 });
       return { events, index: i + 1, stoppedByMarker: true };
     }
-    if (/^【(?:進到)?推進劇情】$/.test(t)) {
+    if (/^【(?:劇情推進|(?:進到)?推進劇情)】$/.test(t)) {
       return { events, index: i + 1, stoppedByMarker: true };
     }
     events.push(...lineToEvents(lines[i], ctx));
@@ -413,7 +518,7 @@ function buildFloor(section, lines, overrides = {}) {
   const events = [
     setTextEvent(),
     { type: "playBgm", name: meta.bgm },
-    { type: "showImage", code: 1, image: meta.bg, loc: [0, 0], opacity: 1, time: 0 },
+    { type: "showImage", code: 1, image: meta.bg, loc: [...BACKGROUND_LOC], opacity: 1, time: 0 },
     ...hidePortraits(),
     `【${meta.title}】`,
     ...parsed.events,
@@ -440,8 +545,8 @@ function buildFloor(section, lines, overrides = {}) {
     bgm: meta.bgm,
     ratio: 1,
     map: MAP,
-    width: 13,
-    height: 13,
+    width: MAP_WIDTH,
+    height: MAP_HEIGHT,
     firstArrive: [],
     eachArrive: events,
     parallelDo: "",
@@ -458,7 +563,35 @@ function buildFloor(section, lines, overrides = {}) {
     fgmap: [],
   };
 
+  validateGeneratedFloor(floor);
   return `main.floors.${meta.id}=\n${JSON.stringify(floor, null, 4)}\n`;
+}
+
+function walkEvents(events, visitor) {
+  for (const event of events || []) {
+    visitor(event);
+    if (!event || typeof event !== "object") continue;
+    if (event.type === "choices") {
+      for (const choice of event.choices || []) walkEvents(choice.action, visitor);
+    }
+    if (Array.isArray(event.data)) walkEvents(event.data, visitor);
+    if (Array.isArray(event.true)) walkEvents(event.true, visitor);
+    if (Array.isArray(event.false)) walkEvents(event.false, visitor);
+  }
+}
+
+function validateGeneratedFloor(floor) {
+  if (floor.width !== MAP_WIDTH || floor.height !== MAP_HEIGHT) {
+    throw new Error(`${floor.floorId}: expected ${MAP_WIDTH}x${MAP_HEIGHT}`);
+  }
+  if (floor.map.length !== MAP_HEIGHT || floor.map.some((row) => row.length !== MAP_WIDTH)) {
+    throw new Error(`${floor.floorId}: map dimensions do not match width/height`);
+  }
+  walkEvents(floor.eachArrive, (event) => {
+    if (typeof event === "string" && /^【(?:CG|GIF|背景)\s*[：:]/.test(event)) {
+      throw new Error(`${floor.floorId}: player-visible production directive: ${event}`);
+    }
+  });
 }
 
 function ensureAssets() {
@@ -582,8 +715,48 @@ function updateTodo() {
   fs.writeFileSync(p("project", "mainStory", "TODO.md"), todoLines.join("\n") + "\n", "utf8");
 }
 
+function validateRuntimeRegistrations(expectedPhoneLineCount) {
+  const dataText = fs.readFileSync(p("project", "data.js"), "utf8");
+  for (const image of extraImages) {
+    if (!fs.existsSync(p("project", "images", image))) throw new Error(`Missing image asset: ${image}`);
+    if (!dataText.includes(`"${image}"`)) throw new Error(`Image is not registered in project/data.js: ${image}`);
+  }
+  if (VIEWPORT_WIDTH !== MAP_WIDTH * 32 || VIEWPORT_HEIGHT !== MAP_HEIGHT * 32) {
+    throw new Error("Viewport constants do not match map dimensions");
+  }
+  if (LEGACY_STAGE_WIDTH !== 416 || BACKGROUND_LOC.join(",") !== "0,0") {
+    throw new Error("Legacy 416x416 backgrounds must remain at the stage origin");
+  }
+  if (CG_LOC[0] !== (VIEWPORT_WIDTH - CG_LOC[2]) / 2 || CG_LOC.join(",") !== "112,50,320,220") {
+    throw new Error("CG panel must match the 544x416 reference layout");
+  }
+  if (GENERAL_CG_SLOC.join(",") !== "0,65,416,286" || GENERAL_CG_SLOC[2] * 11 !== GENERAL_CG_SLOC[3] * 16) {
+    throw new Error("General CG crop must be the centered 16:11 crop of a 416x416 source");
+  }
+  const text = setTextEvent();
+  const fixedLines = 2;
+  const dialogueHeight = 45 + fixedLines * text.lineHeight + text.titlefont + 5;
+  const dialogueTop = VIEWPORT_HEIGHT - dialogueHeight - 5 - text.offset;
+  const dialogueLeft = 7 + 3 * (Math.floor(MAP_WIDTH / 2) - 6);
+  const dialogueRight = VIEWPORT_WIDTH - dialogueLeft;
+  if ([dialogueLeft, dialogueTop, dialogueRight - dialogueLeft, dialogueHeight].join(",") !== "13,295,518,116") {
+    throw new Error("Dialogue box must match the 544x416 reference layout");
+  }
+  const missingActionCg = requiredActionCgImages.filter((image) => !usedActionCgImages.has(image));
+  if (missingActionCg.length) {
+    throw new Error(`Main-story action CG directives are stale or missing: ${missingActionCg.join(", ")}`);
+  }
+  if (generatedActionCgCount !== requiredActionCgImages.length) {
+    throw new Error(`Expected ${requiredActionCgImages.length} action CG events, got ${generatedActionCgCount}`);
+  }
+  if (generatedPhoneLineCount !== expectedPhoneLineCount) {
+    throw new Error(`Expected ${expectedPhoneLineCount} phone lines, got ${generatedPhoneLineCount}`);
+  }
+}
+
 function main() {
-  ensureAssets();
+  const checkOnly = process.argv.includes("--check");
+  if (!checkOnly) ensureAssets();
   const sections = {
     ...readSections(p("project", "mainStory", "CH1")),
     ...readSections(p("project", "mainStory", "CH2")),
@@ -592,30 +765,46 @@ function main() {
     ...readSections(p("project", "mainStory", "CH5")),
     ...readSections(p("project", "mainStory", "CH6")),
   };
+  const expectedPhoneLineCount = Object.values(sections).flat().filter((line) => {
+    const t = line.trim();
+    const bracketed = t.match(/^\[([^\[\]]+?)[：:].*\]$/);
+    return (bracketed && isBracketedPhoneSpeaker(bracketed[1])) || /^.+?[：:]\s*\{.*\}$/.test(t);
+  }).length;
 
+  let generatedFloors = 0;
   for (const key of Object.keys(floors)) {
     const content = sections[key];
     if (!content) throw new Error(`Missing section ${key}`);
     const file = p("project", "floors", `${floors[key].id}.js`);
     const exchange = characterExchanges[key];
     if (!exchange) {
-      fs.writeFileSync(file, buildFloor(key, content), "utf8");
+      const output = buildFloor(key, content);
+      if (!checkOnly) fs.writeFileSync(file, output, "utf8");
+      generatedFloors += 1;
       continue;
     }
 
     const markerIndex = content.findIndex((line) => /^【人物交流時間/.test(line.trim()));
     if (markerIndex < 0) throw new Error(`Missing character exchange marker in section ${key}`);
-    fs.writeFileSync(file, buildFloor(key, content.slice(0, markerIndex + 1), { next: null }), "utf8");
+    const beforeExchange = buildFloor(key, content.slice(0, markerIndex + 1), { next: null });
+    if (!checkOnly) fs.writeFileSync(file, beforeExchange, "utf8");
+    generatedFloors += 1;
     const continuationFile = p("project", "floors", `${exchange.floorId}.js`);
-    fs.writeFileSync(continuationFile, buildFloor(key, content.slice(markerIndex + 1), {
+    const afterExchange = buildFloor(key, content.slice(markerIndex + 1), {
       id: exchange.floorId,
       title: `${floors[key].title}（交流後）`,
-    }), "utf8");
+    });
+    if (!checkOnly) fs.writeFileSync(continuationFile, afterExchange, "utf8");
+    generatedFloors += 1;
   }
 
-  updateData();
-  updateTimeline();
-  updateTodo();
+  if (!checkOnly) {
+    updateData();
+    updateTimeline();
+    updateTodo();
+  }
+  validateRuntimeRegistrations(expectedPhoneLineCount);
+  console.log(`${checkOnly ? "Validated" : "Generated"} ${generatedFloors} main-story floors at ${MAP_WIDTH}x${MAP_HEIGHT}.`);
 }
 
 main();

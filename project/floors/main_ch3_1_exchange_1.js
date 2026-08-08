@@ -46,17 +46,6 @@ main.floors.main_ch3_1_exchange_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.main_ch3_1_exchange_1=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.main_ch3_1_exchange_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.main_ch3_1_exchange_1=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.main_ch3_1_exchange_1=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.main_ch3_1_exchange_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.main_ch3_1_exchange_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.main_ch3_1_exchange_1=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.main_ch3_1_exchange_1=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -406,7 +458,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]你好，在下想要來打工",
+                        "\t[梗平]你好，我想要來打工",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -719,7 +771,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：在下果然很有藝術天分啊",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）在下果然很有藝術天分啊",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -732,7 +795,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "表妹：你不是在書店工作嗎？",
+                        {
+                            "type": "showImage",
+                            "code": 11,
+                            "image": "suou_surprised_portrait.png",
+                            "loc": [
+                                260,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[表妹]（手機）你不是在書店工作嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -745,7 +819,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：沒錯，也正是這個地方才可以欣賞假面騎士的精神",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_smile_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）沒錯，也正是這個地方才可以欣賞假面騎士的精神",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -758,7 +843,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：在下這邊一個小時2000，表妹你那邊怎麼樣",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）在下這邊一個小時2000，表妹你那邊怎麼樣",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -771,7 +867,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "表妹：我打小鋼珠賺到了300000",
+                        {
+                            "type": "showImage",
+                            "code": 11,
+                            "image": "suou_sad_portrait.png",
+                            "loc": [
+                                260,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[表妹]（手機）我打小鋼珠賺到了300000",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -797,7 +904,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：？",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -810,7 +928,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "友人A：？",
+                        "\t[友人A]（手機）？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -823,7 +941,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "友人B：？",
+                        "\t[友人B]（手機）？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -836,7 +954,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "友人C：？",
+                        "\t[友人C]（手機）？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -849,7 +967,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：你竟然先在下一步脫離了窮人的行列嗎？",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）你竟然先在下一步脫離了窮人的行列嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -862,7 +991,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：太可惡了",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）太可惡了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1262,7 +1402,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]快來幫在下一起阻止她！",
+                        "\t[梗平]快來幫我一起阻止她！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1444,9 +1584,17 @@ main.floors.main_ch3_1_exchange_1=
                             "type": "showImage",
                             "code": 30,
                             "image": "scene_mapo_cg.png",
-                            "loc": [
+                            "sloc": [
                                 0,
-                                0
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
                             "time": 250
@@ -1655,7 +1803,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平](或許在下可以試試去街頭彈唱歌，撐個4天，只要每天賺到10000円就好)",
+                        "\t[梗平](或許我可以試試去街頭彈唱歌，撐個4天，只要每天賺到10000円就好)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1905,7 +2053,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]請務必讓在下把天賦帶到你們樂隊，拜託了！！！",
+                        "\t[梗平]請務必讓我把天賦帶到你們樂隊，拜託了！！！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2250,7 +2398,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]這個關在下什麼事，快放開在下！！！",
+                        "\t[梗平]這個關我什麼事，快放開我！！！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2326,7 +2474,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下知道了在下知道了，別哭了，在下答應你就是了！！！",
+                        "\t[梗平]我知道了我知道了，別哭了，我答應你就是了！！！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2534,18 +2682,9 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "數個小時過去了，梗平也發生了翻天覆地的變化",
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
+                            "type": "comment",
+                            "text": "TODO: 【梗平替換為梗平(女)】"
                         },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "【梗平替換為梗平(女)】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2606,7 +2745,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]請容在下女裝到這份工作結束",
+                        "\t[梗平]請容我女裝到這份工作結束",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2769,7 +2908,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]那個...我等大半夜的來這裡幹什麼，還有你們這副魔法少女裝和手上的槍又是什麼",
+                        "\t[梗平]那個...我們大半夜的來這裡幹什麼，還有你們這副魔法少女裝和手上的槍又是什麼",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3141,7 +3280,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]呼，嚇在下一跳",
+                        "\t[梗平]呼，嚇我一跳",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3313,7 +3452,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]接下在下的一擊吧，可惡的觸手怪！",
+                        "\t[梗平]接下我的一擊吧，可惡的觸手怪！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3343,9 +3482,17 @@ main.floors.main_ch3_1_exchange_1=
                             "type": "showImage",
                             "code": 30,
                             "image": "scene_mapo_cg.png",
-                            "loc": [
+                            "sloc": [
                                 0,
-                                0
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
                             "time": 250
@@ -3593,7 +3740,22 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[【背景]訓練室】",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "scene_street.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -4227,7 +4389,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]餵靠的太近了，這個雞翅在下會吃的了，嗚......",
+                        "\t[梗平]餵靠的太近了，這個雞翅我會吃的了，嗚......",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -4607,7 +4769,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下去你的三日月！ ！ ！ ！",
+                        "\t[梗平]我去你的三日月！ ！ ！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -4811,7 +4973,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]我等都要被吃掉了你還在那解說呢，快來救人啊餵！ ？",
+                        "\t[梗平]我們都要被吃掉了你還在那解說呢，快來救人啊餵！ ？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5069,18 +5231,9 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 250
                         },
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
+                            "type": "comment",
+                            "text": "TODO: 【梗平(女)替換為梗平】"
                         },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "【梗平(女)替換為梗平】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5158,7 +5311,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：在下到東京國際展示場附近了，馬上過去",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）在下到東京國際展示場附近了，馬上過去",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5208,20 +5372,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "三日月：速來幫忙打魔獸，這邊打不過了",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "梗平：我也想，但我到東京國際展示場了，實在來不了，抱歉哈",
+                        "\t[三日月]（手機）速來幫忙打魔獸，這邊打不過了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5245,7 +5396,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平](在下才不會回去呢，現在在下要去在下的夢中情地漫展了)",
+                        "\t[梗平]（手機）我也想，但我到東京國際展示場了，實在來不了，抱歉哈",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5258,7 +5409,31 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "三日月：我魔獸所在的地方好像有限量假面騎士腰帶欸。 ",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平](我才不會回去呢，現在我要去我的夢中情地漫展了)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[三日月]（手機）我魔獸所在的地方好像有限量假面騎士腰帶欸。",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5284,7 +5459,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：這種ps圖誰會信啊！",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）這種ps圖誰會信啊！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5310,7 +5496,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：啊啊啊啊啊啊啊！我操！ ！",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）啊啊啊啊啊啊啊！我操！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5323,7 +5520,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：快，快看看還有沒有沒被弄壞的腰帶！ ！求你了，我什麼都願意做的！ ！",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_panic_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）快，快看看還有沒有沒被弄壞的腰帶！ ！求你了，我什麼都願意做的！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5336,7 +5544,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "三日月：魔獸胯下的那個小架子好像還有一個，但好像不好拿",
+                        "\t[三日月]（手機）魔獸胯下的那個小架子好像還有一個，但好像不好拿",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5349,7 +5557,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：我馬上到",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）我馬上到",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5399,7 +5618,18 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平：抱歉，在下要晚點才能到了，有急事",
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                28,
+                                "textTop"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]（手機）抱歉，在下要晚點才能到了，有急事",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5442,18 +5672,9 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 250
                         },
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
+                            "type": "comment",
+                            "text": "TODO: 【梗平替換為梗平(女)】"
                         },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "【梗平替換為梗平(女)】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5692,7 +5913,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "影片裡的梗平：救救我...我，哈...哈，那裡不行...啊......",
+                        "\t[影片裡的梗平]（手機）救救我...我，哈...哈，那裡不行...啊......",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5805,7 +6026,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]誰...誰讓你放那種視頻......在下賠你就是了",
+                        "\t[梗平]誰...誰讓你放那種視頻......我賠你就是了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5855,7 +6076,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]快！ TMD快給在下！ ！ ！ ！",
+                        "\t[梗平]快！ TMD快給我！ ！ ！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5916,7 +6137,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]這是賣身契吧！誰會簽這玩意啊！ ？話說為什麼那麼想要在下留下來？",
+                        "\t[梗平]這是賣身契吧！誰會簽這玩意啊！ ？話說為什麼那麼想要我留下來？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6125,7 +6346,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]不對，剛才在下說錯了，是一週！ ！",
+                        "\t[梗平]不對，剛才我說錯了，是一週！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6162,7 +6383,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]餵餵在下錯了，你別上傳影片！ ！一年就一年！ ！",
+                        "\t[梗平]餵餵我錯了，你別上傳影片！ ！一年就一年！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6544,7 +6765,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平](在下當初為甚麼要簽那個約呢)",
+                        "\t[梗平](我當初為甚麼要簽那個約呢)",
                         {
                             "type": "hideImage",
                             "code": 10,

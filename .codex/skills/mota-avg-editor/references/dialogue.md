@@ -32,20 +32,22 @@
 
 普通 AVG 應以畫面下方文字框為主，不做角色頭上的氣泡框。請在每個劇情樓層開頭先設定一次 `setText`，後續角色台詞寫成 `"\t[角色]正文"`，旁白敘述直接寫正文。
 
+目前標準遊戲畫布是 544×416（17×13）。依參考截圖與引擎公式，普通 AVG 下方對話框的邏輯範圍固定為 `x: 13, y: 295, width: 518, height: 116`（右緣 531、下緣 411）。這個範圍由 `setText.position: "down"`、`offset: 0`、`titlefont: 22`、`textfont: 16`、`lineHeight: 22` 與全塔 `fixedLines: 2` 共同算出；生成器不得保留舊 416 寬度的自訂文字框，也不得擅自放大字級或把文字框上移。角色立繪的 y 位置應使用 `"textTop"` 依這個對話框上緣計算。
+
 ```js
 [
     {
         "type": "setText",
         "position": "down",
-        "offset": 8,
+        "offset": 0,
         "align": "left",
         "bold": true,
         "background": "winskin.png",
         "title": [255, 225, 80, 1],
         "text": [255, 255, 255, 1],
         "titlefont": 22,
-        "textfont": 20,
-        "lineHeight": 30,
+        "textfont": 16,
+        "lineHeight": 22,
         "time": 10,
         "letterSpacing": 0,
         "animateTime": 120
@@ -65,6 +67,8 @@ AVG 規範：
 - 只有系統提示、章節標題、結尾文字等特殊演出，才可少量使用 `\b[center]`。
 - 若需要改外觀，優先調整 `setText`，不要在每一句台詞上分別指定位置。
 - 普通 AVG 下方對話框固定高度；全塔 `fixedLines` 預設為 `2`，單句正文超過可顯示行數時，引擎會自動切成下一個文字框繼續顯示，不要為了長句手動調高對話框。
+- 17×13 改造只增加水平可視寬度，不改變對話框的 `down` 定位、固定行數或 `textTop` 計算；不要把舊畫面中心 `x=208` 寫進對話事件。
+- 引擎會在 544 寬畫布自動留下左右各 13 像素邊距；「使用目前畫布寬度」不等於手寫一個 `width: 544` 的圖片框。
 
 分支選項範例：
 

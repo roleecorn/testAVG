@@ -46,17 +46,6 @@ main.floors.mapo_1_4=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.mapo_1_4=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.mapo_1_4=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.mapo_1_4=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.mapo_1_4=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.mapo_1_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.mapo_1_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.mapo_1_4=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.mapo_1_4=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -561,9 +613,17 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 30,
             "image": "scene_mapo_cg.png",
-            "loc": [
+            "sloc": [
                 0,
-                0
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
             "time": 250
@@ -683,7 +743,7 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]不然在下難以償還您願意讓在下住在這裡的恩情啊！",
+        "\t[梗平]不然在下難以償還您願意讓我住在這裡的恩情啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -833,7 +893,7 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「可惡啊，在下在秋葉原喝酒的夢想竟然如此輕易的被擊倒了」",
+        "\t[梗平]「可惡啊，我在秋葉原喝酒的夢想竟然如此輕易的被擊倒了」",
         {
             "type": "hideImage",
             "code": 10,
@@ -857,7 +917,7 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「等等......剛剛的話意思是在下到明天早上為止都可以自由活動對吧」",
+        "\t[梗平]「等等......剛剛的話意思是我到明天早上為止都可以自由活動對吧」",
         {
             "type": "hideImage",
             "code": 10,
@@ -881,7 +941,7 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「在下記得過來的路上...似乎有看到一家便利商店的樣子」",
+        "\t[梗平]「我記得過來的路上...似乎有看到一家便利商店的樣子」",
         {
             "type": "hideImage",
             "code": 10,
@@ -905,7 +965,7 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]三角店長！在下先出去一趟",
+        "\t[梗平]三角店長！我先出去一趟",
         {
             "type": "hideImage",
             "code": 10,
@@ -1250,7 +1310,7 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]老媽就是太過擔心在下跟修卡戰鬥會受傷了",
+        "\t[梗平]老媽就是太過擔心我跟修卡戰鬥會受傷了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1577,7 +1637,7 @@ main.floors.mapo_1_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]有這麼大的力氣，對方肯定是想趁在下還沒補充能量趁機打倒在下，連燃料都一起搶走了，修卡太可惡！",
+                        "\t[梗平]有這麼大的力氣，對方肯定是想趁我還沒補充能量趁機打倒我，連燃料都一起搶走了，修卡太可惡！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1640,18 +1700,9 @@ main.floors.mapo_1_4=
                         },
                         "\t[梗平]這種時候該出現強化事件了！一定有什麼可以用的道具",
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
+                            "type": "comment",
+                            "text": "TODO: 【梗平的立繪左右平移】"
                         },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "【梗平的立繪左右平移】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1712,7 +1763,7 @@ main.floors.mapo_1_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下是——GUNDAM！",
+                        "\t[梗平]我是——GUNDAM！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1786,7 +1837,7 @@ main.floors.mapo_1_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]給在下站住！",
+                        "\t[梗平]給我站住！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1965,13 +2016,31 @@ main.floors.mapo_1_4=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "scene_mapo_cg.png",
-                            "loc": [
+                            "image": "ms_ch1_thunder_crocodile_action_cg.png",
+                            "sloc": [
                                 0,
-                                0
+                                13,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -1997,11 +2066,6 @@ main.floors.mapo_1_4=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         {
                             "type": "showImage",

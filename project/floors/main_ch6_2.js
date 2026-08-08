@@ -46,17 +46,6 @@ main.floors.main_ch6_2=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.main_ch6_2=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.main_ch6_2=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.main_ch6_2=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.main_ch6_2=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.main_ch6_2=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.main_ch6_2=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.main_ch6_2=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.main_ch6_2=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -423,7 +475,7 @@ main.floors.main_ch6_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下......在下什麼都守護不了嗎？",
+        "\t[梗平]我......我什麼都守護不了嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -662,7 +714,7 @@ main.floors.main_ch6_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]怎麼突然就要在下結婚了啊",
+        "\t[梗平]怎麼突然就要我結婚了啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -871,7 +923,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]話說回來，在下為甚麼要結婚來著",
+                        "\t[梗平]話說回來，我為甚麼要結婚來著",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1047,7 +1099,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下......",
+                        "\t[梗平]我......",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1123,7 +1175,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下不是，在下沒有那個意思！",
+                        "\t[梗平]我不是，我沒有那個意思！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1221,7 +1273,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]可是在下還不想要啊......在下還沒有成為真正的假面騎士啊！",
+                        "\t[梗平]可是我還不想要啊......我還沒有成為真正的假面騎士啊！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1308,7 +1360,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]不要用這種虛假的東西來欺騙在下啊！",
+                        "\t[梗平]不要用這種虛假的東西來欺騙我啊！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1382,7 +1434,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]你們不要這樣一起騙在下！",
+                        "\t[梗平]你們不要這樣一起騙我！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1495,7 +1547,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下......",
+                        "\t[梗平]我......",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1608,7 +1660,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]可是在下害怕啊，在下害怕在下沒有那個能力",
+                        "\t[梗平]可是我害怕啊，我害怕我沒有那個能力",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1632,7 +1684,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下完全沒有準備啊，要給其他人幸福什麼的......",
+                        "\t[梗平]我完全沒有準備啊，要給其他人幸福什麼的......",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1758,7 +1810,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下會負起責任的",
+                        "\t[梗平]我會負起責任的",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1782,7 +1834,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下不會逃跑的，在下做得到",
+                        "\t[梗平]我不會逃跑的，我做得到",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1843,7 +1895,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]什麼話這是，在下一直都這樣",
+                        "\t[梗平]什麼話這是，我一直都這樣",
                         {
                             "type": "hideImage",
                             "code": 10,

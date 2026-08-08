@@ -46,17 +46,6 @@ main.floors.mapo_1_3=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.mapo_1_3=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.mapo_1_3=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.mapo_1_3=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.mapo_1_3=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.mapo_1_3=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.mapo_1_3=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.mapo_1_3=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.mapo_1_3=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -343,13 +395,31 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "loc": [
+            "image": "ms_ch1_mapo_shop_entrance_action_cg.png",
+            "sloc": [
                 0,
-                0
+                13,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
+        },
+        {
+            "type": "sleep",
+            "time": 1000,
+            "noSkip": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0
         },
         {
             "type": "hideImage",
@@ -362,11 +432,6 @@ main.floors.mapo_1_3=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -704,7 +769,7 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]假面騎士不畏懼任何挑戰！老闆，在下要點這個",
+        "\t[梗平]假面騎士不畏懼任何挑戰！老闆，我要點這個",
         {
             "type": "hideImage",
             "code": 10,
@@ -824,7 +889,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]請指導在下吧！",
+                        "\t[梗平]請指導我吧！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1291,13 +1356,31 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "scene_mapo_cg.png",
-                            "loc": [
+                            "image": "ms_ch1_keng_join_action_cg.png",
+                            "sloc": [
                                 0,
-                                0
+                                13,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -1310,11 +1393,6 @@ main.floors.mapo_1_3=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         "\t[芹澤]中場結束，接下來是備受期待的下半場的首戰",
                         {
@@ -1471,13 +1549,31 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_keng_2_5_cg.png",
-                            "loc": [
+                            "image": "ms_ch1_keng_2_5_action_cg.png",
+                            "sloc": [
                                 0,
-                                0
+                                13,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -1490,11 +1586,6 @@ main.floors.mapo_1_3=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -1557,7 +1648,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下跟著師傅學習了數十年的麻婆道",
+                        "\t[梗平]我跟著師傅學習了數十年的麻婆道",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1581,7 +1672,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在這個過程，有太多的人將他的意志託付給了在下",
+                        "\t[梗平]在這個過程，有太多的人將他的意志託付給了我",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1653,7 +1744,7 @@ main.floors.mapo_1_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]在下的表妹，也在修行的過程中離開了我等",
+                        "\t[梗平]在下的表妹，也在修行的過程中離開了我們",
                         {
                             "type": "hideImage",
                             "code": 10,

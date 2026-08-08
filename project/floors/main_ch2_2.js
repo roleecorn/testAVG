@@ -46,17 +46,6 @@ main.floors.main_ch2_2=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -68,17 +57,6 @@ main.floors.main_ch2_2=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -106,17 +84,6 @@ main.floors.main_ch2_2=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -128,17 +95,6 @@ main.floors.main_ch2_2=
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -166,17 +122,6 @@ main.floors.main_ch2_2=
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -196,6 +141,29 @@ main.floors.main_ch2_2=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -211,9 +179,93 @@ main.floors.main_ch2_2=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -229,14 +281,14 @@ main.floors.main_ch2_2=
             0
         ]
     ],
-    "width": 13,
+    "width": 17,
     "height": 13,
     "firstArrive": [],
     "eachArrive": [
         {
             "type": "setText",
             "position": "down",
-            "offset": 8,
+            "offset": 0,
             "align": "left",
             "bold": true,
             "background": "winskin.png",
@@ -253,8 +305,8 @@ main.floors.main_ch2_2=
                 1
             ],
             "titlefont": 22,
-            "textfont": 20,
-            "lineHeight": 30,
+            "textfont": 16,
+            "lineHeight": 22,
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
@@ -464,7 +516,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]擅闖別人的店可不好，我等先去其他地方找找吧",
+        "\t[梗平]擅闖別人的店可不好，我們先去其他地方找找吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -870,7 +922,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平](可惡，書店A一看就有問題，在下不要進去啊)",
+        "\t[梗平](可惡，書店A一看就有問題，我不要進去啊)",
         {
             "type": "hideImage",
             "code": 10,
@@ -968,7 +1020,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]時間也差不多了，我等先去吃飯吧，晚點再繼續",
+        "\t[梗平]時間也差不多了，我們先去吃飯吧，晚點再繼續",
         {
             "type": "hideImage",
             "code": 10,
@@ -1172,7 +1224,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]你聽在下說啊，根據他們的情報，他的哥哥是在書店A附近失蹤的",
+        "\t[梗平]你聽我說啊，根據他們的情報，他的哥哥是在書店A附近失蹤的",
         {
             "type": "hideImage",
             "code": 10,
@@ -1233,7 +1285,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]沒有，不過在下認為肯定不是在那裡",
+        "\t[梗平]沒有，不過我認為肯定不是在那裡",
         {
             "type": "hideImage",
             "code": 10,
@@ -1436,7 +1488,7 @@ main.floors.main_ch2_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]不要用那種眼神看在下啊哈斯哈斯",
+                        "\t[梗平]不要用那種眼神看我啊哈斯哈斯",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1497,7 +1549,7 @@ main.floors.main_ch2_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]但秋葉原一定潛藏不為人知的魔物，那是在下8歲的時候，老爸老媽第一次帶在下來東京",
+                        "\t[梗平]但秋葉原一定潛藏不為人知的魔物，那是在我8歲的時候，老爸老媽第一次帶我來東京",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1521,7 +1573,7 @@ main.floors.main_ch2_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]當在下被假面騎士吸引，跑到小巷裡時在下看到了",
+                        "\t[梗平]當我被假面騎士吸引，跑到小巷裡時我看到了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1786,7 +1838,7 @@ main.floors.main_ch2_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]只要在下找到外星人，在下的尊嚴也能被找回來的！",
+                        "\t[梗平]只要在下找到外星人，我的尊嚴也能被找回來的！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1815,13 +1867,31 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch2_keng_bicycle_cg.png",
-                            "loc": [
+                            "image": "ms_ch2_keng_bicycle_action_cg.png",
+                            "sloc": [
                                 0,
-                                0
+                                13,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -1834,11 +1904,6 @@ main.floors.main_ch2_2=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         "\t[路人]麥克——！",
                         {
@@ -2019,13 +2084,31 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch2_eri_sunset_cg.png",
-                            "loc": [
+                            "image": "ms_ch2_eri_sunset_action_cg.png",
+                            "sloc": [
                                 0,
-                                0
+                                13,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -2038,11 +2121,6 @@ main.floors.main_ch2_2=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -2298,7 +2376,7 @@ main.floors.main_ch2_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]這三個小朋友就拜託你了，在下要去與修卡戰鬥了",
+                        "\t[梗平]這三個小朋友就拜託你了，我要去與修卡戰鬥了",
                         {
                             "type": "hideImage",
                             "code": 10,
