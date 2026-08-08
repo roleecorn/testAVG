@@ -23,7 +23,7 @@ node scripts/generate_main_story.js --check
 9. CG／GIF 對照表要以目前來源文字為準；來源更名時可保留歷史別名，但 `--check` 必須確認所有已登錄的主線動作 CG 都仍有實際輸出，避免素材存在卻因標記改名而靜默退回 placeholder。
 10. 背景名稱以完整名稱精確查表；每個地點映射到唯一背景檔。遇到未登錄名稱必須失敗並補 mapping，不可靜默退回 generic 圖。
 
-主線開場的 `setText` 必須保持參考截圖規格：`position: "down"`、`offset: 0`、`titlefont: 22`、`textfont: 16`、`lineHeight: 22`。配合 `fixedLines: 2`，544×416 畫布上的對話框範圍為 `x: 13, y: 295, width: 518, height: 116`；人物位置使用左 `[28, "textTop"]`、右 `[260, "textTop"]`。
+新版主線與支線必須由同一份全局 AVG layout config 產生「左人物槽－中央窄對話框－右人物槽」空間配置。人物 y 不再由 `textTop` 計算，而是由 `viewportHeight - renderedPortraitHeight - portraitBottomGap` 計算；人物位於對話框 UI 後方。每句必須先清空左右人物 code，再只顯示當前發言者；三人以上仍重用兩個槽位。runtime 的 `pos: "avg"` 與 `portraitLeft`／`portraitRight`／`portraitBottom` 語意定位已在 `huangmo_1` 試作，但目前數值仍待使用者視覺確認；確認前不得更新 generator、批量遷移其他 floor，或把試作值宣稱為最終規格。
 
 固定一秒動作 CG 必須交給 `mota-action-cg` 契約：`*_cg.png` 為母檔，`scripts/build_action_cgs.py` 產生固定 416×286 的 `*_action_cg.png`；事件使用 `sloc: [0, 0, 416, 286]`、`loc: [112, 50, 320, 220]`，順序為 `showImage(code 30)` → `sleep(1000, noSkip)` → `hideImage(code 30)`。一般持續劇情 CG 使用同一個中央面板，但不可誤套一秒自動隱藏。
 
@@ -75,7 +75,7 @@ GOTO scene_002
 [
     {"type": "playBgm", "name": "opening.mp3", "keep": true},
     "雨停了。",
-    {"type": "showImage", "code": 11, "image": "suou_sad_portrait.png", "loc": [260, "textTop"], "opacity": 1, "time": 200},
+    {"type": "showImage", "code": 11, "image": "suou_sad_portrait.png", "loc": [260, 185], "opacity": 1, "time": 200},
     "\t[表妹]所以大家到底去哪裡了？",
     {
         "type": "choices",
@@ -99,4 +99,6 @@ GOTO scene_002
     {"type": "changeFloor", "floorId": "scene_002", "loc": [6, 10], "direction": "up", "time": 0}
 ]
 ```
+
+上例的 `[260, 185]` 是現行事件格式的歷史座標，只用來保持 JSON 範例可執行；它不是新版 layout 參數。layout config 實作後，生成器必須以右人物槽位及 `portraitBottomGap` 的計算結果取代。
 

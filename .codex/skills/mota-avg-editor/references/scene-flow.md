@@ -20,15 +20,15 @@ AVG 推薦畫面策略：
 
 - 現行畫布：544×416（17×13）；舊 416×416 舞台位於左側，新增的 128 像素在右側。
 - 場景背景：既有 416×416 背景放樓層 `images` 的 `canvas: "bg"`、`x: 0, y: 0`，或用 `showImage` 編號 1、`loc: [0, 0]` 顯示；不要自動拉伸。
-- 角色立繪：每句對話只顯示當前發言者；可用 `showImage/hideImage`，或用樓層 `images` 搭配 `showFloorImg/hideFloorImg` 切換。站位以下方對話框遮住下半身、上半身露出為準。
+- 角色立繪：左、右人物槽與中央對話框形成下方橫向空間配置，但每句仍先清空人物，只顯示當前發言者。人物 bottom 由全局 `portraitBottomGap` 對齊畫面 bottom；三人以上共用左右槽位，不新增第三槽位。
 - CG：用 `showImage` 編號 25-40，中央面板固定為 `loc: [112, 50, 320, 220]`；來源先以 16:11 的 `sloc` 裁切，必要時蓋過色調。
 - 固定一秒動作 CG：沿用同一個 320×220 面板，事件順序固定為 `showImage` → `sleep(1000, noSkip)` → `hideImage`。
 
-主線 scene 與角色支線 scene 共用上述唯一版面契約；觸發流程不同不構成背景、立繪、對話框或 CG 座標例外。舊支線版面等待全局版面定稿後另行遷移，目前不得把歷史座標複製到新 scene。
+主線 scene 與角色支線 scene 共用上述唯一版面契約；觸發流程不同不構成背景、立繪、對話框或 CG 座標例外。人物圖層位於 UI／對話框之後，中央對話框寬度明顯小於畫布並可遮住人物伸入的部分。現有主線與舊支線版面等待全局 layout config 實作、量測及視覺驗收後另行遷移，目前不得把歷史座標複製到新 scene。
 
 每個地點使用自己的背景檔與精確名稱 mapping。共用 generic 背景只能複製成 placeholder；正式背景替換不得修改共用來源，以免同時改變其他地點。
 - 黑幕/白幕轉場：用 `setCurtain` 或高編號 `showImage`。
-- 對話框：使用 `setText.position: "down"` 與顯示文章字串；標準範圍為 `(13,295)–(531,411)`，不要用圖片蓋住 UI。
+- 對話框：使用下方中央窄框與顯示文章字串；精確矩形由全局 layout config 提供，不再採目前 `(13,295)–(531,411)` 的近全寬範圍。對話框 UI 必須蓋在人物前方。
 - 地圖本身：全部用 `0` 即可；若需要點擊或移動觸發，再放 NPC 或透明事件點。
 - 地圖英雄：本專案預設以透明 `hero.png` 隱形；引擎也支援 `hideHero/showHero`，底層是切換 `flag:__heroOpacity__`，但 AVG 預設不依賴事件逐場隱藏。
 
@@ -47,11 +47,13 @@ AVG 推薦畫面策略：
 ```js
 [
     {"type": "playBgm", "name": "opening.mp3", "keep": true},
-    {"type": "showImage", "code": 10, "image": "keng_neutral_portrait.png", "loc": [28, "textTop"], "opacity": 1, "time": 300},
+    {"type": "showImage", "code": 10, "image": "keng_neutral_portrait.png", "loc": [28, 210], "opacity": 1, "time": 300},
     "\t[梗平]走吧，故事要開始了。",
     {"type": "changeFloor", "floorId": "scene_002", "loc": [6, 10], "direction": "up", "time": 500}
 ]
 ```
+
+上例的 `[28, 210]` 是現有 floor 可讀的歷史座標，只示範事件流程；新版事件改用 `loc: ["portraitLeft", "portraitBottom"]` 或 `loc: ["portraitRight", "portraitBottom"]`。目前只有 `huangmo_1` 套用試作值，其餘 floor 待視覺定稿後統一遷移。
 
 影片轉場必須用獨立事件 `playTransitionVideo` 明確指定，接著立刻用 `changeFloor` 切樓層，且 `changeFloor.time` 設為 `0`，避免觸發原本樓層淡入淡出。一般 `changeFloor` 不會播放影片轉場。
 
