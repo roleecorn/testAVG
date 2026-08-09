@@ -125,7 +125,6 @@ const requiredActionCgPairs = new Map([
 ]);
 
 const placeholderAssets = [
-  ...backgroundAssets.map(({ image, placeholder }) => [`project/images/${placeholder}`, `project/images/${image}`]),
   ["project/images/scene_mapo_cg.png", "project/images/ms_ch1_mapo_shop_entrance_cg.png"],
   ["project/images/scene_badend.png", "project/images/ms_ch1_keng_2_5_cg.png"],
   ["project/images/scene_badend.png", "project/images/ms_ch1_thunder_crocodile_cg.png"],
@@ -825,7 +824,6 @@ function updateTodo() {
     "- `project/images/ms_ch2_keng_bicycle_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「梗平被腳踏車撞飛」正式 CG。",
     "- `project/images/ms_ch2_eri_sunset_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「夕陽下的神祕少女」正式 CG。",
     "- `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。",
-    ...backgroundAssets.map(({ name, image, placeholder }) => `- \`project/images/${image}\`：${name}的獨立背景檔目前暫用 \`project/images/${placeholder}\` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。`),
     "",
     "## 待實作演出或小遊戲",
     "",

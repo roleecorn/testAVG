@@ -47,33 +47,6 @@
 - `project/images/ms_ch2_keng_bicycle_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「梗平被腳踏車撞飛」正式 CG。
 - `project/images/ms_ch2_eri_sunset_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「夕陽下的神祕少女」正式 CG。
 - `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。
-- `project/images/ms_bg_station.png`：車站的獨立背景檔目前暫用 `project/images/scene_station.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_street.png`：街道的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_mapo_shop.png`：麻婆豆腐店的獨立背景檔目前暫用 `project/images/scene_mapo_shop.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_tournament_venue.png`：大賽場地的獨立背景檔目前暫用 `project/images/scene_tournament.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_cafe.png`：咖啡廳的獨立背景檔目前暫用 `project/images/scene_mapo_shop.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_convenience_store.png`：便利商店的獨立背景檔目前暫用 `project/images/scene_mapo_shop.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_riverside.png`：河邊的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_bookstore_a.png`：書店A的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_warehouse.png`：倉庫的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_family_restaurant.png`：家庭餐廳的獨立背景檔目前暫用 `project/images/scene_mapo_shop.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_warehouse_district.png`：倉庫區的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_arcade.png`：遊戲中心的獨立背景檔目前暫用 `project/images/scene_tournament.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_bookstore_a_interior.png`：書店A內部的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_museum.png`：美術館的獨立背景檔目前暫用 `project/images/scene_tournament.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_horses_knee.png`：馬的膝蓋的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_street_night.png`：街道(夜)的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_bar.png`：酒吧的獨立背景檔目前暫用 `project/images/scene_mapo_shop.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_training_room.png`：訓練室的獨立背景檔目前暫用 `project/images/scene_tournament.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_family_restaurant_interior.png`：家庭餐廳內部的獨立背景檔目前暫用 `project/images/scene_mapo_shop.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_tokyo_big_sight.png`：COMIKE倒三角建築的獨立背景檔目前暫用 `project/images/scene_tournament.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_fine_dining.png`：高級餐廳的獨立背景檔目前暫用 `project/images/scene_mapo_shop.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_hospital.png`：醫院的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_railway.png`：鐵道的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_becky_mansion.png`：貝琪宅邸的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_vehicle_interior.png`：車上的獨立背景檔目前暫用 `project/images/scene_street.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_maid_cafe.png`：僕咖的獨立背景檔目前暫用 `project/images/scene_mapo_shop.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
-- `project/images/ms_bg_wedding.png`：婚禮的獨立背景檔目前暫用 `project/images/scene_tournament.png` 複製；正式背景只能替換此地點專檔，不得覆寫共用來源。
 
 ## 待實作演出或小遊戲
 
