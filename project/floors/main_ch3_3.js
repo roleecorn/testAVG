@@ -369,7 +369,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -403,7 +406,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -437,7 +443,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -471,7 +480,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -518,7 +530,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -539,7 +554,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -573,7 +591,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -620,7 +641,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -667,7 +691,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -701,7 +728,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1073,7 +1103,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1133,7 +1166,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 11,
             "image": "suou_surprised_portrait.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1258,7 +1294,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 11,
             "image": "suou_surprised_portrait.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1367,7 +1406,10 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },

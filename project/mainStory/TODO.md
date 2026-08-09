@@ -18,6 +18,7 @@
 - project/mainStory/CH2 2-1：【CG：小兔子黑暗無限破】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-4：【CG：小兔子黑暗無限破】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-4：【CG：梗平英雄救美(？】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-4：【CG：梗平跟警察把IB舉起來】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-4：行內製作指令「【字體放大】」尚未轉成正式事件。
 - project/mainStory/CH3 3-1：【CG：梗平癱倒在地看著檢官離開】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH3 3-1：【CG：魔法少女梗平衝向觸手怪】尚無專用素材，暫用 scene_mapo_cg.png。

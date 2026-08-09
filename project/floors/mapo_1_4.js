@@ -436,7 +436,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -466,7 +469,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "一顆長著兔耳的白色毛球出現在梗平的腳邊，隨後跳到了桌子上",
+        "一個藍髮的少女手上抓著手偶，並正在使用手偶說話",
         {
             "type": "hideImage",
             "code": 10,
@@ -548,11 +551,14 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]會說話的兔子？你肯定是被修卡改造的怪人－咕",
+        "\t[梗平]兔子玩偶竟然發出了聲音？你肯定是被修卡改造的怪人－咕",
         {
             "type": "hideImage",
             "code": 10,
@@ -631,7 +637,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -691,7 +700,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -712,7 +724,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -746,7 +761,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -780,7 +798,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -853,11 +874,14 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「可惡啊，我在秋葉原喝酒的夢想竟然如此輕易的被擊倒了」",
+        "\t[梗平](可惡啊，我在秋葉原喝酒的夢想竟然如此輕易的被擊倒了)",
         {
             "type": "hideImage",
             "code": 10,
@@ -874,11 +898,14 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「等等......剛剛的話意思是我到明天早上為止都可以自由活動對吧」",
+        "\t[梗平](等等......剛剛的話意思是我到明天早上為止都可以自由活動對吧)",
         {
             "type": "hideImage",
             "code": 10,
@@ -895,11 +922,14 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「我記得過來的路上...似乎有看到一家便利商店的樣子」",
+        "\t[梗平](我記得過來的路上...似乎有看到一家便利商店的樣子)",
         {
             "type": "hideImage",
             "code": 10,
@@ -916,7 +946,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1004,7 +1037,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1025,7 +1061,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_smile_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1068,7 +1107,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "\t[店員]您...您好，只......需要這些嗎？",
+        "\t[眼神死]您...您好，只......需要這些嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1085,7 +1124,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1115,7 +1157,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "\t[店員]......",
+        "\t[眼神死]......",
         {
             "type": "hideImage",
             "code": 10,
@@ -1128,7 +1170,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "\t[店員]我是不是已經連續上班5天了",
+        "\t[眼神死]我是不是已經連續上班5天了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1141,7 +1183,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "\t[店員]......",
+        "\t[眼神死]......",
         {
             "type": "hideImage",
             "code": 10,
@@ -1154,7 +1196,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "\t[店員]我不管了！老娘要辭職啊！",
+        "\t[眼神死]我不管了！老娘要辭職啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1167,7 +1209,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "店員小姐把東西丟在了收銀台後，也往外面衝了出去",
+        "眼神死掉的店員小姐把東西丟在了收銀台後，也往外面衝了出去",
         {
             "type": "hideImage",
             "code": 10,
@@ -1225,7 +1267,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1246,7 +1291,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1267,7 +1315,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1288,7 +1339,10 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1355,7 +1409,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1389,7 +1446,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1423,7 +1483,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1444,7 +1507,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1491,7 +1557,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1525,7 +1594,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1546,7 +1618,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1580,7 +1655,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1601,7 +1679,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1626,7 +1707,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1660,7 +1744,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1681,7 +1768,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1728,7 +1818,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1775,7 +1868,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1822,7 +1918,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1882,7 +1981,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -1957,7 +2059,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -2004,7 +2109,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -2064,7 +2172,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -2098,7 +2209,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
@@ -2173,7 +2287,10 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
-                            "loc": ["portraitLeft","portraitBottom"],
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
                             "opacity": 1,
                             "time": 0
                         },
