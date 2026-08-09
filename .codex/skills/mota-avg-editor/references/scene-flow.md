@@ -24,7 +24,7 @@ AVG 推薦畫面策略：
 - CG：用 `showImage` 編號 25-40，中央面板固定為 `loc: [112, 50, 320, 220]`；來源先以 16:11 的 `sloc` 裁切，必要時蓋過色調。
 - 固定一秒動作 CG：沿用同一個 320×220 面板，事件順序固定為 `showImage` → `sleep(1000, noSkip)` → `hideImage`。
 
-主線 scene 與角色支線 scene 共用上述唯一版面契約；觸發流程不同不構成背景、立繪、對話框或 CG 座標例外。人物圖層位於 UI／對話框之後，中央對話框寬度明顯小於畫布並可遮住人物伸入的部分。現有主線與舊支線版面等待全局 layout config 實作、量測及視覺驗收後另行遷移，目前不得把歷史座標複製到新 scene。
+主線 scene 與角色支線 scene 共用上述唯一版面契約；觸發流程不同不構成背景、立繪、對話框或 CG 座標例外。人物圖層位於 UI／對話框之後，中央對話框寬度明顯小於畫布並最多遮住人物可見寬度的 25%。所有現有主線與角色支線 floor 已使用全局語意槽位；人物依 alpha bbox 定位、最大可見寬度 128px，調整時不得把歷史座標寫回任何 scene。
 
 每個地點使用自己的背景檔與精確名稱 mapping。共用 generic 背景只能複製成 placeholder；正式背景替換不得修改共用來源，以免同時改變其他地點。
 - 黑幕/白幕轉場：用 `setCurtain` 或高編號 `showImage`。
@@ -53,7 +53,7 @@ AVG 推薦畫面策略：
 ]
 ```
 
-上例的 `[28, 210]` 是現有 floor 可讀的歷史座標，只示範事件流程；新版事件改用 `loc: ["portraitLeft", "portraitBottom"]` 或 `loc: ["portraitRight", "portraitBottom"]`。目前只有 `huangmo_1` 套用試作值，其餘 floor 待視覺定稿後統一遷移。
+上例的 `[28, 210]` 只用來辨識歷史事件流程，不是現行標準；所有現有 AVG floor 已改用 `loc: ["portraitLeft", "portraitBottom"]` 或 `loc: ["portraitRight", "portraitBottom"]`。視覺定稿只修改全局 layout config。
 
 影片轉場必須用獨立事件 `playTransitionVideo` 明確指定，接著立刻用 `changeFloor` 切樓層，且 `changeFloor.time` 設為 `0`，避免觸發原本樓層淡入淡出。一般 `changeFloor` 不會播放影片轉場。
 

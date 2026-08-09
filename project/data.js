@@ -343,6 +343,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 				"portraitBottomGap": 8,
 				"portraitLeft": 16,
 				"portraitRight": 0,
+				"portraitMaxVisibleWidth": 128,
+				"portraitMaxDialogueOverlapRatio": 0.25,
 				"dialogueX": 96,
 				"dialogueY": 295,
 				"dialogueWidth": 352,

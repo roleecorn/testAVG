@@ -46,11 +46,11 @@
 - 角色立繪分成左、右兩個全局槽位，中央保留較窄的對話框。人物底部不再對齊 `textTop`，而是以畫面底部與單一 `portraitBottomGap` 參數計算；左右 x 與允許寬度同樣由全局 layout config 提供。
 - AVG 中央 CG 面板使用 `loc: [112, 50, 320, 220]`，可見比例為 16:11。來源不是 16:11 時要用 `sloc` 中央裁切，不可直接拉伸；416×312 來源的標準裁切是 `sloc: [0, 13, 416, 286]`。
 - 一般持續 CG 與固定一秒動作 CG 共用上述面板位置；差異在停留流程，不在畫面範圍。固定一秒動作 CG 仍須使用不可跳過的一秒 `sleep` 後立即清除。
-- 對話框位於左右人物之間的中央下方水平帶，寬度明顯小於 544 畫布，不得佔據幾乎全部畫面。`huangmo_1` 目前以 `x=96, y=295, width=352, fixedLines=2` 試作；精確矩形仍須經使用者視覺確認後集中定稿。
+- 對話框位於左右人物之間的中央下方水平帶，寬度明顯小於 544 畫布，不得佔據幾乎全部畫面。全局矩形為 `x=96, y=295, width=352, fixedLines=2`。
 
 背景與中央 CG 是不同演出類型，定位不能混用。一般劇情 CG 與固定一秒動作 CG 雖共用中央面板範圍，仍不可混用淡入時間與停留流程。
 
-這套畫布、人物、對話框與 CG 範圍是全專案唯一 AVG 版面，主線和角色支線相同；兩者只在觸發方式與文本來源位置不同。現有 floor 暫不批量遷移，等待 layout config 實作與視覺驗收；舊座標屬待遷移實作債，不是另一套有效規格，也不得據此建立新的例外。
+這套畫布、人物、對話框與 CG 範圍是全專案唯一 AVG 版面，主線和角色支線相同；兩者只在觸發方式與文本來源位置不同。所有現有 AVG floor 已遷移到全局語意槽位，不得建立 floor 或角色例外。
 
 ### CG 母檔與動作 CG 衍生檔
 
@@ -76,13 +76,15 @@ portraitY = portraitBottom - renderedPortraitHeight
 
 `portraitBottomGap` 必須只有一個全局來源；不得在角色 mapping、floor、scene 或逐句事件另加角色專屬 gap。調整此參數後，所有不同高度人物的底部都立即一起移動，人物圖片仍保持原比例。
 
-整份 layout config 集中保存下列語意欄位。以下是下一次 `huangmo_1` 預覽要採用的目標值；`portraitRight=0` 已由使用者確認，其餘數字仍是待定稿試作值：
+整份 layout config 集中保存下列已套用全專案的定案欄位：
 
 ```js
 {
     portraitBottomGap: 8,
     portraitLeft: 16,
     portraitRight: 0,
+    portraitMaxVisibleWidth: 128,
+    portraitMaxDialogueOverlapRatio: 0.25,
     dialogueX: 96,
     dialogueY: 295,
     dialogueWidth: 352,
@@ -90,9 +92,7 @@ portraitY = portraitBottom - renderedPortraitHeight
 }
 ```
 
-`portraitRight: 0` 是已確認的目標規範，表示右側 PNG 畫布直接貼齊 544px 畫布右緣，不另留槽位 inset；PNG 自身的透明 padding 仍可能形成可見 gap。`libs/core.js` 的試作 runtime 在下一次實作與視覺預覽前仍保留舊值 `16`，不得把現況誤記為已同步。
-
-若視覺驗收證明需要限制人物最大寬度，必須再新增全局槽位參數與等比例縮放規則；不得先在單一 floor 寫角色專屬寬度。
+runtime 先量測來源裁切區域的 alpha bbox，再以可見內容而非整張 PNG 的透明畫布對齊 `portraitLeft`／`portraitRight`／`portraitBottom`。可見寬度超過全局上限時等比例縮小整張圖片，較小圖片不放大；因此透明 padding 不會改變人物可見左右與底邊位置。canvas alpha 不可讀時才退回整張來源矩形。`portraitMaxVisibleWidth=128` 是共同硬上限，runtime 另依左右槽到對話框的實際空間套用 `portraitMaxDialogueOverlapRatio=0.25`；目前左槽有效上限約 106.7px、右槽 128px，兩側都不超過 25% 遮擋。這是槽位幾何，不是角色例外。
 
 左右人物與中央對話框大致位於同一條下方水平帶。人物可在水平方向稍微伸入對話框範圍，但人物圖層必須在 UI／文字框下方，因此重疊部分由對話框遮住。人物使用 UI 下方的圖片 code（既有 10／11 可保留）；禁止使用 41–50 等會蓋住文字框的 code。
 
@@ -155,7 +155,7 @@ portraitY = portraitBottom - renderedPortraitHeight
 
 `disabled: true` 很重要：樓層 `images` 會在進入場景時立刻繪製，若角色立繪沒有初始禁用，會在第一個事件執行前短暫閃出來。AVG 角色貼圖只要不是場景一開始就應該出現，都要先設為 `disabled: true`，再由 `showFloorImg` 顯示。
 
-既有 AVG 立繪座標過去以固定數字或 `textTop` 為基準。本次只修改規範，舊 floor 暫時保留；實作新版 layout config 後必須統一遷移。以下僅供辨識歷史內容，不得複製到新事件：
+既有 AVG 立繪座標過去以固定數字或 `textTop` 為基準；所有現有主線與角色支線 floor 已改用全局語意槽位。以下僅供辨識歷史內容，不得複製到新事件：
 
 - 梗平 `keng_portrait.png`：`x: 28, y: 210`
 - 表妹/蘇芳 `suou_sad_portrait.png`：`x: 260, y: 185`
@@ -210,7 +210,7 @@ python split_emotion_image.py project/images/角色_transparent.png --keep-origi
 
 `表妹`、`妹`、`蘇芳`、`蘇方` 都指同一位角色，統一使用 `suou_*_portrait.png` 與 code `11`。
 
-| 角色 | code | 歷史 loc（待遷移） | 表情/別名 | 圖片 |
+| 角色 | code | 歷史 loc（不得使用） | 表情/別名 | 圖片 |
 | --- | ---: | --- | --- | --- |
 | 梗平 | 10 | `[28, 210]` | 預設、平常 | `keng_neutral_portrait.png` |
 | 梗平 | 10 | `[28, 210]` | 生氣、不爽 | `keng_angry_portrait.png` |
@@ -233,7 +233,7 @@ python split_emotion_image.py project/images/角色_transparent.png --keep-origi
 
 若必須改用樓層 `images` + `showFloorImg` 做持續貼圖，每張表情在同一樓層內都要有不同的 `x, y` 作為識別鍵；不可把同一角色多張表情都放在完全相同座標，否則 `showFloorImg` 會一次顯示同座標的所有表情。實作時可讓同角色表情使用相鄰的 `x` 值，例如梗平 `[28,210]` 到 `[33,210]`，切換前用 `hideFloorImg` 清掉該角色全部表情座標。
 
-新增角色時，應把角色放入左／右全局人物槽位，y 由 `portraitBottomGap` 與實際渲染高度統一計算。runtime 已支援 `portraitLeft`／`portraitRight`／`portraitBottom`；目前只允許 `huangmo_1` 使用試作值，其他內容在定稿前不得自行複製該像素值，也不得把 `textTop` 或既有數字座標宣稱為新版標準。
+新增角色時，應把角色放入左／右全局人物槽位，y 由 `portraitBottomGap` 與 alpha bbox 的實際渲染底邊統一計算。runtime 與所有現有 AVG floor 已使用 `portraitLeft`／`portraitRight`／`portraitBottom`；不得把像素、縮放值散寫到個別內容，也不得把 `textTop` 或既有數字座標宣稱為新版標準。
 
 簡化事件範例：
 

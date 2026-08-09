@@ -242,6 +242,8 @@ function core () {
                 "portraitBottomGap": 8,
                 "portraitLeft": 16,
                 "portraitRight": 0,
+                "portraitMaxVisibleWidth": 128,
+                "portraitMaxDialogueOverlapRatio": 0.25,
                 "dialogueX": 96,
                 "dialogueY": 295,
                 "dialogueWidth": 352,

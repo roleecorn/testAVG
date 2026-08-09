@@ -3416,7 +3416,10 @@ events.prototype.showImage = function (code, image, sloc, loc, opacityVal, time,
     var w = core.calValue(loc[2]), h = core.calValue(loc[3]);
     if (w == null) w = sw;
     if (h == null) h = sh;
-    var x = this._resolveImageAvgXLoc(loc[0], w), y = this._resolveImageTextTopLoc(loc[1], h);
+    var geometry = this._resolveAvgPortraitGeometry(image, sx, sy, sw, sh, loc, w, h);
+    var x = geometry.x, y = geometry.y;
+    w = geometry.w;
+    h = geometry.h;
     var zIndex = code + 100;
     time = time || 0;
     var name = "image" + zIndex;
@@ -3429,6 +3432,71 @@ events.prototype.showImage = function (code, image, sloc, loc, opacityVal, time,
     }
     core.setOpacity(name, 0);
     this.moveImage(code, null, opacityVal, null, time, callback);
+}
+
+events.prototype._getAvgPortraitOpaqueBounds = function (image, sx, sy, sw, sh) {
+    var fullImage = sx == 0 && sy == 0 && sw == image.width && sh == image.height;
+    if (fullImage && image.__avgPortraitOpaqueBounds) return image.__avgPortraitOpaqueBounds;
+    var fallback = { left: 0, top: 0, right: sw, bottom: sh, width: sw, height: sh };
+    try {
+        var canvas = document.createElement('canvas');
+        canvas.width = sw;
+        canvas.height = sh;
+        var ctx = canvas.getContext('2d');
+        ctx.drawImage(image, sx, sy, sw, sh, 0, 0, sw, sh);
+        var data = ctx.getImageData(0, 0, sw, sh).data;
+        var left = sw, top = sh, right = 0, bottom = 0;
+        for (var y = 0; y < sh; y++) {
+            for (var x = 0; x < sw; x++) {
+                if (data[(y * sw + x) * 4 + 3] == 0) continue;
+                if (x < left) left = x;
+                if (x + 1 > right) right = x + 1;
+                if (y < top) top = y;
+                if (y + 1 > bottom) bottom = y + 1;
+            }
+        }
+        if (right > left && bottom > top) {
+            fallback = { left: left, top: top, right: right, bottom: bottom, width: right - left, height: bottom - top };
+        }
+    } catch (e) {
+        // Cross-origin or unsupported canvas reads fall back to the full source rectangle.
+    }
+    if (fullImage) image.__avgPortraitOpaqueBounds = fallback;
+    return fallback;
+}
+
+events.prototype._resolveAvgPortraitGeometry = function (image, sx, sy, sw, sh, loc, w, h) {
+    var semanticX = loc[0] == 'portraitLeft' || loc[0] == 'portraitRight';
+    var semanticY = loc[1] == 'portraitBottom';
+    if (!semanticX && !semanticY) {
+        return { x: this._resolveImageAvgXLoc(loc[0], w), y: this._resolveImageTextTopLoc(loc[1], h), w: w, h: h };
+    }
+    var bounds = this._getAvgPortraitOpaqueBounds(image, sx, sy, sw, sh);
+    var sourceScaleX = w / sw, sourceScaleY = h / sh;
+    var visibleWidth = bounds.width * sourceScaleX;
+    var layout = core.ui.getAvgLayout();
+    var maxVisibleWidth = layout.portraitMaxVisibleWidth || 128;
+    var maxOverlapRatio = layout.portraitMaxDialogueOverlapRatio;
+    if (maxOverlapRatio == null) maxOverlapRatio = 0.25;
+    if (loc[0] == 'portraitLeft') {
+        maxVisibleWidth = Math.min(maxVisibleWidth, (layout.dialogueX - layout.portraitLeft) / (1 - maxOverlapRatio));
+    } else if (loc[0] == 'portraitRight') {
+        var rightSpace = core._PX_ - layout.portraitRight - layout.dialogueX - layout.dialogueWidth;
+        maxVisibleWidth = Math.min(maxVisibleWidth, rightSpace / (1 - maxOverlapRatio));
+    }
+    var scale = visibleWidth > maxVisibleWidth ? maxVisibleWidth / visibleWidth : 1;
+    w *= scale;
+    h *= scale;
+    sourceScaleX *= scale;
+    sourceScaleY *= scale;
+    var x;
+    if (loc[0] == 'portraitLeft') x = layout.portraitLeft - bounds.left * sourceScaleX;
+    else if (loc[0] == 'portraitRight') x = core._PX_ - layout.portraitRight - bounds.right * sourceScaleX;
+    else x = this._resolveImageAvgXLoc(loc[0], w);
+    var y = semanticY
+        ? core._PY_ - layout.portraitBottomGap - bounds.bottom * sourceScaleY
+        : this._resolveImageTextTopLoc(loc[1], h);
+    return { x: x, y: y, w: w, h: h };
 }
 
 events.prototype._resolveImageTextTopLoc = function (value, imageHeight) {
