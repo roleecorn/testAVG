@@ -4,8 +4,8 @@
     "kind": "character",
     "files": [
       {
-        "path": "project/story/綿貫咲夜.txt",
-        "sha256": "d64df89d1dd4625d7d35048065ec22c2eb1fa44a8e739f9d9e3767a943216453"
+        "path": "project/story/綿貫咲耶.txt",
+        "sha256": "ba39d48c240e104b6bc30c21e1146f9a6b3f228845a463e0581d8ef00ce829b7"
       }
     ]
   },
@@ -340,7 +340,7 @@
         },
         {
           "kind": "image.show",
-          "role": "image",
+          "role": "cg",
           "code": 30,
           "image": "watanuki_shrine_cg1_action_cg.png",
           "sloc": [
@@ -3540,7 +3540,7 @@
         },
         {
           "kind": "image.show",
-          "role": "image",
+          "role": "cg",
           "code": 30,
           "image": "watanuki_shrine_cg1_action_cg.png",
           "sloc": [

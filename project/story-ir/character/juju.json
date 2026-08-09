@@ -4,8 +4,8 @@
     "kind": "character",
     "files": [
       {
-        "path": "project/story/茱茱-角色劇情.txt",
-        "sha256": "2227df2bc0ec4f2b76af5a6681fb7e65869bf52ea24ebbfd0c87e8bea0bd57de"
+        "path": "project/story/茱茱.txt",
+        "sha256": "6a5cae94d6ca584f487b5b5bc07ca46fa62f1305f995c447d8a7bfee644b3e0a"
       }
     ]
   },

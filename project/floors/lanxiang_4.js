@@ -32,8 +32,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -47,8 +51,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,8 +70,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,8 +89,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,8 +108,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,8 +127,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,8 +146,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,8 +165,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,8 +184,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,8 +203,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,8 +222,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,8 +241,12 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,12 +260,28 @@ main.floors.lanxiang_4=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -262,7 +326,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -309,7 +376,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -343,7 +413,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -390,7 +463,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -424,7 +500,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -458,7 +537,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -479,7 +561,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -500,7 +585,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -534,7 +622,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -581,7 +672,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_angry_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -615,7 +709,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_surprised_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -662,7 +759,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -683,7 +783,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -704,7 +807,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_surprised_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -738,7 +844,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -759,7 +868,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -780,7 +892,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_angry_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -801,7 +916,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_smile.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -822,7 +940,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_angry_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -882,7 +1003,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -903,7 +1027,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_surprised_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -924,7 +1051,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -945,7 +1075,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -979,7 +1112,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1013,7 +1149,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1034,7 +1173,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_surprised.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1081,7 +1223,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1102,7 +1247,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1136,7 +1284,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_smile.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1157,7 +1308,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1191,7 +1345,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1212,7 +1369,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1233,7 +1393,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_surprised_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1254,7 +1417,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1275,7 +1441,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_surprised.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1296,7 +1465,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1317,7 +1489,10 @@ main.floors.lanxiang_4=
             "type": "showImage",
             "code": 20,
             "image": "lanxiang_surprised.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -1368,17 +1543,5 @@ main.floors.lanxiang_4=
             "type": "function",
             "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

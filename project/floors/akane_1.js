@@ -32,8 +32,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -47,8 +51,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -62,8 +70,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -77,8 +89,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -92,8 +108,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -107,8 +127,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -122,8 +146,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -137,8 +165,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -152,8 +184,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -167,8 +203,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -182,8 +222,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -197,8 +241,12 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0],
+        ],
         [
             0,
             0,
@@ -212,12 +260,28 @@ main.floors.akane_1=
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
-        , 0, 0, 0, 0]
+        ]
     ],
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -262,7 +326,10 @@ main.floors.akane_1=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -283,7 +350,10 @@ main.floors.akane_1=
             "type": "showImage",
             "code": 20,
             "image": "akane_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -317,7 +387,10 @@ main.floors.akane_1=
             "type": "showImage",
             "code": 20,
             "image": "akane_sad.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -351,7 +424,10 @@ main.floors.akane_1=
             "type": "showImage",
             "code": 20,
             "image": "akane_surprised.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -385,7 +461,10 @@ main.floors.akane_1=
             "type": "showImage",
             "code": 20,
             "image": "akane_normal.png",
-            "loc": ["portraitRight","portraitBottom"],
+            "loc": [
+                "portraitRight",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -432,7 +511,10 @@ main.floors.akane_1=
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": ["portraitLeft","portraitBottom"],
+            "loc": [
+                "portraitLeft",
+                "portraitBottom"
+            ],
             "opacity": 1,
             "time": 0
         },
@@ -461,17 +543,5 @@ main.floors.akane_1=
             "type": "function",
             "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }
