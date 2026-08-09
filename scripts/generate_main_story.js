@@ -2,9 +2,12 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const vm = require("vm");
+const { isDeepStrictEqual } = require("util");
+const { createBundle, bundleToFloors, readBundle, validateProjectReferences, writeBundle } = require("./story_ir");
 
 const root = path.resolve(__dirname, "..");
 const p = (...parts) => path.join(root, ...parts);
+const MAIN_STORY_IR = p("project", "story-ir", "main", "main-story.json");
 
 const MAP_WIDTH = 17;
 const MAP_HEIGHT = 13;
@@ -15,14 +18,17 @@ const BACKGROUND_LOC = [0, 0];
 const CG_LOC = [112, 50, 320, 220];
 const GENERAL_CG_SLOC = [0, 65, 416, 286];
 
-function readAvgLayout() {
+function readProjectMain() {
   const context = {};
   vm.runInNewContext(fs.readFileSync(p("project", "data.js"), "utf8"), context);
   const data = Object.values(context)[0];
-  return data.main.styles.avgLayout;
+  return data.main;
 }
 
-const AVG_LAYOUT = readAvgLayout();
+const PROJECT_MAIN = readProjectMain();
+const AVG_LAYOUT = PROJECT_MAIN.styles.avgLayout;
+const REGISTERED_BGMS = new Set(PROJECT_MAIN.bgms || []);
+const REGISTERED_SOUNDS = new Set(PROJECT_MAIN.sounds || []);
 
 const MAP = Array.from({ length: MAP_HEIGHT }, () => Array(MAP_WIDTH).fill(0));
 
@@ -117,9 +123,6 @@ const requiredActionCgPairs = new Map([
   ["ms_ch2_keng_bicycle_cg.png", "ms_ch2_keng_bicycle_action_cg.png"],
   ["ms_ch2_eri_sunset_cg.png", "ms_ch2_eri_sunset_action_cg.png"],
 ]);
-const usedActionCgImages = new Set();
-let generatedActionCgCount = 0;
-let generatedPhoneLineCount = 0;
 
 const placeholderAssets = [
   ...backgroundAssets.map(({ image, placeholder }) => [`project/images/${placeholder}`, `project/images/${image}`]),
@@ -253,8 +256,6 @@ function hidePortraits() {
 }
 
 function actionCgEvents(spec) {
-  usedActionCgImages.add(spec.image);
-  generatedActionCgCount += 1;
   return [
     ...hidePortraits(),
     {
@@ -314,7 +315,6 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
   body = removeInlineProductionDirectives(body, ctx);
   if (phone) {
     body = `（手機）${body}`;
-    generatedPhoneLineCount += 1;
   }
 
   const display = knownSpeakers.get(rawName) || rawName;
@@ -327,9 +327,42 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
   return [...hidePortraits(), ...clearCg, ...(portrait ? [portrait] : []), `\t[${display}]${body}`];
 }
 
+function resolveRegisteredAudio(rawName, registered, kind, ctx) {
+  const name = rawName.trim().replace(/^[「『"']|[」』"']$/g, "");
+  const mapped = (PROJECT_MAIN.nameMap || {})[name] || name;
+  if (!registered.has(mapped)) {
+    throw new Error(`${ctx.source} ${ctx.section}: unresolved ${kind} directive asset: ${rawName}`);
+  }
+  return mapped;
+}
+
+function normalizeAudioDirective(text, ctx) {
+  const bare = text.replace(/^【/, "").replace(/】$/, "").trim();
+  if (/^(?:BGM暫停|暫停BGM|暫停背景音樂)$/i.test(bare)) return [{ type: "pauseBgm" }];
+  if (/^(?:恢復BGM|繼續BGM|恢復背景音樂|繼續背景音樂)$/i.test(bare)) return [{ type: "resumeBgm" }];
+  if (/^(?:停止音效|音效停止)$/i.test(bare)) return [{ type: "stopSound" }];
+
+  let match = bare.match(/^(?:使用|播放|切換)\s*(?:BGM|背景音樂)(?:\s*[：:]\s*|\s+)(.+)$/i);
+  if (match) return [{ type: "playBgm", name: resolveRegisteredAudio(match[1], REGISTERED_BGMS, "BGM", ctx), keep: true }];
+  if (/^(?:使用|播放)\s*(?:BGM|背景音樂)$/i.test(bare)) {
+    if (!ctx.defaultBgm) throw new Error(`${ctx.source} ${ctx.section}: BGM directive has no name or scene default`);
+    return [{ type: "playBgm", name: resolveRegisteredAudio(ctx.defaultBgm, REGISTERED_BGMS, "BGM", ctx), keep: true }];
+  }
+
+  match = bare.match(/^(?:播放|使用)\s*音效(?:\s*[：:]\s*|\s+)(.+)$/i) || bare.match(/^使用\s*(.+?)\s*音效$/i);
+  if (match) return [{ type: "playSound", name: resolveRegisteredAudio(match[1], REGISTERED_SOUNDS, "sound", ctx) }];
+  if (/^播放\s*音效$/i.test(bare)) {
+    throw new Error(`${ctx.source} ${ctx.section}: sound directive requires a registered filename or alias`);
+  }
+  return null;
+}
+
 function lineToEvents(line, ctx) {
   const t = normalizeSourceLine(line);
   if (!t) return [];
+
+  const audio = normalizeAudioDirective(t, ctx);
+  if (audio) return audio;
 
   if (/^【背景：/.test(t)) {
     const name = t.replace(/^【背景：/, "").replace(/】$/, "");
@@ -560,7 +593,7 @@ function parseChoice(lines, start, ctx, parentStopLabels = null) {
 function buildFloor(section, lines, overrides = {}) {
   const meta = { ...floors[section], ...overrides };
   const chapter = section.split("-")[0];
-  const ctx = { floorId: meta.id, bg: meta.bg, source: `project/mainStory/CH${chapter}`, section };
+  const ctx = { floorId: meta.id, bg: meta.bg, defaultBgm: meta.bgm, source: `project/mainStory/CH${chapter}`, section };
   const parsed = parseEvents(lines, 0, ctx);
   const events = [
     setTextEvent(),
@@ -609,7 +642,16 @@ function buildFloor(section, lines, overrides = {}) {
   };
 
   validateGeneratedFloor(floor);
-  return `main.floors.${meta.id}=\n${JSON.stringify(floor, null, 4)}\n`;
+  return floor;
+}
+
+function renderFloor(floor) {
+  return `main.floors.${floor.floorId}=\n${JSON.stringify(floor, null, 4)}\n`;
+}
+
+function readFloor(file) {
+  const text = fs.readFileSync(file, "utf8");
+  return JSON.parse(text.slice(text.indexOf("{")));
 }
 
 function walkEvents(events, visitor) {
@@ -798,7 +840,7 @@ function updateTodo() {
   fs.writeFileSync(p("project", "mainStory", "TODO.md"), todoLines.join("\n") + "\n", "utf8");
 }
 
-function validateRuntimeRegistrations(expectedPhoneLineCount) {
+function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
   const dataText = fs.readFileSync(p("project", "data.js"), "utf8");
   for (const image of extraImages) {
     if (!fs.existsSync(p("project", "images", image))) throw new Error(`Missing image asset: ${image}`);
@@ -822,8 +864,23 @@ function validateRuntimeRegistrations(expectedPhoneLineCount) {
   const text = setTextEvent();
   if (!text.avg || text.fixedLines !== AVG_LAYOUT.dialogueFixedLines ||
       AVG_LAYOUT.dialogueX !== 96 || AVG_LAYOUT.dialogueY !== 295 ||
-      AVG_LAYOUT.dialogueWidth !== 352 || AVG_LAYOUT.portraitRight !== 0) {
+      AVG_LAYOUT.dialogueWidth !== 352 || AVG_LAYOUT.portraitRight !== 0 ||
+      AVG_LAYOUT.portraitMaxVisibleWidth !== 128 ||
+      AVG_LAYOUT.portraitMaxDialogueOverlapRatio !== 0.25) {
     throw new Error("AVG layout contract is stale");
+  }
+  const usedActionCgImages = new Set();
+  let generatedActionCgCount = 0;
+  let generatedPhoneLineCount = 0;
+  for (const floor of generatedFloors) {
+    walkEvents(floor.eachArrive, (event) => {
+      const text = typeof event === "string" ? event : event && event.type === "text" ? event.text : "";
+      if (text.includes("（手機）")) generatedPhoneLineCount += 1;
+      if (event && event.type === "showImage" && requiredActionCgImages.includes(event.image)) {
+        usedActionCgImages.add(event.image);
+        generatedActionCgCount += 1;
+      }
+    });
   }
   const missingActionCg = requiredActionCgImages.filter((image) => !usedActionCgImages.has(image));
   if (missingActionCg.length) {
@@ -842,15 +899,18 @@ function validateRuntimeRegistrations(expectedPhoneLineCount) {
 
 function main() {
   const checkOnly = process.argv.includes("--check");
+  const refreshIr = process.argv.includes("--refresh-ir");
+  if (checkOnly && refreshIr) throw new Error("--check and --refresh-ir cannot be used together");
   if (!checkOnly) ensureAssets();
   validateActionCgSync();
+  const sourceFiles = [1, 2, 3, 4, 5, 6].map((chapter) => p("project", "mainStory", `CH${chapter}`));
   const sections = {
-    ...readSections(p("project", "mainStory", "CH1")),
-    ...readSections(p("project", "mainStory", "CH2")),
-    ...readSections(p("project", "mainStory", "CH3")),
-    ...readSections(p("project", "mainStory", "CH4")),
-    ...readSections(p("project", "mainStory", "CH5")),
-    ...readSections(p("project", "mainStory", "CH6")),
+    ...readSections(sourceFiles[0]),
+    ...readSections(sourceFiles[1]),
+    ...readSections(sourceFiles[2]),
+    ...readSections(sourceFiles[3]),
+    ...readSections(sourceFiles[4]),
+    ...readSections(sourceFiles[5]),
   };
   const expectedPhoneLineCount = Object.values(sections).flat().filter((line) => {
     const t = line.trim();
@@ -858,31 +918,43 @@ function main() {
     return (bracketed && isBracketedPhoneSpeaker(bracketed[1])) || /^.+?[：:]\s*\{.*\}$/.test(t);
   }).length;
 
-  let generatedFloors = 0;
-  for (const key of Object.keys(floors)) {
-    const content = sections[key];
-    if (!content) throw new Error(`Missing section ${key}`);
-    const file = p("project", "floors", `${floors[key].id}.js`);
-    const exchange = characterExchanges[key];
-    if (!exchange) {
-      const output = buildFloor(key, content);
-      if (!checkOnly) fs.writeFileSync(file, output, "utf8");
-      generatedFloors += 1;
-      continue;
+  let generated;
+  if (refreshIr) {
+    generated = [];
+    for (const key of Object.keys(floors)) {
+      const content = sections[key];
+      if (!content) throw new Error(`Missing section ${key}`);
+      const exchange = characterExchanges[key];
+      if (!exchange) {
+        generated.push(buildFloor(key, content));
+        continue;
+      }
+      const markerIndex = content.findIndex((line) => /^【人物交流時間/.test(line.trim()));
+      if (markerIndex < 0) throw new Error(`Missing character exchange marker in section ${key}`);
+      generated.push(buildFloor(key, content.slice(0, markerIndex + 1), { next: null }));
+      generated.push(buildFloor(key, content.slice(markerIndex + 1), {
+        id: exchange.floorId,
+        title: `${floors[key].title}（交流後）`,
+      }));
     }
+    const bundle = createBundle(root, sourceFiles, generated, "main");
+    validateProjectReferences(root, bundle);
+    writeBundle(MAIN_STORY_IR, bundle);
+  } else {
+    const bundle = readBundle(root, MAIN_STORY_IR);
+    validateProjectReferences(root, bundle);
+    generated = bundleToFloors(bundle);
+    generated.forEach(validateGeneratedFloor);
+  }
 
-    const markerIndex = content.findIndex((line) => /^【人物交流時間/.test(line.trim()));
-    if (markerIndex < 0) throw new Error(`Missing character exchange marker in section ${key}`);
-    const beforeExchange = buildFloor(key, content.slice(0, markerIndex + 1), { next: null });
-    if (!checkOnly) fs.writeFileSync(file, beforeExchange, "utf8");
-    generatedFloors += 1;
-    const continuationFile = p("project", "floors", `${exchange.floorId}.js`);
-    const afterExchange = buildFloor(key, content.slice(markerIndex + 1), {
-      id: exchange.floorId,
-      title: `${floors[key].title}（交流後）`,
-    });
-    if (!checkOnly) fs.writeFileSync(continuationFile, afterExchange, "utf8");
-    generatedFloors += 1;
+  for (const floor of generated) {
+    const file = p("project", "floors", `${floor.floorId}.js`);
+    const output = renderFloor(floor);
+    if (checkOnly) {
+      if (!fs.existsSync(file) || !isDeepStrictEqual(readFloor(file), floor)) {
+        throw new Error(`${floor.floorId}: engine floor is stale; run node scripts/generate_main_story.js`);
+      }
+    } else fs.writeFileSync(file, output, "utf8");
   }
 
   if (!checkOnly) {
@@ -890,8 +962,10 @@ function main() {
     updateTimeline();
     updateTodo();
   }
-  validateRuntimeRegistrations(expectedPhoneLineCount);
-  console.log(`${checkOnly ? "Validated" : "Generated"} ${generatedFloors} main-story floors at ${MAP_WIDTH}x${MAP_HEIGHT}.`);
+  validateRuntimeRegistrations(expectedPhoneLineCount, generated);
+  console.log(`${refreshIr ? "Refreshed Story IR and generated" : checkOnly ? "Validated" : "Generated"} ${generated.length} main-story floors at ${MAP_WIDTH}x${MAP_HEIGHT}.`);
 }
 
-main();
+if (require.main === module) main();
+
+module.exports = { normalizeAudioDirective };

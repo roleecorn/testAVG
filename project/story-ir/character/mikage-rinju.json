@@ -1,0 +1,4904 @@
+{
+  "storyIrVersion": 1,
+  "source": {
+    "kind": "character",
+    "files": [
+      {
+        "path": "project/story/御影凛珠.txt",
+        "sha256": "350241feb30321bca4c160981b34c3424e454814d08301248c12e53772810be4"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "mikage_rinju_1",
+      "floor": {
+        "floorId": "mikage_rinju_1",
+        "title": "書店初遇",
+        "name": "書店初遇",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "mikage_bookstore.jpg",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好嘞，要找些什麼本子好呢！最近好像有不少特攝系同人的樣子。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好像娘化特攝也是個熱門題材，不，看看最近流行東西也不錯…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "最近的話，果然還是BA、FGO和學偶嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "BA的話好像數年COMIKE也是最大攤位數的作品呢！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "枯燥煩人擋路蟲子請從通道移開一點。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "說的就是你，我討厭等待，還是說蟲子聽不懂人話呢？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊？通道很寬敞吧…嘛，我讓開就行了，請。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "哼……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好毒舌的少女…希望下次不要再遇上吧……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "喂，咲耶快跟著我，想待在那裡多久。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "watanuki_sakuya_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "吾明白了……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯？怎麼回事……那個女孩子是被欺負所以跟著嗎？好奇怪的感覺…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "還是不管那麼多，買本特攝同人回去吧。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[梗平買了一本「辛味噌大戰GEGEGE」回家準備享受梗連發，]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[誰知道封面詐騙是內容是娘化UNDEAD合集本。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_1');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"mikage_rinju_2\",\n\t\t\"title\": \"毒舌衝突\",\n\t\t\"locations\": [\"melon_shop\"],\n\t\t\"floorId\": \"mikage_rinju_2\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    },
+    {
+      "id": "mikage_rinju_2",
+      "floor": {
+        "floorId": "mikage_rinju_2",
+        "title": "毒舌衝突",
+        "name": "毒舌衝突",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "mikage_bookstore.jpg",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "最近的封面欺詐也太過分了！怎麼可以用梗騙人進去看娘們的！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "watanuki_sakuya_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "嗚…在這裡不要打臉…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那邊傳來的聲音，嗯？是上次的兩位少女…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "不在這裡教訓你的話就不會懂吧！"
+        },
+        {
+          "kind": "sound.play",
+          "name": "attack.mp3"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[梗平衝到白毛少女面前代替承受了黑髮少女的耳光]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "在這裡做這種事情，假面騎士是不會袖手旁觀的…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "誰啊你…啊，上次擋路的臭蟲，嘖，我對她做什麼也不用你管吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "watanuki_sakuya_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "……那個，先生真不好意思讓你看到這種場面…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我不是臭蟲！ご唱和ください我の名を!我的名字是梗平！倒是你這惡人的名字是什麼！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "有必要向你這種不分場合胡說八道的蛆蟲告訴名字嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "watanuki_sakuya_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "凜珠醬……這位先生只是關心我而已"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "你這傢伙…誰讓你隨便說我名字的！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喂，不告訴我名字也沒關係，沒道理隨意發火吧？你沒事吧…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "嘖，我的名字是御影凛珠…儘管開心吧，能得知我的名字，你這粒線體異變。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "watanuki_sakuya_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "綿貫咲耶",
+          "text": "吾乃綿貫咲耶…凜珠她沒惡意的…可能有一點點，但是她是乖孩子…梗平先生…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哈啊？綿貫小姐你是中了催眠嗎？需要我幫忙MEMORY BREAK嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "她怎麼看也不像是乖孩子吧？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "你這失敗進化體有資格對我評頭論足嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "watanuki_sakuya_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "綿貫咲耶",
+          "text": "凜珠醬…買了想要的本子就回去吧……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "嘖…你這傢伙……嘖，你這猴子別以為隨便幫助別人就有好感了！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[兩位少女就這樣前往收銀處付款後離開了。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……為什麼會有這樣的人啊。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[梗平感覺見識到奇怪的關係，摸不著頭腦買了本BA同人本就回家閱讀了。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[怎麼是老師與黑服的BL本…梗平卻讀完覺得挺有趣的。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_2');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"mikage_rinju_3\",\n\t\t\"title\": \"百合守則\",\n\t\t\"locations\": [\"melon_shop\"],\n\t\t\"floorId\": \"mikage_rinju_3\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    },
+    {
+      "id": "mikage_rinju_3",
+      "floor": {
+        "floorId": "mikage_rinju_3",
+        "title": "百合守則",
+        "name": "百合守則",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "mikage_bookstore.jpg",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[梗平為了準備參加comike而繼續到書店M進行情報收集…]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "怎麼又是你這類人猿……能不要進入人類大人知識之地嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……今天就只有你一人嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "是這樣沒錯，和你臭金毛猴子有關係嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "雖然作為外人說教不太好，但是我覺得你對陌生人這樣說話很容易受害喔？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_angry.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "蛤啊？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "社會壓力很大，像你這樣對他人露出尖銳鋒芒，遇上瘋子可以就遭殃了…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "哼，就憑你想對我說教嗎？先從山洞重新開始進化吧…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "UNDEAD在哪裡出現也沒人知道，禍從口出…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "……我先說好了，我也是會看人說話的。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊？你這是什麼意思……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "你和那傢伙散發著近乎一樣的氣場，令我討厭，就是這麼簡單…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那傢伙？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "綿貫咲耶，自以為自己是正義一方，遵從本心行事……令人作嘔"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "假面騎士！絕不放棄！你說的那些是作為RIDER應做的！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "根本不是壞事也不應該被嘲弄。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "哼，滿嘴漂亮話這點也和那傢伙一樣…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "別浪費我時間了，我只是剛好來買東西的…你這糞金龜蟲…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[御影凛珠隨意地買了一本同人本後結帳離開了。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哈啊……真是毒舌又不會說話的女孩啊。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯？她剛才在百合特區拿的本子嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "《與友人和好如初甜甜蜜蜜100種浪漫守則》？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[梗平出於好奇購買了那本同人本，回家看了…]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[內容卻是-毒舌使人快樂，當個傲嬌令對方回頭吧。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "假面騎士的末日到了…看這種東西一輩子也沒法和好如初吧…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_3');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"mikage_rinju_4\",\n\t\t\"title\": \"笨拙和解\",\n\t\t\"locations\": [\"melon_shop\"],\n\t\t\"floorId\": \"mikage_rinju_4\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    },
+    {
+      "id": "mikage_rinju_4",
+      "floor": {
+        "floorId": "mikage_rinju_4",
+        "title": "笨拙和解",
+        "name": "笨拙和解",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "mikage_bookstore.jpg",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "next_to_you_emotional.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[梗平又一次到了書店M]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我到底是在做什麼…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[昨晚在床上又看了一次老師與黑服的BL本，感覺奇妙關係不應是有毒語言維持。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "作為一名假面騎士不能放著關係崩壞不管…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[梗平裝作若無其事地特攝區徘徊，視線往隔壁的百合區飄。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不在，御影凜珠不在。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(鬆了一口氣，卻又覺得哪裡空落落的。這種矛盾的心情比看完整本BL同人還難受。)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[當梗平拿一本新的《假面騎士BLACK SUN》設定集準備結帳時]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[入口的自動門「叮咚」一聲響起。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "……為什麼你這隻蟑螂會在這裡。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我來買書啊。這裡是書店，我來不是很正常嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "正常人在被罵了兩次之後應該會識相地遠離吧。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[御影凛珠繞過梗平，徑直走向百合區，梗平卻緊隨其後…]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "幹嘛跟著我！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我只是好奇，你今天又是一個人來，那個綿貫小姐呢？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "……關你什麼事。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "是不關我的事。但那位綿貫小姐說你是乖孩子，今天你一個人來，她沒跟著，我在想是不是──"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "她來不來跟你沒關係吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "你這個……這個……假面騎士腦的猴子，不要自以為很懂！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(我沒再說話。假面騎士的教條告訴我，)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(當一個人身上散發出求救信號時，)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(就算對方嘴上說「滾開」，也不能真的走。這是二號前輩教過我的。)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "明明是那傢伙錯了，我用書本教的嘗試和好卻沒用…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[御影凛珠從書架抽出《與友人和好如初甜甜蜜蜜100種浪漫守則》的續集]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "難道要看第二集才行嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那本書，你認真看了嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "……看了又怎樣。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "裡面寫了什麼？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "跟你沒關係吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我也買了一本看。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "你還是跟蹤死變態嗎！學人類看什麼百合本──"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我看你挑那本的時候表情很奇怪。我想知道你在看什麼東西，就買了。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "………嘖。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[御影凛珠臉上混雜著羞恥、惱怒、還有一點點我不知道該怎麼形容的動搖，準備離開。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "御影小姐。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "幹嘛…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那本書教人『毒舌使人快樂，當個傲嬌令對方回頭吧』。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "那又如何"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我覺得那本書寫錯了。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "……什麼？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我看完之後想了一整晚。傲嬌能讓對方回頭什麼的是假的。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "她是被你推開了，沒有被你拉回來。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "你又懂她什麼了！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我不是要說教。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "只是……我也很喜歡特攝。假面騎士裡面有很多角色，他們也都很笨拙，"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不會好好說話，但最後他們都學會了用正確的方式表達。不是用刺，是用手。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[書店裡安靜了幾秒。遠處有人在翻雜誌，紙頁嘩啦嘩啦的聲音成了唯一的背景音。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "……你為什麼要管我的事。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "因為我是假面騎士。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "你才不是假面騎士。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "…哈啊…你是……頂多算是……一個有點多管閒事的怪人。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那也比蟲子和糞金龜好。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[御影凛珠嘴角動了一下。我不知道那算不算笑，]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[但那是第一次在她臉上看到接近柔軟的東西。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "……我要去結帳了。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "mikage_rinju_smile.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "御影凛珠",
+          "text": "……謝謝。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[少女快步走向收銀台結帳。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[梗平站在原地，手裡還握著那本《假面騎士BLACK SUN》設定集。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[低頭看了看封面上那隻黑色的蝗蟲為原型的昭和RIDER]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "HEN…SHIN…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[梗平又抬頭看了看已經走到門口的那個黑髮背影。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_smile_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哈哈…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[假面騎士也不是每次都能打敗怪人。有的時候，能讓對方少說一句「滾開」，就算贏了。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "買第二集《與友人和好如初甜甜蜜蜜100種浪漫守則》看看吧…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[《與友人和好如初甜甜蜜蜜100種浪漫守則》]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[「毒舌只能使你快樂，要和好如初還是用肉體抓住對方說清楚吧」]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那麼重要的事情別放在續集啊，蠢死了。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_4');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    }
+  ]
+}

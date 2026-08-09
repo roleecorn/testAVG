@@ -2,6 +2,8 @@
 
 背景音樂 BGM 的完整插入、樓層預設、`keep` 與 `flag:__bgm__` 說明，請先看 [BGM 背景音樂](bgm.md)。本文件保留音訊與特效的總覽。
 
+自然語言劇本中的音效意圖必須先正規化為 Story IR `sound.play`／`sound.stop`，通過共用驗證後才映射成 `playSound`／`stopSound`。BGM 使用獨立的 `bgm.*` 節點；兩者不得合併成不分用途的 audio 指令。
+
 ## 如何新增音樂/特效
 
 ### 新增背景音樂

@@ -1,0 +1,1154 @@
+{
+  "storyIrVersion": 1,
+  "source": {
+    "kind": "character",
+    "files": [
+      {
+        "path": "project/story/荒漠支線.txt",
+        "sha256": "461c8c6618635dfaf17aa3e208401a89246f9b400e87a6099d0d1fd810b73a6f"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "huangmo_1",
+      "floor": {
+        "floorId": "huangmo_1",
+        "title": "書店邂逅",
+        "name": "書店邂逅",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "scene_mapo_shop.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "每個月發行的親熱天堂，就算來了秋葉原還是得買的♪",
+          "presentation": {
+            "pos": "avg"
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "找到了!就剩下最後一本了!",
+          "presentation": {
+            "pos": "avg"
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平伸出了手，但卻在半空中與另外一隻手碰觸了。",
+          "presentation": {
+            "pos": "avg"
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 12,
+          "image": "huangmo_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "???",
+          "text": "咦?",
+          "presentation": {
+            "pos": "avg"
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "在書店與美少女邂逅...真是美妙的展開，咦不過是黃書...",
+          "presentation": {
+            "pos": "avg"
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平回過神來才發現，那個少女已經紅著臉逃跑了。",
+          "presentation": {
+            "pos": "avg"
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "...不必逃得這麼快吧(垂頭喪氣)",
+          "presentation": {
+            "pos": "avg"
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('huangmo_1');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"huangmo_2\",\n\t\t\"title\": \"餐廳再會\",\n\t\t\"locations\": [\"restaurant\"],\n\t\t\"floorId\": \"huangmo_2\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    },
+    {
+      "id": "huangmo_2",
+      "floor": {
+        "floorId": "huangmo_2",
+        "title": "餐廳再會",
+        "name": "餐廳再會",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "scene_street.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "next_to_you_emotional.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好了該吃飯了，今天就來這間餐廳吃飯吧，聽說炸蝦一絕。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 12,
+          "image": "huangmo_smile.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "???",
+          "text": "您好，請問今天要來點什麼呢?"
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我要來點...咦?"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 12,
+          "image": "huangmo_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "???",
+          "text": "啊..."
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你就是上次嗚嗚嗚"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平被摀住了嘴。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 12,
+          "image": "huangmo_angry.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "???",
+          "text": "不要亂說話。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗚嗚嗚(點頭)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 12,
+          "image": "huangmo_smile.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "???",
+          "text": "客人您要來點什麼呢?(下班後再來說)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平度過了一個難受的午餐。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 12,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "......"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('huangmo_2');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    }
+  ]
+}

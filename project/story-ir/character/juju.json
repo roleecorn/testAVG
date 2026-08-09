@@ -1,0 +1,4403 @@
+{
+  "storyIrVersion": 1,
+  "source": {
+    "kind": "character",
+    "files": [
+      {
+        "path": "project/story/茱茱-角色劇情.txt",
+        "sha256": "2227df2bc0ec4f2b76af5a6681fb7e65869bf52ea24ebbfd0c87e8bea0bd57de"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "juju_1",
+      "floor": {
+        "floorId": "juju_1",
+        "title": "惡魔迷路",
+        "name": "惡魔迷路",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "scene_road.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "warped_surreal.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "【地點",
+          "text": "倉庫區】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "奇怪？怎麼跑到這來了？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "難道又是修卡的陰毛嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "怎麼可能？而且應該是陰謀才對"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_smile.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "還是說你想說沒人，講黃色笑話？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "欸？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "欸？難不成，你看得到我？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "呃……是，看得很清楚"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_sad.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "我的撒旦啊！總算找到人了！（嚎啕大哭）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "欸！！！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（一段時間後）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_sad.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "噢抱歉，失態了，小人名叫茱茱"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "如你所見，是個惡魔"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "惡魔？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "我是一個月前被召喚的，但不曉得儀式出了什麼問題"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "找不到召喚我的人，而且我也沒辦法回地獄了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你有沒有想過……找專業人士？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "我找了！可他們只想從物理層面消滅我！茱茱：拜託了，梗平大爺，把惡魔趕回地獄也算功德一件！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "為什麼你會知道我的名字？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "是我的能力，我還有辦法讓你變雖小"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "具體來講，就是抽卡只能保底，一番賞只能抽最爛的"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好好好！我幫就是了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_smile.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "這真是太好了，來，這個bbcall給你"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "按這邊的按鈕，就能呼叫我囉！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "雖然我很想回家，但是我不急，你可以一兩天後叫我"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "但你一定要幫我找線索，知道嗎！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好，我知道了……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_1');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_2\",\n\t\t\"title\": \"古書追逐\",\n\t\t\"locations\": [\"used_bookstore\"],\n\t\t\"floorId\": \"juju_2\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    },
+    {
+      "id": "juju_2",
+      "floor": {
+        "floorId": "juju_2",
+        "title": "古書追逐",
+        "name": "古書追逐",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "scene_mapo_shop.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "dark_alleys_tension.ogg",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "【地點",
+          "text": "倉庫區】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我剛剛過來的時候在雜貨店旁邊發現了古書店啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "對吼！附近的那個雜貨店還有這種地方"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "梗平，你真是個天才"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哈哈！沒什麼啦～"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "[兩人隨後趕往了雜貨店]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "【地點",
+          "text": "古書店】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "噢！找到了！＜如何把惡魔趕回地獄＞"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "怎麼這麼完美符合我們的需求"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "活像給我們挖坑跳一樣"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "總之我們打開看看吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "噢…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "店主",
+          "text": "喂！小伙子！不準白看書！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不好意思！我立刻買下來！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "店主",
+          "text": "嗯？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（店主看了一下梗平）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "店主",
+          "text": "不用錢也行，你稍微讓我看一下"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "梗平！拿了書快跑！他是退役驅魔師！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "蛤？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "跑！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "噢！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（梗平撞倒了店主跑走）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "店主",
+          "text": "唉唷！真疼！剛才看到白白的一塊，果然是惡魔！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "店主",
+          "text": "等等！果然是什麼來着？而且我為啥這麼疼？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（此時在古書店遠方）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊……累死我了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "我對那個店長的記憶做了處理"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "他一時半回也想不起我們"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "我得先看看這書的真偽"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "不然可能會發生不好的事"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "具體來講？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "全秋葉原……的馬桶會堵塞"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "蛤？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "這邊在2000年還真的爆發過一次"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "好了，這不是重點，總之你改天再找我"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "倉庫會合，知道嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "噢……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_2');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_3\",\n\t\t\"title\": \"回家法陣\",\n\t\t\"locations\": [\"tent\"],\n\t\t\"floorId\": \"juju_3\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    },
+    {
+      "id": "juju_3",
+      "floor": {
+        "floorId": "juju_3",
+        "title": "回家法陣",
+        "name": "回家法陣",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "scene_road.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "next_to_you_emotional.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "【地點",
+          "text": "倉庫區】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "來啦？還以為你忘了我呢"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "好了，我看這書是真貨，趕緊操作吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "噢好！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（梗平按照書上步驟操作，完成法陣）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "最後一步，施術者須裸體跳舞……啥？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這書正經嗎！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "保真啦！總之你先跳跳看試試？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不是！那個！不好吧？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "沒事，我閱過的屌比你吃的米還多，跳吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不是這個問題好不好！而且我好像聽到了什麼糟糕的東西！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "跳！如果你還想要你的一番賞的話！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "還是你想逼我使用最後手段"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（茱茱抄起一旁的大斧）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好好好！我跳就是了！你冷靜！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這是第一次在清醒狀態跳啊…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（梗平脫光衣服，開始跳裸舞，然後法陣開始發光）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_sad.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "噢！可以回家啦！抱歉啦梗平！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "我會在地獄幫你留個VIP座位，就這樣，掰！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "慢著！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（茱茱消失了）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我也想上天堂好不好！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（那一夜，梗平無法忘懷裸舞的屈辱）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_3');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_4\",\n\t\t\"title\": \"裝死大成\",\n\t\t\"locations\": [\"park\"],\n\t\t\"floorId\": \"juju_4\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    },
+    {
+      "id": "juju_4",
+      "floor": {
+        "floorId": "juju_4",
+        "title": "裝死大成",
+        "name": "裝死大成",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "scene_road.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "waking_the_devil_crisis.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "【地點",
+          "text": "公園】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "嗨！梗平！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "茱茱！你怎麼在這！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "這次我靠自己的力量上來的"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "主要是跟你講一個壞消息和一個好消息"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "呃…先上壞消息吧？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "那店長想起來了，現在帶了一大批人在包圍這邊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不是吧！那好消息呢？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "我已經想到破局方法啦！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "各位！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（茱茱開始大喊）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "我只不過是威脅這個人類，讓他幫我回家！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "請放過他吧！作為交換！我讓你們殺我！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "茱茱！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_smile.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "我不能放著恩人不管啊，謝謝你"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（店主從草叢走了出來）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "店主",
+          "text": "好！我接受！小伙子你滾吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我還沒答應呢！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "梗平，惡魔在人間是需要他人獻祭的"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "如果不是你，我早就死了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_normal.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "這是報答，也是裸舞的賠禮"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "拜託你回家，好嗎！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "店主",
+          "text": "聽到了嗎？滾吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我知道了……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "(梗平沒有回頭，離開了秋葉原，只有茱茱的慘叫聲不絕於耳)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒想到bbcall還在我這啊…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（那一夜，梗平在列車上，出於懷念，按了一下bbcall ）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "（然後看到一坨白色的身影）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "juju_angry.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "裝☆死☆大☆成☆功！！！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_4');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    }
+  ]
+}

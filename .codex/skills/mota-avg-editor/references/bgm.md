@@ -2,6 +2,8 @@
 
 這份文件只說明背景音樂 BGM。音效請看 [音樂與特效](audio-effects.md)。
 
+自然語言劇本中的背景音樂意圖必須先正規化為 Story IR `bgm.play`／`bgm.pause`／`bgm.resume`，通過共用驗證後才映射成 `playBgm`／`pauseBgm`／`resumeBgm`；不得和音效的 `sound.*` 節點混用。
+
 ## 檔案登錄
 
 新增 BGM 時要完成兩件事：

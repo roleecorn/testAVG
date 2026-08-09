@@ -70,9 +70,10 @@ main.floors.scene_intro =
 
 ```powershell
 node scripts/generate_main_story.js --check
+node scripts/manage_story_ir.js
 ```
 
-驗證至少要確認 `width === 17`、`height === 13`、`map.length === 13`，且每列長度皆為 17。
+驗證至少要確認主線與角色支線 Story IR 的來源 SHA-256、schema、素材／跳轉註冊及 floor round-trip，並確認 `width === 17`、`height === 13`、`map.length === 13`，且每列長度皆為 17。
 
 AVG 故事劇情、章節劇情、場景演出一律寫在 `eachArrive`。`firstArrive` 目前不要放故事，只保留給未來明確需要整個存檔只執行一次的指導規則或初始化功能。
 

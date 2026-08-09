@@ -1,0 +1,4466 @@
+{
+  "storyIrVersion": 1,
+  "source": {
+    "kind": "character",
+    "files": [
+      {
+        "path": "project/story/月讀愛.txt",
+        "sha256": "4dd7464481e06636e399640aafb6653db9b505db376bf1c5d9fa197e60e5572b"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "yuedu_ai_1",
+      "floor": {
+        "floorId": "yuedu_ai_1",
+        "title": "酒友初遇",
+        "name": "酒友初遇",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "scene_mapo_shop.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "哇哈哈！怎麼了！是個黃毛小子啊！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊？聲音從哪裡來的？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "啊，你有點太高了呢，往下看吧，在這裡呢！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊？好…小的孩子……小孩子出現在這地方不太好吧？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "哇哈哈～像常人一樣的反應很不錯呢？名字是什麼？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊？小孩子問我大哥哥名字嗎？大哥哥我叫梗平啊，要大哥哥為你帶路找媽媽嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "哇哈哈！一看就知道你不是本地人呢，小子！咱是月讀愛！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "本地人都知道咱是合法蘿莉呢！梗平嗎？真不錯的名字呢！如果想找酒友就再來這裡吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊？合法蘿莉……？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "什麼，不知道什麼是合法蘿莉嗎……嗯，哇哈哈！關於咱的事就之後再說吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "「小女孩拿著日本酒大搖大擺地離開了。」"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "雷厲風行的小女孩啊……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_1');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"yuedu_ai_2\",\n\t\t\"title\": \"暢快酒會\",\n\t\t\"locations\": [\"convenience_24h\"],\n\t\t\"floorId\": \"yuedu_ai_2\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    },
+    {
+      "id": "yuedu_ai_2",
+      "floor": {
+        "floorId": "yuedu_ai_2",
+        "title": "暢快酒會",
+        "name": "暢快酒會",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "scene_mapo_shop.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……不知不覺又走到這裡了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "哦哦，梗平呢！終於想找個酒友嗎？怎樣，累了吧，先來喝一杯，呼呼～"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這是……啤酒？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "啊？不合口味嗎？生命之水、威士忌那些更適合你嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不不，啤酒就行了，我不客氣了！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "嗯哼哼，哇哈哈！真不錯呢！叫咱做小愛吧～"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哦哦……小愛"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "哇哈哈，真不錯呢！有什麼想趁著酒會想說的嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "其實呢……我在這發生了這些那些……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "哦…哦也？真是不容易呢！要大姐姐咱給你安慰安慰嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗚哇哇！！大姐姐！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "哇哈哈！趁著酒勁一股腦盡情說個痛快吧！不醉無歸？哇哈哈！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "「梗平和月讀愛進行了一場暢快酒會的樣子，壓力值下降了。」"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_2');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"yuedu_ai_3\",\n\t\t\"title\": \"大姐頭\",\n\t\t\"locations\": [\"convenience_24h\"],\n\t\t\"floorId\": \"yuedu_ai_3\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    },
+    {
+      "id": "yuedu_ai_3",
+      "floor": {
+        "floorId": "yuedu_ai_3",
+        "title": "大姐頭",
+        "name": "大姐頭",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "scene_mapo_shop.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "flags_drama.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "哦也？這不是梗平小弟嗎！又遇到什麼好事嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊，不是，怎麼我變小弟了…小愛…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "哇哈哈！這種叫法不是顯得咱像大姐頭嗎？怎麼？不喜歡嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嘛，也沒關係吧……今天只是覺得有點不順心就走到這裡了……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "就是把咱這地方當解壓場所嗎！真不錯呢不錯呢！那麼來開喝吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不，整天喝酒對身體不好吧……嗯？為什麼小愛身上沒有酒臭的？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "哼哼哼，這可是商業機密呢！想知道更多關咱的事就來酒會吧！梗平。"
+        },
+        {
+          "kind": "choice",
+          "prompt": "要怎麼回應？",
+          "options": [
+            {
+              "text": "果然不能喝酒啊",
+              "events": [
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "(果然不能喝酒啊)"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "我奶奶說過！行天之道總司一切之人是不能隨便沾染酒精的！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "哦！哦！真是有趣呢！梗平小弟～上次和我喝的就不行嗎？那麼，有什麼想喝嗎？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "有牛奶嗎？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "有喔～哇哈哈～那就給梗平小弟喝牛奶，咱就愉快喝酒吧！話說回來～"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "怎麼了？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "嗯姆嗯姆，細數你的罪業吧～！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "哦哦！是假面騎士Ｗ！事到如今還數得清嗎！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_smile.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "哇哈哈～猜對了～"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "「雖然不是兩人一體的假面騎士，但是享用著牛奶卻發著酒瘋的梗平可能是被氣氛感染了吧。」"
+                }
+              ]
+            },
+            {
+              "text": "不就是喝酒！誰怕誰！",
+              "events": [
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "(不就是喝酒！誰怕誰！)"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "哦哦！誰怕誰啊！就喝個痛快吧！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "………"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "……"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "…"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "修卡那些混…嗝……混帳們…想破壞comike…嗝…我不會讓那種事發生的…"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "哇哈哈，酒量不太好呢！梗平～哦哦，修卡嗎？那是什麼？聽上去真有趣呢！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "那是……邪惡……嗝"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "乖乖，看來梗平小弟就是對抗邪惡的正義伙伴呢！咱會給你應援喔！加油加油～"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "嗝……"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "「梗平在月讀愛的安慰下，壓力值下降了，把月讀愛視為大姐頭了。」"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_3');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"yuedu_ai_4\",\n\t\t\"title\": \"希望之花\",\n\t\t\"locations\": [\"convenience_24h\"],\n\t\t\"floorId\": \"yuedu_ai_4\",\n\t\t\"once\": true\n\t});\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    },
+    {
+      "id": "yuedu_ai_4",
+      "floor": {
+        "floorId": "yuedu_ai_4",
+        "title": "希望之花",
+        "name": "希望之花",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "scene_mapo_shop.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "next_to_you_emotional.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平仿佛被什麼吸引又來到這裡……那是酒的魅惑……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "哦也？今天也來嗎？遇到什麼好事嗎？梗平小弟。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不，就是喝酒放鬆……還有……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "還有什麼？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "想見一下小愛大姐頭而已"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "啊？哇哈哈！梗平小弟你就是這樣露出軟弱一面去把妹的嗎？真好笑呢！先來喝酒吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊哈哈……是呢！來喝吧！小愛大姐頭！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_smile.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "嗯哼嗯哼，對了，咱之前說過會告訴你咱的事吧？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊，確實有這麼一回事。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "你覺得咱這裡是什麼地方？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "酒吧？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "便利店啦～哇哈哈！咱身體離不開酒了……每天煩心的事一件接一件…只有在喝酒時才能忘掉一切…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "小愛大姐頭，你這是醉了嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_smile.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "沒有沒有，梗平老弟在小看咱嗎？就是說說咱的事情而已～"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "是這樣嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_smile.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "社會之壓、他人之怨、不公之害……一旦不喝酒就會想起那些東西令人煩惱不是嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitLeft",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊……是這樣呢……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "image",
+          "code": 20,
+          "image": "yuedu_surprised.png",
+          "loc": [
+            "portraitRight",
+            "portraitBottom"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "嗯！像這樣喝個痛快就暢所欲言呢！梗平老弟也多喝多說！"
+        },
+        {
+          "kind": "choice",
+          "prompt": "要怎麼回應？",
+          "options": [
+            {
+              "text": "希望之花🌸",
+              "events": [
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "(希望之花🌸)"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "那可當然呢！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "有點詠唱文的意味呢～那就來玩玩吧！那個！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "那個是指…？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "哼哼～團長，車已經準備好了！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "哦哦！那麼我走了！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "月讀愛左右踏步轉轉圈～"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平也追著其身後跑火車～"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 0
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_smile.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "感覺真安靜啊，街上也沒有號角的人，和總部差別真大啊。"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "啊，可能是他們把火星的戰力都調到那裡去了。"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_smile.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "不過這也和咱們沒有關係了。"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "你心情很愉快啊。"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "那是當然的了！大家也有救了，塔卡基又那麼努力，我也是加把勁騎士！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "啊，沒錯，我們至今為止所做一切並不是徒勞的。今後也是，只要咱們不停下腳步，道路就會不斷延伸。"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "太長了太長了～哇哈哈！快倒下快倒下～"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "🔫🔫🔫🔫パーンパーンパーン！"
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "next_to_you_emotional.mp3"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "🚶〜⇒💃<止まるんじゃねぇぞ…（團長模仿躺地）"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "哇哈哈！超像的超像的！啊～"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "是這樣嗎？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "秋葉原可是充滿可能性之街呢～梗平小弟！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "什麼啊…那是……"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "嗯哼哼，能用玩梗令你心情愉快就好呢～秋葉原可是愛與希望之街～還有酒！不能不喝！今天也喝個痛快吧！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "啊！那可是當然的！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "「梗平與月讀愛借著酒勁愉快地玩梗，感覺某個地方的希望之花又盛開了。」"
+                }
+              ]
+            },
+            {
+              "text": "梗↗平↘小↗弟↘",
+              "events": [
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "(梗↗平↘小↗弟↘)"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "梗↗平↘小↗弟↘為什麼你沒有接受適應手術就能喝酒？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "哦哦…！大姐頭補了EXAID嗎？"
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "next_to_you_emotional.mp3"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "哇哈哈～因為很有趣呢！為什麼你能產生怪梗呢！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "為什麼你會遇上那些事情呢！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "這裡就由我一人演多角吧！大姐頭！不要再說了！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "［梗平跑步中］"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_smile.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "答案只有一個——"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "閉嘴啊！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "［梗平跑步中］"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "梗↗平↘小↗弟↘你是世界上，第一個感染怪梗病毒的男人啊！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_neutral_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "我，得了怪梗病？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "騙人的，這一定是騙我的！嗚啊啊啊！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "超像的！超像的！了不起了不起！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "這個橋段已經刻在我ＤＮＡ中了啦！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "image",
+                  "code": 20,
+                  "image": "yuedu_surprised.png",
+                  "loc": [
+                    "portraitRight",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "月讀愛",
+                  "text": "梗平小弟果然很棒呢！未來也要享受玩梗樂趣喔！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 10,
+                  "image": "keng_surprised_portrait.png",
+                  "loc": [
+                    "portraitLeft",
+                    "portraitBottom"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "哈哈哈！不用大姐頭說也會！那麼喝酒吧！大姐頭！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "［因為玩了特攝梗而滿足的梗平，充滿了對明天的希望，用梗為世界帶來和平吧。］"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_4');\n}"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+        }
+      ]
+    }
+  ]
+}
