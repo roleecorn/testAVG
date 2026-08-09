@@ -10,7 +10,7 @@ main.floors.juju_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_road.png",
+            "name": "ms_bg_warehouse_district.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

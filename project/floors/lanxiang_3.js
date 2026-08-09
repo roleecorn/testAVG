@@ -10,7 +10,7 @@ main.floors.lanxiang_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_road.png",
+            "name": "ms_bg_riverside.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

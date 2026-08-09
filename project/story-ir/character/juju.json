@@ -23,7 +23,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_road.png",
+            "name": "ms_bg_warehouse_district.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -1123,7 +1123,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_mapo_shop.png",
+            "name": "ms_bg_bookstore_a_interior.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -2402,7 +2402,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_road.png",
+            "name": "ms_bg_warehouse_district.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -3334,7 +3334,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_road.png",
+            "name": "ms_bg_riverside.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

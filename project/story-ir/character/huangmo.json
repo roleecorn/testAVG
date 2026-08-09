@@ -23,7 +23,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_mapo_shop.png",
+            "name": "ms_bg_bookstore_a_interior.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -557,7 +557,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_street.png",
+            "name": "ms_bg_family_restaurant_interior.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

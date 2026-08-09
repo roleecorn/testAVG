@@ -10,7 +10,7 @@ main.floors.yuedu_ai_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_mapo_shop.png",
+            "name": "ms_bg_bar.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

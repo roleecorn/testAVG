@@ -23,7 +23,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_road.png",
+            "name": "ms_bg_street.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -1581,7 +1581,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_road.png",
+            "name": "ms_bg_street.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -2831,7 +2831,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_tournament.png",
+            "name": "ms_bg_tournament_venue.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -4824,7 +4824,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_street.png",
+            "name": "ms_bg_street.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

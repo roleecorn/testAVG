@@ -10,7 +10,7 @@ main.floors.dizi_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_station.png",
+            "name": "ms_bg_street.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

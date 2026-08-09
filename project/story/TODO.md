@@ -10,7 +10,7 @@
 
 ## 待補素材
 
-- 目前無。
+- `watanuki_sakuya_1`～`watanuki_sakuya_4`：神社場景尚無可重用的 544×416 正式背景；目前仍使用 1438×810 的 `watanuki_shrine_bg.jpg`，待繪製神社背景後替換。
 
 ## 待實作演出或小遊戲
 

@@ -23,7 +23,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_station.png",
+            "name": "ms_bg_station.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -619,7 +619,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_station.png",
+            "name": "ms_bg_station.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -1528,7 +1528,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_station.png",
+            "name": "ms_bg_station.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -2577,7 +2577,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "scene_station.png",
+            "name": "ms_bg_station.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

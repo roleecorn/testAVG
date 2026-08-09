@@ -10,7 +10,7 @@ main.floors.mikage_rinju_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "mikage_bookstore.jpg",
+            "name": "ms_bg_bookstore_a_interior.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

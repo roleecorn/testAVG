@@ -10,7 +10,7 @@ main.floors.huangmo_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_mapo_shop.png",
+            "name": "ms_bg_bookstore_a_interior.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

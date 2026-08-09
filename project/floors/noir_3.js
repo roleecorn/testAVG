@@ -10,7 +10,7 @@ main.floors.noir_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_tournament.png",
+            "name": "ms_bg_tournament_venue.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

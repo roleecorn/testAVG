@@ -10,7 +10,7 @@ main.floors.huangmo_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_street.png",
+            "name": "ms_bg_family_restaurant_interior.png",
             "canvas": "bg",
             "x": 0,
             "y": 0

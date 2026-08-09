@@ -10,7 +10,7 @@ main.floors.lanxiang_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "scene_street.png",
+            "name": "ms_bg_station.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
