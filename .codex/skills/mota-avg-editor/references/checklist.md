@@ -17,6 +17,7 @@
 - 左右人物位置只代表可用槽位；每句已清空所有人物 code 並只顯示當前發言者，三人以上場景沒有新增第三槽位或保留非發言者。
 - 精確人物槽位、`portraitBottomGap`、`portraitMaxVisibleWidth=128`、`portraitMaxDialogueOverlapRatio=0.25` 與對話框矩形集中於單一 layout config；人物依 alpha bbox 錨定，超過各槽有效上限時等比例縮小且不放大小圖，floor／角色 mapping 沒有重複寫死 gap、尺寸或最終座標。
 - 每個 `【背景：地點】` 都精確映射到唯一檔名；正式圖只替換地點專檔，未覆寫任何共用 generic 背景。
+- 每張地點背景都是完整畫面的 544×416；沒有 416×416 或其他錯誤尺寸的地點背景、佔位圖或相容例外遺留在可用資產中。
 - 劇本製作指令已轉成事件，不會以 `【CG：...】`、`【GIF：...】`、`【背景：...】` 等文字直接顯示給玩家。
 - 修改保持在使用者授權與本次任務範圍內；局部修改沒有造成整檔重排或無關生成器輸出。
 - 已檢查 `git diff --name-only`、`git diff --stat` 與 `git diff --check`；若使用者要求提交，也已檢查 staged diff 與 commit 邊界。
