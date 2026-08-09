@@ -4,16 +4,18 @@
 
 - 已讀取並遵守本次實際使用的每一個 reference／子 Skill 驗收段落。
 - 所有角色劇情變更都能追溯至 `project/story/*.txt` 真實來源；scene／floor 沒有反向取代文本。
+- 主線與角色支線都先由來源文本產生相同 schema 的可序列化 Story IR，通過 schema、必要參數、流程與素材驗證後才產生引擎事件；沒有任一分支直接從未驗證原文生成事件。
+- 自然語言理解只存在於 Story IR 正規化階段；事件生成器只做確定性映射。未辨識或缺參數的製作指令已停止受影響範圍並落入 question／TODO，沒有降級成玩家可見文字。
+- `使用BGM`、`BGM暫停`、`播放音效` 等語意及其自然語言變體均先轉成 `bgm.play`、`bgm.pause`、`sound.play` 等 Story IR 節點，再映射為合法引擎事件；必要曲目或音效名稱在驗證前已解析完成。
 - 新增或修改的檔案、ID、註冊資料與引用彼此存在且一致。
 - 所有事件 JSON、JavaScript 與 JSON 資料均通過相應語法檢查。
-- 已執行 `python scripts/build_action_cgs.py --check` 與 `node scripts/generate_main_story.js --check`；所有標準主線 floor 均為 17×13，且生成器沒有把地圖寫回 13×13。
-- 主線與角色支線遵循同一套全局 AVG 版面；若現有 floor 尚未遷移，交付中明確標示為等待 layout config 實作與視覺驗收的既有實作債，不把它當成允許的新例外。
+- 已執行 `python scripts/build_action_cgs.py --check`、`node scripts/generate_main_story.js --check` 與 `node scripts/manage_story_ir.js`；主線與支線 IR 的來源 SHA-256、schema、素材／跳轉註冊及 floor round-trip 均一致，所有標準主線 floor 均為 17×13。
+- 主線與角色支線遵循同一套全局 AVG 版面，所有現有 AVG floor 都使用全局語意槽位；後續視覺調整只修改單一 layout config 與共用資產規則，沒有新增 floor 或角色例外。
 - `[人名：內容]` 簡訊仍輸出為帶角色名的手機對話；帶冒號的長敘事方括號仍是旁白，生成器沒有把兩者互相誤判，也沒有自行改寫來源台詞用字。
 - 六張已登錄的主線動作 CG 都能由目前來源中的 CG／GIF 名稱命中；`*_cg.png` 母檔與 416×286 `*_action_cg.png` 衍生檔的 manifest 雜湊同步，來源標記改名時不會靜默退回 placeholder。
 - 新版 544×416 AVG 版面採左人物、中央窄對話框、右人物的下方橫向構圖；人物 bottom 全部只由一個 `portraitBottomGap` 參數控制，且人物 z-order 低於對話框 UI。
 - 左右人物位置只代表可用槽位；每句已清空所有人物 code 並只顯示當前發言者，三人以上場景沒有新增第三槽位或保留非發言者。
-- 精確人物槽位、`portraitBottomGap` 預設值與對話框矩形在實作時已用遊戲內畫面量測並集中於單一 layout config；floor／角色 mapping 沒有重複寫死 gap 或最終座標。
-- 若本次仍是純規範階段，確認沒有修改 generator、floor、事件或資產，也沒有把尚未量測的 placeholder 值寫成正式座標。
+- 精確人物槽位、`portraitBottomGap`、`portraitMaxVisibleWidth=128`、`portraitMaxDialogueOverlapRatio=0.25` 與對話框矩形集中於單一 layout config；人物依 alpha bbox 錨定，超過各槽有效上限時等比例縮小且不放大小圖，floor／角色 mapping 沒有重複寫死 gap、尺寸或最終座標。
 - 每個 `【背景：地點】` 都精確映射到唯一檔名；正式圖只替換地點專檔，未覆寫任何共用 generic 背景。
 - 劇本製作指令已轉成事件，不會以 `【CG：...】`、`【GIF：...】`、`【背景：...】` 等文字直接顯示給玩家。
 - 修改保持在使用者授權與本次任務範圍內；局部修改沒有造成整檔重排或無關生成器輸出。

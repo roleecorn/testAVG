@@ -2,8 +2,8 @@
 
 - Created: `2026-08-09 01:09:18 +08:00`
 - Task: `bookstore-encounter-layout-prototype`
-- Overall status: `open`
-- Long-term TODO: `.codex/TODO.md`, `project/story/TODO.md`
+- Overall status: `resolved`
+- Long-term TODO: `none`
 
 ## Questions
 
@@ -21,13 +21,13 @@
 ### Q2. 試作布局的精確像素值
 
 - Classification: `non-blocking`
-- Status: `open`
+- Status: `resolved`
 - Source: 使用者提供的縮放參考圖與 `20260809-004949-avg-layout-spec.md` Q1。
 - Affected scope: `libs/core.js` 的全局 AVG layout config、`huangmo_1` 的試作畫面，及未來所有場景的遷移。
-- Temporary handling: 目前 runtime 使用 bottom gap `8`、`portraitLeft=16`、`portraitRight=16`、對話框 `x=96, y=295, width=352, fixedLines=2` 進行單場景預覽；目標規範已把 `portraitRight` 改為 `0`，本次只更新文件，不修改 runtime 或其他 floor。
+- Temporary handling: 全局 runtime 與所有主線／角色支線 floor 已使用 bottom gap `8`、`portraitLeft=16`、`portraitRight=0`、對話框 `x=96, y=295, width=352, fixedLines=2` 的語意槽位試作值；後續視覺調整只修改共用 config 與共用資產規則。
 - Decision needed: 使用者看過遊戲內效果後，確認或調整人物 bottom gap、左右位置與中央對話框範圍。
-- Resolution: 本機 544×416 畫布已完成初步驗證：在 1.25 倍顯示時，`portraitBottomGap=8` 實測為 10 CSS px；人物圖層 `z-index=112`、對話 UI `z-index=140`；左人物、無人物旁白、右人物與兩行長句皆正確。使用者進一步確認水平邊界 gap 不需要太大，並已將目標 `portraitRight` 從 `16` 改為 `0`；目前 runtime 尚未同步。`portraitLeft`、人物最大可見寬度、透明內容錨點與對話框範圍仍待後續視覺試作確認。
-- Resolved at: pending
+- Resolution: 本機 544×416 畫布已完成初步驗證：在 1.25 倍顯示時，`portraitBottomGap=8` 實測為 10 CSS px；人物圖層 `z-index=112`、對話 UI `z-index=140`；左人物、無人物旁白、右人物與兩行長句皆正確。使用者定案可接受最多 25% 遮擋並允許過大圖等比例縮小；全局新增 `portraitMaxVisibleWidth=128` 與 `portraitMaxDialogueOverlapRatio=0.25`，runtime 依 alpha bbox 及各槽實際空間收斂尺寸。其餘值維持 `left=16, right=0, dialogue=(96,295,352), fixedLines=2`，所有主線與支線共用。
+- Resolved at: `2026-08-09 14:27:19 +08:00`
 
 ### Q3. 荒漠篇缺少 `project/story` 劇情母檔
 
@@ -43,13 +43,13 @@
 ### Q4. 歷史母檔與現行 floor 的修字差異
 
 - Classification: `non-blocking`
-- Status: `open`
+- Status: `resolved`
 - Source: 恢復後比對 `project/story/荒漠支線.txt` 與 `project/floors/huangmo_1.js`、`huangmo_2.js`；例如母檔為「但就在卻在」，現行 floor 為「但卻在」，另有補句號等差異。
 - Affected scope: 荒漠篇權威文字、`huangmo_1`／`huangmo_2` 後續劇情同步。
 - Temporary handling: 本次按使用者要求原文恢復歷史母檔，不修改 floor，也不把既有修字擅自回寫母檔。
 - Decision needed: 後續應讓 floor 完全回到歷史母檔原文，或確認現行 floor 的修字後把修正版正式回寫 `project/story/荒漠支線.txt`？
-- Resolution: pending content synchronization decision
-- Resolved at: pending
+- Resolution: 使用者選擇把現行 floor 的修字與補標點正式回寫權威來源；`project/story/荒漠支線.txt` 已同步，且 `project/story-ir/character/huangmo.json` 保存新來源 SHA-256。
+- Resolved at: `2026-08-09 14:27:19 +08:00`
 
 ### Q5. 右側人物大幅被對話框遮住的根本原因
 
@@ -68,15 +68,15 @@
 - Status: `resolved`
 - Source: 使用者明確指示「調整規範，將 `portraitRight` 從 `16` 降到 `0`」。
 - Affected scope: canonical AVG layout config、下一次 `huangmo_1` 試作與未來全專案 floor 遷移。
-- Temporary handling: 本次只修改規範與追蹤紀錄；`libs/core.js` 仍保留試作值 `16`，直到下一次實作與遊戲內預覽。
+- Temporary handling: `libs/core.js` 與 `project/data.js` 已同步為 `portraitRight=0`；後續不再回退為 `16`。
 - Decision needed: 右人物槽的全局水平 inset 應為多少？
 - Resolution: 目標規範固定為 `portraitRight=0`；右側 PNG 畫布貼齊 544px 畫布右緣，不另留槽位 inset。透明 padding 與人物最大寬度仍由後續規則另行處理。
 - Resolved at: `2026-08-09 01:51:24 +08:00`
 
 ## Promotion
 
-- Q2 沿用 `.codex/TODO.md` 的 AVG layout 定稿項目。
+- Q2 已由 `20260809-140234-agent-skill-todo-resolution.md` Q2 定案並實作。
 - Q3 已解決；`project/story/TODO.md` 已同步移除來源缺失項目。
-- Q4 已匯總到 `project/story/TODO.md`。
+- Q4 已依使用者選擇回寫權威來源並關閉。
 - Q5 已找出根因；後續修正決策併入 Q2 的全局 layout 定稿，不建立角色專屬例外。
 - Q6 已決定 `portraitRight=0`；runtime 同步工作併入 Q2。
