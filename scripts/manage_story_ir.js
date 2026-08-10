@@ -16,6 +16,7 @@ const characterStories = [
   { slug: "watanuki-sakuya", source: "綿貫咲耶.txt", floors: ["watanuki_sakuya_1", "watanuki_sakuya_2", "watanuki_sakuya_3", "watanuki_sakuya_4"] },
   { slug: "lanxiang", source: "藍湘.txt", floors: ["lanxiang_1", "lanxiang_2", "lanxiang_3", "lanxiang_4"] },
   { slug: "noir", source: "NoiR.txt", floors: ["noir_1", "noir_2", "noir_3", "noir_4"] },
+  { slug: "shirou", source: "鍛刀大賽.txt", floors: ["shirou_1", "shirou_2", "shirou_3", "shirou_4"] },
 ];
 
 function floorFile(id) {

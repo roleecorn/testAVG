@@ -63,6 +63,13 @@
       "locations": ["prize_exchange"],
       "floorId": "dizi_1",
       "once": true
+    },
+    {
+      "id": "shirou_1",
+      "title": "初遇鍛刀師",
+      "locations": ["chinese_restaurant"],
+      "floorId": "shirou_1",
+      "once": true
     }
   ]
 }
