@@ -80,7 +80,7 @@
 - 事件場景必須使用 meta 中完全相同的 `id` 呼叫完成 API。
 - 事件場景不得自行直接改寫 `akiba_active_events` 或 `akiba_completed_events`。
 - Akiba 地點只負責取得 `locationId` 並呼叫管理器，不得複製事件狀態機。
-- 新增角色事件時，同一個角色內容 commit 必須包含劇情文本、floor、圖片、入口與其 meta 行。
+- 新增或更新角色事件時，同一個角色內容 commit 必須包含劇情文本、對應 Story IR、所有對應 scene／floor、圖片、入口與其 meta 行。Story IR 不得單獨提交；若 IR 有變更而沒有對應 scene／floor diff，該角色內容尚未完成。
 
 ## 驗證
 

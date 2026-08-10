@@ -9,7 +9,7 @@
 - `project/floors/*.js`：每個樓層一個 JS 檔，格式是 `main.floors.<floorId> = { ... }`。AVG 可把「樓層」視為「場景」或「章節」。
 - `project/mainStory/CH1`～`CH6`：現行主線劇情的唯一真實來源。來源更新後以 `node scripts/generate_main_story.js --refresh-ir` 正規化並驗證，再從 IR 重建主線 floor；不得把 Story IR 或生成後的 floor 反向當成主線來源。
 - `project/story/*.txt`：角色劇情內容與章節結構的唯一真實來源（source of truth），不是僅供追溯而保留的原始附件。所有被分類為角色劇情的 TXT，無論來自 ZIP、DOCX、PDF 或其他來源，都必須先落地到這裡，再依與主線相同的 Story IR 契約新增或轉換樓層。`project/floors/*.js` 中的 scene／floor 是依文本轉換出的遊戲實作；兩者有劇情內容差異時，必須以文本為準並重新產生 Story IR 與 scene／floor。
-- `project/story-ir/main/*.json`、`project/story-ir/character/*.json`：納入 Git 的共用 Story IR 衍生產物，保存來源路徑與 SHA-256。主線與支線使用相同 schema／validator／emitter；來源雜湊不符時禁止生成 floor。
+- `project/story-ir/main/*.json`、`project/story-ir/character/*.json`：納入 Git 的共用 Story IR 衍生產物，保存來源路徑與 SHA-256。主線與支線使用相同 schema／validator／emitter；來源雜湊不符時禁止生成 floor。Story IR 不可獨立交付或提交：任何新增、修改或刪除都必須在同一個內容 commit 中同步更新其對應 scene／floor；若沒有對應 scene／floor 變更，就不得提交該 IR 變更。
 - `project/data.js`：全塔設定。`main.floorIds` 決定樓層順序與可用樓層；`main.images/bgms/sounds/nameMap` 決定圖片、音樂、音效與別名。
 - `project/images/`：自定義圖片，例如背景、立繪、CG、UI 圖。動作 CG 的 `*_cg.png` 是母檔，`*_action_cg.png` 是衍生 runtime 檔；每張地點背景必須為完整畫面的 544×416，且每個地點各用唯一檔名。
 - `project/action-cg-manifest.json`：由 `scripts/build_action_cgs.py` 產生的動作 CG 母檔／輸出同步雜湊，不可手改。
@@ -61,6 +61,7 @@ AI 產生內容時，優先產生「可貼進事件 JSON 區」或「可直接�
 對 AVG 最穩定的做法：
 
 - 主線與角色支線一律先將自然語言來源正規化為相同 schema 的 Story IR，完成指令、必要參數、素材與流程驗證後，再確定性轉為事件 JSON。Story IR 是衍生資料，不取代兩種來源文本；不得讓任一分支繞過它。
+- 劇情更新是來源文本、Story IR 與 scene／floor 的單一交易：來源內容變更後必須同步更新 IR 與對應 scene／floor，並在同一個內容 commit 中提交；禁止先提交 IR、再以另一個 commit 補 scene／floor。主線以 `--refresh-ir` 後重建 floor，角色支線以 `--emit-character` 從更新後 IR 寫回 floor。
 - 自然語言理解只發生在來源正規化階段。事件生成器不得重新猜測原文語意；未辨識或缺參數的製作指令必須停止受影響範圍並落入 question／TODO，不能降級成玩家可見旁白或台詞。
 - 每個場景用一個樓層，或每個章節用一個樓層。
 - 全專案只有一套標準 AVG 版面，主線與角色支線都使用 `17x13`；兩者只在觸發方式與來源檔案位置不同。`map` 全部填 `0`，只保留一張背景圖和劇情事件。既有 13 格內容保留在左側，右側四格補 `0`。

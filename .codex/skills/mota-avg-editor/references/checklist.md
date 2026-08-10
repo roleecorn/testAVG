@@ -5,6 +5,8 @@
 - 已讀取並遵守本次實際使用的每一個 reference／子 Skill 驗收段落。
 - 所有角色劇情變更都能追溯至 `project/story/*.txt` 真實來源；scene／floor 沒有反向取代文本。
 - 主線與角色支線都先由來源文本產生相同 schema 的可序列化 Story IR，通過 schema、必要參數、流程與素材驗證後才產生引擎事件；沒有任一分支直接從未驗證原文生成事件。
+- 每個受影響的劇情 chapter／scene 都同時存在於來源文本、Story IR 與對應 scene／floor；只新增或修改 Story IR 而沒有對應 scene／floor 更新，不算完成。
+- Story IR 與對應 scene／floor 是同一個原子提交單位；staged diff 中每個變更的 `project/story-ir/` 檔案都必須有對應 floor／scene diff，禁止 IR-only commit。
 - 自然語言理解只存在於 Story IR 正規化階段；事件生成器只做確定性映射。未辨識或缺參數的製作指令已停止受影響範圍並落入 question／TODO，沒有降級成玩家可見文字。
 - `使用BGM`、`BGM暫停`、`播放音效` 等語意及其自然語言變體均先轉成 `bgm.play`、`bgm.pause`、`sound.play` 等 Story IR 節點，再映射為合法引擎事件；必要曲目或音效名稱在驗證前已解析完成。
 - 新增或修改的檔案、ID、註冊資料與引用彼此存在且一致。
@@ -21,6 +23,7 @@
 - 劇本製作指令已轉成事件，不會以 `【CG：...】`、`【GIF：...】`、`【背景：...】` 等文字直接顯示給玩家。
 - 修改保持在使用者授權與本次任務範圍內；局部修改沒有造成整檔重排或無關生成器輸出。
 - 已檢查 `git diff --name-only`、`git diff --stat` 與 `git diff --check`；若使用者要求提交，也已檢查 staged diff 與 commit 邊界。
+- 若本次有 Story IR 變更，已在 `git diff --cached --name-only` 與 `git show --stat --name-only <commit>` 中確認同一 commit 包含其對應 scene／floor，且已驗證事件入口可觸發；若無法做到，該 IR 變更未提交。
 - 任務中的每項疑慮均已寫入 `.codex/task-questions/`；未解項目已匯總到正確的長期 TODO。
 - 所有阻塞疑慮都已解決，或受影響分支已停止並明確回報；非阻塞疑慮沒有被當成猜測授權。
 - 已執行可行的遊戲內或隔離流程測試，並在交付時列出未能執行的檢查。

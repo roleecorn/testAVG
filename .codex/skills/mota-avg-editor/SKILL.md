@@ -19,6 +19,16 @@ Coordinate H5 Mota AVG work from one root and hand atomic artifacts to canonical
 - Produce validation results and the exact downstream handoffs used.
 - When any doubt appears, create the timestamped task question file required by `AGENTS.md`; promote unresolved items to the appropriate long-term TODO.
 
+## Story update transaction
+
+For every main-story or character-story change, the deliverable is a playable story update, not a source-file import. The mandatory chain is authoritative source text → validated Story IR → corresponding scene/floor implementation → reachable trigger or event entry when the branch requires one.
+
+- Story IR is never an independent deliverable or commit boundary. Any add, update, or deletion under `project/story-ir/` must be accompanied by the corresponding scene/floor add, update, or deletion in the same content commit.
+- An IR-only commit is invalid. If the corresponding scene/floor cannot be updated or validated, stop the affected branch, leave the IR unchanged, and record the blocker in the required question/TODO files.
+- For an existing story owner, compare the new source with the prior source and update the existing scenes/floors; do not create a parallel branch merely because the input arrived in a ZIP.
+- Completion requires a traceable mapping for every source chapter/scene and a verified in-game or isolated trigger path. Static IR validation alone is not completion.
+- The ZIP orchestration and Story IR references define the exact staging and validation evidence for this transaction; use them before declaring the story updated.
+
 ## Dependencies
 
 - Project Skill: `anime-expression-grid` — generate a project six-expression sheet.

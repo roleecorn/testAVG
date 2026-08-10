@@ -13,6 +13,18 @@
 
 Story IR 必須納入 Git，統一放在 `project/story-ir/main/` 與 `project/story-ir/character/`。每份 IR 都要保存權威來源的 repo-relative 路徑與 SHA-256；來源雜湊不符時禁止產生 floor。Story IR 與 floor 都是衍生產物，不得反向覆蓋來源文本。
 
+## Story IR 與 scene／floor 原子性契約
+
+Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.json` 或 `project/story-ir/character/*.json` 的新增、修改、刪除，都必須在同一個內容 commit 中帶有對應 scene／floor 的新增、修改、刪除；不得建立或接受 IR-only commit。
+
+- 主線：`node scripts/generate_main_story.js --refresh-ir` 重新理解來源並產生 IR，之後必須在同一工作交易中重建對應主線 floor。
+- 角色支線：更新權威 `project/story/*.txt` 後，必須同步更新對應角色 IR，並以 `node scripts/manage_story_ir.js --emit-character` 寫回對應 floor。
+- 「對應」是指 IR 中所有受影響 scene 的實際 floor 檔，不是只更新一個 manifest、索引或驗證檔。若新增 scene，必須新增可觸發的 floor；若刪除 scene，必須同步移除或改寫其入口與 floor。
+- 若 IR 改動後 emitter 產生的 scene／floor 沒有任何對應 diff，代表該 IR 改動不能單獨成立：不要提交 IR，應還原不必要的 IR 變更或停止並記錄疑慮。
+- 若因來源衝突、素材缺失或未解析指令而無法更新 scene／floor，受影響分支必須停在來源／疑慮階段，不得先落地 IR。
+
+提交前必須在 staged diff 中同時看到來源文本（若有變更）、受影響 Story IR、對應 scene／floor，以及必要的事件入口／素材註冊；這些檔案屬於同一角色或同一主線更新交易。
+
 ## 共用 Story IR（強制）
 
 最低結構如下；實作可以增加欄位，但不得讓主線與角色支線各自定義不相容版本：
@@ -115,7 +127,7 @@ node scripts/generate_main_story.js --check
 node scripts/manage_story_ir.js
 ```
 
-`--refresh-ir` 是唯一會重新理解主線自然語言並覆寫 `project/story-ir/main/main-story.json` 的入口，同時由新 IR 產生 floor。一般 `node scripts/generate_main_story.js` 只讀已驗證 IR 並確定性重生 floor；`--check` 驗證來源雜湊、schema、素材／跳轉註冊及 floor round-trip，不寫檔。角色支線的 `project/story-ir/character/*.json` 由 AI／Skill 依權威 TXT 做語意更新，`node scripts/manage_story_ir.js` 驗證來源雜湊與 floor 一致，`--emit-character` 才從 IR 寫回 floor；`--bootstrap-character` 只供首次遷移且拒絕覆寫既有 IR。
+`--refresh-ir` 是唯一會重新理解主線自然語言並覆寫 `project/story-ir/main/main-story.json` 的入口，同時由新 IR 產生對應 floor；IR 與 floor 必須在同一內容 commit 中交付。一般 `node scripts/generate_main_story.js` 只讀已驗證 IR 並確定性重生 floor；`--check` 驗證來源雜湊、schema、素材／跳轉註冊及 floor round-trip，不寫檔。角色支線的 `project/story-ir/character/*.json` 由 AI／Skill 依權威 TXT 做語意更新，`node scripts/manage_story_ir.js` 驗證來源雜湊與 floor 一致，`--emit-character` 才從 IR 寫回 floor；角色 IR 變更若沒有同批 floor diff，不得提交。`--bootstrap-character` 只供首次遷移且拒絕覆寫既有 IR。
 
 主線正規化階段只負責理解來源、辨識格式並產生共用 Story IR，不得直接產生引擎事件，也不得潤稿或改寫台詞：
 

@@ -74,7 +74,7 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 ### 角色劇情 ZIP 的強制提交流程
 
 - 使用單一 ZIP 匯入多位角色時，逐角色完成 A 至 G；每位角色通過 G 後立即建立一個內容 commit，不得跨角色混合。
-- 角色內容 commit 必須包含該角色的 `project/story/` 真實來源文本，以及其 floor、素材、事件入口和共用檔案中只屬於該角色的行。
+- 角色內容 commit 必須包含該角色的 `project/story/` 真實來源文本、對應 `project/story-ir/`、其 scene／floor、素材、事件入口和共用檔案中只屬於該角色的行。Story IR 絕不是獨立交付物：任何 IR 新增、修改或刪除，都必須在同一個角色 commit 中帶有對應 scene／floor 的新增、修改或刪除；不得建立 IR-only commit。
 - 所有角色完成後，再建立只更新本文件基準雜湊的最後 commit。完整分階段、覆蓋與 staging 規則見 [角色劇情 ZIP 任務拆分](.codex/skills/mota-avg-editor/references/archive-story-task-splitting.md)。
 - 若未能完成上述逐角色 staging 或驗證，不得宣稱已完成提交；應保留變更並回報阻塞原因。
 
@@ -98,3 +98,5 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 de615fea8ab5f387afe44c0b3da0a82f420cd569
 
 每次更新劇情一律建立兩個 commit：第一個 commit 提交實際劇情更新；第二個 commit 僅更新本節的基準 commit，將第一個 commit 的完整雜湊寫入上方。完成第二個 commit 後，下一次更新以該雜湊為新的起點。
+
+所有劇情更新的實際內容 commit 都必須遵守來源文本 → Story IR → scene／floor 的原子性：只要 Story IR 有變更，就必須同一 commit 更新對應 scene／floor；若無法同步更新 scene／floor，必須停止受影響分支，不得先提交或保留該 IR 變更作為獨立成果。
