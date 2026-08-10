@@ -2,7 +2,7 @@
 
 ## 待確認人物
 
-- 目前無。
+- `lala`／菈菈安瑟姆：ZIP 同時提供 `菈菈安瑟姆.txt` 與 `菈菈安瑟姆.docx`，提取後內容與段落結構不同；確認權威稿後才可落地 `project/story/菈菈安瑟姆.txt`、建立 Story IR、註冊立繪並接入 floor。詳見 `.codex/task-questions/20260810-215941-zip-story-update.md`。
 
 ## 待補劇情
 

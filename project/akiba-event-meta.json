@@ -70,6 +70,13 @@
       "locations": ["chinese_restaurant"],
       "floorId": "shirou_1",
       "once": true
+    },
+    {
+      "id": "okabe_1",
+      "title": "五百萬的彈珠機",
+      "locations": ["game_center"],
+      "floorId": "okabe_1",
+      "once": true
     }
   ]
 }
