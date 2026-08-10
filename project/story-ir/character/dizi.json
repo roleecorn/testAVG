@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/比那名居地子.txt",
-        "sha256": "04d8508e2aafa8df482e9a87a0836aa94d6c89b8ed29b57e354c76aaa085ac38"
+        "sha256": "3dc4916d69865aa0539c9215b780f960754efa01fec435065d2994f32d859f79"
       }
     ]
   },
@@ -340,7 +340,7 @@
         },
         {
           "kind": "narration",
-          "text": "[梗平進入車站，一個響亮的聲音劃破了人群的嘈雜。]"
+          "text": "[梗平準備前往車站時，一個響亮的聲音劃破了人群的嘈雜。]"
         },
         {
           "kind": "image.hide",
