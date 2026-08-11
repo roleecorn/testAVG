@@ -7,6 +7,7 @@ const pluginSource = fs.readFileSync(path.join(root, "project", "plugins.js"), "
 const pluginVar = pluginSource.match(/var\s+(plugins_[A-Za-z0-9_]+)\s*=/)[1];
 const pluginDefinitions = Function(`${pluginSource}\nreturn ${pluginVar};`)();
 const eventMeta = JSON.parse(fs.readFileSync(path.join(root, "project", "akiba-event-meta.json"), "utf8"));
+const locationMappings = JSON.parse(fs.readFileSync(path.join(root, "project", "location-mappings.json"), "utf8"));
 
 function createCore(initialFlags = {}, floorIds = []) {
   const flags = { ...initialFlags };
@@ -32,6 +33,9 @@ function createCore(initialFlags = {}, floorIds = []) {
     insertAction(action) {
       actions.push(action);
     },
+    doAction() {
+      this.doActionCount = (this.doActionCount || 0) + 1;
+    },
     getHeroLoc(name) {
       return name === "direction" ? "down" : 0;
     },
@@ -46,6 +50,7 @@ function createPlugin(initialFlags = {}, extraFloorIds = []) {
   global.main = { version: "test" };
   pluginDefinitions.locationMappings.call(plugin);
   pluginDefinitions.akibaEventManager.call(plugin);
+  pluginDefinitions.Tic_Tac_Toe.call(plugin);
   plugin._akibaEventMeta = eventMeta;
   core.plugin = plugin;
   return { core, plugin };
@@ -183,12 +188,130 @@ function testIdleClockDoesNotAdvanceOutsideExchange() {
   assert.equal(core.actions.at(-1).type, "changePos");
 }
 
+function testEveryRegularLocationHasMiniGame() {
+  const { plugin } = createPlugin();
+  const locations = locationMappings.floors.Akiba.locations;
+  for (const location of locations) {
+    const definitions = plugin.getAkibaMiniGameDefinitions(location.id);
+    const definition = plugin.getAkibaMiniGameDefinition(location.id);
+    if (location.id === "idle_clock") {
+      assert.deepEqual(definitions, []);
+      assert.equal(definition, null);
+    }
+    else {
+      assert(definition, `missing minigame for ${location.id}`);
+      assert(definitions.length > 0, `missing minigame list for ${location.id}`);
+      for (const one of definitions) {
+        assert(one.title);
+        assert(["akibaLocation", "slot777", "akibaFlapper"].includes(one.gameId));
+      }
+    }
+  }
+  assert.deepEqual(
+    plugin.getAkibaMiniGameDefinitions("game_center").map((definition) => definition.gameId),
+    ["slot777", "akibaFlapper"]
+  );
+}
+
+function testLocationChoiceIncludesMiniGameWithoutStoryEvent() {
+  const { core, plugin } = createPlugin({
+    akiba_event_state_initialized: true,
+    akiba_event_state_version: eventMeta.version,
+    akiba_completed_events: [],
+    akiba_active_events: [],
+    akiba_last_locationId: "park",
+    akiba_last_placeName: "公園",
+  });
+  plugin.showAkibaLocationEventChoices();
+  const choiceEvent = core.actions.at(-1);
+  assert.equal(choiceEvent.type, "choices");
+  assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), ["玩「公園清潔隊」", "離開"]);
+  assert.equal(choiceEvent.choices[0].action[0].async, true);
+}
+
+function testLocationChoiceKeepsStoryEventAndMiniGame() {
+  const storyEvent = event("park_story", "park_story");
+  const { core, plugin } = createPlugin({
+    akiba_event_state_initialized: true,
+    akiba_event_state_version: eventMeta.version,
+    akiba_completed_events: [],
+    akiba_active_events: [storyEvent],
+    akiba_last_locationId: "park",
+    akiba_last_placeName: "公園",
+  }, ["park_story"]);
+  plugin.showAkibaLocationEventChoices();
+  const choiceEvent = core.actions.at(-1);
+  assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), ["park_story", "玩「公園清潔隊」", "離開"]);
+}
+
+function testGameCenterOffersBothArcadeGames() {
+  const { core, plugin } = createPlugin({
+    akiba_event_state_initialized: true,
+    akiba_event_state_version: eventMeta.version,
+    akiba_completed_events: [],
+    akiba_active_events: [],
+    akiba_last_locationId: "game_center",
+    akiba_last_placeName: "電子遊樂場",
+  });
+  plugin.showAkibaLocationEventChoices();
+  const choiceEvent = core.actions.at(-1);
+  assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), ["玩「777 拉霸」", "玩「電波飛鳥」", "離開"]);
+  assert(choiceEvent.choices[1].action[0].function.includes("akibaFlapper"));
+}
+
+function testMiniGameResultUsesSeparateProgressFlags() {
+  const { core, plugin } = createPlugin();
+  let launches = 0;
+  plugin.startMiniGame = (gameId, options, callback) => {
+    launches++;
+    assert.equal(gameId, "akibaLocation");
+    assert.equal(options.locationId, "park");
+    callback({ result: "win", reason: "clear", score: launches === 1 ? 320 : 200 });
+    return true;
+  };
+
+  assert.equal(plugin.startAkibaLocationMiniGame("park"), true);
+  assert.equal(plugin.startAkibaLocationMiniGame("park"), true);
+  assert.deepEqual(core.flags.akiba_minigame_cleared, ["park"]);
+  assert.deepEqual(core.flags.akiba_minigame_best_scores, { park: 320 });
+  assert.equal(core.flags.akiba_last_minigame_location_id, "park");
+  assert.equal(core.flags.akiba_last_minigame_game_id, "akibaLocation");
+  assert.equal(core.flags.lastMiniGameResult, "win");
+  assert.equal(core.flags.lastMiniGameScore, 200);
+  assert.equal(core.doActionCount, 2);
+  assert.equal(core.flags.akiba_completed_events, undefined, "minigames must not alter story completion");
+}
+
+function testSecondGameAtSameLocationUsesSeparateProgressKey() {
+  const { core, plugin } = createPlugin();
+  plugin.startMiniGame = (gameId, options, callback) => {
+    assert.equal(gameId, "akibaFlapper");
+    assert.equal(options.locationId, "game_center");
+    assert.equal(options.targetGates, 8);
+    callback({ result: "win", reason: "clear", score: 888 });
+    return true;
+  };
+
+  assert.equal(plugin.startAkibaLocationMiniGame("game_center", "akibaFlapper"), true);
+  assert.deepEqual(core.flags.akiba_minigame_cleared, ["game_center:akibaFlapper"]);
+  assert.deepEqual(core.flags.akiba_minigame_best_scores, { "game_center:akibaFlapper": 888 });
+  assert.equal(core.flags.akiba_last_minigame_location_id, "game_center");
+  assert.equal(core.flags.akiba_last_minigame_game_id, "akibaFlapper");
+  assert.equal(core.flags.akiba_last_minigame_title, "電波飛鳥");
+}
+
 testFreshInitialization();
 testVersionMigrationPreservesProgress();
 testCompletionCountsOnlyOnce();
 testCharacterExchangeDefaultsToTwoEvents();
 testIdleClockRestoresOrContinues();
 testIdleClockDoesNotAdvanceOutsideExchange();
+testEveryRegularLocationHasMiniGame();
+testLocationChoiceIncludesMiniGameWithoutStoryEvent();
+testLocationChoiceKeepsStoryEventAndMiniGame();
+testGameCenterOffersBothArcadeGames();
+testMiniGameResultUsesSeparateProgressFlags();
+testSecondGameAtSameLocationUsesSeparateProgressKey();
 
 delete global.core;
 delete global.main;

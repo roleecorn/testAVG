@@ -164,6 +164,6 @@ console.log({
 - `events` 為 `0`
 - `mapNonZero` 為 `0`
 - `fgNonZero` 為 `105`
-- `locations` 為 `27`
+- `locations` 為 `22`
 - `mappedCells` 為 `105`
 - `overlaps` 為空陣列

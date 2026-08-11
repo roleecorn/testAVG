@@ -35,6 +35,8 @@
 
 - `ticTacToe`
 - `slot777`
+- `akibaLocation`
+- `akibaFlapper`
 
 通用入口：
 
@@ -48,12 +50,29 @@ core.plugin.startMiniGame(gameId, options, callback);
 core.plugin.startTicTacToeDemoEvent();
 core.plugin.startSlot777DemoEvent();
 core.plugin.closeMiniGame();
+core.plugin.startAkibaLocationMiniGame(locationId, gameId);
 ```
 
-起始樓層 `project/floors/mapo_1_1.js` 的小遊戲機選項會呼叫：
+`ticTacToe` 與 `slot777` 的 demo API 保留供事件直接呼叫；目前沒有樓層呼叫這兩個 demo API。Akiba 地點的正式入口是 `showAkibaLocationEventChoices()` 產生的地點選單：
 
-- 「玩圈圈叉叉」：`core.plugin.startTicTacToeDemoEvent()`
-- 「玩 777 拉霸」：`core.plugin.startSlot777DemoEvent()`
+- 電子遊樂場提供既有 `slot777`（固定三輪後結算）與 `akibaFlapper`「電波飛鳥」（通過 8 道閘門勝利，碰撞、越界或逾時失敗）。
+- 其餘一般地點呼叫 `akibaLocation`，並以 `locationId` 選取專屬玩法設定。
+- `idle_clock` 保留人物交流回合用途，不可加入一般小遊戲。
+
+`extensions/minigames/akibaLocation.js` 是單一可設定的 Akiba 地點挑戰模組，共用 overlay、倒數、結果與清理生命週期；內部模式包含尋物、分類、記憶、順序、時機、平衡與麻將牌消除。各地點是同一模組的資料設定，不是把二十份生命週期邏輯塞進 `project/plugins.js`。
+
+`extensions/minigames/akibaFlapper.js` 是電子遊樂場的獨立 Canvas 街機玩法。以滑鼠點擊或觸控拍翼為主要操作，鍵盤只是輔助；勝利、碰撞失敗、邊界失敗、逾時與取消都會停止 animation frame、移除監聽器並回傳結果。
+
+Akiba 小遊戲結果使用獨立 flags，不得寫入角色事件的 `akiba_completed_events`：
+
+- `akiba_minigame_cleared`
+- `akiba_minigame_best_scores`
+- `akiba_last_minigame_location_id`
+- `akiba_last_minigame_game_id`
+- `akiba_last_minigame_title`
+- 共用最近結果 `lastMiniGameResult`、`lastMiniGameScore`
+
+`akiba_minigame_cleared` 與 `akiba_minigame_best_scores` 預設仍以 `locationId` 為 key；同一地點有第二款遊戲時使用 `locationId:gameId`，避免兩款遊戲互相覆寫進度。電子遊樂場既有拉霸繼續沿用 `game_center`，電波飛鳥使用 `game_center:akibaFlapper`。
 
 ## 接入原則
 
@@ -130,5 +149,15 @@ H5 魔塔的小遊戲 DOM 通常掛在 `core.dom.gameDraw` 裡，而不是整個
 - 小遊戲結束後，魔塔移動、選單、事件仍正常。
 - 重新開始同一小遊戲不會殘留上一局 canvas、timer、listener 或 flag。
 - 開啟瀏覽器 console，確認沒有未捕捉錯誤。
+
+Akiba 地點小遊戲另執行：
+
+```powershell
+node scripts/test_akiba_location_minigame.js
+node scripts/test_akiba_flapper.js
+node scripts/test_akiba_event_manager.js
+```
+
+第一個測試會確認二十組自訂地點設定與 mapping 一致、每局有有限結束條件、416×416／208×416 可建立操作介面，並驗證取消、通關、重入、麻將盤面與 DOM／timer／listener 清理。第二個測試驗證電波飛鳥在 416×416／208×416 的滑鼠控制、8 閘門通關、碰撞失敗與 animation frame／listener 清理。第三個測試會確認每個一般地點都有入口、電子遊樂場同時顯示兩款遊戲、`idle_clock` 排除、支線與小遊戲選項並存，以及不同遊戲進度不污染角色事件狀態。
 
 測試前請先依 [專案架構與輸出原則](project-overview.md) 的標準流程啟動根目錄 `启动服务.exe`，從 `http://127.0.0.1:1055/index.html` 進入遊戲，再透過遊戲中的選項啟動小遊戲。不要用 URL query 參數、`8765` 或 `python -m http.server` 測小遊戲，否則不是正常遊戲流程，也可能打到其他專案或缺少魔塔樣板服務路由。

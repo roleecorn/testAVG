@@ -487,6 +487,11 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			var locationId = core.getFlag('akiba_last_locationId', '');
 			var placeName = core.getFlag('akiba_last_placeName', '未知地點');
 			var availableEvents = this.getActiveAkibaEventsAtLocation(locationId);
+			var miniGames = this.getAkibaMiniGameDefinitions ? this.getAkibaMiniGameDefinitions(locationId) : [];
+			if (!miniGames.length && this.getAkibaMiniGameDefinition) {
+				var legacyMiniGame = this.getAkibaMiniGameDefinition(locationId);
+				if (legacyMiniGame) miniGames.push(legacyMiniGame);
+			}
 			var text = "是" + placeName + "啊，該做什麼呢?";
 
 			if (locationId === 'idle_clock') {
@@ -500,7 +505,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 				return;
 			}
 
-			if (availableEvents.length === 0) {
+			if (availableEvents.length === 0 && miniGames.length === 0) {
 				core.insertAction([
 					text,
 					{
@@ -519,6 +524,16 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 						"function": "function () { core.plugin.selectAkibaEvent('" + event.id + "'); }"
 					}]
 				};
+			});
+			miniGames.forEach(function (miniGame) {
+				choices.push({
+					"text": "玩「" + miniGame.title + "」",
+					"action": [{
+						"type": "function",
+						"async": true,
+						"function": "function () { core.plugin.startAkibaLocationMiniGame('" + locationId + "', '" + miniGame.gameId + "'); }"
+					}]
+				});
 			});
 			choices.push({
 				"text": "離開",
@@ -2085,8 +2100,70 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 		var loadingCallbacks = {};
 		var allowedGames = {
 			ticTacToe: true,
-			slot777: true
+			slot777: true,
+			akibaLocation: true,
+			akibaFlapper: true
 		};
+		var akibaMiniGames = {
+			kaidan_cave: { title: "幽靈找不同", gameId: "akibaLocation" },
+			hotel: { title: "行李送房", gameId: "akibaLocation" },
+			used_bookstore: { title: "古書封面配對", gameId: "akibaLocation" },
+			warehouse_district: { title: "倉庫裝箱", gameId: "akibaLocation" },
+			elevated_train: { title: "轉轍調度", gameId: "akibaLocation" },
+			music_venue: { title: "舞台打拍", gameId: "akibaLocation" },
+			sento: { title: "湯溫調節", gameId: "akibaLocation" },
+			mahjong_parlor: { title: "麻將牌消除", gameId: "akibaLocation" },
+			chinese_restaurant: { title: "中華快炒", gameId: "akibaLocation" },
+			game_center: [
+				{ title: "777 拉霸", gameId: "slot777", options: { spins: 3 }, progressKey: "game_center" },
+				{ title: "電波飛鳥", gameId: "akibaFlapper", options: { targetGates: 8, seconds: 45 }, progressKey: "game_center:akibaFlapper" }
+			],
+			park: { title: "公園清潔隊", gameId: "akibaLocation" },
+			prize_exchange: { title: "真偽鑑定", gameId: "akibaLocation" },
+			maid_cafe: { title: "女僕點單記憶", gameId: "akibaLocation" },
+			melon_shop: { title: "新刊搶購", gameId: "akibaLocation" },
+			shrine: { title: "奉納投幣", gameId: "akibaLocation" },
+			housing_complex: { title: "宅配分信", gameId: "akibaLocation" },
+			convenience_24h: { title: "超商結帳", gameId: "akibaLocation" },
+			tent: { title: "營繩張力", gameId: "akibaLocation" },
+			restaurant: { title: "餐盤送桌", gameId: "akibaLocation" },
+			blue_bookstore: { title: "漫畫連號排架", gameId: "akibaLocation" },
+			rabbit_house: { title: "炭火烤蜜瓜麵包", gameId: "akibaLocation" }
+		};
+
+		function copyAkibaMiniGameOptions(source) {
+			var target = {};
+			source = source || {};
+			for (var key in source) {
+				if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+			}
+			return target;
+		}
+
+		function copyAkibaMiniGameDefinition(definition) {
+			return {
+				title: definition.title,
+				gameId: definition.gameId,
+				options: copyAkibaMiniGameOptions(definition.options),
+				progressKey: definition.progressKey || null
+			};
+		}
+
+		this.getAkibaMiniGameDefinitions = function (locationId) {
+			var definitions = akibaMiniGames[locationId];
+			if (!definitions) return [];
+			if (!Array.isArray(definitions)) definitions = [definitions];
+			return definitions.map(copyAkibaMiniGameDefinition);
+		}
+
+		this.getAkibaMiniGameDefinition = function (locationId, gameId) {
+			var definitions = this.getAkibaMiniGameDefinitions(locationId);
+			if (!gameId) return definitions[0] || null;
+			for (var i = 0; i < definitions.length; i++) {
+				if (definitions[i].gameId === gameId) return definitions[i];
+			}
+			return null;
+		}
 
 		function getMiniGame(gameId) {
 			return window.MotaMiniGames && window.MotaMiniGames[gameId];
@@ -2138,6 +2215,66 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 
 		this.closeMiniGame = function () {
 			if (currentGame) currentGame.destroy({ result: "cancel", reason: "manual" });
+		}
+
+		this.startAkibaLocationMiniGame = function (locationId, gameId) {
+			var definition = this.getAkibaMiniGameDefinition(locationId, gameId);
+			if (!definition) {
+				core.insertAction([
+					"\t[小遊戲]這個地點目前沒有可用的小遊戲。",
+					{
+						"type": "function",
+						"function": "function () { core.plugin.restoreAkibaHeroAfterLocationInteraction(); }"
+					}
+				]);
+				core.doAction();
+				return false;
+			}
+
+			var options = copyAkibaMiniGameOptions(definition.options);
+			options.locationId = locationId;
+			this.startMiniGame(definition.gameId, options, function (result) {
+				result = result || { result: "error", reason: "missingResult", score: 0 };
+				var score = Math.max(0, Number(result.score) || 0);
+				var progressKey = definition.progressKey || locationId;
+				var cleared = core.getFlag("akiba_minigame_cleared", []);
+				var bestScores = core.getFlag("akiba_minigame_best_scores", {});
+				if (!Array.isArray(cleared)) cleared = [];
+				if (!bestScores || typeof bestScores !== "object" || Array.isArray(bestScores)) bestScores = {};
+
+				core.setFlag("lastMiniGameResult", result.result);
+				core.setFlag("lastMiniGameScore", score);
+				core.setFlag("akiba_last_minigame_location_id", locationId);
+				core.setFlag("akiba_last_minigame_game_id", definition.gameId);
+				core.setFlag("akiba_last_minigame_title", definition.title);
+				if (score > (Number(bestScores[progressKey]) || 0)) {
+					bestScores[progressKey] = score;
+					core.setFlag("akiba_minigame_best_scores", bestScores);
+				}
+
+				var isClear = result.result === "win" || result.result === "jackpot";
+				if (isClear && cleared.indexOf(progressKey) < 0) {
+					cleared.push(progressKey);
+					core.setFlag("akiba_minigame_cleared", cleared);
+				}
+
+				var text = "\t[小遊戲]「" + definition.title + "」已結束。";
+				if (isClear) text = "\t[小遊戲]「" + definition.title + "」挑戰成功！得分 " + score + "。";
+				else if (result.result === "lose") text = "\t[小遊戲]「" + definition.title + "」挑戰失敗，得分 " + score + "。";
+				else if (result.result === "cancel") text = "\t[小遊戲]已取消「" + definition.title + "」。";
+				else if (result.result === "error") text = "\t[小遊戲]「" + definition.title + "」載入失敗。";
+
+				core.insertAction([
+					text,
+					{ "type": "tip", "text": "小遊戲結果：" + result.result + "　得分：" + score },
+					{
+						"type": "function",
+						"function": "function () { core.plugin.restoreAkibaHeroAfterLocationInteraction(); }"
+					}
+				]);
+				core.doAction();
+			});
+			return true;
 		}
 
 		this.startTicTacToeDemoEvent = function () {

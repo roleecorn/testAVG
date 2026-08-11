@@ -66,6 +66,9 @@
 - `returnToMainlineAfterCharacterExchange()`：清理交換狀態並返回主線。
 - `returnToAkiba()`：未達目標時回到保存的 Akiba 地點；達標時返回主線。
 - `showAkibaLocationEventChoices()`：依目前地點建立事件選單；沒有事件或離開時恢復互動前位置。
+- `getAkibaMiniGameDefinitions(locationId)`：取得地點的全部小遊戲；電子遊樂場目前有兩款。
+- `getAkibaMiniGameDefinition(locationId)`：取得地點對應的小遊戲標題、game ID 與選項；`idle_clock` 回傳空值。
+- `startAkibaLocationMiniGame(locationId, gameId)`：暫停事件流、啟動指定地點小遊戲、保存結果與最高分，再恢復互動前位置；`gameId` 省略時相容舊入口並選第一款。
 
 ## 事件與角色交換流程
 
@@ -74,6 +77,8 @@
 角色交換期間只有「當時確實處於啟用狀態」的事件首次完成時才增加計數。目標未達成時恢復 Akiba 互動位置；達成後清除交換中的目標／目的地狀態並返回主線。交換以外的地點互動不增加交換計數。
 
 特殊的閒置時鐘入口依相同回復位置契約運作：未達目標時回到原地，達標時繼續主線。
+
+一般地點選單依序包含目前可用的角色事件、該地點的每一款小遊戲與「離開」。即使沒有角色事件，只要該地點有小遊戲，也必須顯示選單，不能直接顯示地點文字後返回。電子遊樂場依序列出「777 拉霸」與「電波飛鳥」。小遊戲完成、失敗或取消都不算角色事件完成，不增加人物交流回合，並使用獨立的 `akiba_minigame_*` flags；同一地點的第二款遊戲以 `locationId:gameId` 保存獨立通關與最高分。
 
 ## 場景契約
 
@@ -86,5 +91,6 @@
 
 1. `project/akiba-event-meta.json` 可被 JSON parser 讀取，所有 `id` 唯一，所有 `locations` 與 `floorId` 存在。
 2. 執行 `node scripts/test_akiba_event_manager.js`。
-3. 新存檔、舊版本存檔、事件重複完成、交換目標預設值、未達標返回、達標續行與交換外互動都必須通過。
-4. 實際遊戲中從 Akiba 地點進入事件，完成後確認選單、位置與主線返回狀態正確。
+3. 執行 `node scripts/test_akiba_location_minigame.js`。
+4. 新存檔、舊版本存檔、事件重複完成、交換目標預設值、未達標返回、達標續行、交換外互動、一般地點小遊戲覆蓋與結果狀態隔離都必須通過。
+5. 實際遊戲中從 Akiba 地點進入事件與小遊戲，完成後確認選單、位置與主線返回狀態正確。
