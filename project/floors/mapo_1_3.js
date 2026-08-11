@@ -347,7 +347,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_mapo_shop.png",
+            "image": "ms_bg_mapo_shop_interior.png",
             "loc": [
                 0,
                 0
@@ -355,19 +355,6 @@ main.floors.mapo_1_3=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "兩人順著地址來到了一間小餐館，有大量的男人整齊地「躺」在店門口",
         {
             "type": "hideImage",
             "code": 10,
@@ -397,17 +384,25 @@ main.floors.mapo_1_3=
                 220
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "sleep",
-            "time": 1000,
-            "noSkip": true
+            "time": 250
         },
         {
             "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "兩人順著地址來到了一間小餐館，有大量的男人整齊地「躺」在店門口",
+        {
+            "type": "hideImage",
             "code": 30,
-            "time": 0
+            "time": 150
         },
         {
             "type": "hideImage",
@@ -711,6 +706,11 @@ main.floors.mapo_1_3=
         },
         "\t[梗平]你說...什麼",
         {
+            "type": "playBgm",
+            "name": "battle_theme_a.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -770,7 +770,43 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "ms_ch1_red_mapo_bowl_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "隨後，一碗紅色的、看起來很不妙的麻婆豆腐被端了上來",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "choices",
             "text": "請選擇。",
@@ -935,7 +971,7 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_tournament_venue.png",
+                            "image": "ms_bg_chinese_cooking_show.png",
                             "loc": [
                                 0,
                                 0
@@ -1135,19 +1171,6 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "【主持人 拉麵王 芹澤】",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "\t[芹澤]我們的第一位選手不幸的敗下陣來",
                         {
                             "type": "hideImage",
@@ -1291,7 +1314,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[哥吉拉]應該是梗平吧？如果把宿儺手指也計算在內的話可能會有不一樣。",
+                        "\t[芹澤]應該是梗平吧？如果把宿儺手指也計算在內的話可能會有不一樣。",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1358,17 +1381,16 @@ main.floors.mapo_1_3=
                                 220
                             ],
                             "opacity": 1,
-                            "time": 0
+                            "time": 250
                         },
                         {
                             "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
+                            "time": 1500
                         },
                         {
                             "type": "hideImage",
                             "code": 30,
-                            "time": 0
+                            "time": 150
                         },
                         {
                             "type": "hideImage",
@@ -1495,7 +1517,43 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "ms_ch1_keng_vs_sukuna_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "梗平朝著宿儺大廚發起了衝鋒",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1509,19 +1567,6 @@ main.floors.mapo_1_3=
                             "async": true
                         },
                         "結果是毫不令人意外的",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "梗平，滿身瘡痍",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1551,17 +1596,25 @@ main.floors.mapo_1_3=
                                 220
                             ],
                             "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
+                            "time": 250
                         },
                         {
                             "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平，滿身瘡痍",
+                        {
+                            "type": "hideImage",
                             "code": 30,
-                            "time": 0
+                            "time": 150
                         },
                         {
                             "type": "hideImage",
@@ -2275,6 +2328,11 @@ main.floors.mapo_1_3=
             ]
         },
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -2294,7 +2352,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_mapo_shop.png",
+            "image": "ms_bg_mapo_shop_interior.png",
             "loc": [
                 0,
                 0
@@ -2386,7 +2444,7 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        "表妹走到了倒在地板上了A面前",
+        "表妹走到了倒在地板上的A面前",
         {
             "type": "hideImage",
             "code": 10,
@@ -2821,7 +2879,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_day.png",
             "loc": [
                 0,
                 0

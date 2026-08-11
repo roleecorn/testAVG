@@ -328,6 +328,11 @@ main.floors.mapo_1_1=
         },
         "【主線 CH1 1-1 車站】",
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -347,7 +352,7 @@ main.floors.mapo_1_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_station.png",
+            "image": "ms_bg_station_akihabara.png",
             "loc": [
                 0,
                 0
@@ -862,7 +867,7 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]反正我們這次是來陪東山擺攤的，順便逛秋葉原",
+        "\t[梗平]反正我們這次是來陪友人A擺攤的，順便逛秋葉原",
         {
             "type": "hideImage",
             "code": 10,
@@ -968,7 +973,7 @@ main.floors.mapo_1_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_day.png",
             "loc": [
                 0,
                 0
@@ -1012,7 +1017,38 @@ main.floors.mapo_1_1=
             "time": 0,
             "async": true
         },
-        "\t[[友人A]救命}",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "ms_ch1_phone_message_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[友人A]（手機）救命",
         {
             "type": "hideImage",
             "code": 10,
@@ -1037,6 +1073,11 @@ main.floors.mapo_1_1=
             "time": 0
         },
         "\t[梗平]（手機）你在哪裡",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,

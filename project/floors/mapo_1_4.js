@@ -347,7 +347,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe.png",
+            "image": "ms_bg_cafe_rabbit_interior.png",
             "loc": [
                 0,
                 0
@@ -482,19 +482,6 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "【咖啡廳店長　三角·四系乃】",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[三角]我就是這裡的店長，三角，你應該就是來打工換宿的梗平沒錯",
         {
             "type": "hideImage",
@@ -571,20 +558,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "兔子跳了起來往梗平的臉用力一蹬",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "梗平的面部遭受了小兔子黑暗無限破的強力一擊",
+        "兔子彈了出來，往梗平的臉用力一蹬",
         {
             "type": "hideImage",
             "code": 10,
@@ -600,7 +574,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
+            "image": "ms_ch1_rabbit_attack_cg.png",
             "sloc": [
                 0,
                 65,
@@ -628,10 +602,23 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
+        "梗平的面部遭受了小兔子黑暗無限破的強力一擊",
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",
@@ -1000,7 +987,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_convenience_store.png",
+            "image": "ms_bg_commercial_interior_day.png",
             "loc": [
                 0,
                 0
@@ -1230,7 +1217,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_riverside.png",
+            "image": "ms_bg_riverside_night.png",
             "loc": [
                 0,
                 0
@@ -1250,7 +1237,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "來到了橋邊的梗平打開了裝著酒的袋子，拿出了自己的戰利品",
+        "來到了河邊的梗平打開了裝著酒的袋子，拿出了自己的戰利品",
         {
             "type": "hideImage",
             "code": 10,
@@ -1529,6 +1516,11 @@ main.floors.mapo_1_4=
                         },
                         "梗平伸手握住了啤酒，但隨著一股強大的力量，梗平被拖進了下水道，隨後失去意識",
                         {
+                            "type": "playBgm",
+                            "name": "battle_theme_a.mp3",
+                            "keep": true
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -1617,6 +1609,30 @@ main.floors.mapo_1_4=
                         {
                             "type": "showImage",
                             "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]有這麼大的力氣，對方肯定是想趁我還沒補充能量趁機打倒我",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
                             "image": "keng_panic_portrait.png",
                             "loc": [
                                 "portraitLeft",
@@ -1625,7 +1641,7 @@ main.floors.mapo_1_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]有這麼大的力氣，對方肯定是想趁我還沒補充能量趁機打倒我，連燃料都一起搶走了，修卡太可惡！",
+                        "\t[梗平]連燃料都一起搶走了，修卡太可惡！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1688,10 +1704,6 @@ main.floors.mapo_1_4=
                         },
                         "\t[梗平]這種時候該出現強化事件了！一定有什麼可以用的道具",
                         {
-                            "type": "comment",
-                            "text": "TODO: 【梗平的立繪左右平移】"
-                        },
-                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -1727,7 +1739,92 @@ main.floors.mapo_1_4=
                             "time": 0,
                             "async": true
                         },
-                        "梗平把紙箱套在身上",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "ms_ch1_cardboard_box_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "敏銳的梗平在下水道裡發現了一堆的紙箱",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "ms_ch1_cardboard_keng_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平撿起了一個紙箱後，套在了自己身上",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1801,7 +1898,43 @@ main.floors.mapo_1_4=
                             "time": 0,
                             "async": true
                         },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "ms_ch1_clown_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "在閃爍的燈光下看見了一個人影拿著手機，那是一個小丑",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1951,7 +2084,7 @@ main.floors.mapo_1_4=
                             "time": 0,
                             "async": true
                         },
-                        "\t[不知道是誰的丑？]...",
+                        "......",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1965,30 +2098,6 @@ main.floors.mapo_1_4=
                             "async": true
                         },
                         "小丑摸了摸破損的頭套後，粗暴的拉下頭套，下面竟然是...",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitLeft",
-                                "portraitBottom"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]居然是雷霆大鱷魚！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2018,17 +2127,36 @@ main.floors.mapo_1_4=
                                 220
                             ],
                             "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
+                            "time": 250
                         },
                         {
                             "type": "hideImage",
-                            "code": 30,
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                "portraitLeft",
+                                "portraitBottom"
+                            ],
+                            "opacity": 1,
                             "time": 0
+                        },
+                        "\t[梗平]居然是雷霆大鱷魚！",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "hideImage",
@@ -2093,6 +2221,11 @@ main.floors.mapo_1_4=
                             "async": true
                         },
                         "梗平艱難的從下水道出來，許久不見的陽光照射在他的身上",
+                        {
+                            "type": "playBgm",
+                            "name": "bossa_casual_shop.mp3",
+                            "keep": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,

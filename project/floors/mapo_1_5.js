@@ -328,6 +328,11 @@ main.floors.mapo_1_5=
         },
         "【主線 CH1 1-5 掉落物】",
         {
+            "type": "playBgm",
+            "name": "twists_suspense.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -347,7 +352,7 @@ main.floors.mapo_1_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_night.png",
             "loc": [
                 0,
                 0

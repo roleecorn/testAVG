@@ -5,7 +5,6 @@
 ## 待確認人物
 
 - project/mainStory/CH1 1-3：不知道是誰的？（原始名稱：？）
-- project/mainStory/CH1 1-4：不知道是誰的丑？（原始名稱：丑？）
 - project/mainStory/CH1 1-4：不知道是誰的？（原始名稱：？）
 - project/mainStory/CH1 1-5：不知道是誰的？（原始名稱：？）
 - project/mainStory/CH2 2-2：不知道是誰的松（原始名稱：松）
@@ -13,8 +12,17 @@
 
 ## 待補劇情
 
-- project/mainStory/CH1 1-4：【CG：小兔子黑暗無限破】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH1 1-4：製作指令「【梗平的立繪左右平移】」尚未轉成正式事件。
+- project/mainStory/CH1 1-1：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-2：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-2：【CG：梗平躲到表妹身後】暫用 ms_ch1_keng_hiding_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-2：【CG：黑衣人】暫用 ms_ch1_black_coat_men_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-3：【CG：一中華大碗紅色液體】暫用 ms_ch1_red_mapo_bowl_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-3：【CG：梗平VS宿儺】暫用 ms_ch1_keng_vs_sukuna_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-3：下一句要求使用麻婆立繪，但 project/images 尚無對應正式角色圖，暫不顯示立繪。
+- project/mainStory/CH1 1-4：【CG：小丑】暫用 ms_ch1_clown_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-4：【CG：小兔子黑暗無限破】暫用 ms_ch1_rabbit_attack_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-4：【CG：紙箱】暫用 ms_ch1_cardboard_box_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-4：【CG：紙箱人梗平】暫用 ms_ch1_cardboard_keng_cg.png，需替換正式素材。
 - project/mainStory/CH2 2-1：【CG：小兔子黑暗無限破】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-4：【CG：小兔子黑暗無限破】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-4：【CG：梗平英雄救美(？】尚無專用素材，暫用 scene_mapo_cg.png。
@@ -47,6 +55,10 @@
 - `project/images/ms_ch2_keng_bicycle_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「梗平被腳踏車撞飛」正式 CG。
 - `project/images/ms_ch2_eri_sunset_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「夕陽下的神祕少女」正式 CG。
 - `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。
+- `project/mainStory/CH1` 新增的日／夜與室內背景：目前以既有同類背景複製成唯一檔名，待替換秋葉原車站、街道、倉庫區、中華料理店、料理節目、兔子咖啡廳、商業地點與河邊夜景正式素材。
+- `project/mainStory/CH1` 的手機簡訊、梗平躲藏、黑衣人、紅色麻婆碗、梗平VS宿儺、兔子攻擊、紙箱、紙箱人、小丑等 CG：目前以 `project/images/scene_mapo_cg.png` 複製素材暫代，待替換正式素材。
+- `project/mainStory/CH1 1-3`：來源要求「麻婆」立繪，但 `project/images/` 尚無可確認的麻婆角色立繪，該句暫不顯示立繪。
+- `project/mainStory/CH1 1-4`：來源標記 `河邊(夜))` 多一個右括號，生成器暫以 `河邊(夜)` mapping 處理，未改寫來源。
 
 ## 待實作演出或小遊戲
 

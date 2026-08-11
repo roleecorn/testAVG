@@ -63,12 +63,20 @@ const characterExchanges = {
 
 const backgroundAssets = [
   { name: "車站", image: "ms_bg_station.png", placeholder: "scene_station.png" },
+  { name: "秋葉原車站", image: "ms_bg_station_akihabara.png", placeholder: "ms_bg_station.png" },
   { name: "街道", image: "ms_bg_street.png", placeholder: "scene_street.png" },
+  { name: "街道(日)", image: "ms_bg_street_day.png", placeholder: "ms_bg_street.png" },
+  { name: "鐵道倉庫區(日)", image: "ms_bg_warehouse_district_day.png", placeholder: "ms_bg_warehouse_district.png" },
   { name: "麻婆豆腐店", image: "ms_bg_mapo_shop.png", placeholder: "scene_mapo_shop.png" },
+  { name: "中華料理店內部", image: "ms_bg_mapo_shop_interior.png", placeholder: "ms_bg_mapo_shop.png" },
+  { name: "中式料理節目背景", image: "ms_bg_chinese_cooking_show.png", placeholder: "ms_bg_tournament_venue.png" },
   { name: "大賽場地", image: "ms_bg_tournament_venue.png", placeholder: "scene_tournament.png" },
   { name: "咖啡廳", image: "ms_bg_cafe.png", placeholder: "scene_mapo_shop.png" },
+  { name: "兔子咖啡廳內部", image: "ms_bg_cafe_rabbit_interior.png", placeholder: "ms_bg_cafe.png" },
   { name: "便利商店", image: "ms_bg_convenience_store.png", placeholder: "scene_mapo_shop.png" },
+  { name: "商業地點內部(明亮)", image: "ms_bg_commercial_interior_day.png", placeholder: "ms_bg_convenience_store.png" },
   { name: "河邊", image: "ms_bg_riverside.png", placeholder: "scene_street.png" },
+  { name: "河邊(夜)", image: "ms_bg_riverside_night.png", placeholder: "ms_bg_riverside.png" },
   { name: "書店A", image: "ms_bg_bookstore_a.png", placeholder: "scene_street.png" },
   { name: "倉庫", image: "ms_bg_warehouse.png", placeholder: "scene_street.png" },
   { name: "家庭餐廳", image: "ms_bg_family_restaurant.png", placeholder: "scene_mapo_shop.png" },
@@ -91,6 +99,7 @@ const backgroundAssets = [
   { name: "婚禮", image: "ms_bg_wedding.png", placeholder: "scene_tournament.png" },
 ];
 const bgByName = new Map(backgroundAssets.map(({ name, image }) => [name, image]));
+bgByName.set("河邊(夜))", bgByName.get("河邊(夜)"));
 
 const actionCgByName = {
   "麻婆豆腐店門口": { image: "ms_ch1_mapo_shop_entrance_action_cg.png", sloc: [0, 0, 416, 286] },
@@ -105,6 +114,22 @@ const actionCgByName = {
 
 const actionGifByName = {
   "梗平參戰": { image: "ms_ch1_keng_join_action_cg.png", sloc: [0, 0, 416, 286] },
+};
+
+const persistentCgByName = {
+  "手機簡訊": { image: "ms_ch1_phone_message_cg.png", sloc: [0, 65, 416, 286], placeholder: true },
+  "梗平躲到表妹身後": { image: "ms_ch1_keng_hiding_cg.png", sloc: [0, 65, 416, 286], placeholder: true },
+  "黑衣人": { image: "ms_ch1_black_coat_men_cg.png", sloc: [0, 65, 416, 286], placeholder: true },
+  "中華料理店門口": { image: "ms_ch1_mapo_shop_entrance_action_cg.png", sloc: [0, 0, 416, 286] },
+  "一中華大碗紅色液體": { image: "ms_ch1_red_mapo_bowl_cg.png", sloc: [0, 65, 416, 286], placeholder: true },
+  "梗平參戰": { image: "ms_ch1_keng_join_action_cg.png", sloc: [0, 0, 416, 286] },
+  "梗平VS宿儺": { image: "ms_ch1_keng_vs_sukuna_cg.png", sloc: [0, 65, 416, 286], placeholder: true },
+  "2.5梗平": { image: "ms_ch1_keng_2_5_action_cg.png", sloc: [0, 0, 416, 286] },
+  "小兔子黑暗無限破": { image: "ms_ch1_rabbit_attack_cg.png", sloc: [0, 65, 416, 286], placeholder: true },
+  "紙箱": { image: "ms_ch1_cardboard_box_cg.png", sloc: [0, 65, 416, 286], placeholder: true },
+  "紙箱人梗平": { image: "ms_ch1_cardboard_keng_cg.png", sloc: [0, 65, 416, 286], placeholder: true },
+  "小丑": { image: "ms_ch1_clown_cg.png", sloc: [0, 65, 416, 286], placeholder: true },
+  "鱷魚": { image: "ms_ch1_thunder_crocodile_action_cg.png", sloc: [0, 0, 416, 286] },
 };
 
 const requiredActionCgImages = [
@@ -134,6 +159,7 @@ const placeholderAssets = [
 
 const extraImages = [
   ...backgroundAssets.map(({ image }) => image),
+  ...Object.values(persistentCgByName).map(({ image }) => image),
   "ms_ch1_mapo_shop_entrance_cg.png",
   "ms_ch1_keng_2_5_cg.png",
   "ms_ch1_thunder_crocodile_cg.png",
@@ -320,9 +346,17 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
   if (/^不知道是誰的/.test(display)) {
     uncertainSpeakers.add(`${ctx.source} ${ctx.section}：${display}（原始名稱：${rawName}）`);
   }
-  const portrait = portraitFor(display, body);
-  const clearCg = ctx.cgVisible ? [{ type: "hideImage", code: 30, time: 150 }] : [];
-  ctx.cgVisible = false;
+  let portrait = null;
+  if (ctx.suppressPortraitCount > 0) {
+    ctx.suppressPortraitCount -= 1;
+  } else if (ctx.nextPortraitOverride === "麻婆店長") {
+    storyTodos.add(`${ctx.source} ${ctx.section}：下一句要求使用麻婆立繪，但 project/images 尚無對應正式角色圖，暫不顯示立繪。`);
+    ctx.nextPortraitOverride = null;
+  } else {
+    portrait = portraitFor(display, body);
+  }
+  const clearCg = ctx.cgVisible && !ctx.cgPersistent ? [{ type: "hideImage", code: 30, time: 150 }] : [];
+  if (!ctx.cgPersistent) ctx.cgVisible = false;
   return [...hidePortraits(), ...clearCg, ...(portrait ? [portrait] : []), `\t[${display}]${body}`];
 }
 
@@ -340,6 +374,17 @@ function normalizeAudioDirective(text, ctx) {
   if (/^(?:BGM暫停|暫停BGM|暫停背景音樂)$/i.test(bare)) return [{ type: "pauseBgm" }];
   if (/^(?:恢復BGM|繼續BGM|恢復背景音樂|繼續背景音樂)$/i.test(bare)) return [{ type: "resumeBgm" }];
   if (/^(?:停止音效|音效停止)$/i.test(bare)) return [{ type: "stopSound" }];
+
+  const semanticBgm = {
+    "(日常)": "bossa_casual_shop.mp3",
+    "(懸疑)": "twists_suspense.mp3",
+    "(懸疑?)": "twists_suspense.mp3",
+    "(熱血)": "battle_theme_a.mp3",
+  };
+  const semantic = bare.match(/^BGM\s*[：:]\s*(.+)$/i);
+  if (semantic && semanticBgm[semantic[1].trim()]) {
+    return [{ type: "playBgm", name: resolveRegisteredAudio(semanticBgm[semantic[1].trim()], REGISTERED_BGMS, "BGM", ctx), keep: true }];
+  }
 
   let match = bare.match(/^(?:使用|播放|切換)\s*(?:BGM|背景音樂)(?:\s*[：:]\s*|\s+)(.+)$/i);
   if (match) return [{ type: "playBgm", name: resolveRegisteredAudio(match[1], REGISTERED_BGMS, "BGM", ctx), keep: true }];
@@ -368,6 +413,7 @@ function lineToEvents(line, ctx) {
     const bg = bgByName.get(name);
     if (!bg) throw new Error(`${ctx.source} ${ctx.section}: unknown background directive: ${name}`);
     ctx.cgVisible = false;
+    ctx.cgPersistent = false;
     return [
       ...hidePortraits(),
       { type: "hideImage", code: 30, time: 150 },
@@ -376,15 +422,43 @@ function lineToEvents(line, ctx) {
   }
 
   if (/^【CG：/.test(t)) {
-    const name = t.replace(/^【CG：/, "").replace(/】$/, "");
+    const directive = t.replace(/^【CG：/, "").replace(/】$/, "").trim();
+    const operationMatch = directive.match(/^(.*?)[\s　]+(出現|消失)$/);
+    const name = (operationMatch ? operationMatch[1] : directive).trim();
+    const operation = operationMatch && operationMatch[2];
+    if (operation === "消失") {
+      ctx.cgVisible = false;
+      ctx.cgPersistent = false;
+      return [{ type: "hideImage", code: 30, time: 150 }];
+    }
+    if (operation === "出現") {
+      const persistentCg = persistentCgByName[name];
+      if (persistentCg) {
+        if (persistentCg.placeholder) {
+          storyTodos.add(`${ctx.source} ${ctx.section}：【CG：${name}】暫用 ${persistentCg.image}，需替換正式素材。`);
+        }
+        ctx.cgVisible = true;
+        ctx.cgPersistent = true;
+        return [
+          ...hidePortraits(),
+          { type: "showImage", code: 30, image: persistentCg.image, sloc: [...persistentCg.sloc], loc: [...CG_LOC], opacity: 1, time: 250 },
+        ];
+      }
+      storyTodos.add(`${ctx.source} ${ctx.section}：【CG：${name} 出現】尚無專用素材，暫用 scene_mapo_cg.png。`);
+      ctx.cgVisible = true;
+      ctx.cgPersistent = true;
+      return [...hidePortraits(), { type: "showImage", code: 30, image: "scene_mapo_cg.png", sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
+    }
     const actionCg = actionCgByName[name];
     if (actionCg) {
       ctx.cgVisible = false;
+      ctx.cgPersistent = false;
       return actionCgEvents(actionCg);
     }
     const image = "scene_mapo_cg.png";
     storyTodos.add(`${ctx.source} ${ctx.section}：【CG：${name}】尚無專用素材，暫用 ${image}。`);
     ctx.cgVisible = true;
+    ctx.cgPersistent = false;
     return [...hidePortraits(), { type: "showImage", code: 30, image, sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
   }
 
@@ -393,11 +467,13 @@ function lineToEvents(line, ctx) {
     const actionCg = actionGifByName[name];
     if (actionCg) {
       ctx.cgVisible = false;
+      ctx.cgPersistent = false;
       return actionCgEvents(actionCg);
     }
     const image = "ms_ch1_keng_join_cg.png";
     storyTodos.add(`${ctx.source} ${ctx.section}：【GIF ${name}】尚無專用素材，暫用 ${image}。`);
     ctx.cgVisible = true;
+    ctx.cgPersistent = false;
     return [...hidePortraits(), { type: "showImage", code: 30, image, sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
   }
 
@@ -405,7 +481,7 @@ function lineToEvents(line, ctx) {
     return [...hidePortraits(), t];
   }
 
-  if (/^【人物交流時間/.test(t)) {
+  if (/^【(?:人物交流時間|角色劇情時間)/.test(t)) {
     const exchange = characterExchanges[ctx.section];
     if (exchange) {
       return [
@@ -424,6 +500,18 @@ function lineToEvents(line, ctx) {
   if (t === "【播放炫酷的結尾小動畫】") {
     storyTodos.add(`${ctx.source} ${ctx.section}：${t} 尚未製作正式結尾動畫，目前用既有轉場影片事件暫代。`);
     return [...hidePortraits(), { type: "playTransitionVideo" }];
+  }
+
+  const wait = t.match(/^【等待\s*([0-9]+(?:\.[0-9]+)?)\s*秒】$/);
+  if (wait) return [{ type: "sleep", time: Math.round(Number(wait[1]) * 1000) }];
+
+  if (t === "【下一句話不需使用立繪】" || t === "【下面兩句不使用立繪】") {
+    ctx.suppressPortraitCount = t.includes("兩句") ? 2 : 1;
+    return [];
+  }
+  if (t === "【下面一句話使用麻婆作為立繪】") {
+    ctx.nextPortraitOverride = "麻婆店長";
+    return [];
   }
 
   if (t === "【後日談時間】") {
@@ -592,7 +680,17 @@ function parseChoice(lines, start, ctx, parentStopLabels = null) {
 function buildFloor(section, lines, overrides = {}) {
   const meta = { ...floors[section], ...overrides };
   const chapter = section.split("-")[0];
-  const ctx = { floorId: meta.id, bg: meta.bg, defaultBgm: meta.bgm, source: `project/mainStory/CH${chapter}`, section };
+  const ctx = {
+    floorId: meta.id,
+    bg: meta.bg,
+    defaultBgm: meta.bgm,
+    source: `project/mainStory/CH${chapter}`,
+    section,
+    cgVisible: false,
+    cgPersistent: false,
+    suppressPortraitCount: 0,
+    nextPortraitOverride: null,
+  };
   const parsed = parseEvents(lines, 0, ctx);
   const events = [
     setTextEvent(),
@@ -684,6 +782,17 @@ function ensureAssets() {
   for (const [src, dest] of placeholderAssets) {
     const from = p(...src.split("/"));
     const to = p(...dest.split("/"));
+    if (!fs.existsSync(to)) fs.copyFileSync(from, to);
+  }
+  for (const { image, placeholder } of backgroundAssets) {
+    const from = p("project", "images", placeholder);
+    const to = p("project", "images", image);
+    if (!fs.existsSync(to)) fs.copyFileSync(from, to);
+  }
+  for (const { image, placeholder } of Object.values(persistentCgByName)) {
+    if (!placeholder) continue;
+    const from = p("project", "images", "scene_mapo_cg.png");
+    const to = p("project", "images", image);
     if (!fs.existsSync(to)) fs.copyFileSync(from, to);
   }
 }
@@ -824,6 +933,10 @@ function updateTodo() {
     "- `project/images/ms_ch2_keng_bicycle_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「梗平被腳踏車撞飛」正式 CG。",
     "- `project/images/ms_ch2_eri_sunset_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「夕陽下的神祕少女」正式 CG。",
     "- `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。",
+    "- `project/mainStory/CH1` 新增的日／夜與室內背景：目前以既有同類背景複製成唯一檔名，待替換秋葉原車站、街道、倉庫區、中華料理店、料理節目、兔子咖啡廳、商業地點與河邊夜景正式素材。",
+    "- `project/mainStory/CH1` 的手機簡訊、梗平躲藏、黑衣人、紅色麻婆碗、梗平VS宿儺、兔子攻擊、紙箱、紙箱人、小丑等 CG：目前以 `project/images/scene_mapo_cg.png` 複製素材暫代，待替換正式素材。",
+    "- `project/mainStory/CH1 1-3`：來源要求「麻婆」立繪，但 `project/images/` 尚無可確認的麻婆角色立繪，該句暫不顯示立繪。",
+    "- `project/mainStory/CH1 1-4`：來源標記 `河邊(夜))` 多一個右括號，生成器暫以 `河邊(夜)` mapping 處理，未改寫來源。",
     "",
     "## 待實作演出或小遊戲",
     "",
@@ -844,7 +957,7 @@ function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
     if (!fs.existsSync(p("project", "images", image))) throw new Error(`Missing image asset: ${image}`);
     if (!dataText.includes(`"${image}"`)) throw new Error(`Image is not registered in project/data.js: ${image}`);
   }
-  if (bgByName.size !== backgroundAssets.length || new Set(backgroundAssets.map(({ image }) => image)).size !== backgroundAssets.length) {
+  if (!backgroundAssets.every(({ name }) => bgByName.has(name)) || new Set(backgroundAssets.map(({ image }) => image)).size !== backgroundAssets.length) {
     throw new Error("Each background directive must map one-to-one to a unique image filename");
   }
   if (VIEWPORT_WIDTH !== MAP_WIDTH * 32 || VIEWPORT_HEIGHT !== MAP_HEIGHT * 32) {
@@ -875,8 +988,10 @@ function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
       const text = typeof event === "string" ? event : event && event.type === "text" ? event.text : "";
       if (text.includes("（手機）")) generatedPhoneLineCount += 1;
       if (event && event.type === "showImage" && requiredActionCgImages.includes(event.image)) {
-        usedActionCgImages.add(event.image);
-        generatedActionCgCount += 1;
+        if (!usedActionCgImages.has(event.image)) {
+          usedActionCgImages.add(event.image);
+          generatedActionCgCount += 1;
+        }
       }
     });
   }
@@ -899,7 +1014,10 @@ function main() {
   const checkOnly = process.argv.includes("--check");
   const refreshIr = process.argv.includes("--refresh-ir");
   if (checkOnly && refreshIr) throw new Error("--check and --refresh-ir cannot be used together");
-  if (!checkOnly) ensureAssets();
+  if (!checkOnly) {
+    ensureAssets();
+    if (refreshIr) updateData();
+  }
   validateActionCgSync();
   const sourceFiles = [1, 2, 3, 4, 5, 6].map((chapter) => p("project", "mainStory", `CH${chapter}`));
   const sections = {
@@ -927,7 +1045,7 @@ function main() {
         generated.push(buildFloor(key, content));
         continue;
       }
-      const markerIndex = content.findIndex((line) => /^【人物交流時間/.test(line.trim()));
+      const markerIndex = content.findIndex((line) => /^【(?:人物交流時間|角色劇情時間)/.test(line.trim()));
       if (markerIndex < 0) throw new Error(`Missing character exchange marker in section ${key}`);
       generated.push(buildFloor(key, content.slice(0, markerIndex + 1), { next: null }));
       generated.push(buildFloor(key, content.slice(markerIndex + 1), {

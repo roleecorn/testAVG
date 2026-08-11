@@ -328,6 +328,11 @@ main.floors.mapo_1_2=
         },
         "【主線 CH1 1-2 倉庫區】",
         {
+            "type": "playBgm",
+            "name": "twists_suspense.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -347,7 +352,7 @@ main.floors.mapo_1_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_warehouse_district_day.png",
             "loc": [
                 0,
                 0
@@ -500,7 +505,43 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "ms_ch1_keng_hiding_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "梗平一邊說著一邊躲到了表妹的背後",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1044,7 +1085,43 @@ main.floors.mapo_1_2=
                                             "time": 0,
                                             "async": true
                                         },
+                                        {
+                                            "type": "showImage",
+                                            "code": 30,
+                                            "image": "ms_ch1_black_coat_men_cg.png",
+                                            "sloc": [
+                                                0,
+                                                65,
+                                                416,
+                                                286
+                                            ],
+                                            "loc": [
+                                                112,
+                                                50,
+                                                320,
+                                                220
+                                            ],
+                                            "opacity": 1,
+                                            "time": 250
+                                        },
+                                        {
+                                            "type": "hideImage",
+                                            "code": 10,
+                                            "time": 0,
+                                            "async": true
+                                        },
+                                        {
+                                            "type": "hideImage",
+                                            "code": 11,
+                                            "time": 0,
+                                            "async": true
+                                        },
                                         "穿黑色大衣拿著手提箱的兩個男人看著闖入的梗平",
+                                        {
+                                            "type": "hideImage",
+                                            "code": 30,
+                                            "time": 150
+                                        },
                                         {
                                             "type": "hideImage",
                                             "code": 10,
@@ -1470,19 +1547,6 @@ main.floors.mapo_1_2=
                             "time": 0,
                             "async": true
                         },
-                        "【哈　哈斯太】",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "其他人在一個月後的秋葉原車站發現了梗平跟表妹，兩人被發現時眼神空洞",
                         {
                             "type": "hideImage",
@@ -1525,6 +1589,11 @@ main.floors.mapo_1_2=
             ]
         },
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -1544,7 +1613,7 @@ main.floors.mapo_1_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_day.png",
             "loc": [
                 0,
                 0
@@ -1751,7 +1820,43 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "ms_ch1_phone_message_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "\t[友人B]（手機）還沒找到A，我先吃飯，傳地址給你們",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -2017,6 +2122,37 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "ms_ch1_phone_message_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "\t[友人C]（手機）餓了、我也先吃個飯…",
         {
             "type": "hideImage",
@@ -2042,6 +2178,11 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[梗平]（手機）你們有看到修卡的蹤跡嗎?",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
