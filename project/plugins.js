@@ -2102,7 +2102,8 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			ticTacToe: true,
 			slot777: true,
 			akibaLocation: true,
-			akibaFlapper: true
+			akibaFlapper: true,
+			westernDuel: true
 		};
 		var akibaMiniGames = {
 			kaidan_cave: { title: "幽靈找不同", gameId: "akibaLocation" },
@@ -2110,7 +2111,10 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			used_bookstore: { title: "古書封面配對", gameId: "akibaLocation" },
 			warehouse_district: { title: "倉庫裝箱", gameId: "akibaLocation" },
 			elevated_train: { title: "轉轍調度", gameId: "akibaLocation" },
-			music_venue: { title: "舞台打拍", gameId: "akibaLocation" },
+			music_venue: [
+				{ title: "舞台打拍", gameId: "akibaLocation", progressKey: "music_venue" },
+				{ title: "正午對決", gameId: "westernDuel", options: { toleranceMs: 100, concealAfterMs: 800 }, progressKey: "music_venue:westernDuel" }
+			],
 			sento: { title: "湯溫調節", gameId: "akibaLocation" },
 			mahjong_parlor: { title: "麻將牌消除", gameId: "akibaLocation" },
 			chinese_restaurant: { title: "中華快炒", gameId: "akibaLocation" },

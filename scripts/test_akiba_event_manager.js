@@ -203,13 +203,17 @@ function testEveryRegularLocationHasMiniGame() {
       assert(definitions.length > 0, `missing minigame list for ${location.id}`);
       for (const one of definitions) {
         assert(one.title);
-        assert(["akibaLocation", "slot777", "akibaFlapper"].includes(one.gameId));
+        assert(["akibaLocation", "slot777", "akibaFlapper", "westernDuel"].includes(one.gameId));
       }
     }
   }
   assert.deepEqual(
     plugin.getAkibaMiniGameDefinitions("game_center").map((definition) => definition.gameId),
     ["slot777", "akibaFlapper"]
+  );
+  assert.deepEqual(
+    plugin.getAkibaMiniGameDefinitions("music_venue").map((definition) => definition.gameId),
+    ["akibaLocation", "westernDuel"]
   );
 }
 
@@ -259,6 +263,21 @@ function testGameCenterOffersBothArcadeGames() {
   assert(choiceEvent.choices[1].action[0].function.includes("akibaFlapper"));
 }
 
+function testMusicVenueOffersStageTimingAndWesternDuel() {
+  const { core, plugin } = createPlugin({
+    akiba_event_state_initialized: true,
+    akiba_event_state_version: eventMeta.version,
+    akiba_completed_events: [],
+    akiba_active_events: [],
+    akiba_last_locationId: "music_venue",
+    akiba_last_placeName: "劇場",
+  });
+  plugin.showAkibaLocationEventChoices();
+  const choiceEvent = core.actions.at(-1);
+  assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), ["玩「舞台打拍」", "玩「正午對決」", "離開"]);
+  assert(choiceEvent.choices[1].action[0].function.includes("westernDuel"));
+}
+
 function testMiniGameResultUsesSeparateProgressFlags() {
   const { core, plugin } = createPlugin();
   let launches = 0;
@@ -300,6 +319,25 @@ function testSecondGameAtSameLocationUsesSeparateProgressKey() {
   assert.equal(core.flags.akiba_last_minigame_title, "電波飛鳥");
 }
 
+function testWesternDuelUsesTheatreProgressKeyAndOptions() {
+  const { core, plugin } = createPlugin();
+  plugin.startMiniGame = (gameId, options, callback) => {
+    assert.equal(gameId, "westernDuel");
+    assert.equal(options.locationId, "music_venue");
+    assert.equal(options.targetSeconds, undefined);
+    assert.equal(options.toleranceMs, 100);
+    assert.equal(options.concealAfterMs, 800);
+    callback({ result: "win", reason: "clear", score: 1998, deltaMs: 1 });
+    return true;
+  };
+
+  assert.equal(plugin.startAkibaLocationMiniGame("music_venue", "westernDuel"), true);
+  assert.deepEqual(core.flags.akiba_minigame_cleared, ["music_venue:westernDuel"]);
+  assert.deepEqual(core.flags.akiba_minigame_best_scores, { "music_venue:westernDuel": 1998 });
+  assert.equal(core.flags.akiba_last_minigame_game_id, "westernDuel");
+  assert.equal(core.flags.akiba_last_minigame_title, "正午對決");
+}
+
 testFreshInitialization();
 testVersionMigrationPreservesProgress();
 testCompletionCountsOnlyOnce();
@@ -310,8 +348,10 @@ testEveryRegularLocationHasMiniGame();
 testLocationChoiceIncludesMiniGameWithoutStoryEvent();
 testLocationChoiceKeepsStoryEventAndMiniGame();
 testGameCenterOffersBothArcadeGames();
+testMusicVenueOffersStageTimingAndWesternDuel();
 testMiniGameResultUsesSeparateProgressFlags();
 testSecondGameAtSameLocationUsesSeparateProgressKey();
+testWesternDuelUsesTheatreProgressKeyAndOptions();
 
 delete global.core;
 delete global.main;

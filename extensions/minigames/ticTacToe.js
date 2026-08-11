@@ -9,11 +9,15 @@
 		this.board = ["", "", "", "", "", "", "", "", ""];
 		this.turn = "X";
 		this.ended = false;
+		this.destroyed = false;
 		this.overlay = null;
+		this.panel = null;
+		this.boardElement = null;
 		this.status = null;
 		this.cells = [];
 		this.lockedBeforeStart = false;
 		this.keyHandler = null;
+		this.resizeHandler = null;
 	}
 
 	TicTacToeGame.prototype.start = function () {
@@ -30,16 +34,18 @@
 		overlay.setAttribute("role", "dialog");
 		overlay.setAttribute("aria-label", "Tic Tac Toe mini game");
 		overlay.style.cssText = [
-			"position:absolute",
+			"position:fixed",
 			"left:0",
 			"top:0",
-			"width:100%",
-			"height:100%",
+			"right:0",
+			"bottom:0",
+			"width:100vw",
+			"height:100vh",
 			"z-index:220",
 			"display:flex",
 			"align-items:center",
 			"justify-content:center",
-			"background:rgba(8,12,18,0.78)",
+			"background:radial-gradient(circle at 50% 42%,rgba(59,130,246,0.18),rgba(8,12,18,0.95) 68%),rgba(8,12,18,0.95)",
 			"font-family:Arial,'Microsoft JhengHei','Microsoft YaHei',sans-serif",
 			"color:#f7f9fc",
 			"pointer-events:auto"
@@ -47,22 +53,26 @@
 
 		var panel = document.createElement("div");
 		panel.style.cssText = [
-			"width:360px",
-			"max-width:92%",
+			"width:720px",
+			"height:720px",
 			"box-sizing:border-box",
 			"padding:18px",
-			"border:1px solid rgba(255,255,255,0.22)",
+			"border:1px solid rgba(147,197,253,0.34)",
 			"border-radius:8px",
-			"background:#111827",
-			"box-shadow:0 16px 40px rgba(0,0,0,0.42)"
+			"background:linear-gradient(160deg,#162033,#0f172a 72%,#090d18)",
+			"box-shadow:0 18px 52px rgba(0,0,0,0.58),inset 0 0 30px rgba(59,130,246,0.1)",
+			"display:flex",
+			"flex-direction:column",
+			"overflow:hidden"
 		].join(";");
+		this.panel = panel;
 
 		var header = document.createElement("div");
 		header.style.cssText = "display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px";
 
 		var title = document.createElement("div");
 		title.textContent = "圈圈叉叉";
-		title.style.cssText = "font-size:20px;font-weight:700;line-height:1.2";
+		title.style.cssText = "font-size:28px;font-weight:900;line-height:1.2;color:#dbeafe;text-shadow:0 0 12px rgba(147,197,253,0.45)";
 		header.appendChild(title);
 
 		var close = document.createElement("button");
@@ -87,7 +97,7 @@
 		panel.appendChild(header);
 
 		var status = document.createElement("div");
-		status.style.cssText = "height:24px;margin-bottom:12px;font-size:14px;color:#cbd5e1";
+		status.style.cssText = "height:30px;margin-bottom:12px;font-size:16px;color:#cbd5e1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis";
 		panel.appendChild(status);
 		this.status = status;
 
@@ -97,8 +107,11 @@
 			"grid-template-columns:repeat(3,1fr)",
 			"gap:8px",
 			"width:100%",
-			"aspect-ratio:1/1"
+			"aspect-ratio:1/1",
+			"flex:1 1 auto",
+			"min-height:0"
 		].join(";");
+		this.boardElement = board;
 		for (var i = 0; i < 9; i++) {
 			var cell = document.createElement("button");
 			cell.type = "button";
@@ -106,12 +119,13 @@
 			cell.style.cssText = [
 				"border:1px solid rgba(255,255,255,0.22)",
 				"border-radius:8px",
-				"background:#f8fafc",
+				"background:linear-gradient(#f8fafc,#dbeafe)",
 				"color:#111827",
 				"font-size:48px",
 				"font-weight:800",
 				"line-height:1",
-				"cursor:pointer"
+				"cursor:pointer",
+				"box-shadow:inset 0 8px 18px rgba(255,255,255,0.62),0 4px 0 rgba(15,23,42,0.32)"
 			].join(";");
 			cell.onclick = function () {
 				self.play(parseInt(this.dataset.index));
@@ -144,8 +158,9 @@
 		panel.appendChild(footer);
 
 		overlay.appendChild(panel);
-		(core.dom.gameDraw || document.body).appendChild(overlay);
+		(document.body || core.dom.gameDraw).appendChild(overlay);
 		this.overlay = overlay;
+		this.applyResponsiveLayout();
 
 		this.keyHandler = function (e) {
 			if (e.key === "Escape") self.destroy({ result: "cancel", reason: "escape" });
@@ -153,6 +168,25 @@
 			if (index >= 1 && index <= 9) self.play(index - 1);
 		};
 		document.addEventListener("keydown", this.keyHandler);
+		this.resizeHandler = function () { self.applyResponsiveLayout(); };
+		window.addEventListener("resize", this.resizeHandler);
+	}
+
+	TicTacToeGame.prototype.applyResponsiveLayout = function () {
+		if (!this.overlay || !this.panel || !this.boardElement) return;
+		var width = this.overlay.clientWidth || window.innerWidth || 416;
+		var height = this.overlay.clientHeight || window.innerHeight || 416;
+		var margin = Math.max(8, Math.min(width, height) * 0.035);
+		var panelSize = Math.max(180, Math.min(760, Math.floor(Math.min(width, height) - margin * 2)));
+		var unit = panelSize / 13;
+		this.panel.style.width = panelSize + "px";
+		this.panel.style.height = panelSize + "px";
+		this.panel.style.padding = Math.max(10, unit * 0.36) + "px";
+		if (this.status) this.status.style.fontSize = Math.max(12, unit * 0.42) + "px";
+		if (this.boardElement) this.boardElement.style.gap = Math.max(5, unit * 0.18) + "px";
+		for (var i = 0; i < this.cells.length; i++) {
+			this.cells[i].style.fontSize = Math.max(38, unit * 1.8) + "px";
+		}
 	}
 
 	TicTacToeGame.prototype.buttonCss = function (background) {
@@ -231,8 +265,11 @@
 	}
 
 	TicTacToeGame.prototype.destroy = function (result) {
+		if (this.destroyed) return;
+		this.destroyed = true;
 		var finalResult = result || this.result || { result: "cancel", reason: "destroy" };
 		if (this.keyHandler) document.removeEventListener("keydown", this.keyHandler);
+		if (this.resizeHandler) window.removeEventListener("resize", this.resizeHandler);
 		if (this.overlay && this.overlay.parentNode) this.overlay.parentNode.removeChild(this.overlay);
 		if (!this.lockedBeforeStart) core.unlockControl();
 		this.onFinish(finalResult);

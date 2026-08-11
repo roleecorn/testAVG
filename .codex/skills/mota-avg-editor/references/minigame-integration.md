@@ -37,6 +37,7 @@
 - `slot777`
 - `akibaLocation`
 - `akibaFlapper`
+- `westernDuel`
 
 通用入口：
 
@@ -56,12 +57,15 @@ core.plugin.startAkibaLocationMiniGame(locationId, gameId);
 `ticTacToe` 與 `slot777` 的 demo API 保留供事件直接呼叫；目前沒有樓層呼叫這兩個 demo API。Akiba 地點的正式入口是 `showAkibaLocationEventChoices()` 產生的地點選單：
 
 - 電子遊樂場提供既有 `slot777`（固定三輪後結算）與 `akibaFlapper`「電波飛鳥」（通過 8 道閘門勝利，碰撞、越界或逾時失敗）。
+- 劇場提供既有 `akibaLocation`「舞台打拍」與 `westernDuel`「正午對決」（每局隨機指定 5～10 秒的正整數目標，以毫秒誤差判定）。
 - 其餘一般地點呼叫 `akibaLocation`，並以 `locationId` 選取專屬玩法設定。
 - `idle_clock` 保留人物交流回合用途，不可加入一般小遊戲。
 
 `extensions/minigames/akibaLocation.js` 是單一可設定的 Akiba 地點挑戰模組，共用 overlay、倒數、結果與清理生命週期；內部模式包含尋物、分類、記憶、順序、時機、平衡與麻將牌消除。各地點是同一模組的資料設定，不是把二十份生命週期邏輯塞進 `project/plugins.js`。
 
 `extensions/minigames/akibaFlapper.js` 是電子遊樂場的獨立 Canvas 街機玩法。以滑鼠點擊或觸控拍翼為主要操作，鍵盤只是輔助；勝利、碰撞失敗、邊界失敗、逾時與取消都會停止 animation frame、移除監聽器並回傳結果。
+
+`extensions/minigames/westernDuel.js` 是劇場的獨立 DOM 計時玩法。每局從 5～10 中等機率抽出一個正整數秒數，開始後碼錶只顯示前 0.8 秒，玩家以滑鼠／觸控在指定時間拔槍；誤差 ±100ms 內勝利，太早、太晚、逾時與取消都有有限結束點。重新挑戰會重抽目標。視覺素材完整取自 Vaca Roxa 的 CC0 `Generic OLDWEST Pack` Version 1.0，原始 ZIP、完整解壓內容與授權紀錄保存在 `project/images/minigames/westernDuel/`；遊戲邏輯由本專案自行實作。
 
 Akiba 小遊戲結果使用獨立 flags，不得寫入角色事件的 `akiba_completed_events`：
 
@@ -72,7 +76,7 @@ Akiba 小遊戲結果使用獨立 flags，不得寫入角色事件的 `akiba_com
 - `akiba_last_minigame_title`
 - 共用最近結果 `lastMiniGameResult`、`lastMiniGameScore`
 
-`akiba_minigame_cleared` 與 `akiba_minigame_best_scores` 預設仍以 `locationId` 為 key；同一地點有第二款遊戲時使用 `locationId:gameId`，避免兩款遊戲互相覆寫進度。電子遊樂場既有拉霸繼續沿用 `game_center`，電波飛鳥使用 `game_center:akibaFlapper`。
+`akiba_minigame_cleared` 與 `akiba_minigame_best_scores` 預設仍以 `locationId` 為 key；同一地點有第二款遊戲時使用 `locationId:gameId`，避免兩款遊戲互相覆寫進度。電子遊樂場既有拉霸繼續沿用 `game_center`，電波飛鳥使用 `game_center:akibaFlapper`；劇場舞台打拍沿用 `music_venue`，正午對決使用 `music_venue:westernDuel`。
 
 ## 接入原則
 
@@ -102,12 +106,13 @@ callback({
 
 ## 版面規範
 
-H5 魔塔的小遊戲 DOM 通常掛在 `core.dom.gameDraw` 裡，而不是整個瀏覽器 viewport。手機模式下 `gameDraw` 可能被縮放成較小的正方形區域，還會和系統狀態列、瀏覽器工具列、虛擬按鍵區競爭高度。因此小遊戲版面要以遊戲區短邊為基準，不要只用桌機寬度設計。
+正式小遊戲的 overlay 應掛在 `document.body`，用 `position: fixed; inset: 0` 覆蓋整個瀏覽器 viewport，而不是限制在 `core.dom.gameDraw` 的 416 方框內。`core.dom.gameDraw` 仍可作為缺少 `document.body` 時的 fallback，但正常遊玩時小遊戲要使用全螢幕空間，讓玩家在桌機與手機上都有足夠操作區。
 
 手機與桌機都要遵守：
 
 - 不使用 scrollbar 作為主要解法；overlay 與 panel 預設保持 `overflow: hidden`，小遊戲必須完整塞進畫面。
-- 以魔塔 13x13 格為優先設計基準，可用 `unit = min(width, height) / 13` 計算尺寸。
+- 以 viewport 的可用寬高扣除少量外距後決定 panel 尺寸；桌機可放大到約 `980×720`，極窄嵌入尺寸仍需下修到可塞入畫面的最小值。
+- 仍可用 `unit = min(panelWidth, panelHeight) / 13` 計算字級、按鈕、間距與固定格式元素尺寸。
 - 主內容、狀態列、分數列、底部按鈕要共享同一個高度預算，不要混用外層格單位與內層固定 px 最小值。
 - 大型棋盤、轉盤、卡牌區、清單區都要先保留控制列高度，再決定主內容尺寸。
 - 手機操作必須有可點擊按鈕或觸控區，不可只依賴鍵盤快捷鍵。
@@ -118,7 +123,7 @@ H5 魔塔的小遊戲 DOM 通常掛在 `core.dom.gameDraw` 裡，而不是整個
 
 - 桌機正常視窗。
 - 手機直向 360x640、390x844。
-- 魔塔常見的 416x416 遊戲區。
+- 魔塔常見的 416x416 遊戲區；此時 overlay 仍掛在 body，panel 依 viewport／測試容器扣外距後縮放，不再固定為 416。
 - 短邊被壓縮的嵌入尺寸，例如 260x416、240x360、208x416。
 - 「剛開啟」、「遊戲進行中」、「結算後顯示結果」三種狀態。
 
@@ -155,9 +160,11 @@ Akiba 地點小遊戲另執行：
 ```powershell
 node scripts/test_akiba_location_minigame.js
 node scripts/test_akiba_flapper.js
+node scripts/test_western_duel.js
+node scripts/test_demo_minigames.js
 node scripts/test_akiba_event_manager.js
 ```
 
-第一個測試會確認二十組自訂地點設定與 mapping 一致、每局有有限結束條件、416×416／208×416 可建立操作介面，並驗證取消、通關、重入、麻將盤面與 DOM／timer／listener 清理。第二個測試驗證電波飛鳥在 416×416／208×416 的滑鼠控制、8 閘門通關、碰撞失敗與 animation frame／listener 清理。第三個測試會確認每個一般地點都有入口、電子遊樂場同時顯示兩款遊戲、`idle_clock` 排除、支線與小遊戲選項並存，以及不同遊戲進度不污染角色事件狀態。
+第一個測試會確認二十組自訂地點設定與 mapping 一致、每局有有限結束條件、全螢幕 body overlay、416×416／208×416 可建立操作介面，並驗證取消、通關、重入、麻將盤面與 DOM／timer／listener 清理。第二個測試驗證電波飛鳥在全螢幕 overlay 下的 416×416／208×416 滑鼠控制、8 閘門通關、碰撞失敗與 animation frame／listener 清理。第三個測試驗證正午對決只會抽出 5～10 的正整數目標、重新挑戰會重抽，以及素材路徑、全螢幕響應式滑鼠介面、毫秒判定、碼錶遮蔽、逾時與清理。新增的 demo 小遊戲測試驗證 `ticTacToe` 與 `slot777` 的全螢幕掛載、放大版面、素材、操作與清理。第四個測試會確認每個一般地點都有入口、電子遊樂場與劇場各自同時顯示兩款遊戲、`idle_clock` 排除、支線與小遊戲選項並存，以及不同遊戲進度不污染角色事件狀態。
 
 測試前請先依 [專案架構與輸出原則](project-overview.md) 的標準流程啟動根目錄 `启动服务.exe`，從 `http://127.0.0.1:1055/index.html` 進入遊戲，再透過遊戲中的選項啟動小遊戲。不要用 URL query 參數、`8765` 或 `python -m http.server` 測小遊戲，否則不是正常遊戲流程，也可能打到其他專案或缺少魔塔樣板服務路由。

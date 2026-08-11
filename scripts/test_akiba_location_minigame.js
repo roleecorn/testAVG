@@ -124,6 +124,8 @@ function installFakeBrowser(width, height) {
   };
   context.window.addEventListener = (name, callback) => listeners.set(callback, name);
   context.window.removeEventListener = (name, callback) => listeners.delete(callback);
+  context.window.innerWidth = width;
+  context.window.innerHeight = height;
   context.core = {
     status: { lockControl: false },
     dom: { gameDraw: rootElement },
@@ -138,9 +140,18 @@ function installFakeBrowser(width, height) {
   };
   return {
     rootElement,
+    body,
     listeners,
     lockCount: () => lockCount,
     unlockCount: () => unlockCount,
+  };
+}
+
+function expectedPanelSize(width, height) {
+  const margin = Math.max(8, Math.min(width, height) * 0.035);
+  return {
+    width: `${Math.min(Math.max(180, Math.floor(width - margin * 2)), 980)}px`,
+    height: `${Math.min(Math.max(180, Math.floor(height - margin * 2)), 720)}px`,
   };
 }
 
@@ -153,13 +164,18 @@ function testEveryModeStartsAndCleansUp(width, height) {
       callbackCount++;
       finalResult = result;
     });
-    assert.equal(fake.rootElement.children.length, 1, `${locationId} did not mount at ${width}x${height}`);
-    const overlay = fake.rootElement.children[0];
+    assert.equal(fake.body.children.length, 1, `${locationId} did not mount at ${width}x${height}`);
+    assert.equal(fake.rootElement.children.length, 0, `${locationId} should mount fullscreen outside gameDraw`);
+    const overlay = fake.body.children[0];
     const panel = overlay.children[0];
-    assert.equal(panel.style.width, `${Math.min(416, width, height)}px`);
+    const expected = expectedPanelSize(width, height);
+    assert.equal(panel.style.width, expected.width);
+    assert.equal(panel.style.height, expected.height);
+    assert(instance.board.children.length > 0, `${locationId} should render a styled mode frame`);
+    assert(/box-shadow/.test(instance.board.children[0].style.cssText || ""), `${locationId} missing visual frame polish`);
     assert(panel.querySelectorAll("BUTTON").length > 0, `${locationId} has no pointer controls`);
     instance.destroy({ result: "cancel", reason: "test", score: 0, locationId });
-    assert.equal(fake.rootElement.children.length, 0, `${locationId} overlay leaked`);
+    assert.equal(fake.body.children.length, 0, `${locationId} overlay leaked`);
     assert.equal(callbackCount, 1, `${locationId} callback count mismatch`);
     assert.equal(finalResult.result, "cancel");
     assert.equal(fake.listeners.size, 0, `${locationId} resize listener leaked`);
@@ -176,12 +192,12 @@ function testHuntCanReachWinAndReturn() {
   assert.equal(targetButtons.length, game.getConfig("park").targetCount);
   targetButtons.forEach((button) => button.onclick());
   assert.equal(instance.result.result, "win");
-  assert.equal(fake.rootElement.children.length, 1, "result should remain visible until return");
+  assert.equal(fake.body.children.length, 1, "result should remain visible until return");
   const returnButtons = instance.footer.querySelectorAll("BUTTON");
   assert.equal(returnButtons.length, 1);
   returnButtons[0].onclick();
   assert.equal(finalResult.result, "win");
-  assert.equal(fake.rootElement.children.length, 0);
+  assert.equal(fake.body.children.length, 0);
 }
 
 function testMahjongBoardIsSolvable() {
@@ -202,7 +218,7 @@ function testMahjongBoardIsSolvable() {
   assert.equal(instance.result.result, "win");
   instance.destroy(instance.result);
   assert.equal(finalResult.result, "win");
-  assert.equal(fake.rootElement.children.length, 0);
+  assert.equal(fake.body.children.length, 0);
 }
 
 testEveryModeStartsAndCleansUp(416, 416);

@@ -72,11 +72,13 @@
 		overlay.setAttribute("role", "dialog");
 		overlay.setAttribute("aria-label", "777 slot mini game");
 		overlay.style.cssText = [
-			"position:absolute",
+			"position:fixed",
 			"left:0",
 			"top:0",
-			"width:100%",
-			"height:100%",
+			"right:0",
+			"bottom:0",
+			"width:100vw",
+			"height:100vh",
 			"box-sizing:border-box",
 			"padding:0",
 			"z-index:220",
@@ -84,7 +86,7 @@
 			"align-items:center",
 			"justify-content:center",
 			"overflow:hidden",
-			"background:rgba(10,9,16,0.84)",
+			"background:radial-gradient(circle at 50% 38%,rgba(220,38,38,0.18),rgba(10,9,16,0.96) 66%),rgba(10,9,16,0.96)",
 			"font-family:Arial,'Microsoft JhengHei','Microsoft YaHei',sans-serif",
 			"color:#f8fafc",
 			"pointer-events:auto"
@@ -92,14 +94,14 @@
 
 		var panel = document.createElement("div");
 		panel.style.cssText = [
-			"width:416px",
-			"height:416px",
+			"width:900px",
+			"height:640px",
 			"box-sizing:border-box",
 			"padding:12px",
-			"border:0",
+			"border:3px solid rgba(253,230,138,0.42)",
 			"border-radius:6px",
-			"background:#18111f",
-			"box-shadow:0 10px 28px rgba(0,0,0,0.45)",
+			"background:linear-gradient(160deg,#2a162c,#18111f 58%,#0f0a14)",
+			"box-shadow:0 18px 52px rgba(0,0,0,0.62),inset 0 0 34px rgba(253,230,138,0.12)",
 			"display:flex",
 			"flex-direction:column",
 			"overflow:hidden"
@@ -112,7 +114,7 @@
 
 		var title = document.createElement("div");
 		title.textContent = "777 SLOT";
-		title.style.cssText = "font-size:22px;font-weight:800;line-height:1;color:#fde68a;white-space:nowrap;overflow:hidden";
+		title.style.cssText = "font-size:28px;font-weight:900;line-height:1;color:#fde68a;white-space:nowrap;overflow:hidden;text-shadow:0 0 14px rgba(253,230,138,0.76)";
 		this.title = title;
 		header.appendChild(title);
 
@@ -141,8 +143,8 @@
 			"padding:10px",
 			"border:0",
 			"border-radius:6px",
-			"background:#0f172a",
-			"box-shadow:inset 0 0 24px rgba(0,0,0,0.38)",
+			"background:linear-gradient(#111827,#070a12)",
+			"box-shadow:inset 0 0 28px rgba(0,0,0,0.48),0 0 0 3px rgba(253,230,138,0.22),0 12px 24px rgba(0,0,0,0.34)",
 			"align-self:center"
 		].join(";");
 		this.machine = machine;
@@ -153,11 +155,11 @@
 				"position:relative",
 				"border:1px solid rgba(255,255,255,0.16)",
 				"border-radius:8px",
-				"background-color:#1f2937",
+				"background-color:#f8fafc",
 				"background-image:url('" + SPRITE_URL + "')",
 				"background-repeat:no-repeat",
 				"background-size:300% 200%",
-				"box-shadow:inset 0 6px 16px rgba(0,0,0,0.26)",
+				"box-shadow:inset 0 8px 16px rgba(255,255,255,0.48),inset 0 -8px 18px rgba(15,23,42,0.2),0 0 10px rgba(253,230,138,0.16)",
 				"overflow:hidden"
 			].join(";");
 			this.cells.push(cell);
@@ -214,7 +216,7 @@
 		panel.appendChild(footer);
 
 		overlay.appendChild(panel);
-		(core.dom.gameDraw || document.body).appendChild(overlay);
+		(document.body || core.dom.gameDraw).appendChild(overlay);
 		this.overlay = overlay;
 		this.applyResponsiveLayout();
 
@@ -236,10 +238,14 @@
 
 	Slot777Game.prototype.applyResponsiveLayout = function () {
 		if (!this.overlay || !this.panel || !this.machine) return;
-		var overlayWidth = this.overlay.clientWidth || 416;
-		var overlayHeight = this.overlay.clientHeight || 416;
-		var panelSize = Math.min(416, Math.floor(Math.min(overlayWidth, overlayHeight)));
-		var unit = panelSize / 13;
+		var overlayWidth = this.overlay.clientWidth || window.innerWidth || 416;
+		var overlayHeight = this.overlay.clientHeight || window.innerHeight || 416;
+		var margin = Math.max(8, Math.min(overlayWidth, overlayHeight) * 0.035);
+		var panelWidth = Math.max(180, Math.floor(overlayWidth - margin * 2));
+		var panelHeight = Math.max(180, Math.floor(overlayHeight - margin * 2));
+		panelWidth = Math.min(panelWidth, 980);
+		panelHeight = Math.min(panelHeight, 720);
+		var unit = Math.min(panelWidth, panelHeight) / 13;
 		var panelPadding = unit * 0.25;
 		var headerHeight = unit * 0.9;
 		var statusHeight = unit * 0.65;
@@ -248,12 +254,12 @@
 		var smallGap = unit * 0.08;
 		var largeGap = unit * 0.16;
 		var fixedHeight = panelPadding * 2 + headerHeight + largeGap + largeGap + statusHeight + smallGap + scoreHeight + largeGap + footerHeight;
-		var machineSize = Math.min(unit * 8, panelSize - fixedHeight);
+		var machineSize = Math.min(panelWidth * 0.62, panelHeight - fixedHeight, unit * 9.2);
 		var machinePadding = unit * 0.22;
 		var cellRadius = Math.max(2, unit * 0.16);
 
-		this.panel.style.width = panelSize + "px";
-		this.panel.style.height = panelSize + "px";
+		this.panel.style.width = panelWidth + "px";
+		this.panel.style.height = panelHeight + "px";
 		this.panel.style.padding = panelPadding + "px";
 		this.panel.style.overflow = "hidden";
 		this.panel.style.borderRadius = Math.max(3, unit * 0.18) + "px";

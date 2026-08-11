@@ -46,6 +46,7 @@
 		this.lockedBeforeStart = false;
 		this.overlay = null;
 		this.panel = null;
+		this.board = null;
 		this.canvas = null;
 		this.context = null;
 		this.progress = null;
@@ -86,16 +87,18 @@
 		overlay.setAttribute("role", "dialog");
 		overlay.setAttribute("aria-label", this.title);
 		overlay.style.cssText = [
-			"position:absolute", "left:0", "top:0", "width:100%", "height:100%", "z-index:230",
+			"position:fixed", "left:0", "top:0", "right:0", "bottom:0", "width:100vw", "height:100vh", "z-index:230",
 			"display:flex", "align-items:center", "justify-content:center", "overflow:hidden",
-			"background:rgba(2,6,23,0.9)", "font-family:Arial,'Microsoft JhengHei','Microsoft YaHei',sans-serif",
+			"background:radial-gradient(circle at 50% 42%,rgba(14,165,233,0.18),rgba(2,6,23,0.96) 64%),rgba(2,6,23,0.96)",
+			"font-family:Arial,'Microsoft JhengHei','Microsoft YaHei',sans-serif",
 			"color:#f8fafc", "pointer-events:auto", "touch-action:none"
 		].join(";");
 
 		var panel = document.createElement("div");
 		panel.style.cssText = [
-			"width:416px", "height:416px", "box-sizing:border-box", "padding:8px", "border-radius:8px",
-			"background:linear-gradient(160deg,#172554,#0f172a)", "box-shadow:0 12px 34px rgba(0,0,0,0.55)",
+			"width:900px", "height:620px", "box-sizing:border-box", "padding:14px", "border-radius:8px",
+			"border:2px solid rgba(103,232,249,0.38)", "background:linear-gradient(160deg,#172554,#0f172a 76%,#070b1a)",
+			"box-shadow:0 18px 50px rgba(0,0,0,0.62),inset 0 0 34px rgba(14,165,233,0.18)",
 			"display:flex", "flex-direction:column", "gap:5px", "overflow:hidden"
 		].join(";");
 
@@ -103,7 +106,7 @@
 		header.style.cssText = "display:flex;align-items:center;justify-content:space-between;gap:8px;flex:0 0 auto;min-height:34px";
 		var title = document.createElement("div");
 		title.textContent = this.title;
-		title.style.cssText = "font-size:20px;font-weight:900;color:#67e8f9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis";
+		title.style.cssText = "font-size:24px;font-weight:900;color:#67e8f9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 0 14px rgba(103,232,249,0.75)";
 		header.appendChild(title);
 
 		var close = makeButton("×", "#4c1d3d");
@@ -119,16 +122,16 @@
 		panel.appendChild(header);
 
 		var progress = document.createElement("div");
-		progress.style.cssText = "flex:0 0 auto;min-height:20px;font-size:13px;color:#facc15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis";
+		progress.style.cssText = "flex:0 0 auto;min-height:22px;font-size:14px;color:#facc15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis";
 		panel.appendChild(progress);
 
 		var status = document.createElement("div");
 		status.textContent = "點擊遊戲畫面或下方按鈕拍翼，穿過 8 道電子閘門。";
-		status.style.cssText = "flex:0 0 auto;min-height:32px;font-size:13px;line-height:1.25;color:#cbd5e1;overflow:hidden";
+		status.style.cssText = "flex:0 0 auto;min-height:32px;font-size:14px;line-height:1.25;color:#cbd5e1;overflow:hidden";
 		panel.appendChild(status);
 
 		var board = document.createElement("div");
-		board.style.cssText = "position:relative;flex:1 1 auto;min-height:0;overflow:hidden;border:2px solid #155e75;border-radius:8px;background:#07152e";
+		board.style.cssText = "position:relative;flex:1 1 auto;min-height:0;overflow:hidden;border:2px solid #155e75;border-radius:8px;background:#07152e;box-shadow:inset 0 0 30px rgba(103,232,249,0.16)";
 		var canvas = document.createElement("canvas");
 		canvas.width = WORLD_WIDTH;
 		canvas.height = WORLD_HEIGHT;
@@ -146,9 +149,10 @@
 		panel.appendChild(footer);
 
 		overlay.appendChild(panel);
-		(core.dom.gameDraw || document.body).appendChild(overlay);
+		(document.body || core.dom.gameDraw).appendChild(overlay);
 		this.overlay = overlay;
 		this.panel = panel;
+		this.board = board;
 		this.canvas = canvas;
 		this.context = canvas.getContext("2d");
 		this.progress = progress;
@@ -176,14 +180,18 @@
 
 	AkibaFlapperGame.prototype.applyResponsiveLayout = function () {
 		if (!this.overlay || !this.panel) return;
-		var width = this.overlay.clientWidth || 416;
-		var height = this.overlay.clientHeight || 416;
-		var size = Math.max(180, Math.min(416, Math.floor(Math.min(width, height))));
-		var unit = size / 13;
-		this.panel.style.width = size + "px";
-		this.panel.style.height = size + "px";
-		this.panel.style.padding = Math.max(4, unit * 0.22) + "px";
-		this.panel.style.gap = Math.max(2, unit * 0.12) + "px";
+		var width = this.overlay.clientWidth || window.innerWidth || 416;
+		var height = this.overlay.clientHeight || window.innerHeight || 416;
+		var margin = Math.max(8, Math.min(width, height) * 0.035);
+		var panelWidth = Math.max(180, Math.floor(width - margin * 2));
+		var panelHeight = Math.max(180, Math.floor(height - margin * 2));
+		panelWidth = Math.min(panelWidth, 980);
+		panelHeight = Math.min(panelHeight, 720);
+		var unit = Math.min(panelWidth, panelHeight) / 13;
+		this.panel.style.width = panelWidth + "px";
+		this.panel.style.height = panelHeight + "px";
+		this.panel.style.padding = Math.max(8, unit * 0.28) + "px";
+		this.panel.style.gap = Math.max(3, unit * 0.14) + "px";
 		var buttons = this.panel.querySelectorAll("button");
 		for (var i = 0; i < buttons.length; i++) {
 			buttons[i].style.fontSize = Math.max(9, unit * 0.42) + "px";
@@ -278,13 +286,22 @@
 		ctx.clearRect(0, 0, WORLD_WIDTH, WORLD_HEIGHT);
 		ctx.fillStyle = "#07152e";
 		ctx.fillRect(0, 0, WORLD_WIDTH, WORLD_HEIGHT);
-		ctx.strokeStyle = "rgba(34,211,238,0.12)";
+		ctx.fillStyle = "#0e2445";
+		ctx.fillRect(0, WORLD_HEIGHT * 0.62, WORLD_WIDTH, WORLD_HEIGHT * 0.38);
+		ctx.fillStyle = "rgba(14,165,233,0.18)";
+		ctx.fillRect(0, WORLD_HEIGHT * 0.6, WORLD_WIDTH, 3);
+		ctx.strokeStyle = "rgba(34,211,238,0.14)";
 		ctx.lineWidth = 1;
 		for (var x = 0; x <= WORLD_WIDTH; x += 40) {
 			ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, WORLD_HEIGHT); ctx.stroke();
 		}
 		for (var y = 0; y <= WORLD_HEIGHT; y += 40) {
 			ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(WORLD_WIDTH, y); ctx.stroke();
+		}
+		ctx.strokeStyle = "rgba(250,204,21,0.18)";
+		for (var r = 0; r < 7; r++) {
+			var gy = WORLD_HEIGHT * 0.68 + r * 24;
+			ctx.beginPath(); ctx.moveTo(0, gy); ctx.lineTo(WORLD_WIDTH, gy + r * 9); ctx.stroke();
 		}
 
 		for (var i = 0; i < this.gates.length; i++) {
@@ -298,11 +315,15 @@
 			ctx.fillStyle = "#67e8f9";
 			ctx.fillRect(gate.x - 4, gapTop - 7, this.gateWidth + 8, 7);
 			ctx.fillRect(gate.x - 4, gapBottom, this.gateWidth + 8, 7);
+			ctx.fillStyle = "rgba(250,204,21,0.78)";
+			ctx.fillRect(gate.x + this.gateWidth / 2 - 2, gapTop, 4, gapBottom - gapTop);
 		}
 
 		ctx.save();
 		ctx.translate(this.birdX, this.birdY);
 		ctx.rotate(Math.max(-0.45, Math.min(0.55, this.birdVelocity / 520)));
+		ctx.fillStyle = "rgba(103,232,249,0.28)";
+		ctx.beginPath(); ctx.moveTo(-9, 0); ctx.lineTo(-38, 11); ctx.lineTo(-25, -10); ctx.closePath(); ctx.fill();
 		ctx.fillStyle = "#facc15";
 		ctx.beginPath(); ctx.arc(0, 0, this.birdRadius, 0, Math.PI * 2); ctx.fill();
 		ctx.fillStyle = "#fb7185";

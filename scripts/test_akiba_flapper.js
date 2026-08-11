@@ -98,6 +98,8 @@ function createEnvironment(width, height) {
   const context = {
     window: {
       MotaMiniGames: {},
+      innerWidth: width,
+      innerHeight: height,
       addEventListener(name, callback) { windowListeners.set(callback, name); },
       removeEventListener(name, callback) { windowListeners.delete(callback); },
       requestAnimationFrame(callback) {
@@ -127,6 +129,7 @@ function createEnvironment(width, height) {
   return {
     game: context.window.MotaMiniGames.akibaFlapper,
     rootElement,
+    body,
     windowListeners,
     documentListeners,
     animationFrames,
@@ -135,17 +138,28 @@ function createEnvironment(width, height) {
   };
 }
 
+function expectedPanelSize(width, height) {
+  const margin = Math.max(8, Math.min(width, height) * 0.035);
+  return {
+    width: `${Math.min(Math.max(180, Math.floor(width - margin * 2)), 980)}px`,
+    height: `${Math.min(Math.max(180, Math.floor(height - margin * 2)), 720)}px`,
+  };
+}
+
 function testStartsAndCleansUp(width, height) {
   const env = createEnvironment(width, height);
   let result = null;
   const instance = env.game.start({ targetGates: 8, seconds: 45 }, (value) => { result = value; });
-  assert.equal(env.rootElement.children.length, 1);
-  assert.equal(instance.panel.style.width, `${Math.min(416, width, height)}px`);
+  assert.equal(env.body.children.length, 1);
+  assert.equal(env.rootElement.children.length, 0);
+  const expected = expectedPanelSize(width, height);
+  assert.equal(instance.panel.style.width, expected.width);
+  assert.equal(instance.panel.style.height, expected.height);
   assert(instance.panel.querySelectorAll("BUTTON").length >= 2, "pointer controls missing");
   assert.equal(instance.canvas.listeners.size, 1, "canvas pointer listener missing");
   instance.destroy({ result: "cancel", reason: "test", score: 0 });
   assert.equal(result.result, "cancel");
-  assert.equal(env.rootElement.children.length, 0);
+  assert.equal(env.body.children.length, 0);
   assert.equal(env.windowListeners.size, 0);
   assert.equal(env.documentListeners.size, 0);
   assert.equal(instance.canvas.listeners.size, 0);
@@ -166,12 +180,12 @@ function testEightGatesReachWinAndReturn() {
   instance.step(0);
   assert.equal(instance.result.result, "win");
   assert.equal(instance.result.gates, 8);
-  assert.equal(env.rootElement.children.length, 1, "result must remain until return");
+  assert.equal(env.body.children.length, 1, "result must remain until return");
   const returnButtons = instance.footer.querySelectorAll("BUTTON");
   assert.equal(returnButtons.length, 1);
   returnButtons[0].onclick();
   assert.equal(result.result, "win");
-  assert.equal(env.rootElement.children.length, 0);
+  assert.equal(env.body.children.length, 0);
 }
 
 function testBoundaryIsImmediateLoss() {
@@ -185,7 +199,7 @@ function testBoundaryIsImmediateLoss() {
   assert.equal(instance.result.reason, "boundary");
   instance.destroy(instance.result);
   assert.equal(result.result, "lose");
-  assert.equal(env.rootElement.children.length, 0);
+  assert.equal(env.body.children.length, 0);
 }
 
 function testGateCollisionIsImmediateLoss() {

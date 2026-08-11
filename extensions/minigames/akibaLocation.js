@@ -133,18 +133,94 @@
 		button.type = "button";
 		button.textContent = label;
 		button.style.cssText = [
-			"min-height:38px", "border:1px solid rgba(255,255,255,0.2)", "border-radius:7px",
-			"padding:5px 8px", "background:" + (background || "#334155"), "color:#fff",
+			"min-height:38px", "border:1px solid rgba(255,255,255,0.24)", "border-radius:7px",
+			"padding:5px 8px", "background:" + (background || "linear-gradient(#475569,#334155)"), "color:#fff",
 			"font-weight:700", "cursor:pointer", "touch-action:manipulation",
-			"-webkit-tap-highlight-color:transparent", "box-sizing:border-box"
+			"-webkit-tap-highlight-color:transparent", "box-sizing:border-box",
+			"box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 3px 0 rgba(2,6,23,0.35)"
 		].join(";");
 		return button;
+	}
+
+	var MODE_THEMES = {
+		hunt: {
+			accent: "#22c55e",
+			soft: "rgba(34,197,94,0.22)",
+			board: "radial-gradient(circle at 22% 18%,rgba(34,197,94,0.28),transparent 34%),linear-gradient(135deg,#11261d,#0f172a 70%)",
+			card: "linear-gradient(#f0fdf4,#bbf7d0)",
+			cardText: "#12351f"
+		},
+		sort: {
+			accent: "#60a5fa",
+			soft: "rgba(96,165,250,0.22)",
+			board: "radial-gradient(circle at 78% 18%,rgba(96,165,250,0.24),transparent 35%),linear-gradient(135deg,#10223f,#0f172a 72%)",
+			card: "linear-gradient(#dbeafe,#93c5fd)",
+			cardText: "#0f2747"
+		},
+		memory: {
+			accent: "#a78bfa",
+			soft: "rgba(167,139,250,0.22)",
+			board: "radial-gradient(circle at 50% 26%,rgba(167,139,250,0.28),transparent 36%),linear-gradient(135deg,#22183f,#0f172a 72%)",
+			card: "linear-gradient(#ede9fe,#c4b5fd)",
+			cardText: "#271552"
+		},
+		sequence: {
+			accent: "#fb7185",
+			soft: "rgba(251,113,133,0.2)",
+			board: "radial-gradient(circle at 48% 18%,rgba(251,113,133,0.25),transparent 34%),linear-gradient(135deg,#3a1426,#0f172a 72%)",
+			card: "linear-gradient(#ffe4e6,#fda4af)",
+			cardText: "#4c1021"
+		},
+		timing: {
+			accent: "#facc15",
+			soft: "rgba(250,204,21,0.22)",
+			board: "radial-gradient(circle at 50% 20%,rgba(250,204,21,0.22),transparent 35%),linear-gradient(135deg,#35270b,#0f172a 72%)",
+			card: "linear-gradient(#fef3c7,#facc15)",
+			cardText: "#3f2d08"
+		},
+		balance: {
+			accent: "#38bdf8",
+			soft: "rgba(56,189,248,0.2)",
+			board: "radial-gradient(circle at 28% 22%,rgba(56,189,248,0.26),transparent 34%),linear-gradient(135deg,#082f49,#0f172a 72%)",
+			card: "linear-gradient(#e0f2fe,#7dd3fc)",
+			cardText: "#082f49"
+		},
+		tileMatch: {
+			accent: "#f59e0b",
+			soft: "rgba(245,158,11,0.2)",
+			board: "radial-gradient(circle at 52% 24%,rgba(245,158,11,0.23),transparent 36%),linear-gradient(135deg,#33200d,#0f172a 72%)",
+			card: "linear-gradient(#fff7ed,#fed7aa)",
+			cardText: "#3f2610"
+		}
+	};
+
+	function themedButton(button, theme, kind) {
+		var accent = theme && theme.accent || "#60a5fa";
+		var card = theme && theme.card || "linear-gradient(#dbeafe,#93c5fd)";
+		var text = theme && theme.cardText || "#0f172a";
+		button.style.border = "1px solid rgba(255,255,255,0.32)";
+		button.style.background = kind === "card" ? card : kind === "dark" ? "linear-gradient(#1e293b,#0f172a)" : "linear-gradient(180deg," + accent + ",#334155)";
+		button.style.color = kind === "card" ? text : "#fff";
+		button.style.boxShadow = "inset 0 0 0 1px rgba(255,255,255,0.16),0 4px 0 rgba(2,6,23,0.34),0 0 16px " + (theme && theme.soft || "rgba(96,165,250,0.2)");
+	}
+
+	function makeModeFrame(theme, style) {
+		var frame = document.createElement("div");
+		frame.style.cssText = [
+			"position:relative", "width:96%", "height:96%", "box-sizing:border-box", "padding:12px",
+			"border:1px solid rgba(255,255,255,0.18)", "border-radius:10px",
+			"background:" + (theme && theme.board || "linear-gradient(135deg,#1e293b,#0f172a)"),
+			"box-shadow:inset 0 0 30px rgba(2,6,23,0.55),0 10px 24px rgba(2,6,23,0.28)",
+			"overflow:hidden", style || ""
+		].join(";");
+		return frame;
 	}
 
 	function AkibaLocationGame(options, onFinish) {
 		this.options = options || {};
 		this.locationId = this.options.locationId || "";
 		this.config = CONFIGS[this.locationId];
+		this.theme = MODE_THEMES[this.config && this.config.type] || MODE_THEMES.sort;
 		this.onFinish = onFinish || function () {};
 		this.lockedBeforeStart = false;
 		this.overlay = null;
@@ -185,16 +261,18 @@
 		overlay.setAttribute("role", "dialog");
 		overlay.setAttribute("aria-label", this.config.title);
 		overlay.style.cssText = [
-			"position:absolute", "left:0", "top:0", "width:100%", "height:100%", "z-index:225",
+			"position:fixed", "left:0", "top:0", "right:0", "bottom:0", "width:100vw", "height:100vh", "z-index:225",
 			"display:flex", "align-items:center", "justify-content:center", "overflow:hidden",
-			"background:rgba(5,10,20,0.88)", "font-family:Arial,'Microsoft JhengHei','Microsoft YaHei',sans-serif",
+			"background:radial-gradient(circle at 18% 16%,rgba(56,189,248,0.18),transparent 34%),radial-gradient(circle at 84% 74%,rgba(250,204,21,0.16),transparent 38%),rgba(5,10,20,0.93)",
+			"font-family:Arial,'Microsoft JhengHei','Microsoft YaHei',sans-serif",
 			"color:#f8fafc", "pointer-events:auto", "touch-action:none"
 		].join(";");
 
 		var panel = document.createElement("div");
 		panel.style.cssText = [
-			"width:416px", "height:416px", "box-sizing:border-box", "padding:8px", "border-radius:8px",
-			"background:linear-gradient(160deg,#172033,#0f172a)", "box-shadow:0 12px 34px rgba(0,0,0,0.5)",
+			"width:900px", "height:640px", "box-sizing:border-box", "padding:14px", "border-radius:8px",
+			"border:1px solid rgba(148,163,184,0.34)", "background:linear-gradient(160deg,rgba(30,41,59,0.98),rgba(15,23,42,0.98) 72%,rgba(8,13,26,0.98))",
+			"box-shadow:0 18px 52px rgba(0,0,0,0.58),inset 0 0 34px rgba(56,189,248,0.08)",
 			"display:flex", "flex-direction:column", "gap:6px", "overflow:hidden"
 		].join(";");
 
@@ -202,7 +280,7 @@
 		header.style.cssText = "display:flex;align-items:center;justify-content:space-between;gap:8px;flex:0 0 auto;min-height:34px";
 		var title = document.createElement("div");
 		title.textContent = this.config.title;
-		title.style.cssText = "font-size:20px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis";
+		title.style.cssText = "font-size:24px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#e0f2fe;text-shadow:0 0 12px rgba(56,189,248,0.45)";
 		header.appendChild(title);
 
 		var close = makeButton("×", "#3f2b3b");
@@ -218,16 +296,25 @@
 		panel.appendChild(header);
 
 		var progress = document.createElement("div");
-		progress.style.cssText = "flex:0 0 auto;min-height:20px;font-size:13px;color:#facc15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis";
+		progress.style.cssText = [
+			"flex:0 0 auto", "min-height:24px", "font-size:14px", "color:#facc15", "white-space:nowrap",
+			"overflow:hidden", "text-overflow:ellipsis", "padding:3px 8px", "box-sizing:border-box",
+			"border:1px solid rgba(250,204,21,0.22)", "border-radius:6px", "background:rgba(15,23,42,0.72)"
+		].join(";");
 		panel.appendChild(progress);
 
 		var status = document.createElement("div");
 		status.textContent = this.config.instruction;
-		status.style.cssText = "flex:0 0 auto;min-height:32px;font-size:13px;line-height:1.25;color:#cbd5e1;overflow:hidden";
+		status.style.cssText = "flex:0 0 auto;min-height:34px;font-size:14px;line-height:1.3;color:#cbd5e1;overflow:hidden;padding:0 4px";
 		panel.appendChild(status);
 
 		var board = document.createElement("div");
-		board.style.cssText = "position:relative;flex:1 1 auto;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center";
+		board.style.cssText = [
+			"position:relative", "flex:1 1 auto", "min-height:0", "overflow:hidden", "display:flex",
+			"align-items:center", "justify-content:center", "border:1px solid rgba(148,163,184,0.22)",
+			"border-radius:8px", "background:" + (this.theme && this.theme.board || "linear-gradient(135deg,rgba(15,23,42,0.96),rgba(30,41,59,0.82))") + ",repeating-linear-gradient(45deg,rgba(255,255,255,0.035) 0 2px,transparent 2px 18px)",
+			"box-shadow:inset 0 0 28px rgba(2,6,23,0.55)"
+		].join(";");
 		panel.appendChild(board);
 
 		var footer = document.createElement("div");
@@ -235,7 +322,7 @@
 		panel.appendChild(footer);
 
 		overlay.appendChild(panel);
-		(core.dom.gameDraw || document.body).appendChild(overlay);
+		(document.body || core.dom.gameDraw).appendChild(overlay);
 		this.overlay = overlay;
 		this.panel = panel;
 		this.board = board;
@@ -251,14 +338,18 @@
 
 	AkibaLocationGame.prototype.applyResponsiveLayout = function () {
 		if (!this.overlay || !this.panel) return;
-		var width = this.overlay.clientWidth || 416;
-		var height = this.overlay.clientHeight || 416;
-		var size = Math.max(180, Math.min(416, Math.floor(Math.min(width, height))));
-		var unit = size / 13;
-		this.panel.style.width = size + "px";
-		this.panel.style.height = size + "px";
-		this.panel.style.padding = Math.max(4, unit * 0.22) + "px";
-		this.panel.style.gap = Math.max(2, unit * 0.12) + "px";
+		var width = this.overlay.clientWidth || window.innerWidth || 416;
+		var height = this.overlay.clientHeight || window.innerHeight || 416;
+		var margin = Math.max(8, Math.min(width, height) * 0.035);
+		var panelWidth = Math.max(180, Math.floor(width - margin * 2));
+		var panelHeight = Math.max(180, Math.floor(height - margin * 2));
+		panelWidth = Math.min(panelWidth, 980);
+		panelHeight = Math.min(panelHeight, 720);
+		var unit = Math.min(panelWidth, panelHeight) / 13;
+		this.panel.style.width = panelWidth + "px";
+		this.panel.style.height = panelHeight + "px";
+		this.panel.style.padding = Math.max(8, unit * 0.28) + "px";
+		this.panel.style.gap = Math.max(4, unit * 0.14) + "px";
 		var buttons = this.panel.querySelectorAll("button");
 		for (var i = 0; i < buttons.length; i++) {
 			buttons[i].style.fontSize = Math.max(9, unit * 0.42) + "px";
@@ -306,31 +397,35 @@
 	AkibaLocationGame.prototype.startHunt = function () {
 		var self = this;
 		this.found = 0;
+		var theme = this.theme;
 		var cells = Math.max(16, this.config.targetCount + 8);
 		var targets = [];
 		for (var i = 0; i < this.config.targetCount; i++) targets.push(true);
 		while (targets.length < cells) targets.push(false);
 		targets = shuffle(targets);
-		var grid = document.createElement("div");
-		grid.style.cssText = "display:grid;grid-template-columns:repeat(4,1fr);gap:5px;width:96%;height:96%";
+		var grid = makeModeFrame(theme, "display:grid;grid-template-columns:repeat(4,1fr);gap:8px");
 		targets.forEach(function (isTarget, index) {
 			var icons = isTarget ? self.config.targets : self.config.decoys;
-			var button = makeButton(icons[index % icons.length], isTarget ? "#273449" : "#1f3b32");
+			var button = makeButton(icons[index % icons.length], isTarget ? theme.card : "linear-gradient(#1e293b,#0f172a)");
+			themedButton(button, theme, isTarget ? "card" : "dark");
 			button.dataset.target = isTarget ? "1" : "0";
 			button.style.fontSize = "24px";
+			button.style.borderRadius = "10px";
 			button.onclick = function () {
 				if (self.ended || this.disabled) return;
 				if (this.dataset.target === "1") {
 					this.disabled = true;
 					this.textContent = "✓";
-					this.style.background = "#166534";
+					this.style.background = "linear-gradient(#86efac,#16a34a)";
 					self.found++;
 					self.score += 100;
 					if (self.found >= self.config.targetCount) self.finish("win", "clear");
 				} else {
 					self.mistakes++;
-					this.style.background = "#7f1d1d";
-					self.addTimeout(function () { if (!self.ended) button.style.background = "#1f3b32"; }, 220);
+					this.style.background = "linear-gradient(#fca5a5,#7f1d1d)";
+					self.addTimeout(function () {
+						if (!self.ended) themedButton(button, theme, "dark");
+					}, 220);
 					if (self.mistakes >= self.config.mistakeLimit) self.finish("lose", "mistakes");
 				}
 				self.updateProgress();
@@ -348,6 +443,7 @@
 
 	AkibaLocationGame.prototype.renderSortItem = function () {
 		var self = this;
+		var theme = this.theme;
 		if (this.ended) return;
 		if (this.sortIndex >= this.sortItems.length) {
 			this.finish("win", "clear");
@@ -355,12 +451,17 @@
 		}
 		this.board.innerHTML = "";
 		this.footer.innerHTML = "";
-		var wrap = document.createElement("div");
-		wrap.style.cssText = "width:96%;height:96%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px";
+		var wrap = makeModeFrame(theme, "display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px");
 		var item = document.createElement("div");
 		item.textContent = this.sortItems[this.sortIndex][0];
 		item.draggable = true;
-		item.style.cssText = "width:82%;min-height:62px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;box-sizing:border-box;border:2px solid #60a5fa;border-radius:10px;background:#1e3a5f;font-weight:800;cursor:grab;touch-action:none";
+		item.style.cssText = [
+			"width:82%", "min-height:76px", "display:flex", "align-items:center", "justify-content:center",
+			"text-align:center", "padding:12px", "box-sizing:border-box", "border:2px solid " + theme.accent,
+			"border-radius:12px", "background:" + theme.card, "color:" + theme.cardText,
+			"font-size:20px", "font-weight:900", "cursor:grab", "touch-action:none",
+			"box-shadow:0 8px 0 rgba(2,6,23,0.32),0 0 24px " + theme.soft
+		].join(";");
 		item.ondragstart = function (event) { event.dataTransfer.setData("text/plain", "active"); };
 		wrap.appendChild(item);
 		var hint = document.createElement("div");
@@ -371,6 +472,7 @@
 		bins.style.cssText = "display:grid;grid-template-columns:repeat(" + this.config.bins.length + ",1fr);gap:6px;width:100%";
 		this.config.bins.forEach(function (bin) {
 			var button = makeButton(bin.label, "#334155");
+			themedButton(button, theme, "normal");
 			button.ondragover = function (event) { event.preventDefault(); };
 			button.ondrop = function (event) { event.preventDefault(); self.chooseSortBin(bin.id); };
 			button.onclick = function () { self.chooseSortBin(bin.id); };
@@ -400,18 +502,20 @@
 
 	AkibaLocationGame.prototype.startMemory = function () {
 		var self = this;
+		var theme = this.theme;
 		this.moves = 0;
 		this.matchedPairs = 0;
 		this.memoryOpen = [];
 		this.memoryBusy = false;
 		var values = shuffle(this.config.symbols.concat(this.config.symbols));
-		var grid = document.createElement("div");
-		grid.style.cssText = "display:grid;grid-template-columns:repeat(4,1fr);gap:6px;width:96%;height:96%";
+		var grid = makeModeFrame(theme, "display:grid;grid-template-columns:repeat(4,1fr);gap:8px");
 		values.forEach(function (value, index) {
-			var button = makeButton("？", "#334155");
+			var button = makeButton("？", "linear-gradient(#312e81,#1e1b4b)");
+			themedButton(button, theme, "dark");
 			button.dataset.value = value;
 			button.dataset.index = index;
-			button.style.fontSize = "22px";
+			button.style.fontSize = "26px";
+			button.style.borderRadius = "12px";
 			button.onclick = function () { self.flipMemoryCard(button); };
 			grid.appendChild(button);
 		});
@@ -423,7 +527,7 @@
 		var self = this;
 		if (this.ended || this.memoryBusy || button.disabled || this.memoryOpen.indexOf(button) >= 0) return;
 		button.textContent = button.dataset.value;
-		button.style.background = "#1d4ed8";
+		themedButton(button, this.theme, "card");
 		this.memoryOpen.push(button);
 		if (this.memoryOpen.length < 2) return;
 		this.moves++;
@@ -433,7 +537,7 @@
 		if (first.dataset.value === second.dataset.value) {
 			first.disabled = true;
 			second.disabled = true;
-			first.style.background = second.style.background = "#166534";
+			first.style.background = second.style.background = "linear-gradient(#bbf7d0,#16a34a)";
 			this.matchedPairs++;
 			this.score += 150;
 			this.memoryOpen = [];
@@ -442,7 +546,8 @@
 		} else {
 			this.addTimeout(function () {
 				first.textContent = second.textContent = "？";
-				first.style.background = second.style.background = "#334155";
+				themedButton(first, self.theme, "dark");
+				themedButton(second, self.theme, "dark");
 				self.memoryOpen = [];
 				self.memoryBusy = false;
 			}, 650);
@@ -460,6 +565,7 @@
 
 	AkibaLocationGame.prototype.startSequenceRound = function () {
 		var self = this;
+		var theme = this.theme;
 		if (this.ended) return;
 		if (this.sequenceRound >= this.config.rounds) {
 			this.finish(this.sequenceWins >= this.config.required ? "win" : "lose", "roundsComplete");
@@ -471,16 +577,22 @@
 		this.sequenceInput = 0;
 		this.board.innerHTML = "";
 		this.footer.innerHTML = "";
-		var wrap = document.createElement("div");
-		wrap.style.cssText = "width:96%;height:96%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px";
+		var wrap = makeModeFrame(theme, "display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px");
 		var preview = document.createElement("div");
 		preview.textContent = this.currentSequence.join("　");
-		preview.style.cssText = "width:92%;min-height:70px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:#1e293b;font-size:28px;letter-spacing:4px";
+		preview.style.cssText = [
+			"width:92%", "min-height:82px", "display:flex", "align-items:center", "justify-content:center",
+			"border-radius:12px", "background:" + theme.card, "color:" + theme.cardText,
+			"font-size:32px", "letter-spacing:4px", "font-weight:900",
+			"box-shadow:0 8px 0 rgba(2,6,23,0.3),0 0 24px " + theme.soft
+		].join(";");
 		wrap.appendChild(preview);
 		var choices = document.createElement("div");
 		choices.style.cssText = "display:grid;grid-template-columns:repeat(3,1fr);gap:6px;width:92%";
 		this.config.choices.forEach(function (choice) {
 			var button = makeButton(choice, "#334155");
+			themedButton(button, theme, "normal");
+			button.style.fontSize = "24px";
 			button.disabled = true;
 			button.onclick = function () { self.chooseSequence(choice); };
 			choices.appendChild(button);
@@ -523,23 +635,28 @@
 
 	AkibaLocationGame.prototype.startTiming = function () {
 		var self = this;
+		var theme = this.theme;
 		this.timingHits = 0;
 		this.timingAttempts = 0;
 		this.markerValue = 0;
 		this.markerDirection = 1;
 		this.randomizeTimingTarget();
-		var wrap = document.createElement("div");
-		wrap.style.cssText = "width:94%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px";
+		var wrap = makeModeFrame(theme, "display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px");
 		var gauge = document.createElement("div");
-		gauge.style.cssText = "position:relative;width:94%;height:52px;border-radius:12px;background:#1e293b;border:2px solid #64748b;overflow:hidden";
+		gauge.style.cssText = [
+			"position:relative", "width:94%", "height:68px", "border-radius:14px",
+			"background:linear-gradient(90deg,#1e293b,#111827)", "border:2px solid " + theme.accent,
+			"overflow:hidden", "box-shadow:inset 0 0 24px rgba(2,6,23,0.62),0 0 24px " + theme.soft
+		].join(";");
 		var target = document.createElement("div");
-		target.style.cssText = "position:absolute;top:0;height:100%;background:rgba(34,197,94,0.55)";
+		target.style.cssText = "position:absolute;top:0;height:100%;background:linear-gradient(90deg,rgba(34,197,94,0.3),rgba(134,239,172,0.8),rgba(34,197,94,0.3));box-shadow:0 0 18px rgba(134,239,172,0.8)";
 		var marker = document.createElement("div");
-		marker.style.cssText = "position:absolute;top:0;width:5px;height:100%;background:#facc15;box-shadow:0 0 8px #facc15";
+		marker.style.cssText = "position:absolute;top:0;width:6px;height:100%;background:#fff7ad;box-shadow:0 0 12px #facc15,0 0 24px #facc15";
 		gauge.appendChild(target);
 		gauge.appendChild(marker);
 		wrap.appendChild(gauge);
 		var action = makeButton(this.config.actionLabel || "停止", "#be123c");
+		themedButton(action, theme, "normal");
 		action.style.width = "70%";
 		action.onclick = function () { self.takeTimingAttempt(); };
 		wrap.appendChild(action);
@@ -592,19 +709,23 @@
 
 	AkibaLocationGame.prototype.startBalance = function () {
 		var self = this;
+		var theme = this.theme;
 		this.balanceValue = this.config.startValue;
 		this.stableElapsed = 0;
-		var wrap = document.createElement("div");
-		wrap.style.cssText = "width:94%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px";
+		var wrap = makeModeFrame(theme, "display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px");
 		var value = document.createElement("div");
-		value.style.cssText = "font-size:28px;font-weight:800;color:#f8fafc";
+		value.style.cssText = "font-size:34px;font-weight:900;color:#f8fafc;text-shadow:0 0 14px " + theme.soft;
 		wrap.appendChild(value);
 		var gauge = document.createElement("div");
-		gauge.style.cssText = "position:relative;width:94%;height:46px;border-radius:12px;background:#1e293b;border:2px solid #64748b;overflow:hidden";
+		gauge.style.cssText = [
+			"position:relative", "width:94%", "height:62px", "border-radius:14px",
+			"background:linear-gradient(90deg,#1e293b,#0f172a)", "border:2px solid " + theme.accent,
+			"overflow:hidden", "box-shadow:inset 0 0 24px rgba(2,6,23,0.6),0 0 20px " + theme.soft
+		].join(";");
 		var target = document.createElement("div");
-		target.style.cssText = "position:absolute;top:0;height:100%;background:rgba(34,197,94,0.55)";
+		target.style.cssText = "position:absolute;top:0;height:100%;background:linear-gradient(90deg,rgba(34,197,94,0.35),rgba(134,239,172,0.82),rgba(34,197,94,0.35))";
 		var marker = document.createElement("div");
-		marker.style.cssText = "position:absolute;top:0;width:6px;height:100%;background:#facc15";
+		marker.style.cssText = "position:absolute;top:0;width:7px;height:100%;background:#facc15;box-shadow:0 0 14px #facc15";
 		gauge.appendChild(target);
 		gauge.appendChild(marker);
 		wrap.appendChild(gauge);
@@ -612,6 +733,8 @@
 		controls.style.cssText = "display:flex;gap:8px;width:94%";
 		var low = makeButton(this.config.lowLabel, "#2563eb");
 		var high = makeButton(this.config.highLabel, "#dc2626");
+		themedButton(low, theme, "normal");
+		themedButton(high, theme, "normal");
 		low.style.flex = high.style.flex = "1";
 		low.onclick = function () { self.adjustBalance(-self.config.step); };
 		high.onclick = function () { self.adjustBalance(self.config.step); };
@@ -667,6 +790,7 @@
 
 	AkibaLocationGame.prototype.startTileMatch = function () {
 		var self = this;
+		var theme = this.theme;
 		this.tilePairs = 0;
 		this.tileSelected = null;
 		this.tileRows = [];
@@ -677,12 +801,15 @@
 			var c = symbols[row * 3 + 2];
 			this.tileRows.push([a, b, c, c, b, a].map(function (value) { return { value: value, removed: false, button: null }; }));
 		}
-		var grid = document.createElement("div");
-		grid.style.cssText = "display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(3,1fr);gap:5px;width:98%;height:88%";
+		var grid = makeModeFrame(theme, "display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(3,1fr);gap:8px");
 		this.tileRows.forEach(function (tiles, rowIndex) {
 			tiles.forEach(function (tile, colIndex) {
-				var button = makeButton(tile.value, "#f1e1b7");
-				button.style.color = "#3f2d18";
+				var button = makeButton(tile.value, theme.card);
+				themedButton(button, theme, "card");
+				button.style.color = theme.cardText;
+				button.style.fontWeight = "900";
+				button.style.border = "2px solid rgba(120,53,15,0.42)";
+				button.style.borderRadius = "10px";
 				button.dataset.row = rowIndex;
 				button.dataset.col = colIndex;
 				button.onclick = function () { self.chooseTile(rowIndex, colIndex); };
