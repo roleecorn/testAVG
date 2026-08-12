@@ -143,7 +143,7 @@ node scripts/manage_story_ir.js
 10. 背景名稱以完整名稱精確查表；每個地點映射到唯一背景檔。遇到未登錄名稱必須失敗並補 mapping，不可靜默退回 generic 圖。
 11. 明確音訊 DSL 支援 `使用BGM`／`播放BGM`（無名稱時使用已在完整場景正規化後選定的場景 BGM）、`使用BGM：<已登錄檔名或別名>`、`BGM暫停`、`恢復BGM`、`播放音效：<已登錄檔名或別名>` 與 `停止音效`。BGM 與音效必須分別正規化成 `bgm.*` 與 `sound.*`，不可共用一種 audio 節點；只有「播放音效」而無可唯一解析名稱時必須失敗。
 
-新版主線與支線必須由同一份全局 AVG layout config 產生「左人物槽－中央窄對話框－右人物槽」空間配置。人物 y 不再由 `textTop` 計算，而是依不透明內容 bbox 的底邊、`viewportHeight` 與 `portraitBottomGap` 計算；人物位於對話框 UI 後方。每句必須先清空左右人物 code，再只顯示當前發言者；三人以上仍重用兩個槽位。runtime 與所有現有 AVG floor 已使用 `pos: "avg"`、`portraitLeft`／`portraitRight`／`portraitBottom` 語意定位；全局人物可見寬度硬上限為 `128px`、對話框遮擋比例上限為 25%，runtime 依各槽實際空間取更小的有效上限，超過時等比例縮小、不放大較小圖片，透明 padding 不影響可見內容錨點。不得建立個別例外。
+新版主線與支線必須由同一份全局 AVG layout config 產生「單一當前發言者－下方對話框」空間配置。544×416 畫布的新版下方對話框基準為 `x=16, y=295, width=512, fixedLines=2`，不可退回舊的 `x=96, width=352` 窄框。每句角色台詞先清空所有人物 code，再把當前發言者放到同一個人物語意槽；旁白清空人物，三人以上場景也不新增槽位。runtime 必須以 alpha bbox 的可見內容左右置中，滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === dialogueY`，並將 `portraitDialogueGap` 固定為 `0`。所有立繪套用同一個全局 `portraitScale: 1.2`；runtime 不得根據個別圖片的寬高或 alpha bbox 計算各自的縮放率。不得沿用 `portraitLeft`／`portraitRight`、`portraitBottomGap`、非零人物／對話框 gap、128px 寬度上限或 25% 遮擋上限，也不得建立個別例外。已遷移 scene 可直接採用此契約；其餘既有 floor 仍須完成 emitter／runtime／floor 遷移後才可宣稱已生效。
 
 固定一秒動作 CG 必須交給 `mota-action-cg` 契約：`*_cg.png` 為母檔，`scripts/build_action_cgs.py` 產生固定 416×286 的 `*_action_cg.png`；事件使用 `sloc: [0, 0, 416, 286]`、`loc: [112, 50, 320, 220]`，順序為 `showImage(code 30)` → `sleep(1000, noSkip)` → `hideImage(code 30)`。一般持續劇情 CG 使用同一個中央面板，但不可誤套一秒自動隱藏。
 
@@ -202,5 +202,5 @@ node scripts/manage_story_ir.js
 ]
 ```
 
-上例的 `[260, 185]` 是現行事件格式的歷史座標，只用來保持 JSON 範例可執行；它不是新版 layout 參數。layout config 實作後，生成器必須以右人物槽位及 `portraitBottomGap` 的計算結果取代。
+上例的 `[260, 185]` 是現行事件格式的歷史座標，只用來保持 JSON 範例可執行；它不是新版 layout 參數。layout config 實作後，生成器必須以單一當前發言者語意槽取代，人物對齊由 alpha bbox 計算，縮放則一律取全局 `portraitScale`。
 

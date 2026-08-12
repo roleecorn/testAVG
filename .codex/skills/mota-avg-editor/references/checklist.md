@@ -12,12 +12,13 @@
 - 新增或修改的檔案、ID、註冊資料與引用彼此存在且一致。
 - 所有事件 JSON、JavaScript 與 JSON 資料均通過相應語法檢查。
 - 已執行 `python scripts/build_action_cgs.py --check`、`node scripts/generate_main_story.js --check` 與 `node scripts/manage_story_ir.js`；主線與支線 IR 的來源 SHA-256、schema、素材／跳轉註冊及 floor round-trip 均一致，所有標準主線 floor 均為 17×13。
-- 主線與角色支線遵循同一套全局 AVG 版面，所有現有 AVG floor 都使用全局語意槽位；後續視覺調整只修改單一 layout config 與共用資產規則，沒有新增 floor 或角色例外。
+- 主線與角色支線遵循同一套全局 AVG 版面；新版面完成實作後，所有 AVG floor 都只引用單一當前發言者語意槽，後續視覺調整只修改全局 layout config 與共用資產規則，沒有新增 floor 或角色例外。
 - `[人名：內容]` 簡訊仍輸出為帶角色名的手機對話；帶冒號的長敘事方括號仍是旁白，生成器沒有把兩者互相誤判，也沒有自行改寫來源台詞用字。
 - 六張已登錄的主線動作 CG 都能由目前來源中的 CG／GIF 名稱命中；`*_cg.png` 母檔與 416×286 `*_action_cg.png` 衍生檔的 manifest 雜湊同步，來源標記改名時不會靜默退回 placeholder。
-- 新版 544×416 AVG 版面採左人物、中央窄對話框、右人物的下方橫向構圖；人物 bottom 全部只由一個 `portraitBottomGap` 參數控制，且人物 z-order 低於對話框 UI。
-- 左右人物位置只代表可用槽位；每句已清空所有人物 code 並只顯示當前發言者，三人以上場景沒有新增第三槽位或保留非發言者。
-- 精確人物槽位、`portraitBottomGap`、`portraitMaxVisibleWidth=128`、`portraitMaxDialogueOverlapRatio=0.25` 與對話框矩形集中於單一 layout config；人物依 alpha bbox 錨定，超過各槽有效上限時等比例縮小且不放大小圖，floor／角色 mapping 沒有重複寫死 gap、尺寸或最終座標。
+- 新版 544×416 AVG 版面採「單一當前發言者－下方對話框」的上下構圖；人物可見 bbox 左右置中於畫面，且可見 bottom 精準等於對話框 top（`dialogueY`），z-order 低於對話框 UI，沒有遮住角色名或正文。
+- 每句已清空所有人物 code 並只在同一槽顯示當前發言者；旁白已清空人物，三人以上場景沒有新增其他槽位或保留非發言者。
+- 單一人物槽、對話框矩形與縮放率集中於一份全局 layout config，且 `portraitDialogueGap === 0`、`portraitScale === 1.2`；人物依 alpha bbox 錨定，但 alpha bbox 只影響置中與底邊對齊。所有立繪的縮放率完全相同，floor／角色 mapping 沒有寫死非零 gap、縮放或最終座標，也沒有殘留依個別圖片尺寸自動 fit 的邏輯。
+- 若本次只更新版面文檔，已明確標示 runtime／emitter／floor 尚未遷移，沒有把文檔定稿誤報為遊戲內實作完成。
 - 每個 `【背景：地點】` 都精確映射到唯一檔名；正式圖只替換地點專檔，未覆寫任何共用 generic 背景。
 - 每張地點背景都是完整畫面的 544×416；沒有 416×416 或其他錯誤尺寸的地點背景、佔位圖或相容例外遺留在可用資產中。
 - 劇本製作指令已轉成事件，不會以 `【CG：...】`、`【GIF：...】`、`【背景：...】` 等文字直接顯示給玩家。
