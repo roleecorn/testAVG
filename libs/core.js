@@ -244,14 +244,7 @@ function core () {
                 "dialogueWidth": 512,
                 "dialogueFixedLines": 2,
                 "portraitDialogueGap": 0,
-                "portraitScale": 1.2,
-                "legacyPortrait": {
-                    "portraitBottomGap": 8,
-                    "portraitLeft": 16,
-                    "portraitRight": 0,
-                    "portraitMaxVisibleWidth": 128,
-                    "portraitMaxDialogueOverlapRatio": 0.25
-                }
+                "portraitScale": 1.2
             },
         },
         "globalAttribute": {

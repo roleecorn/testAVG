@@ -340,8 +340,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -377,8 +377,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -401,8 +401,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_sad.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -425,8 +425,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -449,8 +449,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_smile.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -473,8 +473,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -497,8 +497,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -534,8 +534,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -558,8 +558,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -582,8 +582,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -606,8 +606,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -630,8 +630,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -654,8 +654,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -678,8 +678,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -741,8 +741,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -765,8 +765,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -828,8 +828,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -852,8 +852,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_smile.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -876,8 +876,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -913,8 +913,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -950,8 +950,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_sad.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -974,8 +974,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -998,8 +998,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1022,8 +1022,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1046,8 +1046,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1070,8 +1070,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1094,8 +1094,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1118,8 +1118,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1142,8 +1142,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1166,8 +1166,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1190,8 +1190,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1227,8 +1227,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1251,8 +1251,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1275,8 +1275,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1299,8 +1299,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1323,8 +1323,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1347,8 +1347,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1371,8 +1371,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1395,8 +1395,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1419,8 +1419,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_smile.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1443,8 +1443,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1467,8 +1467,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1504,8 +1504,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1528,8 +1528,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1552,8 +1552,8 @@ main.floors.noir_3=
             "code": 20,
             "image": "noir_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1602,8 +1602,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1639,8 +1639,8 @@ main.floors.noir_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0

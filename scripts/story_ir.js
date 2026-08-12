@@ -47,8 +47,9 @@ function eventToIr(event) {
     case "showImage":
       return {
         kind: event.code === 1 ? "background.show" : "image.show",
-        role: event.code === 10 || event.code === 11 ? "portrait" : event.code === 30 || event.code >= 90 ? "cg" : "image",
-        code: event.code, image: event.image, sloc: event.sloc, loc: event.loc,
+        role: event.code === 10 || event.code === 11 || event.code === 12 || event.code === 20 ? "portrait" : event.code === 30 || event.code >= 90 ? "cg" : "image",
+        code: event.code, image: event.image, sloc: event.sloc,
+        loc: event.code === 10 || event.code === 11 || event.code === 12 || event.code === 20 ? ["portraitSpeakerX", "portraitSpeakerY"] : event.loc,
         opacity: event.opacity, time: event.time,
       };
     case "hideImage": return { kind: "image.hide", code: event.code, time: event.time, async: event.async };
@@ -100,7 +101,17 @@ function irToEvent(node) {
     case "sound.stop": return { type: "stopSound" };
     case "background.show":
     case "image.show":
-      return cleanUndefined({ type: "showImage", code: node.code, image: node.image, sloc: node.sloc, loc: node.loc, opacity: node.opacity, time: node.time });
+      return cleanUndefined({
+        type: "showImage",
+        code: node.code,
+        image: node.image,
+        sloc: node.sloc,
+        loc: node.role === "portrait" || node.code === 10 || node.code === 11 || node.code === 12 || node.code === 20
+          ? ["portraitSpeakerX", "portraitSpeakerY"]
+          : node.loc,
+        opacity: node.opacity,
+        time: node.time,
+      });
     case "image.hide": return cleanUndefined({ type: "hideImage", code: node.code, time: node.time, async: node.async });
     case "wait": return cleanUndefined({ type: "sleep", time: node.time, noSkip: node.noSkip });
     case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time });

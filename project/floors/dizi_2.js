@@ -340,8 +340,8 @@ main.floors.dizi_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -364,8 +364,8 @@ main.floors.dizi_2=
             "code": 20,
             "image": "dizi_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -388,8 +388,8 @@ main.floors.dizi_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -412,8 +412,8 @@ main.floors.dizi_2=
             "code": 20,
             "image": "dizi_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -436,8 +436,8 @@ main.floors.dizi_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -473,8 +473,8 @@ main.floors.dizi_2=
             "code": 20,
             "image": "dizi_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -510,8 +510,8 @@ main.floors.dizi_2=
             "code": 20,
             "image": "dizi_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -534,8 +534,8 @@ main.floors.dizi_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -571,8 +571,8 @@ main.floors.dizi_2=
             "code": 20,
             "image": "dizi_smile.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0

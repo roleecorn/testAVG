@@ -340,8 +340,8 @@ main.floors.akane_4=
             "code": 20,
             "image": "akane_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -403,8 +403,8 @@ main.floors.akane_4=
             "code": 20,
             "image": "akane_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -440,8 +440,8 @@ main.floors.akane_4=
             "code": 20,
             "image": "akane_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -477,8 +477,8 @@ main.floors.akane_4=
             "code": 20,
             "image": "akane_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -514,8 +514,8 @@ main.floors.akane_4=
             "code": 20,
             "image": "akane_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0

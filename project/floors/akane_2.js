@@ -327,8 +327,8 @@ main.floors.akane_2=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -364,8 +364,8 @@ main.floors.akane_2=
             "code": 20,
             "image": "akane_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -388,8 +388,8 @@ main.floors.akane_2=
             "code": 20,
             "image": "akane_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -432,8 +432,8 @@ main.floors.akane_2=
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
                             "loc": [
-                                "portraitLeft",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0
@@ -456,8 +456,8 @@ main.floors.akane_2=
                             "code": 20,
                             "image": "akane_normal.png",
                             "loc": [
-                                "portraitRight",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0
@@ -480,8 +480,8 @@ main.floors.akane_2=
                             "code": 10,
                             "image": "keng_surprised_portrait.png",
                             "loc": [
-                                "portraitLeft",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0
@@ -504,8 +504,8 @@ main.floors.akane_2=
                             "code": 20,
                             "image": "akane_normal.png",
                             "loc": [
-                                "portraitRight",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0
@@ -541,8 +541,8 @@ main.floors.akane_2=
                             "code": 20,
                             "image": "akane_normal.png",
                             "loc": [
-                                "portraitRight",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0
@@ -609,8 +609,8 @@ main.floors.akane_2=
                             "code": 20,
                             "image": "akane_normal.png",
                             "loc": [
-                                "portraitRight",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0
@@ -646,8 +646,8 @@ main.floors.akane_2=
                             "code": 20,
                             "image": "akane_normal.png",
                             "loc": [
-                                "portraitRight",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0
@@ -683,8 +683,8 @@ main.floors.akane_2=
                             "code": 20,
                             "image": "akane_normal.png",
                             "loc": [
-                                "portraitRight",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0
@@ -707,8 +707,8 @@ main.floors.akane_2=
                             "code": 10,
                             "image": "keng_surprised_portrait.png",
                             "loc": [
-                                "portraitLeft",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0
@@ -731,8 +731,8 @@ main.floors.akane_2=
                             "code": 20,
                             "image": "akane_sad.png",
                             "loc": [
-                                "portraitRight",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0
@@ -768,8 +768,8 @@ main.floors.akane_2=
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
                             "loc": [
-                                "portraitLeft",
-                                "portraitBottom"
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
                             ],
                             "opacity": 1,
                             "time": 0

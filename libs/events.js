@@ -3416,7 +3416,7 @@ events.prototype.showImage = function (code, image, sloc, loc, opacityVal, time,
     var w = core.calValue(loc[2]), h = core.calValue(loc[3]);
     if (w == null) w = sw;
     if (h == null) h = sh;
-    var geometry = this._resolveAvgPortraitGeometry(image, sx, sy, sw, sh, loc, w, h);
+    var geometry = this._resolveAvgPortraitGeometry(image, sx, sy, sw, sh, loc, w, h, code);
     var x = geometry.x, y = geometry.y;
     w = geometry.w;
     h = geometry.h;
@@ -3465,10 +3465,9 @@ events.prototype._getAvgPortraitOpaqueBounds = function (image, sx, sy, sw, sh) 
     return fallback;
 }
 
-events.prototype._resolveAvgPortraitGeometry = function (image, sx, sy, sw, sh, loc, w, h) {
-    var speakerPortrait = loc[0] == 'portraitSpeakerX' && loc[1] == 'portraitSpeakerY';
-    var semanticX = loc[0] == 'portraitLeft' || loc[0] == 'portraitRight';
-    var semanticY = loc[1] == 'portraitBottom';
+events.prototype._resolveAvgPortraitGeometry = function (image, sx, sy, sw, sh, loc, w, h, code) {
+    var speakerPortrait = code == 10 || code == 11 || code == 12 || code == 20 ||
+        (loc[0] == 'portraitSpeakerX' && loc[1] == 'portraitSpeakerY');
     if (speakerPortrait) {
         var speakerBounds = this._getAvgPortraitOpaqueBounds(image, sx, sy, sw, sh);
         var speakerLayout = core.ui.getAvgLayout();
@@ -3480,44 +3479,11 @@ events.prototype._resolveAvgPortraitGeometry = function (image, sx, sy, sw, sh, 
         var y = speakerLayout.dialogueY - speakerBounds.bottom * speakerScale;
         return { x: x, y: y, w: w, h: h };
     }
-    if (!semanticX && !semanticY) {
-        return { x: this._resolveImageAvgXLoc(loc[0], w), y: this._resolveImageTextTopLoc(loc[1], h), w: w, h: h };
-    }
-    var bounds = this._getAvgPortraitOpaqueBounds(image, sx, sy, sw, sh);
-    var sourceScaleX = w / sw, sourceScaleY = h / sh;
-    var visibleWidth = bounds.width * sourceScaleX;
-    var layout = core.ui.getAvgLayout();
-    var legacy = layout.legacyPortrait || layout;
-    var maxVisibleWidth = legacy.portraitMaxVisibleWidth || 128;
-    var maxOverlapRatio = legacy.portraitMaxDialogueOverlapRatio;
-    if (maxOverlapRatio == null) maxOverlapRatio = 0.25;
-    if (loc[0] == 'portraitLeft') {
-        maxVisibleWidth = Math.min(maxVisibleWidth, (layout.dialogueX - legacy.portraitLeft) / (1 - maxOverlapRatio));
-    } else if (loc[0] == 'portraitRight') {
-        var rightSpace = core._PX_ - legacy.portraitRight - layout.dialogueX - layout.dialogueWidth;
-        maxVisibleWidth = Math.min(maxVisibleWidth, rightSpace / (1 - maxOverlapRatio));
-    }
-    var scale = visibleWidth > maxVisibleWidth ? maxVisibleWidth / visibleWidth : 1;
-    w *= scale;
-    h *= scale;
-    sourceScaleX *= scale;
-    sourceScaleY *= scale;
-    var x;
-    if (loc[0] == 'portraitLeft') x = layout.portraitLeft - bounds.left * sourceScaleX;
-    else if (loc[0] == 'portraitRight') x = core._PX_ - legacy.portraitRight - bounds.right * sourceScaleX;
-    else x = this._resolveImageAvgXLoc(loc[0], w);
-    var y = semanticY
-        ? core._PY_ - legacy.portraitBottomGap - bounds.bottom * sourceScaleY
-        : this._resolveImageTextTopLoc(loc[1], h);
-    return { x: x, y: y, w: w, h: h };
+    return { x: this._resolveImageAvgXLoc(loc[0], w), y: this._resolveImageTextTopLoc(loc[1], h), w: w, h: h };
 }
 
 events.prototype._resolveImageTextTopLoc = function (value, imageHeight) {
     if (typeof value == 'string') {
-        if (value == 'portraitBottom') {
-            var legacy = core.ui.getAvgLayout().legacyPortrait || core.ui.getAvgLayout();
-            return core._PY_ - legacy.portraitBottomGap - imageHeight;
-        }
         var match = value.match(/^textTop(?:([+-])(\d+))?$/);
         if (match) {
             var offset = parseInt(match[2]) || 0;
@@ -3529,9 +3495,6 @@ events.prototype._resolveImageTextTopLoc = function (value, imageHeight) {
 }
 
 events.prototype._resolveImageAvgXLoc = function (value, imageWidth) {
-    var legacy = core.ui.getAvgLayout().legacyPortrait || core.ui.getAvgLayout();
-    if (value == 'portraitLeft') return legacy.portraitLeft;
-    if (value == 'portraitRight') return core._PX_ - legacy.portraitRight - imageWidth;
     return core.calValue(value) || 0;
 }
 

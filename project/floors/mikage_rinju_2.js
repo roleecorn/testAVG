@@ -327,8 +327,8 @@ main.floors.mikage_rinju_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -351,8 +351,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "watanuki_sakuya_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -375,8 +375,8 @@ main.floors.mikage_rinju_2=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -399,8 +399,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "mikage_rinju_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -440,8 +440,8 @@ main.floors.mikage_rinju_2=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -464,8 +464,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "mikage_rinju_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -488,8 +488,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "watanuki_sakuya_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -512,8 +512,8 @@ main.floors.mikage_rinju_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -536,8 +536,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "mikage_rinju_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -560,8 +560,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "watanuki_sakuya_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -584,8 +584,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "mikage_rinju_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -608,8 +608,8 @@ main.floors.mikage_rinju_2=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -632,8 +632,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "mikage_rinju_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -656,8 +656,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "watanuki_sakuya_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -680,8 +680,8 @@ main.floors.mikage_rinju_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -704,8 +704,8 @@ main.floors.mikage_rinju_2=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -728,8 +728,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "mikage_rinju_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -752,8 +752,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "watanuki_sakuya_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -776,8 +776,8 @@ main.floors.mikage_rinju_2=
             "code": 20,
             "image": "mikage_rinju_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -813,8 +813,8 @@ main.floors.mikage_rinju_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0

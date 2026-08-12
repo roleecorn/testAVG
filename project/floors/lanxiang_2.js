@@ -327,8 +327,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -351,8 +351,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -375,8 +375,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -399,8 +399,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -423,8 +423,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -447,8 +447,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -471,8 +471,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -495,8 +495,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -519,8 +519,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -543,8 +543,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -567,8 +567,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -591,8 +591,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -615,8 +615,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_smile.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -639,8 +639,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -663,8 +663,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -700,8 +700,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -724,8 +724,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -761,8 +761,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -785,8 +785,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -822,8 +822,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -846,8 +846,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_angry.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -883,8 +883,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -907,8 +907,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -957,8 +957,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1007,8 +1007,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_angry.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1044,8 +1044,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1081,8 +1081,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1118,8 +1118,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_angry.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1168,8 +1168,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1192,8 +1192,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1216,8 +1216,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1253,8 +1253,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1303,8 +1303,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1327,8 +1327,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1351,8 +1351,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1388,8 +1388,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_sad.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1412,8 +1412,8 @@ main.floors.lanxiang_2=
             "code": 20,
             "image": "lanxiang_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1436,8 +1436,8 @@ main.floors.lanxiang_2=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0

@@ -340,8 +340,8 @@ main.floors.juju_3=
             "code": 20,
             "image": "juju_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -364,8 +364,8 @@ main.floors.juju_3=
             "code": 20,
             "image": "juju_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -388,8 +388,8 @@ main.floors.juju_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -425,8 +425,8 @@ main.floors.juju_3=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -449,8 +449,8 @@ main.floors.juju_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -473,8 +473,8 @@ main.floors.juju_3=
             "code": 20,
             "image": "juju_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -497,8 +497,8 @@ main.floors.juju_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -521,8 +521,8 @@ main.floors.juju_3=
             "code": 20,
             "image": "juju_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -545,8 +545,8 @@ main.floors.juju_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -569,8 +569,8 @@ main.floors.juju_3=
             "code": 20,
             "image": "juju_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -593,8 +593,8 @@ main.floors.juju_3=
             "code": 20,
             "image": "juju_normal.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -630,8 +630,8 @@ main.floors.juju_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -654,8 +654,8 @@ main.floors.juju_3=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -691,8 +691,8 @@ main.floors.juju_3=
             "code": 20,
             "image": "juju_sad.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -715,8 +715,8 @@ main.floors.juju_3=
             "code": 20,
             "image": "juju_surprised.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -739,8 +739,8 @@ main.floors.juju_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -776,8 +776,8 @@ main.floors.juju_3=
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
