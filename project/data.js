@@ -396,15 +396,19 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 		"startBgm": null,
 		"styles": {
 			"avgLayout": {
-				"portraitBottomGap": 8,
-				"portraitLeft": 16,
-				"portraitRight": 0,
-				"portraitMaxVisibleWidth": 128,
-				"portraitMaxDialogueOverlapRatio": 0.25,
-				"dialogueX": 96,
+				"dialogueX": 16,
 				"dialogueY": 295,
-				"dialogueWidth": 352,
-				"dialogueFixedLines": 2
+				"dialogueWidth": 512,
+				"dialogueFixedLines": 2,
+				"portraitDialogueGap": 0,
+				"portraitScale": 1.2,
+				"legacyPortrait": {
+					"portraitBottomGap": 8,
+					"portraitLeft": 16,
+					"portraitRight": 0,
+					"portraitMaxVisibleWidth": 128,
+					"portraitMaxDialogueOverlapRatio": 0.25
+				}
 			},
 			"startBackground": "project/images/bg.jpg",
 			"startVerticalBackground": "project/images/bg.jpg",

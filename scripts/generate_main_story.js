@@ -297,20 +297,23 @@ function actionCgEvents(spec) {
   ];
 }
 
-function portraitFor(speaker, text) {
+function portraitFor(speaker, text, useUnifiedPortrait) {
+  const portraitLoc = useUnifiedPortrait
+    ? ["portraitSpeakerX", "portraitSpeakerY"]
+    : ["portraitLeft", "portraitBottom"];
   if (speaker === "梗平") {
     let img = "keng_neutral_portrait.png";
     if (/嘔|不要|可惡|痛|啊|不行|錯愕|什麼|？|\?|救命|死/.test(text)) img = "keng_panic_portrait.png";
     if (/哼|專業|有道理|假面騎士|變身|騎士|勝|交給我|會贏/.test(text)) img = "keng_smile_portrait.png";
     if (/嚴肅|重要|守護|責任/.test(text)) img = "keng_serious_portrait.png";
-    return { type: "showImage", code: 10, image: img, loc: ["portraitLeft", "portraitBottom"], opacity: 1, time: 0 };
+    return { type: "showImage", code: 10, image: img, loc: portraitLoc, opacity: 1, time: 0 };
   }
   if (speaker === "表妹") {
     let img = "suou_sad_portrait.png";
     if (/痛|你的良心|垃圾|人渣|太詳細|不要|騙|冷/.test(text)) img = "suou_angry_portrait.png";
     if (/誒|等等|什麼|啊|？|\?/.test(text)) img = "suou_surprised_portrait.png";
     if (/嘿|笑|好|嗯/.test(text)) img = "suou_smile_portrait.png";
-    return { type: "showImage", code: 11, image: img, loc: ["portraitRight", "portraitBottom"], opacity: 1, time: 0 };
+    return { type: "showImage", code: 11, image: img, loc: useUnifiedPortrait ? ["portraitSpeakerX", "portraitSpeakerY"] : ["portraitRight", "portraitBottom"], opacity: 1, time: 0 };
   }
   return null;
 }
@@ -353,7 +356,7 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
     storyTodos.add(`${ctx.source} ${ctx.section}：下一句要求使用麻婆立繪，但 project/images 尚無對應正式角色圖，暫不顯示立繪。`);
     ctx.nextPortraitOverride = null;
   } else {
-    portrait = portraitFor(display, body);
+    portrait = portraitFor(display, body, ctx.useUnifiedPortrait);
   }
   const clearCg = ctx.cgVisible && !ctx.cgPersistent ? [{ type: "hideImage", code: 30, time: 150 }] : [];
   if (!ctx.cgPersistent) ctx.cgVisible = false;
@@ -686,6 +689,7 @@ function buildFloor(section, lines, overrides = {}) {
     defaultBgm: meta.bgm,
     source: `project/mainStory/CH${chapter}`,
     section,
+    useUnifiedPortrait: section === "1-1",
     cgVisible: false,
     cgPersistent: false,
     suppressPortraitCount: 0,
@@ -974,15 +978,15 @@ function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
   }
   const text = setTextEvent();
   if (!text.avg || text.fixedLines !== AVG_LAYOUT.dialogueFixedLines ||
-      AVG_LAYOUT.dialogueX !== 96 || AVG_LAYOUT.dialogueY !== 295 ||
-      AVG_LAYOUT.dialogueWidth !== 352 || AVG_LAYOUT.portraitRight !== 0 ||
-      AVG_LAYOUT.portraitMaxVisibleWidth !== 128 ||
-      AVG_LAYOUT.portraitMaxDialogueOverlapRatio !== 0.25) {
+      AVG_LAYOUT.dialogueX !== 16 || AVG_LAYOUT.dialogueY !== 295 ||
+      AVG_LAYOUT.dialogueWidth !== 512 || AVG_LAYOUT.portraitDialogueGap !== 0 ||
+      AVG_LAYOUT.portraitScale !== 1.2) {
     throw new Error("AVG layout contract is stale");
   }
   const usedActionCgImages = new Set();
   let generatedActionCgCount = 0;
   let generatedPhoneLineCount = 0;
+  let migratedPortraitCount = 0;
   for (const floor of generatedFloors) {
     walkEvents(floor.eachArrive, (event) => {
       const text = typeof event === "string" ? event : event && event.type === "text" ? event.text : "";
@@ -993,7 +997,16 @@ function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
           generatedActionCgCount += 1;
         }
       }
+      if (floor.floorId === "mapo_1_1" && event && event.type === "showImage" && (event.code === 10 || event.code === 11)) {
+        if (!Array.isArray(event.loc) || event.loc[0] !== "portraitSpeakerX" || event.loc[1] !== "portraitSpeakerY") {
+          throw new Error("mapo_1_1: portrait must use the unified speaker slot");
+        }
+        migratedPortraitCount += 1;
+      }
     });
+  }
+  if (migratedPortraitCount === 0) {
+    throw new Error("mapo_1_1: expected at least one unified speaker portrait");
   }
   const missingActionCg = requiredActionCgImages.filter((image) => !usedActionCgImages.has(image));
   if (missingActionCg.length) {

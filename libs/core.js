@@ -239,15 +239,19 @@ function core () {
             "fixedLines": 2,
             "animateTime": 0,
             "avgLayout": main.styles && main.styles.avgLayout || {
-                "portraitBottomGap": 8,
-                "portraitLeft": 16,
-                "portraitRight": 0,
-                "portraitMaxVisibleWidth": 128,
-                "portraitMaxDialogueOverlapRatio": 0.25,
-                "dialogueX": 96,
+                "dialogueX": 16,
                 "dialogueY": 295,
-                "dialogueWidth": 352,
-                "dialogueFixedLines": 2
+                "dialogueWidth": 512,
+                "dialogueFixedLines": 2,
+                "portraitDialogueGap": 0,
+                "portraitScale": 1.2,
+                "legacyPortrait": {
+                    "portraitBottomGap": 8,
+                    "portraitLeft": 16,
+                    "portraitRight": 0,
+                    "portraitMaxVisibleWidth": 128,
+                    "portraitMaxDialogueOverlapRatio": 0.25
+                }
             },
         },
         "globalAttribute": {

@@ -403,8 +403,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_panic_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -427,8 +427,8 @@ main.floors.mapo_1_1=
             "code": 11,
             "image": "suou_sad_portrait.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -451,8 +451,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_panic_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -475,8 +475,8 @@ main.floors.mapo_1_1=
             "code": 11,
             "image": "suou_sad_portrait.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -499,8 +499,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_panic_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -523,8 +523,8 @@ main.floors.mapo_1_1=
             "code": 11,
             "image": "suou_smile_portrait.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -547,8 +547,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -571,8 +571,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_smile_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -595,8 +595,8 @@ main.floors.mapo_1_1=
             "code": 11,
             "image": "suou_sad_portrait.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -619,8 +619,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_smile_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -643,8 +643,8 @@ main.floors.mapo_1_1=
             "code": 11,
             "image": "suou_surprised_portrait.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -693,8 +693,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -717,8 +717,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_smile_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -741,8 +741,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_panic_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -765,8 +765,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_panic_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -789,8 +789,8 @@ main.floors.mapo_1_1=
             "code": 11,
             "image": "suou_surprised_portrait.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -813,8 +813,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_smile_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -837,8 +837,8 @@ main.floors.mapo_1_1=
             "code": 11,
             "image": "suou_smile_portrait.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -861,8 +861,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -885,8 +885,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -909,8 +909,8 @@ main.floors.mapo_1_1=
             "code": 11,
             "image": "suou_surprised_portrait.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -933,8 +933,8 @@ main.floors.mapo_1_1=
             "code": 11,
             "image": "suou_sad_portrait.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -998,8 +998,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1066,8 +1066,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1108,8 +1108,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_panic_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1132,8 +1132,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_smile_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1156,8 +1156,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_smile_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1180,8 +1180,8 @@ main.floors.mapo_1_1=
             "code": 11,
             "image": "suou_sad_portrait.png",
             "loc": [
-                "portraitRight",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1204,8 +1204,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_neutral_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
@@ -1228,8 +1228,8 @@ main.floors.mapo_1_1=
             "code": 10,
             "image": "keng_panic_portrait.png",
             "loc": [
-                "portraitLeft",
-                "portraitBottom"
+                "portraitSpeakerX",
+                "portraitSpeakerY"
             ],
             "opacity": 1,
             "time": 0
