@@ -328,6 +328,39 @@ main.floors.main_ch3_1_exchange_1=
         },
         "【主線 CH3 3-1 自爆篇（交流後）】",
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_street_day.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -394,6 +427,19 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -402,7 +448,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_horses_knee.png",
+                            "image": "ms_bg_bookstore_a_interior.png",
                             "loc": [
                                 0,
                                 0
@@ -472,7 +518,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "(店員　腐妞)",
+                        "\t[書店店員]太好了，你要來幫忙嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -485,20 +531,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[腐妞]太好了，你要來幫忙嗎？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[腐妞]這邊一個小時的酬勞是2000円喔",
+                        "\t[書店店員]這邊一個小時的酬勞是2000円喔",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -561,7 +594,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[腐妞]交給你了喔",
+                        "\t[書店店員]交給你了喔",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -760,6 +793,34 @@ main.floors.main_ch3_1_exchange_1=
                             "async": true
                         },
                         {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "ms_bg_street.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -879,7 +940,43 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "梗平看見了表妹與小鋼珠機台的合照",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -916,7 +1013,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人A]（手機）？",
+                        "\t[東山]（手機）？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -929,7 +1026,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人B]（手機）？",
+                        "\t[蘭斯]（手機）？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -942,7 +1039,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人C]（手機）？",
+                        "\t[克莉絲]（手機）？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1016,7 +1113,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[腐妞]好像有官員要來檢查了，你去處理一下",
+                        "\t[書店店員]好像有官員要來檢查了，你去處理一下",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1042,6 +1139,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]誒？",
                         {
+                            "type": "playBgm",
+                            "name": "battle_theme_a.mp3",
+                            "keep": true
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -1066,7 +1168,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【官員　色情刊物檢官】",
+                        "\t[色情刊物檢察官]你是這裡的負責人嗎？我是色情刊物檢察官",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1079,20 +1181,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[色情刊物檢官]你是這裡的負責人嗎？我是色情刊物檢官",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[色情刊物檢官]我要搜查這裡有沒有違法的蘿莉色情刊物",
+                        "\t[色情刊物檢察官]我要搜查這裡有沒有違法的蘿莉色情刊物",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1129,7 +1218,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[色情刊物檢官]全部，就先從那個堆得奇形怪狀的書堆開始",
+                        "\t[色情刊物檢察官]全部，就先從那個堆得奇形怪狀的書堆開始",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1179,7 +1268,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[色情刊物檢官]果然有問題，你們這群蘿莉控就該被電死",
+                        "\t[色情刊物檢察官]果然有問題，你們這群蘿莉控就該被電死",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1192,7 +1281,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[色情刊物檢官]違法書刊一定就藏在裡面，我命令你現在配合行動",
+                        "\t[色情刊物檢察官]違法書刊一定就藏在裡面，我命令你現在配合行動",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1290,7 +1379,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[色情刊物檢官]哼，看來就在這個裡面了",
+                        "\t[色情刊物檢察官]哼，看來就在這個裡面了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1303,7 +1392,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[色情刊物檢官]讓開！",
+                        "\t[色情刊物檢察官]讓開！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1316,7 +1405,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "檢官向前突進，梗平處處阻攔",
+                        "檢察官向前突進，梗平處處阻攔",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1342,7 +1431,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "此時，友人A走進了書店當中",
+                        "此時，東山走進了書店當中",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1366,7 +1455,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]太好了，友人A你來了，這個人是修卡的人",
+                        "\t[梗平]太好了，東山你來了，這個人是修卡的人",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1403,7 +1492,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[色情刊物檢官]還有同夥嗎？",
+                        "\t[色情刊物檢察官]還有同夥嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1416,7 +1505,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人A]你是誰，我不認識你",
+                        "\t[東山]你是誰，我不認識你",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1429,7 +1518,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人A]我要走了",
+                        "\t[東山]我要走了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1453,7 +1542,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]友人A別走啊，啊，好痛！",
+                        "\t[梗平]東山別走啊，啊，好痛！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1466,7 +1555,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[色情刊物檢官]快停止抵抗，乖乖投降",
+                        "\t[色情刊物檢察官]快停止抵抗，乖乖投降",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1531,7 +1620,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[色情刊物檢官]如此頑強，我明天再來一次",
+                        "\t[色情刊物檢察官]如此頑強，我明天再來一次",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1556,6 +1645,19 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]總算...守住了......",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "檢官不甘心的離開了店裡，梗平心疲力竭的癱倒在地",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1599,36 +1701,23 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "檢官不甘心的離開了店裡，梗平心疲力竭的癱倒在地",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "梗平正準備回頭觀賞自己守護的成果時...不是，我書呢？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "hideImage",
                             "code": 30,
                             "time": 150
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
                         },
                         {
                             "type": "showImage",
@@ -1678,7 +1767,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[腐妞]剛剛你跟檢官玩得很開心的時候，客人們就一本一本拿走了啊",
+                        "\t[書店店員]剛剛你跟檢官玩得很開心的時候，客人們就一本一本拿走了啊",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1691,7 +1780,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[腐妞]你幹的真不錯啊，我們第一次頂住她的攻擊呢",
+                        "\t[書店店員]你幹的真不錯啊，我們第一次頂住她的攻擊呢",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1752,17 +1841,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "於是，梗平發出了悲鳴",
-                        {
-                            "type": "changeFloor",
-                            "floorId": "main_ch3_2",
-                            "loc": [
-                                6,
-                                10
-                            ],
-                            "direction": "up",
-                            "time": 500
-                        }
+                        "於是，梗平發出了悲鳴"
                     ]
                 },
                 {
@@ -1852,7 +1931,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "數個小時過去了，路上的行人逐漸消失",
+                        "【過場】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1893,6 +1972,19 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "數個小時過去了，路上的行人逐漸消失",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "梗平打開了裝錢的袋子.....裡面只有寥寥無幾的100円",
                         {
                             "type": "hideImage",
@@ -1918,6 +2010,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]什麼鬼，這不是連吃飯的錢都不夠了嘛！",
+                        {
+                            "type": "comment",
+                            "text": "TODO: 【下兩句話使用三日月作為立繪】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2104,6 +2200,19 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -2259,6 +2368,19 @@ main.floors.main_ch3_1_exchange_1=
                             "async": true
                         },
                         "三日月用微笑招待了梗平，梗平也回以......他此生最快速的撤離",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【過場】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2488,6 +2610,19 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -2529,7 +2664,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平跟著三日越走了進門，發現兩個少女正在聊天",
+                        "梗平跟著三日月走了進門，發現兩個少女正在聊天",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2671,7 +2806,7 @@ main.floors.main_ch3_1_exchange_1=
                         "數個小時過去了，梗平也發生了翻天覆地的變化",
                         {
                             "type": "comment",
-                            "text": "TODO: 【梗平替換為梗平(女)】"
+                            "text": "TODO: 【此處應有梗平立繪切換，未製作完成，忽略本句】"
                         },
                         {
                             "type": "hideImage",
@@ -2844,6 +2979,24 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "playBgm",
+                            "name": "battle_theme_a.mp3",
+                            "keep": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -2896,7 +3049,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]那個...我們大半夜的來這裡幹什麼，還有你們這副魔法少女裝和手上的槍又是什麼",
+                        "\t[梗平]那個...我們大半夜的來這裡幹什麼，還有你們手上的槍又是什麼",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3009,7 +3162,43 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "一陣魔法少女式的變身特效之後，梗平變成了魔法少女",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3070,7 +3259,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]這是什麼狀況，怎麼在下的衣服變了？話說在下下面怎麼空蕩蕩的？ ！ ！ ！",
+                        "\t[梗平]這是什麼狀況，在下下面怎麼空蕩蕩的？ ！ ！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3468,42 +3657,6 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         {
                             "type": "showImage",
-                            "code": 30,
-                            "image": "scene_mapo_cg.png",
-                            "sloc": [
-                                0,
-                                65,
-                                416,
-                                286
-                            ],
-                            "loc": [
-                                112,
-                                50,
-                                320,
-                                220
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
-                            "type": "showImage",
                             "code": 10,
                             "image": "keng_smile_portrait.png",
                             "loc": [
@@ -3716,6 +3869,45 @@ main.floors.main_ch3_1_exchange_1=
                             "async": true
                         },
                         "荒誕的第二天樂隊生活(?)就這麼結束了，轉眼又到了隔天團練時間",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【未製作完成，忽略下一句】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[【BGM]春日影】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -4277,6 +4469,10 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "............",
                         {
+                            "type": "comment",
+                            "text": "TODO: 【下面一句不使用立繪】"
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -4542,6 +4738,24 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "playBgm",
+                            "name": "bossa_casual_shop.mp3",
+                            "keep": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -4758,6 +4972,19 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]我去你的三日月！ ！ ！ ！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【過場】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5026,6 +5253,19 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -5202,6 +5442,19 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -5220,7 +5473,7 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         {
                             "type": "comment",
-                            "text": "TODO: 【梗平(女)替換為梗平】"
+                            "text": "TODO: 【此處應有梗平立繪切換，未製作完成，忽略本句】"
                         },
                         {
                             "type": "hideImage",
@@ -5301,6 +5554,37 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         {
                             "type": "showImage",
+                            "code": 30,
+                            "image": "ms_ch1_phone_message_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
                             "loc": [
@@ -5311,6 +5595,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]（手機）在下到東京國際展示場附近了，馬上過去",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5334,7 +5623,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「終於可以參加Comike了啊」",
+                        "\t[梗平](終於可以參加Comike了啊)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5348,6 +5637,37 @@ main.floors.main_ch3_1_exchange_1=
                             "async": true
                         },
                         "就在梗平準備放下手機的時候，突然來了個訊息，是三日月發來的",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "ms_ch1_phone_message_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5385,6 +5705,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]（手機）我也想，但我到東京國際展示場了，實在來不了，抱歉哈",
+                        {
+                            "type": "comment",
+                            "text": "TODO: 【下面一句不使用立繪】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5559,6 +5883,11 @@ main.floors.main_ch3_1_exchange_1=
                         "\t[梗平]（手機）我馬上到",
                         {
                             "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "hideImage",
                             "code": 10,
                             "time": 0,
                             "async": true
@@ -5580,7 +5909,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「雖然很可惜，但果然假面騎士腰帶不能夠放棄啊」",
+                        "\t[梗平](雖然很可惜，但果然假面騎士腰帶不能夠放棄啊)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5608,6 +5937,37 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         {
                             "type": "showImage",
+                            "code": 30,
+                            "image": "ms_ch1_phone_message_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
                             "loc": [
@@ -5618,6 +5978,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]（手機）抱歉，在下要晚點才能到了，有急事",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5631,6 +5996,19 @@ main.floors.main_ch3_1_exchange_1=
                             "async": true
                         },
                         "然後梗平用堪比飛機的速度一路飛奔的跑到了三日月那裡",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【過場】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5661,7 +6039,7 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         {
                             "type": "comment",
-                            "text": "TODO: 【梗平替換為梗平(女)】"
+                            "text": "TODO: 【此處應有梗平立繪切換，未製作完成，忽略本句】"
                         },
                         {
                             "type": "hideImage",
@@ -6460,6 +6838,19 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -6468,7 +6859,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street.png",
+                            "image": "ms_bg_street_day.png",
                             "loc": [
                                 0,
                                 0
@@ -6766,6 +7157,37 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "梗平又開始了周而復始的演出、團練、打魔獸",
                         {
                             "type": "hideImage",
@@ -6780,6 +7202,11 @@ main.floors.main_ch3_1_exchange_1=
                             "async": true
                         },
                         "只不過加上了荒野求生與拍攝奇怪的小影片",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6805,7 +7232,25 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【BE：少女觸手男娚女同樂隊魔法少女物語】",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6818,7 +7263,12 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[注]《《人物参考：三日月（爱音），来岛橙（虹夏），香板轮（喜多）》》 《《梗平除了第一次上台演出前和出发去漫展的那段时间，其他时间都为女装》》",
+                        "\t[BE]（手機）觸手男娚女同樂隊魔法少女物語",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "changeFloor",
                             "floorId": "main_ch3_1_exchange_1",

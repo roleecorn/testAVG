@@ -339,6 +339,19 @@ main.floors.mapo_1_3_exchange_1=
             "time": 0,
             "async": true
         },
+        "\t[【BGM]日常】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,

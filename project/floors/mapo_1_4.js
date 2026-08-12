@@ -395,6 +395,10 @@ main.floors.mapo_1_4=
         },
         "【炭烤蜜瓜兔子】",
         {
+            "type": "comment",
+            "text": "TODO: 【下一句話使用三角作為立繪】"
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -444,6 +448,10 @@ main.floors.mapo_1_4=
             "time": 0
         },
         "\t[梗平]什麼？這種技術...難道是修卡嗎？",
+        {
+            "type": "comment",
+            "text": "TODO: 【下一句話使用三角作為立繪】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -979,6 +987,19 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1094,7 +1115,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "\t[眼神死]您...您好，只......需要這些嗎？",
+        "\t[眼神死掉的人]您...您好，只......需要這些嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1144,7 +1165,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "\t[眼神死]......",
+        "\t[眼神死掉的人]......",
         {
             "type": "hideImage",
             "code": 10,
@@ -1157,7 +1178,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "\t[眼神死]我是不是已經連續上班5天了",
+        "\t[眼神死掉的人]我是不是已經連續上班5天了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1170,7 +1191,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "\t[眼神死]......",
+        "\t[眼神死掉的人]......",
         {
             "type": "hideImage",
             "code": 10,
@@ -1183,7 +1204,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "\t[眼神死]我不管了！老娘要辭職啊！",
+        "\t[眼神死掉的人]我不管了！老娘要辭職啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1197,6 +1218,19 @@ main.floors.mapo_1_4=
             "async": true
         },
         "眼神死掉的店員小姐把東西丟在了收銀台後，也往外面衝了出去",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【過場】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1520,6 +1554,19 @@ main.floors.mapo_1_4=
                             "name": "battle_theme_a.mp3",
                             "keep": true
                         },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【過場】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2251,6 +2298,10 @@ main.floors.mapo_1_4=
                         },
                         "\t[梗平]只有失去過才會懂得珍惜嗎？果然人是活在陽光下的生物",
                         {
+                            "type": "comment",
+                            "text": "TODO: 【下面一句不使用立繪】"
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -2388,7 +2439,43 @@ main.floors.mapo_1_4=
                             "time": 0,
                             "async": true
                         },
-                        "【BE：大鱷魚之戀】",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[BE]（手機）大鱷魚之戀",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "changeFloor",
                             "floorId": "mapo_1_4",

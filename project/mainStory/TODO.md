@@ -15,33 +15,72 @@
 - project/mainStory/CH1 1-1：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
 - project/mainStory/CH1 1-2：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
 - project/mainStory/CH1 1-2：【CG：梗平躲到表妹身後】暫用 ms_ch1_keng_hiding_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-2：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH1 1-2：【CG：黑衣人】暫用 ms_ch1_black_coat_men_cg.png，需替換正式素材。
 - project/mainStory/CH1 1-3：【CG：一中華大碗紅色液體】暫用 ms_ch1_red_mapo_bowl_cg.png，需替換正式素材。
 - project/mainStory/CH1 1-3：【CG：梗平VS宿儺】暫用 ms_ch1_keng_vs_sukuna_cg.png，需替換正式素材。
+- project/mainStory/CH1 1-3：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH1 1-3：下一句要求使用麻婆立繪，但 project/images 尚無對應正式角色圖，暫不顯示立繪。
 - project/mainStory/CH1 1-4：【CG：小丑】暫用 ms_ch1_clown_cg.png，需替換正式素材。
 - project/mainStory/CH1 1-4：【CG：小兔子黑暗無限破】暫用 ms_ch1_rabbit_attack_cg.png，需替換正式素材。
 - project/mainStory/CH1 1-4：【CG：紙箱】暫用 ms_ch1_cardboard_box_cg.png，需替換正式素材。
 - project/mainStory/CH1 1-4：【CG：紙箱人梗平】暫用 ms_ch1_cardboard_keng_cg.png，需替換正式素材。
-- project/mainStory/CH2 2-1：【CG：小兔子黑暗無限破】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH2 2-4：【CG：小兔子黑暗無限破】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH2 2-4：【CG：梗平英雄救美(？】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH2 2-4：【CG：梗平跟警察把IB舉起來】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH2 2-4：行內製作指令「【字體放大】」尚未轉成正式事件。
-- project/mainStory/CH3 3-1：【CG：梗平癱倒在地看著檢官離開】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH3 3-1：【CG：魔法少女梗平衝向觸手怪】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH3 3-1：製作指令「【梗平(女)替換為梗平】」尚未轉成正式事件。
-- project/mainStory/CH3 3-1：製作指令「【梗平替換為梗平(女)】」尚未轉成正式事件。
-- project/mainStory/CH3 3-3：【CG：一群人中間的發光傑士塔威】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH4 4-1：【CG：梗平、表妹對決大鱷魚】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH4 4-1：【CG：黑衣大漢包圍眾人】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH4 4-2：【CG：梗平雙手放在貝琪肩上】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH5 5-1：【CG：書店裡的小薄本山】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH5 5-1：【CG：梗平與警察肩並肩向前】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH6 6-1：【CG：梗平高舉智乃】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH6 6-1：【CG：肥宅湧出書店A】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH6 6-4：【後日談時間】 尚未撰寫，已以文字標記保留。
-- project/mainStory/CH6 6-4：【播放炫酷的結尾小動畫】 尚未製作正式結尾動畫，目前用既有轉場影片事件暫代。
+- project/mainStory/CH1 1-4：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH1 1-4：製作指令「【下一句話使用三角作為立繪】」尚未轉成正式事件。
+- project/mainStory/CH1 1-4：製作指令「【下面一句不使用立繪】」尚未轉成正式事件。
+- project/mainStory/CH2 2-1：【CG：小兔子黑暗無限破】暫用 ms_ch1_rabbit_attack_cg.png，需替換正式素材。
+- project/mainStory/CH2 2-1：【CG：肥宅撞擊 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-1：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-1：製作指令「【下一句不使用立繪】」尚未轉成正式事件。
+- project/mainStory/CH2 2-2：【CG：大門深鎖的書店A 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-2：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-2：製作指令「【下面一句不使用立繪】」尚未轉成正式事件。
+- project/mainStory/CH2 2-3：【CG：四樓開著的窗戶 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-3：【CG：梗平使用德式背摔 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-3：【CG：肥宅淹沒 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-4：【CG：小兔子黑暗無限破】暫用 ms_ch1_rabbit_attack_cg.png，需替換正式素材。
+- project/mainStory/CH2 2-4：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
+- project/mainStory/CH2 2-4：【CG：梗平的假面騎士空翻 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-4：【CG：梗平英雄救美(?) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-4：【CG：畫中的女子 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-4：【CG：畫中的梗平 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-4：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH2 2-4：【CG：被兩人一人一邊架起的死魚眼IB 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-1：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
+- project/mainStory/CH3 3-1：【CG：梗平呆滯 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-1：【CG：梗平與伐魔樂隊 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-1：【CG：肥宅撞擊 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-1：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-1：【CG：表妹賺大錢 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-1：【CG：魔法少女變身 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-1：製作指令「【下兩句話使用三日月作為立繪】」尚未轉成正式事件。
+- project/mainStory/CH3 3-1：製作指令「【下面一句不使用立繪】」尚未轉成正式事件。
+- project/mainStory/CH3 3-1：製作指令「【此處應有梗平立繪切換，未製作完成，忽略本句】」尚未轉成正式事件。
+- project/mainStory/CH3 3-2：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
+- project/mainStory/CH3 3-3：【CG：一群人中間的發光傑士塔威 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-3：【CG：傑士塔威 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-3：【CG：爆炸畫面 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH4 4-1：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
+- project/mainStory/CH4 4-1：【CG：肥宅撞擊 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH4 4-1：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH4 4-1：【人物交流時間】 尚未撰寫，已以文字標記保留。
+- project/mainStory/CH4 4-1：製作指令「【下一句不使用立繪】」尚未轉成正式事件。
+- project/mainStory/CH4 4-2：【CG：梗平耍帥 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH4 4-2：【CG：蹲著的修女與後方打電話的軍火女王 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH5 5-1：【CG：書店裡的小薄本山 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH5 5-1：【CG：梗平與警察肩並肩向前 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH5 5-1：【CG：肥宅撞擊 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH5 5-1：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-1：【CG：梗平的救援登場 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-1：【CG：梗平的救援登場(智乃) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-1：【CG：獅子王抱起Ver死魚眼智乃 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-1：【CG：肥宅湧出 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-2：【CG：梗平的假面騎士空翻 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-2：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-4：【CG：梗平與貝琪一起進入Comike會場 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-4：【CG：紅毯那端的婚紗貝琪 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-4：【CG：銬住手的手銬 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH6 6-4：製作指令「【此處應有梗平、貝琪立繪替換，未製作完成，忽略本句】」尚未轉成正式事件。
 - `project/mainStory/CH3 3-1`：街頭賣藝分歧目前原稿為「嘆息寫」，已保留為可回流分歧。
 - `project/mainStory/CH3 3-3`：傑士塔威會議可追加煩人小遊戲，目前以原劇情旁白接續。
 - `project/mainStory/CH6 6-4`：後日談時間尚未撰寫，已以文字標記保留。
@@ -59,6 +98,7 @@
 - `project/mainStory/CH1` 的手機簡訊、梗平躲藏、黑衣人、紅色麻婆碗、梗平VS宿儺、兔子攻擊、紙箱、紙箱人、小丑等 CG：目前以 `project/images/scene_mapo_cg.png` 複製素材暫代，待替換正式素材。
 - `project/mainStory/CH1 1-3`：來源要求「麻婆」立繪，但 `project/images/` 尚無可確認的麻婆角色立繪，該句暫不顯示立繪。
 - `project/mainStory/CH1 1-4`：來源標記 `河邊(夜))` 多一個右括號，生成器暫以 `河邊(夜)` mapping 處理，未改寫來源。
+- `project/mainStory/CH2`～`CH6` 新增的泛用／日夜／室內背景名稱：目前映射到既有同類背景資產，待替換正式專用素材。
 
 ## 待實作演出或小遊戲
 

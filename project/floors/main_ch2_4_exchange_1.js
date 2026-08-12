@@ -328,6 +328,39 @@ main.floors.main_ch2_4_exchange_1=
         },
         "【主線 CH2 2-4 書店A內部（交流後）】",
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_street_night.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,

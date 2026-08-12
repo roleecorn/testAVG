@@ -328,6 +328,11 @@ main.floors.main_ch6_1=
         },
         "【主線 CH6 6-1 肥宅潮】",
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -347,7 +352,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a.png",
+            "image": "ms_bg_bookstore_a_interior.png",
             "loc": [
                 0,
                 0
@@ -417,19 +422,6 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "店裡面的肥宅如同洪水一樣湧出，朝梗平襲來",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 30,
@@ -461,10 +453,23 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
+        "店裡面的肥宅如同洪水一樣湧出，朝梗平襲來",
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",
@@ -577,6 +582,19 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -585,7 +603,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe.png",
+            "image": "ms_bg_cafe_rabbit_interior.png",
             "loc": [
                 0,
                 0
@@ -816,7 +834,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）認真？現在？",
+        "\t[東山]（手機）認真？現在？",
         {
             "type": "hideImage",
             "code": 10,
@@ -829,7 +847,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人C]（手機）不是吧......",
+        "\t[克莉絲]（手機）不是吧......",
         {
             "type": "hideImage",
             "code": 10,
@@ -842,7 +860,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）看來得加快動作了",
+        "\t[蘭斯]（手機）看來得加快動作了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1033,7 +1051,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人Ｃ]（手機）我們拿到肥宅們的聖物了，但是沒辦法過去書店A",
+        "\t[克莉絲]（手機）我們拿到肥宅們的聖物了，但是沒辦法過去書店A",
         {
             "type": "hideImage",
             "code": 10,
@@ -1046,7 +1064,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人Ａ]（手機）我們都在旅館卡住了，梗平你找找方法過來",
+        "\t[東山]（手機）我們都在女咖卡住了，梗平你找找方法過來",
         {
             "type": "hideImage",
             "code": 10,
@@ -1070,7 +1088,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（手機）果然這種時候還是需要假面騎士啊，交給我吧！",
+        "\t[梗平]（手機）果然這種時候還是需要假面騎士啊，交給在下吧！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1181,6 +1199,19 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1209,7 +1240,43 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "正當眾人一籌莫展之際，梗平推開了旅館的大門",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "正當眾人一籌莫展之際，梗平推開了女咖的大門",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1270,7 +1337,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]嗯？你怎麼過來的",
+        "\t[東山]嗯？你怎麼過來的",
         {
             "type": "hideImage",
             "code": 10,
@@ -1283,7 +1350,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人C]外面變成這樣，我們試過了完全走不了",
+        "\t[克莉絲]外面變成這樣，我們試過了完全走不了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1296,20 +1363,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]等等，你手上為甚麼抱著炭烤蜜瓜兔子的店員",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "在場的其他人，此刻發現了梗平的手上抱著不應該出現的東西",
+        "\t[蘭斯]等等，你手上為什麼抱著智乃",
         {
             "type": "hideImage",
             "code": 10,
@@ -1353,10 +1407,23 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
+        "在場的其他人，此刻發現了梗平的手上抱著不應該出現的東西",
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",
@@ -1382,7 +1449,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]這......太噁心了吧",
+        "\t[東山]這......太噁心了吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1395,7 +1462,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]認識你這麼久第一次知道你還是這種人",
+        "\t[蘭斯]認識你這麼久第一次知道你還是這種人",
         {
             "type": "hideImage",
             "code": 10,
@@ -1432,7 +1499,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人C]人渣",
+        "\t[克莉絲]人渣",
         {
             "type": "hideImage",
             "code": 10,
@@ -1469,7 +1536,38 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[統至]學弟，我沒想到你竟然是這種人",
+        "\t[桶至學長]學弟，我沒想到你竟然是這種人",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1498,6 +1596,11 @@ main.floors.main_ch6_1=
         "神奇的事情發生了，肥宅們自動退出了一條路",
         {
             "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
@@ -1521,7 +1624,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]還不是靠小女孩，小白臉",
+        "\t[東山]還不是靠小女孩，小白臉",
         {
             "type": "hideImage",
             "code": 10,
@@ -1534,7 +1637,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]軟飯男",
+        "\t[克莉絲]軟飯男",
         {
             "type": "hideImage",
             "code": 10,
@@ -1571,6 +1674,19 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1579,7 +1695,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a.png",
+            "image": "ms_bg_bookstore_a_interior.png",
             "loc": [
                 0,
                 0
@@ -1612,7 +1728,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]店長，我們拿到聖物了，這樣就可以讓我們解決問題了吧",
+        "\t[東山]店長，我們拿到聖物了，這樣就可以讓我們解決問題了吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1638,7 +1754,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[書店A店長]嗯，這個就是聖物了",
+        "\t[店長]嗯，這個就是聖物了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1651,7 +1767,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[書店A店長]你們直接把東西交給我的話你們恐怕不會放心吧",
+        "\t[店長]你們直接把東西交給我的話你們恐怕不會放心吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1664,7 +1780,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[書店A店長]我也擔心你們直接行動會不小心驚擾肥宅",
+        "\t[店長]我也擔心你們直接行動會不小心驚擾肥宅",
         {
             "type": "hideImage",
             "code": 10,
@@ -1677,7 +1793,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[書店A店長]不如你們一個人跟我一起來吧",
+        "\t[店長]不如你們派個人跟我一起來吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1690,96 +1806,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[統至]這麼危險的工作，就交給我吧",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]喔，學長！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[統至]我都聽說了，拯救秋葉原算我一個",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[書店A店長]拿上這個，跟我來",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "接著，統至學長便與店長一同前往了書店地下室的方向",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "過了一陣子後，店長重新出現在了大家的眼前",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[書店A店長]都解決了，剩下就是要解決掉外面的騷亂",
+        "\t[蘭斯]這麼危險的工作，就交給我吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1803,7 +1830,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]等等，統至學長呢",
+        "\t[梗平]喔，蘭斯！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1816,7 +1843,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[書店A店長]他英勇的作戰但負傷了，數十名肥宅朝他噴射了氣流攻擊",
+        "\t[蘭斯]絕對不是因為我想看大胸！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1829,7 +1856,150 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[書店A店長]目前正在地下室休息，不確定明天能不能醒",
+        "\t[東山]我也想看看到底怎麼回事",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[店長]行吧，跟我來",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "接著，蘭斯與東山便與店長一同前往了書店的深處",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_street_day.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "過了一陣子後，店長跟東山重新出現在了大家的眼前",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[店長]都解決了，剩下就是要平息外面的騷亂",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]等等，蘭斯呢",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]他英勇的作戰但負傷了，數十名肥宅朝他使出了噴射氣流攻擊",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[店長]目前送去了休息室，不確定甚麼時候能醒",
         {
             "type": "hideImage",
             "code": 10,
@@ -1853,7 +2023,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]學長啊！",
+        "\t[梗平]蘭斯啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1866,7 +2036,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[書店A店長]我先去做準備，你們先繼續待著",
+        "\t[店長]我去做點準備，你們先待著",
         {
             "type": "hideImage",
             "code": 10,
@@ -1892,7 +2062,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "小貨車上面載著似乎變成教主的神谷浩史，開始沿街安撫肥宅",
+        "小貨車上面載著一名拿著擴音喇叭的男性，開始沿街安撫肥宅",
         {
             "type": "hideImage",
             "code": 10,

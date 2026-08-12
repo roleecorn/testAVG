@@ -556,7 +556,43 @@ main.floors.main_ch2_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "梗平一邊怒吼著，一邊對著警察使用了德式背摔",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -717,6 +753,19 @@ main.floors.main_ch2_3=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -725,7 +774,7 @@ main.floors.main_ch2_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a.png",
+            "image": "ms_bg_street_night.png",
             "loc": [
                 0,
                 0
@@ -830,7 +879,43 @@ main.floors.main_ch2_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "下定了決心的梗平，其實早在第一次來時就發現了四樓有一扇半開的窗戶，然後......",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -844,6 +929,34 @@ main.floors.main_ch2_3=
             "async": true
         },
         "誒？徒手爬了進去，真的假的",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_bookstore_a_interior.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -880,7 +993,7 @@ main.floors.main_ch2_3=
             "time": 0,
             "async": true
         },
-        "剛翻進了窗戶的梗平就看見了兩個肥宅朝他衝了過來",
+        "剛翻進了窗戶的梗平就看見了數個肥宅朝他衝了過來",
         {
             "type": "hideImage",
             "code": 10,
@@ -917,7 +1030,43 @@ main.floors.main_ch2_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "肥宅們無視了梗平的話，並直直地朝他撞了過來",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,

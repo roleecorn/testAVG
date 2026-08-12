@@ -662,7 +662,7 @@ main.floors.mapo_1_1=
             "time": 0,
             "async": true
         },
-        "梗平與表妹受到了友人A的邀請，準備作為他攤位上的小精靈",
+        "梗平與表妹受到了東山的邀請，準備作為他攤位上的小精靈",
         {
             "type": "hideImage",
             "code": 10,
@@ -675,7 +675,7 @@ main.floors.mapo_1_1=
             "time": 0,
             "async": true
         },
-        "同行的還有友人B與友人C，不過他們每一個現在都不見蹤影",
+        "同行的還有蘭斯與克莉絲，不過他們每一個現在都不見蹤影",
         {
             "type": "hideImage",
             "code": 10,
@@ -867,7 +867,7 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]反正我們這次是來陪友人A擺攤的，順便逛秋葉原",
+        "\t[梗平]反正我們這次是來陪東山擺攤的，順便逛秋葉原",
         {
             "type": "hideImage",
             "code": 10,
@@ -965,6 +965,19 @@ main.floors.mapo_1_1=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1048,7 +1061,7 @@ main.floors.mapo_1_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）救命",
+        "\t[東山]（手機）救命",
         {
             "type": "hideImage",
             "code": 10,
@@ -1138,7 +1151,7 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下的假面騎士之魂告訴我A肯定是被修卡抓走了",
+        "\t[梗平]在下的假面騎士之魂告訴我，東山肯定是被修卡抓走了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1162,7 +1175,7 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]而A在失去意識之前傳出了這則訊息，看來假面騎士要出動了",
+        "\t[梗平]而東山在失去意識之前傳出了這則訊息，看來假面騎士要出動了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1186,7 +1199,7 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[表妹]先不論這個結論怎麼來的......所以該去哪裡找Ａ呢",
+        "\t[表妹]先不論這個結論怎麼來的......所以該去哪裡找東山呢",
         {
             "type": "hideImage",
             "code": 10,
@@ -1234,7 +1247,7 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]所以我們就去倉庫區找Ａ吧，可惡的修卡，在下不會讓你們傷害在下的朋友",
+        "\t[梗平]所以我們就去倉庫區找東山吧，可惡的修卡，在下不會讓你們傷害在下的朋友",
         {
             "type": "hideImage",
             "code": 10,

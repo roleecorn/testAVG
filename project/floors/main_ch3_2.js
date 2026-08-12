@@ -347,7 +347,7 @@ main.floors.main_ch3_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_night.png",
             "loc": [
                 0,
                 0
@@ -355,6 +355,19 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 250
         },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[【BGM](煽情)】",
         {
             "type": "hideImage",
             "code": 10,
@@ -481,6 +494,19 @@ main.floors.main_ch3_2=
             "async": true
         },
         "就這樣梗平被貝琪拉上了車，前往了一間跟梗平毫不相襯的高級餐廳",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【過場】",
         {
             "type": "hideImage",
             "code": 10,
@@ -869,7 +895,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）梗平，你在哪裡？",
+        "\t[蘭斯]（手機）梗平，你在哪裡？",
         {
             "type": "hideImage",
             "code": 10,
@@ -882,7 +908,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）我們在書店A前面要討論怎麼樣攻進去了",
+        "\t[蘭斯]（手機）我們在書店A前面要討論怎麼樣攻進去了",
         {
             "type": "hideImage",
             "code": 10,
@@ -980,6 +1006,19 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "梗平上了車重新回到了秋葉原，在下車之前貝琪拉住了他的手",
         {
             "type": "hideImage",
@@ -1001,7 +1040,7 @@ main.floors.main_ch3_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_night.png",
             "loc": [
                 0,
                 0
@@ -1156,7 +1195,38 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）梗平，剩你還沒到了",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "ms_ch1_phone_message_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[蘭斯]（手機）梗平，剩你還沒到了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1181,6 +1251,11 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]（手機）馬上來",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,

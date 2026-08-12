@@ -328,6 +328,39 @@ main.floors.main_ch3_3=
         },
         "【主線 CH3 3-3 傑士塔威會議】",
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_street_night.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -389,7 +422,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]喔，我聽到這邊需要幫忙我就過來了",
+        "\t[桶至學長]喔，我聽到這邊需要幫忙我就過來了",
         {
             "type": "hideImage",
             "code": 10,
@@ -426,7 +459,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]我去女僕咖啡廳打工籌措資金了，過幾天Comike還要花錢",
+        "\t[桶至學長]我去女僕咖啡廳打工籌措資金了，過幾天Comike還要花錢",
         {
             "type": "hideImage",
             "code": 10,
@@ -463,7 +496,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]我是前台的女僕",
+        "\t[桶至學長]我是前台的女僕",
         {
             "type": "hideImage",
             "code": 10,
@@ -500,7 +533,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]我原本想應徵後廚的，但店長說女僕都休假了",
+        "\t[桶至學長]我原本想應徵後廚的，但店長說女僕都休假了",
         {
             "type": "hideImage",
             "code": 10,
@@ -513,7 +546,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]所以叫我穿女僕裝去做前台，你要看嗎",
+        "\t[桶至學長]所以叫我穿女僕裝去做前台，你要看嗎",
         {
             "type": "hideImage",
             "code": 10,
@@ -574,7 +607,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人A]發瘋了的肥宅佔據了書店A，然後IB的哥哥似乎在裡面對吧",
+        "\t[東山]發瘋了的肥宅佔據了書店A，然後IB的哥哥似乎在裡面對吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -611,7 +644,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人C]感覺放著不管的話肯定會出事啊，至少得先進去看看到底發生什麼",
+        "\t[克莉絲]感覺放著不管的話肯定會出事啊，至少得先進去看看到底發生什麼",
         {
             "type": "hideImage",
             "code": 10,
@@ -624,7 +657,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人B]而且這群肥宅還到處撞來撞去的，肯定有問題",
+        "\t[蘭斯]而且這群肥宅還到處撞來撞去的，肯定有問題",
         {
             "type": "hideImage",
             "code": 10,
@@ -661,7 +694,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人A]才不是啊！",
+        "\t[東山]才不是啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -674,7 +707,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人A]總之先看看該怎麼突破肥宅群吧",
+        "\t[東山]總之先看看該怎麼突破肥宅群吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -711,7 +744,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人C]太糟糕了吧你",
+        "\t[克莉絲]太糟糕了吧你",
         {
             "type": "hideImage",
             "code": 10,
@@ -748,7 +781,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人B]這麼說來我剛剛在雜貨店買到了這個",
+        "\t[蘭斯]這麼說來我剛剛在雜貨店買到了這個",
         {
             "type": "hideImage",
             "code": 10,
@@ -761,7 +794,25 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "友人B拿出了一個半球加上兩根木棍和一個粉紅色圓柱組成的小人",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -774,7 +825,12 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]喔？這不是傑士塔威嗎？真還原啊",
+        "蘭斯拿出了一個半球加上兩根木棍和一個粉紅色圓柱組成的小人",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -787,7 +843,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人B]你知道這個是做什麼用的嗎？",
+        "\t[桶至學長]喔？這不是傑士塔威嗎？真還原啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -800,7 +856,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]應該只要按下他的頭就會爆炸了",
+        "\t[蘭斯]你知道這個是做什麼用的嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -813,7 +869,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人A]這應該能清掉一部份的肥宅並爭取空間",
+        "\t[桶至學長]應該只要按下他的頭就會爆炸了",
         {
             "type": "hideImage",
             "code": 10,
@@ -826,7 +882,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]你只買了一個嗎？那我們必須要審慎的思考如何使用他",
+        "\t[東山]這應該能清掉一部份的肥宅並爭取空間",
         {
             "type": "hideImage",
             "code": 10,
@@ -839,7 +895,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]這個東西丟出去無非就是四種可能",
+        "\t[桶至學長]你只買了一個嗎？那我們必須要審慎的思考如何使用他",
         {
             "type": "hideImage",
             "code": 10,
@@ -852,7 +908,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]一、丟出去爆炸，二、丟出去沒爆炸",
+        "\t[桶至學長]這個東西丟出去無非就是四種可能",
         {
             "type": "hideImage",
             "code": 10,
@@ -865,7 +921,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]三、沒丟出去但爆炸，四、沒丟出去也沒爆炸",
+        "\t[桶至學長]一、丟出去爆炸，二、丟出去沒爆炸",
         {
             "type": "hideImage",
             "code": 10,
@@ -878,7 +934,20 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]好了，我們開始討論吧",
+        "\t[桶至學長]三、沒丟出去但爆炸，四、沒丟出去也沒爆炸",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[桶至學長]好了，我們開始討論吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -904,7 +973,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]好，這些是第一種可能",
+        "\t[桶至學長]好，這些是第一種可能",
         {
             "type": "hideImage",
             "code": 10,
@@ -917,7 +986,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人A]那我們要丟了嗎？",
+        "\t[東山]那我們要丟了嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -930,7 +999,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]不行，我們要把所有的東西都考慮完",
+        "\t[桶至學長]不行，我們要把所有的東西都考慮完",
         {
             "type": "hideImage",
             "code": 10,
@@ -956,7 +1025,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]你看，丟出去沒爆就會產生這些問題",
+        "\t[桶至學長]你看，丟出去沒爆就會產生這些問題",
         {
             "type": "hideImage",
             "code": 10,
@@ -969,7 +1038,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人B]那我們不丟了對吧？",
+        "\t[蘭斯]那我們不丟了對吧？",
         {
             "type": "hideImage",
             "code": 10,
@@ -982,7 +1051,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]不對，還有沒丟但爆了的可能",
+        "\t[桶至學長]不對，還有沒丟但爆了的可能",
         {
             "type": "hideImage",
             "code": 10,
@@ -995,7 +1064,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人A]......",
+        "\t[東山]......",
         {
             "type": "hideImage",
             "code": 10,
@@ -1008,7 +1077,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人A]我還有事先走了，你們慢慢討論啊",
+        "\t[東山]我還有事先走了，你們慢慢討論啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -1021,7 +1090,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "在友人A逃離後，統至双進行了二十分鐘的分析",
+        "在東山逃離後，統至双進行了二十分鐘的分析",
         {
             "type": "hideImage",
             "code": 10,
@@ -1034,7 +1103,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]你看，沒丟出去但爆了可能會有更多的問題",
+        "\t[桶至學長]你看，沒丟出去但爆了可能會有更多的問題",
         {
             "type": "hideImage",
             "code": 10,
@@ -1047,7 +1116,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人C]所以我們應該要丟嗎？",
+        "\t[克莉絲]所以我們應該要丟嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1060,7 +1129,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]別急，還有最後一種可能性沒有思考",
+        "\t[桶至學長]別急，還有最後一種可能性沒有思考",
         {
             "type": "hideImage",
             "code": 10,
@@ -1073,7 +1142,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]沒丟而且沒爆我們就可以保留這個資源",
+        "\t[桶至學長]沒丟而且沒爆我們就可以保留這個資源",
         {
             "type": "hideImage",
             "code": 10,
@@ -1123,7 +1192,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]我也在思考這個問題",
+        "\t[桶至學長]我也在思考這個問題",
         {
             "type": "hideImage",
             "code": 10,
@@ -1136,7 +1205,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]果然還是得再討論一遍",
+        "\t[桶至學長]果然還是得再討論一遍",
         {
             "type": "hideImage",
             "code": 10,
@@ -1186,7 +1255,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[友人C]對啊，感覺丟了很有道理呢",
+        "\t[克莉絲]對啊，感覺丟了很有道理呢",
         {
             "type": "hideImage",
             "code": 10,
@@ -1199,7 +1268,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]可是我們真的要這樣浪費這樣的資源嗎？再討論一下吧",
+        "\t[桶至學長]可是我們真的要這樣浪費這樣的資源嗎？再討論一下吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1212,7 +1281,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[統至]我還沒有找到一個可以說服我做決定的理由",
+        "\t[桶至學長]我還沒有找到一個可以說服我做決定的理由",
         {
             "type": "hideImage",
             "code": 10,
@@ -1374,6 +1443,42 @@ main.floors.main_ch3_3=
         "然後傑士塔威從窗戶彈開了，完美的落到了一群人的中央",
         {
             "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
@@ -1387,6 +1492,11 @@ main.floors.main_ch3_3=
         "在一陣短暫的聲光效果後，會議的結果達到了沒丟出去但爆炸的真實",
         {
             "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
@@ -1396,11 +1506,6 @@ main.floors.main_ch3_3=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -1426,7 +1531,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "在梗平反應過來以前，表妹與友人B立刻閃到了掩體後方",
+        "在梗平反應過來以前，表妹與蘭斯立刻閃到了掩體後方",
         {
             "type": "hideImage",
             "code": 10,
@@ -1439,7 +1544,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "梗平、友人C、統至完整的接下了傑士塔威爆炸威力",
+        "梗平、克莉絲、桶至學長的接下了傑士塔威爆炸威力",
         {
             "type": "hideImage",
             "code": 10,

@@ -407,7 +407,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[表妹]如果A真的在這裡的話，應該就是綁架案了吧",
+        "\t[表妹]如果東山真的在這裡的話，應該就是綁架案了吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -431,7 +431,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]馬撒卡，A莫非先在下一步被修卡抓去改造身體了",
+        "\t[梗平]馬撒卡，東山莫非先在下一步被修卡抓去改造身體了",
         {
             "type": "hideImage",
             "code": 10,
@@ -668,7 +668,7 @@ main.floors.mapo_1_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[表妹]可是A到底去哪裡了呢?",
+                        "\t[表妹]可是東山到底去哪裡了呢?",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1197,7 +1197,43 @@ main.floors.mapo_1_2=
                                             "time": 0,
                                             "async": true
                                         },
-                                        "【BE：這裡不是米O市吧？！】",
+                                        {
+                                            "type": "showImage",
+                                            "code": 30,
+                                            "image": "scene_mapo_cg.png",
+                                            "sloc": [
+                                                0,
+                                                65,
+                                                416,
+                                                286
+                                            ],
+                                            "loc": [
+                                                112,
+                                                50,
+                                                320,
+                                                220
+                                            ],
+                                            "opacity": 1,
+                                            "time": 250
+                                        },
+                                        {
+                                            "type": "hideImage",
+                                            "code": 10,
+                                            "time": 0,
+                                            "async": true
+                                        },
+                                        {
+                                            "type": "hideImage",
+                                            "code": 11,
+                                            "time": 0,
+                                            "async": true
+                                        },
+                                        "\t[BE]（手機）這裡不是米O市吧？！",
+                                        {
+                                            "type": "hideImage",
+                                            "code": 30,
+                                            "time": 150
+                                        },
                                         {
                                             "type": "changeFloor",
                                             "floorId": "mapo_1_2",
@@ -1508,7 +1544,7 @@ main.floors.mapo_1_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[哈]啊，一不小心把這兩個人抓進來了",
+                        "\t[哈斯太]啊，一不小心把這兩個人抓進來了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1521,7 +1557,7 @@ main.floors.mapo_1_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[哈]不過還是沒有靈感呢，希望編輯不要找到我",
+                        "\t[哈斯太]不過還是沒有靈感呢，希望編輯不要找到我",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1534,7 +1570,7 @@ main.floors.mapo_1_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[哈]好苦惱啊",
+                        "\t[哈斯太]好苦惱啊",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1573,7 +1609,43 @@ main.floors.mapo_1_2=
                             "time": 0,
                             "async": true
                         },
-                        "【BE：不要闖空門】",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[BE]（手機）不要闖空門",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "changeFloor",
                             "floorId": "mapo_1_2",
@@ -1588,6 +1660,19 @@ main.floors.mapo_1_2=
                 }
             ]
         },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【過場】",
         {
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
@@ -1633,7 +1718,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "從倉庫出來的兩人遇到了同行的B、C",
+        "從倉庫出來的兩人遇到了同行的蘭斯跟克莉絲 ",
         {
             "type": "hideImage",
             "code": 10,
@@ -1657,7 +1742,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]B、C，你們有看見A嗎？",
+        "\t[梗平]蘭斯、克莉絲，你們有看見東山嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1670,7 +1755,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]沒有，不過去問了神社的巫女之後說是在北方的樣子",
+        "\t[蘭斯]沒有，不過去問了神社的巫女之後說是在北方的樣子",
         {
             "type": "hideImage",
             "code": 10,
@@ -1683,7 +1768,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "\t[友人C]向北總共只有三條路，那不如我們分三組搜尋怎麼樣",
+        "\t[克莉絲]向北總共只有三條路，那不如我們分三組搜尋怎麼樣",
         {
             "type": "hideImage",
             "code": 10,
@@ -1744,7 +1829,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]那我們先繼續分頭行動吧，再見",
+        "\t[蘭斯]那我們先繼續分頭行動吧，再見",
         {
             "type": "hideImage",
             "code": 10,
@@ -1757,7 +1842,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "\t[友人C]我也先走了",
+        "\t[克莉絲]我也先走了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1770,7 +1855,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "B、C離開了",
+        "蘭斯跟克莉絲離開了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1807,7 +1892,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "兩人在秋葉原繞了一段時間過後，依舊不見A的蹤影",
+        "兩人在秋葉原繞了一段時間過後，依舊不見東山的蹤影",
         {
             "type": "hideImage",
             "code": 10,
@@ -1851,7 +1936,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）還沒找到A，我先吃飯，傳地址給你們",
+        "\t[蘭斯]（手機）還沒找到A，我先吃飯，傳地址給你們",
         {
             "type": "hideImage",
             "code": 30,
@@ -1880,7 +1965,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]修卡為什麼要綁走A、現在看來只有一種可能性、他們正在籌劃破壞comike",
+        "\t[梗平]修卡為什麼要綁走東山、現在看來只有一種可能性、他們正在籌劃破壞comike",
         {
             "type": "hideImage",
             "code": 10,
@@ -2153,7 +2238,7 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "\t[友人C]（手機）餓了、我也先吃個飯…",
+        "\t[克莉絲]（手機）餓了、我也先吃個飯…",
         {
             "type": "hideImage",
             "code": 10,

@@ -339,7 +339,76 @@ main.floors.main_ch4_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_warehouse_district.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "再次睜開眼睛時，眼前是一名身高超過兩米的修女",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -366,19 +435,6 @@ main.floors.main_ch4_2=
             "async": true
         },
         "在老闆與修女打了一個手勢後，修女走了過來幫梗平解開了繩子",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "【修女　荒川爆笑團 修女】",
         {
             "type": "hideImage",
             "code": 10,
@@ -641,6 +697,19 @@ main.floors.main_ch4_2=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -657,6 +726,19 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 250
         },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[【BGM](煽情)】",
         {
             "type": "hideImage",
             "code": 10,
@@ -756,19 +838,6 @@ main.floors.main_ch4_2=
             "time": 0,
             "async": true
         },
-        "梗平強打起了精氣神，雙手放在了貝琪的肩上",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 30,
@@ -800,10 +869,23 @@ main.floors.main_ch4_2=
             "time": 0,
             "async": true
         },
+        "梗平強打起了精氣神，雙手放在了貝琪的肩上",
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",

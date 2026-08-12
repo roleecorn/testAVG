@@ -380,6 +380,11 @@ main.floors.main_ch6_4=
         },
         "一道金屬彈片的「喀噠」聲響了",
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -402,7 +407,38 @@ main.floors.main_ch6_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「嗯？這是什麼？」",
+        "\t[梗平](嗯？這是什麼？)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -416,6 +452,11 @@ main.floors.main_ch6_4=
             "async": true
         },
         "梗平困惑之後，他看清了手上正是金屬的手銬",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -465,7 +506,7 @@ main.floors.main_ch6_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]為什麼！？連你也背叛我嗎！？",
+        "\t[梗平]為什麼！？連你也背叛在下嗎！？",
         {
             "type": "hideImage",
             "code": 10,
@@ -608,6 +649,19 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -624,6 +678,19 @@ main.floors.main_ch6_4=
             "opacity": 1,
             "time": 250
         },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[【BGM](煽情)】",
         {
             "type": "hideImage",
             "code": 10,
@@ -701,7 +768,43 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "紅毯尾端的貝琪慢慢轉了過來，讓梗平看得有些失神",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -715,6 +818,10 @@ main.floors.main_ch6_4=
             "async": true
         },
         "一旁的修女則念起了誓詞",
+        {
+            "type": "comment",
+            "text": "TODO: 【此處應有梗平、貝琪立繪替換，未製作完成，忽略本句】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -827,7 +934,7 @@ main.floors.main_ch6_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我願意",
+        "\t[梗平]在下願意",
         {
             "type": "hideImage",
             "code": 10,
@@ -907,6 +1014,39 @@ main.floors.main_ch6_4=
         },
         "結局",
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_tokyo_big_sight.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -968,7 +1108,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[貝琪]人一直都這麼多的啦，不過放心親愛的",
+        "\t[貝琪]人每年都這麼多的啦，不過放心親愛的",
         {
             "type": "hideImage",
             "code": 10,
@@ -996,14 +1136,34 @@ main.floors.main_ch6_4=
         },
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
             "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
-            "time": 0
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[梗平]啊，好像開始入場了",
         {
@@ -1019,6 +1179,11 @@ main.floors.main_ch6_4=
             "async": true
         },
         "\t[貝琪]那......我們走吧",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1070,7 +1235,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "秋葉原之旅 END",
+        "秋葉原之旅　END",
         {
             "type": "hideImage",
             "code": 10,
@@ -1083,9 +1248,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        {
-            "type": "playTransitionVideo"
-        },
+        "【結尾演出字幕，未製作完成，忽略本句】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1098,7 +1261,163 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "【後日談時間：待補】",
+        "\t[結尾演出字幕]都是旁白的那個版本 (我是打算END2把誰寫的跟所有分支製作寫進去啦所以1都旁白這樣，還是?",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "總之辛苦你了，穿過重重困難看到現在",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "[能到達這裡的想必都是過人的勇者[",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "你說劇情在幹尛？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "這可是COC團錄，一切都是PL與骰子女神的抉擇可沒有半分虛假",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "雖然看起來很複雜，但梗平線只有『一條』正確的道路啦…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "梗平沒看見的秋葉原發生了什麼？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "如果想知道就繼續吧，不會耽誤你太多時間的(振聲)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "或者你也可以點取ALT+F4跳過這些…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "……………",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "……………",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "你還在啊？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "那麼我們開始吧—",
         {
             "type": "hideImage",
             "code": 10,

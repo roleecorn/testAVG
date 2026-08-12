@@ -328,6 +328,11 @@ main.floors.main_ch5_1=
         },
         "【主線 CH5 5-1 五日無戰事篇】",
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -391,7 +396,7 @@ main.floors.main_ch5_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「看來有大人物要來了啊」",
+        "\t[梗平](看來有大人物要來了啊)",
         {
             "type": "hideImage",
             "code": 10,
@@ -532,6 +537,19 @@ main.floors.main_ch5_1=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -540,7 +558,7 @@ main.floors.main_ch5_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe.png",
+            "image": "ms_bg_cafe_rabbit_interior.png",
             "loc": [
                 0,
                 0
@@ -597,7 +615,7 @@ main.floors.main_ch5_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「接下來該做甚麼好呢」",
+        "\t[梗平]接下來該做甚麼好呢",
         {
             "type": "hideImage",
             "code": 10,
@@ -621,7 +639,7 @@ main.floors.main_ch5_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「感覺接下來會特別忙，先把想做的事情做完好了」",
+        "\t[梗平]感覺接下來會特別忙，先把想做的事情做完好了",
         {
             "type": "hideImage",
             "code": 10,

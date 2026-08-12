@@ -328,6 +328,11 @@ main.floors.main_ch4_1=
         },
         "【主線 CH4 4-1 搶火車篇】",
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -347,7 +352,7 @@ main.floors.main_ch4_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_day.png",
             "loc": [
                 0,
                 0
@@ -502,7 +507,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）梗平，我們先走了喔",
+        "\t[蘭斯]（手機）梗平，我們先走了喔",
         {
             "type": "hideImage",
             "code": 10,
@@ -515,7 +520,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）我們要去找其他能夠進入書店A的方式了",
+        "\t[蘭斯]（手機）我們要去找其他能夠進入書店A的方式了",
         {
             "type": "hideImage",
             "code": 10,
@@ -528,7 +533,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）看你睡得很香就沒吵你了",
+        "\t[東山]（手機）看你睡得很香就沒吵你了",
         {
             "type": "hideImage",
             "code": 10,
@@ -553,6 +558,76 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]在下好感動，他們居然想的這麼多",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]看來時間還早，可以先到處看看",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【人物交流時間：待補】",
+        {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_street_day.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -626,7 +701,43 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "同樣的肥宅再次出現並撞擊了梗平",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -676,7 +787,43 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "另一個肥宅以相同的速度撞擊了勉強站住的梗平",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -824,6 +971,19 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -832,7 +992,7 @@ main.floors.main_ch4_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_horses_knee.png",
+            "image": "ms_bg_bookstore_a_interior.png",
             "loc": [
                 0,
                 0
@@ -865,7 +1025,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "抵達書店、堆出假面騎士、與檢官進行攻防戰",
+        "抵達書店、堆出假面騎士、與檢察官進行攻防戰",
         {
             "type": "hideImage",
             "code": 10,
@@ -891,7 +1051,25 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）找到能解決書店A問題的方式了",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "ms_ch1_phone_message_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -904,7 +1082,20 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）可以的話晚上11點在雜貨店集合",
+        "\t[東山]（手機）找到能解決書店A問題的方式了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]（手機）可以的話晚上11點在雜貨店集合",
         {
             "type": "hideImage",
             "code": 10,
@@ -941,7 +1132,11 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）如果可以的話幫忙多找一點人手",
+        "\t[東山]（手機）如果可以的話幫忙多找一點人手",
+        {
+            "type": "comment",
+            "text": "TODO: 【下一句不使用立繪】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1175,6 +1370,11 @@ main.floors.main_ch4_1=
         "\t[梗平]（手機）這肯定是修卡的造物，我現在就來！",
         {
             "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
@@ -1209,7 +1409,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[腐妞]慢走",
+        "\t[書店店員]慢走",
         {
             "type": "hideImage",
             "code": 10,
@@ -1223,6 +1423,19 @@ main.floors.main_ch4_1=
             "async": true
         },
         "梗平奪門而出，跑向了河邊",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【過場】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1250,6 +1463,11 @@ main.floors.main_ch4_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "playBgm",
+            "name": "battle_theme_a.mp3",
+            "keep": true
         },
         {
             "type": "hideImage",
@@ -1555,37 +1773,6 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "梗平與表妹喊著甚麼愛、羈絆、勇氣的，便把大鱷魚從河裡拉了出來",
         {
             "type": "hideImage",
@@ -1611,11 +1798,6 @@ main.floors.main_ch4_1=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -1715,6 +1897,19 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1730,6 +1925,11 @@ main.floors.main_ch4_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
         },
         {
             "type": "hideImage",
@@ -1769,20 +1969,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "【醫生 鈴仙】",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[鈴仙]誒，你醒得這麼快啊",
+        "\t[醫生]誒，你醒得這麼快啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -1819,7 +2006,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[鈴仙]冷靜下來聽我說可以嗎？",
+        "\t[醫生]冷靜下來聽我說可以嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1832,7 +2019,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[鈴仙]你昏迷了一個月然後錯過了Comike",
+        "\t[醫生]你昏迷了一個月然後錯過了Comike",
         {
             "type": "hideImage",
             "code": 10,
@@ -1869,7 +2056,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[鈴仙]嗯，看起來沒有瘋，你可以出院了",
+        "\t[醫生]嗯，看起來沒有瘋，你可以出院了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1882,7 +2069,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[鈴仙]順帶一提你只昏了五小時，生命力真頑強",
+        "\t[醫生]順帶一提你只昏了五小時，生命力真頑強",
         {
             "type": "hideImage",
             "code": 10,
@@ -2004,7 +2191,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[鈴仙]我是不是該把他抓回來做精神鑑定啊",
+        "\t[醫生]我是不是該把他抓回來做精神鑑定啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -2017,7 +2204,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[鈴仙]算了，人都已經出去了",
+        "\t[醫生]算了，人都已經出去了",
         {
             "type": "hideImage",
             "code": 10,
@@ -2043,7 +2230,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[鈴仙]你也醒了啊，沒什麼問題就可以出去了",
+        "\t[醫生]你也醒了啊，沒什麼問題就可以出去了",
         {
             "type": "hideImage",
             "code": 10,
@@ -2080,7 +2267,20 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[鈴仙]這兩個人到底是怎麼回事",
+        "\t[醫生]這兩個人到底是怎麼回事",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【過場】",
         {
             "type": "hideImage",
             "code": 10,
@@ -2101,7 +2301,7 @@ main.floors.main_ch4_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_night.png",
             "loc": [
                 0,
                 0
@@ -2213,6 +2413,19 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -2221,13 +2434,18 @@ main.floors.main_ch4_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_railway.png",
+                            "image": "ms_bg_warehouse_district.png",
                             "loc": [
                                 0,
                                 0
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "twists_suspense.mp3",
+                            "keep": true
                         },
                         {
                             "type": "hideImage",
@@ -2267,7 +2485,7 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人A]你也到了啊，我們開始吧",
+                        "\t[東山]你也到了啊，我們開始吧",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2280,7 +2498,7 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人A]數到三我們就一起衝進去",
+                        "\t[東山]數到三我們就一起衝進去",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2293,7 +2511,7 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人A]一...二...三！",
+                        "\t[東山]一...二...三！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2367,7 +2585,7 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人B]等等，好像不太對",
+                        "\t[蘭斯]等等，好像不太對",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2419,37 +2637,6 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 30,
-                            "image": "scene_mapo_cg.png",
-                            "sloc": [
-                                0,
-                                65,
-                                416,
-                                286
-                            ],
-                            "loc": [
-                                112,
-                                50,
-                                320,
-                                220
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "下一秒，在場的所有人就被大漢們打暈並失去了意識",
                         {
                             "type": "hideImage",
@@ -2464,6 +2651,19 @@ main.floors.main_ch4_1=
                             "async": true
                         },
                         "在失去意識以前，梗平看見了遠方出現了一輛黑色禮車",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【過場】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2491,6 +2691,11 @@ main.floors.main_ch4_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "bossa_casual_shop.mp3",
+                            "keep": true
                         },
                         {
                             "type": "hideImage",
@@ -2619,7 +2824,7 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人A]那個，貝琪，我也不能出去嗎？",
+                        "\t[東山]那個，貝琪，我也不能出去嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2645,7 +2850,7 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人B]試過了，完全跑不出去",
+                        "\t[蘭斯]試過了，完全跑不出去",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2682,7 +2887,7 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人C]扮裝成僕人想出去，馬上就被抓了",
+                        "\t[克莉絲]扮裝成僕人想出去，馬上就被抓了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2745,7 +2950,43 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "【BE：一波送完】",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[BE]（手機）一波送完",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "changeFloor",
                             "floorId": "main_ch4_1",
@@ -2784,7 +3025,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「沒錯，而且這還能挽回我在大家心中的風評」",
+                        "\t[梗平](沒錯，而且這還能挽回我在大家心中的風評)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2823,6 +3064,24 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "playBgm",
+                            "name": "twists_suspense.mp3",
+                            "keep": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -2831,7 +3090,7 @@ main.floors.main_ch4_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_railway.png",
+                            "image": "ms_bg_warehouse_district.png",
                             "loc": [
                                 0,
                                 0

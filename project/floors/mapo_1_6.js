@@ -328,6 +328,11 @@ main.floors.mapo_1_6=
         },
         "【主線 CH2 2-1 咖啡廳早晨】",
         {
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -539,6 +544,19 @@ main.floors.mapo_1_6=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -547,7 +565,7 @@ main.floors.mapo_1_6=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_day.png",
             "loc": [
                 0,
                 0
@@ -654,7 +672,43 @@ main.floors.mapo_1_6=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "一個秋葉原的普通肥宅撞了一下梗平後，就迅速跑遠了",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -704,6 +758,19 @@ main.floors.mapo_1_6=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -712,7 +779,7 @@ main.floors.mapo_1_6=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe.png",
+            "image": "ms_bg_cafe_rabbit_interior.png",
             "loc": [
                 0,
                 0
@@ -771,10 +838,23 @@ main.floors.mapo_1_6=
             "time": 0,
             "async": true
         },
+        "\t[三角]你偷喝酒了對吧，酒氣太濃了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
+            "image": "ms_ch1_rabbit_attack_cg.png",
             "sloc": [
                 0,
                 65,
@@ -791,6 +871,10 @@ main.floors.mapo_1_6=
             "time": 250
         },
         {
+            "type": "comment",
+            "text": "TODO: 【下一句不使用立繪】"
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -802,10 +886,23 @@ main.floors.mapo_1_6=
             "time": 0,
             "async": true
         },
+        "\t[三角]小兔子黑暗無限破！",
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",
@@ -1220,7 +1317,7 @@ main.floors.mapo_1_6=
             "time": 0,
             "async": true
         },
-        "\t[柯南]IB的哥哥從昨天開始就不見了，所以想要來拜託你一起找",
+        "\t[小黑]IB的哥哥從昨天開始就不見了，所以想要來拜託你一起找",
         {
             "type": "hideImage",
             "code": 10,
@@ -1390,23 +1487,10 @@ main.floors.mapo_1_6=
                             "time": 0,
                             "async": true
                         },
-                        "\t[三角]小兔子黑暗無限破！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "scene_mapo_cg.png",
+                            "image": "ms_ch1_rabbit_attack_cg.png",
                             "sloc": [
                                 0,
                                 65,
@@ -1421,6 +1505,24 @@ main.floors.mapo_1_6=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[三角]小兔子黑暗無限破！",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "hideImage",
@@ -1486,7 +1588,43 @@ main.floors.mapo_1_6=
                             "time": 0,
                             "async": true
                         },
-                        "【BE：臨陣脫逃】",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[BE]（手機）臨陣脫逃",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "changeFloor",
                             "floorId": "mapo_1_6",
@@ -1515,11 +1653,6 @@ main.floors.mapo_1_6=
                             "async": true
                         },
                         {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -1543,7 +1676,7 @@ main.floors.mapo_1_6=
                             "time": 0,
                             "async": true
                         },
-                        "\t[柯南]從IB哥哥的行程來看，他昨天只預計要去書店A而已",
+                        "\t[小黑]從IB哥哥的行程來看，他昨天只預計要去書店A而已",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1556,7 +1689,7 @@ main.floors.mapo_1_6=
                             "time": 0,
                             "async": true
                         },
-                        "\t[柯南]最後一次IB聯繫到他的時候，也確實是在說關於書店A的事情",
+                        "\t[小黑]最後一次IB聯繫到他的時候，也確實是在說關於書店A的事情",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1569,7 +1702,7 @@ main.floors.mapo_1_6=
                             "time": 0,
                             "async": true
                         },
-                        "\t[柯南]看起來大概率就是跟那裏有關了",
+                        "\t[小黑]看起來大概率就是跟那裏有關了",
                         {
                             "type": "hideImage",
                             "code": 10,

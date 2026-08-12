@@ -99,6 +99,27 @@ const backgroundAssets = [
   { name: "婚禮", image: "ms_bg_wedding.png", placeholder: "scene_tournament.png" },
 ];
 const bgByName = new Map(backgroundAssets.map(({ name, image }) => [name, image]));
+const backgroundAliases = {
+  "河邊(日)": "河邊",
+  "泛用書店內部(明亮)": "書店A內部",
+  "泛用書店內部(昏暗)": "書店A內部",
+  "群組訊息背景": "街道",
+  "團練室": "訓練室",
+  "電子遊樂場內部": "遊戲中心",
+  "美術館內部": "美術館",
+  "掛著畫的休息室": "美術館",
+  "裡世界的休息室": "美術館",
+  "鐵道倉庫區(夜)": "倉庫區",
+  "泛用車內": "車上",
+  "貝琪莊園": "貝琪宅邸",
+  "女僕咖啡廳內部": "僕咖",
+  "泛用街道(日)": "街道(日)",
+  "泛用街道(夜)": "街道(夜)",
+  "結婚式場": "婚禮",
+};
+for (const [alias, canonical] of Object.entries(backgroundAliases)) {
+  bgByName.set(alias, bgByName.get(canonical));
+}
 bgByName.set("河邊(夜))", bgByName.get("河邊(夜)"));
 
 const actionCgByName = {
@@ -427,6 +448,13 @@ function lineToEvents(line, ctx) {
     const operationMatch = directive.match(/^(.*?)[\s　]+(出現|消失)$/);
     const name = (operationMatch ? operationMatch[1] : directive).trim();
     const operation = operationMatch && operationMatch[2];
+    const actionCg = actionCgByName[name];
+    if (actionCg && operation === "出現") {
+      ctx.cgVisible = false;
+      ctx.cgPersistent = false;
+      return actionCgEvents(actionCg);
+    }
+    if (actionCg && operation === "消失") return [];
     if (operation === "消失") {
       ctx.cgVisible = false;
       ctx.cgPersistent = false;
@@ -450,7 +478,6 @@ function lineToEvents(line, ctx) {
       ctx.cgPersistent = true;
       return [...hidePortraits(), { type: "showImage", code: 30, image: "scene_mapo_cg.png", sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
     }
-    const actionCg = actionCgByName[name];
     if (actionCg) {
       ctx.cgVisible = false;
       ctx.cgPersistent = false;
@@ -938,6 +965,7 @@ function updateTodo() {
     "- `project/mainStory/CH1` 的手機簡訊、梗平躲藏、黑衣人、紅色麻婆碗、梗平VS宿儺、兔子攻擊、紙箱、紙箱人、小丑等 CG：目前以 `project/images/scene_mapo_cg.png` 複製素材暫代，待替換正式素材。",
     "- `project/mainStory/CH1 1-3`：來源要求「麻婆」立繪，但 `project/images/` 尚無可確認的麻婆角色立繪，該句暫不顯示立繪。",
     "- `project/mainStory/CH1 1-4`：來源標記 `河邊(夜))` 多一個右括號，生成器暫以 `河邊(夜)` mapping 處理，未改寫來源。",
+    "- `project/mainStory/CH2`～`CH6` 新增的泛用／日夜／室內背景名稱：目前映射到既有同類背景資產，待替換正式專用素材。",
     "",
     "## 待實作演出或小遊戲",
     "",

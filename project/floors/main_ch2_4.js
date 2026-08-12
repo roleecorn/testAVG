@@ -919,7 +919,43 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "於是，梗平跳出了他這輩子最完美的一次假面騎士空翻",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -971,19 +1007,6 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "兩人一左一右把IB架了起來，頭也不回的衝出了書店A",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 30,
@@ -1015,6 +1038,37 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
+        "兩人一左一右把IB架了起來，頭也不回的衝出了書店A",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1023,7 +1077,7 @@ main.floors.main_ch2_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a.png",
+            "image": "ms_bg_street_night.png",
             "loc": [
                 0,
                 0
@@ -1193,7 +1247,7 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "就在梗平即將陷入絕境的時候，手機上傳來了友人A的訊息",
+        "就在梗平即將陷入絕境的時候，手機上傳來了東山的訊息",
         {
             "type": "hideImage",
             "code": 10,
@@ -1206,7 +1260,43 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）兔子咖啡被修卡襲擊了！速來！",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "ms_ch1_phone_message_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]（手機）兔子咖啡被修卡襲擊了！速來！",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "choices",
             "text": "請選擇。",
@@ -1385,6 +1475,24 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "playBgm",
+                            "name": "twists_suspense.mp3",
+                            "keep": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -1550,6 +1658,19 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
+                        "【下一句字放大】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "\t[IB]一起走吧？",
                         {
                             "type": "hideImage",
@@ -1698,6 +1819,47 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "ms_bg_museum.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "兩人移動到了三樓休息室",
                         {
                             "type": "hideImage",
@@ -1724,7 +1886,43 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "牆上掛著衣服金髮女子的畫，彷彿在嘲笑梗平的行動",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1798,7 +1996,35 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "不等梗平反應，畫張開了大嘴把兩人一口吞下",
+                        "不等梗平反應，畫張開了大嘴把梗平一口吞下",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "ms_bg_museum.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1848,7 +2074,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "\t[梅]打擾一下",
+                        "\t[梅愛莉]打擾一下",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1885,7 +2111,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "\t[梅]你在說什麼？不好意思你擋到路了，請你離開一下",
+                        "\t[梅愛莉]你在說什麼？不好意思你擋到路了，請你離開一下",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1996,6 +2222,47 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "ms_bg_museum.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "IB在美術館二樓尋找無果後又回到了休息室，突然畫作吐出了一個人",
                         {
                             "type": "hideImage",
@@ -2009,7 +2276,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "\t[梅]這裡似乎沒有呢？我們去其他地方找找看",
+                        "\t[梅愛莉]這裡似乎沒有呢？我們去其他地方找找看",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2035,7 +2302,38 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "\t[梅]你是他的同行者嗎？",
+                        "\t[梅愛莉]你是他的同行者嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2051,6 +2349,11 @@ main.floors.main_ch2_4=
                         "梅愛莉指向畫作，畫上面有個微笑的金髮男子",
                         {
                             "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "hideImage",
                             "code": 10,
                             "time": 0,
                             "async": true
@@ -2061,7 +2364,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "\t[梅]看來他沒辦法幫忙了，所以就由我來代替吧！",
+                        "\t[梅愛莉]看來他沒辦法幫忙了，所以就由我來代替吧！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2100,7 +2403,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "\t[梅]那我們走吧！",
+                        "\t[梅愛莉]那我們走吧！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2139,7 +2442,43 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "【BE：美麗的玫瑰帶刺】",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[BE]（手機）美麗的玫瑰帶刺",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "changeFloor",
                             "floorId": "main_ch2_4",
@@ -2155,6 +2494,11 @@ main.floors.main_ch2_4=
                 {
                     "text": "天在呼喚、地在呼喚、人在呼喚，呼喚我打敗邪惡！",
                     "action": [
+                        {
+                            "type": "playBgm",
+                            "name": "bossa_casual_shop.mp3",
+                            "keep": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2278,6 +2622,19 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -2286,7 +2643,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_cafe.png",
+                            "image": "ms_bg_cafe_rabbit_interior.png",
                             "loc": [
                                 0,
                                 0
@@ -2369,19 +2726,6 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "梗平朝修卡攻擊了過去，並三下五除二的解決的修卡戰鬥員",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 30,
@@ -2413,10 +2757,23 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
+                        "梗平朝修卡攻擊了過去，並三下五除二的解決的修卡戰鬥員",
                         {
                             "type": "hideImage",
                             "code": 30,
                             "time": 150
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
                         },
                         {
                             "type": "showImage",
@@ -2590,7 +2947,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]是說友人A去哪裡了，不是他叫我過來的嗎？",
+                        "\t[梗平]是說東山去哪裡了，不是他叫我過來的嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2653,23 +3010,10 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "梗平的臉又挨了一次小兔子黑暗無限破後，順勢飛出了店外",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "scene_mapo_cg.png",
+                            "image": "ms_ch1_rabbit_attack_cg.png",
                             "sloc": [
                                 0,
                                 65,
@@ -2697,10 +3041,51 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
+                        "梗平的臉又挨了一次小兔子黑暗無限破後，順勢飛出了店外",
                         {
                             "type": "hideImage",
                             "code": 30,
                             "time": 150
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "ms_bg_street_night.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
                         },
                         {
                             "type": "showImage",

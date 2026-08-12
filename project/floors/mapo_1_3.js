@@ -889,7 +889,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[麻婆店長]吼吼，居然是承受我七成功力的好苗子，這位兄弟有沒有興趣精進麻婆道？",
+                        "\t[麻婆]吼吼，居然是承受我七成功力的好苗子，這位兄弟有沒有興趣精進麻婆道？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -963,6 +963,19 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -1017,7 +1030,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[麻婆店長]記住我的說過的話嗎？",
+                        "\t[麻婆]記住我的說過的話嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1054,7 +1067,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[麻婆店長]沒錯，我們抵達的正是時候，你看",
+                        "\t[麻婆]沒錯，我們抵達的正是時候，你看",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1132,7 +1145,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[迪奧]怎麼可能，我迪奧，居然會敗給區區的海鮮",
+                        "\t[DIO]怎麼可能，我迪奧，居然會敗給區區的海鮮",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1158,7 +1171,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[迪奧]咕哇阿阿阿阿！(爆發四散)",
+                        "\t[DIO]咕哇阿阿阿阿！(爆發四散)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1197,7 +1210,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[麻婆店長]還是太輕敵了，他本可以早早結束比賽的",
+                        "\t[麻婆]還是太輕敵了，他本可以早早結束比賽的",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1210,7 +1223,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[麻婆店長]卻偏偏要用最華麗的方式擊敗宿儺大廚",
+                        "\t[麻婆]卻偏偏要用最華麗的方式擊敗宿儺大廚",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1249,7 +1262,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[麻婆店長]哎呀，哥吉拉先生挺可惜的，技術高超但平凡的烤肉，缺乏創新",
+                        "\t[麻婆]哎呀，哥吉拉先生挺可惜的，技術高超但平凡的烤肉，缺乏創新",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1288,7 +1301,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[迪奧]嗯？梗平吧？",
+                        "\t[DIO]嗯？梗平吧？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1351,7 +1364,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[麻婆店長]梗平，你去打敗宿儺",
+                        "\t[麻婆]梗平，你去打敗宿儺",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1381,16 +1394,21 @@ main.floors.mapo_1_3=
                                 220
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
                         },
                         {
                             "type": "sleep",
-                            "time": 1500
+                            "time": 1000,
+                            "noSkip": true
                         },
                         {
                             "type": "hideImage",
                             "code": 30,
-                            "time": 150
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1500
                         },
                         {
                             "type": "hideImage",
@@ -1596,7 +1614,17 @@ main.floors.mapo_1_3=
                                 220
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
+                        },
+                        {
+                            "type": "sleep",
+                            "time": 1000,
+                            "noSkip": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
@@ -1611,11 +1639,6 @@ main.floors.mapo_1_3=
                             "async": true
                         },
                         "梗平，滿身瘡痍",
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2155,7 +2178,43 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "【BE：食神】",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[BE]（手機）食神",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "changeFloor",
                             "floorId": "mapo_1_3",
@@ -2296,7 +2355,7 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "\t[麻婆店長]你隨意",
+                        "\t[麻婆]你隨意",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2481,7 +2540,7 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        "\t[友人A]啊...總算活過來了",
+        "\t[東山]啊...總算活過來了",
         {
             "type": "hideImage",
             "code": 10,
@@ -2518,7 +2577,7 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        "\t[友人A]原本只是來打工的...老闆拿給我試吃我就吃了",
+        "\t[東山]原本只是來打工的...老闆拿給我試吃我就吃了",
         {
             "type": "hideImage",
             "code": 10,
@@ -2531,7 +2590,7 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        "\t[友人A]沒想到這裡的餐這麼可怕",
+        "\t[東山]沒想到這裡的餐這麼可怕",
         {
             "type": "hideImage",
             "code": 10,
@@ -2859,6 +2918,19 @@ main.floors.mapo_1_3=
             "async": true
         },
         "梗平說完後，便跑出了麻婆豆腐店",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "【過場】",
         {
             "type": "hideImage",
             "code": 10,

@@ -339,6 +339,19 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
+        "\t[【BGM]日常】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -347,7 +360,7 @@ main.floors.main_ch5_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_day.png",
             "loc": [
                 0,
                 0
@@ -428,7 +441,43 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "肥宅與梗平的羈絆還在繼續，肥宅朝著梗平發起了衝鋒",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -602,7 +651,35 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）好，從剛剛救出來了IB的哥哥得到了很有用的資訊",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_street.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]（手機）好，從剛剛救出來了IB的哥哥得到了很有用的資訊",
         {
             "type": "hideImage",
             "code": 10,
@@ -663,7 +740,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）那種東西怎麼樣都好吧",
+        "\t[東山]（手機）那種東西怎麼樣都好吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -700,7 +777,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）好消息是我們知道肥宅們為甚麼會這樣了",
+        "\t[東山]（手機）好消息是我們知道肥宅們為甚麼會這樣了",
         {
             "type": "hideImage",
             "code": 10,
@@ -713,7 +790,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）他們是因為一個叫「聖物」的東西不見了才會發瘋的",
+        "\t[東山]（手機）他們是因為一個叫「聖物」的東西不見了才會發瘋的",
         {
             "type": "hideImage",
             "code": 10,
@@ -726,7 +803,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）所以只要找回聖物就好了",
+        "\t[東山]（手機）所以只要找回聖物就好了",
         {
             "type": "hideImage",
             "code": 10,
@@ -739,7 +816,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "\t[友人B]（手機）那壞消息是什麼呢？",
+        "\t[蘭斯]（手機）那壞消息是什麼呢？",
         {
             "type": "hideImage",
             "code": 10,
@@ -752,7 +829,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）聖物被掛在拍賣網站上，要200萬",
+        "\t[東山]（手機）聖物被掛在拍賣網站上，要200萬",
         {
             "type": "hideImage",
             "code": 10,
@@ -765,7 +842,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "\t[友人C]（手機）多...多少？",
+        "\t[克莉絲]（手機）多...多少？",
         {
             "type": "hideImage",
             "code": 10,
@@ -778,7 +855,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）200萬，所以沒錯，各位我們要趕快去籌錢了",
+        "\t[東山]（手機）200萬，所以沒錯，各位我們要趕快去籌錢了",
         {
             "type": "hideImage",
             "code": 10,
@@ -791,7 +868,35 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "\t[友人A]（手機）我要去想辦法賺錢了，再見",
+        "\t[東山]（手機）我要去想辦法賺錢了，再見",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_street_day.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -907,7 +1012,20 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平就這樣踏入了一條風險跟利潤都極高的道路",
+                        "梗平選擇了捷徑(?)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【過場】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1169,6 +1287,11 @@ main.floors.main_ch5_1_exchange_1=
                         "梗平與警察一同踏上了在小鋼珠店奮戰的道路，成功獲取了可觀的資金",
                         {
                             "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "hideImage",
                             "code": 10,
                             "time": 0,
                             "async": true
@@ -1231,7 +1354,43 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【BE：梗平的賭博默示錄】",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[BE]（手機）梗平的賭博默示錄",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "changeFloor",
                             "floorId": "main_ch5_1_exchange_1",
@@ -1258,11 +1417,6 @@ main.floors.main_ch5_1_exchange_1=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -1314,6 +1468,19 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "【過場】",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -1322,7 +1489,7 @@ main.floors.main_ch5_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_horses_knee.png",
+                            "image": "ms_bg_bookstore_a_interior.png",
                             "loc": [
                                 0,
                                 0
@@ -1343,32 +1510,6 @@ main.floors.main_ch5_1_exchange_1=
                             "async": true
                         },
                         "梗平前往了熟悉的馬的膝蓋，即將迎接他的是無比艱難的挑戰",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "面對即將到來的Comike，繪師們心血堆積如山",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "倉庫裡滿山遍谷的小薄本，等待著膽敢挑戰包裝它的勇士",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1412,12 +1553,38 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        "面對即將到來的Comike，繪師們心血堆積如山",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "倉庫裡滿山遍谷的小薄本，等待著膽敢挑戰包裝它的勇士",
                         {
                             "type": "hideImage",
                             "code": 30,
                             "time": 150
                         },
-                        "\t[腐妞]你來啦，讓我們憶起奮戰到底吧",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[書店店員]你來啦，讓我們憶起奮戰到底吧",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1480,7 +1647,7 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[腐妞]今天差不多就這樣了，這個給你",
+                        "\t[書店店員]今天差不多就這樣了，這個給你",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1506,7 +1673,7 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[腐妞]之後有需要幫忙再說喔",
+                        "\t[書店店員]之後有需要幫忙再說喔",
                         {
                             "type": "hideImage",
                             "code": 10,

@@ -347,7 +347,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a.png",
+            "image": "ms_bg_street_day.png",
             "loc": [
                 0,
                 0
@@ -380,7 +380,43 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "但拉下的鐵捲門上寫著暫時公休的告示",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -556,6 +592,19 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -564,7 +613,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_warehouse.png",
+            "image": "ms_bg_warehouse_district_day.png",
             "loc": [
                 0,
                 0
@@ -758,6 +807,19 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -766,7 +828,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_street_day.png",
             "loc": [
                 0,
                 0
@@ -1060,7 +1122,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "\t[柯南]我們已經經過書店A三次了，我好想進去",
+        "\t[小黑]我們已經經過書店A三次了，我好想進去",
         {
             "type": "hideImage",
             "code": 10,
@@ -1086,6 +1148,19 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
+        "【過場】",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1094,7 +1169,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_family_restaurant.png",
+            "image": "ms_bg_family_restaurant_interior.png",
             "loc": [
                 0,
                 0
@@ -1114,7 +1189,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "走進餐廳的梗平看到了已經坐在那裏的友人B",
+        "走進餐廳的梗平看到了已經坐在那裏的蘭斯",
         {
             "type": "hideImage",
             "code": 10,
@@ -1127,7 +1202,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "打起歪腦筋的梗平立刻帶著小朋友與友人B併了桌",
+        "打起歪腦筋的梗平立刻帶著小朋友與蘭斯併了桌",
         {
             "type": "hideImage",
             "code": 10,
@@ -1188,7 +1263,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]誒？有甚麼線索嗎",
+        "\t[蘭斯]誒？有甚麼線索嗎",
         {
             "type": "hideImage",
             "code": 10,
@@ -1225,7 +1300,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]那你有看過書店A了嗎？",
+        "\t[蘭斯]那你有看過書店A了嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1334,7 +1409,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "\t[友人B]是這樣嗎？",
+        "\t[蘭斯]是這樣嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1426,7 +1501,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[柯南]才沒有那種東西呢",
+                        "\t[小黑]才沒有那種東西呢",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1648,7 +1723,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人B]我推薦這裡的芭非喔，水果給很足",
+                        "\t[蘭斯]我推薦這裡的芭非喔，水果給很足",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1661,7 +1736,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人B]放心吧，梗平的錢包有錢",
+                        "\t[蘭斯]放心吧，梗平的錢包有錢",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1674,7 +1749,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[柯南]那我就不客氣了",
+                        "\t[小黑]那我就不客氣了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1748,7 +1823,7 @@ main.floors.main_ch2_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]沒辦法了，看來在下只剩下一個選擇，他們就交給你了，Ｂ",
+                        "\t[梗平]沒辦法了，看來我只剩下一個選擇，他們就交給你了，Ｂ",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1761,7 +1836,20 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人B]慢走～",
+                        "\t[蘭斯]慢走～",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "【過場】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1782,7 +1870,7 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_warehouse_district.png",
+                            "image": "ms_bg_street_night.png",
                             "loc": [
                                 0,
                                 0
@@ -1882,6 +1970,10 @@ main.floors.main_ch2_2=
                             "time": 0
                         },
                         {
+                            "type": "comment",
+                            "text": "TODO: 【下面一句不使用立繪】"
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -1955,19 +2047,6 @@ main.floors.main_ch2_2=
                             "async": true
                         },
                         "一個包裹棉被的神祕生物在地上蠕動，看來騎腳踏車的人撞到梗平後自己也跌倒了",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "【棉被怪　藤和艾莉歐】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2056,19 +2135,6 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "在夕陽照射下，彷彿散發著粒子的藍髮少女",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 30,
@@ -2098,6 +2164,19 @@ main.floors.main_ch2_2=
                             "code": 30,
                             "time": 0
                         },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "在夕陽照射下，彷彿散發著粒子的藍髮少女",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2262,7 +2341,43 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "【BE：第三類接觸？】",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[BE]（手機）第三類接觸？",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "changeFloor",
                             "floorId": "main_ch2_2",
@@ -2340,7 +2455,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[不知道是誰的松]有喔，快跟我來吧",
+                        "\t[警察]有喔，快跟我來吧",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2401,7 +2516,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人B]好喔",
+                        "\t[蘭斯]好喔",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2440,7 +2555,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人B]雖然很不想承認，但是，是",
+                        "\t[蘭斯]雖然很不想承認，但是，是",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2466,7 +2581,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[友人B]嗯，看起來他今天對你們做了一些不可原諒的事情呢",
+                        "\t[蘭斯]嗯，看起來他今天對你們做了一些不可原諒的事情呢",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2479,17 +2594,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "接下來小朋友們開始了跟友人B一起吐槽梗平的時光",
-                        {
-                            "type": "changeFloor",
-                            "floorId": "main_ch2_3",
-                            "loc": [
-                                6,
-                                10
-                            ],
-                            "direction": "up",
-                            "time": 500
-                        }
+                        "接下來小朋友們開始了跟蘭斯一起吐槽梗平的時光"
                     ]
                 }
             ]
