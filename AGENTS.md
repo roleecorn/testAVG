@@ -2,6 +2,16 @@
 
 這份文件是所有 AI Agent 的專案入口，只保留路由、優先序與不可違反的全域規則。功能實作規範的唯一真實來源是 `.codex/skills/mota-avg-editor/references/`；不得在其他目錄維護平行副本。
 
+## 最高專案硬規則：劇情來源內容不得由 Agent 編修
+
+以下規則是僅次於使用者當次明確指示的最高專案規則，高於本文件其他段落、任何 Skill、reference、TODO、範例與歷史資料：
+
+- `project/mainStory/` 與 `project/story/` 是權威劇情來源資料夾。Agent **禁止編修來源內容**：不得自行改字、補寫、刪句、潤稿、修正錯字、重排段落、格式化、局部 patch，或依 Story IR、scene／floor、TODO 與 Agent 判斷反向改寫來源。
+- Agent 允許的來源檔案操作只有兩種：新增完整來源檔，以及以已確認的完整新來源整檔覆蓋舊來源。內容必須逐字來自使用者提供、ZIP／DOCX 等輸入經規定流程提取並驗收的文本，或其他可追溯外部來源；不得在落地前後由 Agent 改寫。
+- 整檔覆蓋不是內容修正授權。若只取得局部修訂指示、無法確認完整新版本、角色歸屬不明或來源有衝突，Agent 必須停止來源落地並建立 question／TODO，不得把局部差異自行合併進舊稿。
+- 除上述新增與整檔覆蓋外，Agent 禁止刪除、搬移或重新命名來源檔。允許落地的來源檔必須保存來源路徑與 SHA-256，並依任務流程與對應 Story IR、scene／floor 一起 staging／提交。
+- 「更新劇情」不代表 Agent 撰寫或修正來源文本；它代表依本文件記錄的上一個劇情更新基準 commit，檢查兩個來源資料夾的變動，再更新對應中間產物與 scene／floor。若本次輸入是 ZIP 等新來源，則先依上述規則新增或整檔覆蓋來源，再進入相同更新流程。
+
 ## 權威順序與根節點
 
 規則衝突時依序採用：
@@ -74,7 +84,7 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 ### 角色劇情 ZIP 的強制提交流程
 
 - 使用單一 ZIP 匯入多位角色時，逐角色完成 A 至 G；每位角色通過 G 後立即建立一個內容 commit，不得跨角色混合。
-- 角色內容 commit 必須包含該角色的 `project/story/` 真實來源文本、對應 `project/story-ir/`、其 scene／floor、素材、事件入口和共用檔案中只屬於該角色的行。Story IR 絕不是獨立交付物：任何 IR 新增、修改或刪除，都必須在同一個角色 commit 中帶有對應 scene／floor 的新增、修改或刪除；不得建立 IR-only commit。
+- 角色內容 commit 必須包含該角色依最高規則新增或整檔覆蓋的 `project/story/` 真實來源文本、對應 `project/story-ir/`、其 scene／floor、素材、事件入口和共用檔案中只屬於該角色的行。若來源變動早已由外部 commit 提交，本次不得重複 staging，但仍須以來源路徑與 SHA-256 追溯。Story IR 絕不是獨立交付物：任何 IR 新增、修改或刪除，都必須在同一個角色 commit 中帶有對應 scene／floor 的新增、修改或刪除；不得建立 IR-only commit。
 - 所有角色完成後，再建立只更新本文件基準雜湊的最後 commit。完整分階段、覆蓋與 staging 規則見 [角色劇情 ZIP 任務拆分](.codex/skills/mota-avg-editor/references/archive-story-task-splitting.md)。
 - 若未能完成上述逐角色 staging 或驗證，不得宣稱已完成提交；應保留變更並回報阻塞原因。
 
@@ -92,11 +102,16 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 
 `AI_AVG_EDITOR_GUIDE.md` 僅保留為轉向本文件與 canonical references 的相容入口。
 
-## 更新
-劇情可能會在某個時間點後更新；如果我要求更新劇情，只需要考慮以下 commit 後（不含）的劇情即可：
+## 劇情更新定義與提交流程
+
+「更新劇情」只處理 `project/mainStory/` 與 `project/story/` 在下方基準 commit 之後（不含）的來源變動；Agent 不得編修來源內容。流程固定為：盤點來源變動 → 驗證並更新 Story IR → 同步更新對應 scene／floor 與必要入口 → 驗證可觸發流程。若任務本身提供 ZIP／DOCX／完整 TXT 等新來源，可先依最高規則新增或整檔覆蓋來源檔。
+
+若本次有來源變動但無法同步產生對應 IR 與 scene／floor，必須停止受影響分支，不得先提交 IR，也不得把未完成交易的來源檔案單獨提交。
+
+劇情更新完成後一律建立兩個 commit：第一個內容 commit 提交本次依規則新增／整檔覆蓋的來源（若有）、IR、scene／floor、必要入口／註冊、TODO、驗證紀錄與其他必要修正；第二個 commit 僅更新本節的基準 commit，將第一個 commit 的完整雜湊寫入下方。完成第二個 commit 後，下一次更新以該雜湊為新的起點。
+
+目前基準 commit：
 
 42e374e7feaa3885085b6586692b18d6212ea20f
 
-每次更新劇情一律建立兩個 commit：第一個 commit 提交實際劇情更新；第二個 commit 僅更新本節的基準 commit，將第一個 commit 的完整雜湊寫入上方。完成第二個 commit 後，下一次更新以該雜湊為新的起點。
-
-所有劇情更新的實際內容 commit 都必須遵守來源文本 → Story IR → scene／floor 的原子性：只要 Story IR 有變更，就必須同一 commit 更新對應 scene／floor；若無法同步更新 scene／floor，必須停止受影響分支，不得先提交或保留該 IR 變更作為獨立成果。
+所有劇情更新的內容 commit 都必須遵守來源變動 → Story IR → scene／floor 的原子性：只要 Story IR 有變更，就必須同一 commit 更新對應 scene／floor；Agent 不得反向編修來源。若來源是本次由 Agent 依規則新增或整檔覆蓋，也必須納入同一內容 commit，不得建立 source-only 或 IR-only commit。

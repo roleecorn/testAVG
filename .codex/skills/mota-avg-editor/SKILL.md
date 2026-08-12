@@ -23,6 +23,7 @@ Coordinate H5 Mota AVG work from one root and hand atomic artifacts to canonical
 
 For every main-story or character-story change, the deliverable is a playable story update, not a source-file import. The mandatory chain is authoritative source text → validated Story IR → corresponding scene/floor implementation → reachable trigger or event entry when the branch requires one.
 
+- Source boundary: `project/mainStory/` and `project/story/` are authoritative inputs. The Agent must never author, partially edit, polish, correct, reformat, delete, move, rename, or reverse-generate their content. It may create a new source file or replace an existing source file in full only from a confirmed, traceable user/ZIP/external source whose text is preserved without Agent rewriting; such source files may be staged and committed only with their matching Story IR and scene/floor transaction.
 - Story IR is never an independent deliverable or commit boundary. Any add, update, or deletion under `project/story-ir/` must be accompanied by the corresponding scene/floor add, update, or deletion in the same content commit.
 - An IR-only commit is invalid. If the corresponding scene/floor cannot be updated or validated, stop the affected branch, leave the IR unchanged, and record the blocker in the required question/TODO files.
 - For an existing story owner, compare the new source with the prior source and update the existing scenes/floors; do not create a parallel branch merely because the input arrived in a ZIP.

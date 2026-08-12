@@ -4,7 +4,7 @@
 
 主線與角色支線只允許在來源位置與觸發方式上不同，不得使用不同的文本理解或事件生成契約。兩者一律依序執行：
 
-1. 讀取自然語言來源；主線以 `project/mainStory/CH1`～`CH6`、角色支線以 `project/story/*.txt` 為唯一真實來源。
+1. 建立或讀取自然語言來源；主線以 `project/mainStory/CH1`～`CH6`、角色支線以 `project/story/*.txt` 為唯一真實來源。Agent 不得編修來源內容，但可從已確認、可追溯的完整外部輸入新增來源檔，或以完整新版本整檔覆蓋舊來源；不得自行合併局部修訂。
 2. 由語意理解／正規化層把原文轉成可序列化的 Story IR。這一層可由 AI、確定性 parser，或兩者組合完成；只有文件明訂的 DSL 才能只靠固定字串辨識。
 3. 在產生任何引擎事件前驗證 Story IR 的 schema、必要參數、場景流程、素材檔案與 `project/data.js` 登錄。未辨識或無法補齊的製作指令必須停止受影響範圍並依 question／TODO 規則記錄。
 4. 只從已驗證的 Story IR 確定性產生 floor 與引擎事件 JSON。事件生成階段不得重新解讀自然語言，也不得直接讀取原文並猜測事件。
@@ -18,12 +18,12 @@ Story IR 必須納入 Git，統一放在 `project/story-ir/main/` 與 `project/s
 Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.json` 或 `project/story-ir/character/*.json` 的新增、修改、刪除，都必須在同一個內容 commit 中帶有對應 scene／floor 的新增、修改、刪除；不得建立或接受 IR-only commit。
 
 - 主線：`node scripts/generate_main_story.js --refresh-ir` 重新理解來源並產生 IR，之後必須在同一工作交易中重建對應主線 floor。
-- 角色支線：更新權威 `project/story/*.txt` 後，必須同步更新對應角色 IR，並以 `node scripts/manage_story_ir.js --emit-character` 寫回對應 floor。
+- 角色支線：權威 `project/story/*.txt` 可由已驗收 ZIP／DOCX／TXT 等完整來源新增或整檔覆蓋，但 Agent 不得改寫其內容；之後必須同步更新對應角色 IR，並以 `node scripts/manage_story_ir.js --emit-character` 寫回對應 floor。
 - 「對應」是指 IR 中所有受影響 scene 的實際 floor 檔，不是只更新一個 manifest、索引或驗證檔。若新增 scene，必須新增可觸發的 floor；若刪除 scene，必須同步移除或改寫其入口與 floor。
 - 若 IR 改動後 emitter 產生的 scene／floor 沒有任何對應 diff，代表該 IR 改動不能單獨成立：不要提交 IR，應還原不必要的 IR 變更或停止並記錄疑慮。
 - 若因來源衝突、素材缺失或未解析指令而無法更新 scene／floor，受影響分支必須停在來源／疑慮階段，不得先落地 IR。
 
-提交前必須在 staged diff 中同時看到來源文本（若有變更）、受影響 Story IR、對應 scene／floor，以及必要的事件入口／素材註冊；這些檔案屬於同一角色或同一主線更新交易。
+提交前必須在 staged diff 中同時看到本次新增／整檔覆蓋的來源文本（若有）、受影響 Story IR、對應 scene／floor，以及必要的事件入口／素材註冊；若來源變動早已由外部 commit 提交，則以 source path／SHA-256 追溯，不重複 staging。這些檔案屬於同一角色或同一主線更新交易。
 
 ## 共用 Story IR（強制）
 

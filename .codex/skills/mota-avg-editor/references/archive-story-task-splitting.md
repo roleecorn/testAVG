@@ -32,7 +32,7 @@ ZIP
 | 階段 | 單一責任 | 必須重用的既有能力 | 驗收後交接 |
 | --- | --- | --- | --- |
 | A | 安全解壓並建立完整檔案清單 | 本流程的 A 契約 | 劇本候選交 B；圖片候選交 C |
-| B | 每份劇本提取為 UTF-8 TXT，並把角色劇情落地為 `project/story/` 真實來源 | [專案架構與輸出原則](project-overview.md) | 已驗收文本交 C 與 F |
+| B | 每份劇本提取為 UTF-8 TXT，並以新增或整檔覆蓋方式落地為 `project/story/` 真實來源 | [專案架構與輸出原則](project-overview.md) | 已驗收來源文本交 C 與 F |
 | C | 確認角色身分、既有／新增角色及可用圖片 | [圖片與立繪](images.md) 的角色與素材識別規則 | 已確認基準圖交 D；角色結論交 F |
 | D | 由單一核准基準圖生成六表情表 | `anime-expression-grid`、`imagegen`、`mota-avg-editor` | 核准表情表交 E |
 | E | 去背、切圖、驗圖並接入遊戲圖片 | [圖片與立繪](images.md) | 可用立繪清單交 F |
@@ -67,7 +67,7 @@ ZIP
 - `script-manifest.md`：原檔與文字檔配對、文字提取狀態、章節／版本是否可判定。
 - `script-questions.md`：無法轉檔、疑似重複版或章節順序不明等事項。
 
-**角色劇情真實來源落地：** `project/story/` 內的角色劇情文本是角色劇情內容與章節結構的唯一真實來源（source of truth），不是僅供追溯而保留的原始附件；scene／floor 只是依文本轉換出的遊戲實作。只要本步將檔案分類為角色劇情，必須在交給 `F` 之前，將 UTF-8 純文字版本放入 `project/story/`。TXT 來源直接保留原檔名；DOCX、PDF 或其他來源先依本步產生無 BOM TXT，再放入 `project/story/`。`tmp/character-story-import/` 的 `text/` 僅是提取中間產物，不得作為角色劇情的真實來源。若 `project/story/` 已有同名檔案，且 `C` 已確認劇本屬於既有角色，必須以本次已驗收的新 TXT 覆蓋該角色原本的真實來源文本，再交給 `F` 比較新舊版本並修改原有 scene／floor。只有角色身分尚未確認時才禁止覆蓋；此時改用帶來源或版本的可追溯檔名，並在 `script-manifest.md` 或 TODO 記錄原檔與正式檔配對。
+**角色劇情真實來源落地：** `project/story/` 內的角色劇情文本是角色劇情內容與章節結構的唯一真實來源（source of truth），不是僅供追溯而保留的原始附件；scene／floor 只是依文本轉換出的遊戲實作。只要本步將檔案分類為角色劇情，必須在交給 `F` 前將已驗收的 UTF-8 純文字版本以完整檔案落地到 `project/story/`。新角色可新增檔案；既有角色只有在 `C` 已確認身分且本次輸入是完整新版本時，才可以整檔覆蓋原來源。Agent 不得局部 patch、合併零散修訂、潤稿、補寫、修錯字、格式化、刪除、搬移或重新命名來源；DOCX／PDF 提取也只能依原文順序確定性轉成無 BOM TXT，不得改寫內容。角色身分未確認時可以使用帶原始來源或版本的可追溯檔名新增完整來源，但禁止覆蓋任何既有來源，且 D、E、F 仍須局部暫停；版本完整性或覆蓋目標未確認時同樣禁止覆蓋並記錄 questions／TODO。
 
 **驗收／下一步：** 用明確 UTF-8 抽讀，確認中文、角色名、標點和段落順序正常。文字檔一律先交給 `F`；若有多份，不可在此步合併。
 
@@ -115,7 +115,7 @@ ZIP
 
 **工作：** 依 [純文字轉事件 JSON](text-to-event-json.md)、[樓層與場景](floors.md) 與 [圖片與立繪](images.md) 建立場景。劇本來源不明、章節順序未確認、角色身分未確認或缺圖時，不得自行補劇情、猜選角色或改用其他角色立繪。
 
-若 `C` 判定為既有角色，`F` 開始前必須先以已驗收的新 TXT 覆蓋該角色 `project/story/` 真實來源文本，保留 Git 歷史作為舊稿追溯，再比較新舊稿的章節、台詞、選項、演出與素材差異，修改原有 scene／floor。scene／floor 與文本有劇情內容差異時，必須以 `project/story/` 文本為準；不得反向以現有 scene／floor 覆寫、補改或取代文本。只有新稿明確增加章節時才可增加對應 floor；不得因為 ZIP 來源不同就另建一套新角色樓層。
+若 `C` 判定為既有角色，`F` 開始前必須以 B 已驗收的完整新 TXT 整檔覆蓋該角色 `project/story/` 真實來源文本，再比較新舊稿的章節、台詞、選項、演出與素材差異，修改原有 scene／floor。Agent 只能原樣落地完整來源，不得自行修正或合併來源內容。scene／floor 與文本有劇情內容差異時，必須以 `project/story/` 文本為準；不得反向以現有 scene／floor 覆寫、補改或取代文本。只有新稿明確增加章節時才可增加對應 floor；不得因為 ZIP 來源不同就另建一套新角色樓層。
 
 `F` 的完成條件不是「產生一份 IR」或「新增幾個 floor 檔」，而是完成來源文本 → Story IR → scene／floor → 事件入口的整條更新鏈：
 
@@ -132,6 +132,6 @@ ZIP
 
 **工作：** 逐一檢查產物鏈是否完整，確認每份 `.txt`、角色判定、表情表、切圖、圖片註冊與場景修改皆能追溯至 ZIP 中的原始檔。特別確認每個受影響 scene 都同時存在於 Story IR 與 floor，且事件入口可實際選取；不可只驗證 IR schema 或檔案存在。再依 [AI 撰寫檢查清單](checklist.md) 驗收。
 
-**輸出契約：** 最終交付清單：原始 ZIP、解壓清單、`project/story/` 正式故事 TXT、文字提取產物、角色判定、六格表、六張立繪、Story IR、對應 scene／floor、可觸發事件入口、場景變更與未解 TODO 的路徑／狀態。
+**輸出契約：** 最終交付清單：原始 ZIP、解壓清單、本次新增或整檔覆蓋的 `project/story/` 正式故事 TXT 及其來源路徑／SHA-256、文字提取產物、角色判定、六格表、六張立繪、Story IR、對應 scene／floor、可觸發事件入口、場景變更與未解 TODO 的路徑／狀態。
 
-**版本控制：** 每位角色完成 `G` 的整合驗收後，必須立刻為該角色的完整變更建立一次獨立 Git commit。該 commit 必須同時包含該角色的 `project/story/` 真實故事 TXT、受影響 `project/story-ir/`、所有對應 scene／floor、素材、事件入口、共用註冊檔中屬於該角色的行，以及必要 TODO／流程變更；Story IR 不得獨自提交，也不得把 scene／floor 延後到另一個 commit。不可把多位角色混在同一個 commit；若 ZIP 含多位角色，必須依角色重複 A 至 G，並在每位角色完成後各自 commit。提交前先確認 `git diff --cached --name-only` 與 `git diff --cached` 同時呈現來源、IR 與對應 scene／floor，且只包含該角色內容；共用檔案不得整檔加入，未確認角色的素材另建待確認素材 commit。提交後立即用 `git show --stat --name-only <commit>` 複核，確認沒有跨角色、IR-only 或無關檔案。所有角色 commit 完成後，才可建立最後一個只更新 `AGENTS.md` 本節基準雜湊的 commit，將最後一個角色劇情 commit 的完整雜湊寫入；該基準 commit 不得混入任何劇情、圖片、註冊或 TODO 變更。
+**版本控制：** 每位角色完成 `G` 的整合驗收後，必須立刻為該角色的完整變更建立一次獨立 Git commit。該 commit 必須同時包含本次新增或整檔覆蓋的 `project/story/` 真實故事 TXT、受影響 `project/story-ir/`、所有對應 scene／floor、素材、事件入口、共用註冊檔中只屬於該角色的行，以及必要 TODO／流程變更；Story IR 不得獨自提交，也不得把 scene／floor 延後到另一個 commit。不可把多位角色混在同一個 commit；若 ZIP 含多位角色，必須依角色重複 A 至 G，並在每位角色完成後各自 commit。提交前先確認 `git diff --cached --name-only` 與 `git diff --cached` 同時呈現來源、IR 與對應 scene／floor，且只包含該角色內容；共用檔案不得整檔加入。提交後立即用 `git show --stat --name-only <commit>` 複核，確認沒有跨角色、source-only、IR-only 或無關檔案。所有角色 commit 完成後，才可建立最後一個只更新 `AGENTS.md` 本節基準雜湊的 commit，將最後一個角色內容 commit 的完整雜湊寫入；該基準 commit 不得混入任何劇情、圖片、註冊或 TODO 變更。

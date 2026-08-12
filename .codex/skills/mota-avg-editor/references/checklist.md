@@ -3,6 +3,8 @@
 這份清單只保存所有分支共用的交付檢查。圖片、樓層、BGM、CG、表情圖、ZIP 與 Akiba 等專用驗收，必須讀取本次實際使用之 reference／子 Skill 的 `Validation` 或驗收段落，不在此重複。
 
 - 已讀取並遵守本次實際使用的每一個 reference／子 Skill 驗收段落。
+- `project/mainStory/` 與 `project/story/` 沒有任何 Agent 自行編修、局部 patch、補寫、潤稿、修錯字、格式化、刪除、搬移、重新命名或由衍生物反向改寫；若本次有來源檔變更，只能是可追溯完整來源的新增或整檔覆蓋。
+- 本次新增或整檔覆蓋的來源檔已核對輸入內容與 SHA-256，並與對應 Story IR、scene／floor 同一內容 commit 提交；來源若早已由外部 commit 提交，則未重複 staging。
 - 所有角色劇情變更都能追溯至 `project/story/*.txt` 真實來源；scene／floor 沒有反向取代文本。
 - 主線與角色支線都先由來源文本產生相同 schema 的可序列化 Story IR，通過 schema、必要參數、流程與素材驗證後才產生引擎事件；沒有任一分支直接從未驗證原文生成事件。
 - 每個受影響的劇情 chapter／scene 都同時存在於來源文本、Story IR 與對應 scene／floor；只新增或修改 Story IR 而沒有對應 scene／floor 更新，不算完成。
