@@ -203,7 +203,7 @@ function testEveryRegularLocationHasMiniGame() {
       assert(definitions.length > 0, `missing minigame list for ${location.id}`);
       for (const one of definitions) {
         assert(one.title);
-        assert(["akibaLocation", "slot777", "akibaFlapper", "westernDuel"].includes(one.gameId));
+        assert(["akibaLocation", "slot777", "akibaFlapper", "westernDuel", "bookStack"].includes(one.gameId));
       }
     }
   }
@@ -214,6 +214,14 @@ function testEveryRegularLocationHasMiniGame() {
   assert.deepEqual(
     plugin.getAkibaMiniGameDefinitions("music_venue").map((definition) => definition.gameId),
     ["akibaLocation", "westernDuel"]
+  );
+  assert.deepEqual(
+    plugin.getAkibaMiniGameDefinitions("used_bookstore").map((definition) => definition.gameId),
+    ["akibaLocation", "bookStack"]
+  );
+  assert.deepEqual(
+    plugin.getAkibaMiniGameDefinitions("blue_bookstore").map((definition) => definition.gameId),
+    ["akibaLocation", "bookStack"]
   );
 }
 
@@ -278,6 +286,30 @@ function testMusicVenueOffersStageTimingAndWesternDuel() {
   assert(choiceEvent.choices[1].action[0].function.includes("westernDuel"));
 }
 
+function testBookstoresOfferExistingGameAndBookStack() {
+  for (const [locationId, placeName, originalTitle] of [
+    ["used_bookstore", "古書店", "古書封面配對"],
+    ["blue_bookstore", "藍色書店", "漫畫連號排架"],
+  ]) {
+    const { core, plugin } = createPlugin({
+      akiba_event_state_initialized: true,
+      akiba_event_state_version: eventMeta.version,
+      akiba_completed_events: [],
+      akiba_active_events: [],
+      akiba_last_locationId: locationId,
+      akiba_last_placeName: placeName,
+    });
+    plugin.showAkibaLocationEventChoices();
+    const choiceEvent = core.actions.at(-1);
+    assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), [
+      `玩「${originalTitle}」`,
+      "玩「疊書挑戰」",
+      "離開",
+    ]);
+    assert(choiceEvent.choices[1].action[0].function.includes("bookStack"));
+  }
+}
+
 function testMiniGameResultUsesSeparateProgressFlags() {
   const { core, plugin } = createPlugin();
   let launches = 0;
@@ -338,6 +370,26 @@ function testWesternDuelUsesTheatreProgressKeyAndOptions() {
   assert.equal(core.flags.akiba_last_minigame_title, "正午對決");
 }
 
+function testBookStackUsesPerBookstoreProgressKeyAndOptions() {
+  for (const locationId of ["used_bookstore", "blue_bookstore"]) {
+    const { core, plugin } = createPlugin();
+    plugin.startMiniGame = (gameId, options, callback) => {
+      assert.equal(gameId, "bookStack");
+      assert.equal(options.locationId, locationId);
+      assert.equal(options.minClearBooks, 8);
+      assert.equal(options.seconds, 90);
+      callback({ result: "win", reason: "imbalance", score: 1234, books: 9 });
+      return true;
+    };
+
+    assert.equal(plugin.startAkibaLocationMiniGame(locationId, "bookStack"), true);
+    assert.deepEqual(core.flags.akiba_minigame_cleared, [`${locationId}:bookStack`]);
+    assert.deepEqual(core.flags.akiba_minigame_best_scores, { [`${locationId}:bookStack`]: 1234 });
+    assert.equal(core.flags.akiba_last_minigame_game_id, "bookStack");
+    assert.equal(core.flags.akiba_last_minigame_title, "疊書挑戰");
+  }
+}
+
 testFreshInitialization();
 testVersionMigrationPreservesProgress();
 testCompletionCountsOnlyOnce();
@@ -349,9 +401,11 @@ testLocationChoiceIncludesMiniGameWithoutStoryEvent();
 testLocationChoiceKeepsStoryEventAndMiniGame();
 testGameCenterOffersBothArcadeGames();
 testMusicVenueOffersStageTimingAndWesternDuel();
+testBookstoresOfferExistingGameAndBookStack();
 testMiniGameResultUsesSeparateProgressFlags();
 testSecondGameAtSameLocationUsesSeparateProgressKey();
 testWesternDuelUsesTheatreProgressKeyAndOptions();
+testBookStackUsesPerBookstoreProgressKeyAndOptions();
 
 delete global.core;
 delete global.main;

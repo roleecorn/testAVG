@@ -38,6 +38,7 @@
 - `akibaLocation`
 - `akibaFlapper`
 - `westernDuel`
+- `bookStack`
 
 通用入口：
 
@@ -58,6 +59,7 @@ core.plugin.startAkibaLocationMiniGame(locationId, gameId);
 
 - 電子遊樂場提供既有 `slot777`（固定三輪後結算）與 `akibaFlapper`「電波飛鳥」（通過 8 道閘門勝利，碰撞、越界或逾時失敗）。
 - 劇場提供既有 `akibaLocation`「舞台打拍」與 `westernDuel`「正午對決」（每局隨機指定 5～10 秒的正整數目標，以毫秒誤差判定）。
+- 古書店與藍色書店各自保留既有 `akibaLocation` 玩法，並提供 `bookStack`「疊書挑戰」：書本左右交替滑入，玩家以點擊／觸控放下；逐層重心偏移會增加搖晃並導致倒塌，倒塌前疊滿 8 本即通關。
 - 其餘一般地點呼叫 `akibaLocation`，並以 `locationId` 選取專屬玩法設定。
 - `idle_clock` 保留人物交流回合用途，不可加入一般小遊戲。
 
@@ -66,6 +68,8 @@ core.plugin.startAkibaLocationMiniGame(locationId, gameId);
 `extensions/minigames/akibaFlapper.js` 是電子遊樂場的獨立 Canvas 街機玩法。以滑鼠點擊或觸控拍翼為主要操作，鍵盤只是輔助；勝利、碰撞失敗、邊界失敗、逾時與取消都會停止 animation frame、移除監聽器並回傳結果。
 
 `extensions/minigames/westernDuel.js` 是劇場的獨立 DOM 計時玩法。每局從 5～10 中等機率抽出一個正整數秒數，開始後碼錶只顯示前 0.8 秒，玩家以滑鼠／觸控在指定時間拔槍；誤差 ±100ms 內勝利，太早、太晚、逾時與取消都有有限結束點。重新挑戰會重抽目標。視覺素材完整取自 Vaca Roxa 的 CC0 `Generic OLDWEST Pack` Version 1.0，原始 ZIP、完整解壓內容與授權紀錄保存在 `project/images/minigames/westernDuel/`；遊戲邏輯由本專案自行實作。
+
+`extensions/minigames/bookStack.js` 是書店共用的獨立 Canvas 疊放玩法。每本書從左或右滑入，玩家點擊後落在上一層；遊戲以各接觸面的上層加權重心估算穩定度，偏移與高度會放大搖晃，失衡、落空或逾時都會播放倒塌動畫後結算。預設倒塌前疊滿 8 本為勝利，並支援重新挑戰、取消與完整 animation frame／listener 清理；書本、落點陰影、書店背景都由 Canvas 繪製，書本以封面、書脊、頁線與書籤表現，不在書面上顯示數字標籤，也不需要外部素材授權。
 
 Akiba 小遊戲結果使用獨立 flags，不得寫入角色事件的 `akiba_completed_events`：
 
@@ -76,7 +80,7 @@ Akiba 小遊戲結果使用獨立 flags，不得寫入角色事件的 `akiba_com
 - `akiba_last_minigame_title`
 - 共用最近結果 `lastMiniGameResult`、`lastMiniGameScore`
 
-`akiba_minigame_cleared` 與 `akiba_minigame_best_scores` 預設仍以 `locationId` 為 key；同一地點有第二款遊戲時使用 `locationId:gameId`，避免兩款遊戲互相覆寫進度。電子遊樂場既有拉霸繼續沿用 `game_center`，電波飛鳥使用 `game_center:akibaFlapper`；劇場舞台打拍沿用 `music_venue`，正午對決使用 `music_venue:westernDuel`。
+`akiba_minigame_cleared` 與 `akiba_minigame_best_scores` 預設仍以 `locationId` 為 key；同一地點有第二款遊戲時使用 `locationId:gameId`，避免兩款遊戲互相覆寫進度。電子遊樂場既有拉霸繼續沿用 `game_center`，電波飛鳥使用 `game_center:akibaFlapper`；劇場舞台打拍沿用 `music_venue`，正午對決使用 `music_venue:westernDuel`；古書店與藍色書店的既有玩法分別沿用 `used_bookstore`、`blue_bookstore`，疊書挑戰則分別使用 `used_bookstore:bookStack`、`blue_bookstore:bookStack`。
 
 ## 接入原則
 
@@ -161,10 +165,11 @@ Akiba 地點小遊戲另執行：
 node scripts/test_akiba_location_minigame.js
 node scripts/test_akiba_flapper.js
 node scripts/test_western_duel.js
+node scripts/test_book_stack.js
 node scripts/test_demo_minigames.js
 node scripts/test_akiba_event_manager.js
 ```
 
-第一個測試會確認二十組自訂地點設定與 mapping 一致、每局有有限結束條件、全螢幕 body overlay、416×416／208×416 可建立操作介面，並驗證取消、通關、重入、麻將盤面與 DOM／timer／listener 清理。第二個測試驗證電波飛鳥在全螢幕 overlay 下的 416×416／208×416 滑鼠控制、8 閘門通關、碰撞失敗與 animation frame／listener 清理。第三個測試驗證正午對決只會抽出 5～10 的正整數目標、重新挑戰會重抽，以及素材路徑、全螢幕響應式滑鼠介面、毫秒判定、碼錶遮蔽、逾時與清理。新增的 demo 小遊戲測試驗證 `ticTacToe` 與 `slot777` 的全螢幕掛載、放大版面、素材、操作與清理。第四個測試會確認每個一般地點都有入口、電子遊樂場與劇場各自同時顯示兩款遊戲、`idle_clock` 排除、支線與小遊戲選項並存，以及不同遊戲進度不污染角色事件狀態。
+第一個測試會確認二十組自訂地點設定與 mapping 一致、每局有有限結束條件、全螢幕 body overlay、416×416／208×416 可建立操作介面，並驗證取消、通關、重入、麻將盤面與 DOM／timer／listener 清理。第二個測試驗證電波飛鳥在全螢幕 overlay 下的 416×416／208×416 滑鼠控制、8 閘門通關、碰撞失敗與 animation frame／listener 清理。第三個測試驗證正午對決只會抽出 5～10 的正整數目標、重新挑戰會重抽，以及素材路徑、全螢幕響應式滑鼠介面、毫秒判定、碼錶遮蔽、逾時與清理。疊書測試驗證左右交替滑入、精準堆疊、重心失衡、倒塌後勝負門檻、逾時、響應式版面與清理。新增的 demo 小遊戲測試驗證 `ticTacToe` 與 `slot777` 的全螢幕掛載、放大版面、素材、操作與清理。Akiba 事件管理測試會確認每個一般地點都有入口、電子遊樂場／劇場各自顯示兩款遊戲、兩間書店各自顯示既有玩法與疊書挑戰、`idle_clock` 排除、支線與小遊戲選項並存，以及不同遊戲進度不污染角色事件狀態。
 
 測試前請先依 [專案架構與輸出原則](project-overview.md) 的標準流程啟動根目錄 `启动服务.exe`，從 `http://127.0.0.1:1055/index.html` 進入遊戲，再透過遊戲中的選項啟動小遊戲。不要用 URL query 參數、`8765` 或 `python -m http.server` 測小遊戲，否則不是正常遊戲流程，也可能打到其他專案或缺少魔塔樣板服務路由。
