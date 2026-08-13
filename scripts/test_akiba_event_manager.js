@@ -203,7 +203,7 @@ function testEveryRegularLocationHasMiniGame() {
       assert(definitions.length > 0, `missing minigame list for ${location.id}`);
       for (const one of definitions) {
         assert(one.title);
-        assert(["akibaLocation", "slot777", "akibaFlapper", "westernDuel", "bookStack"].includes(one.gameId));
+        assert(["akibaLocation", "slot777", "akibaFlapper", "westernDuel", "bookStack", "shootingRange"].includes(one.gameId));
       }
     }
   }
@@ -214,6 +214,10 @@ function testEveryRegularLocationHasMiniGame() {
   assert.deepEqual(
     plugin.getAkibaMiniGameDefinitions("music_venue").map((definition) => definition.gameId),
     ["akibaLocation", "westernDuel"]
+  );
+  assert.deepEqual(
+    plugin.getAkibaMiniGameDefinitions("warehouse_district").map((definition) => definition.gameId),
+    ["akibaLocation", "shootingRange"]
   );
   assert.deepEqual(
     plugin.getAkibaMiniGameDefinitions("used_bookstore").map((definition) => definition.gameId),
@@ -284,6 +288,25 @@ function testMusicVenueOffersStageTimingAndWesternDuel() {
   const choiceEvent = core.actions.at(-1);
   assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), ["玩「舞台打拍」", "玩「正午對決」", "離開"]);
   assert(choiceEvent.choices[1].action[0].function.includes("westernDuel"));
+}
+
+function testWarehouseDistrictOffersPackingAndShootingRange() {
+  const { core, plugin } = createPlugin({
+    akiba_event_state_initialized: true,
+    akiba_event_state_version: eventMeta.version,
+    akiba_completed_events: [],
+    akiba_active_events: [],
+    akiba_last_locationId: "warehouse_district",
+    akiba_last_placeName: "倉庫區",
+  });
+  plugin.showAkibaLocationEventChoices();
+  const choiceEvent = core.actions.at(-1);
+  assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), [
+    "玩「倉庫裝箱」",
+    "玩「七靶射擊訓練」",
+    "離開",
+  ]);
+  assert(choiceEvent.choices[1].action[0].function.includes("shootingRange"));
 }
 
 function testBookstoresOfferExistingGameAndBookStack() {
@@ -390,6 +413,34 @@ function testBookStackUsesPerBookstoreProgressKeyAndOptions() {
   }
 }
 
+function testWarehouseDistrictOffersShootingRangeTemporarily() {
+  const { core, plugin } = createPlugin();
+  const definition = plugin.getAkibaMiniGameDefinition("warehouse_district", "shootingRange");
+  assert.equal(definition.title, "七靶射擊訓練");
+  assert.equal(definition.progressKey, "warehouse_district:shootingRange");
+  assert.deepEqual(definition.options, {
+    targetVisibleMs: 1200,
+    shotCooldownMs: 450,
+    interTargetDelayMs: 520,
+    requiredHits: 7,
+  });
+
+  plugin.startMiniGame = (gameId, options, callback) => {
+    assert.equal(gameId, "shootingRange");
+    assert.equal(options.locationId, "warehouse_district");
+    assert.equal(options.targetVisibleMs, 1200);
+    assert.equal(options.shotCooldownMs, 450);
+    callback({ result: "win", reason: "clear", score: 1350, hits: 7, totalTargets: 7 });
+    return true;
+  };
+
+  assert.equal(plugin.startAkibaLocationMiniGame("warehouse_district", "shootingRange"), true);
+  assert.deepEqual(core.flags.akiba_minigame_cleared, ["warehouse_district:shootingRange"]);
+  assert.deepEqual(core.flags.akiba_minigame_best_scores, { "warehouse_district:shootingRange": 1350 });
+  assert.equal(core.flags.akiba_last_minigame_game_id, "shootingRange");
+  assert.equal(core.flags.akiba_last_minigame_title, "七靶射擊訓練");
+}
+
 testFreshInitialization();
 testVersionMigrationPreservesProgress();
 testCompletionCountsOnlyOnce();
@@ -401,11 +452,13 @@ testLocationChoiceIncludesMiniGameWithoutStoryEvent();
 testLocationChoiceKeepsStoryEventAndMiniGame();
 testGameCenterOffersBothArcadeGames();
 testMusicVenueOffersStageTimingAndWesternDuel();
+testWarehouseDistrictOffersPackingAndShootingRange();
 testBookstoresOfferExistingGameAndBookStack();
 testMiniGameResultUsesSeparateProgressFlags();
 testSecondGameAtSameLocationUsesSeparateProgressKey();
 testWesternDuelUsesTheatreProgressKeyAndOptions();
 testBookStackUsesPerBookstoreProgressKeyAndOptions();
+testWarehouseDistrictOffersShootingRangeTemporarily();
 
 delete global.core;
 delete global.main;

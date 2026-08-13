@@ -66,7 +66,7 @@
 - `returnToMainlineAfterCharacterExchange()`：清理交換狀態並返回主線。
 - `returnToAkiba()`：未達目標時回到保存的 Akiba 地點；達標時返回主線。
 - `showAkibaLocationEventChoices()`：依目前地點建立事件選單；沒有事件或離開時恢復互動前位置。
-- `getAkibaMiniGameDefinitions(locationId)`：取得地點的全部小遊戲；電子遊樂場與劇場目前各有兩款。
+- `getAkibaMiniGameDefinitions(locationId)`：取得地點的全部小遊戲；電子遊樂場、劇場與倉庫區目前各有兩款。
 - `getAkibaMiniGameDefinition(locationId)`：取得地點對應的小遊戲標題、game ID 與選項；`idle_clock` 回傳空值。
 - `startAkibaLocationMiniGame(locationId, gameId)`：暫停事件流、啟動指定地點小遊戲、保存結果與最高分，再恢復互動前位置；`gameId` 省略時相容舊入口並選第一款。
 
@@ -78,7 +78,7 @@
 
 特殊的閒置時鐘入口依相同回復位置契約運作：未達目標時回到原地，達標時繼續主線。
 
-一般地點選單依序包含目前可用的角色事件、該地點的每一款小遊戲與「離開」。即使沒有角色事件，只要該地點有小遊戲，也必須顯示選單，不能直接顯示地點文字後返回。電子遊樂場依序列出「777 拉霸」與「電波飛鳥」；劇場依序列出「舞台打拍」與「正午對決」。小遊戲完成、失敗或取消都不算角色事件完成，不增加人物交流回合，並使用獨立的 `akiba_minigame_*` flags；同一地點的第二款遊戲以 `locationId:gameId` 保存獨立通關與最高分。
+一般地點選單依序包含目前可用的角色事件、該地點的每一款小遊戲與「離開」。即使沒有角色事件，只要該地點有小遊戲，也必須顯示選單，不能直接顯示地點文字後返回。電子遊樂場依序列出「777 拉霸」與「電波飛鳥」；劇場依序列出「舞台打拍」與「正午對決」；倉庫區依序列出「倉庫裝箱」與暫時掛載的「七靶射擊訓練」。小遊戲完成、失敗或取消都不算角色事件完成，不增加人物交流回合，並使用獨立的 `akiba_minigame_*` flags；同一地點的第二款遊戲以 `locationId:gameId` 保存獨立通關與最高分。
 
 ## 場景契約
 

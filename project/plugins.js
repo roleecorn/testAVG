@@ -2104,7 +2104,8 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			akibaLocation: true,
 			akibaFlapper: true,
 			westernDuel: true,
-			bookStack: true
+			bookStack: true,
+			shootingRange: true
 		};
 		var akibaMiniGames = {
 			kaidan_cave: { title: "幽靈找不同", gameId: "akibaLocation" },
@@ -2113,7 +2114,10 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 				{ title: "古書封面配對", gameId: "akibaLocation", progressKey: "used_bookstore" },
 				{ title: "疊書挑戰", gameId: "bookStack", options: { minClearBooks: 8, seconds: 90 }, progressKey: "used_bookstore:bookStack" }
 			],
-			warehouse_district: { title: "倉庫裝箱", gameId: "akibaLocation" },
+			warehouse_district: [
+				{ title: "倉庫裝箱", gameId: "akibaLocation", progressKey: "warehouse_district" },
+				{ title: "七靶射擊訓練", gameId: "shootingRange", options: { targetVisibleMs: 1200, shotCooldownMs: 450, interTargetDelayMs: 520, requiredHits: 7 }, progressKey: "warehouse_district:shootingRange" }
+			],
 			elevated_train: { title: "轉轍調度", gameId: "akibaLocation" },
 			music_venue: [
 				{ title: "舞台打拍", gameId: "akibaLocation", progressKey: "music_venue" },
