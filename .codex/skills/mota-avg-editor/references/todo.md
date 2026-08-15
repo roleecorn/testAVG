@@ -9,6 +9,12 @@
 1. 當次任務先建立 `.codex/task-questions/YYYYMMDD-HHmmss-<task>.md`，記錄建立時間、阻塞分類、影響範圍、暫時處理與需要的決策。
 2. 任務結束時永久保留 question file；尚未解決且需要跨任務追蹤的項目，再匯總到下列長期 TODO。
 
+## Open 與 Resolved 的邊界
+
+`resolved` 只能表示受影響工作已真正完成，且已有可核對的檔案與驗證證據。使用者決定、規格定稿、決定延後、等待外部輸入或「本次不處理」只會確定後續方向，不會關閉 question 或 TODO。
+
+只要仍有遷移、程式、素材、驗證或外部輸入未完成，question 必須維持 `open`，並在對應長期 TODO 保留 Open 項目。該項目至少列出影響範圍、完成條件與所需驗證；完成後才能連同 question 一起移至 Resolved。不得只因文件或決策已更新而關閉仍有實作債的項目。
+
 建議位置：
 
 - 主線劇本：`project/mainStory/TODO.md`
@@ -28,6 +34,15 @@ TODO list 使用 Markdown，至少包含：
 - `## 已確認可處理`
 
 每筆項目盡量寫出來源檔案、章節或場景，例如 `project/mainStory/CH2 2-4`。若後續已確認，將項目移到 `已確認可處理` 或直接標記完成；不要讓已解決問題長期留在待確認區。
+
+每筆 Open TODO 也必須寫出完成條件與驗證證據，例如：
+
+```md
+- Open: `avg-legacy-cg-migration`
+  - Scope: `project/floors/watanuki_sakuya_1.js`、`project/floors/watanuki_sakuya_4.js`
+  - Done when: CG 統一使用現行版面座標與裁切契約。
+  - Evidence: floor diff、`node --check` 與遊戲內驗收。
+```
 
 ## 不確定人物
 

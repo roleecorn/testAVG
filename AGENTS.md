@@ -56,7 +56,8 @@
 
 - 任務中只要出現疑慮，就必須建立 `.codex/task-questions/YYYYMMDD-HHmmss-<task>.md`，使用 `Asia/Taipei` 日期與時間，格式依 `.codex/task-questions/TEMPLATE.md`。不得只在對話中提出疑慮。
 - 阻塞疑慮停止受影響的範圍；非阻塞疑慮落檔後可在既有授權內繼續。角色身分未確認對整批任務屬非阻塞，但該角色的表情生成、圖片接入與 scene／floor 接入必須局部暫停，其他角色可繼續。
-- 任務結束時永久保留 question file。尚未解決的領域問題匯總到最接近的 `project/*TODO.md`；跨功能 Agent／Skill 問題匯總到 `.codex/TODO.md`。
+- 使用者已作出決定、規格已定稿、決定延後、等待外部輸入或「暫不處理」都不是疑慮已解決的理由；只要仍有實作、遷移、素材、驗證或外部輸入未完成，question 與對應 TODO 必須保持 `open`。只有受影響工作已完成，且 question 內記錄了可核對的檔案／驗證證據時，才可標為 `resolved`。
+- 任務結束時永久保留 question file。尚未解決的領域問題匯總到最接近的 `project/*TODO.md`；跨功能 Agent／Skill 問題匯總到 `.codex/TODO.md`。記錄決定後仍未完成的工作同樣屬於未解問題，必須保留為 Open TODO，不得移入 Resolved。
 
 ## 編碼規則
 
