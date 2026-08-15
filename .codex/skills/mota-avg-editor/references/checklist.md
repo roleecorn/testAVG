@@ -12,6 +12,7 @@
 - 自然語言理解只存在於 Story IR 正規化階段；事件生成器只做確定性映射。未辨識或缺參數的製作指令已停止受影響範圍並落入 question／TODO，沒有降級成玩家可見文字。
 - `使用BGM`、`BGM暫停`、`播放音效` 等語意及其自然語言變體均先轉成 `bgm.play`、`bgm.pause`、`sound.play` 等 Story IR 節點，再映射為合法引擎事件；必要曲目或音效名稱在驗證前已解析完成。
 - 新增或修改的檔案、ID、註冊資料與引用彼此存在且一致。
+- ZIP 劇情匯入已逐張比對 intake manifest：每張 ZIP 圖片都有原始路徑與 SHA-256，且已正式接入、原樣保留於 `project/images/unknown/<角色ID>/`，或以阻塞 question 停止提交；沒有任何圖片被假定為不必要、遺漏或未處置。每位角色的內容 commit 均包含該角色全部 `unknown/` 圖片。
 - 所有事件 JSON、JavaScript 與 JSON 資料均通過相應語法檢查。
 - 已執行 `python scripts/build_action_cgs.py --check`、`node scripts/generate_main_story.js --check` 與 `node scripts/manage_story_ir.js`；主線與支線 IR 的來源 SHA-256、schema、素材／跳轉註冊及 floor round-trip 均一致，所有標準主線 floor 均為 17×13。
 - 主線與角色支線遵循同一套全局 AVG 版面；新版面完成實作後，所有 AVG floor 都只引用單一當前發言者語意槽，後續視覺調整只修改全局 layout config 與共用資產規則，沒有新增 floor 或角色例外。
