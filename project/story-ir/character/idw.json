@@ -372,9 +372,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "歡迎光臨打喵!"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -533,9 +591,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "請問要點什麼呢!"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -620,9 +736,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "要內用還是外帶!"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -1719,9 +1893,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "歡迎光臨打喵！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -1793,9 +2025,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "啊，又被嚇到了！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -1851,9 +2141,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "有！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -1896,9 +2244,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "今天要吃什麼！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -2128,9 +2534,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "不行！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -2186,9 +2650,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "臉不行！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -2331,9 +2853,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "我不是小孩！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -2447,9 +3027,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "不知道！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -2894,9 +3532,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "喔！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -2952,9 +3648,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "可是要兩個人吃！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -3068,9 +3822,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "可以！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -3142,9 +3954,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "老闆！我要休息！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -3188,9 +4058,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "我要提前！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -3232,6 +4160,35 @@
           ],
           "opacity": 1,
           "time": 0
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
         },
         {
           "kind": "dialogue",
@@ -3239,6 +4196,35 @@
           "text": "六分鐘！"
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
+        },
+        {
           "kind": "image.hide",
           "code": 10,
           "time": 0,
@@ -3280,9 +4266,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "五分鐘！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -3354,9 +4398,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "是小火車！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -3412,9 +4514,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "不要"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -3470,9 +4630,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "是我的！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -4312,9 +5530,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -4428,9 +5704,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "打喵！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -4486,9 +5820,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "還沒買！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -4544,9 +5936,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "不知道打喵！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -4631,9 +6081,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "迷路了喵！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -4805,9 +6313,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "打喵!"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -5366,9 +6932,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "這樣比較容易被找到！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -5772,9 +7396,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "所以才要大聲一點啊！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -5830,9 +7512,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "可是習慣了！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -5978,9 +7718,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "找到了！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -6036,9 +7834,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "都一樣！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -6810,9 +8666,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -6942,9 +8856,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "才不怕！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -7000,9 +8972,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "這是正常的！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -7090,9 +9120,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -8414,9 +10502,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "為什麼！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -8472,9 +10618,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "可是大聲比較快！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",
@@ -8588,9 +10792,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "所以有效！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+          }
         },
         {
           "kind": "image.hide",

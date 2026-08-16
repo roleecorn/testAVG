@@ -497,7 +497,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -593,7 +647,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]打喵！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -641,7 +749,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]還沒買！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -689,7 +851,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]不知道打喵！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -761,7 +977,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]迷路了喵！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -905,7 +1175,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]打喵!",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1376,7 +1700,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]這樣比較容易被找到！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1712,7 +2090,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]所以才要大聲一點啊！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1760,7 +2192,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]可是習慣了！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1882,7 +2368,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]找到了！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1930,7 +2470,61 @@ main.floors.idw_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 32
+        },
         "\t[IDW]都一樣！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120,
+            "textfont": 16
+        },
         {
             "type": "hideImage",
             "code": 10,
