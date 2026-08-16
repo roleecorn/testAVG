@@ -4,7 +4,7 @@
 
 主線與角色支線只允許在來源位置與觸發方式上不同，不得使用不同的文本理解或事件生成契約。下列順序是所有新增與更新共用的首要決策順序，不得因現有素材、floor、資料登錄、工具便利性或 ZIP 內容而顛倒或省略：
 
-1. 建立或讀取自然語言來源；主線以 `project/mainStory/CH1`～`CH6`、角色支線以 `project/story/*.txt` 為唯一真實來源。Agent 不得編修來源內容，但可從已確認、可追溯的完整外部輸入新增來源檔，或以完整新版本整檔覆蓋舊來源；不得自行合併局部修訂。
+1. 建立或讀取自然語言來源；主線以 `project/mainStory/CH1`～`CH7`、角色支線以 `project/story/*.txt` 為唯一真實來源。Agent 不得編修來源內容，但可從已確認、可追溯的完整外部輸入新增來源檔，或以完整新版本整檔覆蓋舊來源；不得自行合併局部修訂。
 2. 由語意理解／正規化層完整閱讀原文，先把人物立繪、背景、道具與 CG 等視覺需求標入 draft Story IR，再依這些需求選擇或製作素材。這一層可由 AI、確定性 parser，或兩者組合完成；只有文件明訂的 DSL 才能只靠固定字串辨識。
 3. 在產生任何引擎事件前，將 draft Story IR 的所有視覺需求解析為明確且存在的 runtime 圖片，再驗證 schema、必要參數、場景流程及 `project/images/ → project/data.js -> main.images → Story IR scene`：images 中每張圖都要登錄，data 中每個圖片登錄都要被 scene 使用。未辨識或無法補齊的製作指令必須停止受影響範圍並依 question／TODO 規則記錄。
 4. 只從已驗證的 Story IR 確定性產生 floor 與引擎事件 JSON。事件生成階段不得重新解讀自然語言，也不得直接讀取原文並猜測事件。
@@ -117,7 +117,7 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 
 ## 主線來源正規化規則
 
-主線來源是 `project/mainStory/CH1`～`CH6`，由 `scripts/generate_main_story.js` 處理。文本生成器是 JavaScript，不要另建一份 Python 版本。Python 只負責在文本生成器之前，把權威 `*_cg.png` 母檔固定衍生為 runtime action CG。母檔有變動時依序執行，未變動時至少執行兩個 `--check`：
+主線來源是 `project/mainStory/CH1`～`CH7`，由 `scripts/generate_main_story.js` 處理。文本生成器是 JavaScript，不要另建一份 Python 版本。Python 只負責在文本生成器之前，把權威 `*_cg.png` 母檔固定衍生為 runtime action CG。母檔有變動時依序執行，未變動時至少執行兩個 `--check`：
 
 ```powershell
 python scripts/build_action_cgs.py

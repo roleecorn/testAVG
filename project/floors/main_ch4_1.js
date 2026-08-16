@@ -1143,10 +1143,6 @@ main.floors.main_ch4_1=
         },
         "\t[東山]（手機）如果可以的話幫忙多找一點人手",
         {
-            "type": "comment",
-            "text": "TODO: 【下一句不使用立繪】"
-        },
-        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -1157,17 +1153,6 @@ main.floors.main_ch4_1=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
         },
         "\t[梗平](人手......她的話應該可以的)",
         {

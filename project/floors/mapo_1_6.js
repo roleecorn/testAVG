@@ -880,10 +880,6 @@ main.floors.mapo_1_6=
             "time": 250
         },
         {
-            "type": "comment",
-            "text": "TODO: 【下一句不使用立繪】"
-        },
-        {
             "type": "hideImage",
             "code": 10,
             "time": 0,

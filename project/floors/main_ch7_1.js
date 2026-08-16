@@ -1,8 +1,8 @@
-main.floors.main_ch6_4=
+main.floors.main_ch7_1=
 {
-    "floorId": "main_ch6_4",
-    "title": "主線 CH6 6-4 婚禮與終章",
-    "name": "6-4",
+    "floorId": "main_ch7_1",
+    "title": "主線 CH7 7-1 東山篇",
+    "name": "7-1",
     "canFlyTo": false,
     "canFlyFrom": false,
     "canUseQuickShop": false,
@@ -10,13 +10,13 @@ main.floors.main_ch6_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_wedding.png",
+            "name": "ms_bg_street_day.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "next_to_you_emotional.mp3",
+    "bgm": "bossa_casual_shop.mp3",
     "ratio": 1,
     "map": [
         [
@@ -301,12 +301,12 @@ main.floors.main_ch6_4=
         },
         {
             "type": "playBgm",
-            "name": "next_to_you_emotional.mp3"
+            "name": "bossa_casual_shop.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_wedding.png",
+            "image": "ms_bg_street_day.png",
             "loc": [
                 0,
                 0
@@ -328,64 +328,7 @@ main.floors.main_ch6_4=
         },
         {
             "type": "comment",
-            "text": "【主線 CH6 6-4 婚禮與終章】"
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "梗平感受著手上的心意，回憶起了那個打小鋼珠的下午",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "還有那之後在ANIsister並肩作戰的時光",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "就在梗平的眼眶即將決堤之際",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "一道金屬彈片的「喀噠」聲響了",
-        {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
+            "text": "【主線 CH7 7-1 東山篇】"
         },
         {
             "type": "hideImage",
@@ -400,44 +343,17 @@ main.floors.main_ch6_4=
             "async": true
         },
         {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平](嗯？這是什麼？)",
-        {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_street.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -454,12 +370,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "梗平困惑之後，他看清了手上正是金屬的手銬",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
+        "\t[東山]（手機）來幫我擺攤吧各位，我會給錢的！入場跟交通也交給我！",
         {
             "type": "hideImage",
             "code": 10,
@@ -472,7 +383,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "等到他抬頭一看，警察的表情已經變得無比猙獰",
+        "在群組上的東山如此說到",
         {
             "type": "hideImage",
             "code": 10,
@@ -485,7 +396,46 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "梗平滿是屈辱與憤怒的朝著警察大喊",
+        "\t[東山]（手機）有空的人先到秋葉原會合吧，可以乘機先逛逛，到時就近去會場也方便",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[蘭斯]（手機）行，那就靠妳了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[克莉絲]（手機）OKOK",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[桶至學長]（手機）反正我本來就要去，入場+1乙，我再去跟你們會合車費就免了",
         {
             "type": "hideImage",
             "code": 10,
@@ -509,7 +459,7 @@ main.floors.main_ch6_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]為什麼！？連你也背叛在下嗎！？",
+        "\t[梗平]（手機）機會難得，在下有個在北海道的表妹也想一起來可否？",
         {
             "type": "hideImage",
             "code": 10,
@@ -522,7 +472,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[警察]我就是想要看到你這種表情啊！",
+        "\t[東山]（手機）小問題！來，都來！",
         {
             "type": "hideImage",
             "code": 10,
@@ -535,7 +485,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[警察]你竟然真的以為我會來救你？",
+        "表妹加入了群組，希望他有帶份薯條來",
         {
             "type": "hideImage",
             "code": 10,
@@ -548,7 +498,18 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[警察]你還以為自己得救是了吧，蠢貨",
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[表妹]（手機）打擾了，我還是初次參加這種大型活動，請多指教",
         {
             "type": "hideImage",
             "code": 10,
@@ -561,7 +522,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[警察]哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈",
+        "\t[桶至學長]（手機）既然你能來到這兒，那就代表也是時候該讓你知道點事情了",
         {
             "type": "hideImage",
             "code": 10,
@@ -574,7 +535,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[警察]既然恩報了，那仇豈有不報的道理！",
+        "\t[桶至學長]（手機）#ComicMarket114514#場次說明連結",
         {
             "type": "hideImage",
             "code": 10,
@@ -587,7 +548,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "梗平的大腦飛速運轉，然後他找到了",
+        "\t[東山]（手機）那麼OO時間在秋葉原車站出口會合找我報交通費，至於活動當天的到時再一起走",
         {
             "type": "hideImage",
             "code": 10,
@@ -600,46 +561,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "一切的一切都指向那天打小鋼珠的下午",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[警察]德式背摔的苦痛我也一併還給你哈哈哈哈哈哈",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "在此之後，伴隨警察的笑聲，梗平放棄了掙扎",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "後來趕到的友人與其他警察們，也都發出了笑聲",
+        "\t[眾人]（手機）了解！",
         {
             "type": "hideImage",
             "code": 10,
@@ -676,7 +598,7 @@ main.floors.main_ch6_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_wedding.png",
+            "image": "ms_bg_street_day.png",
             "loc": [
                 0,
                 0
@@ -685,9 +607,97 @@ main.floors.main_ch6_4=
             "time": 250
         },
         {
-            "type": "playBgm",
-            "name": "next_to_you_emotional.mp3",
-            "keep": true
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "從車站與眾人解散之後",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山](是不是有點太自大了呢？)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山](付完了大家的交通費沒錢住旅館了，搞得必須在前輩家借宿...)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山](話說回來...伊豆就算了，北海道是怎麼回事啊！一般人蹭交通費會這麼不客氣的嗎！)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山](1張、2…不存在)",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
         },
         {
             "type": "hideImage",
@@ -701,59 +711,35 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "在反應過來時，身體就已經換上了西裝站在紅毯上",
+        "\t[東山]這不是連吃飯都成問題了嗎！？我的錢包啊啊啊啊啊啊啊啊啊",
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
         },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "一旁的警察拿著婚戒放到了他的手中，用動作跟言語催促著他往前",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[警察]這種時候可不能掉鍊子啊，當然，手銬是不會打開的",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[警察]去吧，接受你的命運",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "梗平拿著婚戒一步步走向紅毯的另一端",
         {
             "type": "hideImage",
             "code": 10,
@@ -797,12 +783,56 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "紅毯尾端的貝琪慢慢轉了過來，讓梗平看得有些失神",
+        "東山在路中央仰天長嘯、路人紛紛走避",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
         },
+        "\t[東山]…算了走一步看一步吧，先瞧瞧前輩那邊有沒有什麼現成的工作可以江湖救急",
         {
             "type": "hideImage",
             "code": 10,
@@ -815,10 +845,63 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "一旁的修女則念起了誓詞",
+        "\t[東山]記得前輩說今天是在中華料理店打工…應該是在是這附近吧？",
         {
-            "type": "comment",
-            "text": "TODO: 【此處應有梗平、貝琪立繪替換，未製作完成，忽略本句】"
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]有了！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "東山來到一間座落在巷子內的小店前，簡單的黃底招牌上寫著「麻麻」兩個紅色大字與電話號碼，似乎稍微有點年頭了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
         },
         {
             "type": "hideImage",
@@ -832,7 +915,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[修女]新郎和新娘都已經表明你們的心願，願意共同進入這神聖的婚姻",
+        "中華料理特有的油煙帶著一點刺鼻的味道從店內溢散了出來",
         {
             "type": "hideImage",
             "code": 10,
@@ -845,7 +928,25 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[修女]在場也沒有人證明你們不配進入這神聖的婚姻",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -858,7 +959,12 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[修女]那麼，新娘你願意新郎成為你的丈夫嗎？",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        "\t[東山]嗯嗯感覺就是個員工餐隨便點的地方，我相信前輩的眼光！今天就靠你了！",
         {
             "type": "hideImage",
             "code": 10,
@@ -871,98 +977,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[貝琪(婚紗)]我願意",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[修女]那麼，新郎你願意新娘成為你的妻子嗎？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[梗平(西裝)]......",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[梗平(西裝)]在下願意",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "眼前的貝琪露出了梗平這輩子看到最美麗的笑容",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "周圍的掌聲逐漸淹沒了梗平的思緒，一切似乎變得有些模糊",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "酒精、歡笑、掌聲",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "梗平的人生大事就此畫下帷幕",
+        "東山推開了店門",
         {
             "type": "hideImage",
             "code": 10,
@@ -977,25 +992,7 @@ main.floors.main_ch6_4=
         },
         {
             "type": "comment",
-            "text": "【第六章結束】"
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "結局",
-        {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
+            "text": "【過場】"
         },
         {
             "type": "hideImage",
@@ -1017,7 +1014,7 @@ main.floors.main_ch6_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_tokyo_big_sight.png",
+            "image": "ms_bg_mapo_shop_interior.png",
             "loc": [
                 0,
                 0
@@ -1037,7 +1034,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "次日清晨，日本東京國際展示場",
+        "\t[東山]前輩我來了！有什麼工作需要幫忙的嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1050,7 +1047,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "梗平牽著貝琪的手站在了Comike的排隊人潮中",
+        "在東山發話的同時，在料理區看似老闆的男子往門口瞧了一眼後，隨即繼續了手邊的工作。一名身穿旗袍的女性則放下了手邊的工作迎了上來",
         {
             "type": "hideImage",
             "code": 10,
@@ -1063,18 +1060,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_smile_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]人好多啊，拜託了，我的限量假面騎士變身腰帶一定還要有啊",
+        "\t[前輩(旗袍)]別那麼客氣啦，等咱下班再去咱家會合就好了的說",
         {
             "type": "hideImage",
             "code": 10,
@@ -1087,7 +1073,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[貝琪]人每年都這麼多的啦，不過放心親愛的",
+        "\t[東山]話不能這麼說，人與人之間講求互惠，互相付出才能相處的長久",
         {
             "type": "hideImage",
             "code": 10,
@@ -1100,7 +1086,176 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[貝琪]你想要的東西我們一定買的到的",
+        "\t[前輩(旗袍)]真的不用啦，店裡的工作若也不熟悉…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩(旗袍)]況且若應還有委託稿要趕吧？受傷就不好了吶",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]白住總覺得過意不去，請務必讓我幫忙！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩(旗袍)]若看店就這麼點兒大，咱一個人也夠了…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]不不不…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩(旗袍)]可是可是…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]不不不不不…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩(旗袍)]但是但是…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "框啷－！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[麻婆]竟然你朋友都這麼堅持了，就先讓她幫忙試試今天的火候如何？小姑娘你能吃辣吧？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "老闆一邊說著一邊將一盤麻婆豆腐放上了桌",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]沒問題！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩(旗袍)]等等若先別…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "前輩話還沒說完，東山迅速接過了老闆遞來的湯匙，將麻婆豆腐放入了口中",
         {
             "type": "hideImage",
             "code": 10,
@@ -1144,7 +1299,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[梗平]啊，好像開始入場了",
+        "然後就這樣含著湯匙失去了意識",
         {
             "type": "hideImage",
             "code": 10,
@@ -1157,7 +1312,666 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[貝琪]那......我們走吧",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        "\t[麻婆]哼嗯，看來今天也很完美",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩(旗袍)]老闆若愉悅的方向真的得改改的說…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【過場：一段時間過後】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[麻婆]來吧，時候到了－",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]「嗯？我這是？」",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "順著前輩的聲音傳來，恢復了意識的東山環顧四周",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]什麼時候到了？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩(旗袍)]若醒啦？咱準備要開店哩。準備好了嗎？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]…？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]好的？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩(旗袍)]那就開門了吶。1、2－",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩(旗袍)]歡迎光—",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[肥宅A]前輩小生來啦喔喔喔喔喔喔喔喔喔喔喔喔！！！！！！！！！！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[肥宅B]前輩回鍋肉一級棒特大碗來兩份！！！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[肥宅C]前輩請你跟我生猴子！！！！！！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "隨著前輩打開了門，大量看似90年代刻版印象會出現的秋葉原物種湧入店內",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "在東山即將被肥宅s踩過那一刻，她用盡最後的力氣在群組上發出了訊息",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]（手機）救命",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_street_night.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]沒想到前輩人氣高成這樣…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩]不好意思若辛苦了的說",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]不，是我太掉以輕心了—痛—",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "就在打工結束之後回家路上的東山與前輩東山兩人，不幸遭遇肥宅追撞",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "為了道歉而擔下全部責任，肥宅提出的和解條件是…",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "一個頭也不回的背影",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[肥宅]唔啊—抱歉我趕時間—",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]等等！你的東西掉—",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]…已經跑掉了誒，該怎麼辦啊？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[前輩]稍微等等看？彼發現該會折返的說？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]話說這是什麼啊？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]嗚哇，是大凶本",
         {
             "type": "hideImage",
             "code": 30,
@@ -1175,46 +1989,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "梗平突破了百般困難，搜尋失蹤人口、歷經破產",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "還有解決肥宅們的暴動問題，甚至結了個婚",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "但現在的他與自己的戀人，跟所有人一樣享受著Comike",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "秋葉原之旅　END",
+        "東山對著撿起的書露出了嫌棄的表情",
         {
             "type": "hideImage",
             "code": 10,
@@ -1229,7 +2004,7 @@ main.floors.main_ch6_4=
         },
         {
             "type": "comment",
-            "text": "【結尾演出字幕，未製作完成，忽略本句】"
+            "text": "【過場：一段時間過後】"
         },
         {
             "type": "hideImage",
@@ -1243,7 +2018,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[結尾演出字幕]都是旁白的那個版本 (我是打算END2把誰寫的跟所有分支製作寫進去啦所以1都旁白這樣，還是?",
+        "\t[前輩]彼沒有回來吶…",
         {
             "type": "hideImage",
             "code": 10,
@@ -1256,7 +2031,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "總之辛苦你了，穿過重重困難看到現在",
+        "\t[東山]那大概不是很重要吧？這樣等下去也不是辦法先回去吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -1269,7 +2044,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "能到達這裡的想必都是過人的勇者",
+        "\t[前輩]這東西放在路邊也不太對的說…",
         {
             "type": "hideImage",
             "code": 10,
@@ -1282,124 +2057,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "你說劇情在幹尛？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "這可是COC團錄，一切都是PL與骰子女神的抉擇可沒有半分虛假",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "雖然看起來很複雜，但梗平線只有『一條』正確的道路啦…",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "梗平沒看見的秋葉原發生了什麼？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "如果想知道就繼續吧，不會耽誤你太多時間的(振聲)",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "或者你也可以點取ALT+F4跳過這些…",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "……………",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "……………",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "你還在啊？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "那麼我們開始吧—",
+        "\t[東山]明天我拿去地方書店問問吧？這時間還在這裡搞不好附近的人會認識…",
         {
             "type": "hideImage",
             "code": 10,
@@ -1417,7 +2075,7 @@ main.floors.main_ch6_4=
         },
         {
             "type": "changeFloor",
-            "floorId": "main_ch7_1",
+            "floorId": "main_ch7_2",
             "loc": [
                 6,
                 10

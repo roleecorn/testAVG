@@ -2313,10 +2313,6 @@ main.floors.mapo_1_4=
                         },
                         "\t[梗平]只有失去過才會懂得珍惜嗎？果然人是活在陽光下的生物",
                         {
-                            "type": "comment",
-                            "text": "TODO: 【下面一句不使用立繪】"
-                        },
-                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,

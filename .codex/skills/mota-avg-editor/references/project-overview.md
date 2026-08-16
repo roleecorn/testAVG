@@ -7,7 +7,7 @@
 核心檔案位置：
 
 - `project/floors/*.js`：每個樓層一個 JS 檔，格式是 `main.floors.<floorId> = { ... }`。AVG 可把「樓層」視為「場景」或「章節」。
-- `project/mainStory/CH1`～`CH6`：現行主線劇情的唯一真實來源。Agent 不得自行編修、補寫、潤稿、修錯字、格式化或從 IR／floor 反向改寫；但可將使用者提供或其他已確認、可追溯的完整主線來源新增為完整檔案，或整檔覆蓋舊來源，不得自行合併局部修訂。來源更新後以 `node scripts/generate_main_story.js --refresh-ir` 正規化並驗證，再從 IR 重建主線 floor。
+- `project/mainStory/CH1`～`CH7`：現行主線劇情的唯一真實來源。Agent 不得自行編修、補寫、潤稿、修錯字、格式化或從 IR／floor 反向改寫；但可將使用者提供或其他已確認、可追溯的完整主線來源新增為完整檔案，或整檔覆蓋舊來源，不得自行合併局部修訂。來源更新後以 `node scripts/generate_main_story.js --refresh-ir` 正規化並驗證，再從 IR 重建主線 floor。
 - `project/story/*.txt`：角色劇情內容與章節結構的唯一真實來源（source of truth），不是僅供追溯而保留的原始附件。Agent 不得局部修改或自行改寫其內容；但所有被分類且驗收完成的角色劇情 TXT，可由 Agent 以完整檔案新增，或用 ZIP／DOCX／TXT 等已確認完整新來源整檔覆蓋同角色舊稿。`project/floors/*.js` 中的 scene／floor 是依文本轉換出的遊戲實作；兩者有差異時以來源文本為準，不得反向修改來源。
 - `project/story/manifest.md`：角色原始劇本與素材之使用方式、最後命名的永久追溯索引，不是劇情來源。每個角色使用獨立區段，逐筆保存原始 ZIP／run、原始相對路徑、SHA-256、資源種類、差異狀態、使用方式、最後命名／路徑、對應來源 TXT 或 scene 與驗證證據。重新命名、替換或停用時保留舊紀錄並標示 `superseded`；缺乏可信歷史證據時標示 `needs-backfill`，不得猜測。
 - `project/story-ir/main/*.json`、`project/story-ir/character/*.json`：納入 Git 的共用 Story IR 衍生產物，保存來源路徑與 SHA-256。主線與支線使用相同 schema／validator／emitter；來源雜湊不符時禁止生成 floor。Story IR 不可獨立交付或提交：任何新增、修改或刪除都必須在同一個內容 commit 中同步更新其對應 scene／floor；若沒有對應 scene／floor 變更，就不得提交該 IR 變更。

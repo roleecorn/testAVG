@@ -4289,10 +4289,6 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "............",
                         {
-                            "type": "comment",
-                            "text": "TODO: 【下面一句不使用立繪】"
-                        },
-                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -5461,10 +5457,6 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]（手機）我也想，但我到東京國際展示場了，實在來不了，抱歉哈",
                         {
-                            "type": "comment",
-                            "text": "TODO: 【下面一句不使用立繪】"
-                        },
-                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -5475,17 +5467,6 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 11,
                             "time": 0,
                             "async": true
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
                         },
                         "\t[梗平](我才不會回去呢，現在我要去我的夢中情地漫展了)",
                         {

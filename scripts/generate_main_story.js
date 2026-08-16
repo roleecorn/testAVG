@@ -51,7 +51,12 @@ const floors = {
   "6-1": { id: "main_ch6_1", title: "主線 CH6 6-1 肥宅潮", name: "6-1", bg: "ms_bg_bookstore_a.png", bgm: "waking_the_devil_crisis.mp3", next: "main_ch6_2" },
   "6-2": { id: "main_ch6_2", title: "主線 CH6 6-2 結婚抉擇", name: "6-2", bg: "ms_bg_street.png", bgm: "flags_drama.mp3", next: "main_ch6_3" },
   "6-3": { id: "main_ch6_3", title: "主線 CH6 6-3 逃亡與希望", name: "6-3", bg: "ms_bg_horses_knee.png", bgm: "next_to_you_emotional.mp3", next: "main_ch6_4" },
-  "6-4": { id: "main_ch6_4", title: "主線 CH6 6-4 婚禮與終章", name: "6-4", bg: "ms_bg_wedding.png", bgm: "next_to_you_emotional.mp3", next: null },
+  "6-4": { id: "main_ch6_4", title: "主線 CH6 6-4 婚禮與終章", name: "6-4", bg: "ms_bg_wedding.png", bgm: "next_to_you_emotional.mp3", next: "main_ch7_1" },
+  "7-1": { id: "main_ch7_1", title: "主線 CH7 7-1 東山篇", name: "7-1", bg: "ms_bg_street_day.png", bgm: "bossa_casual_shop.mp3", next: "main_ch7_2" },
+  "7-2": { id: "main_ch7_2", title: "主線 CH7 7-2 聖典與ANIsister", name: "7-2", bg: "ms_bg_bookstore_a_interior.png", bgm: "twists_suspense.mp3", next: "main_ch7_3" },
+  "7-3": { id: "main_ch7_3", title: "主線 CH7 7-3 集合與突破", name: "7-3", bg: "ms_bg_street_day.png", bgm: "dark_alleys_tension.ogg", next: "main_ch7_4" },
+  "7-4": { id: "main_ch7_4", title: "主線 CH7 7-4 劫車作戰", name: "7-4", bg: "ms_bg_maid_cafe.png", bgm: "battle_theme_a.mp3", next: "main_ch7_5" },
+  "7-5": { id: "main_ch7_5", title: "主線 CH7 7-5 昭告天下", name: "7-5", bg: "ms_bg_street_day.png", bgm: "next_to_you_emotional.mp3", next: null },
 };
 
 const characterExchanges = {
@@ -97,6 +102,8 @@ const backgroundAssets = [
   { name: "車上", image: "ms_bg_vehicle_interior.png", placeholder: "scene_street.png" },
   { name: "僕咖", image: "ms_bg_maid_cafe.png", placeholder: "scene_mapo_shop.png" },
   { name: "婚禮", image: "ms_bg_wedding.png", placeholder: "scene_tournament.png" },
+  { name: "LIVE大舞台", image: "ms_bg_live_stage.png", placeholder: "scene_tournament.png" },
+  { name: "派出所", image: "ms_bg_police_station.png", placeholder: "scene_street.png" },
 ];
 const bgByName = new Map(backgroundAssets.map(({ name, image }) => [name, image]));
 const backgroundAliases = {
@@ -113,6 +120,7 @@ const backgroundAliases = {
   "泛用車內": "車上",
   "貝琪莊園": "貝琪宅邸",
   "女僕咖啡廳內部": "僕咖",
+  "便利商店內部": "便利商店",
   "泛用街道(日)": "街道(日)",
   "泛用街道(夜)": "街道(夜)",
   "結婚式場": "婚禮",
@@ -239,6 +247,7 @@ const knownSpeakers = new Map([
 
 const uncertainSpeakers = new Set();
 const storyTodos = new Set();
+const AVG_TEXT_FONTS = { small: 12, normal: 16, large: 24, extraLarge: 32 };
 
 function fwToHalfNumber(text) {
   return text.replace(/[０-９１２３４５６７８９]/g, (ch) => {
@@ -249,7 +258,7 @@ function fwToHalfNumber(text) {
   });
 }
 
-function readSections(file) {
+function readSections(file, options = {}) {
   const raw = fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n").split("\n");
   const sections = {};
   let current = null;
@@ -257,6 +266,11 @@ function readSections(file) {
     const m = line.trim().match(/^(\d+-\d+)$/);
     if (m) {
       current = m[1];
+      sections[current] = [];
+      continue;
+    }
+    if (!current && options.implicitFirstSection && options.startMarker && options.startMarker.test(line.trim())) {
+      current = options.implicitFirstSection;
       sections[current] = [];
       continue;
     }
@@ -273,7 +287,7 @@ function normalizeSourceLine(line) {
     .replace(/^【GIF\s*[：:]?\s*/, "【GIF ");
 }
 
-function setTextEvent() {
+function setTextEvent(overrides = {}) {
   return {
     type: "setText",
     avg: true,
@@ -291,7 +305,16 @@ function setTextEvent() {
     time: 10,
     letterSpacing: 0,
     animateTime: 120,
+    ...overrides,
   };
+}
+
+function textFontFromDirective(text) {
+  if (/更大字/.test(text)) return AVG_TEXT_FONTS.extraLarge;
+  if (/大字/.test(text)) return AVG_TEXT_FONTS.large;
+  if (/小字/.test(text)) return AVG_TEXT_FONTS.small;
+  if (/一般/.test(text)) return AVG_TEXT_FONTS.normal;
+  return null;
 }
 
 function hidePortraits() {
@@ -318,10 +341,11 @@ function actionCgEvents(spec) {
   ];
 }
 
-function portraitFor(speaker, text) {
+function portraitFor(speaker, text, expression = null) {
   const portraitLoc = ["portraitSpeakerX", "portraitSpeakerY"];
   if (speaker === "梗平") {
     let img = "keng_neutral_portrait.png";
+    if (expression === "smile") img = "keng_smile_portrait.png";
     if (/嘔|不要|可惡|痛|啊|不行|錯愕|什麼|？|\?|救命|死/.test(text)) img = "keng_panic_portrait.png";
     if (/哼|專業|有道理|假面騎士|變身|騎士|勝|交給我|會贏/.test(text)) img = "keng_smile_portrait.png";
     if (/嚴肅|重要|守護|責任/.test(text)) img = "keng_serious_portrait.png";
@@ -339,7 +363,11 @@ function portraitFor(speaker, text) {
 
 function removeInlineProductionDirectives(body, ctx) {
   return body.replace(/【([^】]+)】/g, (whole, directive) => {
-    if (!/字體|立繪|替換|動畫|CG|GIF|背景/.test(directive)) return whole;
+    if (directive === "想必是一個完美的笑容") {
+      ctx.forceSmile = true;
+      return "";
+    }
+    if (!/字體|立繪|替換|動畫|CG|GIF|背景|想必是一個完美的笑容/.test(directive)) return whole;
     storyTodos.add(`${ctx.source} ${ctx.section}：行內製作指令「【${directive}】」尚未轉成正式事件。`);
     return "";
   }).trim();
@@ -375,11 +403,21 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
     storyTodos.add(`${ctx.source} ${ctx.section}：下一句要求使用麻婆立繪，但 project/images 尚無對應正式角色圖，暫不顯示立繪。`);
     ctx.nextPortraitOverride = null;
   } else {
-    portrait = portraitFor(display, body);
+    portrait = portraitFor(display, body, ctx.forceSmile ? "smile" : null);
   }
+  const textFont = ctx.nextTextFont;
+  ctx.nextTextFont = null;
+  ctx.forceSmile = false;
   const clearCg = ctx.cgVisible && !ctx.cgPersistent ? [{ type: "hideImage", code: 30, time: 150 }] : [];
   if (!ctx.cgPersistent) ctx.cgVisible = false;
-  return [...hidePortraits(), ...clearCg, ...(portrait ? [portrait] : []), `\t[${display}]${body}`];
+  return [
+    ...(textFont ? [setTextEvent({ textfont: textFont })] : []),
+    ...hidePortraits(),
+    ...clearCg,
+    ...(portrait ? [portrait] : []),
+    `\t[${display}]${body}`,
+    ...(textFont ? [setTextEvent({ textfont: AVG_TEXT_FONTS.normal })] : []),
+  ];
 }
 
 function resolveRegisteredAudio(rawName, registered, kind, ctx) {
@@ -524,6 +562,10 @@ function lineToEvents(line, ctx) {
     return [...hidePortraits(), { type: "comment", text: t }];
   }
 
+  if (/^[-—]+END[-—]+$/.test(t)) {
+    return [...hidePortraits(), { type: "comment", text: t }];
+  }
+
   if (/^【(?:人物交流時間|角色劇情時間)/.test(t)) {
     const exchange = characterExchanges[ctx.section];
     if (exchange) {
@@ -548,10 +590,18 @@ function lineToEvents(line, ctx) {
   const wait = t.match(/^【等待\s*([0-9]+(?:\.[0-9]+)?)\s*秒】$/);
   if (wait) return [{ type: "sleep", time: Math.round(Number(wait[1]) * 1000) }];
 
-  if (t === "【下一句話不需使用立繪】" || t === "【下面兩句不使用立繪】") {
-    ctx.suppressPortraitCount = t.includes("兩句") ? 2 : 1;
+  if (/^【(?:下一句|下一句話|下句|下面一句|下面一句話|下兩句|下兩句話|下面兩句|下面兩句話|下五句|下五句話).*不(?:需)?使用立繪】$/.test(t)) {
+    ctx.suppressPortraitCount = /下五句/.test(t) ? 5 : /兩句/.test(t) ? 2 : 1;
+    const font = textFontFromDirective(t);
+    if (font) ctx.nextTextFont = font;
     return [];
   }
+  const fontDirective = t.match(/^【(?!(?:下方兩句明日頭條))(?:(?:下一句|下一句話|下句|下句台詞|下句字體|下句台詞字體))[^】]*(更大字|大字|小字|一般)[^】]*】$/);
+  if (fontDirective) {
+    ctx.nextTextFont = textFontFromDirective(t);
+    return [];
+  }
+  if (t === "【有BGM的話由爆炸聲終止】") return [{ type: "pauseBgm" }];
   if (t === "【下面一句話使用麻婆作為立繪】") {
     ctx.nextPortraitOverride = "麻婆店長";
     return [];
@@ -575,6 +625,11 @@ function lineToEvents(line, ctx) {
   if (/^\[.*\]$/.test(t)) return [...hidePortraits(), t.slice(1, -1)];
 
   if (/^【.*(?:立繪|替換|字體|動畫|小遊戲).*】$/.test(t)) {
+    storyTodos.add(`${ctx.source} ${ctx.section}：製作指令「${t}」尚未轉成正式事件。`);
+    return [{ type: "comment", text: `TODO: ${t}` }];
+  }
+
+  if (/^【.*(?:大字|小字|更大字|頭條|公告文|濾鏡|有BGM|製作名單|少女讀取|白色慢速).*】$/.test(t)) {
     storyTodos.add(`${ctx.source} ${ctx.section}：製作指令「${t}」尚未轉成正式事件。`);
     return [{ type: "comment", text: `TODO: ${t}` }];
   }
@@ -921,6 +976,7 @@ function updateTimeline() {
     4: "CH4 搶火車篇",
     5: "CH5 五日無戰事篇",
     6: "CH6 結婚篇",
+    7: "CH7 東山篇",
   };
   const chapters = Object.entries(chapterTitles).map(([chapter, title]) => {
     const nodes = Object.entries(floors)
@@ -982,7 +1038,22 @@ function updateTodo() {
     "- `project/mainStory/CH1` 的手機簡訊、梗平躲藏、黑衣人、紅色麻婆碗、梗平VS宿儺、兔子攻擊、紙箱、紙箱人、小丑等 CG：目前以 `project/images/scene_mapo_cg.png` 複製素材暫代，待替換正式素材。",
     "- `project/mainStory/CH1 1-3`：來源要求「麻婆」立繪，但 `project/images/` 尚無可確認的麻婆角色立繪，該句暫不顯示立繪。",
     "- `project/mainStory/CH1 1-4`：來源標記 `河邊(夜))` 多一個右括號，生成器暫以 `河邊(夜)` mapping 處理，未改寫來源。",
-    "- `project/mainStory/CH2`～`CH6` 新增的泛用／日夜／室內背景名稱：目前映射到既有同類背景資產，待替換正式專用素材。",
+    "- `project/mainStory/CH2`～`CH7` 新增的泛用／日夜／室內背景名稱：目前映射到既有同類背景資產，待替換正式專用素材。",
+    "- Open: `main-story-background-live-stage`",
+    "  - Scope: `project/mainStory/CH7 7-5` 的 `【背景：LIVE大舞台】`。",
+    "  - Temporary: `project/images/ms_bg_live_stage.png` 為由 `project/images/scene_tournament.png` 複製的暫代背景。",
+    "  - Expected: 正式 `LIVE大舞台` 背景；完成驗收後替換圖片並通過遊戲內驗證。",
+    "  - Evidence: `scripts/generate_main_story.js` background mapping、`project/story-ir/main/main-story.json`、`project/floors/main_ch7_5.js`；目前維持 open。",
+    "- Open: `main-story-background-police-station`",
+    "  - Scope: `project/mainStory/CH7 7-5` 的 `【背景：派出所】`。",
+    "  - Temporary: `project/images/ms_bg_police_station.png` 為由 `project/images/scene_street.png` 複製的暫代背景。",
+    "  - Expected: 正式 `派出所` 背景；完成驗收後替換圖片並通過遊戲內驗證。",
+    "  - Evidence: `scripts/generate_main_story.js` background mapping、`project/story-ir/main/main-story.json`、`project/floors/main_ch7_5.js`；目前維持 open。",
+    "- Open: `main-story-costume-portraits`",
+    "  - Scope: `project/mainStory/CH3 3-1`、`project/mainStory/CH6 6-4`、`project/mainStory/CH7 7-5` 的服裝狀態角色標籤。",
+    "  - Missing: 正式服裝梗平／貝琪／前輩／桶至學長立繪與角色 mapping；目前不使用未驗收素材。",
+    "  - Done when: 正式服裝立繪完成驗收，接入 `project/images/`、`project/data.js`、Story IR 與對應 floor，並完成遊戲內驗證。",
+    "  - Evidence: 服裝角色標籤保留於權威來源與 Story IR；目前維持 open。",
     "",
     "## 待實作演出或小遊戲",
     "",
@@ -992,7 +1063,7 @@ function updateTodo() {
     "",
     "## 已確認可處理",
     "",
-    "- CH1-CH6 主線已接入樓層與時間線，可先作為完整可跑版本繼續迭代。",
+    "- CH1-CH7 主線已接入樓層與時間線，可先作為完整可跑版本繼續迭代。",
   ];
   fs.writeFileSync(p("project", "mainStory", "TODO.md"), todoLines.join("\n") + "\n", "utf8");
 }
@@ -1074,7 +1145,7 @@ function main() {
     if (refreshIr) updateData();
   }
   validateActionCgSync();
-  const sourceFiles = [1, 2, 3, 4, 5, 6].map((chapter) => p("project", "mainStory", `CH${chapter}`));
+  const sourceFiles = [1, 2, 3, 4, 5, 6, 7].map((chapter) => p("project", "mainStory", `CH${chapter}`));
   const sections = {
     ...readSections(sourceFiles[0]),
     ...readSections(sourceFiles[1]),
@@ -1082,6 +1153,7 @@ function main() {
     ...readSections(sourceFiles[3]),
     ...readSections(sourceFiles[4]),
     ...readSections(sourceFiles[5]),
+    ...readSections(sourceFiles[6], { implicitFirstSection: "7-1", startMarker: /^東山篇$/ }),
   };
   const expectedPhoneLineCount = Object.values(sections).flat().filter((line) => {
     const t = line.trim();

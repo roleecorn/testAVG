@@ -1985,10 +1985,6 @@ main.floors.main_ch2_2=
                             "time": 0
                         },
                         {
-                            "type": "comment",
-                            "text": "TODO: 【下面一句不使用立繪】"
-                        },
-                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,

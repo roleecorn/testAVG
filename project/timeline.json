@@ -176,7 +176,48 @@
 					"id": "main_ch6_4",
 					"title": "6-4 婚禮與終章",
 					"floorId": "main_ch6_4",
-					"image": "ms_bg_wedding.png"
+					"image": "ms_bg_wedding.png",
+					"next": "main_ch7_1"
+				}
+			]
+		},
+		{
+			"id": "main_ch7",
+			"title": "CH7 東山篇",
+			"nodes": [
+				{
+					"id": "main_ch7_1",
+					"title": "7-1 東山篇",
+					"floorId": "main_ch7_1",
+					"image": "ms_bg_street_day.png",
+					"next": "main_ch7_2"
+				},
+				{
+					"id": "main_ch7_2",
+					"title": "7-2 聖典與ANIsister",
+					"floorId": "main_ch7_2",
+					"image": "ms_bg_bookstore_a_interior.png",
+					"next": "main_ch7_3"
+				},
+				{
+					"id": "main_ch7_3",
+					"title": "7-3 集合與突破",
+					"floorId": "main_ch7_3",
+					"image": "ms_bg_street_day.png",
+					"next": "main_ch7_4"
+				},
+				{
+					"id": "main_ch7_4",
+					"title": "7-4 劫車作戰",
+					"floorId": "main_ch7_4",
+					"image": "ms_bg_maid_cafe.png",
+					"next": "main_ch7_5"
+				},
+				{
+					"id": "main_ch7_5",
+					"title": "7-5 昭告天下",
+					"floorId": "main_ch7_5",
+					"image": "ms_bg_street_day.png"
 				}
 			]
 		}
