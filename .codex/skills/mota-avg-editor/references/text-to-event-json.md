@@ -6,7 +6,7 @@
 
 1. 建立或讀取自然語言來源；主線以 `project/mainStory/CH1`～`CH7`、角色支線以 `project/story/*.txt` 為唯一真實來源。Agent 不得編修來源內容，但可從已確認、可追溯的完整外部輸入新增來源檔，或以完整新版本整檔覆蓋舊來源；不得自行合併局部修訂。
 2. 由語意理解／正規化層完整閱讀原文，先把人物立繪、背景、道具與 CG 等視覺需求標入 draft Story IR，再依這些需求選擇或製作素材。這一層可由 AI、確定性 parser，或兩者組合完成；只有文件明訂的 DSL 才能只靠固定字串辨識。
-3. 在產生任何引擎事件前，將 draft Story IR 的所有視覺需求解析為明確且存在的 runtime 圖片，再驗證 schema、必要參數、場景流程及 `project/images/ → project/data.js -> main.images → Story IR scene`：images 中每張圖都要登錄，data 中每個圖片登錄都要被 scene 使用。未辨識或無法補齊的製作指令必須停止受影響範圍並依 question／TODO 規則記錄。
+3. 在產生任何引擎事件前，將 draft Story IR 的所有視覺需求解析為明確且存在的 runtime 圖片，再驗證 schema、必要參數、場景流程及 `project/images/ → project/data.js -> main.images → Story IR scene`：images 中每張圖都要登錄，data 中每個圖片登錄都要被 scene 使用。遇到未被目前生成器支援的 `【...】` 演出／AI 指令時，不得直接判定為 TODO；必須先檢查現有生成器、共用 Story IR schema 與 runtime event mapping 是否能表達，能則先修改生成器／必要共用 runtime mapping，再重新產生並驗證 IR 與 floor。只有確認仍受缺少正式素材、來源意圖含糊／未定稿，或現有 runtime 能力與授權範圍確實無法實現時，才停止受影響範圍並依 question／TODO 規則記錄。
 4. 只從已驗證的 Story IR 確定性產生 floor 與引擎事件 JSON。事件生成階段不得重新解讀自然語言，也不得直接讀取原文並猜測事件。
 
 禁止把未辨識的製作指令降級成旁白、台詞或其他玩家可見文字。主線生成器與角色支線轉換流程必須使用同一份 Story IR schema、同一組語意驗證與同一組事件映射；不得因其中一條流程由 AI 執行，就省略中間產物或驗證。
@@ -149,7 +149,7 @@ node scripts/manage_story_ir.js
 4. `人名：{內容}` 也視為簡訊；`人名：內容` 是一般對話；`人名：(內容)` 保留為角色內心話。
 5. `[敘述]` 去掉外層中括號後輸出成旁白，不加發言者。
 6. 不得在生成器中把梗平的「我／我們」自動改成「在下／我等」；`project/mainStory` 文本是內容真實來源，floor 必須逐字遵從來源。
-7. `【CG：...】`、`【GIF ...】`、`【背景：...】` 與立繪／替換／動畫標記必須先於普通文字處理。已支援的指令先轉為對應 Story IR 節點；未支援的製作指令必須轉成 `unresolved.directive`、讓 Story IR 驗證失敗並寫入主線 TODO，不得改成玩家可見文字或逕自輸出 floor。
+7. 所有 `【...】` 預設先視為演出效果或對 AI 的製作指令，必須先於普通文字處理。先做生成器可實現性檢查：已支援或經本次擴充可支援的指令先轉為對應 Story IR 節點；只有通過檢查仍無法實現的指令才轉成 `unresolved.directive`，讓 Story IR 驗證失敗並寫入主線 TODO；任何情況都不得改成玩家可見文字或逕自輸出未驗證 floor。
 8. `【劇情推進】`、`【推進劇情】`、`【接2-3】`、`【接續2-3】` 等同義流程標記要正規化為同一種 Story IR 控制流程。
 9. CG／GIF 對照表要以目前來源文字為準；來源更名時可保留歷史別名，但 `--check` 必須確認所有已登錄的主線動作 CG 都仍有實際輸出，避免素材存在卻因標記改名而靜默退回 placeholder。
 10. 背景名稱以完整名稱精確查表；每個地點映射到唯一背景檔。遇到未登錄名稱必須失敗並補 mapping，不可靜默退回 generic 圖。

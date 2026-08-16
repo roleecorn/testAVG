@@ -11,7 +11,7 @@
 - 每次故事新增、完成或調整都已逐一稽核權威來源中的所有 `【...】` 描述；每個標記都有已滿足的 Story IR／scene／floor 證據，或已將 conflict／unresolved 原文、衝突對象與受影響範圍寫入對應 TODO。存在未解決衝突時已停止受影響分支，沒有宣稱故事完成。
 - 每個受影響的劇情 chapter／scene 都同時存在於來源文本、Story IR 與對應 scene／floor；只新增或修改 Story IR 而沒有對應 scene／floor 更新，不算完成。
 - Story IR 與對應 scene／floor 是同一個原子提交單位；staged diff 中每個變更的 `project/story-ir/` 檔案都必須有對應 floor／scene diff，禁止 IR-only commit。
-- 自然語言理解只存在於 Story IR 正規化階段；事件生成器只做確定性映射。未辨識或缺參數的製作指令已停止受影響範圍並落入 question／TODO，沒有降級成玩家可見文字。
+- 自然語言理解只存在於 Story IR 正規化階段；事件生成器只做確定性映射。對每個目前未支援的 `【...】` 演出／AI 指令，已先留下生成器／runtime 可實現性檢查；可實現者已擴充生成器並通過 IR／floor 驗證，只有仍因素材、參數、未定稿意圖或確實的 runtime 限制而無法實現者才停止受影響範圍並落入 question／TODO，沒有降級成玩家可見文字。
 - `使用BGM`、`BGM暫停`、`播放音效` 等語意及其自然語言變體均先轉成 `bgm.play`、`bgm.pause`、`sound.play` 等 Story IR 節點，再映射為合法引擎事件；必要曲目或音效名稱在驗證前已解析完成。
 - 新增或修改的檔案、ID、註冊資料與引用彼此存在且一致。
 - ZIP 任務已有本次 `run-manifest.md`，能以原始 ZIP 路徑與 SHA-256、全新 `run-id`、解壓前空目錄證據及本次檔案數證明所有內容由原始 ZIP 重新解壓；未讀取、沿用、複製或信任任何舊 `tmp`、舊解壓內容、舊 manifest、舊文字提取、舊圖片盤點、舊角色判定、舊 asset usage 或舊 draft IR。
