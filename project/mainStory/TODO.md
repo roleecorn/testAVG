@@ -82,6 +82,11 @@
 - project/mainStory/CH6 6-4：【CG：紅毯那端的婚紗貝琪 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH6 6-4：【CG：銬住手的手銬 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH6 6-4：製作指令「【此處應有梗平、貝琪立繪替換，未製作完成，忽略本句】」尚未轉成正式事件。
+- Open: `main-story-costume-portraits`
+  - Scope: `project/mainStory/CH3 3-1`、`project/mainStory/CH6 6-4`、`梗平(女装)`、`貝琪(婚紗)`、`梗平(西裝)`。
+  - Missing: 服裝狀態對應的正式梗平／貝琪立繪與角色 mapping；目前不使用未驗收素材。
+  - Done when: 正式服裝立繪完成驗收，接入 `project/images/`、`project/data.js`、Story IR 與對應 floor，並完成遊戲內驗證。
+  - Evidence: `.codex/task-questions/20260816-235040-update-story.md` Q2；目前維持 open。
 - `project/mainStory/CH3 3-1`：街頭賣藝分歧目前原稿為「嘆息寫」，已保留為可回流分歧。
 - `project/mainStory/CH3 3-3`：傑士塔威會議可追加煩人小遊戲，目前以原劇情旁白接續。
 - `project/mainStory/CH6 6-4`：後日談時間尚未撰寫，已以文字標記保留。

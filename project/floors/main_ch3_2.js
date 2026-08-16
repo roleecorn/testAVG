@@ -906,7 +906,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "\t[蘭斯]（手機）我們在書店A前面要討論怎麼樣攻進去了",
+        "\t[蘭斯]（手機）我們在ANIsister前面要討論怎麼樣攻進去了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1269,7 +1269,7 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "梗平來不及思考什麼，便奔向了肥宅滿布的書店A",
+        "梗平來不及思考什麼，便奔向了肥宅滿布的ANIsister",
         {
             "type": "hideImage",
             "code": 10,

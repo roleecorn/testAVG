@@ -13,7 +13,7 @@
       },
       {
         "path": "project/mainStory/CH3",
-        "sha256": "663be9bd3c723aaf49920e6fbf18d0ad61185d0b5365499f8bbccd416c9b5383"
+        "sha256": "d988a689236cba7fa5e979fdcef16f88d14a22d85908037fac4f8bfe8a466a56"
       },
       {
         "path": "project/mainStory/CH4",
@@ -25,7 +25,7 @@
       },
       {
         "path": "project/mainStory/CH6",
-        "sha256": "98e7370ff8ad14aa9e1fe50d7ee318b0aab40f84d0c4e2c641c0fe6d3d1d1af3"
+        "sha256": "f958af8315ffa06cecc4592fcb3665f9119443a5ca131dc4e3947e9b0545d6a8"
       }
     ]
   },
@@ -23860,7 +23860,7 @@
         {
           "kind": "dialogue",
           "speaker": "三角",
-          "text": "至少人不壞，昨天他其實偷偷自己又去了一趟書店A呢"
+          "text": "至少人不壞，昨天他其實偷偷自己又去了一趟ANIsister呢"
         },
         {
           "kind": "image.hide",
@@ -27376,20 +27376,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "這套女裝是什麼回事"
                 },
                 {
@@ -27422,20 +27410,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "請容我女裝到這份工作結束"
                 },
                 {
@@ -27842,20 +27818,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "欸？"
                 },
                 {
@@ -27888,20 +27852,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "這是什麼狀況，在下下面怎麼空蕩蕩的？ ！ ！ ！"
                 },
                 {
@@ -27951,20 +27903,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "這不就本子裡的觸手怪嘛，說起來它們是怎麼樣凌辱的，像動畫裡的那樣？"
                 },
                 {
@@ -27996,20 +27936,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "呃，不是的，在下只是好奇而已"
                 },
                 {
@@ -28025,20 +27953,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "慢著，那在下這是變成魔法少女了！ ？不會在下變不回去吧！ ！ ？ ？"
                 },
                 {
@@ -28088,20 +28004,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "什麼！！！？？？"
                 },
                 {
@@ -28134,20 +28038,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "呼，嚇我一跳"
                 },
                 {
@@ -28163,20 +28055,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "不過在下還是不給你們拖後腿了，感覺變了跟沒變一樣"
                 },
                 {
@@ -28192,20 +28072,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "在下既沒有渾身充滿力量也沒有突然領悟什麼魔法"
                 },
                 {
@@ -28221,20 +28089,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "欸？"
                 },
                 {
@@ -28283,20 +28139,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "在突然覺得全身充滿了力量！"
                 },
                 {
@@ -28345,20 +28189,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "接下我的一擊吧，可惡的觸手怪！"
                 },
                 {
@@ -28390,20 +28222,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_smile_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "三日月！ ！ ！ ！算了......為了在下的假面騎士周邊！死吧！ 哈哈哈！ ！"
                 },
                 {
@@ -28535,20 +28355,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "欸，可是在下一個魔獸也沒打倒"
                 },
                 {
@@ -28581,20 +28389,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "謝謝你......對了三日月去哪了"
                 },
                 {
@@ -28627,20 +28423,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "哈？"
                 },
                 {
@@ -29802,20 +29586,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "開什麼玩笑，誰跟你是同一類人！"
                 },
                 {
@@ -29848,20 +29620,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "欸？"
                 },
                 {
@@ -29927,20 +29687,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "誰會信你們！ ！"
                 },
                 {
@@ -30006,20 +29754,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "我去你的三日月！ ！ ！ ！"
                 },
                 {
@@ -30130,20 +29866,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "為什麼不是你去？！"
                 },
                 {
@@ -30176,20 +29900,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "吼吼吼！！！"
                 },
                 {
@@ -30270,20 +29982,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "我們都要被吃掉了你還在那解說呢，快來救人啊餵！ ？"
                 },
                 {
@@ -31291,10 +30991,6 @@
                   "time": 250
                 },
                 {
-                  "kind": "comment",
-                  "text": "TODO: 【此處應有梗平立繪切換，未製作完成，忽略本句】"
-                },
-                {
                   "kind": "image.hide",
                   "code": 10,
                   "time": 0,
@@ -31389,20 +31085,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_smile_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "呼！限量版的假面騎士腰帶！ ！ ！還好你沒事，真是太好了！ ！ ！"
                 },
                 {
@@ -31452,20 +31136,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "嘿嘿，還好啦"
                 },
                 {
@@ -31481,20 +31153,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "那在下先走了"
                 },
                 {
@@ -31527,20 +31187,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "嗯，畢竟在下還有漫展要去，不快點的話就趕不上了。"
                 },
                 {
@@ -31637,20 +31285,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "哈哈哈，你怎麼會有這個影片呢，真是的，這也太噁心了吧。"
                 },
                 {
@@ -31716,20 +31352,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "誰...誰讓你放那種視頻......我賠你就是了"
                 },
                 {
@@ -31778,20 +31402,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "快！ TMD快給我！ ！ ！ ！"
                 },
                 {
@@ -31824,20 +31436,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "這是啥？什麼叫本人願意在伐魔樂隊工作50年"
                 },
                 {
@@ -31853,20 +31453,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "這是賣身契吧！誰會簽這玩意啊！ ？話說為什麼那麼想要我留下來？"
                 },
                 {
@@ -31899,20 +31487,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "哈？"
                 },
                 {
@@ -31945,20 +31521,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "別別別！ ！ ！ ！ ！"
                 },
                 {
@@ -31974,20 +31538,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "一個月，不能再多了"
                 },
                 {
@@ -32020,20 +31572,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "二個月"
                 },
                 {
@@ -32065,20 +31605,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "一年！"
                 },
                 {
@@ -32111,20 +31639,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "不對，剛才我說錯了，是一週！ ！"
                 },
                 {
@@ -32156,20 +31672,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_neutral_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "餵餵我錯了，你別上傳影片！ ！一年就一年！ ！"
                 },
                 {
@@ -32236,20 +31740,8 @@
                   "async": true
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 10,
-                  "image": "keng_panic_portrait.png",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
-                  "speaker": "梗平",
+                  "speaker": "梗平(女装)",
                   "text": "全國巡迴？"
                 },
                 {
@@ -33887,7 +33379,7 @@
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）我們在書店A前面要討論怎麼樣攻進去了"
+          "text": "（手機）我們在ANIsister前面要討論怎麼樣攻進去了"
         },
         {
           "kind": "image.hide",
@@ -34317,7 +33809,7 @@
         },
         {
           "kind": "narration",
-          "text": "梗平來不及思考什麼，便奔向了肥宅滿布的書店A"
+          "text": "梗平來不及思考什麼，便奔向了肥宅滿布的ANIsister"
         },
         {
           "kind": "image.hide",
@@ -34743,7 +34235,7 @@
         },
         {
           "kind": "narration",
-          "text": "梗平來到了書店A的門口，發現友人們跟表妹早已在現場等待"
+          "text": "梗平來到了ANIsister的門口，發現友人們跟表妹早已在現場等待"
         },
         {
           "kind": "image.hide",
@@ -35035,7 +34527,7 @@
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "發瘋了的肥宅佔據了書店A，然後IB的哥哥似乎在裡面對吧"
+          "text": "發瘋了的肥宅佔據了ANIsister，然後IB的哥哥似乎在裡面對吧"
         },
         {
           "kind": "image.hide",
@@ -44628,7 +44120,7 @@
         },
         {
           "kind": "narration",
-          "text": "正當梗平經過大門深鎖的書店A時，原本封閉的鐵門出現了騷動"
+          "text": "正當梗平經過大門深鎖的ANIsister時，原本封閉的鐵門出現了騷動"
         },
         {
           "kind": "image.hide",
@@ -45029,7 +44521,7 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "書店A裡面被壓制的肥宅跑出來了，現在外面被擠得水洩不通"
+          "text": "ANIsister裡面被壓制的肥宅跑出來了，現在外面被擠得水洩不通"
         },
         {
           "kind": "image.hide",
@@ -45167,7 +44659,7 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）肥宅們從書店A裡湧出來了，不要隨便出門啊"
+          "text": "（手機）肥宅們從ANIsister裡湧出來了，不要隨便出門啊"
         },
         {
           "kind": "image.hide",
@@ -45458,7 +44950,7 @@
         {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "（手機）我們拿到肥宅們的聖物了，但是沒辦法過去書店A"
+          "text": "（手機）我們拿到肥宅們的聖物了，但是沒辦法過去ANIsister"
         },
         {
           "kind": "image.hide",
@@ -46247,7 +45739,7 @@
         },
         {
           "kind": "narration",
-          "text": "伴隨著持續性的言語攻擊BGM，眾人來到了書店A"
+          "text": "伴隨著持續性的言語攻擊BGM，眾人來到了ANIsister"
         },
         {
           "kind": "image.hide",
@@ -46280,7 +45772,7 @@
         },
         {
           "kind": "narration",
-          "text": "一個看起來很有氣勢的人站在了書店A的角落"
+          "text": "一個看起來很有氣勢的人站在了ANIsister的角落"
         },
         {
           "kind": "image.hide",
@@ -47685,7 +47177,7 @@
                 },
                 {
                   "kind": "narration",
-                  "text": "梗平用一次完美的騎士跳逃出了人群的包圍，然後直線衝出了書店A"
+                  "text": "梗平用一次完美的騎士跳逃出了人群的包圍，然後直線衝出了ANIsister"
                 },
                 {
                   "kind": "image.hide",
@@ -50438,7 +49930,7 @@
         },
         {
           "kind": "narration",
-          "text": "那個打小鋼珠的警察，他來了，他來拯救耿平了"
+          "text": "那個打小鋼珠的警察，他來了，他來拯救梗平了"
         },
         {
           "kind": "image.hide",
@@ -51250,7 +50742,7 @@
         },
         {
           "kind": "narration",
-          "text": "還有那之後在書店A並肩作戰的時光"
+          "text": "還有那之後在ANIsister並肩作戰的時光"
         },
         {
           "kind": "image.hide",
@@ -51868,7 +51360,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "貝琪",
+          "speaker": "貝琪(婚紗)",
           "text": "我願意"
         },
         {
@@ -51901,20 +51393,8 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
-          "speaker": "梗平",
+          "speaker": "梗平(西裝)",
           "text": "......"
         },
         {
@@ -51930,20 +51410,8 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
-          "speaker": "梗平",
+          "speaker": "梗平(西裝)",
           "text": "在下願意"
         },
         {
@@ -52369,7 +51837,7 @@
         },
         {
           "kind": "narration",
-          "text": "[能到達這裡的想必都是過人的勇者["
+          "text": "能到達這裡的想必都是過人的勇者"
         },
         {
           "kind": "image.hide",

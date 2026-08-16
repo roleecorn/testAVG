@@ -355,7 +355,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "還有那之後在書店A並肩作戰的時光",
+        "還有那之後在ANIsister並肩作戰的時光",
         {
             "type": "hideImage",
             "code": 10,
@@ -871,7 +871,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "\t[貝琪]我願意",
+        "\t[貝琪(婚紗)]我願意",
         {
             "type": "hideImage",
             "code": 10,
@@ -897,18 +897,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]......",
+        "\t[梗平(西裝)]......",
         {
             "type": "hideImage",
             "code": 10,
@@ -921,18 +910,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]在下願意",
+        "\t[梗平(西裝)]在下願意",
         {
             "type": "hideImage",
             "code": 10,
@@ -1291,7 +1269,7 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "[能到達這裡的想必都是過人的勇者[",
+        "能到達這裡的想必都是過人的勇者",
         {
             "type": "hideImage",
             "code": 10,

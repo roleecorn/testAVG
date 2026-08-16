@@ -375,7 +375,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "正當梗平經過大門深鎖的書店A時，原本封閉的鐵門出現了騷動",
+        "正當梗平經過大門深鎖的ANIsister時，原本封閉的鐵門出現了騷動",
         {
             "type": "hideImage",
             "code": 10,
@@ -716,7 +716,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]書店A裡面被壓制的肥宅跑出來了，現在外面被擠得水洩不通",
+        "\t[梗平]ANIsister裡面被壓制的肥宅跑出來了，現在外面被擠得水洩不通",
         {
             "type": "hideImage",
             "code": 10,
@@ -827,7 +827,7 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（手機）肥宅們從書店A裡湧出來了，不要隨便出門啊",
+        "\t[梗平]（手機）肥宅們從ANIsister裡湧出來了，不要隨便出門啊",
         {
             "type": "hideImage",
             "code": 10,
@@ -1057,7 +1057,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "\t[克莉絲]（手機）我們拿到肥宅們的聖物了，但是沒辦法過去書店A",
+        "\t[克莉絲]（手機）我們拿到肥宅們的聖物了，但是沒辦法過去ANIsister",
         {
             "type": "hideImage",
             "code": 10,
@@ -1727,7 +1727,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "伴隨著持續性的言語攻擊BGM，眾人來到了書店A",
+        "伴隨著持續性的言語攻擊BGM，眾人來到了ANIsister",
         {
             "type": "hideImage",
             "code": 10,
@@ -1753,7 +1753,7 @@ main.floors.main_ch6_1=
             "time": 0,
             "async": true
         },
-        "一個看起來很有氣勢的人站在了書店A的角落",
+        "一個看起來很有氣勢的人站在了ANIsister的角落",
         {
             "type": "hideImage",
             "code": 10,

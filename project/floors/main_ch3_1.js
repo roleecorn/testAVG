@@ -934,7 +934,7 @@ main.floors.main_ch3_1=
             "time": 0,
             "async": true
         },
-        "\t[三角]至少人不壞，昨天他其實偷偷自己又去了一趟書店A呢",
+        "\t[三角]至少人不壞，昨天他其實偷偷自己又去了一趟ANIsister呢",
         {
             "type": "hideImage",
             "code": 10,

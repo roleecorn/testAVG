@@ -375,7 +375,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "梗平來到了書店A的門口，發現友人們跟表妹早已在現場等待",
+        "梗平來到了ANIsister的門口，發現友人們跟表妹早已在現場等待",
         {
             "type": "hideImage",
             "code": 10,
@@ -610,7 +610,7 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "\t[東山]發瘋了的肥宅佔據了書店A，然後IB的哥哥似乎在裡面對吧",
+        "\t[東山]發瘋了的肥宅佔據了ANIsister，然後IB的哥哥似乎在裡面對吧",
         {
             "type": "hideImage",
             "code": 10,

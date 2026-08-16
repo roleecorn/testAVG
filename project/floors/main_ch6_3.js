@@ -852,7 +852,7 @@ main.floors.main_ch6_3=
             "time": 0,
             "async": true
         },
-        "那個打小鋼珠的警察，他來了，他來拯救耿平了",
+        "那個打小鋼珠的警察，他來了，他來拯救梗平了",
         {
             "type": "hideImage",
             "code": 10,

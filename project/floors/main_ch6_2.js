@@ -817,7 +817,7 @@ main.floors.main_ch6_2=
                             "time": 0,
                             "async": true
                         },
-                        "梗平用一次完美的騎士跳逃出了人群的包圍，然後直線衝出了書店A",
+                        "梗平用一次完美的騎士跳逃出了人群的包圍，然後直線衝出了ANIsister",
                         {
                             "type": "hideImage",
                             "code": 30,

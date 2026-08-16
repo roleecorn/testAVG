@@ -2838,18 +2838,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]這套女裝是什麼回事",
+                        "\t[梗平(女装)]這套女裝是什麼回事",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2875,18 +2864,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]請容我女裝到這份工作結束",
+                        "\t[梗平(女装)]請容我女裝到這份工作結束",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3232,18 +3210,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]欸？",
+                        "\t[梗平(女装)]欸？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3269,18 +3236,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]這是什麼狀況，在下下面怎麼空蕩蕩的？ ！ ！ ！",
+                        "\t[梗平(女装)]這是什麼狀況，在下下面怎麼空蕩蕩的？ ！ ！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3319,18 +3275,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]這不就本子裡的觸手怪嘛，說起來它們是怎麼樣凌辱的，像動畫裡的那樣？",
+                        "\t[梗平(女装)]這不就本子裡的觸手怪嘛，說起來它們是怎麼樣凌辱的，像動畫裡的那樣？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3356,18 +3301,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]呃，不是的，在下只是好奇而已",
+                        "\t[梗平(女装)]呃，不是的，在下只是好奇而已",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3380,18 +3314,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]慢著，那在下這是變成魔法少女了！ ？不會在下變不回去吧！ ！ ？ ？",
+                        "\t[梗平(女装)]慢著，那在下這是變成魔法少女了！ ？不會在下變不回去吧！ ！ ？ ？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3430,18 +3353,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]什麼！！！？？？",
+                        "\t[梗平(女装)]什麼！！！？？？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3467,18 +3379,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]呼，嚇我一跳",
+                        "\t[梗平(女装)]呼，嚇我一跳",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3491,18 +3392,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]不過在下還是不給你們拖後腿了，感覺變了跟沒變一樣",
+                        "\t[梗平(女装)]不過在下還是不給你們拖後腿了，感覺變了跟沒變一樣",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3515,18 +3405,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]在下既沒有渾身充滿力量也沒有突然領悟什麼魔法",
+                        "\t[梗平(女装)]在下既沒有渾身充滿力量也沒有突然領悟什麼魔法",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3539,18 +3418,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]欸？",
+                        "\t[梗平(女装)]欸？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3589,18 +3457,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]在突然覺得全身充滿了力量！",
+                        "\t[梗平(女装)]在突然覺得全身充滿了力量！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3639,18 +3496,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]接下我的一擊吧，可惡的觸手怪！",
+                        "\t[梗平(女装)]接下我的一擊吧，可惡的觸手怪！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3676,18 +3522,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_smile_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]三日月！ ！ ！ ！算了......為了在下的假面騎士周邊！死吧！ 哈哈哈！ ！",
+                        "\t[梗平(女装)]三日月！ ！ ！ ！算了......為了在下的假面騎士周邊！死吧！ 哈哈哈！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3791,18 +3626,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]欸，可是在下一個魔獸也沒打倒",
+                        "\t[梗平(女装)]欸，可是在下一個魔獸也沒打倒",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3828,18 +3652,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]謝謝你......對了三日月去哪了",
+                        "\t[梗平(女装)]謝謝你......對了三日月去哪了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3865,18 +3678,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]哈？",
+                        "\t[梗平(女装)]哈？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -4818,18 +4620,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]開什麼玩笑，誰跟你是同一類人！",
+                        "\t[梗平(女装)]開什麼玩笑，誰跟你是同一類人！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -4855,18 +4646,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]欸？",
+                        "\t[梗平(女装)]欸？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -4918,18 +4698,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]誰會信你們！ ！",
+                        "\t[梗平(女装)]誰會信你們！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -4981,18 +4750,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]我去你的三日月！ ！ ！ ！",
+                        "\t[梗平(女装)]我去你的三日月！ ！ ！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5088,18 +4846,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]為什麼不是你去？！",
+                        "\t[梗平(女装)]為什麼不是你去？！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5125,18 +4872,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]吼吼吼！！！",
+                        "\t[梗平(女装)]吼吼吼！！！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5201,18 +4937,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]我們都要被吃掉了你還在那解說呢，快來救人啊餵！ ？",
+                        "\t[梗平(女装)]我們都要被吃掉了你還在那解說呢，快來救人啊餵！ ？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6071,10 +5796,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 250
                         },
                         {
-                            "type": "comment",
-                            "text": "TODO: 【此處應有梗平立繪切換，未製作完成，忽略本句】"
-                        },
-                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -6151,18 +5872,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_smile_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]呼！限量版的假面騎士腰帶！ ！ ！還好你沒事，真是太好了！ ！ ！",
+                        "\t[梗平(女装)]呼！限量版的假面騎士腰帶！ ！ ！還好你沒事，真是太好了！ ！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6201,18 +5911,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]嘿嘿，還好啦",
+                        "\t[梗平(女装)]嘿嘿，還好啦",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6225,18 +5924,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]那在下先走了",
+                        "\t[梗平(女装)]那在下先走了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6262,18 +5950,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]嗯，畢竟在下還有漫展要去，不快點的話就趕不上了。",
+                        "\t[梗平(女装)]嗯，畢竟在下還有漫展要去，不快點的話就趕不上了。",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6351,18 +6028,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]哈哈哈，你怎麼會有這個影片呢，真是的，這也太噁心了吧。",
+                        "\t[梗平(女装)]哈哈哈，你怎麼會有這個影片呢，真是的，這也太噁心了吧。",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6414,18 +6080,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]誰...誰讓你放那種視頻......我賠你就是了",
+                        "\t[梗平(女装)]誰...誰讓你放那種視頻......我賠你就是了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6464,18 +6119,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]快！ TMD快給我！ ！ ！ ！",
+                        "\t[梗平(女装)]快！ TMD快給我！ ！ ！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6501,18 +6145,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]這是啥？什麼叫本人願意在伐魔樂隊工作50年",
+                        "\t[梗平(女装)]這是啥？什麼叫本人願意在伐魔樂隊工作50年",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6525,18 +6158,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]這是賣身契吧！誰會簽這玩意啊！ ？話說為什麼那麼想要我留下來？",
+                        "\t[梗平(女装)]這是賣身契吧！誰會簽這玩意啊！ ？話說為什麼那麼想要我留下來？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6562,18 +6184,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]哈？",
+                        "\t[梗平(女装)]哈？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6599,18 +6210,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]別別別！ ！ ！ ！ ！",
+                        "\t[梗平(女装)]別別別！ ！ ！ ！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6623,18 +6223,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]一個月，不能再多了",
+                        "\t[梗平(女装)]一個月，不能再多了",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6660,18 +6249,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]二個月",
+                        "\t[梗平(女装)]二個月",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6697,18 +6275,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]一年！",
+                        "\t[梗平(女装)]一年！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6734,18 +6301,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]不對，剛才我說錯了，是一週！ ！",
+                        "\t[梗平(女装)]不對，剛才我說錯了，是一週！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6771,18 +6327,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]餵餵我錯了，你別上傳影片！ ！一年就一年！ ！",
+                        "\t[梗平(女装)]餵餵我錯了，你別上傳影片！ ！一年就一年！ ！",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6834,18 +6379,7 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]全國巡迴？",
+                        "\t[梗平(女装)]全國巡迴？",
                         {
                             "type": "hideImage",
                             "code": 10,
