@@ -149,30 +149,36 @@
 
 ## `ruka`／漆原瑠華
 
-- 劇情來源：`work/text/漆原瑠華.txt`（本次 ZIP 新來源，尚未落地）
-- 資源追蹤狀態：`pending`；尚無 Story IR、floor 或可玩入口
+- 劇情來源：`project/story/漆原瑠華.txt`
+- 資源追蹤狀態：`active`；`ruka_1`～`ruka_4`、Akiba 入口與表情圖已接入；`.codex/task-questions/20260816-201520-zip-story.md` Q2 已由使用者確認「漆原?華」為預期字面內容
 
 | 紀錄鍵 | ZIP 序號／run | 原始相對路徑 | 原始 SHA-256 | 種類 | 差異狀態 | 使用方式 | 最後命名／路徑 | Story IR scene／用途 | 驗證證據 | 狀態 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ruka:24047268ba24a72d0e3129bd444ae571a9008413cd5d53ea66c562f953c29cb1:13.漆原瑠華/漆原瑠華.txt | 20260816-174815 | 13.漆原瑠華/漆原瑠華.txt | 24047268ba24a72d0e3129bd444ae571a9008413cd5d53ea66c562f953c29cb1 | script | new | authoritative-source (pending) | work/text/漆原瑠華.txt | - | work/script-manifest.md + task-question 20260816-175000 | pending |
-| ruka:79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025:13.漆原瑠華/圖檔/漆原瑠華.png | 20260816-174815 | 13.漆原瑠華/圖檔/漆原瑠華.png | 79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025 | portrait | new | generated-source | （使用者確認為漆原瑠華主角生成圖來源；目前無已登錄 runtime 輸出） | 13.漆原瑠華／主角生成來源；支線尚未落地 | work/asset-usage.md + user confirmation; branch pending | pending |
+| ruka:24047268ba24a72d0e3129bd444ae571a9008413cd5d53ea66c562f953c29cb1:13.漆原瑠華/漆原瑠華.txt | 20260816-174815 | 13.漆原瑠華/漆原瑠華.txt | 24047268ba24a72d0e3129bd444ae571a9008413cd5d53ea66c562f953c29cb1 | script | new | authoritative-source (superseded by current full source) | prior work text | - | prior run record | superseded |
+| ruka:79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025:13.漆原瑠華/圖檔/漆原瑠華.png | 20260816-174815 | 13.漆原瑠華/圖檔/漆原瑠華.png | 79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025 | portrait | new | generated-source (superseded by current run evidence) | prior work output | - | prior run record | superseded |
+| ruka:87082e827dd4b81a2299aa3ef48f6ea3623147e3e19786b95bcea91d3b1ac3fb:13.漆原瑠華/漆原瑠華.txt:20260816-201520 | 20260816-201520 | 13.漆原瑠華/漆原瑠華.txt | 87082e827dd4b81a2299aa3ef48f6ea3623147e3e19786b95bcea91d3b1ac3fb | script | new | authoritative-source | project/story/漆原瑠華.txt | ruka_1..ruka_4 | work/script-manifest.md; source SHA 7378c6f3...; manage_story_ir | active |
+| ruka:79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025:13.漆原瑠華/圖檔/漆原瑠華.png:20260816-201520 | 20260816-201520 | 13.漆原瑠華/圖檔/漆原瑠華.png | 79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025 | portrait | new | generated-source | project/images/ruka_{smile,angry,sad,surprised,panic,normal}.png | ruka_2..ruka_4 | intake-manifest; expression-validation; IR/floor/data chain | active |
 
 ## `idw`／IDW
 
-- 劇情來源：`work/text/IDW.txt`（本次 ZIP 新來源，尚未落地）
-- 資源追蹤狀態：`pending`；尚無 Story IR、floor 或可玩入口
+- 劇情來源：`project/story/IDW.txt`
+- 資源追蹤狀態：`active`；`idw_1`～`idw_4`、Akiba 入口與表情圖已接入
 
 | 紀錄鍵 | ZIP 序號／run | 原始相對路徑 | 原始 SHA-256 | 種類 | 差異狀態 | 使用方式 | 最後命名／路徑 | Story IR scene／用途 | 驗證證據 | 狀態 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| idw:9f29c3f223c643387a118d44bfbbb6fad757330fc5b0e8afd7d2ac2a1fe2d466:14.IDW/IDW.txt | 20260816-174815 | 14.IDW/IDW.txt | 9f29c3f223c643387a118d44bfbbb6fad757330fc5b0e8afd7d2ac2a1fe2d466 | script | new | authoritative-source (pending) | work/text/IDW.txt | - | work/script-manifest.md + task-question 20260816-175000 | pending |
-| idw:9570da4c2c39757d74a8ae813004e7e94e6b34904b4a0e71be25a5764f412a63:14.IDW/圖檔/IDW.png | 20260816-174815 | 14.IDW/圖檔/IDW.png | 9570da4c2c39757d74a8ae813004e7e94e6b34904b4a0e71be25a5764f412a63 | portrait | new | generated-source | （使用者確認為 IDW 主角生成圖來源；目前無已登錄 runtime 輸出） | 14.IDW／主角生成來源；支線尚未落地 | work/asset-usage.md + user confirmation; branch pending | pending |
+| idw:9f29c3f223c643387a118d44bfbbb6fad757330fc5b0e8afd7d2ac2a1fe2d466:14.IDW/IDW.txt | 20260816-174815 | 14.IDW/IDW.txt | 9f29c3f223c643387a118d44bfbbb6fad757330fc5b0e8afd7d2ac2a1fe2d466 | script | new | authoritative-source (superseded by current run evidence) | prior work text | - | prior run record | superseded |
+| idw:9570da4c2c39757d74a8ae813004e7e94e6b34904b4a0e71be25a5764f412a63:14.IDW/圖檔/IDW.png | 20260816-174815 | 14.IDW/圖檔/IDW.png | 9570da4c2c39757d74a8ae813004e7e94e6b34904b4a0e71be25a5764f412a63 | portrait | new | generated-source (superseded by current run evidence) | prior work output | - | prior run record | superseded |
+| idw:9f29c3f223c643387a118d44bfbbb6fad757330fc5b0e8afd7d2ac2a1fe2d466:14.IDW/IDW.txt:20260816-201520 | 20260816-201520 | 14.IDW/IDW.txt | 9f29c3f223c643387a118d44bfbbb6fad757330fc5b0e8afd7d2ac2a1fe2d466 | script | new | authoritative-source | project/story/IDW.txt | idw_1..idw_4 | work/script-manifest.md; source SHA matches; manage_story_ir | active |
+| idw:9570da4c2c39757d74a8ae813004e7e94e6b34904b4a0e71be25a5764f412a63:14.IDW/圖檔/IDW.png:20260816-201520 | 20260816-201520 | 14.IDW/圖檔/IDW.png | 9570da4c2c39757d74a8ae813004e7e94e6b34904b4a0e71be25a5764f412a63 | portrait | new | generated-source | project/images/idw_{smile,angry,sad,surprised,panic,normal}.png | idw_1..idw_4 | intake-manifest; expression-validation; IR/floor/data chain | active |
 
 ## `sena`／柏崎星奈
 
-- 劇情來源：`work/text/柏崎星奈.txt`（本次 ZIP 新來源，尚未落地）
-- 資源追蹤狀態：`pending`；尚無 Story IR、floor 或可玩入口
+- 劇情來源：`project/story/柏崎星奈.txt`
+- 資源追蹤狀態：`active`；`sena_1`～`sena_4`、Akiba 入口與表情圖已接入
 
 | 紀錄鍵 | ZIP 序號／run | 原始相對路徑 | 原始 SHA-256 | 種類 | 差異狀態 | 使用方式 | 最後命名／路徑 | Story IR scene／用途 | 驗證證據 | 狀態 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| sena:7040e0c5da09fd132f1ac5f2e3f11440bf552f5f39cd464ead2b3d2ec02770f4:15.柏崎星奈/柏崎星奈.txt | 20260816-174815 | 15.柏崎星奈/柏崎星奈.txt | 7040e0c5da09fd132f1ac5f2e3f11440bf552f5f39cd464ead2b3d2ec02770f4 | script | new | authoritative-source (pending) | work/text/柏崎星奈.txt | - | work/script-manifest.md + task-question 20260816-175000 | pending |
-| sena:6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555:15.柏崎星奈/圖檔/柏崎星奈.png | 20260816-174815 | 15.柏崎星奈/圖檔/柏崎星奈.png | 6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555 | portrait | new | generated-source | （使用者確認為柏崎星奈主角生成圖來源；目前無已登錄 runtime 輸出） | 15.柏崎星奈／主角生成來源；支線尚未落地 | work/asset-usage.md + user confirmation; branch pending | pending |
+| sena:7040e0c5da09fd132f1ac5f2e3f11440bf552f5f39cd464ead2b3d2ec02770f4:15.柏崎星奈/柏崎星奈.txt | 20260816-174815 | 15.柏崎星奈/柏崎星奈.txt | 7040e0c5da09fd132f1ac5f2e3f11440bf552f5f39cd464ead2b3d2ec02770f4 | script | new | authoritative-source (superseded by current run evidence) | prior work text | - | prior run record | superseded |
+| sena:6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555:15.柏崎星奈/圖檔/柏崎星奈.png | 20260816-174815 | 15.柏崎星奈/圖檔/柏崎星奈.png | 6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555 | portrait | new | generated-source (superseded by current run evidence) | prior work output | - | prior run record | superseded |
+| sena:b029382c3456645756a7a1f2ee7d70c3ba5cfc63c1dd7c6b3fdd36bb8ef03440:15.柏崎星奈/柏崎星奈.txt:20260816-201520 | 20260816-201520 | 15.柏崎星奈/柏崎星奈.txt | b029382c3456645756a7a1f2ee7d70c3ba5cfc63c1dd7c6b3fdd36bb8ef03440 | script | new | authoritative-source | project/story/柏崎星奈.txt | sena_1..sena_4 | work/script-manifest.md; source SHA 7040e0c5...; manage_story_ir | active |
+| sena:6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555:15.柏崎星奈/圖檔/柏崎星奈.png:20260816-201520 | 20260816-201520 | 15.柏崎星奈/圖檔/柏崎星奈.png | 6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555 | portrait | new | generated-source | project/images/sena_{smile,sad,surprised,panic,normal}.png | sena_1..sena_4 | intake-manifest; expression-validation; IR/floor/data chain; angry candidate intake-only | active |

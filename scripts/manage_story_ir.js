@@ -21,6 +21,7 @@ const characterStories = [
   { slug: "lala", source: "菈菈安瑟姆.txt", floors: ["lala_1", "lala_2", "lala_3", "lala_4"] },
   { slug: "ruka", source: "漆原瑠華.txt", floors: ["ruka_1", "ruka_2", "ruka_3", "ruka_4"] },
   { slug: "idw", source: "IDW.txt", floors: ["idw_1", "idw_2", "idw_3", "idw_4"] },
+  { slug: "sena", source: "柏崎星奈.txt", floors: ["sena_1", "sena_2", "sena_3", "sena_4"] },
 ];
 
 function floorFile(id) {
