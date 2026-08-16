@@ -18,7 +18,7 @@
 建議位置：
 
 - 主線劇本：`project/mainStory/TODO.md`
-- 角色支線：與該支線劇本同資料夾的 `TODO.md`
+- 角色支線：`project/story/TODO.md`
 - 小遊戲：該小遊戲資料夾內的 `TODO.md`
 - 跨系統事項：根據實際修改範圍，放在最接近該工作區塊的位置。
 - 跨功能 Agent／Skill 事項：`.codex/TODO.md`。
@@ -64,15 +64,8 @@ TODO list 使用 Markdown，至少包含：
 
 ## 素材缺口
 
-缺背景、CG、GIF、立繪、BGM 或音效時，也要寫進 TODO list。缺素材不一定阻擋劇情轉換；可先用可搜尋佔位名稱保留演出意圖，但不得把錯誤角色圖或不相干素材當作正式替代。
+缺背景、CG、GIF、立繪、BGM 或音效時，也要寫進 TODO list。可在 intake 的 draft Story IR 使用可搜尋的 `unresolved.directive` 保留演出意圖，但 validated Story IR／floor 不得引用不存在、未登錄或不相干的素材。
 
-缺少 CG、GIF 或 BGM 時，不要只留下缺檔引用。應直接複製任意同類型的現有素材，命名成劇情實際需要的新檔名，並照常寫入事件與 `project/data.js` 登錄。接著在 TODO list 的 `待補素材` 標明該檔案目前是暫用複製素材，之後需要替換正式素材。
+劇情圖片缺口一律依來源需求處理：先完整閱讀 story source 並建立 draft Story IR，再從輸入圖片依檔名與內容配對直接素材，或以已記錄來源路徑與 SHA-256 的圖片生成 runtime 圖。若 draft Story IR 明確需要圖片但沒有正式素材，複製另一張合適圖片作為暫時替代，立即完成 `project/images/ → main.images → scene`；角色劇情寫入 `project/story/TODO.md`，主線寫入 `project/mainStory/TODO.md`。TODO 必須列出暫時檔名、copied source、預期正式素材、受影響 scene、替換條件與驗證證據。
 
-範例：
-
-```md
-- `project/images/ms_ch1_mapo_shop_cg.png`：暫用複製 CG，來源為 `project/images/example.png`；之後需要替換成「麻婆豆腐店門口」正式 CG。
-- `project/bgms/ms_ch4_train_tension.mp3`：暫用複製 BGM，來源為 `project/bgms/example.mp3`；之後需要替換成鐵道突入用 BGM。
-```
-
-複製素材時保留檔案類型與副檔名一致：CG 用現有圖片檔複製，GIF 用現有 GIF 複製，BGM 用現有音樂檔複製。這條規則只適用於 CG/GIF/BGM；角色立繪仍需遵守角色對應，不可用其他角色圖片假裝正式立繪。
+若只是 ZIP 額外來源圖暫時找不到 scene 用途，原樣複製到 repo 根層 `unknown/<角色ID>/<原始相對路徑>` 並保留 SHA-256；角色劇情寫入 `project/story/TODO.md`，主線寫入 `project/mainStory/TODO.md`。放入 `unknown/` 只表示待辦，不算已應用，也不得加入 `main.images`。Placeholder 與 unknown 待辦都不得只記在 task question；必須同步落到上述故事 TODO。

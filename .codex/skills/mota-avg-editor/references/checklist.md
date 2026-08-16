@@ -3,6 +3,7 @@
 這份清單只保存所有分支共用的交付檢查。圖片、樓層、BGM、CG、表情圖、ZIP 與 Akiba 等專用驗收，必須讀取本次實際使用之 reference／子 Skill 的 `Validation` 或驗收段落，不在此重複。
 
 - 已讀取並遵守本次實際使用的每一個 reference／子 Skill 驗收段落。
+- 本次所有新增與更新都遵守「使用者明確需求與權威劇情來源 → Story IR／scene 需求 → 素材與實作 → runtime 接入與驗證」；每項實作／素材都能反查需求依據，每項需求都有實作或依規定留下阻塞／TODO，沒有由現有素材、floor、資料登錄、工具或舊實作反向增刪或扭曲劇情。
 - `project/mainStory/` 與 `project/story/` 沒有任何 Agent 自行編修、局部 patch、補寫、潤稿、修錯字、格式化、刪除、搬移、重新命名或由衍生物反向改寫；若本次有來源檔變更，只能是可追溯完整來源的新增或整檔覆蓋。
 - 本次新增或整檔覆蓋的來源檔已核對輸入內容與 SHA-256，並與對應 Story IR、scene／floor 同一內容 commit 提交；來源若早已由外部 commit 提交，則未重複 staging。
 - 所有角色劇情變更都能追溯至 `project/story/*.txt` 真實來源；scene／floor 沒有反向取代文本。
@@ -12,7 +13,10 @@
 - 自然語言理解只存在於 Story IR 正規化階段；事件生成器只做確定性映射。未辨識或缺參數的製作指令已停止受影響範圍並落入 question／TODO，沒有降級成玩家可見文字。
 - `使用BGM`、`BGM暫停`、`播放音效` 等語意及其自然語言變體均先轉成 `bgm.play`、`bgm.pause`、`sound.play` 等 Story IR 節點，再映射為合法引擎事件；必要曲目或音效名稱在驗證前已解析完成。
 - 新增或修改的檔案、ID、註冊資料與引用彼此存在且一致。
-- ZIP 劇情匯入已逐張比對 intake manifest：每張 ZIP 圖片都有原始路徑與 SHA-256，且已正式接入、原樣保留於 `project/images/unknown/<角色ID>/`，或以阻塞 question 停止提交；沒有任何圖片被假定為不必要、遺漏或未處置。每位角色的內容 commit 均包含該角色全部 `unknown/` 圖片。
+- ZIP 劇情匯入已按角色依序完成「完整閱讀來源 → draft Story IR 視覺需求 → 來源圖片配對／生成 → validated Story IR → floor／入口」；沒有先整批複製圖片到 `project/images/` 再找用途。
+- 已逐張比對 intake／asset-usage manifest：每張 ZIP 圖片都有原始路徑與 SHA-256，並分類為 scene 直接使用、生成來源，或根層 `unknown/<角色ID>/` 的未應用待辦。只有前兩者算已應用；`unknown/` 圖片未放入 `project/images/` 或 `main.images`，且角色劇情已寫入 `project/story/TODO.md`、主線已寫入 `project/mainStory/TODO.md`。
+- Story IR 明確需要但缺少正式圖片的每個位置，都已複製其他合適圖片作暫時替代並完成 `project/images/ → main.images → scene`。TODO 已依故事類型寫入 `project/story/TODO.md` 或 `project/mainStory/TODO.md`，並包含暫時檔名、copied source、預期正式素材、scene、替換條件與驗證證據。
+- 已檢查 `project/images/ → project/data.js -> main.images → validated Story IR scene → floor`：images 目錄沒有未登錄圖片，data 沒有未被 scene 使用的圖片登錄，scene 引用與 floor 實作一致。單純登錄不算使用。
 - 所有事件 JSON、JavaScript 與 JSON 資料均通過相應語法檢查。
 - 已執行 `python scripts/build_action_cgs.py --check`、`node scripts/generate_main_story.js --check` 與 `node scripts/manage_story_ir.js`；主線與支線 IR 的來源 SHA-256、schema、素材／跳轉註冊及 floor round-trip 均一致，所有標準主線 floor 均為 17×13。
 - 主線與角色支線遵循同一套全局 AVG 版面；新版面完成實作後，所有 AVG floor 都只引用單一當前發言者語意槽，後續視覺調整只修改全局 layout config 與共用資產規則，沒有新增 floor 或角色例外。

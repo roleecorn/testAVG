@@ -11,7 +11,8 @@
 - `project/story/*.txt`：角色劇情內容與章節結構的唯一真實來源（source of truth），不是僅供追溯而保留的原始附件。Agent 不得局部修改或自行改寫其內容；但所有被分類且驗收完成的角色劇情 TXT，可由 Agent 以完整檔案新增，或用 ZIP／DOCX／TXT 等已確認完整新來源整檔覆蓋同角色舊稿。`project/floors/*.js` 中的 scene／floor 是依文本轉換出的遊戲實作；兩者有差異時以來源文本為準，不得反向修改來源。
 - `project/story-ir/main/*.json`、`project/story-ir/character/*.json`：納入 Git 的共用 Story IR 衍生產物，保存來源路徑與 SHA-256。主線與支線使用相同 schema／validator／emitter；來源雜湊不符時禁止生成 floor。Story IR 不可獨立交付或提交：任何新增、修改或刪除都必須在同一個內容 commit 中同步更新其對應 scene／floor；若沒有對應 scene／floor 變更，就不得提交該 IR 變更。
 - `project/data.js`：全塔設定。`main.floorIds` 決定樓層順序與可用樓層；`main.images/bgms/sounds/nameMap` 決定圖片、音樂、音效與別名。
-- `project/images/`：自定義圖片，例如背景、立繪、CG、UI 圖。動作 CG 的 `*_cg.png` 是母檔，`*_action_cg.png` 是衍生 runtime 檔；每張地點背景必須為完整畫面的 544×416，且每個地點各用唯一檔名。
+- `project/images/`：只保存 scene 會實際消費的自定義 runtime 圖片，例如背景、立繪、CG、UI 圖；不得作為 ZIP 原始圖片的暫存區或素材倉庫。此目錄內每張圖片都必須登錄於 `project/data.js -> main.images`，而每個 `main.images` 項目都必須由至少一個 validated Story IR scene 及對應 floor 使用。直接使用或由來源生成的正式圖片必須走完這條鏈；IR 缺少正式圖片時複製的暫時替代圖也必須走完同一條鏈，並在角色劇情 `project/story/TODO.md` 或主線 `project/mainStory/TODO.md` 記錄 copied source、目標正式素材、scene 與替換驗證。動作 CG 的 `*_cg.png` 是母檔，`*_action_cg.png` 是衍生 runtime 檔；每張地點背景必須為完整畫面的 544×416，且每個地點各用唯一檔名。
+- `unknown/`：repo 根層的未引用 ZIP 圖片待辦隔離區，不是 `project/images/unknown/`。無法對應 scene、也尚未作為生成來源的圖片須原樣保存於 `unknown/<角色ID>/<原始相對路徑>` 並保留 SHA-256；角色劇情寫入 `project/story/TODO.md`，主線寫入 `project/mainStory/TODO.md`。不得加入 `main.images`。放入此處只表示仍待處理，不表示圖片已應用或角色素材已完成。
 - `project/action-cg-manifest.json`：由 `scripts/build_action_cgs.py` 產生的動作 CG 母檔／輸出同步雜湊，不可手改。
 - `project/bgms/`：背景音樂。
 - `project/sounds/`：音效。
@@ -55,6 +56,8 @@ node scripts/manage_story_ir.js --emit-character
 - AI 需要展示或驗證遊戲效果時，優先使用上述標準 URL；只有使用者明確要求診斷伺服器時，才考慮其他啟動方式。
 
 ## AI 輸出原則
+
+所有新增與更新的首要決策原則都是劇情需求驅動，不限 ZIP 匯入或任何單一功能。必須先由使用者明確需求與權威劇情來源建立 Story IR／scene 的敘事、互動與演出需求，再依需求選擇、生成或暫代素材與實作，最後完成 runtime 接入與驗證。現有素材、floor、資料登錄、檔名、工具便利性與舊實作只能作為實作候選，不能反向決定、增刪或扭曲劇情需求；沒有來源或需求依據的內容不得新增，已有需求也不得因素材或實作不便而省略。
 
 AI 產生內容時，優先產生「可貼進事件 JSON 區」或「可直接存成樓層 JS」的資料。不要假設玩家會寫 JS。
 

@@ -1,5 +1,19 @@
 ﻿# 圖片與立繪
 
+## 劇情需求驅動與圖片使用閉環
+
+所有涉及圖片的新增與更新都必須由劇情需求驅動，不限 ZIP 流程。固定順序是：完整理解使用者需求與權威劇情來源、建立標示人物／背景／道具／CG 的 draft Story IR／scene 視覺需求、依需求從既有或輸入圖片的檔名與內容配對素材、直接接入或生成所需素材，最後才把會被 runtime 使用的圖片放入 `project/images/`。不得先依手邊圖片決定劇情演出，也不得先整批複製圖片到 `project/images/` 再尋找用途。
+
+角色劇情 ZIP 依相同全域原則逐角色執行；ZIP 的完整來源圖片盤點只增加逐張分類與追溯要求，不改變需求先於素材的決策順序。
+
+- 直接使用：來源圖成為 runtime 圖時，必須放入 `project/images/`、登錄於 `project/data.js -> main.images`，並由該角色最終 Story IR 的 `image.show`／`background.show` 及對應 floor scene 實際引用。
+- 作為生成來源：原圖留在原始 ZIP／`tmp/character-story-import/`，使用 `asset-usage.md` 記錄來源相對路徑、SHA-256、生成輸出與對應 scene／事件；只有生成後且同時完成 `project/images/ → main.images → scene` 的 runtime 圖進入專案圖片目錄。
+- 角色基準圖：只有在 draft Story IR 確認該角色需要立繪後，才可作為六表情圖的生成來源。六張切圖可先保留在 intake 作為生成產物，但只有被實際台詞情緒引用的表情才能進入 `project/images/` 並登錄；不能把六張全部放進專案等待未來使用。
+- IR 缺少正式圖片：複製一張其他合適圖片，改成可搜尋的暫時替代檔名，並立即完成 `project/images/ → main.images → Story IR scene → floor`。角色劇情把替代檔名、copied source、預期正式內容、受影響 scene、替換條件與驗證證據寫入 `project/story/TODO.md`；主線寫入 `project/mainStory/TODO.md`。Placeholder 是可玩的暫時實作，不得省略 TODO。
+- 未配對圖片：先回讀來源與 draft Story IR，確認是否漏掉 CG、道具、配角、背景或角色演出。仍無法建立 scene 引用或生成血緣時，將原圖不變地複製到 repo 根層 `unknown/<角色ID>/<原始相對路徑>` 並保留 SHA-256。它不進 `project/images/`、不登錄 `main.images`；這是標示未完成圖片待辦，不是圖片已應用或角色完成的證明。角色劇情寫入 `project/story/TODO.md`，主線寫入 `project/mainStory/TODO.md`。
+
+角色收尾時先逐張把 ZIP 圖片分類為直接使用、生成來源或 `unknown/` 待辦；只有前兩者算已應用。再檢查 runtime 硬鏈：`project/images/` 每張圖片都在 `main.images`，`main.images` 每個項目都至少被一個 validated Story IR scene 與對應 floor 使用。單純存在、只登錄、或僅在 TODO 提及都不算 scene 使用。
+
 ## 如何顯示/隱藏圖片
 
 本專案有三種「顯示/隱藏」，不要混用：
@@ -10,7 +24,7 @@
 
 ### 顯示持續圖片
 
-圖片需放在 `project/images`，並登錄到 `project/data.js -> main.images`。
+Runtime 圖片需放在 `project/images`，登錄到 `project/data.js -> main.images`，並至少由一個 scene 使用；三者缺一即為錯誤。未引用來源圖只能放在 repo 根層 `unknown/`，不得進入這條 runtime 鏈。
 
 ```js
 [
@@ -156,9 +170,9 @@ visiblePortraitY = dialogueY - visibleSourceHeight * portraitScale
 
 上例語意座標已由 runtime 支援，並用於已遷移的 1-1。最終 x、y 由 layout config 及人物 alpha bbox 計算，縮放倍率則只取全局 `portraitScale`，不能落成逐角色固定像素或各自 fit。
 
-自動為劇本補立繪時，必須先保留正確角色名，確認圖片屬於當前發言角色後，再依台詞當下的情緒選擇合適表情。同一個角色理論上會有複數張表情圖可用，例如 `neutral`、`smile`、`angry`、`surprised` 等；若判斷不出情緒，才使用該角色的預設/平常立繪。若找不到當前角色的任何圖片，就視為沒有可用圖片，不可用其他角色或相似名字的圖片代替。未知角色如 `???` 沒有已確認身分與同角色圖片時，清空所有人物圖且不顯示立繪。
+自動為劇本補立繪時，必須先保留正確角色名，確認圖片屬於當前發言角色後，再依台詞當下的情緒選擇合適表情。同一個角色理論上會有複數張表情圖可用，例如 `neutral`、`smile`、`angry`、`surprised` 等；若判斷不出情緒，才使用該角色的預設/平常立繪。不得把其他角色或相似名字的圖片誤認為該角色的正式素材；但已確認角色且 Story IR 明確需要立繪時，若正式素材缺少，必須依本節規則複製合適圖片作為明確可搜尋的暫時替代，接入 scene 並寫入對應故事 TODO。未知角色如 `???` 若身分尚未確認，該角色圖片接入仍屬局部阻塞，清空所有人物圖且不顯示立繪。
 
-新增角色支線劇情時，輸入應是一個 `.txt` 劇本文本，且能從檔案名稱確認這是哪個角色的支線。開始轉 scene 前，先確認 `project/images` 是否已存在該角色的原始角色圖；若沒有對應角色圖，必須拒絕這次改動，不要先產生缺圖劇情。若已有原始角色圖，必須先使用 `remove_bk.py` 對原始圖去背，輸出透明 PNG，再使用 `split_emotion_image.py` 將去背後圖片分割出六張表情圖；分割工具會把輸出圖等比例縮小到固定上限，預設不超過 `195x195`，再登錄到 `project/data.js -> main.images` 並用於後續劇情轉換。
+新增角色支線劇情時，輸入應是一個 `.txt` 劇本文本，且能從檔案名稱確認這是哪個角色的支線。先完整閱讀文本並建立 draft Story IR，再確認既有正式角色圖或同角色 ZIP 基準圖能否滿足 IR 的立繪需求；若已確認角色但沒有對應正式角色圖，使用明確標示且有 TODO 的暫時替代圖完成可玩 scene，不得留下缺檔引用，也不得把暫代品宣稱為正式素材。需要新表情時，在 intake 先使用 `remove_bk.py` 去背，再使用 `split_emotion_image.py` 分割六張候選表情；分割工具會把輸出圖等比例縮小到固定上限，預設不超過 `195x195`。只有被 Story IR 實際引用的表情才移入 `project/images/`、登錄到 `project/data.js -> main.images` 並用於後續劇情轉換。
 
 `remove_bk.py` 是新增角色表情圖的固定前置流程，不是可選優化。即使原圖已是 2x3 表情表、尺寸可直接分割、或只需要裁切幾個像素，也要先去背，後續裁切與 `split_emotion_image.py` 都應基於去背後的透明 PNG。
 
@@ -175,11 +189,11 @@ visiblePortraitY = dialogueY - visibleSourceHeight * portraitScale
 角色圖處理流程範例：
 
 ```powershell
-python remove_bk.py project/images/角色.png project/images/角色_transparent.png
-python split_emotion_image.py project/images/角色_transparent.png --keep-original
+python remove_bk.py tmp/character-story-import/<zip>/art/角色.png tmp/character-story-import/<zip>/art/角色_transparent.png
+python split_emotion_image.py tmp/character-story-import/<zip>/art/角色_transparent.png --keep-original
 ```
 
-若需要維持最終表情檔名為 `角色_smile.png`、`角色_angry.png`、`角色_normal.png` 等，可在去背輸出完成後，用去背圖取代原始處理用圖，再執行分割；不要直接跳過去背。
+若需要維持最終表情檔名為 `角色_smile.png`、`角色_angry.png`、`角色_normal.png` 等，可在 intake 的去背輸出完成後，用去背圖取代原始處理用圖，再執行分割；不要直接跳過去背。只把 validated Story IR 已引用的最終檔案移入 `project/images/`。
 
 若支線劇情中的發言者被刻意隱蔽，例如 `???`、`神秘人`、`神祕人`，預設視為該支線劇情持有者本人來選擇立繪；但對話中顯示的發言者名稱仍保留原本的隱蔽寫法，不要提前暴露真名。
 

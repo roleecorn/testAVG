@@ -12,6 +12,7 @@ MTBuilder.app
 .idea/dictionaries
 
 # Sensitive or high-churn files:
+/tmp/
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.xml
