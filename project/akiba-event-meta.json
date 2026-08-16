@@ -2,6 +2,13 @@
   "version": 3,
   "activeEvents": [
     {
+      "id": "ruka_1",
+      "title": "街頭牛災",
+      "locations": ["warehouse_district"],
+      "floorId": "ruka_1",
+      "once": true
+    },
+    {
       "id": "huangmo_1",
       "title": "書店邂逅",
       "locations": ["blue_bookstore", "used_bookstore"],
