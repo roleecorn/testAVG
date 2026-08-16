@@ -1084,12 +1084,15 @@
           ]
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('okabe_1'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "okabe_1"
         },
         {
           "kind": "function.call",
           "function": "function () { core.plugin.addAkibaEvent({ id: 'okabe_2', title: '時間機器的夢想', locations: ['game_center'], floorId: 'okabe_2', once: true }); }"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     },
@@ -2652,12 +2655,15 @@
           "presentation": {}
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('okabe_2'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "okabe_2"
         },
         {
           "kind": "function.call",
           "function": "function () { core.plugin.addAkibaEvent({ id: 'okabe_3', title: '黑工與捷徑', locations: ['game_center'], floorId: 'okabe_3', once: true }); }"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     },
@@ -4420,12 +4426,15 @@
           ]
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('okabe_3'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "okabe_3"
         },
         {
           "kind": "function.call",
           "function": "function () { core.plugin.addAkibaEvent({ id: 'okabe_4', title: '假鈔與蜘蛛手機', locations: ['game_center'], floorId: 'okabe_4', once: true }); }"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     },
@@ -6903,8 +6912,11 @@
           "presentation": {}
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('okabe_4'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "okabe_4"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     }

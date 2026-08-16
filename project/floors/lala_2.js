@@ -916,6 +916,10 @@ main.floors.lala_2=
         {
             "type": "function",
             "function": "function () { core.plugin.addAkibaEvent({ id: 'lala_3', title: '怪物夥伴', locations: ['rabbit_house'], floorId: 'lala_3', once: true }); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

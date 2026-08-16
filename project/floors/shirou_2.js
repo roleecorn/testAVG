@@ -1119,6 +1119,10 @@ main.floors.shirou_2=
         {
             "type": "function",
             "function": "function () { core.plugin.addAkibaEvent({ id: 'shirou_3', title: '鍛刀大賽', locations: ['chinese_restaurant'], floorId: 'shirou_3', once: true }); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

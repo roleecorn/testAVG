@@ -1007,12 +1007,15 @@
           "presentation": {}
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('shirou_1'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "shirou_1"
         },
         {
           "kind": "function.call",
           "function": "function () { core.plugin.addAkibaEvent({ id: 'shirou_2', title: '規格外的廚刀', locations: ['chinese_restaurant'], floorId: 'shirou_2', once: true }); }"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     },
@@ -2335,12 +2338,15 @@
           "presentation": {}
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('shirou_2'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "shirou_2"
         },
         {
           "kind": "function.call",
           "function": "function () { core.plugin.addAkibaEvent({ id: 'shirou_3', title: '鍛刀大賽', locations: ['chinese_restaurant'], floorId: 'shirou_3', once: true }); }"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     },
@@ -5087,12 +5093,15 @@
           "presentation": {}
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('shirou_3'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "shirou_3"
         },
         {
           "kind": "function.call",
           "function": "function () { core.plugin.addAkibaEvent({ id: 'shirou_4', title: '嶄新的節奏', locations: ['chinese_restaurant'], floorId: 'shirou_4', once: true }); }"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     },
@@ -5964,8 +5973,11 @@
           "presentation": {}
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('shirou_4'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "shirou_4"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     }

@@ -920,6 +920,10 @@ main.floors.okabe_1=
         {
             "type": "function",
             "function": "function () { core.plugin.addAkibaEvent({ id: 'okabe_2', title: '時間機器的夢想', locations: ['game_center'], floorId: 'okabe_2', once: true }); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

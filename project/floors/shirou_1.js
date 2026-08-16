@@ -856,6 +856,10 @@ main.floors.shirou_1=
         {
             "type": "function",
             "function": "function () { core.plugin.addAkibaEvent({ id: 'shirou_2', title: '規格外的廚刀', locations: ['chinese_restaurant'], floorId: 'shirou_2', once: true }); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

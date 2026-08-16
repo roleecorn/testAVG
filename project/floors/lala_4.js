@@ -2270,6 +2270,10 @@ main.floors.lala_4=
         {
             "type": "function",
             "function": "function () { core.plugin.completeAkibaEvent('lala_4'); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

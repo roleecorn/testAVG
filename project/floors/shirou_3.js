@@ -2223,6 +2223,10 @@ main.floors.shirou_3=
         {
             "type": "function",
             "function": "function () { core.plugin.addAkibaEvent({ id: 'shirou_4', title: '嶄新的節奏', locations: ['chinese_restaurant'], floorId: 'shirou_4', once: true }); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

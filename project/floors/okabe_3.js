@@ -1462,6 +1462,10 @@ main.floors.okabe_3=
         {
             "type": "function",
             "function": "function () { core.plugin.addAkibaEvent({ id: 'okabe_4', title: '假鈔與蜘蛛手機', locations: ['game_center'], floorId: 'okabe_4', once: true }); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

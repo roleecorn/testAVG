@@ -2026,6 +2026,10 @@ main.floors.okabe_4=
         {
             "type": "function",
             "function": "function () { core.plugin.completeAkibaEvent('okabe_4'); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

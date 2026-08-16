@@ -8,6 +8,7 @@
 
 ## Resolved
 
+- `20260816-195916-character-scene-return-validation.md` Q1：新增 typed Akiba lifecycle IR 節點與終端路徑驗證，並修復 `lala_1`～`lala_4`、`okabe_1`～`okabe_4`、`shirou_1`～`shirou_4` 的回傳流程；角色 IR、floor、Akiba 管理器與主線檢查均通過。
 - `20260811-103543-akiba-minigame-study.md` Q4：原先把 `<canvas>` fallback 文字誤判為實際畫面；內建瀏覽器已完成「公園清潔隊」通關、計分與返回地圖的實機驗收。
 - `20260811-103543-akiba-minigame-study.md` Q1：以實際 `project/location-mappings.json` 的 22 個地點為正式範圍，並把 `akiba.md` 預期數量由 27 修正為 22。
 - `20260811-103543-akiba-minigame-study.md` Q2：已更新 `minigame-integration.md`，移除不存在的 `mapo_1_1.js` 示範入口敘述，改記 Akiba 地點選單正式入口。

@@ -59,7 +59,15 @@ function eventToIr(event) {
     case "changeFloor":
       return { kind: "goto", floorId: event.floorId, loc: event.loc, direction: event.direction, time: event.time };
     case "comment": return { kind: "comment", text: event.text || event.comment || "" };
-    case "function": return { kind: "function.call", function: event.function, async: event.async };
+    case "function": {
+      const completion = typeof event.function === "string"
+        && event.function.match(/core\.plugin\.completeAkibaEvent\(\s*['\"]([^'\"]+)['\"]\s*\)/);
+      if (completion) return { kind: "akiba.event.complete", eventId: completion[1] };
+      if (typeof event.function === "string" && /core\.plugin\.returnToAkiba\(\s*\)/.test(event.function)) {
+        return { kind: "akiba.return" };
+      }
+      return { kind: "function.call", function: event.function, async: event.async };
+    }
     case "playTransitionVideo":
       return { kind: "transition.video", name: event.name, time: event.time };
     case "choices":
@@ -119,6 +127,8 @@ function irToEvent(node) {
     case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time });
     case "comment": return { type: "comment", text: node.text };
     case "function.call": return cleanUndefined({ type: "function", function: node.function, async: node.async });
+    case "akiba.event.complete": return { type: "function", function: `function () { core.plugin.completeAkibaEvent('${node.eventId}'); }` };
+    case "akiba.return": return { type: "function", function: "function () { core.plugin.returnToAkiba(); }" };
     case "transition.video": return cleanUndefined({ type: "playTransitionVideo", name: node.name, time: node.time });
     case "choice":
       return cleanUndefined({
@@ -138,7 +148,7 @@ function irToEvent(node) {
 const ALLOWED_KINDS = new Set([
   "narration", "dialogue", "layout.set", "bgm.play", "bgm.pause", "bgm.resume",
   "sound.play", "sound.stop", "background.show", "image.show", "image.hide", "wait",
-  "goto", "comment", "function.call", "transition.video", "choice",
+  "goto", "comment", "function.call", "akiba.event.complete", "akiba.return", "transition.video", "choice",
 ]);
 
 function validateNode(node, location) {
@@ -148,6 +158,9 @@ function validateNode(node, location) {
     throw new Error(`${location}: ${node.kind}.text must be a string`);
   }
   if (node.kind === "dialogue" && typeof node.speaker !== "string") throw new Error(`${location}: dialogue.speaker must be a string`);
+  if (node.kind === "akiba.event.complete" && (typeof node.eventId !== "string" || !node.eventId)) {
+    throw new Error(`${location}: akiba.event.complete requires eventId`);
+  }
   if ((node.kind === "bgm.play" || node.kind === "sound.play") && typeof node.name !== "string") {
     throw new Error(`${location}: ${node.kind}.name must be a string`);
   }
@@ -160,6 +173,45 @@ function validateNode(node, location) {
       if (typeof option.text !== "string" || !Array.isArray(option.events)) throw new Error(`${location}.options[${index}]: invalid option`);
       option.events.forEach((child, childIndex) => validateNode(child, `${location}.options[${index}].events[${childIndex}]`));
     });
+  }
+}
+
+function getAkibaLifecycleCall(node) {
+  if (node.kind === "akiba.event.complete") return { kind: "complete", eventId: node.eventId };
+  if (node.kind === "akiba.return") return { kind: "return" };
+  if (node.kind !== "function.call" || typeof node.function !== "string") return null;
+  const completion = node.function.match(/core\.plugin\.completeAkibaEvent\(\s*['\"]([^'\"]+)['\"]\s*\)/);
+  if (completion) return { kind: "complete", eventId: completion[1] };
+  return /core\.plugin\.returnToAkiba\(\s*\)/.test(node.function) ? { kind: "return" } : null;
+}
+
+function terminalPaths(events) {
+  let paths = [[]];
+  for (const node of events) {
+    if (node.kind !== "choice") {
+      paths = paths.map((path) => path.concat(node));
+      continue;
+    }
+    const options = node.options.flatMap((option) => terminalPaths(option.events));
+    paths = paths.flatMap((path) => options.map((option) => path.concat(option)));
+  }
+  return paths;
+}
+
+function validateCharacterSceneLifecycle(scene, location) {
+  for (const [pathIndex, path] of terminalPaths(scene.events).entries()) {
+    const calls = path.map(getAkibaLifecycleCall);
+    const completions = calls.map((call, index) => ({ call, index })).filter(({ call }) => call && call.kind === "complete");
+    if (completions.length !== 1) {
+      throw new Error(`${location}.terminalPaths[${pathIndex}]: expected exactly one Akiba completion`);
+    }
+    const completion = completions[0];
+    if (completion.call.eventId !== scene.id) {
+      throw new Error(`${location}.terminalPaths[${pathIndex}]: completion id ${completion.call.eventId} must match scene id ${scene.id}`);
+    }
+    if (!calls.slice(completion.index + 1).some((call) => call && call.kind === "return")) {
+      throw new Error(`${location}.terminalPaths[${pathIndex}]: completeAkibaEvent must be followed by returnToAkiba`);
+    }
   }
 }
 
@@ -187,6 +239,7 @@ function validateBundle(bundle) {
     if (!scene.floor || typeof scene.floor !== "object" || !Array.isArray(scene.events)) throw new Error(`scenes[${index}]: floor/events missing`);
     validateAvgFloorDimensions(scene.floor, `scenes[${index}].floor`);
     scene.events.forEach((node, nodeIndex) => validateNode(node, `scenes[${index}].events[${nodeIndex}]`));
+    if (bundle.source.kind === "character") validateCharacterSceneLifecycle(scene, `scenes[${index}]`);
   });
   return bundle;
 }
@@ -266,4 +319,4 @@ function writeBundle(file, bundle) {
   fs.writeFileSync(file, JSON.stringify(validateBundle(bundle), null, 2) + "\n", "utf8");
 }
 
-module.exports = { createBundle, bundleToFloors, readBundle, validateAvgFloorDimensions, validateBundle, validateProjectReferences, verifySources, writeBundle };
+module.exports = { createBundle, bundleToFloors, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences, verifySources, writeBundle };

@@ -820,6 +820,10 @@ main.floors.lala_1=
         {
             "type": "function",
             "function": "function () { core.plugin.addAkibaEvent({ id: 'lala_2', title: '樂隊即興演唱', locations: ['rabbit_house'], floorId: 'lala_2', once: true }); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

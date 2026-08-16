@@ -747,6 +747,10 @@ main.floors.shirou_4=
         {
             "type": "function",
             "function": "function () { core.plugin.completeAkibaEvent('shirou_4'); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

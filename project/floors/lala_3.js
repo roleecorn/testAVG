@@ -1583,6 +1583,10 @@ main.floors.lala_3=
         {
             "type": "function",
             "function": "function () { core.plugin.addAkibaEvent({ id: 'lala_4', title: '失散姊姊', locations: ['rabbit_house'], floorId: 'lala_4', once: true }); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

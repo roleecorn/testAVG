@@ -1308,6 +1308,10 @@ main.floors.okabe_2=
         {
             "type": "function",
             "function": "function () { core.plugin.addAkibaEvent({ id: 'okabe_3', title: '黑工與捷徑', locations: ['game_center'], floorId: 'okabe_3', once: true }); }"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

@@ -936,12 +936,15 @@
           "async": true
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('lala_1'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "lala_1"
         },
         {
           "kind": "function.call",
           "function": "function () { core.plugin.addAkibaEvent({ id: 'lala_2', title: '樂隊即興演唱', locations: ['rabbit_house'], floorId: 'lala_2', once: true }); }"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1987,12 +1990,15 @@
           "async": true
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('lala_2'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "lala_2"
         },
         {
           "kind": "function.call",
           "function": "function () { core.plugin.addAkibaEvent({ id: 'lala_3', title: '怪物夥伴', locations: ['rabbit_house'], floorId: 'lala_3', once: true }); }"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     },
@@ -3839,12 +3845,15 @@
           "async": true
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('lala_3'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "lala_3"
         },
         {
           "kind": "function.call",
           "function": "function () { core.plugin.addAkibaEvent({ id: 'lala_4', title: '失散姊姊', locations: ['rabbit_house'], floorId: 'lala_4', once: true }); }"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     },
@@ -6535,8 +6544,11 @@
           "async": true
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.completeAkibaEvent('lala_4'); }"
+          "kind": "akiba.event.complete",
+          "eventId": "lala_4"
+        },
+        {
+          "kind": "akiba.return"
         }
       ]
     }
