@@ -18,6 +18,8 @@ main.floors.shirou_1=
     ],
     "bgm": "great_mission_heroic.mp3",
     "ratio": 1,
+    "width": 17,
+    "height": 13,
     "map": [
         [
             0,

@@ -18,6 +18,8 @@ main.floors.lala_4=
     ],
     "bgm": "spacetime_mystery.mp3",
     "ratio": 1,
+    "width": 17,
+    "height": 13,
     "map": [
         [
             0,

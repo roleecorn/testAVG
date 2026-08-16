@@ -18,6 +18,8 @@ main.floors.lala_2=
     ],
     "bgm": "bossa_casual_shop.mp3",
     "ratio": 1,
+    "width": 17,
+    "height": 13,
     "map": [
         [
             0,

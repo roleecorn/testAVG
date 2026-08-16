@@ -3,7 +3,7 @@ const path = require("path");
 const crypto = require("crypto");
 const vm = require("vm");
 const { isDeepStrictEqual } = require("util");
-const { createBundle, bundleToFloors, readBundle, validateProjectReferences, writeBundle } = require("./story_ir");
+const { createBundle, bundleToFloors, readBundle, validateAvgFloorDimensions, validateProjectReferences, writeBundle } = require("./story_ir");
 
 const root = path.resolve(__dirname, "..");
 const p = (...parts) => path.join(root, ...parts);
@@ -793,12 +793,7 @@ function walkEvents(events, visitor) {
 }
 
 function validateGeneratedFloor(floor) {
-  if (floor.width !== MAP_WIDTH || floor.height !== MAP_HEIGHT) {
-    throw new Error(`${floor.floorId}: expected ${MAP_WIDTH}x${MAP_HEIGHT}`);
-  }
-  if (floor.map.length !== MAP_HEIGHT || floor.map.some((row) => row.length !== MAP_WIDTH)) {
-    throw new Error(`${floor.floorId}: map dimensions do not match width/height`);
-  }
+  validateAvgFloorDimensions(floor);
   walkEvents(floor.eachArrive, (event) => {
     if (typeof event === "string" && /^【(?:CG|GIF|背景)\s*[：:]/.test(event)) {
       throw new Error(`${floor.floorId}: player-visible production directive: ${event}`);

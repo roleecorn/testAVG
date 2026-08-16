@@ -4,6 +4,8 @@ const path = require("path");
 const vm = require("vm");
 
 const STORY_IR_VERSION = 1;
+const AVG_MAP_WIDTH = 17;
+const AVG_MAP_HEIGHT = 13;
 
 function sha256File(file) {
   return crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
@@ -161,6 +163,19 @@ function validateNode(node, location) {
   }
 }
 
+function validateAvgFloorDimensions(floor, location) {
+  const label = location || (floor && floor.floorId) || "floor";
+  if (!floor || typeof floor !== "object" || Array.isArray(floor)) {
+    throw new Error(`${label}: floor must be an object`);
+  }
+  if (floor.width !== AVG_MAP_WIDTH || floor.height !== AVG_MAP_HEIGHT) {
+    throw new Error(`${label}: expected ${AVG_MAP_WIDTH}x${AVG_MAP_HEIGHT}`);
+  }
+  if (!Array.isArray(floor.map) || floor.map.length !== AVG_MAP_HEIGHT || floor.map.some((row) => !Array.isArray(row) || row.length !== AVG_MAP_WIDTH)) {
+    throw new Error(`${label}: map dimensions do not match ${AVG_MAP_WIDTH}x${AVG_MAP_HEIGHT}`);
+  }
+}
+
 function validateBundle(bundle) {
   if (!bundle || bundle.storyIrVersion !== STORY_IR_VERSION) throw new Error(`Story IR version must be ${STORY_IR_VERSION}`);
   if (!bundle.source || !Array.isArray(bundle.source.files) || !bundle.source.files.length) throw new Error("Story IR requires source.files");
@@ -170,6 +185,7 @@ function validateBundle(bundle) {
     if (!scene.id || ids.has(scene.id)) throw new Error(`scenes[${index}]: missing or duplicate id`);
     ids.add(scene.id);
     if (!scene.floor || typeof scene.floor !== "object" || !Array.isArray(scene.events)) throw new Error(`scenes[${index}]: floor/events missing`);
+    validateAvgFloorDimensions(scene.floor, `scenes[${index}].floor`);
     scene.events.forEach((node, nodeIndex) => validateNode(node, `scenes[${index}].events[${nodeIndex}]`));
   });
   return bundle;
@@ -250,4 +266,4 @@ function writeBundle(file, bundle) {
   fs.writeFileSync(file, JSON.stringify(validateBundle(bundle), null, 2) + "\n", "utf8");
 }
 
-module.exports = { createBundle, bundleToFloors, readBundle, validateBundle, validateProjectReferences, verifySources, writeBundle };
+module.exports = { createBundle, bundleToFloors, readBundle, validateAvgFloorDimensions, validateBundle, validateProjectReferences, verifySources, writeBundle };
