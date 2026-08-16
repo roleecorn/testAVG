@@ -1,0 +1,8608 @@
+{
+  "storyIrVersion": 1,
+  "source": {
+    "kind": "character",
+    "files": [
+      {
+        "path": "project/story/IDW.txt",
+        "sha256": "9f29c3f223c643387a118d44bfbbb6fad757330fc5b0e8afd7d2ac2a1fe2d466"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "idw_1",
+      "floor": {
+        "floorId": "idw_1",
+        "title": "超大聲貓貓",
+        "name": "超大聲貓貓",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "ms_bg_family_restaurant_interior.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "【底下屬於IDW的對話都需要判斷是否使用更大的(約2倍)字體，原則上短句子都可以使用】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_smile.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "歡迎光臨打喵!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "【下一句也使用大字體】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_panic_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗚啊啊啊!!!!!!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嚇了我一大跳!什麼東西啊!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "請問要點什麼呢!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊...是店員嗎?嚇死我了超級大聲"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不是這麼小的身體是怎麼吼那麼大聲出來的"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "要內用還是外帶!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不行啊梗平，居然被區區小鬼的音量嚇到了，這可不像你啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "區區大聲，我也是能做到的!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "【下兩句使用大字體】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喔喔喔喔喔喔!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_panic_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不要小看大人啊!!!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_panic.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "客人請不要擋在路中間"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "可惡，這是什麼強度"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "噪音力居然超過了53萬分貝!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "難道...死..."
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平的眼前彷彿看到自己被嗓音轟成碎片的樣子"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "【下一句使用超大字體】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "你們兩個吵死人啦!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "小孩嗎!這麼大個人了跟她較什麼勁!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "沒看見客人們都覺得很吵啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "诶?可是也沒有其他客人啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "你說啥?"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "啊...我是說看起來客人們也很喜歡這樣子啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平裝作沒事人一樣開始吹起了口哨"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "給我出去!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "於是，梗平被當成路邊一條的踢了出去"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_serious_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "對不起我錯了，我想吃飯(哭臉)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "..."
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喔喔喔，老闆!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "老闆出來後，只是把門口的牌子翻到了休息中，就回去了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_panic_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "老闆啊啊啊啊啊"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "idw_1"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.plugin.addAkibaEvent({\"id\":\"idw_2\",\"title\":\"兒童餐之爭\",\"locations\":[\"restaurant\"],\"floorId\":\"idw_2\",\"once\":true}); }"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    },
+    {
+      "id": "idw_2",
+      "floor": {
+        "floorId": "idw_2",
+        "title": "兒童餐之爭",
+        "name": "兒童餐之爭",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "ms_bg_family_restaurant_interior.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "某日下午，梗平再次來到了家庭餐廳"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "今天我可是做好萬全準備才來的"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "歡迎光臨打喵！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗚喔！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平的肩膀還是明顯抖了一下"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "啊，又被嚇到了！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "才沒有！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "有！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平氣勢洶洶地坐到了平常的位置"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "今天要吃什麼！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "兒童餐"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "幹嘛"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "你不能點"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "為什麼！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "兒童餐十二歲以下才能點！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我內心還是個孩子啊！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_angry.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "不行！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哪裡不行！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_angry.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "臉不行！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "太失禮了吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "而且妳有資格說我嗎！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "妳看起來才最像兒童吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "我不是小孩！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那妳幾歲？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "怎樣"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "不知道！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這種事情可以不知道嗎！？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "兩人隔著桌子互相瞪著"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "你們又在幹嘛"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "老闆！你來評評理！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "她憑什麼不讓我點兒童餐！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "因為你不是兒童"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你至少猶豫一下吧"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "菜單上寫得很清楚"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "可惡……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平不甘心地翻著菜單"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "突然，他像是發現了什麼"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等等"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那這個呢？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "什麼？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "「親子分享餐」"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這個沒有寫年齡限制"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "喔！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "所以我可以點吧！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "可是要兩個人吃！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那妳一起吃不就好了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "我？可是我是店員"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "店員就不能吃東西嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "可以！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那不就好了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "IDW立刻跑去找老闆"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "老闆！我要休息！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "妳還有七分鐘"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "我要提前！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "不行"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "六分鐘！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "不行"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "五分鐘！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "最後，梗平還是等到了IDW的休息時間"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喔喔……這就是傳說中的兒童餐玩具嗎"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "是小火車！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "給我"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_panic.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "不要"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我出的錢耶！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "是我的！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "明明是我的！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "【下兩句使用大字體】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "給我————！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "不————要————！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "老闆默默走了過來"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "你們兩個"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "現在看起來都挺符合兒童餐的年齡限制"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "idw_2"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.plugin.addAkibaEvent({\"id\":\"idw_3\",\"title\":\"迷路的小貓\",\"locations\":[\"restaurant\"],\"floorId\":\"idw_3\",\"once\":true}); }"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    },
+    {
+      "id": "idw_3",
+      "floor": {
+        "floorId": "idw_3",
+        "title": "迷路的小貓",
+        "name": "迷路的小貓",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "ms_bg_family_restaurant_interior.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "某天，梗平在家庭餐廳吃完飯後準備回家"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "吃太飽了……稍微繞個路好了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "走過兩條街後"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那不是IDW嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "IDW一個人站在路中央附近，不斷左右張望"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喂"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "妳在這裡幹嘛？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "買東西？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "打喵！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "東西呢？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "還沒買！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "店在哪？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "不知道打喵！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "妳迷路了吧"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "迷路了喵！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "可是你為什麼站在路中央"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "走丟的話不可以亂跑!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "也不是說站在路中央啊，誰教妳的？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "隊長"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "隊長？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "打喵!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "什麼隊長？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "隊長就是隊長啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我知道「隊長」這個詞是什麼意思！我是問妳以前到底在幹嘛！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "IDW沒有回答"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "而是突然走到路邊站好"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "幹嘛？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "迷路之後要待在原地"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "然後——"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "IDW深深吸了一口氣"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等等"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "妳該不會——"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "【下一句使用超大字體】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "店————長————！！！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_panic_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "耳朵啊啊啊啊啊！！！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "附近的鳥全部飛了起來"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "路人",
+          "text": "什麼聲音！？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "妳幹嘛突然叫啊！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "這樣比較容易被找到！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "誰會用這種方式找人啊！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "隊長會"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "以前說好的"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "如果走散了，就待在原地"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "只要一直發出聲音"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "隊長就會找到我"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "多久以前？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "很久以前"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那個隊長現在在哪？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "不知道"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "所以才要大聲一點啊！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "妳現在又不是在找那個隊長！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "可是習慣了！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這是可以習慣的事情嗎！？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平抓了抓頭"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "算了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你是要回家庭餐廳吧，我帶你回去吧"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平帶著IDW，終於把迷路的小貓送回了店裡"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "找到了！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "是我找到的！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "都一樣！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哪裡一樣！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "回程途中，IDW像平常一樣走在前面"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "梗平則看著她的背影"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "隊長嗎"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "idw_3"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.plugin.addAkibaEvent({\"id\":\"idw_4\",\"title\":\"不要回頭\",\"locations\":[\"restaurant\"],\"floorId\":\"idw_4\",\"once\":true}); }"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    },
+    {
+      "id": "idw_4",
+      "floor": {
+        "floorId": "idw_4",
+        "title": "不要回頭",
+        "name": "不要回頭",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "ms_bg_family_restaurant_interior.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "某個下雨的晚上"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "家庭餐廳已經接近打烊時間"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "雨也太大了吧……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這樣到底要怎麼回去"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "等小一點再走吧"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "老闆……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "幹嘛"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你偶爾也會說人話嘛"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老闆",
+          "text": "那你現在出去"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_serious_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "對不起"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "店裡只剩下梗平、老闆和IDW"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "IDW正在整理桌面"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "窗外突然響起一道雷聲"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "轟——！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "IDW猛地轉過頭"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "怎麼了？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_panic_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "怕打雷？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_panic.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "才不怕！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "妳尾巴都炸開了耶"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "這是正常的！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哪裡正常"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "又是一道雷聲"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "轟隆——！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "這一次，IDW直接蹲了下來"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喂？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_panic_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "真的怕成這樣？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "不是"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那是怎樣"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "這個聲音很像"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "像什麼？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "IDW看著窗外，她的表情和平常完全不同"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "以前的聲音"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "以前？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "很大的聲音"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "地面會震"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "到處都是煙"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "什麼都看不到"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_panic.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "隊長叫我們不要停"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "一直往前跑"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_panic.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "如果有人不見了也不要回頭"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等一下"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這是什麼任務啊？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "任務就是任務"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那後來呢？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "窗外又閃了一下"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "後來摔下去了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "摔下去？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "醒來之後就只剩我一個"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "所以我就喊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "一直喊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "有人回來嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "可能沒聽見吧"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_angry.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "那裡很吵"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_sad.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "所以我的聲音還不夠大"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "如果再大聲一點的話——"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "算了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "什麼？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我是說"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "如果妳下次又迷路"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "嗯"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_panic_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不要在那邊亂叫"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "為什麼！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_angry_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "打電話給我"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "可是大聲比較快！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哪裡快了！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "上次你不就找到我了！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那是因為我剛好經過！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "所以有效！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "完全不是因果關係！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "IDW笑了起來"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "那兩個都做"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_surprised_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "什麼？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "先打電話"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "然後大聲喊你"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_panic_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不要！！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "【下三句使用大字體】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_surprised.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "梗————平————！！！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 10,
+          "image": "keng_neutral_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "IDW!"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "idw_normal.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IDW",
+          "text": "打喵!"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "idw_4"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    }
+  ]
+}
