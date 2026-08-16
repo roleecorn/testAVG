@@ -1100,6 +1100,17 @@ main.floors.lanxiang_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[斷水流傳人]沒事，只是看看昔日傳奇的醜樣而已",
         {
             "type": "hideImage",
@@ -1137,6 +1148,17 @@ main.floors.lanxiang_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[斷水流傳人]連中國古拳法最強者都這麼孬了",
         {
             "type": "hideImage",
@@ -1149,6 +1171,17 @@ main.floors.lanxiang_2=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[斷水流傳人]我看中國古拳法不行了吧",
         {
@@ -1235,6 +1268,17 @@ main.floors.lanxiang_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[斷水流傳人]噢是噢，我好怕噢",
         {
             "type": "hideImage",
@@ -1271,6 +1315,17 @@ main.floors.lanxiang_2=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[斷水流傳人]好，雖然雙方都換人，但就讓我們把2008年的勝負打完吧！",
         {

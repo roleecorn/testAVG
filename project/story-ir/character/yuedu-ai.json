@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/月讀愛.txt",
-        "sha256": "77223efe3708d10d02a0df3e52b726ceb4940cb4b20fe471551fb769f7ec51a5"
+        "sha256": "b7a6bf596480df831943349fab4ae1d4f4caa9db0da123bec605fda1d7402964"
       }
     ]
   },
@@ -2485,7 +2485,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_bar.png",
+            "name": "yuedu_convenience_store.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -3496,6 +3496,18 @@
                 {
                   "kind": "narration",
                   "text": "梗平也追著其身後跑火車～"
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "yuedu_familiar_corner.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 0
                 },
                 {
                   "kind": "image.hide",

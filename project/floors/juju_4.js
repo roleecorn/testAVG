@@ -673,6 +673,17 @@ main.floors.juju_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_shopkeeper.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[店主]好！我接受！小伙子你滾吧！",
         {
             "type": "hideImage",
@@ -805,6 +816,17 @@ main.floors.juju_4=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_shopkeeper.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[店主]聽到了嗎？滾吧！",
         {

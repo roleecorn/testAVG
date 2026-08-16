@@ -577,6 +577,17 @@ main.floors.juju_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_shopkeeper.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[店主]喂！小伙子！不準白看書！",
         {
             "type": "hideImage",
@@ -614,6 +625,17 @@ main.floors.juju_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_shopkeeper.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[店主]嗯？",
         {
             "type": "hideImage",
@@ -639,6 +661,17 @@ main.floors.juju_2=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_shopkeeper.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[店主]不用錢也行，你稍微讓我看一下",
         {
@@ -762,6 +795,17 @@ main.floors.juju_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_shopkeeper.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[店主]唉唷！真疼！剛才看到白白的一塊，果然是惡魔！",
         {
             "type": "hideImage",
@@ -774,6 +818,17 @@ main.floors.juju_2=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "juju_shopkeeper.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[店主]等等！果然是什麼來着？而且我為啥這麼疼？",
         {

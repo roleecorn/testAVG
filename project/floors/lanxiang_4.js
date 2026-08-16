@@ -346,6 +346,17 @@ main.floors.lanxiang_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[斷水流傳人]那麼，再向你確認一次規則",
         {
             "type": "hideImage",
@@ -358,6 +369,17 @@ main.floors.lanxiang_4=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[斷水流傳人]除了插眼撩陰都可以，一方不能戰鬥或投降才能結束比賽，是這樣沒錯吧？",
         {
@@ -396,6 +418,17 @@ main.floors.lanxiang_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[斷水流傳人]是說你那徒弟怎麼還不來？該不會是怕了吧？所以我就說中國古拳法……",
         {
             "type": "hideImage",
@@ -433,6 +466,17 @@ main.floors.lanxiang_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[斷水流傳人]噢！你知道啦？",
         {
             "type": "hideImage",
@@ -445,6 +489,17 @@ main.floors.lanxiang_4=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[斷水流傳人]算了，只要你不出手，打倒你弟子，再打倒第二強的，空手道剋星神話就正式破滅了",
         {
@@ -483,6 +538,17 @@ main.floors.lanxiang_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[斷水流傳人]別跟我提那個出賣武術家尊嚴的廢物，還有你也是！",
         {
             "type": "hideImage",
@@ -519,6 +585,17 @@ main.floors.lanxiang_4=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[斷水流傳人]什麼？",
         {
@@ -604,6 +681,17 @@ main.floors.lanxiang_4=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[斷水流傳人]看來不是空穴來風啊～還有，激我也沒用，像我們這種人，解決方法只有一個",
         {
@@ -729,6 +817,17 @@ main.floors.lanxiang_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[斷水流傳人]是鎖技嗎！",
         {
             "type": "hideImage",
@@ -826,6 +925,17 @@ main.floors.lanxiang_4=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[斷水流傳人]確實！但我們的體格差距太大了，這種鎖馬上就能……解不開！",
         {
@@ -960,6 +1070,17 @@ main.floors.lanxiang_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[斷水流傳人]要窒息了！我投降！",
         {
             "type": "hideImage",
@@ -985,6 +1106,17 @@ main.floors.lanxiang_4=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[斷水流傳人]中國古拳法名不虛傳，受教了",
         {
@@ -1095,6 +1227,17 @@ main.floors.lanxiang_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[斷水流傳人]銘記在心，作為這次挑釁的賠償，我會嘗試說服我師傅，讓你重返武術界",
         {
             "type": "hideImage",
@@ -1192,6 +1335,17 @@ main.floors.lanxiang_4=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[斷水流傳人]好，那我先回去了",
         {

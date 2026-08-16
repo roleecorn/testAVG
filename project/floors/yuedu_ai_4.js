@@ -10,7 +10,7 @@ main.floors.yuedu_ai_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_bar.png",
+            "name": "yuedu_convenience_store.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -897,6 +897,17 @@ main.floors.yuedu_ai_4=
                             "async": true
                         },
                         "梗平也追著其身後跑火車～",
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "yuedu_familiar_corner.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,

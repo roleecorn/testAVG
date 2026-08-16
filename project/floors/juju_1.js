@@ -839,6 +839,19 @@ main.floors.juju_1=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "juju_bbcall.png",
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[茱茱]這真是太好了，來，這個bbcall給你",
         {
             "type": "hideImage",
@@ -864,6 +877,11 @@ main.floors.juju_1=
             "time": 0
         },
         "\t[茱茱]按這邊的按鈕，就能呼叫我囉！",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0
+        },
         {
             "type": "hideImage",
             "code": 10,

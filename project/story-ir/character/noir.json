@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/NoiR.txt",
-        "sha256": "010f14e1b651727c665a258c7a7964ac74b66a62b4ccfcbbb6d1eb0c7226c11f"
+        "sha256": "ba5a05ca300f85436453576cdd67b3fda28bb9fd37c7d4b45ea00d7aaab1164c"
       }
     ]
   },
@@ -4721,8 +4721,33 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "noir_hairclip.png",
+          "sloc": [
+            64,
+            0,
+            1408,
+            1024
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "narration",
           "text": "（髮夾是一個黑白琴鍵的造型，連帶着稍微濕潤的觸感）"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0
         },
         {
           "kind": "image.hide",

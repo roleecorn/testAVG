@@ -693,6 +693,17 @@ main.floors.shirou_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "shirou_tangsan.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[唐三]都什麼時代了，我們煉器直接用我們魂環科技的設備就好了。",
         {
             "type": "hideImage",
@@ -706,6 +717,17 @@ main.floors.shirou_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "shirou_tangsan.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[唐三]用火爐的原始人，哈哈哈！",
         {
             "type": "hideImage",
@@ -718,6 +740,17 @@ main.floors.shirou_3=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "shirou_tangsan.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[唐三]隕鐵鋼材將會是我們的了！",
         {
@@ -827,6 +860,17 @@ main.floors.shirou_3=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "shirou_shisho.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[東方不敗]3!2!1! Game Start!!!",
         {
@@ -1471,6 +1515,17 @@ main.floors.shirou_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "shirou_liangxiu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[良秀]在下良秀",
         {
             "type": "hideImage",
@@ -2075,6 +2130,17 @@ main.floors.shirou_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "shirou_shisho.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[東方不敗]恭喜",
         {
             "type": "hideImage",
@@ -2088,6 +2154,17 @@ main.floors.shirou_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "shirou_tangsan.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[唐三]恭喜",
         {
             "type": "hideImage",
@@ -2100,6 +2177,17 @@ main.floors.shirou_3=
             "code": 20,
             "time": 0,
             "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "shirou_liangxiu.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[良秀]恭喜",
         {

@@ -1621,7 +1621,31 @@ main.floors.noir_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "noir_hairclip.png",
+            "sloc": [
+                64,
+                0,
+                1408,
+                1024
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "（髮夾是一個黑白琴鍵的造型，連帶着稍微濕潤的觸感）",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0
+        },
         {
             "type": "hideImage",
             "code": 10,

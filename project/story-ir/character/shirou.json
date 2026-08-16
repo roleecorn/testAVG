@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/鍛刀大賽.txt",
-        "sha256": "60b167d2086e5e0b88a40c602a6ec77d2066dfa206e7ea176407f4ced004df3f"
+        "sha256": "db3dace9c043debdbf1fa693843d7540179f3990367112d7b9b019718ac613ad"
       }
     ]
   },
@@ -3157,6 +3157,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "shirou_tangsan.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "唐三",
           "text": "都什麼時代了，我們煉器直接用我們魂環科技的設備就好了。",
@@ -3175,6 +3187,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "shirou_tangsan.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "唐三",
           "text": "用火爐的原始人，哈哈哈！",
@@ -3191,6 +3215,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "shirou_tangsan.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -3329,6 +3365,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "shirou_shisho.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -4148,6 +4196,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "shirou_liangxiu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "良秀",
           "text": "在下良秀",
@@ -4915,6 +4975,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "shirou_shisho.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "東方不敗",
           "text": "恭喜",
@@ -4933,6 +5005,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "shirou_tangsan.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "唐三",
           "text": "恭喜",
@@ -4949,6 +5033,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "shirou_liangxiu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",

@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/藍湘.txt",
-        "sha256": "24f0a599974d34a3c83b0dfa33331a48200abe0b1a6a2b0e8c8f3da6414dada6"
+        "sha256": "b00d5cff958289e74bc2527abb30170858b2173bdd604b0391a05f22583212e7"
       }
     ]
   },
@@ -2482,6 +2482,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
           "text": "沒事，只是看看昔日傳奇的醜樣而已"
@@ -2528,6 +2540,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
           "text": "連中國古拳法最強者都這麼孬了"
@@ -2543,6 +2567,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -2649,6 +2685,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
           "text": "噢是噢，我好怕噢"
@@ -2693,6 +2741,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -4546,6 +4606,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
           "text": "那麼，再向你確認一次規則"
@@ -4561,6 +4633,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -4609,6 +4693,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
           "text": "是說你那徒弟怎麼還不來？該不會是怕了吧？所以我就說中國古拳法……"
@@ -4655,6 +4751,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
           "text": "噢！你知道啦？"
@@ -4670,6 +4778,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -4718,6 +4838,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
           "text": "別跟我提那個出賣武術家尊嚴的廢物，還有你也是！"
@@ -4762,6 +4894,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -4866,6 +5010,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -5021,6 +5177,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
           "text": "是鎖技嗎！"
@@ -5139,6 +5307,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -5303,6 +5483,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
           "text": "要窒息了！我投降！"
@@ -5334,6 +5526,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -5469,6 +5673,18 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
           "text": "銘記在心，作為這次挑釁的賠償，我會嘗試說服我師傅，讓你重返武術界"
@@ -5587,6 +5803,18 @@
           "code": 20,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "lanxiang_duanshuiliu.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
