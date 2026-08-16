@@ -326,7 +326,10 @@ main.floors.main_ch2_3=
             "time": 0,
             "async": true
         },
-        "【主線 CH2 2-3 遊戲中心】",
+        {
+            "type": "comment",
+            "text": "【主線 CH2 2-3 遊戲中心】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -753,7 +756,10 @@ main.floors.main_ch2_3=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,

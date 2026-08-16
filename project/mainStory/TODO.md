@@ -46,6 +46,7 @@
 - project/mainStory/CH2 2-4：【CG：畫中的梗平 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-4：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-4：【CG：被兩人一人一邊架起的死魚眼IB 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH3 3-1：【BGM：春日影】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH3 3-1：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
 - project/mainStory/CH3 3-1：【CG：梗平呆滯 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH3 3-1：【CG：梗平與伐魔樂隊 出現】尚無專用素材，暫用 scene_mapo_cg.png。

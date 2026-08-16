@@ -322,7 +322,10 @@ main.floors.juju_1=
             "time": 0,
             "async": true
         },
-        "\t[【地點]倉庫區】",
+        {
+            "type": "comment",
+            "text": "【地點：倉庫區】"
+        },
         {
             "type": "hideImage",
             "code": 10,

@@ -326,7 +326,10 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "【主線 CH3 3-3 傑士塔威會議】",
+        {
+            "type": "comment",
+            "text": "【主線 CH3 3-3 傑士塔威會議】"
+        },
         {
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
@@ -1583,7 +1586,10 @@ main.floors.main_ch3_3=
             "time": 0,
             "async": true
         },
-        "【第三章結束】",
+        {
+            "type": "comment",
+            "text": "【第三章結束】"
+        },
         {
             "type": "hideImage",
             "code": 10,

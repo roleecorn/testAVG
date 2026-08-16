@@ -326,7 +326,10 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        "【主線 CH1 1-3 麻婆豆腐店】",
+        {
+            "type": "comment",
+            "text": "【主線 CH1 1-3 麻婆豆腐店】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -963,7 +966,10 @@ main.floors.mapo_1_3=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2930,7 +2936,10 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,

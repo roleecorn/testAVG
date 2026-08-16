@@ -376,7 +376,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH1 1-1 車站】"
         },
         {
@@ -1144,7 +1144,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -1867,7 +1867,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH1 1-2 倉庫區】"
         },
         {
@@ -3465,7 +3465,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -4727,7 +4727,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH1 1-3 麻婆豆腐店】"
         },
         {
@@ -5483,7 +5483,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -7866,7 +7866,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -8307,25 +8307,13 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH1 1-3 麻婆豆腐店（交流後）】"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "【BGM",
-          "text": "日常】"
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
         },
         {
           "kind": "image.hide",
@@ -8803,7 +8791,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH1 1-4 炭烤蜜瓜兔子】"
         },
         {
@@ -8880,7 +8868,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【炭烤蜜瓜兔子】"
         },
         {
@@ -9610,7 +9598,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -9907,7 +9895,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -10308,7 +10296,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -11849,7 +11837,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH1 1-5 掉落物】"
         },
         {
@@ -12014,7 +12002,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【第一章結束】"
         },
         {
@@ -12390,7 +12378,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH2 2-1 咖啡廳早晨】"
         },
         {
@@ -12649,7 +12637,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -12898,7 +12886,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -14529,7 +14517,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH2 2-2 三過書店】"
         },
         {
@@ -14843,7 +14831,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -15101,7 +15089,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -15515,7 +15503,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -16373,7 +16361,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -17644,7 +17632,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH2 2-3 遊戲中心】"
         },
         {
@@ -18157,7 +18145,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -18906,7 +18894,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH2 2-4 書店A內部】"
         },
         {
@@ -19791,7 +19779,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -20292,7 +20280,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -20512,7 +20500,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【下一句字放大】"
                 },
                 {
@@ -20710,7 +20698,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -21186,7 +21174,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -21661,7 +21649,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -22639,7 +22627,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH2 2-4 書店A內部（交流後）】"
         },
         {
@@ -22779,7 +22767,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【第二章結束】"
         },
         {
@@ -23155,7 +23143,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH3 3-1 自爆篇】"
         },
         {
@@ -23525,7 +23513,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -23921,7 +23909,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -24362,7 +24350,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH3 3-1 自爆篇（交流後）】"
         },
         {
@@ -24477,7 +24465,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -26304,7 +26292,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -26631,7 +26619,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -26850,7 +26838,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -27130,7 +27118,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -27582,7 +27570,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -28684,7 +28672,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -28700,25 +28688,12 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【未製作完成，忽略下一句】"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "time": 0,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 11,
-                  "time": 0,
-                  "async": true
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "【BGM",
-                  "text": "春日影】"
+                  "kind": "comment",
+                  "text": "TODO: 【BGM：春日影】"
                 },
                 {
                   "kind": "image.hide",
@@ -29760,7 +29735,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -30060,7 +30035,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -30390,7 +30365,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -30618,7 +30593,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -31283,7 +31258,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -32307,7 +32282,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -33214,7 +33189,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH3 3-2 貝琪晚餐】"
         },
         {
@@ -33247,21 +33222,9 @@
           "time": 250
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "【BGM",
-          "text": "(煽情)】"
+          "kind": "bgm.play",
+          "name": "next_to_you_emotional.mp3",
+          "keep": true
         },
         {
           "kind": "image.hide",
@@ -33432,7 +33395,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -34043,7 +34006,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -34729,7 +34692,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH3 3-3 傑士塔威會議】"
         },
         {
@@ -36278,7 +36241,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【第三章結束】"
         },
         {
@@ -36654,7 +36617,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH4 4-1 搶火車篇】"
         },
         {
@@ -36977,8 +36940,8 @@
           "async": true
         },
         {
-          "kind": "narration",
-          "text": "【人物交流時間：待補】"
+          "kind": "comment",
+          "text": "TODO: 【人物交流時間】"
         },
         {
           "kind": "bgm.play",
@@ -37416,7 +37379,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -37973,7 +37936,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -38528,7 +38491,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -38998,7 +38961,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -39153,7 +39116,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -39459,7 +39422,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -39943,7 +39906,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -40582,7 +40545,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH4 4-2 修卡已逝】"
         },
         {
@@ -41027,7 +40990,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -41060,21 +41023,9 @@
           "time": 250
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "【BGM",
-          "text": "(煽情)】"
+          "kind": "bgm.play",
+          "name": "next_to_you_emotional.mp3",
+          "keep": true
         },
         {
           "kind": "image.hide",
@@ -41428,7 +41379,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【第四章結束】"
         },
         {
@@ -41804,7 +41755,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH5 5-1 五日無戰事篇】"
         },
         {
@@ -42059,7 +42010,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -42577,25 +42528,13 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH5 5-1 五日無戰事篇（交流後）】"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "【BGM",
-          "text": "日常】"
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
         },
         {
           "kind": "image.hide",
@@ -43416,7 +43355,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -43939,7 +43878,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -44258,7 +44197,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【第五章結束】"
                 }
               ]
@@ -44638,7 +44577,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH6 6-1 肥宅潮】"
         },
         {
@@ -44937,7 +44876,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -45699,7 +45638,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -46262,7 +46201,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -46537,7 +46476,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -47148,7 +47087,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH6 6-2 結婚抉擇】"
         },
         {
@@ -47817,7 +47756,7 @@
                   "async": true
                 },
                 {
-                  "kind": "narration",
+                  "kind": "comment",
                   "text": "【過場】"
                 },
                 {
@@ -48160,21 +48099,9 @@
               "text": "假面騎士，可不能臨陣脫逃啊",
               "events": [
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "time": 0,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 11,
-                  "time": 0,
-                  "async": true
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "【BGM",
-                  "text": "(煽情)】"
+                  "kind": "bgm.play",
+                  "name": "next_to_you_emotional.mp3",
+                  "keep": true
                 },
                 {
                   "kind": "image.hide",
@@ -49884,7 +49811,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH6 6-3 逃亡與希望】"
         },
         {
@@ -50161,7 +50088,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -50606,7 +50533,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -51290,7 +51217,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【主線 CH6 6-4 婚禮與終章】"
         },
         {
@@ -51684,7 +51611,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【過場】"
         },
         {
@@ -51717,21 +51644,9 @@
           "time": 250
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "【BGM",
-          "text": "(煽情)】"
+          "kind": "bgm.play",
+          "name": "next_to_you_emotional.mp3",
+          "keep": true
         },
         {
           "kind": "image.hide",
@@ -52108,7 +52023,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【第六章結束】"
         },
         {
@@ -52404,7 +52319,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【結尾演出字幕，未製作完成，忽略本句】"
         },
         {

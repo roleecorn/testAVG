@@ -326,7 +326,10 @@ main.floors.main_ch2_4_exchange_1=
             "time": 0,
             "async": true
         },
-        "【主線 CH2 2-4 書店A內部（交流後）】",
+        {
+            "type": "comment",
+            "text": "【主線 CH2 2-4 書店A內部（交流後）】"
+        },
         {
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
@@ -446,7 +449,10 @@ main.floors.main_ch2_4_exchange_1=
             "time": 0,
             "async": true
         },
-        "【第二章結束】",
+        {
+            "type": "comment",
+            "text": "【第二章結束】"
+        },
         {
             "type": "hideImage",
             "code": 10,

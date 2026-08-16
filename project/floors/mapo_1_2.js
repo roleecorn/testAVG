@@ -326,7 +326,10 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "【主線 CH1 1-2 倉庫區】",
+        {
+            "type": "comment",
+            "text": "【主線 CH1 1-2 倉庫區】"
+        },
         {
             "type": "playBgm",
             "name": "twists_suspense.mp3",
@@ -1672,7 +1675,10 @@ main.floors.mapo_1_2=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",

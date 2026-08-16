@@ -326,7 +326,10 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "【主線 CH2 2-4 書店A內部】",
+        {
+            "type": "comment",
+            "text": "【主線 CH2 2-4 書店A內部】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1056,7 +1059,10 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1475,7 +1481,10 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "playBgm",
                             "name": "twists_suspense.mp3",
@@ -1658,7 +1667,10 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "【下一句字放大】",
+                        {
+                            "type": "comment",
+                            "text": "【下一句字放大】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1819,7 +1831,10 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2222,7 +2237,10 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2622,7 +2640,10 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,

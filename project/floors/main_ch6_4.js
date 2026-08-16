@@ -326,7 +326,10 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "【主線 CH6 6-4 婚禮與終章】",
+        {
+            "type": "comment",
+            "text": "【主線 CH6 6-4 婚禮與終章】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -649,7 +652,10 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -679,18 +685,10 @@ main.floors.main_ch6_4=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
+            "type": "playBgm",
+            "name": "next_to_you_emotional.mp3",
+            "keep": true
         },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[【BGM](煽情)】",
         {
             "type": "hideImage",
             "code": 10,
@@ -999,7 +997,10 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "【第六章結束】",
+        {
+            "type": "comment",
+            "text": "【第六章結束】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1248,7 +1249,10 @@ main.floors.main_ch6_4=
             "time": 0,
             "async": true
         },
-        "【結尾演出字幕，未製作完成，忽略本句】",
+        {
+            "type": "comment",
+            "text": "【結尾演出字幕，未製作完成，忽略本句】"
+        },
         {
             "type": "hideImage",
             "code": 10,

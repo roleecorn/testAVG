@@ -326,7 +326,10 @@ main.floors.mapo_1_5=
             "time": 0,
             "async": true
         },
-        "【主線 CH1 1-5 掉落物】",
+        {
+            "type": "comment",
+            "text": "【主線 CH1 1-5 掉落物】"
+        },
         {
             "type": "playBgm",
             "name": "twists_suspense.mp3",
@@ -463,7 +466,10 @@ main.floors.mapo_1_5=
             "time": 0,
             "async": true
         },
-        "【第一章結束】",
+        {
+            "type": "comment",
+            "text": "【第一章結束】"
+        },
         {
             "type": "hideImage",
             "code": 10,

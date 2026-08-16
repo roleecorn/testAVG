@@ -326,7 +326,10 @@ main.floors.main_ch3_1=
             "time": 0,
             "async": true
         },
-        "【主線 CH3 3-1 自爆篇】",
+        {
+            "type": "comment",
+            "text": "【主線 CH3 3-1 自爆篇】"
+        },
         {
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
@@ -641,7 +644,10 @@ main.floors.main_ch3_1=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -967,7 +973,10 @@ main.floors.main_ch3_1=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,

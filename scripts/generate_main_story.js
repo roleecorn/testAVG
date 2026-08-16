@@ -399,13 +399,28 @@ function normalizeAudioDirective(text, ctx) {
 
   const semanticBgm = {
     "(日常)": "bossa_casual_shop.mp3",
+    "日常": "bossa_casual_shop.mp3",
+    "(煽情)": "next_to_you_emotional.mp3",
+    "煽情": "next_to_you_emotional.mp3",
     "(懸疑)": "twists_suspense.mp3",
+    "懸疑": "twists_suspense.mp3",
     "(懸疑?)": "twists_suspense.mp3",
+    "懸疑?": "twists_suspense.mp3",
     "(熱血)": "battle_theme_a.mp3",
+    "熱血": "battle_theme_a.mp3",
   };
   const semantic = bare.match(/^BGM\s*[：:]\s*(.+)$/i);
   if (semantic && semanticBgm[semantic[1].trim()]) {
     return [{ type: "playBgm", name: resolveRegisteredAudio(semanticBgm[semantic[1].trim()], REGISTERED_BGMS, "BGM", ctx), keep: true }];
+  }
+  if (semantic) {
+    const requested = semantic[1].trim();
+    const mapped = (PROJECT_MAIN.nameMap || {})[requested] || requested;
+    if (!REGISTERED_BGMS.has(mapped)) {
+      storyTodos.add(`${ctx.source} ${ctx.section}：${text} 未能對應已登錄 BGM，保留為非玩家可見演出待辦。`);
+      return [{ type: "comment", text: `TODO: ${text}` }];
+    }
+    return [{ type: "playBgm", name: mapped, keep: true }];
   }
 
   let match = bare.match(/^(?:使用|播放|切換)\s*(?:BGM|背景音樂)(?:\s*[：:]\s*|\s+)(.+)$/i);
@@ -506,7 +521,7 @@ function lineToEvents(line, ctx) {
   }
 
   if (/^【BE/.test(t) || /^【.*結束】$/.test(t) || /^【.*END.*】$/.test(t)) {
-    return [...hidePortraits(), t];
+    return [...hidePortraits(), { type: "comment", text: t }];
   }
 
   if (/^【(?:人物交流時間|角色劇情時間)/.test(t)) {
@@ -522,7 +537,7 @@ function lineToEvents(line, ctx) {
       ];
     }
     storyTodos.add(`${ctx.source} ${ctx.section}：${t} 尚未撰寫，已以文字標記保留。`);
-    return [...hidePortraits(), `${t.replace(/】$/, "")}：待補】`];
+    return [...hidePortraits(), { type: "comment", text: `TODO: ${t}` }];
   }
 
   if (t === "【播放炫酷的結尾小動畫】") {
@@ -544,10 +559,13 @@ function lineToEvents(line, ctx) {
 
   if (t === "【後日談時間】") {
     storyTodos.add(`${ctx.source} ${ctx.section}：${t} 尚未撰寫，已以文字標記保留。`);
-    return [...hidePortraits(), "【後日談時間：待補】"];
+    return [...hidePortraits(), { type: "comment", text: `TODO: ${t}` }];
   }
 
   if (/^\[END：/.test(t)) return [...hidePortraits(), t.replace(/^\[/, "【").replace(/\]$/, "】")];
+
+  const wrappedDirective = t.match(/^\[【([^】]+)】\]$/);
+  if (wrappedDirective) return lineToEvents(`【${wrappedDirective[1]}】`, ctx);
 
   const bracketedDialogue = t.match(/^\[([^\[\]]+?)[：:](.*)\]$/);
   if (bracketedDialogue && isBracketedPhoneSpeaker(bracketedDialogue[1])) {
@@ -559,6 +577,10 @@ function lineToEvents(line, ctx) {
   if (/^【.*(?:立繪|替換|字體|動畫|小遊戲).*】$/.test(t)) {
     storyTodos.add(`${ctx.source} ${ctx.section}：製作指令「${t}」尚未轉成正式事件。`);
     return [{ type: "comment", text: `TODO: ${t}` }];
+  }
+
+  if (/^【[^】]+】$/.test(t)) {
+    return [...hidePortraits(), { type: "comment", text: t }];
   }
 
   if (/^\(.+\)$/.test(t)) {
@@ -725,7 +747,7 @@ function buildFloor(section, lines, overrides = {}) {
     { type: "playBgm", name: meta.bgm },
     { type: "showImage", code: 1, image: meta.bg, loc: [...BACKGROUND_LOC], opacity: 1, time: 0 },
     ...hidePortraits(),
-    `【${meta.title}】`,
+    { type: "comment", text: `【${meta.title}】` },
     ...parsed.events,
     ...hidePortraits(),
   ];

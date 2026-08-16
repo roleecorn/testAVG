@@ -326,20 +326,15 @@ main.floors.mapo_1_3_exchange_1=
             "time": 0,
             "async": true
         },
-        "【主線 CH1 1-3 麻婆豆腐店（交流後）】",
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
+            "type": "comment",
+            "text": "【主線 CH1 1-3 麻婆豆腐店（交流後）】"
         },
         {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
         },
-        "\t[【BGM]日常】",
         {
             "type": "hideImage",
             "code": 10,

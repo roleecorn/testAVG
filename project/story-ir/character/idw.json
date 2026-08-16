@@ -344,7 +344,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【底下屬於IDW的對話都需要判斷是否使用更大的(約2倍)字體，原則上短句子都可以使用】"
         },
         {
@@ -389,7 +389,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【下一句也使用大字體】"
         },
         {
@@ -417,9 +417,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "嗚啊啊啊!!!!!!"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "image.hide",
@@ -637,7 +695,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【下兩句使用大字體】"
         },
         {
@@ -663,6 +721,35 @@
           ],
           "opacity": 1,
           "time": 0
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "dialogue",
@@ -697,6 +784,35 @@
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "不要小看大人啊!!!"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "image.hide",
@@ -843,7 +959,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【下一句使用超大字體】"
         },
         {
@@ -859,9 +975,67 @@
           "async": true
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 40,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "老闆",
           "text": "你們兩個吵死人啦!"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "image.hide",
@@ -3342,7 +3516,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【下兩句使用大字體】"
         },
         {
@@ -3368,6 +3542,35 @@
           ],
           "opacity": 1,
           "time": 0
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "dialogue",
@@ -3402,6 +3605,35 @@
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "不————要————！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "image.hide",
@@ -4928,7 +5160,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【下一句使用超大字體】"
         },
         {
@@ -4956,9 +5188,67 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 40,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "店————長————！！！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "image.hide",
@@ -8505,7 +8795,7 @@
           "async": true
         },
         {
-          "kind": "narration",
+          "kind": "comment",
           "text": "【下三句使用大字體】"
         },
         {
@@ -8531,6 +8821,35 @@
           ],
           "opacity": 1,
           "time": 0
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "dialogue",
@@ -8594,6 +8913,35 @@
           "kind": "dialogue",
           "speaker": "IDW",
           "text": "打喵!"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "akiba.event.complete",

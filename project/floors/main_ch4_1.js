@@ -326,7 +326,10 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "【主線 CH4 4-1 搶火車篇】",
+        {
+            "type": "comment",
+            "text": "【主線 CH4 4-1 搶火車篇】"
+        },
         {
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
@@ -594,7 +597,10 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "【人物交流時間：待補】",
+        {
+            "type": "comment",
+            "text": "TODO: 【人物交流時間】"
+        },
         {
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
@@ -971,7 +977,10 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1435,7 +1444,10 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1897,7 +1909,10 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -2280,7 +2295,10 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -2413,7 +2431,10 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2663,7 +2684,10 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3064,7 +3088,10 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "playBgm",
                             "name": "twists_suspense.mp3",

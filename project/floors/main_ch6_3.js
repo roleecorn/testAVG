@@ -326,7 +326,10 @@ main.floors.main_ch6_3=
             "time": 0,
             "async": true
         },
-        "【主線 CH6 6-3 逃亡與希望】",
+        {
+            "type": "comment",
+            "text": "【主線 CH6 6-3 逃亡與希望】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -554,7 +557,10 @@ main.floors.main_ch6_3=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -922,7 +928,10 @@ main.floors.main_ch6_3=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,

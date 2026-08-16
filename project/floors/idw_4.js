@@ -2215,7 +2215,10 @@ main.floors.idw_4=
             "time": 0,
             "async": true
         },
-        "【下三句使用大字體】",
+        {
+            "type": "comment",
+            "text": "【下三句使用大字體】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -2238,6 +2241,33 @@ main.floors.idw_4=
             ],
             "opacity": 1,
             "time": 0
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
         },
         "\t[IDW]梗————平————！！！",
         {
@@ -2288,6 +2318,33 @@ main.floors.idw_4=
             "time": 0
         },
         "\t[IDW]打喵!",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "function",
             "function": "function () { core.plugin.completeAkibaEvent('idw_4'); }"

@@ -147,6 +147,8 @@ node scripts/manage_story_ir.js
 
 新版主線與支線必須由同一份全局 AVG layout config 產生「單一當前發言者－下方對話框」空間配置。544×416 畫布的新版下方對話框基準為 `x=16, y=295, width=512, fixedLines=2`，不可退回舊的 `x=96, width=352` 窄框。每句角色台詞先清空所有人物 code，再把當前發言者放到同一個人物語意槽；旁白清空人物，三人以上場景也不新增槽位。runtime 必須以 alpha bbox 的可見內容左右置中，滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === dialogueY`，並將 `portraitDialogueGap` 固定為 `0`。所有立繪套用同一個全局 `portraitScale: 1.2`；runtime 不得根據個別圖片的寬高或 alpha bbox 計算各自的縮放率。不得沿用 `portraitLeft`／`portraitRight`、`portraitBottomGap`、非零人物／對話框 gap、128px 寬度上限或 25% 遮擋上限，也不得建立個別例外。已遷移 scene 可直接採用此契約；其餘既有 floor 仍須完成 emitter／runtime／floor 遷移後才可宣稱已生效。
 
+字體大小演繹若需要放大或縮小，只能調整對話內文的 `textfont`；必須保留當前全局或場景既有的 `titlefont`，不得跟著內文倍率改動角色名稱標題。`layout.set` 的字體變更事件應明確保留原 `titlefont` 值，只替換 `textfont`。
+
 固定一秒動作 CG 必須交給 `mota-action-cg` 契約：`*_cg.png` 為母檔，`scripts/build_action_cgs.py` 產生固定 416×286 的 `*_action_cg.png`；事件使用 `sloc: [0, 0, 416, 286]`、`loc: [112, 50, 320, 220]`，順序為 `showImage(code 30)` → `sleep(1000, noSkip)` → `hideImage(code 30)`。一般持續劇情 CG 使用同一個中央面板，但不可誤套一秒自動隱藏。
 
 ## Story IR 到事件 JSON

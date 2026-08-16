@@ -339,9 +339,8 @@
           "async": true
         },
         {
-          "kind": "dialogue",
-          "speaker": "【地點",
-          "text": "倉庫區】"
+          "kind": "comment",
+          "text": "【地點：倉庫區】"
         },
         {
           "kind": "image.hide",
@@ -1458,9 +1457,8 @@
           "async": true
         },
         {
-          "kind": "dialogue",
-          "speaker": "【地點",
-          "text": "倉庫區】"
+          "kind": "comment",
+          "text": "【地點：倉庫區】"
         },
         {
           "kind": "image.hide",
@@ -1607,9 +1605,8 @@
           "async": true
         },
         {
-          "kind": "dialogue",
-          "speaker": "【地點",
-          "text": "古書店】"
+          "kind": "comment",
+          "text": "【地點：古書店】"
         },
         {
           "kind": "image.hide",
@@ -2797,9 +2794,8 @@
           "async": true
         },
         {
-          "kind": "dialogue",
-          "speaker": "【地點",
-          "text": "倉庫區】"
+          "kind": "comment",
+          "text": "【地點：倉庫區】"
         },
         {
           "kind": "image.hide",
@@ -3729,9 +3725,8 @@
           "async": true
         },
         {
-          "kind": "dialogue",
-          "speaker": "【地點",
-          "text": "公園】"
+          "kind": "comment",
+          "text": "【地點：公園】"
         },
         {
           "kind": "image.hide",

@@ -326,7 +326,10 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "【主線 CH1 1-4 炭烤蜜瓜兔子】",
+        {
+            "type": "comment",
+            "text": "【主線 CH1 1-4 炭烤蜜瓜兔子】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -393,7 +396,10 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "【炭烤蜜瓜兔子】",
+        {
+            "type": "comment",
+            "text": "【炭烤蜜瓜兔子】"
+        },
         {
             "type": "comment",
             "text": "TODO: 【下一句話使用三角作為立繪】"
@@ -987,7 +993,10 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1230,7 +1239,10 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1566,7 +1578,10 @@ main.floors.mapo_1_4=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,

@@ -322,7 +322,10 @@ main.floors.juju_2=
             "time": 0,
             "async": true
         },
-        "\t[【地點]倉庫區】",
+        {
+            "type": "comment",
+            "text": "【地點：倉庫區】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -444,7 +447,10 @@ main.floors.juju_2=
             "time": 0,
             "async": true
         },
-        "\t[【地點]古書店】",
+        {
+            "type": "comment",
+            "text": "【地點：古書店】"
+        },
         {
             "type": "hideImage",
             "code": 10,

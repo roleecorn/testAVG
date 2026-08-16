@@ -1853,7 +1853,10 @@ main.floors.idw_2=
             "time": 0,
             "async": true
         },
-        "【下兩句使用大字體】",
+        {
+            "type": "comment",
+            "text": "【下兩句使用大字體】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1876,6 +1879,33 @@ main.floors.idw_2=
             ],
             "opacity": 1,
             "time": 0
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
         },
         "\t[梗平]給我————！",
         {
@@ -1902,6 +1932,33 @@ main.floors.idw_2=
             "time": 0
         },
         "\t[IDW]不————要————！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,

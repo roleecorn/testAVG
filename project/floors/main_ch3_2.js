@@ -326,7 +326,10 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "【主線 CH3 3-2 貝琪晚餐】",
+        {
+            "type": "comment",
+            "text": "【主線 CH3 3-2 貝琪晚餐】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -356,18 +359,10 @@ main.floors.main_ch3_2=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
+            "type": "playBgm",
+            "name": "next_to_you_emotional.mp3",
+            "keep": true
         },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[【BGM](煽情)】",
         {
             "type": "hideImage",
             "code": 10,
@@ -506,7 +501,10 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1006,7 +1004,10 @@ main.floors.main_ch3_2=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,

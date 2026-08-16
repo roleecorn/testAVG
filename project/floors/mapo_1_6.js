@@ -326,7 +326,10 @@ main.floors.mapo_1_6=
             "time": 0,
             "async": true
         },
-        "【主線 CH2 2-1 咖啡廳早晨】",
+        {
+            "type": "comment",
+            "text": "【主線 CH2 2-1 咖啡廳早晨】"
+        },
         {
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
@@ -544,7 +547,10 @@ main.floors.mapo_1_6=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -758,7 +764,10 @@ main.floors.mapo_1_6=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,

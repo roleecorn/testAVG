@@ -326,7 +326,10 @@ main.floors.main_ch6_2=
             "time": 0,
             "async": true
         },
-        "【主線 CH6 6-2 結婚抉擇】",
+        {
+            "type": "comment",
+            "text": "【主線 CH6 6-2 結婚抉擇】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -871,7 +874,10 @@ main.floors.main_ch6_2=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1163,18 +1169,10 @@ main.floors.main_ch6_2=
                     "text": "假面騎士，可不能臨陣脫逃啊",
                     "action": [
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
+                            "type": "playBgm",
+                            "name": "next_to_you_emotional.mp3",
+                            "keep": true
                         },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        "\t[【BGM](煽情)】",
                         {
                             "type": "hideImage",
                             "code": 10,

@@ -327,7 +327,10 @@ main.floors.idw_1=
             "time": 0,
             "async": true
         },
-        "【底下屬於IDW的對話都需要判斷是否使用更大的(約2倍)字體，原則上短句子都可以使用】",
+        {
+            "type": "comment",
+            "text": "【底下屬於IDW的對話都需要判斷是否使用更大的(約2倍)字體，原則上短句子都可以使用】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -364,7 +367,10 @@ main.floors.idw_1=
             "time": 0,
             "async": true
         },
-        "【下一句也使用大字體】",
+        {
+            "type": "comment",
+            "text": "【下一句也使用大字體】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -388,7 +394,61 @@ main.floors.idw_1=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         "\t[梗平]嗚啊啊啊!!!!!!",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -569,7 +629,10 @@ main.floors.idw_1=
             "time": 0,
             "async": true
         },
-        "【下兩句使用大字體】",
+        {
+            "type": "comment",
+            "text": "【下兩句使用大字體】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -592,6 +655,33 @@ main.floors.idw_1=
             ],
             "opacity": 1,
             "time": 0
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
         },
         "\t[梗平]喔喔喔喔喔喔!",
         {
@@ -618,6 +708,33 @@ main.floors.idw_1=
             "time": 0
         },
         "\t[梗平]不要小看大人啊!!!",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -739,7 +856,10 @@ main.floors.idw_1=
             "time": 0,
             "async": true
         },
-        "【下一句使用超大字體】",
+        {
+            "type": "comment",
+            "text": "【下一句使用超大字體】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -752,7 +872,61 @@ main.floors.idw_1=
             "time": 0,
             "async": true
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 40,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         "\t[老闆]你們兩個吵死人啦!",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,

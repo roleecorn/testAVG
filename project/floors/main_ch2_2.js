@@ -326,7 +326,10 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "【主線 CH2 2-2 三過書店】",
+        {
+            "type": "comment",
+            "text": "【主線 CH2 2-2 三過書店】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -592,7 +595,10 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -807,7 +813,10 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1148,7 +1157,10 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "【過場】",
+        {
+            "type": "comment",
+            "text": "【過場】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1849,7 +1861,10 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,

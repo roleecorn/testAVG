@@ -326,7 +326,10 @@ main.floors.main_ch3_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "【主線 CH3 3-1 自爆篇（交流後）】",
+        {
+            "type": "comment",
+            "text": "【主線 CH3 3-1 自爆篇（交流後）】"
+        },
         {
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
@@ -427,7 +430,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1931,7 +1937,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2200,7 +2209,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2380,7 +2392,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2610,7 +2625,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2979,7 +2997,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "playBgm",
                             "name": "battle_theme_a.mp3",
@@ -3881,7 +3902,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3894,20 +3918,14 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【未製作完成，忽略下一句】",
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
+                            "type": "comment",
+                            "text": "【未製作完成，忽略下一句】"
                         },
                         {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "type": "comment",
+                            "text": "TODO: 【BGM：春日影】"
                         },
-                        "\t[【BGM]春日影】",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -4738,7 +4756,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "playBgm",
                             "name": "bossa_casual_shop.mp3",
@@ -4984,7 +5005,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5253,7 +5277,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5442,7 +5469,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6008,7 +6038,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -6838,7 +6871,10 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,

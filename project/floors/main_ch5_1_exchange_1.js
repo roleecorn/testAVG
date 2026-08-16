@@ -326,20 +326,15 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "【主線 CH5 5-1 五日無戰事篇（交流後）】",
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
+            "type": "comment",
+            "text": "【主線 CH5 5-1 五日無戰事篇（交流後）】"
         },
         {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "type": "playBgm",
+            "name": "bossa_casual_shop.mp3",
+            "keep": true
         },
-        "\t[【BGM]日常】",
         {
             "type": "hideImage",
             "code": 10,
@@ -1025,7 +1020,10 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1468,7 +1466,10 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【過場】",
+                        {
+                            "type": "comment",
+                            "text": "【過場】"
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1736,7 +1737,10 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
-                        "【第五章結束】"
+                        {
+                            "type": "comment",
+                            "text": "【第五章結束】"
+                        }
                     ]
                 }
             ]

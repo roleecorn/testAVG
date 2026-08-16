@@ -157,7 +157,13 @@ function validateNode(node, location) {
   if ((node.kind === "narration" || node.kind === "dialogue" || node.kind === "comment") && typeof node.text !== "string") {
     throw new Error(`${location}: ${node.kind}.text must be a string`);
   }
+  if ((node.kind === "narration" || node.kind === "dialogue") && /【[^】]*】/.test(node.text || "")) {
+    throw new Error(`${location}: bracketed scene directive must not be player-visible text`);
+  }
   if (node.kind === "dialogue" && typeof node.speaker !== "string") throw new Error(`${location}: dialogue.speaker must be a string`);
+  if (node.kind === "dialogue" && /【[^】]*】/.test(node.speaker)) {
+    throw new Error(`${location}: bracketed scene directive must not be a dialogue speaker`);
+  }
   if (node.kind === "akiba.event.complete" && (typeof node.eventId !== "string" || !node.eventId)) {
     throw new Error(`${location}: akiba.event.complete requires eventId`);
   }
