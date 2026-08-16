@@ -4,7 +4,7 @@
 
 - 已讀取並遵守本次實際使用的每一個 reference／子 Skill 驗收段落。
 - 本次所有新增與更新都遵守「使用者明確需求與權威劇情來源 → Story IR／scene 需求 → 素材與實作 → runtime 接入與驗證」；每項實作／素材都能反查需求依據，每項需求都有實作或依規定留下阻塞／TODO，沒有由現有素材、floor、資料登錄、工具或舊實作反向增刪或扭曲劇情。
-- `project/mainStory/` 與 `project/story/` 沒有任何 Agent 自行編修、局部 patch、補寫、潤稿、修錯字、格式化、刪除、搬移、重新命名或由衍生物反向改寫；若本次有來源檔變更，只能是可追溯完整來源的新增或整檔覆蓋。
+- `project/mainStory/` 與 `project/story/*.txt` 沒有任何 Agent 自行編修、局部 patch、補寫、潤稿、修錯字、格式化、刪除、搬移、重新命名或由衍生物反向改寫；若本次有來源檔變更，只能是可追溯完整來源的新增或整檔覆蓋。`project/story/manifest.md` 與 `TODO.md` 僅作 metadata，沒有反向改寫來源。
 - 本次新增或整檔覆蓋的來源檔已核對輸入內容與 SHA-256，並與對應 Story IR、scene／floor 同一內容 commit 提交；來源若早已由外部 commit 提交，則未重複 staging。
 - 所有角色劇情變更都能追溯至 `project/story/*.txt` 真實來源；scene／floor 沒有反向取代文本。
 - 主線與角色支線都先由來源文本產生相同 schema 的可序列化 Story IR，通過 schema、必要參數、流程與素材驗證後才產生引擎事件；沒有任一分支直接從未驗證原文生成事件。
@@ -13,6 +13,10 @@
 - 自然語言理解只存在於 Story IR 正規化階段；事件生成器只做確定性映射。未辨識或缺參數的製作指令已停止受影響範圍並落入 question／TODO，沒有降級成玩家可見文字。
 - `使用BGM`、`BGM暫停`、`播放音效` 等語意及其自然語言變體均先轉成 `bgm.play`、`bgm.pause`、`sound.play` 等 Story IR 節點，再映射為合法引擎事件；必要曲目或音效名稱在驗證前已解析完成。
 - 新增或修改的檔案、ID、註冊資料與引用彼此存在且一致。
+- ZIP 任務已有本次 `run-manifest.md`，能以原始 ZIP 路徑與 SHA-256、全新 `run-id`、解壓前空目錄證據及本次檔案數證明所有內容由原始 ZIP 重新解壓；未讀取、沿用、複製或信任任何舊 `tmp`、舊解壓內容、舊 manifest、舊文字提取、舊圖片盤點、舊角色判定、舊 asset usage 或舊 draft IR。
+- 每份 ZIP 劇本文字都已相對目前 `project/story/` 分類為 `new`、`updated`、`identical` 或 `conflict`，並保存新舊 SHA-256 與必要完整 diff。只有 `new`／`updated` 被當作來源變更，`identical` 沒有重寫權威來源，`conflict` 已停止受影響分支並落檔。
+- 每張 ZIP 圖片都已相對目前 repository/runtime 素材分類為 `new`、`identical-existing`、`changed-existing` 或 `unresolved`，並保存實際格式、尺寸、SHA-256、比較過的既有路徑與目視證據；判定未只依賴檔名、副檔名或檔案數量。只有 `new` 被宣稱為新增，重複圖沒有重複匯入，變更圖已有確認目標與覆蓋授權，`unresolved` 已停止受影響分支並落檔。
+- 每個受影響角色都已更新 `project/story/manifest.md` 的獨立區段；每筆 `script-manifest.md` 與 `asset-usage.md` 都能反查原始 ZIP／run、原始路徑與 SHA-256、資源種類、差異狀態、使用方式、最後命名／路徑、來源 TXT 或 scene 與驗證證據。重新命名／替換的舊紀錄仍以 `superseded` 保留，無證據的歷史項目只標 `needs-backfill`，沒有猜測回填。
 - ZIP 劇情匯入已按角色依序完成「完整閱讀來源 → draft Story IR 視覺需求 → 來源圖片配對／生成 → validated Story IR → floor／入口」；沒有先整批複製圖片到 `project/images/` 再找用途。
 - 已逐張比對 intake／asset-usage manifest：每張 ZIP 圖片都有原始路徑與 SHA-256，並分類為 scene 直接使用、生成來源，或根層 `unknown/<角色ID>/` 的未應用待辦。只有前兩者算已應用；`unknown/` 圖片未放入 `project/images/` 或 `main.images`，且角色劇情已寫入 `project/story/TODO.md`、主線已寫入 `project/mainStory/TODO.md`。
 - Story IR 明確需要但缺少正式圖片的每個位置，都已複製其他合適圖片作暫時替代並完成 `project/images/ → main.images → scene`。TODO 已依故事類型寫入 `project/story/TODO.md` 或 `project/mainStory/TODO.md`，並包含暫時檔名、copied source、預期正式素材、scene、替換條件與驗證證據。

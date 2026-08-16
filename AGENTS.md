@@ -10,6 +10,7 @@
 - Agent 允許的來源檔案操作只有兩種：新增完整來源檔，以及以已確認的完整新來源整檔覆蓋舊來源。內容必須逐字來自使用者提供、ZIP／DOCX 等輸入經規定流程提取並驗收的文本，或其他可追溯外部來源；不得在落地前後由 Agent 改寫。
 - 整檔覆蓋不是內容修正授權。若只取得局部修訂指示、無法確認完整新版本、角色歸屬不明或來源有衝突，Agent 必須停止來源落地並建立 question／TODO，不得把局部差異自行合併進舊稿。
 - 除上述新增與整檔覆蓋外，Agent 禁止刪除、搬移或重新命名來源檔。允許落地的來源檔必須保存來源路徑與 SHA-256，並依任務流程與對應 Story IR、scene／floor 一起 staging／提交。
+- 上述來源保護針對 `project/story/*.txt` 等劇情內容。`project/story/manifest.md` 是角色原始資源的追溯 metadata，`project/story/TODO.md` 是待辦 metadata，兩者不是劇情來源；Agent 可依 canonical 流程更新，但不得用其內容反向編修、補寫或取代任何來源 TXT。
 - 「更新劇情」不代表 Agent 撰寫或修正來源文本；它代表依本文件記錄的上一個劇情更新基準 commit，檢查兩個來源資料夾的變動，再更新對應中間產物與 scene／floor。若本次輸入是 ZIP 等新來源，則先依上述規則新增或整檔覆蓋來源，再進入相同更新流程。
 
 ## 所有新增／更新流程的首要決策原則：劇情需求驅動
@@ -93,8 +94,11 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 
 ### 角色劇情 ZIP 的強制提交流程
 
+- 每次處理 ZIP 都必須從使用者指定的原始壓縮檔重新開始：先記錄 ZIP 的 SHA-256，再建立全新且已確認為空的 `tmp/character-story-import/<壓縮檔基名>/<run-id>/`，將本次原始內容重新解壓到其 `raw/`，並只在同次執行的 `work/` 產生 manifest、文字提取、draft IR 與其他中間產物。禁止沿用、複製或信任任何舊 `tmp`、先前解壓目錄、manifest、提取文字、圖片盤點、角色判定或 draft IR；即使 ZIP 路徑與檔名相同，每次重跑仍必須重新解壓與重新盤點。ZIP 自帶的同名中間產物也只算原始輸入，不算本次驗收證據。
+- 本次新鮮解壓完成後，必須在落地或實作前逐份確認文字是否相對目前 `project/story/` 為 `new`、`updated`、`identical` 或 `conflict`，並逐張確認圖片相對目前 repository/runtime 素材為 `new`、`identical-existing`、`changed-existing` 或 `unresolved`。文字判定必須保存新舊 SHA-256 並檢查完整內容差異；圖片判定必須保存實際格式、尺寸、SHA-256 並目視核對內容，不得只靠檔名、副檔名或檔案數量。`conflict`／`unresolved` 必須停止受影響分支並落檔，不得把未確認項目當作新增或更新。
+- 每位角色都必須在 `project/story/manifest.md` 擁有獨立區段。每個原始資源逐筆記錄原始 ZIP／run、原始相對路徑、SHA-256、資源種類、差異狀態、使用方式、最後命名／路徑、對應來源 TXT 或 scene 與驗證證據；`work/script-manifest.md` 與 `work/asset-usage.md` 只是本次工作產物，通過 G 前必須把該角色的最終紀錄合併進永久 manifest。重新命名、替換或停用時保留舊紀錄並標示 `superseded`，不得刪除或覆寫來源血緣。無可追溯證據的既有角色只能標為 `needs-backfill`，不得猜測回填。
 - 使用單一 ZIP 匯入多位角色時，逐角色完成 A 至 G；每位角色通過 G 後立即建立一個內容 commit，不得跨角色混合。
-- 角色內容 commit 必須包含該角色依最高規則新增或整檔覆蓋的 `project/story/` 真實來源文本、對應 `project/story-ir/`、其 scene／floor、素材、事件入口和共用檔案中只屬於該角色的行。若來源變動早已由外部 commit 提交，本次不得重複 staging，但仍須以來源路徑與 SHA-256 追溯。Story IR 絕不是獨立交付物：任何 IR 新增、修改或刪除，都必須在同一個角色 commit 中帶有對應 scene／floor 的新增、修改或刪除；不得建立 IR-only commit。
+- 角色內容 commit 必須包含該角色依最高規則新增或整檔覆蓋的 `project/story/` 真實來源文本、`project/story/manifest.md` 中只屬於該角色的資源紀錄、對應 `project/story-ir/`、其 scene／floor、素材、事件入口和共用檔案中只屬於該角色的行。若來源變動早已由外部 commit 提交，本次不得重複 staging，但仍須以來源路徑與 SHA-256 追溯。Story IR 絕不是獨立交付物：任何 IR 新增、修改或刪除，都必須在同一個角色 commit 中帶有對應 scene／floor 的新增、修改或刪除；不得建立 IR-only commit。
 - 所有角色完成後，再建立只更新本文件基準雜湊的最後 commit。完整分階段、覆蓋與 staging 規則見 [角色劇情 ZIP 任務拆分](.codex/skills/mota-avg-editor/references/archive-story-task-splitting.md)。
 - 若未能完成上述逐角色 staging 或驗證，不得宣稱已完成提交；應保留變更並回報阻塞原因。
 

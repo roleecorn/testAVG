@@ -14,6 +14,19 @@
 
 角色收尾時先逐張把 ZIP 圖片分類為直接使用、生成來源或 `unknown/` 待辦；只有前兩者算已應用。再檢查 runtime 硬鏈：`project/images/` 每張圖片都在 `main.images`，`main.images` 每個項目都至少被一個 validated Story IR scene 與對應 floor 使用。單純存在、只登錄、或僅在 TODO 提及都不算 scene 使用。
 
+## 角色原始資源 Manifest
+
+`project/story/manifest.md` 是跨任務保存的角色資源血緣索引；本次 intake 的 `script-manifest.md` 與 `asset-usage.md` 只負責工作期盤點。每位角色完成來源或素材接入時，必須把該角色所有原始資源逐筆合併到 manifest，且只修改該角色區段。每筆至少包含：
+
+- 原始 ZIP 路徑與 SHA-256、`run-id`、`raw/` 相對路徑及原始資源 SHA-256。
+- 資源種類：`script`、`portrait`、`background`、`cg`、`prop`、`audio` 或 `other`。
+- 差異狀態：劇本使用 `new`、`updated`、`identical`、`conflict`；圖片使用 `new`、`identical-existing`、`changed-existing`、`unresolved`。
+- 使用方式：劇本使用 `authoritative-source`；素材使用 `direct`、`generated-source` 或 `unknown-todo`。使用方式與差異狀態是兩個獨立欄位。
+- 最後命名／路徑：直接素材與生成輸出列出所有最終 `project/images/...`；重用素材列出既有路徑；未配對素材列出 `unknown/...`。另列對應 Story IR scene／事件與驗證證據。
+- 紀錄狀態：`active`、`superseded`、`pending` 或 `needs-backfill`。
+
+最終命名變更、來源或素材替換、停用時，不得刪除或改寫舊血緣；將舊紀錄標為 `superseded` 並新增一筆指向新名稱的紀錄。既有資源若找不到原始 ZIP、SHA-256 或生成證據，只能在對應角色區段標示 `needs-backfill`；不得從檔名、相似內容或 Git 訊息猜測原始來源。新增角色時，須在來源 TXT 或任何 runtime 素材提交前先建立其 manifest 區段。
+
 ## 如何顯示/隱藏圖片
 
 本專案有三種「顯示/隱藏」，不要混用：
