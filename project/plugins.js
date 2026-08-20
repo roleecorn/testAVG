@@ -488,6 +488,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			var placeName = core.getFlag('akiba_last_placeName', '未知地點');
 			var availableEvents = this.getActiveAkibaEventsAtLocation(locationId);
 			var miniGames = this.getAkibaMiniGameDefinitions ? this.getAkibaMiniGameDefinitions(locationId) : [];
+			var hasRcVoiceTest = locationId === 'rabbit_house';
 			if (!miniGames.length && this.getAkibaMiniGameDefinition) {
 				var legacyMiniGame = this.getAkibaMiniGameDefinition(locationId);
 				if (legacyMiniGame) miniGames.push(legacyMiniGame);
@@ -505,7 +506,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 				return;
 			}
 
-			if (availableEvents.length === 0 && miniGames.length === 0) {
+			if (availableEvents.length === 0 && miniGames.length === 0 && !hasRcVoiceTest) {
 				core.insertAction([
 					text,
 					{
@@ -535,6 +536,16 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 					}]
 				});
 			});
+			if (hasRcVoiceTest) {
+				choices.push({
+					"text": "測試「RC Voice 展示」",
+					"action": [{
+						"type": "function",
+						"async": true,
+						"function": "function () { core.plugin.startAkibaRcVoiceDemo('project/rc-voice-demo.json'); }"
+					}]
+				});
+			}
 			choices.push({
 				"text": "離開",
 				"action": [{
@@ -2438,6 +2449,77 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 				}
 			});
 		}
+	},
+	"RC_Voice": function () {
+		var rcVoiceLoadingCallbacks = [];
+		var rcVoiceLoading = false;
+
+		function getRcVoice() {
+			return window.MotaRcVoice;
+		}
+
+		function loadRcVoice(callback) {
+			if (getRcVoice()) {
+				callback();
+				return;
+			}
+			rcVoiceLoadingCallbacks.push(callback);
+			if (rcVoiceLoading) return;
+			rcVoiceLoading = true;
+
+			var script = document.createElement("script");
+			script.src = "extensions/rcVoice.js?v=" + Date.now();
+			script.onload = function () {
+				rcVoiceLoading = false;
+				var callbacks = rcVoiceLoadingCallbacks.slice();
+				rcVoiceLoadingCallbacks = [];
+				callbacks.forEach(function (one) { one(); });
+			};
+			script.onerror = function () {
+				rcVoiceLoading = false;
+				var callbacks = rcVoiceLoadingCallbacks.slice();
+				rcVoiceLoadingCallbacks = [];
+				callbacks.forEach(function (one) { one(new Error("loadRcVoiceFailed")); });
+			};
+			document.body.appendChild(script);
+		}
+
+		this.openRcVoice = function (jsonPath, options, callback) {
+			if (typeof jsonPath !== "string" || !jsonPath.trim()) {
+				core.playSound("error.mp3");
+				core.drawTip("RC Voice 缺少 JSON 資料路徑");
+				if (callback) callback({ result: "error", reason: "missingJsonPath" });
+				return false;
+			}
+			options = options || {};
+			loadRcVoice(function (error) {
+				if (error || !getRcVoice()) {
+					core.playSound("error.mp3");
+					core.drawTip("RC Voice 讀取失敗");
+					if (callback) callback({ result: "error", reason: "loadFailed" });
+					return;
+				}
+				getRcVoice().open(jsonPath, options, callback);
+			});
+			return true;
+		};
+
+		this.startRcVoiceStoryEvent = function (jsonPath, options) {
+			return this.openRcVoice(jsonPath, options || {}, function () {
+				core.insertAction({ "type": "update" });
+				core.doAction();
+			});
+		};
+
+		this.startAkibaRcVoiceDemo = function (jsonPath) {
+			return this.openRcVoice(jsonPath, {}, function () {
+				core.insertAction({
+					"type": "function",
+					"function": "function () { core.plugin.restoreAkibaHeroAfterLocationInteraction(); }"
+				});
+				core.doAction();
+			});
+		};
 	},
 	"hotReload": function () {
 		/* ---------- 功能说明 ---------- *

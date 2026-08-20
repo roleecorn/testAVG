@@ -1,0 +1,45 @@
+{
+  "title": "RC Voice",
+  "roomName": "故事語音頻道",
+  "topic": "此頁面僅用於故事中的語音對話展示。",
+  "members": [
+    {
+      "id": "akane",
+      "name": "茜",
+      "avatar": "project/images/akane_normal.png",
+      "accent": "#f38ba8",
+      "status": "正在聆聽"
+    },
+    {
+      "id": "dizi",
+      "name": "笛子",
+      "avatar": "project/images/dizi_normal.png",
+      "accent": "#89b4fa",
+      "status": "在線"
+    },
+    {
+      "id": "keng",
+      "name": "坑",
+      "avatar": "project/images/keng_neutral_portrait.png",
+      "accent": "#f9e2af",
+      "status": "正在聆聽"
+    }
+  ],
+  "messages": [
+    {
+      "speaker": "akane",
+      "content": "這裡的每一則訊息都直接由 JSON 資料顯示。",
+      "timestamp": "20:14"
+    },
+    {
+      "speaker": "dizi",
+      "content": "發言者必須先列在 members 裡，才能對應到自己的頭像。",
+      "timestamp": "20:15"
+    },
+    {
+      "speaker": "keng",
+      "content": "這是純展示頁，不會開啟麥克風，也沒有聊天功能。",
+      "timestamp": "20:15"
+    }
+  ]
+}

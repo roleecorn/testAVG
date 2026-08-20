@@ -51,6 +51,7 @@ function createPlugin(initialFlags = {}, extraFloorIds = []) {
   pluginDefinitions.locationMappings.call(plugin);
   pluginDefinitions.akibaEventManager.call(plugin);
   pluginDefinitions.Tic_Tac_Toe.call(plugin);
+  pluginDefinitions.RC_Voice.call(plugin);
   plugin._akibaEventMeta = eventMeta;
   core.plugin = plugin;
   return { core, plugin };
@@ -260,6 +261,59 @@ function testLocationChoiceKeepsStoryEventAndMiniGame() {
   assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), ["park_story", "玩「公園清潔隊」", "離開"]);
 }
 
+function testRabbitHouseOffersRcVoiceTest() {
+  const { core, plugin } = createPlugin({
+    akiba_event_state_initialized: true,
+    akiba_event_state_version: eventMeta.version,
+    akiba_completed_events: [],
+    akiba_active_events: [],
+    akiba_last_locationId: "rabbit_house",
+    akiba_last_placeName: "炭烤蜜瓜兔子",
+  });
+  plugin.showAkibaLocationEventChoices();
+  const choiceEvent = core.actions.at(-1);
+  assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), [
+    "玩「炭火烤蜜瓜麵包」",
+    "測試「RC Voice 展示」",
+    "離開",
+  ]);
+  assert.equal(choiceEvent.choices[1].action[0].async, true);
+  assert(choiceEvent.choices[1].action[0].function.includes("startAkibaRcVoiceDemo('project/rc-voice-demo.json')"));
+}
+
+function testRabbitHouseRcVoiceReturnsToInteractionOrigin() {
+  const { core, plugin } = createPlugin();
+  let openedPath = null;
+  plugin.openRcVoice = (jsonPath, options, callback) => {
+    openedPath = jsonPath;
+    assert.deepEqual(options, {});
+    callback({ result: "close", reason: "button" });
+    return true;
+  };
+
+  plugin.startAkibaRcVoiceDemo("project/rc-voice-demo.json");
+  assert.equal(openedPath, "project/rc-voice-demo.json");
+  assert.equal(core.doActionCount, 1);
+  assert.equal(core.actions.at(-1).type, "function");
+  assert(core.actions.at(-1).function.includes("restoreAkibaHeroAfterLocationInteraction"));
+}
+
+function testStoryRcVoiceUsesCallerProvidedJsonPath() {
+  const { core, plugin } = createPlugin();
+  let openedPath = null;
+  plugin.openRcVoice = (jsonPath, options, callback) => {
+    openedPath = jsonPath;
+    assert.deepEqual(options, {});
+    callback({ result: "close", reason: "button" });
+    return true;
+  };
+
+  assert.equal(plugin.startRcVoiceStoryEvent("project/rc-voice/noir-briefing.json"), true);
+  assert.equal(openedPath, "project/rc-voice/noir-briefing.json");
+  assert.equal(core.actions.at(-1).type, "update");
+  assert.equal(core.doActionCount, 1);
+}
+
 function testGameCenterOffersBothArcadeGames() {
   const { core, plugin } = createPlugin({
     akiba_event_state_initialized: true,
@@ -450,6 +504,9 @@ testIdleClockDoesNotAdvanceOutsideExchange();
 testEveryRegularLocationHasMiniGame();
 testLocationChoiceIncludesMiniGameWithoutStoryEvent();
 testLocationChoiceKeepsStoryEventAndMiniGame();
+testRabbitHouseOffersRcVoiceTest();
+testRabbitHouseRcVoiceReturnsToInteractionOrigin();
+testStoryRcVoiceUsesCallerProvidedJsonPath();
 testGameCenterOffersBothArcadeGames();
 testMusicVenueOffersStageTimingAndWesternDuel();
 testWarehouseDistrictOffersPackingAndShootingRange();
