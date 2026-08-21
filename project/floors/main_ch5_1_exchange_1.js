@@ -485,7 +485,7 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "天啊，梗平閃過了肥宅的撞擊，而且並沒有第二個肥宅",
+        "天啊，梗平閃過了肥宅的撞擊",
         {
             "type": "hideImage",
             "code": 10,
@@ -535,7 +535,56 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0,
             "async": true
         },
-        "肥宅把頭轉了過來，用嘴使用了噴射氣流攻擊",
+        "當梗平宣布勝利時，從肥宅的後方死角出現了更多的肥宅",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "這就是肥宅們三位一體無法迴避的噴射氣流攻擊",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,

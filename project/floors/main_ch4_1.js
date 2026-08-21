@@ -523,7 +523,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[蘭斯]（手機）我們要去找其他能夠進入書店A的方式了",
+        "\t[蘭斯]（手機）我們要去找其他能夠進入ANIsister的方式了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1091,7 +1091,7 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
-        "\t[東山]（手機）找到能解決書店A問題的方式了",
+        "\t[東山]（手機）找到能解決ANIsister問題的方式了",
         {
             "type": "hideImage",
             "code": 10,
@@ -1711,6 +1711,34 @@ main.floors.main_ch4_1=
         },
         "\t[表妹]這時候果然就是要使用那一招了！",
         {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -1735,6 +1763,62 @@ main.floors.main_ch4_1=
         },
         "\t[表妹]接下這招吧，大鱷魚！",
         {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -1758,6 +1842,34 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]這個是我們羈絆的力量啊！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1868,7 +1980,43 @@ main.floors.main_ch4_1=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "在梗平與表妹反應過來之前，大鱷魚嘴裡的光球變成了光束射了過來",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -2820,7 +2968,25 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "梗平環視一圈，友人們已經露出了絕望的表情",
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2833,7 +2999,25 @@ main.floors.main_ch4_1=
                             "time": 0,
                             "async": true
                         },
-                        "\t[東山]那個，貝琪，我也不能出去嗎？",
+                        "梗平環視一圈，友人們已經露出了絕望的表情",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "\t[東山]那個，貝琪親，我也不能出去嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3146,7 +3330,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「這個地方看起來很可疑啊」",
+                        "\t[梗平](這個地方看起來很可疑啊)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3170,7 +3354,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「他們該不會是要截胡修卡的造物吧」",
+                        "\t[梗平](他們該不會是要截胡修卡的造物吧)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3194,7 +3378,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]「剛好就由我這個假面騎士來幫大家解決問題」",
+                        "\t[梗平](剛好就由我這個假面騎士來幫大家解決問題)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3208,6 +3392,34 @@ main.floors.main_ch4_1=
                             "async": true
                         },
                         "就在這個瞬間，草叢中傳來了窸窸窣窣的聲音",
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 24,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3233,6 +3445,34 @@ main.floors.main_ch4_1=
                         },
                         "\t[梗平]誰在那裡！",
                         {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 16,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -3245,6 +3485,34 @@ main.floors.main_ch4_1=
                             "async": true
                         },
                         "正當梗平想做點什麼的時候，草叢中跳出了幾個全副武裝的大漢",
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 24,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -3269,6 +3537,34 @@ main.floors.main_ch4_1=
                             "time": 0
                         },
                         "\t[梗平]你們是誰！你們要做什麼！？",
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 16,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,

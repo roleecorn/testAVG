@@ -683,7 +683,7 @@ main.floors.mapo_1_3=
             "time": 0,
             "async": true
         },
-        "\t[麻婆店長]本店沒有提供那種東西",
+        "\t[麻婆]本店沒有提供那種東西",
         {
             "type": "hideImage",
             "code": 10,

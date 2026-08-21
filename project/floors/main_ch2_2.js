@@ -370,7 +370,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "梗平與三個小朋友來到了書店A的門口",
+        "梗平與三個小朋友來到了ANIsister的門口",
         {
             "type": "hideImage",
             "code": 10,
@@ -443,7 +443,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]什麼？竟然沒開？",
+        "\t[梗平]什麼？竟然不許！？",
         {
             "type": "hideImage",
             "code": 10,
@@ -918,7 +918,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "就這樣，耿平從街頭問到巷尾，然後再從巷尾問到街頭",
+        "就這樣，梗平從街頭問到巷尾，然後再從巷尾問到街頭",
         {
             "type": "hideImage",
             "code": 10,
@@ -931,7 +931,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "可惜沒有任何人見過IB的哥哥，於是小朋友們提出了再去一次書店A的提議",
+        "可惜沒有任何人見過IB的哥哥，於是小朋友們提出了再去一次ANIsister的提議",
         {
             "type": "hideImage",
             "code": 10,
@@ -944,7 +944,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "但絕頂聰明的耿平認為這一切都是障眼法，IB的哥哥肯定在其他的地方",
+        "但絕頂聰明的梗平認為這一切都是障眼法，IB的哥哥肯定在其他的地方",
         {
             "type": "hideImage",
             "code": 10,
@@ -981,7 +981,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平](可惡，書店A一看就有問題，我不要進去啊)",
+        "\t[梗平](可惡，ANIsister一看就有問題，我不要進去啊)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1131,7 +1131,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "\t[小黑]我們已經經過書店A三次了，我好想進去",
+        "\t[小黑]我們已經經過ANIsister三次了，我好想進去",
         {
             "type": "hideImage",
             "code": 10,
@@ -1238,7 +1238,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「這時候只需要多談談自己的推測就能轉移焦點了」",
+        "\t[梗平](這時候只需要多談談自己的推測就能轉移焦點了)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1299,7 +1299,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]你聽我說啊，根據他們的情報，他的哥哥是在書店A附近失蹤的",
+        "\t[梗平]你聽我說啊，根據他們的情報，他的哥哥是在ANIsister附近失蹤的",
         {
             "type": "hideImage",
             "code": 10,
@@ -1312,7 +1312,7 @@ main.floors.main_ch2_2=
             "time": 0,
             "async": true
         },
-        "\t[蘭斯]那你有看過書店A了嗎？",
+        "\t[蘭斯]那你有看過ANIsister了嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1384,7 +1384,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]書店A絕對只是障眼法，實際上他肯定不再那裡",
+        "\t[梗平]ANIsister絕對只是障眼法，實際上他肯定不再那裡",
         {
             "type": "hideImage",
             "code": 10,
@@ -1408,7 +1408,7 @@ main.floors.main_ch2_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]一定是在書店A被綁架後轉移到其他地方了",
+        "\t[梗平]一定是在ANIsister被綁架後轉移到其他地方了",
         {
             "type": "hideImage",
             "code": 10,
@@ -2429,7 +2429,7 @@ main.floors.main_ch2_2=
                             "time": 0,
                             "async": true
                         },
-                        "\t[不知道是誰的松]有人提到修卡嗎？",
+                        "\t[警察]有人提到修卡嗎？",
                         {
                             "type": "hideImage",
                             "code": 10,

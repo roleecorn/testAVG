@@ -444,7 +444,7 @@ main.floors.main_ch2_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「好像哪裡不太對」",
+        "\t[梗平](好像哪裡不太對)",
         {
             "type": "hideImage",
             "code": 10,
@@ -524,6 +524,34 @@ main.floors.main_ch2_3=
         },
         "\t[警察]太可惜了",
         {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -547,6 +575,34 @@ main.floors.main_ch2_3=
             "time": 0
         },
         "\t[梗平]在下最後的1000円啊！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -597,6 +653,34 @@ main.floors.main_ch2_3=
             "time": 150
         },
         {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -609,6 +693,34 @@ main.floors.main_ch2_3=
             "async": true
         },
         "\t[警察]啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -730,7 +842,7 @@ main.floors.main_ch2_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]算了，還是去書店A一趟吧",
+        "\t[梗平]算了，還是去ANIsister一趟吧",
         {
             "type": "hideImage",
             "code": 10,
@@ -743,7 +855,7 @@ main.floors.main_ch2_3=
             "time": 0,
             "async": true
         },
-        "失去了太多了梗平獨自一人，走向了大門緊閉的書店A",
+        "失去了太多了梗平獨自一人，走向了大門緊閉的ANIsister",
         {
             "type": "hideImage",
             "code": 10,
@@ -800,7 +912,43 @@ main.floors.main_ch2_3=
             "time": 0,
             "async": true
         },
-        "梗平站在了書店A的大門前方，開始了自言自語",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "梗平站在了ANIsister的大門前方，開始了自言自語",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,

@@ -370,6 +370,22 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "comment",
+            "text": "【此段暫時不撥放BGM】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "梗平在一個完全陌生的房間中醒來後，與剛剛的警察四目相對",
         {
             "type": "hideImage",
@@ -509,7 +525,7 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "\t[警察]我看見你往書店A的方向走就跟了過來，準備開門檢查的時候就暈了",
+        "\t[警察]我看見你往ANIsister的方向走就跟了過來，準備開門檢查的時候就暈了",
         {
             "type": "hideImage",
             "code": 10,
@@ -533,7 +549,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]那看來我們應該就是在書店A內部的某個地方了",
+        "\t[梗平]那看來我們應該就是在ANIsister內部的某個地方了",
         {
             "type": "hideImage",
             "code": 10,
@@ -611,6 +627,34 @@ main.floors.main_ch2_4=
         },
         "梗平與警察以最快的速度遠離了門口並抱在一起",
         {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -622,7 +666,35 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "\t[警察]不要過來啊！",
+        "\t[警察]你不要過來啊！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -911,6 +983,10 @@ main.floors.main_ch2_4=
         },
         "\t[梗平](這時候只能靠那一招了)",
         {
+            "type": "comment",
+            "text": "TODO: 【BGM：BGMKyoheiTranslation】"
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -953,12 +1029,123 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "於是，梗平跳出了他這輩子最完美的一次假面騎士空翻",
+        "嘿—",
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
         },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "喝—",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "哈—",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "於是，梗平跳出了他這輩子最完美的一次假面騎士空翻",
         {
             "type": "hideImage",
             "code": 10,
@@ -1041,7 +1228,7 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "兩人一左一右把IB架了起來，頭也不回的衝出了書店A",
+        "兩人一左一右把IB架了起來，頭也不回的衝出了ANIsister",
         {
             "type": "hideImage",
             "code": 30,
@@ -1103,7 +1290,7 @@ main.floors.main_ch2_4=
             "time": 0,
             "async": true
         },
-        "書店A的門口，梗平遭受著他不應......算了，他活該的",
+        "ANIsister的門口，梗平遭受著他不應......算了，他活該的",
         {
             "type": "hideImage",
             "code": 10,
@@ -3034,7 +3221,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_rabbit_attack_cg.png",
+                            "image": "scene_mapo_cg.png",
                             "sloc": [
                                 0,
                                 65,
@@ -3062,7 +3249,7 @@ main.floors.main_ch2_4=
                             "time": 0,
                             "async": true
                         },
-                        "梗平的臉又挨了一次小兔子黑暗無限破後，順勢飛出了店外",
+                        "梗平的臉又挨了一次小兔子暗黑無限破後，順勢飛出了店外",
                         {
                             "type": "hideImage",
                             "code": 30,

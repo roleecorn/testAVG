@@ -818,6 +818,37 @@ main.floors.main_ch6_1=
         },
         {
             "type": "showImage",
+            "code": 30,
+            "image": "ms_ch1_phone_message_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
             "loc": [
@@ -891,6 +922,11 @@ main.floors.main_ch6_1=
             "time": 0
         },
         "\t[表妹]（手機）剛剛試著走出去，差點被撞暈",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1497,6 +1533,34 @@ main.floors.main_ch6_1=
         },
         "\t[梗平]不是啦，那群肥宅似乎不會攻擊小女孩",
         {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -1509,6 +1573,62 @@ main.floors.main_ch6_1=
             "async": true
         },
         "\t[克莉絲]人渣",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1533,6 +1653,34 @@ main.floors.main_ch6_1=
             "time": 0
         },
         "\t[表妹]垃圾",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1844,6 +1992,34 @@ main.floors.main_ch6_1=
         },
         "\t[梗平]喔，蘭斯！",
         {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -1856,6 +2032,34 @@ main.floors.main_ch6_1=
             "async": true
         },
         "\t[蘭斯]絕對不是因為我想看大胸！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,

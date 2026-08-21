@@ -357,6 +357,34 @@ main.floors.main_ch6_2=
         },
         "\t[肥宅]快看公告！Comike要終止了！",
         {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -380,6 +408,34 @@ main.floors.main_ch6_2=
             "time": 0
         },
         "\t[梗平]不！！！！！！！！！！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -557,7 +613,7 @@ main.floors.main_ch6_2=
             "time": 0,
             "async": true
         },
-        "\t[東山]沒錯，只要梗平提早結婚，成了她的婿",
+        "\t[東山]沒錯，只要梗平提早結婚，成了她的丈夫",
         {
             "type": "hideImage",
             "code": 10,
@@ -775,6 +831,10 @@ main.floors.main_ch6_2=
                         },
                         "\t[梗平]再也不見！",
                         {
+                            "type": "comment",
+                            "text": "TODO: 【BGM：BGMKyoheiTranslation】"
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -817,12 +877,123 @@ main.floors.main_ch6_2=
                             "time": 0,
                             "async": true
                         },
-                        "梗平用一次完美的騎士跳逃出了人群的包圍，然後直線衝出了ANIsister",
+                        "嘿—",
                         {
                             "type": "hideImage",
                             "code": 30,
                             "time": 150
                         },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "喝—",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "scene_mapo_cg.png",
+                            "sloc": [
+                                0,
+                                65,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "哈—",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        "梗平用一次完美的騎士跳逃出了人群的包圍，然後直線衝出了ANIsister",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1933,6 +2104,34 @@ main.floors.main_ch6_2=
                         },
                         "\t[梗平]在下會負起責任的",
                         {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 24,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -1956,6 +2155,34 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         "\t[梗平]在下不會逃跑的，在下做得到",
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 16,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,

@@ -588,7 +588,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "ms_ch1_rabbit_attack_cg.png",
+            "image": "scene_mapo_cg.png",
             "sloc": [
                 0,
                 65,
@@ -616,7 +616,7 @@ main.floors.mapo_1_4=
             "time": 0,
             "async": true
         },
-        "梗平的面部遭受了小兔子黑暗無限破的強力一擊",
+        "梗平的面部遭受了小兔子暗黑無限破的強力一擊",
         {
             "type": "hideImage",
             "code": 30,

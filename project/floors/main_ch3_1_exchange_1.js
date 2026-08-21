@@ -1106,6 +1106,34 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0,
                             "async": true
                         },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "ms_bg_bookstore_a_interior.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
                         "正當梗平準備再說點什麼的時候，遠方的前輩喊了一嗓子",
                         {
                             "type": "hideImage",
@@ -1350,6 +1378,34 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]在下知道了，你果然是修卡的人吧",
                         {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 24,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -1373,6 +1429,34 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]在下不會向邪惡屈服的！",
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 16,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1714,6 +1798,34 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 150
                         },
                         {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 24,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -1737,6 +1849,34 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]不可能，絕對不可能",
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 16,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1812,6 +1952,34 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]你說...什麼？",
                         {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 24,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -1835,6 +2003,34 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]不不不不不不不不不不！",
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 16,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -2823,10 +3019,6 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "數個小時過去了，梗平也發生了翻天覆地的變化",
                         {
-                            "type": "comment",
-                            "text": "TODO: 【此處應有梗平立繪切換，未製作完成，忽略本句】"
-                        },
-                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -3707,22 +3899,6 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "comment",
                             "text": "【過場】"
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "comment",
-                            "text": "【未製作完成，忽略下一句】"
                         },
                         {
                             "type": "comment",
@@ -4735,6 +4911,34 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[三日月]加油梗平！",
                         {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 24,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -4747,6 +4951,34 @@ main.floors.main_ch3_1_exchange_1=
                             "async": true
                         },
                         "\t[梗平(女装)]我去你的三日月！ ！ ！ ！",
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 16,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -5221,10 +5453,6 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "comment",
-                            "text": "TODO: 【此處應有梗平立繪切換，未製作完成，忽略本句】"
                         },
                         {
                             "type": "hideImage",
@@ -6089,6 +6317,34 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "三日月從奇怪的地方又掏出了一個USB",
                         {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 24,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -6101,6 +6357,34 @@ main.floors.main_ch3_1_exchange_1=
                             "async": true
                         },
                         "\t[梗平(女装)]快！ TMD快給我！ ！ ！ ！",
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 16,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
                         {
                             "type": "hideImage",
                             "code": 10,

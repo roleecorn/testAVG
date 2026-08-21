@@ -863,7 +863,7 @@ main.floors.mapo_1_6=
         {
             "type": "showImage",
             "code": 30,
-            "image": "ms_ch1_rabbit_attack_cg.png",
+            "image": "scene_mapo_cg.png",
             "sloc": [
                 0,
                 65,
@@ -880,6 +880,34 @@ main.floors.mapo_1_6=
             "time": 250
         },
         {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -891,7 +919,35 @@ main.floors.mapo_1_6=
             "time": 0,
             "async": true
         },
-        "\t[三角]小兔子黑暗無限破！",
+        "\t[三角]小兔子暗黑無限破！",
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1233,7 +1289,7 @@ main.floors.mapo_1_6=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「不行，得趕快挽回在下的形象才行」",
+        "\t[梗平](不行，得趕快挽回在下的形象才行)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1270,7 +1326,7 @@ main.floors.mapo_1_6=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]「還好還好，第一次見面就被討厭的事情應該不會發生了」",
+        "\t[梗平](還好還好，第一次見面就被討厭的事情應該不會發生了)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1495,7 +1551,7 @@ main.floors.mapo_1_6=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_rabbit_attack_cg.png",
+                            "image": "scene_mapo_cg.png",
                             "sloc": [
                                 0,
                                 65,
@@ -1512,6 +1568,34 @@ main.floors.mapo_1_6=
                             "time": 250
                         },
                         {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 24,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
+                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0,
@@ -1523,7 +1607,35 @@ main.floors.mapo_1_6=
                             "time": 0,
                             "async": true
                         },
-                        "\t[三角]小兔子黑暗無限破！",
+                        "\t[三角]小兔子暗黑無限破！",
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 16,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -1681,7 +1793,7 @@ main.floors.mapo_1_6=
                             "time": 0,
                             "async": true
                         },
-                        "\t[小黑]從IB哥哥的行程來看，他昨天只預計要去書店A而已",
+                        "\t[小黑]從IB哥哥的行程來看，他昨天只預計要去ANIsister而已",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -1694,7 +1806,7 @@ main.floors.mapo_1_6=
                             "time": 0,
                             "async": true
                         },
-                        "\t[小黑]最後一次IB聯繫到他的時候，也確實是在說關於書店A的事情",
+                        "\t[小黑]最後一次IB聯繫到他的時候，也確實是在說關於ANIsister的事情",
                         {
                             "type": "hideImage",
                             "code": 10,
