@@ -749,7 +749,7 @@ main.floors.ruka_1=
         },
         {
             "type": "function",
-            "function": "function () { core.plugin.addAkibaEvent({\"id\":\"ruka_2\",\"title\":\"巷口救星\",\"locations\":[\"warehouse_district\"],\"floorId\":\"ruka_2\",\"once\":true}); }"
+            "function": "function () { core.plugin.addAkibaEvent({\"id\":\"ruka_2\",\"title\":\"巷口救星\",\"locations\":[\"maid_cafe\"],\"floorId\":\"ruka_2\",\"once\":true}); }"
         },
         {
             "type": "function",

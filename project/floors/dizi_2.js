@@ -596,7 +596,7 @@ main.floors.dizi_2=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"dizi_3\",\n\t\t\"title\": \"真是個有趣的男人\",\n\t\t\"locations\": [\"maid_cafe\"],\n\t\t\"floorId\": \"dizi_3\",\n\t\t\"once\": true\n\t});\n}"
+            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"dizi_3\",\n\t\t\"title\": \"真是個有趣的男人\",\n\t\t\"locations\": [\"prize_exchange\"],\n\t\t\"floorId\": \"dizi_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
             "type": "function",

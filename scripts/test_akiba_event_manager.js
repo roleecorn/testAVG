@@ -98,6 +98,26 @@ function testVersionMigrationPreservesProgress() {
   assert.deepEqual(core.flags.akiba_completed_events, completed);
 }
 
+function testVersionMigrationAppliesLocationOverrides() {
+  const { core, plugin } = createPlugin({
+    akiba_event_state_initialized: true,
+    akiba_event_state_version: eventMeta.version - 1,
+    akiba_completed_events: [],
+    akiba_active_events: [
+      { id: "ruka_2", title: "巷口救星", locations: ["warehouse_district"], floorId: "ruka_2", once: true },
+      { id: "dizi_2", title: "被編寫的命運", locations: ["music_venue"], floorId: "dizi_2", once: true },
+      { id: "lanxiang_1", title: "巷口救星", locations: ["warehouse_district"], floorId: "lanxiang_1", once: true },
+    ],
+  }, ["ruka_2", "dizi_2", "lanxiang_1"]);
+  plugin.initAkibaEventState();
+  assert(plugin.getActiveAkibaEventsAtLocation("maid_cafe").some((entry) => entry.id === "ruka_2"));
+  assert(plugin.getActiveAkibaEventsAtLocation("prize_exchange").some((entry) => entry.id === "dizi_2"));
+  assert(plugin.getActiveAkibaEventsAtLocation("mahjong_parlor").some((entry) => entry.id === "lanxiang_1"));
+  assert(!plugin.getActiveAkibaEventsAtLocation("warehouse_district").some((entry) => entry.id === "ruka_2"));
+  assert(!plugin.getActiveAkibaEventsAtLocation("music_venue").some((entry) => entry.id === "dizi_2"));
+  assert(!plugin.getActiveAkibaEventsAtLocation("warehouse_district").some((entry) => entry.id === "lanxiang_1"));
+}
+
 function testCompletionCountsOnlyOnce() {
   const { core, plugin } = createPlugin({
     akiba_event_state_initialized: true,
@@ -489,6 +509,7 @@ function testPoliceStationOffersShootingRange() {
 
 testFreshInitialization();
 testVersionMigrationPreservesProgress();
+testVersionMigrationAppliesLocationOverrides();
 testCompletionCountsOnlyOnce();
 testCharacterExchangeDefaultsToTwoEvents();
 testIdleClockRestoresOrContinues();

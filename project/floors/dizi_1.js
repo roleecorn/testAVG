@@ -768,7 +768,7 @@ main.floors.dizi_1=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"dizi_2\",\n\t\t\"title\": \"被編寫的命運\",\n\t\t\"locations\": [\"music_venue\"],\n\t\t\"floorId\": \"dizi_2\",\n\t\t\"once\": true\n\t});\n}"
+            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"dizi_2\",\n\t\t\"title\": \"被編寫的命運\",\n\t\t\"locations\": [\"prize_exchange\"],\n\t\t\"floorId\": \"dizi_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
             "type": "function",

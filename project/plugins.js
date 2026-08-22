@@ -264,6 +264,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			} else {
 				// 升版時保留既有進度，只補進新加入的初始事件；已完成事件不可重新啟用。
 				var completedEvents = this._getAkibaEventIdArrayFlag('akiba_completed_events');
+				var locationOverrides = meta.locationOverrides || {};
 				var activeEvents = this._getAkibaActiveEvents().filter(function (event) {
 					if (event.once !== false && completedEvents.indexOf(event.id) >= 0) return false;
 					var floorIds = core.floorIds instanceof Array ? core.floorIds : [];
@@ -272,7 +273,14 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 						return core.floors[event.floorId] != null;
 					}
 					return true;
-				});
+				}).map(function (event) {
+					var locations = locationOverrides[event.id];
+					if (!(locations instanceof Array) || locations.length === 0) return event;
+					var overriddenEvent = {};
+					Object.keys(event).forEach(function (key) { overriddenEvent[key] = event[key]; });
+					overriddenEvent.locations = locations.slice();
+					return this._normalizeAkibaEventData(overriddenEvent) || event;
+				}, this);
 				(meta.activeEvents || []).forEach(function (eventData) {
 					var event = this._normalizeAkibaEventData(eventData);
 					if (!event) return;
