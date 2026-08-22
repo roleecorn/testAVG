@@ -20,7 +20,7 @@ main.floors.Akiba=
         {
             "name": "akiba_idle_clock.png",
             "canvas": "fg",
-            "x": 384,
+            "x": 512,
             "y": 384
         }
     ],
