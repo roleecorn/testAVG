@@ -1,6 +1,6 @@
 ---
 name: anime-expression-grid
-description: Generate a consistent six-expression anime character sheet for this H5 Mota project. Use when explicitly requested or when routed by mota-avg-editor to turn one confirmed character reference into happy, angry, sad, surprised, panicked, and neutral half-body green-screen sprites in a 2-column by 3-row grid.
+description: Generate a consistent six-expression anime character sheet for this H5 Mota project. Use when explicitly requested or when routed by mota-avg-editor to turn one confirmed character reference into happy, angry, sad, surprised, panicked, and neutral tall full-body green-screen sprites in a 2-column by 3-row grid.
 ---
 
 # Anime Expression Grid
@@ -10,7 +10,7 @@ Create one 2 × 3 chroma-key-green expression sheet. Own only the six-cell art c
 ## Inputs
 
 - Require one confirmed character reference image.
-- Use `assets/style.png` as the sole style reference.
+- Use `assets/style.png` as the sole style reference. It is a successful Mapo 2×3 full-body sheet: use it only for line work, flat cel shading, silhouette proportion, layout, and chroma-key treatment; never copy its character identity, outfit, or poses into another character.
 - Treat the character reference only as character-design evidence. Treat the style image only as rendering-style evidence.
 
 ## Outputs
@@ -38,9 +38,9 @@ Create one 2 × 3 chroma-key-green expression sheet. Own only the six-cell art c
 ## Handoff
 
 1. Read the selected generation Skill.
-2. Generate six equal half-body cells; do not show legs.
-3. Keep scale, camera distance, composition, and style consistent while varying expression, pose, hands, and body language.
-4. Use solid chroma-key green, a clear thick black outline, opaque clean edges, and no text, labels, watermarks, extra characters, or decorative panels.
+2. Generate six equal full-body cells with a visibly tall adult/anime proportion: head through shoes, elongated legs and torso, and no chibi or squat silhouette. The shoe sole may meet or be narrowly cropped by the cell bottom, but the legs and shoes must remain readable.
+3. Keep scale, camera distance, composition, and style consistent while varying only expression, hands, and small body-language changes.
+4. Use solid chroma-key green, a clear thick black outline, opaque clean edges, and no text, labels, emblems, watermarks, extra characters, floating reaction icons, or decorative panels.
 5. When called by a parent Skill, return the approved sheet and validation result to that caller.
 6. When explicitly invoked as the task root for a project asset, continue through [images.md](../mota-avg-editor/references/images.md) for key removal, splitting, registration, and event hookup. Do not invoke the parent Skill.
 
@@ -49,7 +49,7 @@ The historical source workflow used `instant5.5`; treat it as a preference, not 
 ## Validation
 
 - Confirm all six emotions and the exact grid order.
-- Confirm the same character, fixed style, half-body crop, clean opaque edges, green background, and absence of text or watermarks.
+- Confirm the same character, fixed style, tall full-body framing, clean opaque edges, green background, and absence of text, emblems, or watermarks.
 - Regenerate or edit any materially failed cell before handoff.
 - For project integration, also run the image validation required by [images.md](../mota-avg-editor/references/images.md).
 

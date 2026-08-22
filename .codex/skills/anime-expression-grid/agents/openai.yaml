@@ -1,4 +1,4 @@
 interface:
   display_name: "動漫表情格生成"
   short_description: "依固定畫風生成可獨立或向下接入的六表情綠幕圖"
-  default_prompt: "Use $anime-expression-grid to create and validate a six-expression character sheet from my confirmed reference image."
+  default_prompt: "Use $anime-expression-grid to create and validate a tall full-body six-expression 2×3 chroma-key-green character sheet from my confirmed reference image."
