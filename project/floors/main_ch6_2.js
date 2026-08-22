@@ -831,8 +831,9 @@ main.floors.main_ch6_2=
                         },
                         "\t[梗平]再也不見！",
                         {
-                            "type": "comment",
-                            "text": "TODO: 【BGM：BGMKyoheiTranslation】"
+                            "type": "playBgm",
+                            "name": "BGMKyoheiTranslation.mp3",
+                            "keep": true
                         },
                         {
                             "type": "hideImage",

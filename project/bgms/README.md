@@ -17,5 +17,9 @@
 | `twists_suspense.mp3` | 懸疑、探索、真相逼近 | `Twists` / Alexander Ehlers | CC0 | https://opengameart.org/content/free-music-pack |
 | `waking_the_devil_crisis.mp3` | 危機、邪惡登場、壓迫感 | `Waking the devil` / Alexander Ehlers | CC0 | https://opengameart.org/content/free-music-pack |
 | `warped_surreal.mp3` | 異常、錯位、荒誕或超現實 | `Warped` / Alexander Ehlers | CC0 | https://opengameart.org/content/free-music-pack |
+| `BGMMeikyoshisui.mp3` | CH7-4 戰鬥後的反擊與沉重轉折 | 使用者提供 ZIP，原曲／作者未附 | 未提供 | `BGM-20260822T150228Z-1-001.zip`（SHA-256：`565873295F6C60373C527185F27B19EDD491D97F30232FC38D2871E4EC0475C7`） |
+| `BGMREBOOT2014.mp3` | CH7-4 劫車作戰中的登場與行動高潮 | 使用者提供 ZIP，原曲／作者未附 | 未提供 | `BGM-20260822T150228Z-1-001.zip`（SHA-256：`565873295F6C60373C527185F27B19EDD491D97F30232FC38D2871E4EC0475C7`） |
+| `BGMKyoheiTranslation.mp3` | CH2、CH6、CH7-5 的假面騎士動作／搞笑高潮 | 使用者提供 ZIP，原曲／作者未附 | 未提供 | `BGM-20260822T150228Z-1-001.zip`（SHA-256：`565873295F6C60373C527185F27B19EDD491D97F30232FC38D2871E4EC0475C7`） |
+| `BGMBOINBOIN.mp3` | CH7-5 歐派宣講的荒誕搞笑段落 | 使用者提供 ZIP，原曲／作者未附 | 未提供 | `BGM-20260822T150228Z-1-001.zip`（SHA-256：`565873295F6C60373C527185F27B19EDD491D97F30232FC38D2871E4EC0475C7`） |
 
 CC0 素材不要求署名；此檔仍保留來源，方便未來追蹤與替換。

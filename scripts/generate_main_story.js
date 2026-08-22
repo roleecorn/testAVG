@@ -448,12 +448,19 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
 }
 
 function resolveRegisteredAudio(rawName, registered, kind, ctx) {
-  const name = rawName.trim().replace(/^[「『"']|[」』"']$/g, "");
-  const mapped = (PROJECT_MAIN.nameMap || {})[name] || name;
-  if (!registered.has(mapped)) {
+  const mapped = findRegisteredAudio(rawName, registered);
+  if (!mapped) {
     throw new Error(`${ctx.source} ${ctx.section}: unresolved ${kind} directive asset: ${rawName}`);
   }
   return mapped;
+}
+
+function findRegisteredAudio(rawName, registered) {
+  const name = rawName.trim().replace(/^[「『"']|[」』"']$/g, "");
+  const mapped = (PROJECT_MAIN.nameMap || {})[name] || name;
+  if (registered.has(mapped)) return mapped;
+  const stemMatches = [...registered].filter((filename) => path.parse(filename).name === mapped);
+  return stemMatches.length === 1 ? stemMatches[0] : null;
 }
 
 function normalizeAudioDirective(text, ctx) {
@@ -480,8 +487,8 @@ function normalizeAudioDirective(text, ctx) {
   }
   if (semantic) {
     const requested = semantic[1].trim();
-    const mapped = (PROJECT_MAIN.nameMap || {})[requested] || requested;
-    if (!REGISTERED_BGMS.has(mapped)) {
+    const mapped = findRegisteredAudio(requested, REGISTERED_BGMS);
+    if (!mapped) {
       storyTodos.add(`${ctx.source} ${ctx.section}：${text} 未能對應已登錄 BGM，保留為非玩家可見演出待辦。`);
       return [{ type: "comment", text: `TODO: ${text}` }];
     }

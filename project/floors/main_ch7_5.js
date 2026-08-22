@@ -2981,8 +2981,9 @@ main.floors.main_ch7_5=
         },
         "\t[小將]……………",
         {
-            "type": "comment",
-            "text": "TODO: 【BGM：BGMKyoheiTranslation】"
+            "type": "playBgm",
+            "name": "BGMKyoheiTranslation.mp3",
+            "keep": true
         },
         {
             "type": "setText",
@@ -4897,8 +4898,9 @@ main.floors.main_ch7_5=
         },
         "場內擠滿了眾多肥宅，細看甚至能在場地上方發現瀰漫著的裊裊白煙",
         {
-            "type": "comment",
-            "text": "TODO: 【BGM：BGMBOINBOIN】"
+            "type": "playBgm",
+            "name": "BGMBOINBOIN.mp3",
+            "keep": true
         },
         {
             "type": "hideImage",

@@ -428,7 +428,11 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"twists_suspense.mp3",
 			"waking_the_devil_crisis.mp3",
 			"warped_surreal.mp3",
-			"ms_ch2_gallery_opening.mp3"
+			"ms_ch2_gallery_opening.mp3",
+			"BGMMeikyoshisui.mp3",
+			"BGMREBOOT2014.mp3",
+			"BGMKyoheiTranslation.mp3",
+			"BGMBOINBOIN.mp3"
 		],
 		"sounds": [
 			"attack.mp3",

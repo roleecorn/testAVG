@@ -20049,8 +20049,9 @@
           "text": "(這時候只能靠那一招了)"
         },
         {
-          "kind": "comment",
-          "text": "TODO: 【BGM：BGMKyoheiTranslation】"
+          "kind": "bgm.play",
+          "name": "BGMKyoheiTranslation.mp3",
+          "keep": true
         },
         {
           "kind": "image.hide",
@@ -48576,8 +48577,9 @@
                   "text": "再也不見！"
                 },
                 {
-                  "kind": "comment",
-                  "text": "TODO: 【BGM：BGMKyoheiTranslation】"
+                  "kind": "bgm.play",
+                  "name": "BGMKyoheiTranslation.mp3",
+                  "keep": true
                 },
                 {
                   "kind": "image.hide",
@@ -65744,8 +65746,9 @@
           "text": "列車前方，腳步聲越來越清晰"
         },
         {
-          "kind": "comment",
-          "text": "TODO: 【BGM：BGMREBOOT2014】"
+          "kind": "bgm.play",
+          "name": "BGMREBOOT2014.mp3",
+          "keep": true
         },
         {
           "kind": "image.hide",
@@ -67761,8 +67764,9 @@
           "text": "你們她媽畜牲嗎嗎嗎嗎啊啊啊！？"
         },
         {
-          "kind": "comment",
-          "text": "TODO: 【BGM：BGMMeikyoshisui】"
+          "kind": "bgm.play",
+          "name": "BGMMeikyoshisui.mp3",
+          "keep": true
         },
         {
           "kind": "image.hide",
@@ -72533,8 +72537,9 @@
           "text": "……………"
         },
         {
-          "kind": "comment",
-          "text": "TODO: 【BGM：BGMKyoheiTranslation】"
+          "kind": "bgm.play",
+          "name": "BGMKyoheiTranslation.mp3",
+          "keep": true
         },
         {
           "kind": "layout.set",
@@ -74818,8 +74823,9 @@
           "text": "場內擠滿了眾多肥宅，細看甚至能在場地上方發現瀰漫著的裊裊白煙"
         },
         {
-          "kind": "comment",
-          "text": "TODO: 【BGM：BGMBOINBOIN】"
+          "kind": "bgm.play",
+          "name": "BGMBOINBOIN.mp3",
+          "keep": true
         },
         {
           "kind": "image.hide",

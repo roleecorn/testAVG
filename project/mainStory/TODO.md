@@ -22,7 +22,6 @@
 - project/mainStory/CH2 2-2：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-3：【CG：大門深鎖的ANIsister 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-3：【CG：肥宅淹沒 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH2 2-4：【BGM：BGMKyoheiTranslation】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH2 2-4：【CG：小兔子暗黑無限破 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-4：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
 - project/mainStory/CH2 2-4：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
@@ -42,7 +41,6 @@
 - project/mainStory/CH5 5-1：【CG：肥宅撞擊 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH5 5-1：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH6 6-1：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
-- project/mainStory/CH6 6-2：【BGM：BGMKyoheiTranslation】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH6 6-2：【CG：梗平的假面騎士空翻 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH6 6-2：【CG：梗平的假面騎士翻滾 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH6 6-2：【CG：梗平的假面騎士落地 出現】尚無專用素材，暫用 scene_mapo_cg.png。
@@ -59,8 +57,6 @@
 - project/mainStory/CH7 7-3：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
 - project/mainStory/CH7 7-3：【CG：爆炸畫面 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-3：製作指令「【下句店員使用月讀愛立繪】」尚未轉成正式事件。
-- project/mainStory/CH7 7-4：【BGM：BGMMeikyoshisui】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
-- project/mainStory/CH7 7-4：【BGM：BGMREBOOT2014】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH7 7-4：【BGM：BGMTANK】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH7 7-4：【CG：店長安撫阻擋肥宅 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-4：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
@@ -68,9 +64,7 @@
 - project/mainStory/CH7 7-4：製作指令「【下一句？？？使用雜貨店老闆立繪】」尚未轉成正式事件。
 - project/mainStory/CH7 7-4：製作指令「【下三句話不使用立繪】」尚未轉成正式事件。
 - project/mainStory/CH7 7-4：製作指令「【此場景為回憶某件事。濾鏡全畫面顯示模仿復古膠捲播放時的棕色調】」尚未轉成正式事件。
-- project/mainStory/CH7 7-5：【BGM：BGMBOINBOIN】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH7 7-5：【BGM：BGMED2】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
-- project/mainStory/CH7 7-5：【BGM：BGMKyoheiTranslation】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH7 7-5：【BGM：關羽之歌】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH7 7-5：【CG：一中華大碗紅色液體】暫用 ms_ch1_red_mapo_bowl_cg.png，需替換正式素材。
 - project/mainStory/CH7 7-5：【CG：假面騎士腰帶 出現】尚無專用素材，暫用 scene_mapo_cg.png。
@@ -89,6 +83,8 @@
 - `project/mainStory/CH6 6-4`：後日談時間尚未撰寫，已以文字標記保留。
 
 ## 待補素材
+
+- `BGM-20260822T150228Z-1-001.zip` 內四首 BGM 已接入來源指令，但 ZIP 未附原曲／作者／授權資訊；請補充授權以完成公開發行追溯，詳見 `.codex/task-questions/20260822-231945-bgm-zip-import.md`。
 
 - `project/images/ms_ch1_mapo_shop_entrance_cg.png`：暫用複製 CG，來源為 `project/images/scene_mapo_cg.png`；之後需要替換成「麻婆豆腐店門口」正式 CG。
 - `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。

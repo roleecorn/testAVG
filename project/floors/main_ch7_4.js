@@ -1601,8 +1601,9 @@ main.floors.main_ch7_4=
         },
         "列車前方，腳步聲越來越清晰",
         {
-            "type": "comment",
-            "text": "TODO: 【BGM：BGMREBOOT2014】"
+            "type": "playBgm",
+            "name": "BGMREBOOT2014.mp3",
+            "keep": true
         },
         {
             "type": "hideImage",
@@ -3272,8 +3273,9 @@ main.floors.main_ch7_4=
         },
         "\t[店長]你們她媽畜牲嗎嗎嗎嗎啊啊啊！？",
         {
-            "type": "comment",
-            "text": "TODO: 【BGM：BGMMeikyoshisui】"
+            "type": "playBgm",
+            "name": "BGMMeikyoshisui.mp3",
+            "keep": true
         },
         {
             "type": "hideImage",

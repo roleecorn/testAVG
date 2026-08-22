@@ -983,8 +983,9 @@ main.floors.main_ch2_4=
         },
         "\t[梗平](這時候只能靠那一招了)",
         {
-            "type": "comment",
-            "text": "TODO: 【BGM：BGMKyoheiTranslation】"
+            "type": "playBgm",
+            "name": "BGMKyoheiTranslation.mp3",
+            "keep": true
         },
         {
             "type": "hideImage",
