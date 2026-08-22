@@ -1714,7 +1714,7 @@ main.floors.noir_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"noir_4\",\n\t\t\"title\": \"宇宙女鬼\",\n\t\t\"locations\": [\"housing_complex\"],\n\t\t\"floorId\": \"noir_4\",\n\t\t\"once\": true\n\t});\n}"
+            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"noir_4\",\n\t\t\"title\": \"宇宙女鬼\",\n\t\t\"locations\": [\"music_venue\"],\n\t\t\"floorId\": \"noir_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
             "type": "function",

@@ -975,7 +975,7 @@ main.floors.juju_1=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_2\",\n\t\t\"title\": \"古書追逐\",\n\t\t\"locations\": [\"used_bookstore\"],\n\t\t\"floorId\": \"juju_2\",\n\t\t\"once\": true\n\t});\n}"
+            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_2\",\n\t\t\"title\": \"古書追逐\",\n\t\t\"locations\": [\"warehouse_district\"],\n\t\t\"floorId\": \"juju_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
             "type": "function",

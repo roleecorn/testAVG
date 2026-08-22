@@ -60,8 +60,8 @@ core.plugin.startAkibaLocationMiniGame(locationId, gameId);
 
 - 電子遊樂場提供既有 `slot777`（固定三輪後結算）與 `akibaFlapper`「電波飛鳥」（通過 8 道閘門勝利，碰撞、越界或逾時失敗）。
 - 劇場提供既有 `akibaLocation`「舞台打拍」與 `westernDuel`「正午對決」（每局隨機指定 5～10 秒的正整數目標，以毫秒誤差判定）。
-- 古書店與藍色書店各自保留既有 `akibaLocation` 玩法，並提供 `bookStack`「疊書挑戰」：書本左右交替滑入，玩家以點擊／觸控放下；逐層重心偏移會增加搖晃並導致倒塌，倒塌前疊滿 8 本即通關。
-- 倉庫區保留既有 `akibaLocation`「倉庫裝箱」，並暫時提供 `shootingRange`「七靶射擊訓練」：前排四個、後排三個靶位各隨機升起一次，玩家必須在短暫顯示時間內點中；每次有效射擊之間有固定冷卻，七靶全中才通關。
+- 馬的膝蓋保留既有 `akibaLocation`「漫畫連號排架」，並提供 `bookStack`「疊書挑戰」：書本左右交替滑入，玩家以點擊／觸控放下；逐層重心偏移會增加搖晃並導致倒塌，倒塌前疊滿 8 本即通關。
+- 倉庫區保留既有 `akibaLocation`「倉庫裝箱」。派出所提供 `shootingRange`「七靶射擊訓練」：前排四個、後排三個靶位各隨機升起一次，玩家必須在短暫顯示時間內點中；每次有效射擊之間有固定冷卻，七靶全中才通關。
 - 其餘一般地點呼叫 `akibaLocation`，並以 `locationId` 選取專屬玩法設定。
 - `idle_clock` 保留人物交流回合用途，不可加入一般小遊戲。
 
@@ -73,7 +73,7 @@ core.plugin.startAkibaLocationMiniGame(locationId, gameId);
 
 `extensions/minigames/bookStack.js` 是書店共用的獨立 Canvas 疊放玩法。每本書從左或右滑入，玩家點擊後落在上一層；遊戲以各接觸面的上層加權重心估算穩定度，偏移與高度會放大搖晃，失衡、落空或逾時都會播放倒塌動畫後結算。預設倒塌前疊滿 8 本為勝利，並支援重新挑戰、取消與完整 animation frame／listener 清理；書本、落點陰影、書店背景都由 Canvas 繪製，書本以封面、書脊、頁線與書籤表現，不在書面上顯示數字標籤，也不需要外部素材授權。
 
-`extensions/minigames/shootingRange.js` 是獨立 Canvas 打靶玩法，目前暫時掛載在倉庫區，待警察局地點建立後再遷移。畫面固定提供前排四個與後排三個靶位，每局七靶各依隨機順序升起一次；點擊／觸控命中才計分，射擊後需等待冷卻才能再次開火。預設升靶 1200ms、射擊冷卻 450ms、靶間隔 520ms，七靶全中才通關，並支援重新挑戰、取消、響應式版面與完整 animation frame／listener 清理。
+`extensions/minigames/shootingRange.js` 是獨立 Canvas 打靶玩法，掛載在派出所。畫面固定提供前排四個與後排三個靶位，每局七靶各依隨機順序升起一次；點擊／觸控命中才計分，射擊後需等待冷卻才能再次開火。預設升靶 1200ms、射擊冷卻 450ms、靶間隔 520ms，七靶全中才通關，並支援重新挑戰、取消、響應式版面與完整 animation frame／listener 清理。
 
 Akiba 小遊戲結果使用獨立 flags，不得寫入角色事件的 `akiba_completed_events`：
 
@@ -84,8 +84,8 @@ Akiba 小遊戲結果使用獨立 flags，不得寫入角色事件的 `akiba_com
 - `akiba_last_minigame_title`
 - 共用最近結果 `lastMiniGameResult`、`lastMiniGameScore`
 
-`akiba_minigame_cleared` 與 `akiba_minigame_best_scores` 預設仍以 `locationId` 為 key；同一地點有第二款遊戲時使用 `locationId:gameId`，避免兩款遊戲互相覆寫進度。電子遊樂場既有拉霸繼續沿用 `game_center`，電波飛鳥使用 `game_center:akibaFlapper`；劇場舞台打拍沿用 `music_venue`，正午對決使用 `music_venue:westernDuel`；古書店與藍色書店的既有玩法分別沿用 `used_bookstore`、`blue_bookstore`，疊書挑戰則分別使用 `used_bookstore:bookStack`、`blue_bookstore:bookStack`。
-倉庫區既有裝箱玩法沿用 `warehouse_district`，暫時掛載的七靶射擊訓練使用 `warehouse_district:shootingRange`，兩者進度互不覆寫。
+`akiba_minigame_cleared` 與 `akiba_minigame_best_scores` 預設仍以 `locationId` 為 key；同一地點有第二款遊戲時使用 `locationId:gameId`，避免兩款遊戲互相覆寫進度。電子遊樂場既有拉霸繼續沿用 `game_center`，電波飛鳥使用 `game_center:akibaFlapper`；劇場舞台打拍沿用 `music_venue`，正午對決使用 `music_venue:westernDuel`；馬的膝蓋既有玩法使用 `horses_knee`，疊書挑戰使用 `horses_knee:bookStack`。
+倉庫區既有裝箱玩法沿用 `warehouse_district`；派出所的七靶射擊訓練使用 `police_station:shootingRange`。
 
 ## 接入原則
 

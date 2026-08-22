@@ -15,11 +15,6 @@
 			bins: [{ id: "1F", label: "1 樓" }, { id: "2F", label: "2 樓" }, { id: "3F", label: "3 樓" }],
 			items: [["101 房・紅行李", "1F"], ["203 房・藍行李", "2F"], ["302 房・帽箱", "3F"], ["105 房・旅行袋", "1F"], ["208 房・樂器箱", "2F"], ["311 房・皮箱", "3F"], ["201 房・背包", "2F"], ["108 房・紙袋", "1F"]]
 		},
-		used_bookstore: {
-			title: "古書封面配對", type: "memory", seconds: 75, moveLimit: 24,
-			instruction: "翻開古書，找出 6 對相同封面。",
-			symbols: ["📕", "📗", "📘", "📙", "📜", "📖"]
-		},
 		warehouse_district: {
 			title: "倉庫裝箱", type: "sort", seconds: 75, mistakeLimit: 3,
 			instruction: "依貨物標示放進正確貨區。",
@@ -77,23 +72,16 @@
 			title: "奉納投幣", type: "timing", seconds: 40, attempts: 5, required: 3, targetWidth: 0.2,
 			instruction: "抓準力道，讓香油錢落進賽錢箱。", actionLabel: "投幣 🪙"
 		},
-		housing_complex: {
-			title: "宅配分信", type: "sort", seconds: 70, mistakeLimit: 3,
-			instruction: "依門牌把包裹送到正確棟別。",
-			bins: [{ id: "A", label: "A 棟" }, { id: "B", label: "B 棟" }, { id: "C", label: "C 棟" }],
-			items: [["A-101 小林", "A"], ["C-305 佐藤", "C"], ["B-202 鈴木", "B"], ["A-408 高橋", "A"], ["B-104 田中", "B"], ["C-201 伊藤", "C"], ["A-303 山本", "A"], ["C-102 渡邊", "C"], ["B-401 中村", "B"], ["A-205 小川", "A"]]
-		},
 		convenience_24h: {
 			title: "超商結帳", type: "sort", seconds: 60, mistakeLimit: 3,
 			instruction: "掃碼後把商品送往正確處理區。",
 			bins: [{ id: "hot", label: "加熱" }, { id: "cold", label: "冷藏袋" }, { id: "normal", label: "一般袋" }],
 			items: [["便當 🍱", "hot"], ["冰咖啡 🧋", "cold"], ["雜誌 📰", "normal"], ["冷凍甜點 🍨", "cold"], ["飯糰 🍙", "hot"], ["電池 🔋", "normal"]]
 		},
-		tent: {
-			title: "營繩張力", type: "balance", seconds: 45, startValue: 28, targetMin: 45, targetMax: 55,
-			stableMs: 6500, safeMin: 0, safeMax: 100, step: 7, drift: -0.35,
-			instruction: "收緊或放鬆營繩，把張力維持在綠區累計 6.5 秒。",
-			lowLabel: "放鬆繩索", highLabel: "收緊繩索", unitLabel: "%"
+		police_station: {
+			title: "派出所巡邏", type: "sequence", seconds: 60, rounds: 5, required: 4,
+			instruction: "依序確認巡邏回報的地點。",
+			choices: ["車站", "劇場", "公園", "倉庫區", "神社", "旅館"]
 		},
 		restaurant: {
 			title: "餐盤送桌", type: "sort", seconds: 70, mistakeLimit: 3,
@@ -101,7 +89,7 @@
 			bins: [{ id: "window", label: "窗邊桌" }, { id: "center", label: "中央桌" }, { id: "booth", label: "沙發桌" }],
 			items: [["窗 1・漢堡排", "window"], ["沙 2・聖代", "booth"], ["中 3・義大利麵", "center"], ["窗 4・咖哩飯", "window"], ["中 5・兒童餐", "center"], ["沙 6・鬆餅", "booth"]]
 		},
-		blue_bookstore: {
+		horses_knee: {
 			title: "漫畫連號排架", type: "sort", seconds: 75, mistakeLimit: 3,
 			instruction: "依集數把漫畫放回正確書架。",
 			bins: [{ id: "early", label: "1～4 集" }, { id: "middle", label: "5～8 集" }, { id: "late", label: "9～12 集" }],
@@ -757,7 +745,7 @@
 
 	AkibaLocationGame.prototype.tickBalance = function () {
 		if (this.ended) return;
-		this.balanceValue += this.config.drift + (Math.random() - 0.5) * (this.locationId === "tent" ? 2.4 : 0.5);
+		this.balanceValue += this.config.drift + (Math.random() - 0.5) * 0.5;
 		if (this.balanceValue >= this.config.targetMin && this.balanceValue <= this.config.targetMax) {
 			this.stableElapsed += 250;
 			this.score += 5;

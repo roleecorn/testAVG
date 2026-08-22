@@ -1120,7 +1120,7 @@
         },
         {
           "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_2\",\n\t\t\"title\": \"古書追逐\",\n\t\t\"locations\": [\"used_bookstore\"],\n\t\t\"floorId\": \"juju_2\",\n\t\t\"once\": true\n\t});\n}"
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_2\",\n\t\t\"title\": \"古書追逐\",\n\t\t\"locations\": [\"warehouse_district\"],\n\t\t\"floorId\": \"juju_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
           "kind": "function.call",
@@ -2457,7 +2457,7 @@
         },
         {
           "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_3\",\n\t\t\"title\": \"回家法陣\",\n\t\t\"locations\": [\"tent\"],\n\t\t\"floorId\": \"juju_3\",\n\t\t\"once\": true\n\t});\n}"
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_3\",\n\t\t\"title\": \"回家法陣\",\n\t\t\"locations\": [\"warehouse_district\"],\n\t\t\"floorId\": \"juju_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
           "kind": "function.call",
@@ -3388,7 +3388,7 @@
         },
         {
           "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_4\",\n\t\t\"title\": \"裝死大成\",\n\t\t\"locations\": [\"park\"],\n\t\t\"floorId\": \"juju_4\",\n\t\t\"once\": true\n\t});\n}"
+          "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_4\",\n\t\t\"title\": \"裝死大成\",\n\t\t\"locations\": [\"warehouse_district\"],\n\t\t\"floorId\": \"juju_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
           "kind": "function.call",

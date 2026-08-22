@@ -218,14 +218,14 @@ function testEveryRegularLocationHasMiniGame() {
   );
   assert.deepEqual(
     plugin.getAkibaMiniGameDefinitions("warehouse_district").map((definition) => definition.gameId),
-    ["akibaLocation", "shootingRange"]
+    ["akibaLocation"]
   );
   assert.deepEqual(
-    plugin.getAkibaMiniGameDefinitions("used_bookstore").map((definition) => definition.gameId),
-    ["akibaLocation", "bookStack"]
+    plugin.getAkibaMiniGameDefinitions("police_station").map((definition) => definition.gameId),
+    ["shootingRange"]
   );
   assert.deepEqual(
-    plugin.getAkibaMiniGameDefinitions("blue_bookstore").map((definition) => definition.gameId),
+    plugin.getAkibaMiniGameDefinitions("horses_knee").map((definition) => definition.gameId),
     ["akibaLocation", "bookStack"]
   );
 }
@@ -344,7 +344,7 @@ function testMusicVenueOffersStageTimingAndWesternDuel() {
   assert(choiceEvent.choices[1].action[0].function.includes("westernDuel"));
 }
 
-function testWarehouseDistrictOffersPackingAndShootingRange() {
+function testWarehouseDistrictOffersPacking() {
   const { core, plugin } = createPlugin({
     akiba_event_state_initialized: true,
     akiba_event_state_version: eventMeta.version,
@@ -355,19 +355,11 @@ function testWarehouseDistrictOffersPackingAndShootingRange() {
   });
   plugin.showAkibaLocationEventChoices();
   const choiceEvent = core.actions.at(-1);
-  assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), [
-    "玩「倉庫裝箱」",
-    "玩「七靶射擊訓練」",
-    "離開",
-  ]);
-  assert(choiceEvent.choices[1].action[0].function.includes("shootingRange"));
+  assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), ["玩「倉庫裝箱」", "離開"]);
 }
 
-function testBookstoresOfferExistingGameAndBookStack() {
-  for (const [locationId, placeName, originalTitle] of [
-    ["used_bookstore", "古書店", "古書封面配對"],
-    ["blue_bookstore", "藍色書店", "漫畫連號排架"],
-  ]) {
+function testHorsesKneeOffersBookGames() {
+  for (const [locationId, placeName, originalTitle] of [["horses_knee", "馬的膝蓋", "漫畫連號排架"]]) {
     const { core, plugin } = createPlugin({
       akiba_event_state_initialized: true,
       akiba_event_state_version: eventMeta.version,
@@ -447,8 +439,8 @@ function testWesternDuelUsesTheatreProgressKeyAndOptions() {
   assert.equal(core.flags.akiba_last_minigame_title, "正午對決");
 }
 
-function testBookStackUsesPerBookstoreProgressKeyAndOptions() {
-  for (const locationId of ["used_bookstore", "blue_bookstore"]) {
+function testBookStackUsesHorsesKneeProgressKeyAndOptions() {
+  for (const locationId of ["horses_knee"]) {
     const { core, plugin } = createPlugin();
     plugin.startMiniGame = (gameId, options, callback) => {
       assert.equal(gameId, "bookStack");
@@ -467,11 +459,11 @@ function testBookStackUsesPerBookstoreProgressKeyAndOptions() {
   }
 }
 
-function testWarehouseDistrictOffersShootingRangeTemporarily() {
+function testPoliceStationOffersShootingRange() {
   const { core, plugin } = createPlugin();
-  const definition = plugin.getAkibaMiniGameDefinition("warehouse_district", "shootingRange");
+  const definition = plugin.getAkibaMiniGameDefinition("police_station", "shootingRange");
   assert.equal(definition.title, "七靶射擊訓練");
-  assert.equal(definition.progressKey, "warehouse_district:shootingRange");
+  assert.equal(definition.progressKey, "police_station:shootingRange");
   assert.deepEqual(definition.options, {
     targetVisibleMs: 1200,
     shotCooldownMs: 450,
@@ -481,16 +473,16 @@ function testWarehouseDistrictOffersShootingRangeTemporarily() {
 
   plugin.startMiniGame = (gameId, options, callback) => {
     assert.equal(gameId, "shootingRange");
-    assert.equal(options.locationId, "warehouse_district");
+    assert.equal(options.locationId, "police_station");
     assert.equal(options.targetVisibleMs, 1200);
     assert.equal(options.shotCooldownMs, 450);
     callback({ result: "win", reason: "clear", score: 1350, hits: 7, totalTargets: 7 });
     return true;
   };
 
-  assert.equal(plugin.startAkibaLocationMiniGame("warehouse_district", "shootingRange"), true);
-  assert.deepEqual(core.flags.akiba_minigame_cleared, ["warehouse_district:shootingRange"]);
-  assert.deepEqual(core.flags.akiba_minigame_best_scores, { "warehouse_district:shootingRange": 1350 });
+  assert.equal(plugin.startAkibaLocationMiniGame("police_station", "shootingRange"), true);
+  assert.deepEqual(core.flags.akiba_minigame_cleared, ["police_station:shootingRange"]);
+  assert.deepEqual(core.flags.akiba_minigame_best_scores, { "police_station:shootingRange": 1350 });
   assert.equal(core.flags.akiba_last_minigame_game_id, "shootingRange");
   assert.equal(core.flags.akiba_last_minigame_title, "七靶射擊訓練");
 }
@@ -509,13 +501,13 @@ testRabbitHouseRcVoiceReturnsToInteractionOrigin();
 testStoryRcVoiceUsesCallerProvidedJsonPath();
 testGameCenterOffersBothArcadeGames();
 testMusicVenueOffersStageTimingAndWesternDuel();
-testWarehouseDistrictOffersPackingAndShootingRange();
-testBookstoresOfferExistingGameAndBookStack();
+testWarehouseDistrictOffersPacking();
+testHorsesKneeOffersBookGames();
 testMiniGameResultUsesSeparateProgressFlags();
 testSecondGameAtSameLocationUsesSeparateProgressKey();
 testWesternDuelUsesTheatreProgressKeyAndOptions();
-testBookStackUsesPerBookstoreProgressKeyAndOptions();
-testWarehouseDistrictOffersShootingRangeTemporarily();
+testBookStackUsesHorsesKneeProgressKeyAndOptions();
+testPoliceStationOffersShootingRange();
 
 delete global.core;
 delete global.main;

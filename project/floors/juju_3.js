@@ -817,7 +817,7 @@ main.floors.juju_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_4\",\n\t\t\"title\": \"裝死大成\",\n\t\t\"locations\": [\"park\"],\n\t\t\"floorId\": \"juju_4\",\n\t\t\"once\": true\n\t});\n}"
+            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_4\",\n\t\t\"title\": \"裝死大成\",\n\t\t\"locations\": [\"warehouse_district\"],\n\t\t\"floorId\": \"juju_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
             "type": "function",

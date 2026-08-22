@@ -1156,7 +1156,7 @@ main.floors.juju_2=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_3\",\n\t\t\"title\": \"回家法陣\",\n\t\t\"locations\": [\"tent\"],\n\t\t\"floorId\": \"juju_3\",\n\t\t\"once\": true\n\t});\n}"
+            "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_3\",\n\t\t\"title\": \"回家法陣\",\n\t\t\"locations\": [\"warehouse_district\"],\n\t\t\"floorId\": \"juju_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
             "type": "function",

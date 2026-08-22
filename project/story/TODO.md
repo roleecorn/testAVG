@@ -4,8 +4,17 @@
 
 - `lala`／菈菈安瑟姆：已確認 ZIP 的 `菈菈安瑟姆.txt` 為權威來源；同名 DOCX 僅在 TXT 不存在時作為 fallback。已完成 `project/story/菈菈安瑟姆.txt`、Story IR、立繪、配角素材與 `lala_1`～`lala_4` floor 接入。
 - 本次 fresh ZIP run（`drive-download-20260816T121208Z-1-001.zip`，SHA-256 `569AE6B26AE94E1712D45C69A51B32FC2DCD43F261E68FEE91280878D67DB5DF`，run `20260816-201520`）已完成 `ruka`／漆原瑠華、`idw`／IDW、`sena`／柏崎星奈 三份來源、Story IR、floor、Akiba 首段入口與表情圖接入；漆原來源中的自報姓名字面 `漆原?華` 已由使用者確認為預期內容，保留原文。詳見 `.codex/task-questions/20260816-201520-zip-story.md`。
+- Open: `akiba-horses-knee-kasou-identity`
+  - Scope: `project/location-mappings.json` 的「馬的膝蓋」與尚未建立的卡總支線入口。
+  - Done when: 使用者確認「卡總」的正式角色名稱／角色 ID，並在有可追溯來源文本與對應 scene／floor 後完成事件接入。
+  - Evidence: 對應來源、Story IR、floor、Akiba event meta 與驗證結果。
 
 ## 待補劇情
+
+- Open: `akiba-retired-location-event-reassignment`
+  - Scope: `huangmo_1` 的 `used_bookstore`／`blue_bookstore` 事件入口。
+  - Done when: 使用者確認 `huangmo_1` 應遷移到的支援地點；更新其 floor／Story IR 的 `addAkibaEvent` location ID 並通過 Akiba event manager 驗證。
+  - Evidence: floor／Story IR diff、`project/location-mappings.json`、`node scripts/test_akiba_event_manager.js` 與遊戲內觸發驗收。
 
 
 ## 待補素材
