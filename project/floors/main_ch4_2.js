@@ -317,30 +317,11 @@ main.floors.main_ch4_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "comment",
             "text": "【主線 CH4 4-2 修卡已逝】"
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "hideImage",
@@ -364,18 +345,6 @@ main.floors.main_ch4_2=
             "keep": true
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 30,
             "image": "CH4_L209.png",
@@ -388,61 +357,13 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "再次睜開眼睛時，眼前是一名身高超過兩米的修女，修女的身後白髮的雜貨店老闆在與人通著電話",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "在老闆與修女打了一個手勢後，修女走了過來幫梗平解開了繩子",
         {
             "type": "comment",
             "text": "TODO: 【下八句不使用立繪】"
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[修女]你小子的朋友很可以嘛",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -455,18 +376,6 @@ main.floors.main_ch4_2=
             "time": 0
         },
         "\t[梗平]什麼？修卡竟然要放了我嗎？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -482,28 +391,9 @@ main.floors.main_ch4_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[修女]什麼修卡？這裡早沒有修卡了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -519,28 +409,9 @@ main.floors.main_ch4_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[修女]以前還有，現在已經沒有了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -556,14 +427,7 @@ main.floors.main_ch4_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -582,124 +446,21 @@ main.floors.main_ch4_2=
             "code": 30,
             "time": 150
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "在梗平與修女跳針了第十次時，熟悉的黑色加長禮車趕到了現場",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "貝琪從車上跑了下來，驚慌地確認梗平身上的傷勢",
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[貝琪]梗平，你沒事吧！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[貝琪]不行，得快點找個地方讓你休息才行",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "在梗平的腦子還在思考修卡到底存不存在的時候，貝琪把他拉上了車",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "車上的梗平在意識混亂的同時，眼角於看見了貝琪給了老闆一個手提箱",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "累了一天反覆昏迷的梗平，意識再次遠去",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "comment",
             "text": "【過場】"
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "hideImage",
@@ -722,57 +483,9 @@ main.floors.main_ch4_2=
             "name": "next_to_you_emotional.mp3",
             "keep": true
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "黑色的高級加長禮車行駛在首都的高速公路上",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "半夢半醒間，梗平瞥見了窗戶外標示的路牌",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "車內的霓虹燈照映在貝琪與梗平的臉上",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -788,14 +501,7 @@ main.floors.main_ch4_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -810,18 +516,6 @@ main.floors.main_ch4_2=
         },
         "\t[梗平](不行，事情還沒有做完)",
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 30,
             "image": "CH4_L237.png",
@@ -834,35 +528,11 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "梗平強打起了精氣神，雙手放在了貝琪的肩上",
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "showImage",
@@ -879,14 +549,7 @@ main.floors.main_ch4_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -903,14 +566,7 @@ main.floors.main_ch4_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -955,14 +611,7 @@ main.floors.main_ch4_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1004,85 +653,13 @@ main.floors.main_ch4_2=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "在二騎兩個字說完前，梗平再次累暈了過去",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "貝琪的臉上則露出了心滿意足的表情，指示著司機開始折返",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "第四天，打工依舊沒有換到宿",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "但似乎得到了更不得了的東西",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "comment",
             "text": "【第四章結束】"
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "playTransitionVideo"

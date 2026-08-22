@@ -50,7 +50,7 @@ function eventToIr(event) {
       return {
         kind: event.code === 1 ? "background.show" : "image.show",
         role: event.code === 10 || event.code === 11 || event.code === 12 || event.code === 20 ? "portrait" : event.code === 30 || event.code >= 90 ? "cg" : "image",
-        code: event.code, image: event.image, sloc: event.sloc,
+        code: event.code, image: event.image, expression: event.expression, sloc: event.sloc,
         loc: event.code === 10 || event.code === 11 || event.code === 12 || event.code === 20 ? ["portraitSpeakerX", "portraitSpeakerY"] : event.loc,
         opacity: event.opacity, time: event.time,
       };
@@ -115,6 +115,7 @@ function irToEvent(node) {
         type: "showImage",
         code: node.code,
         image: node.image,
+        expression: node.expression,
         sloc: node.sloc,
         loc: node.role === "portrait" || node.code === 10 || node.code === 11 || node.code === 12 || node.code === 20
           ? ["portraitSpeakerX", "portraitSpeakerY"]
@@ -172,6 +173,9 @@ function validateNode(node, location) {
   }
   if ((node.kind === "background.show" || node.kind === "image.show") && (typeof node.code !== "number" || typeof node.image !== "string")) {
     throw new Error(`${location}: ${node.kind} requires numeric code and image`);
+  }
+  if ((node.kind === "background.show" || node.kind === "image.show") && node.expression !== undefined && typeof node.expression !== "string") {
+    throw new Error(`${location}: image expression must be a string when provided`);
   }
   if (node.kind === "choice") {
     if (!Array.isArray(node.options) || !node.options.length) throw new Error(`${location}: choice requires options`);

@@ -4,6 +4,8 @@ const crypto = require("crypto");
 const vm = require("vm");
 const { isDeepStrictEqual } = require("util");
 const { createBundle, bundleToFloors, readBundle, validateAvgFloorDimensions, validateProjectReferences, writeBundle } = require("./story_ir");
+const { resolvePortrait } = require("./portrait_resolver");
+const { DONGSHAN_PORTRAIT_DECISIONS } = require("./main_story_portrait_decisions");
 
 const root = path.resolve(__dirname, "..");
 const p = (...parts) => path.join(root, ...parts);
@@ -18,6 +20,14 @@ const BACKGROUND_LOC = [0, 0];
 const CG_LOC = [112, 50, 320, 220];
 const GENERAL_CG_SLOC = [0, 65, 416, 286];
 const MAIN_STORY_ASSET_PATTERN = /^CH[1-7]_L\d+\.png$/;
+const PORTRAIT_ASSETS = [
+  "dongshan_normal.png",
+  "dongshan_smile.png",
+  "dongshan_angry.png",
+  "dongshan_sad.png",
+  "dongshan_surprised.png",
+  "dongshan_panic.png",
+];
 
 function readProjectMain() {
   const context = {};
@@ -297,6 +307,7 @@ const placeholderAssets = [
 
 const extraImages = [
   ...mainStoryAssetImages,
+  ...PORTRAIT_ASSETS,
   ...backgroundAssets.map(({ image }) => image),
   ...Object.values(persistentCgByName).map(({ image }) => image),
   "ms_ch1_mapo_shop_entrance_cg.png",
@@ -440,10 +451,21 @@ function textFontFromDirective(text) {
 }
 
 function hidePortraits() {
-  return [
-    { type: "hideImage", code: 10, time: 0, async: true },
-    { type: "hideImage", code: 11, time: 0, async: true },
-  ];
+  return [];
+}
+
+function transitionPortrait(ctx, portrait) {
+  const nextCode = portrait ? portrait.code : null;
+  const nextImage = portrait ? portrait.image : null;
+  const samePortrait = ctx.activePortraitCode === nextCode
+    && ctx.activePortraitImage === nextImage;
+  const events = [];
+  if (ctx.activePortraitCode != null && !samePortrait) {
+    events.push({ type: "hideImage", code: ctx.activePortraitCode, time: 0 });
+  }
+  ctx.activePortraitCode = nextCode;
+  ctx.activePortraitImage = nextImage;
+  return events;
 }
 
 function actionCgEvents(spec) {
@@ -465,6 +487,10 @@ function actionCgEvents(spec) {
 
 function portraitFor(speaker, text, expression = null) {
   const portraitLoc = ["portraitSpeakerX", "portraitSpeakerY"];
+  const resolved = resolvePortrait(speaker, expression || DONGSHAN_PORTRAIT_DECISIONS[text] || "normal");
+  if (resolved) {
+    return resolved;
+  }
   if (speaker === "梗平") {
     let img = "keng_neutral_portrait.png";
     if (expression === "smile") img = "keng_smile_portrait.png";
@@ -524,6 +550,10 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
   } else if (ctx.nextPortraitOverride === "麻婆店長") {
     storyTodos.add(`${ctx.source} ${ctx.section}：下一句要求使用麻婆立繪，但 project/images 尚無對應正式角色圖，暫不顯示立繪。`);
     ctx.nextPortraitOverride = null;
+  } else if (display === "東山") {
+    const image = DONGSHAN_PORTRAIT_DECISIONS[body] || "dongshan_normal.png";
+    const expression = image.match(/^dongshan_(.+)\.png$/)?.[1] || "normal";
+    portrait = resolvePortrait(display, expression);
   } else {
     portrait = portraitFor(display, body, ctx.forceSmile ? "smile" : null);
   }
@@ -534,7 +564,7 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
   if (!ctx.cgPersistent) ctx.cgVisible = false;
   return [
     ...(textFont ? [setTextEvent({ textfont: textFont })] : []),
-    ...hidePortraits(),
+    ...transitionPortrait(ctx, portrait),
     ...clearCg,
     ...(portrait ? [portrait] : []),
     `\t[${display}]${body}`,
@@ -744,7 +774,7 @@ function lineToEvents(line, ctx) {
     ctx.suppressPortraitCount = /下五句/.test(t) ? 5 : /兩句/.test(t) ? 2 : 1;
     const font = textFontFromDirective(t);
     if (font) ctx.nextTextFont = font;
-    return [];
+    return transitionPortrait(ctx, null);
   }
   const fontDirective = t.match(/^【(?!(?:下方兩句明日頭條))(?:(?:下一句|下一句話|下句|下句台詞|下句字體|下句台詞字體))[^】]*(更大字|大字|小字|一般)[^】]*】$/);
   if (fontDirective) {
@@ -948,6 +978,8 @@ function buildFloor(section, lines, overrides = {}) {
     cgVisible: false,
     cgPersistent: false,
     suppressPortraitCount: 0,
+    activePortraitCode: null,
+    activePortraitImage: null,
     nextPortraitOverride: null,
   };
   const parsed = parseEvents(lines, 0, ctx);
@@ -955,10 +987,10 @@ function buildFloor(section, lines, overrides = {}) {
     setTextEvent(),
     { type: "playBgm", name: meta.bgm },
     { type: "showImage", code: 1, image: meta.bg, loc: [...BACKGROUND_LOC], opacity: 1, time: 0 },
-    ...hidePortraits(),
+    ...transitionPortrait(ctx, null),
     { type: "comment", text: `【${meta.title}】` },
     ...parsed.events,
-    ...hidePortraits(),
+    ...transitionPortrait(ctx, null),
   ];
   if (meta.next && !hasTopLevelChangeFloor(events.slice(-8))) {
     events.push({ type: "playTransitionVideo" }, { type: "changeFloor", floorId: meta.next, loc: [6, 10], direction: "up", time: 0 });
@@ -1251,7 +1283,7 @@ function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
   if (!text.avg || text.fixedLines !== AVG_LAYOUT.dialogueFixedLines ||
       AVG_LAYOUT.dialogueX !== 16 || AVG_LAYOUT.dialogueY !== 295 ||
       AVG_LAYOUT.dialogueWidth !== 512 || AVG_LAYOUT.portraitDialogueGap !== 0 ||
-      AVG_LAYOUT.portraitScale !== 1.2) {
+      AVG_LAYOUT.portraitScale !== 0.85 || AVG_LAYOUT.portraitBottomY !== 416) {
     throw new Error("AVG layout contract is stale");
   }
   const usedActionCgImages = new Set();

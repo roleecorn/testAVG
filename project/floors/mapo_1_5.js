@@ -315,18 +315,6 @@ main.floors.mapo_1_5=
             "time": 0
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "comment",
             "text": "【主線 CH1 1-5 掉落物】"
         },
@@ -334,18 +322,6 @@ main.floors.mapo_1_5=
             "type": "playBgm",
             "name": "twists_suspense.mp3",
             "keep": true
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "hideImage",
@@ -363,124 +339,16 @@ main.floors.mapo_1_5=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "與此同時的街道上，一名男子急促的奔跑著",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "不知道是不是過於疲憊，不幸追撞了一道人影",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "為了保護......沒有，他只是趕時間而已",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[肥宅]抱歉抱歉，我趕時間",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "男子一邊說著一邊繼續向前方跑去，卻沒發現手上的東西已經掉落了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[不知道是誰的？]等等！你的東西掉了…",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[不知道是誰的？]已經跑掉了誒，該怎麼辦啊…",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "comment",
             "text": "【第一章結束】"
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "playTransitionVideo"

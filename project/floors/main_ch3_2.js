@@ -317,30 +317,11 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "comment",
             "text": "【主線 CH3 3-2 貝琪晚餐】"
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "hideImage",
@@ -363,31 +344,7 @@ main.floors.main_ch3_2=
             "name": "next_to_you_emotional.mp3",
             "keep": true
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "失魂落魄的梗平拖著沉重的步伐走出了馬的膝蓋，癱坐在路邊",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -400,70 +357,15 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]在下到底......守護了甚麼啊",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "彷彿是算好了時間一般，一台黑色的加長豪華禮車出現在了梗平的前方",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "貝琪穿著精緻的晚禮服下了禮車，並牽起了梗平的手",
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[貝琪]梗平先生，你守護了我喔",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[貝琪]所以請不要這樣垂頭喪氣的，我們走吧",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -476,46 +378,10 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]痾，嗯......好",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "就這樣梗平被貝琪拉上了車，前往了一間跟梗平毫不相襯的高級餐廳",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "comment",
             "text": "【過場】"
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "hideImage",
@@ -533,70 +399,15 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "貝琪輕鬆的安排好了所有的餐序，梗平只能在一旁嗯嗯啊啊",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "然後在迎賓酒被送上來的同時，貝琪看向了梗平",
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[貝琪]剛剛在車上甚麼都沒能聊到呢",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[貝琪]梗平，你喜歡怎麼樣的女性呢？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -609,30 +420,11 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]在下......",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "明明眼前就是酒，或許是因為壓力，梗平遲遲沒有動手",
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -649,14 +441,7 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -673,14 +458,7 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -697,54 +475,11 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[貝琪]嗯......",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "貝琪看著眼前有些緊張的男人，停下了繼續追問的心思",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "只是擺正了姿態，用心地聽著梗平說話",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -760,14 +495,7 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -784,14 +512,7 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -808,14 +529,7 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -829,96 +543,17 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]在這裡面，在下特別喜歡......",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "餐點一道道的送上，貝琪則繼續耐心的聽著梗平的分享",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "時間一分一秒的過去，餐後的甜點也已被清盤",
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[貝琪]很想再聽你分享更多呢，只可惜時間好像有點晚了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "正當梗平準備做出回應時，手機響了起來",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[蘭斯]（手機）梗平，你在哪裡？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[蘭斯]（手機）我們在ANIsister前面要討論怎麼樣攻進去了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -931,18 +566,6 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]（手機）馬上過來",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -958,14 +581,7 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -982,57 +598,14 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[貝琪]嗯，沒有問題",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "comment",
             "text": "【過場】"
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "梗平上了車重新回到了秋葉原，在下車之前貝琪拉住了他的手",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1049,31 +622,7 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[貝琪]我們還會有下一次嗎？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1089,41 +638,10 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[貝琪]嗯，謝謝你",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "貝琪帶著微笑送別了梗平，禮車轉頭便消失在了視線中",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1139,14 +657,7 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1161,18 +672,6 @@ main.floors.main_ch3_2=
         },
         "\t[梗平](這下擊敗修卡指日可待)",
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -1184,18 +683,6 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]......",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 30,
@@ -1212,28 +699,9 @@ main.floors.main_ch3_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[蘭斯]（手機）梗平，剩你還沒到了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1251,31 +719,7 @@ main.floors.main_ch3_2=
             "code": 30,
             "time": 150
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "梗平來不及思考什麼，便奔向了肥宅滿布的ANIsister",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "playTransitionVideo"
         },

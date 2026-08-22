@@ -317,14 +317,7 @@ main.floors.mapo_1_3_exchange_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "comment",
@@ -334,18 +327,6 @@ main.floors.mapo_1_3_exchange_1=
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
             "keep": true
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "hideImage",
@@ -364,18 +345,6 @@ main.floors.mapo_1_3_exchange_1=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -390,14 +359,7 @@ main.floors.mapo_1_3_exchange_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -411,31 +373,7 @@ main.floors.mapo_1_3_exchange_1=
             "time": 0
         },
         "\t[梗平]啊，打工換宿啊！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "梗平往母親給的地址跑了過去",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "playTransitionVideo"
         },

@@ -316,15 +316,8 @@ main.floors.mapo_1_2=
         },
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "comment",
@@ -334,18 +327,6 @@ main.floors.mapo_1_2=
             "type": "playBgm",
             "name": "twists_suspense.mp3",
             "keep": true
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "hideImage",
@@ -364,18 +345,6 @@ main.floors.mapo_1_2=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 11,
             "image": "suou_surprised_portrait.png",
@@ -389,15 +358,8 @@ main.floors.mapo_1_2=
         "\t[表妹]倉庫總是邪惡組織的據點對吧，黑道啊混混什麼的",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -413,15 +375,8 @@ main.floors.mapo_1_2=
         "\t[表妹]如果東山真的在這裡的話，應該就是綁架案了吧",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -438,14 +393,7 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -459,30 +407,11 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[表妹]總之可能有危險對吧，我先拿武器出來吧",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "表妹在此時拿出隨身攜帶的氣槍，瞄準著前方",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -497,18 +426,6 @@ main.floors.mapo_1_2=
         },
         "\t[梗平]作為假面騎士，最重要的便是勇敢的心靈",
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 30,
             "image": "CH1_L67.png",
@@ -521,18 +438,6 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "梗平一邊說著一邊躲到了表妹的背後",
         {
             "type": "hideImage",
@@ -542,14 +447,7 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -566,14 +464,7 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -596,15 +487,8 @@ main.floors.mapo_1_2=
                     "action": [
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -621,14 +505,7 @@ main.floors.mapo_1_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -644,15 +521,8 @@ main.floors.mapo_1_2=
                         "\t[表妹]很正常吧，畢竟是人家的財物",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -668,15 +538,8 @@ main.floors.mapo_1_2=
                         "\t[表妹]可是東山到底去哪裡了呢?",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -690,44 +553,13 @@ main.floors.mapo_1_2=
                             "time": 0
                         },
                         "\t[梗平]雖然在下是假面騎士，但看來還是只能尋求警察的幫助了",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "梗平拿起了自己的電話撥打了110",
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "\t[警察]秋葉原派出所，請問有什麼需要幫助的",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -743,41 +575,10 @@ main.floors.mapo_1_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "\t[警察]神經病啊你！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "電話被掛斷了",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -793,14 +594,7 @@ main.floors.mapo_1_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -814,18 +608,6 @@ main.floors.mapo_1_2=
                             "time": 0
                         },
                         "\t[梗平]不對，反過來想如果他們這麼果斷的掛了電話",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -841,14 +623,7 @@ main.floors.mapo_1_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -871,15 +646,8 @@ main.floors.mapo_1_2=
                                     "action": [
                                         {
                                             "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
                                             "code": 11,
-                                            "time": 0,
-                                            "async": true
+                                            "time": 0
                                         },
                                         {
                                             "type": "showImage",
@@ -893,18 +661,6 @@ main.floors.mapo_1_2=
                                             "time": 0
                                         },
                                         "\t[梗平]先去其他地方想辦法吧，警察已經靠不上了",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
                                         "梗平一邊說著一邊跟表妹走出了倉庫"
                                     ]
                                 },
@@ -914,14 +670,7 @@ main.floors.mapo_1_2=
                                         {
                                             "type": "hideImage",
                                             "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
+                                            "time": 0
                                         },
                                         {
                                             "type": "showImage",
@@ -938,14 +687,7 @@ main.floors.mapo_1_2=
                                         {
                                             "type": "hideImage",
                                             "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
+                                            "time": 0
                                         },
                                         {
                                             "type": "showImage",
@@ -961,15 +703,8 @@ main.floors.mapo_1_2=
                                         "\t[表妹]表哥你該不會……？！",
                                         {
                                             "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
                                             "code": 11,
-                                            "time": 0,
-                                            "async": true
+                                            "time": 0
                                         },
                                         {
                                             "type": "showImage",
@@ -983,30 +718,11 @@ main.floors.mapo_1_2=
                                             "time": 0
                                         },
                                         "\t[梗平]變——身—！",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
                                         "梗平做出變身動作",
                                         {
                                             "type": "hideImage",
                                             "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
+                                            "time": 0
                                         },
                                         {
                                             "type": "showImage",
@@ -1020,43 +736,12 @@ main.floors.mapo_1_2=
                                             "time": 0
                                         },
                                         "\t[梗平]騎士——踢！",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
                                         "梗平跳到空中並開始旋轉踢向其中一扇門",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
                                         "門被踢開的音效",
                                         {
                                             "type": "hideImage",
                                             "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
+                                            "time": 0
                                         },
                                         {
                                             "type": "showImage",
@@ -1071,18 +756,6 @@ main.floors.mapo_1_2=
                                         },
                                         "\t[梗平]束手就擒吧你們這群修卡……",
                                         {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
                                             "type": "showImage",
                                             "code": 30,
                                             "image": "CH1_L112.png",
@@ -1095,18 +768,6 @@ main.floors.mapo_1_2=
                                             "opacity": 1,
                                             "time": 250
                                         },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
                                         "穿黑色大衣拿著手提箱的兩個男人看著闖入的梗平",
                                         {
                                             "type": "hideImage",
@@ -1116,14 +777,7 @@ main.floors.mapo_1_2=
                                         {
                                             "type": "hideImage",
                                             "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
+                                            "time": 0
                                         },
                                         {
                                             "type": "showImage",
@@ -1137,57 +791,9 @@ main.floors.mapo_1_2=
                                             "time": 0
                                         },
                                         "\t[梗平]……抱歉打擾了？",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
                                         "梗平轉身看到身後站著一個壯碩的男人，以及表妹已經躺在旁邊",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
                                         "然後梗平被壯碩的男人一棒敲暈",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
                                         "自此梗平與表妹從社會上消失了，至於有兩個未成年男女在秋葉原遊蕩的故事就待有緣再述",
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
-                                        },
                                         {
                                             "type": "showImage",
                                             "code": 30,
@@ -1204,14 +810,7 @@ main.floors.mapo_1_2=
                                         {
                                             "type": "hideImage",
                                             "code": 10,
-                                            "time": 0,
-                                            "async": true
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0,
-                                            "async": true
+                                            "time": 0
                                         },
                                         "\t[BE]（手機）這裡不是米O市吧？！",
                                         {
@@ -1239,18 +838,6 @@ main.floors.mapo_1_2=
                     "text": "什麼?你說有一扇門是開的",
                     "action": [
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_smile_portrait.png",
@@ -1265,14 +852,7 @@ main.floors.mapo_1_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1288,15 +868,8 @@ main.floors.mapo_1_2=
                         "\t[表妹]這是私闖民宅吧？",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1313,14 +886,7 @@ main.floors.mapo_1_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1337,14 +903,7 @@ main.floors.mapo_1_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1360,15 +919,8 @@ main.floors.mapo_1_2=
                         "\t[表妹]從外面看不出來裡面有什麼，進去嗎？",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1382,31 +934,7 @@ main.floors.mapo_1_2=
                             "time": 0
                         },
                         "\t[梗平]那當然，女士優先",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "梗平把表妹推進了門裡，然後黑暗吞噬了她",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1420,18 +948,6 @@ main.floors.mapo_1_2=
                         },
                         "\t[梗平]...",
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -1444,18 +960,6 @@ main.floors.mapo_1_2=
                         },
                         "\t[梗平]......",
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -1467,30 +971,11 @@ main.floors.mapo_1_2=
                             "time": 0
                         },
                         "\t[梗平]在下會記住你的犧牲的",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "梗平關門到一半的瞬間，裡面伸出一隻黑色的東西纏住了梗平的手",
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1504,96 +989,17 @@ main.floors.mapo_1_2=
                             "time": 0
                         },
                         "\t[梗平]我還沒參加到Comike，而且我還沒在秋葉原喝到酒，放我走啊！",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "梗平試圖抵抗，但無濟於事",
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "\t[哈斯太]啊，一不小心把這兩個人抓進來了",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "\t[哈斯太]不過還是沒有靈感呢，希望編輯不要找到我",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "\t[哈斯太]好苦惱啊",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "其他人在一個月後的秋葉原車站發現了梗平跟表妹，兩人被發現時眼神空洞",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         "就這樣，梗平錯過了Comike",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 30,
@@ -1606,18 +1012,6 @@ main.floors.mapo_1_2=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0,
-                            "async": true
                         },
                         "\t[BE]（手機）不要闖空門",
                         {
@@ -1640,18 +1034,6 @@ main.floors.mapo_1_2=
             ]
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "comment",
             "text": "【過場】"
         },
@@ -1659,18 +1041,6 @@ main.floors.mapo_1_2=
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
             "keep": true
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "hideImage",
@@ -1688,31 +1058,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "從倉庫出來的兩人遇到了同行的蘭斯跟克莉絲 ",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1728,41 +1074,10 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[蘭斯]沒有，不過去問了神社的巫女之後說是在北方的樣子",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[克莉絲]向北總共只有三條路，那不如我們分三組搜尋怎麼樣",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1778,14 +1093,7 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1801,55 +1109,12 @@ main.floors.mapo_1_2=
         "\t[表妹]我就繼續跟著表哥走了",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[蘭斯]那我們先繼續分頭行動吧，再見",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "\t[克莉絲]我也先走了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "蘭斯跟克莉絲離開了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1862,31 +1127,7 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[梗平]可惡的修卡，他們到底在哪裡",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "兩人在秋葉原繞了一段時間過後，依舊不見東山的蹤影",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 30,
@@ -1903,32 +1144,13 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[蘭斯]（手機）還沒找到A，我先吃飯，傳地址給你們",
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "showImage",
@@ -1945,14 +1167,7 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1968,15 +1183,8 @@ main.floors.mapo_1_2=
         "\t[表妹]不明白修卡為什麼要破壞comike，但聽著挺有趣，先繼續說",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1991,18 +1199,6 @@ main.floors.mapo_1_2=
         },
         "\t[梗平]可能性1.修卡想要利用comike的同人之力製造前所未有的強大怪人！",
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -2014,18 +1210,6 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[梗平]可能性2.修卡想要抓大量的阿宅做改造人",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -2041,14 +1225,7 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -2064,15 +1241,8 @@ main.floors.mapo_1_2=
         "\t[表妹]每一種都是妄想，不過表哥最希望是可能性2對吧",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -2089,14 +1259,7 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -2110,18 +1273,6 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[梗平]然後在要被腦改造前被善良的博士救出，從此開始跟修卡的戰爭",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -2137,14 +1288,7 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -2158,31 +1302,7 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[表妹]太詳細了吧，到底在腦內演練幾次了啊這個",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "又過一段時間後",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 30,
@@ -2198,29 +1318,10 @@ main.floors.mapo_1_2=
         },
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[克莉絲]（手機）餓了、我也先吃個飯…",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -2238,30 +1339,11 @@ main.floors.mapo_1_2=
             "code": 30,
             "time": 150
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "......",
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -2275,18 +1357,6 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[梗平]群裡剛剛有人發了個位置之後就沒人回應了…一定是修卡幹的",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -2302,14 +1372,7 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -2325,15 +1388,8 @@ main.floors.mapo_1_2=
         "\t[表妹]他們只是很普通的在吃飯吧",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -2350,14 +1406,7 @@ main.floors.mapo_1_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -2371,31 +1420,7 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[表妹]總之先過去找他們會合吧",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "兩人朝著手機中的地址走去",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "playTransitionVideo"
         },

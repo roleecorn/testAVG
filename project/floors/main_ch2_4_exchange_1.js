@@ -317,14 +317,7 @@ main.floors.main_ch2_4_exchange_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "comment",
@@ -334,18 +327,6 @@ main.floors.main_ch2_4_exchange_1=
             "type": "playBgm",
             "name": "bossa_casual_shop.mp3",
             "keep": true
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "hideImage",
@@ -364,18 +345,6 @@ main.floors.main_ch2_4_exchange_1=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -388,18 +357,6 @@ main.floors.main_ch2_4_exchange_1=
         },
         "\t[梗平]不行，好想睡",
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -411,59 +368,11 @@ main.floors.main_ch2_4_exchange_1=
             "time": 0
         },
         "\t[梗平]可惡，眼皮好重",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "下一秒的梗平就這麼安穩的睡在了路邊",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "第二天，打工沒有換宿",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "comment",
             "text": "【第二章結束】"
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
         },
         {
             "type": "playTransitionVideo"

@@ -8,7 +8,7 @@ The expected order is:
     panic / normal
 
 Each grid cell is cropped inward by a small inset to avoid colored borders,
-then resized proportionally to fit within a fixed maximum size.
+then validated and resized proportionally to fit within a fixed maximum size.
 Output files are written next to the source image as:
 <original_stem>_<emotion><original_suffix>
 
@@ -30,12 +30,35 @@ EMOTIONS = (
 )
 
 
+def _foreground_bounds(tile: Image.Image):
+    """Return the non-background bounds, or None for an empty tile.
+
+    Expression sheets use a green screen. Treat pixels close to the corner
+    colour as background so a neighbouring cell's feet cannot silently pass
+    the split boundary.
+    """
+    rgb = tile.convert("RGB")
+    pixels = rgb.load()
+    points = []
+    for y in range(rgb.height):
+        for x in range(rgb.width):
+            r, g, b = pixels[x, y]
+            # The generated green screen has gentle illumination variation,
+            # so compare channel dominance rather than one exact RGB value.
+            if not (g >= r * 1.35 and g >= b * 1.25):
+                points.append((x, y))
+    if not points:
+        return None
+    xs, ys = zip(*points)
+    return min(xs), min(ys), max(xs), max(ys)
+
+
 def split_emotion_sheet(
     image_path: Path,
     keep_original: bool = False,
-    inset: int = 10,
-    max_width: int = 195,
-    max_height: int = 195,
+    inset: int = 32,
+    max_width: int = 512,
+    max_height: int = 512,
 ) -> list[Path]:
     image_path = image_path.expanduser().resolve()
     if not image_path.is_file():
@@ -70,6 +93,17 @@ def split_emotion_sheet(
                 right = (col + 1) * tile_width - inset
                 lower = (row + 1) * tile_height - inset
                 crop = image.crop((left, upper, right, lower))
+                bounds = _foreground_bounds(crop)
+                if bounds is not None:
+                    min_x, min_y, max_x, max_y = bounds
+                    edge_margin = 4
+                    if (min_x < edge_margin or min_y < edge_margin
+                            or max_x >= crop.width - edge_margin
+                            or max_y >= crop.height - edge_margin):
+                        raise ValueError(
+                            f"Foreground touches the safe boundary for {emotion} "
+                            f"at row {row}, column {col}; increase inset or fix the reference sheet."
+                        )
                 crop.thumbnail((max_width, max_height), Image.Resampling.LANCZOS)
                 output_path = image_path.with_name(
                     f"{image_path.stem}_{emotion}{image_path.suffix}"
@@ -96,20 +130,20 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--inset",
         type=int,
-        default=10,
-        help="Pixels to crop inward from each side of every tile. Defaults to 10.",
+        default=32,
+        help="Pixels to crop inward from each side of every tile. Defaults to 32.",
     )
     parser.add_argument(
         "--max-width",
         type=int,
-        default=195,
-        help="Maximum output width while preserving aspect ratio. Defaults to 195.",
+        default=512,
+        help="Maximum output width while preserving aspect ratio. Defaults to 512.",
     )
     parser.add_argument(
         "--max-height",
         type=int,
-        default=195,
-        help="Maximum output height while preserving aspect ratio. Defaults to 195.",
+        default=512,
+        help="Maximum output height while preserving aspect ratio. Defaults to 512.",
     )
     return parser.parse_args()
 

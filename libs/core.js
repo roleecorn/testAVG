@@ -244,7 +244,8 @@ function core () {
                 "dialogueWidth": 512,
                 "dialogueFixedLines": 2,
                 "portraitDialogueGap": 0,
-                "portraitScale": 1.2
+                "portraitScale": 0.85,
+                "portraitBottomY": 416
             },
         },
         "globalAttribute": {

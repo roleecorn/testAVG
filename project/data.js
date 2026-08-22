@@ -204,6 +204,12 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"ms_ch2_eri_sunset_cg.png",
 			"ms_ch2_eri_sunset_action_cg.png",
 			"scene_mapo_cg.png",
+			"dongshan_panic.png",
+			"dongshan_surprised.png",
+			"dongshan_sad.png",
+			"dongshan_angry.png",
+			"dongshan_smile.png",
+			"dongshan_normal.png",
 			"CH7_L1310.png",
 			"CH2_L299.png",
 			"CH7_L991.png",
@@ -554,7 +560,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 				"dialogueWidth": 512,
 				"dialogueFixedLines": 2,
 				"portraitDialogueGap": 0,
-				"portraitScale": 1.2
+				"portraitScale": 0.85,
+				"portraitBottomY": 416
 			},
 			"startBackground": "project/images/bg.jpg",
 			"startVerticalBackground": "project/images/bg.jpg",
