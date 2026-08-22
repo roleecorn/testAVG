@@ -1011,6 +1011,7 @@ function updateTimeline() {
     nodeGap: 188,
     laneGap: 126,
     chapterPadding: 72,
+    allowUnvisited: true,
     chapters,
   };
   fs.writeFileSync(p("project", "timeline.json"), JSON.stringify(timeline, null, "\t") + "\n", "utf8");

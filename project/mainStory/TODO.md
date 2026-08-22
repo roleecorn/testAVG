@@ -203,6 +203,12 @@
 
 ## 待實作演出或小遊戲
 
+- Open: `timeline-unvisited-floor-access`
+  - Scope: `extensions/timeline.js`、`project/timeline.json`、`scripts/generate_main_story.js`
+  - Temporary: `allowUnvisited: true` 暫時停用未玩樓層限制；原本的 `alwaysUnlocked`、`unlockFlag` 與 `core.hasVisitedFloor()` 判斷仍保留。
+  - Done when: 確認可重新啟用未玩樓層限制時，將時間線設定改回 `allowUnvisited: false`，並驗證鎖定顯示與點擊阻擋恢復。
+  - Evidence: 待本次修改後執行 `node --check extensions/timeline.js`、JSON parse 與時間線流程驗證。
+
 - `project/mainStory/CH1 1-4`：下水道雷霆大鱷魚戰鬥目前依原稿以旁白略過，之後可補正式戰鬥或小遊戲。
 - `project/mainStory/CH3 3-3`：統至分析傑士塔威的橋段可補獨立小遊戲。
 - `project/mainStory/CH6 6-4`：結尾小動畫目前使用既有轉場影片事件暫代，之後可替換正式結尾動畫。
