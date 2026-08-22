@@ -8343,7 +8343,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_becky_smile_tears.png",
+            "image": "CH7_L1310.png",
             "loc": [
                 0,
                 0

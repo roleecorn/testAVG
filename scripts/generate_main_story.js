@@ -17,7 +17,7 @@ const LEGACY_STAGE_WIDTH = 416;
 const BACKGROUND_LOC = [0, 0];
 const CG_LOC = [112, 50, 320, 220];
 const GENERAL_CG_SLOC = [0, 65, 416, 286];
-const MAIN_STORY_CG_PATTERN = /^CH[1-7]_L\d+\.png$/;
+const MAIN_STORY_ASSET_PATTERN = /^CH[1-7]_L\d+\.png$/;
 
 function readProjectMain() {
   const context = {};
@@ -30,10 +30,11 @@ const PROJECT_MAIN = readProjectMain();
 const AVG_LAYOUT = PROJECT_MAIN.styles.avgLayout;
 const REGISTERED_BGMS = new Set(PROJECT_MAIN.bgms || []);
 const REGISTERED_SOUNDS = new Set(PROJECT_MAIN.sounds || []);
-const mainStoryCgImages = fs.readdirSync(p("project", "images"))
-  .filter((image) => MAIN_STORY_CG_PATTERN.test(image))
+const mainStoryAssetImages = fs.readdirSync(p("project", "images"))
+  .filter((image) => MAIN_STORY_ASSET_PATTERN.test(image))
   .sort();
-const mainStoryCgImageSet = new Set(mainStoryCgImages);
+const mainStoryAssetImageSet = new Set(mainStoryAssetImages);
+const mainStoryCgImageSet = new Set(mainStoryAssetImages);
 
 function parseCgDirective(line) {
   const text = normalizeSourceLine(line);
@@ -44,6 +45,12 @@ function parseCgDirective(line) {
     name: (operationMatch ? operationMatch[1] : directive).trim(),
     operation: operationMatch?.[2] || null,
   };
+}
+
+function parseBackgroundDirective(line) {
+  const text = normalizeSourceLine(line);
+  if (!text.startsWith("【背景：") || !text.endsWith("】")) return null;
+  return { name: text.slice("【背景：".length, -1).trim() };
 }
 
 function readMainStoryCgFirstAppearances() {
@@ -68,32 +75,59 @@ function readMainStoryCgFirstAppearances() {
 
 const mainStoryCgFirstAppearances = readMainStoryCgFirstAppearances();
 
+function readMainStoryBackgroundFirstAppearances() {
+  const appearances = new Map();
+  for (let chapter = 1; chapter <= 7; chapter++) {
+    const lines = fs.readFileSync(p("project", "mainStory", `CH${chapter}`), "utf8").split(/\r?\n/);
+    lines.forEach((line, index) => {
+      const directive = parseBackgroundDirective(line);
+      if (!directive) return;
+      const key = directive.name;
+      if (!appearances.has(key)) {
+        appearances.set(key, {
+          chapter,
+          lineNumber: index + 1,
+          image: `CH${chapter}_L${index + 1}.png`,
+        });
+      }
+    });
+  }
+  return appearances;
+}
+
+const mainStoryBackgroundFirstAppearances = readMainStoryBackgroundFirstAppearances();
+
 function sourceCgImageFor(ctx, name) {
   if (!ctx.chapter) return null;
   const firstAppearance = mainStoryCgFirstAppearances.get(name);
-  return firstAppearance && mainStoryCgImageSet.has(firstAppearance.image)
+  return firstAppearance && mainStoryAssetImageSet.has(firstAppearance.image)
     ? firstAppearance.image
     : null;
 }
 
-function validateMainStoryCgAssetAddresses() {
-  for (const image of mainStoryCgImages) {
+function validateMainStoryAssetAddresses() {
+  for (const image of mainStoryAssetImages) {
     const match = image.match(/^CH(\d+)_L(\d+)\.png$/);
     const chapter = Number(match[1]);
     const lineNumber = Number(match[2]);
     const line = fs.readFileSync(p("project", "mainStory", `CH${chapter}`), "utf8").split(/\r?\n/)[lineNumber - 1];
-    const directive = line === undefined ? null : parseCgDirective(line);
-    if (!directive || directive.operation !== "出現") {
-      throw new Error(`${image} does not point to a CG 出現 directive in project/mainStory/CH${chapter} line ${lineNumber}`);
+    const cgDirective = line === undefined ? null : parseCgDirective(line);
+    const backgroundDirective = line === undefined ? null : parseBackgroundDirective(line);
+    const kind = cgDirective && cgDirective.operation === "出現" ? "CG" : backgroundDirective ? "background" : null;
+    const directive = kind === "CG" ? cgDirective : backgroundDirective;
+    if (!directive) {
+      throw new Error(`${image} does not point to a CG 出現 or background directive in project/mainStory/CH${chapter} line ${lineNumber}`);
     }
-    const firstAppearance = mainStoryCgFirstAppearances.get(directive.name);
+    const firstAppearance = kind === "CG"
+      ? mainStoryCgFirstAppearances.get(directive.name)
+      : mainStoryBackgroundFirstAppearances.get(directive.name);
     if (firstAppearance.image !== image) {
       throw new Error(`${image} is a later occurrence of 「${directive.name}」; reuse ${firstAppearance.image} instead`);
     }
   }
 }
 
-validateMainStoryCgAssetAddresses();
+validateMainStoryAssetAddresses();
 
 const MAP = Array.from({ length: MAP_HEIGHT }, () => Array(MAP_WIDTH).fill(0));
 
@@ -170,7 +204,7 @@ const backgroundAssets = [
   { name: "LIVE大舞台", image: "ms_bg_live_stage.png", placeholder: "scene_tournament.png" },
   { name: "派出所", image: "ms_bg_police_station.png", placeholder: "scene_street.png" },
   { name: "手機簡訊", image: "ms_bg_phone_message.png", placeholder: "ms_bg_street.png" },
-  { name: "帶頭紗貝琪微笑泛淚", image: "ms_bg_becky_smile_tears.png", placeholder: "ms_bg_wedding.png" },
+  { name: "帶頭紗貝琪微笑泛淚", image: "CH7_L1310.png", placeholder: "ms_bg_wedding.png" },
   { name: "東山與小夥伴們出攤", image: "ms_bg_higashiyama_booth.png", placeholder: "ms_bg_tokyo_big_sight.png" },
   { name: "表妹與一排人打小鋼珠", image: "ms_bg_pachinko_group.png", placeholder: "ms_bg_arcade.png" },
   { name: "克莉絲跟幾個人划龍舟", image: "ms_bg_dragon_boat.png", placeholder: "ms_bg_riverside.png" },
@@ -262,7 +296,7 @@ const placeholderAssets = [
 ];
 
 const extraImages = [
-  ...mainStoryCgImages,
+  ...mainStoryAssetImages,
   ...backgroundAssets.map(({ image }) => image),
   ...Object.values(persistentCgByName).map(({ image }) => image),
   "ms_ch1_mapo_shop_entrance_cg.png",
