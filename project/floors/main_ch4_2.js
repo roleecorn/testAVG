@@ -378,13 +378,7 @@ main.floors.main_ch4_2=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH4_L209.png",
             "loc": [
                 112,
                 50,
@@ -830,13 +824,7 @@ main.floors.main_ch4_2=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH4_L237.png",
             "loc": [
                 112,
                 50,

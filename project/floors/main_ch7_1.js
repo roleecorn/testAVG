@@ -715,13 +715,7 @@ main.floors.main_ch7_1=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L36.png",
             "loc": [
                 112,
                 50,
@@ -771,11 +765,6 @@ main.floors.main_ch7_1=
             "time": 0,
             "async": true
         },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         "\t[東山]我的錢包啊啊啊啊啊啊啊啊啊",
         {
             "type": "setText",
@@ -807,34 +796,8 @@ main.floors.main_ch7_1=
         },
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
+            "time": 150
         },
         {
             "type": "hideImage",
@@ -860,11 +823,6 @@ main.floors.main_ch7_1=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         "\t[東山]…算了走一步看一步吧，先瞧瞧前輩那邊有沒有什麼現成的工作可以江湖救急",
         {
@@ -921,13 +879,7 @@ main.floors.main_ch7_1=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L45.png",
             "loc": [
                 112,
                 50,
@@ -952,51 +904,20 @@ main.floors.main_ch7_1=
         "中華料理特有的油煙帶著一點刺鼻的味道從店內溢散了出來",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 30,
             "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[東山]嗯嗯感覺就是個員工餐隨便點的地方，我相信前輩的眼光！今天就靠你了！",
         {
@@ -1305,13 +1226,7 @@ main.floors.main_ch7_1=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L71.png",
             "loc": [
                 112,
                 50,
@@ -1336,51 +1251,20 @@ main.floors.main_ch7_1=
         "然後就這樣含著湯匙失去了意識",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 30,
             "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[麻婆]哼嗯，看來今天也很完美",
         {
@@ -2009,13 +1893,7 @@ main.floors.main_ch7_1=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L111.png",
             "loc": [
                 112,
                 50,

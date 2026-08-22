@@ -17,6 +17,7 @@ const LEGACY_STAGE_WIDTH = 416;
 const BACKGROUND_LOC = [0, 0];
 const CG_LOC = [112, 50, 320, 220];
 const GENERAL_CG_SLOC = [0, 65, 416, 286];
+const MAIN_STORY_CG_PATTERN = /^CH[1-7]_L\d+\.png$/;
 
 function readProjectMain() {
   const context = {};
@@ -29,6 +30,9 @@ const PROJECT_MAIN = readProjectMain();
 const AVG_LAYOUT = PROJECT_MAIN.styles.avgLayout;
 const REGISTERED_BGMS = new Set(PROJECT_MAIN.bgms || []);
 const REGISTERED_SOUNDS = new Set(PROJECT_MAIN.sounds || []);
+const mainStoryCgImages = fs.readdirSync(p("project", "images"))
+  .filter((image) => MAIN_STORY_CG_PATTERN.test(image))
+  .sort();
 
 const MAP = Array.from({ length: MAP_HEIGHT }, () => Array(MAP_WIDTH).fill(0));
 
@@ -197,6 +201,7 @@ const placeholderAssets = [
 ];
 
 const extraImages = [
+  ...mainStoryCgImages,
   ...backgroundAssets.map(({ image }) => image),
   ...Object.values(persistentCgByName).map(({ image }) => image),
   "ms_ch1_mapo_shop_entrance_cg.png",
@@ -272,21 +277,33 @@ function readSections(file, options = {}) {
   const raw = fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n").split("\n");
   const sections = {};
   let current = null;
-  for (const line of raw) {
+  for (let rawIndex = 0; rawIndex < raw.length; rawIndex++) {
+    const line = raw[rawIndex];
     const m = line.trim().match(/^(\d+-\d+)$/);
     if (m) {
       current = m[1];
       sections[current] = [];
+      sections[current].sourceLineNumbers = [];
       continue;
     }
     if (!current && options.implicitFirstSection && options.startMarker && options.startMarker.test(line.trim())) {
       current = options.implicitFirstSection;
       sections[current] = [];
+      sections[current].sourceLineNumbers = [];
       continue;
     }
-    if (current) sections[current].push(line);
+    if (current) {
+      sections[current].push(line);
+      sections[current].sourceLineNumbers.push(rawIndex + 1);
+    }
   }
   return sections;
+}
+
+function sliceSection(lines, start, end) {
+  const result = lines.slice(start, end);
+  result.sourceLineNumbers = (lines.sourceLineNumbers || []).slice(start, end);
+  return result;
 }
 
 function normalizeSourceLine(line) {
@@ -508,16 +525,40 @@ function lineToEvents(line, ctx) {
 
   if (/^【CG：/.test(t)) {
     const directive = t.replace(/^【CG：/, "").replace(/】$/, "").trim();
-    const operationMatch = directive.match(/^(.*?)[\s　]+(出現|消失)$/);
+    const operationMatch = directive.match(/^(.*?)[\s　_]+(出現|消失)$/);
     const name = (operationMatch ? operationMatch[1] : directive).trim();
     const operation = operationMatch && operationMatch[2];
     const actionCg = actionCgByName[name];
     if (actionCg && operation === "出現") {
       ctx.cgVisible = false;
       ctx.cgPersistent = false;
+      const sourceCgImage = ctx.chapter && ctx.lineNumber ? `CH${ctx.chapter}_L${ctx.lineNumber}.png` : null;
+      if (sourceCgImage && mainStoryCgImages.includes(sourceCgImage)) {
+        ctx.cgVisible = true;
+        ctx.cgPersistent = true;
+        return [
+          ...actionCgEvents(actionCg),
+          ...hidePortraits(),
+          { type: "showImage", code: 30, image: sourceCgImage, loc: [...CG_LOC], opacity: 1, time: 250 },
+        ];
+      }
       return actionCgEvents(actionCg);
     }
     if (actionCg && operation === "消失") return [];
+    const sourceCgImage = ctx.chapter && ctx.lineNumber ? `CH${ctx.chapter}_L${ctx.lineNumber}.png` : null;
+    if (sourceCgImage && mainStoryCgImages.includes(sourceCgImage) && operation === "出現") {
+      ctx.cgVisible = true;
+      ctx.cgPersistent = true;
+      const legacyActionCg = persistentCgByName[name];
+      const prefix = legacyActionCg && !legacyActionCg.placeholder && legacyActionCg.image.endsWith("_action_cg.png")
+        ? actionCgEvents(legacyActionCg)
+        : [];
+      return [
+        ...prefix,
+        ...hidePortraits(),
+        { type: "showImage", code: 30, image: sourceCgImage, loc: [...CG_LOC], opacity: 1, time: 250 },
+      ];
+    }
     if (operation === "消失") {
       ctx.cgVisible = false;
       ctx.cgPersistent = false;
@@ -732,6 +773,8 @@ function parseEvents(lines, start, ctx, stopLabels = null) {
     if (/^【(?:劇情推進|(?:進到)?推進劇情)】$/.test(t)) {
       return { events, index: i + 1, stoppedByMarker: true };
     }
+    ctx.chapter = ctx.chapter || ctx.source.match(/CH(\d+)/)?.[1];
+    ctx.lineNumber = (ctx.sourceLineNumbers && ctx.sourceLineNumbers[i]) || i + 1;
     events.push(...lineToEvents(lines[i], ctx));
     i++;
   }
@@ -801,6 +844,8 @@ function buildFloor(section, lines, overrides = {}) {
     defaultBgm: meta.bgm,
     source: `project/mainStory/CH${chapter}`,
     section,
+    chapter,
+    sourceLineNumbers: lines.sourceLineNumbers || [],
     cgVisible: false,
     cgPersistent: false,
     suppressPortraitCount: 0,
@@ -1185,8 +1230,8 @@ function main() {
       }
       const markerIndex = content.findIndex((line) => /^【(?:人物交流時間|角色劇情時間)/.test(line.trim()));
       if (markerIndex < 0) throw new Error(`Missing character exchange marker in section ${key}`);
-      generated.push(buildFloor(key, content.slice(0, markerIndex + 1), { next: null }));
-      generated.push(buildFloor(key, content.slice(markerIndex + 1), {
+        generated.push(buildFloor(key, sliceSection(content, 0, markerIndex + 1), { next: null }));
+        generated.push(buildFloor(key, sliceSection(content, markerIndex + 1), {
         id: exchange.floorId,
         title: `${floors[key].title}（交流後）`,
       }));

@@ -949,13 +949,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "scene_mapo_cg.png",
-                            "sloc": [
-                                0,
-                                65,
-                                416,
-                                286
-                            ],
+                            "image": "CH3_L92.png",
                             "loc": [
                                 112,
                                 50,
@@ -1763,13 +1757,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "scene_mapo_cg.png",
-                            "sloc": [
-                                0,
-                                65,
-                                416,
-                                286
-                            ],
+                            "image": "CH3_L139.png",
                             "loc": [
                                 112,
                                 50,
@@ -3356,13 +3344,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "scene_mapo_cg.png",
-                            "sloc": [
-                                0,
-                                65,
-                                416,
-                                286
-                            ],
+                            "image": "CH3_L231.png",
                             "loc": [
                                 112,
                                 50,
@@ -6995,13 +6977,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "scene_mapo_cg.png",
-                            "sloc": [
-                                0,
-                                65,
-                                416,
-                                286
-                            ],
+                            "image": "CH3_L472.png",
                             "loc": [
                                 112,
                                 50,

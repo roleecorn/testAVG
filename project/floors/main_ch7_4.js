@@ -890,13 +890,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L550.png",
             "loc": [
                 112,
                 50,
@@ -1080,13 +1074,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L563.png",
             "loc": [
                 112,
                 50,
@@ -1644,13 +1632,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L605.png",
             "loc": [
                 112,
                 50,
@@ -1869,13 +1851,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L622.png",
             "loc": [
                 112,
                 50,
@@ -1974,13 +1950,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L626.png",
             "loc": [
                 112,
                 50,
@@ -2239,13 +2209,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L642.png",
             "loc": [
                 112,
                 50,
@@ -2905,13 +2869,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L690.png",
             "loc": [
                 112,
                 50,
@@ -3101,13 +3059,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L706.png",
             "loc": [
                 112,
                 50,
@@ -3226,13 +3178,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L714.png",
             "loc": [
                 112,
                 50,
@@ -3357,13 +3303,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L725.png",
             "loc": [
                 112,
                 50,
@@ -3731,13 +3671,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH7_L748.png",
             "loc": [
                 112,
                 50,

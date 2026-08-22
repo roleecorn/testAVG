@@ -1225,13 +1225,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -2085,13 +2079,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_keng_hiding_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L67.png",
           "loc": [
             112,
             50,
@@ -2780,13 +2768,7 @@
                           "kind": "image.show",
                           "role": "cg",
                           "code": 30,
-                          "image": "ms_ch1_black_coat_men_cg.png",
-                          "sloc": [
-                            0,
-                            65,
-                            416,
-                            286
-                          ],
+                          "image": "CH1_L112.png",
                           "loc": [
                             112,
                             50,
@@ -2910,13 +2892,7 @@
                           "kind": "image.show",
                           "role": "cg",
                           "code": 30,
-                          "image": "scene_mapo_cg.png",
-                          "sloc": [
-                            0,
-                            65,
-                            416,
-                            286
-                          ],
+                          "image": "CH1_L119.png",
                           "loc": [
                             112,
                             50,
@@ -4793,6 +4769,42 @@
             220
           ],
           "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "wait",
+          "time": 1000,
+          "noSkip": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH1_L190.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
           "time": 250
         },
         {
@@ -5260,13 +5272,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_red_mapo_bowl_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L209.png",
           "loc": [
             112,
             50,
@@ -6036,6 +6042,32 @@
                   "time": 0
                 },
                 {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 11,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH1_L256.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
                   "kind": "wait",
                   "time": 1500
                 },
@@ -6198,13 +6230,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch1_keng_vs_sukuna_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L266.png",
                   "loc": [
                     112,
                     50,
@@ -6292,6 +6318,32 @@
                   "kind": "image.hide",
                   "code": 30,
                   "time": 0
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 11,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH1_L270.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
                 },
                 {
                   "kind": "image.hide",
@@ -9107,13 +9159,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L377.png",
           "loc": [
             112,
             50,
@@ -10570,13 +10616,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch1_cardboard_box_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L450.png",
                   "loc": [
                     112,
                     50,
@@ -10623,13 +10663,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch1_cardboard_keng_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L453.png",
                   "loc": [
                     112,
                     50,
@@ -10750,13 +10784,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch1_clown_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L459.png",
                   "loc": [
                     112,
                     50,
@@ -11009,6 +11037,42 @@
                     416,
                     286
                   ],
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "wait",
+                  "time": 1000,
+                  "noSkip": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 0
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 11,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH1_L472.png",
                   "loc": [
                     112,
                     50,
@@ -12791,13 +12855,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L32.png",
           "loc": [
             112,
             50,
@@ -14697,13 +14755,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L117.png",
           "loc": [
             112,
             50,
@@ -16625,6 +16677,32 @@
                   "async": true
                 },
                 {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH2_L210.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 11,
+                  "time": 0,
+                  "async": true
+                },
+                {
                   "kind": "dialogue",
                   "speaker": "路人",
                   "text": "麥克——！"
@@ -16838,6 +16916,32 @@
                   "kind": "image.hide",
                   "code": 30,
                   "time": 0
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 10,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 11,
+                  "time": 0,
+                  "async": true
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH2_L222.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
                 },
                 {
                   "kind": "image.hide",
@@ -18086,13 +18190,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L271.png",
           "loc": [
             112,
             50,
@@ -18565,13 +18663,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L291.png",
           "loc": [
             112,
             50,
@@ -19976,13 +20068,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L344.png",
           "loc": [
             112,
             50,
@@ -20029,13 +20115,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L347.png",
           "loc": [
             112,
             50,
@@ -20082,13 +20162,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L350.png",
           "loc": [
             112,
             50,
@@ -20200,13 +20274,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L357.png",
           "loc": [
             112,
             50,
@@ -21249,13 +21317,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH2_L412.png",
                   "loc": [
                     112,
                     50,
@@ -21760,13 +21822,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH2_L436.png",
                   "loc": [
                     112,
                     50,
@@ -22246,13 +22302,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH2_L464.png",
                   "loc": [
                     112,
                     50,
@@ -25556,13 +25606,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH3_L92.png",
                   "loc": [
                     112,
                     50,
@@ -26544,13 +26588,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH3_L139.png",
                   "loc": [
                     112,
                     50,
@@ -28444,13 +28482,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH3_L231.png",
                   "loc": [
                     112,
                     50,
@@ -32927,13 +32959,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH3_L472.png",
                   "loc": [
                     112,
                     50,
@@ -35519,13 +35545,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH3_L565.png",
           "loc": [
             112,
             50,
@@ -36357,13 +36377,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH3_L611.png",
           "loc": [
             112,
             50,
@@ -36410,13 +36424,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH3_L614.png",
           "loc": [
             112,
             50,
@@ -38878,13 +38886,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH4_L102.png",
           "loc": [
             112,
             50,
@@ -41208,13 +41210,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH4_L209.png",
           "loc": [
             112,
             50,
@@ -41747,13 +41743,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH4_L237.png",
           "loc": [
             112,
             50,
@@ -43443,13 +43433,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH5_L50.png",
           "loc": [
             112,
             50,
@@ -44345,13 +44329,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH5_L97.png",
                   "loc": [
                     112,
                     50,
@@ -44653,13 +44631,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH5_L116.png",
                   "loc": [
                     112,
                     50,
@@ -45402,13 +45374,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH6_L19.png",
           "loc": [
             112,
             50,
@@ -46434,13 +46400,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH6_L69.png",
           "loc": [
             112,
             50,
@@ -46596,13 +46556,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH6_L77.png",
           "loc": [
             112,
             50,
@@ -46924,13 +46878,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH6_L89.png",
           "loc": [
             112,
             50,
@@ -51614,13 +51562,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH6_L288.png",
           "loc": [
             112,
             50,
@@ -52545,13 +52487,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH6_L319.png",
           "loc": [
             112,
             50,
@@ -53294,13 +53230,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH6_L350.png",
           "loc": [
             112,
             50,
@@ -53711,13 +53641,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH6_L377.png",
           "loc": [
             112,
             50,
@@ -54902,13 +54826,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L36.png",
           "loc": [
             112,
             50,
@@ -54961,11 +54879,6 @@
           "async": true
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
           "text": "我的錢包啊啊啊啊啊啊啊啊啊"
@@ -55002,35 +54915,8 @@
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 250
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -55059,11 +54945,6 @@
           "code": 11,
           "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "dialogue",
@@ -55136,13 +55017,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L45.png",
           "loc": [
             112,
             50,
@@ -55170,52 +55045,20 @@
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
           "code": 30,
           "time": 150
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -55601,13 +55444,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L71.png",
           "loc": [
             112,
             50,
@@ -55635,52 +55472,20 @@
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
           "code": 30,
           "time": 150
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -56429,13 +56234,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L111.png",
           "loc": [
             112,
             50,
@@ -58229,13 +58028,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L199.png",
           "loc": [
             112,
             50,
@@ -58537,13 +58330,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L218.png",
           "loc": [
             112,
             50,
@@ -60151,13 +59938,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L308.png",
           "loc": [
             112,
             50,
@@ -60857,13 +60638,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L329.png",
           "loc": [
             112,
             50,
@@ -61272,13 +61047,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L355.png",
           "loc": [
             112,
             50,
@@ -62481,13 +62250,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L422.png",
           "loc": [
             112,
             50,
@@ -63484,13 +63247,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L477.png",
           "loc": [
             112,
             50,
@@ -65112,13 +64869,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L550.png",
           "loc": [
             112,
             50,
@@ -65346,13 +65097,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L563.png",
           "loc": [
             112,
             50,
@@ -66035,13 +65780,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L605.png",
           "loc": [
             112,
             50,
@@ -66308,13 +66047,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L622.png",
           "loc": [
             112,
             50,
@@ -66422,13 +66155,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L626.png",
           "loc": [
             112,
             50,
@@ -66718,13 +66445,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L642.png",
           "loc": [
             112,
             50,
@@ -67544,13 +67265,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L690.png",
           "loc": [
             112,
             50,
@@ -67786,13 +67501,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L706.png",
           "loc": [
             112,
             50,
@@ -67936,13 +67645,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L714.png",
           "loc": [
             112,
             50,
@@ -68094,13 +67797,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L725.png",
           "loc": [
             112,
             50,
@@ -68551,13 +68248,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L748.png",
           "loc": [
             112,
             50,
@@ -69792,13 +69483,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L798.png",
           "loc": [
             112,
             50,
@@ -70215,13 +69900,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L824.png",
           "loc": [
             112,
             50,
@@ -70646,13 +70325,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L850.png",
           "loc": [
             112,
             50,
@@ -70865,13 +70538,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L863.png",
           "loc": [
             112,
             50,
@@ -72574,13 +72241,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L952.png",
           "loc": [
             112,
             50,
@@ -73344,13 +73005,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L991.png",
           "loc": [
             112,
             50,
@@ -74180,13 +73835,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L1041.png",
           "loc": [
             112,
             50,
@@ -74233,13 +73882,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L1044.png",
           "loc": [
             112,
             50,
@@ -74492,13 +74135,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L1058.png",
           "loc": [
             112,
             50,
@@ -74800,13 +74437,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L1074.png",
           "loc": [
             112,
             50,
@@ -75739,13 +75370,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L1126.png",
           "loc": [
             112,
             50,
@@ -76388,13 +76013,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L1162.png",
           "loc": [
             112,
             50,
@@ -79131,13 +78750,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L1291.png",
           "loc": [
             112,
             50,

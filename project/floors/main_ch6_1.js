@@ -428,13 +428,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH6_L19.png",
             "loc": [
                 112,
                 50,
@@ -1288,13 +1282,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH6_L69.png",
             "loc": [
                 112,
                 50,
@@ -1424,13 +1412,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH6_L77.png",
             "loc": [
                 112,
                 50,
@@ -1709,13 +1691,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH6_L89.png",
             "loc": [
                 112,
                 50,

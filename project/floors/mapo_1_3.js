@@ -387,6 +387,41 @@ main.floors.mapo_1_3=
                 220
             ],
             "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "sleep",
+            "time": 1000,
+            "noSkip": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "CH1_L190.png",
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
             "time": 250
         },
         {
@@ -776,13 +811,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "ms_ch1_red_mapo_bowl_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH1_L209.png",
             "loc": [
                 112,
                 50,
@@ -1413,6 +1442,31 @@ main.floors.mapo_1_3=
                             "time": 0
                         },
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "CH1_L256.png",
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
                             "type": "sleep",
                             "time": 1500
                         },
@@ -1544,13 +1598,7 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_keng_vs_sukuna_cg.png",
-                            "sloc": [
-                                0,
-                                65,
-                                416,
-                                286
-                            ],
+                            "image": "CH1_L266.png",
                             "loc": [
                                 112,
                                 50,
@@ -1631,6 +1679,31 @@ main.floors.mapo_1_3=
                             "type": "hideImage",
                             "code": 30,
                             "time": 0
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0,
+                            "async": true
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 30,
+                            "image": "CH1_L270.png",
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 250
                         },
                         {
                             "type": "hideImage",
