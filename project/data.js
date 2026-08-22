@@ -205,6 +205,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"ms_ch2_eri_sunset_cg.png",
 			"ms_ch2_eri_sunset_action_cg.png",
 			"scene_mapo_cg.png",
+			"CH2_L299.png",
 			"CH7_L991.png",
 			"CH7_L952.png",
 			"CH7_L863.png",

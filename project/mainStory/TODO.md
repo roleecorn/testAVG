@@ -13,7 +13,6 @@
 
 - project/mainStory/CH1 1-3：下一句要求使用麻婆立繪，但 project/images 尚無對應正式角色圖，暫不顯示立繪。
 - project/mainStory/CH1 1-4：製作指令「【下一句話使用三角作為立繪】」尚未轉成正式事件。
-- project/mainStory/CH2 2-3：【CG：肥宅淹沒 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH3 3-1：【BGM：春日影】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH3 3-1：製作指令「【下兩句話使用三日月作為立繪】」尚未轉成正式事件。
 - project/mainStory/CH3 3-3：【BGM：鐵達尼號】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。

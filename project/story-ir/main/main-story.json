@@ -9,7 +9,7 @@
       },
       {
         "path": "project/mainStory/CH2",
-        "sha256": "875282e8fd25689fdb01ba9778b71d8433b2db9236c0edb3d5ad428c79792aff"
+        "sha256": "70a29ac97fc70b19c730e330204875596d63571522844f0d4ba2ff39d3be205f"
       },
       {
         "path": "project/mainStory/CH3",
@@ -18769,13 +18769,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L299.png",
           "loc": [
             112,
             50,
@@ -45225,7 +45219,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH6_L19.png",
+          "image": "CH2_L299.png",
           "loc": [
             112,
             50,
@@ -58231,7 +58225,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH6_L19.png",
+          "image": "CH2_L299.png",
           "loc": [
             112,
             50,

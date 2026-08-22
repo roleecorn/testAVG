@@ -428,7 +428,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH6_L19.png",
+            "image": "CH2_L299.png",
             "loc": [
                 112,
                 50,
