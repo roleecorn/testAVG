@@ -1199,13 +1199,7 @@ main.floors.main_ch3_2=
         {
             "type": "showImage",
             "code": 30,
-            "image": "ms_ch1_phone_message_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "image": "CH1_L44.png",
             "loc": [
                 112,
                 50,

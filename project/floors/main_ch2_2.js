@@ -2399,13 +2399,7 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "scene_mapo_cg.png",
-                            "sloc": [
-                                0,
-                                65,
-                                416,
-                                286
-                            ],
+                            "image": "CH1_L119.png",
                             "loc": [
                                 112,
                                 50,

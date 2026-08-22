@@ -11,69 +11,26 @@
 
 ## 待補劇情
 
-- project/mainStory/CH1 1-2：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
-- project/mainStory/CH1 1-2：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH1 1-3：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH1 1-3：下一句要求使用麻婆立繪，但 project/images 尚無對應正式角色圖，暫不顯示立繪。
-- project/mainStory/CH1 1-4：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH1 1-4：製作指令「【下一句話使用三角作為立繪】」尚未轉成正式事件。
-- project/mainStory/CH2 2-1：【CG：小兔子暗黑無限破 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH2 2-1：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH2 2-2：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH2 2-3：【CG：大門深鎖的ANIsister 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH2 2-3：【CG：肥宅淹沒 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH2 2-4：【CG：小兔子暗黑無限破 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH2 2-4：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
-- project/mainStory/CH2 2-4：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH3 3-1：【BGM：春日影】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
-- project/mainStory/CH3 3-1：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
-- project/mainStory/CH3 3-1：【CG：肥宅撞擊 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH3 3-1：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH3 3-1：製作指令「【下兩句話使用三日月作為立繪】」尚未轉成正式事件。
-- project/mainStory/CH3 3-2：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
 - project/mainStory/CH3 3-3：【BGM：鐵達尼號】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
-- project/mainStory/CH4 4-1：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
 - project/mainStory/CH4 4-1：【CG：絕望的眾人 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH4 4-1：【CG：肥宅撞擊 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH4 4-1：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH4 4-1：【人物交流時間】 尚未撰寫，已以文字標記保留。
 - project/mainStory/CH4 4-2：製作指令「【下八句不使用立繪】」尚未轉成正式事件。
-- project/mainStory/CH5 5-1：【CG：肥宅撞擊 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH5 5-1：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH6 6-1：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
-- project/mainStory/CH6 6-2：【CG：梗平的假面騎士空翻 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH6 6-2：【CG：梗平的假面騎士翻滾 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH6 6-2：【CG：梗平的假面騎士落地 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH6 6-2：【CG：英高老賊你死了(Missed Comike) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH6 6-4：【BGM：ED1用】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
-- project/mainStory/CH6 6-4：【CG：梗平使用德式背摔 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH6 6-4：製作指令「【此處應有梗平、貝琪立繪替換，未製作完成，忽略本句】」尚未轉成正式事件。
-- project/mainStory/CH7 7-2：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
-- project/mainStory/CH7 7-2：【CG：梗平英雄救美(?) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-2：【CG：滿滿肥宅 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-2：【CG：肥宅湧出 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-3：【BGM：BGMBOOM】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
-- project/mainStory/CH7 7-3：【CG：傑士塔威 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-3：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
-- project/mainStory/CH7 7-3：【CG：爆炸畫面 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-3：製作指令「【下句店員使用月讀愛立繪】」尚未轉成正式事件。
 - project/mainStory/CH7 7-4：【BGM：BGMTANK】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
-- project/mainStory/CH7 7-4：【CG：店長安撫阻擋肥宅 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-4：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
-- project/mainStory/CH7 7-4：【CG：爆炸畫面 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-4：製作指令「【下一句？？？使用雜貨店老闆立繪】」尚未轉成正式事件。
 - project/mainStory/CH7 7-4：製作指令「【下三句話不使用立繪】」尚未轉成正式事件。
 - project/mainStory/CH7 7-4：製作指令「【此場景為回憶某件事。濾鏡全畫面顯示模仿復古膠捲播放時的棕色調】」尚未轉成正式事件。
 - project/mainStory/CH7 7-5：【BGM：BGMED2】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH7 7-5：【BGM：關羽之歌】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
-- project/mainStory/CH7 7-5：【CG：一中華大碗紅色液體】暫用 ms_ch1_red_mapo_bowl_cg.png，需替換正式素材。
-- project/mainStory/CH7 7-5：【CG：假面騎士腰帶 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：傑士塔威 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
-- project/mainStory/CH7 7-5：【CG：推出信封的手 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：爆炸畫面 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-5：【CG：畫面拉遠到月球表面】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：那個聖物 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-5：製作指令「【下四句不使用立繪】」尚未轉成正式事件。
 - project/mainStory/CH7 7-5：製作指令「【下方兩句明日頭條台詞為同一台詞內[頭條：將軍在秋葉原夜驅]加上刪除線，換行後[頭條：驚愕！特攝都是真的？將軍家代代都是假面騎士，修卡組織發表聲明敵人就在吹上御所]為大字】」尚未轉成正式事件。
 - project/mainStory/CH7 7-5：製作指令「【白色慢速過場】」尚未轉成正式事件。
@@ -123,4 +80,4 @@
 ## 已確認可處理
 
 - CH1-CH7 主線已接入樓層與時間線，可先作為完整可跑版本繼續迭代。
-- `CG-20260822T143824Z-1-001.zip`（SHA-256：`3AA8EAC2B3834C718010A1E60D88F8AA7AA77999D7AC19D9D65F305F407DFEE6`）：83 張 `CH<N>_L<N>.png` 已逐檔核對主線行號並接入 `project/images`、`project/data.js`、Story IR 與 floor；其中 22 張實際內容為 JPEG，依使用者確認保留原始 `.png` 檔名。驗證：`python scripts/build_action_cgs.py --check`、`node scripts/generate_main_story.js --check`、`node scripts/manage_story_ir.js`、83/83 圖片引用檢查。
+- `CG-20260822T143824Z-1-001.zip`（SHA-256：`3AA8EAC2B3834C718010A1E60D88F8AA7AA77999D7AC19D9D65F305F407DFEE6`）：83 張 `CH<N>_L<N>.png` 已逐檔核對首次 CG 出現行號，並接入 `project/images`、`project/data.js`、Story IR 與 floor；其中 22 張實際內容為 JPEG，依使用者確認保留原始 `.png` 檔名。驗證：`python scripts/build_action_cgs.py --check`、`node scripts/generate_main_story.js --check`、`node scripts/manage_story_ir.js`、83/83 圖片引用檢查。

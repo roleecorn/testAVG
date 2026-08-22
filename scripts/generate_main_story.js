@@ -33,6 +33,67 @@ const REGISTERED_SOUNDS = new Set(PROJECT_MAIN.sounds || []);
 const mainStoryCgImages = fs.readdirSync(p("project", "images"))
   .filter((image) => MAIN_STORY_CG_PATTERN.test(image))
   .sort();
+const mainStoryCgImageSet = new Set(mainStoryCgImages);
+
+function parseCgDirective(line) {
+  const text = normalizeSourceLine(line);
+  if (!text.startsWith("【CG：") || !text.endsWith("】")) return null;
+  const directive = text.slice("【CG：".length, -1).trim();
+  const operationMatch = directive.match(/^(.*?)[\s　_]+(出現|消失)$/);
+  return {
+    name: (operationMatch ? operationMatch[1] : directive).trim(),
+    operation: operationMatch?.[2] || null,
+  };
+}
+
+function readMainStoryCgFirstAppearances() {
+  const appearances = new Map();
+  for (let chapter = 1; chapter <= 7; chapter++) {
+    const lines = fs.readFileSync(p("project", "mainStory", `CH${chapter}`), "utf8").split(/\r?\n/);
+    lines.forEach((line, index) => {
+      const directive = parseCgDirective(line);
+      if (!directive || directive.operation !== "出現") return;
+      const key = directive.name;
+      if (!appearances.has(key)) {
+        appearances.set(key, {
+          chapter,
+          lineNumber: index + 1,
+          image: `CH${chapter}_L${index + 1}.png`,
+        });
+      }
+    });
+  }
+  return appearances;
+}
+
+const mainStoryCgFirstAppearances = readMainStoryCgFirstAppearances();
+
+function sourceCgImageFor(ctx, name) {
+  if (!ctx.chapter) return null;
+  const firstAppearance = mainStoryCgFirstAppearances.get(name);
+  return firstAppearance && mainStoryCgImageSet.has(firstAppearance.image)
+    ? firstAppearance.image
+    : null;
+}
+
+function validateMainStoryCgAssetAddresses() {
+  for (const image of mainStoryCgImages) {
+    const match = image.match(/^CH(\d+)_L(\d+)\.png$/);
+    const chapter = Number(match[1]);
+    const lineNumber = Number(match[2]);
+    const line = fs.readFileSync(p("project", "mainStory", `CH${chapter}`), "utf8").split(/\r?\n/)[lineNumber - 1];
+    const directive = line === undefined ? null : parseCgDirective(line);
+    if (!directive || directive.operation !== "出現") {
+      throw new Error(`${image} does not point to a CG 出現 directive in project/mainStory/CH${chapter} line ${lineNumber}`);
+    }
+    const firstAppearance = mainStoryCgFirstAppearances.get(directive.name);
+    if (firstAppearance.image !== image) {
+      throw new Error(`${image} is a later occurrence of 「${directive.name}」; reuse ${firstAppearance.image} instead`);
+    }
+  }
+}
+
+validateMainStoryCgAssetAddresses();
 
 const MAP = Array.from({ length: MAP_HEIGHT }, () => Array(MAP_WIDTH).fill(0));
 
@@ -531,16 +592,13 @@ function lineToEvents(line, ctx) {
   }
 
   if (/^【CG：/.test(t)) {
-    const directive = t.replace(/^【CG：/, "").replace(/】$/, "").trim();
-    const operationMatch = directive.match(/^(.*?)[\s　_]+(出現|消失)$/);
-    const name = (operationMatch ? operationMatch[1] : directive).trim();
-    const operation = operationMatch && operationMatch[2];
+    const { name, operation } = parseCgDirective(t);
     const actionCg = actionCgByName[name];
     if (actionCg && operation === "出現") {
       ctx.cgVisible = false;
       ctx.cgPersistent = false;
-      const sourceCgImage = ctx.chapter && ctx.lineNumber ? `CH${ctx.chapter}_L${ctx.lineNumber}.png` : null;
-      if (sourceCgImage && mainStoryCgImages.includes(sourceCgImage)) {
+      const sourceCgImage = sourceCgImageFor(ctx, name);
+      if (sourceCgImage) {
         ctx.cgVisible = true;
         ctx.cgPersistent = true;
         return [
@@ -552,8 +610,8 @@ function lineToEvents(line, ctx) {
       return actionCgEvents(actionCg);
     }
     if (actionCg && operation === "消失") return [];
-    const sourceCgImage = ctx.chapter && ctx.lineNumber ? `CH${ctx.chapter}_L${ctx.lineNumber}.png` : null;
-    if (sourceCgImage && mainStoryCgImages.includes(sourceCgImage) && operation === "出現") {
+    const sourceCgImage = sourceCgImageFor(ctx, name);
+    if (sourceCgImage && operation === "出現") {
       ctx.cgVisible = true;
       ctx.cgPersistent = true;
       const legacyActionCg = persistentCgByName[name];
@@ -1090,6 +1148,8 @@ function updateTodo() {
     "",
     "## 待補素材",
     "",
+    "- `BGM-20260822T150228Z-1-001.zip` 內四首 BGM 已接入來源指令，但 ZIP 未附原曲／作者／授權資訊；請補充授權以完成公開發行追溯，詳見 `.codex/task-questions/20260822-231945-bgm-zip-import.md`。",
+    "",
     "- `project/images/ms_ch1_mapo_shop_entrance_cg.png`：暫用複製 CG，來源為 `project/images/scene_mapo_cg.png`；之後需要替換成「麻婆豆腐店門口」正式 CG。",
     "- `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。",
     "- `project/images/ms_ch1_thunder_crocodile_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「放大的鱷魚圖」正式 CG。",
@@ -1127,6 +1187,7 @@ function updateTodo() {
     "## 已確認可處理",
     "",
     "- CH1-CH7 主線已接入樓層與時間線，可先作為完整可跑版本繼續迭代。",
+    "- `CG-20260822T143824Z-1-001.zip`（SHA-256：`3AA8EAC2B3834C718010A1E60D88F8AA7AA77999D7AC19D9D65F305F407DFEE6`）：83 張 `CH<N>_L<N>.png` 已逐檔核對首次 CG 出現行號，並接入 `project/images`、`project/data.js`、Story IR 與 floor；其中 22 張實際內容為 JPEG，依使用者確認保留原始 `.png` 檔名。驗證：`python scripts/build_action_cgs.py --check`、`node scripts/generate_main_story.js --check`、`node scripts/manage_story_ir.js`、83/83 圖片引用檢查。",
   ];
   fs.writeFileSync(p("project", "mainStory", "TODO.md"), todoLines.join("\n") + "\n", "utf8");
 }

@@ -3380,13 +3380,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L119.png",
                   "loc": [
                     112,
                     50,
@@ -3730,13 +3724,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -4090,13 +4078,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -7023,13 +7005,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L119.png",
                   "loc": [
                     112,
                     50,
@@ -11400,13 +11376,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L119.png",
                   "loc": [
                     112,
                     50,
@@ -13057,13 +13027,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L377.png",
           "loc": [
             112,
             50,
@@ -13895,13 +13859,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L377.png",
                   "loc": [
                     112,
                     50,
@@ -14073,13 +14031,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L119.png",
                   "loc": [
                     112,
                     50,
@@ -17164,13 +17116,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L119.png",
                   "loc": [
                     112,
                     50,
@@ -18523,13 +18469,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L117.png",
           "loc": [
             112,
             50,
@@ -20568,13 +20508,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -21969,13 +21903,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L119.png",
                   "loc": [
                     112,
                     50,
@@ -22641,13 +22569,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L377.png",
                   "loc": [
                     112,
                     50,
@@ -23866,13 +23788,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L32.png",
           "loc": [
             112,
             50,
@@ -31170,13 +31086,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch1_phone_message_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L44.png",
                   "loc": [
                     112,
                     50,
@@ -31281,13 +31191,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch1_phone_message_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L44.png",
                   "loc": [
                     112,
                     50,
@@ -31608,13 +31512,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch1_phone_message_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L44.png",
                   "loc": [
                     112,
                     50,
@@ -33039,13 +32937,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L119.png",
                   "loc": [
                     112,
                     50,
@@ -34511,13 +34403,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -37388,13 +37274,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L32.png",
           "loc": [
             112,
             50,
@@ -37486,13 +37366,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L32.png",
           "loc": [
             112,
             50,
@@ -37796,13 +37670,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -40272,13 +40140,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L119.png",
                   "loc": [
                     112,
                     50,
@@ -43304,13 +43166,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L32.png",
           "loc": [
             112,
             50,
@@ -44441,13 +44297,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L119.png",
                   "loc": [
                     112,
                     50,
@@ -45834,13 +45684,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -48597,13 +48441,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH2_L344.png",
                   "loc": [
                     112,
                     50,
@@ -48650,13 +48488,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH2_L347.png",
                   "loc": [
                     112,
                     50,
@@ -48703,13 +48535,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH2_L350.png",
                   "loc": [
                     112,
                     50,
@@ -49109,13 +48935,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
-                  "sloc": [
-                    0,
-                    65,
-                    416,
-                    286
-                  ],
+                  "image": "CH1_L119.png",
                   "loc": [
                     112,
                     50,
@@ -52998,13 +52818,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L271.png",
           "loc": [
             112,
             50,
@@ -57462,13 +57276,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -58278,13 +58086,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L199.png",
           "loc": [
             112,
             50,
@@ -58429,13 +58231,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH6_L19.png",
           "loc": [
             112,
             50,
@@ -59804,13 +59600,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH2_L464.png",
           "loc": [
             112,
             50,
@@ -61511,13 +61301,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -62483,13 +62267,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH3_L565.png",
           "loc": [
             112,
             50,
@@ -63460,13 +63238,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH3_L614.png",
           "loc": [
             112,
             50,
@@ -64300,13 +64072,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -66283,13 +66049,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH3_L614.png",
           "loc": [
             112,
             50,
@@ -68489,13 +68249,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L690.png",
           "loc": [
             112,
             50,
@@ -69817,13 +69571,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L111.png",
           "loc": [
             112,
             50,
@@ -71557,13 +71305,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_red_mapo_bowl_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L209.png",
           "loc": [
             112,
             50,
@@ -71773,13 +71515,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH3_L565.png",
           "loc": [
             112,
             50,
@@ -71945,13 +71681,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH3_L614.png",
           "loc": [
             112,
             50,
@@ -72727,13 +72457,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L563.png",
           "loc": [
             112,
             50,
@@ -73173,13 +72897,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L308.png",
           "loc": [
             112,
             50,
@@ -75112,13 +74830,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L111.png",
           "loc": [
             112,
             50,
@@ -77897,13 +77609,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_phone_message_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH1_L44.png",
           "loc": [
             112,
             50,
@@ -78362,13 +78068,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "image": "CH7_L308.png",
           "loc": [
             112,
             50,

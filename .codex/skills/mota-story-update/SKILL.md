@@ -16,7 +16,7 @@ Update checked-in story sources as one traceable source → Story IR → scene/f
 
 1. Read `AGENTS.md` and identify the recorded baseline commit. Compare `project/mainStory/` and `project/story/` from that commit (exclusive) through the current source state; do not infer updates from derived IR, floor, asset, or TODO changes.
 2. Read the affected complete authoritative source and the applicable canonical references: `mota-avg-editor/references/text-to-event-json.md`, `checklist.md`, and only the feature references required by the source directives.
-3. For main-story changes, apply the line-addressed CG guard before `--refresh-ir`: if physical source line numbers change, prove each affected old-to-new CG directive match and rename its `CH<N>_L<N>.png` asset, registrations, and mappings first. Stop the affected CG branch on any deleted, duplicated, ambiguous, or unprovable match.
+3. For main-story changes, apply the line-addressed CG guard before `--refresh-ir`: `CH<N>_L<N>.png` names the first authoritative appearance of that CG. If physical source line numbers change, prove each affected old-to-new first appearance and rename its asset, registrations, and mappings first; every later identical CG directive must reuse that same first-appearance file. Stop the affected CG branch on any deleted, ambiguous, or unprovable match.
 4. Update validated Story IR and its corresponding scenes/floors in the same transaction. Main story uses `node scripts/generate_main_story.js --refresh-ir`; character story uses `node scripts/manage_story_ir.js --emit-character` only after its IR is valid.
 5. Run the applicable validation chain, inspect the diff, and verify every affected source, IR, asset, scene/floor, and trigger remains traceable.
 6. When a commit is requested, create a content commit containing the full transaction, then create a second commit that only writes the content commit hash as the new baseline in `AGENTS.md`.
@@ -50,5 +50,5 @@ Update checked-in story sources as one traceable source → Story IR → scene/f
 
 - Run `node scripts/generate_main_story.js --check` for main-story changes and `node scripts/manage_story_ir.js` for story IR consistency.
 - Run `python scripts/build_action_cgs.py --check` when action-CG assets are involved.
-- Confirm every renamed line-addressed CG follows `project/images/ → project/data.js -> main.images → Story IR → floor` and points at its current authoritative CG directive.
+- Confirm every renamed line-addressed CG follows `project/images/ → project/data.js -> main.images → Story IR → floor`, points at its current first authoritative CG directive, and is reused by every later identical CG directive.
 - Inspect `git diff --check`, then the staged commit boundary when committing.
