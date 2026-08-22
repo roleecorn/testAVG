@@ -75,6 +75,7 @@ Route each task through the smallest applicable branch:
 - BGM: [bgm.md](references/bgm.md)
 - Sound or animation effects: [audio-effects.md](references/audio-effects.md)
 - Plain script conversion: [text-to-event-json.md](references/text-to-event-json.md)
+- Existing story update transaction: Project Skill `mota-story-update`
 - Character-story ZIP: [archive-story-task-splitting.md](references/archive-story-task-splitting.md)
 - TODO and unresolved content: [todo.md](references/todo.md)
 - Standalone minigame: [minigame-integration.md](references/minigame-integration.md)

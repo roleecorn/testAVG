@@ -1,0 +1,4 @@
+interface:
+  display_name: "劇情更新"
+  short_description: "同步劇情來源、Story IR、場景與行號 CG 資產"
+  default_prompt: "Use $mota-story-update to update sources since the recorded baseline commit."

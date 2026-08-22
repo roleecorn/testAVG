@@ -143,6 +143,15 @@ node scripts/manage_story_ir.js
 4. 若標記語意不明、未支援、缺少必要素材或無法證明已接入，依同一 TODO 規則記錄為未解決，並保留 `unresolved.directive` 使驗證失敗；不得降級成玩家可見旁白／台詞，也不得只因 floor 能生成就視為已滿足。
 5. 交付時要能列出稽核結果：已滿足標記的 IR／floor 證據，以及所有 conflict／unresolved 標記的 TODO 路徑與阻塞範圍。任一受影響標記沒有其中一種證據，就不能宣稱該故事完成或調整完成。
 
+### 主線行數位址 CG 改名閘門
+
+主線 CG 若採用 `CH<N>_L<N>.png` 命名，`N` 是權威 `project/mainStory/CH<N>` 的實體行號，而不是段落內索引、scene 序號或舊版本行號。更新主線來源時，先將新舊完整來源逐行比對：
+
+1. 若來源變動未改變任何行號，維持既有 CG 檔名即可。
+2. 若來源變動導致任一行號改變，必須在執行 `node scripts/generate_main_story.js --refresh-ir`、更新 Story IR 或重建 floor 前，依已確認的新行號重新命名每一張受影響 `CH<N>_L<N>.png`，並同步更新 `project/data.js` 登錄與所有生成器／測試 mapping。
+3. 僅能在舊 CG 所對應的來源指令、以及新位置的同一條來源指令可完整核對時改名；不得只按文字相似度、相鄰行或 Agent 猜測移動。無法證明對應、CG 指令遭刪除、出現重複／歧義指令，或來源尚未定稿時，停止受影響 CG 分支並建立 question／TODO。
+4. 改名後必須驗證每個 `CH<N>_L<N>.png` 都指向相同 CH 檔的實際 CG 指令，且完成 `project/images/ → project/data.js -> main.images → Story IR → floor` 引用鏈檢查；不允許用舊行號繼續生成或提交。
+
 1. 每個 CH 檔在第一個 `章-節` 標題前的格式說明不進入事件。
 2. `【背景 ：名稱】`、`【背景：名稱】` 等空白差異可正規化成同一指令；正文、標點與用字保持原樣。
 3. `[人名：內容]` 必須先辨識為簡訊，再處理一般 `[敘述]`。簡訊輸出為 `"\t[人名]（手機）內容"`，不能去掉中括號後誤當旁白。冒號前必須是已知角色或不含敘事標點的短標籤；像 `[於是梗平轉身……：哈……]` 這種長敘事仍是旁白，不可誤建成超長發言者。
@@ -154,6 +163,7 @@ node scripts/manage_story_ir.js
 9. CG／GIF 對照表要以目前來源文字為準；來源更名時可保留歷史別名，但 `--check` 必須確認所有已登錄的主線動作 CG 都仍有實際輸出，避免素材存在卻因標記改名而靜默退回 placeholder。
 10. 背景名稱以完整名稱精確查表；每個地點映射到唯一背景檔。遇到未登錄名稱必須失敗並補 mapping，不可靜默退回 generic 圖。
 11. 明確音訊 DSL 支援 `使用BGM`／`播放BGM`（無名稱時使用已在完整場景正規化後選定的場景 BGM）、`使用BGM：<已登錄檔名或別名>`、`BGM暫停`、`恢復BGM`、`播放音效：<已登錄檔名或別名>` 與 `停止音效`。BGM 與音效必須分別正規化成 `bgm.*` 與 `sound.*`，不可共用一種 audio 節點；只有「播放音效」而無可唯一解析名稱時必須失敗。
+12. 主線來源更新若改變行號，先通過「主線行數位址 CG 改名閘門」：所有受影響 `CH<N>_L<N>.png` 都已依新實體行號改名並完成引用鏈驗證，才可重新產生 IR／floor。
 
 新版主線與支線必須由同一份全局 AVG layout config 產生「單一當前發言者－下方對話框」空間配置。544×416 畫布的新版下方對話框基準為 `x=16, y=295, width=512, fixedLines=2`，不可退回舊的 `x=96, width=352` 窄框。每句角色台詞先清空所有人物 code，再把當前發言者放到同一個人物語意槽；旁白清空人物，三人以上場景也不新增槽位。runtime 必須以 alpha bbox 的可見內容左右置中，滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === dialogueY`，並將 `portraitDialogueGap` 固定為 `0`。所有立繪套用同一個全局 `portraitScale: 1.2`；runtime 不得根據個別圖片的寬高或 alpha bbox 計算各自的縮放率。不得沿用 `portraitLeft`／`portraitRight`、`portraitBottomGap`、非零人物／對話框 gap、128px 寬度上限或 25% 遮擋上限，也不得建立個別例外。已遷移 scene 可直接採用此契約；其餘既有 floor 仍須完成 emitter／runtime／floor 遷移後才可宣稱已生效。
 
