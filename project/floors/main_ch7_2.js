@@ -370,6 +370,22 @@ main.floors.main_ch7_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-2結束前連續播放此首BGM】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "\t[書店店員]嗯…不知道呢—",
         {
             "type": "hideImage",
@@ -757,7 +773,10 @@ main.floors.main_ch7_2=
             "time": 0,
             "async": true
         },
-        "一段解釋過後",
+        {
+            "type": "comment",
+            "text": "【過場：一段時間過後】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -939,11 +958,6 @@ main.floors.main_ch7_2=
         "\t[東山]（手機）你人呢？",
         {
             "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
-            "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
@@ -955,6 +969,11 @@ main.floors.main_ch7_2=
             "async": true
         },
         "……………",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1191,6 +1210,22 @@ main.floors.main_ch7_2=
         {
             "type": "comment",
             "text": "【過場】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()】"
         },
         {
             "type": "hideImage",
@@ -1554,7 +1589,43 @@ main.floors.main_ch7_2=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "\t[蘭斯]打擾了你們有沒有看過一個—",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1642,6 +1713,19 @@ main.floors.main_ch7_2=
             "time": 0,
             "async": true
         },
+        "警察打開了門高聲提問",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -1694,6 +1778,22 @@ main.floors.main_ch7_2=
         {
             "type": "comment",
             "text": "【過場】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-2結束前連續播放此首BGM】"
         },
         {
             "type": "hideImage",
@@ -2794,17 +2894,6 @@ main.floors.main_ch7_2=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[梗平]放開那位女士！",
         {
             "type": "hideImage",
@@ -3013,7 +3102,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_phone_message.png",
             "loc": [
                 0,
                 0

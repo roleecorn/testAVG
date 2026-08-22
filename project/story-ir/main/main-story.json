@@ -13,11 +13,11 @@
       },
       {
         "path": "project/mainStory/CH3",
-        "sha256": "4b6945ea793a42c4f37d4ff39ab0b853b3042f787c7b3f3e7878898eeae00c04"
+        "sha256": "d15ab3aaa76243e788dd86a35259dae40a428fdedf6db809a4eb03adca31f7e6"
       },
       {
         "path": "project/mainStory/CH4",
-        "sha256": "1d88f2158fb2b92cf4df797f98afc3e60569d41a59fbca8dec612396b4ede2e7"
+        "sha256": "0ea24a3271a8f4595e02f588e88da0610740f52b7d13972fabefb526b4e9416d"
       },
       {
         "path": "project/mainStory/CH5",
@@ -29,7 +29,7 @@
       },
       {
         "path": "project/mainStory/CH7",
-        "sha256": "67cfd45333414f0258a3b8e92a432efeaeb76eb1044434f6251390d120137a5e"
+        "sha256": "f0d38b57175c34b710ba0535ef25d5c6c10c2bf8452abddd03972dbbf11f11fe"
       }
     ]
   },
@@ -25387,7 +25387,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_street.png",
+                  "image": "ms_bg_phone_message.png",
                   "loc": [
                     0,
                     0
@@ -36217,6 +36217,10 @@
           "text": "正當同樣的話題準備繼續輪迴下去時"
         },
         {
+          "kind": "comment",
+          "text": "TODO: 【BGM：鐵達尼號】"
+        },
+        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -41234,28 +41238,7 @@
         },
         {
           "kind": "narration",
-          "text": "再次睜開眼睛時，眼前是一名身高超過兩米的修女"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "narration",
-          "text": "修女的身後白髮的雜貨店老闆在與人通著電話"
+          "text": "再次睜開眼睛時，眼前是一名身高超過兩米的修女，修女的身後白髮的雜貨店老闆在與人通著電話"
         },
         {
           "kind": "image.hide",
@@ -41272,6 +41255,10 @@
         {
           "kind": "narration",
           "text": "在老闆與修女打了一個手勢後，修女走了過來幫梗平解開了繩子"
+        },
+        {
+          "kind": "comment",
+          "text": "TODO: 【下八句不使用立繪】"
         },
         {
           "kind": "image.hide",
@@ -41468,6 +41455,11 @@
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "這句話肯定也是修卡的陰謀"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -54456,6 +54448,22 @@
           "async": true
         },
         {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-1結束前連續播放此首BGM】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -54464,7 +54472,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "ms_bg_phone_message.png",
           "loc": [
             0,
             0
@@ -54862,6 +54870,55 @@
           "text": "(1張、2…不存在)"
         },
         {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "這不是連吃飯都成問題了嗎！？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -54904,9 +54961,14 @@
           "async": true
         },
         {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "這不是連吃飯都成問題了嗎！？我的錢包啊啊啊啊啊啊啊啊啊"
+          "text": "我的錢包啊啊啊啊啊啊啊啊啊"
         },
         {
           "kind": "layout.set",
@@ -54985,38 +55047,6 @@
         {
           "kind": "narration",
           "text": "東山在路中央仰天長嘯、路人紛紛走避"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 250
         },
         {
           "kind": "image.hide",
@@ -55722,7 +55752,7 @@
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "「嗯？我這是？」"
+          "text": "(嗯？我這是？)"
         },
         {
           "kind": "image.hide",
@@ -55841,6 +55871,22 @@
           "kind": "dialogue",
           "speaker": "前輩(旗袍)",
           "text": "歡迎光—"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()】"
         },
         {
           "kind": "layout.set",
@@ -56137,6 +56183,22 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-1結束前連續播放此首BGM】"
         },
         {
           "kind": "image.hide",
@@ -56923,6 +56985,22 @@
           "async": true
         },
         {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-2結束前連續播放此首BGM】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "書店店員",
           "text": "嗯…不知道呢—"
@@ -57401,8 +57479,8 @@
           "async": true
         },
         {
-          "kind": "narration",
-          "text": "一段解釋過後"
+          "kind": "comment",
+          "text": "【過場：一段時間過後】"
         },
         {
           "kind": "image.hide",
@@ -57618,11 +57696,6 @@
         },
         {
           "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
-          "kind": "image.hide",
           "code": 10,
           "time": 0,
           "async": true
@@ -57636,6 +57709,11 @@
         {
           "kind": "narration",
           "text": "……………"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -57939,6 +58017,22 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()】"
         },
         {
           "kind": "image.hide",
@@ -58386,9 +58480,46 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "蘭斯",
           "text": "打擾了你們有沒有看過一個—"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -58490,6 +58621,22 @@
           "async": true
         },
         {
+          "kind": "narration",
+          "text": "警察打開了門高聲提問"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "image.show",
           "role": "cg",
           "code": 30,
@@ -58546,6 +58693,22 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-2結束前連續播放此首BGM】"
         },
         {
           "kind": "image.hide",
@@ -59881,18 +60044,6 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "放開那位女士！"
@@ -60142,7 +60293,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "ms_bg_phone_message.png",
           "loc": [
             0,
             0
@@ -60687,9 +60838,62 @@
           "async": true
         },
         {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "東山",
           "text": "囊裡踏實之後，就算連夜畫圖都能神清氣爽！人果然不能窮忙"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -61065,9 +61269,46 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "東山",
           "text": "嗚哇這什麼邪教"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -61499,7 +61740,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
+          "image": "ms_ch1_phone_message_cg.png",
           "sloc": [
             0,
             65,
@@ -61526,11 +61767,6 @@
           "code": 11,
           "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "dialogue",
@@ -61649,7 +61885,7 @@
         {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "（手機）還有其他線索嗎？總不可能A進去吧？"
+          "text": "（手機）還有其他線索嗎？總不可能打進去吧？"
         },
         {
           "kind": "image.hide",
@@ -61701,6 +61937,11 @@
           "kind": "dialogue",
           "speaker": "東山",
           "text": "（手機）總之晚點先在ANIsister集合吧，記得帶傢伙"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -61777,7 +62018,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "檢察官",
+          "speaker": "色情刊物檢察官",
           "text": "你們果真藏著淫穢讀物嗎？"
         },
         {
@@ -61823,7 +62064,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "檢察官",
+          "speaker": "色情刊物檢察官",
           "text": "讓開！"
         },
         {
@@ -61931,7 +62172,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "檢察官",
+          "speaker": "色情刊物檢察官",
           "text": "還有同夥嗎？"
         },
         {
@@ -62015,6 +62256,22 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
         },
         {
           "kind": "image.hide",
@@ -62205,6 +62462,22 @@
           "async": true
         },
         {
+          "kind": "narration",
+          "text": "一段時間過後"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "image.show",
           "role": "cg",
           "code": 30,
@@ -62238,7 +62511,7 @@
         },
         {
           "kind": "narration",
-          "text": "梗平在眾人的目視之下搭著黑色高級轎車登場"
+          "text": "梗平在眾人的目視之下搭著長到靠北的黑色高級轎車登場"
         },
         {
           "kind": "image.hide",
@@ -62463,6 +62736,11 @@
         },
         {
           "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.hide",
           "code": 10,
           "time": 0,
           "async": true
@@ -62472,11 +62750,6 @@
           "code": 11,
           "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "dialogue",
@@ -63063,6 +63336,10 @@
           "text": "請幫我微波"
         },
         {
+          "kind": "comment",
+          "text": "TODO: 【下句店員使用月讀愛立繪】"
+        },
+        {
           "kind": "image.hide",
           "code": 10,
           "time": 0,
@@ -63076,7 +63353,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "月讀愛",
+          "speaker": "店員",
           "text": "要順便帶手啤酒嗎—"
         },
         {
@@ -63094,6 +63371,22 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【此段暫時不撥放BGM】"
         },
         {
           "kind": "image.hide",
@@ -63188,8 +63481,45 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "narration",
           "text": "東山指著在ANIsister前的眾人，邊解說邊跟路過的少女分享起了剛買的爆米花"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -63350,6 +63680,10 @@
           "kind": "dialogue",
           "speaker": "桶至學長",
           "text": "是嗎，這就是命運石之門的選擇嗎—"
+        },
+        {
+          "kind": "comment",
+          "text": "TODO: 【BGM：BGMBOOM】"
         },
         {
           "kind": "image.hide",
@@ -63540,6 +63874,22 @@
           "kind": "dialogue",
           "speaker": "惠惠",
           "text": "那總之明天晚上11點在鐵道旁的雜貨店後面會合，多找點人喔—"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
         },
         {
           "kind": "image.hide",
@@ -64124,6 +64474,22 @@
           "async": true
         },
         {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-4結束前連續播放此首BGM】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "narration",
           "text": "在兵長的幫助下，女咖心照不宣的成為了眾人的庇護所"
         },
@@ -64172,18 +64538,21 @@
           "async": true
         },
         {
-          "kind": "image.hide",
+          "kind": "image.show",
+          "role": "cg",
           "code": 30,
-          "time": 150
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_street.png",
-          "loc": [
+          "image": "ms_ch1_phone_message_cg.png",
+          "sloc": [
             0,
-            0
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
           ],
           "opacity": 1,
           "time": 250
@@ -64381,6 +64750,11 @@
           "kind": "dialogue",
           "speaker": "眾人",
           "text": "（手機）一定到"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -64735,8 +65109,45 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "narration",
-          "text": "東山指著倉庫旁一列相較於常態運輸，貨台數量顯得有點精省的列車說道"
+          "text": "東山指著倉庫旁一列相較於常態運輸，顯得有點可疑的列車說道"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -65024,8 +65435,24 @@
           "text": "…………………"
         },
         {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "comment",
-          "text": "TODO: 【過場：回憶】【回憶濾鏡？全畫面黑白？全畫面棕色？】"
+          "text": "【過場：回憶】"
+        },
+        {
+          "kind": "comment",
+          "text": "TODO: 【此場景為回憶某件事。濾鏡全畫面顯示模仿復古膠捲播放時的棕色調】"
         },
         {
           "kind": "image.hide",
@@ -65241,6 +65668,22 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【此段暫時不撥放BGM】"
         },
         {
           "kind": "image.hide",
@@ -65520,13 +65963,44 @@
           "async": true
         },
         {
-          "kind": "dialogue",
-          "speaker": "桶至學長",
-          "text": "現在開始將以機械的形式運行"
+          "kind": "narration",
+          "text": "……………………"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "喀噠—喀噠—喀噠— "
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "列車前方，腳步聲越來越清晰"
         },
         {
           "kind": "comment",
-          "text": "TODO: 【BGM：ゴーゴー・キカイダー REBOOT2014】"
+          "text": "TODO: 【BGM：BGMREBOOT2014】"
         },
         {
           "kind": "image.hide",
@@ -65558,9 +66032,84 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "comment",
+          "text": "TODO: 【下三句話不使用立繪】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "Switch ON！ 1 ！ 2 ！ 3 ！ 電流火花が身体を走る〜♪"
+          "text": "現在開始將，以機械的形式運行"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "桶至學長",
+          "text": "Switch ON！ 1 ！ 2 ！ 3 ！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "桶至學長",
+          "text": "電流般的火花在體內奔竄〜♪"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -65692,38 +66241,6 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "準備按下變身按鈕的桶至學長，在最後的最後"
         },
@@ -65745,8 +66262,19 @@
         },
         {
           "kind": "image.hide",
-          "code": 30,
-          "time": 150
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM停止】"
         },
         {
           "kind": "image.hide",
@@ -65762,7 +66290,7 @@
         },
         {
           "kind": "narration",
-          "text": "接著與笑容滿面的惠惠四目交接"
+          "text": "接著與笑容滿面的惠惠四目相接"
         },
         {
           "kind": "image.hide",
@@ -65879,6 +66407,55 @@
           "time": 150
         },
         {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "桶至學長",
+          "text": "……………"
+        },
+        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -65957,6 +66534,11 @@
         },
         {
           "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.hide",
           "code": 10,
           "time": 0,
           "async": true
@@ -65986,9 +66568,6 @@
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "bgm.pause"
         },
         {
           "kind": "image.hide",
@@ -66026,6 +66605,10 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "comment",
+          "text": "TODO: 【BGM：BGMTANK】"
         },
         {
           "kind": "image.hide",
@@ -66233,7 +66816,7 @@
         {
           "kind": "dialogue",
           "speaker": "表妹",
-          "text": "發現了啥？T34耶，跟老爹在山裡看過"
+          "text": "發現了啥？IS2耶，跟老爹在山裡看過"
         },
         {
           "kind": "image.hide",
@@ -66576,6 +67159,22 @@
           ],
           "opacity": 1,
           "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【此段暫時不撥放BGM】"
         },
         {
           "kind": "image.hide",
@@ -67069,6 +67668,10 @@
           "text": "等等我們是—"
         },
         {
+          "kind": "comment",
+          "text": "TODO: 【BGM：BGMTANK】"
+        },
+        {
           "kind": "image.hide",
           "code": 10,
           "time": 0,
@@ -67180,8 +67783,142 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "narration",
-          "text": "對，各位沒跳過劇情的觀眾老爺都知道的那台戰車撞進了店裡"
+          "text": "對，各位沒跳過劇情的觀眾老爺都知道的那台戰車，撞進了店裡"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "蘭斯",
+          "text": "靠腰"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "各位貴安，真是個美好的夜晚"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "店長",
+          "text": "你們到底想幹嘛啊！這裡我來就好快滾行不行！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "惠惠",
+          "text": "上一個這麼說的墳頭的草已經比大鱷魚高了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 11,
+          "image": "suou_sad_portrait.png",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "表妹",
+          "text": "肥宅被那個人聚集在一起了耶"
         },
         {
           "kind": "image.hide",
@@ -67230,7 +67967,7 @@
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "各位貴安，真是個美好的夜晚"
+          "text": "你們跟我想的一樣嗎？"
         },
         {
           "kind": "image.hide",
@@ -67250,71 +67987,8 @@
           "async": true
         },
         {
-          "kind": "dialogue",
-          "speaker": "店長",
-          "text": "你們到底想幹嘛啊！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 11,
-          "image": "suou_sad_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "表妹",
-          "text": "肥宅被那個人聚集在一起了耶"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "惠惠",
-          "text": "那你們跟我想的一樣嗎？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "narration",
-          "text": "車上的三人相視而笑"
+          "text": "眾人相視而笑"
         },
         {
           "kind": "image.hide",
@@ -67384,6 +68058,10 @@
           "text": "你們她媽畜牲嗎嗎嗎嗎啊啊啊！？"
         },
         {
+          "kind": "comment",
+          "text": "TODO: 【BGM：BGMMeikyoshisui】"
+        },
+        {
           "kind": "image.hide",
           "code": 10,
           "time": 0,
@@ -67399,6 +68077,38 @@
           "kind": "dialogue",
           "speaker": "店長",
           "text": "我勸—你們—不要—！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
         },
         {
           "kind": "layout.set",
@@ -67479,35 +68189,8 @@
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 250
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -67524,11 +68207,6 @@
         {
           "kind": "narration",
           "text": "為了保護肥宅們，店長硬是徒手接住了砲彈然後丟了回去"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "image.hide",
@@ -67858,6 +68536,38 @@
           "text": "就是這傢伙嗎！把妹妹一個人丟在家裡害得我不得不帶小孩好幾天的—"
         },
         {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -67936,6 +68646,11 @@
         },
         {
           "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.hide",
           "code": 10,
           "time": 0,
           "async": true
@@ -67949,6 +68664,22 @@
         {
           "kind": "narration",
           "text": "店長回過頭結實的往IB哥哥臉上來了一拳，然後如同丟垃圾般把人拋了出來"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-4結束前連續播放此首BGM】"
         },
         {
           "kind": "image.hide",
@@ -68043,38 +68774,9 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 11,
-          "image": "suou_sad_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "表妹",
-          "text": "舊的坦克該怎麼辦呢，就應該放轉......"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "閉嘴，放著不管！"
+          "text": "放著不管！"
         },
         {
           "kind": "image.hide",
@@ -68360,7 +69062,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "ms_bg_phone_message.png",
           "loc": [
             0,
             0
@@ -68990,6 +69692,22 @@
           "async": true
         },
         {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "narration",
           "text": "走上街的東山，發現主幹道上站滿了警察"
         },
@@ -69023,8 +69741,8 @@
           "async": true
         },
         {
-          "kind": "narration",
-          "text": "一段時間過後"
+          "kind": "comment",
+          "text": "【過場：一段時間過後】"
         },
         {
           "kind": "image.hide",
@@ -69059,8 +69777,36 @@
           "text": "隊伍前方為首的，是一位騎著白馬的男人"
         },
         {
-          "kind": "comment",
-          "text": "TODO: 【下一句？？？使用小將立繪】"
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
         },
         {
           "kind": "image.hide",
@@ -69078,6 +69824,11 @@
           "kind": "dialogue",
           "speaker": "？？？",
           "text": "…………………"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -69461,6 +70212,42 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "comment",
+          "text": "TODO: 【下四句不使用立繪】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "東山",
           "text": "(等等這大凶我是不是在哪裡看過…)"
@@ -69515,6 +70302,11 @@
           "kind": "dialogue",
           "speaker": "東山",
           "text": "(不對錯的可不是我，是他們派的人不靠普，一定是這樣！但是放著也不行)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -69883,11 +70675,6 @@
           "async": true
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "dialogue",
           "speaker": "蘭斯",
           "text": "4萬，為了幫梗平帶小孩產能就只有那麼多了"
@@ -69962,52 +70749,20 @@
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
           "code": 30,
           "time": 150
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -70075,7 +70830,7 @@
         {
           "kind": "dialogue",
           "speaker": "眾人",
-          "text": "………………"
+          "text": "（手機）………………"
         },
         {
           "kind": "image.hide",
@@ -70139,46 +70894,14 @@
           "async": true
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "dialogue",
           "speaker": "眾人",
           "text": "（手機）(絕對不能輸給這個打小鋼珠的！)"
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 250
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -71449,7 +72172,7 @@
         {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "噫—5號！不要啊"
+          "text": "噫—5號？！不要啊！！"
         },
         {
           "kind": "image.hide",
@@ -71465,7 +72188,7 @@
         },
         {
           "kind": "narration",
-          "text": "小將擦了擦還留有些許鐵鏽味的嘴角拿出了2號的籤，同時所有人躲到了桌子後面"
+          "text": "小將擦了擦還留有些許鐵鏽味的嘴角拿出了2號籤的同時，所有人躲到了桌子後面"
         },
         {
           "kind": "image.hide",
@@ -71848,9 +72571,46 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "眾人",
-          "text": "『『『胡了』』』一砲三響！"
+          "text": "（手機）『『『胡了』』』一砲三響！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -71866,7 +72626,7 @@
         },
         {
           "kind": "narration",
-          "text": "查覺到臉色越來越僵硬的小將與這群畜生根本是串通好的克莉絲連忙招呼"
+          "text": "查覺到小將越來越僵硬的臉色與這群畜生根本是串通好的克莉絲連忙招呼"
         },
         {
           "kind": "image.hide",
@@ -71991,6 +72751,22 @@
           "async": true
         },
         {
+          "kind": "comment",
+          "text": "【此段暫時不撥放BGM】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "保鑣",
           "text": "不然就COC吧？沒有聽過的東西呢—"
@@ -72094,6 +72870,10 @@
           "kind": "dialogue",
           "speaker": "小將",
           "text": "……………"
+        },
+        {
+          "kind": "comment",
+          "text": "TODO: 【BGM：BGMKyoheiTranslation】"
         },
         {
           "kind": "layout.set",
@@ -72561,9 +73341,63 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "小將",
+          "text": "變—身—！！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "桶至學長(女僕)",
           "text": "尊死w"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -72579,7 +73413,7 @@
         },
         {
           "kind": "narration",
-          "text": "就在腰帶彈出外裝甲特效，將軍即將變身之時，一道身影從內場竄了出來"
+          "text": "就在裝甲覆蓋全身，將軍即將完成變身之時，一道身影從內場竄了出來"
         },
         {
           "kind": "image.hide",
@@ -72646,6 +73480,22 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【此段暫時不撥放BGM】"
         },
         {
           "kind": "image.hide",
@@ -72829,7 +73679,7 @@
         {
           "kind": "dialogue",
           "speaker": "前輩",
-          "text": "是有啦…"
+          "text": "有的說，但這裡推薦先看看信封…"
         },
         {
           "kind": "image.hide",
@@ -73036,6 +73886,22 @@
           "async": true
         },
         {
+          "kind": "comment",
+          "text": "【過場：一段時間過後】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "narration",
           "text": "眾人抵禦著肥宅的暴動一籌莫展，在即將破曉之際"
         },
@@ -73072,6 +73938,22 @@
           "kind": "dialogue",
           "speaker": "東山",
           "text": "這種狀況？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()】"
         },
         {
           "kind": "image.hide",
@@ -73295,8 +74177,77 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "narration",
           "text": "被堵住的門隨即被轟開"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
         },
         {
           "kind": "image.hide",
@@ -73391,6 +74342,11 @@
             "letterSpacing": 0,
             "animateTime": 120
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -73503,6 +74459,75 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "正當眾人一籌莫展之際，梗平推開了女咖的大門"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -73809,6 +74834,11 @@
         },
         {
           "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.hide",
           "code": 10,
           "time": 0,
           "async": true
@@ -73834,11 +74864,6 @@
           "code": 11,
           "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "dialogue",
@@ -73952,6 +74977,22 @@
           ],
           "opacity": 1,
           "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【此段暫時不撥放BGM】"
         },
         {
           "kind": "image.hide",
@@ -74097,6 +75138,35 @@
           "async": true
         },
         {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_bookstore_a_interior.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "narration",
           "text": "東山與蘭斯跟著店長，來到了一個寬廣的空間"
         },
@@ -74115,6 +75185,10 @@
         {
           "kind": "narration",
           "text": "場內擠滿了眾多肥宅，細看甚至能在場地上方發現瀰漫著的裊裊白煙"
+        },
+        {
+          "kind": "comment",
+          "text": "TODO: 【BGM：BGMBOINBOIN】"
         },
         {
           "kind": "image.hide",
@@ -74699,11 +75773,6 @@
         },
         {
           "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
-          "kind": "image.hide",
           "code": 10,
           "time": 0,
           "async": true
@@ -74752,6 +75821,11 @@
         },
         {
           "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.hide",
           "code": 10,
           "time": 0,
           "async": true
@@ -74794,6 +75868,22 @@
           ],
           "opacity": 1,
           "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
         },
         {
           "kind": "image.hide",
@@ -74860,7 +75950,7 @@
         {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "接下來總不會突然跳出什麼『大鱷魚跨夢斬宿儺』還是『護廷十三隊決戰銀河外神帝國』吧笑"
+          "text": "接下來總不會突然跳出什麼『大鱷魚跨夢斬勇者』還是『閃電十三隊決戰銀河外神帝國』吧笑"
         },
         {
           "kind": "image.hide",
@@ -74879,8 +75969,100 @@
           "text": "簡訊提示聲"
         },
         {
-          "kind": "comment",
-          "text": "TODO: 【公告文用斷句總覺得很怪，整張公告圖？再想想】"
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "Comike臨時通知—非常抱歉的通知各與會社團"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "原定於翌日舉辦的ComicMarket114514，因台場將臨時舉行戶次菜摘殿下的告別演唱會"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "晴海橋、彩虹橋與有明、東雲JCT等聯絡道路將實施管制"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "電車方面，除起站新橋、豐洲與台場外將全數暫停停靠"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "受交通因素所致，預計此次Comike將大幅受到影響。管理方將全額退還報名費用"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "針對此事殿下方也另行提供補償，預計與退款一同入帳"
         },
         {
           "kind": "image.hide",
@@ -74897,102 +76079,6 @@
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": ""
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "narration",
-          "text": "Comike臨時通知—"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "narration",
-          "text": "非常抱歉的通知各與會社團，原定於翌日舉辦的ComicMarket114514，因台場將臨時舉行戶次菜摘殿下的告別演唱會。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "narration",
-          "text": "晴海橋、彩虹橋與有明、東雲JCT等聯絡道路將實施管制。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "narration",
-          "text": "電車方面，除起站新橋、豐洲與台場外將全數暫停停靠。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "narration",
-          "text": "受交通因素所致，預計此次Comike將大幅受到影響。管理方將全額退還報名費用。針對此事殿下方也另行提供補償，預計與退款一同入帳。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 11,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "narration",
           "text": "一般參加者請於一個月內攜帶門票或場刊於各地公告地點辦理………"
         },
         {
@@ -75299,6 +76385,42 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "comment",
+          "text": "TODO: 【下四句不使用立繪】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "東山",
           "text": "(如果這件事情真的發生…)"
@@ -75415,6 +76537,11 @@
           "text": "(不行—快想想東山！有沒有什麼突破口—)"
         },
         {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
           "kind": "comment",
           "text": "TODO: 【BGM：關羽之歌】"
         },
@@ -75521,6 +76648,22 @@
           "kind": "dialogue",
           "speaker": "東山",
           "text": "(—對啊！還有這新弱智在！這把穩了)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
         },
         {
           "kind": "image.hide",
@@ -77126,6 +78269,38 @@
           "async": true
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "ms_ch1_phone_message_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "東山",
           "text": "（手機）貝琪親～梗平表態了喔！跟你結婚這事！"
@@ -77180,6 +78355,11 @@
           "kind": "dialogue",
           "speaker": "東山",
           "text": "（手機）這種時候就該一鼓作氣推他一把！好事不宜遲！婚禮就在今天！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "image.hide",
@@ -77920,8 +79100,107 @@
           "text": "【過場】"
         },
         {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "comment",
-          "text": "TODO: 【BGM：還未定 預計來個有管風琴之類的東西】"
+          "text": "【此段暫時不撥放BGM】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "太感動了孩子終於嫁出去了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "克莉絲",
+          "text": "………你損人的人設完全沒打算藏了是吧"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM預定地：()還未定 預計來個有管風琴之類的東西】"
         },
         {
           "kind": "image.hide",
@@ -78123,6 +79402,10 @@
           "text": "我會盡全力讓妳幸福的"
         },
         {
+          "kind": "comment",
+          "text": "TODO: 【白色慢速過場】"
+        },
+        {
           "kind": "image.hide",
           "code": 10,
           "time": 0,
@@ -78135,21 +79418,18 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_becky_smile_tears.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78198,8 +79478,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "貝琪(婚紗)",
-          "text": "好的"
+          "speaker": "貝琪",
+          "text": "好的—"
         },
         {
           "kind": "layout.set",
@@ -78232,13 +79512,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
+          "kind": "comment",
+          "text": "TODO: 【白色慢速過場】"
         },
         {
           "kind": "comment",
-          "text": "TODO: 【白色慢速過場】"
+          "text": "TODO: 【BGM：BGMED2】"
         },
         {
           "kind": "image.hide",
@@ -78430,8 +79709,20 @@
           "text": "今年的Comike，也一如既往的和平"
         },
         {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "comment",
-          "text": "TODO: 【酷炫的結尾動畫 製作名單】"
+          "text": "【結尾動畫 製作名單 還未製作先忽略下方至END的部分】"
         },
         {
           "kind": "image.hide",
@@ -78446,21 +79737,34 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "comment",
+          "text": "【背景幻燈片】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 10,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 11,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_higashiyama_booth.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78478,21 +79782,18 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_keng_becky_transform.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78510,21 +79811,18 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_pachinko_group.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78542,21 +79840,18 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_lance_unknown_corner.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78574,21 +79869,18 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_training_group.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78606,21 +79898,18 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_dragon_boat.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78638,21 +79927,18 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_tbd.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78670,21 +79956,18 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_tbd.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78702,21 +79985,18 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_tbd.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78734,21 +80014,18 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "image.hide",
           "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_fruit_box_sunrise.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -78766,24 +80043,8 @@
           "async": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 250
+          "kind": "comment",
+          "text": "【過場】"
         },
         {
           "kind": "image.hide",
@@ -78861,8 +80122,24 @@
           "async": true
         },
         {
-          "kind": "narration",
-          "text": "拉遠—月球表面"
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "scene_mapo_cg.png",
+          "sloc": [
+            0,
+            65,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
         },
         {
           "kind": "image.hide",
@@ -78875,11 +80152,16 @@
           "code": 11,
           "time": 0,
           "async": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "這裡是哪裡啦！？(次元震到哪了之類的)(還是划龍舟之類的?)(沒有理由就回去擺攤)"
+          "text": "這裡是哪裡啦！？"
         },
         {
           "kind": "image.hide",
@@ -78894,7 +80176,7 @@
           "async": true
         },
         {
-          "kind": "comment",
+          "kind": "narration",
           "text": "———END———"
         },
         {

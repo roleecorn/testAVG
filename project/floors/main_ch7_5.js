@@ -370,6 +370,22 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "走上街的東山，發現主幹道上站滿了警察",
         {
             "type": "hideImage",
@@ -396,7 +412,10 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "一段時間過後",
+        {
+            "type": "comment",
+            "text": "【過場：一段時間過後】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -424,8 +443,35 @@ main.floors.main_ch7_5=
         },
         "隊伍前方為首的，是一位騎著白馬的男人",
         {
-            "type": "comment",
-            "text": "TODO: 【下一句？？？使用小將立繪】"
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
         },
         {
             "type": "hideImage",
@@ -440,6 +486,11 @@ main.floors.main_ch7_5=
             "async": true
         },
         "\t[？？？]…………………",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -753,6 +804,41 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "comment",
+            "text": "TODO: 【下四句不使用立繪】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "\t[東山](等等這大凶我是不是在哪裡看過…)",
         {
             "type": "hideImage",
@@ -793,6 +879,11 @@ main.floors.main_ch7_5=
             "async": true
         },
         "\t[東山](不對錯的可不是我，是他們派的人不靠普，一定是這樣！但是放著也不行)",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1083,11 +1174,6 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         "\t[蘭斯]4萬，為了幫梗平帶小孩產能就只有那麼多了",
         {
             "type": "hideImage",
@@ -1143,51 +1229,20 @@ main.floors.main_ch7_5=
         "\t[表妹]30萬？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 30,
             "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
         },
         "\t[東山]………？",
         {
@@ -1239,7 +1294,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "\t[眾人]………………",
+        "\t[眾人]（手機）………………",
         {
             "type": "hideImage",
             "code": 10,
@@ -1296,42 +1351,11 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
+        "\t[眾人]（手機）(絕對不能輸給這個打小鋼珠的！)",
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
-        },
-        "\t[眾人]（手機）(絕對不能輸給這個打小鋼珠的！)",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
         },
         {
             "type": "hideImage",
@@ -2408,7 +2432,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "\t[克莉絲]噫—5號！不要啊",
+        "\t[克莉絲]噫—5號？！不要啊！！",
         {
             "type": "hideImage",
             "code": 10,
@@ -2421,7 +2445,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "小將擦了擦還留有些許鐵鏽味的嘴角拿出了2號的籤，同時所有人躲到了桌子後面",
+        "小將擦了擦還留有些許鐵鏽味的嘴角拿出了2號籤的同時，所有人躲到了桌子後面",
         {
             "type": "hideImage",
             "code": 10,
@@ -2731,7 +2755,25 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "\t[眾人]『『『胡了』』』一砲三響！",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -2744,7 +2786,25 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "查覺到臉色越來越僵硬的小將與這群畜生根本是串通好的克莉絲連忙招呼",
+        "\t[眾人]（手機）『『『胡了』』』一砲三響！",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "查覺到小將越來越僵硬的臉色與這群畜生根本是串通好的克莉絲連忙招呼",
         {
             "type": "hideImage",
             "code": 10,
@@ -2855,6 +2915,22 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
+        {
+            "type": "comment",
+            "text": "【此段暫時不撥放BGM】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "\t[保鑣]不然就COC吧？沒有聽過的東西呢—",
         {
             "type": "hideImage",
@@ -2934,6 +3010,10 @@ main.floors.main_ch7_5=
             "async": true
         },
         "\t[小將]……………",
+        {
+            "type": "comment",
+            "text": "TODO: 【BGM：BGMKyoheiTranslation】"
+        },
         {
             "type": "setText",
             "avg": true,
@@ -3328,7 +3408,25 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "\t[桶至學長(女僕)]尊死w",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -3341,7 +3439,38 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "就在腰帶彈出外裝甲特效，將軍即將變身之時，一道身影從內場竄了出來",
+        "\t[小將]變—身—！！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[桶至學長(女僕)]尊死w",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "就在裝甲覆蓋全身，將軍即將完成變身之時，一道身影從內場竄了出來",
         {
             "type": "hideImage",
             "code": 10,
@@ -3396,6 +3525,22 @@ main.floors.main_ch7_5=
         {
             "type": "comment",
             "text": "【過場】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【此段暫時不撥放BGM】"
         },
         {
             "type": "hideImage",
@@ -3547,7 +3692,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "\t[前輩]是有啦…",
+        "\t[前輩]有的說，但這裡推薦先看看信封…",
         {
             "type": "hideImage",
             "code": 10,
@@ -3712,6 +3857,22 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
+        {
+            "type": "comment",
+            "text": "【過場：一段時間過後】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "眾人抵禦著肥宅的暴動一籌莫展，在即將破曉之際",
         {
             "type": "hideImage",
@@ -3739,6 +3900,22 @@ main.floors.main_ch7_5=
             "async": true
         },
         "\t[東山]這種狀況？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -3924,7 +4101,74 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "被堵住的門隨即被轟開",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -4006,6 +4250,11 @@ main.floors.main_ch7_5=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
         },
         {
             "type": "hideImage",
@@ -4098,6 +4347,71 @@ main.floors.main_ch7_5=
         {
             "type": "comment",
             "text": "【過場】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "正當眾人一籌莫展之際，梗平推開了女咖的大門",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
         },
         {
             "type": "hideImage",
@@ -4347,6 +4661,11 @@ main.floors.main_ch7_5=
         "見證奇蹟的時刻到了，肥宅們如同退潮一般自動讓開了一條路",
         {
             "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
@@ -4369,11 +4688,6 @@ main.floors.main_ch7_5=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         "\t[東山]小白臉",
         {
@@ -4469,6 +4783,22 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【此段暫時不撥放BGM】"
         },
         {
             "type": "hideImage",
@@ -4584,6 +4914,34 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_bookstore_a_interior.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "東山與蘭斯跟著店長，來到了一個寬廣的空間",
         {
             "type": "hideImage",
@@ -4598,6 +4956,10 @@ main.floors.main_ch7_5=
             "async": true
         },
         "場內擠滿了眾多肥宅，細看甚至能在場地上方發現瀰漫著的裊裊白煙",
+        {
+            "type": "comment",
+            "text": "TODO: 【BGM：BGMBOINBOIN】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -5074,11 +5436,6 @@ main.floors.main_ch7_5=
         "下個瞬間，歡呼著歐派的肥宅們朝著舞台湧了上來",
         {
             "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
-            "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
@@ -5116,6 +5473,11 @@ main.floors.main_ch7_5=
             "async": true
         },
         "教主持續地演講並不是為了洗腦肥宅，而是封印了肥宅們從失落轉向暴怒的，最後掙扎…",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -5172,6 +5534,22 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "在店長與教主的努力宣導下，街上的肥宅們逐漸回復正常",
         {
             "type": "hideImage",
@@ -5211,7 +5589,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "\t[桶至學長]接下來總不會突然跳出什麼『大鱷魚跨夢斬宿儺』還是『護廷十三隊決戰銀河外神帝國』吧笑",
+        "\t[桶至學長]接下來總不會突然跳出什麼『大鱷魚跨夢斬勇者』還是『閃電十三隊決戰銀河外神帝國』吧笑",
         {
             "type": "hideImage",
             "code": 10,
@@ -5226,9 +5604,18 @@ main.floors.main_ch7_5=
         },
         "簡訊提示聲",
         {
-            "type": "comment",
-            "text": "TODO: 【公告文用斷句總覺得很怪，整張公告圖？再想想】"
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
         },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "Comike臨時通知—非常抱歉的通知各與會社團",
         {
             "type": "hideImage",
             "code": 10,
@@ -5241,7 +5628,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "\t[東山]",
+        "原定於翌日舉辦的ComicMarket114514，因台場將臨時舉行戶次菜摘殿下的告別演唱會",
         {
             "type": "hideImage",
             "code": 10,
@@ -5254,7 +5641,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "Comike臨時通知—",
+        "晴海橋、彩虹橋與有明、東雲JCT等聯絡道路將實施管制",
         {
             "type": "hideImage",
             "code": 10,
@@ -5267,7 +5654,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "非常抱歉的通知各與會社團，原定於翌日舉辦的ComicMarket114514，因台場將臨時舉行戶次菜摘殿下的告別演唱會。",
+        "電車方面，除起站新橋、豐洲與台場外將全數暫停停靠",
         {
             "type": "hideImage",
             "code": 10,
@@ -5280,7 +5667,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "晴海橋、彩虹橋與有明、東雲JCT等聯絡道路將實施管制。",
+        "受交通因素所致，預計此次Comike將大幅受到影響。管理方將全額退還報名費用",
         {
             "type": "hideImage",
             "code": 10,
@@ -5293,7 +5680,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "電車方面，除起站新橋、豐洲與台場外將全數暫停停靠。",
+        "針對此事殿下方也另行提供補償，預計與退款一同入帳",
         {
             "type": "hideImage",
             "code": 10,
@@ -5306,20 +5693,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "受交通因素所致，預計此次Comike將大幅受到影響。管理方將全額退還報名費用。針對此事殿下方也另行提供補償，預計與退款一同入帳。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "一般參加者請於一個月內攜帶門票或場刊於各地公告地點辦理………",
+        "\t[東山]一般參加者請於一個月內攜帶門票或場刊於各地公告地點辦理………",
         {
             "type": "hideImage",
             "code": 10,
@@ -5581,6 +5955,41 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "comment",
+            "text": "TODO: 【下四句不使用立繪】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "\t[東山](如果這件事情真的發生…)",
         {
             "type": "hideImage",
@@ -5678,6 +6087,11 @@ main.floors.main_ch7_5=
         },
         "\t[東山](不行—快想想東山！有沒有什麼突破口—)",
         {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
             "type": "comment",
             "text": "TODO: 【BGM：關羽之歌】"
         },
@@ -5766,6 +6180,22 @@ main.floors.main_ch7_5=
             "async": true
         },
         "\t[東山](—對啊！還有這新弱智在！這把穩了)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -7077,6 +7507,37 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "ms_ch1_phone_message_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "\t[東山]（手機）貝琪親～梗平表態了喔！跟你結婚這事！",
         {
             "type": "hideImage",
@@ -7117,6 +7578,11 @@ main.floors.main_ch7_5=
             "async": true
         },
         "\t[東山]（手機）這種時候就該一鼓作氣推他一把！好事不宜遲！婚禮就在今天！",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -7734,8 +8200,98 @@ main.floors.main_ch7_5=
             "text": "【過場】"
         },
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "comment",
-            "text": "TODO: 【BGM：還未定 預計來個有管風琴之類的東西】"
+            "text": "【此段暫時不撥放BGM】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]太感動了孩子終於嫁出去了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[克莉絲]………你損人的人設完全沒打算藏了是吧",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()還未定 預計來個有管風琴之類的東西】"
         },
         {
             "type": "hideImage",
@@ -7894,6 +8450,10 @@ main.floors.main_ch7_5=
         },
         "\t[梗平(西裝)]我會盡全力讓妳幸福的",
         {
+            "type": "comment",
+            "text": "TODO: 【白色慢速過場】"
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -7906,20 +8466,17 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_becky_smile_tears.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -7964,7 +8521,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "\t[貝琪(婚紗)]好的",
+        "\t[貝琪]好的—",
         {
             "type": "setText",
             "avg": true,
@@ -7994,13 +8551,12 @@ main.floors.main_ch7_5=
             "animateTime": 120
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
+            "type": "comment",
+            "text": "TODO: 【白色慢速過場】"
         },
         {
             "type": "comment",
-            "text": "TODO: 【白色慢速過場】"
+            "text": "TODO: 【BGM：BGMED2】"
         },
         {
             "type": "hideImage",
@@ -8159,8 +8715,20 @@ main.floors.main_ch7_5=
         },
         "今年的Comike，也一如既往的和平",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "comment",
-            "text": "TODO: 【酷炫的結尾動畫 製作名單】"
+            "text": "【結尾動畫 製作名單 還未製作先忽略下方至END的部分】"
         },
         {
             "type": "hideImage",
@@ -8175,20 +8743,33 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "comment",
+            "text": "【背景幻燈片】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_higashiyama_booth.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -8206,20 +8787,17 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_keng_becky_transform.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -8237,20 +8815,17 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_pachinko_group.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -8268,20 +8843,17 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_lance_unknown_corner.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -8299,20 +8871,17 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_training_group.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -8330,20 +8899,17 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_dragon_boat.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -8361,20 +8927,17 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_tbd.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -8392,20 +8955,17 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_tbd.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -8423,20 +8983,17 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_tbd.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -8454,20 +9011,17 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
+            "time": 150
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_fruit_box_sunrise.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -8485,23 +9039,8 @@ main.floors.main_ch7_5=
             "async": true
         },
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
+            "type": "comment",
+            "text": "【過場】"
         },
         {
             "type": "hideImage",
@@ -8569,7 +9108,25 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "拉遠—月球表面",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -8582,7 +9139,12 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        "\t[克莉絲]這裡是哪裡啦！？(次元震到哪了之類的)(還是划龍舟之類的?)(沒有理由就回去擺攤)",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        "\t[克莉絲]這裡是哪裡啦！？",
         {
             "type": "hideImage",
             "code": 10,
@@ -8595,10 +9157,7 @@ main.floors.main_ch7_5=
             "time": 0,
             "async": true
         },
-        {
-            "type": "comment",
-            "text": "———END———"
-        },
+        "———END———",
         {
             "type": "hideImage",
             "code": 10,

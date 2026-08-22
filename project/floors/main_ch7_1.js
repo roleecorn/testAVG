@@ -343,6 +343,22 @@ main.floors.main_ch7_1=
             "async": true
         },
         {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-1結束前連續播放此首BGM】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "hideImage",
             "code": 30,
             "time": 150
@@ -350,7 +366,7 @@ main.floors.main_ch7_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_phone_message.png",
             "loc": [
                 0,
                 0
@@ -672,6 +688,50 @@ main.floors.main_ch7_1=
         },
         "\t[東山](1張、2…不存在)",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]這不是連吃飯都成問題了嗎！？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -711,7 +771,12 @@ main.floors.main_ch7_1=
             "time": 0,
             "async": true
         },
-        "\t[東山]這不是連吃飯都成問題了嗎！？我的錢包啊啊啊啊啊啊啊啊啊",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        "\t[東山]我的錢包啊啊啊啊啊啊啊啊啊",
         {
             "type": "setText",
             "avg": true,
@@ -784,37 +849,6 @@ main.floors.main_ch7_1=
             "async": true
         },
         "東山在路中央仰天長嘯、路人紛紛走避",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
-        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1403,7 +1437,7 @@ main.floors.main_ch7_1=
             "time": 0,
             "async": true
         },
-        "\t[東山]「嗯？我這是？」",
+        "\t[東山](嗯？我這是？)",
         {
             "type": "hideImage",
             "code": 10,
@@ -1495,6 +1529,22 @@ main.floors.main_ch7_1=
             "async": true
         },
         "\t[前輩(旗袍)]歡迎光—",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()】"
+        },
         {
             "type": "setText",
             "avg": true,
@@ -1756,6 +1806,22 @@ main.floors.main_ch7_1=
         {
             "type": "comment",
             "text": "【過場】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-1結束前連續播放此首BGM】"
         },
         {
             "type": "hideImage",

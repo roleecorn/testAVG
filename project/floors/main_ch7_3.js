@@ -370,7 +370,59 @@ main.floors.main_ch7_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "\t[東山]囊裡踏實之後，就算連夜畫圖都能神清氣爽！人果然不能窮忙",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -674,7 +726,43 @@ main.floors.main_ch7_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "\t[東山]嗚哇這什麼邪教",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1019,7 +1107,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
+            "image": "ms_ch1_phone_message_cg.png",
             "sloc": [
                 0,
                 65,
@@ -1046,11 +1134,6 @@ main.floors.main_ch7_3=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         "\t[東山]（手機）路上的肥宅看起來像神經病，大概與ANIsister有關",
         {
@@ -1141,7 +1224,7 @@ main.floors.main_ch7_3=
             "time": 0,
             "async": true
         },
-        "\t[克莉絲]（手機）還有其他線索嗎？總不可能A進去吧？",
+        "\t[克莉絲]（手機）還有其他線索嗎？總不可能打進去吧？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1181,6 +1264,11 @@ main.floors.main_ch7_3=
             "async": true
         },
         "\t[東山]（手機）總之晚點先在ANIsister集合吧，記得帶傢伙",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1250,7 +1338,7 @@ main.floors.main_ch7_3=
             "time": 0,
             "async": true
         },
-        "\t[檢察官]你們果真藏著淫穢讀物嗎？",
+        "\t[色情刊物檢察官]你們果真藏著淫穢讀物嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1287,7 +1375,7 @@ main.floors.main_ch7_3=
             "time": 0,
             "async": true
         },
-        "\t[檢察官]讓開！",
+        "\t[色情刊物檢察官]讓開！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1374,7 +1462,7 @@ main.floors.main_ch7_3=
             "time": 0,
             "async": true
         },
-        "\t[檢察官]還有同夥嗎？",
+        "\t[色情刊物檢察官]還有同夥嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -1442,6 +1530,22 @@ main.floors.main_ch7_3=
         {
             "type": "comment",
             "text": "【過場】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
         },
         {
             "type": "hideImage",
@@ -1598,6 +1702,19 @@ main.floors.main_ch7_3=
             "time": 0,
             "async": true
         },
+        "一段時間過後",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -1629,7 +1746,7 @@ main.floors.main_ch7_3=
             "time": 0,
             "async": true
         },
-        "梗平在眾人的目視之下搭著黑色高級轎車登場",
+        "梗平在眾人的目視之下搭著長到靠北的黑色高級轎車登場",
         {
             "type": "hideImage",
             "code": 30,
@@ -1816,6 +1933,11 @@ main.floors.main_ch7_3=
         },
         {
             "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
@@ -1825,11 +1947,6 @@ main.floors.main_ch7_3=
             "code": 11,
             "time": 0,
             "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         "\t[桶至學長]喔？這不是傑士塔威嗎？真還原啊",
         {
@@ -2326,6 +2443,10 @@ main.floors.main_ch7_3=
         },
         "\t[東山]請幫我微波",
         {
+            "type": "comment",
+            "text": "TODO: 【下句店員使用月讀愛立繪】"
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -2337,7 +2458,7 @@ main.floors.main_ch7_3=
             "time": 0,
             "async": true
         },
-        "\t[月讀愛]要順便帶手啤酒嗎—",
+        "\t[店員]要順便帶手啤酒嗎—",
         {
             "type": "hideImage",
             "code": 10,
@@ -2353,6 +2474,22 @@ main.floors.main_ch7_3=
         {
             "type": "comment",
             "text": "【過場】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【此段暫時不撥放BGM】"
         },
         {
             "type": "hideImage",
@@ -2433,7 +2570,43 @@ main.floors.main_ch7_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "東山指著在ANIsister前的眾人，邊解說邊跟路過的少女分享起了剛買的爆米花",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -2560,6 +2733,10 @@ main.floors.main_ch7_3=
             "async": true
         },
         "\t[桶至學長]是嗎，這就是命運石之門的選擇嗎—",
+        {
+            "type": "comment",
+            "text": "TODO: 【BGM：BGMBOOM】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -2713,6 +2890,22 @@ main.floors.main_ch7_3=
             "async": true
         },
         "\t[惠惠]那總之明天晚上11點在鐵道旁的雜貨店後面會合，多找點人喔—",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
+        },
         {
             "type": "hideImage",
             "code": 10,

@@ -104,6 +104,16 @@ const backgroundAssets = [
   { name: "婚禮", image: "ms_bg_wedding.png", placeholder: "scene_tournament.png" },
   { name: "LIVE大舞台", image: "ms_bg_live_stage.png", placeholder: "scene_tournament.png" },
   { name: "派出所", image: "ms_bg_police_station.png", placeholder: "scene_street.png" },
+  { name: "手機簡訊", image: "ms_bg_phone_message.png", placeholder: "ms_bg_street.png" },
+  { name: "帶頭紗貝琪微笑泛淚", image: "ms_bg_becky_smile_tears.png", placeholder: "ms_bg_wedding.png" },
+  { name: "東山與小夥伴們出攤", image: "ms_bg_higashiyama_booth.png", placeholder: "ms_bg_tokyo_big_sight.png" },
+  { name: "表妹與一排人打小鋼珠", image: "ms_bg_pachinko_group.png", placeholder: "ms_bg_arcade.png" },
+  { name: "克莉絲跟幾個人划龍舟", image: "ms_bg_dragon_boat.png", placeholder: "ms_bg_riverside.png" },
+  { name: "桶至教官訓練一排人萌耶萌耶啾", image: "ms_bg_training_group.png", placeholder: "ms_bg_training_room.png" },
+  { name: "梗平與貝琪與誰一起假面騎士變身", image: "ms_bg_keng_becky_transform.png", placeholder: "ms_bg_wedding.png" },
+  { name: "蘭斯跟不知道 大凶角?", image: "ms_bg_lance_unknown_corner.png", placeholder: "ms_bg_street_night.png" },
+  { name: "用塑膠盒裝著的切好的綜合水果盤：放了一個晚上被窗外的朝陽照到的水果", image: "ms_bg_fruit_box_sunrise.png", placeholder: "ms_bg_street_day.png" },
+  { name: "等著填", image: "ms_bg_tbd.png", placeholder: "ms_bg_street_day.png" },
 ];
 const bgByName = new Map(backgroundAssets.map(({ name, image }) => [name, image]));
 const backgroundAliases = {

@@ -370,6 +370,22 @@ main.floors.main_ch7_4=
             "time": 0,
             "async": true
         },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-4結束前連續播放此首BGM】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
         "在兵長的幫助下，女咖心照不宣的成為了眾人的庇護所",
         {
             "type": "hideImage",
@@ -410,17 +426,20 @@ main.floors.main_ch7_4=
             "async": true
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_street.png",
-            "loc": [
+            "code": 30,
+            "image": "ms_ch1_phone_message_cg.png",
+            "sloc": [
                 0,
-                0
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
             "time": 250
@@ -577,6 +596,11 @@ main.floors.main_ch7_4=
             "async": true
         },
         "\t[眾人]（手機）一定到",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -863,7 +887,43 @@ main.floors.main_ch7_4=
             "time": 0,
             "async": true
         },
-        "東山指著倉庫旁一列相較於常態運輸，貨台數量顯得有點精省的列車說道",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "東山指著倉庫旁一列相較於常態運輸，顯得有點可疑的列車說道",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1094,8 +1154,24 @@ main.floors.main_ch7_4=
         },
         "\t[桶至學長]…………………",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "comment",
-            "text": "TODO: 【過場：回憶】【回憶濾鏡？全畫面黑白？全畫面棕色？】"
+            "text": "【過場：回憶】"
+        },
+        {
+            "type": "comment",
+            "text": "TODO: 【此場景為回憶某件事。濾鏡全畫面顯示模仿復古膠捲播放時的棕色調】"
         },
         {
             "type": "hideImage",
@@ -1270,6 +1346,22 @@ main.floors.main_ch7_4=
         {
             "type": "comment",
             "text": "【過場】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【此段暫時不撥放BGM】"
         },
         {
             "type": "hideImage",
@@ -1493,10 +1585,36 @@ main.floors.main_ch7_4=
             "time": 0,
             "async": true
         },
-        "\t[桶至學長]現在開始將以機械的形式運行",
+        "……………………",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "喀噠—喀噠—喀噠— ",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "列車前方，腳步聲越來越清晰",
         {
             "type": "comment",
-            "text": "TODO: 【BGM：ゴーゴー・キカイダー REBOOT2014】"
+            "text": "TODO: 【BGM：BGMREBOOT2014】"
         },
         {
             "type": "hideImage",
@@ -1523,7 +1641,73 @@ main.floors.main_ch7_4=
             "time": 0,
             "async": true
         },
-        "\t[桶至學長]Switch ON！ 1 ！ 2 ！ 3 ！ 電流火花が身体を走る〜♪",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "comment",
+            "text": "TODO: 【下三句話不使用立繪】"
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[桶至學長]現在開始將，以機械的形式運行",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[桶至學長]Switch ON！ 1 ！ 2 ！ 3 ！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[桶至學長]電流般的火花在體內奔竄〜♪",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -1627,37 +1811,6 @@ main.floors.main_ch7_4=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
         "準備按下變身按鈕的桶至學長，在最後的最後",
         {
             "type": "hideImage",
@@ -1674,8 +1827,19 @@ main.floors.main_ch7_4=
         "回頭看了一眼身後的夥伴們",
         {
             "type": "hideImage",
-            "code": 30,
-            "time": 150
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM停止】"
         },
         {
             "type": "hideImage",
@@ -1689,7 +1853,7 @@ main.floors.main_ch7_4=
             "time": 0,
             "async": true
         },
-        "接著與笑容滿面的惠惠四目交接",
+        "接著與笑容滿面的惠惠四目相接",
         {
             "type": "hideImage",
             "code": 10,
@@ -1796,6 +1960,50 @@ main.floors.main_ch7_4=
             "time": 150
         },
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[桶至學長]……………",
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -1866,6 +2074,11 @@ main.floors.main_ch7_4=
         },
         {
             "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
@@ -1894,9 +2107,6 @@ main.floors.main_ch7_4=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "pauseBgm"
         },
         {
             "type": "hideImage",
@@ -1931,6 +2141,10 @@ main.floors.main_ch7_4=
         {
             "type": "comment",
             "text": "【過場】"
+        },
+        {
+            "type": "comment",
+            "text": "TODO: 【BGM：BGMTANK】"
         },
         {
             "type": "hideImage",
@@ -2108,7 +2322,7 @@ main.floors.main_ch7_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[表妹]發現了啥？T34耶，跟老爹在山裡看過",
+        "\t[表妹]發現了啥？IS2耶，跟老爹在山裡看過",
         {
             "type": "hideImage",
             "code": 10,
@@ -2386,6 +2600,22 @@ main.floors.main_ch7_4=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【此段暫時不撥放BGM】"
         },
         {
             "type": "hideImage",
@@ -2775,6 +3005,10 @@ main.floors.main_ch7_4=
         },
         "\t[克莉絲]等等我們是—",
         {
+            "type": "comment",
+            "text": "TODO: 【BGM：BGMTANK】"
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -2864,7 +3098,119 @@ main.floors.main_ch7_4=
             "time": 0,
             "async": true
         },
-        "對，各位沒跳過劇情的觀眾老爺都知道的那台戰車撞進了店裡",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "對，各位沒跳過劇情的觀眾老爺都知道的那台戰車，撞進了店裡",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[蘭斯]靠腰",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[東山]各位貴安，真是個美好的夜晚",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[店長]你們到底想幹嘛啊！這裡我來就好快滾行不行！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        "\t[惠惠]上一個這麼說的墳頭的草已經比大鱷魚高了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 11,
+            "image": "suou_sad_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[表妹]肥宅被那個人聚集在一起了耶",
         {
             "type": "hideImage",
             "code": 10,
@@ -2908,7 +3254,7 @@ main.floors.main_ch7_4=
             "time": 0,
             "async": true
         },
-        "\t[東山]各位貴安，真是個美好的夜晚",
+        "\t[東山]你們跟我想的一樣嗎？",
         {
             "type": "hideImage",
             "code": 30,
@@ -2926,57 +3272,7 @@ main.floors.main_ch7_4=
             "time": 0,
             "async": true
         },
-        "\t[店長]你們到底想幹嘛啊！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_sad_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]肥宅被那個人聚集在一起了耶",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[惠惠]那你們跟我想的一樣嗎？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "車上的三人相視而笑",
+        "眾人相視而笑",
         {
             "type": "hideImage",
             "code": 10,
@@ -3030,6 +3326,10 @@ main.floors.main_ch7_4=
         },
         "\t[店長]你們她媽畜牲嗎嗎嗎嗎啊啊啊！？",
         {
+            "type": "comment",
+            "text": "TODO: 【BGM：BGMMeikyoshisui】"
+        },
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0,
@@ -3042,6 +3342,37 @@ main.floors.main_ch7_4=
             "async": true
         },
         "\t[店長]我勸—你們—不要—！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "setText",
             "avg": true,
@@ -3113,34 +3444,8 @@ main.floors.main_ch7_4=
         },
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
             "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                65,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
+            "time": 150
         },
         {
             "type": "hideImage",
@@ -3155,11 +3460,6 @@ main.floors.main_ch7_4=
             "async": true
         },
         "為了保護肥宅們，店長硬是徒手接住了砲彈然後丟了回去",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         {
             "type": "hideImage",
             "code": 10,
@@ -3417,6 +3717,37 @@ main.floors.main_ch7_4=
         },
         "\t[蘭斯]就是這傢伙嗎！把妹妹一個人丟在家裡害得我不得不帶小孩好幾天的—",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "scene_mapo_cg.png",
+            "sloc": [
+                0,
+                65,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -3487,6 +3818,11 @@ main.floors.main_ch7_4=
         },
         {
             "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
+        {
+            "type": "hideImage",
             "code": 10,
             "time": 0,
             "async": true
@@ -3498,6 +3834,22 @@ main.floors.main_ch7_4=
             "async": true
         },
         "店長回過頭結實的往IB哥哥臉上來了一拳，然後如同丟垃圾般把人拋了出來",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "comment",
+            "text": "【BGM預定地：()切換BGM或到7-4結束前連續播放此首BGM】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -3573,31 +3925,7 @@ main.floors.main_ch7_4=
             "time": 0,
             "async": true
         },
-        {
-            "type": "showImage",
-            "code": 11,
-            "image": "suou_sad_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[表妹]舊的坦克該怎麼辦呢，就應該放轉......",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "\t[東山]閉嘴，放著不管！",
+        "\t[東山]放著不管！",
         {
             "type": "hideImage",
             "code": 10,
@@ -3842,7 +4170,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "ms_bg_phone_message.png",
             "loc": [
                 0,
                 0

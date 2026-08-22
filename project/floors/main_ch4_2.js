@@ -406,25 +406,7 @@ main.floors.main_ch4_2=
             "time": 0,
             "async": true
         },
-        "再次睜開眼睛時，眼前是一名身高超過兩米的修女",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0,
-            "async": true
-        },
-        "修女的身後白髮的雜貨店老闆在與人通著電話",
+        "再次睜開眼睛時，眼前是一名身高超過兩米的修女，修女的身後白髮的雜貨店老闆在與人通著電話",
         {
             "type": "hideImage",
             "code": 10,
@@ -438,6 +420,10 @@ main.floors.main_ch4_2=
             "async": true
         },
         "在老闆與修女打了一個手勢後，修女走了過來幫梗平解開了繩子",
+        {
+            "type": "comment",
+            "text": "TODO: 【下八句不使用立繪】"
+        },
         {
             "type": "hideImage",
             "code": 10,
@@ -597,6 +583,11 @@ main.floors.main_ch4_2=
             "time": 0
         },
         "\t[梗平]這句話肯定也是修卡的陰謀",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "hideImage",
             "code": 10,

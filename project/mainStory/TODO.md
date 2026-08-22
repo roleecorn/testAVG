@@ -56,6 +56,7 @@
 - project/mainStory/CH3 3-1：【CG：魔法少女變身 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH3 3-1：製作指令「【下兩句話使用三日月作為立繪】」尚未轉成正式事件。
 - project/mainStory/CH3 3-2：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
+- project/mainStory/CH3 3-3：【BGM：鐵達尼號】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH3 3-3：【CG：一群人中間的發光傑士塔威 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH3 3-3：【CG：傑士塔威 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH3 3-3：【CG：爆炸畫面 出現】尚無專用素材，暫用 scene_mapo_cg.png。
@@ -67,6 +68,7 @@
 - project/mainStory/CH4 4-1：【人物交流時間】 尚未撰寫，已以文字標記保留。
 - project/mainStory/CH4 4-2：【CG：梗平耍帥 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH4 4-2：【CG：蹲著的修女與後方打電話的軍火女王 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH4 4-2：製作指令「【下八句不使用立繪】」尚未轉成正式事件。
 - project/mainStory/CH5 5-1：【CG：書店裡的小薄本山 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH5 5-1：【CG：梗平與警察肩並肩向前 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH5 5-1：【CG：肥宅噴射氣流攻擊 出現】尚無專用素材，暫用 scene_mapo_cg.png。
@@ -100,55 +102,76 @@
 - project/mainStory/CH7 7-2：【CG：推出信封的手 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-2：【CG：梗平英雄救美(?) 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-2：【CG：滿滿肥宅 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-2：【CG：肥宅淹沒 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-3：【CG：傑士塔威】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-3：【CG：手機簡訊】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-2：【CG：滿滿肥宅轉頭 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-2：【CG：肥宅湧出 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-3：【BGM：BGMBOOM】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
+- project/mainStory/CH7 7-3：【CG：傑士塔威 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-3：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
+- project/mainStory/CH7 7-3：【CG：東山分別人吃爆米花 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-3：【CG：東山嫌棄 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-3：【CG：東山爽 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-3：【CG：梗平下車 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-3：【CG：爆炸畫面 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-3：【CG：畫面容納不下長度的黑頭轎車 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-4：【BGM：ゴーゴー・キカイダー REBOOT2014】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
+- project/mainStory/CH7 7-3：製作指令「【下句店員使用月讀愛立繪】」尚未轉成正式事件。
+- project/mainStory/CH7 7-4：【BGM：BGMMeikyoshisui】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
+- project/mainStory/CH7 7-4：【BGM：BGMREBOOT2014】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
+- project/mainStory/CH7 7-4：【BGM：BGMTANK】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
+- project/mainStory/CH7 7-4：【CG：IB哥哥被拳頭打 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-4：【CG：一台坦克 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-4：【CG：一隻手接住戰車砲彈 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-4：【CG：假面騎士腰帶 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-4：【CG：店長使出神威掌 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-4：【CG：店長安撫阻擋肥宅 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-4：【CG：惠惠按下爆炸開關 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-4：【CG：戰車來了 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-4：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
 - project/mainStory/CH7 7-4：【CG：東山戰車長 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-4：【CG：桶至學長壯烈的微笑 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-4：【CG：爆炸畫面 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-4：【CG：統治學長壓低帽沿帥爛 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-4：【CG：非法列車 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-4：製作指令「【下一句？？？使用雜貨店老闆立繪】」尚未轉成正式事件。
-- project/mainStory/CH7 7-4：製作指令「【過場：回憶】【回憶濾鏡？全畫面黑白？全畫面棕色？】」尚未轉成正式事件。
-- project/mainStory/CH7 7-5：【BGM：還未定 預計來個有管風琴之類的東西】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
+- project/mainStory/CH7 7-4：製作指令「【下三句話不使用立繪】」尚未轉成正式事件。
+- project/mainStory/CH7 7-4：製作指令「【此場景為回憶某件事。濾鏡全畫面顯示模仿復古膠捲播放時的棕色調】」尚未轉成正式事件。
+- project/mainStory/CH7 7-5：【BGM：BGMBOINBOIN】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
+- project/mainStory/CH7 7-5：【BGM：BGMED2】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
+- project/mainStory/CH7 7-5：【BGM：BGMKyoheiTranslation】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH7 7-5：【BGM：關羽之歌】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH7 7-5：【CG：一中華大碗紅色液體】暫用 ms_ch1_red_mapo_bowl_cg.png，需替換正式素材。
-- project/mainStory/CH7 7-5：【CG：一堆手圍一圈拿出現金_出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：一堆手圍一圈拿出現金_消失】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-5：【CG：假面騎士腰帶 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-5：【CG：傑士塔威 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：帶頭紗貝琪微笑泛淚 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：將軍變身 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：小將出巡 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：手機簡訊】暫用 ms_ch1_phone_message_cg.png，需替換正式素材。
 - project/mainStory/CH7 7-5：【CG：推出信封的手 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：東山與小夥伴們出攤】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：桶至教官訓練一排人萌耶萌耶啾】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：梗平與貝琪與誰一起假面騎士變身】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：東山察覺 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：東山感動落淚 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：東山打麻將 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：東山收快遞1 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：東山收快遞2 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：東山的救星登場 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：東山看手機 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：東山肥宅湧出 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-5：【CG：爆炸畫面 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：獅子王抱起Ver 死魚眼智乃】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：用塑膠盒裝著的切好的綜合水果盤：放了一個晚上被窗外的朝陽照到的水果】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：眾人分道揚鑣_出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：眾人分道揚鑣_消失】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：等著填】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：肥宅湧出 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：蘭斯跟不知道 大凶角?】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：【CG：表妹與一排人打小鋼珠】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：獅子王抱起東山Ver死魚眼智乃 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：畫面拉遠到月球表面】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：眾人分道揚鑣 出現】尚無專用素材，暫用 scene_mapo_cg.png。
+- project/mainStory/CH7 7-5：【CG：眾人算錢 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH7 7-5：【CG：那個聖物 出現】尚無專用素材，暫用 scene_mapo_cg.png。
-- project/mainStory/CH7 7-5：製作指令「【下一句？？？使用小將立繪】」尚未轉成正式事件。
+- project/mainStory/CH7 7-5：製作指令「【下四句不使用立繪】」尚未轉成正式事件。
 - project/mainStory/CH7 7-5：製作指令「【下方兩句明日頭條台詞為同一台詞內[頭條：將軍在秋葉原夜驅]加上刪除線，換行後[頭條：驚愕！特攝都是真的？將軍家代代都是假面騎士，修卡組織發表聲明敵人就在吹上御所]為大字】」尚未轉成正式事件。
-- project/mainStory/CH7 7-5：製作指令「【公告文用斷句總覺得很怪，整張公告圖？再想想】」尚未轉成正式事件。
 - project/mainStory/CH7 7-5：製作指令「【白色慢速過場】」尚未轉成正式事件。
 - project/mainStory/CH7 7-5：製作指令「【過場：少女讀取中…】」尚未轉成正式事件。
-- project/mainStory/CH7 7-5：製作指令「【酷炫的結尾動畫 製作名單】」尚未轉成正式事件。
 - `project/mainStory/CH3 3-1`：街頭賣藝分歧目前原稿為「嘆息寫」，已保留為可回流分歧。
 - `project/mainStory/CH3 3-3`：傑士塔威會議可追加煩人小遊戲，目前以原劇情旁白接續。
 - `project/mainStory/CH6 6-4`：後日談時間尚未撰寫，已以文字標記保留。
 
 ## 待補素材
+
+- Open: `main-story-new-background-placeholders`
+  - Scope: `project/mainStory/CH3 3-1`、`project/mainStory/CH7 7-5`；`ms_bg_phone_message.png`、`ms_bg_becky_smile_tears.png`、`ms_bg_higashiyama_booth.png`、`ms_bg_pachinko_group.png`、`ms_bg_dragon_boat.png`、`ms_bg_training_group.png`、`ms_bg_keng_becky_transform.png`、`ms_bg_lance_unknown_corner.png`、`ms_bg_fruit_box_sunrise.png`、`ms_bg_tbd.png`
+  - Temporary: 以上檔案由既有 544x416 主線背景複製，已完成 `project/images → project/data.js → Story IR → floor`。
+  - Done when: 替換為正式背景並完成遊戲內畫面驗收；保留來源 SHA-256 與替換紀錄。
+  - Evidence: `node scripts/generate_main_story.js --check` 已通過；正式素材尚未提供。
 
 - `project/images/ms_ch1_mapo_shop_entrance_cg.png`：暫用複製 CG，來源為 `project/images/scene_mapo_cg.png`；之後需要替換成「麻婆豆腐店門口」正式 CG。
 - `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。

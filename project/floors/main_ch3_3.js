@@ -1351,6 +1351,10 @@ main.floors.main_ch3_3=
         },
         "正當同樣的話題準備繼續輪迴下去時",
         {
+            "type": "comment",
+            "text": "TODO: 【BGM：鐵達尼號】"
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",

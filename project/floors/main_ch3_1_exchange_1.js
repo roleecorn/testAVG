@@ -806,7 +806,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street.png",
+                            "image": "ms_bg_phone_message.png",
                             "loc": [
                                 0,
                                 0
