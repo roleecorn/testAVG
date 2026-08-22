@@ -72,7 +72,8 @@
 			copy.direction = copy.direction || raw.defaultDirection || "up";
 			copy.time = copy.time == null ? (raw.changeFloorTime == null ? 500 : raw.changeFloorTime) : copy.time;
 			copy.x = copy.x == null ? x : copy.x;
-			copy.y = copy.y == null ? (92 + (copy.lane || chapterIndex || 0) * defaultLaneGap) : copy.y;
+			copy._timelineExplicitY = copy.y != null;
+			copy.y = copy.y == null ? null : copy.y;
 			copy.index = nodes.length;
 			nodes.push(copy);
 			if (copy.next) {
@@ -116,6 +117,49 @@
 			});
 		}
 
+		// 線性劇情全部留在主線 lane；只有一個節點指向多個後續時，才為額外分歧配置新 lane。
+		var nodeById = {};
+		var outgoing = {};
+		var incoming = {};
+		nodes.forEach(function (node) {
+			nodeById[node.id] = node;
+			outgoing[node.id] = [];
+			incoming[node.id] = [];
+		});
+		edges.forEach(function (edge) {
+			if (!nodeById[edge.from] || !nodeById[edge.to]) return;
+			outgoing[edge.from].push(edge.to);
+			incoming[edge.to].push(edge.from);
+		});
+		var lanes = {};
+		var nextBranchLane = 1;
+		nodes.forEach(function (node) {
+			if (node._timelineExplicitY) return;
+			var lane = node.lane != null ? Number(node.lane) : lanes[node.id];
+			if (!isFinite(lane)) lane = null;
+			if (lane == null) {
+				var parentLanes = (incoming[node.id] || []).map(function (parentId) {
+					return lanes[parentId];
+				}).filter(function (value) {
+					return value != null;
+				});
+				lane = parentLanes.length ? Math.min.apply(Math, parentLanes) : 0;
+			}
+			lanes[node.id] = lane;
+			node.y = 92 + lane * defaultLaneGap;
+			(outgoing[node.id] || []).forEach(function (childId, index) {
+				var child = nodeById[childId];
+				if (!child || child._timelineExplicitY || child.lane != null || lanes[childId] != null) return;
+				lanes[childId] = index === 0 ? lane : nextBranchLane++;
+			});
+		});
+
+		var contentHeight = raw.height || 360;
+		nodes.forEach(function (node) {
+			contentHeight = Math.max(contentHeight, node.y + 160);
+			delete node._timelineExplicitY;
+		});
+
 		return {
 			title: raw.title || "時間線",
 			subtitle: raw.subtitle || "",
@@ -123,7 +167,7 @@
 			edges: edges,
 			chapters: chapters,
 			width: Math.max(x + 160, 720),
-			height: raw.height || 360,
+			height: contentHeight,
 			options: raw
 		};
 	}
@@ -148,12 +192,17 @@
 		this.lockedBeforeStart = false;
 		this.data = null;
 		this.offsetX = 0;
+		this.offsetY = 0;
 		this.minOffsetX = 0;
 		this.maxOffsetX = 0;
+		this.minOffsetY = 0;
+		this.maxOffsetY = 0;
 		this.pointerId = null;
 		this.pointerTarget = null;
 		this.dragStartX = 0;
+		this.dragStartY = 0;
 		this.dragStartOffset = 0;
+		this.dragStartOffsetY = 0;
 		this.dragMoved = false;
 		this.resizeHandler = null;
 		this.keyHandler = null;
@@ -323,7 +372,9 @@
 		viewport.addEventListener("pointercancel", function (e) { self.onPointerUp(e); });
 		viewport.addEventListener("wheel", function (e) {
 			e.preventDefault();
-			self.setOffset(self.offsetX - (e.deltaX || e.deltaY));
+			var deltaX = e.deltaX || (e.shiftKey ? e.deltaY : 0);
+			var deltaY = e.shiftKey ? 0 : e.deltaY;
+			self.setOffset(self.offsetX - deltaX, self.offsetY - deltaY);
 		}, { passive: false });
 		this.resizeHandler = function () { self.refreshBounds(); };
 		window.addEventListener("resize", this.resizeHandler);
@@ -331,6 +382,8 @@
 			if (e.key === "Escape") self.destroy({ result: "cancel", reason: "escape" });
 			if (e.key === "ArrowLeft") self.setOffset(self.offsetX + 80);
 			if (e.key === "ArrowRight") self.setOffset(self.offsetX - 80);
+			if (e.key === "ArrowUp") self.setOffset(self.offsetX, self.offsetY + 80);
+			if (e.key === "ArrowDown") self.setOffset(self.offsetX, self.offsetY - 80);
 		};
 		document.addEventListener("keydown", this.keyHandler);
 	};
@@ -532,7 +585,9 @@
 		this.pointerId = e.pointerId;
 		this.pointerTarget = e.target;
 		this.dragStartX = e.clientX;
+		this.dragStartY = e.clientY;
 		this.dragStartOffset = this.offsetX;
+		this.dragStartOffsetY = this.offsetY;
 		this.dragMoved = false;
 		this.viewport.style.cursor = "grabbing";
 		if (this.viewport.setPointerCapture) this.viewport.setPointerCapture(e.pointerId);
@@ -541,8 +596,9 @@
 	TimelineView.prototype.onPointerMove = function (e) {
 		if (this.pointerId !== e.pointerId) return;
 		var dx = e.clientX - this.dragStartX;
-		if (Math.abs(dx) > 6) this.dragMoved = true;
-		this.setOffset(this.dragStartOffset + dx);
+		var dy = e.clientY - this.dragStartY;
+		if (Math.abs(dx) > 6 || Math.abs(dy) > 6) this.dragMoved = true;
+		this.setOffset(this.dragStartOffset + dx, this.dragStartOffsetY + dy);
 	};
 
 	TimelineView.prototype.onPointerUp = function (e) {
@@ -570,14 +626,19 @@
 	TimelineView.prototype.refreshBounds = function () {
 		if (!this.viewport || !this.content || !this.data) return;
 		var viewportWidth = this.viewport.clientWidth || 1;
+		var viewportHeight = this.viewport.clientHeight || 1;
 		this.maxOffsetX = 0;
 		this.minOffsetX = Math.min(0, viewportWidth - this.data.width);
-		this.setOffset(this.offsetX);
+		this.maxOffsetY = 0;
+		this.minOffsetY = Math.min(0, viewportHeight - this.data.height);
+		this.setOffset(this.offsetX, this.offsetY);
 	};
 
-	TimelineView.prototype.setOffset = function (value) {
-		this.offsetX = Math.max(this.minOffsetX, Math.min(this.maxOffsetX, value));
-		if (this.content) this.content.style.transform = "translate3d(" + this.offsetX + "px,0,0)";
+	TimelineView.prototype.setOffset = function (valueX, valueY) {
+		if (valueY == null) valueY = this.offsetY;
+		this.offsetX = Math.max(this.minOffsetX, Math.min(this.maxOffsetX, valueX));
+		this.offsetY = Math.max(this.minOffsetY, Math.min(this.maxOffsetY, valueY));
+		if (this.content) this.content.style.transform = "translate3d(" + this.offsetX + "px," + this.offsetY + "px,0)";
 	};
 
 	TimelineView.prototype.centerCurrentFloor = function () {
@@ -587,8 +648,9 @@
 			if (node.floorId === core.status.floorId) current = node;
 		});
 		if (!current) return;
-		var target = Math.floor((this.viewport.clientWidth || 0) / 2 - current.x - 64);
-		this.setOffset(target);
+		var targetX = Math.floor((this.viewport.clientWidth || 0) / 2 - current.x - 64);
+		var targetY = Math.floor((this.viewport.clientHeight || 0) / 2 - current.y - 56);
+		this.setOffset(targetX, targetY);
 	};
 
 	TimelineView.prototype.iconButtonCss = function () {
