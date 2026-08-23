@@ -270,6 +270,18 @@ main.floors.main_ch5_1=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -344,13 +356,13 @@ main.floors.main_ch5_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平](看來有大人物要來了啊)",
         {
@@ -364,13 +376,13 @@ main.floors.main_ch5_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]昨天的事情，我願意",
         {
@@ -382,13 +394,13 @@ main.floors.main_ch5_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]你一定要回來找我喔",
         {
@@ -400,13 +412,13 @@ main.floors.main_ch5_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_smile_portrait.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "smile"
+            "time": 0
         },
         "\t[梗平]喔？真的嗎？太好了",
         {
@@ -418,13 +430,13 @@ main.floors.main_ch5_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]我這邊也要先去籌備一些事情，就先說聲再見了",
         {
@@ -461,13 +473,13 @@ main.floors.main_ch5_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]接下來該做甚麼好呢",
         {
@@ -479,13 +491,13 @@ main.floors.main_ch5_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]感覺接下來會特別忙，先把想做的事情做完好了",
         {
@@ -502,17 +514,5 @@ main.floors.main_ch5_1=
             "type": "function",
             "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch5_1_exchange_1', loc: [6, 10], direction: 'up', time: 500 }, 2); }"
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

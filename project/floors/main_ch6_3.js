@@ -270,6 +270,18 @@ main.floors.main_ch6_3=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -339,13 +351,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]前輩！救救在下！",
         {
@@ -357,13 +369,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[書店店員]嗯？你怎麼喘成這樣",
         {
@@ -375,13 +387,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]有人要抓在下，有沒有地方可以藏起來的",
         {
@@ -393,13 +405,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[書店店員]嗯，看在你跟我們一起撐過了包裝地獄的份上",
         {
@@ -412,13 +424,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[書店店員]這裡是書店的額外倉庫，這個鑰匙可以打開這個編號的倉庫",
         {
@@ -430,13 +442,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]喔，太謝謝你了！",
         {
@@ -448,13 +460,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[書店店員]你趕快走吧，有人來的話我不會透漏給他們的",
         {
@@ -466,13 +478,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]感激不盡",
         {
@@ -506,13 +518,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]好，暫時應該是安全的了",
         {
@@ -524,13 +536,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]現在就是想想要怎麼才能出去",
         {
@@ -542,13 +554,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]總之先看看周遭有沒有什麼地方能夠逃出秋葉原吧",
         {
@@ -563,13 +575,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下的自由",
         {
@@ -581,13 +593,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下的夢想",
         {
@@ -599,13 +611,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下的假面騎士精神真的都要在這裡結束了嗎......",
         {
@@ -618,13 +630,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]不知道是敵是友，可是現在的在下只有一個選擇",
         {
@@ -661,13 +673,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[警察]夥伴，不要放棄希望啊",
         {
@@ -679,13 +691,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[警察]我來拯救你了",
         {
@@ -697,13 +709,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]夥伴，在下好感動",
         {
@@ -715,13 +727,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[警察]有什麼話晚點再說，跟我走！",
         {
@@ -754,13 +766,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]你不愧是在下最好的朋友，你怎麼會來這裡",
         {
@@ -772,13 +784,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[警察]朋友的事情，我自然是要幫忙啊",
         {
@@ -790,13 +802,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[警察]另外就是，像我這樣的人不適合光",
         {
@@ -808,13 +820,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]難道你......",
         {
@@ -826,13 +838,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[警察]沒錯，所以你一定要保有希望",
         {
@@ -845,13 +857,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]你怎麼會有這麼多的錢",
         {
@@ -863,13 +875,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]而且都給在下的話，你該怎麼辦",
         {
@@ -881,13 +893,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[警察]這你就不用擔心了，我可是天天都有在打小鋼珠呢",
         {
@@ -899,13 +911,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[警察]這個呢，是還你當初那1000円的人情的",
         {
@@ -917,13 +929,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]夥伴，你的心意與希望，在下收下了",
         {
@@ -935,13 +947,13 @@ main.floors.main_ch6_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[警察]所以去吧！去追尋屬於我們的太陽！",
         {
@@ -962,17 +974,5 @@ main.floors.main_ch6_3=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

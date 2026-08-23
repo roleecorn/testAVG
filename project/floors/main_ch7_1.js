@@ -270,6 +270,18 @@ main.floors.main_ch7_1=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -377,13 +389,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山](是不是有點太自大了呢？)",
         {
@@ -395,13 +407,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山](付完了大家的交通費沒錢住旅館了，搞得必須在前輩家借宿...)",
         {
@@ -413,13 +425,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山](話說回來...伊豆就算了，北海道是怎麼回事啊！一般人蹭交通費會這麼不客氣的嗎！)",
         {
@@ -431,13 +443,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山](1張、2…不存在)",
         {
@@ -449,13 +461,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]這不是連吃飯都成問題了嗎！？",
         {
@@ -543,13 +555,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]…算了走一步看一步吧，先瞧瞧前輩那邊有沒有什麼現成的工作可以江湖救急",
         {
@@ -561,13 +573,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]記得前輩說今天是在中華料理店打工…應該是在是這附近吧？",
         {
@@ -579,13 +591,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]有了！",
         {
@@ -617,13 +629,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]嗯嗯感覺就是個員工餐隨便點的地方，我相信前輩的眼光！今天就靠你了！",
         {
@@ -656,13 +668,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]前輩我來了！有什麼工作需要幫忙的嗎？",
         {
@@ -675,13 +687,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]別那麼客氣啦，等咱下班再去咱家會合就好了的說",
         {
@@ -693,13 +705,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]話不能這麼說，人與人之間講求互惠，互相付出才能相處的長久",
         {
@@ -711,13 +723,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]真的不用啦，店裡的工作若也不熟悉…",
         {
@@ -729,13 +741,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]況且若應還有委託稿要趕吧？受傷就不好了吶",
         {
@@ -747,13 +759,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]白住總覺得過意不去，請務必讓我幫忙！",
         {
@@ -765,13 +777,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]若看店就這麼點兒大，咱一個人也夠了…",
         {
@@ -783,13 +795,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]不不不…",
         {
@@ -801,13 +813,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]可是可是…",
         {
@@ -819,13 +831,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]不不不不不…",
         {
@@ -837,13 +849,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]但是但是…",
         {
@@ -856,13 +868,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_mapo_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[麻婆]竟然你朋友都這麼堅持了，就先讓她幫忙試試今天的火候如何？小姑娘你能吃辣吧？",
         {
@@ -875,13 +887,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]沒問題！",
         {
@@ -893,13 +905,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]等等若先別…",
         {
@@ -931,13 +943,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_mapo_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[麻婆]哼嗯，看來今天也很完美",
         {
@@ -949,13 +961,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]老闆若愉悅的方向真的得改改的說…",
         {
@@ -971,13 +983,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_mapo_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[麻婆]來吧，時候到了－",
         {
@@ -989,13 +1001,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山](嗯？我這是？)",
         {
@@ -1008,13 +1020,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]什麼時候到了？",
         {
@@ -1026,13 +1038,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]若醒啦？咱準備要開店哩。準備好了嗎？",
         {
@@ -1044,13 +1056,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]…？",
         {
@@ -1062,13 +1074,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]好的？",
         {
@@ -1080,13 +1092,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]那就開門了吶。1、2－",
         {
@@ -1098,13 +1110,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_qipao_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩(旗袍)]歡迎光—",
         {
@@ -1148,13 +1160,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_otaku_a_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[肥宅A]前輩小生來啦喔喔喔喔喔喔喔喔喔喔喔喔！！！！！！！！！！",
         {
@@ -1222,13 +1234,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_otaku_b_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[肥宅B]前輩回鍋肉一級棒特大碗來兩份！！！",
         {
@@ -1296,13 +1308,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_otaku_c_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[肥宅C]前輩請你跟我生猴子！！！！！！",
         {
@@ -1369,13 +1381,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]沒想到前輩人氣高成這樣…",
         {
@@ -1387,13 +1399,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩]不好意思若辛苦了的說",
         {
@@ -1405,13 +1417,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]不，是我太掉以輕心了—痛—",
         {
@@ -1426,13 +1438,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_otaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[肥宅]唔啊—抱歉我趕時間—",
         {
@@ -1444,13 +1456,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]等等！你的東西掉—",
         {
@@ -1462,13 +1474,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]…已經跑掉了誒，該怎麼辦啊？",
         {
@@ -1480,13 +1492,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩]稍微等等看？彼發現該會折返的說？",
         {
@@ -1498,13 +1510,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]話說這是什麼啊？",
         {
@@ -1540,13 +1552,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩]彼沒有回來吶…",
         {
@@ -1558,13 +1570,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]那大概不是很重要吧？這樣等下去也不是辦法先回去吧",
         {
@@ -1576,13 +1588,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_senpai_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[前輩]這東西放在路邊也不太對的說…",
         {
@@ -1594,13 +1606,13 @@ main.floors.main_ch7_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]明天我拿去地方書店問問吧？這時間還在這裡搞不好附近的人會認識…",
         {
@@ -1621,17 +1633,5 @@ main.floors.main_ch7_1=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

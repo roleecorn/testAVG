@@ -14600,8 +14600,7 @@
           "time": 250
         },
         {
-          "kind": "comment",
-          "text": "【此段暫時不撥放BGM】"
+          "kind": "bgm.pause"
         },
         {
           "kind": "narration",
@@ -49044,8 +49043,7 @@
           "text": "【過場】"
         },
         {
-          "kind": "comment",
-          "text": "【此段暫時不撥放BGM】"
+          "kind": "bgm.pause"
         },
         {
           "kind": "image.hide",
@@ -49063,6 +49061,9 @@
           ],
           "opacity": 1,
           "time": 250
+        },
+        {
+          "kind": "bgm.resume"
         },
         {
           "kind": "image.show",
@@ -50849,8 +50850,7 @@
           "text": "【過場】"
         },
         {
-          "kind": "comment",
-          "text": "【此段暫時不撥放BGM】"
+          "kind": "bgm.pause"
         },
         {
           "kind": "image.hide",
@@ -50868,6 +50868,9 @@
           ],
           "opacity": 1,
           "time": 250
+        },
+        {
+          "kind": "bgm.resume"
         },
         {
           "kind": "image.show",
@@ -51399,8 +51402,8 @@
           "text": "回頭看了一眼身後的夥伴們"
         },
         {
-          "kind": "comment",
-          "text": "【BGM停止】"
+          "kind": "bgm.pause",
+          "until": "play"
         },
         {
           "kind": "narration",
@@ -52049,8 +52052,7 @@
           "time": 250
         },
         {
-          "kind": "comment",
-          "text": "【此段暫時不撥放BGM】"
+          "kind": "bgm.pause"
         },
         {
           "kind": "image.show",
@@ -57082,8 +57084,7 @@
           "text": "【過場】"
         },
         {
-          "kind": "comment",
-          "text": "【此段暫時不撥放BGM】"
+          "kind": "bgm.pause"
         },
         {
           "kind": "image.show",
@@ -57700,8 +57701,7 @@
           "text": "【過場】"
         },
         {
-          "kind": "comment",
-          "text": "【此段暫時不撥放BGM】"
+          "kind": "bgm.pause"
         },
         {
           "kind": "image.show",
@@ -58897,8 +58897,10 @@
           "time": 250
         },
         {
-          "kind": "comment",
-          "text": "【此段暫時不撥放BGM】"
+          "kind": "bgm.resume"
+        },
+        {
+          "kind": "bgm.pause"
         },
         {
           "kind": "image.show",
@@ -59077,6 +59079,9 @@
           ],
           "opacity": 1,
           "time": 250
+        },
+        {
+          "kind": "bgm.resume"
         },
         {
           "kind": "narration",
@@ -62833,8 +62838,7 @@
           "text": "【過場】"
         },
         {
-          "kind": "comment",
-          "text": "【此段暫時不撥放BGM】"
+          "kind": "bgm.pause"
         },
         {
           "kind": "image.show",
@@ -63070,6 +63074,9 @@
           ],
           "opacity": 1,
           "time": 250
+        },
+        {
+          "kind": "bgm.resume"
         },
         {
           "kind": "layout.set",

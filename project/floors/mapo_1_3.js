@@ -270,6 +270,18 @@ main.floors.mapo_1_3=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -386,13 +398,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[表妹]人像沙丁魚一樣躺在這裡啊！",
         {
@@ -404,13 +416,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]秋葉原就是這樣的啦",
         {
@@ -422,13 +434,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]等等？我好像看到失去聯絡的人了",
         {
@@ -440,13 +452,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]不好，這家店就是修卡的據點！快，變身！",
         {
@@ -458,13 +470,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]原來是吃飯吃到失聯啊，他們",
         {
@@ -476,13 +488,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_panic_portrait.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "panic"
+            "time": 0
         },
         "\t[梗平]等一下，在下已經完全明白A之前喊救命的原因了，是好吃到喊救命",
         {
@@ -494,13 +506,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]東京居然有這種等級的料理嗎？難道它會發光？",
         {
@@ -512,13 +524,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]表妹你第一次來東京，表哥來請你吃頓好的",
         {
@@ -530,13 +542,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[表妹]那你點什麼我就吃什麼",
         {
@@ -548,13 +560,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]既然是中華料理店，那肯定是要...",
         {
@@ -566,13 +578,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]服務員！請先來兩份免費的幸運餅乾！",
         {
@@ -584,13 +596,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_mapo_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[麻婆]本店沒有提供那種東西",
         {
@@ -602,13 +614,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]你說...什麼",
         {
@@ -625,13 +637,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]那應該在美國吧…仔細一看這菜單背面還寫著挑戰菜單啊…",
         {
@@ -643,13 +655,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]假面騎士不畏懼任何挑戰！老闆，我要點這個",
         {
@@ -687,13 +699,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]爆發吧在下的小宇宙，哦哦哦哦哦！",
                         {
@@ -708,13 +720,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_mapo_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[麻婆]吼吼，居然是承受我七成功力的好苗子，這位兄弟有沒有興趣精進麻婆道？",
                         {
@@ -726,13 +738,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]請指導我吧！",
                         {
@@ -744,13 +756,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "suou_happy_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[表妹]這個人到底在說甚麼呢",
                         {
@@ -785,13 +797,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_mapo_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[麻婆]記住我的說過的話嗎？",
                         {
@@ -803,13 +815,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]料理界不是殺就是被殺",
                         {
@@ -821,13 +833,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_mapo_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[麻婆]沒錯，我們抵達的正是時候，你看",
                         {
@@ -844,13 +856,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_dio_surprised.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[DIO]怎麼可能，我迪奧，居然會敗給區區的海鮮",
                         {
@@ -862,13 +874,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_sukuna_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[宿儺]這就是你的敗因，抱著你的麵包溺死吧",
                         {
@@ -880,13 +892,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_dio_surprised.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[DIO]咕哇阿阿阿阿！(爆發四散)",
                         {
@@ -898,13 +910,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_serizawa_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[芹澤]我們的第一位選手不幸的敗下陣來",
                         {
@@ -916,13 +928,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_serizawa_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[芹澤]希望下一位選手會更好",
                         {
@@ -934,13 +946,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_mapo_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[麻婆]還是太輕敵了，他本可以早早結束比賽的",
                         {
@@ -952,13 +964,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_mapo_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[麻婆]卻偏偏要用最華麗的方式擊敗宿儺大廚",
                         {
@@ -972,13 +984,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_mapo_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[麻婆]哎呀，哥吉拉先生挺可惜的，技術高超但平凡的烤肉，缺乏創新",
                         {
@@ -990,13 +1002,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_reporter_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[記者]這裡是現場記者，比賽現在進入中場休息，宿儺先生現在是連勝，讓我們訪問一下敗者組",
                         {
@@ -1008,13 +1020,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_reporter_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[記者]你認為剩下的選手中有誰有望衝擊宿儺大廚？",
                         {
@@ -1026,13 +1038,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_dio_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[DIO]嗯？梗平吧？",
                         {
@@ -1045,13 +1057,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_serizawa_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[芹澤]應該是梗平吧？如果把宿儺手指也計算在內的話可能會有不一樣。",
                         {
@@ -1063,13 +1075,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]除了在下和表妹以外的某人吧。",
                         {
@@ -1081,13 +1093,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_mapo_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[麻婆]梗平，你去打敗宿儺",
                         {
@@ -1145,13 +1157,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_serizawa_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[芹澤]中場結束，接下來是備受期待的下半場的首戰",
                         {
@@ -1163,13 +1175,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_serizawa_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[芹澤]東邊，代表麻婆豆腐店出戰的梗平廚師",
                         {
@@ -1181,13 +1193,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]......在下打宿儺？真的假的？",
                         {
@@ -1199,13 +1211,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_serizawa_surprised.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[芹澤]西邊，最強！最兇！最狂！常勝無敗，刀尖上的藝術，宿儺",
                         {
@@ -1217,13 +1229,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_sukuna_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[宿儺]別讓我無聊，凡種",
                         {
@@ -1235,13 +1247,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_serizawa_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[芹澤]究竟是宿儺大廚會保持連勝？還是這個新人會給眾人帶來驚喜",
                         {
@@ -1253,13 +1265,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]會贏哦",
                         {
@@ -1334,13 +1346,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]到此為止了嗎？拼盡全力無法戰勝",
                         {
@@ -1352,13 +1364,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_mapo_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[不知道是誰的？]你不是還有生命嗎？",
                         {
@@ -1371,13 +1383,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]我跟著師傅學習了數十年的麻婆道",
                         {
@@ -1389,13 +1401,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]在這個過程，有太多的人將他的意志託付給了我",
                         {
@@ -1407,13 +1419,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]大師兄在吃下第一口麻婆豆腐時，因為承受不住離去了",
                         {
@@ -1425,13 +1437,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]二師兄也因為在煮醬時候，不小心揉到了眼睛早早退場",
                         {
@@ -1443,13 +1455,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]在下的表妹，也在修行的過程中離開了我們",
                         {
@@ -1461,13 +1473,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "suou_happy_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[表妹]我沒死哦",
                         {
@@ -1479,13 +1491,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]安靜，這部分很重要",
                         {
@@ -1497,13 +1509,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]說到哪來著？",
                         {
@@ -1515,13 +1527,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]......",
                         {
@@ -1533,13 +1545,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]不行，想不起來了",
                         {
@@ -1551,13 +1563,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]不管了，爆發吧在下的小宇宙，哦哦哦哦哦！",
                         {
@@ -1569,13 +1581,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_sukuna_surprised.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[宿儺]什麼，不可能，竟然是失傳已久的天使麻婆豆腐！",
                         {
@@ -1587,13 +1599,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]接下吧，這就是在下跟大家的羈絆啊！！！",
                         {
@@ -1605,13 +1617,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_serizawa_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[芹澤]恭喜梗平選手擊敗了宿儺大廚，獲得本大賽提供的特殊獎品",
                         {
@@ -1623,13 +1635,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]難不成...是假面騎士腰帶嗎？",
                         {
@@ -1641,13 +1653,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_serizawa_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[芹澤]恭喜他獲得了為期七天的宿儺大廚一對一教學體驗",
                         {
@@ -1659,13 +1671,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]不對，在下還要參加Comi…",
                         {
@@ -1677,13 +1689,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_serizawa_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[芹澤]該獎品無法拒絕，也不能夠轉讓",
                         {
@@ -1695,13 +1707,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_sukuna_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[宿儺]好了，我們現在就開始吧",
                         {
@@ -1713,13 +1725,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]不要啊！",
                         {
@@ -1774,13 +1786,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "suou_happy_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[表妹]差點死在這裡，這不愧是東京",
                         {
@@ -1792,13 +1804,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "suou_happy_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[表妹]對了，老闆，請問這裡可以拍照嗎？",
                         {
@@ -1810,13 +1822,13 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_mapo_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[麻婆]你隨意",
                         {
@@ -1855,13 +1867,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]好像忘記了甚麼",
         {
@@ -1873,13 +1885,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]啊對，要來救人的",
         {
@@ -1891,13 +1903,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]一個一個來好麻煩啊，看來這時候只能使用那招了",
         {
@@ -1910,13 +1922,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[表妹]急救拳！",
         {
@@ -1928,13 +1940,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]啊...總算活過來了",
         {
@@ -1946,13 +1958,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]早安，你還好嗎？",
         {
@@ -1964,13 +1976,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]原本只是來打工的...老闆拿給我試吃我就吃了",
         {
@@ -1982,13 +1994,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]沒想到這裡的餐這麼可怕",
         {
@@ -2000,13 +2012,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]先不聊了，我要趕快去救其他人了",
         {
@@ -2020,13 +2032,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]嗯，考慮到今天的狀況",
         {
@@ -2038,13 +2050,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[表妹]急救拳．十倍出力！",
         {
@@ -2056,13 +2068,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]啊！在下不要渡過三途川啊",
         {
@@ -2074,13 +2086,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]好，你看起來挺精神的",
         {
@@ -2092,13 +2104,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_serious_portrait.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "angry"
+            "time": 0
         },
         "\t[梗平]可惡，沒想到麻婆豆腐如此強大，不想再吃一次了",
         {
@@ -2110,13 +2122,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]我也不想來第二次了",
         {
@@ -2128,13 +2140,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]不過時間好像也差不多了，住宿問題該怎麼解決呢？",
         {
@@ -2146,13 +2158,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]表哥你不是找了姨媽問打工換宿的地方嗎？",
         {
@@ -2164,13 +2176,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]......",
         {
@@ -2182,13 +2194,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]對喔，還有這回事",
         {
@@ -2200,13 +2212,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]那在下先走一步",
         {
@@ -2239,13 +2251,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]時間還早，到處晃晃好了",
         {
@@ -2261,17 +2273,5 @@ main.floors.mapo_1_3=
             "type": "function",
             "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'mapo_1_3_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

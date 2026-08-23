@@ -270,6 +270,18 @@ main.floors.main_ch3_2=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -344,13 +356,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下到底......守護了甚麼啊",
         {
@@ -364,13 +376,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]梗平先生，你守護了我喔",
         {
@@ -382,13 +394,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]所以請不要這樣垂頭喪氣的，我們走吧",
         {
@@ -400,13 +412,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]痾，嗯......好",
         {
@@ -441,13 +453,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]剛剛在車上甚麼都沒能聊到呢",
         {
@@ -459,13 +471,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]梗平，你喜歡怎麼樣的女性呢？",
         {
@@ -477,13 +489,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下......",
         {
@@ -496,13 +508,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]喜歡的女性什麼的......我也不是很清楚",
         {
@@ -514,13 +526,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]畢竟以前從來沒想過這些",
         {
@@ -532,13 +544,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下可以跟你分享在下喜歡的東西嗎？",
         {
@@ -550,13 +562,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]嗯......",
         {
@@ -570,13 +582,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下啊，最喜歡假面騎士了",
         {
@@ -588,13 +600,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]作為孤獨的英雄，即便被誤解或當成怪物，仍然會挺身而出",
         {
@@ -606,13 +618,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]為了守護大家而戰，這就是假面騎士",
         {
@@ -624,13 +636,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在這裡面，在下特別喜歡......",
         {
@@ -644,13 +656,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]很想再聽你分享更多呢，只可惜時間好像有點晚了",
         {
@@ -666,13 +678,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]嗯，謝謝你願意聽我分享我喜歡的東西",
         {
@@ -684,13 +696,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]我有一件很重要的事情要去辦，可以拜託你送我回秋葉原嗎",
         {
@@ -702,13 +714,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]嗯，沒有問題",
         {
@@ -741,13 +753,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]我們還會有下一次嗎？",
         {
@@ -759,13 +771,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]會有的",
         {
@@ -777,13 +789,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_becky_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[貝琪]嗯，謝謝你",
         {
@@ -796,13 +808,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_smile_portrait.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "smile"
+            "time": 0
         },
         "\t[梗平](太好了，假面騎士又有新的夥伴了)",
         {
@@ -814,13 +826,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平](這下擊敗修卡指日可待)",
         {
@@ -832,13 +844,13 @@ main.floors.main_ch3_2=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]......",
         {
@@ -880,17 +892,5 @@ main.floors.main_ch3_2=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

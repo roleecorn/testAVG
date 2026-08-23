@@ -270,6 +270,18 @@ main.floors.mapo_1_4=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -344,13 +356,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[不知道是誰的？]你就是梗平吧",
         {
@@ -363,13 +375,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]什麼？這種技術...難道是修卡嗎？",
         {
@@ -381,13 +393,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[不知道是誰的？]說什麼啊你，看下面",
         {
@@ -400,13 +412,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]我就是這裡的店長，三角，你應該就是來打工換宿的梗平沒錯",
         {
@@ -418,13 +430,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]你母親都跟我說過了，你只要做些簡單的工作就可以了",
         {
@@ -436,13 +448,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]每天早上幫忙處理一下環境清潔跟開店就準備就可以了",
         {
@@ -454,13 +466,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]作為交換，閣樓你可以隨意使用",
         {
@@ -472,13 +484,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]兔子玩偶竟然發出了聲音？你肯定是被修卡改造的怪人－咕",
         {
@@ -510,13 +522,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]好痛啊，這個到底是什麼啊",
         {
@@ -528,13 +540,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]希望你清醒了一點，我再繼續跟你介紹一下這裡",
         {
@@ -546,13 +558,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]這裡白天會是咖啡廳，也就是你主要要幫忙的部分",
         {
@@ -564,13 +576,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]晚上則會稍微調整布局，改成小型的酒吧",
         {
@@ -582,13 +594,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]晚上不需要幫忙嗎？不如說請務必讓在下排晚上的班！",
         {
@@ -600,13 +612,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]不然在下難以償還您願意讓我住在這裡的恩情啊！",
         {
@@ -618,13 +630,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]你母親告訴我絕對不能讓你在店裡碰到酒，所以不行",
         {
@@ -636,13 +648,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]你說......什麼？",
         {
@@ -654,13 +666,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]還說如果你動了歪腦筋大學學費就自己付",
         {
@@ -672,13 +684,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]竟然不許！",
         {
@@ -691,13 +703,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]時間也差不多了，你趕快去閣樓放一放行李",
         {
@@ -709,13 +721,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]你明天早上再來報到就好，我也該去處理酒吧的業務了",
         {
@@ -728,13 +740,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_serious_portrait.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "angry"
+            "time": 0
         },
         "\t[梗平](可惡啊，我在秋葉原喝酒的夢想竟然如此輕易的被擊倒了)",
         {
@@ -746,13 +758,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平](等等......剛剛的話意思是我到明天早上為止都可以自由活動對吧)",
         {
@@ -764,13 +776,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平](我記得過來的路上...似乎有看到一家便利商店的樣子)",
         {
@@ -782,13 +794,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]三角店長！我先出去一趟",
         {
@@ -800,13 +812,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]明天記得回來就好",
         {
@@ -840,13 +852,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]這瓶、這瓶，還有這瓶",
         {
@@ -858,13 +870,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]對的對的，假面騎士怎麼可以沒有燃料呢",
         {
@@ -878,13 +890,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_dead_eyes_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[眼神死掉的人]您...您好，只......需要這些嗎？",
         {
@@ -896,13 +908,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]對，塑膠袋謝謝",
         {
@@ -915,13 +927,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_dead_eyes_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[眼神死掉的人]......",
         {
@@ -933,13 +945,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_dead_eyes_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[眼神死掉的人]我是不是已經連續上班5天了",
         {
@@ -951,13 +963,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_dead_eyes_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[眼神死掉的人]......",
         {
@@ -969,13 +981,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_dead_eyes_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[眼神死掉的人]我不管了！老娘要辭職啊！",
         {
@@ -1009,13 +1021,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下明天還得繼續跟修卡戰鬥，怎麼能沒有燃料呢",
         {
@@ -1027,13 +1039,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]老媽就是太過擔心我跟修卡戰鬥會受傷了",
         {
@@ -1045,13 +1057,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]可是在下已經下定決心要跟他們戰鬥到底了",
         {
@@ -1063,13 +1075,13 @@ main.floors.mapo_1_4=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]所以沒錯，乾杯！",
         {
@@ -1091,13 +1103,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]在下的酒啊！",
                         {
@@ -1110,13 +1122,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]在下的啤酒！100塊！",
                         {
@@ -1129,13 +1141,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]...",
                         {
@@ -1147,13 +1159,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]雖然不知道你是誰但你人真好",
                         {
@@ -1176,13 +1188,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]嘔嘔嘔嘔嘔！",
                         {
@@ -1195,13 +1207,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]手機不在身上，這下麻煩了",
                         {
@@ -1213,13 +1225,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]有這麼大的力氣，對方肯定是想趁我還沒補充能量趁機打倒我",
                         {
@@ -1231,13 +1243,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_serious_portrait.png",
+                            "expression": "angry",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "angry"
+                            "time": 0
                         },
                         "\t[梗平]連燃料都一起搶走了，修卡太可惡！",
                         {
@@ -1250,13 +1262,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]這裡還挺大的，但沒路的樣子？",
                         {
@@ -1268,13 +1280,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]這種時候該出現強化事件了！一定有什麼可以用的道具",
                         {
@@ -1286,13 +1298,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]就是這個了",
                         {
@@ -1342,13 +1354,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]我是——GUNDAM！",
                         {
@@ -1360,13 +1372,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]已經，沒什麼好怕的了！",
                         {
@@ -1398,13 +1410,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]給我站住！",
                         {
@@ -1418,13 +1430,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]只要打不中就沒什麼大不了的",
                         {
@@ -1438,13 +1450,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_smile_portrait.png",
+                            "expression": "smile",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "smile"
+                            "time": 0
                         },
                         "\t[梗平]哈哈，區區小丑，根本不在話下",
                         {
@@ -1501,13 +1513,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]居然是雷霆大鱷魚！",
                         {
@@ -1525,13 +1537,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]這跟說好的不一樣啊！",
                         {
@@ -1550,13 +1562,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]只有失去過才會懂得珍惜嗎？果然人是活在陽光下的生物",
                         {
@@ -1570,13 +1582,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_police_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[警察]你這身傷是怎麼回事？趕快去醫院治療",
                         {
@@ -1588,13 +1600,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]這是誤會阿警察先生，這些血都是雷霆大鱷魚的",
                         {
@@ -1606,13 +1618,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_police_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[警察]受傷加上妄想嗎？去跟醫生說吧",
                         {
@@ -1624,13 +1636,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]所以在下沒說謊阿，哎呦頭好暈...",
                         {
@@ -1678,13 +1690,13 @@ main.floors.mapo_1_4=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]沒錯沒錯，在下可沒有違反規則啊！",
                         {
@@ -1721,17 +1733,5 @@ main.floors.mapo_1_4=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

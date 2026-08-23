@@ -270,6 +270,18 @@ main.floors.mapo_1_1=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -345,13 +357,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]嘔嘔嘔嘔嘔嘔",
         {
@@ -363,13 +375,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]表哥，你在做甚麼",
         {
@@ -381,13 +393,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下只是嘔嘔嘔嘔嘔嘔",
         {
@@ -399,13 +411,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]要塑膠袋...",
         {
@@ -417,13 +429,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]不嘔嘔嘔",
         {
@@ -435,13 +447,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]我還是不要靠近你好了",
         {
@@ -453,13 +465,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]呼.......",
         {
@@ -471,13 +483,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下只是昨天補充酒精作為假面騎士的燃料時，不小心出了點意外",
         {
@@ -489,13 +501,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]可是你的燃料都在地板上了",
         {
@@ -507,13 +519,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]那個...那個是.......對，只是不成熟的騎士系統的副作用而已",
         {
@@ -525,13 +537,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]看來你吐得差不多了，我也要走......大家人呢？",
         {
@@ -545,13 +557,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]原來如此，在下知道了",
         {
@@ -563,13 +575,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]哼，就由在下這個專業人士來教你這個初心者吧",
         {
@@ -581,13 +593,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]死宅...是自由的啊，在Comike開始前提早來並自由活動才是真正的阿宅",
         {
@@ -599,13 +611,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]所以說嘔嘔嘔",
         {
@@ -617,13 +629,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]怎麼還有第二段啊",
         {
@@ -635,13 +647,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_serious_portrait.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "angry"
+            "time": 0
         },
         "\t[梗平]可惡，不成熟的騎士系統副作用竟然如此難以消除",
         {
@@ -653,13 +665,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "suou_smile_portrait.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "smile"
+            "time": 0
         },
         "\t[表妹]你開心就好",
         {
@@ -671,13 +683,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]反正我們這次是來陪東山擺攤的，順便逛秋葉原",
         {
@@ -689,13 +701,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]你先想想自己要去哪裡吧",
         {
@@ -707,13 +719,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "suou_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[表妹]第一次來這種大城市想多逛點地方，可惜我們身上都沒什麼錢",
         {
@@ -725,13 +737,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]所以就先隨便亂逛吧",
         {
@@ -764,13 +776,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]這麼說來不知道大家都去哪裡了，看看群組對話有沒有動靜吧",
         {
@@ -803,13 +815,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_serious_portrait.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "angry"
+            "time": 0
         },
         "\t[梗平]可惡，沒有回應",
         {
@@ -821,13 +833,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下的假面騎士之魂告訴我，東山肯定是被修卡抓走了",
         {
@@ -839,13 +851,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]而東山在失去意識之前傳出了這則訊息，看來假面騎士要出動了",
         {
@@ -857,13 +869,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "suou_happy_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[表妹]先不論這個結論怎麼來的......所以該去哪裡找東山呢",
         {
@@ -875,13 +887,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]在下的直覺告訴我邪惡組織肯定會在倉庫有秘密基地",
         {
@@ -893,13 +905,13 @@ main.floors.mapo_1_1=
             "type": "showImage",
             "code": 20,
             "image": "keng_serious_portrait.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "angry"
+            "time": 0
         },
         "\t[梗平]所以我們就去倉庫區找東山吧，可惡的修卡，在下不會讓你們傷害在下的朋友",
         {
@@ -921,17 +933,5 @@ main.floors.mapo_1_1=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

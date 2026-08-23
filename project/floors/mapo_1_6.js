@@ -270,6 +270,18 @@ main.floors.mapo_1_6=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -344,13 +356,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]頭好痛......嘔嘔嘔嘔嘔",
         {
@@ -363,13 +375,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_serious_portrait.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "angry"
+            "time": 0
         },
         "\t[梗平]可惡，每次補充燃料都有如此嚴重的副作用",
         {
@@ -381,13 +393,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]必須盡快找到博士幫我解決掉這個問題才行",
         {
@@ -400,13 +412,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]什麼？已經這個時間了",
         {
@@ -418,13 +430,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]遲到的話又要被揍了啊，得快點回去",
         {
@@ -457,13 +469,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]這麼說來炭烤蜜瓜兔子會是甚麼類型的咖啡廳呢？",
         {
@@ -475,13 +487,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]希望白天的菜單裡有酒啊......",
         {
@@ -515,13 +527,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_serious_portrait.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "angry"
+            "time": 0
         },
         "\t[梗平]可惡，會不會走路啊！",
         {
@@ -557,13 +569,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]你偷喝酒了對吧，酒氣太濃了",
         {
@@ -616,13 +628,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[三角]小兔子暗黑無限破！",
         {
@@ -667,13 +679,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_serious_portrait.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "angry"
+            "time": 0
         },
         "\t[梗平]可...可惡......",
         {
@@ -685,13 +697,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_chino_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[智乃]三角店長......這個是?",
         {
@@ -704,13 +716,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]親戚的兒子，這幾天會在這裡幫忙",
         {
@@ -722,13 +734,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]環境要清潔或是搬東西的話直接叫他就好",
         {
@@ -740,13 +752,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]誒？三角店長原來你還能......",
         {
@@ -759,13 +771,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]不要問",
         {
@@ -777,13 +789,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]......",
         {
@@ -796,13 +808,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]你聽我解釋，大哥哥只是去補充假面騎士的燃料而已",
         {
@@ -815,13 +827,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "sad"
+            "time": 0
         },
         "\t[梗平]痾...嗚......",
         {
@@ -833,13 +845,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]雖然看起來是個怪人，但是人不壞",
         {
@@ -851,13 +863,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]只要不要讓他說太多話就好",
         {
@@ -870,13 +882,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]你先去把這幾個東西搬到櫃台吧",
         {
@@ -889,13 +901,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]喔，這就交給我吧",
         {
@@ -907,13 +919,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平](不行，得趕快挽回在下的形象才行)",
         {
@@ -926,13 +938,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平](還好還好，第一次見面就被討厭的事情應該不會發生了)",
         {
@@ -945,13 +957,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_ib_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[IB]智乃！",
         {
@@ -963,13 +975,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_chino_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[智乃]IB、柯南，怎麼了",
         {
@@ -981,13 +993,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_kuro_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[小黑]IB的哥哥從昨天開始就不見了，所以想要來拜託你一起找",
         {
@@ -999,13 +1011,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_chino_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[智乃]店長，我可以暫時離開嗎？",
         {
@@ -1017,13 +1029,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_sankaku_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[三角]差不多也要關店了，我來處理善後的東西就可以了",
         {
@@ -1036,13 +1048,13 @@ main.floors.mapo_1_6=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]誒？",
         {
@@ -1062,13 +1074,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_sankaku_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[三角]給你機會你不中用啊",
                         {
@@ -1080,13 +1092,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_surprised_portrait.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[梗平]等等，讓我把話說完！",
                         {
@@ -1098,13 +1110,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_sankaku_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[三角]你還有一句話的機會",
                         {
@@ -1116,13 +1128,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]我只是覺得要培養小朋友的自主......",
                         {
@@ -1175,13 +1187,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_sankaku_surprised.png",
+                            "expression": "surprised",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
+                            "time": 0
                         },
                         "\t[三角]小兔子暗黑無限破！",
                         {
@@ -1264,13 +1276,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]有甚麼線索嗎？",
                         {
@@ -1282,13 +1294,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_kuro_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[小黑]從IB哥哥的行程來看，他昨天只預計要去ANIsister而已",
                         {
@@ -1300,13 +1312,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_kuro_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[小黑]最後一次IB聯繫到他的時候，也確實是在說關於ANIsister的事情",
                         {
@@ -1318,13 +1330,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_kuro_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[小黑]看起來大概率就是跟那裏有關了",
                         {
@@ -1336,13 +1348,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]有道理，交給大哥哥吧",
                         {
@@ -1354,13 +1366,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[梗平]走，你們跟著在下走",
                         {
@@ -1373,13 +1385,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_sankaku_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[三角]聽起來已經推論出了大概，但總感覺會不太順利呢",
                         {
@@ -1391,13 +1403,13 @@ main.floors.mapo_1_6=
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_sankaku_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[三角]算了，應該是錯覺",
                         {
@@ -1422,17 +1434,5 @@ main.floors.mapo_1_6=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

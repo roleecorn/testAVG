@@ -270,6 +270,18 @@ main.floors.main_ch2_3=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -339,13 +351,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[警察]借我一張",
         {
@@ -357,13 +369,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]好",
         {
@@ -376,13 +388,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平](好像哪裡不太對)",
         {
@@ -396,13 +408,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[警察]喔，來了來了！",
         {
@@ -416,13 +428,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[警察]太可惜了",
         {
@@ -462,13 +474,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]在下最後的1000円啊！",
         {
@@ -555,13 +567,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_police_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[警察]啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
         {
@@ -602,13 +614,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]我的錢啊！！！",
         {
@@ -621,13 +633,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]對啊，要幫IB找哥哥才行",
         {
@@ -639,13 +651,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]......",
         {
@@ -657,13 +669,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]算了，還是去ANIsister一趟吧",
         {
@@ -715,13 +727,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]身為一個大人",
         {
@@ -733,13 +745,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_panic_portrait.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "panic"
+            "time": 0
         },
         "\t[梗平]明知這裡有危險還是要上啊，假面騎士可不能臨陣脫逃啊",
         {
@@ -751,13 +763,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_panic_portrait.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "panic"
+            "time": 0
         },
         "\t[梗平]更何況，在下可不能讓孩子們遭遇危險啊",
         {
@@ -805,13 +817,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[梗平]還好還有開的地方",
         {
@@ -824,13 +836,13 @@ main.floors.main_ch2_3=
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
+            "time": 0
         },
         "\t[梗平]等等，你們要做什麼，不要過來啊！",
         {
@@ -871,17 +883,5 @@ main.floors.main_ch2_3=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

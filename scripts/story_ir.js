@@ -59,7 +59,14 @@ function eventToIr(event) {
     case "sleep": return { kind: "wait", time: event.time, noSkip: event.noSkip };
     case "changeFloor":
       return { kind: "goto", floorId: event.floorId, loc: event.loc, direction: event.direction, time: event.time };
-    case "comment": return { kind: "comment", text: event.text || event.comment || "" };
+    case "comment": {
+      const text = event.text || event.comment || "";
+      if (text === "【此段暫時不撥放BGM】" || text === "【此段暫時不播放BGM】") {
+        return { kind: "bgm.pause", until: "background" };
+      }
+      if (text === "【BGM停止】") return { kind: "bgm.pause", until: "play" };
+      return { kind: "comment", text };
+    }
     case "function": {
       const completion = typeof event.function === "string"
         && event.function.match(/core\.plugin\.completeAkibaEvent\(\s*['\"]([^'\"]+)['\"]\s*\)/);
@@ -204,9 +211,33 @@ function normalizeBundlePortraitLifecycle(bundle) {
     ...bundle,
     scenes: bundle.scenes.map((scene) => ({
       ...scene,
-      events: normalizePortraitLifecycle(scene.events),
+      events: normalizeBgmLifecycle(normalizePortraitLifecycle(scene.events)),
     })),
   };
+}
+
+function normalizeBgmLifecycle(events) {
+  const normalized = [];
+  let backgroundScopedPause = false;
+
+  for (const node of events) {
+    if (node.kind === "bgm.pause" && node.until === "background") {
+      backgroundScopedPause = true;
+      normalized.push({ kind: "bgm.pause" });
+      continue;
+    }
+    if (node.kind === "bgm.play") {
+      backgroundScopedPause = false;
+      normalized.push(node);
+      continue;
+    }
+    normalized.push(node);
+    if (backgroundScopedPause && node.kind === "background.show") {
+      normalized.push({ kind: "bgm.resume" });
+      backgroundScopedPause = false;
+    }
+  }
+  return normalized;
 }
 
 const ALLOWED_KINDS = new Set([
@@ -371,7 +402,7 @@ function createBundle(root, sourceFiles, floors, sourceKind) {
     scenes: floors.map((floor) => ({
       id: floor.floorId,
       floor: Object.fromEntries(Object.entries(floor).filter(([key]) => key !== "eachArrive")),
-      events: normalizePortraitLifecycle((floor.eachArrive || []).map(eventToIr)),
+      events: normalizeBgmLifecycle(normalizePortraitLifecycle((floor.eachArrive || []).map(eventToIr))),
     })),
   }));
 }
@@ -380,7 +411,7 @@ function bundleToFloors(bundle) {
   validateBundle(bundle);
   return bundle.scenes.map((scene) => ({
     ...scene.floor,
-    eachArrive: normalizePortraitLifecycle(scene.events).map(irToEvent),
+    eachArrive: normalizeBgmLifecycle(normalizePortraitLifecycle(scene.events)).map(irToEvent),
   }));
 }
 
