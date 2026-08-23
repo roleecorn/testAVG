@@ -50636,7 +50636,11 @@
         },
         {
           "kind": "comment",
-          "text": "TODO: 【此場景為回憶某件事。濾鏡全畫面顯示模仿復古膠捲播放時的棕色調】"
+          "text": "【此場景為回憶某件事。濾鏡全畫面顯示模仿復古膠捲播放時的棕色調】"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.setCurtain([120, 72, 36, 0.32], 0); }"
         },
         {
           "kind": "image.hide",

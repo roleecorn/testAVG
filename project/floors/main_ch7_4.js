@@ -830,7 +830,11 @@ main.floors.main_ch7_4=
         },
         {
             "type": "comment",
-            "text": "TODO: 【此場景為回憶某件事。濾鏡全畫面顯示模仿復古膠捲播放時的棕色調】"
+            "text": "【此場景為回憶某件事。濾鏡全畫面顯示模仿復古膠捲播放時的棕色調】"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.setCurtain([120, 72, 36, 0.32], 0); }"
         },
         {
             "type": "hideImage",
