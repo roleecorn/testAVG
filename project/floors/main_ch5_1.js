@@ -270,18 +270,6 @@ main.floors.main_ch5_1=
     "width": 17,
     "height": 13,
     "firstArrive": [],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -354,43 +342,96 @@ main.floors.main_ch5_1=
         "梗平從黑色高級加長禮車醒來之後，發現道路的周圍被警察圍了起來",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平](看來有大人物要來了啊)",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         "對著周圍的環境，梗平如此想著",
         "等車開到了碳烤蜜瓜兔子前方後，禮車停了下來",
-        "\t[貝琪]昨天的事情，我願意",
-        "\t[貝琪]你一定要回來找我喔",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "ms_portrait_becky_normal.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[貝琪]昨天的事情，我願意",
+        {
+            "type": "hideImage",
+            "code": 20,
             "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_becky_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[貝琪]你一定要回來找我喔",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_smile_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "smile"
         },
         "\t[梗平]喔？真的嗎？太好了",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_becky_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[貝琪]我這邊也要先去籌備一些事情，就先說聲再見了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "貝琪面帶笑容地將梗平送下了車，然後走到了警察的旁邊說了幾句話",
         "警察們很自然的讓出了一條通道，前方正是炭烤蜜瓜兔子",
         "貝琪揮手送別了梗平後，就上了車揚長而去",
@@ -418,36 +459,38 @@ main.floors.main_ch5_1=
         "又是一樣的早晨，一樣的清掃、一樣的蹭了早午餐",
         {
             "type": "showImage",
-            "code": 10,
+            "code": 20,
             "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]接下來該做甚麼好呢",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         {
             "type": "showImage",
-            "code": 10,
+            "code": 20,
             "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]感覺接下來會特別忙，先把想做的事情做完好了",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         "梗平將工具歸了位後，離開了炭烤蜜瓜兔子",
@@ -459,5 +502,17 @@ main.floors.main_ch5_1=
             "type": "function",
             "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch5_1_exchange_1', loc: [6, 10], direction: 'up', time: 500 }, 2); }"
         }
-    ]
+    ],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": []
 }

@@ -270,18 +270,6 @@ main.floors.mapo_1_6=
     "width": 17,
     "height": 13,
     "firstArrive": [],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -354,89 +342,94 @@ main.floors.mapo_1_6=
         "次日凌晨，河邊",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]頭好痛......嘔嘔嘔嘔嘔",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        "完全咎由自取的宿醉朝梗平襲來",
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]可惡，每次補充燃料都有如此嚴重的副作用",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 10,
+            "code": 20,
             "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[梗平]頭好痛......嘔嘔嘔嘔嘔",
+        {
+            "type": "hideImage",
+            "code": 20,
             "time": 0
+        },
+        "完全咎由自取的宿醉朝梗平襲來",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "angry"
+        },
+        "\t[梗平]可惡，每次補充燃料都有如此嚴重的副作用",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]必須盡快找到博士幫我解決掉這個問題才行",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         "梗平自顧自地說了些甚麼之後，拿起了自己的手機",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "surprised"
         },
         "\t[梗平]什麼？已經這個時間了",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]遲到的話又要被揍了啊，得快點回去",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         "梗平連滾帶爬的跑回了道路上",
@@ -462,36 +455,38 @@ main.floors.mapo_1_6=
         },
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]這麼說來炭烤蜜瓜兔子會是甚麼類型的咖啡廳呢？",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]希望白天的菜單裡有酒啊......",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         "梗平拖著宿醉的身軀慢慢走向了咖啡廳",
@@ -518,19 +513,20 @@ main.floors.mapo_1_6=
         },
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "keng_serious_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "angry"
         },
         "\t[梗平]可惡，會不會走路啊！",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         "梗平一邊說著小物臭的發言，一邊走回了炭烤蜜瓜兔子",
@@ -557,7 +553,24 @@ main.floors.mapo_1_6=
         "梗平走進咖啡廳後，發現了兩個藍色頭髮的女孩",
         "其中一個正是昨天拿著兔子玩偶的店長......",
         "等等，兔子玩偶越靠越近了",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_sankaku_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[三角]你偷喝酒了對吧，酒氣太濃了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -599,7 +612,24 @@ main.floors.mapo_1_6=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_sankaku_surprised.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "surprised"
+        },
         "\t[三角]小兔子暗黑無限破！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "setText",
             "avg": true,
@@ -635,176 +665,389 @@ main.floors.mapo_1_6=
         },
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "keng_serious_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "angry"
         },
         "\t[梗平]可...可惡......",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
-        "\t[智乃]三角店長......這個是?",
-        "兔子玩偶回到了少女手上之後，另一名少女開了口",
-        "\t[三角]親戚的兒子，這幾天會在這裡幫忙",
-        "\t[三角]環境要清潔或是搬東西的話直接叫他就好",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "ms_portrait_chino_normal.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
-        "\t[梗平]誒？三角店長原來你還能......",
+        "\t[智乃]三角店長......這個是?",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
-        "聲音的來源變回了手上的兔子玩偶，低沉的聲音重新出現",
-        "\t[三角]不要問",
+        "兔子玩偶回到了少女手上之後，另一名少女開了口",
         {
             "type": "showImage",
-            "code": 10,
+            "code": 20,
+            "image": "ms_portrait_sankaku_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[三角]親戚的兒子，這幾天會在這裡幫忙",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_sankaku_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[三角]環境要清潔或是搬東西的話直接叫他就好",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
             "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[梗平]誒？三角店長原來你還能......",
+        {
+            "type": "hideImage",
+            "code": 20,
             "time": 0
+        },
+        "聲音的來源變回了手上的兔子玩偶，低沉的聲音重新出現",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_sankaku_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[三角]不要問",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]......",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         "隨後智乃開始慢慢打掃起了店裡，但時不時用懷疑的眼光朝梗平看一眼",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_smile_portrait.png",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]你聽我解釋，大哥哥只是去補充假面騎士的燃料而已",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         "然後更冰冷的視線掃了過來",
         {
             "type": "showImage",
-            "code": 10,
+            "code": 20,
             "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "sad"
         },
         "\t[梗平]痾...嗚......",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
-        "\t[三角]雖然看起來是個怪人，但是人不壞",
-        "\t[三角]只要不要讓他說太多話就好",
-        "視線的溫度稍微回升了一點",
-        "\t[三角]你先去把這幾個東西搬到櫃台吧",
-        "三角不知道從甚麼地方拿出了一份清單，並指著倉庫的方向",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_smile_portrait.png",
+            "code": 20,
+            "image": "ms_portrait_sankaku_normal.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[三角]雖然看起來是個怪人，但是人不壞",
+        {
+            "type": "hideImage",
+            "code": 20,
             "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_sankaku_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[三角]只要不要讓他說太多話就好",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "視線的溫度稍微回升了一點",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_sankaku_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[三角]你先去把這幾個東西搬到櫃台吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "三角不知道從甚麼地方拿出了一份清單，並指著倉庫的方向",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]喔，這就交給我吧",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平](不行，得趕快挽回在下的形象才行)",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         "於是梗平度過了一個充實的上午，智乃視線的溫度也持續回升",
         {
             "type": "showImage",
-            "code": 10,
+            "code": 20,
             "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平](還好還好，第一次見面就被討厭的事情應該不會發生了)",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         "就在此時，兩個小孩推了門進來",
-        "\t[IB]智乃！",
-        "\t[智乃]IB、柯南，怎麼了",
-        "\t[小黑]IB的哥哥從昨天開始就不見了，所以想要來拜託你一起找",
-        "\t[智乃]店長，我可以暫時離開嗎？",
-        "\t[三角]差不多也要關店了，我來處理善後的東西就可以了",
-        "然後三角跟智乃一起看向了工作完正在摸魚的梗平",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "ms_portrait_ib_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
+            "time": 0,
+            "expression": "surprised"
+        },
+        "\t[IB]智乃！",
+        {
+            "type": "hideImage",
+            "code": 20,
             "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_chino_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[智乃]IB、柯南，怎麼了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_kuro_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[小黑]IB的哥哥從昨天開始就不見了，所以想要來拜託你一起找",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_chino_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[智乃]店長，我可以暫時離開嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_sankaku_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
+        "\t[三角]差不多也要關店了，我來處理善後的東西就可以了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "然後三角跟智乃一起看向了工作完正在摸魚的梗平",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]誒？",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         {
@@ -815,40 +1058,76 @@ main.floors.mapo_1_6=
                     "text": "路上小心喔～",
                     "action": [
                         "梗平剛說完後，就看見三角店長蓄好了力",
-                        "\t[三角]給你機會你不中用啊",
                         {
                             "type": "showImage",
-                            "code": 10,
-                            "image": "keng_neutral_portrait.png",
+                            "code": 20,
+                            "image": "ms_portrait_sankaku_normal.png",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
+                            "time": 0,
+                            "expression": "normal"
+                        },
+                        "\t[三角]給你機會你不中用啊",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
                             "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "keng_surprised_portrait.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0,
+                            "expression": "surprised"
                         },
                         "\t[梗平]等等，讓我把話說完！",
                         {
                             "type": "hideImage",
-                            "code": 10,
+                            "code": 20,
                             "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_sankaku_normal.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0,
+                            "expression": "normal"
                         },
                         "\t[三角]你還有一句話的機會",
                         {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
-                            "code": 10,
+                            "code": 20,
                             "image": "keng_neutral_portrait.png",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0
+                            "time": 0,
+                            "expression": "normal"
                         },
                         "\t[梗平]我只是覺得要培養小朋友的自主......",
                         {
                             "type": "hideImage",
-                            "code": 10,
+                            "code": 20,
                             "time": 0
                         },
                         {
@@ -892,7 +1171,24 @@ main.floors.mapo_1_6=
                             "letterSpacing": 0,
                             "animateTime": 120
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_sankaku_surprised.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0,
+                            "expression": "surprised"
+                        },
                         "\t[三角]小兔子暗黑無限破！",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "setText",
                             "avg": true,
@@ -966,61 +1262,149 @@ main.floors.mapo_1_6=
                     "action": [
                         {
                             "type": "showImage",
-                            "code": 10,
-                            "image": "keng_panic_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]有甚麼線索嗎？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        "\t[小黑]從IB哥哥的行程來看，他昨天只預計要去ANIsister而已",
-                        "\t[小黑]最後一次IB聯繫到他的時候，也確實是在說關於ANIsister的事情",
-                        "\t[小黑]看起來大概率就是跟那裏有關了",
-                        {
-                            "type": "showImage",
-                            "code": 10,
-                            "image": "keng_smile_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]有道理，交給大哥哥吧",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 10,
+                            "code": 20,
                             "image": "keng_neutral_portrait.png",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
+                            "time": 0,
+                            "expression": "normal"
+                        },
+                        "\t[梗平]有甚麼線索嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
                             "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_kuro_normal.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0,
+                            "expression": "normal"
+                        },
+                        "\t[小黑]從IB哥哥的行程來看，他昨天只預計要去ANIsister而已",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_kuro_normal.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0,
+                            "expression": "normal"
+                        },
+                        "\t[小黑]最後一次IB聯繫到他的時候，也確實是在說關於ANIsister的事情",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_kuro_normal.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0,
+                            "expression": "normal"
+                        },
+                        "\t[小黑]看起來大概率就是跟那裏有關了",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0,
+                            "expression": "normal"
+                        },
+                        "\t[梗平]有道理，交給大哥哥吧",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0,
+                            "expression": "normal"
                         },
                         "\t[梗平]走，你們跟著在下走",
                         {
                             "type": "hideImage",
-                            "code": 10,
+                            "code": 20,
                             "time": 0
                         },
                         "話說完梗平就跑出了門，三小隻也跟著走了出去",
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_sankaku_normal.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0,
+                            "expression": "normal"
+                        },
                         "\t[三角]聽起來已經推論出了大概，但總感覺會不太順利呢",
-                        "\t[三角]算了，應該是錯覺"
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_sankaku_normal.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0,
+                            "expression": "normal"
+                        },
+                        "\t[三角]算了，應該是錯覺",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        }
                     ]
                 }
             ]
@@ -1038,5 +1422,17 @@ main.floors.mapo_1_6=
             "direction": "up",
             "time": 0
         }
-    ]
+    ],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": []
 }

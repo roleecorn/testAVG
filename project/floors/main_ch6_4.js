@@ -270,18 +270,6 @@ main.floors.main_ch6_4=
     "width": 17,
     "height": 13,
     "firstArrive": [],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -341,19 +329,20 @@ main.floors.main_ch6_4=
         },
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "surprised"
         },
         "\t[梗平](嗯？這是什麼？)",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         {
@@ -407,19 +396,20 @@ main.floors.main_ch6_4=
         },
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_panic_portrait.png",
+            "code": 20,
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "surprised"
         },
         "\t[梗平]為什麼！？連你也背叛在下嗎！？",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         {
@@ -478,7 +468,24 @@ main.floors.main_ch6_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_police_surprised.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "surprised"
+        },
         "\t[警察]我就是想要看到你這種表情啊！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "setText",
             "avg": true,
@@ -534,9 +541,26 @@ main.floors.main_ch6_4=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_police_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
         },
         "\t[警察]你竟然真的以為我會來救你？",
         {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -591,9 +615,26 @@ main.floors.main_ch6_4=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_police_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
         },
         "\t[警察]你還以為自己得救是了吧，蠢貨",
         {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -649,7 +690,24 @@ main.floors.main_ch6_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_police_smile.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "smile"
+        },
         "\t[警察]哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "setText",
             "avg": true,
@@ -678,7 +736,24 @@ main.floors.main_ch6_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_police_surprised.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "surprised"
+        },
         "\t[警察]既然恩報了，那仇豈有不報的道理！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "梗平的大腦飛速運轉，然後他找到了",
         {
             "type": "showImage",
@@ -699,7 +774,24 @@ main.floors.main_ch6_4=
             "code": 30,
             "time": 150
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_police_smile.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "smile"
+        },
         "\t[警察]德式背摔的苦痛我也一併還給你哈哈哈哈哈哈",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "在此之後，伴隨警察的笑聲，梗平放棄了掙扎",
         "後來趕到的友人與其他警察們，也都發出了笑聲",
         {
@@ -729,8 +821,42 @@ main.floors.main_ch6_4=
         },
         "在反應過來時，身體就已經換上了西裝站在紅毯上",
         "一旁的警察拿著婚戒放到了他的手中，用動作跟言語催促著他往前",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_police_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[警察]這種時候可不能掉鍊子啊，當然，手銬是不會打開的",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_police_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[警察]去吧，接受你的命運",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "梗平拿著婚戒一步步走向紅毯的另一端",
         {
             "type": "showImage",
@@ -756,13 +882,132 @@ main.floors.main_ch6_4=
             "type": "comment",
             "text": "TODO: 【此處應有梗平、貝琪立繪替換，未製作完成，忽略本句】"
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_nun_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[修女]新郎和新娘都已經表明你們的心願，願意共同進入這神聖的婚姻",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_nun_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[修女]在場也沒有人證明你們不配進入這神聖的婚姻",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_nun_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[修女]那麼，新娘你願意新郎成為你的丈夫嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_becky_wedding_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[貝琪(婚紗)]我願意",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_nun_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[修女]那麼，新郎你願意新娘成為你的妻子嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_keng_suit_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[梗平(西裝)]......",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_keng_suit_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[梗平(西裝)]在下願意",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "眼前的貝琪露出了梗平這輩子看到最美麗的笑容",
         "周圍的掌聲逐漸淹沒了梗平的思緒，一切似乎變得有些模糊",
         "酒精、歡笑、掌聲",
@@ -797,23 +1042,58 @@ main.floors.main_ch6_4=
         "梗平牽著貝琪的手站在了Comike的排隊人潮中",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_smile_portrait.png",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0
+            "time": 0,
+            "expression": "normal"
         },
         "\t[梗平]人好多啊，拜託了，我的限量假面騎士變身腰帶一定還要有啊",
         {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_becky_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[貝琪]人每年都這麼多的啦，不過放心親愛的",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_becky_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0,
+            "expression": "normal"
+        },
         "\t[貝琪]你想要的東西我們一定買的到的",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -872,5 +1152,17 @@ main.floors.main_ch6_4=
             "direction": "up",
             "time": 0
         }
-    ]
+    ],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": []
 }

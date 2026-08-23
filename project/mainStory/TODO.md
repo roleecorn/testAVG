@@ -8,13 +8,11 @@
 - project/mainStory/CH1 1-4：不知道是誰的？（原始名稱：？）
 - project/mainStory/CH1 1-5：不知道是誰的？（原始名稱：？）
 - project/mainStory/CH3 3-1：不知道是誰的？（原始名稱：？）
+- 未確認立繪角色：來島澄、店員、惠惠、李嚴、路人、路人A、路人B、不知道是誰的？、？？？；未猜測 ZIP 樣本對應。
 
 ## 待補劇情
 
-- project/mainStory/CH1 1-3：下一句要求使用麻婆立繪，但 project/images 尚無對應正式角色圖，暫不顯示立繪。
-- project/mainStory/CH1 1-4：製作指令「【下一句話使用三角作為立繪】」尚未轉成正式事件。
 - project/mainStory/CH3 3-1：【BGM：春日影】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
-- project/mainStory/CH3 3-1：製作指令「【下兩句話使用三日月作為立繪】」尚未轉成正式事件。
 - project/mainStory/CH3 3-3：【BGM：鐵達尼號】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH4 4-1：【CG：絕望的眾人 出現】尚無專用素材，暫用 scene_mapo_cg.png。
 - project/mainStory/CH4 4-1：【人物交流時間】 尚未撰寫，已以文字標記保留。
@@ -24,7 +22,6 @@
 - project/mainStory/CH7 7-3：【BGM：BGMBOOM】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
 - project/mainStory/CH7 7-3：製作指令「【下句店員使用月讀愛立繪】」尚未轉成正式事件。
 - project/mainStory/CH7 7-4：【BGM：BGMTANK】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
-- project/mainStory/CH7 7-4：製作指令「【下一句？？？使用雜貨店老闆立繪】」尚未轉成正式事件。
 - project/mainStory/CH7 7-4：製作指令「【下三句話不使用立繪】」尚未轉成正式事件。
 - project/mainStory/CH7 7-4：製作指令「【此場景為回憶某件事。濾鏡全畫面顯示模仿復古膠捲播放時的棕色調】」尚未轉成正式事件。
 - project/mainStory/CH7 7-5：【BGM：BGMED2】 未能對應已登錄 BGM，保留為非玩家可見演出待辦。
@@ -51,7 +48,9 @@
 - `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。
 - `project/mainStory/CH1` 新增的日／夜與室內背景：目前以既有同類背景複製成唯一檔名，待替換秋葉原車站、街道、倉庫區、中華料理店、料理節目、兔子咖啡廳、商業地點與河邊夜景正式素材。
 - `project/mainStory/CH1` 的手機簡訊、梗平躲藏、黑衣人、紅色麻婆碗、梗平VS宿儺、兔子攻擊、紙箱、紙箱人、小丑等 CG：目前以 `project/images/scene_mapo_cg.png` 複製素材暫代，待替換正式素材。
-- `project/mainStory/CH1 1-3`：來源要求「麻婆」立繪，但 `project/images/` 尚無可確認的麻婆角色立繪，該句暫不顯示立繪。
+- `主線立繪包-20260822T171358Z-1-001.zip`（SHA-256：`dbac31279d5e1f0b243af05b37198b7e6e8df6dd2fbcbb79d03cde4b6d77d950`）：46 個已確認樣本各生成 happy／angry／sad／surprised／panicked／neutral 六格差分，拆分並驗證 276 張 RGBA 透明 PNG；已接入 `project/images`、`project/data.js`、立繪 resolver、Story IR 與主線 floors。完整來源與 SHA-256 對照見 `tmp/character-story-import/主線立繪包-20260822T171358Z-1-001/20260823-113854/work/portrait-runtime-manifest.json`。
+- `main-story-portrait-expression-generation`：已完成已確認角色的差分生成、透明化、scene 接入與 `node scripts/generate_main_story.js --check`；未確認角色仍由 `main-story-portrait-unresolved-speakers` 保留待確認。
+- `main-story-portrait-unresolved-speakers`：仍 open，待確認上述九個名稱的正式角色／ZIP 樣本對應及是否顯示立繪。
 - `project/mainStory/CH1 1-4`：來源標記 `河邊(夜))` 多一個右括號，生成器暫以 `河邊(夜)` mapping 處理，未改寫來源。
 - `project/mainStory/CH2`～`CH7` 新增的泛用／日夜／室內背景名稱：目前映射到既有同類背景資產，待替換正式專用素材。
 - Open: `main-story-background-live-stage`
@@ -66,9 +65,8 @@
   - Evidence: `scripts/generate_main_story.js` background mapping、`project/story-ir/main/main-story.json`、`project/floors/main_ch7_5.js`；目前維持 open。
 - Open: `main-story-costume-portraits`
   - Scope: `project/mainStory/CH3 3-1`、`project/mainStory/CH6 6-4`、`project/mainStory/CH7 7-5` 的服裝狀態角色標籤。
-  - Missing: 正式服裝梗平／貝琪／前輩／桶至學長立繪與角色 mapping；目前不使用未驗收素材。
-  - Done when: 正式服裝立繪完成驗收，接入 `project/images/`、`project/data.js`、Story IR 與對應 floor，並完成遊戲內驗證。
-  - Evidence: 服裝角色標籤保留於權威來源與 Story IR；目前維持 open。
+  - Status: 本次已接入 ZIP 內可確認的梗平／貝琪／前輩／桶至學長服裝差分；仍保留此 TODO 以追蹤正式美術驗收與遊戲內目視確認。
+  - Evidence: `project/images/ms_portrait_keng_female_*.png`、`ms_portrait_keng_suit_*.png`、`ms_portrait_becky_wedding_*.png`、`ms_portrait_senpai_qipao_*.png`、`ms_portrait_tongzhi_maid_*.png`、`project/story-ir/main/main-story.json`。
 
 ## 待實作演出或小遊戲
 

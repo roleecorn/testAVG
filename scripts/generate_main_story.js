@@ -4,7 +4,7 @@ const crypto = require("crypto");
 const vm = require("vm");
 const { isDeepStrictEqual } = require("util");
 const { createBundle, bundleToFloors, readBundle, validateAvgFloorDimensions, validateProjectReferences, writeBundle } = require("./story_ir");
-const { resolvePortrait } = require("./portrait_resolver");
+const { CHARACTER_PORTRAITS, resolvePortrait } = require("./portrait_resolver");
 const { DONGSHAN_PORTRAIT_DECISIONS } = require("./main_story_portrait_decisions");
 
 const root = path.resolve(__dirname, "..");
@@ -20,14 +20,9 @@ const BACKGROUND_LOC = [0, 0];
 const CG_LOC = [112, 50, 320, 220];
 const GENERAL_CG_SLOC = [0, 65, 416, 286];
 const MAIN_STORY_ASSET_PATTERN = /^CH[1-7]_L\d+\.png$/;
-const PORTRAIT_ASSETS = [
-  "dongshan_normal.png",
-  "dongshan_smile.png",
-  "dongshan_angry.png",
-  "dongshan_sad.png",
-  "dongshan_surprised.png",
-  "dongshan_panic.png",
-];
+const PORTRAIT_ASSETS = Object.values(CHARACTER_PORTRAITS)
+  .flatMap(({ images }) => Object.values(images))
+  .filter((image, index, images) => images.indexOf(image) === index);
 
 function readProjectMain() {
   const context = {};
@@ -504,13 +499,19 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
   let portrait = null;
   if (ctx.suppressPortraitCount > 0) {
     ctx.suppressPortraitCount -= 1;
-  } else if (ctx.nextPortraitOverride === "麻婆店長") {
-    storyTodos.add(`${ctx.source} ${ctx.section}：下一句要求使用麻婆立繪，但 project/images 尚無對應正式角色圖，暫不顯示立繪。`);
-    ctx.nextPortraitOverride = null;
+  } else if (ctx.nextPortraitOverride) {
+    portrait = resolvePortrait(ctx.nextPortraitOverride, expressionForDialogue(ctx.nextPortraitOverride, body));
+    ctx.nextPortraitOverrideCount -= 1;
+    if (ctx.nextPortraitOverrideCount <= 0) {
+      ctx.nextPortraitOverride = null;
+      ctx.nextPortraitOverrideCount = 0;
+    }
   } else if (display === "東山") {
     const image = DONGSHAN_PORTRAIT_DECISIONS[body] || "dongshan_normal.png";
     const expression = image.match(/^dongshan_(.+)\.png$/)?.[1] || "normal";
     portrait = resolvePortrait(display, expression);
+  } else {
+    portrait = resolvePortrait(display, expressionForDialogue(display, body));
   }
   const textFont = ctx.nextTextFont;
   ctx.nextTextFont = null;
@@ -525,6 +526,15 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
     ...(portrait ? [{ type: "hideImage", code: portrait.code, time: 0 }] : []),
     ...(textFont ? [setTextEvent({ textfont: AVG_TEXT_FONTS.normal })] : []),
   ];
+}
+
+function expressionForDialogue(speaker, body) {
+  if (/笑|哈哈|開心|高興|太好了|嘻/.test(body)) return "smile";
+  if (/怒|滾|閉嘴|混蛋|可惡|生氣/.test(body)) return "angry";
+  if (/哭|悲|難過|嗚|眼淚/.test(body)) return "sad";
+  if (/什麼|怎麼可能|真的假的|！|!/.test(body)) return "surprised";
+  if (/怕|恐|救命|糟糕|危險|完蛋/.test(body)) return "panic";
+  return "normal";
 }
 
 function resolveRegisteredAudio(rawName, registered, kind, ctx) {
@@ -734,6 +744,22 @@ function lineToEvents(line, ctx) {
   if (t === "【有BGM的話由爆炸聲終止】") return [{ type: "pauseBgm" }];
   if (t === "【下面一句話使用麻婆作為立繪】") {
     ctx.nextPortraitOverride = "麻婆店長";
+    ctx.nextPortraitOverrideCount = 1;
+    return [];
+  }
+  if (t === "【下一句話使用三角作為立繪】") {
+    ctx.nextPortraitOverride = "三角";
+    ctx.nextPortraitOverrideCount = 1;
+    return [];
+  }
+  if (t === "【下兩句話使用三日月作為立繪】") {
+    ctx.nextPortraitOverride = "三日月";
+    ctx.nextPortraitOverrideCount = 2;
+    return [];
+  }
+  if (t === "【下一句？？？使用雜貨店老闆立繪】") {
+    ctx.nextPortraitOverride = "雜貨店老闆";
+    ctx.nextPortraitOverrideCount = 1;
     return [];
   }
 
@@ -929,6 +955,7 @@ function buildFloor(section, lines, overrides = {}) {
     cgPersistent: false,
     suppressPortraitCount: 0,
     nextPortraitOverride: null,
+    nextPortraitOverrideCount: 0,
   };
   const parsed = parseEvents(lines, 0, ctx);
   const events = [
@@ -1246,7 +1273,7 @@ function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
           generatedActionCgCount += 1;
         }
       }
-      if (event && event.type === "showImage" && (event.code === 10 || event.code === 11)) {
+      if (event && event.type === "showImage" && (event.code === 10 || event.code === 11 || event.code === 20)) {
         if (!Array.isArray(event.loc) || event.loc[0] !== "portraitSpeakerX" || event.loc[1] !== "portraitSpeakerY") {
           throw new Error(`${floor.floorId}: portrait must use the unified speaker slot`);
         }
