@@ -1653,7 +1653,7 @@ main.floors.mapo_1_4=
                             "opacity": 1,
                             "time": 250
                         },
-                        "\t[BE]（手機）大鱷魚之戀",
+                        "\t[BE]大鱷魚之戀",
                         {
                             "type": "hideImage",
                             "code": 30,

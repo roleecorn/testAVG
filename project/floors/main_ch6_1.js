@@ -615,96 +615,11 @@ main.floors.main_ch6_1=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[梗平]（手機）肥宅們從ANIsister裡湧出來了，不要隨便出門啊",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）認真？現在？",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_chris_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[克莉絲]（手機）不是吧......",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[蘭斯]（手機）看來得加快動作了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "suou_happy_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[表妹]（手機）剛剛試著走出去，差點被撞暈",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[梗平]肥宅們從ANIsister裡湧出來了，不要隨便出門啊",
+        "\t[東山]認真？現在？",
+        "\t[克莉絲]不是吧......",
+        "\t[蘭斯]看來得加快動作了",
+        "\t[表妹]剛剛試著走出去，差點被撞暈",
         {
             "type": "hideImage",
             "code": 30,
@@ -823,60 +738,9 @@ main.floors.main_ch6_1=
         "抵禦著來自外部肥宅們一波又一波的攻擊",
         "不知道幾個小時過去了之後，太陽逐漸升起",
         "停了許久的群組訊息出現了動靜",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_chris_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[克莉絲]（手機）我們拿到肥宅們的聖物了，但是沒辦法過去ANIsister",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）我們都在女咖卡住了，梗平你找找方法過來",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_surprised_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
-        },
-        "\t[梗平]（手機）果然這種時候還是需要假面騎士啊，交給在下吧！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[克莉絲]我們拿到肥宅們的聖物了，但是沒辦法過去ANIsister",
+        "\t[東山]我們都在女咖卡住了，梗平你找找方法過來",
+        "\t[梗平]果然這種時候還是需要假面騎士啊，交給在下吧！",
         {
             "type": "showImage",
             "code": 20,

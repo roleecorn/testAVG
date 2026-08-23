@@ -1620,7 +1620,7 @@ main.floors.main_ch2_2=
                             "opacity": 1,
                             "time": 250
                         },
-                        "\t[BE]（手機）第三類接觸？",
+                        "\t[BE]第三類接觸？",
                         {
                             "type": "hideImage",
                             "code": 30,

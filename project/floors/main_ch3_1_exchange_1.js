@@ -607,96 +607,11 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[梗平]（手機）在下果然很有藝術天分啊",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "suou_happy_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[表妹]（手機）你不是在書店工作嗎？",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[梗平]（手機）沒錯，也正是這個地方才可以欣賞假面騎士的精神",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[梗平]（手機）在下這邊一個小時2000，表妹你那邊怎麼樣",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "suou_happy_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[表妹]（手機）我打小鋼珠賺到了300000",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
+                        "\t[梗平]在下果然很有藝術天分啊",
+                        "\t[表妹]你不是在書店工作嗎？",
+                        "\t[梗平]沒錯，也正是這個地方才可以欣賞假面騎士的精神",
+                        "\t[梗平]在下這邊一個小時2000，表妹你那邊怎麼樣",
+                        "\t[表妹]我打小鋼珠賺到了300000",
                         {
                             "type": "showImage",
                             "code": 30,
@@ -716,114 +631,12 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 30,
                             "time": 150
                         },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[梗平]（手機）？",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[東山]（手機）？",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "ms_portrait_lance_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[蘭斯]（手機）？",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "ms_portrait_chris_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[克莉絲]（手機）？",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[梗平]（手機）你竟然先在下一步脫離了窮人的行列嗎？",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_serious_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "angry"
-                        },
-                        "\t[梗平]（手機）太可惡了",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
+                        "\t[梗平]？",
+                        "\t[東山]？",
+                        "\t[蘭斯]？",
+                        "\t[克莉絲]？",
+                        "\t[梗平]你竟然先在下一步脫離了窮人的行列嗎？",
+                        "\t[梗平]太可惡了",
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -4210,24 +4023,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[梗平]（手機）在下到東京國際展示場附近了，馬上過去",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
+                        "\t[梗平]在下到東京國際展示場附近了，馬上過去",
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -4265,153 +4061,17 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "ms_portrait_mikazuki_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[三日月]（手機）速來幫忙打魔獸，這邊打不過了",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[梗平]（手機）我也想，但我到東京國際展示場了，實在來不了，抱歉哈",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
+                        "\t[三日月]速來幫忙打魔獸，這邊打不過了",
+                        "\t[梗平]我也想，但我到東京國際展示場了，實在來不了，抱歉哈",
                         "\t[梗平](我才不會回去呢，現在我要去我的夢中情地漫展了)",
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "ms_portrait_mikazuki_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[三日月]（手機）我魔獸所在的地方好像有限量假面騎士腰帶欸。",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
+                        "\t[三日月]我魔獸所在的地方好像有限量假面騎士腰帶欸。",
                         "三日月發了一張圖過來，圖裡是一些散落在的地上假面騎士腰帶",
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_surprised_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
-                        },
-                        "\t[梗平]（手機）這種ps圖誰會信啊！",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
+                        "\t[梗平]這種ps圖誰會信啊！",
                         "三日月發了段影片過來，裡面魔獸踩爛了幾個腰帶",
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_surprised_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
-                        },
-                        "\t[梗平]（手機）啊啊啊啊啊啊啊！我操！ ！",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_surprised_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "surprised"
-                        },
-                        "\t[梗平]（手機）快，快看看還有沒有沒被弄壞的腰帶！ ！求你了，我什麼都願意做的！ ！",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "ms_portrait_mikazuki_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[三日月]（手機）魔獸胯下的那個小架子好像還有一個，但好像不好拿",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[梗平]（手機）我馬上到",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
+                        "\t[梗平]啊啊啊啊啊啊啊！我操！ ！",
+                        "\t[梗平]快，快看看還有沒有沒被弄壞的腰帶！ ！求你了，我什麼都願意做的！ ！",
+                        "\t[三日月]魔獸胯下的那個小架子好像還有一個，但好像不好拿",
+                        "\t[梗平]我馬上到",
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -4449,24 +4109,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[梗平]（手機）抱歉，在下要晚點才能到了，有急事",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
+                        "\t[梗平]抱歉，在下要晚點才能到了，有急事",
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -4643,7 +4286,7 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "於是梗平轉身準備離開，突然傳來一陣聲音：哈...哈...不要，不要摸我那裡",
                         "梗平全身抽搐，另一邊三日月在看著手機，裡面的是梗平被觸手凌辱的影片",
-                        "\t[影片裡的梗平]（手機）救救我...我，哈...哈，那裡不行...啊......",
+                        "\t[影片裡的梗平]救救我...我，哈...哈，那裡不行...啊......",
                         "突然一股風吹過，三日月的手機不見了",
                         "隨之而來的是梗平把手機摔到地上，然後一腳踩碎！ ！ ！",
                         {
@@ -5381,7 +5024,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        "\t[BE]（手機）觸手男娚女同樂隊魔法少女物語",
+                        "\t[BE]觸手男娚女同樂隊魔法少女物語",
                         {
                             "type": "hideImage",
                             "code": 30,

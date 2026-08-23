@@ -791,42 +791,8 @@ main.floors.mapo_1_1=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）救命",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[梗平]（手機）你在哪裡",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[東山]救命",
+        "\t[梗平]你在哪裡",
         {
             "type": "hideImage",
             "code": 30,

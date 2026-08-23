@@ -887,24 +887,7 @@ main.floors.main_ch7_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）你人呢？",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[東山]你人呢？",
         "……………",
         {
             "type": "hideImage",
@@ -2665,24 +2648,7 @@ main.floors.main_ch7_2=
             "time": 0
         },
         "接著東山拿出了手機",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）梗平！兔子咖啡被修卡襲擊了！速歸！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[東山]梗平！兔子咖啡被修卡襲擊了！速歸！",
         {
             "type": "comment",
             "text": "【過場】"
@@ -2872,132 +2838,13 @@ main.floors.main_ch7_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_becky_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[貝琪]（手機）東山醬好厲害呢～我們約了要共進晚餐喔",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）第一次約會很重要喔！可不能急躁喔貝琪親",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）重點是傾聽與投其所好，製造下一次見面的契機",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）最好是點些他根本沒見過或會不好意思大吃大喝的料理",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）這樣妳們才能有更多機會了解彼此呢！梗平不太能喝，記得別勸他酒",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）也別忍不住動手動腳喔，眼光要放的長遠！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）加油喔～(∠・ω< )⌒☆彡",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[貝琪]東山醬好厲害呢～我們約了要共進晚餐喔",
+        "\t[東山]第一次約會很重要喔！可不能急躁喔貝琪親",
+        "\t[東山]重點是傾聽與投其所好，製造下一次見面的契機",
+        "\t[東山]最好是點些他根本沒見過或會不好意思大吃大喝的料理",
+        "\t[東山]這樣妳們才能有更多機會了解彼此呢！梗平不太能喝，記得別勸他酒",
+        "\t[東山]也別忍不住動手動腳喔，眼光要放的長遠！",
+        "\t[東山]加油喔～(∠・ω< )⌒☆彡",
         {
             "type": "playTransitionVideo"
         },

@@ -414,60 +414,9 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "梗平拿起了被炸飛在一旁卻完好無損的手機，查看著群組訊息",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[蘭斯]（手機）梗平，我們先走了喔",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[蘭斯]（手機）我們要去找其他能夠進入ANIsister的方式了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）看你睡得很香就沒吵你了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[蘭斯]梗平，我們先走了喔",
+        "\t[蘭斯]我們要去找其他能夠進入ANIsister的方式了",
+        "\t[東山]看你睡得很香就沒吵你了",
         {
             "type": "showImage",
             "code": 20,
@@ -734,225 +683,21 @@ main.floors.main_ch4_1=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）找到能解決ANIsister問題的方式了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）可以的話晚上11點在雜貨店集合",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[梗平]（手機）一定到",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）如果可以的話幫忙多找一點人手",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[東山]找到能解決ANIsister問題的方式了",
+        "\t[東山]可以的話晚上11點在雜貨店集合",
+        "\t[梗平]一定到",
+        "\t[東山]如果可以的話幫忙多找一點人手",
         "\t[梗平](人手......她的話應該可以的)",
         "梗平打開了與貝琪的私訊後，敲起了鍵盤",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[梗平]（手機）我在找可以和我在一起(解決肥宅)的人",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[梗平]（手機）(幫忙的事)可以答應我嗎",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[梗平]（手機）我還有一點事情要忙，十一點後在雜貨店後相見吧",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_becky_smile.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "smile"
-        },
-        "\t[貝琪]（手機）太好了，我願意",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[梗平]我在找可以和我在一起(解決肥宅)的人",
+        "\t[梗平](幫忙的事)可以答應我嗎",
+        "\t[梗平]我還有一點事情要忙，十一點後在雜貨店後相見吧",
+        "\t[貝琪]太好了，我願意",
         "回完了訊息並製造了誤會的梗平，馬上看見了來自表妹的私訊",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "suou_happy_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[表妹]（手機）表哥，我在河邊找到了一條奇怪的大鱷魚",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "suou_happy_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[表妹]（手機）如果你有空的話就來幫我吧",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_surprised_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
-        },
-        "\t[梗平]（手機）什麼奇怪的大鱷魚？",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_surprised_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
-        },
-        "\t[梗平]（手機）這肯定是修卡的造物，我現在就來！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[表妹]表哥，我在河邊找到了一條奇怪的大鱷魚",
+        "\t[表妹]如果你有空的話就來幫我吧",
+        "\t[梗平]什麼奇怪的大鱷魚？",
+        "\t[梗平]這肯定是修卡的造物，我現在就來！",
         {
             "type": "hideImage",
             "code": 30,
@@ -2248,7 +1993,7 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        "\t[BE]（手機）一波送完",
+                        "\t[BE]一波送完",
                         {
                             "type": "hideImage",
                             "code": 30,

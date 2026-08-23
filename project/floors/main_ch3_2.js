@@ -659,60 +659,9 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "正當梗平準備做出回應時，手機響了起來",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[蘭斯]（手機）梗平，你在哪裡？",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[蘭斯]（手機）我們在ANIsister前面要討論怎麼樣攻進去了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[梗平]（手機）馬上過來",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[蘭斯]梗平，你在哪裡？",
+        "\t[蘭斯]我們在ANIsister前面要討論怎麼樣攻進去了",
+        "\t[梗平]馬上過來",
         {
             "type": "showImage",
             "code": 20,
@@ -910,42 +859,8 @@ main.floors.main_ch3_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[蘭斯]（手機）梗平，剩你還沒到了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[梗平]（手機）馬上來",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[蘭斯]梗平，剩你還沒到了",
+        "\t[梗平]馬上來",
         {
             "type": "hideImage",
             "code": 30,

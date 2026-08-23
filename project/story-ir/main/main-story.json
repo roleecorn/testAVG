@@ -978,50 +978,14 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）救命"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "救命"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）你在哪裡"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "你在哪裡"
         },
         {
           "kind": "image.hide",
@@ -2209,7 +2173,7 @@
                         {
                           "kind": "dialogue",
                           "speaker": "BE",
-                          "text": "（手機）這裡不是米O市吧？！"
+                          "text": "這裡不是米O市吧？！"
                         },
                         {
                           "kind": "image.hide",
@@ -2571,7 +2535,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "BE",
-                  "text": "（手機）不要闖空門"
+                  "text": "不要闖空門"
                 },
                 {
                   "kind": "image.hide",
@@ -2829,27 +2793,9 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）還沒找到A，我先吃飯，傳地址給你們"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "還沒找到A，我先吃飯，傳地址給你們"
         },
         {
           "kind": "image.hide",
@@ -3105,50 +3051,14 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_chris_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "（手機）餓了、我也先吃個飯…"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "餓了、我也先吃個飯…"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）你們有看到修卡的蹤跡嗎?"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "你們有看到修卡的蹤跡嗎?"
         },
         {
           "kind": "image.hide",
@@ -5470,7 +5380,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "BE",
-                  "text": "（手機）食神"
+                  "text": "食神"
                 },
                 {
                   "kind": "image.hide",
@@ -8681,7 +8591,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "BE",
-                  "text": "（手機）大鱷魚之戀"
+                  "text": "大鱷魚之戀"
                 },
                 {
                   "kind": "image.hide",
@@ -10724,7 +10634,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "BE",
-                  "text": "（手機）臨陣脫逃"
+                  "text": "臨陣脫逃"
                 },
                 {
                   "kind": "image.hide",
@@ -13017,7 +12927,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "BE",
-                  "text": "（手機）第三類接觸？"
+                  "text": "第三類接觸？"
                 },
                 {
                   "kind": "image.hide",
@@ -14754,7 +14664,7 @@
         {
           "kind": "dialogue",
           "speaker": "416",
-          "text": "（手機）你是不是又去打小鋼珠了，30分鐘內沒看到你就死定了"
+          "text": "你是不是又去打小鋼珠了，30分鐘內沒看到你就死定了"
         },
         {
           "kind": "image.show",
@@ -15573,27 +15483,9 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）兔子咖啡被修卡襲擊了！速來！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "兔子咖啡被修卡襲擊了！速來！"
         },
         {
           "kind": "image.hide",
@@ -16586,7 +16478,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "BE",
-                  "text": "（手機）美麗的玫瑰帶刺"
+                  "text": "美麗的玫瑰帶刺"
                 },
                 {
                   "kind": "image.hide",
@@ -19247,119 +19139,29 @@
                   "time": 250
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_neutral_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）在下果然很有藝術天分啊"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "suou_happy_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "在下果然很有藝術天分啊"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "表妹",
-                  "text": "（手機）你不是在書店工作嗎？"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_neutral_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "你不是在書店工作嗎？"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）沒錯，也正是這個地方才可以欣賞假面騎士的精神"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_neutral_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "沒錯，也正是這個地方才可以欣賞假面騎士的精神"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）在下這邊一個小時2000，表妹你那邊怎麼樣"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "suou_happy_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "在下這邊一個小時2000，表妹你那邊怎麼樣"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "表妹",
-                  "text": "（手機）我打小鋼珠賺到了300000"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
+                  "text": "我打小鋼珠賺到了300000"
                 },
                 {
                   "kind": "image.show",
@@ -19385,142 +19187,34 @@
                   "time": 150
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_neutral_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）？"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "dongshan_normal.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "？"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "（手機）？"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "ms_portrait_lance_normal.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "？"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "蘭斯",
-                  "text": "（手機）？"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "ms_portrait_chris_normal.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "？"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "克莉絲",
-                  "text": "（手機）？"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_neutral_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "？"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）你竟然先在下一步脫離了窮人的行列嗎？"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_serious_portrait.png",
-                  "expression": "angry",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "你竟然先在下一步脫離了窮人的行列嗎？"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）太可惡了"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
+                  "text": "太可惡了"
                 },
                 {
                   "kind": "image.hide",
@@ -23981,27 +23675,9 @@
                   "time": 250
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_neutral_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）在下到東京國際展示場附近了，馬上過去"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
+                  "text": "在下到東京國際展示場附近了，馬上過去"
                 },
                 {
                   "kind": "image.hide",
@@ -24050,50 +23726,14 @@
                   "time": 250
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "ms_portrait_mikazuki_normal.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "三日月",
-                  "text": "（手機）速來幫忙打魔獸，這邊打不過了"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_neutral_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "速來幫忙打魔獸，這邊打不過了"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）我也想，但我到東京國際展示場了，實在來不了，抱歉哈"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
+                  "text": "我也想，但我到東京國際展示場了，實在來不了，抱歉哈"
                 },
                 {
                   "kind": "dialogue",
@@ -24101,150 +23741,42 @@
                   "text": "(我才不會回去呢，現在我要去我的夢中情地漫展了)"
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "ms_portrait_mikazuki_normal.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "三日月",
-                  "text": "（手機）我魔獸所在的地方好像有限量假面騎士腰帶欸。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
+                  "text": "我魔獸所在的地方好像有限量假面騎士腰帶欸。"
                 },
                 {
                   "kind": "narration",
                   "text": "三日月發了一張圖過來，圖裡是一些散落在的地上假面騎士腰帶"
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_surprised_portrait.png",
-                  "expression": "surprised",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）這種ps圖誰會信啊！"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
+                  "text": "這種ps圖誰會信啊！"
                 },
                 {
                   "kind": "narration",
                   "text": "三日月發了段影片過來，裡面魔獸踩爛了幾個腰帶"
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_surprised_portrait.png",
-                  "expression": "surprised",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "啊啊啊啊啊啊啊！我操！ ！"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）啊啊啊啊啊啊啊！我操！ ！"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_surprised_portrait.png",
-                  "expression": "surprised",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "（手機）快，快看看還有沒有沒被弄壞的腰帶！ ！求你了，我什麼都願意做的！ ！"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "ms_portrait_mikazuki_normal.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "快，快看看還有沒有沒被弄壞的腰帶！ ！求你了，我什麼都願意做的！ ！"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "三日月",
-                  "text": "（手機）魔獸胯下的那個小架子好像還有一個，但好像不好拿"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_neutral_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
+                  "text": "魔獸胯下的那個小架子好像還有一個，但好像不好拿"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）我馬上到"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
+                  "text": "我馬上到"
                 },
                 {
                   "kind": "image.hide",
@@ -24293,27 +23825,9 @@
                   "time": 250
                 },
                 {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "keng_neutral_portrait.png",
-                  "expression": "normal",
-                  "loc": [
-                    "portraitSpeakerX",
-                    "portraitSpeakerY"
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "（手機）抱歉，在下要晚點才能到了，有急事"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "time": 0
+                  "text": "抱歉，在下要晚點才能到了，有急事"
                 },
                 {
                   "kind": "image.hide",
@@ -24557,7 +24071,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "影片裡的梗平",
-                  "text": "（手機）救救我...我，哈...哈，那裡不行...啊......"
+                  "text": "救救我...我，哈...哈，那裡不行...啊......"
                 },
                 {
                   "kind": "narration",
@@ -25534,7 +25048,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "BE",
-                  "text": "（手機）觸手男娚女同樂隊魔法少女物語"
+                  "text": "觸手男娚女同樂隊魔法少女物語"
                 },
                 {
                   "kind": "image.hide",
@@ -26367,73 +25881,19 @@
           "text": "正當梗平準備做出回應時，手機響了起來"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "kind": "dialogue",
+          "speaker": "蘭斯",
+          "text": "梗平，你在哪裡？"
         },
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）梗平，你在哪裡？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "蘭斯",
-          "text": "（手機）我們在ANIsister前面要討論怎麼樣攻進去了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "我們在ANIsister前面要討論怎麼樣攻進去了"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）馬上過來"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "馬上過來"
         },
         {
           "kind": "image.show",
@@ -26686,50 +26146,14 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）梗平，剩你還沒到了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "梗平，剩你還沒到了"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）馬上來"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "馬上來"
         },
         {
           "kind": "image.hide",
@@ -28998,73 +28422,19 @@
           "text": "梗平拿起了被炸飛在一旁卻完好無損的手機，查看著群組訊息"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "kind": "dialogue",
+          "speaker": "蘭斯",
+          "text": "梗平，我們先走了喔"
         },
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）梗平，我們先走了喔"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "蘭斯",
-          "text": "（手機）我們要去找其他能夠進入ANIsister的方式了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "我們要去找其他能夠進入ANIsister的方式了"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）看你睡得很香就沒吵你了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "看你睡得很香就沒吵你了"
         },
         {
           "kind": "image.show",
@@ -29413,96 +28783,24 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "找到能解決ANIsister問題的方式了"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）找到能解決ANIsister問題的方式了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "東山",
-          "text": "（手機）可以的話晚上11點在雜貨店集合"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "可以的話晚上11點在雜貨店集合"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）一定到"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "一定到"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）如果可以的話幫忙多找一點人手"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "如果可以的話幫忙多找一點人手"
         },
         {
           "kind": "dialogue",
@@ -29514,192 +28812,48 @@
           "text": "梗平打開了與貝琪的私訊後，敲起了鍵盤"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我在找可以和我在一起(解決肥宅)的人"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）我在找可以和我在一起(解決肥宅)的人"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "(幫忙的事)可以答應我嗎"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）(幫忙的事)可以答應我嗎"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "（手機）我還有一點事情要忙，十一點後在雜貨店後相見吧"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_becky_smile.png",
-          "expression": "smile",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "我還有一點事情要忙，十一點後在雜貨店後相見吧"
         },
         {
           "kind": "dialogue",
           "speaker": "貝琪",
-          "text": "（手機）太好了，我願意"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "太好了，我願意"
         },
         {
           "kind": "narration",
           "text": "回完了訊息並製造了誤會的梗平，馬上看見了來自表妹的私訊"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "suou_happy_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "kind": "dialogue",
+          "speaker": "表妹",
+          "text": "表哥，我在河邊找到了一條奇怪的大鱷魚"
         },
         {
           "kind": "dialogue",
           "speaker": "表妹",
-          "text": "（手機）表哥，我在河邊找到了一條奇怪的大鱷魚"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "suou_happy_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "表妹",
-          "text": "（手機）如果你有空的話就來幫我吧"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_surprised_portrait.png",
-          "expression": "surprised",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "如果你有空的話就來幫我吧"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）什麼奇怪的大鱷魚？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_surprised_portrait.png",
-          "expression": "surprised",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "什麼奇怪的大鱷魚？"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）這肯定是修卡的造物，我現在就來！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "這肯定是修卡的造物，我現在就來！"
         },
         {
           "kind": "image.hide",
@@ -31357,7 +30511,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "BE",
-                  "text": "（手機）一波送完"
+                  "text": "一波送完"
                 },
                 {
                   "kind": "image.hide",
@@ -33816,303 +32970,69 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）好，從剛剛救出來了IB的哥哥得到了很有用的資訊"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_surprised_portrait.png",
-          "expression": "surprised",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "好，從剛剛救出來了IB的哥哥得到了很有用的資訊"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）什麼？他已經被救出來了！？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "什麼？他已經被救出來了！？"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）那我跟小朋友們的羈絆與約定該怎麼辦啊"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "那我跟小朋友們的羈絆與約定該怎麼辦啊"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）那種東西怎麼樣都好吧"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_serious_portrait.png",
-          "expression": "angry",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "那種東西怎麼樣都好吧"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）可......可惡"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "可......可惡"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）好消息是我們知道肥宅們為甚麼會這樣了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "好消息是我們知道肥宅們為甚麼會這樣了"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）他們是因為一個叫「聖物」的東西不見了才會發瘋的"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "他們是因為一個叫「聖物」的東西不見了才會發瘋的"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）所以只要找回聖物就好了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_surprised.png",
-          "expression": "surprised",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "所以只要找回聖物就好了"
         },
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）那壞消息是什麼呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "那壞消息是什麼呢？"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）聖物被掛在拍賣網站上，要200萬"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_chris_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "聖物被掛在拍賣網站上，要200萬"
         },
         {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "（手機）多...多少？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "多...多少？"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）200萬，所以沒錯，各位我們要趕快去籌錢了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "200萬，所以沒錯，各位我們要趕快去籌錢了"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）我要去想辦法賺錢了，再見"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "我要去想辦法賺錢了，再見"
         },
         {
           "kind": "image.hide",
@@ -34488,7 +33408,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "BE",
-                  "text": "（手機）梗平的賭博默示錄"
+                  "text": "梗平的賭博默示錄"
                 },
                 {
                   "kind": "image.hide",
@@ -35477,119 +34397,29 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）肥宅們從ANIsister裡湧出來了，不要隨便出門啊"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "肥宅們從ANIsister裡湧出來了，不要隨便出門啊"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）認真？現在？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_chris_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "認真？現在？"
         },
         {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "（手機）不是吧......"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "不是吧......"
         },
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）看來得加快動作了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "suou_happy_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "看來得加快動作了"
         },
         {
           "kind": "dialogue",
           "speaker": "表妹",
-          "text": "（手機）剛剛試著走出去，差點被撞暈"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "剛剛試著走出去，差點被撞暈"
         },
         {
           "kind": "image.hide",
@@ -35755,73 +34585,19 @@
           "text": "停了許久的群組訊息出現了動靜"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_chris_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "（手機）我們拿到肥宅們的聖物了，但是沒辦法過去ANIsister"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "我們拿到肥宅們的聖物了，但是沒辦法過去ANIsister"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）我們都在女咖卡住了，梗平你找找方法過來"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_surprised_portrait.png",
-          "expression": "surprised",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "我們都在女咖卡住了，梗平你找找方法過來"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）果然這種時候還是需要假面騎士啊，交給在下吧！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "果然這種時候還是需要假面騎士啊，交給在下吧！"
         },
         {
           "kind": "image.show",
@@ -38154,7 +36930,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "BE",
-                  "text": "（手機）逃兵"
+                  "text": "逃兵"
                 },
                 {
                   "kind": "image.hide",
@@ -42491,270 +41267,72 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）來幫我擺攤吧各位，我會給錢的！入場跟交通也交給我！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "來幫我擺攤吧各位，我會給錢的！入場跟交通也交給我！"
         },
         {
           "kind": "narration",
           "text": "在群組上的東山如此說到"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）有空的人先到秋葉原會合吧，可以乘機先逛逛，到時就近去會場也方便"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "有空的人先到秋葉原會合吧，可以乘機先逛逛，到時就近去會場也方便"
         },
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）行，那就靠妳了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_chris_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "行，那就靠妳了"
         },
         {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "（手機）OKOK"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_tongzhi_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "OKOK"
         },
         {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "（手機）反正我本來就要去，入場+1乙，我再去跟你們會合車費就免了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "反正我本來就要去，入場+1乙，我再去跟你們會合車費就免了"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）機會難得，在下有個在北海道的表妹也想一起來可否？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "機會難得，在下有個在北海道的表妹也想一起來可否？"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）小問題！來，都來！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "小問題！來，都來！"
         },
         {
           "kind": "narration",
           "text": "表妹加入了群組，希望他有帶份薯條來"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "suou_happy_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "表妹",
-          "text": "（手機）打擾了，我還是初次參加這種大型活動，請多指教"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_tongzhi_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "打擾了，我還是初次參加這種大型活動，請多指教"
         },
         {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "（手機）既然你能來到這兒，那就代表也是時候該讓你知道點事情了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_tongzhi_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "既然你能來到這兒，那就代表也是時候該讓你知道點事情了"
         },
         {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "（手機）#ComicMarket114514#場次說明連結"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "#ComicMarket114514#場次說明連結"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）那麼OO時間在秋葉原車站出口會合找我報交通費，至於活動當天的到時再一起走"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "那麼OO時間在秋葉原車站出口會合找我報交通費，至於活動當天的到時再一起走"
         },
         {
           "kind": "dialogue",
           "speaker": "眾人",
-          "text": "（手機）了解！"
+          "text": "了解！"
         },
         {
           "kind": "comment",
@@ -43989,27 +42567,9 @@
           "text": "在東山即將被肥宅s踩過那一刻，她用盡最後的力氣在群組上發出了訊息"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）救命"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "救命"
         },
         {
           "kind": "comment",
@@ -45425,27 +43985,9 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）你人呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "你人呢？"
         },
         {
           "kind": "narration",
@@ -47691,27 +46233,9 @@
           "text": "接著東山拿出了手機"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）梗平！兔子咖啡被修卡襲擊了！速歸！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "梗平！兔子咖啡被修卡襲擊了！速歸！"
         },
         {
           "kind": "comment",
@@ -47953,165 +46477,39 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_becky_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "貝琪",
-          "text": "（手機）東山醬好厲害呢～我們約了要共進晚餐喔"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "東山醬好厲害呢～我們約了要共進晚餐喔"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）第一次約會很重要喔！可不能急躁喔貝琪親"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "第一次約會很重要喔！可不能急躁喔貝琪親"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）重點是傾聽與投其所好，製造下一次見面的契機"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "重點是傾聽與投其所好，製造下一次見面的契機"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）最好是點些他根本沒見過或會不好意思大吃大喝的料理"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "最好是點些他根本沒見過或會不好意思大吃大喝的料理"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）這樣妳們才能有更多機會了解彼此呢！梗平不太能喝，記得別勸他酒"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "這樣妳們才能有更多機會了解彼此呢！梗平不太能喝，記得別勸他酒"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）也別忍不住動手動腳喔，眼光要放的長遠！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "也別忍不住動手動腳喔，眼光要放的長遠！"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）加油喔～(∠・ω< )⌒☆彡"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "加油喔～(∠・ω< )⌒☆彡"
         },
         {
           "kind": "transition.video"
@@ -49360,234 +47758,54 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "路上的肥宅看起來像神經病，大概與ANIsister有關"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）路上的肥宅看起來像神經病，大概與ANIsister有關"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "東山",
-          "text": "（手機）為了防止IB再度獨自升級須要解決這事，有啥好想法嗎？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "suou_happy_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "為了防止IB再度獨自升級須要解決這事，有啥好想法嗎？"
         },
         {
           "kind": "dialogue",
           "speaker": "表妹",
-          "text": "（手機）直接進去看看唄？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_panic.png",
-          "expression": "panic",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "直接進去看看唄？"
         },
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）ANIsister昨天進去過，內部的肥宅數量很可怕"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_tongzhi_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "ANIsister昨天進去過，內部的肥宅數量很可怕"
         },
         {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "（手機）試著對話不好嗎？我相信秋葉原的肥宅沒有壞人"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "試著對話不好嗎？我相信秋葉原的肥宅沒有壞人"
         },
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）剛剛抓了一隻，但怪叫著跑走了無法溝通，可能得深入ANIsister看看了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_chris_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "剛剛抓了一隻，但怪叫著跑走了無法溝通，可能得深入ANIsister看看了"
         },
         {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "（手機）還有其他線索嗎？總不可能打進去吧？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "還有其他線索嗎？總不可能打進去吧？"
         },
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）沒有…聽IB說後來梗平跟警察在裡面，不知道有沒有啥新發現？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "沒有…聽IB說後來梗平跟警察在裡面，不知道有沒有啥新發現？"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）警察不靠普，梗平…沒反應呢"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "警察不靠普，梗平…沒反應呢"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）總之晚點先在ANIsister集合吧，記得帶傢伙"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "總之晚點先在ANIsister集合吧，記得帶傢伙"
         },
         {
           "kind": "image.hide",
@@ -51747,216 +49965,54 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）店的經營沒問題嗎？竟然還支薪？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_chris_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "店的經營沒問題嗎？竟然還支薪？"
         },
         {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "（手機）『瑪利亞之牆』的招牌改成『希娜之牆』算了…"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_lance_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "『瑪利亞之牆』的招牌改成『希娜之牆』算了…"
         },
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "（手機）有沒有一個可能，直至今日店裡才真正的有了『女』僕"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "suou_happy_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "有沒有一個可能，直至今日店裡才真正的有了『女』僕"
         },
         {
           "kind": "dialogue",
           "speaker": "表妹",
-          "text": "（手機）不是有嗎？叫漆原的可愛妹子"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_tongzhi_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "不是有嗎？叫漆原的可愛妹子"
         },
         {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "（手機）但是，是男的"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "suou_happy_portrait.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "但是，是男的"
         },
         {
           "kind": "dialogue",
           "speaker": "表妹",
-          "text": "（手機）你們都市人真會玩"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "你們都市人真會玩"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）喔想起來有個似乎能解決ANIsister問題的方法"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "喔想起來有個似乎能解決ANIsister問題的方法"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）晚上11點在『雜貨店後面』集合"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "晚上11點在『雜貨店後面』集合"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）對方叫我多找點人"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "對方叫我多找點人"
         },
         {
           "kind": "dialogue",
           "speaker": "眾人",
-          "text": "（手機）一定到"
+          "text": "一定到"
         },
         {
           "kind": "image.hide",
@@ -55670,234 +53726,54 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_becky_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "貝琪",
-          "text": "（手機）東山醬東山醬梗平跟我告白了呀—"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "東山醬東山醬梗平跟我告白了呀—"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）真的嗎貝琪親！恭喜妳！不過沒想到木訥的梗平竟然敢主動出擊呢！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "真的嗎貝琪親！恭喜妳！不過沒想到木訥的梗平竟然敢主動出擊呢！"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）所以是在什麼情境下發生的啊？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_becky_surprised.png",
-          "expression": "surprised",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "所以是在什麼情境下發生的啊？"
         },
         {
           "kind": "dialogue",
           "speaker": "貝琪",
-          "text": "（手機）我們兩人在車上休息時他主動把手搭了過來！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_becky_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "我們兩人在車上休息時他主動把手搭了過來！"
         },
         {
           "kind": "dialogue",
           "speaker": "貝琪",
-          "text": "（手機）用著他深邃的小眼神對著我說『我們在一起好嗎？』"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_becky_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "用著他深邃的小眼神對著我說『我們在一起好嗎？』"
         },
         {
           "kind": "dialogue",
           "speaker": "貝琪",
-          "text": "（手機）雖然他說還需要點時間，真是個害羞的小傢伙～"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "雖然他說還需要點時間，真是個害羞的小傢伙～"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）那麼為了將來，貝琪親該開始準備了呢！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_becky_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "那麼為了將來，貝琪親該開始準備了呢！"
         },
         {
           "kind": "dialogue",
           "speaker": "貝琪",
-          "text": "（手機）這麼說來應該要通知一下親友…"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "這麼說來應該要通知一下親友…"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）是呢！這麼值得慶祝的事情就應該『昭告天下』讓大家共同分享這份喜悅"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "ms_portrait_becky_smile.png",
-          "expression": "smile",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "是呢！這麼值得慶祝的事情就應該『昭告天下』讓大家共同分享這份喜悅"
         },
         {
           "kind": "dialogue",
           "speaker": "貝琪",
-          "text": "（手機）好主意呢！東山醬有妳在真是太好了～愛妳喔～"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "好主意呢！東山醬有妳在真是太好了～愛妳喔～"
         },
         {
           "kind": "image.show",
@@ -56409,27 +54285,9 @@
           "text": "簡訊提示聲"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）IB哥哥醒了嗎？馬上過去"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "IB哥哥醒了嗎？馬上過去"
         },
         {
           "kind": "comment",
@@ -57423,7 +55281,7 @@
         {
           "kind": "dialogue",
           "speaker": "眾人",
-          "text": "（手機）………………"
+          "text": "………………"
         },
         {
           "kind": "image.show",
@@ -57465,7 +55323,7 @@
         {
           "kind": "dialogue",
           "speaker": "眾人",
-          "text": "（手機）(絕對不能輸給這個打小鋼珠的！)"
+          "text": "(絕對不能輸給這個打小鋼珠的！)"
         },
         {
           "kind": "image.hide",
@@ -59102,7 +56960,7 @@
         {
           "kind": "dialogue",
           "speaker": "眾人",
-          "text": "（手機）『『『胡了』』』一砲三響！"
+          "text": "『『『胡了』』』一砲三響！"
         },
         {
           "kind": "image.hide",
@@ -59678,12 +57536,12 @@
         {
           "kind": "dialogue",
           "speaker": "頭條",
-          "text": "（手機）將軍在秋葉原夜驅"
+          "text": "將軍在秋葉原夜驅"
         },
         {
           "kind": "dialogue",
           "speaker": "頭條",
-          "text": "（手機）驚愕！特攝都是真的？將軍家代代都是假面騎士，修卡組織發表聲明敵人就在吹上御所"
+          "text": "驚愕！特攝都是真的？將軍家代代都是假面騎士，修卡組織發表聲明敵人就在吹上御所"
         },
         {
           "kind": "image.show",
@@ -60089,27 +57947,9 @@
           "text": "簡訊提示聲"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_surprised_portrait.png",
-          "expression": "surprised",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（手機）肥宅們從ANIsister裡湧出來了！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "肥宅們從ANIsister裡湧出來了！"
         },
         {
           "kind": "image.show",
@@ -64158,96 +61998,24 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "貝琪親～梗平表態了喔！跟你結婚這事！"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）貝琪親～梗平表態了喔！跟你結婚這事！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "在相遇之地結婚不是很浪漫嗎，就選在秋葉原吧！"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）在相遇之地結婚不是很浪漫嗎，就選在秋葉原吧！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "text": "但他有億點害羞，避免他改變心意，能麻煩貝琪親派人把這裡那裡一起一起看住嗎～？"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "（手機）但他有億點害羞，避免他改變心意，能麻煩貝琪親派人把這裡那裡一起一起看住嗎～？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "dongshan_normal.png",
-          "expression": "normal",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "東山",
-          "text": "（手機）這種時候就該一鼓作氣推他一把！好事不宜遲！婚禮就在今天！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "這種時候就該一鼓作氣推他一把！好事不宜遲！婚禮就在今天！"
         },
         {
           "kind": "image.hide",

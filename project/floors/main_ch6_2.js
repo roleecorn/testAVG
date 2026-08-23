@@ -959,7 +959,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 250
                         },
-                        "\t[BE]（手機）逃兵",
+                        "\t[BE]逃兵",
                         {
                             "type": "hideImage",
                             "code": 30,

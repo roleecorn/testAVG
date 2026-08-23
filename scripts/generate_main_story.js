@@ -488,9 +488,6 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
     phone = true;
   }
   body = removeInlineProductionDirectives(body, ctx);
-  if (phone) {
-    body = `（手機）${body}`;
-  }
 
   const display = knownSpeakers.get(rawName) || rawName;
   if (/^不知道是誰的/.test(display)) {
@@ -499,6 +496,8 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
   let portrait = null;
   if (ctx.suppressPortraitCount > 0) {
     ctx.suppressPortraitCount -= 1;
+  } else if (phone) {
+    // Phone-message dialogue is text-only, regardless of whether a phone-message CG is visible.
   } else if (ctx.nextPortraitOverride) {
     portrait = resolvePortrait(ctx.nextPortraitOverride, expressionForDialogue(ctx.nextPortraitOverride, body));
     ctx.nextPortraitOverrideCount -= 1;
@@ -1231,7 +1230,7 @@ function updateTodo() {
   fs.writeFileSync(p("project", "mainStory", "TODO.md"), todoLines.join("\n") + "\n", "utf8");
 }
 
-function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
+function validateRuntimeRegistrations(generatedFloors) {
   const dataText = fs.readFileSync(p("project", "data.js"), "utf8");
   for (const image of extraImages) {
     if (!fs.existsSync(p("project", "images", image))) throw new Error(`Missing image asset: ${image}`);
@@ -1261,12 +1260,10 @@ function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
   }
   const usedActionCgImages = new Set();
   let generatedActionCgCount = 0;
-  let generatedPhoneLineCount = 0;
   let migratedPortraitCount = 0;
   for (const floor of generatedFloors) {
     walkEvents(floor.eachArrive, (event) => {
       const text = typeof event === "string" ? event : event && event.type === "text" ? event.text : "";
-      if (text.includes("（手機）")) generatedPhoneLineCount += 1;
       if (event && event.type === "showImage" && requiredActionCgImages.includes(event.image)) {
         if (!usedActionCgImages.has(event.image)) {
           usedActionCgImages.add(event.image);
@@ -1294,9 +1291,6 @@ function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
   for (const spec of [...Object.values(actionCgByName), ...Object.values(actionGifByName)]) {
     if (spec.sloc.join(",") !== "0,0,416,286") throw new Error(`Generated action CG must use its full 416x286 canvas: ${spec.image}`);
   }
-  if (generatedPhoneLineCount !== expectedPhoneLineCount) {
-    throw new Error(`Expected ${expectedPhoneLineCount} phone lines, got ${generatedPhoneLineCount}`);
-  }
 }
 
 function main() {
@@ -1318,12 +1312,6 @@ function main() {
     ...readSections(sourceFiles[5]),
     ...readSections(sourceFiles[6], { implicitFirstSection: "7-1", startMarker: /^東山篇$/ }),
   };
-  const expectedPhoneLineCount = Object.values(sections).flat().filter((line) => {
-    const t = line.trim();
-    const bracketed = t.match(/^\[([^\[\]]+?)[：:].*\]$/);
-    return (bracketed && isBracketedPhoneSpeaker(bracketed[1])) || /^.+?[：:]\s*\{.*\}$/.test(t);
-  }).length;
-
   let generated;
   if (refreshIr) {
     generated = [];
@@ -1368,7 +1356,7 @@ function main() {
     updateTimeline();
     updateTodo();
   }
-  validateRuntimeRegistrations(expectedPhoneLineCount, generated);
+  validateRuntimeRegistrations(generated);
   console.log(`${refreshIr ? "Refreshed Story IR and generated" : checkOnly ? "Validated" : "Generated"} ${generated.length} main-story floors at ${MAP_WIDTH}x${MAP_HEIGHT}.`);
 }
 

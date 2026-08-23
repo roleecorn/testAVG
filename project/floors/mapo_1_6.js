@@ -1239,7 +1239,7 @@ main.floors.mapo_1_6=
                             "opacity": 1,
                             "time": 250
                         },
-                        "\t[BE]（手機）臨陣脫逃",
+                        "\t[BE]臨陣脫逃",
                         {
                             "type": "hideImage",
                             "code": 30,

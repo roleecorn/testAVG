@@ -835,7 +835,7 @@ main.floors.mapo_1_2=
                                             "opacity": 1,
                                             "time": 250
                                         },
-                                        "\t[BE]（手機）這裡不是米O市吧？！",
+                                        "\t[BE]這裡不是米O市吧？！",
                                         {
                                             "type": "hideImage",
                                             "code": 30,
@@ -1112,7 +1112,7 @@ main.floors.mapo_1_2=
                             "opacity": 1,
                             "time": 250
                         },
-                        "\t[BE]（手機）不要闖空門",
+                        "\t[BE]不要闖空門",
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -1317,24 +1317,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[蘭斯]（手機）還沒找到A，我先吃飯，傳地址給你們",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[蘭斯]還沒找到A，我先吃飯，傳地址給你們",
         {
             "type": "hideImage",
             "code": 30,
@@ -1534,42 +1517,8 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_chris_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[克莉絲]（手機）餓了、我也先吃個飯…",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[梗平]（手機）你們有看到修卡的蹤跡嗎?",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[克莉絲]餓了、我也先吃個飯…",
+        "\t[梗平]你們有看到修卡的蹤跡嗎?",
         {
             "type": "hideImage",
             "code": 30,

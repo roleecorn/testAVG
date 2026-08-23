@@ -401,24 +401,7 @@ main.floors.main_ch7_5=
             "time": 0
         },
         "簡訊提示聲",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）IB哥哥醒了嗎？馬上過去",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[東山]IB哥哥醒了嗎？馬上過去",
         {
             "type": "comment",
             "text": "【過場】"
@@ -1188,7 +1171,7 @@ main.floors.main_ch7_5=
             "code": 20,
             "time": 0
         },
-        "\t[眾人]（手機）………………",
+        "\t[眾人]………………",
         {
             "type": "showImage",
             "code": 20,
@@ -1220,7 +1203,7 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 250
         },
-        "\t[眾人]（手機）(絕對不能輸給這個打小鋼珠的！)",
+        "\t[眾人](絕對不能輸給這個打小鋼珠的！)",
         {
             "type": "hideImage",
             "code": 30,
@@ -2539,7 +2522,7 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 250
         },
-        "\t[眾人]（手機）『『『胡了』』』一砲三響！",
+        "\t[眾人]『『『胡了』』』一砲三響！",
         {
             "type": "hideImage",
             "code": 30,
@@ -3007,8 +2990,8 @@ main.floors.main_ch7_5=
             "type": "comment",
             "text": "TODO: 【下方兩句明日頭條台詞為同一台詞內[頭條：將軍在秋葉原夜驅]加上刪除線，換行後[頭條：驚愕！特攝都是真的？將軍家代代都是假面騎士，修卡組織發表聲明敵人就在吹上御所]為大字】"
         },
-        "\t[頭條]（手機）將軍在秋葉原夜驅",
-        "\t[頭條]（手機）驚愕！特攝都是真的？將軍家代代都是假面騎士，修卡組織發表聲明敵人就在吹上御所",
+        "\t[頭條]將軍在秋葉原夜驅",
+        "\t[頭條]驚愕！特攝都是真的？將軍家代代都是假面騎士，修卡組織發表聲明敵人就在吹上御所",
         {
             "type": "showImage",
             "code": 20,
@@ -3313,24 +3296,7 @@ main.floors.main_ch7_5=
         },
         "用最快的速度購入了『聖典』，並完成了一連串的入金手續，事情應當告一段落時",
         "簡訊提示聲",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_surprised_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "surprised"
-        },
-        "\t[梗平]（手機）肥宅們從ANIsister裡湧出來了！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[梗平]肥宅們從ANIsister裡湧出來了！",
         {
             "type": "showImage",
             "code": 20,
@@ -6527,78 +6493,10 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）貝琪親～梗平表態了喔！跟你結婚這事！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）在相遇之地結婚不是很浪漫嗎，就選在秋葉原吧！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）但他有億點害羞，避免他改變心意，能麻煩貝琪親派人把這裡那裡一起一起看住嗎～？",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）這種時候就該一鼓作氣推他一把！好事不宜遲！婚禮就在今天！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[東山]貝琪親～梗平表態了喔！跟你結婚這事！",
+        "\t[東山]在相遇之地結婚不是很浪漫嗎，就選在秋葉原吧！",
+        "\t[東山]但他有億點害羞，避免他改變心意，能麻煩貝琪親派人把這裡那裡一起一起看住嗎～？",
+        "\t[東山]這種時候就該一鼓作氣推他一把！好事不宜遲！婚禮就在今天！",
         {
             "type": "hideImage",
             "code": 30,

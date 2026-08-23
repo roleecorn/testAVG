@@ -338,207 +338,20 @@ main.floors.main_ch7_1=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）來幫我擺攤吧各位，我會給錢的！入場跟交通也交給我！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[東山]來幫我擺攤吧各位，我會給錢的！入場跟交通也交給我！",
         "在群組上的東山如此說到",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）有空的人先到秋葉原會合吧，可以乘機先逛逛，到時就近去會場也方便",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[蘭斯]（手機）行，那就靠妳了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_chris_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[克莉絲]（手機）OKOK",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[桶至學長]（手機）反正我本來就要去，入場+1乙，我再去跟你們會合車費就免了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[梗平]（手機）機會難得，在下有個在北海道的表妹也想一起來可否？",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）小問題！來，都來！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[東山]有空的人先到秋葉原會合吧，可以乘機先逛逛，到時就近去會場也方便",
+        "\t[蘭斯]行，那就靠妳了",
+        "\t[克莉絲]OKOK",
+        "\t[桶至學長]反正我本來就要去，入場+1乙，我再去跟你們會合車費就免了",
+        "\t[梗平]機會難得，在下有個在北海道的表妹也想一起來可否？",
+        "\t[東山]小問題！來，都來！",
         "表妹加入了群組，希望他有帶份薯條來",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "suou_happy_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[表妹]（手機）打擾了，我還是初次參加這種大型活動，請多指教",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[桶至學長]（手機）既然你能來到這兒，那就代表也是時候該讓你知道點事情了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[桶至學長]（手機）#ComicMarket114514#場次說明連結",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）那麼OO時間在秋葉原車站出口會合找我報交通費，至於活動當天的到時再一起走",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        "\t[眾人]（手機）了解！",
+        "\t[表妹]打擾了，我還是初次參加這種大型活動，請多指教",
+        "\t[桶至學長]既然你能來到這兒，那就代表也是時候該讓你知道點事情了",
+        "\t[桶至學長]#ComicMarket114514#場次說明連結",
+        "\t[東山]那麼OO時間在秋葉原車站出口會合找我報交通費，至於活動當天的到時再一起走",
+        "\t[眾人]了解！",
         {
             "type": "comment",
             "text": "【過場】"
@@ -1527,24 +1340,7 @@ main.floors.main_ch7_1=
         },
         "隨著前輩打開了門，大量看似90年代刻版印象會出現的秋葉原物種湧入店內",
         "在東山即將被肥宅s踩過那一刻，她用盡最後的力氣在群組上發出了訊息",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）救命",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[東山]救命",
         {
             "type": "comment",
             "text": "【過場】"

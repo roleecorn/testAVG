@@ -377,7 +377,7 @@ main.floors.main_ch2_4=
             "time": 0
         },
         "警察腰上的對講機響了起來",
-        "\t[416]（手機）你是不是又去打小鋼珠了，30分鐘內沒看到你就死定了",
+        "\t[416]你是不是又去打小鋼珠了，30分鐘內沒看到你就死定了",
         {
             "type": "showImage",
             "code": 20,
@@ -998,24 +998,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）兔子咖啡被修卡襲擊了！速來！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "\t[東山]兔子咖啡被修卡襲擊了！速來！",
         {
             "type": "hideImage",
             "code": 30,
@@ -1775,7 +1758,7 @@ main.floors.main_ch2_4=
                             "opacity": 1,
                             "time": 250
                         },
-                        "\t[BE]（手機）美麗的玫瑰帶刺",
+                        "\t[BE]美麗的玫瑰帶刺",
                         {
                             "type": "hideImage",
                             "code": 30,
