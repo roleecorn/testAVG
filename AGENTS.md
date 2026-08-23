@@ -16,7 +16,7 @@ Agent 不得直接修改 runtime、引擎、插件、共用註冊、素材或手
 
 以下兩條規則高於本文件其他段落、任何 Skill、reference、TODO、範例與歷史資料：
 
-1. `project/story-ir/` 內的 IR 檔案，有且僅能由 Agent 依完整權威來源、劇情上下文與 Git log 進行語意修改。任何自動化程式不得建立、修改、覆寫、重排、拆分、合併或刪除 IR。
+1. `project/story-ir/` 內的 IR 檔案，其語意決策與最終採用內容有且僅能由 Agent 依完整權威來源、劇情上下文與 Git log 確認與修改。原始劇情檔案修改不超過 100 行時，禁止使用自動化工具生成 Story IR；超過 100 行時，才可產生 Story IR 草稿，但不得由工具直接覆寫已確認的 IR，且 Agent 必須在採用前逐行核對草稿與原始文章的對應關係。
 2. `project/mainStory/` 與 `project/story/` 內的權威來源檔案內容，有且僅能由真實使用者修改或提供。Agent 只能將使用者提供的完整內容原樣落地，不得自行創作、改字、合併局部修訂、潤稿、格式化或反向改寫。
 
 自動化程式只可以讀取與驗證 IR／來源，或從已驗證 IR 確定性產生衍生的 scene／floor／engine event；不得跨越上述權責邊界。
@@ -59,7 +59,7 @@ scene／floor
 `project/story-ir/main/*.json` 與 `project/story-ir/character/*.json` 是由 Agent 依完整權威來源、劇情上下文與 Git log 語意翻譯建立的文件，不是由 floor、engine event 或其他衍生產物反推的資料，也不是單純的自動化生成輸出。
 
 - Agent 必須先完整理解來源，再直接建立或更新 Story IR；Story IR 必須表達敘事、角色、演出、互動、流程與未解決指令的語意意圖，並保留來源位置與追溯資訊。
-- 任何自動化程式不得建立、覆寫、重排、拆分、合併或刪除既有 Story IR。程式只能讀取 IR、執行 schema／素材／流程驗證，或從已驗證 IR 確定性輸出 scene／floor。
+- 任何自動化程式不得直接覆寫、重排、拆分、合併或刪除已確認的 Story IR。原始劇情檔案修改不超過 100 行時，禁止使用自動化工具生成 Story IR；超過 100 行時，可產生待 Agent 逐行核對的 Story IR 草稿。程式仍只能讀取 IR、執行 schema／素材／流程驗證，或從已驗證 IR 確定性輸出 scene／floor。
 - Repository 不得保留任何由來源或衍生事件自動建立、覆寫或重建 Story IR 的入口；emitter 只能讀取既有 IR，並由 architecture validator 強制檢查這項邊界。
 - 現存 Story IR 不因本規則自動重寫或補正。若單一 IR 檔過大造成 Agent 閱讀或更新成本過高，可由 Agent 依語意 scene／chapter 邊界拆分，保留來源 SHA-256、scene identity、引用與 Git 追溯；不得以自動化程式批量拆分。
 - Story IR 的新增、修改或刪除仍必須與對應 scene／floor 在同一內容交易中驗證與提交；驗證器不得因能生成 floor 就反向替 Story IR 作決策。

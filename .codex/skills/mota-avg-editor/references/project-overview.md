@@ -5,7 +5,7 @@
 ## 最高權限修改權責
 
 - 除非使用者當次明確授意，Agent 只能直接修改 `project/story-ir/` 的 Story IR、生成器／emitter／validator 及必要測試／工具，以及規範、reference、README、TODO、question、manifest、驗證紀錄等文件與 metadata。Agent 不得直接 patch runtime、引擎、插件、共用註冊、素材或手寫的 scene／floor／event 輸出。
-- 「使用生成器」不算 Agent 直接修改：Agent 可在已驗證 IR 後執行既有 generator，讓其確定性產生 scene／floor／engine event；這些衍生變更仍必須由 `Story IR → validator → generator` 產生，不得手動補改生成結果。
+- Story IR 的自動生成只在原始劇情檔案實際修改超過 100 行時允許；100 行以下必須由 Agent 依語意建立或更新。自動生成的 Story IR 只能作為草稿，採用前必須逐行核對與原始文章的對應關係並由 Agent 確認。scene／floor 仍依 `Story IR → validator → generator` 產生，generator 規則不因本門檻改變。
 - `project/story-ir/` 的 IR 檔案，有且僅能由 Agent 依完整來源、上下文與 Git log 進行語意修改；任何自動化程式只能讀取、驗證，或由已驗證 IR 產出衍生 floor／engine event。
 - `project/mainStory/` 與 `project/story/` 的權威來源檔案內容，有且僅能由真實使用者修改或提供。Agent 只能原樣落地使用者提供的完整內容，不得自行改寫或合併局部修訂。
 
@@ -25,8 +25,7 @@ scene／floor
 
 - 元件與權威來源是使用者內容，不由 Agent 依衍生結果反向改寫。
 - Story IR 是 Agent 維護的語意文件，不是由 scene／floor 或 engine event 反推的快取。
-- scene／floor 只能由已驗證 Story IR 重新生成，不得直接 patch；要改 scene／floor，先改 IR，再執行 generator。
-- validator 不寫入 IR；emitter／generator 不寫入元件、權威來源或 IR。
+- scene／floor 只能由已驗證 Story IR 重新生成，不得直接 patch；要改 scene／floor，先改 IR，再執行 generator。validator 不寫入 IR；emitter／generator 不寫入元件、權威來源或 IR。
 
 ## 專案架構
 
@@ -36,7 +35,7 @@ scene／floor
 - `project/mainStory/CH1`～`CH7`：現行主線劇情的唯一真實來源。Agent 不得自行編修、補寫、潤稿、修錯字、格式化或從 IR／floor 反向改寫；但可將使用者提供或其他已確認、可追溯的完整主線來源新增為完整檔案，或整檔覆蓋舊來源，不得自行合併局部修訂。來源更新後由 Agent 依完整語意建立或更新 Story IR，再由只讀驗證與確定性 emitter 產生主線 floor。
 - `project/story/*.txt`：角色劇情內容與章節結構的唯一真實來源（source of truth），不是僅供追溯而保留的原始附件。Agent 不得局部修改或自行改寫其內容；但所有被分類且驗收完成的角色劇情 TXT，可由 Agent 以完整檔案新增，或用 ZIP／DOCX／TXT 等已確認完整新來源整檔覆蓋同角色舊稿。`project/floors/*.js` 中的 scene／floor 是依文本轉換出的遊戲實作；兩者有差異時以來源文本為準，不得反向修改來源。
 - `project/story/manifest.md`：角色原始劇本與素材之使用方式、最後命名的永久追溯索引，不是劇情來源。每個角色使用獨立區段，逐筆保存原始 ZIP／run、原始相對路徑、SHA-256、資源種類、差異狀態、使用方式、最後命名／路徑、對應來源 TXT 或 scene 與驗證證據。重新命名、替換或停用時保留舊紀錄並標示 `superseded`；缺乏可信歷史證據時標示 `needs-backfill`，不得猜測。
-- `project/story-ir/main/*.json`、`project/story-ir/character/*.json`：納入 Git 的共用 Story IR 語意文件，由 Agent 依完整權威來源、上下文與 Git log 建立／更新，保存來源路徑與 SHA-256。主線與支線使用相同 schema／validator／emitter；來源雜湊不符時禁止生成 floor。任何自動化程式不得建立、覆寫、重排、拆分、合併或刪除 Story IR，只能讀取、驗證或從已驗證 IR 確定性產出 floor。現存 IR 不因規則變更自動重寫；檔案過大時由 Agent 依 scene／chapter 語意邊界拆分並保留追溯。Story IR 不可獨立交付或提交：任何新增、修改或刪除都必須在同一個內容 commit 中同步更新其對應 scene／floor。
+- `project/story-ir/main/*.json`、`project/story-ir/character/*.json`：納入 Git 的共用 Story IR 語意文件，由 Agent 依完整權威來源、上下文與 Git log 建立／更新，保存來源路徑與 SHA-256。主線與支線使用相同 schema／validator／emitter；來源雜湊不符時禁止生成 floor。自動化程式只有在原始劇情檔案修改超過 100 行時，才可產生 Story IR 草稿；草稿必須由 Agent 逐行核對原文後採用，不能直接覆寫確認中的 IR。現存 IR 不因規則變更自動重寫；檔案過大時由 Agent 依 scene／chapter 語意邊界拆分並保留追溯。Story IR 不可獨立交付或提交：任何新增、修改或刪除都必須在同一個內容 commit 中同步更新其對應 scene／floor。
 - `project/data.js`：全塔設定。`main.floorIds` 決定樓層順序與可用樓層；`main.images/bgms/sounds/nameMap` 決定圖片、音樂、音效與別名。
 - `project/images/`：只保存 scene 會實際消費的自定義 runtime 圖片，例如背景、立繪、CG、UI 圖；不得作為 ZIP 原始圖片的暫存區或素材倉庫。此目錄內每張圖片都必須登錄於 `project/data.js -> main.images`，而每個 `main.images` 項目都必須由至少一個 validated Story IR scene 及對應 floor 使用。直接使用或由來源生成的正式圖片必須走完這條鏈；IR 缺少正式圖片時複製的暫時替代圖也必須走完同一條鏈，並在角色劇情 `project/story/TODO.md` 或主線 `project/mainStory/TODO.md` 記錄 copied source、目標正式素材、scene 與替換驗證。動作 CG 的 `*_cg.png` 是母檔，`*_action_cg.png` 是衍生 runtime 檔；每張地點背景必須為完整畫面的 544×416，且每個地點各用唯一檔名。
 - `unknown/`：repo 根層的未引用 ZIP 圖片待辦隔離區，不是 `project/images/unknown/`。無法對應 scene、也尚未作為生成來源的圖片須原樣保存於 `unknown/<角色ID>/<原始相對路徑>` 並保留 SHA-256；角色劇情寫入 `project/story/TODO.md`，主線寫入 `project/mainStory/TODO.md`。不得加入 `main.images`。放入此處只表示仍待處理，不表示圖片已應用或角色素材已完成。

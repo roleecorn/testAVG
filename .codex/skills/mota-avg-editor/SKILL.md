@@ -32,7 +32,7 @@ Every create or update task is story-demand-driven, not only ZIP imports. Decide
 
 Story IR is an Agent-authored semantic translation document. The Agent reads the complete authoritative source, surrounding story context, and relevant Git history, then writes the semantic intent into Story IR before any runtime event or floor is emitted. Story IR is not an engine-event cache and must never be reverse-generated from floors or engine events.
 
-Automation may validate or read checked-in Story IR and may deterministically emit floors/events from validated IR. Automation must not create, overwrite, reorder, split, merge, or delete Story IR. Existing IR is not to be mass-migrated merely to conform to this contract; split an oversized IR only when the Agent can preserve scene identity, source hashes, references, and traceability.
+Automation may validate or read checked-in Story IR. It may generate a Story IR draft only when the authoritative source file has more than 100 modified lines. For 100 or fewer modified source lines, the Agent must create or update Story IR semantically without automated generation. Automation must never overwrite, reorder, split, merge, or delete confirmed Story IR. After every automated Story IR draft, inspect it line by line against the authoritative source and retain correspondence evidence before the Agent adopts it. The ordinary IR → validator → generator path for derived floors/events remains unchanged.
 
 ## Story update transaction
 
@@ -101,12 +101,12 @@ For registered action CGs, `*_cg.png` is the authoritative master and `*_action_
 ## Validation
 
 - Read [checklist.md](references/checklist.md) and the validation section of every branch actually used.
-- Run the complete `【...】` directive audit for every story creation or adjustment; for each unsupported-looking directive, record the generator/runtime feasibility check and either implement it through the generator and validate the resulting Story IR/floor, or document why it remains unresolved in the applicable TODO before delivery.
+- Run the complete `【...】` directive audit for every story creation or adjustment; for each unsupported-looking directive, record the generator/runtime feasibility check and validate the resulting Story IR/floor. Do not use a refresh／bootstrap／reverse-conversion command that writes Story IR.
 - Verify every added or updated implementation and asset traces to an explicit user requirement or authoritative-source Story IR/scene need, and every such need is implemented or recorded through the required blocking/TODO path. Reject asset-led extra behavior and implementation-led omissions.
 - For ZIP work, verify the current run manifest proves a fresh extraction from the recorded archive SHA-256 into a new empty run directory and that no prior `tmp` artifact was used. Require a complete text delta classification and image delta classification before accepting any source or asset change.
 - For each ZIP character, classify every source image as directly used, generation source, or root-`unknown/` pending work; only the first two count as applied. Then verify `project/images/ → main.images → validated Story IR scene → floor` without orphan files, orphan registrations, or registration-only usage.
 - Verify the affected character has a complete `project/story/manifest.md` section and that every finalized `script-manifest.md` and `asset-usage.md` row maps to exactly one manifest record with its final name/path and evidence; unresolved legacy entries remain explicit `needs-backfill` records rather than guessed provenance.
-- Inspect the final diff scope, run read-only Story IR schema／source／reference validation and deterministic emitter checks for story changes, run other syntax and data checks relevant to touched files, and report checks that could not run. Do not use a refresh／bootstrap／reverse-conversion command that writes Story IR.
+- Inspect the final diff scope, determine the authoritative source's modified-line count, run read-only Story IR schema／source／reference validation and deterministic emitter checks, run other syntax and data checks relevant to touched files, and report checks that could not run. If an automated Story IR draft was used, perform and record a line-by-line source-to-draft correspondence audit before adopting it. Do not use a refresh／bootstrap／reverse-conversion command that writes Story IR.
 - After changing any project Skill, run its `quick_validate.py` check and `scripts/validate_agent_skill_routes.js`.
 ## Current main-story source scope
 

@@ -2,9 +2,9 @@
 
 ## 主線與角色支線共用管線
 
-權責硬規則：Story IR 有且僅能由 Agent 依語意修改；權威來源檔案內容有且僅能由真實使用者修改或提供。自動化程式不得產生或修改 IR，只能驗證既有 IR，並由 IR emitter 產出衍生事件／floor。
+權責硬規則：Story IR 的語意決策與最終採用內容有且僅能由 Agent 依語意確認；權威來源檔案內容有且僅能由真實使用者修改或提供。原始劇情檔案修改不超過 100 行時，禁止自動生成 Story IR；超過 100 行時，才可產生待核對的 Story IR 草稿。草稿必須逐行對照原始文章後才能採用；自動化程式不得直接覆寫已確認的 IR。
 
-三者關係固定為：`真實使用者元件／權威來源 → Agent 語意 Story IR → 只讀 validator → emitter／generator → scene／floor`。scene／floor 是衍生物，不得直接修改；任何 scene／floor 調整都必須先修改 IR，再由 generator 重新產生。
+三者關係固定為：`真實使用者元件／權威來源 → Agent 語意 Story IR → 只讀 validator → emitter／generator → scene／floor`。只有 Story IR 草稿的自動生成受「原始劇情檔修改超過 100 行」門檻限制；scene／floor 的 emitter／generator 仍依已驗證 IR 正常產生。每次自動生成 Story IR 草稿後，必須逐行核對草稿與原始文章的對應關係並保存證據。
 
 主線與角色支線只允許在來源位置與觸發方式上不同，不得使用不同的文本理解或事件生成契約。下列順序是所有新增與更新共用的首要決策順序，不得因現有素材、floor、資料登錄、工具便利性或 ZIP 內容而顛倒或省略：
 
@@ -19,7 +19,7 @@ Story IR 必須納入 Git，統一放在 `project/story-ir/main/` 與 `project/s
 
 ## Story IR 建立權責
 
-Story IR 的建立與更新由 Agent 負責。自動化程式不得建立、覆寫、重排、拆分、合併或刪除既有 Story IR；只能讀取 IR、驗證來源／schema／素材／流程，或從已驗證 IR 確定性產生 floor／engine event。Repository 不得保留來源／floor／event 反向寫入 Story IR 的 executable path。
+Story IR 的建立與更新由 Agent 負責。原始劇情檔案修改不超過 100 行時，Agent 必須自行完成語意建立／更新，不得使用自動生成；超過 100 行時，自動化程式可產生草稿，但不得覆寫已確認 IR，且 Agent 必須逐行核對原文後採用。Repository 不得保留來源／floor／event 反向寫入 Story IR 的 executable path。
 
 現存 Story IR 不因這項規則自動重建或修正。若單一檔案過大導致 Agent 閱讀或更新成本過高，可由 Agent 按 scene／chapter 語意邊界拆分，保留 scene identity、來源 SHA-256、引用與 Git 追溯；不得用自動化程式批量拆分。
 
