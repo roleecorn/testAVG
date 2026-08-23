@@ -365,8 +365,24 @@ main.floors.main_ch7_1=
         "\t[東山]那麼OO時間在秋葉原車站出口會合找我報交通費，至於活動當天的到時再一起走",
         "\t[眾人]了解！",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -645,8 +661,24 @@ main.floors.main_ch7_1=
         },
         "東山推開了店門",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -976,8 +1008,9 @@ main.floors.main_ch7_1=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場：一段時間過後】"
+            "type": "playTransitionVideo",
+            "name": "floor-transition.mp4",
+            "standalone": true
         },
         {
             "type": "showImage",
@@ -1354,8 +1387,24 @@ main.floors.main_ch7_1=
         "在東山即將被肥宅s踩過那一刻，她用盡最後的力氣在群組上發出了訊息",
         "\t[東山]救命",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "comment",
@@ -1545,8 +1594,9 @@ main.floors.main_ch7_1=
         },
         "東山對著撿起的書露出了嫌棄的表情",
         {
-            "type": "comment",
-            "text": "【過場：一段時間過後】"
+            "type": "playTransitionVideo",
+            "name": "floor-transition.mp4",
+            "standalone": true
         },
         {
             "type": "showImage",
@@ -1631,7 +1681,8 @@ main.floors.main_ch7_1=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

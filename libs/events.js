@@ -741,6 +741,7 @@ events.prototype._changeFloor_getInfo = function (floorId, stair, heroLoc, time,
         floorId: floorId,
         time: time,
         transitionVideo: options.transitionVideo || core.status.__pendingTransitionVideo__,
+        silent: options.silent === true,
         heroLoc: core.clone(this._changeFloor_getHeroLoc(floorId, stair, heroLoc))
     };
 }
@@ -785,7 +786,7 @@ events.prototype._changeFloor_getHeroLoc = function (floorId, stair, heroLoc) {
 }
 
 events.prototype._changeFloor_beforeChange = function (info, callback) {
-    this._changeFloor_playSound();
+    if (!info.silent) this._changeFloor_playSound();
     if (this._changeFloor_startVideoTransition(info, function () {
         core.events._changeFloor_changing(info, callback);
     })) return;
@@ -1745,6 +1746,15 @@ events.prototype._action_jumpHero = function (data, x, y, prefix) {
 }
 
 events.prototype._action_playTransitionVideo = function (data, x, y, prefix) {
+    if (data.standalone) {
+        var started = this._changeFloor_startVideoTransition({ transitionVideo: data.name || true }, function () {});
+        if (started && core.status.__floorTransitionVideo__) {
+            core.status.__floorTransitionVideo__.finishCallback = core.doAction;
+        } else {
+            core.doAction();
+        }
+        return;
+    }
     core.status.__pendingTransitionVideo__ = data.name || true;
     core.doAction();
 }
@@ -1752,7 +1762,7 @@ events.prototype._action_playTransitionVideo = function (data, x, y, prefix) {
 events.prototype._action_changeFloor = function (data, x, y, prefix) {
     var loc = this.__action_getHeroLoc(data.loc, prefix);
     var heroLoc = { x: loc[0], y: loc[1], direction: data.direction };
-    core.changeFloor(data.floorId, data.stair, heroLoc, data.time, core.doAction);
+    core.changeFloor(data.floorId, data.stair, heroLoc, data.time, core.doAction, { silent: data.silent === true });
 }
 
 events.prototype._action_changePos = function (data, x, y, prefix) {

@@ -428,8 +428,24 @@ main.floors.main_ch3_2=
         },
         "就這樣梗平被貝琪拉上了車，前往了一間跟梗平毫不相襯的高級餐廳",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -729,8 +745,24 @@ main.floors.main_ch3_2=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "梗平上了車重新回到了秋葉原，在下車之前貝琪拉住了他的手",
         {
@@ -890,7 +922,8 @@ main.floors.main_ch3_2=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

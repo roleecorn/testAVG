@@ -390,7 +390,8 @@ main.floors.mapo_1_5=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

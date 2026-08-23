@@ -63,12 +63,12 @@ function irToEvent(node) {
       });
     case "image.hide": return cleanUndefined({ type: "hideImage", code: node.code, time: node.time, async: node.async });
     case "wait": return cleanUndefined({ type: "sleep", time: node.time, noSkip: node.noSkip });
-    case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time });
+    case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time, silent: true });
     case "comment": return { type: "comment", text: node.text };
     case "function.call": return cleanUndefined({ type: "function", function: node.function, async: node.async });
     case "akiba.event.complete": return { type: "function", function: `function () { core.plugin.completeAkibaEvent('${node.eventId}'); }` };
     case "akiba.return": return { type: "function", function: "function () { core.plugin.returnToAkiba(); }" };
-    case "transition.video": return cleanUndefined({ type: "playTransitionVideo", name: node.name, time: node.time });
+    case "transition.video": return cleanUndefined({ type: "playTransitionVideo", name: node.name, time: node.time, standalone: node.standalone });
     case "choice":
       return cleanUndefined({
         type: "choices",
@@ -82,6 +82,74 @@ function irToEvent(node) {
       });
     default: throw new Error(`Unsupported Story IR kind: ${node.kind || "(missing kind)"}`);
   }
+}
+
+function transitionEvent(node, transition) {
+  if (!transition) return null;
+  if (transition.kind === "clock") {
+    if (typeof transition.name !== "string" || !transition.name) {
+      throw new Error(`Invalid clock transition name for ${node.text}`);
+    }
+    return {
+      type: "playTransitionVideo",
+      name: transition.name,
+      standalone: true,
+    };
+  }
+  if (transition.kind !== "fade") return null;
+  if (!Array.isArray(transition.color) || transition.color.length !== 4) {
+    throw new Error(`Invalid fade transition color for ${node.text}`);
+  }
+  if (!Number.isFinite(transition.time) || transition.time < 0) {
+    throw new Error(`Invalid fade transition time for ${node.text}`);
+  }
+  return {
+    type: "setCurtain",
+    color: transition.color,
+    time: transition.time,
+  };
+}
+
+function irToEvents(nodes, transitions = {}) {
+  const events = [];
+  for (let index = 0; index < nodes.length; index += 1) {
+    const node = nodes[index];
+    if (node.kind === "choice") {
+      events.push(cleanUndefined({
+        type: "choices",
+        text: node.prompt,
+        choices: node.options.map((option) => ({
+          text: option.text,
+          color: option.color,
+          need: option.need,
+          action: irToEvents(option.events, transitions),
+        })),
+      }));
+      continue;
+    }
+
+    if (node.kind === "comment" && transitions[node.text]) {
+      const transition = transitions[node.text];
+      const fade = transitionEvent(node, transition);
+      if (!fade) throw new Error(`Unsupported transition for ${node.text}`);
+      events.push(fade);
+      if (transition.kind === "clock") continue;
+      const next = nodes[index + 1];
+      if (next && next.kind === "background.show") {
+        events.push(irToEvent(next));
+        index += 1;
+      }
+      events.push(cleanUndefined({
+        type: "setCurtain",
+        color: [0, 0, 0, 0],
+        time: transition.time,
+      }));
+      continue;
+    }
+
+    events.push(irToEvent(node));
+  }
+  return events;
 }
 
 function isPortraitShow(node) {
@@ -330,9 +398,10 @@ function verifySources(root, bundle) {
 
 function bundleToFloors(bundle) {
   validateBundle(bundle);
+  const transitions = bundle.presentation?.transitions || {};
   return bundle.scenes.map((scene) => ({
     ...scene.floor,
-    eachArrive: normalizeBgmLifecycle(normalizePortraitLifecycle(scene.events)).map(irToEvent),
+    eachArrive: irToEvents(normalizeBgmLifecycle(normalizePortraitLifecycle(scene.events)), transitions),
   }));
 }
 

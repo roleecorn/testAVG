@@ -561,8 +561,24 @@ main.floors.main_ch4_2=
         "車上的梗平在意識混亂的同時，眼角於看見了貝琪給了老闆一個手提箱",
         "累了一天反覆昏迷的梗平，意識再次遠去",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -790,7 +806,8 @@ main.floors.main_ch4_2=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

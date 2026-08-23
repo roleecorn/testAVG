@@ -446,8 +446,24 @@ main.floors.mapo_1_6=
         },
         "梗平連滾帶爬的跑回了道路上",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -543,8 +559,24 @@ main.floors.mapo_1_6=
         },
         "梗平一邊說著小物臭的發言，一邊走回了炭烤蜜瓜兔子",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -1265,7 +1297,8 @@ main.floors.mapo_1_6=
                                 10
                             ],
                             "direction": "up",
-                            "time": 0
+                            "time": 0,
+                            "silent": true
                         }
                     ]
                 },
@@ -1432,7 +1465,8 @@ main.floors.mapo_1_6=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

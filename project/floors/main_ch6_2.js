@@ -843,8 +843,24 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -985,7 +1001,8 @@ main.floors.main_ch6_2=
                                 10
                             ],
                             "direction": "up",
-                            "time": 0
+                            "time": 0,
+                            "silent": true
                         }
                     ]
                 },
@@ -2051,7 +2068,8 @@ main.floors.main_ch6_2=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

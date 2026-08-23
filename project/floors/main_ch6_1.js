@@ -448,8 +448,24 @@ main.floors.main_ch6_1=
         "在找到了空檔後，梗平一個錯身拉開了與肥宅群的距離",
         "接著使用了自己全身的力氣，頭也不回地朝咖啡廳跑去",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -810,8 +826,24 @@ main.floors.main_ch6_1=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -1271,8 +1303,24 @@ main.floors.main_ch6_1=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -1530,8 +1578,24 @@ main.floors.main_ch6_1=
         },
         "接著，蘭斯與東山便與店長一同前往了書店的深處",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -1673,7 +1737,8 @@ main.floors.main_ch6_1=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

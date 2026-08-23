@@ -828,8 +828,24 @@ main.floors.mapo_1_4=
         },
         "梗平衝出了店門，朝著便利商店的方向狂奔",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -997,8 +1013,24 @@ main.floors.mapo_1_4=
         },
         "眼神死掉的店員小姐把東西丟在了收銀台後，也往外面衝了出去",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -1180,8 +1212,24 @@ main.floors.mapo_1_4=
                             "keep": true
                         },
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "[不知過了多久，梗平艱難的張開了眼睛］",
                         {
@@ -1679,7 +1727,8 @@ main.floors.mapo_1_4=
                                 10
                             ],
                             "direction": "up",
-                            "time": 0
+                            "time": 0,
+                            "silent": true
                         }
                     ]
                 },
@@ -1714,7 +1763,8 @@ main.floors.mapo_1_4=
                                 10
                             ],
                             "direction": "up",
-                            "time": 500
+                            "time": 500,
+                            "silent": true
                         }
                     ]
                 }
@@ -1731,7 +1781,8 @@ main.floors.mapo_1_4=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

@@ -861,7 +861,8 @@ main.floors.mapo_1_2=
                                                 10
                                             ],
                                             "direction": "up",
-                                            "time": 0
+                                            "time": 0,
+                                            "silent": true
                                         }
                                     ]
                                 }
@@ -1138,15 +1139,32 @@ main.floors.mapo_1_2=
                                 10
                             ],
                             "direction": "up",
-                            "time": 0
+                            "time": 0,
+                            "silent": true
                         }
                     ]
                 }
             ]
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "playBgm",
@@ -1639,7 +1657,8 @@ main.floors.mapo_1_2=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

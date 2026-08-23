@@ -445,8 +445,24 @@ main.floors.main_ch2_2=
         "三個小朋友欲言又止，但梗平早已一臉自信的轉身走向了其他地方",
         "互看一眼後嘆了口氣，三個小朋友跟上了梗平的步伐",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -560,8 +576,24 @@ main.floors.main_ch2_2=
         "梗平話沒說完，又自顧自地往外跑了出去",
         "小朋友們依舊失去了說話的權利，只好跟著愛衝刺的大哥哥繼續走",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -751,8 +783,24 @@ main.floors.main_ch2_2=
         },
         "三個小朋友跟著梗平走向了家庭餐廳",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -1323,8 +1371,24 @@ main.floors.main_ch2_2=
                             "time": 0
                         },
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -1646,7 +1710,8 @@ main.floors.main_ch2_2=
                                 10
                             ],
                             "direction": "up",
-                            "time": 0
+                            "time": 0,
+                            "silent": true
                         }
                     ]
                 },
@@ -1851,7 +1916,8 @@ main.floors.main_ch2_2=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

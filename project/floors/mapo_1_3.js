@@ -772,8 +772,24 @@ main.floors.mapo_1_3=
                         },
                         "經過了這樣那樣的訓練，充滿汗水、淚水、相遇、離別",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -1770,7 +1786,8 @@ main.floors.mapo_1_3=
                                 10
                             ],
                             "direction": "up",
-                            "time": 0
+                            "time": 0,
+                            "silent": true
                         }
                     ]
                 },
@@ -2228,8 +2245,24 @@ main.floors.mapo_1_3=
         },
         "梗平說完後，便跑出了麻婆豆腐店",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",

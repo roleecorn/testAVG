@@ -399,7 +399,8 @@ main.floors.mapo_1_3_exchange_1=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

@@ -370,8 +370,9 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場：一段時間過後】"
+            "type": "playTransitionVideo",
+            "name": "floor-transition.mp4",
+            "standalone": true
         },
         "路的盡頭出現了一隊由警車保護的黑色高級轎車",
         "隊伍前方為首的，是一位騎著白馬的男人",
@@ -415,8 +416,24 @@ main.floors.main_ch7_5=
         "簡訊提示聲",
         "\t[東山]IB哥哥醒了嗎？馬上過去",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -1222,8 +1239,24 @@ main.floors.main_ch7_5=
             "time": 150
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -1979,8 +2012,24 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -2149,8 +2198,24 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -2391,8 +2456,24 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -2634,8 +2715,24 @@ main.floors.main_ch7_5=
             "animateTime": 120
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "pauseBgm"
@@ -3116,8 +3213,24 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "pauseBgm"
@@ -3380,8 +3493,9 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場：一段時間過後】"
+            "type": "playTransitionVideo",
+            "name": "floor-transition.mp4",
+            "standalone": true
         },
         "眾人抵禦著肥宅的暴動一籌莫展，在即將破曉之際",
         {
@@ -3709,8 +3823,24 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "comment",
@@ -4028,8 +4158,24 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -4668,8 +4814,24 @@ main.floors.main_ch7_5=
             "time": 150
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -5010,8 +5172,24 @@ main.floors.main_ch7_5=
             "animateTime": 120
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -6518,8 +6696,24 @@ main.floors.main_ch7_5=
             "time": 150
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -7047,8 +7241,24 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -7175,8 +7385,24 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "pauseBgm"
@@ -7337,8 +7563,24 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "TODO: 【白色慢速過場】"
+            "type": "setCurtain",
+            "color": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "time": 2000
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 2000
         },
         {
             "type": "hideImage",
@@ -7417,8 +7659,24 @@ main.floors.main_ch7_5=
             "animateTime": 120
         },
         {
-            "type": "comment",
-            "text": "TODO: 【白色慢速過場】"
+            "type": "setCurtain",
+            "color": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "time": 2000
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 2000
         },
         {
             "type": "comment",
@@ -7686,8 +7944,24 @@ main.floors.main_ch7_5=
             "time": 250
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",

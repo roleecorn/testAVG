@@ -395,8 +395,24 @@ main.floors.main_ch3_1_exchange_1=
                     "text": "這麼說來，第一天好像有看到一間書店在招人",
                     "action": [
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -1452,8 +1468,24 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -1655,8 +1687,24 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "梗平　加入了隊伍",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -1786,8 +1834,24 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "三日月用微笑招待了梗平，梗平也回以......他此生最快速的撤離",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -1937,8 +2001,24 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "梗平正式加入了樂隊，並得知了自己隔天下午就要表演的資訊",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -2214,8 +2294,24 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "梗平就這麼睡倒在了路邊，隔天重複了一遍練團與表演的流程",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "playBgm",
@@ -2814,8 +2910,24 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "荒誕的第二天樂隊生活(?)就這麼結束了，轉眼又到了隔天團練時間",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "comment",
@@ -3468,8 +3580,24 @@ main.floors.main_ch3_1_exchange_1=
                         "然後接著演出，訓練，打魔獸",
                         "一直到了某次粉絲見面會出了小意外",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "playBgm",
@@ -3731,8 +3859,24 @@ main.floors.main_ch3_1_exchange_1=
                             "animateTime": 120
                         },
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -3902,8 +4046,24 @@ main.floors.main_ch3_1_exchange_1=
                         "一通操作猛如虎，三日樂成功擊潰了觸手怪",
                         "梗平拿著這次打魔獸的錢，陷入了沉思",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -3998,8 +4158,24 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -4129,8 +4305,24 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "然後梗平用堪比飛機的速度一路飛奔的跑到了三日月那裡",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -4795,8 +4987,24 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -5050,7 +5258,8 @@ main.floors.main_ch3_1_exchange_1=
                                 10
                             ],
                             "direction": "up",
-                            "time": 0
+                            "time": 0,
+                            "silent": true
                         }
                     ]
                 }
@@ -5067,7 +5276,8 @@ main.floors.main_ch3_1_exchange_1=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

@@ -629,8 +629,24 @@ main.floors.main_ch5_1_exchange_1=
                         },
                         "梗平選擇了捷徑(?)",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -828,7 +844,8 @@ main.floors.main_ch5_1_exchange_1=
                                 10
                             ],
                             "direction": "up",
-                            "time": 0
+                            "time": 0,
+                            "silent": true
                         }
                     ]
                 },
@@ -856,8 +873,24 @@ main.floors.main_ch5_1_exchange_1=
                         "梗平決定將今天自己剩下的所有時間投入到書店的打工中",
                         "如果一小時2000，他只需要工作區區1000小時就可以賺到200萬了",
                         {
-                            "type": "comment",
-                            "text": "【過場】"
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "hideImage",
@@ -1010,7 +1043,8 @@ main.floors.main_ch5_1_exchange_1=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

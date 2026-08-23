@@ -404,7 +404,8 @@ main.floors.main_ch2_4_exchange_1=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

@@ -448,8 +448,24 @@ main.floors.main_ch5_1=
         "警察們很自然的讓出了一條通道，前方正是炭烤蜜瓜兔子",
         "貝琪揮手送別了梗平後，就上了車揚長而去",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",

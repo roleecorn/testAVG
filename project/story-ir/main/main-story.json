@@ -9,7 +9,7 @@
       },
       {
         "path": "project/mainStory/CH2",
-        "sha256": "70a29ac97fc70b19c730e330204875596d63571522844f0d4ba2ff39d3be205f"
+        "sha256": "64f98e474c095e943429ff061d984f3bdaffe4e186c31a1b1df390eebe0bf74c"
       },
       {
         "path": "project/mainStory/CH3",
@@ -32,6 +32,44 @@
         "sha256": "f0d38b57175c34b710ba0535ef25d5c6c10c2bf8452abddd03972dbbf11f11fe"
       }
     ]
+  },
+  "presentation": {
+    "transitions": {
+      "【過場】": {
+        "kind": "fade",
+        "color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "time": 500
+      },
+      "【過場：一段時間過後】": {
+        "kind": "clock",
+        "name": "floor-transition.mp4"
+      },
+      "【白色慢速過場】": {
+        "kind": "fade",
+        "color": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "time": 2000
+      },
+      "TODO: 【白色慢速過場】": {
+        "kind": "fade",
+        "color": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "time": 2000
+      }
+    }
   },
   "scenes": [
     {

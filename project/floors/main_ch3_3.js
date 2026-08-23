@@ -1437,7 +1437,8 @@ main.floors.main_ch3_3=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

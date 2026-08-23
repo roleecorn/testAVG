@@ -807,8 +807,24 @@ main.floors.main_ch6_4=
         "在此之後，伴隨警察的笑聲，梗平放棄了掙扎",
         "後來趕到的友人與其他警察們，也都發出了笑聲",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -1162,7 +1178,8 @@ main.floors.main_ch6_4=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }

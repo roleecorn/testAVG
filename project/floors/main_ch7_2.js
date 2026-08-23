@@ -441,8 +441,24 @@ main.floors.main_ch7_2=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -661,8 +677,24 @@ main.floors.main_ch7_2=
         },
         "一張千元鈔票直直地滑進了東山的口袋",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -754,8 +786,9 @@ main.floors.main_ch7_2=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場：一段時間過後】"
+            "type": "playTransitionVideo",
+            "name": "floor-transition.mp4",
+            "standalone": true
         },
         {
             "type": "showImage",
@@ -830,8 +863,24 @@ main.floors.main_ch7_2=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -1162,8 +1211,24 @@ main.floors.main_ch7_2=
         },
         "\t[眾人]『『『『『不然呢？』』』』』",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "comment",
@@ -1575,8 +1640,24 @@ main.floors.main_ch7_2=
             "time": 150
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "comment",
@@ -1781,8 +1862,9 @@ main.floors.main_ch7_2=
         },
         "\t[眾人]『『『『啊』』』』",
         {
-            "type": "comment",
-            "text": "【過場：一段時間過後】"
+            "type": "playTransitionVideo",
+            "name": "floor-transition.mp4",
+            "standalone": true
         },
         {
             "type": "hideImage",
@@ -2000,8 +2082,24 @@ main.floors.main_ch7_2=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -2662,8 +2760,24 @@ main.floors.main_ch7_2=
         "接著東山拿出了手機",
         "\t[東山]梗平！兔子咖啡被修卡襲擊了！速歸！",
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -2831,8 +2945,24 @@ main.floors.main_ch7_2=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【過場】"
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 500
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "hideImage",
@@ -2868,7 +2998,8 @@ main.floors.main_ch7_2=
                 10
             ],
             "direction": "up",
-            "time": 0
+            "time": 0,
+            "silent": true
         }
     ]
 }
