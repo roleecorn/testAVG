@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/茜.txt",
-        "sha256": "5e71ed43670723e62937e8ef85e28a49412efb4d59ff390a7efd1a6242e1ffed"
+        "sha256": "2f71093acd59d3589db1ded1cf84be1e094efe0cb3c17d49394c58480646229e"
       }
     ]
   },
@@ -2851,6 +2851,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "cg", "code": 30, "image": "akane_walk_together_cg.jpg", "sloc": [0, 0, 416, 286], "loc": [112, 50, 320, 220], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {

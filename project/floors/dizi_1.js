@@ -310,7 +310,32 @@ main.floors.dizi_1=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l1_1.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "[梗平準備前往車站時，一個響亮的聲音劃破了人群的嘈雜。]",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 20,

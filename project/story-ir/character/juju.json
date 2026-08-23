@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/茱茱.txt",
-        "sha256": "299aa9d1ac71a1b0cafe4499d7b744bd433692fef8d7e658ac89206885fe4e72"
+        "sha256": "1e09da07e1f9f4b14435f82bbbdebfb446203f68a8c84bc4c7373c765c7ee1ae"
       }
     ]
   },
@@ -2752,6 +2752,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "cg", "code": 30, "image": "juju_attack_cg.png", "sloc": [0, 0, 416, 286], "loc": [112, 50, 320, 220], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {
@@ -3683,6 +3685,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "cg", "code": 30, "image": "juju_heartfelt_cg.png", "sloc": [0, 0, 416, 286], "loc": [112, 50, 320, 220], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {

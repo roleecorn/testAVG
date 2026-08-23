@@ -140,11 +140,20 @@ function headFloorMap() {
   const floors = new Map();
   const files = managedIrFiles().map((file) => slash(path.relative(root, file)));
   for (const file of files) {
-    const text = execFileSync("git", ["-c", `safe.directory=${slash(root)}`, "-c", "core.autocrlf=false", "-c", "core.safecrlf=false", "show", `HEAD:${file}`], {
-      cwd: root,
-      encoding: "utf8",
-      maxBuffer: 32 * 1024 * 1024,
-    });
+    let text;
+    try {
+      text = execFileSync("git", ["-c", `safe.directory=${slash(root)}`, "-c", "core.autocrlf=false", "-c", "core.safecrlf=false", "show", `HEAD:${file}`], {
+        cwd: root,
+        encoding: "utf8",
+        maxBuffer: 32 * 1024 * 1024,
+      });
+    } catch (error) {
+      // A newly added Story IR bundle has no HEAD baseline yet. Treat its
+      // previous floor set as empty; transaction validation below still
+      // requires every generated floor to be present and reproducible.
+      if (error && error.status === 128 && String(error.stderr || "").includes("not in 'HEAD'")) continue;
+      throw error;
+    }
     const bundle = validateBundle(JSON.parse(text));
     for (const floor of bundleToFloors(bundle)) floors.set(floor.floorId, floor);
   }

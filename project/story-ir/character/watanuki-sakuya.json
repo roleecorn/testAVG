@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/綿貫咲耶.txt",
-        "sha256": "ce375ec7d55688c85336bb224f87e6d0a689ad60780d621857b4fd6612add1a8"
+        "sha256": "ede4deeae2145468d3caaa145933d9f6b491d786256e8470ab794799a1d8bd30"
       }
     ]
   },
@@ -297,6 +297,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "cg", "code": 30, "image": "watanuki_cg7_a.png", "sloc": [0, 0, 416, 286], "loc": [112, 50, 320, 220], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {
@@ -2366,6 +2368,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "cg", "code": 30, "image": "watanuki_cg7_c.png", "sloc": [0, 0, 416, 286], "loc": [112, 50, 320, 220], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {
@@ -3307,6 +3311,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "cg", "code": 30, "image": "watanuki_cg7_b.png", "sloc": [0, 0, 416, 286], "loc": [112, 50, 320, 220], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {

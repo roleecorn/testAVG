@@ -551,8 +551,33 @@ main.floors.noir_3=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "noir_n01_cg.jpeg",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "...",
         "NoiR指尖落下琴鍵，旋律在劇院中迴盪。",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
         "（她彈的是他們最初相識時的那段音樂，旋律在空曠的場館裡顯得格外鮮明。）",
         {
             "type": "showImage",
@@ -569,6 +594,25 @@ main.floors.noir_3=
         {
             "type": "hideImage",
             "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "noir_n02_cg.jpeg",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
             "time": 0
         },
         {
@@ -641,6 +685,12 @@ main.floors.noir_3=
             "type": "hideImage",
             "code": 10,
             "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "（然而，梗平察覺到了NoiR眼神中的一絲不捨）",
         {

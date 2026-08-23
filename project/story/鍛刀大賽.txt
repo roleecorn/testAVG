@@ -142,6 +142,7 @@
 [三分鐘內無數的斬擊穿過豬肉，梗平不可置信的看着]
 梗：贏不了真的贏不了
 士：Trace On!
+【CG：E01 出現】
 [背後傳來一聲]
 [梗平轉過頭去發現士郎的左臂發出淡淡藍光]
 士："I am the bone of my sword."
@@ -150,9 +151,12 @@
 士："Unknown to Death,""Nor known to Life."
 士："Have withstood pain to create many weapons."
 士："Yet, those hands will never hold anything."
+【CG：E01 消失】
 梗：你在做什麼呀！這是魔法嗎？
+【CG：E02 出現】
 士："So as I pray, Unlimited Blade Works."
 [隨後兩把比完美更完美的干將·莫邪從地上投影出來]
+【CG：E02 消失】
 梗：為什麼不一開始就用紅色形態呀！
 梗：如果你能投影的話為什麼一開始還要打鐵呀！
 士：不打鐵是不能體會到這種辛酸的，接下來就靠你了
@@ -196,3 +200,6 @@
 梗：哈哈！這才是我認識的士郎！走，帶你去練團室！
 [陽光穿透醫院後門，昔日響徹街道的敲打金屬聲]
 [如今在兩人的笑聲中，悄然化作了前往世界舞台的全新節奏]
+
+
+

@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/月讀愛.txt",
-        "sha256": "b7a6bf596480df831943349fab4ae1d4f4caa9db0da123bec605fda1d7402964"
+        "sha256": "61b130e905e9ffb0629d64288f4c943a862fd04c2d3d53c01285a74b6dc8e8de"
       }
     ]
   },
@@ -297,6 +297,22 @@
         "fgmap": []
       },
       "events": [
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "yuedu_cg6_a.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
         {
           "kind": "layout.set",
           "value": {
@@ -974,6 +990,22 @@
         "fgmap": []
       },
       "events": [
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "yuedu_cg6_b.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
         {
           "kind": "layout.set",
           "value": {
@@ -1680,6 +1712,22 @@
         "fgmap": []
       },
       "events": [
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "yuedu_cg6_c.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
         {
           "kind": "layout.set",
           "value": {
@@ -2759,6 +2807,22 @@
         "fgmap": []
       },
       "events": [
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "yuedu_cg6_c.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
         {
           "kind": "layout.set",
           "value": {

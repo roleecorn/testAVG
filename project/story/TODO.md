@@ -1,5 +1,18 @@
 # 角色劇情 TODO
 
+## Open：20260823 最新角色支線 ZIP
+
+- Fresh run：`tmp/character-story-import/drive-download-20260823T111855Z-1-001/20260823-192556`；原始 ZIP SHA-256：`49CE655BDA170D9FA6264AFB84C82CA518685748D800E11257F02C9E3B54CEC6`。
+- 本次已完成全新解壓、文字／DOCX 抽取、完整 SHA-256 盤點與圖片實際格式／尺寸／SHA-256 盤點；文字分類證據為 `work/text-classification.json`，圖片分類證據為 `work/image-inventory.json`。
+- 既有角色更新來源尚未落地至 `project/story/`、Story IR 或 floor，因本批新增多個 CG／字體／鏡頭／BGM／SE 指令，需先完成逐角色語意翻譯與素材用途配對；不得以來源雜湊更新代替劇情更新。
+- 茜同時提供 `茜.txt` 與 `茜(添加CG的修正版).txt`；兩份差異為新增 `願與你同行` CG 出現／消失指令。本次暫採修正版作為候選完整來源，仍保留兩份原始證據，見 `.codex/task-questions/20260823-192556-zip-story.md`。
+- 新增文本：`416.txt`、`神秘香蕉人.txt`；已建立 `416`／`mysterious-banana` Story IR、scene／floor、素材與 Akiba 首段入口。神秘香蕉人文本中明列但 ZIP 未提供的 CG 仍保留為待補素材。
+- `17.蘭斯` 只有圖片、沒有角色支線權威文本；使用者已明確要求移除 `Cg00011.png` 與 `Sill-01_(2).png`，兩張已從 `unknown/lance/` 移除；ZIP raw 原始檔仍保留作為本次 intake 證據。
+- DOCX 提取流程已正規化：`scripts/extract_docx_text.py` 直接按 `word/document.xml` 段落輸出 UTF-8 無 BOM、LF-only TXT，保留空段落、手動換行與 tab；舊有含字面 `\\n` 的提取物不得再使用。地子已改用正規化提取結果覆蓋來源。香蕉人／茜 DOCX 與 TXT 版本不一致，保留 TXT 作為已確認來源並記錄 DOCX 比對證據。
+- TXT 編碼也已正規化：`scripts/normalize_story_text.py` 先嚴格辨識 UTF-8／UTF-8 BOM，失敗時以 CP950 解碼，再輸出 UTF-8 無 BOM、LF-only；已修復漆原瑠華／柏崎星奈的 `�` 來源問題，並重新同步所有本次來源 SHA。
+- 本次 ZIP 提供的圖片目前已全部離開 `unknown/`；既有角色與兩個新角色的素材已完成 `project/images → data.js → Story IR → floor` 閉環。
+- 416 與神秘香蕉人的完整來源仍有部分 BGM／SE、鏡頭與缺少 CG 演出待細化；目前先以 IR 記錄來源段落與可用素材，缺少正式素材的項目不得誤標為已完成。
+
 ## 待確認人物
 
 - `lala`／菈菈安瑟姆：已確認 ZIP 的 `菈菈安瑟姆.txt` 為權威來源；同名 DOCX 僅在 TXT 不存在時作為 fallback。已完成 `project/story/菈菈安瑟姆.txt`、Story IR、立繪、配角素材與 `lala_1`～`lala_4` floor 接入。

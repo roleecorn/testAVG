@@ -13,6 +13,20 @@
   },
   "activeEvents": [
     {
+      "id": "416_1",
+      "title": "抓到大的才有意義",
+      "locations": ["police_station"],
+      "floorId": "416_1",
+      "once": true
+    },
+    {
+      "id": "mysterious_banana_1",
+      "title": "神秘香蕉人",
+      "locations": ["park"],
+      "floorId": "mysterious_banana_1",
+      "once": true
+    },
+    {
       "id": "ruka_1",
       "title": "街頭牛災",
       "locations": ["maid_cafe"],

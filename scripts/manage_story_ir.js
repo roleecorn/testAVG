@@ -6,6 +6,8 @@ const root = path.resolve(__dirname, "..");
 const p = (...parts) => path.join(root, ...parts);
 
 const characterStories = [
+  { slug: "416", source: "416.txt", floors: ["416_1", "416_2", "416_3", "416_4"] },
+  { slug: "mysterious-banana", source: "神秘香蕉人.txt", floors: ["mysterious_banana_1", "mysterious_banana_2", "mysterious_banana_3", "mysterious_banana_4"] },
   { slug: "yuedu-ai", source: "月讀愛.txt", floors: ["yuedu_ai_1", "yuedu_ai_2", "yuedu_ai_3", "yuedu_ai_4"] },
   { slug: "dizi", source: "比那名居地子.txt", floors: ["dizi_1", "dizi_2", "dizi_3", "dizi_4"] },
   { slug: "akane", source: "茜.txt", floors: ["akane_1", "akane_2", "akane_3", "akane_4"] },

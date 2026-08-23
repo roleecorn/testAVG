@@ -284,6 +284,23 @@ main.floors.lanxiang_1=
     "fgmap": [],
     "eachArrive": [
         {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_mob.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",

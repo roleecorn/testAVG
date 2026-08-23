@@ -71,9 +71,12 @@
 
 | 紀錄鍵 | ZIP 序號／run | 原始相對路徑 | 原始 SHA-256 | 種類 | 差異狀態 | 使用方式 | 最後命名／路徑 | Story IR scene／用途 | 驗證證據 | 狀態 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| lanxiang:b00d5cff958289e74bc2527abb30170858b2173bdd604b0391a05f22583212e7:1.藍湘(55)/藍湘.txt | 20260816-174815 | 1.藍湘(55)/藍湘.txt | b00d5cff958289e74bc2527abb30170858b2173bdd604b0391a05f22583212e7 | script | updated | authoritative-source | project/story/藍湘.txt | source／lanxiang_1..4 | work/script-manifest.md + 藍湘.diff | active |
+| lanxiang:b00d5cff958289e74bc2527abb30170858b2173bdd604b0391a05f22583212e7:1.藍湘(55)/藍湘.txt | 20260816-174815 | 1.藍湘(55)/藍湘.txt | b00d5cff958289e74bc2527abb30170858b2173bdd604b0391a05f22583212e7 | script | updated | authoritative-source | project/story/藍湘.txt | source／lanxiang_1..4 | work/script-manifest.md + 藍湘.diff | superseded |
+| lanxiang:e01546b7b2525bb360d6ddacb26069ac707fe4a52063e442d2a03c1969a0c9cf:1.藍湘(55)/藍湘.txt | 20260823-192556 | 1.藍湘(55)/藍湘.txt | e01546b7b2525bb360d6ddacb26069ac707fe4a52063e442d2a03c1969a0c9cf | script | updated | authoritative-source | project/story/藍湘.txt | source／lanxiang_1..4 | work/text-classification.json + validated Story IR/floor | active |
 | lanxiang:9fa154e25ba97134ab2228cab335cc8e6ce18b75436141705ecbcd070d3e1601:1.藍湘(55)/圖檔/斷水流傳人.png | 20260816-174815 | 1.藍湘(55)/圖檔/斷水流傳人.png | 9fa154e25ba97134ab2228cab335cc8e6ce18b75436141705ecbcd070d3e1601 | portrait | new | direct | project/images/lanxiang_duanshuiliu.png | lanxiang_2／lanxiang_4／speaker 斷水流傳人 | work/asset-usage.md + IR／floor refs | active |
 | lanxiang:e1965681841097fec715a49df031ba58a26c3343bde85caa141f8da7d9be76b7:1.藍湘(55)/圖檔/藍湘.png | 20260816-174815 | 1.藍湘(55)/圖檔/藍湘.png | e1965681841097fec715a49df031ba58a26c3343bde85caa141f8da7d9be76b7 | portrait | new | generated-source | project/images/lanxiang_angry.png, project/images/lanxiang_normal.png, project/images/lanxiang_panic.png, project/images/lanxiang_sad.png, project/images/lanxiang_smile.png, project/images/lanxiang_surprised.png | lanxiang_1..4 | work/asset-usage.md + user-confirmed protagonist generation source | active |
+| lanxiang:06918b885bbaaa0f9dc7d85f39850328c3c88c349d84459e17238daafec7d3aa:1.藍湘(55)/圖檔/三人麻將.png | 20260823-192556 | 1.藍湘(55)/圖檔/三人麻將.png | 06918b885bbaaa0f9dc7d85f39850328c3c88c349d84459e17238daafec7d3aa | cg | new | direct | project/images/lanxiang_mahjong_cg.png | lanxiang_2／麻將對局 CG | filename-story-mapping.json + validated Story IR/floor | active |
+| lanxiang:cc638e07ff60261f8d36baeb47794169ad177861d56ae06f30bb2c9510c8a8a0:1.藍湘(55)/圖檔/再見.png | 20260823-192556 | 1.藍湘(55)/圖檔/再見.png | cc638e07ff60261f8d36baeb47794169ad177861d56ae06f30bb2c9510c8a8a0 | cg | new | direct | project/images/lanxiang_goodbye_cg.png | lanxiang_4／結尾離別 CG | filename-story-mapping.json + validated Story IR/floor | active |
 
 ## `mikage-rinju`／御影凛珠
 
@@ -93,9 +96,12 @@
 
 | 紀錄鍵 | ZIP 序號／run | 原始相對路徑 | 原始 SHA-256 | 種類 | 差異狀態 | 使用方式 | 最後命名／路徑 | Story IR scene／用途 | 驗證證據 | 狀態 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| noir:ba5a05ca300f85436453576cdd67b3fda28bb9fd37c7d4b45ea00d7aaab1164c:4. NoiR(情緒)/NoiR.txt | 20260816-174815 | 4. NoiR(情緒)/NoiR.txt | ba5a05ca300f85436453576cdd67b3fda28bb9fd37c7d4b45ea00d7aaab1164c | script | updated | authoritative-source | project/story/NoiR.txt | source／noir_1..4 | work/script-manifest.md + NoiR.diff | active |
+| noir:ba5a05ca300f85436453576cdd67b3fda28bb9fd37c7d4b45ea00d7aaab1164c:4. NoiR(情緒)/NoiR.txt | 20260816-174815 | 4. NoiR(情緒)/NoiR.txt | ba5a05ca300f85436453576cdd67b3fda28bb9fd37c7d4b45ea00d7aaab1164c | script | updated | authoritative-source | project/story/NoiR.txt | source／noir_1..4 | work/script-manifest.md + NoiR.diff | superseded |
+| noir:da18c1de3b0367465e14ca2e105fe07765eacf84b5eb227c47dfe255551a4dee:4. NoiR(情緒)/NoiR.txt | 20260823-192556 | 4. NoiR(情緒)/NoiR.txt | da18c1de3b0367465e14ca2e105fe07765eacf84b5eb227c47dfe255551a4dee | script | updated | authoritative-source | project/story/NoiR.txt | source／noir_1..4 | work/text-classification.json + validated Story IR/floor | active |
 | noir:ab71b4dc99b1fc89732ee086765fcf2d32218ce361f2bdabd54f450b96f00e0f:4. NoiR(情緒)/圖檔/NoiR.png | 20260816-174815 | 4. NoiR(情緒)/圖檔/NoiR.png | ab71b4dc99b1fc89732ee086765fcf2d32218ce361f2bdabd54f450b96f00e0f | portrait | new | generated-source | project/images/noir_angry.png, project/images/noir_normal.png, project/images/noir_panic.png, project/images/noir_sad.png, project/images/noir_smile.png, project/images/noir_surprised.png | noir_1..4 | work/asset-usage.md + user-confirmed protagonist generation source | active |
 | noir:6bf53d3f9fa76126f0fa6b6263e40fd3108dc47f91b4fb636d72f7ce05a98496:4. NoiR(情緒)/圖檔/NoiR髮夾.png | 20260816-174815 | 4. NoiR(情緒)/圖檔/NoiR髮夾.png | 6bf53d3f9fa76126f0fa6b6263e40fd3108dc47f91b4fb636d72f7ce05a98496 | cg | new | direct | project/images/noir_hairclip.png | noir_3 | work/asset-usage.md + IR／floor refs | active |
+| noir:f03e6d3ddad1d1558202754186039eab52f383c09d17e9f9c85de668c88d6e80:4. NoiR(情緒)/圖檔/N01.jpeg | 20260823-192556 | 4. NoiR(情緒)/圖檔/N01.jpeg | f03e6d3ddad1d1558202754186039eab52f383c09d17e9f9c85de668c88d6e80 | cg | new | direct | project/images/noir_n01_cg.jpeg | noir_2／演奏 CG N01 | filename-story-mapping.json + validated Story IR/floor | active |
+| noir:4df4ea6173271a77bb2c222adfa626a09931621a7f741bbdc7b4ad0c88a6927f:4. NoiR(情緒)/圖檔/N02.jpeg | 20260823-192556 | 4. NoiR(情緒)/圖檔/N02.jpeg | 4df4ea6173271a77bb2c222adfa626a09931621a7f741bbdc7b4ad0c88a6927f | cg | new | direct | project/images/noir_n02_cg.jpeg | noir_2／演奏 CG N02 | filename-story-mapping.json + validated Story IR/floor | active |
 
 ## `okabe`／岡部倫太郎
 
@@ -182,3 +188,30 @@
 | sena:6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555:15.柏崎星奈/圖檔/柏崎星奈.png | 20260816-174815 | 15.柏崎星奈/圖檔/柏崎星奈.png | 6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555 | portrait | new | generated-source (superseded by current run evidence) | prior work output | - | prior run record | superseded |
 | sena:b029382c3456645756a7a1f2ee7d70c3ba5cfc63c1dd7c6b3fdd36bb8ef03440:15.柏崎星奈/柏崎星奈.txt:20260816-201520 | 20260816-201520 | 15.柏崎星奈/柏崎星奈.txt | b029382c3456645756a7a1f2ee7d70c3ba5cfc63c1dd7c6b3fdd36bb8ef03440 | script | new | authoritative-source | project/story/柏崎星奈.txt | sena_1..sena_4 | work/script-manifest.md; source SHA 7040e0c5...; manage_story_ir | active |
 | sena:6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555:15.柏崎星奈/圖檔/柏崎星奈.png:20260816-201520 | 20260816-201520 | 15.柏崎星奈/圖檔/柏崎星奈.png | 6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555 | portrait | new | generated-source | project/images/sena_{smile,sad,surprised,panic,normal}.png | sena_1..sena_4 | intake-manifest; expression-validation; IR/floor/data chain; angry candidate intake-only | active |
+
+## 本次 run：地子／月讀愛 CG 接入
+
+| 角色 | 原始相對路徑 | 原始 SHA-256 | 種類 | 使用方式 | 最後命名／路徑 | Story IR scene | 驗證 |
+|---|---|---|---|---|---|---|---|
+| dizi | `9.地子(風揚)/圖檔/CG-DS-L1-1.png` | `9df2631173352bd5b2a758b91fa7a35ca664e42fd5453221cd11a4a5c8b76a17` | cg | direct | `project/images/dizi_cg_ds_l1_1.png` | `dizi_1` | IR／floor／data |
+| dizi | `9.地子(風揚)/圖檔/CG-DS-L2-1.png` | `98c1f31a597a4ae43895fd3d41e3cb9616ba1b038b60951c20cb9abaaca81a85` | cg | direct | `project/images/dizi_cg_ds_l2_1.png` | `dizi_2` | IR／floor／data |
+| dizi | `9.地子(風揚)/圖檔/CG-DS-L3-1.png`, `CG-DS-L3-2.png` | `838ba7e0c9afa94efb432f66c7892cfd582eb4c12bd1b6250a6bfdd74b6fe773`, `1eb62df791e89021cd293aeeed7c5b759a88f7d9dbe924d6b6dbb703230609a2` | cg | direct | `project/images/dizi_cg_ds_l3_1.png`, `dizi_cg_ds_l3_2.png` | `dizi_3` | IR／floor／data |
+| dizi | `9.地子(風揚)/圖檔/CG-DS-L4-*` | recorded in current run image inventory | cg | direct | `project/images/dizi_cg_ds_l4_*.png` | `dizi_4` | IR／floor／data |
+| yuedu-ai | `6.月讀愛/圖檔/CG6_a.png`, `CG6_b.png`, `CG6_c.png` | `87f4af4a1e06e0295ca40b54bafc4ee69b95bb8a99556df5a2899c8a2ff2d723`, `de1e0d9b88eafe93388eb08c292ee7bc0a4ace5888b8340fb51a846d31d4edea`, `304da33345b463942a151e61f75fd5edeae477305ab88dcdb4fff5facc2baa1c` | cg | direct | `project/images/yuedu_cg6_a.png`, `yuedu_cg6_b.png`, `yuedu_cg6_c.png` | `yuedu_ai_1..4` | IR／floor／data |
+
+## 本次 run：第二批明確 CG 接入
+
+| 角色 | 原始相對路徑 | 最後命名／路徑 | Story IR scene | 驗證 |
+|---|---|---|---|---|
+| 綿貫咲耶 | `7.綿貫咲耶/圖檔/CG_7a.png`, `CG_7b.png`, `CG_7c.png` | `project/images/watanuki_cg7_a.png`, `watanuki_cg7_b.png`, `watanuki_cg7_c.png` | `watanuki_sakuya_1`, `_4`, `_3` | IR／floor／data |
+| 御影凛珠 | `8.御影凛珠/圖檔/CG_8a.png`, `CG_8b.png`, `CG_8c.png` | `project/images/mikage_cg8_a.png`, `mikage_cg8_b.png`, `mikage_cg8_c.png` | `mikage_rinju_1..3` | IR／floor／data |
+| 鍛刀大賽 | `10. 鍛刀大賽(情緒)/圖檔/E01.jpeg`, `E02.jpeg` | `project/images/shirou_e01_cg.jpeg`, `shirou_e02_cg.jpeg` | `shirou_3` | IR／floor／data |
+| 茱茱 | `2.茱茱(55)/圖檔/攻擊.png`, `肺腑之言.png` | `project/images/juju_attack_cg.png`, `juju_heartfelt_cg.png` | `juju_3`, `juju_4` | IR／floor／data |
+| 茜 | `5.茜(Linlan)/圖檔/願與你同行.jpg` | `project/images/akane_walk_together_cg.jpg` | `akane_4` | IR／floor／data |
+
+## 新角色 IR 與素材接入
+
+| 角色 | 權威來源 | Story IR | floor／入口 | 圖片狀態 |
+|---|---|---|---|---|
+| 416 | `project/story/416.txt`，SHA `ade986638ac4ad8f24710a30f1c7fceb42b10614b4935404a6e9f2bdd94fdb43` | `project/story-ir/character/416.json` | `416_1`～`416_4`，`police_station` | 六表情差分已接入 |
+| 神秘香蕉人 | `project/story/神秘香蕉人.txt`，SHA `6c2fa82800b144db0ba6d7ede21e03f066a6f3b0228ecca6f47ecd9ce0bc0157` | `project/story-ir/character/mysterious-banana.json` | `mysterious_banana_1`～`mysterious_banana_4`，`park` | 六表情、CG／背景裁切已接入；來源列出的缺少 CG 另列 TODO |

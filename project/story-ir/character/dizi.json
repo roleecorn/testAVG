@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/比那名居地子.txt",
-        "sha256": "c52c6ec33c120c69801cf754f34021bfb276e601f3c5897f48ee290785c8c21e"
+        "sha256": "9a590d9ae622f01b65a36e4d2bef9f29ab586029cafd6c5eebd90e8d6fdc683f"
       }
     ]
   },
@@ -327,6 +327,16 @@
           }
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l1_1.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "image.hide",
           "code": 10,
           "time": 0,
@@ -341,6 +351,12 @@
         {
           "kind": "narration",
           "text": "[梗平準備前往車站時，一個響亮的聲音劃破了人群的嘈雜。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "image.hide",
@@ -1174,6 +1190,17 @@
       },
       "events": [
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l2_1.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
+        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -1840,6 +1867,28 @@
         "fgmap": []
       },
       "events": [
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l3_1.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l3_2.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {
@@ -2703,6 +2752,94 @@
         "fgmap": []
       },
       "events": [
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_1_1.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_1_2.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_1_3.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_1_4.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_2_1.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_2_2.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_2_3.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_3.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {

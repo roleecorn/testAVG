@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/藍湘.txt",
-        "sha256": "b00d5cff958289e74bc2527abb30170858b2173bdd604b0391a05f22583212e7"
+        "sha256": "14dee016a4a03ddcf665ab98dd1943beab2cbda2b911cd9e1b5c6833ee3d166e"
       }
     ]
   },
@@ -297,6 +297,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "portrait", "code": 20, "image": "lanxiang_mob.png", "loc": ["portraitSpeakerX", "portraitSpeakerY"], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 20, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {
@@ -1492,6 +1494,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "portrait", "code": 20, "image": "lanxiang_duanshuiliu.png", "loc": ["portraitSpeakerX", "portraitSpeakerY"], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 20, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {
@@ -1957,6 +1961,26 @@
           "text": "就是這樣嘛！"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "lanxiang_mahjong_cg.png",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "image.hide",
           "code": 10,
           "time": 0,
@@ -2177,6 +2201,12 @@
           "kind": "dialogue",
           "speaker": "藍湘",
           "text": "啊！！！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "image.hide",
@@ -6160,6 +6190,26 @@
           "text": "是嗎…那…有緣再見？"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "lanxiang_goodbye_cg.png",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "image.hide",
           "code": 10,
           "time": 0,
@@ -6187,6 +6237,12 @@
           "kind": "dialogue",
           "speaker": "藍湘",
           "text": "嗯！有緣再見！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "image.hide",

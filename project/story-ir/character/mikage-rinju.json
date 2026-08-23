@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/御影凛珠.txt",
-        "sha256": "28bd486ab68825cd9edf50b160506123df49af9863ebfd56b6e00e102c00e70b"
+        "sha256": "34e30717146761b59d58e5ccd5b01b8b5dbe216bd297c19953ac7cc83da3f3d2"
       }
     ]
   },
@@ -297,6 +297,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "cg", "code": 30, "image": "mikage_cg8_a.png", "sloc": [0, 0, 416, 286], "loc": [112, 50, 320, 220], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {
@@ -1077,6 +1079,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "cg", "code": 30, "image": "mikage_cg8_b.png", "sloc": [0, 0, 416, 286], "loc": [112, 50, 320, 220], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {
@@ -2067,6 +2071,8 @@
         "fgmap": []
       },
       "events": [
+        { "kind": "image.show", "role": "cg", "code": 30, "image": "mikage_cg8_c.png", "sloc": [0, 0, 416, 286], "loc": [112, 50, 320, 220], "opacity": 1, "time": 0 },
+        { "kind": "image.hide", "code": 30, "time": 0, "async": true },
         {
           "kind": "layout.set",
           "value": {

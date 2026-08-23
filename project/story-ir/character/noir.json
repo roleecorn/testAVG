@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/NoiR.txt",
-        "sha256": "ba5a05ca300f85436453576cdd67b3fda28bb9fd37c7d4b45ea00d7aaab1164c"
+        "sha256": "dddf72cfc72be51915482db5102c1c128d3fa32da2203067df4510ead7ebf12d"
       }
     ]
   },
@@ -3589,6 +3589,26 @@
           "text": "那麼我的專屬聽眾，請就坐吧"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "noir_n01_cg.jpeg",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "image.hide",
           "code": 10,
           "time": 0,
@@ -3619,6 +3639,12 @@
         {
           "kind": "narration",
           "text": "NoiR指尖落下琴鍵，旋律在劇院中迴盪。"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "image.hide",
@@ -3664,6 +3690,26 @@
           "kind": "dialogue",
           "speaker": "N",
           "text": "音樂不需要舞台大小，只要有人聽，就足夠了。"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "noir_n02_cg.jpeg",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "image.hide",
@@ -3828,6 +3874,12 @@
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "太好聽了！能夠聽到這種天籟之樂也是我一生的榮幸！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "image.hide",

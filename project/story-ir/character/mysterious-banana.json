@@ -1,0 +1,1439 @@
+{
+  "storyIrVersion": 1,
+  "source": {
+    "kind": "character",
+    "files": [
+      {
+        "path": "project/story/神秘香蕉人.txt",
+        "sha256": "6c2fa82800b144db0ba6d7ede21e03f066a6f3b0228ecca6f47ecd9ce0bc0157"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "mysterious_banana_1",
+      "floor": {
+        "floorId": "mysterious_banana_1",
+        "title": "神秘香蕉人：好感度1",
+        "name": "神秘香蕉人：好感度1",
+        "width": 17,
+        "height": 13,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "images": [
+          {
+            "name": "banana_grass_bg.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "banana_normal.png"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_eevee_speed.png",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "按照套路，接下來肯定會從草叢跳出邪惡組織的怪人。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "所以……你知道嗎？"
+        },
+        {
+          "kind": "choice",
+          "prompt": "你知道嗎？",
+          "options": [
+            {
+              "text": "恩，我知道",
+              "events": [
+                {
+                  "kind": "dialogue",
+                  "speaker": "神秘香蕉人",
+                  "text": "來吧，和我一起前往天堂吧。"
+                }
+              ]
+            },
+            {
+              "text": "不，你是指甚麼？",
+              "events": [
+                {
+                  "kind": "dialogue",
+                  "speaker": "神秘香蕉人",
+                  "text": "相逢即是有緣，下次再來吧。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "comment",
+          "text": "source: project/story/神秘香蕉人.txt lines 3-164; remaining unsupported CG names are tracked in TODO"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.plugin.addAkibaEvent({ id: 'mysterious_banana_2', title: '好感度2', locations: ['park'], floorId: 'mysterious_banana_2', once: true }); }"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "mysterious_banana_1"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    },
+    {
+      "id": "mysterious_banana_2",
+      "floor": {
+        "floorId": "mysterious_banana_2",
+        "title": "神秘香蕉人：好感度2",
+        "name": "神秘香蕉人：好感度2",
+        "width": 17,
+        "height": 13,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "images": [
+          {
+            "name": "banana_park_center.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "banana_smile.png"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_cats.png",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "梗平少年，你來了阿。先上車再說吧。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "英雄可不能臨陣脫逃。"
+        },
+        {
+          "kind": "comment",
+          "text": "source: project/story/神秘香蕉人.txt lines 165-331"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.plugin.addAkibaEvent({ id: 'mysterious_banana_3', title: '好感度3', locations: ['park'], floorId: 'mysterious_banana_3', once: true }); }"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "mysterious_banana_2"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    },
+    {
+      "id": "mysterious_banana_3",
+      "floor": {
+        "floorId": "mysterious_banana_3",
+        "title": "神秘香蕉人：好感度3",
+        "name": "神秘香蕉人：好感度3",
+        "width": 17,
+        "height": 13,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "images": [
+          {
+            "name": "banana_elevator_bg.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "banana_sad.png"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_eevee_belt.jpg",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "水伊布被擄走了，請幫幫我找回他。"
+        },
+        {
+          "kind": "choice",
+          "prompt": "要不要協助神秘香蕉人？",
+          "options": [
+            {
+              "text": "協助",
+              "events": [
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "好，告訴我你需要什麼幫助。"
+                }
+              ]
+            },
+            {
+              "text": "拒絕",
+              "events": [
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "我還是先離開這裡吧。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_muscle_keng.jpg",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
+        },
+        {
+          "kind": "comment",
+          "text": "source: project/story/神秘香蕉人.txt lines 332-619"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.plugin.addAkibaEvent({ id: 'mysterious_banana_4', title: '好感度4', locations: ['park'], floorId: 'mysterious_banana_4', once: true }); }"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "mysterious_banana_3"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    },
+    {
+      "id": "mysterious_banana_4",
+      "floor": {
+        "floorId": "mysterious_banana_4",
+        "title": "神秘香蕉人：好感度4",
+        "name": "神秘香蕉人：好感度4",
+        "width": 17,
+        "height": 13,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "images": [
+          {
+            "name": "banana_grass_bg.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "banana_normal.png"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_cats.png",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "比起BE我還是比較喜歡HE阿。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "這次我想重新拾起未完成的夢想。"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_branch.jpg",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_eevee_grass.png",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
+        },
+        {
+          "kind": "comment",
+          "text": "source: project/story/神秘香蕉人.txt lines 620-702; missing CG list remains open"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "mysterious_banana_4"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    }
+  ]
+}

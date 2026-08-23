@@ -284,6 +284,56 @@ main.floors.dizi_3=
     "fgmap": [],
     "eachArrive": [
         {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l3_1.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l3_2.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",

@@ -271,6 +271,56 @@ main.floors.shirou_3=
     ],
     "eachArrive": [
         {
+            "type": "showImage",
+            "code": 30,
+            "image": "shirou_e01_cg.jpeg",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "shirou_e02_cg.jpeg",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
