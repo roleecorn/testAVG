@@ -87,6 +87,7 @@ Route each task through the smallest applicable branch:
 - Plain script conversion: [text-to-event-json.md](references/text-to-event-json.md)
 - Existing story update transaction: Project Skill `mota-story-update`
 - Character-story ZIP: [archive-story-task-splitting.md](references/archive-story-task-splitting.md)
+- Character-story ZIP pitfalls and reusable gates: [character-story-import-lessons.md](references/character-story-import-lessons.md)
 - TODO and unresolved content: [todo.md](references/todo.md)
 - Standalone minigame: [minigame-integration.md](references/minigame-integration.md)
 - Akiba map and locations: [akiba.md](references/akiba.md)
