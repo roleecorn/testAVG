@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const { isDeepStrictEqual } = require("util");
 const { bundleToFloors, readBundle, validateProjectReferences } = require("./story_ir");
 
 const root = path.resolve(__dirname, "..");
@@ -27,13 +26,6 @@ function floorFile(id) {
   return p("project", "floors", `${id}.js`);
 }
 
-function readFloor(id) {
-  const text = fs.readFileSync(floorFile(id), "utf8");
-  const start = text.indexOf("{");
-  if (start < 0) throw new Error(`${id}: cannot locate floor JSON`);
-  return JSON.parse(text.slice(start));
-}
-
 function renderFloor(floor) {
   return `main.floors.${floor.floorId}=\n${JSON.stringify(floor, null, 4)}\n`;
 }
@@ -46,7 +38,7 @@ function validateCharacters(emit, excludedSlugs = new Set()) {
   let scenes = 0;
   for (const story of characterStories) {
     if (excludedSlugs.has(story.slug)) continue;
-    const bundle = readBundle(root, irFile(story));
+    const bundle = readBundle(irFile(story));
     validateProjectReferences(root, bundle);
     const floors = bundleToFloors(bundle);
     const expectedIds = story.floors.join(",");
@@ -54,8 +46,9 @@ function validateCharacters(emit, excludedSlugs = new Set()) {
       throw new Error(`${story.slug}: Story IR scene list does not match the registered character floor list`);
     }
     for (const floor of floors) {
-      if (emit) fs.writeFileSync(floorFile(floor.floorId), renderFloor(floor), "utf8");
-      else if (!isDeepStrictEqual(readFloor(floor.floorId), floor)) {
+      const output = renderFloor(floor);
+      if (emit) fs.writeFileSync(floorFile(floor.floorId), output, "utf8");
+      else if (!fs.existsSync(floorFile(floor.floorId)) || fs.readFileSync(floorFile(floor.floorId), "utf8") !== output) {
         throw new Error(`${floor.floorId}: engine floor is stale; run node scripts/manage_story_ir.js --emit-character`);
       }
       scenes += 1;
@@ -81,15 +74,13 @@ function excludedCharacterSlugs() {
 }
 
 function main() {
-  const bootstrap = process.argv.includes("--bootstrap-character");
   const emit = process.argv.includes("--emit-character");
+  const unknown = process.argv.slice(2).filter((arg) => arg !== "--emit-character" && !arg.startsWith("--exclude-character="));
+  if (unknown.length) throw new Error(`Unknown character-story emitter option: ${unknown.join(", ")}`);
   const excludedSlugs = excludedCharacterSlugs();
-  if (bootstrap && emit) throw new Error("Choose either --bootstrap-character or --emit-character");
-  if (bootstrap && excludedSlugs.size) throw new Error("--exclude-character is only valid for character validation/emission");
-  if (bootstrap) throw new Error("--bootstrap-character is disabled: Story IR must be authored by the Agent; use an existing IR with validator/emitter only.");
   validateCharacters(emit, excludedSlugs);
 }
 
 if (require.main === module) main();
 
-module.exports = { characterStories, floorFile, irFile, readFloor, renderFloor };
+module.exports = { characterStories, floorFile, irFile, renderFloor };

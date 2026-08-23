@@ -25,7 +25,7 @@
 - Story IR 明確需要但缺少正式圖片的每個位置，都已複製其他合適圖片作暫時替代並完成 `project/images/ → main.images → scene`。TODO 已依故事類型寫入 `project/story/TODO.md` 或 `project/mainStory/TODO.md`，並包含暫時檔名、copied source、預期正式素材、scene、替換條件與驗證證據。
 - 已檢查 `project/images/ → project/data.js -> main.images → validated Story IR scene → floor`：images 目錄沒有未登錄圖片，data 沒有未被 scene 使用的圖片登錄，scene 引用與 floor 實作一致。單純登錄不算使用。
 - 所有事件 JSON、JavaScript 與 JSON 資料均通過相應語法檢查。
-- 已執行圖片、Story IR schema／來源／引用的只讀驗證，以及從已驗證 IR 到 floor 的 deterministic emitter check；未使用任何會自動建立、覆寫、拆分或反向生成 Story IR 的入口。主線與支線 IR 的來源 SHA-256、schema、素材／跳轉註冊及 floor round-trip 均一致，所有標準主線 floor 均為 17×13。
+- 已執行 `node scripts/validate_story.js`：來源 SHA-256、Story IR schema／引用、素材／runtime wiring、IR/floor transaction、deterministic emitter、action CG 與 ownership architecture 均通過；所有標準主線 floor 均為 17×13。
 - 主線與角色支線遵循同一套全局 AVG 版面；新版面完成實作後，所有 AVG floor 都只引用單一當前發言者語意槽，後續視覺調整只修改全局 layout config 與共用資產規則，沒有新增 floor 或角色例外。
 - `[人名：內容]` 簡訊仍輸出為帶角色名的手機對話；帶冒號的長敘事方括號仍是旁白，生成器沒有把兩者互相誤判，也沒有自行改寫來源台詞用字。
 - 六張已登錄的主線動作 CG 都能由目前來源中的 CG／GIF 名稱命中；`*_cg.png` 母檔與 416×286 `*_action_cg.png` 衍生檔的 manifest 雜湊同步，來源標記改名時不會靜默退回 placeholder。

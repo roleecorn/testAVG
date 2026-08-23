@@ -41,6 +41,7 @@ scene／floor
 - Story IR 是 Agent 的語意翻譯文件；只有 Agent 能依完整來源、上下文與 Git log 修改。
 - scene／floor 是 Story IR 的衍生實作；不得直接手動修改。需要調整時，必須先修改 IR，再由既有 emitter／generator 重新產生。
 - validator 只能讀取與檢查；generator 只能從已驗證 IR 產生 scene／floor／engine event，不能建立或修改元件、來源或 IR。
+- 所有劇情相關任務的完成條件為 `node scripts/validate_story.js` 成功；此命令依 `project/story-ownership.json` 強制檢查來源權責、IR／floor 原子性、可重現輸出、素材與 runtime 入口。
 
 ## 最高專案硬規則：劇情來源內容不得由 Agent 編修
 
@@ -59,7 +60,7 @@ scene／floor
 
 - Agent 必須先完整理解來源，再直接建立或更新 Story IR；Story IR 必須表達敘事、角色、演出、互動、流程與未解決指令的語意意圖，並保留來源位置與追溯資訊。
 - 任何自動化程式不得建立、覆寫、重排、拆分、合併或刪除既有 Story IR。程式只能讀取 IR、執行 schema／素材／流程驗證，或從已驗證 IR 確定性輸出 scene／floor。
-- `--refresh-ir`、`createBundle()`、`writeBundle()`、`--bootstrap-character` 或任何等價的自動化反向轉換／重建入口，不得作為劇情更新流程使用；既有入口視為待遷移的 legacy tooling，未完成遷移前不得用來修改 IR。
+- Repository 不得保留任何由來源或衍生事件自動建立、覆寫或重建 Story IR 的入口；emitter 只能讀取既有 IR，並由 architecture validator 強制檢查這項邊界。
 - 現存 Story IR 不因本規則自動重寫或補正。若單一 IR 檔過大造成 Agent 閱讀或更新成本過高，可由 Agent 依語意 scene／chapter 邊界拆分，保留來源 SHA-256、scene identity、引用與 Git 追溯；不得以自動化程式批量拆分。
 - Story IR 的新增、修改或刪除仍必須與對應 scene／floor 在同一內容交易中驗證與提交；驗證器不得因能生成 floor 就反向替 Story IR 作決策。
 

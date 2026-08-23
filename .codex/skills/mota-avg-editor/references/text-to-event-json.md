@@ -19,7 +19,7 @@ Story IR 必須納入 Git，統一放在 `project/story-ir/main/` 與 `project/s
 
 ## Story IR 建立權責
 
-Story IR 的建立與更新由 Agent 負責。自動化程式不得建立、覆寫、重排、拆分、合併或刪除既有 Story IR；只能讀取 IR、驗證來源／schema／素材／流程，或從已驗證 IR 確定性產生 floor／engine event。`--refresh-ir`、`--bootstrap-character`、`createBundle()`、`writeBundle()` 等既有反向轉換入口不得用於劇情更新，直到另有明確遷移設計。
+Story IR 的建立與更新由 Agent 負責。自動化程式不得建立、覆寫、重排、拆分、合併或刪除既有 Story IR；只能讀取 IR、驗證來源／schema／素材／流程，或從已驗證 IR 確定性產生 floor／engine event。Repository 不得保留來源／floor／event 反向寫入 Story IR 的 executable path。
 
 現存 Story IR 不因這項規則自動重建或修正。若單一檔案過大導致 Agent 閱讀或更新成本過高，可由 Agent 按 scene／chapter 語意邊界拆分，保留 scene identity、來源 SHA-256、引用與 Git 追溯；不得用自動化程式批量拆分。
 
@@ -132,11 +132,13 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 ```powershell
 python scripts/build_action_cgs.py
 python scripts/build_action_cgs.py --check
+node scripts/validate_story_source.js
 node scripts/generate_main_story.js --check
 node scripts/manage_story_ir.js
+node scripts/validate_story.js
 ```
 
-一般 `node scripts/generate_main_story.js` 只讀已驗證 IR 並確定性重生 floor；`--check` 驗證來源雜湊、schema、素材／跳轉註冊及 floor round-trip，不寫檔。角色支線的 `project/story-ir/character/*.json` 由 Agent 依權威 TXT 與 Git log 做語意更新，驗證工具只驗證來源雜湊與 floor 一致；任何會從來源／floor 自動寫回 IR 的 refresh／bootstrap 入口不得使用。IR 變更若沒有同批 floor diff，不得提交。
+一般 `node scripts/generate_main_story.js` 只讀 IR 並確定性重生 floor；`--check` 驗證 schema、素材／跳轉註冊及 floor round-trip，不讀權威來源。來源雜湊由 `validate_story_source.js` 獨立驗證，完整交易以 `validate_story.js` 為完成條件。角色支線的 `project/story-ir/character/*.json` 由 Agent 依權威 TXT 與 Git log 做語意更新；IR 變更若沒有同批 floor diff，不得提交。
 
 主線 Story IR 建立階段由 Agent 負責理解來源、辨識格式並產生共用 Story IR，不得直接產生引擎事件，也不得潤稿或改寫台詞。這裡的「正規化」是語意翻譯，不是自動化：
 

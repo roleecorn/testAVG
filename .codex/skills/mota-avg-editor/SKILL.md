@@ -23,7 +23,7 @@ Every create or update task is story-demand-driven, not only ZIP imports. Decide
 
 ## Outputs
 
-- Produce the requested story sources, floor/event changes, registered assets, state changes, or minigame integration.
+- Deliver requested story transactions; authoritative source files may be included only when copied as complete, traceable user-provided inputs, while floor/event changes must be emitted from validated Story IR.
 - Maintain the affected character's traceable original-resource usage and final naming in `project/story/manifest.md`.
 - Produce validation results and the exact downstream handoffs used.
 - When any doubt appears, create the timestamped task question file required by `AGENTS.md`; promote unresolved story items to `project/story/TODO.md` for character stories or `project/mainStory/TODO.md` for main stories.
@@ -95,7 +95,7 @@ Route each task through the smallest applicable branch:
 
 Keep `project/mainStory/CH1`–`CH7` as the main-story source of truth and `project/story/*.txt` as the character-story source of truth. Checked-in Story IR lives under `project/story-ir/`; scene/floor files remain derived implementations. Main story and character stories share `scripts/story_ir.js` and the same conversion contract: natural-language source → structured Story IR → validation → engine events. Never let either branch generate engine events directly from unvalidated source text; only their trigger flow and source-file location may differ. Both branches also share one global AVG layout contract. The target spatial composition provides exactly one current-speaker portrait slot. Align the non-transparent portrait bbox horizontally to the viewport center and anchor its visible bottom below the viewport: `visibleCenterX = viewportWidth / 2` and `visibleBottom = portraitBottomY = 440`. On the 544×416 canvas, the dialogue rectangle uses `x=16`, `y=295`, `width=512`, `fixedLines=2`; the portrait sits behind that UI layer. Preserve aspect ratio and apply the same global `portraitScale: 0.92` to every portrait. The target crop places the head near the upper 5–10% of the viewport while the lower body continues behind the dialogue UI and is clipped by the screen bottom. Alpha bbox affects alignment only and must never produce per-image fit scaling. Emit each ordinary portrait dialogue atomically as `showImage(current code) → dialogue → hideImage(the same code)`. Never clear all possible codes or hide a code that this dialogue did not show. This per-line form is branch-safe and is the canonical baseline; a later deterministic post-pass may remove an adjacent `hide(code) → show(code, same image)` pair only when no intervening event or branch boundary can observe the hidden state. Do not use generation-time active-portrait state, text-regex emotion classifiers, the old 128px visible-width cap, left/right slots, per-character coordinates, or per-character scale exceptions.
 
-For registered action CGs, `*_cg.png` is the authoritative master and `*_action_cg.png` is generated. Rebuild changed masters with `python scripts/build_action_cgs.py`, then require `node scripts/generate_main_story.js --check` to pass before writing main-story floors. Each named location also owns one unique background filename; generic `scene_*.png` files may seed placeholders but must never be overwritten to update a single location.
+For registered action CGs, `*_cg.png` is the authoritative master and `*_action_cg.png` is generated. Rebuild changed masters with `python scripts/build_action_cgs.py`, then require `node scripts/validate_story.js` to pass. Each named location also owns one unique background filename; generic `scene_*.png` files may seed placeholders but must never be overwritten to update a single location.
 
 ## Validation
 
@@ -109,4 +109,4 @@ For registered action CGs, `*_cg.png` is the authoritative master and `*_action_
 - After changing any project Skill, run its `quick_validate.py` check and `scripts/validate_agent_skill_routes.js`.
 ## Current main-story source scope
 
-The current checked-in main-story source includes `project/mainStory/CH1`–`CH7`; the CH7 source is handled by `scripts/generate_main_story.js` with the same source → Story IR → floor validation contract.
+The current checked-in main-story source includes `project/mainStory/CH1`–`CH7`; `scripts/validate_story_source.js` validates source traceability, while `scripts/generate_main_story.js` only emits checked-in Story IR to floors.

@@ -55,13 +55,15 @@ scene／floor
 ```powershell
 python scripts/build_action_cgs.py
 python scripts/build_action_cgs.py --check
+node scripts/validate_story_source.js
 node scripts/generate_main_story.js --check
 node scripts/generate_main_story.js
 node scripts/manage_story_ir.js
 node scripts/manage_story_ir.js --emit-character
+node scripts/validate_story.js
 ```
 
-只有母檔新增或變更時才執行第一個命令；它固定產生 416×286 的 `*_action_cg.png` 與 manifest。第二個命令可單獨驗證圖片同步。主線與角色支線的 IR 由 Agent 建立／更新；一般 emitter 與 `--check` 只能讀取 IR，驗證來源 SHA-256、schema、素材／跳轉註冊、17×13 尺寸與 floor round-trip 且不寫 IR。任何舊有 refresh／bootstrap／反向轉換入口均不得用於劇情更新。`remove_bk.py`、`split_emotion_image.py` 只屬於角色圖片處理，不是文本語意翻譯器。
+只有母檔新增或變更時才執行第一個命令；它固定產生 416×286 的 `*_action_cg.png` 與 manifest。第二個命令可單獨驗證圖片同步。主線與角色支線的 IR 由 Agent 建立／更新；來源 SHA-256 由獨立的 `validate_story_source.js` 只讀驗證，emitter 與 `--check` 只讀 IR 並檢查 schema、素材／跳轉註冊、17×13 尺寸與 floor round-trip。`validate_story.js` 是完整交易的統一完成條件。`remove_bk.py`、`split_emotion_image.py` 只屬於角色圖片處理，不是文本語意翻譯器。
 
 啟動服務與編輯器：
 

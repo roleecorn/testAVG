@@ -15,9 +15,10 @@ Update checked-in story sources as one traceable source → Story IR → scene/f
 ## Workflow
 
 1. Read `AGENTS.md` and identify the recorded baseline commit. Compare `project/mainStory/` and `project/story/` from that commit (exclusive) through the current source state; do not infer updates from derived IR, floor, asset, or TODO changes.
+   When the current transaction includes a complete user-provided source file, create a repo-local verification manifest shaped as `{"version":1,"sources":[{"path":"project/...","sha256":"<current complete-file hash>"}]}` and pass it to the unified validator with `--source-import-manifest <path>`. This marker proves byte identity; it does not authorize Agent-written source content.
 2. Read the affected complete authoritative source and the applicable canonical references: `mota-avg-editor/references/text-to-event-json.md`, `checklist.md`, and only the feature references required by the source directives.
-3. For main-story changes, apply the line-addressed CG guard before `--refresh-ir`: `CH<N>_L<N>.png` names the first authoritative appearance of that CG. If physical source line numbers change, prove each affected old-to-new first appearance and rename its asset, registrations, and mappings first; every later identical CG directive must reuse that same first-appearance file. Stop the affected CG branch on any deleted, ambiguous, or unprovable match.
-4. Update validated Story IR and its corresponding scenes/floors in the same transaction. Main story uses `node scripts/generate_main_story.js --refresh-ir`; character story uses `node scripts/manage_story_ir.js --emit-character` only after its IR is valid.
+3. For main-story changes, apply the line-addressed CG guard before editing Story IR: `CH<N>_L<N>.png` names the first authoritative appearance of that CG. If physical source line numbers change, prove each affected old-to-new first appearance and rename its asset, registrations, and IR references first; every later identical CG directive must reuse that same first-appearance file. Stop the affected CG branch on any deleted, ambiguous, or unprovable match.
+4. After the Agent updates Story IR, run `node scripts/validate_story_source.js`, then emit its corresponding scenes/floors in the same transaction. Main story uses `node scripts/generate_main_story.js`; character story uses `node scripts/manage_story_ir.js --emit-character`. Neither emitter reads or interprets authoritative source.
 5. Run the applicable validation chain, inspect the diff, and verify every affected source, IR, asset, scene/floor, and trigger remains traceable.
 6. When a commit is requested, create a content commit containing the full transaction, then create a second commit that only writes the content commit hash as the new baseline in `AGENTS.md`.
 
@@ -48,7 +49,7 @@ Update checked-in story sources as one traceable source → Story IR → scene/f
 
 ## Validation
 
-- Run `node scripts/generate_main_story.js --check` for main-story changes and `node scripts/manage_story_ir.js` for story IR consistency.
+- Run the unified `node scripts/validate_story.js` command, adding `--source-import-manifest <path>` only for a traceable complete-source import. It validates source hashes, line-addressed assets, IR schema and references, deterministic floor output, action-CG sync, runtime reachability, ownership boundaries, and the IR/floor transaction.
 - Run `python scripts/build_action_cgs.py --check` when action-CG assets are involved.
 - Confirm every renamed line-addressed CG follows `project/images/ → project/data.js -> main.images → Story IR → floor`, points at its current first authoritative CG directive, and is reused by every later identical CG directive.
 - Inspect `git diff --check`, then the staged commit boundary when committing.

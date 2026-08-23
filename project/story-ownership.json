@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "authoritativeSource": {
+    "owner": "human",
+    "paths": [
+      "project/mainStory/CH*",
+      "project/story/*.txt"
+    ]
+  },
+  "storyIr": {
+    "owner": "agent",
+    "paths": [
+      "project/story-ir/**/*.json"
+    ]
+  },
+  "derivedStoryData": {
+    "owner": "generator",
+    "paths": [
+      "project/floors/*.js"
+    ],
+    "emitters": [
+      "scripts/generate_main_story.js",
+      "scripts/manage_story_ir.js"
+    ]
+  },
+  "runtimeWiring": {
+    "owner": "generator-or-explicit-integration",
+    "paths": [
+      "project/data.js",
+      "project/timeline.json",
+      "project/akiba-event-meta.json"
+    ]
+  },
+  "validation": {
+    "command": "node scripts/validate_story.js",
+    "sourceImportManifestVersion": 1
+  }
+}

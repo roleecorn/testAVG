@@ -1,4 +1,3 @@
-const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
@@ -7,18 +6,6 @@ const STORY_IR_VERSION = 1;
 const AVG_MAP_WIDTH = 17;
 const AVG_MAP_HEIGHT = 13;
 const PORTRAIT_CODES = new Set([10, 11, 12, 20]);
-
-function sha256File(file) {
-  return crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
-}
-
-function canonicalPath(root, file) {
-  return path.relative(root, file).split(path.sep).join("/");
-}
-
-function sourceRecords(root, files) {
-  return files.map((file) => ({ path: canonicalPath(root, file), sha256: sha256File(file) }));
-}
 
 function irToText(node) {
   return node.kind === "dialogue" ? `\t[${node.speaker}]${node.text}` : node.text;
@@ -378,6 +365,12 @@ function validateProjectReferences(root, bundle) {
     });
   };
   bundle.scenes.forEach((scene, sceneIndex) => {
+    if (!floorIds.has(scene.id)) {
+      throw new Error(`scenes[${sceneIndex}]: unregistered floor ${scene.id}`);
+    }
+    if (scene.floor.bgm && (!bgms.has(scene.floor.bgm) || !fs.existsSync(path.join(root, "project", "bgms", scene.floor.bgm)))) {
+      throw new Error(`scenes[${sceneIndex}].floor.bgm: unregistered or missing BGM ${scene.floor.bgm}`);
+    }
     for (const image of scene.floor.images || []) {
       if (!images.has(image.name) || !fs.existsSync(path.join(root, "project", "images", image.name))) {
         throw new Error(`scenes[${sceneIndex}].floor.images: unregistered or missing image ${image.name}`);
@@ -385,15 +378,6 @@ function validateProjectReferences(root, bundle) {
     }
     scene.events.forEach((node, nodeIndex) => visit(node, `scenes[${sceneIndex}].events[${nodeIndex}]`));
   });
-}
-
-function verifySources(root, bundle) {
-  for (const source of bundle.source.files) {
-    const file = path.join(root, ...source.path.split("/"));
-    if (!fs.existsSync(file)) throw new Error(`Story IR source is missing: ${source.path}`);
-    const actual = sha256File(file);
-    if (actual !== source.sha256) throw new Error(`Story IR is stale for ${source.path}; ask the Agent to update the semantic IR before emitting engine events`);
-  }
 }
 
 function bundleToFloors(bundle) {
@@ -405,10 +389,8 @@ function bundleToFloors(bundle) {
   }));
 }
 
-function readBundle(root, file) {
-  const bundle = validateBundle(JSON.parse(fs.readFileSync(file, "utf8")));
-  verifySources(root, bundle);
-  return bundle;
+function readBundle(file) {
+  return validateBundle(JSON.parse(fs.readFileSync(file, "utf8")));
 }
 
-module.exports = { bundleToFloors, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences, verifySources };
+module.exports = { bundleToFloors, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences };
