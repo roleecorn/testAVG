@@ -224,6 +224,8 @@ function core () {
             'ui': null,
             'interval': null,
         },
+        'dialogueAuto': false,
+        'dialogueAutoTimer': null,
         'autoEvents': [],
         'textAttribute': {
             'position': "center",

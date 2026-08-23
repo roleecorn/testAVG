@@ -80,7 +80,8 @@ function main() {
         inputBox: document.getElementById('inputBox'),
         inputYes: document.getElementById('inputYes'),
         inputNo: document.getElementById('inputNo'),
-        next: document.getElementById('next')
+        next: document.getElementById('next'),
+        autoBtn: document.getElementById('autoBtn')
     };
     this.mode = 'play';
     this.loadList = [
@@ -980,6 +981,17 @@ main.prototype.listen = function () {
             console.error(ee);
         }
     };
+
+    if (main.dom.autoBtn) {
+        main.dom.autoBtn.onclick = function (e) {
+            e.stopPropagation();
+            try {
+                if (main.core) main.core.control.toggleDialogueAuto();
+            } catch (ee) {
+                console.error(ee);
+            }
+        };
+    }
 
     window.onblur = function () {
         if (main.core && main.core.control) {

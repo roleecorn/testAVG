@@ -681,6 +681,7 @@ ui.prototype.closePanel = function () {
 }
 
 ui.prototype.clearUI = function () {
+    if (core.control) core.control.stopDialogueAuto();
     core.status.boxAnimateObjs = [];
     core.deleteCanvas("_selector");
     main.dom.next.style.display = 'none';

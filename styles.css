@@ -443,6 +443,27 @@ p#name {
     z-index: 169;
 }
 
+#autoBtn {
+    display: none;
+    position: absolute;
+    right: 16px;
+    bottom: 72px;
+    z-index: 180;
+    padding: 4px 9px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 4px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.62);
+    font-size: 12px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+#autoBtn.active {
+    color: #FFE58A;
+    border-color: #FFE58A;
+}
+
 @-webkit-keyframes next {
     100% {
         transform: rotate(45deg) translate(-3px, -3px);

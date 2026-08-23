@@ -1484,6 +1484,7 @@ events.prototype._action_text = function (data, x, y, prefix) {
             core.events._action_text_insertOverflow(data, result);
             core.ui._animateUI('show', ctx, function () {
                 if (data.async) core.doAction();
+                else core.control.scheduleDialogueAuto();
             });
         });
         return;
@@ -1493,8 +1494,28 @@ events.prototype._action_text = function (data, x, y, prefix) {
     if (!data.showAll) {
         core.ui._animateUI('show', ctx, function () {
             if (data.async) core.doAction();
+            else core.control.scheduleDialogueAuto();
         });
+    } else core.control.scheduleDialogueAuto();
+}
+
+events.prototype.autoAdvanceDialogue = function () {
+    if (!core.status.dialogueAuto || !core.status.event || core.status.event.id != 'action'
+        || core.status.event.data.type != 'text') return;
+    if (core.status.event.animateUI) {
+        core.control.scheduleDialogueAuto();
+        return;
     }
+    var data = core.clone(core.status.event.data.current);
+    if (typeof data == 'string') data = { "type": "text", "text": data };
+    if (core.status.event.interval != null) {
+        data.showAll = true;
+        core.insertAction(data);
+        core.doAction();
+        return;
+    }
+    if (!data.code) core.ui._animateUI('hide', null, core.doAction);
+    else core.doAction();
 }
 
 events.prototype._action_text_insertOverflow = function (data, result) {

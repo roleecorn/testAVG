@@ -392,6 +392,50 @@ control.prototype._showStartAnimate_resetDom = function () {
     core.updateStatusBar();
 }
 
+control.prototype._isDialogueAutoTarget = function () {
+    var event = core.status && core.status.event;
+    return !!(event && event.id == 'action' && event.data && event.data.type == 'text');
+}
+
+control.prototype.stopDialogueAuto = function () {
+    if (core.status && core.status.dialogueAutoTimer != null) {
+        clearTimeout(core.status.dialogueAutoTimer);
+        core.status.dialogueAutoTimer = null;
+    }
+    if (main.dom.autoBtn) {
+        main.dom.autoBtn.style.display = 'none';
+        main.dom.autoBtn.classList.remove('active');
+    }
+}
+
+control.prototype.updateDialogueAutoButton = function () {
+    var button = main.dom.autoBtn;
+    if (!button) return;
+    var visible = core.isPlaying() && this._isDialogueAutoTarget();
+    button.style.display = visible ? 'block' : 'none';
+    button.classList.toggle('active', !!core.status.dialogueAuto && visible);
+    button.innerText = core.status.dialogueAuto ? 'AUTO ON' : 'AUTO';
+}
+
+control.prototype.scheduleDialogueAuto = function () {
+    this.stopDialogueAuto();
+    this.updateDialogueAutoButton();
+    if (!core.status.dialogueAuto || !this._isDialogueAutoTarget()) return;
+    core.status.dialogueAutoTimer = setTimeout(function () {
+        core.status.dialogueAutoTimer = null;
+        if (core.status.dialogueAuto) core.autoAdvanceDialogue();
+    }, 2500);
+    this.updateDialogueAutoButton();
+}
+
+control.prototype.toggleDialogueAuto = function () {
+    if (!this._isDialogueAutoTarget()) return;
+    core.status.dialogueAuto = !core.status.dialogueAuto;
+    if (core.status.dialogueAuto) this.scheduleDialogueAuto();
+    else this.stopDialogueAuto();
+    this.updateDialogueAutoButton();
+}
+
 control.prototype._showStartAnimate_finished = function (start, callback) {
     core.dom.startTop.style.display = 'none';
     core.dom.startButtonGroup.style.display = 'block';
