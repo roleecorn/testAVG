@@ -11,10 +11,7 @@
 
 ## 待補劇情
 
-- Open: `akiba-retired-location-event-reassignment`
-  - Scope: `huangmo_1` 的 `used_bookstore`／`blue_bookstore` 事件入口。
-  - Done when: 使用者確認 `huangmo_1` 應遷移到的支援地點；更新其 floor／Story IR 的 `addAkibaEvent` location ID 並通過 Akiba event manager 驗證。
-  - Evidence: floor／Story IR diff、`project/location-mappings.json`、`node scripts/test_akiba_event_manager.js` 與遊戲內觸發驗收。
+- `huangmo_1`／`huangmo_2` runtime floor 與 Akiba 入口已依使用者指示移除；權威來源與既有 Story IR 保留作歷史追溯，未自動改寫 IR。
 
 
 ## 待補素材
@@ -31,6 +28,6 @@
 
 ## 已確認可處理
 
-- `huangmo_1` 已作為新版 AVG 布局的首個驗證場景；目前所有主線與角色支線 floor 均共用相同語意槽位與 runtime 契約。
+- `huangmo_1`／`huangmo_2` 曾作為角色支線與新版 AVG 布局驗證場景，現已依使用者指示移除 runtime 接入。
 - 荒漠篇權威來源已由 commit `7903fa9b762df8518a586d46ed632c0e4b38d10b`／`19dc06e9b96afde7e961ea4032533d1a4a17c37b` 追溯確認，並移至 `project/story/荒漠支線.txt`。後續若修改 `huangmo_1`／`huangmo_2` 劇情內容，必須以此文本為準。
 - `huangmo_1`／`huangmo_2` 的既有修字與句末標點已回寫 `project/story/荒漠支線.txt`，並由 `project/story-ir/character/huangmo.json` 記錄來源 SHA-256；後續不得以 floor 反向覆蓋母檔。

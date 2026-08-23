@@ -73,24 +73,21 @@ function testFreshInitialization() {
 }
 
 function testVersionMigrationPreservesProgress() {
-  const completed = ["huangmo_1", "juju_1"];
+  const completed = ["juju_1"];
   const { core, plugin } = createPlugin({
     akiba_event_state_initialized: true,
     akiba_event_state_version: eventMeta.version - 1,
     akiba_completed_events: completed,
     akiba_active_events: [
-      event("huangmo_2"),
       event("juju_2"),
       event("lei_2"),
     ],
-  }, ["huangmo_2", "juju_2"]);
+  }, ["juju_2"]);
 
   plugin.initAkibaEventState();
   const activeIds = core.flags.akiba_active_events.map((entry) => entry.id);
-  assert(activeIds.includes("huangmo_2"));
   assert(activeIds.includes("juju_2"));
   assert(!activeIds.includes("lei_2"));
-  assert(!activeIds.includes("huangmo_1"));
   assert(!activeIds.includes("juju_1"));
   for (const initial of eventMeta.activeEvents) {
     if (!completed.includes(initial.id)) assert(activeIds.includes(initial.id));

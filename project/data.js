@@ -34,8 +34,6 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"main_ch2_4_exchange_1",
 			"main_ch3_1_exchange_1",
 			"main_ch5_1_exchange_1",
-			"huangmo_1",
-			"huangmo_2",
 			"yuedu_ai_1",
 			"yuedu_ai_2",
 			"yuedu_ai_3",

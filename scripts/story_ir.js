@@ -391,20 +391,8 @@ function verifySources(root, bundle) {
     const file = path.join(root, ...source.path.split("/"));
     if (!fs.existsSync(file)) throw new Error(`Story IR source is missing: ${source.path}`);
     const actual = sha256File(file);
-    if (actual !== source.sha256) throw new Error(`Story IR is stale for ${source.path}; refresh the semantic IR before emitting engine events`);
+    if (actual !== source.sha256) throw new Error(`Story IR is stale for ${source.path}; ask the Agent to update the semantic IR before emitting engine events`);
   }
-}
-
-function createBundle(root, sourceFiles, floors, sourceKind) {
-  return validateBundle(cleanUndefined({
-    storyIrVersion: STORY_IR_VERSION,
-    source: { kind: sourceKind, files: sourceRecords(root, sourceFiles) },
-    scenes: floors.map((floor) => ({
-      id: floor.floorId,
-      floor: Object.fromEntries(Object.entries(floor).filter(([key]) => key !== "eachArrive")),
-      events: normalizeBgmLifecycle(normalizePortraitLifecycle((floor.eachArrive || []).map(eventToIr))),
-    })),
-  }));
 }
 
 function bundleToFloors(bundle) {
@@ -421,10 +409,4 @@ function readBundle(root, file) {
   return bundle;
 }
 
-function writeBundle(file, bundle) {
-  const normalized = normalizeBundlePortraitLifecycle(bundle);
-  fs.mkdirSync(path.dirname(file), { recursive: true });
-  fs.writeFileSync(file, JSON.stringify(validateBundle(normalized), null, 2) + "\n", "utf8");
-}
-
-module.exports = { createBundle, bundleToFloors, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences, verifySources, writeBundle };
+module.exports = { bundleToFloors, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences, verifySources };

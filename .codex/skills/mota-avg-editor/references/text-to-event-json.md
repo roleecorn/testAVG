@@ -5,20 +5,26 @@
 主線與角色支線只允許在來源位置與觸發方式上不同，不得使用不同的文本理解或事件生成契約。下列順序是所有新增與更新共用的首要決策順序，不得因現有素材、floor、資料登錄、工具便利性或 ZIP 內容而顛倒或省略：
 
 1. 建立或讀取自然語言來源；主線以 `project/mainStory/CH1`～`CH7`、角色支線以 `project/story/*.txt` 為唯一真實來源。Agent 不得編修來源內容，但可從已確認、可追溯的完整外部輸入新增來源檔，或以完整新版本整檔覆蓋舊來源；不得自行合併局部修訂。
-2. 由語意理解／正規化層完整閱讀原文，先把人物立繪、背景、道具與 CG 等視覺需求標入 draft Story IR，再依這些需求選擇或製作素材。這一層可由 AI、確定性 parser，或兩者組合完成；只有文件明訂的 DSL 才能只靠固定字串辨識。
-3. 在產生任何引擎事件前，將 draft Story IR 的所有視覺需求解析為明確且存在的 runtime 圖片，再驗證 schema、必要參數、場景流程及 `project/images/ → project/data.js -> main.images → Story IR scene`：images 中每張圖都要登錄，data 中每個圖片登錄都要被 scene 使用。遇到未被目前生成器支援的 `【...】` 演出／AI 指令時，不得直接判定為 TODO；必須先檢查現有生成器、共用 Story IR schema 與 runtime event mapping 是否能表達，能則先修改生成器／必要共用 runtime mapping，再重新產生並驗證 IR 與 floor。只有確認仍受缺少正式素材、來源意圖含糊／未定稿，或現有 runtime 能力與授權範圍確實無法實現時，才停止受影響範圍並依 question／TODO 規則記錄。
+2. 由 Agent 進行語意翻譯／Story IR 建立：完整閱讀原文、劇情上下文與 Git log，把人物立繪、背景、道具、CG、流程與互動意圖寫入 draft Story IR，再依這些需求選擇或製作素材。這裡的「正規化」只表示把不同自然語言表達統一成可驗證語意，不代表自動化程式可以代替理解；只有文件明訂的 DSL 格式差異，才可由固定 parser 輔助辨識。
+3. 在產生任何引擎事件前，將 draft Story IR 的所有視覺需求解析為明確且存在的 runtime 圖片，再驗證 schema、必要參數、場景流程及 `project/images/ → project/data.js -> main.images → Story IR scene`：images 中每張圖都要登錄，data 中每個圖片登錄都要被 scene 使用。遇到未被 IR schema 或 runtime 表達的 `【...】` 演出／AI 指令時，Agent 必須保留原文、建立 unresolved 語意並停止受影響範圍；不得靠 generator 特例硬編解讀。只有完成語意決策或明確記錄 blocker 後，才可進行驗證與 emitter 輸出。
 4. 只從已驗證的 Story IR 確定性產生 floor 與引擎事件 JSON。事件生成階段不得重新解讀自然語言，也不得直接讀取原文並猜測事件。
 
 禁止把未辨識的製作指令降級成旁白、台詞或其他玩家可見文字。主線生成器與角色支線轉換流程必須使用同一份 Story IR schema、同一組語意驗證與同一組事件映射；不得因其中一條流程由 AI 執行，就省略中間產物或驗證。
 
-Story IR 必須納入 Git，統一放在 `project/story-ir/main/` 與 `project/story-ir/character/`。每份 IR 都要保存權威來源的 repo-relative 路徑與 SHA-256；來源雜湊不符時禁止產生 floor。Story IR 與 floor 都是衍生產物，不得反向覆蓋來源文本。
+Story IR 必須納入 Git，統一放在 `project/story-ir/main/` 與 `project/story-ir/character/`。每份 IR 都要保存權威來源的 repo-relative 路徑與 SHA-256；來源雜湊不符時禁止產生 floor。Story IR 是 Agent 建立的語意翻譯文件，不是由 floor／engine event 反推的衍生產物；不得反向覆蓋來源文本。
+
+## Story IR 建立權責
+
+Story IR 的建立與更新由 Agent 負責。自動化程式不得建立、覆寫、重排、拆分、合併或刪除既有 Story IR；只能讀取 IR、驗證來源／schema／素材／流程，或從已驗證 IR 確定性產生 floor／engine event。`--refresh-ir`、`--bootstrap-character`、`createBundle()`、`writeBundle()` 等既有反向轉換入口不得用於劇情更新，直到另有明確遷移設計。
+
+現存 Story IR 不因這項規則自動重建或修正。若單一檔案過大導致 Agent 閱讀或更新成本過高，可由 Agent 按 scene／chapter 語意邊界拆分，保留 scene identity、來源 SHA-256、引用與 Git 追溯；不得用自動化程式批量拆分。
 
 ## Story IR 與 scene／floor 原子性契約
 
 Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.json` 或 `project/story-ir/character/*.json` 的新增、修改、刪除，都必須在同一個內容 commit 中帶有對應 scene／floor 的新增、修改、刪除；不得建立或接受 IR-only commit。
 
-- 主線：`node scripts/generate_main_story.js --refresh-ir` 重新理解來源並產生 IR，之後必須在同一工作交易中重建對應主線 floor。
-- 角色支線：權威 `project/story/*.txt` 可由已驗收 ZIP／DOCX／TXT 等完整來源新增或整檔覆蓋，但 Agent 不得改寫其內容；之後必須同步更新對應角色 IR，並以 `node scripts/manage_story_ir.js --emit-character` 寫回對應 floor。
+- 主線：Agent 依完整來源與 Git log 建立／更新 IR，之後由只讀驗證與確定性 emitter 在同一工作交易中產生對應主線 floor。
+- 角色支線：權威 `project/story/*.txt` 可由已驗收 ZIP／DOCX／TXT 等完整來源新增或整檔覆蓋，但 Agent 不得改寫其內容；之後由 Agent 同步更新對應角色 IR，再由只讀驗證與確定性 emitter 產生對應 floor。
 - 「對應」是指 IR 中所有受影響 scene 的實際 floor 檔，不是只更新一個 manifest、索引或驗證檔。若新增 scene，必須新增可觸發的 floor；若刪除 scene，必須同步移除或改寫其入口與 floor。
 - 若 IR 改動後 emitter 產生的 scene／floor 沒有任何對應 diff，代表該 IR 改動不能單獨成立：不要提交 IR，應還原不必要的 IR 變更或停止並記錄疑慮。
 - 若因來源衝突、素材缺失或未解析指令而無法更新 scene／floor，受影響分支必須停在來源／疑慮階段，不得先落地 IR。
@@ -115,21 +121,20 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 
 這些例句描述語意，不是只認固定字面的 parser 規則。若原文只有「使用BGM」而未指定曲目，正規化層必須依完整篇劇情與 [BGM 背景音樂](bgm.md) 選定並填入已登錄曲目，才可通過驗證。若「播放音效」沒有檔名，只有在上下文能唯一對應到已登錄音效時才可補值；否則視為缺少必要參數，禁止生成空白 `playSound` 或把原句顯示給玩家。
 
-## 主線來源正規化規則
+## 主線來源的語意翻譯／Story IR 建立規則
 
-主線來源是 `project/mainStory/CH1`～`CH7`，由 `scripts/generate_main_story.js` 處理。文本生成器是 JavaScript，不要另建一份 Python 版本。Python 只負責在文本生成器之前，把權威 `*_cg.png` 母檔固定衍生為 runtime action CG。母檔有變動時依序執行，未變動時至少執行兩個 `--check`：
+主線來源是 `project/mainStory/CH1`～`CH7`。Agent 負責語意翻譯與 Story IR 建立；JavaScript emitter 只負責從已驗證 IR 產生 runtime floor，不是文本理解器。Python 只負責在 emitter 之前，把權威 `*_cg.png` 母檔固定衍生為 runtime action CG。母檔有變動時依序執行，未變動時至少執行兩個 `--check`：
 
 ```powershell
 python scripts/build_action_cgs.py
 python scripts/build_action_cgs.py --check
-node scripts/generate_main_story.js --refresh-ir
 node scripts/generate_main_story.js --check
 node scripts/manage_story_ir.js
 ```
 
-`--refresh-ir` 是唯一會重新理解主線自然語言並覆寫 `project/story-ir/main/main-story.json` 的入口，同時由新 IR 產生對應 floor；IR 與 floor 必須在同一內容 commit 中交付。一般 `node scripts/generate_main_story.js` 只讀已驗證 IR 並確定性重生 floor；`--check` 驗證來源雜湊、schema、素材／跳轉註冊及 floor round-trip，不寫檔。角色支線的 `project/story-ir/character/*.json` 由 AI／Skill 依權威 TXT 做語意更新，`node scripts/manage_story_ir.js` 驗證來源雜湊與 floor 一致，`--emit-character` 才從 IR 寫回 floor；角色 IR 變更若沒有同批 floor diff，不得提交。`--bootstrap-character` 只供首次遷移且拒絕覆寫既有 IR。
+一般 `node scripts/generate_main_story.js` 只讀已驗證 IR 並確定性重生 floor；`--check` 驗證來源雜湊、schema、素材／跳轉註冊及 floor round-trip，不寫檔。角色支線的 `project/story-ir/character/*.json` 由 Agent 依權威 TXT 與 Git log 做語意更新，驗證工具只驗證來源雜湊與 floor 一致；任何會從來源／floor 自動寫回 IR 的 refresh／bootstrap 入口不得使用。IR 變更若沒有同批 floor diff，不得提交。
 
-主線正規化階段只負責理解來源、辨識格式並產生共用 Story IR，不得直接產生引擎事件，也不得潤稿或改寫台詞：
+主線 Story IR 建立階段由 Agent 負責理解來源、辨識格式並產生共用 Story IR，不得直接產生引擎事件，也不得潤稿或改寫台詞。這裡的「正規化」是語意翻譯，不是自動化：
 
 閱讀到成對全形括號 `【...】` 的文字時，第一判定一律優先視為場景演繹／製作方式，而不是旁白。先依完整劇情上下文辨識它代表的背景切換、CG／GIF、立繪、角色動作、鏡頭、轉場、流程或其他演出；已支援的演繹方式轉成對應 Story IR 節點，不得先去掉括號後直接輸出成玩家可見文字。若語意不明或尚未支援，必須保留原文建立 `unresolved.directive`、讓驗證失敗並記錄 TODO；只有來源明確標示該內容本來就是玩家可見的敘述時，才可在保留原文的前提下轉成 `narration`。
 
@@ -148,7 +153,7 @@ node scripts/manage_story_ir.js
 所有主線素材若採用 `CH<N>_L<N>` 命名，`N` 是該素材在完整權威主線 `project/mainStory/CH1`～`CH7` 中首次出現所在章節與實體行號；這裡的「首次出現」是全主線首次出現，不是該章節內首次出現。它不是段落內索引、scene 序號、每次重複出現的行號或舊版本行號。後續完全相同的素材指令（包含跨章節重複）必須重用這個首次出現檔案，不得建立另一個按後續行號命名的素材。更新主線來源時，先將新舊完整來源逐行比對：
 
 1. 若來源變動未改變任何素材的首次出現行號，維持既有素材檔名即可；後續重複出現仍重用首次出現檔案。
-2. 若來源變動導致首次出現行號改變，必須在執行 `node scripts/generate_main_story.js --refresh-ir`、更新 Story IR 或重建 floor 前，依已確認的新首次出現行號重新命名受影響 `CH<N>_L<N>` 素材（保留其正確副檔名），並同步更新 `project/data.js` 登錄與所有生成器／測試 mapping。
+2. 若來源變動導致首次出現行號改變，必須在 Agent 更新 Story IR 或重建 floor 前，依已確認的新首次出現行號重新命名受影響 `CH<N>_L<N>` 素材（保留其正確副檔名），並同步更新 `project/data.js` 登錄與所有 emitter／測試 mapping。
 3. 僅能在舊素材的首次來源指令、以及新位置的同一條首次來源指令可完整核對時改名；不得只按文字相似度、相鄰行或 Agent 猜測移動。無法證明對應、首次指令遭刪除、出現歧義指令，或來源尚未定稿時，停止受影響素材分支並建立 question／TODO。
 4. 改名後必須驗證每個 `CH<N>_L<N>` 都指向完整主線中實際首次素材指令、每個後續相同素材指令（包含跨章節）都重用該檔案，且完成 `project/images/ → project/data.js -> main.images → Story IR → floor` 引用鏈檢查；不允許用舊首次行號繼續生成或提交。
 
@@ -158,11 +163,11 @@ node scripts/manage_story_ir.js
 4. `人名：{內容}` 也視為簡訊；`人名：內容` 是一般對話；`人名：(內容)` 保留為角色內心話。
 5. `[敘述]` 去掉外層中括號後輸出成旁白，不加發言者。
 6. 不得在生成器中把梗平的「我／我們」自動改成「在下／我等」；`project/mainStory` 文本是內容真實來源，floor 必須逐字遵從來源。
-7. 所有 `【...】` 預設先視為演出效果或對 AI 的製作指令，必須先於普通文字處理。先做生成器可實現性檢查：已支援或經本次擴充可支援的指令先轉為對應 Story IR 節點；只有通過檢查仍無法實現的指令才轉成 `unresolved.directive`，讓 Story IR 驗證失敗並寫入主線 TODO；任何情況都不得改成玩家可見文字或逕自輸出未驗證 floor。
+7. 所有 `【...】` 預設先視為演出效果或對 AI 的製作指令，必須先於普通文字處理。Agent 先依完整上下文將已理解的指令寫成 Story IR 節點；若語意或 runtime 能力仍不足，轉成 `unresolved.directive`，讓 Story IR 驗證失敗並寫入主線 TODO；任何情況都不得由 emitter 特例解讀、改成玩家可見文字或逕自輸出未驗證 floor。
 8. `【劇情推進】`、`【推進劇情】`、`【接2-3】`、`【接續2-3】` 等同義流程標記要正規化為同一種 Story IR 控制流程。
 9. CG／GIF 對照表要以目前來源文字為準；來源更名時可保留歷史別名，但 `--check` 必須確認所有已登錄的主線動作 CG 都仍有實際輸出，避免素材存在卻因標記改名而靜默退回 placeholder。
 10. 背景名稱以完整名稱精確查表；每個地點映射到唯一背景檔。遇到未登錄名稱必須失敗並補 mapping，不可靜默退回 generic 圖。
-11. 明確音訊 DSL 支援 `使用BGM`／`播放BGM`（無名稱時使用已在完整場景正規化後選定的場景 BGM）、`使用BGM：<已登錄檔名或別名>`、`BGM暫停`、`恢復BGM`、`播放音效：<已登錄檔名或別名>` 與 `停止音效`。BGM 與音效必須分別正規化成 `bgm.*` 與 `sound.*`，不可共用一種 audio 節點；只有「播放音效」而無可唯一解析名稱時必須失敗。
+11. 明確音訊 DSL 支援 `使用BGM`／`播放BGM`（無名稱時使用 Agent 在完整場景語意翻譯後選定的場景 BGM）、`使用BGM：<已登錄檔名或別名>`、`BGM暫停`、`恢復BGM`、`播放音效：<已登錄檔名或別名>` 與 `停止音效`。Agent 將 BGM 與音效分別翻譯成 `bgm.*` 與 `sound.*`，不可共用一種 audio 節點；只有「播放音效」而無可唯一解析名稱時必須失敗。
 12. 主線來源更新若改變素材首次出現的行號，先通過「主線行數位址素材改名閘門」：所有受影響 `CH<N>_L<N>` 都已依新首次實體行號改名，且所有後續相同素材都重用首次檔案並完成引用鏈驗證，才可重新產生 IR／floor。
 
 新版主線與支線必須由同一份全局 AVG layout config 與同一個 Story IR emitter 產生「單一當前發言者－下方對話框」配置。544×416 畫布的下方對話框基準為 `x=16, y=295, width=512, fixedLines=2`，不可退回舊的 `x=96, width=352` 窄框。runtime 以 alpha bbox 將人物可見內容左右置中，滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === portraitBottomY === 440`；所有立繪套用同一個全局 `portraitScale: 0.92`，人物下半身由 416px viewport 裁切，不得根據個別圖片寬高或 alpha bbox 計算各自縮放率。每句普通立繪台詞固定產生 `image.show(本句 code) → dialogue → image.hide(同一 code)`；hide 在該句結束後發生，不得清除本句未顯示的 code，也不得用跨句或跨分歧 active state 推算生命週期。分歧 option 必須各自遞迴套用同一規則。未來若加入最佳化，只能在完整事件生成後移除無中介事件且 code／image 相同的相鄰 `hide → show` 配對。
@@ -193,7 +198,7 @@ node scripts/manage_story_ir.js
 
 角色支線章節不一定會寫成 `好感度1`、`好感度2`、`好感度3`；若章節已寫明標題，將該章節標題視為該段劇情名稱，並用於事件 `title` / 樓層 `title` / meta `activeEvents[].title` / `addAkibaEvent({ title })` 的可讀名稱。若章節沒有命名，或名稱只是 `好感度1`、`好感度2`、`好感度3` 這類序號，AI 可以依劇情內容自行補一個短名，約束為 7 個中文字以下。可讀 `title` 不要保留 `好感度1：`、`好感度2：` 這類序號前綴。
 
-主線與角色支線文本即使沒有明寫 BGM 指令，也要依劇情自動選擇合適 BGM，但選曲必須放在閱讀並正規化完整篇劇情後的最後一步，並在 Story IR 中解析為明確的 `bgm.play.name`。可用曲目與選曲規則見 [BGM 背景音樂](bgm.md)。一般日常、餐廳、酒會、書店、害羞邂逅、普通閒聊用 `bossa_casual_shop.mp3`；溫柔收尾用 `next_to_you_emotional.mp3`；只有完整篇真的帶有失憶、異常現象、不可思議線索或真相調查時，才用 `spacetime_mystery.mp3` 或 `twists_suspense.mp3`；調查與危機用 `dark_alleys_tension.ogg`；決戰或動作高潮用 `battle_theme_a.mp3`。若劇本文本明確指定曲目，以劇本指定為優先，但仍需確認該 BGM 已登錄在 `project/data.js -> main.bgms`。
+主線與角色支線文本即使沒有明寫 BGM 指令，也要由 Agent 依完整劇情語意選擇合適 BGM；選曲必須放在閱讀並完成 Story IR 語意翻譯後的最後一步，並在 Story IR 中解析為明確的 `bgm.play.name`。可用曲目與選曲規則見 [BGM 背景音樂](bgm.md)。一般日常、餐廳、酒會、書店、害羞邂逅、普通閒聊用 `bossa_casual_shop.mp3`；溫柔收尾用 `next_to_you_emotional.mp3`；只有完整篇真的帶有失憶、異常現象、不可思議線索或真相調查時，才用 `spacetime_mystery.mp3` 或 `twists_suspense.mp3`；調查與危機用 `dark_alleys_tension.ogg`；決戰或動作高潮用 `battle_theme_a.mp3`。若劇本文本明確指定曲目，以劇本指定為優先，但仍需確認該 BGM 已登錄在 `project/data.js -> main.bgms`。
 
 角色支線文本若寫了 `場地:`，先用 `project/location-mappings.json` 查找同名或語意最接近的秋葉原地點，並把事件 meta 的 `locations` 掛到該地點 ID。若沒有完全同名地點，不要因此拒絕改動；應自動選擇最接近的既有地點，例如「雜貨店」可對應便利店。若找不到合理近似地點，使用一個既有地點作為隨機 fallback，並在交付說明中明確寫出選用的地點 ID 與原因。
 

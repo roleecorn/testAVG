@@ -7,10 +7,10 @@
 核心檔案位置：
 
 - `project/floors/*.js`：每個樓層一個 JS 檔，格式是 `main.floors.<floorId> = { ... }`。AVG 可把「樓層」視為「場景」或「章節」。
-- `project/mainStory/CH1`～`CH7`：現行主線劇情的唯一真實來源。Agent 不得自行編修、補寫、潤稿、修錯字、格式化或從 IR／floor 反向改寫；但可將使用者提供或其他已確認、可追溯的完整主線來源新增為完整檔案，或整檔覆蓋舊來源，不得自行合併局部修訂。來源更新後以 `node scripts/generate_main_story.js --refresh-ir` 正規化並驗證，再從 IR 重建主線 floor。
+- `project/mainStory/CH1`～`CH7`：現行主線劇情的唯一真實來源。Agent 不得自行編修、補寫、潤稿、修錯字、格式化或從 IR／floor 反向改寫；但可將使用者提供或其他已確認、可追溯的完整主線來源新增為完整檔案，或整檔覆蓋舊來源，不得自行合併局部修訂。來源更新後由 Agent 依完整語意建立或更新 Story IR，再由只讀驗證與確定性 emitter 產生主線 floor。
 - `project/story/*.txt`：角色劇情內容與章節結構的唯一真實來源（source of truth），不是僅供追溯而保留的原始附件。Agent 不得局部修改或自行改寫其內容；但所有被分類且驗收完成的角色劇情 TXT，可由 Agent 以完整檔案新增，或用 ZIP／DOCX／TXT 等已確認完整新來源整檔覆蓋同角色舊稿。`project/floors/*.js` 中的 scene／floor 是依文本轉換出的遊戲實作；兩者有差異時以來源文本為準，不得反向修改來源。
 - `project/story/manifest.md`：角色原始劇本與素材之使用方式、最後命名的永久追溯索引，不是劇情來源。每個角色使用獨立區段，逐筆保存原始 ZIP／run、原始相對路徑、SHA-256、資源種類、差異狀態、使用方式、最後命名／路徑、對應來源 TXT 或 scene 與驗證證據。重新命名、替換或停用時保留舊紀錄並標示 `superseded`；缺乏可信歷史證據時標示 `needs-backfill`，不得猜測。
-- `project/story-ir/main/*.json`、`project/story-ir/character/*.json`：納入 Git 的共用 Story IR 衍生產物，保存來源路徑與 SHA-256。主線與支線使用相同 schema／validator／emitter；來源雜湊不符時禁止生成 floor。Story IR 不可獨立交付或提交：任何新增、修改或刪除都必須在同一個內容 commit 中同步更新其對應 scene／floor；若沒有對應 scene／floor 變更，就不得提交該 IR 變更。
+- `project/story-ir/main/*.json`、`project/story-ir/character/*.json`：納入 Git 的共用 Story IR 語意文件，由 Agent 依完整權威來源、上下文與 Git log 建立／更新，保存來源路徑與 SHA-256。主線與支線使用相同 schema／validator／emitter；來源雜湊不符時禁止生成 floor。任何自動化程式不得建立、覆寫、重排、拆分、合併或刪除 Story IR，只能讀取、驗證或從已驗證 IR 確定性產出 floor。現存 IR 不因規則變更自動重寫；檔案過大時由 Agent 依 scene／chapter 語意邊界拆分並保留追溯。Story IR 不可獨立交付或提交：任何新增、修改或刪除都必須在同一個內容 commit 中同步更新其對應 scene／floor。
 - `project/data.js`：全塔設定。`main.floorIds` 決定樓層順序與可用樓層；`main.images/bgms/sounds/nameMap` 決定圖片、音樂、音效與別名。
 - `project/images/`：只保存 scene 會實際消費的自定義 runtime 圖片，例如背景、立繪、CG、UI 圖；不得作為 ZIP 原始圖片的暫存區或素材倉庫。此目錄內每張圖片都必須登錄於 `project/data.js -> main.images`，而每個 `main.images` 項目都必須由至少一個 validated Story IR scene 及對應 floor 使用。直接使用或由來源生成的正式圖片必須走完這條鏈；IR 缺少正式圖片時複製的暫時替代圖也必須走完同一條鏈，並在角色劇情 `project/story/TODO.md` 或主線 `project/mainStory/TODO.md` 記錄 copied source、目標正式素材、scene 與替換驗證。動作 CG 的 `*_cg.png` 是母檔，`*_action_cg.png` 是衍生 runtime 檔；每張地點背景必須為完整畫面的 544×416，且每個地點各用唯一檔名。
 - `unknown/`：repo 根層的未引用 ZIP 圖片待辦隔離區，不是 `project/images/unknown/`。無法對應 scene、也尚未作為生成來源的圖片須原樣保存於 `unknown/<角色ID>/<原始相對路徑>` 並保留 SHA-256；角色劇情寫入 `project/story/TODO.md`，主線寫入 `project/mainStory/TODO.md`。不得加入 `main.images`。放入此處只表示仍待處理，不表示圖片已應用或角色素材已完成。
@@ -24,19 +24,18 @@
 - `extensions/minigames/*.js`：獨立小遊戲本體。接入規範見 [小遊戲新增與接入指南](minigame-integration.md)。
 - `project/plugins.js`：小遊戲載入、事件入口與回寫魔塔狀態的封裝位置。
 
-主線文本生成器是 JavaScript，不是 Python；但動作 CG 在交給生成器前有獨立的固定圖片預處理：
+主線 runtime emitter 是 JavaScript，不是 Python；但動作 CG 在交給 emitter 前有獨立的固定圖片預處理。自然語言語意翻譯由 Agent 寫入 Story IR，不由 runtime emitter 或 floor 反向推導：
 
 ```powershell
 python scripts/build_action_cgs.py
 python scripts/build_action_cgs.py --check
-node scripts/generate_main_story.js --refresh-ir
 node scripts/generate_main_story.js --check
 node scripts/generate_main_story.js
 node scripts/manage_story_ir.js
 node scripts/manage_story_ir.js --emit-character
 ```
 
-只有母檔新增或變更時才執行第一個命令；它固定產生 416×286 的 `*_action_cg.png` 與 manifest。第二個命令可單獨驗證圖片同步。主線來源變更時用 `--refresh-ir` 更新納入 Git 的 IR；一般生成與 `--check` 都只讀 IR，後者驗證來源 SHA-256、schema、素材／跳轉註冊、17×13 尺寸與 floor round-trip 且不寫檔。角色支線以 `manage_story_ir.js` 驗證，`--emit-character` 才由 IR 重建 floor。`remove_bk.py`、`split_emotion_image.py` 只屬於角色圖片處理，不是主線文本生成器。
+只有母檔新增或變更時才執行第一個命令；它固定產生 416×286 的 `*_action_cg.png` 與 manifest。第二個命令可單獨驗證圖片同步。主線與角色支線的 IR 由 Agent 建立／更新；一般 emitter 與 `--check` 只能讀取 IR，驗證來源 SHA-256、schema、素材／跳轉註冊、17×13 尺寸與 floor round-trip 且不寫 IR。任何舊有 refresh／bootstrap／反向轉換入口均不得用於劇情更新。`remove_bk.py`、`split_emotion_image.py` 只屬於角色圖片處理，不是文本語意翻譯器。
 
 啟動服務與編輯器：
 
@@ -64,9 +63,9 @@ AI 產生內容時，優先產生「可貼進事件 JSON 區」或「可直接�
 
 對 AVG 最穩定的做法：
 
-- 主線與角色支線一律先將自然語言來源正規化為相同 schema 的 Story IR，完成指令、必要參數、素材與流程驗證後，再確定性轉為事件 JSON。Story IR 是衍生資料，不取代兩種來源文本；不得讓任一分支繞過它。
-- 劇情更新是「來源變動 → Story IR → scene／floor」的單一交易：Agent 先依基準 commit 盤點 `project/mainStory/` 與 `project/story/` 的變動；若本次輸入含已確認完整新來源，可先新增或整檔覆蓋來源，再同步更新 IR 與對應 scene／floor。若來源由本次任務落地，必須和 IR、對應 scene／floor 一起 staging／提交；若來源早已由外部 commit 提交，則只追溯其 path／SHA-256。禁止 source-only、IR-only 或延後補 floor 的 commit。主線以 `--refresh-ir` 後重建 floor，角色支線以 `--emit-character` 從更新後來源與 IR 寫回 floor。
-- 自然語言理解只發生在來源正規化階段。事件生成器不得在已完成正規化後重新猜測原文語意；但正規化遇到目前生成器尚未支援的 `【...】` 演出／AI 指令時，必須先檢查能否透過生成器或必要的共用 runtime mapping 實現，能實現就先擴充並重新驗證，只有確認仍無法實現、缺少素材／參數或來源意圖未定時才停止受影響範圍並落入 question／TODO，不能降級成玩家可見旁白或台詞。
+- 主線與角色支線一律先由 Agent 進行「語意翻譯／Story IR 建立」：完整閱讀自然語言來源、上下文與 Git log，將意圖寫入相同 schema 的 Story IR。這裡的「正規化」只表示把不同自然語言表達統一成可驗證語意，不代表由自動化程式完成。完成指令、必要參數、素材與流程驗證後，再由 emitter 確定性轉為事件 JSON。
+- 劇情更新是「來源變動 → Agent 語意 Story IR → scene／floor」的單一交易：Agent 先依基準 commit 盤點 `project/mainStory/` 與 `project/story/` 的變動；若本次輸入含已確認完整新來源，可先新增或整檔覆蓋來源，再由 Agent 同步更新 IR 與對應 scene／floor。若來源由本次任務落地，必須和 IR、對應 scene／floor 一起 staging／提交；若來源早已由外部 commit 提交，則只追溯其 path／SHA-256。禁止 source-only、IR-only 或延後補 floor 的 commit。emitter 只讀已驗證 IR，不得用 refresh／bootstrap 自動寫回 IR。
+- 自然語言理解只存在 Agent 的語意翻譯／Story IR 建立階段。事件 emitter 不得重新猜測原文語意，也不得為了支援單一劇情指令在 emitter 中增加硬編碼語意；若 Story IR 無法表達某項演出，先更新共用 schema／runtime 能力或停止受影響範圍並落入 question／TODO，不能用 generator 特例取代語意 IR，也不能降級成玩家可見旁白或台詞。
 - 每個場景用一個樓層，或每個章節用一個樓層。
 - 全專案只有一套標準 AVG 版面，主線與角色支線都使用 `17x13`；兩者只在觸發方式與來源檔案位置不同。`map` 全部填 `0`，只保留一張背景圖和劇情事件。既有 13 格內容保留在左側，右側四格補 `0`。
 - 新版 AVG 固定只保留一個普通「當前發言者」人物槽。人物 alpha bbox 的可見內容左右置中於畫面，且可見 bottom 錨定在畫面外的 `portraitBottomY: 440`；人物圖層位於對話框 UI 後方，下半身延伸到對話框後並由 416px 畫面底部裁切。每句有立繪的台詞固定輸出 `showImage(本句人物 code) → dialogue → hideImage(同一 code)`，只隱藏本句實際顯示的圖片，不可預先或事後清空所有可能人物 code。旁白不額外清理人物，因為前一句立繪已在自己的 dialogue 結束時清除。

@@ -13,6 +13,16 @@
 - 上述來源保護針對 `project/story/*.txt` 等劇情內容。`project/story/manifest.md` 是角色原始資源的追溯 metadata，`project/story/TODO.md` 是待辦 metadata，兩者不是劇情來源；Agent 可依 canonical 流程更新，但不得用其內容反向編修、補寫或取代任何來源 TXT。
 - 「更新劇情」不代表 Agent 撰寫或修正來源文本；它代表依本文件記錄的上一個劇情更新基準 commit，檢查兩個來源資料夾的變動，再更新對應中間產物與 scene／floor。若本次輸入是 ZIP 等新來源，則先依上述規則新增或整檔覆蓋來源，再進入相同更新流程。
 
+## Story IR 語意文件硬規則
+
+`project/story-ir/main/*.json` 與 `project/story-ir/character/*.json` 是由 Agent 依完整權威來源、劇情上下文與 Git log 語意翻譯建立的文件，不是由 floor、engine event 或其他衍生產物反推的資料，也不是單純的自動化生成輸出。
+
+- Agent 必須先完整理解來源，再直接建立或更新 Story IR；Story IR 必須表達敘事、角色、演出、互動、流程與未解決指令的語意意圖，並保留來源位置與追溯資訊。
+- 任何自動化程式不得建立、覆寫、重排、拆分、合併或刪除既有 Story IR。程式只能讀取 IR、執行 schema／素材／流程驗證，或從已驗證 IR 確定性輸出 scene／floor。
+- `--refresh-ir`、`createBundle()`、`writeBundle()`、`--bootstrap-character` 或任何等價的自動化反向轉換／重建入口，不得作為劇情更新流程使用；既有入口視為待遷移的 legacy tooling，未完成遷移前不得用來修改 IR。
+- 現存 Story IR 不因本規則自動重寫或補正。若單一 IR 檔過大造成 Agent 閱讀或更新成本過高，可由 Agent 依語意 scene／chapter 邊界拆分，保留來源 SHA-256、scene identity、引用與 Git 追溯；不得以自動化程式批量拆分。
+- Story IR 的新增、修改或刪除仍必須與對應 scene／floor 在同一內容交易中驗證與提交；驗證器不得因能生成 floor 就反向替 Story IR 作決策。
+
 ## 所有新增／更新流程的首要決策原則：劇情需求驅動
 
 本專案所有新增與更新流程，不限 ZIP、主線、角色支線、scene／floor、圖片、BGM、音效、狀態、Akiba 或小遊戲接入，首要決策原則一律是忠實滿足劇情需求。固定決策方向為：`使用者明確需求與權威劇情來源 → Story IR／scene 所需敘事、互動與演出 → 素材與實作的選擇、製作或暫代 → runtime 登錄、接入與驗證`。

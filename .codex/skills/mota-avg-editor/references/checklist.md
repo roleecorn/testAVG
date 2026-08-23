@@ -7,12 +7,12 @@
 - `project/mainStory/` 與 `project/story/*.txt` 沒有任何 Agent 自行編修、局部 patch、補寫、潤稿、修錯字、格式化、刪除、搬移、重新命名或由衍生物反向改寫；若本次有來源檔變更，只能是可追溯完整來源的新增或整檔覆蓋。`project/story/manifest.md` 與 `TODO.md` 僅作 metadata，沒有反向改寫來源。
 - 本次新增或整檔覆蓋的來源檔已核對輸入內容與 SHA-256，並與對應 Story IR、scene／floor 同一內容 commit 提交；來源若早已由外部 commit 提交，則未重複 staging。
 - 所有角色劇情變更都能追溯至 `project/story/*.txt` 真實來源；scene／floor 沒有反向取代文本。
-- 主線與角色支線都先由來源文本產生相同 schema 的可序列化 Story IR，通過 schema、必要參數、流程與素材驗證後才產生引擎事件；沒有任一分支直接從未驗證原文生成事件。
+- 主線與角色支線都先由 Agent 依完整來源、上下文與 Git log 進行語意翻譯，建立相同 schema 的 Story IR；通過 schema、必要參數、流程與素材驗證後才產生引擎事件；沒有任一分支直接從未驗證原文生成事件。
 - 每次故事新增、完成或調整都已逐一稽核權威來源中的所有 `【...】` 描述；每個標記都有已滿足的 Story IR／scene／floor 證據，或已將 conflict／unresolved 原文、衝突對象與受影響範圍寫入對應 TODO。存在未解決衝突時已停止受影響分支，沒有宣稱故事完成。
 - `CH<N>_L<N>` 命名的所有主線素材，其編號都已依完整主線 `CH1`～`CH7` 的全主線首次出現章節／實體行號決定，而非該章節內首次出現；後續相同素材（包含跨章節）均重用首次出現檔案。主線來源更新若造成首次出現的實體行號變化，已在重新產生 IR／floor 前逐一改名受影響素材，並完成引用核對；無法證明舊新對應的素材已停止受影響分支並建立 question／TODO。
 - 每個受影響的劇情 chapter／scene 都同時存在於來源文本、Story IR 與對應 scene／floor；只新增或修改 Story IR 而沒有對應 scene／floor 更新，不算完成。
 - Story IR 與對應 scene／floor 是同一個原子提交單位；staged diff 中每個變更的 `project/story-ir/` 檔案都必須有對應 floor／scene diff，禁止 IR-only commit。
-- 自然語言理解只存在於 Story IR 正規化階段；事件生成器只做確定性映射。對每個目前未支援的 `【...】` 演出／AI 指令，已先留下生成器／runtime 可實現性檢查；可實現者已擴充生成器並通過 IR／floor 驗證，只有仍因素材、參數、未定稿意圖或確實的 runtime 限制而無法實現者才停止受影響範圍並落入 question／TODO，沒有降級成玩家可見文字。
+- 自然語言理解只存在於 Agent 的 Story IR 語意翻譯／建立階段；這裡的「正規化」不是自動化程式操作。事件 emitter 只做確定性映射，不得重新閱讀原文猜測語意、不得由 floor／engine event 反推 IR，也不得為單一指令新增 hardcode；未能表達的語意必須停止受影響範圍並落入 question／TODO，沒有降級成玩家可見文字。
 - `使用BGM`、`BGM暫停`、`播放音效` 等語意及其自然語言變體均先轉成 `bgm.play`、`bgm.pause`、`sound.play` 等 Story IR 節點，再映射為合法引擎事件；必要曲目或音效名稱在驗證前已解析完成。
 - 新增或修改的檔案、ID、註冊資料與引用彼此存在且一致。
 - ZIP 任務已有本次 `run-manifest.md`，能以原始 ZIP 路徑與 SHA-256、全新 `run-id`、解壓前空目錄證據及本次檔案數證明所有內容由原始 ZIP 重新解壓；未讀取、沿用、複製或信任任何舊 `tmp`、舊解壓內容、舊 manifest、舊文字提取、舊圖片盤點、舊角色判定、舊 asset usage 或舊 draft IR。
@@ -24,7 +24,7 @@
 - Story IR 明確需要但缺少正式圖片的每個位置，都已複製其他合適圖片作暫時替代並完成 `project/images/ → main.images → scene`。TODO 已依故事類型寫入 `project/story/TODO.md` 或 `project/mainStory/TODO.md`，並包含暫時檔名、copied source、預期正式素材、scene、替換條件與驗證證據。
 - 已檢查 `project/images/ → project/data.js -> main.images → validated Story IR scene → floor`：images 目錄沒有未登錄圖片，data 沒有未被 scene 使用的圖片登錄，scene 引用與 floor 實作一致。單純登錄不算使用。
 - 所有事件 JSON、JavaScript 與 JSON 資料均通過相應語法檢查。
-- 已執行 `python scripts/build_action_cgs.py --check`、`node scripts/generate_main_story.js --check` 與 `node scripts/manage_story_ir.js`；主線與支線 IR 的來源 SHA-256、schema、素材／跳轉註冊及 floor round-trip 均一致，所有標準主線 floor 均為 17×13。
+- 已執行圖片、Story IR schema／來源／引用的只讀驗證，以及從已驗證 IR 到 floor 的 deterministic emitter check；未使用任何會自動建立、覆寫、拆分或反向生成 Story IR 的入口。主線與支線 IR 的來源 SHA-256、schema、素材／跳轉註冊及 floor round-trip 均一致，所有標準主線 floor 均為 17×13。
 - 主線與角色支線遵循同一套全局 AVG 版面；新版面完成實作後，所有 AVG floor 都只引用單一當前發言者語意槽，後續視覺調整只修改全局 layout config 與共用資產規則，沒有新增 floor 或角色例外。
 - `[人名：內容]` 簡訊仍輸出為帶角色名的手機對話；帶冒號的長敘事方括號仍是旁白，生成器沒有把兩者互相誤判，也沒有自行改寫來源台詞用字。
 - 六張已登錄的主線動作 CG 都能由目前來源中的 CG／GIF 名稱命中；`*_cg.png` 母檔與 416×286 `*_action_cg.png` 衍生檔的 manifest 雜湊同步，來源標記改名時不會靜默退回 placeholder。
