@@ -11,7 +11,710 @@
   },
   "scenes": [
     {
+      "n": "1",
+      "start": 6,
+      "events": [
+        {
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_park_center.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "narration",
+          "text": "風和日麗的下午，鳥兒在歌唱，花兒在綻放，而我們的梗平正在公園閒晃"
+        },
+        {
+          "kind": "narration",
+          "text": "他，閒得要死"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "公園阿，方便清場和拍攝"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "還有足夠的空間打動作戲，可以說公園就是特攝作品的聖地阿"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "按照套路，接下來肯定會從草叢跳出邪惡組織的怪人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "然後在老百姓被傷害的當下，假面騎士颯爽登場"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒錯，事件會發生在現在，就在這裡！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 16: CG：草叢 出現"
+        },
+        {
+          "kind": "narration",
+          "text": "就在這種時候，草叢突然傳來了沙沙聲"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 18: CG：草叢 消失"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯！？甚麼...難道說"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "怪人阿，放馬過來！！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 21: CG：水伊布_速度線 出現"
+        },
+        {
+          "kind": "narration",
+          "text": "草叢間出現了一隻白色的水伊布"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 23: CG：水伊布_速度線 消失"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "...這是甚麼？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "水伊布",
+          "text": "vu vu vu？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "什麼，為什麼這種地方會有水伊布"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不算了，是我太神經質了，果然事件是不會隨便發生的阿"
+        },
+        {
+          "kind": "narration",
+          "text": "突然，有人從背後向梗平搭了話"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 29: 下方這句？？？不使用立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "嘿，你知道嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "阿阿阿！！！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 32: 過場"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_park_center.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那個，不好意思，我還以為你是怪人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "沒甚麼，不如說怪人也是個不錯的稱呼呢"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "欸..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(怎麼回事，這傢伙有點怪怪的)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "總之先問候一下，我是那邊水伊布的主人，叫我神秘香蕉人就好"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喔喔...在下是梗平，你好"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "請多指教，梗平少年"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "對了，你還沒回答我呢"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "所以...你知道嗎"
+        },
+        {
+          "kind": "narration",
+          "text": "分歧選項"
+        },
+        {
+          "kind": "narration",
+          "text": "1.恩，我知道"
+        },
+        {
+          "kind": "narration",
+          "text": "2.不，你是指甚麼？"
+        },
+        {
+          "kind": "narration",
+          "text": "1"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "這樣啊，沒想到能在這裡遇到同好"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "來吧，和我一起前往天堂吧"
+        },
+        {
+          "kind": "narration",
+          "text": "突然，梗平從後方被一個牛頭和一個馬頭福瑞架住前往草叢深處"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 54: 下面兩句使用牛頭馬面立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "馬面",
+          "text": "咴咴咴咴"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "牛頭",
+          "text": "哞哞哞哞"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等等，你們要做甚麼，不...不要！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "救命呀阿阿阿！！！"
+        },
+        {
+          "kind": "narration",
+          "text": "於是，梗平消失了"
+        },
+        {
+          "kind": "narration",
+          "text": "直到他臉頰凹陷全裸在公園再次被發現"
+        },
+        {
+          "kind": "narration",
+          "text": "距離comike，已經過去了兩天"
+        },
+        {
+          "kind": "narration",
+          "text": "BE：精疲力竭"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 63: 返回分歧選項"
+        },
+        {
+          "kind": "narration",
+          "text": "2"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "原來只是路過嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "但沒關係，相逢即是有緣，如果你有興趣的話，下次再來吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我帶你進入 新♂世♂界"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "甚麼鬼"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 71: 劇情推進"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 74: 過場"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_park_center.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒想到會遇到這種事，雖然說想遇到事件但不是這種類型的阿"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "為了安全起見，我還是盡量遠離公園吧"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 78: 下面一句不使用立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "哞哞哞哞！！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "！難道說真的發生事件了嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等等，我來了！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 82: 過場"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_park_center.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "narration",
+          "text": "梗平快速地回到公園內，發現牛頭馬面被毆打在地"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喂！你沒事吧，到底發生甚麼事了"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 86: 下面一句使用牛頭馬面立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "牛頭",
+          "text": "請你...幫幫...噁...."
+        },
+        {
+          "kind": "narration",
+          "text": "牛頭馬面沒有回答，奄奄一息的倒在地上"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "可惡，發生了甚麼事"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "神秘香蕉人，你還好嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我在這裡...請幫幫我"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_grass_bg.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "narration",
+          "text": "梗平再快速翻入草叢，這次他看到的是遍體鱗傷的神秘香蕉人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "阿...你是剛剛的..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒錯，我叫梗平，只是個路過的一般人，給我記好了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "所以，你需要幫助嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "水伊布被擄走了...明明他是...(啪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "痾，你為什麼打我？連我爸爸都沒有打過我"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "吵死了，幾萬字的背景故事根本不重要"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "水伊布被擄走了對吧，告訴我，你需要幫助嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "嗚...恩，請幫幫我吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好，告訴我你需要甚麼幫助"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "請協助我找回被擄走的水伊布，為此我需要力量，請幫我找來一根香蕉吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "公園裡就有香蕉樹，拜託你了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好，我必會完成"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_park_center.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "narration",
+          "text": "梗平在公園來回翻找後，一株香蕉樹出現在他的眼前"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "恩，雖然是找了找，但沒想到公園裡還真的有香蕉樹"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "在下看看..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "旁白",
+          "text": "梗平眼前出現了一些香蕉"
+        },
+        {
+          "kind": "narration",
+          "text": "分歧選項"
+        },
+        {
+          "kind": "narration",
+          "text": "1.又粗又短的芭蕉"
+        },
+        {
+          "kind": "narration",
+          "text": "2.又細又長的香蕉"
+        },
+        {
+          "kind": "narration",
+          "text": "3.新阿姆斯特朗旋風噴射阿姆斯特朗炮"
+        },
+        {
+          "kind": "narration",
+          "text": "1"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "就是這個吧...嗯？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等等，這不是芭蕉嗎？神秘香蕉人要的是香蕉阿"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "算了，都拔下來就吃掉吧"
+        },
+        {
+          "kind": "narration",
+          "text": "進食中..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "恩，味道還不錯，甜甜的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不過全身有點發癢...好癢"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好癢好癢好癢好癢癢癢癢癢癢..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "...癢，好吃"
+        },
+        {
+          "kind": "narration",
+          "text": "BE：不要亂摘奇怪的果子吃"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 129: 返回分歧選項"
+        },
+        {
+          "kind": "narration",
+          "text": "2"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "就是這個吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不過這香蕉還真長阿，一般來說有這麼長的香蕉嗎？"
+        },
+        {
+          "kind": "narration",
+          "text": "香蕉被拉開，露出裡面的拉珠"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "......"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "還是當作沒看到吧，恩"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 138: 劇情推進"
+        },
+        {
+          "kind": "narration",
+          "text": "3"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "就是這個吧...個頭拉"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這不是新阿姆斯特朗旋風噴射阿姆斯特朗炮嗎？完成度真高阿喂"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "為什麼會有香蕉長成這個樣子啦"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不過那裏的洞..."
+        },
+        {
+          "kind": "narration",
+          "text": "梗平朝炮口望了一眼，但突然被裡面冒出的一陣風吹飛了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這是甚麼...好討厭的感覺阿阿阿！！！"
+        },
+        {
+          "kind": "narration",
+          "text": "BE：槍口請勿對人"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 149: 返回分歧選項"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 152: 過場"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_park_center.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "神秘香蕉人，在下拿來了，就是這個對吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "沒錯，這就是我需要的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "謝謝你，梗平少年，這樣就可以奪回水伊布了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "擄走水伊布的人，你已經有線索了嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "恩，他們襲擊我的時候掉了點東西"
+        },
+        {
+          "kind": "narration",
+          "text": "拿起一根像素毛和一根蠟筆毛"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "結果就算退休了，從前的恩怨也不會消失嗎..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "梗平少年，如果你還願意幫我，請在隔天前來一趟"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "在此之前...我需要去見幾個人"
+        },
+        {
+          "kind": "comment",
+          "text": "source: project/story/神秘香蕉人.txt lines 6-end; full transcription"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.plugin.addAkibaEvent({ id: 'mysterious_banana_2', title: '好感度2', locations: ['park'], floorId: 'mysterious_banana_2', once: true }); }"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "mysterious_banana_1"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ],
       "id": "mysterious_banana_1",
+      "title": "好感度1",
       "floor": {
         "floorId": "mysterious_banana_1",
         "title": "神秘香蕉人：好感度1",
@@ -275,95 +978,788 @@
             "y": 0
           }
         ]
-      },
+      }
+    },
+    {
+      "n": "2",
+      "start": 165,
       "events": [
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "banana_normal.png"
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "banana_eevee_speed.png",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_park_center.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
+            0,
+            0,
+            544,
+            416
+          ]
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "async": true,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "按照套路，接下來肯定會從草叢跳出邪惡組織的怪人。"
+          "kind": "narration",
+          "text": "梗平又一次來到了公園，進入戰鬥模式的梗平不再如上次閒散，連空氣都沉重了幾分"
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "所以……你知道嗎？"
+          "text": "梗平少年，你來了阿"
         },
         {
-          "kind": "choice",
-          "prompt": "你知道嗎？",
-          "options": [
-            {
-              "text": "恩，我知道",
-              "events": [
-                {
-                  "kind": "dialogue",
-                  "speaker": "神秘香蕉人",
-                  "text": "來吧，和我一起前往天堂吧。"
-                }
-              ]
-            },
-            {
-              "text": "不，你是指甚麼？",
-              "events": [
-                {
-                  "kind": "dialogue",
-                  "speaker": "神秘香蕉人",
-                  "text": "相逢即是有緣，下次再來吧。"
-                }
-              ]
-            }
-          ]
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "當然，英雄可不能臨陣脫逃阿"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那麼，你找到甚麼信息了嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "當然，先上車再說吧"
         },
         {
           "kind": "comment",
-          "text": "source: project/story/神秘香蕉人.txt lines 3-164; remaining unsupported CG names are tracked in TODO"
+          "text": "source line 173: 過場"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_grass_bg.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "根據我得到的信息，奪去伊布的人恐怕是與我有舊怨的兩人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我想請你幫忙對付其中一位，能拜託你嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒問題，交給我吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "那一位是個十分擅長程式咒法的咒術師，還請務必小心"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(為什麼會有奇幻戰鬥作品的要素拉)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "馬面",
+          "text": "老大，我們到了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "好，我們下車吧。梗平少年，還請務必小心"
+        },
+        {
+          "kind": "narration",
+          "text": "神秘香蕉人指向了車窗外的一座廢棄工廠"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "就是這裡了，進去吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "廢棄工廠阿，還挺浪漫"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "對在下來說就像是來到了主題公園一樣，真令人興奮"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "興奮很好，但對方絕非等閒之輩，別大意"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "大門就在那裏，四周也無埋伏，我們直接突入吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好！"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_grass_bg.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "narration",
+          "text": "兩人推開門突入工廠，只見兩個人影從黑暗中向他們搭話"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 191: 下面兩句不使用立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "你好啊香蕉人，真沒想到你可以找到這裡"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "不過就到此為止了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "接下來就由我Scratch"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超酷印度豹",
+          "text": "和我超酷印度豹"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 196: CG：貓科雙人組 出現"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 197: 下面一句不使用立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "來當你們的對手！！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 199: CG：貓科雙人組 消失"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "貓科雙人組，沒想到還會再見到你們..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喂，怪人，你們究竟把水伊布藏到哪去了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超酷印度豹",
+          "text": "想知道的話"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "就先把我們打倒吧！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "果然是約定俗成的戰鬥回嗎"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "那麼，梗平少年…"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "在下知道，Scratch就交給在下吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "拜託你了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "超酷印度豹，吃我聖劍EX嘎裡棒吧Oraaaaa!!"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "齁，那麼你就是我的對手嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒錯，像素怪人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我是路過的一般人梗平，給我記好了！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "想要我記住的話展現出你的本事，接招吧！"
+        },
+        {
+          "kind": "narration",
+          "text": "只見Scratch高頻率的閃現在梗平周圍繞圈"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "什麼！？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "（連續的短瞬移，哪來的投射咒法啊！）"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "接招吧！！"
+        },
+        {
+          "kind": "narration",
+          "text": "而就在梗平為此驚訝之際，Scratch立刻高速向他襲來"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗚挖阿阿！！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(可惡，眼睛跟得上但來不及反應)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(思考，快思考阿梗平，對方有甚麼弱點...)"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平的眼神在Scratch身上快速掃過，希望能找到什麼弱點"
+        },
+        {
+          "kind": "narration",
+          "text": "然而，就算他以堪稱獸控楷模，用舔食般的視線看透了全身"
+        },
+        {
+          "kind": "narration",
+          "text": "也只是發現Scratch身上繫著疑似腰帶的物品"
+        },
+        {
+          "kind": "narration",
+          "text": "就在將要絕望之時，他突然想通了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "哼，看來你也不過是減速帶罷了，我馬上收拾你"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "呼...呼哈哈哈！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "你笑甚麼？因為打不贏絕望瘋了嗎"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不，在下已經想到解決你的方法了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "Nani!"
+        },
+        {
+          "kind": "narration",
+          "text": "俗話說的好，擒賊先擒王，凡打人必攻下路的梗平很快就想到了解決辦法"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(沒錯，那個腰帶肯定就是他的能力來源)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(只要我能把它拔下來的話！)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "但那又如何，只要沒辦法接觸到，你就拿我沒轍"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒錯，所以現在在下要靠近你了，給我等著！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "齁，沒有選擇逃跑而是主動接近我Scratch嗎！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不靠近你，就沒辦法痛揍你一頓阿"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "那就想辦法掙扎吧，路人梗平！"
+        },
+        {
+          "kind": "narration",
+          "text": "腰帶此時發出了巨大的聲音"
+        },
+        {
+          "kind": "narration",
+          "text": "Green Flag Clicked"
+        },
+        {
+          "kind": "narration",
+          "text": "Hello World!!"
+        },
+        {
+          "kind": "narration",
+          "text": "又一次，Scratch以高頻率的閃現在梗平周圍繞圈"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(沒有遠程武器，要是不能接觸到我確實拿他沒辦法)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(那只要讓他自己接觸到在下就好了！)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "怎麼，放下狠話卻只是呆站在那裏嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "既然你不過來我可要過去了！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "哈哈哈哈哈"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗚！！！"
+        },
+        {
+          "kind": "narration",
+          "text": "面對Scratch怒濤般的攻勢，梗平只能以防守姿勢勉強擋住"
+        },
+        {
+          "kind": "narration",
+          "text": "看似戰況一面倒，梗平實則是在等待時機"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(如果能找到規律的話，就可以等他自己過來了)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(前後左右前後左右...現在只要忍耐)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "這就是最後一拳，倒下吧！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(就是這裡！)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "吃在下的，Force Stop Punch 阿！！！"
+        },
+        {
+          "kind": "narration",
+          "text": "蓄力的一拳成功瞄準了Scratch的腰帶，並一拳打散了腰帶的結構"
+        },
+        {
+          "kind": "narration",
+          "text": "這股力量甚至傳遞到了鼠蹊部，讓Scratch頓時再起不能"
+        },
+        {
+          "kind": "narration",
+          "text": "連佛陀都閉上了雙眼，不忍觀看"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "嗚挖阿阿！！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哼，這樣你就不能再維持那個速度了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "你，怎麼可能！"
+        },
+        {
+          "kind": "narration",
+          "text": "只見梗平眼前是散落的腰帶，還剩完整的部分分成了兩個"
+        },
+        {
+          "kind": "narration",
+          "text": "這時，作為特攝片愛好者的他，起了一點心思"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "說起來撿腰帶事件也是經典事件阿...這樣的話"
+        },
+        {
+          "kind": "narration",
+          "text": "分歧選項"
+        },
+        {
+          "kind": "narration",
+          "text": "1.腰帶Forever"
+        },
+        {
+          "kind": "narration",
+          "text": "2.腰帶Move (n) steps"
+        },
+        {
+          "kind": "narration",
+          "text": "1"
+        },
+        {
+          "kind": "narration",
+          "text": "只見梗平拿起了上面寫著Forever的腰帶"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "和你打的話，用這條比較好吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "等等，那條是！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "Henshin！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 274: 此處插入BGM"
+        },
+        {
+          "kind": "narration",
+          "text": "腰帶開始發出聲響"
+        },
+        {
+          "kind": "narration",
+          "text": "Green Flag Clicked"
+        },
+        {
+          "kind": "narration",
+          "text": "Forever!!"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "......"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯？怎麼甚麼事都沒有發生"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯？怎麼甚麼事都沒有發生"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯？怎麼甚麼事都沒有發生"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯？怎麼甚麼事都沒有發生"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯？怎麼甚麼事都沒有發生"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯？怎麼甚麼事都沒有發生"
+        },
+        {
+          "kind": "narration",
+          "text": "於是，梗平停止了思考"
+        },
+        {
+          "kind": "narration",
+          "text": "BE：Execution Timed Out"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 287: 返回分歧選項"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "2",
+          "text": "腰帶Move (n) steps"
+        },
+        {
+          "kind": "narration",
+          "text": "只見梗平拿起了上面寫著Move (n) steps的腰帶"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "和你打的話，用這條比較好吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "Henshin！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 293: 此處插入BGM"
+        },
+        {
+          "kind": "narration",
+          "text": "腰帶開始發出聲響"
+        },
+        {
+          "kind": "narration",
+          "text": "Green Flag Clicked"
+        },
+        {
+          "kind": "narration",
+          "text": "Move (n) steps"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "不！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喔喔！全身充滿了力量"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "如果是現在的話肯定就能做到！"
+        },
+        {
+          "kind": "narration",
+          "text": "Scratch Mode"
+        },
+        {
+          "kind": "narration",
+          "text": "MOVE"
+        },
+        {
+          "kind": "narration",
+          "text": "100"
+        },
+        {
+          "kind": "narration",
+          "text": "STEPS"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Scratch",
+          "text": "你不要過來阿阿阿！！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "RIDER~~ KICK!!!"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 306: 劇情推進"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平一個騎士踢，Scratch就被踹到遠方了"
+        },
+        {
+          "kind": "narration",
+          "text": "可惜的是，於此同時腰帶也隨之消滅"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "真是一場酣暢淋漓的戰鬥阿，可惜腰帶也跟著消失了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不，這種八成只是期間限定的臨時腰帶吧，遲早會找到只屬於在下的腰帶的"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平是個樂觀的人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "梗平少年，你沒事吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒事，你打倒超酷印度豹了？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "沒錯，我比退休前弱了不少所以多花了點時間，但還是在聖劍的時限到前打倒他了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "聖劍EX嘎裡棒暫時喪失了力量，如果還有同夥就不好了，我們趕緊撤退吧"
+        },
+        {
+          "kind": "narration",
+          "text": "神秘香蕉人展示了聖劍的樣子"
+        },
+        {
+          "kind": "narration",
+          "text": "一把縮小的聖劍出現在了香蕉人手中"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(原來那東西還會縮小的嗎？)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "話說，我不小心把敵人踢飛了，沒辦法審問，抱歉阿"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "不用擔心，我已經從超酷印度豹口中得知了水伊布被綁的地點"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "只是為了取回水伊布，我得去取回曾被我封印的裝備"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "需要在下幫忙嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "不，這件事得我自己來"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "感謝你，梗平少年，我們明天公園見"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喔"
+        },
+        {
+          "kind": "narration",
+          "text": "於是為了籌備戰力，兩人解散了並決定各自準備戰力預備決戰"
+        },
+        {
+          "kind": "narration",
+          "text": "但梗平也不知道該怎麼做，於是回去看了假面騎士馬拉松"
+        },
+        {
+          "kind": "comment",
+          "text": "source: project/story/神秘香蕉人.txt lines 165-end; full transcription"
         },
         {
           "kind": "function.call",
-          "function": "function () { core.plugin.addAkibaEvent({ id: 'mysterious_banana_2', title: '好感度2', locations: ['park'], floorId: 'mysterious_banana_2', once: true }); }"
+          "function": "function () { core.plugin.addAkibaEvent({ id: 'mysterious_banana_3', title: '好感度3', locations: ['park'], floorId: 'mysterious_banana_3', once: true }); }"
         },
         {
           "kind": "akiba.event.complete",
-          "eventId": "mysterious_banana_1"
+          "eventId": "mysterious_banana_2"
         },
         {
           "kind": "akiba.return"
         }
-      ]
-    },
-    {
+      ],
       "id": "mysterious_banana_2",
+      "title": "好感度2",
       "floor": {
         "floorId": "mysterious_banana_2",
         "title": "神秘香蕉人：好感度2",
@@ -627,69 +2023,1370 @@
             "y": 0
           }
         ]
-      },
+      }
+    },
+    {
+      "n": "3",
+      "start": 332,
       "events": [
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "banana_smile.png"
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "banana_cats.png",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_park_center.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
+            0,
+            0,
+            544,
+            416
+          ]
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "async": true,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "神秘香蕉人",
-          "text": "梗平少年，你來了阿。先上車再說吧。"
+          "kind": "narration",
+          "text": "明明晴空萬里卻天雷頻頻，此般異象似乎在預示著甚麼，但我們的梗平完全不在乎"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "英雄可不能臨陣脫逃。"
+          "text": "神秘香蕉人，在下來了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "好，梗平少年，隨我來吧"
+        },
+        {
+          "kind": "narration",
+          "text": "兩人走在公園的小路上準備前往決戰場所，雖然氣氛凝重，但為了緩解緊張還是聊了起來"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我們的敵人，是起司有限公司"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "起司有限公司，不是起司股份有限公司嗎，真是奇怪的名字"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我們是要前往他們的辦公大樓嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "沒錯，從超酷印度豹口中得知後，我又去調查了一下"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "確實到有人在那天看到水伊布被抱進去的身影"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "沒想到曾被我拋棄的過去會追上來"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "他們是犯人對吧，原來你知道那家公司嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "當然，畢竟我可曾是那家公司的CEO阿"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "甚麼！？那為什麼會..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "之後再說吧，我們到了"
+        },
+        {
+          "kind": "narration",
+          "text": "映入眼簾的是一棟經典的辦公大樓...在公園的正中央"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "什麼鬼！在下之前都沒發現這裡還有棟大樓，應該說為什麼這裡會有棟大樓？？？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "現代科技，很厲害吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "對了，梗平少年，這個先交給你"
         },
         {
           "kind": "comment",
-          "text": "source: project/story/神秘香蕉人.txt lines 165-331"
+          "text": "source line 353: CG：伊布腰帶 出現"
+        },
+        {
+          "kind": "narration",
+          "text": "香蕉人遞出了伊布腰帶"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 355: CG：伊布腰帶 消失"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "這是我曾經用過的腰帶，我已經無法再使用，就交給你了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喔喔！是傳承腰帶的事件"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "謝拉，話說為什麼你沒辦法用，果然腰帶是有意志的嗎！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "不，只是因為我變胖了繫不上"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "痾，總感覺瞬間Low掉了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "順帶一提不用擔心我，我有聖劍嘎裡棒和這個變身頭巾"
+        },
+        {
+          "kind": "narration",
+          "text": "香蕉人展示了變身頭巾"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "感覺更Low了阿喂！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 364: 過場"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_grass_bg.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "narration",
+          "text": "兩人藏在公司大門外的草叢，面面相覷"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "門外一個警衛都沒有，地上還很髒亂"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "真的是這裡嗎？不，也有非法組織被佔領的可能性"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "一定是這裡，我感受到了水伊布的氣息"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "走吧！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "欸，等等我啊！"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_grass_bg.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "narration",
+          "text": "神秘香蕉人迫不及待的衝了進去，梗平緊隨其後"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "水伊布！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "...怎麼甚麼人都沒有"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "廣播",
+          "text": "滋滋滋"
+        },
+        {
+          "kind": "narration",
+          "text": "伴隨著雜音，大樓內響起了廣播開始"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 378: 下面一句不使用立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "廣播",
+          "text": "哈哈哈，好久不見了，香蕉人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "這個聲音，是奇多嗎！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 381: 下面三句不使用立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "廣播",
+          "text": "我就知道你會來，但是很遺憾，我聽不到你"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "廣播",
+          "text": "所以我們就來面對面談一談吧，電梯已經準備好了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "廣播",
+          "text": "我，等著你來"
+        },
+        {
+          "kind": "narration",
+          "text": "伴隨著喀擦聲，廣播關閉了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "可惡！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "神秘香蕉人，你認識他嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "熟的不得了，可惡，為什麼是你"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "先走吧，我在電梯裡跟你說明"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 390: 過場"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_grass_bg.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "comment",
+          "text": "source line 392: 此處插入電梯BGM"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "首先，你知道伊布嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "恩，總之是一種寶可夢對吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "有八種進化型態，加上基礎型態是九種"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "是，但這並不是全部"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "這個世界上的伊布是獨一無二的，每種都只有一隻"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "據傳他們由寶可夢森林的獸控妖精 王·比利，簡稱森之妖精所飼養，並在其死後各自傳承了一部份力量"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "只要八隻匯聚在一起就能使用妖精王力量的一部份"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哪來的七龍珠啊！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等等，也就是說你曾經收集過嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "沒錯，這家公司就是我創立來搜集伊布的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我們當時包含水伊布在內蒐集了一半，雖然從一般伊布上沒發現，但除此之外的伊布體內都發現了力量"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "公司上下都很興奮，認為妖精王之力已經勢在必得"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "開發班甚至已經以伊布腰帶為首開發出了多種力量腰帶"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "但是，公司最終變成了這個樣子，你也跑去住公園"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這就代表最後沒成功對吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "說不成功其實不對，是我自己阻止的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "為什麼？難道聚集伊布會毀滅世界還是被惡人利用嗎"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "應該說我只是意識到自己就是那個惡人吧..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "那個時候我終於從非洲大陸遠征回來，正要去找開發班組長討論進度的時候"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我剛好看到了被關在籠子裡實驗的伊布們，正想靠近觸摸的時候卻被月亮伊布威嚇了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我才發現妖精伊布的緞帶萎靡，水伊布的身體混卓，一般伊布奄奄一息"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "直到那時我才意識到自己所做的只是在剝削他們而已，簡直是獸控的恥辱..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "在下懂了，所以你才解散了公司對吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "但現在又是怎麼回事，難道有其他人在蒐集伊布嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "不，當我說出緣由並嘗試解散公司時"
+        },
+        {
+          "kind": "narration",
+          "text": "神秘香蕉人雖然大部分人都表示理解，但還有一群人不希望停止"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "也就是偷走水伊布的那些人嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "對，以公司二把手奇多為首加上貓科二人組以及其他人的貓派"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "為了展現各自的決心，解散和續行方進行了一場驚天動地的對決"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "想必是一場酣暢淋漓的戰鬥吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "沒錯，我們進行了三天三夜的神聖獸控問答大戰，最後只剩我站在場上奪得了勝利"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "在下放棄吐槽了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "說到底你們拿到力量到底是想要達成甚麼願望阿"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "那是..."
+        },
+        {
+          "kind": "narration",
+          "text": "就在神秘香蕉人說到一半，電梯到達頂樓了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "電梯語音",
+          "text": "頂樓，到了，頂樓，到了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "想必奇多會親自跟你講，我們走吧"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 430: 過場"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_grass_bg.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "為什麼一出電梯門就是更衣室阿"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 433: 此處插入決戰BGM"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 434: 下面一句不使用立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "你終於來了，香蕉人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "好久不見了，奇多"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 437: 下面一句不使用立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我已經捨棄那個名字了，現在請叫我"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "超 濃 起 司"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喂超濃起司，你到底想聚集伊布的力量幹嘛"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "喔？這個又是誰"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "這位是梗平少年，是位令人期待的獸控新人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不要瞎掰好嗎，在下只是來幫忙的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "齁，既然香蕉人這麼期待那我就好心跟他講解吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "我，以及香蕉人曾經的夢想就是"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 446: 下一句使用大字"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "創造一個只屬於獸控的世界！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "欸...為什麼"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "新人是不會理解的罷，在這世界被排擠，被唾棄，只能在角落聚集取暖的痛苦"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "奇多...你還在追逐那個夢想"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "閉嘴，你這個叛徒，你知道有多少人是為了這個夢想才聚集到你身邊的嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "你就這樣說放棄就放棄，我是不會接受的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "即便你知道實現夢想的過程會讓伊布們感到痛苦也要繼續嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "為了達成宿願，那些都是必要的犧牲，我會在新世界補償他們的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "夠了，奇多，把水伊布還給我"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "如果你想要，那就自己來拿"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 457: 此處插入BGM"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "Henshin!"
+        },
+        {
+          "kind": "narration",
+          "text": "無限伊布手套發出了聲響"
+        },
+        {
+          "kind": "narration",
+          "text": "Vaporeon、Jolteon、Flareon、Espeon、Umbreon、Leafeon、Glaceon、Sylveon"
+        },
+        {
+          "kind": "narration",
+          "text": "Forest Fairy"
+        },
+        {
+          "kind": "narration",
+          "text": "Billy Herrington"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "Henshin!"
+        },
+        {
+          "kind": "narration",
+          "text": "自由頭巾也緊隨其後發動了特效"
+        },
+        {
+          "kind": "narration",
+          "text": "It's Freeeeeee Time!!!"
+        },
+        {
+          "kind": "narration",
+          "text": "BBBBanana Guyyyyy"
+        },
+        {
+          "kind": "narration",
+          "text": "Ricardo Milos!"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "居然是同時變身，嗚，好刺眼，但不足以干擾我看現場特攝的決心"
+        },
+        {
+          "kind": "narration",
+          "text": "一陣白光閃過，梗平的眼前出現了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "終於能看到讓我期待已久的皮套大戰了嗎！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 471: CG：森之妖精與香蕉君對峙 出現"
+        },
+        {
+          "kind": "narration",
+          "text": "......"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 473: 下一句不使用立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我到底在看甚麼，這還是現實嗎？"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 475: CG：森之妖精與香蕉君對峙 消失"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "看阿，我終於得到了這份森♂之妖精 王·比利的力量"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "不過，在我創造新世界之前，就讓我用這份偉力讓你為曾經的錯誤悔改吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "七彩昇華齊聚鼎 - 妖♂精♂光♂束"
+        },
+        {
+          "kind": "narration",
+          "text": "妖精光束擊中了神秘香蕉人的所在位置，並揚起了煙霧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "甚麼，神秘香蕉人！沒事吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不對，有煙無傷定律，他肯定沒事"
+        },
+        {
+          "kind": "narration",
+          "text": "正如梗平所說，神秘香蕉人在千鈞一髮之際拔出了聖劍嘎裡棒並擋下了光束"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "你居然重新拔出了聖劍，但無所謂，即便聖劍也不是我森之妖精力量的對手"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "香蕉君",
+          "text": "口氣♂真大，等我把你打倒後就讓你自己♂掰開(腰帶)向我投降"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "香蕉君",
+          "text": "(梗平少年，就拜託你了)"
+        },
+        {
+          "kind": "narration",
+          "text": "拿著香蕉拉珠和起司巨棒的兩個肌肉男開始了今天動地的悶熱摔♂角"
+        },
+        {
+          "kind": "narration",
+          "text": "而神秘香蕉人給了梗平的眼神，只讓他感到後門一緊，並沒有傳遞到什麼想法"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等等，這是要在下幹嘛嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "在下真的不太想加入那個空間一起摔角...怎麼辦好呢"
+        },
+        {
+          "kind": "narration",
+          "text": "分歧選項"
+        },
+        {
+          "kind": "narration",
+          "text": "1.只是看著"
+        },
+        {
+          "kind": "narration",
+          "text": "2.嘗試用用看伊布腰帶"
+        },
+        {
+          "kind": "narration",
+          "text": "1"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "總之只是旁觀就好吧，神秘香蕉人會自己處理完的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "OMO"
+        },
+        {
+          "kind": "narration",
+          "text": "隨著時間過去，神秘香蕉人逐漸落入下風"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "嗚挖阿阿阿！！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "感受到了嗎？這份被你放棄的森之妖精的力量，哈哈哈哈哈！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "可...可惡，到底為什麼"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "梗平少年，為什麼你只是看著，難道你背叛了嗎！？"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平不語，只是看著"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "......"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(不是，在下只是不想加入那個悶熱的戰鬥而已，你怎麼輸了阿)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "喔？你也對新世界感興趣嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等一下，這是誤會"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "沒事，我懂得，你是在隱忍吧，為了創造新世界而蟄伏在香蕉人身邊"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不！不是！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "不需要害羞，你做得很好，我會帶你前往新世界的，和我，一 起 去"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "快，停下來！拜託！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "BOY♂NEXT♂DOOR"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你不要過來阿阿阿阿阿！！！"
+        },
+        {
+          "kind": "narration",
+          "text": "BE：精神錯亂而死"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 518: 返回分歧選項"
+        },
+        {
+          "kind": "narration",
+          "text": "2"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "總之先試試這個腰帶吧，裝上來試試看..."
+        },
+        {
+          "kind": "narration",
+          "text": "伊布腰帶開始發出提示音"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "痾，Henshin?"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
+        },
+        {
+          "kind": "narration",
+          "text": "Eevee Mode"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這是甚麼鬼阿，只是加上尾巴而已"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這樣真的能幫忙嗎？"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 529: 劇情推進"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_grass_bg.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
+        },
+        {
+          "kind": "narration",
+          "text": "就在梗平成功變身的當下，神秘香蕉人被打飛了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "嗚挖阿阿阿！！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "神秘香蕉人，不！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "哈哈哈，你也不過如此，打倒你之後已經沒有人能阻止我了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "給在下等等，就由我路人耿平來阻止你"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "喔？就由你和那個腰帶嗎，別笑死我了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "伊布腰帶不過是個初代試作品罷了，初代比較強這種事只會在幻想裡出現"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(可惡，他說的對，即便變身了在下也沒感受到甚麼力量，但是...)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哼，那又如何，英雄可不能臨陣脫逃阿"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "我敬你的勇氣，就這樣化成灰吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "七彩昇華齊聚鼎 - 妖♂精♂光♂束"
+        },
+        {
+          "kind": "narration",
+          "text": "一道光束朝梗平飛來"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "梗平少年！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "伊布梗平",
+          "text": "嗚喔喔喔喔喔！！！"
+        },
+        {
+          "kind": "narration",
+          "text": "然而光束並沒有打中梗平，而是被吸收到了伊布腰帶中"
+        },
+        {
+          "kind": "narration",
+          "text": "突然間，梗平全身發出了白光"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森♂之妖精",
+          "text": "Na...nani!"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "伊布梗平",
+          "text": "我感覺，充滿了，力量！"
+        },
+        {
+          "kind": "narration",
+          "text": "......哦！？梗平的樣子......！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 553: 梗平的立繪切換為梗平(肌肉)"
+        },
+        {
+          "kind": "narration",
+          "text": "恭喜！梗平進化為肌肉♂妖精 梗平了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "肌肉在閃閃發光！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森♂之妖精",
+          "text": "怎麼可能，為什麼會發生這種事！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我懂了！我們沒有在一般伊布身上找到任何力量的原因"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "當初森之妖精 王·比利就是打算把伊布作為核心匯聚力量"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "也就是說梗平少年現在才是完全體，奇多，你已經輸了！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "我才不信有這麼巧合的事，一發不行就連續發射"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "妖♂精♂光♂束 妖♂精♂光♂束 妖♂精♂光♂束"
+        },
+        {
+          "kind": "narration",
+          "text": "三發光束打在肌肉♂梗平身上，但他毫髮無損"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "完全沒有傷害，而且感覺...我能夠做到同樣的事"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "吃我的，梗平♂光線！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "嗚，可惡"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "妖♂精♂光♂束阿阿阿！"
+        },
+        {
+          "kind": "narration",
+          "text": "森之妖精對波輸了的同時被打退一段距離，雖說梗平佔據上風，但對方終究也只是小傷而已"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "這個，難道說是伊布的可能性之光！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "可能性光束只要有一點可能性就能成真，就算用的腰帶是輸出比較低的初版腰帶也沒關係"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "所以才能及時發波並打退妖♂精♂光♂束嗎！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "就算真的發生這種反轉又怎麼樣"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "這點傷害，是打不倒我的，我還是可以創造只屬於我們的新世界！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "肌肉梗平",
+          "text": "沒錯，所以，就用這個來收尾吧"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 574: 此處插入BGM"
+        },
+        {
+          "kind": "narration",
+          "text": "伊布腰帶發出了提示音"
+        },
+        {
+          "kind": "narration",
+          "text": "FULL POWER"
+        },
+        {
+          "kind": "narration",
+          "text": "Prepare"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "撒，來細數你的罪惡吧！！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平&伊布腰帶提示音",
+          "text": "RIDERRRR KICKKKKK!!!"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 580: CG：肌肉梗平飛踢與妖精胸肌 出現"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 581: 下面七句不使用立繪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "森之妖精",
+          "text": "嗚喔喔喔喔！！！我才不會...放棄......這個夢想！！"
+        },
+        {
+          "kind": "narration",
+          "text": "森♂之妖精用胸肌硬擋下了踢擊"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我敬你的勇氣和決心，但是"
+        },
+        {
+          "kind": "narration",
+          "text": "伊布腰帶再次發出了提示音"
+        },
+        {
+          "kind": "narration",
+          "text": "Eevee Equip"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你的夢想，就由我來終結！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "DOUBLEEEE KICKKKKKK!!!"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 589: CG：肌肉梗平飛踢與妖精胸肌 消失"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "嗚挖阿阿阿！！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 591: 梗平(肌肉)立繪切換為梗平"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這樣就，結束了"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平的驚天兩踢使得超濃起司被解除變身，神秘香蕉人確認戰鬥結束也走了過來"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "謝謝你，梗平少年，多虧了你才能阻止奇多的計畫"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不用客氣，倒是抱歉，伊布腰帶被我弄壞了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "沒事，那只是個試作品而已，真正的伊布不在裡面"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那水伊布呢？我們快去找他們吧"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 598: CG：無限伊布手套 出現"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "已經找到了，就在這裡呢"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 600: CG：無限伊布手套 消失"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "接下來只要解放水伊布並放生其他伊布，這件事就結束了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你說得......"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "香蕉...人......"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "還沒倒下嗎！？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "不用擔心，梗平少年，他已經喪失戰鬥力了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "結束...我吧..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我不會這麼做的，只要奇多你悔過就好"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "呵，我才...不要..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "為什麼你不理解，你不也曾是個愛好動物的獸控嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "這不是...從你...開始的...故事嗎......"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "一個人...逃跑...太卑鄙了......"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "......"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "神秘香蕉人..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "梗平少年，再次謝謝你，最後只要把伊布們放生就結束了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "請你在一切塵埃落定後再來公園一趟，只是...在此之前"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "讓我和曾經的朋友說說話吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "恩，下次見"
+        },
+        {
+          "kind": "comment",
+          "text": "source: project/story/神秘香蕉人.txt lines 332-end; full transcription"
         },
         {
           "kind": "function.call",
-          "function": "function () { core.plugin.addAkibaEvent({ id: 'mysterious_banana_3', title: '好感度3', locations: ['park'], floorId: 'mysterious_banana_3', once: true }); }"
+          "function": "function () { core.plugin.addAkibaEvent({ id: 'mysterious_banana_4', title: '好感度4', locations: ['park'], floorId: 'mysterious_banana_4', once: true }); }"
         },
         {
           "kind": "akiba.event.complete",
-          "eventId": "mysterious_banana_2"
+          "eventId": "mysterious_banana_3"
         },
         {
           "kind": "akiba.return"
         }
-      ]
-    },
-    {
+      ],
       "id": "mysterious_banana_3",
+      "title": "好感度3",
       "floor": {
         "floorId": "mysterious_banana_3",
         "title": "神秘香蕉人：好感度3",
@@ -953,116 +3650,421 @@
             "y": 0
           }
         ]
-      },
+      }
+    },
+    {
+      "n": "4",
+      "start": 620,
       "events": [
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "banana_sad.png"
+          "kind": "bgm.play",
+          "name": "bossa_casual_shop.mp3",
+          "keep": true
         },
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "banana_eevee_belt.jpg",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_park_center.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
+            0,
+            0,
+            544,
+            416
+          ]
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "async": true,
-          "time": 0
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "恩，不知道神秘香蕉人和超濃起司的恩怨究竟怎麼樣了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "比起BE我還是比較喜歡HE阿，希望他們能好好談開"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平在公園尋找了一番，找到了神秘香蕉人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "神秘香蕉人，在下來了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "阿，是梗平桑，你終於來了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "痾，超濃起司！你不是被我們打倒了嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "雖然我現在啥都沒有就是個普通人，但如果你陰險卑鄙又小氣的話就來由我來做你的對手"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "不不不，我可不打算戰鬥，我已經改邪歸正了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我可沒有那麼天真，你這種反派就是會這麼說然後等掉進陷阱後從背後捅一刀的類型吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "為什麼你說的那麼具體...我可不是那麼糟糕的人啊"
+        },
+        {
+          "kind": "narration",
+          "text": "就在兩人對峙時，從草叢後傳來神秘香蕉人大吼的聲音"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 634: 下面一句不使用立繪"
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "水伊布被擄走了，請幫幫我找回他。"
+          "text": "喂奇多！你撿到樹枝了嗎？"
         },
         {
-          "kind": "choice",
-          "prompt": "要不要協助神秘香蕉人？",
-          "options": [
-            {
-              "text": "協助",
-              "events": [
-                {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "好，告訴我你需要什麼幫助。"
-                }
-              ]
-            },
-            {
-              "text": "拒絕",
-              "events": [
-                {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "我還是先離開這裡吧。"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "banana_muscle_keng.jpg",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "async": true,
-          "time": 0
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "喔喔，我沒撿到樹枝但撿到梗平桑了！"
         },
         {
           "kind": "comment",
-          "text": "source: project/story/神秘香蕉人.txt lines 332-619"
+          "text": "source line 637: 下面一句不使用立繪"
         },
         {
-          "kind": "function.call",
-          "function": "function () { core.plugin.addAkibaEvent({ id: 'mysterious_banana_4', title: '好感度4', locations: ['park'], floorId: 'mysterious_banana_4', once: true }); }"
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "梗平少年嗎？那就把他帶過來吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "就是這樣，你能相信我了嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "唉...好吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "還有，以後請叫我奇多吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "為什麼，你不是拋棄那個名字了嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "超濃起司",
+          "text": "沒什麼...只是...我把它重新撿了回來而已"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 644: 過場"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_park_center.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "comment",
+          "text": "source line 646: CG：大團圓 出現"
+        },
+        {
+          "kind": "narration",
+          "text": "走進公園中央，只見牛頭馬面、香蕉人、貓科雙人組和伊布們都出現並圍在一起談天"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 648: CG：大團圓 消失"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "梗平少年，你如約而至了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒錯，你處理完了嗎，還有這是怎麼回事？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "這個嘛...只是我發現現在撿回夢想也不是甚麼壞事"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我以為你是反對派，怎麼突然這麼說"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "在你離開後，我和奇多重新聊了會，我才發覺自己辜負了那些把夢想託付給我的人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "所以，這次我想再來一次，不是用伊布們的力量，而是自己來建立新世界"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "就從這座公園開始"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這樣啊，只要沒影響到別人是挺好的，不過拜託你別對路人作神祕問答了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "這個......"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奇多",
+          "text": "很棒對吧！不愧是香蕉人看好的獸控新人，你很懂這個選址的意義呢"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奇多",
+          "text": "首先這個公園本身就有足夠的森林給動物們居住，再來鄰近秋葉原也很適合招集新人，再來..."
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等等，奇多，我明白了，再來我可不是甚麼獸控新人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奇多",
+          "text": "沒事的，我完全明白你因為害羞而不承認，但只要你加入我們就能創造...！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "好了好了，梗平少年很為難的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "抱歉，在牽扯到這件事上奇多有點容易變得偏執"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我知道你也有自己的目標，所以這個，請拿著吧"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 665: CG：樹枝 出現"
+        },
+        {
+          "kind": "narration",
+          "text": "獲得了 猛獸♂樹枝"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 667: CG：樹枝 消失"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這個？不是一根普通的樹枝嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "你可以把他當成我們獸控間的信物來使用，不管發生甚麼事，只要折斷我們就會立刻趕過去幫你"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這樣啊，幫大忙了，感謝你"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "不，要是沒有你幫忙我就不會重新拾起這個未完成的夢想以及與故友的友情"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "我才應該說謝謝你，梗平少年"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喔，不客氣，那掰拉，獸控香蕉人"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "好，我們隨時歡迎你，再見"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 675: 過場"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奇多",
+          "text": "這樣直接讓他走好嗎？他很能幹吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "這樣就好，我們已經被他幫得夠多了，他肯定也在追逐自己的夢想吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "要是強行留他下來不就重蹈覆轍了嗎？再說，他可只是個路過的一般人啊"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奇多",
+          "text": "嗚，你這樣說確實，看來我還得改改這個習慣"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "神秘香蕉人",
+          "text": "沒事，這次我們有很多時間慢慢去修正的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "獸控香蕉人",
+          "text": "好大家，來撿樹枝囉！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "所有獸控",
+          "text": "喔喔喔！！！"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 683: 過場"
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "banana_grass_bg.png",
+          "loc": [
+            0,
+            0,
+            544,
+            416
+          ]
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "......"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "是包餃子結局阿~隨然並沒有討厭，但總感覺缺了甚麼"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "象徵故事還沒結束的彩蛋，又或是新敵人的登場之類的"
+        },
+        {
+          "kind": "narration",
+          "text": "就在這種時候，草叢突然傳來了沙沙聲"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "嗯！？甚麼...難道說"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "甚麼阿，是伊布阿"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 691: CG：伊布_草叢 出現"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "伊布",
+          "text": "Eeveeeee~"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 693: CG：伊布_草叢 消失"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "喔，你是想和我道謝嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我做的事沒甚麼大不了的，不過是做了一般人都能做到的事罷了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哼，那麼，再見了"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 697: CG：颯爽的梗平 出現"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(現在的我，帥得要死阿)"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 699: CG：颯爽的梗平 消失"
+        },
+        {
+          "kind": "comment",
+          "text": "source: project/story/神秘香蕉人.txt lines 620-end; full transcription"
         },
         {
           "kind": "akiba.event.complete",
-          "eventId": "mysterious_banana_3"
+          "eventId": "mysterious_banana_4"
         },
         {
           "kind": "akiba.return"
         }
-      ]
-    },
-    {
+      ],
       "id": "mysterious_banana_4",
+      "title": "好感度4",
       "floor": {
         "floorId": "mysterious_banana_4",
         "title": "神秘香蕉人：好感度4",
@@ -1326,114 +4328,7 @@
             "y": 0
           }
         ]
-      },
-      "events": [
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "banana_normal.png"
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "banana_cats.png",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "async": true,
-          "time": 0
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "比起BE我還是比較喜歡HE阿。"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "神秘香蕉人",
-          "text": "這次我想重新拾起未完成的夢想。"
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "banana_branch.jpg",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "async": true,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "banana_eevee_grass.png",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "async": true,
-          "time": 0
-        },
-        {
-          "kind": "comment",
-          "text": "source: project/story/神秘香蕉人.txt lines 620-702; missing CG list remains open"
-        },
-        {
-          "kind": "akiba.event.complete",
-          "eventId": "mysterious_banana_4"
-        },
-        {
-          "kind": "akiba.return"
-        }
-      ]
+      }
     }
   ]
 }

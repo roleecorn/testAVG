@@ -6,6 +6,25 @@ const STORY_IR_VERSION = 1;
 const AVG_MAP_WIDTH = 17;
 const AVG_MAP_HEIGHT = 13;
 const PORTRAIT_CODES = new Set([10, 11, 12, 20]);
+const DEFAULT_AVG_LAYOUT = Object.freeze({
+  kind: "layout.set",
+  value: {
+    avg: true,
+    position: "down",
+    offset: 0,
+    align: "left",
+    bold: true,
+    background: "winskin.png",
+    title: [255, 225, 80, 1],
+    text: [255, 255, 255, 1],
+    titlefont: 22,
+    textfont: 16,
+    lineHeight: 22,
+    time: 10,
+    letterSpacing: 0,
+    animateTime: 120,
+  },
+});
 
 function irToText(node) {
   return node.kind === "dialogue" ? `\t[${node.speaker}]${node.text}` : node.text;
@@ -228,6 +247,11 @@ function normalizeBgmLifecycle(events) {
   return normalized;
 }
 
+function ensureAvgLayout(events) {
+  if (events.some((node) => node.kind === "layout.set")) return events;
+  return [{ ...DEFAULT_AVG_LAYOUT, value: { ...DEFAULT_AVG_LAYOUT.value } }, ...events];
+}
+
 const ALLOWED_KINDS = new Set([
   "narration", "dialogue", "layout.set", "bgm.play", "bgm.pause", "bgm.resume",
   "sound.play", "sound.stop", "background.show", "image.show", "image.hide", "wait",
@@ -385,7 +409,7 @@ function bundleToFloors(bundle) {
   const transitions = bundle.presentation?.transitions || {};
   return bundle.scenes.map((scene) => ({
     ...scene.floor,
-    eachArrive: irToEvents(normalizeBgmLifecycle(normalizePortraitLifecycle(scene.events)), transitions),
+    eachArrive: irToEvents(ensureAvgLayout(normalizeBgmLifecycle(normalizePortraitLifecycle(scene.events))), transitions),
   }));
 }
 

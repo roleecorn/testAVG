@@ -213,5 +213,5 @@
 
 | 角色 | 權威來源 | Story IR | floor／入口 | 圖片狀態 |
 |---|---|---|---|---|
-| 416 | `project/story/416.txt`，SHA `ade986638ac4ad8f24710a30f1c7fceb42b10614b4935404a6e9f2bdd94fdb43` | `project/story-ir/character/416.json` | `416_1`～`416_4`，`police_station` | 六表情差分已接入 |
+| 可露凱（原 416） | `project/story/可露凱.txt`，SHA `af70af9d7b4b72a30c46d8279f076032b3975e6291aae2b46774a330a3bd57c2` | `project/story-ir/character/kelukai.json` | `kelukai_1`～`kelukai_4`，`police_station` | 完整來源已轉入 IR；runtime slug `kelukai` |
 | 神秘香蕉人 | `project/story/神秘香蕉人.txt`，SHA `6c2fa82800b144db0ba6d7ede21e03f066a6f3b0228ecca6f47ecd9ce0bc0157` | `project/story-ir/character/mysterious-banana.json` | `mysterious_banana_1`～`mysterious_banana_4`，`park` | 六表情、CG／背景裁切已接入；來源列出的缺少 CG 另列 TODO |

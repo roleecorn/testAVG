@@ -13,10 +13,10 @@
   },
   "activeEvents": [
     {
-      "id": "416_1",
+      "id": "kelukai_1",
       "title": "抓到大的才有意義",
       "locations": ["police_station"],
-      "floorId": "416_1",
+      "floorId": "kelukai_1",
       "once": true
     },
     {
