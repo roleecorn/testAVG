@@ -7,6 +7,10 @@ description: Root coordinator for creating, converting, and editing AVG content 
 
 Coordinate H5 Mota AVG work from one root and hand atomic artifacts to canonical references or child Skills. Keep map mechanics minimal unless the user explicitly requests normal tower gameplay.
 
+## Direct-edit scope
+
+Unless the user explicitly authorizes it in the current request, the Agent may directly edit only Agent-owned Story IR under `project/story-ir/`, generators／emitters／validators and necessary tests／tools, and documentation or metadata including TODO files. The Agent must not directly patch runtime／engine／plugin code, shared registrations, assets, or handwritten scene／floor／event output. Running an approved generator after updating validated IR is allowed; generated scene／floor／event changes are generator output, not direct Agent edits. Follow the one-way chain `Story IR → validator → generator → scene/floor`.
+
 ## Primary Decision Principle
 
 Every create or update task is story-demand-driven, not only ZIP imports. Decide in this fixed direction: explicit user requirements and authoritative story source → Story IR/scene narrative, interaction, and presentation requirements → asset and implementation selection, generation, or traceable placeholder → runtime registration, integration, and validation. Existing assets, floors, filenames, registrations, tool convenience, ZIP contents, or prior implementations must never reverse-shape, omit, expand, or replace the story requirements. When no story source exists, derive the required behavior from the user's explicit request before choosing implementation or assets.

@@ -3,6 +3,7 @@
 這份清單只保存所有分支共用的交付檢查。圖片、樓層、BGM、CG、表情圖、ZIP 與 Akiba 等專用驗收，必須讀取本次實際使用之 reference／子 Skill 的 `Validation` 或驗收段落，不在此重複。
 
 - 已讀取並遵守本次實際使用的每一個 reference／子 Skill 驗收段落。
+- 除非有使用者當次明確授權，本次沒有直接修改 runtime／引擎／插件、共用註冊、素材或手寫 scene／floor／event；若出現衍生檔變更，已確認其只由已驗證 Story IR 執行 generator 產生，沒有手動 patch 生成結果。
 - 本次所有新增與更新都遵守「使用者明確需求與權威劇情來源 → Story IR／scene 需求 → 素材與實作 → runtime 接入與驗證」；每項實作／素材都能反查需求依據，每項需求都有實作或依規定留下阻塞／TODO，沒有由現有素材、floor、資料登錄、工具或舊實作反向增刪或扭曲劇情。
 - `project/mainStory/` 與 `project/story/*.txt` 沒有任何 Agent 自行編修、局部 patch、補寫、潤稿、修錯字、格式化、刪除、搬移、重新命名或由衍生物反向改寫；若本次有來源檔變更，只能是可追溯完整來源的新增或整檔覆蓋。`project/story/manifest.md` 與 `TODO.md` 僅作 metadata，沒有反向改寫來源。
 - 本次新增或整檔覆蓋的來源檔已核對輸入內容與 SHA-256，並與對應 Story IR、scene／floor 同一內容 commit 提交；來源若早已由外部 commit 提交，則未重複 staging。

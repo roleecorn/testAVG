@@ -4,6 +4,8 @@
 
 ## 最高權限修改權責
 
+- 除非使用者當次明確授意，Agent 只能直接修改 `project/story-ir/` 的 Story IR、生成器／emitter／validator 及必要測試／工具，以及規範、reference、README、TODO、question、manifest、驗證紀錄等文件與 metadata。Agent 不得直接 patch runtime、引擎、插件、共用註冊、素材或手寫的 scene／floor／event 輸出。
+- 「使用生成器」不算 Agent 直接修改：Agent 可在已驗證 IR 後執行既有 generator，讓其確定性產生 scene／floor／engine event；這些衍生變更仍必須由 `Story IR → validator → generator` 產生，不得手動補改生成結果。
 - `project/story-ir/` 的 IR 檔案，有且僅能由 Agent 依完整來源、上下文與 Git log 進行語意修改；任何自動化程式只能讀取、驗證，或由已驗證 IR 產出衍生 floor／engine event。
 - `project/mainStory/` 與 `project/story/` 的權威來源檔案內容，有且僅能由真實使用者修改或提供。Agent 只能原樣落地使用者提供的完整內容，不得自行改寫或合併局部修訂。
 

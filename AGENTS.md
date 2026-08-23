@@ -2,6 +2,16 @@
 
 這份文件是所有 AI Agent 的專案入口，只保留路由、優先序與不可違反的全域規則。功能實作規範的唯一真實來源是 `.codex/skills/mota-avg-editor/references/`；不得在其他目錄維護平行副本。
 
+## Agent 直接修改範圍
+
+除非使用者當次明確授意，Agent 只能直接修改以下範圍：
+
+- `project/story-ir/` 內由 Agent 維護的 Story IR。
+- 既有生成器、emitter、validator 與其必要測試／工具。
+- 規範、reference、README、TODO、question、manifest、驗證紀錄等文件與 metadata。
+
+Agent 不得直接修改 runtime、引擎、插件、共用註冊、素材或手寫的 scene／floor／event 輸出。若已驗證的 IR 與生成器產生衍生檔案，該衍生檔案的變更屬於「使用生成器」的結果，不視為 Agent 直接修改；流程仍必須遵守 IR → validator → generator → scene／floor 的單向鏈。若需求需要直接修改上述受限範圍，必須先取得使用者當次明確授權。
+
 ## 最高權限：IR 與權威來源的修改權責
 
 以下兩條規則高於本文件其他段落、任何 Skill、reference、TODO、範例與歷史資料：
