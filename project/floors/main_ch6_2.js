@@ -270,6 +270,18 @@ main.floors.main_ch6_2=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -312,11 +324,6 @@ main.floors.main_ch6_2=
                 0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
             "time": 0
         },
         {
@@ -365,6 +372,11 @@ main.floors.main_ch6_2=
             "time": 0
         },
         "\t[梗平]不！！！！！！！！！！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "setText",
             "avg": true,
@@ -425,36 +437,41 @@ main.floors.main_ch6_2=
             "time": 0
         },
         "\t[梗平]在下......什麼都守護不了嗎？",
-        "正當所有人都在發楞，東山從字裡行間發現了關鍵訊息",
         {
             "type": "hideImage",
             "code": 10,
+            "time": 0
+        },
+        "正當所有人都在發楞，東山從字裡行間發現了關鍵訊息",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[東山]嗯？這個大人物不就是那個跟梗平關係很好的女性嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
             "time": 0
         },
         {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]嗯？這個大人物不就是那個跟梗平關係很好的女性嗎？",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]只要能夠讓他放棄舉辦演唱會，就可以如期舉辦Comike了吧",
         {
@@ -467,13 +484,13 @@ main.floors.main_ch6_2=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]簡單，我們需要找到一個在他的內心有足夠分量的人",
         {
@@ -486,34 +503,39 @@ main.floors.main_ch6_2=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]沒錯，只要梗平提早結婚，成了她的丈夫",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]那麼她很自然的就會聽取他的建議讓演唱會改期",
-        "表妹在此刻把雙手放在了梗平的肩上，用似笑非笑的表情看著他",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[東山]那麼她很自然的就會聽取他的建議讓演唱會改期",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "表妹在此刻把雙手放在了梗平的肩上，用似笑非笑的表情看著他",
         {
             "type": "showImage",
             "code": 11,
@@ -526,23 +548,23 @@ main.floors.main_ch6_2=
             "time": 0
         },
         "\t[表妹]表哥啊，這件事情只有你才能做到啊",
-        "所有人也在同時把視線轉向了梗平，並把梗平圍了起來",
         {
             "type": "hideImage",
             "code": 11,
             "time": 0
         },
+        "所有人也在同時把視線轉向了梗平，並把梗平圍了起來",
         {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]假面騎士啊，Comike只能由你來拯救了",
         {
@@ -562,6 +584,11 @@ main.floors.main_ch6_2=
             "time": 0
         },
         "\t[梗平]停停停停",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -591,6 +618,11 @@ main.floors.main_ch6_2=
             "time": 0
         },
         "\t[梗平]怎麼突然就要在下結婚了啊",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "梗平的內心，在此刻萌生了立刻逃跑的想法",
         {
             "type": "choices",
@@ -628,6 +660,11 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         "\t[梗平]再也不見！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "playBgm",
                             "name": "BGMKyoheiTranslation.mp3",
@@ -692,49 +729,59 @@ main.floors.main_ch6_2=
                         },
                         "梗平用一次完美的騎士跳逃出了人群的包圍，然後直線衝出了ANIsister",
                         {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "dongshan_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[東山]嘖，跑太快了，來不及封鎖",
+                        {
                             "type": "hideImage",
-                            "code": 10,
+                            "code": 20,
                             "time": 0
                         },
                         {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[東山]嘖，跑太快了，來不及封鎖",
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]那看來只能用另一招了",
                         {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]對付渣男不需要收手",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "comment",
                             "text": "【過場】"
@@ -757,11 +804,6 @@ main.floors.main_ch6_2=
                         },
                         "梗平一路上避開了警察，成功在車站被封鎖前離開了秋葉原",
                         {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -774,6 +816,11 @@ main.floors.main_ch6_2=
                         },
                         "\t[梗平]總算逃出來了，結婚是不可能結婚的，這輩子都不會結的",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -785,6 +832,11 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         "\t[梗平]話說回來，我為甚麼要結婚來著",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -831,6 +883,11 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         "\t[梗平]反正總會有辦法的",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "懷著這樣心態梗平開始等待，期望有其他人出現解決問題",
                         "然而什麼都沒有被解決，大家依舊無法前往Comike",
                         "與此同時梗平驚恐的發現，他在秋葉原被通緝了",
@@ -848,11 +905,6 @@ main.floors.main_ch6_2=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         "\t[BE]（手機）逃兵",
                         {
@@ -901,34 +953,39 @@ main.floors.main_ch6_2=
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]誒，你跟她的戀情我可是全程都有在關注的啊",
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[東山]無論你有沒有那個意思，你都講出這樣的話害人家誤會了",
-                        "東山隨後把梗平那些令人誤解的發言講述給了在場眾人",
                         {
                             "type": "hideImage",
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "dongshan_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[東山]無論你有沒有那個意思，你都講出這樣的話害人家誤會了",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        "東山隨後把梗平那些令人誤解的發言講述給了在場眾人",
                         "\t[克莉絲]玩弄女人心啊，你不結婚的話真的是渣男了",
                         {
                             "type": "showImage",
@@ -951,13 +1008,13 @@ main.floors.main_ch6_2=
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]可是無論是從她還是從我們的視角看這都是戀人的邀約啊",
                         {
@@ -994,12 +1051,12 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         "\t[表妹]你如果就這樣拋棄人家的話，我會代替阿姨揍你一頓的",
-                        "聽到了母親的名頭，梗平不由自主地顫抖了起來",
                         {
                             "type": "hideImage",
                             "code": 11,
                             "time": 0
                         },
+                        "聽到了母親的名頭，梗平不由自主地顫抖了起來",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1021,34 +1078,39 @@ main.floors.main_ch6_2=
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]你如果跟她結婚的話，就可以成為真正的假面騎士喔",
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[東山]以她家裡的實力，弄出一套真的能變身的假面騎士腰帶不是難事",
-                        "聽見了這句話的梗平，內心的某個部分，破防了",
                         {
                             "type": "hideImage",
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "dongshan_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[東山]以她家裡的實力，弄出一套真的能變身的假面騎士腰帶不是難事",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        "聽見了這句話的梗平，內心的某個部分，破防了",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1157,65 +1219,85 @@ main.floors.main_ch6_2=
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]......",
                         {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]前面只是開開玩笑而已，現在看來你的覺悟就只有這種程度而已",
                         {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]且不論假面騎士確實存在這一點，對你而言重要的不是他存在與否吧",
                         {
-                            "type": "showImage",
+                            "type": "hideImage",
                             "code": 20,
-                            "image": "dongshan_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
-                        "\t[東山]你不是追逐著假面騎士那一份一往無前的勇氣才走到今天的嗎？",
                         {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
+                        },
+                        "\t[東山]你不是追逐著假面騎士那一份一往無前的勇氣才走到今天的嗎？",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "dongshan_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
                         },
                         "\t[東山]你剛剛說的話不只是否認假面騎士的存在，你連自己的信念都要否定嗎？",
                         {
@@ -1244,65 +1326,85 @@ main.floors.main_ch6_2=
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]今天你去結婚這件事不只是拯救Comike而已",
                         {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]也是你作為一個男人該負起的責任",
                         {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]而且啊，貝琪真的是一個非常好的女孩",
                         {
-                            "type": "showImage",
+                            "type": "hideImage",
                             "code": 20,
-                            "image": "dongshan_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
-                        "\t[東山]願意這樣耐心聆聽、欣賞並參與你的愛好的人，以後可能沒有了",
                         {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
+                        },
+                        "\t[東山]願意這樣耐心聆聽、欣賞並參與你的愛好的人，以後可能沒有了",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "dongshan_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
                         },
                         "\t[東山]今村梗平，你到底在害怕什麼",
                         {
@@ -1340,6 +1442,11 @@ main.floors.main_ch6_2=
                         },
                         "\t[梗平]可是在下害怕啊，在下害怕在下沒有那個能力",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -1360,78 +1467,103 @@ main.floors.main_ch6_2=
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]你的話肯定做得到的",
                         {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]雖然我們時不時就會挖苦你兩句",
                         {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]雖然你平常很孬，還喜歡亂喝酒",
                         {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]但你，我的朋友，你是一個很有正義感又有擔當的人",
                         {
-                            "type": "showImage",
+                            "type": "hideImage",
                             "code": 20,
-                            "image": "dongshan_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
-                        "\t[東山]我們都相信你作為假面騎士給大家帶來幸福的能力",
                         {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
+                        },
+                        "\t[東山]我們都相信你作為假面騎士給大家帶來幸福的能力",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "dongshan_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
                         },
                         "\t[東山]所以，不要害怕，你可以的",
                         {
@@ -1469,6 +1601,11 @@ main.floors.main_ch6_2=
                         },
                         "\t[梗平]在下會負起責任的",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "setText",
                             "avg": true,
                             "position": "down",
@@ -1497,11 +1634,6 @@ main.floors.main_ch6_2=
                             "animateTime": 120
                         },
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -1513,6 +1645,11 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         "\t[梗平]在下不會逃跑的，在下做得到",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "setText",
                             "avg": true,
@@ -1542,21 +1679,16 @@ main.floors.main_ch6_2=
                             "animateTime": 120
                         },
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]這就對了，假面騎士梗平先生",
                         {
@@ -1594,16 +1726,16 @@ main.floors.main_ch6_2=
                         },
                         "\t[梗平]什麼話這是，在下一直都這樣",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "playBgm",
                             "name": "bossa_casual_shop.mp3",
                             "keep": true
                         },
                         "在結束了友人們的圍攻後，梗平的大腦從死機狀態運轉了起來",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1634,6 +1766,11 @@ main.floors.main_ch6_2=
                         },
                         "\t[梗平](為什麼大家，尤其是東山，著急要在今天完婚呢)",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -1646,6 +1783,11 @@ main.floors.main_ch6_2=
                         },
                         "\t[梗平](訂婚不是也可以有一樣的效果嗎？)",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -1657,12 +1799,12 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         "\t[梗平](可惡，一定有陰謀，果然這時候只能......)",
-                        "梗平趁在場的眾人放下戒心的時候，衝出了眾人的包圍圈",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗平趁在場的眾人放下戒心的時候，衝出了眾人的包圍圈",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1702,28 +1844,38 @@ main.floors.main_ch6_2=
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]不用",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]他跑不了多遠的",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         "東山看著梗平的背影，面帶微笑說道"
                     ]
                 }
@@ -1742,17 +1894,5 @@ main.floors.main_ch6_2=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

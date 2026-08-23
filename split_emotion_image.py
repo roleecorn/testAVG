@@ -7,8 +7,11 @@ The expected order is:
     sad   / surprised
     panic / normal
 
-Each grid cell is cropped inward by a small inset to avoid colored borders,
-then validated and resized proportionally to fit within a fixed maximum size.
+The splitter locates the green separator gutters around the expected grid
+lines instead of blindly cutting at the mathematical thirds. This prevents a
+figure whose shoes sit slightly below a nominal row boundary from leaking into
+the next expression. Each resulting cell is then validated and resized
+proportionally to fit within a fixed maximum size.
 Output files are written next to the source image as:
 <original_stem>_<emotion><original_suffix>
 
@@ -30,6 +33,11 @@ EMOTIONS = (
 )
 
 
+def _is_green_background(pixel: tuple[int, int, int]) -> bool:
+    r, g, b = pixel
+    return g >= r * 1.35 and g >= b * 1.25
+
+
 def _foreground_bounds(tile: Image.Image):
     """Return the non-background bounds, or None for an empty tile.
 
@@ -42,10 +50,9 @@ def _foreground_bounds(tile: Image.Image):
     points = []
     for y in range(rgb.height):
         for x in range(rgb.width):
-            r, g, b = pixels[x, y]
             # The generated green screen has gentle illumination variation,
             # so compare channel dominance rather than one exact RGB value.
-            if not (g >= r * 1.35 and g >= b * 1.25):
+            if not _is_green_background(pixels[x, y]):
                 points.append((x, y))
     if not points:
         return None
@@ -53,10 +60,66 @@ def _foreground_bounds(tile: Image.Image):
     return min(xs), min(ys), max(xs), max(ys)
 
 
+def _find_safe_split(image: Image.Image, nominal: int, axis: str, cell_size: int) -> int:
+    """Find the centre of a green gutter close to a nominal grid line."""
+    rgb = image.convert("RGB")
+    pixels = rgb.load()
+    radius = max(8, cell_size // 4)
+    axis_limit = rgb.width if axis == "x" else rgb.height
+    span = rgb.height if axis == "x" else rgb.width
+    start = max(1, nominal - radius)
+    end = min(axis_limit - 1, nominal + radius)
+    max_foreground = max(2, span // 100)
+
+    safe = []
+    for position in range(start, end + 1):
+        if axis == "x":
+            foreground = sum(
+                not _is_green_background(pixels[position, y])
+                for y in range(rgb.height)
+            )
+        else:
+            foreground = sum(
+                not _is_green_background(pixels[x, position])
+                for x in range(rgb.width)
+            )
+        if foreground <= max_foreground:
+            safe.append(position)
+
+    if not safe:
+        raise ValueError(
+            f"No green separator gutter found near the expected {axis}-axis "
+            f"grid line at {nominal}; fix the expression sheet."
+        )
+
+    runs = []
+    run_start = previous = safe[0]
+    for position in safe[1:]:
+        if position != previous + 1:
+            runs.append((run_start, previous))
+            run_start = position
+        previous = position
+    runs.append((run_start, previous))
+
+    # Prefer a broad uninterrupted gutter; break ties by proximity to the
+    # expected split. Choosing its centre keeps both neighbouring figures away
+    # from the final crop edge.
+    best_start, best_end = max(
+        runs,
+        key=lambda run: (run[1] - run[0] + 1, -abs((run[0] + run[1]) / 2 - nominal)),
+    )
+    if best_end - best_start + 1 < 4:
+        raise ValueError(
+            f"Green separator gutter near {axis}={nominal} is too narrow; "
+            "fix the expression sheet."
+        )
+    return (best_start + best_end) // 2
+
+
 def split_emotion_sheet(
     image_path: Path,
     keep_original: bool = False,
-    inset: int = 32,
+    inset: int = 0,
     max_width: int = 512,
     max_height: int = 512,
 ) -> list[Path]:
@@ -84,14 +147,19 @@ def split_emotion_sheet(
                 f"Max size must be positive, got {max_width}x{max_height}."
             )
 
+        split_x = _find_safe_split(image, tile_width, "x", tile_width)
+        split_y_1 = _find_safe_split(image, tile_height, "y", tile_height)
+        split_y_2 = _find_safe_split(image, tile_height * 2, "y", tile_height)
+        x_edges = (0, split_x, width)
+        y_edges = (0, split_y_1, split_y_2, height)
         outputs: list[Path] = []
 
         for row, emotion_row in enumerate(EMOTIONS):
             for col, emotion in enumerate(emotion_row):
-                left = col * tile_width + inset
-                upper = row * tile_height + inset
-                right = (col + 1) * tile_width - inset
-                lower = (row + 1) * tile_height - inset
+                left = x_edges[col] + inset
+                upper = y_edges[row] + inset
+                right = x_edges[col + 1] - inset
+                lower = y_edges[row + 1] - inset
                 crop = image.crop((left, upper, right, lower))
                 bounds = _foreground_bounds(crop)
                 if bounds is not None:
@@ -102,7 +170,7 @@ def split_emotion_sheet(
                             or max_y >= crop.height - edge_margin):
                         raise ValueError(
                             f"Foreground touches the safe boundary for {emotion} "
-                            f"at row {row}, column {col}; increase inset or fix the reference sheet."
+                            f"at row {row}, column {col}; fix the reference sheet."
                         )
                 crop.thumbnail((max_width, max_height), Image.Resampling.LANCZOS)
                 output_path = image_path.with_name(
@@ -130,8 +198,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--inset",
         type=int,
-        default=32,
-        help="Pixels to crop inward from each side of every tile. Defaults to 32.",
+        default=0,
+        help="Optional pixels to crop inward after detecting safe green gutters. Defaults to 0.",
     )
     parser.add_argument(
         "--max-width",

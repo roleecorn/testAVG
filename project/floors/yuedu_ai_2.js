@@ -311,18 +311,6 @@ main.floors.yuedu_ai_2=
             "animateTime": 120
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -337,14 +325,7 @@ main.floors.yuedu_ai_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -360,15 +341,8 @@ main.floors.yuedu_ai_2=
         "\t[月讀愛]哦哦，梗平呢！終於想找個酒友嗎？怎樣，累了吧，先來喝一杯，呼呼～",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -385,14 +359,7 @@ main.floors.yuedu_ai_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -408,15 +375,8 @@ main.floors.yuedu_ai_2=
         "\t[月讀愛]啊？不合口味嗎？生命之水、威士忌那些更適合你嗎？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -433,14 +393,7 @@ main.floors.yuedu_ai_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -456,15 +409,8 @@ main.floors.yuedu_ai_2=
         "\t[月讀愛]嗯哼哼，哇哈哈！真不錯呢！叫咱做小愛吧～",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -481,14 +427,7 @@ main.floors.yuedu_ai_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -504,15 +443,8 @@ main.floors.yuedu_ai_2=
         "\t[月讀愛]哇哈哈，真不錯呢！有什麼想趁著酒會想說的嗎？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -529,14 +461,7 @@ main.floors.yuedu_ai_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -552,15 +477,8 @@ main.floors.yuedu_ai_2=
         "\t[月讀愛]哦…哦也？真是不容易呢！要大姐姐咱給你安慰安慰嗎？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -577,14 +495,7 @@ main.floors.yuedu_ai_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -600,29 +511,10 @@ main.floors.yuedu_ai_2=
         "\t[月讀愛]哇哈哈！趁著酒勁一股腦盡情說個痛快吧！不醉無歸？哇哈哈！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "「梗平和月讀愛進行了一場暢快酒會的樣子，壓力值下降了。」",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "function",
             "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_2');\n}"

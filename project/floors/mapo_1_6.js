@@ -270,6 +270,18 @@ main.floors.mapo_1_6=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -352,6 +364,11 @@ main.floors.mapo_1_6=
             "time": 0
         },
         "\t[梗平]頭好痛......嘔嘔嘔嘔嘔",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "完全咎由自取的宿醉朝梗平襲來",
         {
             "type": "showImage",
@@ -382,7 +399,24 @@ main.floors.mapo_1_6=
             "time": 0
         },
         "\t[梗平]必須盡快找到博士幫我解決掉這個問題才行",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "梗平自顧自地說了些甚麼之後，拿起了自己的手機",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]什麼？已經這個時間了",
         {
             "type": "hideImage",
             "code": 10,
@@ -399,19 +433,12 @@ main.floors.mapo_1_6=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]什麼？已經這個時間了",
+        "\t[梗平]遲到的話又要被揍了啊，得快點回去",
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
             "time": 0
         },
-        "\t[梗平]遲到的話又要被揍了啊，得快點回去",
         "梗平連滾帶爬的跑回了道路上",
         {
             "type": "comment",
@@ -446,6 +473,11 @@ main.floors.mapo_1_6=
         },
         "\t[梗平]這麼說來炭烤蜜瓜兔子會是甚麼類型的咖啡廳呢？",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -457,6 +489,11 @@ main.floors.mapo_1_6=
             "time": 0
         },
         "\t[梗平]希望白天的菜單裡有酒啊......",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "梗平拖著宿醉的身軀慢慢走向了咖啡廳",
         "但8月的陽光摧殘著他的意志，秋葉原的熱力直撲臉龐",
         "他就如同被撞擊一般......什麼？真的有東西撞過來了？",
@@ -491,6 +528,11 @@ main.floors.mapo_1_6=
             "time": 0
         },
         "\t[梗平]可惡，會不會走路啊！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "梗平一邊說著小物臭的發言，一邊走回了炭烤蜜瓜兔子",
         {
             "type": "comment",
@@ -515,11 +557,6 @@ main.floors.mapo_1_6=
         "梗平走進咖啡廳後，發現了兩個藍色頭髮的女孩",
         "其中一個正是昨天拿著兔子玩偶的店長......",
         "等等，兔子玩偶越靠越近了",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
         "\t[三角]你偷喝酒了對吧，酒氣太濃了",
         {
             "type": "showImage",
@@ -629,12 +666,12 @@ main.floors.mapo_1_6=
             "time": 0
         },
         "\t[梗平]誒？三角店長原來你還能......",
-        "聲音的來源變回了手上的兔子玩偶，低沉的聲音重新出現",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "聲音的來源變回了手上的兔子玩偶，低沉的聲音重新出現",
         "\t[三角]不要問",
         {
             "type": "showImage",
@@ -648,12 +685,12 @@ main.floors.mapo_1_6=
             "time": 0
         },
         "\t[梗平]......",
-        "隨後智乃開始慢慢打掃起了店裡，但時不時用懷疑的眼光朝梗平看一眼",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "隨後智乃開始慢慢打掃起了店裡，但時不時用懷疑的眼光朝梗平看一眼",
         {
             "type": "showImage",
             "code": 10,
@@ -666,12 +703,12 @@ main.floors.mapo_1_6=
             "time": 0
         },
         "\t[梗平]你聽我解釋，大哥哥只是去補充假面騎士的燃料而已",
-        "然後更冰冷的視線掃了過來",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "然後更冰冷的視線掃了過來",
         {
             "type": "showImage",
             "code": 10,
@@ -723,12 +760,12 @@ main.floors.mapo_1_6=
             "time": 0
         },
         "\t[梗平](不行，得趕快挽回在下的形象才行)",
-        "於是梗平度過了一個充實的上午，智乃視線的溫度也持續回升",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "於是梗平度過了一個充實的上午，智乃視線的溫度也持續回升",
         {
             "type": "showImage",
             "code": 10,
@@ -741,12 +778,12 @@ main.floors.mapo_1_6=
             "time": 0
         },
         "\t[梗平](還好還好，第一次見面就被討厭的事情應該不會發生了)",
-        "就在此時，兩個小孩推了門進來",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "就在此時，兩個小孩推了門進來",
         "\t[IB]智乃！",
         "\t[智乃]IB、柯南，怎麼了",
         "\t[小黑]IB的哥哥從昨天開始就不見了，所以想要來拜託你一起找",
@@ -766,6 +803,11 @@ main.floors.mapo_1_6=
         },
         "\t[梗平]誒？",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "choices",
             "text": "請選擇。",
             "choices": [
@@ -773,11 +815,6 @@ main.floors.mapo_1_6=
                     "text": "路上小心喔～",
                     "action": [
                         "梗平剛說完後，就看見三角店長蓄好了力",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         "\t[三角]給你機會你不中用啊",
                         {
                             "type": "showImage",
@@ -809,6 +846,11 @@ main.floors.mapo_1_6=
                             "time": 0
                         },
                         "\t[梗平]我只是覺得要培養小朋友的自主......",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 30,
@@ -849,11 +891,6 @@ main.floors.mapo_1_6=
                             "time": 10,
                             "letterSpacing": 0,
                             "animateTime": 120
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         "\t[三角]小兔子暗黑無限破！",
                         {
@@ -976,12 +1013,12 @@ main.floors.mapo_1_6=
                             "time": 0
                         },
                         "\t[梗平]走，你們跟著在下走",
-                        "話說完梗平就跑出了門，三小隻也跟著走了出去",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "話說完梗平就跑出了門，三小隻也跟著走了出去",
                         "\t[三角]聽起來已經推論出了大概，但總感覺會不太順利呢",
                         "\t[三角]算了，應該是錯覺"
                     ]
@@ -1001,17 +1038,5 @@ main.floors.mapo_1_6=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

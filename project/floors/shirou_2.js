@@ -304,44 +304,8 @@ main.floors.shirou_2=
             "opacity": 1,
             "time": 0
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "士郎的打鐵聲源源不絕，只需要經過附近梗平已經能準確定位到士郎來打鐵的秘密(?)基地",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "梗平興高采烈地湊上前。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -357,14 +321,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -380,15 +337,8 @@ main.floors.shirou_2=
         "\t[士]打鐵不單止需要一時的學習，更要持續不斷的鍛鍊",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -404,15 +354,8 @@ main.floors.shirou_2=
         "\t[士]而且僅僅是這樣水平的話還遠遠不夠去奪冠",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -429,14 +372,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -453,14 +389,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -476,15 +405,8 @@ main.floors.shirou_2=
         "\t[士]沒有的兄弟沒有的，賽制聽說到時候現場會公佈不過用具也要自己攜帶",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -500,15 +422,8 @@ main.floors.shirou_2=
         "\t[士]不過用來煮飯切菜的廚刀，刀形果然還是中式菜刀吧",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -525,14 +440,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -549,14 +457,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -573,14 +474,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -596,15 +490,8 @@ main.floors.shirou_2=
         "\t[士]何ヰ味？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -621,14 +508,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -644,15 +524,8 @@ main.floors.shirou_2=
         "\t[士]還有拍蒜那些的用法啦",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -669,14 +542,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -693,14 +559,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -716,15 +575,8 @@ main.floors.shirou_2=
         "\t[士]是這樣的嗎？這不對吧",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -741,28 +593,9 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "梗平隨後快速翻找手機的相簿",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -775,6 +608,11 @@ main.floors.shirou_2=
             "time": 0
         },
         "\t[梗]士郎！你快看這張！你能打出來嗎？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -795,18 +633,6 @@ main.floors.shirou_2=
             "time": 0
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 20,
             "image": "shirou_normal.png",
@@ -820,19 +646,12 @@ main.floors.shirou_2=
         "\t[士]構造雖然很誇張...重心偏前但如果修改刀脊弧度並重組力學結構的話...好像可行。",
         {
             "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
             "time": 0,
             "async": true
         },
@@ -851,14 +670,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -874,15 +686,8 @@ main.floors.shirou_2=
         "\t[士]按你所說，只要不妨礙切肉的效率就算外型再誇張也無妨。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -898,15 +703,8 @@ main.floors.shirou_2=
         "\t[士]畢竟最終要測試用刀的是我們。所以我們能夠熟練使用類似的刀型就可以了",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -923,14 +721,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -946,15 +737,8 @@ main.floors.shirou_2=
         "\t[士]阿對了，我剛剛收到了其他隊伍的名單你要看看嗎？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -971,14 +755,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -994,15 +771,8 @@ main.floors.shirou_2=
         "\t[士]總括而言現在參賽隊伍包括我們有三隊",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1018,15 +788,8 @@ main.floors.shirou_2=
         "\t[士]另外兩隻的隊名是唐家三少以及蜘蛛巢相親相愛一家親",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1043,14 +806,7 @@ main.floors.shirou_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1066,15 +822,8 @@ main.floors.shirou_2=
         "\t[士]不知道，網上也找不到太多資訊",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1090,15 +839,8 @@ main.floors.shirou_2=
         "\t[士]有傳言說，他們是從其他國家遠道而來為了爭奪隕鐵的人",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1112,6 +854,11 @@ main.floors.shirou_2=
             "time": 0
         },
         "\t[士]不過謝啦，給了我那麼多的靈感。那麼比賽的時候再見吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "function",
             "function": "function () { core.plugin.completeAkibaEvent('shirou_2'); }"

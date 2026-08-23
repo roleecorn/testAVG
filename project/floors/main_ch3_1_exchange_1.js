@@ -270,6 +270,18 @@ main.floors.main_ch3_1_exchange_1=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -352,6 +364,11 @@ main.floors.main_ch3_1_exchange_1=
         },
         "\t[梗平]不行，得快去籌錢才行",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -363,6 +380,11 @@ main.floors.main_ch3_1_exchange_1=
             "time": 0
         },
         "\t[梗平]說是這麼說，該去哪裡工作啊",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "choices",
             "text": "請選擇。",
@@ -392,11 +414,6 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "梗平走入了名為馬的膝蓋的書店裡，店裡的每個人都忙出了殘影",
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -408,12 +425,12 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]你好，我想要來打工",
-                        "其中一個店員，分出了一道分身出現在了梗平前面",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "其中一個店員，分出了一道分身出現在了梗平前面",
                         "\t[書店店員]太好了，你要來幫忙嗎？",
                         "\t[書店店員]這邊一個小時的酬勞是2000円喔",
                         {
@@ -428,13 +445,13 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]沒問題，請交給在下吧，前輩！",
-                        "店員告訴了梗平需要整理的區域後，便把一個箱子放到了梗平的手中",
-                        "在梗平反應過來之前，眼前的殘影就已經消失了",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "店員告訴了梗平需要整理的區域後，便把一個箱子放到了梗平的手中",
+                        "在梗平反應過來之前，眼前的殘影就已經消失了",
                         "\t[書店店員]交給你了喔",
                         {
                             "type": "showImage",
@@ -448,14 +465,14 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]喔！這就交給在下這個假面騎士吧",
-                        "接著梗平便轉身向書山裡走去，朝無盡的工作發起了衝鋒",
-                        "然後",
-                        "四小時後",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "接著梗平便轉身向書山裡走去，朝無盡的工作發起了衝鋒",
+                        "然後",
+                        "四小時後",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -486,6 +503,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平](不僅得處理好書，還得一邊應對客人的提問)",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -497,6 +519,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平](不過這一切都是值得的)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平看著眼前堆成了假面騎士形狀的書山感到了無比的自豪",
                         {
                             "type": "showImage",
@@ -510,6 +537,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平](對了，得讓他們看看才行)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平掏出了自己手機對成果拍了一張照發到了群組裡",
                         {
                             "type": "hideImage",
@@ -526,11 +558,6 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -613,6 +640,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[表妹]（手機）我打小鋼珠賺到了300000",
                         {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 30,
                             "image": "CH3_L92.png",
@@ -630,11 +662,6 @@ main.floors.main_ch3_1_exchange_1=
                             "type": "hideImage",
                             "code": 30,
                             "time": 150
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -657,13 +684,13 @@ main.floors.main_ch3_1_exchange_1=
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]（手機）？",
                         {
@@ -686,6 +713,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]（手機）你竟然先在下一步脫離了窮人的行列嗎？",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -697,6 +729,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]（手機）太可惡了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -714,11 +751,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 250
                         },
                         "正當梗平準備再說點什麼的時候，遠方的前輩喊了一嗓子",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         "\t[書店店員]好像有官員要來檢查了，你去處理一下",
                         {
                             "type": "showImage",
@@ -733,16 +765,16 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]誒？",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "playBgm",
                             "name": "battle_theme_a.mp3",
                             "keep": true
                         },
                         "一個留著黑色直髮的女人走進了店，站到了梗平的正前方",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         "\t[色情刊物檢察官]你是這裡的負責人嗎？我是色情刊物檢察官",
                         "\t[色情刊物檢察官]我要搜查這裡有沒有違法的蘿莉色情刊物",
                         {
@@ -814,6 +846,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]在下知道了，你果然是修卡的人吧",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "setText",
                             "avg": true,
                             "position": "down",
@@ -854,6 +891,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]在下不會向邪惡屈服的！",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "setText",
                             "avg": true,
                             "position": "down",
@@ -881,11 +923,6 @@ main.floors.main_ch3_1_exchange_1=
                             "letterSpacing": 0,
                             "animateTime": 120
                         },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         "\t[色情刊物檢察官]哼，看來就在這個裡面了",
                         "\t[色情刊物檢察官]讓開！",
                         "檢察官向前突進，梗平處處阻攔",
@@ -903,6 +940,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]太好了，東山你來了，這個人是修卡的人",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -925,26 +967,31 @@ main.floors.main_ch3_1_exchange_1=
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]你是誰，我不認識你",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]我要走了",
                         {
@@ -987,6 +1034,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]總算...守住了......",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "檢官不甘心的離開了店裡，梗平心疲力竭的癱倒在地",
                         {
                             "type": "showImage",
@@ -1048,6 +1100,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]不可能，絕對不可能",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "setText",
                             "avg": true,
                             "position": "down",
@@ -1074,11 +1131,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 10,
                             "letterSpacing": 0,
                             "animateTime": 120
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1112,6 +1164,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]你說...什麼？",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "setText",
                             "avg": true,
                             "position": "down",
@@ -1140,11 +1197,6 @@ main.floors.main_ch3_1_exchange_1=
                             "animateTime": 120
                         },
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -1156,6 +1208,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]不不不不不不不不不不！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "setText",
                             "avg": true,
@@ -1203,6 +1260,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平](或許我可以試試去街頭彈唱歌，撐個4天，只要每天賺到10000円就好)",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -1215,6 +1277,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平](就算不賺錢，那就去幹其他活也來得及)",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -1226,6 +1293,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]是時候展現真正的實力了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "comment",
                             "text": "【過場】"
@@ -1249,11 +1321,6 @@ main.floors.main_ch3_1_exchange_1=
                         "數個小時過去了，路上的行人逐漸消失",
                         "梗平打開了裝錢的袋子.....裡面只有寥寥無幾的100円",
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -1266,13 +1333,13 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]什麼鬼，這不是連吃飯的錢都不夠了嘛！",
                         {
-                            "type": "comment",
-                            "text": "TODO: 【下兩句話使用三日月作為立繪】"
-                        },
-                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
+                        },
+                        {
+                            "type": "comment",
+                            "text": "TODO: 【下兩句話使用三日月作為立繪】"
                         },
                         "\t[不知道是誰的？]你那種方式是不行的，這套大夥早就玩爛的了",
                         "\t[不知道是誰的？]看的出來你很想賺錢，要來我們樂團當吉他手嗎，保證你賺大錢",
@@ -1342,6 +1409,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]叫在下梗平好了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平　加入了隊伍",
                         {
                             "type": "comment",
@@ -1362,11 +1434,6 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         "\t[三日月]這就是我們演出加訓練的地方",
                         "梗平一推開門，看見的全是裸男正在一邊剪刀石頭布一邊喝酒",
@@ -1443,12 +1510,12 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]誰要在這種地方工作啊，去你的吧！！",
-                        "三日月一個飛撲，兩個人倒在地上滾作一團",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "三日月一個飛撲，兩個人倒在地上滾作一團",
                         "\t[三日月]這個月已經跑了五個吉他手了，如果你再走的話我就得完蛋的了！！！",
                         {
                             "type": "showImage",
@@ -1483,6 +1550,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]我知道了我知道了，別哭了，我答應你就是了！！！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平正式加入了樂隊，並得知了自己隔天下午就要表演的資訊",
                         {
                             "type": "comment",
@@ -1503,11 +1575,6 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         "\t[三日月]我回來了！",
                         "梗平跟著三日月走了進門，發現兩個少女正在聊天",
@@ -1586,6 +1653,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平](5000円啊......有點差距但也說得過去，先這樣吧)",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -1597,6 +1669,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]好累啊，感覺走不回咖啡廳了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平就這麼睡倒在了路邊，隔天重複了一遍練團與表演的流程",
                         {
                             "type": "comment",
@@ -1654,13 +1731,13 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]哈？魔獸？",
-                        "梗平疑惑之時，遠處突然傳來一陣低沉的聲音",
-                        "他轉過頭一看，只看到好多頭個不可名狀有一堆觸手怪獸向他們湧來",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗平疑惑之時，遠處突然傳來一陣低沉的聲音",
+                        "他轉過頭一看，只看到好多頭個不可名狀有一堆觸手怪獸向他們湧來",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1830,6 +1907,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]在下已經很努力了，到底要怎麼樣才能滿足你的要求？ ！",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -1877,12 +1959,12 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]夠了！既然你覺得在下彈的那麼爛，那你自己去找個彈的好來吧！ ！",
-                        "說完後梗平便奪門而出，剩下在場的三個人",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "說完後梗平便奪門而出，剩下在場的三個人",
                         "\t[來島澄]梗平......",
                         "\t[三日月]繼續練，5點我去找新的吉他手",
                         "\t[來島澄]三日月......",
@@ -1959,6 +2041,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]欸",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "接下來的日子就是演出，訓練，打魔獸",
                         "然後接著演出，訓練，打魔獸",
                         "一直到了某次粉絲見面會出了小意外",
@@ -1986,11 +2073,6 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         "\t[女裝壯漢]我在你身上聞到一股熟悉的味道，嗯，你和我是同一類人。",
                         "\t[梗平(女装)]開什麼玩笑，誰跟你是同一類人！",
@@ -2183,6 +2265,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平]......",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "comment",
                             "text": "【過場】"
                         },
@@ -2234,13 +2321,13 @@ main.floors.main_ch3_1_exchange_1=
                         "\t[梗平]（手機）在下到東京國際展示場附近了，馬上過去",
                         {
                             "type": "hideImage",
-                            "code": 30,
-                            "time": 150
+                            "code": 10,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -2254,6 +2341,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平](終於可以參加Comike了啊)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "就在梗平準備放下手機的時候，突然來了個訊息，是三日月發來的",
                         {
                             "type": "showImage",
@@ -2267,11 +2359,6 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         "\t[三日月]（手機）速來幫忙打魔獸，這邊打不過了",
                         {
@@ -2306,6 +2393,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]（手機）這種ps圖誰會信啊！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "三日月發了段影片過來，裡面魔獸踩爛了幾個腰帶",
                         {
                             "type": "showImage",
@@ -2319,6 +2411,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]（手機）啊啊啊啊啊啊啊！我操！ ！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -2351,13 +2448,13 @@ main.floors.main_ch3_1_exchange_1=
                         "\t[梗平]（手機）我馬上到",
                         {
                             "type": "hideImage",
-                            "code": 30,
-                            "time": 150
+                            "code": 10,
+                            "time": 0
                         },
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -2371,6 +2468,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平](雖然很可惜，但果然假面騎士腰帶不能夠放棄啊)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平切換了聊天室，來到了跟朋友們的群組",
                         {
                             "type": "showImage",
@@ -2386,11 +2488,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 250
                         },
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -2402,6 +2499,11 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]（手機）抱歉，在下要晚點才能到了，有急事",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "hideImage",
                             "code": 30,
@@ -2429,11 +2531,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 250
                         },
                         "三日月用力的拿AK47於魔獸對拼，而來島澄和香坂輪已經被觸手抓了起來",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         "\t[三日月]再忍一下，馬上救你們出來！",
                         "就在此時，一道光芒從遠方射來摧毀了觸手怪",
                         "梗平從觸手怪的殘骸中跑出，四處奔走",
@@ -2633,6 +2730,11 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[梗平](我當初為甚麼要簽那個約呢)",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 30,
                             "image": "CH3_L472.png",
@@ -2665,11 +2767,6 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         "\t[BE]（手機）觸手男娚女同樂隊魔法少女物語",
                         {
@@ -2704,17 +2801,5 @@ main.floors.main_ch3_1_exchange_1=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

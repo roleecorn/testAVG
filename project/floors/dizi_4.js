@@ -310,31 +310,7 @@ main.floors.dizi_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[秋葉原中央通。人潮洶湧，Coser、遊客、阿宅們交織成一幅充滿活力的景象。梗平巡邏著，尋找修卡可能潛伏的跡象，然後他發現了靠在路邊欄杆上，一臉生無可戀的地子。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -349,15 +325,8 @@ main.floors.dizi_4=
         "\t[地子]啊……雖然是秋葉原限定的「特殊地圖」，但發生的事件還是這麼公式化……真無聊。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -374,14 +343,7 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -397,29 +359,10 @@ main.floors.dizi_4=
         "\t[地子]偵查？不，我只是在感嘆這個世界的「自由度」實在太低。你看，每個人都只是在扮演自己的角色……",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[她突然眼睛一亮，像是想到了什麼好主意，用下巴朝著不遠處一家買取專門店的門口指了指。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -434,15 +377,8 @@ main.floors.dizi_4=
         "\t[地子]喂，Bug君。想不想來一場即興的「Boss戰」？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -459,28 +395,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[梗平順著她的視線望去。只見那家買取店的櫃檯後方，坐著一個氣場極其強大的男人。即使只是靜靜地坐在那裡，屈強的體魄和銳利的眼神也散發出無與倫比的壓迫感。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -495,15 +412,8 @@ main.floors.dizi_4=
         "\t[地子]沒錯。那家店是修卡的資金來源之一，而那個男人，就是修卡的首席武術家，「東方不敗」。據說他正利用收購來的電子零件，開發一種能讓所有作者在畫圖時提不起勁的「倦怠病毒」，準備在Comike開始時釋放！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -520,28 +430,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[梗平的眼神瞬間燃起了熊熊怒火。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -557,41 +448,10 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[他留下一句話，義無反顧地穿過人群，衝進了那家買取店。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[被稱為「東方不敗」的，其實是這家店的店長，因其強大的氣場和鑑價時不怒自威的態度，在熟客中有著「師匠」的稱號。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -607,54 +467,11 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[店長「東方不敗」從一堆模型中抬頭，看著眼前氣喘吁吁的梗平，愣了一下。但他身經百戰，立刻就從梗平的眼神中讀懂了這是一場「對決」。他嘴角微微上揚，露出一抹豪邁的笑容，緩緩站起身。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "\t[店長「東方不敗」]哼哼哼……流派，東方不敗！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[梗平的DNA彷彿被這句台詞觸動，體內的熱血瞬間沸騰，不由自主地接了下去]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -670,28 +487,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[店長「東方不敗」]全新！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -707,93 +505,14 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[「東方不敗」＆梗平]天破俠亂！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[梗平猛地將拳頭砸在櫃檯上，「東方不敗」也同時伸出拳頭與他對上。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[金色而閃耀的拳頭與拳頭，在櫃檯上碰觸，但背景卻是燃燒的烈火與爆發的鬥氣]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "\t[「東方不敗」＆梗平]看吧！東方正鮮紅的燃燒起來！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[店裡的其他客人和店員先是一愣，而後，爆發出熾烈的掌聲和歡呼。一場在旁人眼中是同好間的即興狂歡、在梗平眼中攸關Comike存亡的「戰鬥」就此展開。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "\t[店長「東方不敗」]年輕人，不錯的鬥氣！但想阻止老夫的計畫，你還早了一百年！除非你能拿出足以撼動我靈魂的「寶物」！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -809,67 +528,12 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[最終，梗平擺出了一個Rider Kick的起手式，「東方不敗」則抱著手臂，發出了認可的笑聲。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "\t[店長「東方不敗」]哼……有趣！你的鬥魂，我確實收到了！這場勝負，就留到你帶著「寶物」來挑戰我時再一決勝負吧！記住，我隨時等著你的挑戰！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[他對著梗平點了點頭，然後重新坐下，繼續他未完的鑑定工作，彷彿剛才的對決只是一場熱身。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[梗平看著他深不可測的背影，緩緩放下架勢，走出了店門。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -885,28 +549,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[地子這時才慢悠悠地晃了過來，臉上是忍俊不禁的表情。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -921,15 +566,8 @@ main.floors.dizi_4=
         "\t[地子]幹得不錯嘛，Bug君。你成功為這個「地圖」增加了一段有趣的隨機事件了呢。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -946,14 +584,7 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -969,29 +600,10 @@ main.floors.dizi_4=
         "\t[地子]是是是。那麼，為了獎勵成功觸發「隱藏劇情」的你，之後，也請繼續努力，為我……不，為大家帶來更多的樂子吧，我的「朋友」。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[她說出「朋友」這個詞時，稍微頓了一下，然後遞給梗平一瓶運動飲料。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -1006,42 +618,11 @@ main.floors.dizi_4=
         "\t[地子]真遺憾，我的劇情就到這為止了──主角君，之後，也要邂逅不同的人，好好努力喔。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[地子的微笑仍然如此甜美，但似乎少了幾分顏色。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[地子的身影，就像是遊戲中完成任務後消失的NPC，迅速地融入了背景的人潮之中，再也無法尋覓。梗平獨自站在原地，手中還握著那瓶地子遞給他的、帶著一絲冰涼的運動飲料。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1057,28 +638,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[他看著地子消失的方向，又低頭看了看手中的飲料。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1094,28 +656,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[梗平的腦中，他那獨特的假面騎士翻譯機正高速運轉。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1131,28 +674,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[他猛地一握拳，臉上露出了然與沉重的表情。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1168,14 +692,7 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1192,28 +709,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[他回想起地子那似乎少了幾分顏色的微笑。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1229,28 +727,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[一股前所未有的使命感，伴隨著熱血湧上了梗平的心頭。他不是一個人在戰鬥！不是一個人！他繼承了地子同志的意志！]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1266,28 +745,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[他旋開瓶蓋，像是進行某種莊嚴的儀式般，將整瓶運動飲料一飲而盡。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1303,28 +763,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[他將空瓶子小心翼翼地放進口袋——這可是與戰友羈絆的證明。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1340,28 +781,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[梗平環顧著熙來攘往的步行者天國，此刻在他眼中，這些路人不再只是路人，而是潛在的、尚未覺醒的英雄，是可能被修卡盯上的無辜市民。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1377,28 +799,9 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[在夕陽的餘暉下，梗平的身影顯得無比悲壯，挺起胸膛，朝著未知的下一場戰鬥，邁出了堅定的一步。つづく]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "function",
             "function": "function () {\n\tcore.plugin.completeAkibaEvent('dizi_4');\n}"

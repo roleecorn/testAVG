@@ -270,6 +270,18 @@ main.floors.mapo_1_3=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -312,11 +324,6 @@ main.floors.mapo_1_3=
                 0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
             "time": 0
         },
         {
@@ -553,6 +560,11 @@ main.floors.mapo_1_3=
         },
         "\t[梗平]既然是中華料理店，那肯定是要...",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -583,14 +595,14 @@ main.floors.mapo_1_3=
         },
         "\t[梗平]你說...什麼",
         {
-            "type": "playBgm",
-            "name": "battle_theme_a.mp3",
-            "keep": true
-        },
-        {
             "type": "hideImage",
             "code": 10,
             "time": 0
+        },
+        {
+            "type": "playBgm",
+            "name": "battle_theme_a.mp3",
+            "keep": true
         },
         {
             "type": "showImage",
@@ -622,6 +634,11 @@ main.floors.mapo_1_3=
         },
         "\t[梗平]假面騎士不畏懼任何挑戰！老闆，我要點這個",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 30,
             "image": "CH1_L209.png",
@@ -648,11 +665,6 @@ main.floors.mapo_1_3=
                     "text": "假面騎士的意志啊啊啊啊啊！",
                     "action": [
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -664,12 +676,12 @@ main.floors.mapo_1_3=
                             "time": 0
                         },
                         "\t[梗平]爆發吧在下的小宇宙，哦哦哦哦哦！",
-                        "梗平一口一口的吃下麻婆豆腐，假面騎士(?)的意志扛住了紅色醬汁的侵襲",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗平一口一口的吃下麻婆豆腐，假面騎士(?)的意志扛住了紅色醬汁的侵襲",
                         "\t[路人A]那可是特製麻婆豆腐，他吃了不只一口，而是足足三口！",
                         "\t[路人B]大人我敬愛你呀",
                         "\t[麻婆]吼吼，居然是承受我七成功力的好苗子，這位兄弟有沒有興趣精進麻婆道？",
@@ -702,6 +714,11 @@ main.floors.mapo_1_3=
                             "time": 0
                         },
                         "\t[表妹]這個人到底在說甚麼呢",
+                        {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0
+                        },
                         "經過了這樣那樣的訓練，充滿汗水、淚水、相遇、離別",
                         {
                             "type": "comment",
@@ -725,11 +742,6 @@ main.floors.mapo_1_3=
                         },
                         "隔天，梗平代表麻婆豆腐店出陣",
                         "參加殺你全家斷你手腳廚藝大賽",
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0
-                        },
                         "\t[麻婆]記住我的說過的話嗎？",
                         {
                             "type": "showImage",
@@ -868,6 +880,11 @@ main.floors.mapo_1_3=
                         },
                         "\t[梗平]會贏哦",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 30,
                             "image": "CH1_L266.png",
@@ -962,6 +979,11 @@ main.floors.mapo_1_3=
                         },
                         "\t[梗平]我跟著師傅學習了數十年的麻婆道",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -973,6 +995,11 @@ main.floors.mapo_1_3=
                             "time": 0
                         },
                         "\t[梗平]在這個過程，有太多的人將他的意志託付給了我",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -986,6 +1013,11 @@ main.floors.mapo_1_3=
                         },
                         "\t[梗平]大師兄在吃下第一口麻婆豆腐時，因為承受不住離去了",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -997,6 +1029,11 @@ main.floors.mapo_1_3=
                             "time": 0
                         },
                         "\t[梗平]二師兄也因為在煮醬時候，不小心揉到了眼睛早早退場",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1184,6 +1221,11 @@ main.floors.mapo_1_3=
                             "time": 0
                         },
                         "\t[梗平]不要啊！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平渡過了有如地獄一般的七天，宿儺大廚傾囊相授",
                         "等參加完Comike的朋友們再次發現梗平時",
                         "他已經完全燃盡了",
@@ -1200,11 +1242,6 @@ main.floors.mapo_1_3=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         "\t[BE]（手機）食神",
                         {
@@ -1340,12 +1377,12 @@ main.floors.mapo_1_3=
             "time": 0
         },
         "\t[表妹]一個一個來好麻煩啊，看來這時候只能使用那招了",
-        "表妹走到了倒在地板上的A面前",
         {
             "type": "hideImage",
             "code": 11,
             "time": 0
         },
+        "表妹走到了倒在地板上的A面前",
         {
             "type": "showImage",
             "code": 11,
@@ -1367,13 +1404,13 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]啊...總算活過來了",
         {
@@ -1402,26 +1439,31 @@ main.floors.mapo_1_3=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]原本只是來打工的...老闆拿給我試吃我就吃了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]沒想到這裡的餐這麼可怕",
         {
@@ -1441,13 +1483,13 @@ main.floors.mapo_1_3=
             "time": 0
         },
         "\t[表妹]先不聊了，我要趕快去救其他人了",
-        "表妹隨後用了一樣的方式「解救」了B、C",
-        "然後，她走到了梗平的前面",
         {
             "type": "hideImage",
             "code": 11,
             "time": 0
         },
+        "表妹隨後用了一樣的方式「解救」了B、C",
+        "然後，她走到了梗平的前面",
         {
             "type": "showImage",
             "code": 11,
@@ -1597,6 +1639,11 @@ main.floors.mapo_1_3=
         },
         "\t[梗平]......",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -1609,6 +1656,11 @@ main.floors.mapo_1_3=
         },
         "\t[梗平]對喔，還有這回事",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -1620,6 +1672,11 @@ main.floors.mapo_1_3=
             "time": 0
         },
         "\t[梗平]那在下先走一步",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "梗平說完後，便跑出了麻婆豆腐店",
         {
             "type": "comment",
@@ -1654,6 +1711,11 @@ main.floors.mapo_1_3=
         },
         "\t[梗平]時間還早，到處晃晃好了",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "comment",
             "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
         },
@@ -1661,17 +1723,5 @@ main.floors.mapo_1_3=
             "type": "function",
             "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'mapo_1_3_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

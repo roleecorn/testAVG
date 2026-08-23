@@ -270,6 +270,18 @@ main.floors.mapo_1_1=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -312,11 +324,6 @@ main.floors.mapo_1_1=
                 0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
             "time": 0
         },
         {
@@ -528,13 +535,13 @@ main.floors.mapo_1_1=
             "time": 0
         },
         "\t[表妹]看來你吐得差不多了，我也要走......大家人呢？",
-        "梗平與表妹受到了東山的邀請，準備作為他攤位上的小精靈",
-        "同行的還有蘭斯與克莉絲，不過他們每一個現在都不見蹤影",
         {
             "type": "hideImage",
             "code": 11,
             "time": 0
         },
+        "梗平與表妹受到了東山的邀請，準備作為他攤位上的小精靈",
+        "同行的還有蘭斯與克莉絲，不過他們每一個現在都不見蹤影",
         {
             "type": "showImage",
             "code": 10,
@@ -581,6 +588,11 @@ main.floors.mapo_1_1=
             "time": 0
         },
         "\t[梗平]死宅...是自由的啊，在Comike開始前提早來並自由活動才是真正的阿宅",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -662,6 +674,11 @@ main.floors.mapo_1_1=
         },
         "\t[梗平]反正我們這次是來陪東山擺攤的，順便逛秋葉原",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -707,6 +724,11 @@ main.floors.mapo_1_1=
             "time": 0
         },
         "\t[表妹]所以就先隨便亂逛吧",
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0
+        },
         "兩人邊走邊聊，離開了車站",
         {
             "type": "comment",
@@ -729,11 +751,6 @@ main.floors.mapo_1_1=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -745,6 +762,11 @@ main.floors.mapo_1_1=
             "time": 0
         },
         "\t[梗平]這麼說來不知道大家都去哪裡了，看看群組對話有沒有動靜吧",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -759,21 +781,16 @@ main.floors.mapo_1_1=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）救命",
         {
@@ -795,15 +812,15 @@ main.floors.mapo_1_1=
         "\t[梗平]（手機）你在哪裡",
         {
             "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
             "code": 30,
             "time": 150
         },
         "......",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -833,6 +850,11 @@ main.floors.mapo_1_1=
             "time": 0
         },
         "\t[梗平]在下的假面騎士之魂告訴我，東山肯定是被修卡抓走了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -896,6 +918,11 @@ main.floors.mapo_1_1=
             "time": 0
         },
         "\t[梗平]所以我們就去倉庫區找東山吧，可惡的修卡，在下不會讓你們傷害在下的朋友",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "梗平就這麼拉著表妹衝向了城市的倉庫區",
         {
             "type": "playTransitionVideo"
@@ -910,17 +937,5 @@ main.floors.mapo_1_1=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

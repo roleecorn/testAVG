@@ -3471,7 +3471,7 @@ events.prototype._resolveAvgPortraitGeometry = function (image, sx, sy, sw, sh, 
     if (speakerPortrait) {
         var speakerBounds = this._getAvgPortraitOpaqueBounds(image, sx, sy, sw, sh);
         var speakerLayout = core.ui.getAvgLayout();
-        var speakerScale = speakerLayout.portraitScale == null ? 0.85 : speakerLayout.portraitScale;
+        var speakerScale = speakerLayout.portraitScale == null ? 0.92 : speakerLayout.portraitScale;
         w = sw * speakerScale;
         h = sh * speakerScale;
         var speakerCenter = core._PX_ / 2;

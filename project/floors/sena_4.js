@@ -326,31 +326,7 @@ main.floors.sena_4=
             "opacity": 1,
             "time": 0
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "梗平在旅館內與星奈聊天",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -366,14 +342,7 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -389,15 +358,8 @@ main.floors.sena_4=
         "\t[星奈]先生不是來的挺多次的嗎？雖然沒真的來住過",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -414,14 +376,7 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -437,29 +392,10 @@ main.floors.sena_4=
         "\t[星奈]嘿?那先生你說一下是什麼原因",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "梗平在發現自己被捉弄前手舞足蹈的辯解了一段時間",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -475,14 +411,7 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -498,15 +427,8 @@ main.floors.sena_4=
         "\t[星奈]老闆嗎？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -523,14 +445,7 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -546,15 +461,8 @@ main.floors.sena_4=
         "\t[星奈]旅館裡只有老闆是人類哦",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -571,14 +479,7 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -594,29 +495,10 @@ main.floors.sena_4=
         "\t[星奈]哼哼",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "梗平看著星奈，星奈露出了微笑",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -632,28 +514,9 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "梗平拔腿就跑",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -668,29 +531,10 @@ main.floors.sena_4=
         "\t[星奈]等等，我是開玩笑的別走吧",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "兩人上演了一段你追我跑，最後被老闆抓回房間",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -705,15 +549,8 @@ main.floors.sena_4=
         "\t[星奈]嗚，被罵了，都是先生的錯，先生也太膽小了",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -730,14 +567,7 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -753,15 +583,8 @@ main.floors.sena_4=
         "\t[星奈]下次來的時候多找朋友來就原諒你",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -778,14 +601,7 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -801,15 +617,8 @@ main.floors.sena_4=
         "\t[星奈]住在這邊的妖怪跟其他的客人一樣",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -825,15 +634,8 @@ main.floors.sena_4=
         "\t[星奈]雖然偶爾會有喜歡惡作劇的妖怪，不過大家都很遵守規矩",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -849,15 +651,8 @@ main.floors.sena_4=
         "\t[星奈]也有好好付錢",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -874,14 +669,7 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -897,29 +685,10 @@ main.floors.sena_4=
         "\t[星奈]別難過？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "梗平就這世代的不公做了一頓抱怨",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -935,14 +704,7 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -958,15 +720,8 @@ main.floors.sena_4=
         "\t[星奈]這就要離開了嗎？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -983,14 +738,7 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1007,28 +755,9 @@ main.floors.sena_4=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "梗平朝星奈揮手，隨後頭也不回的離開了旅館",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -1043,15 +772,8 @@ main.floors.sena_4=
         "\t[星奈]…",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1067,15 +789,8 @@ main.floors.sena_4=
         "\t[星奈]先生你還沒付錢啊！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "直到最後，梗平還是沒有付錢",
         {

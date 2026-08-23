@@ -270,6 +270,18 @@ main.floors.main_ch6_4=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -340,6 +352,11 @@ main.floors.main_ch6_4=
         },
         "\t[梗平](嗯？這是什麼？)",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 30,
             "image": "CH6_L319.png",
@@ -401,6 +418,11 @@ main.floors.main_ch6_4=
         },
         "\t[梗平]為什麼！？連你也背叛在下嗎！？",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -455,11 +477,6 @@ main.floors.main_ch6_4=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
         },
         "\t[警察]我就是想要看到你這種表情啊！",
         {
@@ -855,17 +872,5 @@ main.floors.main_ch6_4=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

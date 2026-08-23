@@ -311,18 +311,6 @@ main.floors.yuedu_ai_3=
             "animateTime": 120
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 20,
             "image": "yuedu_surprised.png",
@@ -336,15 +324,8 @@ main.floors.yuedu_ai_3=
         "\t[月讀愛]哦也？這不是梗平小弟嗎！又遇到什麼好事嗎？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -361,14 +342,7 @@ main.floors.yuedu_ai_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -384,15 +358,8 @@ main.floors.yuedu_ai_3=
         "\t[月讀愛]哇哈哈！這種叫法不是顯得咱像大姐頭嗎？怎麼？不喜歡嗎？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -409,14 +376,7 @@ main.floors.yuedu_ai_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -432,15 +392,8 @@ main.floors.yuedu_ai_3=
         "\t[月讀愛]就是把咱這地方當解壓場所嗎！真不錯呢不錯呢！那麼來開喝吧！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -457,14 +410,7 @@ main.floors.yuedu_ai_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -479,37 +425,18 @@ main.floors.yuedu_ai_3=
         },
         "\t[月讀愛]哼哼哼，這可是商業機密呢！想知道更多關咱的事就來酒會吧！梗平。",
         {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
             "type": "choices",
             "text": "要怎麼回應？",
             "choices": [
                 {
                     "text": "果然不能喝酒啊",
                     "action": [
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         "(果然不能喝酒啊)",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -525,14 +452,7 @@ main.floors.yuedu_ai_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -548,15 +468,8 @@ main.floors.yuedu_ai_3=
                         "\t[月讀愛]哦！哦！真是有趣呢！梗平小弟～上次和我喝的就不行嗎？那麼，有什麼想喝嗎？",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -573,14 +486,7 @@ main.floors.yuedu_ai_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -596,15 +502,8 @@ main.floors.yuedu_ai_3=
                         "\t[月讀愛]有喔～哇哈哈～那就給梗平小弟喝牛奶，咱就愉快喝酒吧！話說回來～",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -621,14 +520,7 @@ main.floors.yuedu_ai_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -644,15 +536,8 @@ main.floors.yuedu_ai_3=
                         "\t[月讀愛]嗯姆嗯姆，細數你的罪業吧～！",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -669,14 +554,7 @@ main.floors.yuedu_ai_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -692,15 +570,8 @@ main.floors.yuedu_ai_3=
                         "\t[月讀愛]哇哈哈～猜對了～",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "「雖然不是兩人一體的假面騎士，但是享用著牛奶卻發著酒瘋的梗平可能是被氣氛感染了吧。」"
                     ]
@@ -708,31 +579,7 @@ main.floors.yuedu_ai_3=
                 {
                     "text": "不就是喝酒！誰怕誰！",
                     "action": [
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         "(不就是喝酒！誰怕誰！)",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -748,54 +595,11 @@ main.floors.yuedu_ai_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "………",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         "……",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         "…",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -811,14 +615,7 @@ main.floors.yuedu_ai_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -834,15 +631,8 @@ main.floors.yuedu_ai_3=
                         "\t[月讀愛]哇哈哈，酒量不太好呢！梗平～哦哦，修卡嗎？那是什麼？聽上去真有趣呢！",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -859,14 +649,7 @@ main.floors.yuedu_ai_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -882,15 +665,8 @@ main.floors.yuedu_ai_3=
                         "\t[月讀愛]乖乖，看來梗平小弟就是對抗邪惡的正義伙伴呢！咱會給你應援喔！加油加油～",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -907,31 +683,12 @@ main.floors.yuedu_ai_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "「梗平在月讀愛的安慰下，壓力值下降了，把月讀愛視為大姐頭了。」"
                     ]
                 }
             ]
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
         },
         {
             "type": "function",

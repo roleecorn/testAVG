@@ -311,18 +311,6 @@ main.floors.akane_1=
             "animateTime": 120
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -337,14 +325,7 @@ main.floors.akane_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -360,29 +341,10 @@ main.floors.akane_1=
         "\t[？？？]「閒暇之餘便向內走去，步行了幾分鐘之後，那二連二拍的正弦波啊，正朝著這邊步步走過來。」",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "梗平接近站台時，聽到了歌聲從破舊的站台上傳來，那歌聲明明正在唱著歌，當中卻不帶著一絲感情，宛如機械一般的唱出歌詞而已。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -397,29 +359,10 @@ main.floors.akane_1=
         "\t[？？？]「無論明天還是昨天就這樣消失，不管是誰都對此事非常知曉，水中漸漸在融化的那灰塵背後，月亮彷彿從中顯現。」",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "站台上的是一名穿著洛麗塔的少女正在唱歌。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -434,29 +377,10 @@ main.floors.akane_1=
         "\t[？？？]「在那裡聽到了些什麼，早已知曉無法再度離開，將溢出蜂蜜的瓶子打碎，新的一天，在那晚的輪迴中。」",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "當梗平接近少女時，正在唱歌的少女，也注意到了梗平的存在，但依舊沒有停下歌唱。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -471,42 +395,11 @@ main.floors.akane_1=
         "\t[？？？]「還沒理解其外表好像表示危險含意，突然發現地上一個大洞，回過神來才發現被整個吞下，掉下去時身體直接融化了。」",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "伴隨著這段歌詞的結束，少女對著耿平露出了微笑，但下一個瞬間，少女的底下出現了一個大洞，少女掉了進去，少女的表情十分的平靜，甚至有些釋懷地笑了。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "當大洞吞噬掉少女之後，洞消失了，在廢棄的站台上，只剩下一臉迷茫的耿平。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -522,14 +415,7 @@ main.floors.akane_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "function",

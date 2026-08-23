@@ -270,6 +270,18 @@ main.floors.main_ch4_2=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -312,11 +324,6 @@ main.floors.main_ch4_2=
                 0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
             "time": 0
         },
         {
@@ -376,6 +383,11 @@ main.floors.main_ch4_2=
             "time": 0
         },
         "\t[梗平]什麼？修卡竟然要放了我嗎？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -443,16 +455,16 @@ main.floors.main_ch4_2=
         "\t[梗平]這句話肯定也是修卡的陰謀",
         {
             "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
             "code": 30,
             "time": 150
         },
         "在梗平與修女跳針了第十次時，熟悉的黑色加長禮車趕到了現場",
         "貝琪從車上跑了下來，驚慌地確認梗平身上的傷勢",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
         "\t[貝琪]梗平，你沒事吧！",
         "\t[貝琪]不行，得快點找個地方讓你休息才行",
         "在梗平的腦子還在思考修卡到底存不存在的時候，貝琪把他拉上了車",
@@ -515,6 +527,11 @@ main.floors.main_ch4_2=
             "time": 0
         },
         "\t[梗平](不行，事情還沒有做完)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -581,6 +598,11 @@ main.floors.main_ch4_2=
         },
         "\t[梗平]我們在一起(當假面騎士)好嗎？",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -609,11 +631,6 @@ main.floors.main_ch4_2=
             "animateTime": 120
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -625,6 +642,11 @@ main.floors.main_ch4_2=
             "time": 0
         },
         "\t[梗平]你願意成為在下的......",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "setText",
             "avg": true,
@@ -674,17 +696,5 @@ main.floors.main_ch4_2=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

@@ -270,6 +270,18 @@ main.floors.mapo_1_3_exchange_1=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -312,11 +324,6 @@ main.floors.mapo_1_3_exchange_1=
                 0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
             "time": 0
         },
         {
@@ -373,6 +380,11 @@ main.floors.mapo_1_3_exchange_1=
             "time": 0
         },
         "\t[梗平]啊，打工換宿啊！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "梗平往母親給的地址跑了過去",
         {
             "type": "playTransitionVideo"
@@ -387,17 +399,5 @@ main.floors.mapo_1_3_exchange_1=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

@@ -270,6 +270,18 @@ main.floors.main_ch2_3=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -315,11 +327,6 @@ main.floors.main_ch2_3=
             "time": 0
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
             "type": "comment",
             "text": "【主線 CH2 2-3 遊戲中心】"
         },
@@ -353,6 +360,11 @@ main.floors.main_ch2_3=
             "time": 0
         },
         "\t[梗平]好",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "梗平不假思索的把錢包裡最後僅剩的一張一千円拿了出來",
         {
             "type": "showImage",
@@ -366,13 +378,13 @@ main.floors.main_ch2_3=
             "time": 0
         },
         "\t[梗平](好像哪裡不太對)",
-        "警察隨後把那一千円投入了機台當中",
-        "梗平的理智隨著珠子滾動的聲音一起跌到谷底",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "警察隨後把那一千円投入了機台當中",
+        "梗平的理智隨著珠子滾動的聲音一起跌到谷底",
         "\t[警察]喔，來了來了！",
         "伴隨著「yeeeee」的聲效出現的昭和特攝修卡動畫出現在梗平眼前",
         "然後？然後什麼都沒出",
@@ -417,6 +429,11 @@ main.floors.main_ch2_3=
             "time": 0
         },
         "\t[梗平]在下最後的1000円啊！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "setText",
             "avg": true,
@@ -492,11 +509,6 @@ main.floors.main_ch2_3=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
         "\t[警察]啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
         {
             "type": "setText",
@@ -539,6 +551,11 @@ main.floors.main_ch2_3=
             "time": 0
         },
         "\t[梗平]我的錢啊！！！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "這時候的梗平終於想起了他出來是為了什麼的",
         {
             "type": "showImage",
@@ -570,6 +587,11 @@ main.floors.main_ch2_3=
         },
         "\t[梗平]......",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -581,6 +603,11 @@ main.floors.main_ch2_3=
             "time": 0
         },
         "\t[梗平]算了，還是去ANIsister一趟吧",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "失去了太多了梗平獨自一人，走向了大門緊閉的ANIsister",
         {
             "type": "comment",
@@ -668,6 +695,11 @@ main.floors.main_ch2_3=
         },
         "\t[梗平]更何況，在下可不能讓孩子們遭遇危險啊",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 30,
             "image": "CH2_L291.png",
@@ -704,11 +736,6 @@ main.floors.main_ch2_3=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -720,12 +747,12 @@ main.floors.main_ch2_3=
             "time": 0
         },
         "\t[梗平]還好還有開的地方",
-        "剛翻進了窗戶的梗平就看見了數個肥宅朝他衝了過來",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "剛翻進了窗戶的梗平就看見了數個肥宅朝他衝了過來",
         {
             "type": "showImage",
             "code": 10,
@@ -738,6 +765,11 @@ main.floors.main_ch2_3=
             "time": 0
         },
         "\t[梗平]等等，你們要做什麼，不要過來啊！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -771,17 +803,5 @@ main.floors.main_ch2_3=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

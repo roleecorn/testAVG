@@ -310,31 +310,7 @@ main.floors.watanuki_sakuya_3=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[炎炎夏日，卻只有這裡充滿陰風氣息，是空調不要錢嗎？梗平又走到神社那裡。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -350,14 +326,7 @@ main.floors.watanuki_sakuya_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -373,15 +342,8 @@ main.floors.watanuki_sakuya_3=
         "\t[綿貫咲耶]梗平先生，居然又來了呢，上次的抽獎結果還可以嗎？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -398,14 +360,7 @@ main.floors.watanuki_sakuya_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -421,15 +376,8 @@ main.floors.watanuki_sakuya_3=
         "\t[綿貫咲耶]是這樣嗎？那也不錯呢，梗平先生這次又是為了什麼而來呢？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -446,14 +394,7 @@ main.floors.watanuki_sakuya_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -469,15 +410,8 @@ main.floors.watanuki_sakuya_3=
         "\t[綿貫咲耶]乘涼……嗎？真是不錯的想法呢，梗平先生，請隨意休息吧。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -494,14 +428,7 @@ main.floors.watanuki_sakuya_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -517,15 +444,8 @@ main.floors.watanuki_sakuya_3=
         "\t[綿貫咲耶]還記得我上次提到關於朋友的事情嗎？真細心呢～梗平先生。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -542,14 +462,7 @@ main.floors.watanuki_sakuya_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -565,15 +478,8 @@ main.floors.watanuki_sakuya_3=
         "\t[綿貫咲耶]嗯，是位怕寂寞又喜歡說莫名其妙事情的友人呢～",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -590,14 +496,7 @@ main.floors.watanuki_sakuya_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -613,15 +512,8 @@ main.floors.watanuki_sakuya_3=
         "\t[綿貫咲耶]就是這個呢～這個我聽不懂的東西，就像那位友人會說的…",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -637,15 +529,8 @@ main.floors.watanuki_sakuya_3=
         "\t[綿貫咲耶]把瓶子烤一下就成炙燒瓶喔！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -662,14 +547,7 @@ main.floors.watanuki_sakuya_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -685,15 +563,8 @@ main.floors.watanuki_sakuya_3=
         "\t[綿貫咲耶]呼呼，不知道呢～還有就是喜歡用窮舉法來解答問題的可愛孩子呢～",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -710,14 +581,7 @@ main.floors.watanuki_sakuya_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -733,15 +597,8 @@ main.floors.watanuki_sakuya_3=
         "\t[綿貫咲耶]當然可以呢～",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -757,15 +614,8 @@ main.floors.watanuki_sakuya_3=
         "\t[綿貫咲耶]她的名字是……「櫻羽艾瑪」，如果見到她請和她交個朋友吧～",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -782,41 +632,10 @@ main.floors.watanuki_sakuya_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[從巫女得知自己一位少女的名字，梗平反覆思考自己是否怕寂寞的個性。］",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[梗平在回家路上買了根炙烤玉米享用。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "function",
             "function": "function () {\n\tcore.plugin.completeAkibaEvent('watanuki_sakuya_3');\n}"

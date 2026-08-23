@@ -305,18 +305,6 @@ main.floors.okabe_1=
             "time": 0
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -331,14 +319,7 @@ main.floors.okabe_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -355,14 +336,7 @@ main.floors.okabe_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -379,28 +353,9 @@ main.floors.okabe_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "梗平進入小鋼珠店",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -416,14 +371,7 @@ main.floors.okabe_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -440,14 +388,7 @@ main.floors.okabe_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -464,28 +405,9 @@ main.floors.okabe_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[？？？]嗚哇啊啊啊啊啊！！就差一步，就差一步啊啊啊啊啊！！！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -501,14 +423,7 @@ main.floors.okabe_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -525,14 +440,7 @@ main.floors.okabe_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -548,15 +456,8 @@ main.floors.okabe_1=
         "\t[岡部倫太郎]嗚啊啊啊啊——誒，梗...梗平？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -572,15 +473,8 @@ main.floors.okabe_1=
         "\t[岡部倫太郎]喔喔你來的正好，借我點錢，我馬上就要通關了！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -597,14 +491,7 @@ main.floors.okabe_1=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -620,15 +507,8 @@ main.floors.okabe_1=
         "\t[岡部倫太郎]就是那個超級彈珠機啊！就差一點點，我就能贏下了！拜託了！把你的錢借給我吧！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -643,24 +523,17 @@ main.floors.okabe_1=
         },
         "\t[岡部倫太郎]贏下來的錢我會給你五五分的！",
         {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
             "type": "choices",
             "text": "\t[梗平]要怎麼做？",
             "choices": [
                 {
                     "text": "把錢借給他",
                     "action": [
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -676,14 +549,7 @@ main.floors.okabe_1=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -700,28 +566,9 @@ main.floors.okabe_1=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "十五分鐘後",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -736,15 +583,8 @@ main.floors.okabe_1=
                         "\t[岡部倫太郎]哦哦哦哦哦哦哦哦哦！！！輸了！！！！",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -760,15 +600,8 @@ main.floors.okabe_1=
                         "\t[岡部倫太郎]連一萬円都拿不出來，你這傢伙平時到底在幹什麼啊？",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -785,14 +618,7 @@ main.floors.okabe_1=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -808,15 +634,8 @@ main.floors.okabe_1=
                         "\t[岡部倫太郎]我知道啦你別掐我脖子了，要...死...",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "——最後兇真通過在不知名黑心企業打工把錢還上了。"
                     ]
@@ -824,18 +643,6 @@ main.floors.okabe_1=
                 {
                     "text": "不借",
                     "action": [
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -851,14 +658,7 @@ main.floors.okabe_1=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -875,14 +675,7 @@ main.floors.okabe_1=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -898,15 +691,8 @@ main.floors.okabe_1=
                         "\t[岡部倫太郎]誒誒，就差一點了啊！！",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "——梗平丟下了哀嚎的兇真，回去了。"
                     ]

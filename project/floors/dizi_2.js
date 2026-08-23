@@ -310,31 +310,7 @@ main.floors.dizi_2=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[幾天後，梗平在追查「修卡幹部喜歡在後巷進行秘密交易」的情報時，再次遇見了地子。她正靠在牆上，無聊地踢著地上的小石子。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -350,14 +326,7 @@ main.floors.dizi_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -373,15 +342,8 @@ main.floors.dizi_2=
         "\t[地子]啊，是Bug君。只是「事件」刷新了喔，無聊死了。每天都是一樣的流程，一點驚喜都沒有。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -398,14 +360,7 @@ main.floors.dizi_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -421,15 +376,8 @@ main.floors.dizi_2=
         "\t[地子](嘆氣)是吧。我想看看這個世界的「劇本」到底有多偷懶。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -446,28 +394,9 @@ main.floors.dizi_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[梗平的眼中閃爍著崇拜的光芒。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -482,29 +411,10 @@ main.floors.dizi_2=
         "\t[地子]……你真的，沒救了。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[地子嘆了口氣，但嘴角卻微微上揚。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -519,15 +429,8 @@ main.floors.dizi_2=
         "\t[地子]喂，Bug君。既然你這麼閒，不如幫我個忙。去那邊的女僕咖啡廳，對著\"正確的女僕\"說出了暗號「請給我用愛製作的隱藏蛋包飯」，就女僕就會給出「隱藏道具」(並沒有)，你可以去觸發。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -544,28 +447,9 @@ main.floors.dizi_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "[梗平向地子行了一個不太標準的騎士禮，然後興奮地朝著電玩中心衝去。]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -580,15 +464,8 @@ main.floors.dizi_2=
         "\t[地子]……真是個單純的傢伙。嘛，看著Bug君在固定的世界裡橫衝直撞，好像也挺有趣的。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "function",

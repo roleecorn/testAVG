@@ -270,6 +270,18 @@ main.floors.main_ch5_1_exchange_1=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -312,11 +324,6 @@ main.floors.main_ch5_1_exchange_1=
                 0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
             "time": 0
         },
         {
@@ -373,6 +380,11 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0
         },
         "\t[梗平]不過總感覺今天好像少了什麼",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "沒錯，秋葉原的熱意，再臨",
         {
             "type": "showImage",
@@ -396,11 +408,6 @@ main.floors.main_ch5_1_exchange_1=
         "天啊，梗平閃過了肥宅的撞擊",
         "梗平，他勝利了",
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -412,6 +419,11 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0
         },
         "\t[梗平]哈，英雄不會因為同一個招式倒下第四次！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "當梗平宣布勝利時，從肥宅的後方死角出現了更多的肥宅",
         {
             "type": "showImage",
@@ -434,6 +446,18 @@ main.floors.main_ch5_1_exchange_1=
         },
         "效果顯著，梗平失去戰鬥能力",
         {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_panic_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]啊！！！！！！！！",
+        {
             "type": "hideImage",
             "code": 10,
             "time": 0
@@ -449,19 +473,12 @@ main.floors.main_ch5_1_exchange_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]啊！！！！！！！！",
+        "\t[梗平]我的鼻子啊！",
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 10,
-            "image": "keng_panic_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我的鼻子啊！",
         {
             "type": "showImage",
             "code": 10,
@@ -474,6 +491,11 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0
         },
         "\t[梗平]可惡，我一定要找到方法解決你們",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "或許是為了回應這麼想的梗平，手機恰到好處的響了起來",
         {
             "type": "hideImage",
@@ -492,21 +514,16 @@ main.floors.main_ch5_1_exchange_1=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）好，從剛剛救出來了IB的哥哥得到了很有用的資訊",
         {
@@ -526,6 +543,11 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0
         },
         "\t[梗平]（手機）什麼？他已經被救出來了！？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -547,13 +569,13 @@ main.floors.main_ch5_1_exchange_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）那種東西怎麼樣都好吧",
         {
@@ -582,39 +604,49 @@ main.floors.main_ch5_1_exchange_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）好消息是我們知道肥宅們為甚麼會這樣了",
         {
-            "type": "showImage",
+            "type": "hideImage",
             "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
-        "\t[東山]（手機）他們是因為一個叫「聖物」的東西不見了才會發瘋的",
         {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
+        },
+        "\t[東山]（手機）他們是因為一個叫「聖物」的東西不見了才會發瘋的",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[東山]（手機）所以只要找回聖物就好了",
         {
@@ -627,13 +659,13 @@ main.floors.main_ch5_1_exchange_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）聖物被掛在拍賣網站上，要200萬",
         {
@@ -646,28 +678,38 @@ main.floors.main_ch5_1_exchange_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）200萬，所以沒錯，各位我們要趕快去籌錢了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）我要去想辦法賺錢了，再見",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -685,11 +727,6 @@ main.floors.main_ch5_1_exchange_1=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -701,6 +738,11 @@ main.floors.main_ch5_1_exchange_1=
             "time": 0
         },
         "\t[梗平](200萬啊，好可怕的價格)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -714,12 +756,29 @@ main.floors.main_ch5_1_exchange_1=
         },
         "\t[梗平](該怎麼籌到啊......)",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "choices",
             "text": "請選擇。",
             "choices": [
                 {
                     "text": "這麼說來，小鋼珠是不是挺好賺的",
                     "action": [
+                        {
+                            "type": "showImage",
+                            "code": 10,
+                            "image": "keng_neutral_portrait.png",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平](這種時候要賺到這麼多的錢的話只能這樣了)",
                         {
                             "type": "hideImage",
                             "code": 10,
@@ -736,19 +795,12 @@ main.floors.main_ch5_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平](這種時候要賺到這麼多的錢的話只能這樣了)",
+                        "\t[梗平](而且表妹也從那裏賺到了這麼多，看來就是這條道路了)",
                         {
-                            "type": "showImage",
+                            "type": "hideImage",
                             "code": 10,
-                            "image": "keng_neutral_portrait.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平](而且表妹也從那裏賺到了這麼多，看來就是這條道路了)",
                         "梗平選擇了捷徑(?)",
                         {
                             "type": "comment",
@@ -784,12 +836,12 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]總感覺，好快樂",
-                        "在一陣勁爆的假面騎士特效後，螢幕上出現的數字讓梗平震驚不已",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "在一陣勁爆的假面騎士特效後，螢幕上出現的數字讓梗平震驚不已",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -802,12 +854,12 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]原來，錢是這麼好賺的嗎？",
-                        "不知道甚麼時候出現的警察站在了梗平的身旁",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "不知道甚麼時候出現的警察站在了梗平的身旁",
                         "\t[警察]夥伴，你來了啊",
                         {
                             "type": "showImage",
@@ -914,6 +966,11 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平](果然這種時候還是書店最保險)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平決定將今天自己剩下的所有時間投入到書店的打工中",
                         "如果一小時2000，他只需要工作區區1000小時就可以賺到200萬了",
                         {
@@ -957,11 +1014,6 @@ main.floors.main_ch5_1_exchange_1=
                             "code": 30,
                             "time": 150
                         },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         "\t[書店店員]你來啦，讓我們憶起奮戰到底吧",
                         {
                             "type": "showImage",
@@ -975,13 +1027,13 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]是的，前輩！",
-                        "梗吉訶德朝著風車發起了衝鋒",
-                        "就這樣，持續到了午夜",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗吉訶德朝著風車發起了衝鋒",
+                        "就這樣，持續到了午夜",
                         "\t[書店店員]今天差不多就這樣了，這個給你",
                         "前輩從旁邊的袋子裡拿出了一個便當，然後交到了梗平的手上",
                         "\t[書店店員]之後有需要幫忙再說喔",
@@ -997,6 +1049,11 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 0
                         },
                         "\t[梗平]謝謝前輩！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "握著手上的20000円與便當，梗平離開了馬的膝蓋",
                         "與此同時，第五天打工依舊沒有換到宿",
                         {
@@ -1020,17 +1077,5 @@ main.floors.main_ch5_1_exchange_1=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

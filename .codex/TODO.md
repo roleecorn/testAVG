@@ -4,10 +4,12 @@
 
 ## Open
 
-- 無。
+- `20260823-023000-main-shared-portrait-resolver.md` Q1：`project/timeline.json` 仍因 `EPERM` 無法由主線 generator 更新；解除檔案鎖定／ACL 後重新產生並驗證。
+- `20260823-023000-main-shared-portrait-resolver.md` Q2：東山 source → Story IR 情緒決策表仍待修復；目前不在 emitter 階段用函數或文字 regex 猜測情緒。
 
 ## Resolved
 
+- `20260823-023000-main-shared-portrait-resolver.md` Q3：排除使用者指定移出範圍的 `huangmo_1/2` 後，56 個角色支線 floor 已由共用 emitter 重建並通過 Story IR round-trip 驗證；`huangmo_1/2` 保持無 diff。
 - `20260816-195916-character-scene-return-validation.md` Q1：新增 typed Akiba lifecycle IR 節點與終端路徑驗證，並修復 `lala_1`～`lala_4`、`okabe_1`～`okabe_4`、`shirou_1`～`shirou_4` 的回傳流程；角色 IR、floor、Akiba 管理器與主線檢查均通過。
 - `20260811-103543-akiba-minigame-study.md` Q4：原先把 `<canvas>` fallback 文字誤判為實際畫面；內建瀏覽器已完成「公園清潔隊」通關、計分與返回地圖的實機驗收。
 - `20260811-103543-akiba-minigame-study.md` Q1：以實際 `project/location-mappings.json` 的 22 個地點為正式範圍，並把 `akiba.md` 預期數量由 27 修正為 22。

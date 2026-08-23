@@ -270,6 +270,18 @@ main.floors.main_ch6_3=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -403,6 +415,11 @@ main.floors.main_ch6_3=
             "time": 0
         },
         "\t[梗平]感激不盡",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "拿了東西後，梗平便往倉庫區的方向跑去",
         {
             "type": "comment",
@@ -438,6 +455,11 @@ main.floors.main_ch6_3=
         },
         "\t[梗平]好，暫時應該是安全的了",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -466,14 +488,14 @@ main.floors.main_ch6_3=
             "time": 0
         },
         "\t[梗平]總之先看看周遭有沒有什麼地方能夠逃出秋葉原吧",
-        "梗平稍微探出了頭，看向整個倉庫的兩側",
-        "但他卻絕望的發現整個倉庫區的外面似乎已經被封鎖了起來",
-        "他，無處可逃",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "梗平稍微探出了頭，看向整個倉庫的兩側",
+        "但他卻絕望的發現整個倉庫區的外面似乎已經被封鎖了起來",
+        "他，無處可逃",
         {
             "type": "showImage",
             "code": 10,
@@ -486,6 +508,11 @@ main.floors.main_ch6_3=
             "time": 0
         },
         "\t[梗平]在下的自由",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -515,12 +542,12 @@ main.floors.main_ch6_3=
             "time": 0
         },
         "\t[梗平]在下的假面騎士精神真的都要在這裡結束了嗎......",
-        "在山窮水盡之際，從牆壁的後方傳來了叩叩叩的聲音",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "在山窮水盡之際，從牆壁的後方傳來了叩叩叩的聲音",
         {
             "type": "showImage",
             "code": 10,
@@ -533,6 +560,11 @@ main.floors.main_ch6_3=
             "time": 0
         },
         "\t[梗平]不知道是敵是友，可是現在的在下只有一個選擇",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "playBgm",
             "name": "battle_theme_a.mp3",
@@ -557,11 +589,6 @@ main.floors.main_ch6_3=
             "type": "hideImage",
             "code": 30,
             "time": 150
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
         },
         "\t[警察]夥伴，不要放棄希望啊",
         "\t[警察]我來拯救你了",
@@ -655,6 +682,11 @@ main.floors.main_ch6_3=
         },
         "\t[梗平]你怎麼會有這麼多的錢",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -704,17 +736,5 @@ main.floors.main_ch6_3=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

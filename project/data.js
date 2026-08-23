@@ -560,8 +560,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 				"dialogueWidth": 512,
 				"dialogueFixedLines": 2,
 				"portraitDialogueGap": 0,
-				"portraitScale": 0.85,
-				"portraitBottomY": 416
+				"portraitScale": 0.92,
+				"portraitBottomY": 440
 			},
 			"startBackground": "project/images/bg.jpg",
 			"startVerticalBackground": "project/images/bg.jpg",

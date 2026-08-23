@@ -56,9 +56,10 @@ function bootstrapCharacters() {
   console.log(`Created ${created} character Story IR bundles without overwriting existing IR.`);
 }
 
-function validateCharacters(emit) {
+function validateCharacters(emit, excludedSlugs = new Set()) {
   let scenes = 0;
   for (const story of characterStories) {
+    if (excludedSlugs.has(story.slug)) continue;
     const bundle = readBundle(root, irFile(story));
     validateProjectReferences(root, bundle);
     const floors = bundleToFloors(bundle);
@@ -74,15 +75,33 @@ function validateCharacters(emit) {
       scenes += 1;
     }
   }
-  console.log(`${emit ? "Emitted" : "Validated"} ${scenes} character scenes from checked-in Story IR.`);
+  const excluded = [...excludedSlugs];
+  const suffix = excluded.length ? ` (excluded: ${excluded.join(", ")})` : "";
+  console.log(`${emit ? "Emitted" : "Validated"} ${scenes} character scenes from checked-in Story IR.${suffix}`);
+}
+
+function excludedCharacterSlugs() {
+  const prefix = "--exclude-character=";
+  const excluded = process.argv
+    .filter((arg) => arg.startsWith(prefix))
+    .flatMap((arg) => arg.slice(prefix.length).split(","))
+    .map((slug) => slug.trim())
+    .filter(Boolean);
+  const known = new Set(characterStories.map((story) => story.slug));
+  for (const slug of excluded) {
+    if (!known.has(slug)) throw new Error(`Unknown character slug in --exclude-character: ${slug}`);
+  }
+  return new Set(excluded);
 }
 
 function main() {
   const bootstrap = process.argv.includes("--bootstrap-character");
   const emit = process.argv.includes("--emit-character");
+  const excludedSlugs = excludedCharacterSlugs();
   if (bootstrap && emit) throw new Error("Choose either --bootstrap-character or --emit-character");
+  if (bootstrap && excludedSlugs.size) throw new Error("--exclude-character is only valid for character validation/emission");
   if (bootstrap) bootstrapCharacters();
-  else validateCharacters(emit);
+  else validateCharacters(emit, excludedSlugs);
 }
 
 if (require.main === module) main();

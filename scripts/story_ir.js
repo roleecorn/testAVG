@@ -6,6 +6,7 @@ const vm = require("vm");
 const STORY_IR_VERSION = 1;
 const AVG_MAP_WIDTH = 17;
 const AVG_MAP_HEIGHT = 13;
+const PORTRAIT_CODES = new Set([10, 11, 12, 20]);
 
 function sha256File(file) {
   return crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
@@ -144,6 +145,68 @@ function irToEvent(node) {
       });
     default: throw new Error(`Unsupported Story IR kind: ${node.kind || "(missing kind)"}`);
   }
+}
+
+function isPortraitShow(node) {
+  return node && node.kind === "image.show"
+    && (node.role === "portrait" || PORTRAIT_CODES.has(node.code));
+}
+
+function normalizePortraitLifecycle(events) {
+  const normalized = [];
+  const visiblePortraitCodes = new Set();
+
+  const hideVisiblePortraits = () => {
+    for (const code of visiblePortraitCodes) {
+      normalized.push({ kind: "image.hide", code, time: 0 });
+    }
+    visiblePortraitCodes.clear();
+  };
+
+  for (const node of events) {
+    if (node.kind === "choice") {
+      hideVisiblePortraits();
+      normalized.push({
+        ...node,
+        options: node.options.map((option) => ({
+          ...option,
+          events: normalizePortraitLifecycle(option.events),
+        })),
+      });
+      continue;
+    }
+
+    if (isPortraitShow(node)) {
+      if (visiblePortraitCodes.has(node.code)) {
+        normalized.push({ kind: "image.hide", code: node.code, time: 0 });
+      }
+      normalized.push(node);
+      visiblePortraitCodes.add(node.code);
+      continue;
+    }
+
+    if (node.kind === "image.hide" && PORTRAIT_CODES.has(node.code)) {
+      if (visiblePortraitCodes.delete(node.code)) normalized.push(node);
+      continue;
+    }
+
+    if (node.kind === "narration") hideVisiblePortraits();
+    normalized.push(node);
+    if (node.kind === "dialogue") hideVisiblePortraits();
+  }
+
+  hideVisiblePortraits();
+  return normalized;
+}
+
+function normalizeBundlePortraitLifecycle(bundle) {
+  return {
+    ...bundle,
+    scenes: bundle.scenes.map((scene) => ({
+      ...scene,
+      events: normalizePortraitLifecycle(scene.events),
+    })),
+  };
 }
 
 const ALLOWED_KINDS = new Set([
@@ -308,14 +371,17 @@ function createBundle(root, sourceFiles, floors, sourceKind) {
     scenes: floors.map((floor) => ({
       id: floor.floorId,
       floor: Object.fromEntries(Object.entries(floor).filter(([key]) => key !== "eachArrive")),
-      events: (floor.eachArrive || []).map(eventToIr),
+      events: normalizePortraitLifecycle((floor.eachArrive || []).map(eventToIr)),
     })),
   }));
 }
 
 function bundleToFloors(bundle) {
   validateBundle(bundle);
-  return bundle.scenes.map((scene) => ({ ...scene.floor, eachArrive: scene.events.map(irToEvent) }));
+  return bundle.scenes.map((scene) => ({
+    ...scene.floor,
+    eachArrive: normalizePortraitLifecycle(scene.events).map(irToEvent),
+  }));
 }
 
 function readBundle(root, file) {
@@ -325,8 +391,9 @@ function readBundle(root, file) {
 }
 
 function writeBundle(file, bundle) {
+  const normalized = normalizeBundlePortraitLifecycle(bundle);
   fs.mkdirSync(path.dirname(file), { recursive: true });
-  fs.writeFileSync(file, JSON.stringify(validateBundle(bundle), null, 2) + "\n", "utf8");
+  fs.writeFileSync(file, JSON.stringify(validateBundle(normalized), null, 2) + "\n", "utf8");
 }
 
-module.exports = { createBundle, bundleToFloors, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences, verifySources, writeBundle };
+module.exports = { createBundle, bundleToFloors, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences, verifySources, writeBundle };

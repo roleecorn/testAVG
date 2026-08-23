@@ -270,6 +270,18 @@ main.floors.mapo_1_2=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -312,11 +324,6 @@ main.floors.mapo_1_2=
                 0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
             "time": 0
         },
         {
@@ -407,12 +414,12 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[表妹]總之可能有危險對吧，我先拿武器出來吧",
-        "表妹在此時拿出隨身攜帶的氣槍，瞄準著前方",
         {
             "type": "hideImage",
             "code": 11,
             "time": 0
         },
+        "表妹在此時拿出隨身攜帶的氣槍，瞄準著前方",
         {
             "type": "showImage",
             "code": 10,
@@ -425,6 +432,11 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[梗平]作為假面騎士，最重要的便是勇敢的心靈",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -443,11 +455,6 @@ main.floors.mapo_1_2=
             "type": "hideImage",
             "code": 30,
             "time": 150
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
         },
         {
             "type": "showImage",
@@ -479,17 +486,17 @@ main.floors.mapo_1_2=
         },
         "\t[表妹]你的良心不會痛嗎？",
         {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0
+        },
+        {
             "type": "choices",
             "text": "請選擇。",
             "choices": [
                 {
                     "text": "門，很理所當然的全都鎖著",
                     "action": [
-                        {
-                            "type": "hideImage",
-                            "code": 11,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -553,12 +560,12 @@ main.floors.mapo_1_2=
                             "time": 0
                         },
                         "\t[梗平]雖然在下是假面騎士，但看來還是只能尋求警察的幫助了",
-                        "梗平拿起了自己的電話撥打了110",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗平拿起了自己的電話撥打了110",
                         "\t[警察]秋葉原派出所，請問有什麼需要幫助的",
                         {
                             "type": "showImage",
@@ -609,6 +616,11 @@ main.floors.mapo_1_2=
                         },
                         "\t[梗平]不對，反過來想如果他們這麼果斷的掛了電話",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -638,17 +650,17 @@ main.floors.mapo_1_2=
                         },
                         "\t[表妹]很明顯是因為騷擾電話才被掛斷的啊",
                         {
+                            "type": "hideImage",
+                            "code": 11,
+                            "time": 0
+                        },
+                        {
                             "type": "choices",
                             "text": "請選擇。",
                             "choices": [
                                 {
                                     "text": "先去其他地方吧",
                                     "action": [
-                                        {
-                                            "type": "hideImage",
-                                            "code": 11,
-                                            "time": 0
-                                        },
                                         {
                                             "type": "showImage",
                                             "code": 10,
@@ -661,17 +673,17 @@ main.floors.mapo_1_2=
                                             "time": 0
                                         },
                                         "\t[梗平]先去其他地方想辦法吧，警察已經靠不上了",
+                                        {
+                                            "type": "hideImage",
+                                            "code": 10,
+                                            "time": 0
+                                        },
                                         "梗平一邊說著一邊跟表妹走出了倉庫"
                                     ]
                                 },
                                 {
                                     "text": "路不轉人轉，RIDER KICK！",
                                     "action": [
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0
-                                        },
                                         {
                                             "type": "showImage",
                                             "code": 10,
@@ -718,12 +730,12 @@ main.floors.mapo_1_2=
                                             "time": 0
                                         },
                                         "\t[梗平]變——身—！",
-                                        "梗平做出變身動作",
                                         {
                                             "type": "hideImage",
                                             "code": 10,
                                             "time": 0
                                         },
+                                        "梗平做出變身動作",
                                         {
                                             "type": "showImage",
                                             "code": 10,
@@ -736,13 +748,13 @@ main.floors.mapo_1_2=
                                             "time": 0
                                         },
                                         "\t[梗平]騎士——踢！",
-                                        "梗平跳到空中並開始旋轉踢向其中一扇門",
-                                        "門被踢開的音效",
                                         {
                                             "type": "hideImage",
                                             "code": 10,
                                             "time": 0
                                         },
+                                        "梗平跳到空中並開始旋轉踢向其中一扇門",
+                                        "門被踢開的音效",
                                         {
                                             "type": "showImage",
                                             "code": 10,
@@ -755,6 +767,11 @@ main.floors.mapo_1_2=
                                             "time": 0
                                         },
                                         "\t[梗平]束手就擒吧你們這群修卡……",
+                                        {
+                                            "type": "hideImage",
+                                            "code": 10,
+                                            "time": 0
+                                        },
                                         {
                                             "type": "showImage",
                                             "code": 30,
@@ -775,11 +792,6 @@ main.floors.mapo_1_2=
                                             "time": 150
                                         },
                                         {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0
-                                        },
-                                        {
                                             "type": "showImage",
                                             "code": 10,
                                             "image": "keng_panic_portrait.png",
@@ -791,6 +803,11 @@ main.floors.mapo_1_2=
                                             "time": 0
                                         },
                                         "\t[梗平]……抱歉打擾了？",
+                                        {
+                                            "type": "hideImage",
+                                            "code": 10,
+                                            "time": 0
+                                        },
                                         "梗平轉身看到身後站著一個壯碩的男人，以及表妹已經躺在旁邊",
                                         "然後梗平被壯碩的男人一棒敲暈",
                                         "自此梗平與表妹從社會上消失了，至於有兩個未成年男女在秋葉原遊蕩的故事就待有緣再述",
@@ -806,11 +823,6 @@ main.floors.mapo_1_2=
                                             ],
                                             "opacity": 1,
                                             "time": 250
-                                        },
-                                        {
-                                            "type": "hideImage",
-                                            "code": 10,
-                                            "time": 0
                                         },
                                         "\t[BE]（手機）這裡不是米O市吧？！",
                                         {
@@ -934,6 +946,11 @@ main.floors.mapo_1_2=
                             "time": 0
                         },
                         "\t[梗平]那當然，女士優先",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平把表妹推進了門裡，然後黑暗吞噬了她",
                         {
                             "type": "showImage",
@@ -948,6 +965,11 @@ main.floors.mapo_1_2=
                         },
                         "\t[梗平]...",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -960,6 +982,11 @@ main.floors.mapo_1_2=
                         },
                         "\t[梗平]......",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -971,12 +998,12 @@ main.floors.mapo_1_2=
                             "time": 0
                         },
                         "\t[梗平]在下會記住你的犧牲的",
-                        "梗平關門到一半的瞬間，裡面伸出一隻黑色的東西纏住了梗平的手",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗平關門到一半的瞬間，裡面伸出一隻黑色的東西纏住了梗平的手",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -989,12 +1016,12 @@ main.floors.mapo_1_2=
                             "time": 0
                         },
                         "\t[梗平]我還沒參加到Comike，而且我還沒在秋葉原喝到酒，放我走啊！",
-                        "梗平試圖抵抗，但無濟於事",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗平試圖抵抗，但無濟於事",
                         "\t[哈斯太]啊，一不小心把這兩個人抓進來了",
                         "\t[哈斯太]不過還是沒有靈感呢，希望編輯不要找到我",
                         "\t[哈斯太]好苦惱啊",
@@ -1127,6 +1154,11 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[梗平]可惡的修卡，他們到底在哪裡",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "兩人在秋葉原繞了一段時間過後，依舊不見東山的蹤影",
         {
             "type": "showImage",
@@ -1140,11 +1172,6 @@ main.floors.mapo_1_2=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
         },
         "\t[蘭斯]（手機）還沒找到A，我先吃飯，傳地址給你們",
         {
@@ -1199,6 +1226,11 @@ main.floors.mapo_1_2=
         },
         "\t[梗平]可能性1.修卡想要利用comike的同人之力製造前所未有的強大怪人！",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -1210,6 +1242,11 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[梗平]可能性2.修卡想要抓大量的阿宅做改造人",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -1274,6 +1311,11 @@ main.floors.mapo_1_2=
         },
         "\t[梗平]然後在要被腦改造前被善良的博士救出，從此開始跟修卡的戰爭",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -1302,6 +1344,11 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[表妹]太詳細了吧，到底在腦內演練幾次了啊這個",
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0
+        },
         "又過一段時間後",
         {
             "type": "showImage",
@@ -1315,11 +1362,6 @@ main.floors.mapo_1_2=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0
         },
         "\t[克莉絲]（手機）餓了、我也先吃個飯…",
         {
@@ -1336,15 +1378,15 @@ main.floors.mapo_1_2=
         "\t[梗平]（手機）你們有看到修卡的蹤跡嗎?",
         {
             "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
             "code": 30,
             "time": 150
         },
         "......",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1357,6 +1399,11 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[梗平]群裡剛剛有人發了個位置之後就沒人回應了…一定是修卡幹的",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -1420,6 +1467,11 @@ main.floors.mapo_1_2=
             "time": 0
         },
         "\t[表妹]總之先過去找他們會合吧",
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0
+        },
         "兩人朝著手機中的地址走去",
         {
             "type": "playTransitionVideo"
@@ -1434,17 +1486,5 @@ main.floors.mapo_1_2=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

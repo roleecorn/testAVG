@@ -270,6 +270,18 @@ main.floors.mapo_1_4=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -312,11 +324,6 @@ main.floors.mapo_1_4=
                 0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
             "time": 0
         },
         {
@@ -364,13 +371,13 @@ main.floors.mapo_1_4=
         },
         "\t[梗平]什麼？這種技術...難道是修卡嗎？",
         {
-            "type": "comment",
-            "text": "TODO: 【下一句話使用三角作為立繪】"
-        },
-        {
             "type": "hideImage",
             "code": 10,
             "time": 0
+        },
+        {
+            "type": "comment",
+            "text": "TODO: 【下一句話使用三角作為立繪】"
         },
         "\t[不知道是誰的？]說什麼啊你，看下面",
         "一個藍髮的少女手上抓著手偶，並正在使用手偶說話",
@@ -390,6 +397,11 @@ main.floors.mapo_1_4=
             "time": 0
         },
         "\t[梗平]兔子玩偶竟然發出了聲音？你肯定是被修卡改造的怪人－咕",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "兔子彈了出來，往梗平的臉用力一蹬",
         {
             "type": "showImage",
@@ -443,6 +455,11 @@ main.floors.mapo_1_4=
         },
         "\t[梗平]晚上不需要幫忙嗎？不如說請務必讓在下排晚上的班！",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -490,12 +507,12 @@ main.floors.mapo_1_4=
             "time": 0
         },
         "\t[梗平]竟然不許！",
-        "梗平，再起不能",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "梗平，再起不能",
         "\t[三角]時間也差不多了，你趕快去閣樓放一放行李",
         "\t[三角]你明天早上再來報到就好，我也該去處理酒吧的業務了",
         "三角說完後就走向了櫃檯後方開始繼續處理事情",
@@ -529,6 +546,11 @@ main.floors.mapo_1_4=
         },
         "\t[梗平](等等......剛剛的話意思是我到明天早上為止都可以自由活動對吧)",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -540,6 +562,11 @@ main.floors.mapo_1_4=
             "time": 0
         },
         "\t[梗平](我記得過來的路上...似乎有看到一家便利商店的樣子)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -609,13 +636,13 @@ main.floors.mapo_1_4=
             "time": 0
         },
         "\t[梗平]對的對的，假面騎士怎麼可以沒有燃料呢",
-        "梗平抱著好幾罐啤酒走向了櫃檯",
-        "櫃台站著的是看起來即將登出人生的店員小姐",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "梗平抱著好幾罐啤酒走向了櫃檯",
+        "櫃台站著的是看起來即將登出人生的店員小姐",
         "\t[眼神死掉的人]您...您好，只......需要這些嗎？",
         {
             "type": "showImage",
@@ -629,12 +656,12 @@ main.floors.mapo_1_4=
             "time": 0
         },
         "\t[梗平]對，塑膠袋謝謝",
-        "結完帳的梗平抓起了塑膠袋便朝外面跑了出去",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "結完帳的梗平抓起了塑膠袋便朝外面跑了出去",
         "\t[眼神死掉的人]......",
         "\t[眼神死掉的人]我是不是已經連續上班5天了",
         "\t[眼神死掉的人]......",
@@ -674,6 +701,11 @@ main.floors.mapo_1_4=
         },
         "\t[梗平]在下明天還得繼續跟修卡戰鬥，怎麼能沒有燃料呢",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -685,6 +717,11 @@ main.floors.mapo_1_4=
             "time": 0
         },
         "\t[梗平]老媽就是太過擔心我跟修卡戰鬥會受傷了",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -698,6 +735,11 @@ main.floors.mapo_1_4=
         },
         "\t[梗平]可是在下已經下定決心要跟他們戰鬥到底了",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -709,6 +751,11 @@ main.floors.mapo_1_4=
             "time": 0
         },
         "\t[梗平]所以沒錯，乾杯！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "梗平將啤酒拿到了自己的嘴前，手感受著剛從冰箱拿出來的冰涼",
         "看著這瓶啤酒，梗平開始思考",
         {
@@ -719,11 +766,6 @@ main.floors.mapo_1_4=
                     "text": "奶奶說過答應別人的事情得做到才行",
                     "action": [
                         "天人交戰的梗平啤酒從手中滑落",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -736,12 +778,12 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]在下的酒啊！",
-                        "梗平與啤酒進入了追逐輪，隨後來到了一處下水道旁，啤酒滾進了水溝內，梗平跪在地",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗平與啤酒進入了追逐輪，隨後來到了一處下水道旁，啤酒滾進了水溝內，梗平跪在地",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -754,6 +796,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]在下的啤酒！100塊！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "這時從水溝伸出一隻手把酒遞了過去",
                         {
                             "type": "showImage",
@@ -768,6 +815,11 @@ main.floors.mapo_1_4=
                         },
                         "\t[梗平]...",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -779,6 +831,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]雖然不知道你是誰但你人真好",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平伸手握住了啤酒，但隨著一股強大的力量，梗平被拖進了下水道，隨後失去意識",
                         {
                             "type": "playBgm",
@@ -791,11 +848,6 @@ main.floors.mapo_1_4=
                         },
                         "[不知過了多久，梗平艱難的張開了眼睛］",
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -807,12 +859,12 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]嘔嘔嘔嘔嘔！",
-                        "梗平吐了一地之後，發現自己剛才還趴在堅硬的地板上，四周伸手不見五指",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗平吐了一地之後，發現自己剛才還趴在堅硬的地板上，四周伸手不見五指",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -825,6 +877,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]手機不在身上，這下麻煩了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -854,6 +911,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]連燃料都一起搶走了，修卡太可惡！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "等到眼睛適應黑暗，梗平開始觀察四周",
                         {
                             "type": "showImage",
@@ -867,6 +929,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]這裡還挺大的，但沒路的樣子？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -896,6 +963,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]就是這個了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 30,
@@ -963,6 +1035,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]已經，沒什麼好怕的了！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平開始在下水道探索，然後前方傳來手機鈴聲",
                         {
                             "type": "showImage",
@@ -984,11 +1061,6 @@ main.floors.mapo_1_4=
                             "time": 150
                         },
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -1000,13 +1072,13 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]給我站住！",
-                        "然後梗平追了上去，小丑也開始逃跑，雙方的差距出乎預料越來越小",
-                        "就在梗平即將追上的時候，小丑突然轉過身對梗平揮拳",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "然後梗平追了上去，小丑也開始逃跑，雙方的差距出乎預料越來越小",
+                        "就在梗平即將追上的時候，小丑突然轉過身對梗平揮拳",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1019,13 +1091,13 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]只要打不中就沒什麼大不了的",
-                        "但拳頭毫不留情直接打中梗平的臉，雙方開始極其高速的肉搏戰",
-                        "南無三，何等精彩的戰鬥，想必諸位擁有忍者般動態視力的觀眾已經觀賞到了吧！",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "但拳頭毫不留情直接打中梗平的臉，雙方開始極其高速的肉搏戰",
+                        "南無三，何等精彩的戰鬥，想必諸位擁有忍者般動態視力的觀眾已經觀賞到了吧！",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1038,6 +1110,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]哈哈，區區小丑，根本不在話下",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平一邊大腿發抖一邊為自己打氣",
                         "......",
                         "小丑摸了摸破損的頭套後，粗暴的拉下頭套，下面竟然是...",
@@ -1097,15 +1174,15 @@ main.floors.mapo_1_4=
                         "\t[梗平]居然是雷霆大鱷魚！",
                         {
                             "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
+                            "type": "hideImage",
                             "code": 30,
                             "time": 150
                         },
                         "雷霆大鱷魚不等梗平反應即發起了死亡翻滾",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1118,6 +1195,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]這跟說好的不一樣啊！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "總之，梗平被鱷魚追殺了好一陣子後，總算找到了出路",
                         "梗平艱難的從下水道出來，許久不見的陽光照射在他的身上",
                         {
@@ -1175,6 +1257,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]所以在下沒說謊阿，哎呦頭好暈...",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平忘了自己幾天沒進食，被警察輕易的架去醫院接受檢查",
                         "梗平證明了自己沒有說謊，但還是錯過了Comike",
                         {
@@ -1189,11 +1276,6 @@ main.floors.mapo_1_4=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         "\t[BE]（手機）大鱷魚之戀",
                         {
@@ -1228,6 +1310,11 @@ main.floors.mapo_1_4=
                             "time": 0
                         },
                         "\t[梗平]沒錯沒錯，在下可沒有違反規則啊！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "區區半杯啤酒下肚，梗平便倒在了橋底下睡死過去",
                         "一夜平安過去了......嗎?",
                         {
@@ -1257,17 +1344,5 @@ main.floors.mapo_1_4=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

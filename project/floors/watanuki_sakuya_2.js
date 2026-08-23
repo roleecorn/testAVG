@@ -310,31 +310,7 @@ main.floors.watanuki_sakuya_2=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "[不知道是迷霧還是精神不佳影響，梗平朦朧間走到了神社附近]",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -349,15 +325,8 @@ main.floors.watanuki_sakuya_2=
         "\t[綿貫咲耶]梗平先生，沒想到你又來了呢？是想締結良緣還是想為誰祈求冥福呢？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -374,14 +343,7 @@ main.floors.watanuki_sakuya_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -397,15 +359,8 @@ main.floors.watanuki_sakuya_2=
         "\t[綿貫咲耶]欸……吾有點聽不懂梗平先生在說什麼呢～",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -422,14 +377,7 @@ main.floors.watanuki_sakuya_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -445,15 +393,8 @@ main.floors.watanuki_sakuya_2=
         "\t[綿貫咲耶]強化形態是指……？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -470,14 +411,7 @@ main.floors.watanuki_sakuya_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -494,14 +428,7 @@ main.floors.watanuki_sakuya_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -517,15 +444,8 @@ main.floors.watanuki_sakuya_2=
         "\t[綿貫咲耶]原來如此，是為了提升運勢而到神社求福呢…吾理解了。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -542,14 +462,7 @@ main.floors.watanuki_sakuya_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -565,15 +478,8 @@ main.floors.watanuki_sakuya_2=
         "\t[綿貫咲耶]關於那點…可能沒有相似的東西呢……",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -589,15 +495,8 @@ main.floors.watanuki_sakuya_2=
         "\t[綿貫咲耶]啊，對了，有乾花製的護身符，可能會有作用吧？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -614,14 +513,7 @@ main.floors.watanuki_sakuya_2=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -636,24 +528,17 @@ main.floors.watanuki_sakuya_2=
         },
         "\t[綿貫咲耶]硬幣嗎？那麼這個以「紅色蝴蝶蘭」為基底的護身符很適合梗平先生呢。",
         {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
             "type": "choices",
             "text": "要怎麼回應？",
             "choices": [
                 {
                     "text": "購買",
                     "action": [
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -669,14 +554,7 @@ main.floors.watanuki_sakuya_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -692,15 +570,8 @@ main.floors.watanuki_sakuya_2=
                         "\t[綿貫咲耶]嗯嗯，紅色蝴蝶蘭的花語主要為「仕途順暢」與「鴻運當頭」～",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -717,14 +588,7 @@ main.floors.watanuki_sakuya_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -740,15 +604,8 @@ main.floors.watanuki_sakuya_2=
                         "\t[綿貫咲耶]嗯嗯，如果能幫到梗平先生就好了呢。",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "[梗平買了護身符就去抽新的假面騎士一番賞，結果沒中想要的Ａ賞，但中了Ｂ賞還算不錯。]"
                     ]
@@ -756,18 +613,6 @@ main.floors.watanuki_sakuya_2=
                 {
                     "text": "不購買",
                     "action": [
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -783,14 +628,7 @@ main.floors.watanuki_sakuya_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -806,15 +644,8 @@ main.floors.watanuki_sakuya_2=
                         "\t[綿貫咲耶]那真是遺憾呢…",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -831,14 +662,7 @@ main.floors.watanuki_sakuya_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -854,15 +678,8 @@ main.floors.watanuki_sakuya_2=
                         "\t[綿貫咲耶]原來如此，參拜之儀呢，那麼這邊請……投下任意金錢後合掌三拜默念就可以了。",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -879,14 +696,7 @@ main.floors.watanuki_sakuya_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -903,14 +713,7 @@ main.floors.watanuki_sakuya_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -926,15 +729,8 @@ main.floors.watanuki_sakuya_2=
                         "\t[綿貫咲耶]呼，真是有趣的人呢…令我想起一位朋友了。",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -951,14 +747,7 @@ main.floors.watanuki_sakuya_2=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -974,45 +763,14 @@ main.floors.watanuki_sakuya_2=
                         "\t[綿貫咲耶]這樣就可以了，祝你緣份已至。",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "[梗平滿懷歡喜地去抽一番賞……雖然沒有A賞，]",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         "[但是意外地用較少抽數得到了最終賞，即異色A賞。]"
                     ]
                 }
             ]
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
         },
         {
             "type": "function",

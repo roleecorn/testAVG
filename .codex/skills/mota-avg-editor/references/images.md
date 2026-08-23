@@ -70,7 +70,7 @@ Runtime 圖片需放在 `project/images`，登錄到 `project/data.js -> main.im
 目前遊戲畫布是 544×416（17×13）。每張正式地點背景都是完整畫面，必須輸出為 544×416；不得把任何 416×416 佔位圖或舞台素材當成背景規格。任何 416×416 地點背景都是錯誤素材，必須納入檢查與替換範圍。各類圖片必須分開定位，不能共用角色或 CG 的座標規則：
 
 - 地點背景固定為 544×416，使用 `loc: [0, 0]` 或樓層 `images` 的 `x: 0, y: 0`，完整覆蓋 AVG 畫布；不得裁切、留白或只覆蓋左側區域。
-- 角色立繪只使用一個全局「當前發言者」槽。人物 alpha bbox 的可見內容左右置中於畫面，且可見 bottom 精準對齊下方對話框 top。alpha bbox 只負責對齊；所有人物統一套用單一全局 `portraitScale`。
+- 角色立繪只使用一個全局普通「當前發言者」槽。人物 alpha bbox 的可見內容左右置中於畫面，且可見 bottom 錨定於畫面外的 `portraitBottomY: 440`。alpha bbox 只負責對齊；所有人物統一套用單一全局 `portraitScale`，人物圖層位於下方對話框 UI 後方，下半身由 416px 畫面底部裁切。
 - AVG 中央 CG 面板使用 `loc: [112, 50, 320, 220]`，可見比例為 16:11。來源不是 16:11 時要用 `sloc` 中央裁切，不可直接拉伸；416×312 來源的標準裁切是 `sloc: [0, 13, 416, 286]`。
 - 一般持續 CG 與固定一秒動作 CG 共用上述面板位置；差異在停留流程，不在畫面範圍。固定一秒動作 CG 仍須使用不可跳過的一秒 `sleep` 後立即清除。
 - 對話框固定在畫面下方，不再為左右人物槽預留水平空間。新版全局 layout config 的 544×416 基準為 `x=16, y=295, width=512, fixedLines=2`；`x=96, width=352` 是禁止回用的舊窄框值。
@@ -95,15 +95,15 @@ Runtime 圖片需放在 `project/images`，登錄到 `project/data.js -> main.im
 
 ### AVG 立繪新定位規則
 
-新版定位只使用一個置中人物槽，不採 `textTop`、畫面底部或左右站位。runtime 先量測來源裁切區域的 alpha bbox，再以可見內容計算對齊；縮放倍率則直接取全局 `portraitScale`：
+新版定位只使用一個置中人物槽，不採 `textTop`、對話框頂端或左右站位。runtime 先量測來源裁切區域的 alpha bbox，再以可見內容計算對齊；縮放倍率則直接取全局 `portraitScale`：
 
 ```txt
 portraitScale = globalLayout.portraitScale
 visiblePortraitX = (viewportWidth - visibleSourceWidth * portraitScale) / 2
-visiblePortraitY = dialogueY - visibleSourceHeight * portraitScale
+visiblePortraitY = portraitBottomY - visibleSourceHeight * portraitScale
 ```
 
-`portraitScale` 固定為 `1.2`。它可由全局 layout config 統一調整，但不可依各角色、各表情或圖片寬高產生不同倍率。如此才能保留素材中原有的角色身高差。透明 padding 不得影響可見內容的置中與底邊；最後必須滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === dialogueY`。canvas alpha 不可讀時才退回整張來源矩形。
+`portraitScale` 固定為 `0.92`，`portraitBottomY` 固定為 `440`。後者刻意位於 416px viewport 外，使完整全身素材在遊戲內呈現附圖式的大型腰／腿部裁切構圖；一般素材的頭頂目標約為畫面上緣 5–10%。它們可由全局 layout config 統一調整，但不可依各角色、各表情或圖片寬高產生不同倍率或偏移。如此才能保留素材中原有的人物身高差。透明 padding 不得影響可見內容的置中與底邊；最後必須滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === portraitBottomY`。canvas alpha 不可讀時才退回整張來源矩形。
 
 整份 layout config 集中保存下列已定稿欄位；後續不得由個別 floor 覆蓋：
 
@@ -111,7 +111,8 @@ visiblePortraitY = dialogueY - visibleSourceHeight * portraitScale
 {
     portraitSlot: "speaker",
     portraitDialogueGap: 0,
-    portraitScale: 1.2,
+    portraitScale: 0.92,
+    portraitBottomY: 440,
     dialogueX: "<global pixels>",
     dialogueY: "<global pixels>",
     dialogueWidth: "<global pixels>",
@@ -119,7 +120,7 @@ visiblePortraitY = dialogueY - visibleSourceHeight * portraitScale
 }
 ```
 
-人物可見 bottom 必須貼齊對話框 top；人物圖層仍必須在 UI／文字框下方，因此即使邊界相接也不得蓋住文字框。人物使用 UI 下方的圖片 code（既有 10／11 等角色 code 可保留）；禁止使用 41–50 等會蓋住文字框的 code。舊的 `portraitLeft`、`portraitRight`、`portraitBottomGap`、非零 `portraitDialogueGap`、`portraitMaxVisibleWidth=128`、`portraitMaxDialogueOverlapRatio=0.25` 與小圖不放大規則均不得帶入新版實作。
+人物可見 bottom 必須錨定於畫面底部下方 24px，並由 viewport 裁切；人物圖層仍必須在 UI／文字框下方，因此人物下半身可以延伸到對話框後方，但不得蓋住角色名或正文。人物使用 UI 下方的圖片 code（既有 10／11 等角色 code 可保留）；禁止使用 41–50 等會蓋住文字框的 code。舊的 `portraitLeft`、`portraitRight`、`portraitBottomGap`、依 `dialogueY` 錨定、`portraitMaxVisibleWidth=128`、`portraitMaxDialogueOverlapRatio=0.25` 與小圖不放大規則均不得帶入新版實作。
 
 本節是全局版面契約；目前 1-1 已完成 runtime／emitter／floor 遷移，其他既有 floor 尚未遷移。未遷移場景在完成實作及遊戲內驗證前，不得宣稱新版面已生效。
 
@@ -135,24 +136,20 @@ visiblePortraitY = dialogueY - visibleSourceHeight * portraitScale
 
 ### 對話人物顯示
 
-畫面只有一個人物槽。每句角色台詞前先清空所有人物 code，再把當前發言者顯示於同一個置中槽；旁白前清空所有人物。場景有三名以上人物時也只替換這個槽的圖片與表情，不保留非發言者。
+畫面只有一個普通人物槽。每句有立繪的角色台詞都原子化輸出 `showImage(本句 code) → dialogue → hideImage(同一 code)`；hide 發生在該句 dialogue 結束後。不得在下一句開始時清空所有人物 code，也不得對本句未顯示的 code 發出 hide。來源明確要求多人同時存在時，才使用多個明確 show／hide 事件。
 
 以下是新版面完成 runtime 支援後的目標語意範例；`portraitSpeakerX`／`portraitSpeakerY` 由全局 layout config 解析，並統一套用全局 `portraitScale`：
 
 ```js
 [
-    {"type": "hideImage", "code": 10, "time": 0, "async": true},
-    {"type": "hideImage", "code": 11, "time": 0, "async": true},
     {"type": "showImage", "code": 10, "image": "keng.png", "loc": ["portraitSpeakerX", "portraitSpeakerY"], "opacity": 1, "time": 0},
     "\t[梗平]這一句只有梗平的圖。",
+    {"type": "hideImage", "code": 10, "time": 0},
 
-    {"type": "hideImage", "code": 10, "time": 0, "async": true},
-    {"type": "hideImage", "code": 11, "time": 0, "async": true},
     {"type": "showImage", "code": 11, "image": "suou_sad_portrait.png", "loc": ["portraitSpeakerX", "portraitSpeakerY"], "opacity": 1, "time": 0},
     "\t[表妹]換我說話時，仍使用同一個人物位置。",
-
-    {"type": "hideImage", "code": 10, "time": 0, "async": true},
     {"type": "hideImage", "code": 11, "time": 0},
+
     "旁白不顯示人物立繪。"
 ]
 ```
@@ -166,28 +163,26 @@ visiblePortraitY = dialogueY - visibleSourceHeight * portraitScale
 
 ### 常用立繪 mapping
 
-自動產生 AVG 對話時，角色表情立繪優先使用 `showImage`，因為可直接指定圖片檔名。每句先清空所有人物 code，再把當前發言者放到同一個語意槽：
+自動產生 AVG 對話時，角色表情立繪優先使用 `showImage`，因為可直接指定圖片檔名。每句只管理自己實際顯示的 code：
 
 ```js
 [
-    {"type": "hideImage", "code": 10, "time": 0, "async": true},
-    {"type": "hideImage", "code": 11, "time": 0, "async": true},
     {"type": "showImage", "code": 10, "image": "keng_smile_portrait.png", "loc": ["portraitSpeakerX", "portraitSpeakerY"], "opacity": 1, "time": 0},
     "\t[梗平]這一句只顯示目前發言的我。",
-    {"type": "hideImage", "code": 10, "time": 0, "async": true},
-    {"type": "hideImage", "code": 11, "time": 0, "async": true},
+    {"type": "hideImage", "code": 10, "time": 0},
     {"type": "showImage", "code": 11, "image": "suou_angry_portrait.png", "loc": ["portraitSpeakerX", "portraitSpeakerY"], "opacity": 1, "time": 0},
-    "\t[表妹]換我說話時，先清空人物再在同一位置顯示我。"
+    "\t[表妹]換我說話時，在同一位置顯示我並於本句結束後清除。",
+    {"type": "hideImage", "code": 11, "time": 0}
 ]
 ```
 
 上例語意座標已由 runtime 支援，並用於已遷移的 1-1。最終 x、y 由 layout config 及人物 alpha bbox 計算，縮放倍率則只取全局 `portraitScale`，不能落成逐角色固定像素或各自 fit。
 
-自動為劇本補立繪時，必須先保留正確角色名，確認圖片屬於當前發言角色後，再依台詞當下的情緒選擇合適表情。同一個角色理論上會有複數張表情圖可用，例如 `neutral`、`smile`、`angry`、`surprised` 等；若判斷不出情緒，才使用該角色的預設/平常立繪。不得把其他角色或相似名字的圖片誤認為該角色的正式素材；但已確認角色且 Story IR 明確需要立繪時，若正式素材缺少，必須依本節規則複製合適圖片作為明確可搜尋的暫時替代，接入 scene 並寫入對應故事 TODO。未知角色如 `???` 若身分尚未確認，該角色圖片接入仍屬局部阻塞，清空所有人物圖且不顯示立繪。
+自動為劇本補立繪時，必須先保留正確角色名，確認圖片屬於當前發言角色後，再依台詞當下的情緒選擇合適表情。同一個角色理論上會有複數張表情圖可用，例如 `neutral`、`smile`、`angry`、`surprised` 等；若判斷不出情緒，才使用該角色的預設/平常立繪。不得把其他角色或相似名字的圖片誤認為該角色的正式素材；但已確認角色且 Story IR 明確需要立繪時，若正式素材缺少，必須依本節規則複製合適圖片作為明確可搜尋的暫時替代，接入 scene 並寫入對應故事 TODO。未知角色如 `???` 若身分尚未確認，該角色圖片接入仍屬局部阻塞；該句不顯示立繪，也不對任何未顯示的 code 發出 hide。
 
-新增角色支線劇情時，輸入應是一個 `.txt` 劇本文本，且能從檔案名稱確認這是哪個角色的支線。先完整閱讀文本並建立 draft Story IR，再確認既有正式角色圖或同角色 ZIP 基準圖能否滿足 IR 的立繪需求；若已確認角色但沒有對應正式角色圖，使用明確標示且有 TODO 的暫時替代圖完成可玩 scene，不得留下缺檔引用，也不得把暫代品宣稱為正式素材。需要新表情時，在 intake 先使用 `remove_bk.py` 去背，再使用 `split_emotion_image.py` 分割六張候選表情；分割工具會把輸出圖等比例縮小到固定上限，預設不超過 `195x195`。只有被 Story IR 實際引用的表情才移入 `project/images/`、登錄到 `project/data.js -> main.images` 並用於後續劇情轉換。
+新增角色支線劇情時，輸入應是一個 `.txt` 劇本文本，且能從檔案名稱確認這是哪個角色的支線。先完整閱讀文本並建立 draft Story IR，再確認既有正式角色圖或同角色 ZIP 基準圖能否滿足 IR 的立繪需求；若已確認角色但沒有對應正式角色圖，使用明確標示且有 TODO 的暫時替代圖完成可玩 scene，不得留下缺檔引用，也不得把暫代品宣稱為正式素材。需要新表情時，在 intake 先對仍保留綠幕的 2×3 母圖執行 `split_emotion_image.py`；分割器會在名義格線附近尋找連續綠幕 gutter，從 gutter 中央切開，再拒絕任何仍碰觸安全邊界的前景。六張切圖完成後才逐張使用 `remove_bk.py` 去背。分割工具預設保留到 `512x512` 上限。只有被 Story IR 實際引用的表情才移入 `project/images/`、登錄到 `project/data.js -> main.images` 並用於後續劇情轉換。
 
-`remove_bk.py` 是新增角色表情圖的固定前置流程，不是可選優化。即使原圖已是 2x3 表情表、尺寸可直接分割、或只需要裁切幾個像素，也要先去背，後續裁切與 `split_emotion_image.py` 都應基於去背後的透明 PNG。
+`remove_bk.py` 是每張 runtime 表情圖的固定去背流程，不是可選優化；但必須在綠幕 gutter 分割之後逐張執行，因為 `split_emotion_image.py` 需要綠幕資訊判定安全分格線。不得先去背整張母圖後再用固定三等分，也不得用固定 inset 掩蓋上一列的腳或下一列的頭飾。
 
 新角色 2x3 表情表的固定格順如下，`split_emotion_image.py` 會依此輸出檔名：
 
@@ -202,11 +197,12 @@ visiblePortraitY = dialogueY - visibleSourceHeight * portraitScale
 角色圖處理流程範例：
 
 ```powershell
-python remove_bk.py tmp/character-story-import/<zip>/art/角色.png tmp/character-story-import/<zip>/art/角色_transparent.png
-python split_emotion_image.py tmp/character-story-import/<zip>/art/角色_transparent.png --keep-original
+python split_emotion_image.py tmp/character-story-import/<zip>/art/角色.png --keep-original
+python remove_bk.py tmp/character-story-import/<zip>/art/角色_smile.png tmp/character-story-import/<zip>/art/角色_smile_transparent.png
+# 其餘 angry／sad／surprised／panic／normal 同樣逐張去背
 ```
 
-若需要維持最終表情檔名為 `角色_smile.png`、`角色_angry.png`、`角色_normal.png` 等，可在 intake 的去背輸出完成後，用去背圖取代原始處理用圖，再執行分割；不要直接跳過去背。只把 validated Story IR 已引用的最終檔案移入 `project/images/`。
+若需要維持最終表情檔名為 `角色_smile.png`、`角色_angry.png`、`角色_normal.png` 等，先把綠幕切圖留在 intake，再把逐張去背輸出直接寫成最終檔名；不要直接跳過去背。只把 validated Story IR 已引用的最終檔案移入 `project/images/`。
 
 若支線劇情中的發言者被刻意隱蔽，例如 `???`、`神秘人`、`神祕人`，預設視為該支線劇情持有者本人來選擇立繪；但對話中顯示的發言者名稱仍保留原本的隱蔽寫法，不要提前暴露真名。
 
@@ -237,7 +233,7 @@ python split_emotion_image.py tmp/character-story-import/<zip>/art/角色_transp
 
 若歷史內容暫時必須保留樓層 `images` + `showFloorImg`，每張表情在同一樓層內仍要有不同的 `x, y` 作為識別鍵，切換前也要清掉該角色全部表情座標；但這只是待遷移相容規則，不得用來定義新版人物位置或縮放。新版 AVG 應以 `showImage` 及單一人物語意槽為準。
 
-新增角色時，應把角色放入同一個全局當前發言者槽。runtime 依 alpha bbox 將人物可見內容左右置中，將可見 bottom 對齊 `dialogueY`，並統一套用全局 `portraitScale`；不得把像素、縮放值散寫到個別內容，也不得把 `textTop`、左右站位、非零垂直 gap 或既有數字座標宣稱為新版標準。
+新增角色時，應把角色放入同一個全局當前發言者槽。runtime 依 alpha bbox 將人物可見內容左右置中，將可見 bottom 錨定到畫面外 `portraitBottomY: 440`，並統一套用全局 `portraitScale: 0.92`；不得把像素、縮放值散寫到個別內容，也不得把 `textTop`、`dialogueY`、左右站位或既有數字座標宣稱為新版標準。
 
 ### 樓層貼圖
 

@@ -270,6 +270,18 @@ main.floors.main_ch2_4=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -315,11 +327,6 @@ main.floors.main_ch2_4=
             "time": 0
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
             "type": "comment",
             "text": "【主線 CH2 2-4 書店A內部】"
         },
@@ -356,12 +363,12 @@ main.floors.main_ch2_4=
             "time": 0
         },
         "\t[梗平]你這個渾蛋！",
-        "梗平剛想做點什麼，就發現自己的手腳被綁住了",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "梗平剛想做點什麼，就發現自己的手腳被綁住了",
         "\t[警察]小心我以襲警的名義逮捕你啊",
         "警察腰上的對講機響了起來",
         "\t[416]（手機）你是不是又去打小鋼珠了，30分鐘內沒看到你就死定了",
@@ -416,6 +423,11 @@ main.floors.main_ch2_4=
             "time": 0
         },
         "\t[梗平]外面有沒有人啊！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "外面的世界回應了梗平的邀請，門真的打開了",
         "梗平與警察以最快的速度遠離了門口並抱在一起",
         {
@@ -445,11 +457,6 @@ main.floors.main_ch2_4=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
         },
         "\t[警察]你不要過來啊！",
         {
@@ -572,6 +579,11 @@ main.floors.main_ch2_4=
         },
         "\t[梗平]等下...%$^#^@%$#^%$^%#^@@^%#@%%$",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -583,6 +595,11 @@ main.floors.main_ch2_4=
             "time": 0
         },
         "\t[梗平](這時候只能靠那一招了)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "playBgm",
             "name": "BGMKyoheiTranslation.mp3",
@@ -648,11 +665,6 @@ main.floors.main_ch2_4=
         "於是，梗平跳出了他這輩子最完美的一次假面騎士空翻",
         "翻越了成群的肥宅，跳到了IB與警察的旁邊",
         "梗平與警察交換了眼神之後......",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
         "\t[IB]誒？",
         {
             "type": "showImage",
@@ -709,6 +721,11 @@ main.floors.main_ch2_4=
         },
         "\t[梗平]這......也不是都是在下的錯啊",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -720,12 +737,12 @@ main.floors.main_ch2_4=
             "time": 0
         },
         "\t[梗平]你也說點什麼......人呢？",
-        "梗平轉身一看，警察早已跑遠",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "梗平轉身一看，警察早已跑遠",
         "\t[警察]我搭檔在找我了，先走一步！",
         "視角轉回來，IB的眼神感覺又冷了幾度",
         {
@@ -740,6 +757,11 @@ main.floors.main_ch2_4=
             "time": 0
         },
         "\t[梗平]這個嘛，你聽在下說.......",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "就在梗平即將陷入絕境的時候，手機上傳來了東山的訊息",
         {
             "type": "showImage",
@@ -755,23 +777,23 @@ main.floors.main_ch2_4=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）兔子咖啡被修卡襲擊了！速來！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -785,11 +807,6 @@ main.floors.main_ch2_4=
                     "text": "你...該不會是騙我的吧？",
                     "action": [
                         "梗平回完訊息後，感覺自己衣角被拉了一下",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
                         "\t[IB]可以陪我嗎……",
                         {
                             "type": "showImage",
@@ -803,6 +820,11 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]欸？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -832,6 +854,11 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]沒問題喔，要去哪裡呢",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "IB指向了一座散發著詭異氣息的美術館",
                         {
                             "type": "showImage",
@@ -846,6 +873,11 @@ main.floors.main_ch2_4=
                         },
                         "\t[梗平](奇怪，這個時間還有營業中的美術館嗎)",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -857,6 +889,11 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]哈哈哈哈，我們走吧",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "comment",
                             "text": "【過場】"
@@ -883,11 +920,6 @@ main.floors.main_ch2_4=
                             "time": 250
                         },
                         "正在舉辦某個藝術家的個人展",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -919,12 +951,12 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]那這裡可能會有線索，我有找到導覽手冊，我們分別去搜索吧！",
-                        "於是梗平轉身向出口走去，被IB一把抓住拖了回來",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "於是梗平轉身向出口走去，被IB一把抓住拖了回來",
                         "\t[IB]一起走吧？",
                         {
                             "type": "showImage",
@@ -939,13 +971,13 @@ main.floors.main_ch2_4=
                         },
                         "\t[梗平]但是",
                         {
-                            "type": "comment",
-                            "text": "【下一句字放大】"
-                        },
-                        {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
+                        },
+                        {
+                            "type": "comment",
+                            "text": "【下一句字放大】"
                         },
                         "\t[IB]一起走吧？",
                         {
@@ -960,12 +992,12 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]好",
-                        "梗平在IB逐漸冷淡的視線中拼命的讀著導覽手冊",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗平在IB逐漸冷淡的視線中拼命的讀著導覽手冊",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -978,12 +1010,12 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]出發前往三樓吧！我的假面騎士之魂告訴我那裡肯定有線索",
-                        "梗平指著手冊上寫著的三樓休息室，IB眼神又冷了幾度",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "梗平指著手冊上寫著的三樓休息室，IB眼神又冷了幾度",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -996,6 +1028,11 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]你聽在下解釋！在下絕對不是打算直接去休息什麼的",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1067,12 +1104,12 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]可惡，製作這幅畫的藝術家的喜好太糟糕了",
-                        "聽完梗平的話，畫中人的笑容變得更深，嘴邊快裂到了耳根旁",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "聽完梗平的話，畫中人的笑容變得更深，嘴邊快裂到了耳根旁",
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1085,6 +1122,11 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]不對，這畫肯定動了",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "不等梗平反應，畫張開了大嘴把梗平一口吞下",
                         {
                             "type": "hideImage",
@@ -1103,11 +1145,6 @@ main.floors.main_ch2_4=
                             "time": 250
                         },
                         "梗平被迫進入了畫中",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1156,6 +1193,11 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]哦好的",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平默默地移開，看著梅愛莉走進自己進入的畫框",
                         "然後畫框消失了",
                         {
@@ -1188,6 +1230,11 @@ main.floors.main_ch2_4=
                         },
                         "\t[梗平]等等，那在下要怎麼出去？",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "comment",
                             "text": "【過場】"
                         },
@@ -1208,11 +1255,6 @@ main.floors.main_ch2_4=
                             "time": 250
                         },
                         "IB在美術館二樓尋找無果後又回到了休息室，突然畫作吐出了一個人",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         "\t[梅愛莉]這裡似乎沒有呢？我們去其他地方找找看",
                         "\t[IB]？",
                         "\t[梅愛莉]你是他的同行者嗎？",
@@ -1310,6 +1352,11 @@ main.floors.main_ch2_4=
                         },
                         "\t[梗平]我們明天見啊",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -1321,12 +1368,12 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]蘭斯剛好在附近，很快就來，千萬不要自己再跑進去囉",
-                        "話說完，梗平就頭也不回的跑走了",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "話說完，梗平就頭也不回的跑走了",
                         "\t[IB]......",
                         "\t[IB]嘖",
                         {
@@ -1364,6 +1411,11 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]放開那位女士！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 30,
@@ -1468,12 +1520,12 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]是說東山去哪裡了，不是他叫我過來的嗎？",
-                        "就在梗平還在思考的時候，三角的聲音傳了過來",
                         {
                             "type": "hideImage",
                             "code": 10,
                             "time": 0
                         },
+                        "就在梗平還在思考的時候，三角的聲音傳了過來",
                         "\t[三角]你把他們三個丟在一邊自己跑掉了對吧",
                         {
                             "type": "showImage",
@@ -1487,6 +1539,11 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "\t[梗平]不是這樣的，你聽在下解釋......啊！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 30,
@@ -1552,6 +1609,11 @@ main.floors.main_ch2_4=
                         },
                         "\t[梗平]不過時間還這麼早，先到處看看好了",
                         {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
+                        {
                             "type": "comment",
                             "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
                         },
@@ -1563,17 +1625,5 @@ main.floors.main_ch2_4=
                 }
             ]
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

@@ -16,7 +16,7 @@ Create one 2 × 3 chroma-key-green expression sheet. Own only the six-cell art c
 ## Outputs
 
 - Produce one sheet with six equal cells ordered left-to-right, top-to-bottom: happy, angry, sad, surprised, panicked, neutral.
-- Produce an inspection result covering identity consistency, grid order, crop, edges, background, and unwanted text.
+- Produce an inspection result covering identity consistency, grid order, separator gutters, crop, edges, background, and unwanted text.
 
 ## Dependencies
 
@@ -38,11 +38,11 @@ Create one 2 × 3 chroma-key-green expression sheet. Own only the six-cell art c
 ## Handoff
 
 1. Read the selected generation Skill.
-2. Generate six equal full-body cells with a visibly tall adult/anime proportion: head through shoes, elongated legs and torso, and no chibi or squat silhouette. The shoe sole may meet or be narrowly cropped by the cell bottom, but the legs and shoes must remain readable.
+2. Generate six equal full-body cells with a visibly tall adult/anime proportion: head through shoes, elongated legs and torso, and no chibi or squat silhouette. Keep every body part wholly inside its own cell. Leave at least 5% uninterrupted green above the head, below the shoe soles, and beside the widest hair, hand, or clothing point; no foreground pixel may touch or cross a nominal row or column boundary.
 3. Keep scale, camera distance, composition, and style consistent while varying only expression, hands, and small body-language changes.
 4. Use solid chroma-key green, a clear thick black outline, opaque clean edges, and no text, labels, emblems, watermarks, extra characters, floating reaction icons, or decorative panels.
 5. When called by a parent Skill, return the approved sheet and validation result to that caller.
-6. When explicitly invoked as the task root for a project asset, continue through [images.md](../mota-avg-editor/references/images.md) for key removal, splitting, registration, and event hookup. Do not invoke the parent Skill.
+6. When explicitly invoked as the task root for a project asset, continue through [images.md](../mota-avg-editor/references/images.md) for adaptive green-gutter splitting, key removal, registration, and event hookup. The full-body sheet is the generation master; the game's larger waist/thigh crop is produced by the shared runtime layout, never by cutting limbs off the master. Do not invoke the parent Skill.
 
 The historical source workflow used `instant5.5`; treat it as a preference, not as an available model selector unless the generation tool exposes one.
 
@@ -50,6 +50,7 @@ The historical source workflow used `instant5.5`; treat it as a preference, not 
 
 - Confirm all six emotions and the exact grid order.
 - Confirm the same character, fixed style, tall full-body framing, clean opaque edges, green background, and absence of text, emblems, or watermarks.
+- Confirm each nominal grid line lies inside a continuous green separator gutter and that no hair, hand, clothing, leg, or shoe reaches a neighboring cell. Reject a sheet that requires a blind fixed inset to hide cross-cell contamination.
 - Regenerate or edit any materially failed cell before handoff.
 - For project integration, also run the image validation required by [images.md](../mota-avg-editor/references/images.md).
 

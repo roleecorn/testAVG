@@ -270,6 +270,18 @@ main.floors.main_ch3_3=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -312,11 +324,6 @@ main.floors.main_ch3_3=
                 0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
             "time": 0
         },
         {
@@ -457,13 +464,13 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]發瘋了的肥宅佔據了ANIsister，然後IB的哥哥似乎在裡面對吧",
         {
@@ -511,26 +518,31 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]才不是啊！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]總之先看看該怎麼突破肥宅群吧",
         {
@@ -600,13 +612,13 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]這應該能清掉一部份的肥宅並爭取空間",
         {
@@ -625,13 +637,13 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]那我們要丟了嗎？",
         {
@@ -648,34 +660,39 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]......",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]我還有事先走了，你們慢慢討論啊",
-        "在東山逃離後，統至双進行了二十分鐘的分析",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[東山]我還有事先走了，你們慢慢討論啊",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "在東山逃離後，統至双進行了二十分鐘的分析",
         "\t[桶至學長]你看，沒丟出去但爆了可能會有更多的問題",
         "\t[克莉絲]所以我們應該要丟嗎？",
         "\t[桶至學長]別急，還有最後一種可能性沒有思考",
@@ -771,6 +788,11 @@ main.floors.main_ch3_3=
         },
         "\t[表妹]啊，我受夠了啊！",
         {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -839,11 +861,6 @@ main.floors.main_ch3_3=
             "time": 150
         },
         {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -855,6 +872,11 @@ main.floors.main_ch3_3=
             "time": 0
         },
         "\t[梗平]什麼東......",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "在梗平反應過來以前，表妹與蘭斯立刻閃到了掩體後方",
         "梗平、克莉絲、桶至學長的接下了傑士塔威爆炸威力",
         "梗平，理所當然的暈了過去倒在路邊",
@@ -876,17 +898,5 @@ main.floors.main_ch3_3=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

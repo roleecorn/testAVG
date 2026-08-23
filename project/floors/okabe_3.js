@@ -305,18 +305,6 @@ main.floors.okabe_3=
             "time": 0
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 20,
             "image": "okabe_normal.png",
@@ -330,15 +318,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]啊——到底怎麼樣才能方便地賺到錢呢？",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -355,14 +336,7 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -378,15 +352,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]我才不要！能走捷徑我就絕對不會繞遠路！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -403,14 +370,7 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -426,15 +386,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]什麼，優勝獎金居然有五十萬円？！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -450,15 +403,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]唔哦哦哦哦哦哦我上了！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "一小時後——",
         {
@@ -467,18 +413,6 @@ main.floors.okabe_3=
             "image": "ms_bg_mapo_shop.png",
             "opacity": 1,
             "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
         },
         {
             "type": "showImage",
@@ -495,14 +429,7 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -519,14 +446,7 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -542,15 +462,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]唔！唔唔唔唔唔唔！（喂！別把人說成是死了啊！）",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -567,14 +480,7 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -590,15 +496,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]唔唔唔唔唔唔唔！（有空吐槽倒是給我拿點水啊！）",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -613,23 +512,16 @@ main.floors.okabe_3=
         },
         "\t[梗平]又失敗了呢，看看還有沒有別的方法吧。",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_fine_dining.png",
             "opacity": 1,
             "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
         },
         {
             "type": "showImage",
@@ -646,14 +538,7 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[M‧A‧STER]你說那個委託？已經結束了哦，之前已經有人把東西還回來了。",
         {
@@ -662,18 +547,6 @@ main.floors.okabe_3=
             "image": "ms_bg_riverside.png",
             "opacity": 1,
             "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
         },
         {
             "type": "showImage",
@@ -690,14 +563,7 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[表妹]你們在找那頭熊嗎，已經搞定了哦。",
         {
@@ -706,18 +572,6 @@ main.floors.okabe_3=
             "image": "ms_bg_warehouse_district.png",
             "opacity": 1,
             "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
         },
         {
             "type": "showImage",
@@ -734,54 +588,11 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "\t[警察]你們也是看見那個招牌廣告來的人嗎？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "\t[警察]那是打折輕鬆賺錢的招牌騙人過來給他們當做印刷奴隸的犯罪套路哦。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         "\t[警察]世上怎麼可能有在幾天裡賺到幾百萬的普通打工呢，早點回去吧。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -796,15 +607,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]可惡，忙了半天結果什麼都沒拿到啊！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -821,14 +625,7 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -845,14 +642,7 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -868,15 +658,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]...你說得一點都對。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -892,15 +675,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]果然，要賺錢還是得老老實實的。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -916,15 +692,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]謝謝你，梗平，我已經完全明白了。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -940,15 +709,8 @@ main.floors.okabe_3=
         "\t[岡部倫太郎]那麼，我今天就回去了。",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
             "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         {
             "type": "showImage",
@@ -965,14 +727,7 @@ main.floors.okabe_3=
         {
             "type": "hideImage",
             "code": 10,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0,
-            "async": true
+            "time": 0
         },
         "違和感。這個男人真的會這樣就被說服了嗎？",
         {
@@ -989,31 +744,7 @@ main.floors.okabe_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         "梗平跟著兇真來到了一間破爛的小屋，看起來是兇真的臨時據點——",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -1028,15 +759,8 @@ main.floors.okabe_3=
                         "\t[岡部倫太郎]OK，彈藥和設備都準備完成...有了這些，一定可以輕鬆拿下...",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1052,15 +776,8 @@ main.floors.okabe_3=
                         "\t[岡部倫太郎]明天去一趟收購所...",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1077,14 +794,7 @@ main.floors.okabe_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1101,14 +811,7 @@ main.floors.okabe_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1125,14 +828,7 @@ main.floors.okabe_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1149,14 +845,7 @@ main.floors.okabe_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1172,15 +861,8 @@ main.floors.okabe_3=
                         "\t[岡部倫太郎]哈哈哈——！梗平？！你怎麼來的？",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1196,15 +878,8 @@ main.floors.okabe_3=
                         "\t[岡部倫太郎]等下，什麼武器？！",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1221,28 +896,9 @@ main.floors.okabe_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "梗平打開了箱子，裡面是一大堆小鋼珠和扳手之類的工具。",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -1257,15 +913,8 @@ main.floors.okabe_3=
                         "\t[岡部倫太郎]我只是想老老實實的通過我的努力來贏得獎金而已！",
                         {
                             "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
                             "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1282,41 +931,10 @@ main.floors.okabe_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "——就這樣兇真的邪惡計劃被阻止了。說到底他到底想幹什麼呢？",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         "之後，他在電子遊樂場開始了打工",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         "\t[選項2後續]",
                         {
                             "type": "showImage",
@@ -1325,31 +943,7 @@ main.floors.okabe_3=
                             "opacity": 1,
                             "time": 0
                         },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         "第二天，梗平看見了在電子遊樂場作為苦力搬機台的兇真。",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1365,14 +959,7 @@ main.floors.okabe_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1389,14 +976,7 @@ main.floors.okabe_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1413,14 +993,7 @@ main.floors.okabe_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         {
                             "type": "showImage",
@@ -1437,14 +1010,7 @@ main.floors.okabe_3=
                         {
                             "type": "hideImage",
                             "code": 10,
-                            "time": 0,
-                            "async": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0,
-                            "async": true
+                            "time": 0
                         },
                         "——就這樣，兇真開始了在電子遊樂場的打工。"
                     ]

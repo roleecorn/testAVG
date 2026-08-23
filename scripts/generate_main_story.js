@@ -450,27 +450,8 @@ function textFontFromDirective(text) {
   return null;
 }
 
-function hidePortraits() {
-  return [];
-}
-
-function transitionPortrait(ctx, portrait) {
-  const nextCode = portrait ? portrait.code : null;
-  const nextImage = portrait ? portrait.image : null;
-  const samePortrait = ctx.activePortraitCode === nextCode
-    && ctx.activePortraitImage === nextImage;
-  const events = [];
-  if (ctx.activePortraitCode != null && !samePortrait) {
-    events.push({ type: "hideImage", code: ctx.activePortraitCode, time: 0 });
-  }
-  ctx.activePortraitCode = nextCode;
-  ctx.activePortraitImage = nextImage;
-  return events;
-}
-
 function actionCgEvents(spec) {
   return [
-    ...hidePortraits(),
     {
       type: "showImage",
       code: 30,
@@ -483,30 +464,6 @@ function actionCgEvents(spec) {
     { type: "sleep", time: 1000, noSkip: true },
     { type: "hideImage", code: 30, time: 0 },
   ];
-}
-
-function portraitFor(speaker, text, expression = null) {
-  const portraitLoc = ["portraitSpeakerX", "portraitSpeakerY"];
-  const resolved = resolvePortrait(speaker, expression || DONGSHAN_PORTRAIT_DECISIONS[text] || "normal");
-  if (resolved) {
-    return resolved;
-  }
-  if (speaker === "梗平") {
-    let img = "keng_neutral_portrait.png";
-    if (expression === "smile") img = "keng_smile_portrait.png";
-    if (/嘔|不要|可惡|痛|啊|不行|錯愕|什麼|？|\?|救命|死/.test(text)) img = "keng_panic_portrait.png";
-    if (/哼|專業|有道理|假面騎士|變身|騎士|勝|交給我|會贏/.test(text)) img = "keng_smile_portrait.png";
-    if (/嚴肅|重要|守護|責任/.test(text)) img = "keng_serious_portrait.png";
-    return { type: "showImage", code: 10, image: img, loc: portraitLoc, opacity: 1, time: 0 };
-  }
-  if (speaker === "表妹") {
-    let img = "suou_sad_portrait.png";
-    if (/痛|你的良心|垃圾|人渣|太詳細|不要|騙|冷/.test(text)) img = "suou_angry_portrait.png";
-    if (/誒|等等|什麼|啊|？|\?/.test(text)) img = "suou_surprised_portrait.png";
-    if (/嘿|笑|好|嗯/.test(text)) img = "suou_smile_portrait.png";
-    return { type: "showImage", code: 11, image: img, loc: portraitLoc, opacity: 1, time: 0 };
-  }
-  return null;
 }
 
 function removeInlineProductionDirectives(body, ctx) {
@@ -554,8 +511,6 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
     const image = DONGSHAN_PORTRAIT_DECISIONS[body] || "dongshan_normal.png";
     const expression = image.match(/^dongshan_(.+)\.png$/)?.[1] || "normal";
     portrait = resolvePortrait(display, expression);
-  } else {
-    portrait = portraitFor(display, body, ctx.forceSmile ? "smile" : null);
   }
   const textFont = ctx.nextTextFont;
   ctx.nextTextFont = null;
@@ -564,10 +519,10 @@ function dialogueToEvents(rawName, rawBody, ctx, forcePhone = false) {
   if (!ctx.cgPersistent) ctx.cgVisible = false;
   return [
     ...(textFont ? [setTextEvent({ textfont: textFont })] : []),
-    ...transitionPortrait(ctx, portrait),
     ...clearCg,
     ...(portrait ? [portrait] : []),
     `\t[${display}]${body}`,
+    ...(portrait ? [{ type: "hideImage", code: portrait.code, time: 0 }] : []),
     ...(textFont ? [setTextEvent({ textfont: AVG_TEXT_FONTS.normal })] : []),
   ];
 }
@@ -649,7 +604,6 @@ function lineToEvents(line, ctx) {
     ctx.cgVisible = false;
     ctx.cgPersistent = false;
     return [
-      ...hidePortraits(),
       { type: "hideImage", code: 30, time: 150 },
       { type: "showImage", code: 1, image: bg, loc: [...BACKGROUND_LOC], opacity: 1, time: 250 },
     ];
@@ -667,7 +621,6 @@ function lineToEvents(line, ctx) {
         ctx.cgPersistent = true;
         return [
           ...actionCgEvents(actionCg),
-          ...hidePortraits(),
           { type: "showImage", code: 30, image: sourceCgImage, loc: [...CG_LOC], opacity: 1, time: 250 },
         ];
       }
@@ -684,7 +637,6 @@ function lineToEvents(line, ctx) {
         : [];
       return [
         ...prefix,
-        ...hidePortraits(),
         { type: "showImage", code: 30, image: sourceCgImage, loc: [...CG_LOC], opacity: 1, time: 250 },
       ];
     }
@@ -702,14 +654,13 @@ function lineToEvents(line, ctx) {
         ctx.cgVisible = true;
         ctx.cgPersistent = true;
         return [
-          ...hidePortraits(),
           { type: "showImage", code: 30, image: persistentCg.image, sloc: [...persistentCg.sloc], loc: [...CG_LOC], opacity: 1, time: 250 },
         ];
       }
       storyTodos.add(`${ctx.source} ${ctx.section}：【CG：${name} 出現】尚無專用素材，暫用 scene_mapo_cg.png。`);
       ctx.cgVisible = true;
       ctx.cgPersistent = true;
-      return [...hidePortraits(), { type: "showImage", code: 30, image: "scene_mapo_cg.png", sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
+      return [{ type: "showImage", code: 30, image: "scene_mapo_cg.png", sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
     }
     if (actionCg) {
       ctx.cgVisible = false;
@@ -720,7 +671,7 @@ function lineToEvents(line, ctx) {
     storyTodos.add(`${ctx.source} ${ctx.section}：【CG：${name}】尚無專用素材，暫用 ${image}。`);
     ctx.cgVisible = true;
     ctx.cgPersistent = false;
-    return [...hidePortraits(), { type: "showImage", code: 30, image, sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
+    return [{ type: "showImage", code: 30, image, sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
   }
 
   if (/^【GIF /.test(t)) {
@@ -735,22 +686,21 @@ function lineToEvents(line, ctx) {
     storyTodos.add(`${ctx.source} ${ctx.section}：【GIF ${name}】尚無專用素材，暫用 ${image}。`);
     ctx.cgVisible = true;
     ctx.cgPersistent = false;
-    return [...hidePortraits(), { type: "showImage", code: 30, image, sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
+    return [{ type: "showImage", code: 30, image, sloc: [...GENERAL_CG_SLOC], loc: [...CG_LOC], opacity: 1, time: 250 }];
   }
 
   if (/^【BE/.test(t) || /^【.*結束】$/.test(t) || /^【.*END.*】$/.test(t)) {
-    return [...hidePortraits(), { type: "comment", text: t }];
+    return [{ type: "comment", text: t }];
   }
 
   if (/^[-—]+END[-—]+$/.test(t)) {
-    return [...hidePortraits(), { type: "comment", text: t }];
+    return [{ type: "comment", text: t }];
   }
 
   if (/^【(?:人物交流時間|角色劇情時間)/.test(t)) {
     const exchange = characterExchanges[ctx.section];
     if (exchange) {
       return [
-        ...hidePortraits(),
         { type: "comment", text: "人物交流回合：完成角色好感劇情後，進入交流後續 scene。" },
         {
           type: "function",
@@ -759,12 +709,12 @@ function lineToEvents(line, ctx) {
       ];
     }
     storyTodos.add(`${ctx.source} ${ctx.section}：${t} 尚未撰寫，已以文字標記保留。`);
-    return [...hidePortraits(), { type: "comment", text: `TODO: ${t}` }];
+    return [{ type: "comment", text: `TODO: ${t}` }];
   }
 
   if (t === "【播放炫酷的結尾小動畫】") {
     storyTodos.add(`${ctx.source} ${ctx.section}：${t} 尚未製作正式結尾動畫，目前用既有轉場影片事件暫代。`);
-    return [...hidePortraits(), { type: "playTransitionVideo" }];
+    return [{ type: "playTransitionVideo" }];
   }
 
   const wait = t.match(/^【等待\s*([0-9]+(?:\.[0-9]+)?)\s*秒】$/);
@@ -774,7 +724,7 @@ function lineToEvents(line, ctx) {
     ctx.suppressPortraitCount = /下五句/.test(t) ? 5 : /兩句/.test(t) ? 2 : 1;
     const font = textFontFromDirective(t);
     if (font) ctx.nextTextFont = font;
-    return transitionPortrait(ctx, null);
+    return [];
   }
   const fontDirective = t.match(/^【(?!(?:下方兩句明日頭條))(?:(?:下一句|下一句話|下句|下句台詞|下句字體|下句台詞字體))[^】]*(更大字|大字|小字|一般)[^】]*】$/);
   if (fontDirective) {
@@ -789,10 +739,10 @@ function lineToEvents(line, ctx) {
 
   if (t === "【後日談時間】") {
     storyTodos.add(`${ctx.source} ${ctx.section}：${t} 尚未撰寫，已以文字標記保留。`);
-    return [...hidePortraits(), { type: "comment", text: `TODO: ${t}` }];
+    return [{ type: "comment", text: `TODO: ${t}` }];
   }
 
-  if (/^\[END：/.test(t)) return [...hidePortraits(), t.replace(/^\[/, "【").replace(/\]$/, "】")];
+  if (/^\[END：/.test(t)) return [t.replace(/^\[/, "【").replace(/\]$/, "】")];
 
   const wrappedDirective = t.match(/^\[【([^】]+)】\]$/);
   if (wrappedDirective) return lineToEvents(`【${wrappedDirective[1]}】`, ctx);
@@ -802,7 +752,7 @@ function lineToEvents(line, ctx) {
     return dialogueToEvents(bracketedDialogue[1].trim(), bracketedDialogue[2], ctx, true);
   }
 
-  if (/^\[.*\]$/.test(t)) return [...hidePortraits(), t.slice(1, -1)];
+  if (/^\[.*\]$/.test(t)) return [t.slice(1, -1)];
 
   if (/^【.*(?:立繪|替換|字體|動畫|小遊戲).*】$/.test(t)) {
     storyTodos.add(`${ctx.source} ${ctx.section}：製作指令「${t}」尚未轉成正式事件。`);
@@ -815,7 +765,7 @@ function lineToEvents(line, ctx) {
   }
 
   if (/^【[^】]+】$/.test(t)) {
-    return [...hidePortraits(), { type: "comment", text: t }];
+    return [{ type: "comment", text: t }];
   }
 
   if (/^\(.+\)$/.test(t)) {
@@ -826,9 +776,9 @@ function lineToEvents(line, ctx) {
     }
     if (/鴿子|沒打完|補|自己補|可以再追加|OOO|音樂|嘆息|小遊戲|動畫|後日談|人物交流/.test(t)) storyTodos.add(`${ctx.source} ${ctx.section}：${t}`);
     if (/美術館開場的音樂/.test(t)) {
-      return [{ type: "playBgm", name: "ms_ch2_gallery_opening.mp3", keep: true }, ...hidePortraits(), t];
+      return [{ type: "playBgm", name: "ms_ch2_gallery_opening.mp3", keep: true }, t];
     }
-    return [...hidePortraits(), t];
+    return [t];
   }
 
   const colon = t.match(/^(.+?)[：:](.*)$/);
@@ -837,7 +787,7 @@ function lineToEvents(line, ctx) {
     return dialogueToEvents(rawName, colon[2], ctx);
   }
 
-  return [...hidePortraits(), t];
+  return [t];
 }
 
 function branchLabel(line) {
@@ -978,8 +928,6 @@ function buildFloor(section, lines, overrides = {}) {
     cgVisible: false,
     cgPersistent: false,
     suppressPortraitCount: 0,
-    activePortraitCode: null,
-    activePortraitImage: null,
     nextPortraitOverride: null,
   };
   const parsed = parseEvents(lines, 0, ctx);
@@ -987,10 +935,8 @@ function buildFloor(section, lines, overrides = {}) {
     setTextEvent(),
     { type: "playBgm", name: meta.bgm },
     { type: "showImage", code: 1, image: meta.bg, loc: [...BACKGROUND_LOC], opacity: 1, time: 0 },
-    ...transitionPortrait(ctx, null),
     { type: "comment", text: `【${meta.title}】` },
     ...parsed.events,
-    ...transitionPortrait(ctx, null),
   ];
   if (meta.next && !hasTopLevelChangeFloor(events.slice(-8))) {
     events.push({ type: "playTransitionVideo" }, { type: "changeFloor", floorId: meta.next, loc: [6, 10], direction: "up", time: 0 });
@@ -1283,7 +1229,7 @@ function validateRuntimeRegistrations(expectedPhoneLineCount, generatedFloors) {
   if (!text.avg || text.fixedLines !== AVG_LAYOUT.dialogueFixedLines ||
       AVG_LAYOUT.dialogueX !== 16 || AVG_LAYOUT.dialogueY !== 295 ||
       AVG_LAYOUT.dialogueWidth !== 512 || AVG_LAYOUT.portraitDialogueGap !== 0 ||
-      AVG_LAYOUT.portraitScale !== 0.85 || AVG_LAYOUT.portraitBottomY !== 416) {
+      AVG_LAYOUT.portraitScale !== 0.92 || AVG_LAYOUT.portraitBottomY !== 440) {
     throw new Error("AVG layout contract is stale");
   }
   const usedActionCgImages = new Set();

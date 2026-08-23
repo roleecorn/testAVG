@@ -270,6 +270,18 @@ main.floors.main_ch4_1=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -312,11 +324,6 @@ main.floors.main_ch4_1=
                 0
             ],
             "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
             "time": 0
         },
         {
@@ -375,6 +382,11 @@ main.floors.main_ch4_1=
         },
         "\t[梗平]不對，已經爆炸了",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -386,12 +398,12 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]其他人都去哪裡了",
-        "梗平掃視了一旁後，發現其他人似乎都已經離開了",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "梗平掃視了一旁後，發現其他人似乎都已經離開了",
         {
             "type": "showImage",
             "code": 10,
@@ -404,25 +416,25 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]可惡，竟然沒有叫醒在下嗎",
-        "梗平拿起了被炸飛在一旁卻完好無損的手機，查看著群組訊息",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "梗平拿起了被炸飛在一旁卻完好無損的手機，查看著群組訊息",
         "\t[蘭斯]（手機）梗平，我們先走了喔",
         "\t[蘭斯]（手機）我們要去找其他能夠進入ANIsister的方式了",
         {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）看你睡得很香就沒吵你了",
         {
@@ -443,6 +455,11 @@ main.floors.main_ch4_1=
         },
         "\t[梗平]在下好感動，他們居然想的這麼多",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -454,6 +471,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]看來時間還早，可以先到處看看",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "TODO: 【人物交流時間】"
@@ -492,6 +514,11 @@ main.floors.main_ch4_1=
         },
         "\t[梗平]時間差不多了，也該過去咖啡廳了",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -503,6 +530,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]不對，每次在下想去咖啡廳的時候一定......",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "時機已至，秋葉原的熱意再次到來",
         {
             "type": "showImage",
@@ -524,11 +556,6 @@ main.floors.main_ch4_1=
             "time": 150
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -540,6 +567,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]怎麼又是你啊，不能換個人嗎！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "上天決定回應梗平的祈禱，第二份熱意，襲來",
         {
             "type": "showImage",
@@ -559,11 +591,6 @@ main.floors.main_ch4_1=
             "type": "hideImage",
             "code": 30,
             "time": 150
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
         },
         {
             "type": "showImage",
@@ -594,6 +621,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]竟然還有第二下嗎？",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "梗平拖著被二度撞擊的身軀走回了碳烤蜜瓜兔子",
         "再一次無視著智乃的眼光拿起了掃帚開始打掃",
         "整個上午，無事發生",
@@ -626,6 +658,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平](好像還是只能去那個書店工作了)",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "【過場】"
@@ -663,34 +700,34 @@ main.floors.main_ch4_1=
             "time": 250
         },
         {
+            "type": "showImage",
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[東山]（手機）找到能解決ANIsister問題的方式了",
+        {
             "type": "hideImage",
-            "code": 10,
+            "code": 20,
             "time": 0
         },
         {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
-        },
-        "\t[東山]（手機）找到能解決ANIsister問題的方式了",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）可以的話晚上11點在雜貨店集合",
         {
@@ -719,13 +756,13 @@ main.floors.main_ch4_1=
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
+            "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
             ],
             "opacity": 1,
-            "time": 0,
-            "expression": "normal"
+            "time": 0
         },
         "\t[東山]（手機）如果可以的話幫忙多找一點人手",
         {
@@ -748,6 +785,11 @@ main.floors.main_ch4_1=
         },
         "\t[梗平]（手機）我在找可以和我在一起(解決肥宅)的人",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -759,6 +801,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]（手機）(幫忙的事)可以答應我嗎",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -790,6 +837,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[表妹]（手機）表哥，我在河邊找到了一條奇怪的大鱷魚",
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 11,
@@ -836,6 +888,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]（手機）這肯定是修卡的造物，我現在就來！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -915,13 +972,13 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[表妹]只要能夠釣上來的話就賺翻啦，嘿嘿",
-        "話說完後表妹就把鉤子拋進了水裡，過沒多久就有了動靜",
-        "突然，一陣強大的力量把表妹往水裡拖了過去",
         {
             "type": "hideImage",
             "code": 11,
             "time": 0
         },
+        "話說完後表妹就把鉤子拋進了水裡，過沒多久就有了動靜",
+        "突然，一陣強大的力量把表妹往水裡拖了過去",
         {
             "type": "showImage",
             "code": 11,
@@ -952,6 +1009,11 @@ main.floors.main_ch4_1=
         },
         "\t[梗平]嘖，修卡已經連大鱷魚都開始改造了嗎？",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -980,12 +1042,12 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]表妹，在下來助你！",
-        "梗平跑到了表妹的背後，兩人一起扛住了大鱷魚的力量",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "梗平跑到了表妹的背後，兩人一起扛住了大鱷魚的力量",
         {
             "type": "showImage",
             "code": 10,
@@ -1015,6 +1077,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[表妹]這時候果然就是要使用那一招了！",
+        {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0
+        },
         {
             "type": "setText",
             "avg": true,
@@ -1056,6 +1123,11 @@ main.floors.main_ch4_1=
         },
         "\t[表妹]接下這招吧，大鱷魚！",
         {
+            "type": "hideImage",
+            "code": 11,
+            "time": 0
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -1112,11 +1184,6 @@ main.floors.main_ch4_1=
             "animateTime": 120
         },
         {
-            "type": "hideImage",
-            "code": 11,
-            "time": 0
-        },
-        {
             "type": "showImage",
             "code": 10,
             "image": "keng_panic_portrait.png",
@@ -1128,6 +1195,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]這個是我們羈絆的力量啊！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "setText",
             "avg": true,
@@ -1158,11 +1230,6 @@ main.floors.main_ch4_1=
         },
         "梗平與表妹喊著甚麼愛、羈絆、勇氣的，便把大鱷魚從河裡拉了出來",
         "梗平隨後做出了變身的動作，擺好了戰鬥姿勢面向大鱷魚",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
         {
             "type": "showImage",
             "code": 10,
@@ -1210,6 +1277,11 @@ main.floors.main_ch4_1=
         },
         "\t[梗平]竟然還有後手嗎！？",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 30,
             "image": "CH4_L102.png",
@@ -1256,11 +1328,6 @@ main.floors.main_ch4_1=
         },
         "梗平醒了過來後，發現眼前是陌生的天花板",
         "一個長著兔耳的女人走了過來，驚訝地看著醒來的梗平",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
         "\t[醫生]誒，你醒得這麼快啊",
         {
             "type": "showImage",
@@ -1313,6 +1380,11 @@ main.floors.main_ch4_1=
         },
         "\t[梗平]五小時......也就是說現在是10點",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -1324,6 +1396,11 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]跟朋友的約定要遵守才行",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -1353,12 +1430,12 @@ main.floors.main_ch4_1=
             "time": 0
         },
         "\t[梗平]希望你順便修好了在下的假面騎士系統，我先走了",
-        "梗平抓起了旁邊自己的個人物品後，便跑出了醫院",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "梗平抓起了旁邊自己的個人物品後，便跑出了醫院",
         "\t[醫生]我是不是該把他抓回來做精神鑑定啊",
         "\t[醫生]算了，人都已經出去了",
         "一段時間後，一起送進去的表妹也醒了過來",
@@ -1432,17 +1509,17 @@ main.floors.main_ch4_1=
         },
         "\t[梗平](要是在下能自己一個人把事情解決了，豈不是就是真正的假面騎士了)",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "choices",
             "text": "請選擇。",
             "choices": [
                 {
                     "text": "不行，果然還是要大家一起上",
                     "action": [
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1455,6 +1532,11 @@ main.floors.main_ch4_1=
                             "time": 0
                         },
                         "\t[梗平](自己去太危險了，等11點更好一點)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "comment",
                             "text": "【過場】"
@@ -1483,47 +1565,52 @@ main.floors.main_ch4_1=
                         "梗平乖乖等到了11點後，才前往了雜貨店",
                         "到了雜貨店後，梗平發現其他人都已經到達了",
                         {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "dongshan_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[東山]你也到了啊，我們開始吧",
+                        {
                             "type": "hideImage",
-                            "code": 10,
+                            "code": 20,
                             "time": 0
                         },
                         {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
-                        },
-                        "\t[東山]你也到了啊，我們開始吧",
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]數到三我們就一起衝進去",
                         {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]一...二...三！",
                         {
@@ -1543,6 +1630,11 @@ main.floors.main_ch4_1=
                             "time": 0
                         },
                         "\t[梗平]邪惡的修卡迅速束手就擒！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "梗平與友人們一同衝入了奇怪的車廂內，然而裡面卻是一群彪形大漢",
                         {
                             "type": "showImage",
@@ -1644,13 +1736,13 @@ main.floors.main_ch4_1=
                             "type": "showImage",
                             "code": 20,
                             "image": "dongshan_normal.png",
+                            "expression": "normal",
                             "loc": [
                                 "portraitSpeakerX",
                                 "portraitSpeakerY"
                             ],
                             "opacity": 1,
-                            "time": 0,
-                            "expression": "normal"
+                            "time": 0
                         },
                         "\t[東山]那個，貝琪親，我也不能出去嗎？",
                         {
@@ -1690,6 +1782,11 @@ main.floors.main_ch4_1=
                             "time": 0
                         },
                         "\t[梗平]不！我的假面騎士腰帶！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "過沒多久後，眾人就聽到了本屆Comike被暴動的肥宅摧毀的消息",
                         "梗平，失去了參加Comike的權利",
                         {
@@ -1704,11 +1801,6 @@ main.floors.main_ch4_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
                         },
                         "\t[BE]（手機）一波送完",
                         {
@@ -1743,6 +1835,11 @@ main.floors.main_ch4_1=
                             "time": 0
                         },
                         "\t[梗平](沒錯，而且這還能挽回我在大家心中的風評)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "於是，梗平在完全不知道去雜貨店要做什麼的狀況下",
                         "單槍匹馬前往了未知的地點",
                         {
@@ -1771,11 +1868,6 @@ main.floors.main_ch4_1=
                             "time": 250
                         },
                         "梗平來到了雜貨店的後方，發現這裡正好在倉庫區與鐵路中間",
-                        {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 10,
@@ -1822,6 +1914,11 @@ main.floors.main_ch4_1=
                             "time": 0
                         },
                         "\t[梗平](剛好就由我這個假面騎士來幫大家解決問題)",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         "就在這個瞬間，草叢中傳來了窸窸窣窣的聲音",
                         {
                             "type": "setText",
@@ -1852,11 +1949,6 @@ main.floors.main_ch4_1=
                             "animateTime": 120
                         },
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_neutral_portrait.png",
@@ -1868,6 +1960,11 @@ main.floors.main_ch4_1=
                             "time": 0
                         },
                         "\t[梗平]誰在那裡！",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "setText",
                             "avg": true,
@@ -1926,11 +2023,6 @@ main.floors.main_ch4_1=
                             "animateTime": 120
                         },
                         {
-                            "type": "hideImage",
-                            "code": 10,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 10,
                             "image": "keng_panic_portrait.png",
@@ -1942,6 +2034,11 @@ main.floors.main_ch4_1=
                             "time": 0
                         },
                         "\t[梗平]你們是誰！你們要做什麼！？",
+                        {
+                            "type": "hideImage",
+                            "code": 10,
+                            "time": 0
+                        },
                         {
                             "type": "setText",
                             "avg": true,
@@ -1989,17 +2086,5 @@ main.floors.main_ch4_1=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

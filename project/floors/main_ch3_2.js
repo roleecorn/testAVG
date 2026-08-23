@@ -270,6 +270,18 @@ main.floors.main_ch3_2=
     "width": 17,
     "height": 13,
     "firstArrive": [],
+    "parallelDo": "",
+    "events": {},
+    "changeFloor": {},
+    "beforeBattle": {},
+    "afterBattle": {},
+    "afterGetItem": {},
+    "afterOpenDoor": {},
+    "autoEvent": {},
+    "cannotMove": {},
+    "cannotMoveIn": {},
+    "bgmap": [],
+    "fgmap": [],
     "eachArrive": [
         {
             "type": "setText",
@@ -315,11 +327,6 @@ main.floors.main_ch3_2=
             "time": 0
         },
         {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
             "type": "comment",
             "text": "【主線 CH3 3-2 貝琪晚餐】"
         },
@@ -357,13 +364,13 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]在下到底......守護了甚麼啊",
-        "彷彿是算好了時間一般，一台黑色的加長豪華禮車出現在了梗平的前方",
-        "貝琪穿著精緻的晚禮服下了禮車，並牽起了梗平的手",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "彷彿是算好了時間一般，一台黑色的加長豪華禮車出現在了梗平的前方",
+        "貝琪穿著精緻的晚禮服下了禮車，並牽起了梗平的手",
         "\t[貝琪]梗平先生，你守護了我喔",
         "\t[貝琪]所以請不要這樣垂頭喪氣的，我們走吧",
         {
@@ -378,6 +385,11 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]痾，嗯......好",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         "就這樣梗平被貝琪拉上了車，前往了一間跟梗平毫不相襯的高級餐廳",
         {
             "type": "comment",
@@ -401,11 +413,6 @@ main.floors.main_ch3_2=
         },
         "貝琪輕鬆的安排好了所有的餐序，梗平只能在一旁嗯嗯啊啊",
         "然後在迎賓酒被送上來的同時，貝琪看向了梗平",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
         "\t[貝琪]剛剛在車上甚麼都沒能聊到呢",
         "\t[貝琪]梗平，你喜歡怎麼樣的女性呢？",
         {
@@ -420,12 +427,12 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]在下......",
-        "明明眼前就是酒，或許是因為壓力，梗平遲遲沒有動手",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "明明眼前就是酒，或許是因為壓力，梗平遲遲沒有動手",
         {
             "type": "showImage",
             "code": 10,
@@ -543,13 +550,13 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]在這裡面，在下特別喜歡......",
-        "餐點一道道的送上，貝琪則繼續耐心的聽著梗平的分享",
-        "時間一分一秒的過去，餐後的甜點也已被清盤",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "餐點一道道的送上，貝琪則繼續耐心的聽著梗平的分享",
+        "時間一分一秒的過去，餐後的甜點也已被清盤",
         "\t[貝琪]很想再聽你分享更多呢，只可惜時間好像有點晚了",
         "正當梗平準備做出回應時，手機響了起來",
         "\t[蘭斯]（手機）梗平，你在哪裡？",
@@ -566,6 +573,11 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]（手機）馬上過來",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -672,6 +684,11 @@ main.floors.main_ch3_2=
         },
         "\t[梗平](這下擊敗修卡指日可待)",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -684,6 +701,11 @@ main.floors.main_ch3_2=
         },
         "\t[梗平]......",
         {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 30,
             "image": "CH1_L44.png",
@@ -695,11 +717,6 @@ main.floors.main_ch3_2=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
         },
         "\t[蘭斯]（手機）梗平，剩你還沒到了",
         {
@@ -714,6 +731,11 @@ main.floors.main_ch3_2=
             "time": 0
         },
         "\t[梗平]（手機）馬上來",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -733,17 +755,5 @@ main.floors.main_ch3_2=
             "direction": "up",
             "time": 0
         }
-    ],
-    "parallelDo": "",
-    "events": {},
-    "changeFloor": {},
-    "beforeBattle": {},
-    "afterBattle": {},
-    "afterGetItem": {},
-    "afterOpenDoor": {},
-    "autoEvent": {},
-    "cannotMove": {},
-    "cannotMoveIn": {},
-    "bgmap": [],
-    "fgmap": []
+    ]
 }

@@ -1,5 +1,5 @@
 const assert = require("assert/strict");
-const { validateBundle } = require("./story_ir");
+const { normalizePortraitLifecycle, validateBundle } = require("./story_ir");
 
 const map = Array.from({ length: 13 }, () => Array(17).fill(0));
 
@@ -44,4 +44,44 @@ assert.throws(
   /completeAkibaEvent must be followed by returnToAkiba/,
 );
 
-console.log("Story IR Akiba lifecycle tests passed.");
+assert.deepEqual(normalizePortraitLifecycle([
+  { kind: "image.hide", code: 20, time: 0 },
+  { kind: "image.show", role: "portrait", code: 20, image: "dongshan_normal.png" },
+  { kind: "dialogue", speaker: "東山", text: "測試" },
+  { kind: "image.hide", code: 20, time: 0 },
+]), [
+  { kind: "image.show", role: "portrait", code: 20, image: "dongshan_normal.png" },
+  { kind: "dialogue", speaker: "東山", text: "測試" },
+  { kind: "image.hide", code: 20, time: 0 },
+]);
+
+assert.deepEqual(normalizePortraitLifecycle([{
+  kind: "choice",
+  prompt: "測試分歧",
+  options: [
+    {
+      text: "有立繪",
+      events: [
+        { kind: "image.show", role: "portrait", code: 20, image: "dongshan_normal.png" },
+        { kind: "dialogue", speaker: "東山", text: "分歧內" },
+      ],
+    },
+    { text: "無立繪", events: [{ kind: "dialogue", speaker: "其他人", text: "另一分歧" }] },
+  ],
+}]), [{
+  kind: "choice",
+  prompt: "測試分歧",
+  options: [
+    {
+      text: "有立繪",
+      events: [
+        { kind: "image.show", role: "portrait", code: 20, image: "dongshan_normal.png" },
+        { kind: "dialogue", speaker: "東山", text: "分歧內" },
+        { kind: "image.hide", code: 20, time: 0 },
+      ],
+    },
+    { text: "無立繪", events: [{ kind: "dialogue", speaker: "其他人", text: "另一分歧" }] },
+  ],
+}]);
+
+console.log("Story IR lifecycle tests passed.");

@@ -165,7 +165,7 @@ node scripts/manage_story_ir.js
 11. 明確音訊 DSL 支援 `使用BGM`／`播放BGM`（無名稱時使用已在完整場景正規化後選定的場景 BGM）、`使用BGM：<已登錄檔名或別名>`、`BGM暫停`、`恢復BGM`、`播放音效：<已登錄檔名或別名>` 與 `停止音效`。BGM 與音效必須分別正規化成 `bgm.*` 與 `sound.*`，不可共用一種 audio 節點；只有「播放音效」而無可唯一解析名稱時必須失敗。
 12. 主線來源更新若改變素材首次出現的行號，先通過「主線行數位址素材改名閘門」：所有受影響 `CH<N>_L<N>` 都已依新首次實體行號改名，且所有後續相同素材都重用首次檔案並完成引用鏈驗證，才可重新產生 IR／floor。
 
-新版主線與支線必須由同一份全局 AVG layout config 產生「單一當前發言者－下方對話框」空間配置。544×416 畫布的新版下方對話框基準為 `x=16, y=295, width=512, fixedLines=2`，不可退回舊的 `x=96, width=352` 窄框。每句角色台詞先清空所有人物 code，再把當前發言者放到同一個人物語意槽；旁白清空人物，三人以上場景也不新增槽位。runtime 必須以 alpha bbox 的可見內容左右置中，滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === dialogueY`，並將 `portraitDialogueGap` 固定為 `0`。所有立繪套用同一個全局 `portraitScale: 1.2`；runtime 不得根據個別圖片的寬高或 alpha bbox 計算各自的縮放率。不得沿用 `portraitLeft`／`portraitRight`、`portraitBottomGap`、非零人物／對話框 gap、128px 寬度上限或 25% 遮擋上限，也不得建立個別例外。已遷移 scene 可直接採用此契約；其餘既有 floor 仍須完成 emitter／runtime／floor 遷移後才可宣稱已生效。
+新版主線與支線必須由同一份全局 AVG layout config 與同一個 Story IR emitter 產生「單一當前發言者－下方對話框」配置。544×416 畫布的下方對話框基準為 `x=16, y=295, width=512, fixedLines=2`，不可退回舊的 `x=96, width=352` 窄框。runtime 以 alpha bbox 將人物可見內容左右置中，滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === portraitBottomY === 440`；所有立繪套用同一個全局 `portraitScale: 0.92`，人物下半身由 416px viewport 裁切，不得根據個別圖片寬高或 alpha bbox 計算各自縮放率。每句普通立繪台詞固定產生 `image.show(本句 code) → dialogue → image.hide(同一 code)`；hide 在該句結束後發生，不得清除本句未顯示的 code，也不得用跨句或跨分歧 active state 推算生命週期。分歧 option 必須各自遞迴套用同一規則。未來若加入最佳化，只能在完整事件生成後移除無中介事件且 code／image 相同的相鄰 `hide → show` 配對。
 
 字體大小演繹若需要放大或縮小，只能調整對話內文的 `textfont`；必須保留當前全局或場景既有的 `titlefont`，不得跟著內文倍率改動角色名稱標題。`layout.set` 的字體變更事件應明確保留原 `titlefont` 值，只替換 `textfont`。
 
@@ -185,7 +185,7 @@ node scripts/manage_story_ir.js
 
 劇本中的 `【背景：...】` 同樣是演出指令。轉換時應切換樓層背景或用 `showImage` 顯示背景素材，不要再把 `【背景：...】` 當成對話文字輸出給玩家。
 
-角色支線劇情的輸入應是一個 `.txt` 檔，並且可以從檔案名稱確認支線持有者。先完整閱讀來源並建立標示逐句人物／情緒／CG 的 draft Story IR，再確認既有正式角色圖或同角色 ZIP 基準圖能否滿足需求；缺正式圖時先用其他合適圖片作暫時替代並寫入 `project/story/TODO.md`，不可留下缺檔引用。需要新表情時，先在 intake 用 `remove_bk.py` 將來源圖去背為透明 PNG，再用 `split_emotion_image.py` 分割六張候選表情；不要因為原圖看起來已經乾淨、可直接分割、或只差少量裁切就跳過去背。輸出圖會等比例縮小到固定上限，預設不超過 `195x195`；只有實際台詞情緒使用的表情才移入 `project/images/`、登錄並寫入 validated Story IR。劇本文字若用 `???`、`神秘人`、`神祕人` 等名稱刻意隱藏發言者，預設以支線持有者本人選圖，但保留原本顯示名稱。
+角色支線劇情的輸入應是一個 `.txt` 檔，並且可以從檔案名稱確認支線持有者。先完整閱讀來源並建立標示逐句人物／情緒／CG 的 draft Story IR，再確認既有正式角色圖或同角色 ZIP 基準圖能否滿足需求；缺正式圖時先用其他合適圖片作暫時替代並寫入 `project/story/TODO.md`，不可留下缺檔引用。需要新表情時，先在 intake 用 `remove_bk.py` 將來源圖去背為透明 PNG，再用 `split_emotion_image.py` 分割六張候選表情；不要因為原圖看起來已經乾淨、可直接分割、或只差少量裁切就跳過去背。分割輸出預設保留到 `512x512` 上限，且前景碰觸每格安全邊界時必須失敗；只有實際台詞情緒使用的表情才移入 `project/images/`、登錄並寫入 validated Story IR。劇本文字若用 `???`、`神秘人`、`神祕人` 等名稱刻意隱藏發言者，預設以支線持有者本人選圖，但保留原本顯示名稱。
 
 新角色表情圖的 2x3 固定格順是「喜、怒 / 哀、驚訝 / 慌亂、無表情」，輸出檔名依序為 `smile`、`angry`、`sad`、`surprised`、`panic`、`normal`。判斷不出情緒時，新角色優先使用 `角色_normal.png`；若該角色是舊資源且沒有 `normal`，再使用既有預設圖。
 
