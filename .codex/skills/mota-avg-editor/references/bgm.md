@@ -171,6 +171,13 @@ core.setFlag("__bgm__", data.keep ? data.name : null);
 
 `resume: true` 會使用暫停時記錄的播放位置；不寫時會從頭播放上一首 BGM，若沒有上一首則回到 `main.startBgm`。
 
+Story IR 會保留語意指令的靜音範圍：
+
+- `【此段暫時不撥放BGM】`／`【此段暫時不播放BGM】` → `bgm.pause`，`until: "background"`。靜音持續到下一個背景替換完成，與場景或樓層切換無關。
+- `【BGM停止】` → `bgm.pause`，`until: "play"`。靜音持續到下一個明確的 `bgm.play`／`playBgm`。
+
+這些 `until` 是 Story IR 的語意範圍，不是新增的引擎事件欄位。emitter 會依範圍在適當位置產出既有的 `pauseBgm`、`resumeBgm` 與 `playBgm` 命令；內部引擎不需修改。缺少 `until` 的既有 IR pause 仍維持既有命令行為。
+
 ## 音量淡入淡出
 
 BGM 音量使用 `setVolume`。事件 JSON 的 `value` 是 `0` 到 `100` 的整數，實作時會除以 `100` 轉成核心音量。

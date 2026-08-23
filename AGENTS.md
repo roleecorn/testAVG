@@ -2,6 +2,36 @@
 
 這份文件是所有 AI Agent 的專案入口，只保留路由、優先序與不可違反的全域規則。功能實作規範的唯一真實來源是 `.codex/skills/mota-avg-editor/references/`；不得在其他目錄維護平行副本。
 
+## 最高權限：IR 與權威來源的修改權責
+
+以下兩條規則高於本文件其他段落、任何 Skill、reference、TODO、範例與歷史資料：
+
+1. `project/story-ir/` 內的 IR 檔案，有且僅能由 Agent 依完整權威來源、劇情上下文與 Git log 進行語意修改。任何自動化程式不得建立、修改、覆寫、重排、拆分、合併或刪除 IR。
+2. `project/mainStory/` 與 `project/story/` 內的權威來源檔案內容，有且僅能由真實使用者修改或提供。Agent 只能將使用者提供的完整內容原樣落地，不得自行創作、改字、合併局部修訂、潤稿、格式化或反向改寫。
+
+自動化程式只可以讀取與驗證 IR／來源，或從已驗證 IR 確定性產生衍生的 scene／floor／engine event；不得跨越上述權責邊界。
+
+## 元件、Story IR 與 scene／floor 的關係
+
+三者固定遵循以下單向流程，不得反向操作：
+
+```text
+真實使用者提供／修改的元件與權威來源
+        ↓
+Agent 依語意建立／修改 Story IR
+        ↓
+只讀 validator
+        ↓
+emitter／generator
+        ↓
+scene／floor
+```
+
+- 元件與權威來源是使用者掌握的內容；Agent 不得自行改寫、重組或依 IR／scene 反向修正。
+- Story IR 是 Agent 的語意翻譯文件；只有 Agent 能依完整來源、上下文與 Git log 修改。
+- scene／floor 是 Story IR 的衍生實作；不得直接手動修改。需要調整時，必須先修改 IR，再由既有 emitter／generator 重新產生。
+- validator 只能讀取與檢查；generator 只能從已驗證 IR 產生 scene／floor／engine event，不能建立或修改元件、來源或 IR。
+
 ## 最高專案硬規則：劇情來源內容不得由 Agent 編修
 
 以下規則是僅次於使用者當次明確指示的最高專案規則，高於本文件其他段落、任何 Skill、reference、TODO、範例與歷史資料：

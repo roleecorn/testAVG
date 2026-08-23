@@ -14600,7 +14600,8 @@
           "time": 250
         },
         {
-          "kind": "bgm.pause"
+          "kind": "bgm.pause",
+          "until": "background"
         },
         {
           "kind": "narration",
@@ -49043,7 +49044,8 @@
           "text": "【過場】"
         },
         {
-          "kind": "bgm.pause"
+          "kind": "bgm.pause",
+          "until": "background"
         },
         {
           "kind": "image.hide",
@@ -50850,7 +50852,8 @@
           "text": "【過場】"
         },
         {
-          "kind": "bgm.pause"
+          "kind": "bgm.pause",
+          "until": "background"
         },
         {
           "kind": "image.hide",
@@ -52052,7 +52055,8 @@
           "time": 250
         },
         {
-          "kind": "bgm.pause"
+          "kind": "bgm.pause",
+          "until": "background"
         },
         {
           "kind": "image.show",
@@ -57084,7 +57088,8 @@
           "text": "【過場】"
         },
         {
-          "kind": "bgm.pause"
+          "kind": "bgm.pause",
+          "until": "background"
         },
         {
           "kind": "image.show",
@@ -57701,7 +57706,8 @@
           "text": "【過場】"
         },
         {
-          "kind": "bgm.pause"
+          "kind": "bgm.pause",
+          "until": "background"
         },
         {
           "kind": "image.show",
@@ -58900,7 +58906,8 @@
           "kind": "bgm.resume"
         },
         {
-          "kind": "bgm.pause"
+          "kind": "bgm.pause",
+          "until": "background"
         },
         {
           "kind": "image.show",
@@ -62838,7 +62845,8 @@
           "text": "【過場】"
         },
         {
-          "kind": "bgm.pause"
+          "kind": "bgm.pause",
+          "until": "background"
         },
         {
           "kind": "image.show",

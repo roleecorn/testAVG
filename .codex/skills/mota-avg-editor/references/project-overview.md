@@ -2,6 +2,30 @@
 
 這份文件給 AI 使用，用來把純文字劇本轉成 H5 魔塔編輯器可用的樓層與事件資料。此專案雖是魔塔編輯器，但只要把地圖邏輯降到最低，完全可以用「背景圖 + 對話 + 圖片 + Flag + 音訊」實作 AVG。
 
+## 最高權限修改權責
+
+- `project/story-ir/` 的 IR 檔案，有且僅能由 Agent 依完整來源、上下文與 Git log 進行語意修改；任何自動化程式只能讀取、驗證，或由已驗證 IR 產出衍生 floor／engine event。
+- `project/mainStory/` 與 `project/story/` 的權威來源檔案內容，有且僅能由真實使用者修改或提供。Agent 只能原樣落地使用者提供的完整內容，不得自行改寫或合併局部修訂。
+
+## 元件、Story IR 與 scene／floor 的單向關係
+
+```text
+真實使用者提供／修改的元件與權威來源
+        ↓
+Agent 語意翻譯與 Story IR 修改
+        ↓
+只讀 validator
+        ↓
+emitter／generator
+        ↓
+scene／floor
+```
+
+- 元件與權威來源是使用者內容，不由 Agent 依衍生結果反向改寫。
+- Story IR 是 Agent 維護的語意文件，不是由 scene／floor 或 engine event 反推的快取。
+- scene／floor 只能由已驗證 Story IR 重新生成，不得直接 patch；要改 scene／floor，先改 IR，再執行 generator。
+- validator 不寫入 IR；emitter／generator 不寫入元件、權威來源或 IR。
+
 ## 專案架構
 
 核心檔案位置：

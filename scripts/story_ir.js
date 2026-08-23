@@ -20,78 +20,8 @@ function sourceRecords(root, files) {
   return files.map((file) => ({ path: canonicalPath(root, file), sha256: sha256File(file) }));
 }
 
-function textToIr(value) {
-  const match = value.match(/^\t\[([^\]]+)\]([\s\S]*)$/);
-  return match
-    ? { kind: "dialogue", speaker: match[1], text: match[2] }
-    : { kind: "narration", text: value };
-}
-
 function irToText(node) {
   return node.kind === "dialogue" ? `\t[${node.speaker}]${node.text}` : node.text;
-}
-
-function eventToIr(event) {
-  if (typeof event === "string") return textToIr(event);
-  if (!event || typeof event !== "object" || Array.isArray(event)) throw new Error("Story IR only accepts string or object events");
-  switch (event.type) {
-    case "text": {
-      const node = textToIr(event.text || "");
-      node.presentation = Object.fromEntries(Object.entries(event).filter(([key]) => key !== "type" && key !== "text"));
-      return node;
-    }
-    case "setText":
-      return { kind: "layout.set", value: Object.fromEntries(Object.entries(event).filter(([key]) => key !== "type")) };
-    case "playBgm": return { kind: "bgm.play", name: event.name, keep: event.keep };
-    case "pauseBgm": return { kind: "bgm.pause" };
-    case "resumeBgm": return { kind: "bgm.resume" };
-    case "playSound": return { kind: "sound.play", name: event.name, stop: event.stop, pitch: event.pitch, sync: event.sync };
-    case "stopSound": return { kind: "sound.stop" };
-    case "showImage":
-      return {
-        kind: event.code === 1 ? "background.show" : "image.show",
-        role: event.code === 10 || event.code === 11 || event.code === 12 || event.code === 20 ? "portrait" : event.code === 30 || event.code >= 90 ? "cg" : "image",
-        code: event.code, image: event.image, expression: event.expression, sloc: event.sloc,
-        loc: event.code === 10 || event.code === 11 || event.code === 12 || event.code === 20 ? ["portraitSpeakerX", "portraitSpeakerY"] : event.loc,
-        opacity: event.opacity, time: event.time,
-      };
-    case "hideImage": return { kind: "image.hide", code: event.code, time: event.time, async: event.async };
-    case "sleep": return { kind: "wait", time: event.time, noSkip: event.noSkip };
-    case "changeFloor":
-      return { kind: "goto", floorId: event.floorId, loc: event.loc, direction: event.direction, time: event.time };
-    case "comment": {
-      const text = event.text || event.comment || "";
-      if (text === "【此段暫時不撥放BGM】" || text === "【此段暫時不播放BGM】") {
-        return { kind: "bgm.pause", until: "background" };
-      }
-      if (text === "【BGM停止】") return { kind: "bgm.pause", until: "play" };
-      return { kind: "comment", text };
-    }
-    case "function": {
-      const completion = typeof event.function === "string"
-        && event.function.match(/core\.plugin\.completeAkibaEvent\(\s*['\"]([^'\"]+)['\"]\s*\)/);
-      if (completion) return { kind: "akiba.event.complete", eventId: completion[1] };
-      if (typeof event.function === "string" && /core\.plugin\.returnToAkiba\(\s*\)/.test(event.function)) {
-        return { kind: "akiba.return" };
-      }
-      return { kind: "function.call", function: event.function, async: event.async };
-    }
-    case "playTransitionVideo":
-      return { kind: "transition.video", name: event.name, time: event.time };
-    case "choices":
-      return {
-        kind: "choice",
-        prompt: event.text || "",
-        options: (event.choices || []).map((choice) => ({
-          text: choice.text,
-          color: choice.color,
-          need: choice.need,
-          events: (choice.action || []).map(eventToIr),
-        })),
-      };
-    default:
-      throw new Error(`Unsupported engine event type for Story IR: ${event.type || "(missing type)"}`);
-  }
 }
 
 function cleanUndefined(value) {
@@ -220,10 +150,11 @@ function normalizeBgmLifecycle(events) {
   const normalized = [];
   let backgroundScopedPause = false;
 
-  for (const node of events) {
+  for (let index = 0; index < events.length; index += 1) {
+    const node = events[index];
     if (node.kind === "bgm.pause" && node.until === "background") {
       backgroundScopedPause = true;
-      normalized.push({ kind: "bgm.pause" });
+      normalized.push({ kind: "bgm.pause", until: "background" });
       continue;
     }
     if (node.kind === "bgm.play") {
@@ -233,7 +164,9 @@ function normalizeBgmLifecycle(events) {
     }
     normalized.push(node);
     if (backgroundScopedPause && node.kind === "background.show") {
-      normalized.push({ kind: "bgm.resume" });
+      if (!events[index + 1] || events[index + 1].kind !== "bgm.resume") {
+        normalized.push({ kind: "bgm.resume" });
+      }
       backgroundScopedPause = false;
     }
   }
