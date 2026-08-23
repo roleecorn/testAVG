@@ -4,6 +4,11 @@
 
 ## Open
 
+- `priority-1-agent-owned-story-ir-and-todo-maintenance`
+  - Scope: `scripts/generate_main_story.js`、`scripts/manage_story_ir.js`、`scripts/story_ir.js`、`project/story-ir/`、`project/mainStory/TODO.md`、`project/story/TODO.md`
+  - Requirement: Story IR 初版與後續更新由 Agent 依來源語意與 Git log 建立／維護；生成器只負責通用驗證、正規化與 floor emitter，不得硬編劇情語意或重建／覆寫 TODO。
+  - Done when: 移除生成器對劇情指令與 TODO 的寫死寫入責任，建立 Agent-owned IR/TODO 更新流程，並完成來源 → IR → floor 的可追溯驗證。
+  - Evidence: 需補架構設計、遷移計畫、實作 diff，以及 Story IR／floor／TODO round-trip 驗證。
 - `20260823-023000-main-shared-portrait-resolver.md` Q1：`project/timeline.json` 仍因 `EPERM` 無法由主線 generator 更新；解除檔案鎖定／ACL 後重新產生並驗證。
 - `20260823-023000-main-shared-portrait-resolver.md` Q2：東山 source → Story IR 情緒決策表仍待修復；目前不在 emitter 階段用函數或文字 regex 猜測情緒。
 
