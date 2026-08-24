@@ -4,6 +4,7 @@ const { spawnSync } = require("child_process");
 const root = path.resolve(__dirname, "..");
 const steps = [
   [process.execPath, ["scripts/validate_story_source.js"]],
+  [process.execPath, ["scripts/validate_story_alignment.js"]],
   [process.execPath, ["scripts/manage_story_ir.js"]],
   [process.execPath, ["scripts/generate_main_story.js", "--check"]],
   ["python", ["scripts/build_action_cgs.py", "--check"]],

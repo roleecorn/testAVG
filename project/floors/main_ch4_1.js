@@ -331,11 +331,6 @@ main.floors.main_ch4_1=
             "text": "【主線 CH4 4-1 搶火車篇】"
         },
         {
-            "type": "playBgm",
-            "name": "BGMRakisuta.mp3",
-            "keep": true
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -461,12 +456,8 @@ main.floors.main_ch4_1=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "TODO: 【人物交流時間】"
-        },
-        {
             "type": "function",
-            "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch4_1_exchange_1', loc: [6, 10], direction: 'up', time: 500 }, 2); }"
+            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"main_ch4_1_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}, 2); }"
         }
     ]
 }

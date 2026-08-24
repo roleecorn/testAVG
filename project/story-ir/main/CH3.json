@@ -99,11 +99,6 @@
           "text": "【主線 CH3 3-1 自爆篇】"
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMWitch.mp3",
-          "keep": true
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -397,12 +392,13 @@
           }
         },
         {
-          "kind": "comment",
-          "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
-        },
-        {
-          "kind": "function.call",
-          "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch3_1_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
+          "kind": "character.exchange",
+          "destination": {
+            "floorId": "main_ch3_1_exchange_1",
+            "loc": [6, 10],
+            "direction": "up",
+            "time": 500
+          }
         }
       ]
     },
@@ -425,7 +421,7 @@
             "y": 0
           }
         ],
-        "bgm": "BGMRakisuta.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -476,7 +472,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3"
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
@@ -854,6 +850,10 @@
                     "image": "ms_portrait_adult_book_prosecutor_normal.png",
                     "expression": "normal"
                   }
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMWitch.mp3"
                 },
                 {
                   "kind": "narration",
@@ -1338,6 +1338,10 @@
               "text": "對了，我可以去街頭賣藝",
               "events": [
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMRakisuta.mp3"
+                },
+                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "(或許我可以試試去街頭彈唱歌，撐個4天，只要每天賺到10000円就好)",
@@ -1350,17 +1354,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "(就算不賺錢，那就去幹其他活也來得及)",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "是時候展現真正的實力了",
+                  "text": "(就算不賺錢，那就去幹其他活也來得及，是時候展現我的實力了)",
                   "portrait": {
                     "code": 20,
                     "image": "keng_neutral_portrait.png",
@@ -1883,6 +1877,10 @@
                   "time": 250
                 },
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMWitch.mp3"
+                },
+                {
                   "kind": "narration",
                   "text": "隔天，半夜的街道上伐魔樂隊已然集結"
                 },
@@ -1899,7 +1897,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "三日月",
-                  "text": "我們要打魔獸，當然得要組裝好武器。",
+                  "text": "我們要打魔獸，當然得要組裝好武器",
                   "portrait": {
                     "code": 20,
                     "image": "ms_portrait_mikazuki_normal.png",
@@ -2594,6 +2592,10 @@
                   "text": "............"
                 },
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMYume.mp3"
+                },
+                {
                   "kind": "dialogue",
                   "speaker": "不知道是誰的？",
                   "text": "影片錄好了，我可以進來了嗎"
@@ -2923,27 +2925,21 @@
                   "time": 250
                 },
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMWitch.mp3"
+                },
+                {
                   "kind": "narration",
                   "text": "一陣騷亂之後到了深夜打魔獸的時間，這次樂隊嘗試開啟了直播"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "三日月",
-                  "text": "各位觀眾，我們魔法少女4人對上一個魔獸，優勢在我！",
+                  "text": "各位觀眾，我們魔法少女4人對上一個魔獸，優勢在我！梗平你去吸引魔獸注意力",
                   "portrait": {
                     "code": 20,
                     "image": "ms_portrait_mikazuki_surprised.png",
                     "expression": "surprised"
-                  }
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "三日月",
-                  "text": "梗平你去吸引魔獸注意力。",
-                  "portrait": {
-                    "code": 20,
-                    "image": "ms_portrait_mikazuki_normal.png",
-                    "expression": "normal"
                   }
                 },
                 {
@@ -2986,7 +2982,7 @@
                 },
                 {
                   "kind": "narration",
-                  "text": "讓來島澄、香坂輪、梗平自己都被觸手抓住。"
+                  "text": "讓來島澄、香坂輪、梗平自己都被觸手抓住了"
                 },
                 {
                   "kind": "dialogue",
@@ -3025,11 +3021,7 @@
                 },
                 {
                   "kind": "narration",
-                  "text": "一通操作猛如虎，三日樂成功擊潰了觸手怪"
-                },
-                {
-                  "kind": "narration",
-                  "text": "梗平拿著這次打魔獸的錢，陷入了沉思"
+                  "text": "一通操作猛如虎，三日月成功擊潰了觸手怪，梗平拿著這次打魔獸的錢，陷入了沉思"
                 },
                 {
                   "kind": "comment",
@@ -3046,6 +3038,10 @@
                   ],
                   "opacity": 1,
                   "time": 250
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMYume.mp3"
                 },
                 {
                   "kind": "narration",
@@ -3291,6 +3287,16 @@
                   "time": 150
                 },
                 {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "假面騎士腰帶，我來了！",
+                  "portrait": {
+                    "code": 20,
+                    "image": "keng_female_smile_portrait.png",
+                    "expression": "smile"
+                  }
+                },
+                {
                   "kind": "narration",
                   "text": "然後梗平用堪比飛機的速度一路飛奔的跑到了三日月那裡"
                 },
@@ -3394,7 +3400,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "香坂輪",
-                  "text": "這就要走了嗎。",
+                  "text": "這就要走了嗎",
                   "portrait": {
                     "code": 20,
                     "image": "ms_portrait_kousaka_rin_normal.png",
@@ -3404,7 +3410,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "梗平(女装)",
-                  "text": "嗯，畢竟在下還有漫展要去，不快點的話就趕不上了。",
+                  "text": "嗯，畢竟在下還有漫展要去，不快點的話就趕不上了",
                   "portrait": {
                     "code": 20,
                     "image": "ms_portrait_keng_female_normal.png",
@@ -3455,7 +3461,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "三日月",
-                  "text": "我剛買的最新蘋果手機啊，還想著今天回去美美把玩，你就那麼把它砸了！ ？",
+                  "text": "我剛買的IPhone啊，還想著今天回去美美把玩，你就那麼把它砸了！ ？",
                   "portrait": {
                     "code": 20,
                     "image": "ms_portrait_mikazuki_surprised.png",
@@ -3758,6 +3764,10 @@
                   "text": "【過場】"
                 },
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMYume.mp3"
+                },
+                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -3893,16 +3903,6 @@
                 {
                   "kind": "narration",
                   "text": "梗平看著這個狀況嘆了口氣，陷入了沉思"
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "(我當初為甚麼要簽那個約呢)",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
                 },
                 {
                   "kind": "image.show",
@@ -4486,10 +4486,6 @@
           ],
           "direction": "up",
           "time": 0
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMGintama.mp3"
         }
       ]
     },
@@ -4580,11 +4576,6 @@
         {
           "kind": "comment",
           "text": "【主線 CH3 3-3 傑士塔威會議】"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMBOOM.mp3",
-          "keep": true
         },
         {
           "kind": "background.show",
@@ -5258,6 +5249,10 @@
         {
           "kind": "narration",
           "text": "傑士塔威在空中畫過了一道完美的弧線到達了窗邊"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMBOOM.mp3"
         },
         {
           "kind": "image.show",

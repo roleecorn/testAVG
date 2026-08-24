@@ -778,17 +778,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "不對，反過來想如果他們這麼果斷的掛了電話",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "那他們肯定跟修卡勾結了對吧，太邪惡了修卡",
+                  "text": "不對，反過來想如果他們這麼果斷的掛了電話...那他們肯定跟修卡勾結了對吧，邪惡的修卡",
                   "portrait": {
                     "code": 20,
                     "image": "keng_neutral_portrait.png",
@@ -982,6 +972,10 @@
               "text": "什麼?你說有一扇門是開的",
               "events": [
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMYocho.mp3"
+                },
+                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "假面騎士之魂告訴我就是這裡了",
@@ -1044,16 +1038,6 @@
                 {
                   "kind": "narration",
                   "text": "梗平把表妹推進了門裡，然後黑暗吞噬了她"
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "...",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
                 },
                 {
                   "kind": "dialogue",
@@ -1514,10 +1498,6 @@
           ],
           "direction": "up",
           "time": 0
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMYocho.mp3"
         }
       ]
     },
@@ -1540,7 +1520,7 @@
             "y": 0
           }
         ],
-        "bgm": "BGMYume.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -2933,16 +2913,17 @@
           }
         },
         {
-          "kind": "comment",
-          "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
-        },
-        {
-          "kind": "function.call",
-          "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'mapo_1_3_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
-        },
-        {
           "kind": "bgm.play",
-          "name": "BGMRun.mp3"
+          "name": "BGMRakisuta.mp3"
+        },
+        {
+          "kind": "character.exchange",
+          "destination": {
+            "floorId": "mapo_1_3_exchange_1",
+            "loc": [6, 10],
+            "direction": "up",
+            "time": 500
+          }
         }
       ]
     },
@@ -2965,7 +2946,7 @@
             "y": 0
           }
         ],
-        "bgm": "BGMRakisuta.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -3016,7 +2997,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3"
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
@@ -3720,7 +3701,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "...",
+                  "text": "......",
                   "portrait": {
                     "code": 20,
                     "image": "keng_neutral_portrait.png",
@@ -3795,7 +3776,7 @@
                 },
                 {
                   "kind": "narration",
-                  "text": "[不知過了多久，梗平艱難的張開了眼睛］"
+                  "text": "不知過了多久，梗平艱難的張開了眼睛"
                 },
                 {
                   "kind": "dialogue",

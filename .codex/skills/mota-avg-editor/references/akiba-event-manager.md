@@ -62,7 +62,7 @@
 - `selectAkibaEvent(eventId)`：保存返回位置、選取事件並切換至事件樓層。
 - `completeAkibaEvent(eventId)`：完成有效事件；移出啟用清單、加入完成清單，必要時推進角色交換。
 - `addAkibaEvent(eventData)`：正規化後加入事件；拒絕重複啟用，且不重加已完成的一次性事件。
-- `beginCharacterExchange(destination, targetCount)`：開始角色交換，保存回復位置並前往 Akiba；目標事件數預設為 2。
+- `beginCharacterExchange(destination, targetCount)`：執行完整的【人物交流時間】流程：保存 continuation scene、設定目標回合並前往 Akiba；目標事件數預設為 2。
 - `advanceCharacterExchangeWithIdleClock()`：處理閒置時鐘入口的一次交換推進。
 - `isCharacterExchangeComplete()`：判斷目前交換計數是否達標。
 - `returnToMainlineAfterCharacterExchange()`：清理交換狀態並返回主線。
@@ -75,6 +75,18 @@
 ## 事件與角色交換流程
 
 一般事件以 `selectAkibaEvent()` 進入場景，以 `completeAkibaEvent()` 完成，再呼叫 `returnToAkiba()` 決定返回 Akiba 或主線。
+
+## 主線人物交流時間
+
+`【人物交流時間】` 是主線專用的單一完整流程指令，不是普通 `comment`、TODO 或只標記一個區段。它依序包含：
+
+1. 開始：Story IR 的 `character.exchange` 節點保存 continuation scene、位置、方向與目標回合，emitter 輸出 `beginCharacterExchange()`。
+2. 執行：runtime 前往 Akiba，玩家完成指定數量的人物事件或由閒置時鐘保底推進；只有有效且首次完成的事件會增加回合數。
+3. 結束：達標後清理交流 flags，返回 IR 指定的 continuation scene，並從該 scene 重新開始後續演出。
+
+來源中緊接在【人物交流時間】後的背景、BGM 與台詞，屬於 continuation scene 的開頭，不屬於交流入口 scene。BGM 必須同時設定為 continuation scene 的 `floor.bgm`，並作為該 scene 的首個 `bgm.play` 事件；不能放在 `character.exchange` 之前，避免進入 Akiba 時被 Akiba floor 的 BGM 覆蓋。
+
+主線 IR 不得再以 `comment` 加 `function.call` 代替 `character.exchange`；comment 只能保存一般追溯說明，TODO 只能記錄尚未完成的工作。
 
 角色交換期間只有「當時確實處於啟用狀態」的事件首次完成時才增加計數。目標未達成時恢復 Akiba 互動位置；達成後清除交換中的目標／目的地狀態並返回主線。交換以外的地點互動不增加交換計數。
 

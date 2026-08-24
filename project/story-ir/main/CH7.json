@@ -305,14 +305,6 @@
           "name": "BGMWORC.mp3"
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMYume.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMTodomenoichigeki.mp3"
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
           "text": "我的錢包啊啊啊啊啊啊啊啊啊"
@@ -455,7 +447,7 @@
         },
         {
           "kind": "narration",
-          "text": "在東山發話的同時，在料理區看似老闆的男子往門口瞧了一眼後，隨即繼續了手邊的工作。一名身穿旗袍的女性則放下了手邊的工作迎了上來"
+          "text": "映著東山的話，看似老闆的男子往門口瞧了一眼，隨即繼續了手邊的工作。一名身穿女用旗袍的人則迎了上來"
         },
         {
           "kind": "dialogue",
@@ -1153,10 +1145,6 @@
           ],
           "direction": "up",
           "time": 0
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMYume.mp3"
         }
       ]
     },
@@ -1179,7 +1167,7 @@
             "y": 0
           }
         ],
-        "bgm": "BGMYocho.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -1230,7 +1218,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMYocho.mp3"
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
@@ -1782,6 +1770,10 @@
           "text": "【BGM預定地：()】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMYocho.mp3"
+        },
+        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -2007,7 +1999,12 @@
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "打擾了你們有沒有看過一個—"
+          "text": "你們知不知道一個叫IB哥—"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "蘭斯",
+          "text": "……………"
         },
         {
           "kind": "image.hide",
@@ -2092,6 +2089,10 @@
         {
           "kind": "comment",
           "text": "【BGM預定地：()切換BGM或到7-2結束前連續播放此首BGM】"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
         },
         {
           "kind": "background.show",
@@ -2229,6 +2230,10 @@
           ],
           "opacity": 1,
           "time": 250
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "dialogue",
@@ -3023,18 +3028,6 @@
           ],
           "direction": "up",
           "time": 0
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMUZUUZU.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMYume.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMYume.mp3"
         }
       ]
     },
@@ -3806,6 +3799,10 @@
           "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMDuel.mp3"
+        },
+        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -3970,16 +3967,6 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "桶至學長",
-          "text": "沒想到梗平你竟然是這種人",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "expression": "normal"
-          }
-        },
-        {
-          "kind": "dialogue",
           "speaker": "梗平",
           "text": "那在下也不道該怎辦了啊！",
           "portrait": {
@@ -3987,6 +3974,10 @@
             "image": "keng_surprised_portrait.png",
             "expression": "surprised"
           }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
         },
         {
           "kind": "dialogue",
@@ -4544,18 +4535,6 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMDuel.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMUZUUZU.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMBOOM.mp3"
-        },
-        {
-          "kind": "bgm.play",
           "name": "BGMUZUUZU.mp3"
         },
         {
@@ -4640,22 +4619,6 @@
           ],
           "direction": "up",
           "time": 0
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMUZUUZU.mp3"
-        },
-        {
-          "kind": "bgm.pause"
         }
       ]
     },
@@ -5278,8 +5241,8 @@
           "text": "【過場】"
         },
         {
-          "kind": "bgm.pause",
-          "until": "play"
+          "kind": "bgm.play",
+          "name": "BGMWitch.mp3"
         },
         {
           "kind": "background.show",
@@ -5429,8 +5392,12 @@
           "text": "列車前方，腳步聲越來越清晰"
         },
         {
+          "kind": "bgm.pause",
+          "until": "play"
+        },
+        {
           "kind": "bgm.play",
-          "name": "BGMWitch.mp3",
+          "name": "BGMREBOOT2014.mp3",
           "keep": true
         },
         {
@@ -5550,10 +5517,6 @@
           "until": "play"
         },
         {
-          "kind": "narration",
-          "text": "接著與笑容滿面的惠惠四目相接"
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 30,
@@ -5596,34 +5559,27 @@
           }
         },
         {
-          "kind": "layout.set",
-          "value": {
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-              255,
-              225,
-              80,
-              1
-            ],
-            "text": [
-              255,
-              255,
-              255,
-              1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-          }
+          "kind": "dialogue",
+          "speaker": "桶至學長",
+          "text": "……………"
+        },
+        {
+          "kind": "narration",
+          "text": "接著與笑容滿面的惠惠四目相接"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH7_L626.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
         },
         {
           "kind": "layout.set",
@@ -5714,11 +5670,50 @@
             "letterSpacing": 0,
             "animateTime": 120
           }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMBOOM.mp3"
         },
         {
           "kind": "dialogue",
           "speaker": "惠惠",
           "text": "Ex～plosion—！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
         },
         {
           "kind": "layout.set",
@@ -5749,30 +5744,6 @@
             "letterSpacing": 0,
             "animateTime": 120
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "CH7_L626.png",
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "桶至學長",
-          "text": "……………"
         },
         {
           "kind": "layout.set",
@@ -6233,8 +6204,8 @@
           "time": 250
         },
         {
-          "kind": "bgm.pause",
-          "until": "background"
+          "kind": "bgm.play",
+          "name": "BGMWitch.mp3"
         },
         {
           "kind": "dialogue",
@@ -6388,7 +6359,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "肥宅A",
+          "speaker": "肥宅",
           "text": "…………………",
           "portrait": {
             "code": 20,
@@ -6398,7 +6369,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "肥宅B",
+          "speaker": "肥宅A",
           "text": "…………………",
           "portrait": {
             "code": 20,
@@ -6407,14 +6378,8 @@
           }
         },
         {
-          "kind": "dialogue",
-          "speaker": "肥宅C",
-          "text": "…………………",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_otaku_c_normal.png",
-            "expression": "normal"
-          }
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
         },
         {
           "kind": "image.show",
@@ -7013,6 +6978,10 @@
           "text": "【BGM預定地：()切換BGM或到7-4結束前連續播放此首BGM】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMRakisuta.mp3"
+        },
+        {
           "kind": "dialogue",
           "speaker": "店長",
           "text": "他還給你們了，總之快離開吧！",
@@ -7270,42 +7239,6 @@
           ],
           "direction": "up",
           "time": 0
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMBOOM.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMTANK.mp3"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMMeikyoshisui.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMWitch.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMUZUUZU.mp3"
-        },
-        {
-          "kind": "bgm.pause"
         }
       ]
     },
@@ -8705,7 +8638,7 @@
         {
           "kind": "dialogue",
           "speaker": "小將",
-          "text": "…沒問題，我們家代代都是挑戰菜單派",
+          "text": "沒…問題…，我們家代代都是挑戰菜單派…",
           "portrait": {
             "code": 20,
             "image": "ms_portrait_shogun_normal.png",
@@ -8719,7 +8652,7 @@
         {
           "kind": "dialogue",
           "speaker": "表妹",
-          "text": "喔喔—死勾以—",
+          "text": "喔喔—死勾以———",
           "portrait": {
             "code": 20,
             "image": "suou_happy_portrait.png",
@@ -8864,7 +8797,7 @@
         {
           "kind": "dialogue",
           "speaker": "小將",
-          "text": "沒…問……，我們家代…都是縱橫馳騁派…",
+          "text": "……沒……問題，我們家代…都是縱橫馳騁派……",
           "portrait": {
             "code": 20,
             "image": "ms_portrait_shogun_normal.png",
@@ -9084,6 +9017,10 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "bgm.pause",
@@ -9479,6 +9416,18 @@
         {
           "kind": "comment",
           "text": "【過場】"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMRakisuta.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMTodomenoichigeki.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMRun.mp3"
         },
         {
           "kind": "bgm.pause",
@@ -10430,13 +10379,6 @@
           "time": 250
         },
         {
-          "kind": "bgm.resume"
-        },
-        {
-          "kind": "bgm.pause",
-          "until": "background"
-        },
-        {
           "kind": "dialogue",
           "speaker": "店長",
           "text": "你們找回了『聖典』嗎",
@@ -10517,9 +10459,6 @@
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "bgm.resume"
         },
         {
           "kind": "narration",
@@ -10865,7 +10804,11 @@
         },
         {
           "kind": "narration",
-          "text": "教主持續地演講並不是為了洗腦肥宅，而是封印了肥宅們從失落轉向暴怒的，最後掙扎…"
+          "text": "教主持續地演講並不是為了洗腦肥宅…"
+        },
+        {
+          "kind": "narration",
+          "text": "而是封印了肥宅們從失落轉向暴怒的，最後掙扎………"
         },
         {
           "kind": "image.hide",
@@ -11264,6 +11207,10 @@
         {
           "kind": "bgm.play",
           "name": "BGMKanu.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMHaru.mp3"
         },
         {
           "kind": "dialogue",
@@ -11970,27 +11917,7 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "………………",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "………那就，交給在下吧",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "在下會負起責任的",
+          "text": "………那就，交給在下吧，在下會負起責任的",
           "portrait": {
             "code": 20,
             "image": "keng_neutral_portrait.png",
@@ -12592,6 +12519,10 @@
           "text": "【過場】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMRakisuta.mp3"
+        },
+        {
           "kind": "bgm.pause",
           "until": "play"
         },
@@ -12622,6 +12553,11 @@
           "kind": "dialogue",
           "speaker": "克莉絲",
           "text": "………你損人的人設完全沒打算藏了是吧"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "人家太感動了嘛—"
         },
         {
           "kind": "image.hide",
@@ -12737,9 +12673,6 @@
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "bgm.resume"
         },
         {
           "kind": "layout.set",
@@ -13146,22 +13079,34 @@
           "text": "【返回標題畫面】"
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMTodomenoichigeki.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMRun.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMBOINBOIN.mp3"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.pause"
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "layout.set",
@@ -13194,24 +13139,6 @@
           }
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMGintama.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMKanu.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMHaru.mp3"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -13240,72 +13167,6 @@
             "letterSpacing": 0,
             "animateTime": 120
           }
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMKIRAKIRA.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMED2.mp3"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "layout.set",
-          "value": {
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-              255,
-              225,
-              80,
-              1
-            ],
-            "text": [
-              255,
-              255,
-              255,
-              1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-          }
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMKyoheiTranslation.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMKanu.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMHaru.mp3"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.pause"
         },
         {
           "kind": "layout.set",

@@ -99,11 +99,6 @@
           "text": "【主線 CH5 5-1 五日無戰事篇】"
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3",
-          "keep": true
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -238,12 +233,14 @@
           "text": "梗平將工具歸了位後，離開了炭烤蜜瓜兔子"
         },
         {
-          "kind": "comment",
-          "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
-        },
-        {
-          "kind": "function.call",
-          "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch5_1_exchange_1', loc: [6, 10], direction: 'up', time: 500 }, 2); }"
+          "kind": "character.exchange",
+          "destination": {
+            "floorId": "main_ch5_1_exchange_1",
+            "loc": [6, 10],
+            "direction": "up",
+            "time": 500
+          },
+          "targetCount": 2
         }
       ]
     },
@@ -266,7 +263,7 @@
             "y": 0
           }
         ],
-        "bgm": "BGMWORC.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -317,7 +314,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMWORC.mp3"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
@@ -604,16 +601,6 @@
                   }
                 },
                 {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "(而且表妹也從那裏賺到了這麼多，看來就是這條道路了)",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
-                },
-                {
                   "kind": "narration",
                   "text": "梗平選擇了捷徑(?)"
                 },
@@ -802,14 +789,8 @@
               "text": "既然如此，答案只有一個了…我將效忠於您",
               "events": [
                 {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "(果然這種時候還是書店最保險)",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
+                  "kind": "bgm.play",
+                  "name": "BGMWORC.mp3"
                 },
                 {
                   "kind": "narration",
@@ -869,7 +850,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "書店店員",
-                  "text": "你來啦，讓我們憶起奮戰到底吧",
+                  "text": "你來啦，讓我們一起奮戰到底吧",
                   "portrait": {
                     "code": 20,
                     "image": "ms_portrait_bookstore_clerk_normal.png",

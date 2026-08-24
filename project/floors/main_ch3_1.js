@@ -331,11 +331,6 @@ main.floors.main_ch3_1=
             "text": "【主線 CH3 3-1 自爆篇】"
         },
         {
-            "type": "playBgm",
-            "name": "BGMWitch.mp3",
-            "keep": true
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -779,12 +774,8 @@ main.floors.main_ch3_1=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
-        },
-        {
             "type": "function",
-            "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch3_1_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
+            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"main_ch3_1_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}); }"
         }
     ]
 }

@@ -1166,7 +1166,7 @@ main.floors.mapo_1_4=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]...",
+                        "\t[梗平]......",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -1255,7 +1255,7 @@ main.floors.mapo_1_4=
                             "opacity": 1,
                             "time": 250
                         },
-                        "[不知過了多久，梗平艱難的張開了眼睛］",
+                        "不知過了多久，梗平艱難的張開了眼睛",
                         {
                             "type": "showImage",
                             "code": 20,

@@ -16,7 +16,7 @@ main.floors.main_ch2_4_exchange_1=
             "y": 0
         }
     ],
-    "bgm": "BGMIB.mp3",
+    "bgm": "BGMWORC.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,7 +313,7 @@ main.floors.main_ch2_4_exchange_1=
         },
         {
             "type": "playBgm",
-            "name": "BGMIB.mp3"
+            "name": "BGMWORC.mp3"
         },
         {
             "type": "showImage",

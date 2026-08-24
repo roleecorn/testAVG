@@ -108,6 +108,14 @@ function irToEvent(node, options = {}) {
     case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time, silent: true });
     case "comment": return { type: "comment", text: node.text };
     case "function.call": return cleanUndefined({ type: "function", function: node.function, async: node.async });
+    case "character.exchange": {
+      const destination = JSON.stringify(node.destination);
+      const targetCount = node.targetCount == null ? "" : `, ${node.targetCount}`;
+      return {
+        type: "function",
+        function: `function () { core.plugin.beginCharacterExchange(${destination}${targetCount}); }`,
+      };
+    }
     case "akiba.event.complete": return { type: "function", function: `function () { core.plugin.completeAkibaEvent('${node.eventId}'); }` };
     case "akiba.return": return { type: "function", function: "function () { core.plugin.returnToAkiba(); }" };
     case "transition.video": return cleanUndefined({ type: "playTransitionVideo", name: node.name, time: node.time, standalone: node.standalone });
@@ -304,7 +312,7 @@ function ensureAvgLayout(events) {
 const ALLOWED_KINDS = new Set([
   "narration", "dialogue", "layout.set", "bgm.play", "bgm.pause", "bgm.resume",
   "sound.play", "sound.stop", "background.show", "image.show", "image.hide", "wait",
-  "goto", "comment", "function.call", "akiba.event.complete", "akiba.return", "transition.video", "choice",
+  "goto", "comment", "function.call", "character.exchange", "akiba.event.complete", "akiba.return", "transition.video", "choice",
 ]);
 
 function validateNode(node, location) {
@@ -336,6 +344,30 @@ function validateNode(node, location) {
   }
   if (node.kind === "akiba.event.complete" && (typeof node.eventId !== "string" || !node.eventId)) {
     throw new Error(`${location}: akiba.event.complete requires eventId`);
+  }
+  if (node.kind === "character.exchange") {
+    const destination = node.destination;
+    if (!destination || typeof destination !== "object" || Array.isArray(destination)) {
+      throw new Error(`${location}: character.exchange.destination must be an object`);
+    }
+    if (typeof destination.floorId !== "string" || !destination.floorId) {
+      throw new Error(`${location}: character.exchange.destination.floorId is required`);
+    }
+    if (!Array.isArray(destination.loc) || destination.loc.length !== 2 || destination.loc.some((value) => !Number.isFinite(value))) {
+      throw new Error(`${location}: character.exchange.destination.loc must contain two numbers`);
+    }
+    if (typeof destination.direction !== "string" || !destination.direction) {
+      throw new Error(`${location}: character.exchange.destination.direction is required`);
+    }
+    if (destination.time !== undefined && (!Number.isFinite(destination.time) || destination.time < 0)) {
+      throw new Error(`${location}: character.exchange.destination.time must be a non-negative number`);
+    }
+    if (destination.transitionVideo !== undefined && typeof destination.transitionVideo !== "boolean") {
+      throw new Error(`${location}: character.exchange.destination.transitionVideo must be boolean`);
+    }
+    if (node.targetCount !== undefined && (!Number.isInteger(node.targetCount) || node.targetCount <= 0)) {
+      throw new Error(`${location}: character.exchange.targetCount must be a positive integer`);
+    }
   }
   if ((node.kind === "bgm.play" || node.kind === "sound.play") && typeof node.name !== "string") {
     throw new Error(`${location}: ${node.kind}.name must be a string`);

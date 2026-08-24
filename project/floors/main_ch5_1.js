@@ -331,11 +331,6 @@ main.floors.main_ch5_1=
             "text": "【主線 CH5 5-1 五日無戰事篇】"
         },
         {
-            "type": "playBgm",
-            "name": "BGMRakisuta.mp3",
-            "keep": true
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_vehicle_interior.png",
@@ -513,12 +508,8 @@ main.floors.main_ch5_1=
         },
         "梗平將工具歸了位後，離開了炭烤蜜瓜兔子",
         {
-            "type": "comment",
-            "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
-        },
-        {
             "type": "function",
-            "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch5_1_exchange_1', loc: [6, 10], direction: 'up', time: 500 }, 2); }"
+            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"main_ch5_1_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}, 2); }"
         }
     ]
 }

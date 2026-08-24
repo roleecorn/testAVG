@@ -16,7 +16,7 @@ main.floors.main_ch7_2=
             "y": 0
         }
     ],
-    "bgm": "BGMYocho.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,7 +313,7 @@ main.floors.main_ch7_2=
         },
         {
             "type": "playBgm",
-            "name": "BGMYocho.mp3"
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
@@ -1215,6 +1215,10 @@ main.floors.main_ch7_2=
             "text": "【BGM預定地：()】"
         },
         {
+            "type": "playBgm",
+            "name": "BGMYocho.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L295.png",
@@ -1533,7 +1537,8 @@ main.floors.main_ch7_2=
             "opacity": 1,
             "time": 250
         },
-        "\t[蘭斯]打擾了你們有沒有看過一個—",
+        "\t[蘭斯]你們知不知道一個叫IB哥—",
+        "\t[蘭斯]……………",
         {
             "type": "hideImage",
             "code": 30,
@@ -1637,6 +1642,10 @@ main.floors.main_ch7_2=
         {
             "type": "comment",
             "text": "【BGM預定地：()切換BGM或到7-2結束前連續播放此首BGM】"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMUZUUZU.mp3"
         },
         {
             "type": "showImage",
@@ -1846,6 +1855,10 @@ main.floors.main_ch7_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
@@ -2950,18 +2963,6 @@ main.floors.main_ch7_2=
             "direction": "up",
             "time": 0,
             "silent": true
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMUZUUZU.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMYume.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMYume.mp3"
         }
     ]
 }

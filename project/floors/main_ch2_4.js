@@ -16,7 +16,7 @@ main.floors.main_ch2_4=
             "y": 0
         }
     ],
-    "bgm": "BGMKyoheiTranslation.mp3",
+    "bgm": "",
     "ratio": 1,
     "map": [
         [
@@ -310,10 +310,6 @@ main.floors.main_ch2_4=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMKyoheiTranslation.mp3"
         },
         {
             "type": "showImage",
@@ -776,8 +772,7 @@ main.floors.main_ch2_4=
         },
         {
             "type": "playBgm",
-            "name": "BGMWORC.mp3",
-            "keep": true
+            "name": "BGMKyoheiTranslation.mp3"
         },
         {
             "type": "showImage",
@@ -887,6 +882,20 @@ main.floors.main_ch2_4=
             "time": 500
         },
         {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWORC.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",
@@ -897,35 +906,7 @@ main.floors.main_ch2_4=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
         "ANIsister的門口，梗平遭受著他不應......算了，他活該的",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_ib_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[IB]......",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
         "IB用冰冷的眼神看向梗平",
         {
             "type": "showImage",
@@ -1137,6 +1118,10 @@ main.floors.main_ch2_4=
                             "type": "hideImage",
                             "code": 20,
                             "time": 0
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMIB.mp3"
                         },
                         {
                             "type": "setCurtain",
@@ -1865,6 +1850,10 @@ main.floors.main_ch2_4=
                     "text": "天在呼喚、地在呼喚、人在呼喚，呼喚我打敗邪惡！",
                     "action": [
                         {
+                            "type": "playBgm",
+                            "name": "BGMTree.mp3"
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
@@ -2310,44 +2299,12 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         {
-                            "type": "comment",
-                            "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
-                        },
-                        {
                             "type": "function",
-                            "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch2_4_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
+                            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"main_ch2_4_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}); }"
                         }
                     ]
                 }
             ]
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMWORC.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMIB.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMTree.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMWORC.mp3"
-        },
-        {
-            "type": "pauseBgm"
         }
     ]
 }

@@ -16,7 +16,7 @@ main.floors.mapo_1_3=
             "y": 0
         }
     ],
-    "bgm": "BGMYume.mp3",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -2274,16 +2274,12 @@ main.floors.mapo_1_3=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "function",
-            "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'mapo_1_3_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMRun.mp3"
+            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"mapo_1_3_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}); }"
         }
     ]
 }

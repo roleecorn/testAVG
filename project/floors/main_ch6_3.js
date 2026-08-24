@@ -532,25 +532,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]好，暫時應該是安全的了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]現在就是想想要怎麼才能出去",
+        "\t[梗平]好，暫時應該是安全的了，現在就是想想要怎麼才能出去",
         {
             "type": "hideImage",
             "code": 20,
@@ -589,25 +571,7 @@ main.floors.main_ch6_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]在下的自由",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]在下的夢想",
+        "\t[梗平]在下的自由、在下的夢想",
         {
             "type": "hideImage",
             "code": 20,

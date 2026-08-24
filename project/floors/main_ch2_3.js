@@ -379,24 +379,6 @@ main.floors.main_ch2_3=
             "time": 0
         },
         "梗平不假思索的把錢包裡最後僅剩的一張一千円拿了出來",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平](好像哪裡不太對)",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
         "警察隨後把那一千円投入了機台當中",
         "梗平的理智隨著珠子滾動的聲音一起跌到谷底",
         {
@@ -693,24 +675,6 @@ main.floors.main_ch2_3=
             "time": 0
         },
         "\t[梗平]對啊，要幫IB找哥哥才行",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]......",
         {
             "type": "hideImage",
             "code": 20,

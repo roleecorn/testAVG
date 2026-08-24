@@ -1113,10 +1113,6 @@
         },
         {
           "kind": "narration",
-          "text": "？？？"
-        },
-        {
-          "kind": "narration",
           "text": "三個小朋友欲言又止，但梗平早已一臉自信的轉身走向了其他地方"
         },
         {
@@ -1355,21 +1351,25 @@
           "kind": "comment",
           "text": "【過場】"
         },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "CH2_L163.png",
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L163.png",
           "loc": [
             0,
             0
           ],
           "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "narration",
-          "text": "走進餐廳的梗平看到了已經坐在那裏的蘭斯"
+                  "time": 250
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMYume.mp3"
+                },
+                {
+                  "kind": "narration",
+                  "text": "走進餐廳的梗平看到了已經坐在那裏的蘭斯"
         },
         {
           "kind": "narration",
@@ -2250,16 +2250,6 @@
           "text": "梗平不假思索的把錢包裡最後僅剩的一張一千円拿了出來"
         },
         {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "(好像哪裡不太對)",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
-        },
-        {
           "kind": "narration",
           "text": "警察隨後把那一千円投入了機台當中"
         },
@@ -2555,16 +2545,6 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "......",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
           "text": "算了，還是去ANIsister一趟吧",
           "portrait": {
             "code": 20,
@@ -2769,7 +2749,7 @@
             "y": 0
           }
         ],
-        "bgm": "BGMKyoheiTranslation.mp3",
+        "bgm": "",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -2817,10 +2797,6 @@
             "letterSpacing": 0,
             "animateTime": 120
           }
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMKyoheiTranslation.mp3"
         },
         {
           "kind": "background.show",
@@ -3161,23 +3137,22 @@
             "expression": "normal"
           }
         },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "(這時候只能靠那一招了)",
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "(這時候只能靠那一招了)",
           "portrait": {
             "code": 20,
             "image": "keng_neutral_portrait.png",
             "expression": "normal"
-          }
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMWORC.mp3",
-          "keep": true
-        },
-        {
-          "kind": "image.show",
+                  }
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMKyoheiTranslation.mp3"
+                },
+                {
+                  "kind": "image.show",
           "role": "cg",
           "code": 30,
           "image": "CH2_L344.png",
@@ -3295,6 +3270,10 @@
           "text": "【過場】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMWORC.mp3"
+        },
+        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -3309,16 +3288,6 @@
         {
           "kind": "narration",
           "text": "ANIsister的門口，梗平遭受著他不應......算了，他活該的"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "IB",
-          "text": "......",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_ib_normal.png",
-            "expression": "normal"
-          }
         },
         {
           "kind": "narration",
@@ -3474,6 +3443,10 @@
                     "image": "keng_smile_portrait.png",
                     "expression": "smile"
                   }
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMIB.mp3"
                 },
                 {
                   "kind": "comment",
@@ -4003,6 +3976,10 @@
               "text": "天在呼喚、地在呼喚、人在呼喚，呼喚我打敗邪惡！",
               "events": [
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMTree.mp3"
+                },
+                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "哎呀，咖啡廳那邊出問題了，在下得趕快回去才行",
@@ -4297,44 +4274,17 @@
                   }
                 },
                 {
-                  "kind": "comment",
-                  "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
-                },
-                {
-                  "kind": "function.call",
-                  "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch2_4_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
+                  "kind": "character.exchange",
+                  "destination": {
+                    "floorId": "main_ch2_4_exchange_1",
+                    "loc": [6, 10],
+                    "direction": "up",
+                    "time": 500
+                  }
                 }
               ]
             }
           ]
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.pause"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMWORC.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMIB.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMTree.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMWORC.mp3"
-        },
-        {
-          "kind": "bgm.pause"
         }
       ]
     },
@@ -4357,7 +4307,7 @@
             "y": 0
           }
         ],
-        "bgm": "BGMIB.mp3",
+        "bgm": "BGMWORC.mp3",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -4408,7 +4358,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMIB.mp3"
+          "name": "BGMWORC.mp3"
         },
         {
           "kind": "background.show",

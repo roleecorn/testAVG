@@ -331,11 +331,6 @@ main.floors.main_ch3_3=
             "text": "【主線 CH3 3-3 傑士塔威會議】"
         },
         {
-            "type": "playBgm",
-            "name": "BGMBOOM.mp3",
-            "keep": true
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",
@@ -1365,6 +1360,10 @@ main.floors.main_ch3_3=
         },
         "表妹一把搶過了傑士塔威拔下了頭，並往四樓的窗戶丟",
         "傑士塔威在空中畫過了一道完美的弧線到達了窗邊",
+        {
+            "type": "playBgm",
+            "name": "BGMBOOM.mp3"
+        },
         {
             "type": "showImage",
             "code": 30,

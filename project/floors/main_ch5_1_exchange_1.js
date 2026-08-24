@@ -16,7 +16,7 @@ main.floors.main_ch5_1_exchange_1=
             "y": 0
         }
     ],
-    "bgm": "BGMWORC.mp3",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,7 +313,7 @@ main.floors.main_ch5_1_exchange_1=
         },
         {
             "type": "playBgm",
-            "name": "BGMWORC.mp3"
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
@@ -589,24 +589,6 @@ main.floors.main_ch5_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平](而且表妹也從那裏賺到了這麼多，看來就是這條道路了)",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
                         "梗平選擇了捷徑(?)",
                         {
                             "type": "setCurtain",
@@ -832,22 +814,8 @@ main.floors.main_ch5_1_exchange_1=
                     "text": "既然如此，答案只有一個了…我將效忠於您",
                     "action": [
                         {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平](果然這種時候還是書店最保險)",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
+                            "type": "playBgm",
+                            "name": "BGMWORC.mp3"
                         },
                         "梗平決定將今天自己剩下的所有時間投入到書店的打工中",
                         "如果一小時2000，他只需要工作區區1000小時就可以賺到200萬了",
@@ -915,7 +883,7 @@ main.floors.main_ch5_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[書店店員]你來啦，讓我們憶起奮戰到底吧",
+                        "\t[書店店員]你來啦，讓我們一起奮戰到底吧",
                         {
                             "type": "hideImage",
                             "code": 20,

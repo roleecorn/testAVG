@@ -223,16 +223,6 @@
           "text": "如此大的動靜，讓正在睡覺的智乃與三角都醒了過來"
         },
         {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "呼......",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
-        },
-        {
           "kind": "narration",
           "text": "似乎似因為剛睡醒，店長用著小女孩的聲音向梗平提問"
         },
@@ -416,19 +406,11 @@
         },
         {
           "kind": "narration",
-          "text": "三角離開了大門周圍，梗平獨自堅守在大門旁"
+          "text": "三角離開了大門周圍，梗平獨自堅守在大門旁，抵禦著來自外部肥宅們一波又一波的攻擊"
         },
         {
           "kind": "narration",
-          "text": "抵禦著來自外部肥宅們一波又一波的攻擊"
-        },
-        {
-          "kind": "narration",
-          "text": "不知道幾個小時過去了之後，太陽逐漸升起"
-        },
-        {
-          "kind": "narration",
-          "text": "停了許久的群組訊息出現了動靜"
+          "text": "不知道幾個小時過去了之後，太陽逐漸升起，停了許久的群組訊息出現了動靜"
         },
         {
           "kind": "dialogue",
@@ -472,16 +454,6 @@
         {
           "kind": "narration",
           "text": "梗平的視線看了一眼三角，然後定格在了智乃身上"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "喔？",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
         },
         {
           "kind": "comment",
@@ -1146,10 +1118,6 @@
         {
           "kind": "bgm.play",
           "name": "BGMRakisuta.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMTree.mp3"
         }
       ]
     },
@@ -1629,6 +1597,11 @@
                   }
                 },
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMWORC.mp3",
+                  "keep": true
+                },
+                {
                   "kind": "comment",
                   "text": "【過場】"
                 },
@@ -1671,17 +1644,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "......",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "啊，Comike",
+                  "text": "......啊，Comike",
                   "portrait": {
                     "code": 20,
                     "image": "keng_neutral_portrait.png",
@@ -1759,7 +1722,7 @@
               "events": [
                 {
                   "kind": "bgm.play",
-                  "name": "BGMWORC.mp3",
+                  "name": "BGMHaru.mp3",
                   "keep": true
                 },
                 {
@@ -1823,16 +1786,6 @@
                   "portrait": {
                     "code": 20,
                     "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "可是......",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
                     "expression": "normal"
                   }
                 },
@@ -1980,6 +1933,10 @@
                   "code": 20,
                   "image": "dongshan_normal.png",
                   "expression": "normal"
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMGintama.mp3"
                 },
                 {
                   "kind": "background.show",
@@ -2304,8 +2261,7 @@
                 },
                 {
                   "kind": "bgm.play",
-                  "name": "BGMHaru.mp3",
-                  "keep": true
+                  "name": "BGMRakisuta.mp3"
                 },
                 {
                   "kind": "narration",
@@ -2388,17 +2344,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "不用",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "東山",
-                  "text": "他跑不了多遠的",
+                  "text": "不用，他跑不了多遠的",
                   "portrait": {
                     "code": 20,
                     "image": "dongshan_normal.png",
@@ -2425,18 +2371,6 @@
           ],
           "direction": "up",
           "time": 0
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMGintama.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMHaru.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMGintama.mp3"
         }
       ]
     },
@@ -2512,8 +2446,8 @@
           "kind": "bgm.play",
           "name": "BGMRakisuta.mp3"
         },
-        {
-          "kind": "background.show",
+                {
+                  "kind": "background.show",
           "role": "image",
           "code": 1,
           "image": "ms_bg_horses_knee.png",
@@ -2655,17 +2589,7 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好，暫時應該是安全的了",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "現在就是想想要怎麼才能出去",
+          "text": "好，暫時應該是安全的了，現在就是想想要怎麼才能出去",
           "portrait": {
             "code": 20,
             "image": "keng_neutral_portrait.png",
@@ -2697,17 +2621,7 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下的自由",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "在下的夢想",
+          "text": "在下的自由、在下的夢想",
           "portrait": {
             "code": 20,
             "image": "keng_neutral_portrait.png",
@@ -3684,10 +3598,6 @@
           "text": "【第六章結束】"
         },
         {
-          "kind": "narration",
-          "text": "結局"
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -3814,10 +3724,6 @@
         {
           "kind": "narration",
           "text": "你說劇情在幹尛？"
-        },
-        {
-          "kind": "narration",
-          "text": "這可是COC團錄，一切都是PL與骰子女神的抉擇可沒有半分虛假"
         },
         {
           "kind": "narration",

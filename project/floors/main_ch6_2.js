@@ -843,6 +843,11 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         {
+                            "type": "playBgm",
+                            "name": "BGMWORC.mp3",
+                            "keep": true
+                        },
+                        {
                             "type": "setCurtain",
                             "color": [
                                 0,
@@ -922,25 +927,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]......",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]啊，Comike",
+                        "\t[梗平]......啊，Comike",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -1006,7 +993,7 @@ main.floors.main_ch6_2=
                     "action": [
                         {
                             "type": "playBgm",
-                            "name": "BGMWORC.mp3",
+                            "name": "BGMHaru.mp3",
                             "keep": true
                         },
                         {
@@ -1113,24 +1100,6 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         "\t[東山]可是無論是從她還是從我們的視角看這都是戀人的邀約啊",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]可是......",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -1383,6 +1352,10 @@ main.floors.main_ch6_2=
                             ],
                             "opacity": 1,
                             "time": 0
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMGintama.mp3"
                         },
                         {
                             "type": "showImage",
@@ -1891,8 +1864,7 @@ main.floors.main_ch6_2=
                         },
                         {
                             "type": "playBgm",
-                            "name": "BGMHaru.mp3",
-                            "keep": true
+                            "name": "BGMRakisuta.mp3"
                         },
                         "在結束了友人們的圍攻後，梗平的大腦從死機狀態運轉了起來",
                         {
@@ -2034,25 +2006,7 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[東山]不用",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[東山]他跑不了多遠的",
+                        "\t[東山]不用，他跑不了多遠的",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -2076,18 +2030,6 @@ main.floors.main_ch6_2=
             "direction": "up",
             "time": 0,
             "silent": true
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMGintama.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMHaru.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMGintama.mp3"
         }
     ]
 }

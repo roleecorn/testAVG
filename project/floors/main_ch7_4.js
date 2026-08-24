@@ -1038,7 +1038,8 @@ main.floors.main_ch7_4=
             "time": 500
         },
         {
-            "type": "pauseBgm"
+            "type": "playBgm",
+            "name": "BGMWitch.mp3"
         },
         {
             "type": "showImage",
@@ -1256,8 +1257,11 @@ main.floors.main_ch7_4=
         "喀噠—喀噠—喀噠— ",
         "列車前方，腳步聲越來越清晰",
         {
+            "type": "pauseBgm"
+        },
+        {
             "type": "playBgm",
-            "name": "BGMWitch.mp3",
+            "name": "BGMREBOOT2014.mp3",
             "keep": true
         },
         {
@@ -1398,7 +1402,6 @@ main.floors.main_ch7_4=
         {
             "type": "pauseBgm"
         },
-        "接著與笑容滿面的惠惠四目相接",
         {
             "type": "showImage",
             "code": 30,
@@ -1438,33 +1441,20 @@ main.floors.main_ch7_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        "\t[桶至學長]……………",
+        "接著與笑容滿面的惠惠四目相接",
         {
-            "type": "setText",
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-                255,
-                225,
-                80,
-                1
+            "type": "showImage",
+            "code": 30,
+            "image": "CH7_L626.png",
+            "loc": [
+                112,
+                50,
+                320,
+                220
             ],
-            "text": [
-                255,
-                255,
-                255,
-                1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
+            "opacity": 1,
+            "time": 250
         },
         {
             "type": "setText",
@@ -1549,8 +1539,45 @@ main.floors.main_ch7_4=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMBOOM.mp3"
         },
         "\t[惠惠]Ex～plosion—！",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 150
+        },
         {
             "type": "setText",
             "avg": true,
@@ -1579,25 +1606,6 @@ main.floors.main_ch7_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "CH7_L626.png",
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        "\t[桶至學長]……………",
         {
             "type": "setText",
             "avg": true,
@@ -2158,7 +2166,8 @@ main.floors.main_ch7_4=
             "time": 500
         },
         {
-            "type": "pauseBgm"
+            "type": "playBgm",
+            "name": "BGMWitch.mp3"
         },
         {
             "type": "showImage",
@@ -2411,7 +2420,7 @@ main.floors.main_ch7_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[肥宅A]…………………",
+        "\t[肥宅]…………………",
         {
             "type": "hideImage",
             "code": 20,
@@ -2429,29 +2438,15 @@ main.floors.main_ch7_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[肥宅B]…………………",
+        "\t[肥宅A]…………………",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
         {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_otaku_c_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[肥宅C]…………………",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
+            "type": "playBgm",
+            "name": "BGMUZUUZU.mp3"
         },
         {
             "type": "showImage",
@@ -3196,6 +3191,10 @@ main.floors.main_ch7_4=
             "text": "【BGM預定地：()切換BGM或到7-4結束前連續播放此首BGM】"
         },
         {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
+        },
+        {
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_tencho_surprised.png",
@@ -3535,42 +3534,6 @@ main.floors.main_ch7_4=
             "direction": "up",
             "time": 0,
             "silent": true
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMBOOM.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMTANK.mp3"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMMeikyoshisui.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMRakisuta.mp3"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMWitch.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMUZUUZU.mp3"
-        },
-        {
-            "type": "pauseBgm"
         }
     ]
 }

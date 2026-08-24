@@ -623,25 +623,7 @@ main.floors.mapo_1_2=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平]不對，反過來想如果他們這麼果斷的掛了電話",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]那他們肯定跟修卡勾結了對吧，太邪惡了修卡",
+                        "\t[梗平]不對，反過來想如果他們這麼果斷的掛了電話...那他們肯定跟修卡勾結了對吧，邪惡的修卡",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -869,6 +851,10 @@ main.floors.mapo_1_2=
                     "text": "什麼?你說有一扇門是開的",
                     "action": [
                         {
+                            "type": "playBgm",
+                            "name": "BGMYocho.mp3"
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
@@ -977,24 +963,6 @@ main.floors.mapo_1_2=
                             "time": 0
                         },
                         "梗平把表妹推進了門裡，然後黑暗吞噬了她",
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]...",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -1648,10 +1616,6 @@ main.floors.mapo_1_2=
             "direction": "up",
             "time": 0,
             "silent": true
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMYocho.mp3"
         }
     ]
 }

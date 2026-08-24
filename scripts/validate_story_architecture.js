@@ -108,6 +108,9 @@ function validateRuntimeReachability() {
     for (const scene of bundle.scenes) {
       visitNodes(scene.events, (node) => {
         if (node.kind === "goto" && sceneIds.has(node.floorId)) edges.get(scene.id).add(node.floorId);
+        if (node.kind === "character.exchange" && node.destination && sceneIds.has(node.destination.floorId)) {
+          edges.get(scene.id).add(node.destination.floorId);
+        }
         if (node.kind === "function.call" && typeof node.function === "string") {
           for (const target of sceneIds) {
             if (node.function.includes(`'${target}'`) || node.function.includes(`"${target}"`)) edges.get(scene.id).add(target);

@@ -2087,7 +2087,7 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 0
         },
-        "\t[小將]…沒問題，我們家代代都是挑戰菜單派",
+        "\t[小將]沒…問題…，我們家代代都是挑戰菜單派…",
         {
             "type": "hideImage",
             "code": 20,
@@ -2106,7 +2106,7 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 0
         },
-        "\t[表妹]喔喔—死勾以—",
+        "\t[表妹]喔喔—死勾以———",
         {
             "type": "hideImage",
             "code": 20,
@@ -2327,7 +2327,7 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 0
         },
-        "\t[小將]沒…問……，我們家代…都是縱橫馳騁派…",
+        "\t[小將]……沒……問題，我們家代…都是縱橫馳騁派……",
         {
             "type": "hideImage",
             "code": 20,
@@ -2648,6 +2648,10 @@ main.floors.main_ch7_5=
                 0
             ],
             "time": 500
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "pauseBgm"
@@ -3144,6 +3148,18 @@ main.floors.main_ch7_5=
                 0
             ],
             "time": 500
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMTodomenoichigeki.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMRun.mp3"
         },
         {
             "type": "pauseBgm"
@@ -4324,12 +4340,6 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
-            "type": "resumeBgm"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_tencho_normal.png",
@@ -4465,9 +4475,6 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "resumeBgm"
         },
         "東山與蘭斯跟著店長，來到了一個寬廣的空間",
         "場內擠滿了眾多肥宅，細看甚至能在場地上方發現瀰漫著的裊裊白煙",
@@ -4932,7 +4939,8 @@ main.floors.main_ch7_5=
         "下個瞬間，歡呼著歐派的肥宅們朝著舞台湧了上來",
         "在蘭斯快被肥宅淹沒、意識彌留之際，看到的是教主與店長帶著東山奪門而出的背影",
         "那一瞬間他明白了，充滿激情的肥宅是毀滅性的",
-        "教主持續地演講並不是為了洗腦肥宅，而是封印了肥宅們從失落轉向暴怒的，最後掙扎…",
+        "教主持續地演講並不是為了洗腦肥宅…",
+        "而是封印了肥宅們從失落轉向暴怒的，最後掙扎………",
         {
             "type": "hideImage",
             "code": 30,
@@ -5414,6 +5422,10 @@ main.floors.main_ch7_5=
         {
             "type": "playBgm",
             "name": "BGMKanu.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMHaru.mp3"
         },
         {
             "type": "showImage",
@@ -6519,43 +6531,7 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]………………",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]………那就，交給在下吧",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]在下會負起責任的",
+        "\t[梗平]………那就，交給在下吧，在下會負起責任的",
         {
             "type": "hideImage",
             "code": 20,
@@ -7449,6 +7425,10 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
+        },
+        {
             "type": "pauseBgm"
         },
         {
@@ -7470,6 +7450,7 @@ main.floors.main_ch7_5=
         },
         "\t[東山]太感動了孩子終於嫁出去了",
         "\t[克莉絲]………你損人的人設完全沒打算藏了是吧",
+        "\t[東山]人家太感動了嘛—",
         {
             "type": "hideImage",
             "code": 30,
@@ -7640,9 +7621,6 @@ main.floors.main_ch7_5=
                 0
             ],
             "time": 2000
-        },
-        {
-            "type": "resumeBgm"
         },
         {
             "type": "setText",
@@ -8070,22 +8048,32 @@ main.floors.main_ch7_5=
             "text": "【返回標題畫面】"
         },
         {
-            "type": "playBgm",
-            "name": "BGMTodomenoichigeki.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMRun.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMBOINBOIN.mp3"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "pauseBgm"
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
         },
         {
             "type": "setText",
@@ -8116,24 +8104,6 @@ main.floors.main_ch7_5=
             "animateTime": 120
         },
         {
-            "type": "playBgm",
-            "name": "BGMGintama.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMKanu.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMHaru.mp3"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -8160,70 +8130,6 @@ main.floors.main_ch7_5=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMRakisuta.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMKIRAKIRA.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMED2.mp3"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "setText",
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-                255,
-                225,
-                80,
-                1
-            ],
-            "text": [
-                255,
-                255,
-                255,
-                1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMKyoheiTranslation.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMKanu.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMHaru.mp3"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "pauseBgm"
         },
         {
             "type": "setText",

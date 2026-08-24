@@ -16,7 +16,7 @@ main.floors.mapo_1_3_exchange_1=
             "y": 0
         }
     ],
-    "bgm": "BGMRakisuta.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,7 +313,7 @@ main.floors.mapo_1_3_exchange_1=
         },
         {
             "type": "playBgm",
-            "name": "BGMRakisuta.mp3"
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",

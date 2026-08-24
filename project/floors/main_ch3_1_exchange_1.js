@@ -16,7 +16,7 @@ main.floors.main_ch3_1_exchange_1=
             "y": 0
         }
     ],
-    "bgm": "BGMRakisuta.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,7 +313,7 @@ main.floors.main_ch3_1_exchange_1=
         },
         {
             "type": "playBgm",
-            "name": "BGMRakisuta.mp3"
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
@@ -765,6 +765,10 @@ main.floors.main_ch3_1_exchange_1=
                             "type": "hideImage",
                             "code": 20,
                             "time": 0
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMWitch.mp3"
                         },
                         "檢官指著被梗平堆成假面騎士的書堆，梗平，大危機",
                         {
@@ -1384,6 +1388,10 @@ main.floors.main_ch3_1_exchange_1=
                     "text": "對了，我可以去街頭賣藝",
                     "action": [
                         {
+                            "type": "playBgm",
+                            "name": "BGMRakisuta.mp3"
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
@@ -1413,25 +1421,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平](就算不賺錢，那就去幹其他活也來得及)",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平]是時候展現真正的實力了",
+                        "\t[梗平](就算不賺錢，那就去幹其他活也來得及，是時候展現我的實力了)",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -2274,6 +2264,10 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "time": 500
                         },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMWitch.mp3"
+                        },
                         "隔天，半夜的街道上伐魔樂隊已然集結",
                         {
                             "type": "showImage",
@@ -2305,7 +2299,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[三日月]我們要打魔獸，當然得要組裝好武器。",
+                        "\t[三日月]我們要打魔獸，當然得要組裝好武器",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -3335,6 +3329,10 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "......",
                         "............",
+                        {
+                            "type": "playBgm",
+                            "name": "BGMYume.mp3"
+                        },
                         "\t[不知道是誰的？]影片錄好了，我可以進來了嗎",
                         {
                             "type": "showImage",
@@ -3822,6 +3820,10 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "time": 500
                         },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMWitch.mp3"
+                        },
                         "一陣騷亂之後到了深夜打魔獸的時間，這次樂隊嘗試開啟了直播",
                         {
                             "type": "showImage",
@@ -3835,25 +3837,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[三日月]各位觀眾，我們魔法少女4人對上一個魔獸，優勢在我！",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "ms_portrait_mikazuki_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[三日月]梗平你去吸引魔獸注意力。",
+                        "\t[三日月]各位觀眾，我們魔法少女4人對上一個魔獸，優勢在我！梗平你去吸引魔獸注意力",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -3915,7 +3899,7 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "梗平拿著一把槍衝向了魔獸，是的，他不開槍而是拿槍敲魔獸",
                         "經過一番鏖戰後，梗平成功.....",
-                        "讓來島澄、香坂輪、梗平自己都被觸手抓住。",
+                        "讓來島澄、香坂輪、梗平自己都被觸手抓住了",
                         {
                             "type": "showImage",
                             "code": 20,
@@ -3971,8 +3955,7 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
-                        "一通操作猛如虎，三日樂成功擊潰了觸手怪",
-                        "梗平拿著這次打魔獸的錢，陷入了沉思",
+                        "一通操作猛如虎，三日月成功擊潰了觸手怪，梗平拿著這次打魔獸的錢，陷入了沉思",
                         {
                             "type": "setCurtain",
                             "color": [
@@ -4003,6 +3986,10 @@ main.floors.main_ch3_1_exchange_1=
                                 0
                             ],
                             "time": 500
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMYume.mp3"
                         },
                         "隔天的上午，梗平與來島澄私下約了出來吃飯",
                         {
@@ -4221,6 +4208,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 30,
                             "time": 150
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "keng_female_smile_portrait.png",
+                            "expression": "smile",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        "\t[梗平]假面騎士腰帶，我來了！",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         "然後梗平用堪比飛機的速度一路飛奔的跑到了三日月那裡",
                         {
                             "type": "setCurtain",
@@ -4381,7 +4386,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[香坂輪]這就要走了嗎。",
+                        "\t[香坂輪]這就要走了嗎",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -4399,7 +4404,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[梗平(女装)]嗯，畢竟在下還有漫展要去，不快點的話就趕不上了。",
+                        "\t[梗平(女装)]嗯，畢竟在下還有漫展要去，不快點的話就趕不上了",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -4458,7 +4463,7 @@ main.floors.main_ch3_1_exchange_1=
                             "opacity": 1,
                             "time": 0
                         },
-                        "\t[三日月]我剛買的最新蘋果手機啊，還想著今天回去美美把玩，你就那麼把它砸了！ ？",
+                        "\t[三日月]我剛買的IPhone啊，還想著今天回去美美把玩，你就那麼把它砸了！ ？",
                         {
                             "type": "hideImage",
                             "code": 20,
@@ -4914,6 +4919,20 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMYume.mp3"
+                        },
+                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH1_L42.png",
@@ -4923,16 +4942,6 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
                         },
                         "幾天後，下北澤的大街上伐魔樂團成員在街頭演出",
                         "演出完畢後，梗平看著街道發出了疑問",
@@ -5104,24 +5113,6 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "\t[來島澄]快把她抓住，她一定還有錢的",
                         "梗平看著這個狀況嘆了口氣，陷入了沉思",
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[梗平](我當初為甚麼要簽那個約呢)",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 30,

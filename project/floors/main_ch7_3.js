@@ -1270,6 +1270,10 @@ main.floors.main_ch7_3=
             "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
         },
         {
+            "type": "playBgm",
+            "name": "BGMDuel.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",
@@ -1520,24 +1524,6 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[桶至學長]沒想到梗平你竟然是這種人",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
             "image": "keng_surprised_portrait.png",
             "expression": "surprised",
             "loc": [
@@ -1552,6 +1538,10 @@ main.floors.main_ch7_3=
             "type": "hideImage",
             "code": 20,
             "time": 0
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMUZUUZU.mp3"
         },
         {
             "type": "showImage",
@@ -2403,18 +2393,6 @@ main.floors.main_ch7_3=
         },
         {
             "type": "playBgm",
-            "name": "BGMDuel.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMUZUUZU.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMBOOM.mp3"
-        },
-        {
-            "type": "playBgm",
             "name": "BGMUZUUZU.mp3"
         },
         "惠惠走遠後東山加入了斂屍的行列",
@@ -2529,22 +2507,6 @@ main.floors.main_ch7_3=
             "direction": "up",
             "time": 0,
             "silent": true
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMUZUUZU.mp3"
-        },
-        {
-            "type": "pauseBgm"
         }
     ]
 }

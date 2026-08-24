@@ -99,11 +99,6 @@
           "text": "【主線 CH4 4-1 搶火車篇】"
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3",
-          "keep": true
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -203,12 +198,14 @@
           }
         },
         {
-          "kind": "comment",
-          "text": "TODO: 【人物交流時間】"
-        },
-        {
-          "kind": "function.call",
-          "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch4_1_exchange_1', loc: [6, 10], direction: 'up', time: 500 }, 2); }"
+          "kind": "character.exchange",
+          "destination": {
+            "floorId": "main_ch4_1_exchange_1",
+            "loc": [6, 10],
+            "direction": "up",
+            "time": 500
+          },
+          "targetCount": 2
         }
       ]
     },
@@ -231,7 +228,7 @@
             "y": 0
           }
         ],
-        "bgm": "BGMDuel.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -282,8 +279,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMDuel.mp3",
-          "keep": true
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
@@ -599,7 +595,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMKanu.mp3",
+          "name": "BGMDuel.mp3",
           "keep": true
         },
         {
@@ -920,6 +916,10 @@
           "time": 250
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMKanu.mp3"
+        },
+        {
           "kind": "narration",
           "text": "梗平醒了過來後，發現眼前是陌生的天花板"
         },
@@ -1157,6 +1157,10 @@
                   "text": "【過場】"
                 },
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMWitch.mp3"
+                },
+                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -1275,6 +1279,10 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMYume.mp3"
                 },
                 {
                   "kind": "background.show",
@@ -1509,6 +1517,10 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMYocho.mp3"
                 },
                 {
                   "kind": "background.show",
@@ -1832,11 +1844,6 @@
           "time": 250
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMYume.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.show",
           "role": "cg",
           "code": 30,
@@ -1851,20 +1858,12 @@
           "time": 250
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMYocho.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMWhisper.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMWitch.mp3"
+          "kind": "narration",
+          "text": "再次睜開眼睛時，眼前是一名身高超過兩米的修女"
         },
         {
           "kind": "narration",
-          "text": "再次睜開眼睛時，眼前是一名身高超過兩米的修女，修女的身後白髮的雜貨店老闆在與人通著電話"
+          "text": "修女的身後白髮的雜貨店老闆在與人通著電話"
         },
         {
           "kind": "narration",

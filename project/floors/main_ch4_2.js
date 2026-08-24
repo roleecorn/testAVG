@@ -342,11 +342,6 @@ main.floors.main_ch4_2=
             "time": 250
         },
         {
-            "type": "playBgm",
-            "name": "BGMYume.mp3",
-            "keep": true
-        },
-        {
             "type": "showImage",
             "code": 30,
             "image": "CH4_L207.png",
@@ -359,19 +354,8 @@ main.floors.main_ch4_2=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "playBgm",
-            "name": "BGMYocho.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMWhisper.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMWitch.mp3"
-        },
-        "再次睜開眼睛時，眼前是一名身高超過兩米的修女，修女的身後白髮的雜貨店老闆在與人通著電話",
+        "再次睜開眼睛時，眼前是一名身高超過兩米的修女",
+        "修女的身後白髮的雜貨店老闆在與人通著電話",
         "在老闆與修女打了一個手勢後，修女走了過來幫梗平解開了繩子",
         {
             "type": "comment",

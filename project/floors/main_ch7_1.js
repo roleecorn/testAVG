@@ -530,14 +530,6 @@ main.floors.main_ch7_1=
             "type": "playBgm",
             "name": "BGMWORC.mp3"
         },
-        {
-            "type": "playBgm",
-            "name": "BGMYume.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMTodomenoichigeki.mp3"
-        },
         "\t[東山]我的錢包啊啊啊啊啊啊啊啊啊",
         {
             "type": "setText",
@@ -715,7 +707,7 @@ main.floors.main_ch7_1=
             "code": 20,
             "time": 0
         },
-        "在東山發話的同時，在料理區看似老闆的男子往門口瞧了一眼後，隨即繼續了手邊的工作。一名身穿旗袍的女性則放下了手邊的工作迎了上來",
+        "映著東山的話，看似老闆的男子往門口瞧了一眼，隨即繼續了手邊的工作。一名身穿女用旗袍的人則迎了上來",
         {
             "type": "showImage",
             "code": 20,
@@ -1679,10 +1671,6 @@ main.floors.main_ch7_1=
             "direction": "up",
             "time": 0,
             "silent": true
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMYume.mp3"
         }
     ]
 }

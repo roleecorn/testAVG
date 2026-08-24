@@ -475,24 +475,6 @@ main.floors.main_ch6_1=
         },
         "梗平跑了咖啡廳後，立刻拿桌椅堵住了門",
         "如此大的動靜，讓正在睡覺的智乃與三角都醒了過來",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]呼......",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
         "似乎似因為剛睡醒，店長用著小女孩的聲音向梗平提問",
         {
             "type": "showImage",
@@ -752,10 +734,8 @@ main.floors.main_ch6_1=
             "code": 20,
             "time": 0
         },
-        "三角離開了大門周圍，梗平獨自堅守在大門旁",
-        "抵禦著來自外部肥宅們一波又一波的攻擊",
-        "不知道幾個小時過去了之後，太陽逐漸升起",
-        "停了許久的群組訊息出現了動靜",
+        "三角離開了大門周圍，梗平獨自堅守在大門旁，抵禦著來自外部肥宅們一波又一波的攻擊",
+        "不知道幾個小時過去了之後，太陽逐漸升起，停了許久的群組訊息出現了動靜",
         "\t[克莉絲]我們拿到肥宅們的聖物了，但是沒辦法過去ANIsister",
         "\t[東山]我們都在女咖卡住了，梗平你找找方法過來",
         "\t[梗平]果然這種時候還是需要假面騎士啊，交給在下吧！",
@@ -797,24 +777,6 @@ main.floors.main_ch6_1=
             "time": 0
         },
         "梗平的視線看了一眼三角，然後定格在了智乃身上",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]喔？",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
         {
             "type": "setCurtain",
             "color": [
@@ -1718,10 +1680,6 @@ main.floors.main_ch6_1=
         {
             "type": "playBgm",
             "name": "BGMRakisuta.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMTree.mp3"
         }
     ]
 }

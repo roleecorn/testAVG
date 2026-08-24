@@ -59,11 +59,20 @@
 
 ## 20260824 `【...】` 指令稽核後續
 
-- Open: `main-story-ch7-bgm-directive-alignment`
-  - Scope: 尚有 CH7:632、1057 等 BGM 指令需要逐段確認實際播放位置；本次已先完成可由正式資產與來源順序直接判定的曲目。
-  - Done when: 每個來源 BGM 都在對應 IR 節點與 floor 位置播放，並保留原始 TODO／規劃註記。
+- Resolved: `main-story-ch7-bgm-directive-alignment`
+  - Scope: CH7 全部 BGM 播放、停止、恢復指令已逐段對齊來源順序，並保留原始 TODO／規劃註記。
+  - Evidence: `node scripts/validate_story_alignment.js`、`node scripts/generate_main_story.js --check`、`node scripts/validate_story.js` 通過。
+- Resolved: `main-story-ch3-1-bgm-order`
+  - Scope: 已移除 CH3 3-1 開場誤放的 BGMWitch，並將來源第 110 行的 BGMWitch 放回書店危機段落。
+  - Evidence: `project/story-ir/main/CH3.json`、`project/floors/main_ch3_1.js`；雙向對位與完整故事驗證通過。
+- Resolved: `main-story-source-ir-bidirectional-alignment`
+  - Scope: CH1～CH7 的來源文字、BGM／停止／恢復、分歧與交流語意已完成雙向對位，支線不在本次範圍。
+  - Evidence: `node scripts/test_story_alignment.js`、`node scripts/validate_story_alignment.js`、`node scripts/generate_main_story.js --check`、`node scripts/validate_story.js` 通過。
+- Resolved: `main-story-character-exchange-lifecycle`
+  - Scope: CH1～CH5 的 `【人物交流時間】` 統一按單一完整流程處理；交流結束返回 continuation scene 後，來源緊接的 BGM／演出從該 scene 開頭播放，支線不在本次範圍。
+  - Evidence: `project/story-ir/main/CH1.json`～`CH5.json`、對應生成 floor、`node scripts/test_story_alignment.js`、`node scripts/validate_story_alignment.js`。
 - Open: `main-story-exchange-and-headline-presentation`
-  - Scope: CH7 headline 的刪除線／換行／大字組合，以及 `【返回標題畫面】` 尚未完成；CH4 `【人物交流時間】` 已依既有交流約束接入。
+  - Scope: CH7 headline 的刪除線／換行／大字組合，以及 `【返回標題畫面】` 尚未完成；CH1～CH5 `【人物交流時間】` 已依完整流程約束接入。
   - Done when: 確認 runtime 可用的語意表達後完成 IR／floor；無法表達的部分持續保留原始指令與 task-question。
 
 - `project/mainStory/CH1 1-4`：下水道雷霆大鱷魚戰鬥目前依原稿以旁白略過，之後可補正式戰鬥或小遊戲。

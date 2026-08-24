@@ -387,7 +387,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			};
 		}
 
-		// 主線的「人物交流回合」是 scene 分界標記；完成指定數量的好感劇情後前往標記後的 continuation scene。
+		// 主線的「人物交流時間」是一個完整流程指令：開始交流、在秋葉原執行指定回合，達標後返回 continuation scene。
 		this.beginCharacterExchange = function (destination, targetCount) {
 			var next = this._normalizeMainlineExchangeDestination(destination);
 			if (!next) {
@@ -406,7 +406,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			core.setFlag('mainline_exchange_target', target);
 			core.setFlag('mainline_exchange_destination', next);
 
-			// 清掉離開主線 scene 後不應再執行的殘餘事件，再切換至秋葉原。
+			// 清掉離開主線 scene 後不應再執行的殘餘事件，再切換至秋葉原開始完整交流流程。
 			core.events.setEvents([]);
 			core.insertAction({
 				"type": "changeFloor",
@@ -447,6 +447,8 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			return count >= target;
 		}
 
+		// 交流完成後只返回保存的 continuation scene；該 scene 的 floor BGM／首個 BGM 事件
+		// 對應來源中緊接【人物交流時間】的演出，不能在 beginCharacterExchange 前播放。
 		this.returnToMainlineAfterCharacterExchange = function () {
 			if (!this.isCharacterExchangeComplete()) return false;
 			var next = this._normalizeMainlineExchangeDestination(core.getFlag('mainline_exchange_destination', null));

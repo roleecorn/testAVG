@@ -16,7 +16,7 @@ main.floors.main_ch4_1_exchange_1=
             "y": 0
         }
     ],
-    "bgm": "BGMDuel.mp3",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,8 +313,7 @@ main.floors.main_ch4_1_exchange_1=
         },
         {
             "type": "playBgm",
-            "name": "BGMDuel.mp3",
-            "keep": true
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
@@ -637,7 +636,7 @@ main.floors.main_ch4_1_exchange_1=
         },
         {
             "type": "playBgm",
-            "name": "BGMKanu.mp3",
+            "name": "BGMDuel.mp3",
             "keep": true
         },
         "跑的河邊的梗平，看見了一臉自信的表妹拿著一把魚竿",
@@ -1043,6 +1042,10 @@ main.floors.main_ch4_1_exchange_1=
             ],
             "time": 500
         },
+        {
+            "type": "playBgm",
+            "name": "BGMKanu.mp3"
+        },
         "梗平醒了過來後，發現眼前是陌生的天花板",
         "一個長著兔耳的女人走了過來，驚訝地看著醒來的梗平",
         {
@@ -1439,6 +1442,20 @@ main.floors.main_ch4_1_exchange_1=
                             "time": 500
                         },
                         {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMWitch.mp3"
+                        },
+                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH4_L142.png",
@@ -1448,16 +1465,6 @@ main.floors.main_ch4_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
                         },
                         "梗平乖乖等到了11點後，才前往了雜貨店",
                         "到了雜貨店後，梗平發現其他人都已經到達了",
@@ -1620,6 +1627,20 @@ main.floors.main_ch4_1_exchange_1=
                             "time": 500
                         },
                         {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMYume.mp3"
+                        },
+                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "ms_bg_becky_mansion.png",
@@ -1629,16 +1650,6 @@ main.floors.main_ch4_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
                         },
                         "當梗平下一次醒來時，眼前是金璧輝煌的天花板",
                         {
@@ -1950,6 +1961,20 @@ main.floors.main_ch4_1_exchange_1=
                             "time": 500
                         },
                         {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMYocho.mp3"
+                        },
+                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH4_L142.png",
@@ -1959,16 +1984,6 @@ main.floors.main_ch4_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
                         },
                         "梗平來到了雜貨店的後方，發現這裡正好在倉庫區與鐵路中間",
                         {

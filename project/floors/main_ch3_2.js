@@ -904,10 +904,6 @@ main.floors.main_ch3_2=
             "direction": "up",
             "time": 0,
             "silent": true
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMGintama.mp3"
         }
     ]
 }
