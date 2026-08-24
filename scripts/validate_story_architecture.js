@@ -5,6 +5,7 @@ const { execFileSync } = require("child_process");
 const { isDeepStrictEqual } = require("util");
 const { bundleToFloors, readBundle, validateBundle, validateProjectReferences } = require("./story_ir");
 const { characterStories, irFile } = require("./manage_story_ir");
+const { mainStoryIrFiles, mergeMainStoryBundles, readMainStoryBundles } = require("./main_story_ir");
 
 const root = path.resolve(__dirname, "..");
 const ownershipFile = path.join(root, "project", "story-ownership.json");
@@ -72,7 +73,7 @@ function renderFloor(floor) {
 
 function managedIrFiles() {
   return [
-    path.join(root, "project", "story-ir", "main", "main-story.json"),
+    ...mainStoryIrFiles(),
     ...characterStories.map((story) => irFile(story)),
   ];
 }
@@ -138,7 +139,11 @@ function validateRuntimeReachability() {
 
 function headFloorMap() {
   const floors = new Map();
-  const files = managedIrFiles().map((file) => slash(path.relative(root, file)));
+  const files = [
+    ...gitLines(["ls-tree", "-r", "--name-only", "HEAD", "--", "project/story-ir/main"])
+      .filter((file) => file.endsWith(".json")),
+    ...characterStories.map((story) => slash(path.relative(root, irFile(story)))),
+  ];
   for (const file of files) {
     let text;
     try {
@@ -160,6 +165,30 @@ function headFloorMap() {
   return floors;
 }
 
+function headMainStoryBundle() {
+  const files = gitLines(["ls-tree", "-r", "--name-only", "HEAD", "--", "project/story-ir/main"])
+    .filter((file) => file.endsWith(".json"));
+  if (!files.length) return null;
+  const bundles = files.map((file) => {
+    const text = execFileSync("git", ["-c", `safe.directory=${slash(root)}`, "-c", "core.autocrlf=false", "-c", "core.safecrlf=false", "show", `HEAD:${file}`], {
+      cwd: root,
+      encoding: "utf8",
+      maxBuffer: 32 * 1024 * 1024,
+    });
+    return validateBundle(JSON.parse(text));
+  });
+  return mergeMainStoryBundles(bundles);
+}
+
+function currentMainStoryBundle() {
+  return mergeMainStoryBundles(readMainStoryBundles());
+}
+
+function isMainStoryIrOnlyReorganization(changedIr, previousMainBundle) {
+  if (!previousMainBundle || !changedIr.length || !changedIr.every((file) => file.startsWith("project/story-ir/main/"))) return false;
+  return isDeepStrictEqual(previousMainBundle, currentMainStoryBundle());
+}
+
 function validateTransactions(changed, ownership) {
   const current = currentFloorMap();
   const previous = headFloorMap();
@@ -172,7 +201,8 @@ function validateTransactions(changed, ownership) {
   )));
   const changedIr = [...changed].filter((file) => matchesAny(file, ownership.storyIr.paths));
 
-  if (changedIr.length && !expected.size) {
+  const mainStoryIrOnlyReorganization = isMainStoryIrOnlyReorganization(changedIr, headMainStoryBundle());
+  if (changedIr.length && !expected.size && !mainStoryIrOnlyReorganization) {
     throw new Error(`Story IR changed without a derived floor change: ${changedIr.join(", ")}`);
   }
   for (const file of expected) {

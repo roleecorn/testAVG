@@ -15,13 +15,13 @@
 
 禁止把未辨識的製作指令降級成旁白、台詞或其他玩家可見文字。主線生成器與角色支線轉換流程必須使用同一份 Story IR schema、同一組語意驗證與同一組事件映射；不得因其中一條流程由 AI 執行，就省略中間產物或驗證。
 
-Story IR 必須納入 Git，統一放在 `project/story-ir/main/` 與 `project/story-ir/character/`。每份 IR 都要保存權威來源的 repo-relative 路徑與 SHA-256；來源雜湊不符時禁止產生 floor。Story IR 是 Agent 建立的語意翻譯文件，不是由 floor／engine event 反推的衍生產物；不得反向覆蓋來源文本。
+Story IR 必須納入 Git，主線以 `project/story-ir/main/CH1.json`～`CH7.json` 按章保存，支線放在 `project/story-ir/character/`。每份 IR 都要保存權威來源的 repo-relative 路徑與 SHA-256；來源雜湊不符時禁止產生 floor。Story IR 是 Agent 建立的語意翻譯文件，不是由 floor／engine event 反推的衍生產物；不得反向覆蓋來源文本。
 
 ## Story IR 建立權責
 
 Story IR 的建立與更新由 Agent 負責。原始劇情檔案修改不超過 100 行時，Agent 必須自行完成語意建立／更新，不得使用自動生成；超過 100 行時，自動化程式可產生草稿，但不得覆寫已確認 IR，且 Agent 必須逐行核對原文後採用。Repository 不得保留來源／floor／event 反向寫入 Story IR 的 executable path。
 
-現存 Story IR 不因這項規則自動重建或修正。若單一檔案過大導致 Agent 閱讀或更新成本過高，可由 Agent 按 scene／chapter 語意邊界拆分，保留 scene identity、來源 SHA-256、引用與 Git 追溯；不得用自動化程式批量拆分。
+主線 Story IR 固定按章拆分；每個 `CH<N>.json` 是獨立、可驗證的 bundle，只保存對應 `project/mainStory/CH<N>` 的來源紀錄與 scenes。生成器在輸出 floor 前依 CH1～CH7 順序合併 bundle，並拒絕重複 scene ID 或不一致的 presentation。一般語意更新仍由 Agent 負責；本次既有單一主線 bundle 的結構遷移經使用者明確授權，完成後不保留任何反向拆分入口。
 
 ## Story IR 與 scene／floor 原子性契約
 
@@ -138,7 +138,7 @@ node scripts/manage_story_ir.js
 node scripts/validate_story.js
 ```
 
-一般 `node scripts/generate_main_story.js` 只讀 IR 並確定性重生 floor；`--check` 驗證 schema、素材／跳轉註冊及 floor round-trip，不讀權威來源。來源雜湊由 `validate_story_source.js` 獨立驗證，完整交易以 `validate_story.js` 為完成條件。角色支線的 `project/story-ir/character/*.json` 由 Agent 依權威 TXT 與 Git log 做語意更新；IR 變更若沒有同批 floor diff，不得提交。
+一般 `node scripts/generate_main_story.js` 只讀 `project/story-ir/main/CH1.json`～`CH7.json`，合併後確定性重生 floor；`--check` 驗證 schema、素材／跳轉註冊及 floor round-trip，不讀權威來源。來源雜湊由 `validate_story_source.js` 獨立驗證，完整交易以 `validate_story.js` 為完成條件。角色支線的 `project/story-ir/character/*.json` 由 Agent 依權威 TXT 與 Git log 做語意更新；IR 變更若沒有同批 floor diff，不得提交。
 
 主線 Story IR 建立階段由 Agent 負責理解來源、辨識格式並產生共用 Story IR，不得直接產生引擎事件，也不得潤稿或改寫台詞。這裡的「正規化」是語意翻譯，不是自動化：
 

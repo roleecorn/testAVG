@@ -1,0 +1,6825 @@
+{
+  "storyIrVersion": 1,
+  "source": {
+    "kind": "main",
+    "files": [
+      {
+        "path": "project/mainStory/CH2",
+        "sha256": "800a54e6d2d1a2434832141b368683681c8d35f0ef8e5a2302eda25a53cfd656"
+      }
+    ]
+  },
+  "presentation": {
+    "transitions": {
+      "【過場】": {
+        "kind": "fade",
+        "color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "time": 500
+      },
+      "【過場：一段時間過後】": {
+        "kind": "clock",
+        "name": "floor-transition.mp4"
+      },
+      "【白色慢速過場】": {
+        "kind": "fade",
+        "color": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "time": 2000
+      },
+      "TODO: 【白色慢速過場】": {
+        "kind": "fade",
+        "color": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "time": 2000
+      }
+    }
+  },
+  "scenes": [
+    {
+      "id": "main_ch2_2",
+      "floor": {
+        "floorId": "main_ch2_2",
+        "title": "主線 CH2 2-2 三過書店",
+        "name": "2-2",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "CH3_L66.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "BGMUZUUZU.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH3_L66.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "comment",
+          "text": "【主線 CH2 2-2 三過書店】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH1_L42.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "梗平與三個小朋友來到了ANIsister的門口"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH2_L117.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "但拉下的鐵捲門上寫著暫時公休的告示"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_surprised_portrait.png",
+          "expression": "surprised",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "什麼？竟然不許！？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_chino_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "智乃",
+          "text": "好可疑，明明昨天還開得好好的"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "正值旺季、接下來就要COMIKE的時間點"
+        },
+        {
+          "kind": "narration",
+          "text": "身為相關產業的這間書店竟然大門深鎖，不懷疑你懷疑誰？"
+        },
+        {
+          "kind": "narration",
+          "text": "名偵探梗平如此思考著，然後做出了一個完美的結論！"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哎呀，門鎖住了進不去，太可惜了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "擅闖別人的店可不好，我們先去其他地方找找吧"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "？？？"
+        },
+        {
+          "kind": "narration",
+          "text": "三個小朋友欲言又止，但梗平早已一臉自信的轉身走向了其他地方"
+        },
+        {
+          "kind": "narration",
+          "text": "互看一眼後嘆了口氣，三個小朋友跟上了梗平的步伐"
+        },
+        {
+          "kind": "comment",
+          "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH1_L60.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這裡一看就是修卡的基地，你的哥哥一定是被綁架來這裡了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_ib_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IB",
+          "text": "是...是這樣嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "對的對的，就是這樣"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "梗平立刻在倉庫區開始了自己的大搜查"
+        },
+        {
+          "kind": "narration",
+          "text": "然而他忘記了一個重要的問題"
+        },
+        {
+          "kind": "narration",
+          "text": "倉庫，還是鎖的"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_serious_portrait.png",
+          "expression": "angry",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "可惡，都鎖著"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那只好換下一個地方了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "梗平話沒說完，又自顧自地往外跑了出去"
+        },
+        {
+          "kind": "narration",
+          "text": "小朋友們依舊失去了說話的權利，只好跟著愛衝刺的大哥哥繼續走"
+        },
+        {
+          "kind": "comment",
+          "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH1_L42.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "看來只能先來調查這種奇怪的小巷子了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "小朋友們剛準備說點什麼，梗平又轉頭跑了出去"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "看來這裡也沒有，換下一個地方吧"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "就這樣，梗平從街頭問到巷尾，然後再從巷尾問到街頭"
+        },
+        {
+          "kind": "narration",
+          "text": "可惜沒有任何人見過IB的哥哥，於是小朋友們提出了再去一次ANIsister的提議"
+        },
+        {
+          "kind": "narration",
+          "text": "但絕頂聰明的梗平認為這一切都是障眼法，IB的哥哥肯定在其他的地方"
+        },
+        {
+          "kind": "narration",
+          "text": "天色越來越黑，後面三個小朋友的目光也越來越銳利"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_serious_portrait.png",
+          "expression": "angry",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(可惡，ANIsister一看就有問題，我不要進去啊)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(得趕快找個理由跑掉才行)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "梗平，孬了"
+        },
+        {
+          "kind": "narration",
+          "text": "剛好，小黑的肚子在此時響了起來"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(有了，就是現在)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "時間也差不多了，我們先去吃飯吧，晚點再繼續"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "免除了社會性死亡的梗平，快速地朝家庭餐廳的方向走去"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_ib_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IB",
+          "text": "我是不是自己來會比較好"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_chino_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "智乃",
+          "text": "好像是這樣"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_kuro_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "小黑",
+          "text": "我們已經經過ANIsister三次了，我好想進去"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "三個小朋友跟著梗平走向了家庭餐廳"
+        },
+        {
+          "kind": "comment",
+          "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH2_L163.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "走進餐廳的梗平看到了已經坐在那裏的蘭斯"
+        },
+        {
+          "kind": "narration",
+          "text": "打起歪腦筋的梗平立刻帶著小朋友與蘭斯併了桌"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(這時候只需要多談談自己的推測就能轉移焦點了)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這個小朋友的哥哥不見了，可以拜託你一起幫忙找嗎"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_lance_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "蘭斯",
+          "text": "誒？有甚麼線索嗎"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你聽我說啊，根據他們的情報，他的哥哥是在ANIsister附近失蹤的"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_lance_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "蘭斯",
+          "text": "那你有看過ANIsister了嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "......"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒有，不過我認為肯定不是在那裡"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "ANIsister絕對只是障眼法，實際上他肯定不再那裡"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "一定是在ANIsister被綁架後轉移到其他地方了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_lance_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "蘭斯",
+          "text": "是這樣嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "肯定是這樣"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "而且整件事情有一個非常弔詭的地方"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "choice",
+          "prompt": "請選擇。",
+          "options": [
+            {
+              "text": "怎麼可能一個目擊者都沒有！一定又是外星人搞的鬼！",
+              "events": [
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "只有外星人才能不被人發現的情況下抓走你哥哥"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_kuro_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "小黑",
+                  "text": "才沒有那種東西呢"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_chino_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "智乃",
+                  "text": "大哥哥......"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "IB用著冰冷的目光看著梗平"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "不要用那種眼神看我啊哈斯哈斯"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "變態……"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_smile_portrait.png",
+                  "expression": "smile",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "咳，玩笑就先到這裡"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "但秋葉原一定潛藏不為人知的魔物，那是在我8歲的時候，老爸老媽第一次帶我來東京"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "當我被假面騎士吸引，跑到小巷裡時我看到了"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "就在那裏！有個男人被拉進屋裡，然後就再也沒出來了！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "所以你的哥哥和那個男人一樣，都是被外星人誘拐了！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平高舉雙手，相當激動地說著"
+                },
+                {
+                  "kind": "narration",
+                  "text": "但其他人完全沒在聽，都在看菜單"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_lance_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "蘭斯",
+                  "text": "我推薦這裡的芭非喔，水果給很足"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_lance_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "蘭斯",
+                  "text": "放心吧，梗平的錢包有錢"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_kuro_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "小黑",
+                  "text": "那我就不客氣了"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "加一"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_chino_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "智乃",
+                  "text": "欸……那我也"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "聽在下說話！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "沒辦法了，看來我只剩下一個選擇，他們就交給你了，Ｂ"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_lance_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "蘭斯",
+                  "text": "慢走～"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "comment",
+                  "text": "【過場】"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH1_L353.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平離開家庭餐廳，一路朝倉庫區奔去"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "只要在下找到外星人，我的尊嚴也能被找回來的！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "就在梗平穿過巷口時，側邊突然冒出一台腳踏車直接把梗平撞飛"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "ms_ch2_keng_bicycle_action_cg.png",
+                  "sloc": [
+                    0,
+                    0,
+                    416,
+                    286
+                  ],
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "wait",
+                  "time": 1000,
+                  "noSkip": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH2_L210.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "路人",
+                  "text": "麥克——！"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "誰是麥克啊！好危險啊！誰騎這麼……"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "這是甚麼？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "一個包裹棉被的神祕生物在地上蠕動，看來騎腳踏車的人撞到梗平後自己也跌倒了"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_quilt_monster_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "棉被怪",
+                  "text": "姆、姆姆，受到來自小行星群的碰撞，抗衝擊裝備啟動"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平　的　青春點數下降了"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "你沒事吧"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平將手伸向神祕生物棉被怪試圖拉他起來"
+                },
+                {
+                  "kind": "narration",
+                  "text": "綁住棉被的繩子因為撞擊而鬆脫，然後梗平看到了棉被怪的真面目"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "ms_ch2_eri_sunset_action_cg.png",
+                  "sloc": [
+                    0,
+                    0,
+                    416,
+                    286
+                  ],
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "wait",
+                  "time": 1000,
+                  "noSkip": true
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH2_L222.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "在夕陽照射下，彷彿散發著粒子的藍髮少女"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "外、外星人？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_quilt_monster_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "棉被怪",
+                  "text": "被被……"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "被被？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_quilt_monster_surprised.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "棉被怪",
+                  "text": "被被被被被發現啦！！！！！！！！！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "棉被怪裹上棉被用出乎預料的速度跑走了"
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平追上去了"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_quilt_monster_surprised.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "棉被怪",
+                  "text": "救命啊有怪人在追我！！！！！！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "棉被怪呼救了"
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平被逮捕了"
+                },
+                {
+                  "kind": "narration",
+                  "text": "因為涉嫌尾隨未成年女性所以被通知家長而被帶回老家的梗平當然也無緣參加本屆Comiket了"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH1_L119.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "BE",
+                  "text": "第三類接觸？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "goto",
+                  "floorId": "main_ch2_2",
+                  "loc": [
+                    6,
+                    10
+                  ],
+                  "direction": "up",
+                  "time": 0
+                }
+              ]
+            },
+            {
+              "text": "怎麼可能一個目擊者都沒有！一定是修卡的陰謀！",
+              "events": [
+                {
+                  "kind": "narration",
+                  "text": "就在梗平越講越心虛的時候，一個警察走了過來"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_police_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "警察",
+                  "text": "有人提到修卡嗎？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "你見過修卡嗎！？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_police_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "警察",
+                  "text": "有喔，快跟我來吧"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "這三個小朋友就拜託你了，我要去與修卡戰鬥了"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "如果在下回不來的話......就把他們帶回咖啡廳吧"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_lance_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "蘭斯",
+                  "text": "好喔"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "話剛說完，梗平就跟著警察一起離開了"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_chino_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "智乃",
+                  "text": "大哥哥，你是他的朋友嗎？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_lance_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "蘭斯",
+                  "text": "雖然很不想承認，但是，是"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "辛苦了"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_lance_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "蘭斯",
+                  "text": "嗯，看起來他今天對你們做了一些不可原諒的事情呢"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "接下來小朋友們開始了跟蘭斯一起吐槽梗平的時光"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "transition.video"
+        },
+        {
+          "kind": "goto",
+          "floorId": "main_ch2_3",
+          "loc": [
+            6,
+            10
+          ],
+          "direction": "up",
+          "time": 0
+        }
+      ]
+    },
+    {
+      "id": "main_ch2_3",
+      "floor": {
+        "floorId": "main_ch2_3",
+        "title": "主線 CH2 2-3 遊戲中心",
+        "name": "2-3",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "CH2_L258.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "BGMWORC.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWORC.mp3"
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH2_L258.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "comment",
+          "text": "【主線 CH2 2-3 遊戲中心】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH2_L258.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "警察帶著梗平走進了秋葉原的遊戲中心，並在一個小鋼珠機台前坐了下來"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_police_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "警察",
+          "text": "借我一張"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "梗平不假思索的把錢包裡最後僅剩的一張一千円拿了出來"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(好像哪裡不太對)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "警察隨後把那一千円投入了機台當中"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平的理智隨著珠子滾動的聲音一起跌到谷底"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_police_surprised.png",
+          "expression": "surprised",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "警察",
+          "text": "喔，來了來了！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "伴隨著「yeeeee」的聲效出現的昭和特攝修卡動畫出現在梗平眼前"
+        },
+        {
+          "kind": "narration",
+          "text": "然後？然後什麼都沒出"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_police_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "警察",
+          "text": "太可惜了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_surprised_portrait.png",
+          "expression": "surprised",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "在下最後的1000円啊！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH2_L271.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "梗平一邊怒吼著，一邊對著警察使用了德式背摔"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_police_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "警察",
+          "text": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "警察在原地暈死了過去"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_surprised_portrait.png",
+          "expression": "surprised",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我的錢啊！！！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "這時候的梗平終於想起了他出來是為了什麼的"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "對啊，要幫IB找哥哥才行"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "......"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "算了，還是去ANIsister一趟吧"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "失去了太多了梗平獨自一人，走向了大門緊閉的ANIsister"
+        },
+        {
+          "kind": "comment",
+          "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH1_L353.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH2_L117.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "梗平站在了ANIsister的大門前方，開始了自言自語"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "身為一個大人"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_panic_portrait.png",
+          "expression": "panic",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "明知這裡有危險還是要上啊，假面騎士可不能臨陣脫逃啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_panic_portrait.png",
+          "expression": "panic",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "更何況，在下可不能讓孩子們遭遇危險啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH2_L291.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "下定了決心的梗平，其實早在第一次來時就發現了四樓有一扇半開的窗戶，然後......"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "narration",
+          "text": "誒？徒手爬了進去，真的假的"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH2_L295.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "還好還有開的地方"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "剛翻進了窗戶的梗平就看見了數個肥宅朝他衝了過來"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_surprised_portrait.png",
+          "expression": "surprised",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等等，你們要做什麼，不要過來啊！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH2_L299.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "肥宅們無視了梗平的話，並直直地朝他撞了過來"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "narration",
+          "text": "梗平失去了戰鬥能力，他倒下了"
+        },
+        {
+          "kind": "transition.video"
+        },
+        {
+          "kind": "goto",
+          "floorId": "main_ch2_4",
+          "loc": [
+            6,
+            10
+          ],
+          "direction": "up",
+          "time": 0
+        }
+      ]
+    },
+    {
+      "id": "main_ch2_4",
+      "floor": {
+        "floorId": "main_ch2_4",
+        "title": "主線 CH2 2-4 書店A內部",
+        "name": "2-4",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "CH2_L295.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "BGMKyoheiTranslation.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMKyoheiTranslation.mp3"
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH2_L295.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "comment",
+          "text": "【主線 CH2 2-4 書店A內部】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH2_L295.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "bgm.pause",
+          "until": "background"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平在一個完全陌生的房間中醒來後，與剛剛的警察四目相對"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_surprised_portrait.png",
+          "expression": "surprised",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你這個渾蛋！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "梗平剛想做點什麼，就發現自己的手腳被綁住了"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_police_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "警察",
+          "text": "小心我以襲警的名義逮捕你啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "警察腰上的對講機響了起來"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "416",
+          "text": "你是不是又去打小鋼珠了，30分鐘內沒看到你就死定了"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_police_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "警察",
+          "text": "......我們先合作吧"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "兩人隨後在互相幫助下解開了綁在對方身上的繩子"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我們這到底是在哪裡"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_police_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "警察",
+          "text": "我看見你往ANIsister的方向走就跟了過來，準備開門檢查的時候就暈了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那看來我們應該就是在ANIsister內部的某個地方了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_police_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "警察",
+          "text": "現在該怎麼出去呢，我再不回去就要死了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "即便這很白目，但他依舊做了那件事"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_surprised_portrait.png",
+          "expression": "surprised",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "外面有沒有人啊！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "外面的世界回應了梗平的邀請，門真的打開了"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平與警察以最快的速度遠離了門口並抱在一起"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_police_surprised.png",
+          "expression": "surprised",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "警察",
+          "text": "你不要過來啊！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "然後IB走了進來，冷冷地看著抱在一起的兩個男人"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "誒？是你"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_ib_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IB",
+          "text": "嗯"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你怎麼自己一個人？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_ib_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IB",
+          "text": "他們先回家了，我要繼續找"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你是怎麼進來的？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_ib_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IB",
+          "text": "敲門"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "他們沒有攻擊你嗎？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_ib_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IB",
+          "text": "沒有"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "面對梗平連珠炮似的提問，IB以平淡的語氣回答了所有問題"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_ib_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IB",
+          "text": "我要繼續去找哥哥了"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "語畢，IB便轉身朝門外走去，警察也一個箭步跟上了IB的步伐"
+        },
+        {
+          "kind": "narration",
+          "text": "在門外，梗平看見了海量的肥宅堵死了所有的地方"
+        },
+        {
+          "kind": "narration",
+          "text": "IB一出去，外面成群的肥宅立刻如同摩西分海一樣讓出了一條路"
+        },
+        {
+          "kind": "narration",
+          "text": "就在梗平還在猶豫的時候，肥宅群已經再次合攏並朝梗平襲來"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "等下...%$^#^@%$#^%$^%#^@@^%#@%%$"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "(這時候只能靠那一招了)"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWORC.mp3",
+          "keep": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH2_L344.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "嘿—"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH2_L347.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "喝—"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH2_L350.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "哈—"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "narration",
+          "text": "於是，梗平跳出了他這輩子最完美的一次假面騎士空翻"
+        },
+        {
+          "kind": "narration",
+          "text": "翻越了成群的肥宅，跳到了IB與警察的旁邊"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平與警察交換了眼神之後......"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_ib_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IB",
+          "text": "誒？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH2_L357.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "兩人一左一右把IB架了起來，頭也不回的衝出了ANIsister"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "comment",
+          "text": "【過場】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH1_L353.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "ANIsister的門口，梗平遭受著他不應......算了，他活該的"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_ib_normal.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "IB",
+          "text": "......"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "IB用冰冷的眼神看向梗平"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這......也不是都是在下的錯啊"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_surprised_portrait.png",
+          "expression": "surprised",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你也說點什麼......人呢？"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "梗平轉身一看，警察早已跑遠"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "ms_portrait_police_surprised.png",
+          "expression": "surprised",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "警察",
+          "text": "我搭檔在找我了，先走一步！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "視角轉回來，IB的眼神感覺又冷了幾度"
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這個嘛，你聽在下說......."
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "就在梗平即將陷入絕境的時候，手機上傳來了東山的訊息"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "CH1_L44.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "兔子咖啡被修卡襲擊了！速來！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "choice",
+          "prompt": "請選擇。",
+          "options": [
+            {
+              "text": "你...該不會是騙我的吧？",
+              "events": [
+                {
+                  "kind": "narration",
+                  "text": "梗平回完訊息後，感覺自己衣角被拉了一下"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "可以陪我嗎……"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "欸？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "(不行，如果再拒絕，在下的尊嚴就一點都不剩了)"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "沒問題喔，要去哪裡呢"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "IB指向了一座散發著詭異氣息的美術館"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "(奇怪，這個時間還有營業中的美術館嗎)"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_smile_portrait.png",
+                  "expression": "smile",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "哈哈哈哈，我們走吧"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "comment",
+                  "text": "【過場】"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L390.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "正在舉辦某個藝術家的個人展"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "你喜歡藝術嗎？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "嗯"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "跟哥哥來過"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "那這裡可能會有線索，我有找到導覽手冊，我們分別去搜索吧！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "於是梗平轉身向出口走去，被IB一把抓住拖了回來"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "一起走吧？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "但是"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "comment",
+                  "text": "【下一句字放大】"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "一起走吧？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "好"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平在IB逐漸冷淡的視線中拼命的讀著導覽手冊"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "出發前往三樓吧！我的假面騎士之魂告訴我那裡肯定有線索"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平指著手冊上寫著的三樓休息室，IB眼神又冷了幾度"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "你聽在下解釋！在下絕對不是打算直接去休息什麼的"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "休息室比較多人聚集，你看其他人在欣賞藝術品的時候打擾人家也不好吧？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "那走吧"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "comment",
+                  "text": "【過場】"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L390.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "兩人移動到了三樓休息室"
+                },
+                {
+                  "kind": "narration",
+                  "text": "與梗平預想的不同，休息室內沒有其他的人"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH2_L412.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "牆上掛著衣服金髮女子的畫，彷彿在嘲笑梗平的行動"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_serious_portrait.png",
+                  "expression": "angry",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "可惡，製作這幅畫的藝術家的喜好太糟糕了"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "聽完梗平的話，畫中人的笑容變得更深，嘴邊快裂到了耳根旁"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "不對，這畫肯定動了"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "不等梗平反應，畫張開了大嘴把梗平一口吞下"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L390.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L419.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L419.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L419.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L419.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平被迫進入了畫中"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "唉呦，把我弄哪來了？這還是秋葉原嗎？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_mei_aili_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梅愛莉",
+                  "text": "打擾一下"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_serious_portrait.png",
+                  "expression": "angry",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "哇啊啊！可惡的修卡終於現身了嗎？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_mei_aili_surprised.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梅愛莉",
+                  "text": "你在說什麼？不好意思你擋到路了，請你離開一下"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "哦好的"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平默默地移開，看著梅愛莉走進自己進入的畫框"
+                },
+                {
+                  "kind": "narration",
+                  "text": "然後畫框消失了"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "......"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "等等，那在下要怎麼出去？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "comment",
+                  "text": "【過場】"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L390.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "IB在美術館二樓尋找無果後又回到了休息室，突然畫作吐出了一個人"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_mei_aili_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梅愛莉",
+                  "text": "這裡似乎沒有呢？我們去其他地方找找看"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_mei_aili_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梅愛莉",
+                  "text": "你是他的同行者嗎？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH2_L436.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "梅愛莉指向畫作，畫上面有個微笑的金髮男子"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_mei_aili_surprised.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梅愛莉",
+                  "text": "看來他沒辦法幫忙了，所以就由我來代替吧！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "IB看著畫思考了一會，然後點了點頭"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "嗯"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_mei_aili_surprised.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梅愛莉",
+                  "text": "那我們走吧！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "兩人友好的離開了美術館"
+                },
+                {
+                  "kind": "narration",
+                  "text": "另一邊，梗平靠著假面騎士的力量突破了畫的封印，但是錯過了Comike"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH1_L119.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "BE",
+                  "text": "美麗的玫瑰帶刺"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "goto",
+                  "floorId": "main_ch2_4",
+                  "loc": [
+                    6,
+                    10
+                  ],
+                  "direction": "up",
+                  "time": 0
+                }
+              ]
+            },
+            {
+              "text": "天在呼喚、地在呼喚、人在呼喚，呼喚我打敗邪惡！",
+              "events": [
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "哎呀，咖啡廳那邊出問題了，在下得趕快回去才行"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "我們明天見啊"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "蘭斯剛好在附近，很快就來，千萬不要自己再跑進去囉"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "話說完，梗平就頭也不回的跑走了"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "......"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_ib_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "IB",
+                  "text": "嘖"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "comment",
+                  "text": "【過場】"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH1_L360.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "等梗平趕到時，一名修卡戰鬥員正擺好姿勢作勢攻擊一個金髮的女人"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_becky_surprised.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "貝琪",
+                  "text": "呀！救命啊！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "隨著女性的尖叫聲，出現的是背著光登場的梗平"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "放開那位女士！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH2_L464.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平朝修卡攻擊了過去，並三下五除二的解決的修卡戰鬥員"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "你沒事吧女士，該怎麼稱呼你呢"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_becky_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "貝琪",
+                  "text": "請叫我貝琪就好，我該怎麼報答你才好呢"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "貝琪小姐，假面騎士不需要報答，拯救大家是在下的職責"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_becky_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "貝琪",
+                  "text": "那請至少讓我請你吃一頓飯吧，不然我過意不去的"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "如果你實在想做點什麼的話......謝謝你的邀請"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_becky_smile.png",
+                  "expression": "smile",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "貝琪",
+                  "text": "太好了，假面騎士先生你叫甚麼名字呢？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "在下的名字是梗平"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_becky_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "貝琪",
+                  "text": "那我們約好了，明天下午見喔，梗平先生"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "話說完後，女人便面帶笑容地離開了咖啡廳"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "是說東山去哪裡了，不是他叫我過來的嗎？"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "narration",
+                  "text": "就在梗平還在思考的時候，三角的聲音傳了過來"
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "ms_portrait_sankaku_normal.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "三角",
+                  "text": "你把他們三個丟在一邊自己跑掉了對吧"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_surprised_portrait.png",
+                  "expression": "surprised",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "不是這樣的，你聽在下解釋......啊！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "CH1_L377.png",
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "narration",
+                  "text": "梗平的臉又挨了一次小兔子暗黑無限破後，順勢飛出了店外"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH1_L353.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_serious_portrait.png",
+                  "expression": "angry",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "可惡，這下看來是回不去了"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "image.show",
+                  "role": "portrait",
+                  "code": 20,
+                  "image": "keng_neutral_portrait.png",
+                  "expression": "normal",
+                  "loc": [
+                    "portraitSpeakerX",
+                    "portraitSpeakerY"
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "梗平",
+                  "text": "不過時間還這麼早，先到處看看好了"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "comment",
+                  "text": "人物交流回合：完成角色好感劇情後，進入交流後續 scene。"
+                },
+                {
+                  "kind": "function.call",
+                  "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'main_ch2_4_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWORC.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMIB.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMTree.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWORC.mp3"
+        },
+        {
+          "kind": "bgm.pause"
+        }
+      ]
+    },
+    {
+      "id": "main_ch2_4_exchange_1",
+      "floor": {
+        "floorId": "main_ch2_4_exchange_1",
+        "title": "主線 CH2 2-4 書店A內部（交流後）",
+        "name": "2-4",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "CH2_L295.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "BGMIB.mp3",
+        "ratio": 1,
+        "map": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMIB.mp3"
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH2_L295.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "comment",
+          "text": "【主線 CH2 2-4 書店A內部（交流後）】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 150
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH1_L353.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png",
+          "expression": "normal",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不行，好想睡"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_serious_portrait.png",
+          "expression": "angry",
+          "loc": [
+            "portraitSpeakerX",
+            "portraitSpeakerY"
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "可惡，眼皮好重"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "下一秒的梗平就這麼安穩的睡在了路邊"
+        },
+        {
+          "kind": "narration",
+          "text": "第二天，打工沒有換宿"
+        },
+        {
+          "kind": "comment",
+          "text": "【第二章結束】"
+        },
+        {
+          "kind": "transition.video"
+        },
+        {
+          "kind": "goto",
+          "floorId": "main_ch3_1",
+          "loc": [
+            6,
+            10
+          ],
+          "direction": "up",
+          "time": 0
+        }
+      ]
+    }
+  ]
+}

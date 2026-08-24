@@ -2,10 +2,10 @@ const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 const { readBundle } = require("./story_ir");
+const { readMainStoryBundle } = require("./main_story_ir");
 
 const root = path.resolve(__dirname, "..");
 const irRoot = path.join(root, "project", "story-ir");
-const mainStoryIr = path.join(irRoot, "main", "main-story.json");
 const lineAssetPattern = /^CH([1-7])_L(\d+)\.png$/;
 
 function jsonFiles(dir) {
@@ -99,7 +99,7 @@ function main() {
     verifySources(bundle);
     sourceCount += bundle.source.files.length;
   }
-  const lineAssets = validateMainStoryLineAssets(readBundle(mainStoryIr));
+  const lineAssets = validateMainStoryLineAssets(readMainStoryBundle());
   console.log(`Validated ${files.length} Story IR bundles against ${sourceCount} source records and ${lineAssets} line-addressed assets.`);
 }
 

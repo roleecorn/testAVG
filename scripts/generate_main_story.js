@@ -1,9 +1,9 @@
 const fs = require("fs");
 const path = require("path");
-const { bundleToFloors, readBundle, validateProjectReferences } = require("./story_ir");
+const { bundleToFloors, validateProjectReferences } = require("./story_ir");
+const { readMainStoryBundle } = require("./main_story_ir");
 
 const root = path.resolve(__dirname, "..");
-const mainStoryIr = path.join(root, "project", "story-ir", "main", "main-story.json");
 
 function floorFile(floorId) {
   return path.join(root, "project", "floors", `${floorId}.js`);
@@ -17,7 +17,7 @@ function main() {
   const checkOnly = process.argv.includes("--check");
   const unknown = process.argv.slice(2).filter((arg) => arg !== "--check");
   if (unknown.length) throw new Error(`Unknown main-story emitter option: ${unknown.join(", ")}`);
-  const bundle = readBundle(mainStoryIr);
+  const bundle = readMainStoryBundle();
   validateProjectReferences(root, bundle);
   const floors = bundleToFloors(bundle);
 

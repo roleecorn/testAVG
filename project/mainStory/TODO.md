@@ -9,7 +9,7 @@
 - 已接入 24 首 BGM、43 張 ZIP 圖片；`CH3_L257.png → CH2_L258.png`、`CH7_L863.png → CH7_L864.png`、`CH7_L991.png → CH7_L992.png`，其餘依目前首個權威指令行號命名。原始 `CH2_L306.png` 因同一背景首次權威出現於 CH2:295，落地為 `CH2_L295.png`，完整血緣保留在 run manifest。
 - 因來源行號失效而停用的歷史檔案移至 `project/images/unknown/main-story-stale/`，未再註冊或引用。
 - 20260824-183110 run 的 24 張主線背景已依 AVG 畫布契約保留完整構圖並直接縮放為 `544x416`；原始尺寸／SHA-256 與 runtime 輸出 SHA-256 見 run manifest 的「背景 runtime 尺寸正規化」紀錄。
-- 驗證證據：`validate_story_source.js`（110 個有效行號素材）、`generate_main_story.js --check`（28 floors）、`validate_story.js`、`git diff --check` 均通過。
+- 驗證證據：`validate_story_source.js`（110 個有效行號素材）、`generate_main_story.js --check`（28 floors）、`validate_story.js`、`git diff --check` 均通過。主線 Story IR 已按章保存於 `project/story-ir/main/CH1.json`～`CH7.json`。
 
 ## 待確認人物
 
@@ -41,12 +41,12 @@
   - Scope: `project/mainStory/CH7 7-5` 的 `【背景：LIVE大舞台】`。
   - Temporary: `project/images/ms_bg_live_stage.png` 為由 `project/images/scene_tournament.png` 複製的暫代背景。
   - Expected: 正式 `LIVE大舞台` 背景；完成驗收後替換圖片並通過遊戲內驗證。
-  - Evidence: `scripts/generate_main_story.js` background mapping、`project/story-ir/main/main-story.json`、`project/floors/main_ch7_5.js`；目前維持 open。
+  - Evidence: `scripts/generate_main_story.js` background mapping、`project/story-ir/main/CH7.json`、`project/floors/main_ch7_5.js`；目前維持 open。
 - Open: `main-story-background-police-station`
   - Scope: `project/mainStory/CH7 7-5` 的 `【背景：派出所】`。
   - Temporary: `project/images/ms_bg_police_station.png` 為由 `project/images/scene_street.png` 複製的暫代背景。
   - Expected: 正式 `派出所` 背景；完成驗收後替換圖片並通過遊戲內驗證。
-  - Evidence: `scripts/generate_main_story.js` background mapping、`project/story-ir/main/main-story.json`、`project/floors/main_ch7_5.js`；目前維持 open。
+  - Evidence: `scripts/generate_main_story.js` background mapping、`project/story-ir/main/CH7.json`、`project/floors/main_ch7_5.js`；目前維持 open。
 - Open: `main-story-costume-portraits`
   - Scope: `project/mainStory/CH3 3-1`、`project/mainStory/CH6 6-4`、`project/mainStory/CH7 7-5` 的服裝狀態角色標籤。
   - Missing: 正式服裝梗平／貝琪／前輩／桶至學長立繪與角色 mapping；目前不使用未驗收素材。
