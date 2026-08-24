@@ -4245,6 +4245,10 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "time": 500
                         },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMKIRAKIRA.mp3"
+                        },
                         "三日月用力的拿AK47於魔獸對拼，而來島澄和香坂輪已經被觸手抓了起來",
                         {
                             "type": "showImage",

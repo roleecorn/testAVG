@@ -711,78 +711,10 @@ main.floors.main_ch7_5=
             "type": "comment",
             "text": "TODO: 【下四句不使用立繪】"
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[東山](等等這大凶我是不是在哪裡看過…)",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[東山](靠北這不是被我賣掉的那本書？也就是說那天的肥宅其實是在運書的途中)",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[東山](然後因為書沒到變成了集體暴動？所以是我的錯？)",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[東山](不對錯的可不是我，是他們派的人不靠普，一定是這樣！但是放著也不行)",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
         {
             "type": "hideImage",
             "code": 30,
@@ -2814,7 +2746,7 @@ main.floors.main_ch7_5=
         },
         {
             "type": "playBgm",
-            "name": "BGMRakisuta.mp3",
+            "name": "BGMKyoheiTranslation.mp3",
             "keep": true
         },
         {
@@ -4062,9 +3994,6 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 250
         },
-        {
-            "type": "resumeBgm"
-        },
         "正當眾人一籌莫展之際，梗平推開了女咖的大門",
         {
             "type": "hideImage",
@@ -4544,7 +4473,7 @@ main.floors.main_ch7_5=
         "場內擠滿了眾多肥宅，細看甚至能在場地上方發現瀰漫著的裊裊白煙",
         {
             "type": "playBgm",
-            "name": "BGMKyoheiTranslation.mp3",
+            "name": "BGMBOINBOIN.mp3",
             "keep": true
         },
         "肥宅前方的舞台上，循環撥放著一些螢幕都放不下的碩大凶險，台上的男人則不斷說著同樣的台詞",
@@ -5044,6 +4973,10 @@ main.floors.main_ch7_5=
             "type": "comment",
             "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
         },
+        {
+            "type": "playBgm",
+            "name": "BGMGintama.mp3"
+        },
         "在店長與教主的努力宣導下，街上的肥宅們逐漸回復正常",
         {
             "type": "showImage",
@@ -5405,42 +5338,8 @@ main.floors.main_ch7_5=
             "type": "comment",
             "text": "TODO: 【下四句不使用立繪】"
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[東山](如果這件事情真的發生…)",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[東山](這鍋一定得有人承，大家是不可能報復皇室的，那等著我的稱號就是『爆破Comike的女人』)",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
         {
             "type": "setText",
             "avg": true,
@@ -5469,24 +5368,7 @@ main.floors.main_ch7_5=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[東山](就算可能可以跟貝琪喝著貴婦下午茶，但從此我會臭到被活動封殺、遭網路平台公司切割、跟所有社團終止合作、被印刷廠還有出版業者列為拒絕往來戶、在ACG圈裡人人喊打再也不能出本並成為綜藝節目的談資、搞不好還會被憤怒的肥宅一刀桶死在玄關………)",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
         {
             "type": "setText",
             "avg": true,
@@ -5515,24 +5397,7 @@ main.floors.main_ch7_5=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[東山](不行—快想想東山！有沒有什麼突破口—)",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
         {
             "type": "hideImage",
             "code": 30,
@@ -5541,6 +5406,10 @@ main.floors.main_ch7_5=
         {
             "type": "comment",
             "text": "TODO: 【BGM：關羽之歌】"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMKanu.mp3"
         },
         {
             "type": "showImage",
@@ -7579,6 +7448,10 @@ main.floors.main_ch7_5=
             "type": "pauseBgm"
         },
         {
+            "type": "playBgm",
+            "name": "BGMKIRAKIRA.mp3"
+        },
+        {
             "type": "showImage",
             "code": 30,
             "image": "CH7_L1291.png",
@@ -7847,6 +7720,10 @@ main.floors.main_ch7_5=
         {
             "type": "comment",
             "text": "TODO: 【BGM：BGMED2】"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMED2.mp3"
         },
         {
             "type": "showImage",

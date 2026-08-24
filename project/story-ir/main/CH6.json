@@ -3791,6 +3791,10 @@
           "text": "TODO: 【BGM：ED1用】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMED1.mp3"
+        },
+        {
           "kind": "dialogue",
           "speaker": "結尾演出字幕",
           "text": "都是旁白的那個版本 (我是打算END2把誰寫的跟所有分支製作寫進去啦所以1都旁白這樣，還是?"

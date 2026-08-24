@@ -622,6 +622,10 @@
                   "text": "【過場】"
                 },
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMKanu.mp3"
+                },
+                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,

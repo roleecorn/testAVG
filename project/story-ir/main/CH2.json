@@ -1930,7 +1930,7 @@
         },
         {
           "kind": "bgm.pause",
-          "until": "background"
+          "until": "play"
         },
         {
           "kind": "narration",

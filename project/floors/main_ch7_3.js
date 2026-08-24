@@ -2129,9 +2129,6 @@ main.floors.main_ch7_3=
             "time": 250
         },
         {
-            "type": "resumeBgm"
-        },
-        {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
@@ -2317,6 +2314,10 @@ main.floors.main_ch7_3=
         {
             "type": "comment",
             "text": "TODO: 【BGM：BGMBOOM】"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMBOOM.mp3"
         },
         {
             "type": "showImage",

@@ -1052,9 +1052,6 @@ main.floors.main_ch7_4=
             "time": 250
         },
         {
-            "type": "resumeBgm"
-        },
-        {
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_tongzhi_normal.png",
@@ -1296,60 +1293,9 @@ main.floors.main_ch7_4=
             "type": "comment",
             "text": "TODO: 【下三句話不使用立繪】"
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[桶至學長]現在開始將，以機械的形式運行",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_tongzhi_surprised.png",
-            "expression": "surprised",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[桶至學長]Switch ON！ 1 ！ 2 ！ 3 ！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[桶至學長]電流般的火花在體內奔竄〜♪",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1868,6 +1814,10 @@ main.floors.main_ch7_4=
         {
             "type": "comment",
             "text": "TODO: 【BGM：BGMTANK】"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMTANK.mp3"
         },
         {
             "type": "showImage",
@@ -2599,6 +2549,10 @@ main.floors.main_ch7_4=
             "type": "comment",
             "text": "TODO: 【BGM：BGMTANK】"
         },
+        {
+            "type": "playBgm",
+            "name": "BGMTANK.mp3"
+        },
         "轟隆轟隆轟隆轟隆轟隆轟隆轟隆轟隆衝衝衝衝拉風",
         "一連串低沉的轟鳴聲打斷了克莉絲要說的話",
         {
@@ -2808,7 +2762,7 @@ main.floors.main_ch7_4=
         },
         {
             "type": "playBgm",
-            "name": "BGMREBOOT2014.mp3",
+            "name": "BGMMeikyoshisui.mp3",
             "keep": true
         },
         {

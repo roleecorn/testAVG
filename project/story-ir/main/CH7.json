@@ -4314,7 +4314,7 @@
         },
         {
           "kind": "bgm.pause",
-          "until": "background"
+          "until": "play"
         },
         {
           "kind": "background.show",
@@ -4327,9 +4327,6 @@
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "bgm.resume"
         },
         {
           "kind": "dialogue",
@@ -4457,6 +4454,10 @@
         {
           "kind": "comment",
           "text": "TODO: 【BGM：BGMBOOM】"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMBOOM.mp3"
         },
         {
           "kind": "image.show",
@@ -5278,7 +5279,7 @@
         },
         {
           "kind": "bgm.pause",
-          "until": "background"
+          "until": "play"
         },
         {
           "kind": "background.show",
@@ -5291,9 +5292,6 @@
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "bgm.resume"
         },
         {
           "kind": "dialogue",
@@ -5464,32 +5462,17 @@
         {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "現在開始將，以機械的形式運行",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "expression": "normal"
-          }
+          "text": "現在開始將，以機械的形式運行"
         },
         {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "Switch ON！ 1 ！ 2 ！ 3 ！",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_tongzhi_surprised.png",
-            "expression": "surprised"
-          }
+          "text": "Switch ON！ 1 ！ 2 ！ 3 ！"
         },
         {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "電流般的火花在體內奔竄〜♪",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "expression": "normal"
-          }
+          "text": "電流般的火花在體內奔竄〜♪"
         },
         {
           "kind": "image.hide",
@@ -6013,6 +5996,10 @@
           "text": "TODO: 【BGM：BGMTANK】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMTANK.mp3"
+        },
+        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -6503,6 +6490,10 @@
           "text": "TODO: 【BGM：BGMTANK】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMTANK.mp3"
+        },
+        {
           "kind": "narration",
           "text": "轟隆轟隆轟隆轟隆轟隆轟隆轟隆轟隆衝衝衝衝拉風"
         },
@@ -6671,7 +6662,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMREBOOT2014.mp3",
+          "name": "BGMMeikyoshisui.mp3",
           "keep": true
         },
         {
@@ -7681,42 +7672,22 @@
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "(等等這大凶我是不是在哪裡看過…)",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "(等等這大凶我是不是在哪裡看過…)"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "(靠北這不是被我賣掉的那本書？也就是說那天的肥宅其實是在運書的途中)",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "(靠北這不是被我賣掉的那本書？也就是說那天的肥宅其實是在運書的途中)"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "(然後因為書沒到變成了集體暴動？所以是我的錯？)",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "(然後因為書沒到變成了集體暴動？所以是我的錯？)"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "(不對錯的可不是我，是他們派的人不靠普，一定是這樣！但是放著也不行)",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "(不對錯的可不是我，是他們派的人不靠普，一定是這樣！但是放著也不行)"
         },
         {
           "kind": "image.hide",
@@ -9116,7 +9087,7 @@
         },
         {
           "kind": "bgm.pause",
-          "until": "background"
+          "until": "play"
         },
         {
           "kind": "dialogue",
@@ -9178,7 +9149,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3",
+          "name": "BGMKyoheiTranslation.mp3",
           "keep": true
         },
         {
@@ -9511,7 +9482,7 @@
         },
         {
           "kind": "bgm.pause",
-          "until": "background"
+          "until": "play"
         },
         {
           "kind": "image.show",
@@ -10560,7 +10531,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMKyoheiTranslation.mp3",
+          "name": "BGMBOINBOIN.mp3",
           "keep": true
         },
         {
@@ -10922,6 +10893,10 @@
           "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMGintama.mp3"
+        },
+        {
           "kind": "narration",
           "text": "在店長與教主的努力宣導下，街上的肥宅們逐漸回復正常"
         },
@@ -11196,22 +11171,12 @@
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "(如果這件事情真的發生…)",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "(如果這件事情真的發生…)"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "(這鍋一定得有人承，大家是不可能報復皇室的，那等著我的稱號就是『爆破Comike的女人』)",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "(這鍋一定得有人承，大家是不可能報復皇室的，那等著我的稱號就是『爆破Comike的女人』)"
         },
         {
           "kind": "layout.set",
@@ -11246,12 +11211,7 @@
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "(就算可能可以跟貝琪喝著貴婦下午茶，但從此我會臭到被活動封殺、遭網路平台公司切割、跟所有社團終止合作、被印刷廠還有出版業者列為拒絕往來戶、在ACG圈裡人人喊打再也不能出本並成為綜藝節目的談資、搞不好還會被憤怒的肥宅一刀桶死在玄關………)",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "(就算可能可以跟貝琪喝著貴婦下午茶，但從此我會臭到被活動封殺、遭網路平台公司切割、跟所有社團終止合作、被印刷廠還有出版業者列為拒絕往來戶、在ACG圈裡人人喊打再也不能出本並成為綜藝節目的談資、搞不好還會被憤怒的肥宅一刀桶死在玄關………)"
         },
         {
           "kind": "layout.set",
@@ -11286,12 +11246,7 @@
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "(不行—快想想東山！有沒有什麼突破口—)",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "(不行—快想想東山！有沒有什麼突破口—)"
         },
         {
           "kind": "image.hide",
@@ -11301,6 +11256,10 @@
         {
           "kind": "comment",
           "text": "TODO: 【BGM：關羽之歌】"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMKanu.mp3"
         },
         {
           "kind": "dialogue",
@@ -12630,7 +12589,11 @@
         },
         {
           "kind": "bgm.pause",
-          "until": "background"
+          "until": "play"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMKIRAKIRA.mp3"
         },
         {
           "kind": "image.show",
@@ -12846,6 +12809,10 @@
         {
           "kind": "comment",
           "text": "TODO: 【BGM：BGMED2】"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMED2.mp3"
         },
         {
           "kind": "background.show",

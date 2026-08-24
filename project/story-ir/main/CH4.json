@@ -1799,82 +1799,42 @@
         {
           "kind": "dialogue",
           "speaker": "修女",
-          "text": "你小子的朋友很可以嘛",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_nun_normal.png",
-            "expression": "normal"
-          }
+          "text": "你小子的朋友很可以嘛"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "什麼？修卡竟然要放了我嗎？",
-          "portrait": {
-            "code": 20,
-            "image": "keng_surprised_portrait.png",
-            "expression": "surprised"
-          }
+          "text": "什麼？修卡竟然要放了我嗎？"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我終於被改造了嗎？",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
+          "text": "我終於被改造了嗎？"
         },
         {
           "kind": "dialogue",
           "speaker": "修女",
-          "text": "什麼修卡？這裡早沒有修卡了",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_nun_surprised.png",
-            "expression": "surprised"
-          }
+          "text": "什麼修卡？這裡早沒有修卡了"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "修卡是存在的啊，我日日夜夜與他們作戰",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
+          "text": "修卡是存在的啊，我日日夜夜與他們作戰"
         },
         {
           "kind": "dialogue",
           "speaker": "修女",
-          "text": "以前還有，現在已經沒有了",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_nun_normal.png",
-            "expression": "normal"
-          }
+          "text": "以前還有，現在已經沒有了"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "你說......什麼......",
-          "portrait": {
-            "code": 20,
-            "image": "keng_surprised_portrait.png",
-            "expression": "surprised"
-          }
+          "text": "你說......什麼......"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這句話肯定也是修卡的陰謀",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
+          "text": "這句話肯定也是修卡的陰謀"
         },
         {
           "kind": "image.hide",

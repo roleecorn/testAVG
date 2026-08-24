@@ -55,6 +55,18 @@
 
 ## 待實作演出或小遊戲
 
+## 20260824 `【...】` 指令稽核後續
+
+- Open: `main-story-ch2-2-1-ir-ownership`
+  - Scope: `project/mainStory/CH2:12-110` 的 2-1 段落目前落在 `project/story-ir/main/CH1.json` 的 `mapo_1_6`，`CH2.json` 從 2-2 開始。
+  - Done when: 確認正確章節歸屬後，重建來源 → IR → floor 的原子交易並通過完整驗證。
+- Open: `main-story-ch7-bgm-directive-alignment`
+  - Scope: 尚有 CH7:632、1058 等 BGM 指令需要逐段確認實際播放位置；本次已先完成可由正式資產與來源順序直接判定的曲目。
+  - Done when: 每個來源 BGM 都在對應 IR 節點與 floor 位置播放，並保留原始 TODO／規劃註記。
+- Open: `main-story-exchange-and-headline-presentation`
+  - Scope: CH4 `【人物交流時間】`、CH7 headline 的刪除線／換行／大字組合，以及 `【返回標題畫面】` 尚未完成。
+  - Done when: 確認 runtime 可用的語意表達後完成 IR／floor；無法表達的部分持續保留原始指令與 task-question。
+
 - `project/mainStory/CH1 1-4`：下水道雷霆大鱷魚戰鬥目前依原稿以旁白略過，之後可補正式戰鬥或小遊戲。
 - `project/mainStory/CH3 3-3`：統至分析傑士塔威的橋段可補獨立小遊戲。
 - `project/mainStory/CH6 6-4`：結尾小動畫目前使用既有轉場影片事件暫代，之後可替換正式結尾動畫。

@@ -619,6 +619,20 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 500
                         },
                         {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMKanu.mp3"
+                        },
+                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH2_L258.png",
@@ -628,16 +642,6 @@ main.floors.main_ch5_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
                         },
                         "梗平充新踏入了電子遊樂場，那個他永遠的失去了1000円的地方",
                         "梗平學著那個警察坐到了機台前，投入了自己的錢",

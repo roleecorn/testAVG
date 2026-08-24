@@ -3303,6 +3303,10 @@
                   "time": 250
                 },
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMKIRAKIRA.mp3"
+                },
+                {
                   "kind": "narration",
                   "text": "三日月用力的拿AK47於魔獸對拼，而來島澄和香坂輪已經被觸手抓了起來"
                 },
