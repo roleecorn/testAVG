@@ -14006,99 +14006,39 @@
           }
         },
         {
-          "kind": "layout.set",
-          "value": {
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-              255,
-              225,
-              80,
-              1
-            ],
-            "text": [
-              255,
-              255,
-              255,
-              1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-          }
-        },
-        {
-          "kind": "layout.set",
-          "value": {
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-              255,
-              225,
-              80,
-              1
-            ],
-            "text": [
-              255,
-              255,
-              255,
-              1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-          }
-        },
-        {
-          "kind": "layout.set",
-          "value": {
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-              255,
-              225,
-              80,
-              1
-            ],
-            "text": [
-              255,
-              255,
-              255,
-              1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-          }
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "我的錢啊！！！"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         },
         {
           "kind": "image.hide",

@@ -650,95 +650,39 @@ main.floors.main_ch2_3=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "setText",
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-                255,
-                225,
-                80,
-                1
-            ],
-            "text": [
-                255,
-                255,
-                255,
-                1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-        },
-        {
-            "type": "setText",
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-                255,
-                225,
-                80,
-                1
-            ],
-            "text": [
-                255,
-                255,
-                255,
-                1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-        },
-        {
-            "type": "setText",
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-                255,
-                225,
-                80,
-                1
-            ],
-            "text": [
-                255,
-                255,
-                255,
-                1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-        },
         "\t[梗平]我的錢啊！！！",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
         },
         "這時候的梗平終於想起了他出來是為了什麼的",
         {
