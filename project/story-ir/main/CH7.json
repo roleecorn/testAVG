@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH7",
-        "sha256": "0a0d4dfae698d08d9cbf844afaf2ec12d968aaa2c784b2f9915a58092af1067f"
+        "sha256": "0c0cd8a99417b1d18ded9d998ca5746abb0da6ab7ac21b4f027e179307ef67f8"
       }
     ]
   },
@@ -6040,7 +6040,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L643.png",
+          "image": "CH7_L642.png",
           "loc": [
             112,
             50,
@@ -6420,7 +6420,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L691.png",
+          "image": "CH7_L690.png",
           "loc": [
             112,
             50,
@@ -6539,7 +6539,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L707.png",
+          "image": "CH7_L706.png",
           "loc": [
             112,
             50,
@@ -6607,7 +6607,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L715.png",
+          "image": "CH7_L714.png",
           "loc": [
             112,
             50,
@@ -6679,7 +6679,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L726.png",
+          "image": "CH7_L725.png",
           "loc": [
             112,
             50,
@@ -6924,7 +6924,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L749.png",
+          "image": "CH7_L748.png",
           "loc": [
             112,
             50,
@@ -7061,7 +7061,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L691.png",
+          "image": "CH7_L690.png",
           "loc": [
             112,
             50,
@@ -7443,7 +7443,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L799.png",
+          "image": "CH7_L798.png",
           "loc": [
             112,
             50,
@@ -7655,7 +7655,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L825.png",
+          "image": "CH7_L824.png",
           "loc": [
             112,
             50,
@@ -7882,7 +7882,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L851.png",
+          "image": "CH7_L850.png",
           "loc": [
             112,
             50,
@@ -7971,7 +7971,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 30,
-          "image": "CH7_L864.png",
+          "image": "CH7_L863.png",
           "loc": [
             0,
             0
@@ -8977,7 +8977,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L953.png",
+          "image": "CH7_L952.png",
           "loc": [
             112,
             50,
@@ -9425,7 +9425,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 30,
-          "image": "CH7_L992.png",
+          "image": "CH7_L991.png",
           "loc": [
             0,
             0
@@ -9927,7 +9927,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L1042.png",
+          "image": "CH7_L1041.png",
           "loc": [
             112,
             50,
@@ -9950,7 +9950,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L1045.png",
+          "image": "CH7_L1044.png",
           "loc": [
             112,
             50,
@@ -10211,7 +10211,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 30,
-          "image": "CH7_L1059.png",
+          "image": "CH7_L1058.png",
           "loc": [
             0,
             0
@@ -10350,7 +10350,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L1075.png",
+          "image": "CH7_L1074.png",
           "loc": [
             112,
             50,

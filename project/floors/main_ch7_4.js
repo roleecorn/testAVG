@@ -1870,7 +1870,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L643.png",
+            "image": "CH7_L642.png",
             "loc": [
                 112,
                 50,
@@ -2456,7 +2456,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L691.png",
+            "image": "CH7_L690.png",
             "loc": [
                 112,
                 50,
@@ -2613,7 +2613,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L707.png",
+            "image": "CH7_L706.png",
             "loc": [
                 112,
                 50,
@@ -2705,7 +2705,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L715.png",
+            "image": "CH7_L714.png",
             "loc": [
                 112,
                 50,
@@ -2786,7 +2786,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L726.png",
+            "image": "CH7_L725.png",
             "loc": [
                 112,
                 50,
@@ -3118,7 +3118,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L749.png",
+            "image": "CH7_L748.png",
             "loc": [
                 112,
                 50,
@@ -3271,7 +3271,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L691.png",
+            "image": "CH7_L690.png",
             "loc": [
                 112,
                 50,

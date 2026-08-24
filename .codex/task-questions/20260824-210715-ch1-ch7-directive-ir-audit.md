@@ -24,7 +24,7 @@
 
 - Classification: `blocking`
 - Status: `open`
-- Source: `project/mainStory/CH3:404`、`CH5:84`、`CH6:384`、`CH7:488,632,638,700,724,971,1029,1058,1096,1135,1170,1290,1315`
+- Source: `project/mainStory/CH3:404`、`CH5:84`、`CH6:384`、`CH7:488,632,637,699,723,970,1028,1057,1096,1135,1170,1290,1315`
 - Affected scope: `project/story-ir/main/CH3.json`、`CH5.json`、`CH6.json`、`CH7.json` 及其生成 floor
 - Temporary handling: 不把 TODO 或其他位置的同名 BGM 視為已完成；暫停 BGM 受影響段落的交付
 - Decision needed: 確認每個來源 BGM 名稱的正式資產／映射，並將播放事件放在來源指令的正確作用位置
@@ -37,7 +37,7 @@
 
 - Classification: `blocking`
 - Status: `resolved`
-- Source: `project/mainStory/CH2:307`、`project/mainStory/CH7:472,584,621,962,1085,1280`
+- Source: `project/mainStory/CH2:307`、`project/mainStory/CH7:472,584,621,961,1085,1280`
 - Affected scope: 對應 IR 中的 `bgm.pause`／`bgm.resume` 節點與生成 floor
 - Temporary handling: 暫不接受 `until: "background"` 加上立即 resume 作為 `【BGM停止】` 的等價實作
 - Decision needed: 依 canonical BGM 語意，確認這些 `【BGM停止】` 是否都應轉為 `bgm.pause` 並持續到下一個明確 BGM play
@@ -50,7 +50,7 @@
 
 - Classification: `non-blocking`
 - Status: `open`
-- Source: `project/mainStory/CH7:468,569-570,606,826,986,1163`
+- Source: `project/mainStory/CH7:468,569-570,606,825,985,1163`
 - Affected scope: CH7 scene 的 portrait、文字 layout、記憶濾鏡、標題返回與其他 presentation nodes
 - Temporary handling: 保留來源與現有 IR，不自行猜測未定稿的素材或演出規格
 - Decision needed: 確認哪些 TODO 是待製作、哪些需改為實際 IR 指令
@@ -58,6 +58,16 @@
 - Remaining work: 完成 CH7 尚未落地的 IR／演出，或將明確延後項目保留為可追溯 TODO
 - Completion evidence: `project/story-ir/main/CH4.json`、`project/floors/main_ch4_1.js`、`project/floors/main_ch4_1_exchange_1.js`、`project/data.js` 已更新；`node scripts/test_akiba_event_manager.js`、`node scripts/test_akiba_location_minigame.js`、`node scripts/validate_story.js` 通過
 - Resolved at: pending
+
+### Q5. CH7 merge 後來源行號同步
+
+- Classification: `non-blocking`
+- Status: `resolved`
+- Source: `project/mainStory/CH7`；user merge `acfbe5f5`（source parent `11155cb5`）
+- Affected scope: 空白行變更造成 CH7 後半段實體行號位移、16 個 `CH7_L<N>.png` 首次素材名稱、`project/data.js`、`project/story-ir/main/CH7.json` 與生成 floors
+- Decision / current direction: 依同一條 CG／背景指令逐一證明舊名到新名的對應，將 16 個資產改名至新首次行號並同步更新 IR／註冊；未修改使用者來源內容
+- Completion evidence: CH7 source SHA-256 更新為 `0c0cd8a99417b1d18ded9d998ca5746abb0da6ab7ac21b4f027e179307ef67f8`；`node scripts/validate_story_source.js`、`node scripts/generate_main_story.js --check`、`node scripts/validate_story.js` 通過
+- Resolved at: `2026-08-24 21:54:29 +08:00`
 
 ## Promotion
 

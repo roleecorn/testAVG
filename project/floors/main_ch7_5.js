@@ -374,7 +374,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L799.png",
+            "image": "CH7_L798.png",
             "loc": [
                 112,
                 50,
@@ -697,7 +697,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L825.png",
+            "image": "CH7_L824.png",
             "loc": [
                 112,
                 50,
@@ -1048,7 +1048,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L851.png",
+            "image": "CH7_L850.png",
             "loc": [
                 112,
                 50,
@@ -1144,7 +1144,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L864.png",
+            "image": "CH7_L863.png",
             "loc": [
                 0,
                 0
@@ -2520,7 +2520,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L953.png",
+            "image": "CH7_L952.png",
             "loc": [
                 112,
                 50,
@@ -3072,7 +3072,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L992.png",
+            "image": "CH7_L991.png",
             "loc": [
                 0,
                 0
@@ -3682,7 +3682,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L1042.png",
+            "image": "CH7_L1041.png",
             "loc": [
                 112,
                 50,
@@ -3701,7 +3701,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L1045.png",
+            "image": "CH7_L1044.png",
             "loc": [
                 112,
                 50,
@@ -3986,7 +3986,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L1059.png",
+            "image": "CH7_L1058.png",
             "loc": [
                 0,
                 0
@@ -4203,7 +4203,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L1075.png",
+            "image": "CH7_L1074.png",
             "loc": [
                 112,
                 50,
