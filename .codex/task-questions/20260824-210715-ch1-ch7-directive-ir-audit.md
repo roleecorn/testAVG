@@ -10,15 +10,15 @@
 ### Q1. CH2 2-1 的 IR 歸屬
 
 - Classification: `blocking`
-- Status: `open`
+- Status: `resolved`
 - Source: `project/mainStory/CH2:12-110`
-- Affected scope: `project/story-ir/main/CH1.json` 的 `mapo_1_6`、`project/story-ir/main/CH2.json`、對應 floor 生成流程
-- Temporary handling: 暫停受影響章節的 IR／floor 重生與提交；其他已正確對應的指令只做稽核
-- Decision needed: CH2 來源的 2-1 段落是否應移入 CH2 IR，並重新建立來源 → IR → floor 的原子交易
-- Decision / current direction: 目前 CH2 2-1 的內容存在於 CH1 IR 的 `mapo_1_6`，CH2 IR 沒有對應 scene；需確認正確歸屬後再修正
-- Remaining work: 重建正確 Story IR 對應、重新生成 scene／floor、執行完整驗證
-- Completion evidence: `node scripts/validate_story.js` 可通過結構驗證，但尚無語意歸屬修正證據
-- Resolved at: pending
+- Affected scope: `project/story-ir/main/CH1.json`、`project/story-ir/main/CH2.json`、`mapo_1_5` → `mapo_1_6` → `main_ch2_2` 的生成流程
+- Temporary handling: 已將受影響分支維持在 IR 修正期間，未修改權威來源
+- Decision needed: none
+- Decision / current direction: 已將 CH2:12-110 的 2-1 scene `mapo_1_6` 從 CH1 IR 移至 CH2 IR 的第一個 scene；CH1 最後 scene `mapo_1_5` 的 `goto mapo_1_6` 保留，2-1 結尾的 `goto main_ch2_2` 保留
+- Remaining work: none
+- Completion evidence: `node scripts/validate_story_source.js`、`node scripts/generate_main_story.js --check`、`node scripts/validate_story.js` 均通過；生成後確認 CH1 最後 scene 為 `mapo_1_5`、CH1 goto `mapo_1_6`、CH2 第一 scene 為 `mapo_1_6`、2-1 後續 goto `main_ch2_2`
+- Resolved at: `2026-08-24 21:40:03 +08:00`
 
 ### Q2. BGM 指令的缺漏與錯位
 
@@ -61,4 +61,4 @@
 
 ## Promotion
 
-尚未解決的章節歸屬、BGM 映射／作用範圍與演出指令問題，應在修正交易完成前持續保留於長期 TODO。
+尚未解決的 BGM 映射／作用範圍與演出指令問題，應在修正交易完成前持續保留於長期 TODO；CH2 2-1 的章節歸屬已完成修正。
