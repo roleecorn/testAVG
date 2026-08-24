@@ -50,13 +50,13 @@
 
 - Classification: `non-blocking`
 - Status: `open`
-- Source: `project/mainStory/CH4:29,212`、`project/mainStory/CH7:468,569-570,606,826,986,1163`
-- Affected scope: 對應 scene 的 portrait、文字 layout、記憶濾鏡、標題返回與其他 presentation nodes
+- Source: `project/mainStory/CH7:468,569-570,606,826,986,1163`
+- Affected scope: CH7 scene 的 portrait、文字 layout、記憶濾鏡、標題返回與其他 presentation nodes
 - Temporary handling: 保留來源與現有 IR，不自行猜測未定稿的素材或演出規格
 - Decision needed: 確認哪些 TODO 是待製作、哪些需改為實際 IR 指令
-- Decision / current direction: CH4 `【下八句不使用立繪】`、CH7 多個「下幾句不使用立繪」已完成並保留 TODO；CH4 `【人物交流時間】`、CH7:986 的刪除線／換行／大字 headline、`【返回標題畫面】` 仍未完成。CH7:569-570 的回憶過場已有 IR `function.call` 色調實作，不再列為缺口。結尾動畫與製作名單依來源明示暫時忽略。
-- Remaining work: 依確認結果補齊仍未完成的 IR／演出，或將明確延後項目保留為可追溯 TODO
-- Completion evidence: `project/story-ir/main/CH4.json`、`CH7.json` 與對應 floor 已更新；`node scripts/validate_story.js` 通過
+- Decision / current direction: CH4 `【人物交流時間】` 已依既有交流約束實作為 `beginCharacterExchange(..., 2)`；CH4 主線在 marker 前結束，marker 後內容移至 `main_ch4_1_exchange_1`，完成兩回合後回接。CH4 `【下八句不使用立繪】`、CH7 多個「下幾句不使用立繪」已完成並保留 TODO；CH7:986 的刪除線／換行／大字 headline、`【返回標題畫面】` 仍未完成。CH7:569-570 的回憶過場已有 IR `function.call` 色調實作，不再列為缺口。結尾動畫與製作名單依來源明示暫時忽略。
+- Remaining work: 完成 CH7 尚未落地的 IR／演出，或將明確延後項目保留為可追溯 TODO
+- Completion evidence: `project/story-ir/main/CH4.json`、`project/floors/main_ch4_1.js`、`project/floors/main_ch4_1_exchange_1.js`、`project/data.js` 已更新；`node scripts/test_akiba_event_manager.js`、`node scripts/test_akiba_location_minigame.js`、`node scripts/validate_story.js` 通過
 - Resolved at: pending
 
 ## Promotion

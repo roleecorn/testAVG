@@ -61,7 +61,7 @@
   - Scope: 尚有 CH7:632、1058 等 BGM 指令需要逐段確認實際播放位置；本次已先完成可由正式資產與來源順序直接判定的曲目。
   - Done when: 每個來源 BGM 都在對應 IR 節點與 floor 位置播放，並保留原始 TODO／規劃註記。
 - Open: `main-story-exchange-and-headline-presentation`
-  - Scope: CH4 `【人物交流時間】`、CH7 headline 的刪除線／換行／大字組合，以及 `【返回標題畫面】` 尚未完成。
+  - Scope: CH7 headline 的刪除線／換行／大字組合，以及 `【返回標題畫面】` 尚未完成；CH4 `【人物交流時間】` 已依既有交流約束接入。
   - Done when: 確認 runtime 可用的語意表達後完成 IR／floor；無法表達的部分持續保留原始指令與 task-question。
 
 - `project/mainStory/CH1 1-4`：下水道雷霆大鱷魚戰鬥目前依原稿以旁白略過，之後可補正式戰鬥或小遊戲。
