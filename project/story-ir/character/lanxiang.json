@@ -52,18 +52,11 @@
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "lanxiang_mob.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "lanxiang_mob.png"
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -98,13 +91,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -115,13 +106,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -132,71 +121,39 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那個大哥，有話好說嘛？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那個大哥，有話好說嘛？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "你看天空這麼美麗，空氣多麼清新"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "你看天空這麼美麗，空氣多麼清新",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -207,42 +164,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好！我給就是了！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "好！我給就是了！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -253,71 +193,49 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "住手！光天化日之下竟敢強搶民女……"
+          "text": "住手！光天化日之下竟敢強搶民女……",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "呸！不是！民男！你是想添銀手鐲是不是？"
+          "text": "呸！不是！民男！你是想添銀手鐲是不是？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -328,42 +246,30 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "褲腰帶都沒繫好的小毛頭，還想學人強劫？"
+          "text": "褲腰帶都沒繫好的小毛頭，還想學人強劫？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -373,13 +279,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -390,42 +294,30 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_angry.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "這下該滾的是誰，我想不用說了吧？"
+          "text": "這下該滾的是誰，我想不用說了吧？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_angry.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -436,13 +328,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -452,100 +342,63 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "是說這位小兄弟，你沒事吧？"
+          "text": "是說這位小兄弟，你沒事吧？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒事，相當感謝，不知道該如何報答，我是梗平，請問貴姓？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "沒事，相當感謝，不知道該如何報答，我是梗平，請問貴姓？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "本人姓藍名湘，中國古拳法傳人"
+          "text": "本人姓藍名湘，中國古拳法傳人",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -555,216 +408,129 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "藍師傅，您這是？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "藍師傅，您這是？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "本人正在開展「懦夫救星」計畫，即傳授中國古拳法，急需資金"
+          "text": "本人正在開展「懦夫救星」計畫，即傳授中國古拳法，急需資金",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "現在捐款，還可以當我的天字第一號弟子喔！"
+          "text": "現在捐款，還可以當我的天字第一號弟子喔！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "現在只需五千！"
+          "text": "現在只需五千！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "誒……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "誒……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "拜託啦～我三天沒吃飯了～"
+          "text": "拜託啦～我三天沒吃飯了～",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_serious_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "呃……抱歉"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "呃……抱歉",
+          "portrait": {
+            "code": 10,
+            "image": "keng_serious_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -774,71 +540,44 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "呃沒事，這孔夫子有教無類嘛，我不在意有多少，只在乎是否擁有"
+          "text": "呃沒事，這孔夫子有教無類嘛，我不在意有多少，只在乎是否擁有",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……這是我今天的午餐錢了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……這是我今天的午餐錢了",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -848,71 +587,49 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "噢！真是太感謝了，我的好徒兒，回去好好休息，為師去麻雀館鑽研國粹去了"
+          "text": "噢！真是太感謝了，我的好徒兒，回去好好休息，為師去麻雀館鑽研國粹去了",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "改日再向我請教！"
+          "text": "改日再向我請教！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -922,42 +639,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "畜生啊……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "畜生啊……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1016,18 +716,11 @@
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "lanxiang_duanshuiliu.png"
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1062,437 +755,257 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（雖然好像是被勒索了，但至少應該能學到一點東西吧？）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "（雖然好像是被勒索了，但至少應該能學到一點東西吧？）",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那個……藍師傅？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那個……藍師傅？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "唉呀～梗平你來啦！為師正想找你來著"
+          "text": "唉呀～梗平你來啦！為師正想找你來著",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "來打三人麻將，學學中國古拳法"
+          "text": "來打三人麻將，學學中國古拳法",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這兩者之間有什麼關係啊？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "這兩者之間有什麼關係啊？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "此言差矣，窮其道者，歸處亦同"
+          "text": "此言差矣，窮其道者，歸處亦同",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "什麼時候突擊，什麼時候該保守"
+          "text": "什麼時候突擊，什麼時候該保守",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "這不正是武術的攻守之道嗎？"
+          "text": "這不正是武術的攻守之道嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我覺得這還是有點差距的"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "我覺得這還是有點差距的",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "唉唷～來嘛！三人麻將速度夠快，花不了你多少時間的！"
+          "text": "唉唷～來嘛！三人麻將速度夠快，花不了你多少時間的！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "要不然這樣好了，打贏我就教你真功夫！"
+          "text": "要不然這樣好了，打贏我就教你真功夫！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "合著你一開始就沒想教啊！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "合著你一開始就沒想教啊！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_smile.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "呃…怎麼可能，總之，打吧…哈哈…"
+          "text": "呃…怎麼可能，總之，打吧…哈哈…",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_smile.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "唉，行吧，閒著也是閒著，來打吧"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "唉，行吧，閒著也是閒著，來打吧",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "就是這樣嘛！"
+          "text": "就是這樣嘛！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.show",
@@ -1517,13 +1030,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1533,71 +1044,44 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "胡！斷么九"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "胡！斷么九",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "唉唷～梗平，你也太沒夢想了吧～"
+          "text": "唉唷～梗平，你也太沒夢想了吧～",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1607,71 +1091,44 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "胡！小三元"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "胡！小三元",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "呃…沒事，只是運氣好而已，繼續！"
+          "text": "呃…沒事，只是運氣好而已，繼續！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1681,60 +1138,35 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "胡！國士無雙！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "胡！國士無雙！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_angry.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "啊！！！"
+          "text": "啊！！！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_angry.png"
+          }
         },
         {
           "kind": "image.hide",
@@ -1745,13 +1177,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1761,71 +1191,44 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "來啦！這邊五萬！今天贏的全被你搶了！靠！梗平，你怎麼不說你很會打！"
+          "text": "來啦！這邊五萬！今天贏的全被你搶了！靠！梗平，你怎麼不說你很會打！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "欸！你又沒問！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "欸！你又沒問！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1835,13 +1238,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1852,42 +1253,30 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "嗯？"
+          "text": "嗯？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1898,13 +1287,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1915,42 +1302,30 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_angry.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "！！！"
+          "text": "！！！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_angry.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1961,42 +1336,30 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "你是……"
+          "text": "你是……",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -2007,332 +1370,220 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "有何貴幹？"
+          "text": "有何貴幹？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "沒事，只是看看昔日傳奇的醜樣而已"
+          "text": "沒事，只是看看昔日傳奇的醜樣而已",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_angry.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "……看完了就滾吧！"
+          "text": "……看完了就滾吧！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_angry.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "連中國古拳法最強者都這麼孬了"
+          "text": "連中國古拳法最強者都這麼孬了",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "我看中國古拳法不行了吧"
+          "text": "我看中國古拳法不行了吧",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "……那只是我技不如人，中國古拳法可沒輸"
+          "text": "……那只是我技不如人，中國古拳法可沒輸",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "你可以看出來吧！那邊的梗平並未習過武"
+          "text": "你可以看出來吧！那邊的梗平並未習過武",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "只需幾日訓練，便能脫胎換骨，打倒你"
+          "text": "只需幾日訓練，便能脫胎換骨，打倒你",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "噢是噢，我好怕噢"
+          "text": "噢是噢，我好怕噢",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "時間規則我訂，地點你選，行嗎？"
+          "text": "時間規則我訂，地點你選，行嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "好，雖然雙方都換人，但就讓我們把2008年的勝負打完吧！"
+          "text": "好，雖然雙方都換人，但就讓我們把2008年的勝負打完吧！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -2342,100 +1593,58 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "慢著！有問過我的意願嗎！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "慢著！有問過我的意願嗎！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "怎麼就突然擅自決定了！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "怎麼就突然擅自決定了！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "梗平"
+          "text": "梗平",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -2445,100 +1654,63 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_sad.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "抱歉讓你捲入這事，我會找時間和你解釋的"
+          "text": "抱歉讓你捲入這事，我會找時間和你解釋的",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_sad.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "今天就先這樣吧？好嗎"
+          "text": "今天就先這樣吧？好嗎",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……我知道了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……我知道了",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -2625,912 +1797,545 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "藍師傅，把我約到這，應該是要解釋了吧？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "藍師傅，把我約到這，應該是要解釋了吧？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "嗯，不過其實我也不知道該如何解釋才好"
+          "text": "嗯，不過其實我也不知道該如何解釋才好",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "總之，2008年那場是我和那人師傅串通的假比賽"
+          "text": "總之，2008年那場是我和那人師傅串通的假比賽",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "難怪，我就想說那場勝負不是已定？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "難怪，我就想說那場勝負不是已定？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_panic_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "所以為何這麼做？總不可能是沒錢賭吧？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "所以為何這麼做？總不可能是沒錢賭吧？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_panic_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "是我兒子的手術費"
+          "text": "是我兒子的手術費",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "……如果他還活著的話，大概和你一樣大了"
+          "text": "……如果他還活著的話，大概和你一樣大了",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_serious_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "抱歉……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "抱歉……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_serious_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "沒事，畢竟我給你的印象就是這樣"
+          "text": "沒事，畢竟我給你的印象就是這樣",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "當時對方錢給的實在太多了，我根本沒辦法拒絕"
+          "text": "當時對方錢給的實在太多了，我根本沒辦法拒絕",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "我接受了對方的條件，避免他人起疑心，打完假賽必須退出武術界"
+          "text": "我接受了對方的條件，避免他人起疑心，打完假賽必須退出武術界",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "這就是我讓你應戰的原因，我根本沒辦法上場"
+          "text": "這就是我讓你應戰的原因，我根本沒辦法上場",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好，你叫我上場的原因知道了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "好，你叫我上場的原因知道了",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_serious_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "抱歉，雖然我知道你很可憐，但這完全沒辦法說服我上場啊？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "抱歉，雖然我知道你很可憐，但這完全沒辦法說服我上場啊？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_serious_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "你為什麼要中這麼明顯的挑釁？而且那人也知道那場是假賽，你直接上場，或是好好跟他說不就好了？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "你為什麼要中這麼明顯的挑釁？而且那人也知道那場是假賽，你直接上場，或是好好跟他說不就好了？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "原因有很多"
+          "text": "原因有很多",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "首先，盡管條件嚴苛，那人師傅依舊是我的恩人，若不是他，我連救兒子的機會都沒有"
+          "text": "首先，盡管條件嚴苛，那人師傅依舊是我的恩人，若不是他，我連救兒子的機會都沒有",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "因此，只要他本人沒有出來解約，我就有遵守諾言的必要，而且我想幫他的徒弟做點事情"
+          "text": "因此，只要他本人沒有出來解約，我就有遵守諾言的必要，而且我想幫他的徒弟做點事情",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "其次，他的目標應該只是試試中國古拳法本身，我當然是最好的，但是其他中國古拳法傳人也行，這就是為什麼他會答應讓你上場"
+          "text": "其次，他的目標應該只是試試中國古拳法本身，我當然是最好的，但是其他中國古拳法傳人也行，這就是為什麼他會答應讓你上場",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "再說了，就算我上場贏了，那只能算是我的勝利，而不是中國古拳法"
+          "text": "再說了，就算我上場贏了，那只能算是我的勝利，而不是中國古拳法",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "最後，我絕不允許有人侮辱中國古拳法"
+          "text": "最後，我絕不允許有人侮辱中國古拳法",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "我不是好武術家，也不是好母親，更不是什麼好人"
+          "text": "我不是好武術家，也不是好母親，更不是什麼好人",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "我已經喪失了一切，只有中國古拳法還伴在我身邊"
+          "text": "我已經喪失了一切，只有中國古拳法還伴在我身邊",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "這已經是我唯一的驕傲了啊…"
+          "text": "這已經是我唯一的驕傲了啊…",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_smile.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "梗平，我知道你沒有理由幫我，所以你不想上場也沒關係，謝謝你願意聽我說話"
+          "text": "梗平，我知道你沒有理由幫我，所以你不想上場也沒關係，謝謝你願意聽我說話",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_smile.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……什麼時候開始訓練？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……什麼時候開始訓練？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "什麼？"
+          "text": "什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我說什麼時候開始訓練？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "我說什麼時候開始訓練？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我確實沒有理由幫你，但是幫人不需要理由，英雄是不會就這樣退縮的啊！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "我確實沒有理由幫你，但是幫人不需要理由，英雄是不會就這樣退縮的啊！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "梗平，謝謝你，我會將我的畢生所學傳授於你的！"
+          "text": "梗平，謝謝你，我會將我的畢生所學傳授於你的！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好，師傅，請多關照！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "好，師傅，請多關照！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -3540,13 +2345,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -3633,506 +2436,314 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "真是不錯的場地呢，輸了可以立刻搭車走人"
+          "text": "真是不錯的場地呢，輸了可以立刻搭車走人",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "那麼，再向你確認一次規則"
+          "text": "那麼，再向你確認一次規則",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "除了插眼撩陰都可以，一方不能戰鬥或投降才能結束比賽，是這樣沒錯吧？"
+          "text": "除了插眼撩陰都可以，一方不能戰鬥或投降才能結束比賽，是這樣沒錯吧？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "嗯，沒錯"
+          "text": "嗯，沒錯",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "是說你那徒弟怎麼還不來？該不會是怕了吧？所以我就說中國古拳法……"
+          "text": "是說你那徒弟怎麼還不來？該不會是怕了吧？所以我就說中國古拳法……",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "你這次激我沒用，假賽的消息是從你師傅得知的吧？你知道我是不會和你打的"
+          "text": "你這次激我沒用，假賽的消息是從你師傅得知的吧？你知道我是不會和你打的",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "噢！你知道啦？"
+          "text": "噢！你知道啦？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "算了，只要你不出手，打倒你弟子，再打倒第二強的，空手道剋星神話就正式破滅了"
+          "text": "算了，只要你不出手，打倒你弟子，再打倒第二強的，空手道剋星神話就正式破滅了",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "實力不如你師傅，膽子倒是他的兩倍大"
+          "text": "實力不如你師傅，膽子倒是他的兩倍大",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "別跟我提那個出賣武術家尊嚴的廢物，還有你也是！"
+          "text": "別跟我提那個出賣武術家尊嚴的廢物，還有你也是！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "是啊…"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "是啊…",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "什麼？"
+          "text": "什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "他從剛才一直都在，只是你沒發覺到"
+          "text": "他從剛才一直都在，只是你沒發覺到",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "藍師傅絕對不是好武術家，是不是好人有待商榷，但他絕對是一位好母親"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "藍師傅絕對不是好武術家，是不是好人有待商榷，但他絕對是一位好母親",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "他為了兒子可以拋棄尊嚴，和你這個為了尊嚴而無視人性的武術家不同"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "他為了兒子可以拋棄尊嚴，和你這個為了尊嚴而無視人性的武術家不同",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "看來不是空穴來風啊～還有，激我也沒用，像我們這種人，解決方法只有一個"
+          "text": "看來不是空穴來風啊～還有，激我也沒用，像我們這種人，解決方法只有一個",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "堂堂正正"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "堂堂正正",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4143,13 +2754,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4159,42 +2768,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "！！！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "！！！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_angry_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4204,71 +2796,44 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "陰陽勾魂鎖！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "陰陽勾魂鎖！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "是鎖技嗎！"
+          "text": "是鎖技嗎！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4278,303 +2843,166 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_panic_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "老實說吧，我不可能在幾天之內成為高手"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "老實說吧，我不可能在幾天之內成為高手",
+          "portrait": {
+            "code": 10,
+            "image": "keng_panic_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "但是藍師傅發現了一個重要的弱點"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "但是藍師傅發現了一個重要的弱點",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "就是你的耳朵！耳朵不是餃子耳！你沒在學關節技"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "就是你的耳朵！耳朵不是餃子耳！你沒在學關節技",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "確實！但我們的體格差距太大了，這種鎖馬上就能……解不開！"
+          "text": "確實！但我們的體格差距太大了，這種鎖馬上就能……解不開！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒用的，陰陽勾魂鎖是藍師傅在2008年以後才創的究極奧義"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "沒用的，陰陽勾魂鎖是藍師傅在2008年以後才創的究極奧義",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "而且為了練出這招"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "而且為了練出這招",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我可是被要求對一台疾速行駛的大卡車鎖住，盪來盪去一整天啊！！！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "我可是被要求對一台疾速行駛的大卡車鎖住，盪來盪去一整天啊！！！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_angry_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_smile.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "哈哈（苦笑）"
+          "text": "哈哈（苦笑）",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_smile.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "烏喔喔喔！！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "烏喔喔喔！！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_angry_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "要窒息了！我投降！"
+          "text": "要窒息了！我投降！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4584,216 +3012,139 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "中國古拳法名不虛傳，受教了"
+          "text": "中國古拳法名不虛傳，受教了",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "你的打擊技其實超越了你師傅和我，梗平能躲是因為我是拿衝鋒槍對他練的"
+          "text": "你的打擊技其實超越了你師傅和我，梗平能躲是因為我是拿衝鋒槍對他練的",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我差點就死了好不好！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "我差點就死了好不好！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "你只是忽略關節技的訓練，以及你自大的心態"
+          "text": "你只是忽略關節技的訓練，以及你自大的心態",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "收心，然後……記得別成為像我或你師傅一樣的人"
+          "text": "收心，然後……記得別成為像我或你師傅一樣的人",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "銘記在心，作為這次挑釁的賠償，我會嘗試說服我師傅，讓你重返武術界"
+          "text": "銘記在心，作為這次挑釁的賠償，我會嘗試說服我師傅，讓你重返武術界",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "其實回不回都無所謂了"
+          "text": "其實回不回都無所謂了",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4803,100 +3154,68 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "已經有超越我們的下一代了……"
+          "text": "已經有超越我們的下一代了……",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "當然，能的話還是很好，那就有勞了！"
+          "text": "當然，能的話還是很好，那就有勞了！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "lanxiang_duanshuiliu.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "斷水流傳人",
-          "text": "好，那我先回去了"
+          "text": "好，那我先回去了",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_duanshuiliu.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4906,71 +3225,44 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "梗平"
+          "text": "梗平",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "怎麼了？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "怎麼了？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4980,71 +3272,49 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_smile.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "謝謝你，此等恩情藍某終身難忘"
+          "text": "謝謝你，此等恩情藍某終身難忘",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_smile.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "小小謝禮，不成敬意"
+          "text": "小小謝禮，不成敬意",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -5054,176 +3324,106 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這是？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "這是？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "裡面是十五萬，以及我的聯絡方法，以後若是有難，在下赴湯蹈火，在所不辭"
+          "text": "裡面是十五萬，以及我的聯絡方法，以後若是有難，在下赴湯蹈火，在所不辭",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……那我就收下了，那藍師傅，你之後要做什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……那我就收下了，那藍師傅，你之後要做什麼？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "可能去幫我兒子掃墓，或是去找個工作"
+          "text": "可能去幫我兒子掃墓，或是去找個工作",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "總之，就是去正經活著吧？既然你都能打贏高手了，這個也沒什麼大不了的"
+          "text": "總之，就是去正經活著吧？既然你都能打贏高手了，這個也沒什麼大不了的",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "是嗎…那…有緣再見？"
+          "text": "是嗎…那…有緣再見？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.show",
@@ -5248,31 +3448,21 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 20,
-          "image": "lanxiang_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "藍湘",
-          "text": "嗯！有緣再見！"
+          "text": "嗯！有緣再見！",
+          "portrait": {
+            "code": 20,
+            "image": "lanxiang_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
@@ -5283,13 +3473,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -5299,13 +3487,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -5315,13 +3501,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {

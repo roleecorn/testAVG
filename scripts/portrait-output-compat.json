@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "omitCommonFieldsForScenes": [
+    "kelukai_1",
+    "kelukai_2",
+    "kelukai_3",
+    "kelukai_4"
+  ]
+}

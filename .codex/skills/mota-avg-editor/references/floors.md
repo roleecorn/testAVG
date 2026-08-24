@@ -75,6 +75,8 @@ node scripts/manage_story_ir.js
 
 主線生成器的輸入是 `project/story-ir/main/CH1.json`～`CH7.json`。它會按章合併已驗證 bundle，並由共用 generator 注入所有 scene 共通的 presentation 與 17×13 全零 map，再輸出主線 floor；不要把主線恢復成單一 `main-story.json`，也不要直接修改生成出的 floor。
 
+普通對話的立繪生命周期也由共用 generator 負責：Story IR 保存 `speaker`、`text`、文字特效與 `portrait` 情緒／圖片選擇，generator 統一補入 `opacity: 1`、`time: 0`，再輸出對應的 `showImage`，並在該句後補上同 code 的 `hideImage`。立繪位置使用共用語意槽，不得在 IR、scene 或 floor 逐句寫入 `loc`／`sloc`；非對話的 CG、GIF、多圖演出仍可使用明確的 `image.show`／`image.hide`，其 portrait 共通欄位同樣由 generator 統一設定。
+
 驗證至少要確認主線與角色支線 Story IR 的來源 SHA-256、schema、素材／跳轉註冊及 floor round-trip，並確認 `width === 17`、`height === 13`、`map.length === 13`，且每列長度皆為 17。
 
 AVG 故事劇情、章節劇情、場景演出一律寫在 `eachArrive`。`firstArrive` 目前不要放故事，只保留給未來明確需要整個存檔只執行一次的指導規則或初始化功能。

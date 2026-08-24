@@ -85,13 +85,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -101,26 +99,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_smile.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_smile.png"
         },
         {
           "kind": "layout.set",
@@ -188,13 +178,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -204,26 +192,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 10,
-          "image": "keng_panic_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "keng_panic_portrait.png"
         },
         {
           "kind": "layout.set",
@@ -291,55 +271,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嚇了我一大跳!什麼東西啊!"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "嚇了我一大跳!什麼東西啊!",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -407,84 +364,46 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "啊...是店員嗎?嚇死我了超級大聲"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "啊...是店員嗎?嚇死我了超級大聲",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不是這麼小的身體是怎麼吼那麼大聲出來的"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "不是這麼小的身體是怎麼吼那麼大聲出來的",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_normal.png"
         },
         {
           "kind": "layout.set",
@@ -552,71 +471,39 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不行啊梗平，居然被區區小鬼的音量嚇到了，這可不像你啊"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "不行啊梗平，居然被區區小鬼的音量嚇到了，這可不像你啊",
+          "portrait": {
+            "code": 10,
+            "image": "keng_angry_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "區區大聲，我也是能做到的!"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "區區大聲，我也是能做到的!",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -626,26 +513,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "keng_neutral_portrait.png"
         },
         {
           "kind": "layout.set",
@@ -684,31 +563,21 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_panic_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不要小看大人啊!!!"
+          "text": "不要小看大人啊!!!",
+          "portrait": {
+            "code": 10,
+            "image": "keng_panic_portrait.png"
+          }
         },
         {
           "kind": "layout.set",
@@ -742,129 +611,72 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_panic.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "客人請不要擋在路中間"
+          "text": "客人請不要擋在路中間",
+          "portrait": {
+            "code": 20,
+            "image": "idw_panic.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "可惡，這是什麼強度"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "可惡，這是什麼強度",
+          "portrait": {
+            "code": 10,
+            "image": "keng_angry_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "噪音力居然超過了53萬分貝!"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "噪音力居然超過了53萬分貝!",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "難道...死..."
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "難道...死...",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -874,13 +686,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -890,13 +700,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -965,13 +773,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -982,13 +788,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -999,42 +803,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "诶?可是也沒有其他客人啊"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "诶?可是也沒有其他客人啊",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1045,42 +832,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "啊...我是說看起來客人們也很喜歡這樣子啊"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "啊...我是說看起來客人們也很喜歡這樣子啊",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1090,13 +860,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1107,13 +875,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1123,42 +889,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_serious_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "對不起我錯了，我想吃飯(哭臉)"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "對不起我錯了，我想吃飯(哭臉)",
+          "portrait": {
+            "code": 10,
+            "image": "keng_serious_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1169,42 +918,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喔喔喔，老闆!"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "喔喔喔，老闆!",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1214,31 +946,21 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_panic_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "老闆啊啊啊啊啊"
+          "text": "老闆啊啊啊啊啊",
+          "portrait": {
+            "code": 10,
+            "image": "keng_panic_portrait.png"
+          }
         },
         {
           "kind": "akiba.event.complete",
@@ -1328,13 +1050,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1344,55 +1064,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "今天我可是做好萬全準備才來的"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "今天我可是做好萬全準備才來的",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -1460,42 +1157,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗚喔！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "嗚喔！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1505,26 +1185,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -1592,55 +1264,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "才沒有！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "才沒有！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -1708,13 +1357,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -1724,26 +1371,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -1811,229 +1450,131 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "兒童餐"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "兒童餐",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "幹嘛"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "幹嘛",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "你不能點"
+          "text": "你不能點",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "為什麼！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "為什麼！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "兒童餐十二歲以下才能點！"
+          "text": "兒童餐十二歲以下才能點！",
+          "portrait": {
+            "code": 20,
+            "image": "idw_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我內心還是個孩子啊！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "我內心還是個孩子啊！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_angry.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_angry.png"
         },
         {
           "kind": "layout.set",
@@ -2101,55 +1642,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "哪裡不行！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "哪裡不行！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_angry_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_angry.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_angry.png"
         },
         {
           "kind": "layout.set",
@@ -2217,142 +1735,79 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "太失禮了吧！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "太失禮了吧！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_angry_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "而且妳有資格說我嗎！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "而且妳有資格說我嗎！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "？"
+          "text": "？",
+          "portrait": {
+            "code": 20,
+            "image": "idw_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳看起來才最像兒童吧！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "妳看起來才最像兒童吧！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -2420,113 +1875,65 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那妳幾歲？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那妳幾歲？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "怎樣"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "怎樣",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -2594,42 +2001,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這種事情可以不知道嗎！？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "這種事情可以不知道嗎！？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -2639,13 +2029,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -2656,71 +2044,39 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "老闆！你來評評理！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "老闆！你來評評理！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "她憑什麼不讓我點兒童餐！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "她憑什麼不讓我點兒童餐！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -2731,71 +2087,39 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "你至少猶豫一下吧"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "你至少猶豫一下吧",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -2806,42 +2130,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "可惡……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "可惡……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_angry_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -2851,13 +2158,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -2867,171 +2172,93 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等等"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "等等",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那這個呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那這個呢？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "什麼？"
+          "text": "什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "idw_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "「親子分享餐」"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "「親子分享餐」",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這個沒有寫年齡限制"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "這個沒有寫年齡限制",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -3099,55 +2326,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "所以我可以點吧！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "所以我可以點吧！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -3215,113 +2419,65 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那妳一起吃不就好了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那妳一起吃不就好了",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "我？可是我是店員"
+          "text": "我？可是我是店員",
+          "portrait": {
+            "code": 20,
+            "image": "idw_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "店員就不能吃東西嗎？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "店員就不能吃東西嗎？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -3389,42 +2545,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那不就好了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那不就好了",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -3434,26 +2573,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -3521,13 +2652,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -3538,26 +2667,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -3625,13 +2746,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -3642,26 +2761,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -3729,13 +2840,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -3746,26 +2855,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -3833,13 +2934,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -3849,55 +2948,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喔喔……這就是傳說中的兒童餐玩具嗎"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "喔喔……這就是傳說中的兒童餐玩具嗎",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -3965,55 +3041,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "給我"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "給我",
+          "portrait": {
+            "code": 10,
+            "image": "keng_angry_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_panic.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_panic.png"
         },
         {
           "kind": "layout.set",
@@ -4081,55 +3134,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我出的錢耶！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "我出的錢耶！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -4197,42 +3227,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "明明是我的！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "明明是我的！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4242,26 +3255,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "keng_angry_portrait.png"
         },
         {
           "kind": "layout.set",
@@ -4300,31 +3305,21 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "不————要————！"
+          "text": "不————要————！",
+          "portrait": {
+            "code": 20,
+            "image": "idw_surprised.png"
+          }
         },
         {
           "kind": "layout.set",
@@ -4358,13 +3353,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4375,13 +3368,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4391,13 +3382,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4408,71 +3397,44 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗯？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "嗯？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "？"
+          "text": "？",
+          "portrait": {
+            "code": 20,
+            "image": "idw_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4568,13 +3530,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4584,42 +3544,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "吃太飽了……稍微繞個路好了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "吃太飽了……稍微繞個路好了",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4629,100 +3572,63 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那不是IDW嗎？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那不是IDW嗎？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -4732,55 +3638,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喂"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "喂",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -4848,113 +3731,65 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳在這裡幹嘛？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "妳在這裡幹嘛？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "買東西？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "買東西？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -5022,55 +3857,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "東西呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "東西呢？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -5138,55 +3950,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "店在哪？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "店在哪？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -5254,84 +4043,46 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳迷路了吧"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "妳迷路了吧",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -5399,171 +4150,98 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "可是你為什麼站在路中央"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "可是你為什麼站在路中央",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "走丟的話不可以亂跑!"
+          "text": "走丟的話不可以亂跑!",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "也不是說站在路中央啊，誰教妳的？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "也不是說站在路中央啊，誰教妳的？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "隊長"
+          "text": "隊長",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "隊長？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "隊長？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_normal.png"
         },
         {
           "kind": "layout.set",
@@ -5631,129 +4309,77 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "什麼隊長？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "什麼隊長？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "隊長就是隊長啊"
+          "text": "隊長就是隊長啊",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我知道「隊長」這個詞是什麼意思！我是問妳以前到底在幹嘛！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "我知道「隊長」這個詞是什麼意思！我是問妳以前到底在幹嘛！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -5763,13 +4389,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -5779,129 +4403,77 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "幹嘛？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "幹嘛？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "迷路之後要待在原地"
+          "text": "迷路之後要待在原地",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗯？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "嗯？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "然後——"
+          "text": "然後——",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -5911,71 +4483,39 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等等"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "等等",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳該不會——"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "妳該不會——",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -5985,26 +4525,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -6072,42 +4604,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_panic_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "耳朵啊啊啊啊啊！！！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "耳朵啊啊啊啊啊！！！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_panic_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -6117,13 +4632,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -6134,55 +4647,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳幹嘛突然叫啊！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "妳幹嘛突然叫啊！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -6250,403 +4740,235 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "誰會用這種方式找人啊！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "誰會用這種方式找人啊！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "隊長會"
+          "text": "隊長會",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "以前說好的"
+          "text": "以前說好的",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "如果走散了，就待在原地"
+          "text": "如果走散了，就待在原地",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "只要一直發出聲音"
+          "text": "只要一直發出聲音",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "隊長就會找到我"
+          "text": "隊長就會找到我",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "多久以前？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "多久以前？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "很久以前"
+          "text": "很久以前",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那個隊長現在在哪？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那個隊長現在在哪？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "不知道"
+          "text": "不知道",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -6714,55 +5036,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳現在又不是在找那個隊長！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "妳現在又不是在找那個隊長！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -6830,42 +5129,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這是可以習慣的事情嗎！？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "這是可以習慣的事情嗎！？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -6875,71 +5157,39 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "算了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "算了",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "你是要回家庭餐廳吧，我帶你回去吧"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "你是要回家庭餐廳吧，我帶你回去吧",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -6949,26 +5199,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -7036,55 +5278,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "是我找到的！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "是我找到的！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -7152,42 +5371,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "哪裡一樣！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "哪裡一樣！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7197,13 +5399,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7213,60 +5413,35 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "隊長嗎"
+          "text": "隊長嗎",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "akiba.event.complete",
@@ -7356,13 +5531,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7372,13 +5545,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7388,71 +5559,39 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "雨也太大了吧……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "雨也太大了吧……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這樣到底要怎麼回去"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "這樣到底要怎麼回去",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7463,42 +5602,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "老闆……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "老闆……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7509,42 +5631,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "你偶爾也會說人話嘛"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "你偶爾也會說人話嘛",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7555,42 +5660,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_serious_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "對不起"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "對不起",
+          "portrait": {
+            "code": 10,
+            "image": "keng_serious_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7600,13 +5688,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7616,13 +5702,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7632,13 +5716,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7648,26 +5730,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -7735,13 +5809,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -7751,113 +5823,65 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "怎麼了？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "怎麼了？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_panic_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "怕打雷？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "怕打雷？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_panic_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_panic.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_panic.png"
         },
         {
           "kind": "layout.set",
@@ -7925,55 +5949,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳尾巴都炸開了耶"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "妳尾巴都炸開了耶",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -8041,42 +6042,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "哪裡正常"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "哪裡正常",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -8086,13 +6070,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -8102,26 +6084,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -8189,13 +6163,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -8205,245 +6177,143 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喂？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "喂？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_panic_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "真的怕成這樣？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "真的怕成這樣？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_panic_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "不是"
+          "text": "不是",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那是怎樣"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那是怎樣",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "這個聲音很像"
+          "text": "這個聲音很像",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "像什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "像什麼？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -8453,448 +6323,271 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "以前的聲音"
+          "text": "以前的聲音",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "以前？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "以前？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "很大的聲音"
+          "text": "很大的聲音",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "地面會震"
+          "text": "地面會震",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "到處都是煙"
+          "text": "到處都是煙",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "什麼都看不到"
+          "text": "什麼都看不到",
+          "portrait": {
+            "code": 20,
+            "image": "idw_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_panic.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "隊長叫我們不要停"
+          "text": "隊長叫我們不要停",
+          "portrait": {
+            "code": 20,
+            "image": "idw_panic.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "一直往前跑"
+          "text": "一直往前跑",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_panic.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "如果有人不見了也不要回頭"
+          "text": "如果有人不見了也不要回頭",
+          "portrait": {
+            "code": 20,
+            "image": "idw_panic.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等一下"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "等一下",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這是什麼任務啊？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "這是什麼任務啊？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "任務就是任務"
+          "text": "任務就是任務",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那後來呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那後來呢？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -8904,606 +6597,353 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "後來摔下去了"
+          "text": "後來摔下去了",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "摔下去？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "摔下去？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "醒來之後就只剩我一個"
+          "text": "醒來之後就只剩我一個",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "所以我就喊"
+          "text": "所以我就喊",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "一直喊"
+          "text": "一直喊",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "有人回來嗎？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "有人回來嗎？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "……"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "可能沒聽見吧"
+          "text": "可能沒聽見吧",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_angry.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "那裡很吵"
+          "text": "那裡很吵",
+          "portrait": {
+            "code": 20,
+            "image": "idw_angry.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_sad.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "所以我的聲音還不夠大"
+          "text": "所以我的聲音還不夠大",
+          "portrait": {
+            "code": 20,
+            "image": "idw_sad.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "如果再大聲一點的話——"
+          "text": "如果再大聲一點的話——",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "……",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "算了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "算了",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "什麼？"
+          "text": "什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "idw_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我是說"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "我是說",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "如果妳下次又迷路"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "如果妳下次又迷路",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "嗯"
+          "text": "嗯",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_panic_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不要在那邊亂叫"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "不要在那邊亂叫",
+          "portrait": {
+            "code": 10,
+            "image": "keng_panic_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -9571,55 +7011,32 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_angry_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "打電話給我"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "打電話給我",
+          "portrait": {
+            "code": 10,
+            "image": "keng_angry_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -9687,113 +7104,65 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "哪裡快了！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "哪裡快了！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "上次你不就找到我了！"
+          "text": "上次你不就找到我了！",
+          "portrait": {
+            "code": 20,
+            "image": "idw_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那是因為我剛好經過！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "那是因為我剛好經過！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -9861,42 +7230,25 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "完全不是因果關係！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "完全不是因果關係！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -9906,158 +7258,96 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "那兩個都做"
+          "text": "那兩個都做",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_surprised_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "什麼？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "先打電話"
+          "text": "先打電話",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "然後大聲喊你"
+          "text": "然後大聲喊你",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_panic_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不要！！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "不要！！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_panic_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
@@ -10067,26 +7357,18 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.show",
           "role": "portrait",
           "code": 20,
-          "image": "idw_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
+          "image": "idw_surprised.png"
         },
         {
           "kind": "layout.set",
@@ -10125,60 +7407,35 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "IDW!"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "IDW!",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 20,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "idw_normal.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "IDW",
-          "text": "打喵!"
+          "text": "打喵!",
+          "portrait": {
+            "code": 20,
+            "image": "idw_normal.png"
+          }
         },
         {
           "kind": "layout.set",

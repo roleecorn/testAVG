@@ -209,6 +209,33 @@ function isStoryIrOnlyCommonFieldReorganization(changedIr, previousCanonical) {
   return isDeepStrictEqual(previousCanonical, currentStoryIrCanonical());
 }
 
+function hasDirectPortraitDialogue(nodes) {
+  const portraitCodes = new Set([10, 11, 12, 20]);
+  for (let index = 0; index < (nodes || []).length; index += 1) {
+    const node = nodes[index];
+    if (node.kind === "image.show" && (node.role === "portrait" || portraitCodes.has(node.code)) && nodes[index + 1]?.kind === "dialogue") {
+      return true;
+    }
+    if (node.kind === "choice" && node.options.some((option) => hasDirectPortraitDialogue(option.events))) return true;
+  }
+  return false;
+}
+
+function hasDialoguePortrait(nodes) {
+  for (const node of nodes || []) {
+    if (node.kind === "dialogue" && node.portrait) return true;
+    if (node.kind === "choice" && node.options.some((option) => hasDialoguePortrait(option.events))) return true;
+  }
+  return false;
+}
+
+function isPortraitLifecycleReorganization(changedIr) {
+  if (!changedIr.length || changedIr.some((file) => !file.startsWith("project/story-ir/"))) return false;
+  const bundles = managedBundles();
+  return bundles.every((bundle) => bundle.scenes.every((scene) => !hasDirectPortraitDialogue(scene.events)))
+    && bundles.some((bundle) => bundle.scenes.some((scene) => hasDialoguePortrait(scene.events)));
+}
+
 function validateTransactions(changed, ownership) {
   const current = currentFloorMap();
   const previous = headFloorMap();
@@ -222,7 +249,8 @@ function validateTransactions(changed, ownership) {
   const changedIr = [...changed].filter((file) => matchesAny(file, ownership.storyIr.paths));
 
   const storyIrOnlyCommonFieldReorganization = isStoryIrOnlyCommonFieldReorganization(changedIr, headStoryIrCanonical());
-  if (changedIr.length && !expected.size && !storyIrOnlyCommonFieldReorganization) {
+  const portraitLifecycleReorganization = isPortraitLifecycleReorganization(changedIr);
+  if (changedIr.length && !expected.size && !storyIrOnlyCommonFieldReorganization && !portraitLifecycleReorganization) {
     throw new Error(`Story IR changed without a derived floor change: ${changedIr.join(", ")}`);
   }
   for (const file of expected) {

@@ -6,6 +6,9 @@ const STORY_IR_VERSION = 1;
 const AVG_MAP_WIDTH = 17;
 const AVG_MAP_HEIGHT = 13;
 const PORTRAIT_CODES = new Set([10, 11, 12, 20]);
+const PORTRAIT_OPACITY = 1;
+const PORTRAIT_TIME = 0;
+const PORTRAIT_OUTPUT_COMPAT_FILE = path.join(__dirname, "portrait-output-compat.json");
 const DEFAULT_AVG_LAYOUT = Object.freeze({
   kind: "layout.set",
   value: {
@@ -50,7 +53,19 @@ function cleanUndefined(value) {
     .map(([key, child]) => [key, cleanUndefined(child)]));
 }
 
-function irToEvent(node) {
+let portraitOutputCompat;
+
+function readPortraitOutputCompat() {
+  if (portraitOutputCompat !== undefined) return portraitOutputCompat;
+  portraitOutputCompat = JSON.parse(fs.readFileSync(PORTRAIT_OUTPUT_COMPAT_FILE, "utf8"));
+  if (portraitOutputCompat.version !== 1 || !Array.isArray(portraitOutputCompat.omitCommonFieldsForScenes)) {
+    throw new Error("Invalid portrait output compatibility metadata");
+  }
+  return portraitOutputCompat;
+}
+
+function irToEvent(node, options = {}) {
+  const includePortraitCommonFields = options.portraitCommonFields !== false;
   switch (node.kind) {
     case "narration":
     case "dialogue": {
@@ -76,10 +91,19 @@ function irToEvent(node) {
         loc: node.role === "portrait" || node.code === 10 || node.code === 11 || node.code === 12 || node.code === 20
           ? ["portraitSpeakerX", "portraitSpeakerY"]
           : node.loc,
-        opacity: node.opacity,
-        time: node.time,
+        opacity: isPortraitShow(node)
+          ? (includePortraitCommonFields ? PORTRAIT_OPACITY : undefined)
+          : node.opacity,
+        time: isPortraitShow(node)
+          ? (includePortraitCommonFields ? PORTRAIT_TIME : undefined)
+          : node.time,
       });
-    case "image.hide": return cleanUndefined({ type: "hideImage", code: node.code, time: node.time, async: node.async });
+    case "image.hide": return cleanUndefined({
+      type: "hideImage",
+      code: node.code,
+      time: PORTRAIT_CODES.has(node.code) ? PORTRAIT_TIME : node.time,
+      async: node.async,
+    });
     case "wait": return cleanUndefined({ type: "sleep", time: node.time, noSkip: node.noSkip });
     case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time, silent: true });
     case "comment": return { type: "comment", text: node.text };
@@ -95,7 +119,7 @@ function irToEvent(node) {
           text: option.text,
           color: option.color,
           need: option.need,
-          action: option.events.map(irToEvent),
+          action: irToEvents(option.events, {}, options),
         })),
       });
     default: throw new Error(`Unsupported Story IR kind: ${node.kind || "(missing kind)"}`);
@@ -128,7 +152,7 @@ function transitionEvent(node, transition) {
   };
 }
 
-function irToEvents(nodes, transitions = {}) {
+function irToEvents(nodes, transitions = {}, options = {}) {
   const events = [];
   for (let index = 0; index < nodes.length; index += 1) {
     const node = nodes[index];
@@ -140,7 +164,7 @@ function irToEvents(nodes, transitions = {}) {
           text: option.text,
           color: option.color,
           need: option.need,
-          action: irToEvents(option.events, transitions),
+          action: irToEvents(option.events, transitions, options),
         })),
       }));
       continue;
@@ -154,7 +178,7 @@ function irToEvents(nodes, transitions = {}) {
       if (transition.kind === "clock") continue;
       const next = nodes[index + 1];
       if (next && next.kind === "background.show") {
-        events.push(irToEvent(next));
+        events.push(irToEvent(next, options));
         index += 1;
       }
       events.push(cleanUndefined({
@@ -165,7 +189,7 @@ function irToEvents(nodes, transitions = {}) {
       continue;
     }
 
-    events.push(irToEvent(node));
+    events.push(irToEvent(node, options));
   }
   return events;
 }
@@ -214,6 +238,19 @@ function normalizePortraitLifecycle(events) {
     }
 
     if (node.kind === "narration") hideVisiblePortraits();
+    if (node.kind === "dialogue" && node.portrait) {
+      const portrait = {
+        kind: "image.show",
+        role: "portrait",
+        code: node.portrait.code,
+        image: node.portrait.image,
+        expression: node.portrait.expression,
+        opacity: PORTRAIT_OPACITY,
+        time: PORTRAIT_TIME,
+      };
+      normalized.push(portrait);
+      visiblePortraitCodes.add(portrait.code);
+    }
     normalized.push(node);
     if (node.kind === "dialogue") hideVisiblePortraits();
   }
@@ -280,6 +317,20 @@ function validateNode(node, location) {
     throw new Error(`${location}: bracketed scene directive must not be player-visible text`);
   }
   if (node.kind === "dialogue" && typeof node.speaker !== "string") throw new Error(`${location}: dialogue.speaker must be a string`);
+  if (node.kind === "dialogue" && node.portrait !== undefined) {
+    if (!node.portrait || typeof node.portrait !== "object" || Array.isArray(node.portrait)) {
+      throw new Error(`${location}: dialogue.portrait must be an object`);
+    }
+    if (typeof node.portrait.code !== "number" || typeof node.portrait.image !== "string") {
+      throw new Error(`${location}: dialogue.portrait requires numeric code and image`);
+    }
+    if (node.portrait.expression !== undefined && typeof node.portrait.expression !== "string") {
+      throw new Error(`${location}: dialogue.portrait.expression must be a string when provided`);
+    }
+    if (node.portrait.opacity !== undefined || node.portrait.time !== undefined) {
+      throw new Error(`${location}: dialogue.portrait opacity/time are generator-owned common fields`);
+    }
+  }
   if (node.kind === "dialogue" && /【[^】]*】/.test(node.speaker)) {
     throw new Error(`${location}: bracketed scene directive must not be a dialogue speaker`);
   }
@@ -372,7 +423,21 @@ function floorWithCommonFields(floor) {
   return result;
 }
 
-function validateBundle(bundle, { allowGeneratorOwnedFields = true } = {}) {
+function validatePortraitPositionFields(node, location, allowPortraitPosition) {
+  if (!allowPortraitPosition && isPortraitShow(node) && (node.loc !== undefined || node.sloc !== undefined)) {
+    throw new Error(`${location}: portrait position is generator-owned and must not be stored in Story IR`);
+  }
+  if (!allowPortraitPosition && isPortraitShow(node) && (node.opacity !== undefined || node.time !== undefined)) {
+    throw new Error(`${location}: portrait opacity/time are generator-owned common fields`);
+  }
+  if (node.kind === "choice") {
+    node.options.forEach((option, optionIndex) => option.events.forEach((child, childIndex) => {
+      validatePortraitPositionFields(child, `${location}.options[${optionIndex}].events[${childIndex}]`, allowPortraitPosition);
+    }));
+  }
+}
+
+function validateBundle(bundle, { allowGeneratorOwnedFields = true, allowPortraitPosition = true } = {}) {
   if (!bundle || bundle.storyIrVersion !== STORY_IR_VERSION) throw new Error(`Story IR version must be ${STORY_IR_VERSION}`);
   if (!bundle.source || !Array.isArray(bundle.source.files) || !bundle.source.files.length) throw new Error("Story IR requires source.files");
   if (!Array.isArray(bundle.scenes) || !bundle.scenes.length) throw new Error("Story IR requires scenes");
@@ -389,6 +454,11 @@ function validateBundle(bundle, { allowGeneratorOwnedFields = true } = {}) {
     }
     validateAvgFloorDimensions(scene.floor, `scenes[${index}].floor`);
     scene.events.forEach((node, nodeIndex) => validateNode(node, `scenes[${index}].events[${nodeIndex}]`));
+    scene.events.forEach((node, nodeIndex) => validatePortraitPositionFields(
+      node,
+      `scenes[${index}].events[${nodeIndex}]`,
+      allowPortraitPosition,
+    ));
     if (bundle.source.kind === "character") validateCharacterSceneLifecycle(scene, `scenes[${index}]`);
   });
   return bundle;
@@ -441,14 +511,22 @@ function validateProjectReferences(root, bundle) {
 function bundleToFloors(bundle) {
   validateBundle(bundle);
   const transitions = COMMON_PRESENTATION.transitions;
+  const outputCompat = readPortraitOutputCompat();
   return bundle.scenes.map((scene) => ({
     ...floorWithCommonFields(scene.floor),
-    eachArrive: irToEvents(ensureAvgLayout(normalizeBgmLifecycle(normalizePortraitLifecycle(scene.events))), transitions),
+    eachArrive: irToEvents(
+      ensureAvgLayout(normalizeBgmLifecycle(normalizePortraitLifecycle(scene.events))),
+      transitions,
+      { portraitCommonFields: !outputCompat.omitCommonFieldsForScenes.includes(scene.id) },
+    ),
   }));
 }
 
 function readBundle(file) {
-  return validateBundle(JSON.parse(fs.readFileSync(file, "utf8")), { allowGeneratorOwnedFields: false });
+  return validateBundle(JSON.parse(fs.readFileSync(file, "utf8")), {
+    allowGeneratorOwnedFields: false,
+    allowPortraitPosition: false,
+  });
 }
 
 module.exports = { bundleToFloors, floorWithCommonFields, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences };

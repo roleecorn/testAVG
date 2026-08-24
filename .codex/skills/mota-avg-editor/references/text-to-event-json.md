@@ -95,7 +95,7 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 | `kind` | 必要欄位 | 說明 |
 | --- | --- | --- |
 | `narration` | `text` | 玩家可見旁白 |
-| `dialogue` | `speaker`, `text` | 角色台詞；`portrait` 可選 |
+| `dialogue` | `speaker`, `text` | 角色台詞；文字特效放在 `presentation`，人物情緒／圖片選擇放在 `portrait`，不放位置或生命周期 |
 | `layout.set` | `value` | 共用對話框樣式與 AVG 版面 |
 | `bgm.play` | `name` | 播放背景音樂；`keep` 可選，若存在須在正規化階段解析完成 |
 | `bgm.pause` | 無 | 暫停目前 BGM |
@@ -103,7 +103,7 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 | `sound.play` | `name` | 播放音效；`stop`、`pitch`、`sync` 可選 |
 | `sound.stop` | 無 | 停止音效 |
 | `background.show` | `code`, `image` | 顯示或切換背景 |
-| `image.show` | `code`, `image`, `role` | 顯示立繪、CG 或 GIF；位置已在正規化層解析成語意槽位或明確座標 |
+| `image.show` | `code`, `image`, `role` | 顯示非普通對話綁定的立繪、CG 或 GIF；普通台詞立繪由 generator 自動補入 |
 | `image.hide` | `code` | 隱藏指定圖片層 |
 | `wait` | `time` | 等待；`noSkip` 可選 |
 | `choice` | `prompt`, `options` | 選項與分支 |
@@ -112,6 +112,24 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 | `function.call` | `function` | 既有引擎函式事件；必須是明確程式碼字串，不得由 emitter 猜測 |
 | `transition.video` | 無 | 播放轉場影片 |
 | `unresolved.directive` | `text`, `reason` | 尚未解析的製作指令；此節點必須讓驗證失敗，禁止輸出 floor |
+
+普通立繪台詞的 Story IR 例：
+
+```json
+{
+  "kind": "dialogue",
+  "speaker": "東山",
+  "text": "這句保留文字特效與原文內容",
+  "presentation": { "textfont": 18 },
+  "portrait": {
+    "code": 20,
+    "image": "dongshan_surprised.png",
+    "expression": "surprised"
+  }
+}
+```
+
+`portrait` 是情緒／圖片選擇的語意資料；`opacity` 固定為 `1`、展示 `time` 固定為 `0`，由 generator 統一補入。`loc`、`sloc`、`image.show` 與 `image.hide` 不屬於普通台詞 IR。generator 會把它呈現為 `showImage → dialogue → hideImage`，並將位置解析為共用發言者語意槽。
 
 未知 `kind`、缺少必要欄位、無法解析的素材名稱、未登錄或不存在的圖片／BGM／音效、失效跳轉、來源 SHA-256 不符與任何 `unresolved.directive` 都必須讓共用驗證失敗。相同 Story IR 無論來自主線或角色支線，都必須產生語意等價的引擎事件。
 
@@ -178,7 +196,7 @@ node scripts/validate_story.js
 11. 明確音訊 DSL 支援 `使用BGM`／`播放BGM`（無名稱時使用 Agent 在完整場景語意翻譯後選定的場景 BGM）、`使用BGM：<已登錄檔名或別名>`、`BGM暫停`、`恢復BGM`、`播放音效：<已登錄檔名或別名>` 與 `停止音效`。Agent 將 BGM 與音效分別翻譯成 `bgm.*` 與 `sound.*`，不可共用一種 audio 節點；只有「播放音效」而無可唯一解析名稱時必須失敗。
 12. 主線來源更新若改變素材首次出現的行號，先通過「主線行數位址素材改名閘門」：所有受影響 `CH<N>_L<N>` 都已依新首次實體行號改名，且所有後續相同素材都重用首次檔案並完成引用鏈驗證，才可重新產生 IR／floor。
 
-新版主線與支線必須由同一份全局 AVG layout config 與同一個 Story IR emitter 產生「單一當前發言者－下方對話框」配置。544×416 畫布的下方對話框基準為 `x=16, y=295, width=512, fixedLines=2`，不可退回舊的 `x=96, width=352` 窄框。runtime 以 alpha bbox 將人物可見內容左右置中，滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === portraitBottomY === 440`；所有立繪套用同一個全局 `portraitScale: 0.92`，人物下半身由 416px viewport 裁切，不得根據個別圖片寬高或 alpha bbox 計算各自縮放率。每句普通立繪台詞固定產生 `image.show(本句 code) → dialogue → image.hide(同一 code)`；hide 在該句結束後發生，不得清除本句未顯示的 code，也不得用跨句或跨分歧 active state 推算生命週期。分歧 option 必須各自遞迴套用同一規則。未來若加入最佳化，只能在完整事件生成後移除無中介事件且 code／image 相同的相鄰 `hide → show` 配對。
+新版主線與支線必須由同一份全局 AVG layout config 與同一個 Story IR emitter 產生「單一當前發言者－下方對話框」配置。544×416 畫布的下方對話框基準為 `x=16, y=295, width=512, fixedLines=2`，不可退回舊的 `x=96, width=352` 窄框。runtime 以 alpha bbox 將人物可見內容左右置中，滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === portraitBottomY === 440`；所有立繪套用同一個全局 `portraitScale: 0.92`，人物下半身由 416px viewport 裁切，不得根據個別圖片寬高或 alpha bbox 計算各自縮放率。Story IR 的普通對話保留發言者、內容／文字特效及 `portrait.expression` 等人物情緒與圖片選擇；生成器將這些資料產生為 `image.show(本句 code) → dialogue → image.hide(同一 code)`。立繪位置由 generator／runtime 的共用語意槽決定，IR 不得保存 `loc`／`sloc` 或普通對話的 show／hide。hide 在該句結束後發生，不得清除本句未顯示的 code，也不得用跨句或跨分歧 active state 推算生命週期。分歧 option 必須各自遞迴套用同一規則。
 
 字體大小演繹若需要放大或縮小，只能調整對話內文的 `textfont`；必須保留當前全局或場景既有的 `titlefont`，不得跟著內文倍率改動角色名稱標題。`layout.set` 的字體變更事件應明確保留原 `titlefont` 值，只替換 `textfont`。
 

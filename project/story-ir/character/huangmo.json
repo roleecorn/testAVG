@@ -80,26 +80,12 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
@@ -107,31 +93,16 @@
           "text": "每個月發行的親熱天堂，就算來了秋葉原還是得買的♪",
           "presentation": {
             "pos": "avg"
+          },
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
           }
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
@@ -139,18 +110,15 @@
           "text": "找到了!就剩下最後一本了!",
           "presentation": {
             "pos": "avg"
+          },
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
           }
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
         },
         {
@@ -163,26 +131,12 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 12,
-          "image": "huangmo_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
@@ -190,31 +144,21 @@
           "text": "咦?",
           "presentation": {
             "pos": "avg"
+          },
+          "portrait": {
+            "code": 12,
+            "image": "huangmo_surprised.png"
           }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
@@ -222,18 +166,15 @@
           "text": "在書店與美少女邂逅...真是美妙的展開，咦不過是黃書...",
           "presentation": {
             "pos": "avg"
+          },
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
           }
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
         },
         {
@@ -246,26 +187,12 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
@@ -273,13 +200,11 @@
           "text": "...不必逃得這麼快吧(垂頭喪氣)",
           "presentation": {
             "pos": "avg"
+          },
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -365,158 +290,81 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好了該吃飯了，今天就來這間餐廳吃飯吧，聽說炸蝦一絕。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "好了該吃飯了，今天就來這間餐廳吃飯吧，聽說炸蝦一絕。",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 12,
-          "image": "huangmo_smile.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "???",
-          "text": "您好，請問今天要來點什麼呢?"
-        },
-        {
-          "kind": "image.hide",
-          "code": 12,
-          "time": 0,
-          "async": true
+          "text": "您好，請問今天要來點什麼呢?",
+          "portrait": {
+            "code": 12,
+            "image": "huangmo_smile.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我要來點...咦?"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "我要來點...咦?",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 12,
-          "image": "huangmo_surprised.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "???",
-          "text": "啊..."
-        },
-        {
-          "kind": "image.hide",
-          "code": 12,
-          "time": 0,
-          "async": true
+          "text": "啊...",
+          "portrait": {
+            "code": 12,
+            "image": "huangmo_surprised.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "你就是上次嗚嗚嗚"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "你就是上次嗚嗚嗚",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
         },
         {
@@ -526,100 +374,53 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 12,
-          "image": "huangmo_angry.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "???",
-          "text": "不要亂說話。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 12,
-          "time": 0,
-          "async": true
+          "text": "不要亂說話。",
+          "portrait": {
+            "code": 12,
+            "image": "huangmo_angry.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 10,
-          "image": "keng_neutral_portrait.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗚嗚嗚(點頭)"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "time": 0,
-          "async": true
+          "text": "嗚嗚嗚(點頭)",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "image",
-          "code": 12,
-          "image": "huangmo_smile.png",
-          "loc": [
-            "portraitSpeakerX",
-            "portraitSpeakerY"
-          ],
-          "opacity": 1,
-          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "???",
-          "text": "客人您要來點什麼呢?(下班後再來說)"
-        },
-        {
-          "kind": "image.hide",
-          "code": 12,
-          "time": 0,
-          "async": true
+          "text": "客人您要來點什麼呢?(下班後再來說)",
+          "portrait": {
+            "code": 12,
+            "image": "huangmo_smile.png"
+          }
         },
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
@@ -629,13 +430,11 @@
         {
           "kind": "image.hide",
           "code": 10,
-          "time": 0,
           "async": true
         },
         {
           "kind": "image.hide",
           "code": 12,
-          "time": 0,
           "async": true
         },
         {

@@ -95,7 +95,7 @@ AI 產生內容時，優先產生「可貼進事件 JSON 區」或「可直接�
 - 自然語言理解只存在 Agent 的語意翻譯／Story IR 建立階段。事件 emitter 不得重新猜測原文語意，也不得為了支援單一劇情指令在 emitter 中增加硬編碼語意；若 Story IR 無法表達某項演出，先更新共用 schema／runtime 能力或停止受影響範圍並落入 question／TODO，不能用 generator 特例取代語意 IR，也不能降級成玩家可見旁白或台詞。
 - 每個場景用一個樓層，或每個章節用一個樓層。
 - 全專案只有一套標準 AVG 版面，主線與角色支線都使用 `17x13`；兩者只在觸發方式與來源檔案位置不同。`map` 全部填 `0`，只保留一張背景圖和劇情事件。既有 13 格內容保留在左側，右側四格補 `0`。
-- 新版 AVG 固定只保留一個普通「當前發言者」人物槽。人物 alpha bbox 的可見內容左右置中於畫面，且可見 bottom 錨定在畫面外的 `portraitBottomY: 440`；人物圖層位於對話框 UI 後方，下半身延伸到對話框後並由 416px 畫面底部裁切。每句有立繪的台詞固定輸出 `showImage(本句人物 code) → dialogue → hideImage(同一 code)`，只隱藏本句實際顯示的圖片，不可預先或事後清空所有可能人物 code。旁白不額外清理人物，因為前一句立繪已在自己的 dialogue 結束時清除。
+- 新版 AVG 固定只保留一個普通「當前發言者」人物槽。人物 alpha bbox 的可見內容左右置中於畫面，且可見 bottom 錨定在畫面外的 `portraitBottomY: 440`；人物圖層位於對話框 UI 後方，下半身延伸到對話框後並由 416px 畫面底部裁切。Story IR 的普通台詞保存發言者、內容／文字特效及 `portrait.expression` 等人物情緒與圖片選擇；`opacity: 1` 與展示 `time: 0` 是 generator 的 portrait 共通預設。生成器將其自動輸出為 `showImage(本句人物 code) → dialogue → hideImage(同一 code)`，位置由共用語意槽與 runtime 決定。IR 不得保存普通對話的 `loc`／`sloc` 或 show／hide 節點。只隱藏本句實際顯示的圖片，不可預先或事後清空所有可能人物 code；旁白不額外清理人物，因為前一句立繪已在自己的 dialogue 結束時清除。
 - 人物以 alpha bbox 的可見內容為對齊基準，所有立繪統一套用全局 `portraitScale: 0.92`。標準取景讓一般全身素材的頭頂約落在畫面上緣 5–10%；alpha bbox 只影響左右置中與底邊對齊，不得依各圖寬高產生不同縮放率，因此素材原有的人物身高差會被保留。生成器不得維護跨句或跨分歧的 active portrait 狀態；若未來要消除同角色連續台詞的閃爍，只能在完整事件生成後，以確定性 post-pass 移除無中介事件且 code／image 相同的相鄰 `hide → show` 配對。
 - 主線與角色支線共用一份全局 layout config。已遷移的 1-1 使用單一人物語意槽、全局固定縮放與共用對齊規則；floor 只引用語意槽，不得寫死人物座標、尺寸或角色例外。其他 floor 在完成 runtime／emitter 遷移及遊戲內驗證前，不得宣稱新版面已生效。
 - 每個劇本地點都使用獨立背景檔名與精確 mapping。正式背景只替換該地點檔；`scene_street.png`、`scene_mapo_shop.png`、`scene_tournament.png` 等 generic 圖只可作為初始 placeholder 來源，不得因單一地點到件而覆寫。

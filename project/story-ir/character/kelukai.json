@@ -40,68 +40,40 @@
           "text": "換句話說，家裡是不會給他太多生活費。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……很好。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……很好。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "只要接下來幾天不吃午餐，應該可以活下去。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "只要接下來幾天不吃午餐，應該可以活下去。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "早餐讓親戚請，晚上吃員工餐，中午喝水。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "早餐讓親戚請，晚上吃員工餐，中午喝水。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "完美。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "完美。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -119,80 +91,52 @@
           "kind": "bgm.pause"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
           "text": "第一個念頭。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不關在下的事。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "不關在下的事。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
           "text": "第二個念頭。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "會有人處理的。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "會有人處理的。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
           "text": "第三個念頭。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "…………喂。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "…………喂。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -203,36 +147,22 @@
           "text": "沒有反應。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那個……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那個……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "你剛剛是不是拿了別人的東西？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "你剛剛是不是拿了別人的東西？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -240,72 +170,44 @@
           "text": "……"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "對不起，在下認錯人了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "對不起，在下認錯人了。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 41: 扒手朝梗平走來"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不是，等一下。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不是，等一下。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "在下都道歉了你為什麼還過來？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "在下都道歉了你為什麼還過來？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -317,20 +219,13 @@
           "keep": true
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "救命啊啊啊啊啊——！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "救命啊啊啊啊啊——！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -352,152 +247,89 @@
           "text": "source line 55: SE:大門被撞開"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "救、救命！後面那個人要殺在下！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "救、救命！後面那個人要殺在下！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "有武器？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "有武器？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不知道！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "不知道！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "有沒有同夥？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "有沒有同夥？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不知道！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "不知道！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "偷了多少？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "偷了多少？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下怎麼會知道啊！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "在下怎麼會知道啊！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 71: 可露凱立繪:嫌棄"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "嘖。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "嘖。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "為什麼妳比追在下的人還失望啊？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "為什麼妳比追在下的人還失望啊？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -513,464 +345,268 @@
           "keep": true
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "他跑了！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "他跑了！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "快追啊！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "快追啊！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "不用。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "不用。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不用！？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "不用！？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "監視器拍得到臉，附近巡邏的人會處理。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "監視器拍得到臉，附近巡邏的人會處理。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "可是他是小偷耶！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "可是他是小偷耶！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "你剛才說，他一路上看了好幾個人的包？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "你剛才說，他一路上看了好幾個人的包？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "對啊。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "對啊。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "大概四、五個吧，而且好像都拖著行李箱。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "大概四、五個吧，而且好像都拖著行李箱。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 96: 可露凱立繪:思考"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "固定挑外地人？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "應該吧。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "最近來秋葉原又拖行李的，多半是來參加Comike的吧。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "固定挑外地人？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "同一條街？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "應該吧。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "最近來秋葉原又拖行李的，多半是來參加Comike的吧。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "同一條街？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "差不多。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "差不多。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 107: 可露凱立繪:微笑"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……妳突然笑得很可怕。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "帶路。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……妳突然笑得很可怕。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "咦？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "帶路。"
+          "text": "如果只是單獨扒竊，交給巡邏員就行。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "不過固定在人潮區挑活動參加者下手，而且有接應，那就不一樣了。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "咦？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "因為比較嚴重？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "如果只是單獨扒竊，交給巡邏員就行。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "不過固定在人潮區挑活動參加者下手，而且有接應，那就不一樣了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "因為比較有價值。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "因為比較嚴重？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "什麼價值？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "因為比較有價值。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "太小的案子，不會記功。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "什麼價值？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "太小的案子，不會記功。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "…………?",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "…………?"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "警察可以這麼直接講嗎！？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "警察可以這麼直接講嗎！？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "不可以。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "不可以。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "所以你最好當作沒聽見。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "所以你最好當作沒聽見。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "narration",
           "text": "警察小姐直接拿槍指著梗平。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……救命。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "……救命。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -1032,448 +668,259 @@
           "text": "梗平再次被叫進了警察局。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下今天真的有打工喔。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "在下今天真的有打工喔。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "坐。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "坐。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "先說找在下幹嘛。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "先說找在下幹嘛。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 151: 可露凱把幾張照片丟到桌上"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "看。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "限定立牌、企業攤特典、活動毛巾……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這個是假的。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "看。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "哪裡？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "限定立牌、企業攤特典、活動毛巾……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "這個是假的。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "這角色根本沒有出過這版。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "哪裡？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "很好。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這角色根本沒有出過這版。"
+          "text": "等等。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "妳把在下叫來，是要鑑定周邊？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "很好。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "順便。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等等。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "妳把在下叫來，是要鑑定周邊？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "順便。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "那主要呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "那主要呢？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 172: 可露凱推過另一張監視器截圖"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "這個人。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "這個人。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不認識。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "不認識。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "包。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "包。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 180: 鏡頭拉近"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "前年的Comike限定袋。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "前年的Comike限定袋。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "會出現在什麼地方？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "會出現在什麼地方？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "二手店、活動場附近吧。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "二手店、活動場附近吧。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "也可能只是普通宅男。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "也可能只是普通宅男。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那就去看。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "那就去看。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下還要上班。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "在下還要上班。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "我跟你親戚說過了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "我跟你親戚說過了。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳為什麼可以擅自幫在下請假！？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "妳為什麼可以擅自幫在下請假！？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "她說可以。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "她說可以。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "叛徒!"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "叛徒!",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -1485,36 +932,22 @@
           "text": "又抓普通人來幫忙？"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "他免費。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "他免費。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "請不要用免費來介紹在下。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "請不要用免費來介紹在下。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1527,20 +960,13 @@
           "text": "她看我們也差不多。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "你很閒？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "你很閒？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1548,20 +974,13 @@
           "text": "我在工作。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那就去工作。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "那就去工作。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1573,100 +992,58 @@
           "text": "source line 220: 藍衣警察離開"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "他是妳下屬？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "他是妳下屬？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "嗯。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "嗯。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "感覺很不怕妳。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "感覺很不怕妳。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "因為記性不好。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "因為記性不好。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這跟怕不怕有什麼關係？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "這跟怕不怕有什麼關係？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "多被罵幾次就知道了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "多被罵幾次就知道了。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "comment",
@@ -1690,136 +1067,80 @@
           "text": "照片裡的男人真的出現在其中一間二手店後方。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "就是他？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "就是他？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "嗯。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "嗯。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "narration",
           "text": "學生交出手機與證件"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "連證件都收？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "連證件都收？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "看來是。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "看來是。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳不過去？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "妳不過去？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "等。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "等。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "等？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "接貨的人還沒來。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "接貨的人還沒來。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "narration",
@@ -1835,288 +1156,169 @@
           "text": "男人抓住學生手腕"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喂。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "喂。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "不要動。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "不要動。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "他被抓住了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "他被抓住了。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "看得到。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "看得到。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那妳還等？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "那妳還等？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "現在抓，只能抓一個。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "現在抓，只能抓一個。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那個學生呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "那個學生呢？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "死不了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "死不了。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這不是死不死的問題吧。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "這不是死不死的問題吧。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
           "text": "梗平準備離開"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "站著。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "站著。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下什麼都還沒做。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "在下什麼都還沒做。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "你的臉已經寫了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "你的臉已經寫了。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "寫什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "寫什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "「我要做蠢事」。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "「我要做蠢事」。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 289: 停頓:1秒"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "警察——！！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "警察——！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "narration",
           "text": "梗平衝了出去"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "警察來了！快跑！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "警察來了！快跑！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2124,20 +1326,13 @@
           "text": "你他媽——"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下是叫學生跑！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "在下是叫學生跑！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -2148,36 +1343,22 @@
           "text": "source line 305: SE:奔跑聲"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喔草真的追在下！？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_smile.png"
+          "text": "喔草真的追在下！？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "趴下。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "趴下。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_smile.png"
+          }
         },
         {
           "kind": "comment",
@@ -2188,380 +1369,219 @@
           "text": "下一秒，男人已經被可露凱壓在地上。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "好帥。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "好帥。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 318: 可露凱立繪:憤怒"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "閉嘴。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "閉嘴。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "我跟了兩個星期。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "我跟了兩個星期。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "可是人沒事。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "可是人沒事。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "接貨的人跑了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "接貨的人跑了。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "可是人沒事。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "可是人沒事。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "我本來可以抓更多。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "我本來可以抓更多。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "可是——"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "可是——",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 332: 可露凱拿槍指向梗平"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "好，不重複了。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好，不重複了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "不過在下真的想問。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不過在下真的想問。"
+          "text": "妳為什麼那麼想抓大的？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "抓一個收東西的，報告上就一行。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "抓到後面的，才會有人記得是誰做的。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳為什麼那麼想抓大的？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "所以還是為了升？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "抓一個收東西的，報告上就一行。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "抓到後面的，才會有人記得是誰做的。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "不然呢？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "所以還是為了升？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "比如正義感？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "不然呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "那是你的興趣。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "比如正義感？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那是你的興趣。"
+          "text": "走了。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "還要做筆錄。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "突然很想回去上班。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "走了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "還要做筆錄。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "突然很想回去上班。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "來不及了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "來不及了。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "comment",
@@ -2619,20 +1639,13 @@
           ]
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "我叫你盯入口。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "我叫你盯入口。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2640,20 +1653,13 @@
           "text": "我有盯啊。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "你閉著眼睛盯？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "你閉著眼睛盯？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2661,20 +1667,13 @@
           "text": "我只是眨眼比較久。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "三分鐘叫眨眼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "三分鐘叫眨眼？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2682,36 +1681,22 @@
           "text": "最近有點睡眠不足。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "那你現在回去睡。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那你現在回去睡。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "順便把辭呈寫好。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "順便把辭呈寫好。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2723,68 +1708,40 @@
           "text": "source line 384: 梗平從門口探頭"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "看什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "看什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒什麼。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "沒什麼。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "第一次看到有人比在下還常被妳罵。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "第一次看到有人比在下還常被妳罵。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2792,88 +1749,53 @@
           "text": "兄弟。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "辛苦了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "辛苦了。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "你們兩個要不要一起出去？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "你們兩個要不要一起出去？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下只是來補筆錄。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "在下只是來補筆錄。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那就去補。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "那就去補。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "narration",
           "text": "可露凱離開"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "她每天都這樣？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "她每天都這樣？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2881,20 +1803,13 @@
           "text": "差不多。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "你居然撐得下去。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "你居然撐得下去。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2902,20 +1817,13 @@
           "text": "習慣就好。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不想習慣。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "不想習慣。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2923,20 +1831,13 @@
           "text": "不過你也稍微體諒她一下吧。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "為什麼是在下要體諒她？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "為什麼是在下要體諒她？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2944,20 +1845,13 @@
           "text": "她以前是軍人，知道吧？"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不知道。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "不知道。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2970,20 +1864,13 @@
           "text": "她是被除名的。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……犯了什麼事？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "……犯了什麼事？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2996,20 +1883,13 @@
           "text": "她炸掉了一個很重要的目標。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "聽起來不是成功了嗎？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "聽起來不是成功了嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3022,20 +1902,13 @@
           "text": "問題是下面還有自己人。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3048,20 +1921,13 @@
           "text": "最後她一個人被踢出去。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "所以她才那麼想往上爬？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "所以她才那麼想往上爬？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3079,20 +1945,13 @@
           "text": "換成我，大概也會很想證明自己不是沒用。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3109,20 +1968,13 @@
           "text": "source line 452: SE:腳步聲"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "你們在聊什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "你們在聊什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3130,20 +1982,13 @@
           "text": "天氣。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "今天三十二度。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "今天三十二度。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3151,20 +1996,13 @@
           "text": "很熱。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "出去巡邏。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "出去巡邏。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3176,712 +2014,411 @@
           "text": "藍衣警察離開了"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "可露凱。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "可露凱。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "幹嘛。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "幹嘛。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "以前那個任務。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "以前那個任務。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 474: 停頓:1秒"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "他跟你講了？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "他跟你講了？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "一點。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "一點。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "嘴真大。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "嘴真大。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那次是上面逼妳做的？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "那次是上面逼妳做的？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "不是。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "不是。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "咦？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "咦？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "是我按的。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "是我按的。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳知道下面還有人？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "妳知道下面還有人？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "知道可能有。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "知道可能有。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那為什麼還按？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "那為什麼還按？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "目標快跑了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "目標快跑了。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "就這樣？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_angry.png"
+          "text": "就這樣？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "還有。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "還有。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_angry.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 502: 可露凱立繪:平靜"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那是我第一次有機會把一場大行動變成自己的功勞。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "那是我第一次有機會把一場大行動變成自己的功勞。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "所有人都在等結果。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "所有人都在等結果。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "我按下去。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "我按下去。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "目標被摧毀。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "目標被摧毀。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "任務成功。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "任務成功。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳當時……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "妳當時……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "我當時覺得自己做得很好。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "我當時覺得自己做得很好。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "我以為下一步就是表揚。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "我以為下一步就是表揚。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "再來就是升遷。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "再來就是升遷。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那下面的人呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "那下面的人呢？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "當時沒想那麼多。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "當時沒想那麼多。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "藍衣還叫在下體諒妳。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "藍衣還叫在下體諒妳。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "他不知道。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "他不知道。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下現在也不知道該不該體諒妳。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "在下現在也不知道該不該體諒妳。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那就不要。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "那就不要。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 534: 可露凱拿起文件"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "還有問題？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "還有問題？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "有。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "有。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "問。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "問。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳現在還覺得那次做得對嗎？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "妳現在還覺得那次做得對嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 544: 停頓:1秒"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "我覺得我當時太早把自己當成英雄。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "我覺得我當時太早把自己當成英雄。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "不是叫你擺那張臉。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "不是叫你擺那張臉。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "在下只是突然覺得……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下只是突然覺得……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "妳拿槍指在下好像也沒那麼奇怪了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "妳拿槍指在下好像也沒那麼奇怪了。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
           "text": "可露凱拿槍指著梗平"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "對，就是這個。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "對，就是這個。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -3939,20 +2476,13 @@
           "text": "還有人活著。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "目標呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "目標呢？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3960,20 +2490,13 @@
           "text": "快離開區域了。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那就打。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "那就打。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3981,36 +2504,22 @@
           "text": "要不要再請示一次？"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "來不及。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "來不及。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "這次算我的。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "這次算我的。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "comment",
@@ -4085,20 +2594,13 @@
           "text": "這個要怎麼處理？"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "comment",
@@ -4115,20 +2617,13 @@
           "text": "最近有個男人一直在店門口等她。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "有動手？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "有動手？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4136,20 +2631,13 @@
           "text": "沒有。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "威脅？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "威脅？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4157,20 +2645,13 @@
           "text": "也沒有。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "財物損失？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "財物損失？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4178,20 +2659,13 @@
           "text": "沒有。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那你拿給我幹嘛？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "那你拿給我幹嘛？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4199,20 +2673,13 @@
           "text": "因為她說很害怕啊。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "你去。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "你去。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4220,84 +2687,49 @@
           "text": "我還有別的事。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "那就做完再去。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那就做完再去。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "你看什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "你看什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "沒什麼。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒什麼。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "只是在下第一次看到有人把工作推給上司還這麼理直氣壯。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "只是在下第一次看到有人把工作推給上司還這麼理直氣壯。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4305,20 +2737,13 @@
           "text": "這叫合理分工。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "這叫找死。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "這叫找死。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4331,20 +2756,13 @@
           "text": "那我晚點——"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "等一下。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "等一下。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4352,40 +2770,26 @@
           "text": "？"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "紀錄給我。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "紀錄給我。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 650: 可露凱重新拿起紀錄"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "「每天都在店門口」是幾天？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "「每天都在店門口」是幾天？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4393,20 +2797,13 @@
           "text": "不知道。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "「跟著她走」是跟多遠？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "「跟著她走」是跟多遠？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4414,20 +2811,13 @@
           "text": "也不知道。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "對方知道她住哪？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "對方知道她住哪？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4435,20 +2825,13 @@
           "text": "……"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "你到底問了什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "你到底問了什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4456,20 +2839,13 @@
           "text": "她很害怕。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "這句是她自己說的。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "這句是她自己說的。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4477,40 +2853,26 @@
           "text": "對。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 674: 可露凱起身"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "走。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "走。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4518,68 +2880,40 @@
           "text": "去哪？"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "把你漏掉的東西問完。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "把你漏掉的東西問完。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下呢？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "在下呢？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "你不是很閒？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "你不是很閒？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下剛才一句都沒有說吧！？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "在下剛才一句都沒有說吧！？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -4604,36 +2938,22 @@
           "text": "source line 694: 鏡頭:街道另一側站著一名男子"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "真的站在那裡耶。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "真的站在那裡耶。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "多久了？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "多久了？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4646,20 +2966,13 @@
           "text": "我繞路，他也會跟。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "知道你住哪嗎？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "知道你住哪嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4667,20 +2980,13 @@
           "text": "……可能知道。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "為什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "為什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4707,20 +3013,13 @@
           "text": "我以為沒有被打、沒有被搶，就不算什麼。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "誰跟你說的？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "誰跟你說的？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4728,40 +3027,26 @@
           "text": "沒有人。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那就不要自己幫他找理由。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "那就不要自己幫他找理由。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 724: 可露凱朝男子走去"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "她是不是有點生氣？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "她是不是有點生氣？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4769,40 +3054,26 @@
           "text": "她一直都那樣。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "也是。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "也是。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
           "text": "source line 732: 場景短暫切換"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "證件。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "證件。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4810,36 +3081,22 @@
           "text": "我只是站在這裡。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "我知道。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "我知道。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "證件。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "證件。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4847,20 +3104,13 @@
           "text": "我又沒犯法。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那你應該很樂意配合。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "那你應該很樂意配合。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4897,20 +3147,13 @@
           "keep": true
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "浪費時間。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "浪費時間。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -4918,52 +3161,31 @@
           "text": "至少人家安心了。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "這又不會記功。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "這又不會記功。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "妳真的每次都要算這個喔。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "妳真的每次都要算這個喔。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "不然算什麼？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "不然算什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "comment",
@@ -4979,20 +3201,13 @@
           "text": "source line 771: 店員走進來"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "又怎麼了？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "又怎麼了？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -5005,20 +3220,13 @@
           "text": "我是想說，剛才忘記跟妳道謝。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -5031,20 +3239,13 @@
           "text": "我本來一直覺得，是不是要真的出了什麼事，警察才會管。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "他還沒做什麼能直接抓人的事。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "他還沒做什麼能直接抓人的事。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -5057,20 +3258,13 @@
           "text": "可是妳有來。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -5083,20 +3277,13 @@
           "text": "如果之後又有事情，我可以再找妳嗎？"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "報案不是點名制度。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "報案不是點名制度。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -5108,36 +3295,22 @@
           "text": "source line 797: 店員明顯有些失望"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "kind": "dialogue",
+          "speaker": "可露凱",
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "可露凱",
-          "text": "但是你可以說之前的紀錄在我這裡。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "但是你可以說之前的紀錄在我這裡。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -5145,20 +3318,13 @@
           "text": "真的嗎？"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "這樣比較快。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "這樣比較快。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -5184,228 +3350,130 @@
           "text": "被指名了耶。"
         },
         {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
-        },
-        {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "閉嘴。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "閉嘴。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這有功勞嗎？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "這有功勞嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "沒有。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "沒有。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "能升官嗎？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "能升官嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "不能。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "不能。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那好像也不是什麼都沒拿到。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "那好像也不是什麼都沒拿到。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "至少人家記得妳。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "至少人家記得妳。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "記得我有什麼用？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "記得我有什麼用？",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不知道。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "不知道。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "keng_neutral_portrait.png"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不過她剛才看到妳的時候，好像就沒那麼怕了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "不過她剛才看到妳的時候，好像就沒那麼怕了。",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "……"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "portrait",
-          "code": 20,
-          "image": "kelukai_normal.png"
+          "text": "……",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "可露凱",
-          "text": "那是她的事。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "time": 0
+          "text": "那是她的事。",
+          "portrait": {
+            "code": 20,
+            "image": "kelukai_normal.png"
+          }
         },
         {
           "kind": "comment",

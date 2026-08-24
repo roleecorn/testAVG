@@ -1,5 +1,5 @@
 const assert = require("assert/strict");
-const { normalizePortraitLifecycle, validateBundle } = require("./story_ir");
+const { bundleToFloors, normalizePortraitLifecycle, validateBundle } = require("./story_ir");
 
 const map = Array.from({ length: 13 }, () => Array(17).fill(0));
 
@@ -83,5 +83,58 @@ assert.deepEqual(normalizePortraitLifecycle([{
     { text: "無立繪", events: [{ kind: "dialogue", speaker: "其他人", text: "另一分歧" }] },
   ],
 }]);
+
+assert.deepEqual(normalizePortraitLifecycle([
+  {
+    kind: "dialogue",
+    speaker: "東山",
+    text: "情緒由 IR 保留",
+    portrait: {
+      code: 20,
+      image: "dongshan_normal.png",
+      expression: "normal",
+    },
+  },
+]), [
+  {
+    kind: "image.show",
+    role: "portrait",
+    code: 20,
+    image: "dongshan_normal.png",
+    expression: "normal",
+    opacity: 1,
+    time: 0,
+  },
+  {
+    kind: "dialogue",
+    speaker: "東山",
+    text: "情緒由 IR 保留",
+    portrait: {
+      code: 20,
+      image: "dongshan_normal.png",
+      expression: "normal",
+    },
+  },
+  { kind: "image.hide", code: 20, time: 0 },
+]);
+
+const generatedPortraitFloor = bundleToFloors({
+  ...bundle([{
+  kind: "dialogue",
+  speaker: "東山",
+  text: "生成器共通屬性",
+  portrait: { code: 20, image: "dongshan_normal.png", expression: "normal" },
+  }]),
+  source: { kind: "main", files: [{ path: "project/mainStory/example", sha256: "test" }] },
+}).find((floor) => floor.floorId === "example_1");
+assert.deepEqual(generatedPortraitFloor.eachArrive[1], {
+  type: "showImage",
+  code: 20,
+  image: "dongshan_normal.png",
+  expression: "normal",
+  loc: ["portraitSpeakerX", "portraitSpeakerY"],
+  opacity: 1,
+  time: 0,
+});
 
 console.log("Story IR lifecycle tests passed.");
