@@ -1,4 +1,4 @@
 interface:
   display_name: "動漫表情格生成"
   short_description: "依固定畫風生成可獨立或向下接入的六表情綠幕圖"
-  default_prompt: "Use $anime-expression-grid to create and validate a tall full-body six-expression 2×3 chroma-key-green character sheet with safe separator gutters from my confirmed reference image."
+  default_prompt: "Use $anime-expression-grid to create and validate a tall full-body six-expression 2×3 character sheet from my confirmed reference image. The generation master must have a solid uniform chroma-key green background in every cell for later background removal: do not use transparency, alpha, white, gray, gradient, or checkerboard backgrounds. Keep safe green separator gutters."
