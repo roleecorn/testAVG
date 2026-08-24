@@ -337,16 +337,15 @@
           }
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_1');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "juju_1"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_2\",\n\t\t\"title\": \"古書追逐\",\n\t\t\"locations\": [\"warehouse_district\"],\n\t\t\"floorId\": \"juju_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -721,16 +720,15 @@
           }
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_2');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "juju_2"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_3\",\n\t\t\"title\": \"回家法陣\",\n\t\t\"locations\": [\"warehouse_district\"],\n\t\t\"floorId\": \"juju_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1005,16 +1003,15 @@
           "text": "（那一夜，梗平無法忘懷裸舞的屈辱）"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_3');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "juju_3"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"juju_4\",\n\t\t\"title\": \"裝死大成\",\n\t\t\"locations\": [\"warehouse_district\"],\n\t\t\"floorId\": \"juju_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1343,12 +1340,11 @@
           }
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_4');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "juju_4"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     }

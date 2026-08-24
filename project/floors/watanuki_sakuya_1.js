@@ -656,7 +656,7 @@ main.floors.watanuki_sakuya_1=
         "[梗平小跑著離開，不時回頭確認那座神社是真實的存在，感到莫名的寒意。]",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('watanuki_sakuya_1');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('watanuki_sakuya_1'); }"
         },
         {
             "type": "function",
@@ -664,7 +664,7 @@ main.floors.watanuki_sakuya_1=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

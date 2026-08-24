@@ -1256,11 +1256,11 @@ main.floors.yuedu_ai_4=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_4');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('yuedu_ai_4'); }"
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

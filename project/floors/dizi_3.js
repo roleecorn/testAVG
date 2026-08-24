@@ -592,7 +592,7 @@ main.floors.dizi_3=
         "[ 梗平 獲得了 冰涼的罐裝咖啡的空罐 ]",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('dizi_3');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('dizi_3'); }"
         },
         {
             "type": "function",
@@ -600,7 +600,7 @@ main.floors.dizi_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

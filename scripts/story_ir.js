@@ -57,11 +57,27 @@ let portraitOutputCompat;
 
 function readPortraitOutputCompat() {
   if (portraitOutputCompat !== undefined) return portraitOutputCompat;
-  portraitOutputCompat = JSON.parse(fs.readFileSync(PORTRAIT_OUTPUT_COMPAT_FILE, "utf8"));
-  if (portraitOutputCompat.version !== 1 || !Array.isArray(portraitOutputCompat.omitCommonFieldsForScenes)) {
+  portraitOutputCompat = validatePortraitOutputCompat(JSON.parse(fs.readFileSync(PORTRAIT_OUTPUT_COMPAT_FILE, "utf8")));
+  return portraitOutputCompat;
+}
+
+function validatePortraitOutputCompat(metadata, sceneIds) {
+  if (!metadata || metadata.version !== 1 || !Array.isArray(metadata.omitCommonFieldsForScenes)) {
     throw new Error("Invalid portrait output compatibility metadata");
   }
-  return portraitOutputCompat;
+  const ids = metadata.omitCommonFieldsForScenes;
+  if (ids.some((sceneId) => typeof sceneId !== "string" || !sceneId)) {
+    throw new Error("Portrait output compatibility scene IDs must be non-empty strings");
+  }
+  if (new Set(ids).size !== ids.length) {
+    throw new Error("Portrait output compatibility contains duplicate scene IDs");
+  }
+  if (sceneIds) {
+    for (const sceneId of ids) {
+      if (!sceneIds.has(sceneId)) throw new Error(`Portrait output compatibility references unknown scene ${sceneId}`);
+    }
+  }
+  return metadata;
 }
 
 function irToEvent(node, options = {}) {
@@ -392,8 +408,8 @@ function getAkibaLifecycleCall(node) {
   if (node.kind === "akiba.return") return { kind: "return" };
   if (node.kind !== "function.call" || typeof node.function !== "string") return null;
   const completion = node.function.match(/core\.plugin\.completeAkibaEvent\(\s*['\"]([^'\"]+)['\"]\s*\)/);
-  if (completion) return { kind: "complete", eventId: completion[1] };
-  return /core\.plugin\.returnToAkiba\(\s*\)/.test(node.function) ? { kind: "return" } : null;
+  if (completion) return { kind: "complete", eventId: completion[1], legacy: true };
+  return /core\.plugin\.returnToAkiba\(\s*\)/.test(node.function) ? { kind: "return", legacy: true } : null;
 }
 
 function terminalPaths(events) {
@@ -409,9 +425,12 @@ function terminalPaths(events) {
   return paths;
 }
 
-function validateCharacterSceneLifecycle(scene, location) {
+function validateCharacterSceneLifecycle(scene, location, { allowLegacyLifecycle = true } = {}) {
   for (const [pathIndex, path] of terminalPaths(scene.events).entries()) {
     const calls = path.map(getAkibaLifecycleCall);
+    if (!allowLegacyLifecycle && calls.some((call) => call && call.legacy)) {
+      throw new Error(`${location}.terminalPaths[${pathIndex}]: legacy Akiba lifecycle function.call must use semantic nodes`);
+    }
     const completions = calls.map((call, index) => ({ call, index })).filter(({ call }) => call && call.kind === "complete");
     if (completions.length !== 1) {
       throw new Error(`${location}.terminalPaths[${pathIndex}]: expected exactly one Akiba completion`);
@@ -469,7 +488,25 @@ function validatePortraitPositionFields(node, location, allowPortraitPosition) {
   }
 }
 
-function validateBundle(bundle, { allowGeneratorOwnedFields = true, allowPortraitPosition = true } = {}) {
+function validateCharacterStoryKinds(nodes, location) {
+  for (const [index, node] of (nodes || []).entries()) {
+    if (node.kind === "character.exchange") {
+      throw new Error(`${location}[${index}]: character.exchange is main-story-only`);
+    }
+    if (node.kind === "choice") {
+      node.options.forEach((option, optionIndex) => validateCharacterStoryKinds(
+        option.events,
+        `${location}[${index}].options[${optionIndex}].events`,
+      ));
+    }
+  }
+}
+
+function validateBundle(bundle, {
+  allowGeneratorOwnedFields = true,
+  allowPortraitPosition = true,
+  allowLegacyLifecycle = true,
+} = {}) {
   if (!bundle || bundle.storyIrVersion !== STORY_IR_VERSION) throw new Error(`Story IR version must be ${STORY_IR_VERSION}`);
   if (!bundle.source || !Array.isArray(bundle.source.files) || !bundle.source.files.length) throw new Error("Story IR requires source.files");
   if (!Array.isArray(bundle.scenes) || !bundle.scenes.length) throw new Error("Story IR requires scenes");
@@ -491,7 +528,10 @@ function validateBundle(bundle, { allowGeneratorOwnedFields = true, allowPortrai
       `scenes[${index}].events[${nodeIndex}]`,
       allowPortraitPosition,
     ));
-    if (bundle.source.kind === "character") validateCharacterSceneLifecycle(scene, `scenes[${index}]`);
+    if (bundle.source.kind === "character") {
+      validateCharacterStoryKinds(scene.events, `scenes[${index}].events`);
+      validateCharacterSceneLifecycle(scene, `scenes[${index}]`, { allowLegacyLifecycle });
+    }
   });
   return bundle;
 }
@@ -554,11 +594,12 @@ function bundleToFloors(bundle) {
   }));
 }
 
-function readBundle(file) {
+function readBundle(file, { allowLegacyLifecycle = false } = {}) {
   return validateBundle(JSON.parse(fs.readFileSync(file, "utf8")), {
     allowGeneratorOwnedFields: false,
     allowPortraitPosition: false,
+    allowLegacyLifecycle,
   });
 }
 
-module.exports = { bundleToFloors, floorWithCommonFields, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences };
+module.exports = { bundleToFloors, floorWithCommonFields, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validatePortraitOutputCompat, validateProjectReferences };

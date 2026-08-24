@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { execFileSync } = require("child_process");
 const { isDeepStrictEqual } = require("util");
-const { bundleToFloors, readBundle, validateBundle, validateProjectReferences } = require("./story_ir");
+const { bundleToFloors, readBundle, validateBundle, validatePortraitOutputCompat, validateProjectReferences } = require("./story_ir");
 const { characterStories, irFile } = require("./manage_story_ir");
 const { mainStoryIrFiles, mergeMainStoryBundles, readMainStoryBundles, stripCommonFields } = require("./main_story_ir");
 
@@ -80,6 +80,12 @@ function managedIrFiles() {
 
 function managedBundles() {
   return managedIrFiles().map((file) => readBundle(file));
+}
+
+function validatePortraitCompatibility(bundles) {
+  const sceneIds = new Set(bundles.flatMap((bundle) => bundle.scenes.map((scene) => scene.id)));
+  const metadata = JSON.parse(fs.readFileSync(path.join(root, "scripts", "portrait-output-compat.json"), "utf8"));
+  validatePortraitOutputCompat(metadata, sceneIds);
 }
 
 function currentFloorMap() {
@@ -296,6 +302,7 @@ function main() {
   const changed = changedPaths();
   validateEmitterBoundaries(ownership);
   validateSourceAuthority(changed, ownership);
+  validatePortraitCompatibility(managedBundles());
   validateTransactions(changed, ownership);
   validateRuntimeReachability();
   console.log(`Validated story ownership and ${changed.size} changed repository paths.`);

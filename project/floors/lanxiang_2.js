@@ -1097,7 +1097,7 @@ main.floors.lanxiang_2=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('lanxiang_2');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('lanxiang_2'); }"
         },
         {
             "type": "function",
@@ -1105,7 +1105,7 @@ main.floors.lanxiang_2=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

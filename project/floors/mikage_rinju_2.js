@@ -685,7 +685,7 @@ main.floors.mikage_rinju_2=
         "[怎麼是老師與黑服的BL本…梗平卻讀完覺得挺有趣的。]",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_2');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('mikage_rinju_2'); }"
         },
         {
             "type": "function",
@@ -693,7 +693,7 @@ main.floors.mikage_rinju_2=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

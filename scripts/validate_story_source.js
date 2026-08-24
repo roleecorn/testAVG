@@ -95,7 +95,9 @@ function main() {
   const files = jsonFiles(irRoot).sort();
   let sourceCount = 0;
   for (const file of files) {
-    const bundle = readBundle(file);
+    // Historical, intentionally disabled character bundles remain source/hash
+    // traceable without being promoted into the active runtime contract.
+    const bundle = readBundle(file, { allowLegacyLifecycle: true });
     verifySources(bundle);
     sourceCount += bundle.source.files.length;
   }

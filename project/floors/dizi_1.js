@@ -583,7 +583,7 @@ main.floors.dizi_1=
         "[梗平擅自認定自己找到了革命的夥伴，心中充滿了鬥志。]",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('dizi_1');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('dizi_1'); }"
         },
         {
             "type": "function",
@@ -591,7 +591,7 @@ main.floors.dizi_1=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

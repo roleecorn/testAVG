@@ -1203,7 +1203,7 @@ main.floors.noir_3=
         "直到最後只剩下梗平敲打地板的聲音。",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('noir_3');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('noir_3'); }"
         },
         {
             "type": "function",
@@ -1211,7 +1211,7 @@ main.floors.noir_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

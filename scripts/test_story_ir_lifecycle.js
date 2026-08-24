@@ -1,5 +1,5 @@
 const assert = require("assert/strict");
-const { bundleToFloors, normalizePortraitLifecycle, validateBundle } = require("./story_ir");
+const { bundleToFloors, normalizePortraitLifecycle, validateBundle, validatePortraitOutputCompat } = require("./story_ir");
 
 const map = Array.from({ length: 13 }, () => Array(17).fill(0));
 
@@ -20,6 +20,28 @@ assert.doesNotThrow(() => validateBundle(bundle([
   { kind: "function.call", function: "function () { core.plugin.completeAkibaEvent('example_1'); }" },
   { kind: "function.call", function: "function () { core.plugin.returnToAkiba(); }" },
 ])));
+
+assert.throws(
+  () => validateBundle(bundle([
+    { kind: "function.call", function: "function () { core.plugin.completeAkibaEvent('example_1'); }" },
+    { kind: "function.call", function: "function () { core.plugin.returnToAkiba(); }" },
+  ]), { allowLegacyLifecycle: false }),
+  /legacy Akiba lifecycle function.call must use semantic nodes/,
+);
+assert.throws(
+  () => validateBundle(bundle([{ kind: "character.exchange", destination: { floorId: "next", loc: [1, 1], direction: "up" } }]), { allowLegacyLifecycle: false }),
+  /character\.exchange is main-story-only/,
+);
+
+assert.doesNotThrow(() => validatePortraitOutputCompat({ version: 1, omitCommonFieldsForScenes: ["example_1"] }, new Set(["example_1"])));
+assert.throws(
+  () => validatePortraitOutputCompat({ version: 1, omitCommonFieldsForScenes: ["example_1", "example_1"] }, new Set(["example_1"])),
+  /duplicate scene IDs/,
+);
+assert.throws(
+  () => validatePortraitOutputCompat({ version: 1, omitCommonFieldsForScenes: ["stale_scene"] }, new Set(["example_1"])),
+  /unknown scene stale_scene/,
+);
 
 assert.throws(
   () => validateBundle(bundle([{ kind: "akiba.event.complete", eventId: "example_1" }])),

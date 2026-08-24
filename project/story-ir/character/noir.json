@@ -438,16 +438,15 @@
           "text": "夜風輕拂，梗平心裡期待着隔日的相遇。"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('noir_1');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "noir_1"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"noir_2\",\n\t\t\"title\": \"專屬聽眾\",\n\t\t\"locations\": [\"music_venue\"],\n\t\t\"floorId\": \"noir_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -795,16 +794,15 @@
           "text": "..."
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('noir_2');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "noir_2"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"noir_3\",\n\t\t\"title\": \"夢想舞台\",\n\t\t\"locations\": [\"music_venue\"],\n\t\t\"floorId\": \"noir_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1448,16 +1446,15 @@
           "text": "直到最後只剩下梗平敲打地板的聲音。"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('noir_3');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "noir_3"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"noir_4\",\n\t\t\"title\": \"宇宙女鬼\",\n\t\t\"locations\": [\"music_venue\"],\n\t\t\"floorId\": \"noir_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1784,12 +1781,11 @@
           "text": "（至於梗平房間從此以後每晚擁有鋼琴聲圍繞就是另外一段故事了）"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('noir_4');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "noir_4"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     }

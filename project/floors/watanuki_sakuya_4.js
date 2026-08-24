@@ -917,11 +917,11 @@ main.floors.watanuki_sakuya_4=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('watanuki_sakuya_4');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('watanuki_sakuya_4'); }"
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

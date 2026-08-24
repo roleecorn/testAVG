@@ -663,7 +663,7 @@ main.floors.watanuki_sakuya_3=
         "[梗平在回家路上買了根炙烤玉米享用。]",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('watanuki_sakuya_3');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('watanuki_sakuya_3'); }"
         },
         {
             "type": "function",
@@ -671,7 +671,7 @@ main.floors.watanuki_sakuya_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

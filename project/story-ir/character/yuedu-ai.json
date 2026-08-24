@@ -207,16 +207,15 @@
           }
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_1');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "yuedu_ai_1"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"yuedu_ai_2\",\n\t\t\"title\": \"暢快酒會\",\n\t\t\"locations\": [\"convenience_24h\"],\n\t\t\"floorId\": \"yuedu_ai_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -426,16 +425,15 @@
           "text": "「梗平和月讀愛進行了一場暢快酒會的樣子，壓力值下降了。」"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_2');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "yuedu_ai_2"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"yuedu_ai_3\",\n\t\t\"title\": \"大姐頭\",\n\t\t\"locations\": [\"convenience_24h\"],\n\t\t\"floorId\": \"yuedu_ai_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -766,16 +764,15 @@
           ]
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_3');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "yuedu_ai_3"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"yuedu_ai_4\",\n\t\t\"title\": \"希望之花\",\n\t\t\"locations\": [\"convenience_24h\"],\n\t\t\"floorId\": \"yuedu_ai_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1412,12 +1409,11 @@
           ]
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_4');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "yuedu_ai_4"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     }

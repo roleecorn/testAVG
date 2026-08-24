@@ -1004,11 +1004,11 @@ main.floors.dizi_4=
         "[在夕陽的餘暉下，梗平的身影顯得無比悲壯，挺起胸膛，朝著未知的下一場戰鬥，邁出了堅定的一步。つづく]",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('dizi_4');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('dizi_4'); }"
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

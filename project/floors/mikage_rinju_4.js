@@ -1197,11 +1197,11 @@ main.floors.mikage_rinju_4=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_4');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('mikage_rinju_4'); }"
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

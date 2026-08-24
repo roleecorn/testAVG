@@ -152,16 +152,15 @@
           }
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('akane_1');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "akane_1"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"akane_2\",\n\t\t\"title\": \"輪迴之歌\",\n\t\t\"locations\": [\"elevated_train\"],\n\t\t\"floorId\": \"akane_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -412,16 +411,15 @@
           ]
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('akane_2');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "akane_2"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"akane_3\",\n\t\t\"title\": \"列車重來\",\n\t\t\"locations\": [\"elevated_train\"],\n\t\t\"floorId\": \"akane_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -700,16 +698,15 @@
           ]
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('akane_3');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "akane_3"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"akane_4\",\n\t\t\"title\": \"重來的歌\",\n\t\t\"locations\": [\"elevated_train\"],\n\t\t\"floorId\": \"akane_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -889,12 +886,11 @@
           "text": "讓帷幕落下吧，盛大的遊行慶典！"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('akane_4');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "akane_4"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     }

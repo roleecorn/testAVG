@@ -698,7 +698,7 @@ main.floors.mikage_rinju_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_3');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('mikage_rinju_3'); }"
         },
         {
             "type": "function",
@@ -706,7 +706,7 @@ main.floors.mikage_rinju_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

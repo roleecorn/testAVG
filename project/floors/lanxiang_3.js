@@ -840,7 +840,7 @@ main.floors.lanxiang_3=
         "（雖然梗平沒多久就後悔了，但他確實在一天內受到相當充實的魔鬼訓練）",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('lanxiang_3');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('lanxiang_3'); }"
         },
         {
             "type": "function",
@@ -848,7 +848,7 @@ main.floors.lanxiang_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

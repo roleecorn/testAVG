@@ -1215,11 +1215,11 @@ main.floors.lanxiang_4=
         "（至於梗平之後遇上了大麻煩，聯絡了藍湘，來個不下於本作的混沌冒險，又是另外一回事了）",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('lanxiang_4');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('lanxiang_4'); }"
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

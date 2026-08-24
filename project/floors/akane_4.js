@@ -431,11 +431,11 @@ main.floors.akane_4=
         "\t[End]讓帷幕落下吧，盛大的遊行慶典！",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('akane_4');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('akane_4'); }"
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

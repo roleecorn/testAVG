@@ -577,7 +577,7 @@ main.floors.mikage_rinju_1=
         "[誰知道封面詐騙是內容是娘化UNDEAD合集本。]",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_1');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('mikage_rinju_1'); }"
         },
         {
             "type": "function",
@@ -585,7 +585,7 @@ main.floors.mikage_rinju_1=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

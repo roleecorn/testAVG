@@ -238,16 +238,15 @@
           "text": "[誰知道封面詐騙是內容是娘化UNDEAD合集本。]"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_1');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "mikage_rinju_1"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"mikage_rinju_2\",\n\t\t\"title\": \"毒舌衝突\",\n\t\t\"locations\": [\"melon_shop\"],\n\t\t\"floorId\": \"mikage_rinju_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -545,16 +544,15 @@
           "text": "[怎麼是老師與黑服的BL本…梗平卻讀完覺得挺有趣的。]"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_2');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "mikage_rinju_2"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"mikage_rinju_3\",\n\t\t\"title\": \"百合守則\",\n\t\t\"locations\": [\"melon_shop\"],\n\t\t\"floorId\": \"mikage_rinju_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -857,16 +855,15 @@
           }
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_3');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "mikage_rinju_3"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"mikage_rinju_4\",\n\t\t\"title\": \"笨拙和解\",\n\t\t\"locations\": [\"melon_shop\"],\n\t\t\"floorId\": \"mikage_rinju_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1469,12 +1466,11 @@
           }
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('mikage_rinju_4');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "mikage_rinju_4"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     }

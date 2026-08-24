@@ -737,11 +737,11 @@ main.floors.juju_4=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_4');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('juju_4'); }"
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

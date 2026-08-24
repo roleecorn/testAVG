@@ -717,7 +717,7 @@ main.floors.yuedu_ai_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_3');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('yuedu_ai_3'); }"
         },
         {
             "type": "function",
@@ -725,7 +725,7 @@ main.floors.yuedu_ai_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

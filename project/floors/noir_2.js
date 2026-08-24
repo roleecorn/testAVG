@@ -794,7 +794,7 @@ main.floors.noir_2=
         "...",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('noir_2');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('noir_2'); }"
         },
         {
             "type": "function",
@@ -802,7 +802,7 @@ main.floors.noir_2=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

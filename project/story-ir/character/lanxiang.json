@@ -346,16 +346,15 @@
           }
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('lanxiang_1');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "lanxiang_1"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"lanxiang_2\",\n\t\t\"title\": \"麻將對決\",\n\t\t\"locations\": [\"mahjong_parlor\"],\n\t\t\"floorId\": \"lanxiang_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -904,16 +903,15 @@
           }
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('lanxiang_2');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "lanxiang_2"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"lanxiang_3\",\n\t\t\"title\": \"英雄訓練\",\n\t\t\"locations\": [\"mahjong_parlor\"],\n\t\t\"floorId\": \"lanxiang_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1268,16 +1266,15 @@
           "text": "（雖然梗平沒多久就後悔了，但他確實在一天內受到相當充實的魔鬼訓練）"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('lanxiang_3');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "lanxiang_3"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"lanxiang_4\",\n\t\t\"title\": \"古拳決戰\",\n\t\t\"locations\": [\"mahjong_parlor\"],\n\t\t\"floorId\": \"lanxiang_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1879,12 +1876,11 @@
           "text": "（至於梗平之後遇上了大麻煩，聯絡了藍湘，來個不下於本作的混沌冒險，又是另外一回事了）"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('lanxiang_4');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "lanxiang_4"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     }

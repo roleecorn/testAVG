@@ -715,11 +715,11 @@ main.floors.noir_4=
         "（至於梗平房間從此以後每晚擁有鋼琴聲圍繞就是另外一段故事了）",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('noir_4');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('noir_4'); }"
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

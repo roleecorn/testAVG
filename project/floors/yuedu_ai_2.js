@@ -542,7 +542,7 @@ main.floors.yuedu_ai_2=
         "「梗平和月讀愛進行了一場暢快酒會的樣子，壓力值下降了。」",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('yuedu_ai_2');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('yuedu_ai_2'); }"
         },
         {
             "type": "function",
@@ -550,7 +550,7 @@ main.floors.yuedu_ai_2=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

@@ -291,16 +291,15 @@
           "text": "[梗平小跑著離開，不時回頭確認那座神社是真實的存在，感到莫名的寒意。]"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('watanuki_sakuya_1');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "watanuki_sakuya_1"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"watanuki_sakuya_2\",\n\t\t\"title\": \"乾花護符\",\n\t\t\"locations\": [\"shrine\"],\n\t\t\"floorId\": \"watanuki_sakuya_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -638,16 +637,15 @@
           ]
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('watanuki_sakuya_2');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "watanuki_sakuya_2"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"watanuki_sakuya_3\",\n\t\t\"title\": \"神社納涼\",\n\t\t\"locations\": [\"shrine\"],\n\t\t\"floorId\": \"watanuki_sakuya_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -928,16 +926,15 @@
           "text": "[梗平在回家路上買了根炙烤玉米享用。]"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('watanuki_sakuya_3');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "watanuki_sakuya_3"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"watanuki_sakuya_4\",\n\t\t\"title\": \"開花之儀\",\n\t\t\"locations\": [\"shrine\"],\n\t\t\"floorId\": \"watanuki_sakuya_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1392,12 +1389,11 @@
           ]
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('watanuki_sakuya_4');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "watanuki_sakuya_4"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     }

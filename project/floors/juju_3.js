@@ -635,7 +635,7 @@ main.floors.juju_3=
         "（那一夜，梗平無法忘懷裸舞的屈辱）",
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('juju_3');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('juju_3'); }"
         },
         {
             "type": "function",
@@ -643,7 +643,7 @@ main.floors.juju_3=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

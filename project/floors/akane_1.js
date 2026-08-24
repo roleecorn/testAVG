@@ -419,7 +419,7 @@ main.floors.akane_1=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.completeAkibaEvent('akane_1');\n}"
+            "function": "function () { core.plugin.completeAkibaEvent('akane_1'); }"
         },
         {
             "type": "function",
@@ -427,7 +427,7 @@ main.floors.akane_1=
         },
         {
             "type": "function",
-            "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+            "function": "function () { core.plugin.returnToAkiba(); }"
         }
     ]
 }

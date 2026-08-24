@@ -262,16 +262,15 @@
           "text": "[梗平擅自認定自己找到了革命的夥伴，心中充滿了鬥志。]"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('dizi_1');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "dizi_1"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"dizi_2\",\n\t\t\"title\": \"被編寫的命運\",\n\t\t\"locations\": [\"prize_exchange\"],\n\t\t\"floorId\": \"dizi_2\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -466,16 +465,15 @@
           }
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('dizi_2');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "dizi_2"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"dizi_3\",\n\t\t\"title\": \"真是個有趣的男人\",\n\t\t\"locations\": [\"prize_exchange\"],\n\t\t\"floorId\": \"dizi_3\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -752,16 +750,15 @@
           "text": "[ 梗平 獲得了 冰涼的罐裝咖啡的空罐 ]"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('dizi_3');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "dizi_3"
         },
         {
           "kind": "function.call",
           "function": "function () {\n\tcore.plugin.addAkibaEvent({\n\t\t\"id\": \"dizi_4\",\n\t\t\"title\": \"東方正鮮紅的燃燒起來！\",\n\t\t\"locations\": [\"prize_exchange\"],\n\t\t\"floorId\": \"dizi_4\",\n\t\t\"once\": true\n\t});\n}"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     },
@@ -1422,12 +1419,11 @@
           "text": "[在夕陽的餘暉下，梗平的身影顯得無比悲壯，挺起胸膛，朝著未知的下一場戰鬥，邁出了堅定的一步。つづく]"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.completeAkibaEvent('dizi_4');\n}"
+          "kind": "akiba.event.complete",
+          "eventId": "dizi_4"
         },
         {
-          "kind": "function.call",
-          "function": "function () {\n\tcore.plugin.returnToAkiba();\n}"
+          "kind": "akiba.return"
         }
       ]
     }
