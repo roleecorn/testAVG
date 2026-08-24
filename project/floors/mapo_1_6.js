@@ -331,11 +331,6 @@ main.floors.mapo_1_6=
             "text": "【主線 CH2 2-1 咖啡廳早晨】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH4_L79.png",
@@ -451,21 +446,6 @@ main.floors.mapo_1_6=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -475,6 +455,16 @@ main.floors.mapo_1_6=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -564,21 +554,6 @@ main.floors.mapo_1_6=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L360.png",
@@ -588,6 +563,16 @@ main.floors.mapo_1_6=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "梗平走進咖啡廳後，發現了兩個藍色頭髮的女孩",
         "其中一個正是昨天拿著兔子玩偶的店長......",

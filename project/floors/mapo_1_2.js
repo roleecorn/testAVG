@@ -336,11 +336,6 @@ main.floors.mapo_1_2=
             "keep": true
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L60.png",
@@ -1157,21 +1152,6 @@ main.floors.mapo_1_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -1181,6 +1161,16 @@ main.floors.mapo_1_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "從倉庫出來的兩人遇到了同行的蘭斯跟克莉絲 ",
         {

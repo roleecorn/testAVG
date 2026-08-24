@@ -331,11 +331,6 @@ main.floors.main_ch2_4=
             "text": "【主線 CH2 2-4 書店A內部】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L295.png",
@@ -892,21 +887,6 @@ main.floors.main_ch2_4=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",
@@ -916,6 +896,16 @@ main.floors.main_ch2_4=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "ANIsister的門口，梗平遭受著他不應......算了，他活該的",
         {
@@ -1159,21 +1149,6 @@ main.floors.main_ch2_4=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH2_L390.png",
@@ -1183,6 +1158,16 @@ main.floors.main_ch2_4=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "正在舉辦某個藝術家的個人展",
                         {
@@ -1419,21 +1404,6 @@ main.floors.main_ch2_4=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH2_L390.png",
@@ -1443,6 +1413,16 @@ main.floors.main_ch2_4=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "兩人移動到了三樓休息室",
                         "與梗平預想的不同，休息室內沒有其他的人",
@@ -1503,11 +1483,6 @@ main.floors.main_ch2_4=
                             "time": 0
                         },
                         "不等梗平反應，畫張開了大嘴把梗平一口吞下",
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
                         {
                             "type": "showImage",
                             "code": 1,
@@ -1703,21 +1678,6 @@ main.floors.main_ch2_4=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH2_L390.png",
@@ -1727,6 +1687,16 @@ main.floors.main_ch2_4=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "IB在美術館二樓尋找無果後又回到了休息室，突然畫作吐出了一個人",
                         {
@@ -1996,21 +1966,6 @@ main.floors.main_ch2_4=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH1_L360.png",
@@ -2020,6 +1975,16 @@ main.floors.main_ch2_4=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "等梗平趕到時，一名修卡戰鬥員正擺好姿勢作勢攻擊一個金髮的女人",
                         {
@@ -2292,11 +2257,6 @@ main.floors.main_ch2_4=
                             "time": 250
                         },
                         "梗平的臉又挨了一次小兔子暗黑無限破後，順勢飛出了店外",
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
                         {
                             "type": "hideImage",
                             "code": 30,

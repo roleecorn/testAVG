@@ -336,11 +336,6 @@ main.floors.main_ch3_1=
             "keep": true
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -511,21 +506,6 @@ main.floors.main_ch3_1=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L360.png",
@@ -535,6 +515,16 @@ main.floors.main_ch3_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "走進咖啡廳的梗平自顧自地拿起了掃把開始進行打掃工作",
         "完全忽視一旁智乃冰冷的視線......嗎？",
@@ -750,21 +740,6 @@ main.floors.main_ch3_1=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -774,6 +749,16 @@ main.floors.main_ch3_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",

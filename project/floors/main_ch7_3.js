@@ -331,11 +331,6 @@ main.floors.main_ch7_3=
             "text": "【主線 CH7 7-3 集合與突破】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -436,21 +431,6 @@ main.floors.main_ch7_3=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -460,6 +440,16 @@ main.floors.main_ch7_3=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -1069,21 +1059,6 @@ main.floors.main_ch7_3=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L295.png",
@@ -1093,6 +1068,16 @@ main.floors.main_ch7_3=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "東山進入了名為『馬的膝蓋』的地方書店，正打算尋找認識的人時—",
         {
@@ -1283,11 +1268,6 @@ main.floors.main_ch7_3=
         {
             "type": "comment",
             "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -1803,21 +1783,6 @@ main.floors.main_ch7_3=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L295.png",
@@ -1827,6 +1792,16 @@ main.floors.main_ch7_3=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -1875,21 +1850,6 @@ main.floors.main_ch7_3=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH6_L68.png",
@@ -1899,6 +1859,16 @@ main.floors.main_ch7_3=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -1947,21 +1917,6 @@ main.floors.main_ch7_3=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L401.png",
@@ -1971,6 +1926,16 @@ main.floors.main_ch7_3=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -2019,21 +1984,6 @@ main.floors.main_ch7_3=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L189.png",
@@ -2043,6 +1993,16 @@ main.floors.main_ch7_3=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -2091,21 +2051,6 @@ main.floors.main_ch7_3=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L401.png",
@@ -2115,6 +2060,16 @@ main.floors.main_ch7_3=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -2161,11 +2116,6 @@ main.floors.main_ch7_3=
         },
         {
             "type": "pauseBgm"
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",

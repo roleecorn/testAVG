@@ -331,11 +331,6 @@ main.floors.main_ch3_2=
             "text": "【主線 CH3 3-2 貝琪晚餐】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",
@@ -433,21 +428,6 @@ main.floors.main_ch3_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_fine_dining.png",
@@ -457,6 +437,16 @@ main.floors.main_ch3_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "貝琪輕鬆的安排好了所有的餐序，梗平只能在一旁嗯嗯啊啊",
         "然後在迎賓酒被送上來的同時，貝琪看向了梗平",
@@ -760,11 +750,6 @@ main.floors.main_ch3_2=
             "time": 500
         },
         "梗平上了車重新回到了秋葉原，在下車之前貝琪拉住了他的手",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         {
             "type": "showImage",
             "code": 1,

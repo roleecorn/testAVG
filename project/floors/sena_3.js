@@ -646,12 +646,6 @@ main.floors.sena_3=
             "time": 0
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 30,
             "image": "sena_cg_cloth_placeholder.png",
@@ -763,12 +757,6 @@ main.floors.sena_3=
             "time": 0
         },
         "兩人走進了巷子，然後? ",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
         {
             "type": "showImage",
             "code": 30,

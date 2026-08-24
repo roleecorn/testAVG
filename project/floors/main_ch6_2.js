@@ -853,21 +853,6 @@ main.floors.main_ch6_2=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH1_L42.png",
@@ -877,6 +862,16 @@ main.floors.main_ch6_2=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "梗平一路上避開了警察，成功在車站被封鎖前離開了秋葉原",
                         {

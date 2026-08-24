@@ -331,11 +331,6 @@ main.floors.main_ch3_1_exchange_1=
             "text": "【主線 CH3 3-1 自爆篇（交流後）】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -400,21 +395,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH2_L295.png",
@@ -424,6 +404,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "梗平走入了名為馬的膝蓋的書店裡，店裡的每個人都忙出了殘影",
                         {
@@ -615,11 +605,6 @@ main.floors.main_ch3_1_exchange_1=
                         },
                         "梗平掏出了自己手機對成果拍了一張照發到了群組裡",
                         {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH3_L86.png",
@@ -660,11 +645,6 @@ main.floors.main_ch3_1_exchange_1=
                         "\t[克莉絲]？",
                         "\t[梗平]你竟然先在下一步脫離了窮人的行列嗎？",
                         "\t[梗平]太可惡了",
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
                         {
                             "type": "showImage",
                             "code": 1,
@@ -1468,21 +1448,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH1_L353.png",
@@ -1492,6 +1457,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "數個小時過去了，路上的行人逐漸消失",
                         "梗平打開了裝錢的袋子.....裡面只有寥寥無幾的100円",
@@ -1687,21 +1662,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH3_L175.png",
@@ -1711,6 +1671,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "showImage",
@@ -1834,21 +1804,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH1_L353.png",
@@ -1858,6 +1813,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "深夜的街道上，梗平在前，三日月在後",
                         {
@@ -2001,21 +1966,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH2_L409.png",
@@ -2025,6 +1975,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "showImage",
@@ -2294,21 +2254,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH1_L353.png",
@@ -2318,6 +2263,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "隔天，半夜的街道上伐魔樂隊已然集結",
                         {
@@ -2917,11 +2872,6 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "comment",
                             "text": "TODO: 【BGM：春日影】"
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -3575,21 +3525,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH3_L175.png",
@@ -3599,6 +3534,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         {
                             "type": "showImage",
@@ -3849,21 +3794,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH1_L353.png",
@@ -3873,6 +3803,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "一陣騷亂之後到了深夜打魔獸的時間，這次樂隊嘗試開啟了直播",
                         {
@@ -4036,21 +3976,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH2_L163.png",
@@ -4060,6 +3985,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "隔天的上午，梗平與來島澄私下約了出來吃飯",
                         {
@@ -4148,21 +4083,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "ms_bg_tokyo_big_sight.png",
@@ -4172,6 +4092,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "時間很快的過去，終於來到了工作結束的那天",
                         "梗平只和來島澄打了招呼，然後就離開了",
@@ -4295,21 +4225,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH1_L353.png",
@@ -4319,6 +4234,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "三日月用力的拿AK47於魔獸對拼，而來島澄和香坂輪已經被觸手抓了起來",
                         {
@@ -4977,21 +4902,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH1_L42.png",
@@ -5001,6 +4911,16 @@ main.floors.main_ch3_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "幾天後，下北澤的大街上伐魔樂團成員在街頭演出",
                         "演出完畢後，梗平看著街道發出了疑問",

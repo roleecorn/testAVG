@@ -748,12 +748,6 @@ main.floors.ruka_4=
         "瞄準脖子的打擊直接讓一大群人倒在地上",
         "這時梗平才看清楚出現的——",
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 30,
             "image": "ruka_cg_captain_entrance_placeholder.png",

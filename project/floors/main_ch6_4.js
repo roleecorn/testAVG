@@ -817,21 +817,6 @@ main.floors.main_ch6_4=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH6_L343.png",
@@ -841,6 +826,16 @@ main.floors.main_ch6_4=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "在反應過來時，身體就已經換上了西裝站在紅毯上",
         "一旁的警察拿著婚戒放到了他的手中，用動作跟言語催促著他往前",
@@ -1040,11 +1035,6 @@ main.floors.main_ch6_4=
             "text": "【第六章結束】"
         },
         "結局",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         {
             "type": "showImage",
             "code": 1,

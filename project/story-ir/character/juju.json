@@ -78,28 +78,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "comment",
           "text": "【地點：倉庫區】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -111,11 +91,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "難道又是修卡的陰毛嗎？",
@@ -123,11 +98,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -139,16 +109,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "還是說你想說沒人，講黃色笑話？",
@@ -156,16 +116,6 @@
             "code": 20,
             "image": "juju_smile.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -177,11 +127,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "欸？難不成，你看得到我？",
@@ -189,16 +134,6 @@
             "code": 20,
             "image": "juju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -210,11 +145,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "我的撒旦啊！總算找到人了！（嚎啕大哭）",
@@ -222,16 +152,6 @@
             "code": 20,
             "image": "juju_sad.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -243,23 +163,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（一段時間後）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -271,16 +176,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "如你所見，是個惡魔",
@@ -288,16 +183,6 @@
             "code": 20,
             "image": "juju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -309,11 +194,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "我是一個月前被召喚的，但不曉得儀式出了什麼問題",
@@ -321,16 +201,6 @@
             "code": 20,
             "image": "juju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -342,16 +212,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "你有沒有想過……找專業人士？",
@@ -359,11 +219,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -375,16 +230,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "為什麼你會知道我的名字？",
@@ -392,11 +237,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -408,16 +248,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "具體來講，就是抽卡只能保底，一番賞只能抽最爛的",
@@ -427,16 +257,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "好好好！我幫就是了",
@@ -444,11 +264,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "image.show",
@@ -477,11 +292,6 @@
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
           "code": 20,
           "async": true
         },
@@ -500,16 +310,6 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "雖然我很想回家，但是我不急，你可以一兩天後叫我",
@@ -517,16 +317,6 @@
             "code": 20,
             "image": "juju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -538,16 +328,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "好，我知道了……",
@@ -555,11 +335,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -643,28 +418,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "comment",
           "text": "【地點：倉庫區】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -676,11 +431,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "對吼！附近的那個雜貨店還有這種地方",
@@ -688,16 +438,6 @@
             "code": 20,
             "image": "juju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -709,16 +449,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "哈哈！沒什麼啦～",
@@ -728,37 +458,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[兩人隨後趕往了雜貨店]"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "comment",
           "text": "【地點：古書店】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -770,16 +475,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "怎麼這麼完美符合我們的需求",
@@ -787,11 +482,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -803,11 +493,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "總之我們打開看看吧！",
@@ -815,16 +500,6 @@
             "code": 20,
             "image": "juju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -836,11 +511,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "店主",
           "text": "喂！小伙子！不準白看書！",
@@ -848,16 +518,6 @@
             "code": 20,
             "image": "juju_shopkeeper.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -869,11 +529,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "店主",
           "text": "嗯？",
@@ -883,28 +538,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（店主看了一下梗平）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -916,16 +551,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "梗平！拿了書快跑！他是退役驅魔師！",
@@ -935,16 +560,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "蛤？",
@@ -952,11 +567,6 @@
             "code": 10,
             "image": "keng_angry_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -968,16 +578,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "噢！",
@@ -987,23 +587,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（梗平撞倒了店主跑走）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1015,16 +600,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "店主",
           "text": "等等！果然是什麼來着？而且我為啥這麼疼？",
@@ -1034,28 +609,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（此時在古書店遠方）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1067,11 +622,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "我對那個店長的記憶做了處理",
@@ -1079,16 +629,6 @@
             "code": 20,
             "image": "juju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1100,16 +640,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "我得先看看這書的真偽",
@@ -1117,16 +647,6 @@
             "code": 20,
             "image": "juju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1138,16 +658,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "具體來講？",
@@ -1155,11 +665,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1171,16 +676,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "蛤？",
@@ -1188,11 +683,6 @@
             "code": 10,
             "image": "keng_angry_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1204,16 +694,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "好了，這不是重點，總之你改天再找我",
@@ -1221,16 +701,6 @@
             "code": 20,
             "image": "juju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1242,16 +712,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "噢……",
@@ -1259,11 +719,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -1373,28 +828,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "comment",
           "text": "【地點：倉庫區】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1406,16 +841,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "好了，我看這書是真貨，趕緊操作吧！",
@@ -1423,16 +848,6 @@
             "code": 20,
             "image": "juju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1444,23 +859,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（梗平按照書上步驟操作，完成法陣）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1472,11 +872,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "這書正經嗎！",
@@ -1484,11 +879,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1500,16 +890,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "不是！那個！不好吧？",
@@ -1517,11 +897,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1533,16 +908,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "不是這個問題好不好！而且我好像聽到了什麼糟糕的東西！",
@@ -1550,11 +915,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1566,16 +926,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "還是你想逼我使用最後手段",
@@ -1585,28 +935,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（茱茱抄起一旁的大斧）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1618,11 +948,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "這是第一次在清醒狀態跳啊…",
@@ -1632,23 +957,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（梗平脫光衣服，開始跳裸舞，然後法陣開始發光）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1660,16 +970,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "我會在地獄幫你留個VIP座位，就這樣，掰！",
@@ -1677,16 +977,6 @@
             "code": 20,
             "image": "juju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1698,23 +988,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（茱茱消失了）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1726,23 +1001,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（那一夜，梗平無法忘懷裸舞的屈辱）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -1852,28 +1112,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "comment",
           "text": "【地點：公園】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1885,16 +1125,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "茱茱！你怎麼在這！",
@@ -1902,11 +1132,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1918,16 +1143,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "主要是跟你講一個壞消息和一個好消息",
@@ -1935,16 +1150,6 @@
             "code": 20,
             "image": "juju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1956,11 +1161,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "那店長想起來了，現在帶了一大批人在包圍這邊",
@@ -1968,16 +1168,6 @@
             "code": 20,
             "image": "juju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1989,11 +1179,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "我已經想到破局方法啦！",
@@ -2001,16 +1186,6 @@
             "code": 20,
             "image": "juju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2022,28 +1197,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（茱茱開始大喊）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2055,16 +1210,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "請放過他吧！作為交換！我讓你們殺我！",
@@ -2072,16 +1217,6 @@
             "code": 20,
             "image": "juju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2093,11 +1228,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "我不能放著恩人不管啊，謝謝你",
@@ -2107,28 +1237,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（店主從草叢走了出來）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2140,16 +1250,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "我還沒答應呢！",
@@ -2157,11 +1257,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2173,16 +1268,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "如果不是你，我早就死了",
@@ -2190,16 +1275,6 @@
             "code": 20,
             "image": "juju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2211,16 +1286,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茱茱",
           "text": "拜託你回家，好嗎！",
@@ -2228,16 +1293,6 @@
             "code": 20,
             "image": "juju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2249,16 +1304,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "我知道了……",
@@ -2268,23 +1313,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "(梗平沒有回頭，離開了秋葉原，只有茱茱的慘叫聲不絕於耳)"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2296,37 +1326,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（那一夜，梗平在列車上，出於懷念，按了一下bbcall ）"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（然後看到一坨白色的身影）"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2336,16 +1341,6 @@
             "code": 20,
             "image": "juju_angry.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",

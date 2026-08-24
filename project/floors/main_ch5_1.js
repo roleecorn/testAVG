@@ -336,11 +336,6 @@ main.floors.main_ch5_1=
             "keep": true
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_vehicle_interior.png",
@@ -458,21 +453,6 @@ main.floors.main_ch5_1=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L360.png",
@@ -482,6 +462,16 @@ main.floors.main_ch5_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "在智乃困惑的眼光中，梗平熟練的拿起了掃帚開始進行清掃工作",
         "又是一樣的早晨，一樣的清掃、一樣的蹭了早午餐",

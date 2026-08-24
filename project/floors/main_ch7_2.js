@@ -331,11 +331,6 @@ main.floors.main_ch7_2=
             "text": "【主線 CH7 7-2 聖典與ANIsister】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L295.png",
@@ -451,21 +446,6 @@ main.floors.main_ch7_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L401.png",
@@ -475,6 +455,16 @@ main.floors.main_ch7_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -687,21 +677,6 @@ main.floors.main_ch7_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L163.png",
@@ -711,6 +686,16 @@ main.floors.main_ch7_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -873,21 +858,6 @@ main.floors.main_ch7_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -897,6 +867,16 @@ main.floors.main_ch7_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "眾人在前往ANIsister的途中，正好看見了警察經過",
         {
@@ -1233,11 +1213,6 @@ main.floors.main_ch7_2=
         {
             "type": "comment",
             "text": "【BGM預定地：()】"
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -1664,11 +1639,6 @@ main.floors.main_ch7_2=
             "text": "【BGM預定地：()切換BGM或到7-2結束前連續播放此首BGM】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -1865,11 +1835,6 @@ main.floors.main_ch7_2=
             "type": "playTransitionVideo",
             "name": "floor-transition.mp4",
             "standalone": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -2092,21 +2057,6 @@ main.floors.main_ch7_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L360.png",
@@ -2116,6 +2066,16 @@ main.floors.main_ch7_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -2770,21 +2730,6 @@ main.floors.main_ch7_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L360.png",
@@ -2794,6 +2739,16 @@ main.floors.main_ch7_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -2955,21 +2910,6 @@ main.floors.main_ch7_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH3_L86.png",
@@ -2979,6 +2919,16 @@ main.floors.main_ch7_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "\t[貝琪]東山醬好厲害呢～我們約了要共進晚餐喔",
         "\t[東山]第一次約會很重要喔！可不能急躁喔貝琪親",

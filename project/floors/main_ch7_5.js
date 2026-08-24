@@ -331,11 +331,6 @@ main.floors.main_ch7_5=
             "text": "【主線 CH7 7-5 昭告天下】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -426,21 +421,6 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH6_L68.png",
@@ -450,6 +430,16 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -1247,21 +1237,6 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH6_L68.png",
@@ -1271,6 +1246,16 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -4389,21 +4374,6 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L295.png",
@@ -4413,6 +4383,16 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "resumeBgm"
@@ -4545,11 +4525,6 @@ main.floors.main_ch7_5=
             "type": "hideImage",
             "code": 20,
             "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -5045,21 +5020,6 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -5069,6 +5029,16 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "comment",
@@ -5229,11 +5199,6 @@ main.floors.main_ch7_5=
         {
             "type": "comment",
             "text": "TODO: 【過場：少女讀取中…】"
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -5403,21 +5368,6 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -5427,6 +5377,16 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -6927,21 +6887,6 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_police_station.png",
@@ -6951,6 +6896,16 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -7472,21 +7427,6 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH6_L343.png",
@@ -7496,6 +7436,16 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -7794,21 +7744,6 @@ main.floors.main_ch7_5=
             "time": 2000
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 2000
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH7_L1310.png",
@@ -7818,6 +7753,16 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 2000
         },
         {
             "type": "resumeBgm"
@@ -7902,11 +7847,6 @@ main.floors.main_ch7_5=
         {
             "type": "comment",
             "text": "TODO: 【BGM：BGMED2】"
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -8005,11 +7945,6 @@ main.floors.main_ch7_5=
             "text": "【背景幻燈片】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_higashiyama_booth.png",
@@ -8019,11 +7954,6 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -8037,11 +7967,6 @@ main.floors.main_ch7_5=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_pachinko_group.png",
@@ -8051,11 +7976,6 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -8069,11 +7989,6 @@ main.floors.main_ch7_5=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_training_group.png",
@@ -8083,11 +7998,6 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -8101,9 +8011,15 @@ main.floors.main_ch7_5=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_tbd.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
         },
         {
             "type": "showImage",
@@ -8117,11 +8033,6 @@ main.floors.main_ch7_5=
             "time": 250
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_tbd.png",
@@ -8131,27 +8042,6 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_tbd.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -8175,21 +8065,6 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_tokyo_big_sight.png",
@@ -8199,6 +8074,16 @@ main.floors.main_ch7_5=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",

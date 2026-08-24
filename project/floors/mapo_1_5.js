@@ -331,11 +331,6 @@ main.floors.mapo_1_5=
             "text": "【主線 CH1 1-5 掉落物】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",

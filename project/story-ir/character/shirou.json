@@ -73,44 +73,14 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "經過中華料理店時，被一陣鏗鏘聲吸引",
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "棄爐灶旁蹲著一位紅髮少年",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -123,11 +93,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "...啊！",
@@ -136,16 +101,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -158,16 +113,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "你這是在煉銅打鋼還是準備切菜啊？",
@@ -178,24 +123,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "士郎不好意思地擦汗笑了笑",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -208,29 +138,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "海報寫著『第一屆中華料理店廚刀鍛造大賽』。",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -243,11 +153,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "冠軍獎品是夢幻級的『WOK』與稀有隕鐵鋼材。",
@@ -256,16 +161,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -278,16 +173,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "只要來個過場就好了",
@@ -296,16 +181,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -318,11 +193,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "求求你了，如果沒有那個『WOK』的話，瓦搭西！",
@@ -333,29 +203,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "士郎立刻滑跪到梗平面前",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -368,16 +218,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "你想怎樣用也沒有問題。",
@@ -386,16 +226,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -408,11 +238,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "真的嗎？太感謝你了，梗平！我剛好缺一個值得信任的搭檔。",
@@ -421,16 +246,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -443,16 +258,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "完全不懂！不過要我加油打氣，這無疑令人振奮的",
@@ -461,11 +266,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -478,16 +278,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "那我們約好在比賽那天就在這邊等吧，請多指教！",
@@ -496,16 +286,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -593,44 +373,14 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "士郎的打鐵聲源源不絕，只需要經過附近梗平已經能準確定位到士郎來打鐵的秘密(?)基地",
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平興高采烈地湊上前。",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -643,11 +393,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "打鐵不單止需要一時的學習，更要持續不斷的鍛鍊",
@@ -656,16 +401,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -678,16 +413,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "在下也忘了沒問你，這比賽除了要組隊參賽外還有其他規限嗎？",
@@ -696,11 +421,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -713,11 +433,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "沒有的兄弟沒有的，賽制聽說到時候現場會公佈不過用具也要自己攜帶",
@@ -726,16 +441,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -748,16 +453,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "No, Niet, Nein!!!既然如此，這個就是你的誤區了",
@@ -766,11 +461,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -783,11 +473,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "就讓我們鍛造出世界上第一把規格外的廚刀",
@@ -796,11 +481,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -813,16 +493,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "廚刀只要能把東西切開就好，像你這樣打鐵的要想的就多了",
@@ -831,11 +501,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -848,16 +513,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "這樣把刀背加厚，給我發揮你的想像力呀kora!",
@@ -866,11 +521,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -883,11 +533,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "是這樣的嗎？這不對吧",
@@ -896,16 +541,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -918,24 +553,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平隨後快速翻找手機的相簿",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -968,16 +588,6 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "構造雖然很誇張...重心偏前但如果修改刀脊弧度並重組力學結構的話...好像可行。",
@@ -994,16 +604,6 @@
           "async": true
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "都說是可行的了。",
@@ -1012,11 +612,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1029,16 +624,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "畢竟最終要測試用刀的是我們。所以我們能夠熟練使用類似的刀型就可以了",
@@ -1047,16 +632,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1069,11 +644,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "阿對了，我剛剛收到了其他隊伍的名單你要看看嗎？",
@@ -1082,16 +652,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1104,11 +664,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "總括而言現在參賽隊伍包括我們有三隊",
@@ -1117,16 +672,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1139,16 +684,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "那是名門望族小組以及家庭參賽小組嗎？",
@@ -1157,11 +692,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1174,16 +704,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "有傳言說，他們是從其他國家遠道而來為了爭奪隕鐵的人",
@@ -1192,16 +712,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1341,16 +851,6 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -1364,29 +864,9 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "而他找到了正在中華料理店前在準備工具的士郎",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1399,16 +879,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "上啊士郎，給這群傳統鐵匠一點二次元震撼！",
@@ -1417,11 +887,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "background.show",
@@ -1437,44 +902,14 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "空地之上，坐在評判席上的是中華料理店的老闆以及收購所的老闆",
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "然後映入眼簾是分隔了三個區域的區間",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1487,30 +922,10 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "時間到了選手請各自就位，我很期待各位的作品",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1523,25 +938,10 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "旁邊這位會作為本次比賽的安檢員東方不敗，確保你們不會受傷。",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1554,24 +954,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "（東方不敗聽見後點了點頭)",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1584,16 +969,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "士郎，不要輸呀！我也開始燃起來了！",
@@ -1604,25 +979,10 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "那麼接下來我會公佈本次賽程，比賽分為兩部分",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1631,30 +991,10 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "雖說如此這次比賽也不會限制各位選手對刀型的自由度追求，其後淘汰一位進度最差的",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1663,30 +1003,10 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "第二回合將會要求各位完善以及打磨到完整整把廚刀",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1695,29 +1015,9 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "這時候，左邊傳來幾位少爺的嘲笑聲",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1730,16 +1030,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "唐三",
           "text": "用火爐的原始人，哈哈哈！",
@@ -1748,16 +1038,6 @@
             "code": 20,
             "image": "shirou_tangsan.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1770,16 +1050,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "少爺小組居然拿著高科技設備嘲笑我們的老風箱！",
@@ -1788,11 +1058,6 @@
             "code": 10,
             "image": "keng_smile_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1805,11 +1070,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "鍛造的本質不在於機器有多先進，而在於對鋼材與料理心意。",
@@ -1818,16 +1078,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1840,11 +1090,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "東方不敗",
           "text": "3!2!1! Game Start!!!",
@@ -1855,44 +1100,14 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "時間一分一秒的過去",
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "和設想的不同，左邊傳來的不是打鐵聲，右邊傳來的更只有吵架的聲音",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1905,11 +1120,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "只要好好打鐵就能贏了！",
@@ -1920,44 +1130,14 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "突然左邊傳來慘叫，連帶著爆炸聲以及燒焦的味道",
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "東方不敗閃身而過眨眼功夫便從評判席衝了向左邊的間隔",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1966,30 +1146,10 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "只是技術性調整，沒有人會在這次比賽中受到傷害",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1998,29 +1158,9 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "與此同時右邊間隔的咒罵聲越發起勁",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
@@ -2028,29 +1168,9 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "還有什麼指令呀之類的不明所以的東西",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2063,11 +1183,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "呼，進度良好",
@@ -2076,16 +1191,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2098,24 +1203,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "時間已經到比賽的最後五分鐘",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2148,16 +1238,6 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "過來讓我看看，完成度也太高了吧！",
@@ -2174,16 +1254,6 @@
           "async": true
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "最後一步就由在下來吧",
@@ -2192,11 +1262,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2209,11 +1274,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "小心點，他還熱。最後一步就交給你了",
@@ -2224,29 +1284,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平輕輕的把刀刃慢慢從尖端浸入水中，雙刀慢慢冷卻了下來硬化",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
@@ -2254,44 +1294,14 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "是由於兩邊不均勻的冷卻導致的，都是運氣的問題",
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "完成的時候時間也剛好結束了",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2304,11 +1314,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "現在的時間也不夠再打一對刀出來",
@@ -2317,11 +1322,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2334,16 +1334,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "接下來我將以紅色形態出擊！",
@@ -2352,16 +1342,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2374,11 +1354,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "給我五...不，三分鐘！",
@@ -2389,45 +1364,15 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "那麼請第一組的代表出來吧",
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "蜘蛛巢相親相愛一家親的代表滿身傷痕，拿著一把日本武士刀出列",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2438,16 +1383,6 @@
             "code": 20,
             "image": "shirou_liangxiu.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2476,16 +1411,6 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "良秀拔出了那把腰間的刀，透明的刀刃折射著背後的景色",
           "presentation": {}
@@ -2497,29 +1422,9 @@
           "async": true
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "一刀，豬肉一分為二，如同切牛油般被斬開",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
@@ -2527,29 +1432,9 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "三分鐘內無數的斬擊穿過豬肉，梗平不可置信的看着",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2562,11 +1447,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "Trace On!",
@@ -2577,44 +1457,14 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "背後傳來一聲",
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平轉過頭去發現士郎的左臂發出淡淡藍光",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2627,16 +1477,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "\"Steel is my body, and fire is my blood.\"",
@@ -2645,16 +1485,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2667,16 +1497,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "\"Unknown to Death,\"\"Nor known to Life.\"",
@@ -2685,16 +1505,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2707,16 +1517,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "\"Yet, those hands will never hold anything.\"",
@@ -2725,16 +1525,6 @@
             "code": 20,
             "image": "shirou_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2747,11 +1537,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "\"So as I pray, Unlimited Blade Works.\"",
@@ -2762,29 +1547,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "隨後兩把比完美更完美的干將·莫邪從地上投影出來",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2797,11 +1562,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "如果你能投影的話為什麼一開始還要打鐵呀！",
@@ -2810,11 +1570,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2827,29 +1582,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "士郎，倒下",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2862,25 +1597,10 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "那麼第二組的代表出來吧",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2893,25 +1613,10 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "不，只要你們能展現出這把刀能一刀切開豬肉，你們就贏了",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2924,25 +1629,10 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "良秀的刀所斬過的食材似乎無法正常的食用以及烹飪並不能勝任作為廚刀",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
@@ -2950,30 +1640,10 @@
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "麻",
           "text": "那麼你就是優勝者了，恭喜",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2986,16 +1656,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "唐三",
           "text": "恭喜",
@@ -3004,16 +1664,6 @@
             "code": 20,
             "image": "shirou_tangsan.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3026,29 +1676,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "大家拍著手圍著梗平，看來直到大家都力竭之前他會在眾人的擁戴下不能離去",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
@@ -3131,29 +1761,9 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "在一段時間後之後，士郎終於能出院了",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3166,16 +1776,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "肌肉移位兩公分還叫沒大問題！？你這傢伙根本是鐵打的吧！",
@@ -3184,11 +1784,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3201,39 +1796,14 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平神秘兮兮地從背後拖出一個沉甸甸的大包裹",
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "一把大得能直接把人蓋進去、亮得能當鏡子照的夢幻『WOK』炒鍋，赫然出現在士郎面前",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3246,16 +1816,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "那當然！本大爺當天可是頂著無數人的掌聲",
@@ -3264,11 +1824,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3281,24 +1836,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平拍了拍包裹，隨後眼神一轉，搭上士郎的肩膀",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3311,11 +1851,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "我想组一個樂隊進行『Global Live』全球巡迴直播，現在萬事俱備，你要不要也來當個鼓手？",
@@ -3324,11 +1859,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3341,16 +1871,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗",
           "text": "少來了！你那打鐵的速度、精準度，還有那種能把鋼材捶到完美的節奏感，天生就是打鼓的料！再說了，你不是連Trace On magic都能用嗎？",
@@ -3359,11 +1879,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3376,39 +1891,14 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "...",
           "presentation": {}
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "士郎看著梗平熱烈又期待的眼神，無奈地揉了揉肩膀，嘴角微微揚起",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3421,16 +1911,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "士",
           "text": "可別怪我用『投影魔術』變出一整套爵士鼓來砸你",
@@ -3439,16 +1919,6 @@
             "code": 20,
             "image": "shirou_later.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3461,24 +1931,9 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "陽光穿透醫院後門，昔日響徹街道的敲打金屬聲",
           "presentation": {}
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",

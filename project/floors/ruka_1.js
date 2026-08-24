@@ -455,12 +455,6 @@ main.floors.ruka_1=
             "time": 0
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 30,
             "image": "ruka_cg_meteor_placeholder.png",

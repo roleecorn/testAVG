@@ -104,16 +104,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "好嘞，要找些什麼本子好呢！最近好像有不少特攝系同人的樣子。",
@@ -121,11 +111,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -137,11 +122,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "最近的話，果然還是BA、FGO和學偶嗎？",
@@ -149,11 +129,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -165,11 +140,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "？？？",
           "text": "枯燥煩人擋路蟲子請從通道移開一點。",
@@ -177,16 +147,6 @@
             "code": 20,
             "image": "mikage_rinju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -198,11 +158,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "？？？",
           "text": "說的就是你，我討厭等待，還是說蟲子聽不懂人話呢？",
@@ -210,16 +165,6 @@
             "code": 20,
             "image": "mikage_rinju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -231,11 +176,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "？？？",
           "text": "哼……",
@@ -243,16 +183,6 @@
             "code": 20,
             "image": "mikage_rinju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -264,11 +194,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "？？？",
           "text": "喂，咲耶快跟著我，想待在那裡多久。",
@@ -276,16 +201,6 @@
             "code": 20,
             "image": "mikage_rinju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -297,16 +212,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "嗯？怎麼回事……那個女孩子是被欺負所以跟著嗎？好奇怪的感覺…",
@@ -314,11 +219,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -330,37 +230,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[梗平買了一本「辛味噌大戰GEGEGE」回家準備享受梗連發，]"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[誰知道封面詐騙是內容是娘化UNDEAD合集本。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -470,16 +345,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "最近的封面欺詐也太過分了！怎麼可以用梗騙人進去看娘們的！",
@@ -487,11 +352,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -503,16 +363,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "那邊傳來的聲音，嗯？是上次的兩位少女…",
@@ -520,11 +370,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -540,28 +385,8 @@
           "name": "attack.mp3"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[梗平衝到白毛少女面前代替承受了黑髮少女的耳光]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -573,11 +398,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "？？？",
           "text": "誰啊你…啊，上次擋路的臭蟲，嘖，我對她做什麼也不用你管吧！",
@@ -585,16 +405,6 @@
             "code": 20,
             "image": "mikage_rinju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -606,16 +416,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "我不是臭蟲！ご唱和ください我の名を!我的名字是梗平！倒是你這惡人的名字是什麼！",
@@ -623,11 +423,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -639,16 +434,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "？？？",
           "text": "凜珠醬……這位先生只是關心我而已",
@@ -656,16 +441,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -677,16 +452,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "喂，不告訴我名字也沒關係，沒道理隨意發火吧？你沒事吧…",
@@ -694,11 +459,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -710,16 +470,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "吾乃綿貫咲耶…凜珠她沒惡意的…可能有一點點，但是她是乖孩子…梗平先生…",
@@ -727,16 +477,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -748,11 +488,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "她怎麼看也不像是乖孩子吧？",
@@ -760,11 +495,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -776,16 +506,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "凜珠醬…買了想要的本子就回去吧……",
@@ -793,16 +513,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -814,28 +524,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[兩位少女就這樣前往收銀處付款後離開了。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -847,37 +537,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[梗平感覺見識到奇怪的關係，摸不著頭腦買了本BA同人本就回家閱讀了。]"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[怎麼是老師與黑服的BL本…梗平卻讀完覺得挺有趣的。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -987,28 +652,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[梗平為了準備參加comike而繼續到書店M進行情報收集…]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1020,16 +665,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "……今天就只有你一人嗎？",
@@ -1037,11 +672,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1053,16 +683,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "雖然作為外人說教不太好，但是我覺得你對陌生人這樣說話很容易受害喔？",
@@ -1070,11 +690,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1086,16 +701,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "社會壓力很大，像你這樣對他人露出尖銳鋒芒，遇上瘋子可以就遭殃了…",
@@ -1103,11 +708,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1119,16 +719,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "UNDEAD在哪裡出現也沒人知道，禍從口出…",
@@ -1136,11 +726,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1152,16 +737,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "啊？你這是什麼意思……",
@@ -1169,11 +744,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1185,16 +755,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "那傢伙？",
@@ -1202,11 +762,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1218,16 +773,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "假面騎士！絕不放棄！你說的那些是作為RIDER應做的！",
@@ -1235,11 +780,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1251,11 +791,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "御影凛珠",
           "text": "哼，滿嘴漂亮話這點也和那傢伙一樣…",
@@ -1263,16 +798,6 @@
             "code": 20,
             "image": "mikage_rinju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1284,28 +809,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[御影凛珠隨意地買了一本同人本後結帳離開了。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1317,11 +822,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "嗯？她剛才在百合特區拿的本子嗎？",
@@ -1329,11 +829,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1345,37 +840,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[梗平出於好奇購買了那本同人本，回家看了…]"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[內容卻是-毒舌使人快樂，當個傲嬌令對方回頭吧。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1385,11 +855,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -1473,28 +938,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[梗平又一次到了書店M]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1506,23 +951,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[昨晚在床上又看了一次老師與黑服的BL本，感覺奇妙關係不應是有毒語言維持。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1534,23 +964,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[梗平裝作若無其事地特攝區徘徊，視線往隔壁的百合區飄。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1562,11 +977,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "(鬆了一口氣，卻又覺得哪裡空落落的。這種矛盾的心情比看完整本BL同人還難受。)",
@@ -1576,37 +986,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[當梗平拿一本新的《假面騎士BLACK SUN》設定集準備結帳時]"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[入口的自動門「叮咚」一聲響起。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1618,16 +1003,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "我來買書啊。這裡是書店，我來不是很正常嗎？",
@@ -1635,11 +1010,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1651,28 +1021,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[御影凛珠繞過梗平，徑直走向百合區，梗平卻緊隨其後…]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1684,16 +1034,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "我只是好奇，你今天又是一個人來，那個綿貫小姐呢？",
@@ -1701,11 +1041,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1717,16 +1052,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "是不關我的事。但那位綿貫小姐說你是乖孩子，今天你一個人來，她沒跟著，我在想是不是──",
@@ -1734,11 +1059,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1750,16 +1070,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "御影凛珠",
           "text": "你這個……這個……假面騎士腦的猴子，不要自以為很懂！",
@@ -1767,16 +1077,6 @@
             "code": 20,
             "image": "mikage_rinju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1788,11 +1088,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "(當一個人身上散發出求救信號時，)",
@@ -1800,11 +1095,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1816,11 +1106,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "御影凛珠",
           "text": "……",
@@ -1828,16 +1113,6 @@
             "code": 20,
             "image": "mikage_rinju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1849,28 +1124,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[御影凛珠從書架抽出《與友人和好如初甜甜蜜蜜100種浪漫守則》的續集]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1882,16 +1137,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "那本書，你認真看了嗎？",
@@ -1899,11 +1144,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1915,16 +1155,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "裡面寫了什麼？",
@@ -1932,11 +1162,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1948,16 +1173,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "我也買了一本看。",
@@ -1965,11 +1180,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1981,16 +1191,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "我看你挑那本的時候表情很奇怪。我想知道你在看什麼東西，就買了。",
@@ -1998,11 +1198,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2014,28 +1209,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[御影凛珠臉上混雜著羞恥、惱怒、還有一點點我不知道該怎麼形容的動搖，準備離開。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2047,11 +1222,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "御影凛珠",
           "text": "幹嘛…",
@@ -2059,16 +1229,6 @@
             "code": 20,
             "image": "mikage_rinju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2080,11 +1240,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "御影凛珠",
           "text": "那又如何",
@@ -2092,16 +1247,6 @@
             "code": 20,
             "image": "mikage_rinju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2113,11 +1258,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "御影凛珠",
           "text": "……什麼？",
@@ -2125,16 +1265,6 @@
             "code": 20,
             "image": "mikage_rinju_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2146,11 +1276,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "她是被你推開了，沒有被你拉回來。",
@@ -2158,11 +1283,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2174,16 +1294,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "我不是要說教。",
@@ -2191,11 +1301,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2207,11 +1312,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "不會好好說話，但最後他們都學會了用正確的方式表達。不是用刺，是用手。",
@@ -2221,23 +1321,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[書店裡安靜了幾秒。遠處有人在翻雜誌，紙頁嘩啦嘩啦的聲音成了唯一的背景音。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2249,16 +1334,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "因為我是假面騎士。",
@@ -2266,11 +1341,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2282,16 +1352,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "御影凛珠",
           "text": "…哈啊…你是……頂多算是……一個有點多管閒事的怪人。",
@@ -2299,16 +1359,6 @@
             "code": 20,
             "image": "mikage_rinju_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2320,37 +1370,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[御影凛珠嘴角動了一下。我不知道那算不算笑，]"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[但那是第一次在她臉上看到接近柔軟的東西。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2362,16 +1387,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "嗯。",
@@ -2379,11 +1394,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2395,56 +1405,16 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[少女快步走向收銀台結帳。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
           "text": "[梗平站在原地，手裡還握著那本《假面騎士BLACK SUN》設定集。]"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[低頭看了看封面上那隻黑色的蝗蟲為原型的昭和RIDER]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2456,23 +1426,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[梗平又抬頭看了看已經走到門口的那個黑髮背影。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2484,23 +1439,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[假面騎士也不是每次都能打敗怪人。有的時候，能讓對方少說一句「滾開」，就算贏了。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2512,37 +1452,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[《與友人和好如初甜甜蜜蜜100種浪漫守則》]"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[「毒舌只能使你快樂，要和好如初還是用肉體抓住對方說清楚吧」]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2552,11 +1467,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",

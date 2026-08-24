@@ -104,11 +104,6 @@
           "keep": true
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -197,11 +192,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -346,11 +336,6 @@
           "text": "【主線 CH5 5-1 五日無戰事篇（交流後）】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -493,11 +478,6 @@
           "text": "或許是為了回應這麼想的梗平，手機恰到好處的響了起來"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -575,11 +555,6 @@
           "text": "我要去想辦法賺錢了，再見"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -645,11 +620,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -848,11 +818,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",

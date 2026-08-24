@@ -73,42 +73,12 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "在秋葉原逛累的梗平打算找一個地方休息一下"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "於是跑回了以療育氛圍與平價餐點聞名的兔子之家咖啡廳"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -120,11 +90,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "如果人能和動物溝通就好了呢",
@@ -132,11 +97,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -148,11 +108,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "失控的力量只會帶來不幸而已",
@@ -160,11 +115,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -176,16 +126,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "如果你請我吃飯，我就接受你的委託！",
@@ -193,16 +133,6 @@
             "code": 20,
             "image": "lala_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -214,11 +144,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "而且女孩子對不認識的大人說『請我吃飯吧』這樣的話很容易遭人誤會的",
@@ -226,11 +151,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -242,16 +162,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "我的名字是菈菈安瑟姆，萬食的弒滅者，是秋葉原的委託屋喔",
@@ -259,16 +169,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -280,16 +180,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "梗平嘛......這樣就不算不認識了吧？",
@@ -299,28 +189,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "雖然在梗平看來完全就是中二病入腦的Cosplay少女，但他沒有吐嘈"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -332,23 +202,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平看著菈菈安瑟姆點了一大堆的食物"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -360,11 +215,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "把肚子填的飽飽的才能去工作喔~",
@@ -372,16 +222,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -393,28 +233,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平看著菈菈安瑟姆消滅的大量的食物"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -426,11 +246,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "看著那女孩的吃相，感覺更餓了",
@@ -438,11 +253,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "akiba.event.complete",
@@ -520,56 +330,16 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平在經過兔子之家時，被裡面傳來的音樂給吸引了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
           "text": "當他走進去之後，發現是少女樂團在進行即興演唱"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "在站在他身邊的，正是一臉興奮地拍手的菈菈安瑟姆"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -581,11 +351,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "不是喔，那是我推的樂隊，阿，小徒姬她們過來了",
@@ -593,16 +358,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -614,16 +369,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "(怎麼看都是朋友嘛)",
@@ -631,11 +376,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -647,16 +387,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "露露米",
           "text": "我是鍵盤手的露露米喔，大哥哥覺得徒姬醬的歌怎麼樣？",
@@ -664,16 +394,6 @@
             "code": 20,
             "image": "lala_lulumi.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -685,16 +405,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "(看起來大家都很有精神的樣子)",
@@ -702,11 +412,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -718,11 +423,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "徒姬的歌給人很有生命力的感覺",
@@ -730,11 +430,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -746,16 +441,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "徒姬",
           "text": "會因為別人請吃飯而湊過去的只有妳吧？",
@@ -763,16 +448,6 @@
             "code": 20,
             "image": "lala_tuji.jpg"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -784,23 +459,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "在食物上桌之前眾人吵吵鬧鬧了一陣"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -812,11 +472,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "弒滅者之類的那是最近女高中生的潮流嘛？",
@@ -824,11 +479,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -840,11 +490,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "徒姬",
           "text": "潮流......算也不算吧，我跟菈菈安瑟姆算是接受委託的委託屋",
@@ -852,16 +497,6 @@
             "code": 20,
             "image": "lala_tuji.jpg"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -873,11 +508,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "作為Comic Market 宣傳的一環之類的",
@@ -885,11 +515,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -901,16 +526,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "如果不是真心認同的委託，我們是不會接下的喔",
@@ -918,16 +533,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -939,23 +544,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "總之交換了聯繫方式"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "akiba.event.complete",
@@ -1033,42 +623,12 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "當梗平來到兔子之家附近的時候，他看到菈菈安瑟姆並沒有在店裡面"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "而是在外面餵食可愛的小動物，應該是可愛的小動物吧？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1080,56 +640,16 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "在梗平看到的景象中，菈菈安瑟姆被數隻不可思議的生物包圍"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
           "text": "其中有的是看起來像小狗"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "但是中間的腹部張開著大口，裡面含著棒棒糖的嬌小生物"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1141,16 +661,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "(如果不看中間的嘴巴倒是挺可愛的.......)",
@@ -1158,11 +668,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "image.show",
@@ -1173,11 +678,6 @@
         {
           "kind": "narration",
           "text": "還有看起來像是漂浮的章魚"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
         },
         {
           "kind": "image.hide",
@@ -1196,11 +696,6 @@
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
           "code": 20,
           "async": true
         },
@@ -1214,16 +709,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "雖然看上去很警戒的樣子，但是相熟之後就會很乖了喔~",
@@ -1231,16 +716,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "image.show",
@@ -1251,11 +726,6 @@
         {
           "kind": "narration",
           "text": "菈菈安瑟姆將手撫摸在Saki醬的頭頂"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
         },
         {
           "kind": "image.hide",
@@ -1274,11 +744,6 @@
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
           "code": 20,
           "async": true
         },
@@ -1292,23 +757,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "隨後梗平的視線越過藍黃相間的Saki醬，看向了菈菈安瑟姆身後的大型生物"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "image.show",
@@ -1319,11 +769,6 @@
         {
           "kind": "narration",
           "text": "它的身高比蹲在地上的菈菈安瑟姆略高一點，身上包覆著鱗片以及七彩的蝶翼"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
         },
         {
           "kind": "image.hide",
@@ -1342,11 +787,6 @@
         },
         {
           "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
           "code": 20,
           "async": true
         },
@@ -1360,11 +800,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "(況且這樣的生物是要拿來做什麼的呀！？秋葉原是這麼奇怪的地方嘛？)",
@@ -1372,11 +807,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1388,28 +818,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "於是梗平放下了試圖撫摸它的手"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1421,16 +831,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "要說有沒有被嚇到.....那當然是有的，就像第一次見面時我也被妳嚇了一跳一樣",
@@ -1438,11 +838,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1454,11 +849,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "徒姬小姐很溫柔，她的樂隊的另外兩個孩子雖然有些調皮跟精神過頭，但也都是好孩子",
@@ -1466,11 +856,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1482,11 +867,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "但先前『人生苦短』樂隊演唱時妳不是很興奮嘛？",
@@ -1494,11 +874,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1510,11 +885,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "不如說一開始就是普通的女孩子，所以一點都不害怕喔",
@@ -1522,11 +892,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1538,42 +903,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "隨著菈菈安瑟姆的招手，克洛伊醬、Saki醬、阿米莫絲醬都湊到了梗平身邊"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "而梗平確實沒有逃開"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "image.show",
@@ -1584,11 +919,6 @@
         {
           "kind": "narration",
           "text": "克洛伊醬蹭了蹭梗平的褲腳"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
         },
         {
           "kind": "image.hide",
@@ -1605,16 +935,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "如果是菈菈安瑟姆妳的話會說再來一份吧？",
@@ -1622,11 +942,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1638,28 +953,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "Saki醬用牙齒輕輕的磨蹭梗平的手指"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1671,16 +966,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "菈菈安瑟姆身邊有很多很好的人，徒姬小姐還有她的樂隊夥伴，兔子之家的大家，以及這些菈菈安瑟姆的同伴們",
@@ -1688,11 +973,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1704,23 +984,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "阿米莫絲醬用舌頭(？)跟眼珠蹭了蹭梗平的臉"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1732,16 +997,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "這都是因為菈菈安瑟姆小姐喔",
@@ -1749,11 +1004,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1765,16 +1015,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "請我吃飯......現在不需要了",
@@ -1782,16 +1022,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1803,16 +1033,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "吶，大哥哥，把我填滿吧~",
@@ -1820,16 +1040,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1841,16 +1051,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "但是在下拒絕的說",
@@ -1858,11 +1058,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1874,11 +1069,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "不如說讓菈菈安瑟姆幫在下實現願望也太遜了",
@@ -1886,11 +1076,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1902,11 +1087,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "那大哥哥要做什麼呢？",
@@ -1914,16 +1094,6 @@
             "code": 20,
             "image": "lala_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1935,11 +1105,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "嘿~這種話可不能隨便說出口喔",
@@ -1947,16 +1112,6 @@
             "code": 20,
             "image": "lala_smile.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1968,28 +1123,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "菈菈安瑟姆跑走了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "akiba.event.complete",
@@ -2067,16 +1202,6 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "我再確認一次，大哥哥是想要我向你委託對吧？",
@@ -2084,16 +1209,6 @@
             "code": 20,
             "image": "lala_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2105,11 +1220,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "喔對了，還有在下水道跟鱷魚搏鬥而已",
@@ -2117,11 +1227,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2133,16 +1238,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "嗯~總之我的委託是，我希望找到失散的姊姊喔",
@@ -2150,16 +1245,6 @@
             "code": 20,
             "image": "lala_sad.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2171,11 +1256,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "如果不清楚特徵的話，那麼尋找也無從談起，",
@@ -2183,11 +1263,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2199,11 +1274,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "嘿~意外的認真嘛",
@@ -2211,16 +1281,6 @@
             "code": 20,
             "image": "lala_smile.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2232,16 +1292,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "畢竟有一位失蹤的姐姐不是很帥嘛？",
@@ -2251,28 +1301,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "大概只有影○詩世界觀的人會覺得這樣很帥吧"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2284,11 +1314,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "先前被那些可愛(？)的孩子包圍的時候啊",
@@ -2296,11 +1321,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2312,11 +1332,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "那種感覺跟聽著徒姬小姐歌唱的時候完全不同",
@@ -2324,11 +1339,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2340,16 +1350,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "真是輸給你了",
@@ -2357,16 +1357,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2378,28 +1368,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "此時兩人點的冰沙上桌了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2411,16 +1381,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "她彷彿有著無盡的求知慾與行動力，她經常掛在嘴邊的話是「如果我們能前往其他的世界就好了」",
@@ -2428,16 +1388,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2449,16 +1399,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "她總是說一些我聽不懂的東西，但我很憧憬這樣的姊姊",
@@ -2466,16 +1406,6 @@
             "code": 20,
             "image": "lala_sad.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2487,16 +1417,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "(原來菈菈安瑟姆小姐是異世界人)",
@@ -2504,11 +1424,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2520,11 +1435,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "阿，超能力者的話徒姬醬就是，聽到她發動能力時唱的歌的人會死掉喔",
@@ -2532,16 +1442,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2553,11 +1453,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "總之呢我開始想辦法用我的能力在這邊生活下去",
@@ -2565,16 +1460,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2586,16 +1471,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "吞噬、消化、理解、模仿......我能做到的充其量就是這種程度",
@@ -2603,16 +1478,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2624,11 +1489,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "打贏大哥哥又不值得開心，況且如果找不到姊姊的話，再厲害的能力也沒用啦",
@@ -2636,16 +1496,6 @@
             "code": 20,
             "image": "lala_sad.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2657,16 +1507,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "但是我卻一直都找不到......",
@@ -2674,16 +1514,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2695,11 +1525,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "執著於人物，咬住就不會鬆口的Saki醬、還有代步的阿米莫絲醬都是如此",
@@ -2707,11 +1532,6 @@
             "code": 10,
             "image": "keng_angry_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2723,16 +1543,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "我思考過很久，究竟還缺少了什麼東西",
@@ -2740,16 +1550,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2761,16 +1561,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "(前者跟後者不是一個難度吧？)",
@@ -2778,11 +1568,6 @@
             "code": 10,
             "image": "keng_panic_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2794,16 +1579,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "吶，大哥哥",
@@ -2811,16 +1586,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2832,42 +1597,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "菈菈安瑟姆突然湊到梗平的身邊，她的氣味與吐息撫上梗平的鼻尖"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "那是甜膩的，彷彿誘人的果實一般的香味"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2879,16 +1614,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "你說過什麼都會做的，不是嘛？",
@@ -2898,28 +1623,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平感覺到某種被掠食者盯上的氣場，冷汗開始狂流"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2931,11 +1636,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "嗯~後悔了嘛？",
@@ -2943,16 +1643,6 @@
             "code": 20,
             "image": "lala_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2964,11 +1654,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "但是，在下覺得妳的姊姊，應該不希望菈菈安瑟姆變成真正的怪物喔",
@@ -2976,11 +1661,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -2992,28 +1672,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "明明說著真無趣，但梗平依稀可以見到捧腹笑著的菈菈安瑟姆眼角的淚花"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3025,11 +1685,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "大哥哥相信那種東西具有實現願望的力量嘛？",
@@ -3037,16 +1692,6 @@
             "code": 20,
             "image": "lala_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3058,11 +1703,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "如果自己不注意安全，那麼再怎麼庇佑平安都沒有意義",
@@ -3070,11 +1710,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3086,11 +1721,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "但是在下認為祈願，祈禱她人的願望可以實現這種事，並不是沒有意義的",
@@ -3098,11 +1728,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3114,23 +1739,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "當耿平說到一半的時候，御守突然發出亮光"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3142,42 +1752,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "在光輝的彼岸，菈菈安瑟姆看見了她姐姐的身影，但那虛幻的身影一閃即逝"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "菈菈安瑟姆不禁伸出了手，但幻影已經消失了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3189,23 +1769,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "此時的梗平看到菈菈安瑟姆正流著眼淚"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3217,11 +1782,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "只是太開心了，大......梗平你實現了我的願望",
@@ -3229,16 +1789,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3250,16 +1800,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "那我想看到妳的笑容，妳不適合哭泣的表情",
@@ -3267,11 +1807,6 @@
             "code": 10,
             "image": "keng_smile_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3283,140 +1818,40 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "接下來梗平見到了他此生所遇，最燦爛的笑容"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
           "text": "隨後在光輝中，菈菈安瑟姆消失了"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "應該是注意到菈菈安瑟姆位置的姐姐將她帶回去了"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
           "text": "因為在光芒中的菈菈安瑟姆，沒有一絲難受或是不滿的表情"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "由於光芒太刺眼了，梗平沒有注意到菈菈安瑟姆眼角的淚珠"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
           "text": "自從在兔子之家與菈菈安瑟姆告別後，梗平依舊會前往兔子之家"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "有時是享用評價的料理、有時是被店員鄙視"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
           "text": "有時是去聽『人生苦短』樂隊的即興演唱，但真要說原因的話......"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "他果然還是在期待向那天一樣的不期而遇"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3428,16 +1863,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "？？？？？",
           "text": "姊姊說過了，要好好完成恩人的委託才行，但那種事情怎麼樣都好",
@@ -3445,16 +1870,6 @@
             "code": 20,
             "image": "lala_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3466,16 +1881,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "首先要請我吃飯，然後告訴我委託的內容！",
@@ -3483,16 +1888,6 @@
             "code": 20,
             "image": "lala_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -3504,16 +1899,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "菈菈安瑟姆",
           "text": "請讓我待在你的身邊，完成委託吧",
@@ -3523,16 +1908,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "請多指教，菈菈安瑟姆小姐",
@@ -3540,11 +1915,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "akiba.event.complete",

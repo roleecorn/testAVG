@@ -78,16 +78,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "（在車站附近似乎有個廢棄的站台，聽說那邊不時會有歌聲傳來，但當中的內容，有時讓人感到親和，有時又讓人感到違和，不知道現在過去會不會遇到。）",
@@ -95,11 +85,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -111,28 +96,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平接近站台時，聽到了歌聲從破舊的站台上傳來，那歌聲明明正在唱著歌，當中卻不帶著一絲感情，宛如機械一般的唱出歌詞而已。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -144,28 +109,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "站台上的是一名穿著洛麗塔的少女正在唱歌。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -177,28 +122,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "當梗平接近少女時，正在唱歌的少女，也注意到了梗平的存在，但依舊沒有停下歌唱。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -210,42 +135,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "伴隨著這段歌詞的結束，少女對著耿平露出了微笑，但下一個瞬間，少女的底下出現了一個大洞，少女掉了進去，少女的表情十分的平靜，甚至有些釋懷地笑了。"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "當大洞吞噬掉少女之後，洞消失了，在廢棄的站台上，只剩下一臉迷茫的耿平。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -255,11 +150,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -343,16 +233,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "（不知不覺間又來到了這裡，這裡既然會傳出謠言出來，代表這這裡的事情應該不會只發生一次吧？還是說有其他人存在嗎？）",
@@ -362,23 +242,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "當梗平靠近站台的時候，那位同樣裝扮的少女正站在那裡，並沒有唱歌，也沒有做甚麼，只是在那傻站著，但是當耿平靠近時，少女出聲了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -388,16 +253,6 @@
             "code": 20,
             "image": "akane_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -416,28 +271,8 @@
               "text": "不如就先應著對方的話接下去吧。",
               "events": [
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "（不如就先應著對方的話接下去吧。）"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -449,11 +284,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "茜",
                   "text": "「梗平先生是來陪我的嗎？」",
@@ -461,16 +291,6 @@
                     "code": 20,
                     "image": "akane_normal.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -482,11 +302,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "茜",
                   "text": "「那還真是開心呢，昨天的記憶，已經消逝，但何謂消逝也，不太清楚呢。」",
@@ -496,28 +311,8 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "少女又開始唱起了歌，與此同時天上似乎變成陰天一般，那滿天的烏雲......不，那是金槍魚，黃色的金槍魚。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -529,28 +324,8 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "茜和梗平，金槍魚從空中俯衝下來，將兩人變成了魚身肉串，劇烈的疼痛從傷口處蔓延，劇毒將身體變成了慘白，隨後發紫腐爛，兩人成為了站台的養分。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -563,28 +338,8 @@
               "text": "這傢伙在說甚麼啊？根本不認識她啊",
               "events": [
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "（這傢伙在說甚麼啊？根本不認識她啊）"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -596,28 +351,8 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "少女自顧自話地，又開始了歌唱。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -629,28 +364,8 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "在少女開始唱歌的時候，梗平彷彿好像意識到接下來會發生甚麼事情一般，想要阻止少女唱歌。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -662,16 +377,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "「停！先停停！先別唱了！」梗平跑了過去，但是......站台上出現了沙丁魚，沙丁魚們從站台上的間隙長出來了，梗平被這突如其來的狀態驚嚇到，不經停下了腳步。",
@@ -679,11 +384,6 @@
                     "code": 10,
                     "image": "keng_surprised_portrait.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -695,28 +395,8 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "少女露出開心的笑容，再度從憑空出現的大洞跌落了進去，留下了更加迷茫的耿平留在了站台上，還有一些剛長出來的沙丁魚。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -730,16 +410,6 @@
               ]
             }
           ]
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -823,16 +493,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "（結果我怎麼又回到了這裡呢？明明經過這兩次的事件，正常人早該跑了吧？）",
@@ -842,37 +502,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "這一次梗平直接走到了站台上，又看到了那位奇異的少女茜。"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "但是茜看起來似乎不認識耿平一般，正歪著頭看著梗平。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -884,11 +519,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茜",
           "text": "「欸？你是誰？怎麼會知道我的名字？」",
@@ -896,16 +526,6 @@
             "code": 20,
             "image": "akane_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -917,11 +537,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "茜",
           "text": "「我根本不認識你啊？話說你站在那邊不會很危險嗎？列車馬上就要進站了。」",
@@ -931,28 +546,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "這時耿平才意識到，這裡的站台，已經不再是破敗不堪的站台，而是完整乾淨整潔的站台，這是穿越了？還是幻覺？"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -964,23 +559,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平想著自己如果能夠帶著茜離開這個站台，是不是就不會出現那些奇怪的現象了。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -990,16 +570,6 @@
             "code": 20,
             "image": "akane_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1018,16 +588,6 @@
               "text": "是阿，我正好也要搭這輛列車呢",
               "events": [
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "「是阿，我正好也要搭這輛列車呢」",
@@ -1037,191 +597,56 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "梗平忽理忽塗的，就被茜給騙上了列車。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
                   "text": "列車於灑滿夕陽的黃昏之中肆意漂浮。"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "緊緊攥著單程車票的同時。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
                   "text": "隨著1/f波動，飄飄搖搖。"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "懸在，空中的，車廂廣告，"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
                   "text": "不留餘力地，盯著我們，"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "廣播聲音攪在一起。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
                   "text": "若是看見了那藍色光芒的話，"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "就象徵著那裡沒有任何生命了。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
                   "text": "被暗紅浸染的遙遠天空下，"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "盡力奔跑在吞噬鐵道的黃昏中。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
                   "text": "尋覓出延伸到世界各處的軌道，"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "兩人存於永不消逝的殷紅之中。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -1234,70 +659,20 @@
               "text": "．．．．．．",
               "events": [
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "（．．．．．．）"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
                   "text": "梗平猶豫了，最終梗平停下了腳步，梗平並沒有阻止對方上車的理由，就連真的會發生甚麼事情，梗平也不知道。"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "隨著列車入站，電子看板原本該顯示前往的站名，卻出現了電子亂碼。"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "茜彷彿沒有注意到一般，上了列車找了一個靠窗的位置坐下。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -1309,42 +684,12 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "列車啟動了，伴隨著車輪行駛在鐵軌間，哐噹哐噹的聲音響起，列車駛離了車站。"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "在那一瞬，梗平似乎看到了，極為刺眼的藍色光芒，伴隨著巨大聲響，梗平暈了過去。"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
@@ -1353,16 +698,6 @@
               ]
             }
           ]
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -1472,28 +807,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平最後鬼使神差地回到了廢棄站台，彷彿早有預感一般，梗平在站台上，再度遇見了那位少女。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1505,56 +820,16 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "茜依舊在唱著不知所謂的歌詞，但是看著梗平的眼神，卻露出了久違的，欣慰的表情。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "narration",
           "text": "梗平不知道，也不清楚為甚麼茜會有這樣的表情。"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "梗平也不知道茜搭乘的列車，後來的去向，究竟是前往了哪裡。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1566,28 +841,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "在旅行的終點，看到了不一樣經歷的他，每一次都會下意識地帶著他，回到最初的起點，就如同她的旅程一樣。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1599,28 +854,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "旅途沒有真正的終點，也沒有真正的起點，任何一秒的改變，都會創造無數量化的可能性，但僅此一次，也唯獨一次，能夠記得就好。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1632,28 +867,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "她已經難以記得經歷的所有事情，只記得有一次，他登上了列車，一起度過了許多旅行。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1665,43 +880,13 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "茜所搭乘的列車，不會因為梗平而停下，但茜願意為了梗平而重來，重新一場不同的旅行。"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
           "speaker": "End",
           "text": "讓帷幕落下吧，盛大的遊行慶典！"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",

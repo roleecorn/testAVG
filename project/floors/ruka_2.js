@@ -393,12 +393,6 @@ main.floors.ruka_2=
         },
         "\t[三角]我才不要只會喝酒的廢物！",
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "showImage",
             "code": 30,
             "image": "ruka_cg_rabbit_dark_break_placeholder.png",

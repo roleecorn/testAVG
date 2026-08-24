@@ -104,11 +104,6 @@
           "keep": true
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -232,11 +227,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -385,11 +375,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -510,11 +495,6 @@
           "text": "【主線 CH3 3-1 自爆篇（交流後）】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -556,11 +536,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -711,11 +686,6 @@
                   "text": "梗平掏出了自己手機對成果拍了一張照發到了群組裡"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -804,11 +774,6 @@
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "太可惡了"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -1407,11 +1372,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -1540,11 +1500,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -1631,11 +1586,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -1742,11 +1692,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -1924,11 +1869,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -2341,11 +2281,6 @@
                 {
                   "kind": "comment",
                   "text": "TODO: 【BGM：春日影】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -2784,11 +2719,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -2973,11 +2903,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -3103,11 +3028,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -3181,11 +3101,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -3374,11 +3289,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -3836,11 +3746,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -4160,11 +4065,6 @@
           "text": "【主線 CH3 3-2 貝琪晚餐】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -4235,11 +4135,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -4457,11 +4352,6 @@
         {
           "kind": "narration",
           "text": "梗平上了車重新回到了秋葉原，在下車之前貝琪拉住了他的手"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -4683,11 +4573,6 @@
           "kind": "bgm.play",
           "name": "BGMBOOM.mp3",
           "keep": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",

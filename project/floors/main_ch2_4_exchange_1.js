@@ -331,11 +331,6 @@ main.floors.main_ch2_4_exchange_1=
             "text": "【主線 CH2 2-4 書店A內部（交流後）】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",

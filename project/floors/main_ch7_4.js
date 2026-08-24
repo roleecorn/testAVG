@@ -331,11 +331,6 @@ main.floors.main_ch7_4=
             "text": "【主線 CH7 7-4 劫車作戰】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH6_L68.png",
@@ -392,21 +387,6 @@ main.floors.main_ch7_4=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH4_L142.png",
@@ -416,6 +396,16 @@ main.floors.main_ch7_4=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -837,11 +827,6 @@ main.floors.main_ch7_4=
             "function": "function () { core.setCurtain([120, 72, 36, 0.32], 0); }"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH6_L68.png",
@@ -1054,11 +1039,6 @@ main.floors.main_ch7_4=
         },
         {
             "type": "pauseBgm"
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -1890,11 +1870,6 @@ main.floors.main_ch7_4=
             "text": "TODO: 【BGM：BGMTANK】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH4_L142.png",
@@ -2212,21 +2187,6 @@ main.floors.main_ch7_4=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L295.png",
@@ -2236,6 +2196,16 @@ main.floors.main_ch7_4=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "pauseBgm"
@@ -3375,21 +3345,6 @@ main.floors.main_ch7_4=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH6_L68.png",
@@ -3399,6 +3354,16 @@ main.floors.main_ch7_4=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -3537,21 +3502,6 @@ main.floors.main_ch7_4=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH3_L86.png",
@@ -3561,6 +3511,16 @@ main.floors.main_ch7_4=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "\t[貝琪]東山醬東山醬梗平跟我告白了呀—",
         "\t[東山]真的嗎貝琪親！恭喜妳！不過沒想到木訥的梗平竟然敢主動出擊呢！",

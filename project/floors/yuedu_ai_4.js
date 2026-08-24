@@ -732,11 +732,6 @@ main.floors.yuedu_ai_4=
                             "time": 0
                         },
                         {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 0
-                        },
-                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "yuedu_smile.png",

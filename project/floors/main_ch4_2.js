@@ -331,11 +331,6 @@ main.floors.main_ch4_2=
             "text": "【主線 CH4 4-2 修卡已逝】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH4_L142.png",
@@ -583,21 +578,6 @@ main.floors.main_ch4_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "ms_bg_vehicle_interior.png",
@@ -607,6 +587,16 @@ main.floors.main_ch4_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "playBgm",

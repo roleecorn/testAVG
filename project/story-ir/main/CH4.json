@@ -104,11 +104,6 @@
           "keep": true
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -215,11 +210,6 @@
           "kind": "bgm.play",
           "name": "BGMDuel.mp3",
           "keep": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -374,11 +364,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -521,11 +506,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -850,11 +830,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -1047,11 +1022,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -1107,11 +1077,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -1232,11 +1197,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -1471,11 +1431,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -1787,11 +1742,6 @@
           "text": "【主線 CH4 4-2 修卡已逝】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -1974,11 +1924,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",

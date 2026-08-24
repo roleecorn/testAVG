@@ -331,11 +331,6 @@ main.floors.main_ch6_3=
             "text": "【主線 CH6 6-3 逃亡與希望】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L295.png",
@@ -504,21 +499,6 @@ main.floors.main_ch6_3=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH4_L142.png",
@@ -528,6 +508,16 @@ main.floors.main_ch6_3=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "梗平來到了地圖上的地點，打開了小倉庫並躲了進去",
         {
@@ -768,21 +758,6 @@ main.floors.main_ch6_3=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",
@@ -792,6 +767,16 @@ main.floors.main_ch6_3=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "警察帶著梗平穿過了重重的封鎖線，抵達了無人看守的地方",
         {

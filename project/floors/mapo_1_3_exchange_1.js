@@ -331,11 +331,6 @@ main.floors.mapo_1_3_exchange_1=
             "text": "【主線 CH1 1-3 麻婆豆腐店（交流後）】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",

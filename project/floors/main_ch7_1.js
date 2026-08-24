@@ -335,11 +335,6 @@ main.floors.main_ch7_1=
             "text": "【BGM預定地：()切換BGM或到7-1結束前連續播放此首BGM】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH3_L86.png",
@@ -375,21 +370,6 @@ main.floors.main_ch7_1=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -399,6 +379,16 @@ main.floors.main_ch7_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "從車站與眾人解散之後",
         {
@@ -687,21 +677,6 @@ main.floors.main_ch7_1=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L189.png",
@@ -711,6 +686,16 @@ main.floors.main_ch7_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -1425,11 +1410,6 @@ main.floors.main_ch7_1=
         {
             "type": "comment",
             "text": "【BGM預定地：()切換BGM或到7-1結束前連續播放此首BGM】"
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",

@@ -336,11 +336,6 @@ main.floors.main_ch3_3=
             "keep": true
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",

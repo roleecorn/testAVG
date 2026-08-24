@@ -331,11 +331,6 @@ main.floors.main_ch2_3=
             "text": "【主線 CH2 2-3 遊戲中心】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L258.png",
@@ -751,21 +746,6 @@ main.floors.main_ch2_3=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",
@@ -775,6 +755,16 @@ main.floors.main_ch2_3=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -869,11 +859,6 @@ main.floors.main_ch2_3=
             "time": 150
         },
         "誒？徒手爬了進去，真的假的",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         {
             "type": "showImage",
             "code": 1,

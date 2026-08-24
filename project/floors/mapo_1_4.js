@@ -331,11 +331,6 @@ main.floors.mapo_1_4=
             "text": "【主線 CH1 1-4 炭烤蜜瓜兔子】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L360.png",
@@ -838,21 +833,6 @@ main.floors.mapo_1_4=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L401.png",
@@ -862,6 +842,16 @@ main.floors.mapo_1_4=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "梗平進入便利商店後，立刻衝向了裝著酒的冰櫃",
         {
@@ -1023,21 +1013,6 @@ main.floors.mapo_1_4=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",
@@ -1047,6 +1022,16 @@ main.floors.mapo_1_4=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "來到了河邊的梗平打開了裝著酒的袋子，拿出了自己的戰利品",
         {

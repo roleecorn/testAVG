@@ -336,11 +336,6 @@ main.floors.main_ch4_1=
             "keep": true
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -473,11 +468,6 @@ main.floors.main_ch4_1=
             "type": "playBgm",
             "name": "BGMDuel.mp3",
             "keep": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
         },
         {
             "type": "showImage",
@@ -670,21 +660,6 @@ main.floors.main_ch4_1=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L295.png",
@@ -694,6 +669,16 @@ main.floors.main_ch4_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "於是梗平重複了一遍昨天的流程",
         "抵達書店、堆出假面騎士、與檢察官進行攻防戰",
@@ -779,21 +764,6 @@ main.floors.main_ch4_1=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH4_L79.png",
@@ -803,6 +773,16 @@ main.floors.main_ch4_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "playBgm",
@@ -1192,21 +1172,6 @@ main.floors.main_ch4_1=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH4_L107.png",
@@ -1216,6 +1181,16 @@ main.floors.main_ch4_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "梗平醒了過來後，發現眼前是陌生的天花板",
         "一個長著兔耳的女人走了過來，驚訝地看著醒來的梗平",
@@ -1520,21 +1495,6 @@ main.floors.main_ch4_1=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L353.png",
@@ -1544,6 +1504,16 @@ main.floors.main_ch4_1=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "跑出來外面的梗平，內心蹦生了一個想法",
         {
@@ -1618,21 +1588,6 @@ main.floors.main_ch4_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH4_L142.png",
@@ -1642,6 +1597,16 @@ main.floors.main_ch4_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "梗平乖乖等到了11點後，才前往了雜貨店",
                         "到了雜貨店後，梗平發現其他人都已經到達了",
@@ -1804,21 +1769,6 @@ main.floors.main_ch4_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "ms_bg_becky_mansion.png",
@@ -1828,6 +1778,16 @@ main.floors.main_ch4_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "當梗平下一次醒來時，眼前是金璧輝煌的天花板",
                         {
@@ -2139,21 +2099,6 @@ main.floors.main_ch4_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH4_L142.png",
@@ -2163,6 +2108,16 @@ main.floors.main_ch4_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "梗平來到了雜貨店的後方，發現這裡正好在倉庫區與鐵路中間",
                         {

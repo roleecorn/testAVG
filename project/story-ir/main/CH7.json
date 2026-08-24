@@ -103,11 +103,6 @@
           "text": "【BGM預定地：()切換BGM或到7-1結束前連續播放此首BGM】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -190,11 +185,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -440,11 +430,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -981,11 +966,6 @@
           "text": "【BGM預定地：()切換BGM或到7-1結束前連續播放此首BGM】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -1269,11 +1249,6 @@
           "text": "【主線 CH7 7-2 聖典與ANIsister】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -1342,11 +1317,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -1483,11 +1453,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -1590,11 +1555,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -1820,11 +1780,6 @@
         {
           "kind": "comment",
           "text": "【BGM預定地：()】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -2139,11 +2094,6 @@
           "text": "【BGM預定地：()切換BGM或到7-2結束前連續播放此首BGM】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -2267,11 +2217,6 @@
         {
           "kind": "comment",
           "text": "【過場：一段時間過後】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -2402,11 +2347,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -2890,11 +2830,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -3028,11 +2963,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -3197,11 +3127,6 @@
           "text": "【主線 CH7 7-3 集合與突破】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -3282,11 +3207,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -3760,11 +3680,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -3889,11 +3804,6 @@
         {
           "kind": "comment",
           "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -4224,11 +4134,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -4263,11 +4168,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -4306,11 +4206,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -4347,11 +4242,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -4386,11 +4276,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -4430,11 +4315,6 @@
         {
           "kind": "bgm.pause",
           "until": "background"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -4867,11 +4747,6 @@
           "text": "【主線 CH7 7-4 劫車作戰】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -4971,11 +4846,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -5291,11 +5161,6 @@
           "function": "function () { core.setCurtain([120, 72, 36, 0.32], 0); }"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -5414,11 +5279,6 @@
         {
           "kind": "bgm.pause",
           "until": "background"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -6153,11 +6013,6 @@
           "text": "TODO: 【BGM：BGMTANK】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -6377,11 +6232,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -7250,11 +7100,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -7339,11 +7184,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -7567,11 +7407,6 @@
           "text": "【主線 CH7 7-5 昭告天下】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -7659,11 +7494,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -8191,11 +8021,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -10622,11 +10447,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -10714,11 +10534,6 @@
             "image": "ms_portrait_tencho_normal.png",
             "expression": "normal"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -11091,11 +10906,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -11228,11 +11038,6 @@
           "text": "TODO: 【過場：少女讀取中…】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -11357,11 +11162,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -12384,11 +12184,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -12758,11 +12553,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -12970,11 +12760,6 @@
           "text": "TODO: 【白色慢速過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -13063,11 +12848,6 @@
           "text": "TODO: 【BGM：BGMED2】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -13148,11 +12928,6 @@
           "text": "【背景幻燈片】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -13163,11 +12938,6 @@
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -13182,11 +12952,6 @@
           "time": 250
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -13197,11 +12962,6 @@
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -13216,11 +12976,6 @@
           "time": 250
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -13231,11 +12986,6 @@
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -13250,9 +13000,16 @@
           "time": 250
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_tbd.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
         },
         {
           "kind": "background.show",
@@ -13267,11 +13024,6 @@
           "time": 250
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -13282,28 +13034,6 @@
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_tbd.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -13320,11 +13050,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",

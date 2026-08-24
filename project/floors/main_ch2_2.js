@@ -331,11 +331,6 @@ main.floors.main_ch2_2=
             "text": "【主線 CH2 2-2 三過書店】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -455,21 +450,6 @@ main.floors.main_ch2_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L60.png",
@@ -479,6 +459,16 @@ main.floors.main_ch2_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -586,21 +576,6 @@ main.floors.main_ch2_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -610,6 +585,16 @@ main.floors.main_ch2_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         {
             "type": "showImage",
@@ -793,21 +778,6 @@ main.floors.main_ch2_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH2_L163.png",
@@ -817,6 +787,16 @@ main.floors.main_ch2_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "走進餐廳的梗平看到了已經坐在那裏的蘭斯",
         "打起歪腦筋的梗平立刻帶著小朋友與蘭斯併了桌",
@@ -1381,21 +1361,6 @@ main.floors.main_ch2_2=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH1_L353.png",
@@ -1405,6 +1370,16 @@ main.floors.main_ch2_2=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "梗平離開家庭餐廳，一路朝倉庫區奔去",
                         {

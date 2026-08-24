@@ -104,16 +104,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "image.show",
           "role": "cg",
           "code": 30,
@@ -144,16 +134,6 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "嗚哇！？修卡的襲擊嗎！讓我來解決這件事吧！",
@@ -161,11 +141,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -177,11 +152,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "？？？",
           "text": "不好意思，沒想到有人會在這個時間參拜……沒事嗎？",
@@ -189,16 +159,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -210,11 +170,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "吾名為…綿貫咲耶，是這個神社的巫女",
@@ -222,16 +177,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -243,16 +188,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "原來是投影嗎！嚇了我一跳啊…",
@@ -260,11 +195,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -276,11 +206,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "這裡是「神孕花之神社」，掌管結緣與……",
@@ -288,16 +213,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -309,11 +224,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "安息的地方，這位異鄉人。因此一般鮮有參拜者特意光臨呢…",
@@ -321,16 +231,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -342,11 +242,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "和島根縣「出雲大社」的主祭神一樣，是供奉大國主大神喔～",
@@ -354,16 +249,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -375,11 +260,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "在異鄉人眼中看起來陰森嗎？吾不這麼認為呢……是認知差異嗎？",
@@ -387,16 +267,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -408,11 +278,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "梗平先生呢…明白了，期待你得到良緣與……休息之時。",
@@ -422,28 +287,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[梗平小跑著離開，不時回頭確認那座神社是真實的存在，感到莫名的寒意。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -527,28 +372,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[不知道是迷霧還是精神不佳影響，梗平朦朧間走到了神社附近]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -560,16 +385,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "不，只是因為匆忙製作的騎士系統導致我身體菠蘿菠蘿噠…被恐懼心驅使前往這裡",
@@ -577,11 +392,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -593,16 +403,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "忘了吧，那個不重要的。簡單來說就是我為了向神明祈求得到強化形態而來。",
@@ -610,11 +410,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -626,16 +421,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "是為了邁向人生新篇章的必經之路！",
@@ -643,11 +428,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -659,11 +439,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "原來如此，是為了提升運勢而到神社求福呢…吾理解了。",
@@ -671,16 +446,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -692,11 +457,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "關於那點…可能沒有相似的東西呢……",
@@ -704,16 +464,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -725,16 +475,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "ＴＡＴＯＢＡ！就是慾望硬幣！",
@@ -742,11 +482,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -765,16 +500,6 @@
               "text": "購買",
               "events": [
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "巫女小姐誠意推薦！我當然會買吧！就要這個吧！",
@@ -782,11 +507,6 @@
                     "code": 10,
                     "image": "keng_surprised_portrait.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -798,16 +518,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "哦哦！很吉祥的花呢！",
@@ -815,11 +525,6 @@
                     "code": 10,
                     "image": "keng_surprised_portrait.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -831,16 +536,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "[梗平買了護身符就去抽新的假面騎士一番賞，結果沒中想要的Ａ賞，但中了Ｂ賞還算不錯。]"
                 }
@@ -850,16 +545,6 @@
               "text": "不購買",
               "events": [
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "果然依賴神力護體萬萬不可！巫女小姐，我決定用人類姿態挑戰！",
@@ -867,11 +552,6 @@
                     "code": 10,
                     "image": "keng_surprised_portrait.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -883,16 +563,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "但是一場來到，就讓我去投些香火錢做個儀式吧！",
@@ -900,11 +570,6 @@
                     "code": 10,
                     "image": "keng_surprised_portrait.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -916,16 +581,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "哦！就用這枚５００日圓吧！（帥氣的ＯＯＯ取硬幣動作）",
@@ -933,11 +588,6 @@
                     "code": 10,
                     "image": "keng_surprised_portrait.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -949,11 +599,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "綿貫咲耶",
                   "text": "呼，真是有趣的人呢…令我想起一位朋友了。",
@@ -961,16 +606,6 @@
                     "code": 20,
                     "image": "watanuki_sakuya_smile.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -982,11 +617,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "綿貫咲耶",
                   "text": "這樣就可以了，祝你緣份已至。",
@@ -996,28 +626,8 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "[梗平滿懷歡喜地去抽一番賞……雖然沒有A賞，]"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
@@ -1026,16 +636,6 @@
               ]
             }
           ]
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -1145,28 +745,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[炎炎夏日，卻只有這裡充滿陰風氣息，是空調不要錢嗎？梗平又走到神社那裡。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1178,11 +758,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "梗平先生，居然又來了呢，上次的抽獎結果還可以嗎？",
@@ -1190,16 +765,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1211,11 +776,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "是這樣嗎？那也不錯呢，梗平先生這次又是為了什麼而來呢？",
@@ -1223,16 +783,6 @@
             "code": 20,
             "image": "watanuki_sakuya_surprised.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1244,11 +794,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "乘涼……嗎？真是不錯的想法呢，梗平先生，請隨意休息吧。",
@@ -1256,16 +801,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1277,11 +812,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "還記得我上次提到關於朋友的事情嗎？真細心呢～梗平先生。",
@@ -1289,16 +819,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1310,11 +830,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "嗯，是位怕寂寞又喜歡說莫名其妙事情的友人呢～",
@@ -1322,16 +837,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1343,11 +848,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "就是這個呢～這個我聽不懂的東西，就像那位友人會說的…",
@@ -1355,16 +855,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1376,16 +866,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "不不不，那是什麼奇怪料理嗎？",
@@ -1393,11 +873,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1409,16 +884,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "窮舉法嗎……聽上去不太聰明呢…能請教你那位友人的名字嗎？",
@@ -1426,11 +891,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1442,16 +902,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "她的名字是……「櫻羽艾瑪」，如果見到她請和她交個朋友吧～",
@@ -1459,16 +909,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1480,37 +920,12 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[從巫女得知自己一位少女的名字，梗平反覆思考自己是否怕寂寞的個性。］"
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[梗平在回家路上買了根炙烤玉米享用。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",
@@ -1620,28 +1035,8 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "narration",
           "text": "[某處傳來奇怪音樂，梗平回想起在神社初遇的那番景象，不自覺地走到神社。]"
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1653,16 +1048,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "籠の中の鳥は-（籠中的鳥兒）",
@@ -1670,16 +1055,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1691,16 +1066,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "夜明けの晩に-（在即將天亮的夜裡）",
@@ -1708,16 +1073,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1729,16 +1084,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "後ろの正面だあれ？-（在後面的那個人是誰？）",
@@ -1746,16 +1091,6 @@
             "code": 20,
             "image": "watanuki_sakuya_normal.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "image.show",
@@ -1788,16 +1123,6 @@
           "time": 0
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "真是充滿詭異的音樂與景象…這個到底是什麼祭典啊…",
@@ -1805,11 +1130,6 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1821,16 +1141,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "原來又是演習嗎？像真度很高呢，這些投影……",
@@ -1838,11 +1148,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1854,16 +1159,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "那麼，梗平先生從一開始看到剛才結束嗎？",
@@ -1873,16 +1168,6 @@
           }
         },
         {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "Way？我也不知道是否從頭開始…就是聽到在唱歌…",
@@ -1890,11 +1175,6 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "dialogue",
@@ -1913,28 +1193,8 @@
               "text": "什麼意思",
               "events": [
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "（什麼意思）"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -1946,11 +1206,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "綿貫咲耶",
                   "text": "呼呼，像梗平先生的人應該不會有開花機會吧…只是吾隨心說笑而已",
@@ -1958,16 +1213,6 @@
                     "code": 20,
                     "image": "watanuki_sakuya_smile.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -1979,16 +1224,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "ＷＡＹ！敵☆裸☆体！可以啊～",
@@ -1996,11 +1231,6 @@
                     "code": 10,
                     "image": "keng_surprised_portrait.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -2012,16 +1242,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "綿貫咲耶",
                   "text": "かごめかごめ（籠目 籠目）",
@@ -2029,16 +1249,6 @@
                     "code": 20,
                     "image": "watanuki_sakuya_normal.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -2050,16 +1260,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "綿貫咲耶",
                   "text": "いついつ出やる-（什麼時候飛出來）",
@@ -2069,28 +1269,8 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "[在迷幻光影與滲人歌聲中迷失的梗平，仿佛身體變得菠蘿菠蘿…意識遠去…]"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
@@ -2102,28 +1282,8 @@
               "text": "不用了",
               "events": [
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "（不用了）"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -2135,11 +1295,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "梗平",
                   "text": "我想起還有其他事要做！摩艾！",
@@ -2147,11 +1302,6 @@
                     "code": 10,
                     "image": "keng_surprised_portrait.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -2163,11 +1313,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "綿貫咲耶",
                   "text": "是這樣呢，那麼祝梗平先生能締結良緣吧~",
@@ -2177,28 +1322,8 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "[梗平小跑兩步回頭]"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -2210,11 +1335,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "綿貫咲耶",
                   "text": "梗平先生在說什麼事情呢？吾不太懂呢？",
@@ -2222,16 +1342,6 @@
                     "code": 20,
                     "image": "watanuki_sakuya_surprised.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -2243,11 +1353,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "綿貫咲耶",
                   "text": "欸欸……要吾為梗平先生進行「淨穢」嗎？",
@@ -2255,16 +1360,6 @@
                     "code": 20,
                     "image": "watanuki_sakuya_normal.png"
                   }
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "dialogue",
@@ -2276,11 +1371,6 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "dialogue",
                   "speaker": "綿貫咲耶",
                   "text": "真是奇怪的人呢~看來和艾瑪醬會很投機呢。",
@@ -2290,28 +1380,8 @@
                   }
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
-                },
-                {
                   "kind": "narration",
                   "text": "[梗平愉快地釋放Onduru語，仿佛進入了BLADE世界一樣！]"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 10,
-                  "async": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 20,
-                  "async": true
                 },
                 {
                   "kind": "narration",
@@ -2320,16 +1390,6 @@
               ]
             }
           ]
-        },
-        {
-          "kind": "image.hide",
-          "code": 10,
-          "async": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 20,
-          "async": true
         },
         {
           "kind": "function.call",

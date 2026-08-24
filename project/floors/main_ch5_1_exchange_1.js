@@ -331,11 +331,6 @@ main.floors.main_ch5_1_exchange_1=
             "text": "【主線 CH5 5-1 五日無戰事篇（交流後）】"
         },
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -499,11 +494,6 @@ main.floors.main_ch5_1_exchange_1=
         },
         "或許是為了回應這麼想的梗平，手機恰到好處的響了起來",
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -527,11 +517,6 @@ main.floors.main_ch5_1_exchange_1=
         "\t[克莉絲]多...多少？",
         "\t[東山]200萬，所以沒錯，各位我們要趕快去籌錢了",
         "\t[東山]我要去想辦法賺錢了，再見",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         {
             "type": "showImage",
             "code": 1,
@@ -634,21 +619,6 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH2_L258.png",
@@ -658,6 +628,16 @@ main.floors.main_ch5_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "梗平充新踏入了電子遊樂場，那個他永遠的失去了1000円的地方",
                         "梗平學著那個警察坐到了機台前，投入了自己的錢",
@@ -878,21 +858,6 @@ main.floors.main_ch5_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "setCurtain",
-                            "color": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "time": 500
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 150
-                        },
-                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH2_L295.png",
@@ -902,6 +867,16 @@ main.floors.main_ch5_1_exchange_1=
                             ],
                             "opacity": 1,
                             "time": 250
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
                         },
                         "梗平前往了熟悉的馬的膝蓋，即將迎接他的是無比艱難的挑戰",
                         {

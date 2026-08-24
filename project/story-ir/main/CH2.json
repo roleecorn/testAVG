@@ -99,11 +99,6 @@
           "text": "【主線 CH2 2-2 三過書店】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -211,11 +206,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -300,11 +290,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -447,11 +432,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -795,11 +775,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -1313,11 +1288,6 @@
           "text": "【主線 CH2 2-3 遊戲中心】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -1689,11 +1659,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -1784,11 +1749,6 @@
         {
           "kind": "narration",
           "text": "誒？徒手爬了進去，真的假的"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -1955,11 +1915,6 @@
         {
           "kind": "comment",
           "text": "【主線 CH2 2-4 書店A內部】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
@@ -2418,11 +2373,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -2608,11 +2558,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -2769,11 +2714,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -2843,11 +2783,6 @@
                 {
                   "kind": "narration",
                   "text": "不等梗平反應，畫張開了大嘴把梗平一口吞下"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -2994,11 +2929,6 @@
                 {
                   "kind": "comment",
                   "text": "【過場】"
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
                 },
                 {
                   "kind": "background.show",
@@ -3209,11 +3139,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -3418,11 +3343,6 @@
                   "time": 150
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 150
-                },
-                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -3583,11 +3503,6 @@
         {
           "kind": "comment",
           "text": "【主線 CH2 2-4 書店A內部（交流後）】"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "background.show",
