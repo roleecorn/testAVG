@@ -868,8 +868,12 @@ main.floors.yuedu_ai_4=
                             "time": 0
                         },
                         {
+                            "type": "comment",
+                            "text": "候選映射（待人工確認）：希望之花 → BGMYume.mp3；依希望／收束情境推定。"
+                        },
+                        {
                             "type": "playBgm",
-                            "name": "next_to_you_emotional.mp3"
+                            "name": "BGMYume.mp3"
                         },
                         {
                             "type": "showImage",
@@ -1032,8 +1036,12 @@ main.floors.yuedu_ai_4=
                             "time": 0
                         },
                         {
+                            "type": "comment",
+                            "text": "來源指定 BGM：EXCITE；已接入使用者提供的正式音檔 EXCITE.mp3。"
+                        },
+                        {
                             "type": "playBgm",
-                            "name": "next_to_you_emotional.mp3"
+                            "name": "EXCITE.mp3"
                         },
                         {
                             "type": "showImage",

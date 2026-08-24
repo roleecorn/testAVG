@@ -819,7 +819,10 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"BGMWitch.mp3",
 			"BGMWORC.mp3",
 			"BGMYocho.mp3",
-			"BGMYume.mp3"
+			"BGMYume.mp3",
+			"EXCITE.mp3",
+			"Get_Wild.mp3",
+			"Unwelcome_School.mp3"
 		],
 		"sounds": [
 			"attack.mp3",

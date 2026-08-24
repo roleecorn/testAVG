@@ -2874,6 +2874,14 @@ main.floors.main_ch3_1_exchange_1=
                             "text": "TODO: 【BGM：春日影】"
                         },
                         {
+                            "type": "comment",
+                            "text": "已確認映射（使用者確認）：春日影 → BGMHaru.mp3。"
+                        },
+                        {
+                            "type": "playBgm",
+                            "name": "BGMHaru.mp3"
+                        },
+                        {
                             "type": "showImage",
                             "code": 1,
                             "image": "CH2_L409.png",

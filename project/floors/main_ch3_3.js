@@ -1282,6 +1282,14 @@ main.floors.main_ch3_3=
             "text": "TODO: 【BGM：鐵達尼號】"
         },
         {
+            "type": "comment",
+            "text": "已確認映射（使用者確認）：鐵達尼號 → BGMWhisper.mp3。"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWhisper.mp3"
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",

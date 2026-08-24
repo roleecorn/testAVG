@@ -2283,6 +2283,14 @@
                   "text": "TODO: 【BGM：春日影】"
                 },
                 {
+                  "kind": "comment",
+                  "text": "已確認映射（使用者確認）：春日影 → BGMHaru.mp3。"
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMHaru.mp3"
+                },
+                {
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
@@ -5164,6 +5172,14 @@
         {
           "kind": "comment",
           "text": "TODO: 【BGM：鐵達尼號】"
+        },
+        {
+          "kind": "comment",
+          "text": "已確認映射（使用者確認）：鐵達尼號 → BGMWhisper.mp3。"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWhisper.mp3"
         },
         {
           "kind": "layout.set",

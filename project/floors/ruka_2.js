@@ -892,11 +892,11 @@ main.floors.ruka_2=
         },
         {
             "type": "comment",
-            "text": "來源指定 BGM：GET WILD；目前以已登錄 great_mission_heroic.mp3 暫代，詳見 project/story/TODO.md。"
+            "text": "來源指定 BGM：GET WILD；已接入使用者提供的正式音檔 Get_Wild.mp3。"
         },
         {
             "type": "playBgm",
-            "name": "great_mission_heroic.mp3",
+            "name": "Get_Wild.mp3",
             "keep": true
         },
         "梗平瀟灑地朝著夕陽離去",

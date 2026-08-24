@@ -214,8 +214,12 @@
           "text": "source line 46: 梗平立繪震動 或 畫面震動"
         },
         {
+          "kind": "comment",
+          "text": "來源指定 BGM：unwelcome school；已接入使用者提供的正式音檔 Unwelcome_School.mp3。"
+        },
+        {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
+          "name": "Unwelcome_School.mp3",
           "keep": true
         },
         {

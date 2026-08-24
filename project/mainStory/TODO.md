@@ -25,6 +25,8 @@
 
 - `BGM-20260822T150228Z-1-001.zip` 內四首 BGM 已接入來源指令，但 ZIP 未附原曲／作者／授權資訊；請補充授權以完成公開發行追溯，詳見 `.codex/task-questions/20260822-231945-bgm-zip-import.md`。
 
+- BGM 映射已確認：`CH3 3-1 春日影 → BGMHaru.mp3`、`CH3 3-3 鐵達尼號 → BGMWhisper.mp3`、`CH6 6-4 ED1用 → BGMED1.mp3`、`CH7 7-5 關羽之歌 → BGMKanu.mp3`；原始 TODO 保留作來源追溯，詳見 `.codex/task-questions/20260824-221212-bgm-mapping-candidates.md`。
+
 - `project/images/ms_ch1_mapo_shop_entrance_cg.png`：暫用複製 CG，來源為 `project/images/scene_mapo_cg.png`；之後需要替換成「麻婆豆腐店門口」正式 CG。
 - `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。
 - `project/images/ms_ch1_thunder_crocodile_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「放大的鱷魚圖」正式 CG。

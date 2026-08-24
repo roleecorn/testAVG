@@ -3791,6 +3791,10 @@
           "text": "TODO: 【BGM：ED1用】"
         },
         {
+          "kind": "comment",
+          "text": "已確認映射（使用者確認）：ED1用 → BGMED1.mp3。"
+        },
+        {
           "kind": "bgm.play",
           "name": "BGMED1.mp3"
         },

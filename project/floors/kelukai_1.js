@@ -541,8 +541,12 @@ main.floors.kelukai_1=
             "text": "source line 46: 梗平立繪震動 或 畫面震動"
         },
         {
+            "type": "comment",
+            "text": "來源指定 BGM：unwelcome school；已接入使用者提供的正式音檔 Unwelcome_School.mp3。"
+        },
+        {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "Unwelcome_School.mp3",
             "keep": true
         },
         {

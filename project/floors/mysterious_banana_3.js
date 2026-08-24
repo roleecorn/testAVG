@@ -581,8 +581,12 @@ main.floors.mysterious_banana_3=
         "伊布腰帶開始發出提示音",
         "\t[梗平]痾，Henshin?",
         {
+            "type": "comment",
+            "text": "候選映射（待人工確認）：目標是成為寶可夢大師最後10秒 → BGMRun.mp3；依變身／動作高潮情境推定。"
+        },
+        {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "BGMRun.mp3",
             "keep": true
         },
         "Eevee Mode",

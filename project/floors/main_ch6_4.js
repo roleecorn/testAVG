@@ -1135,6 +1135,10 @@ main.floors.main_ch6_4=
             "text": "TODO: 【BGM：ED1用】"
         },
         {
+            "type": "comment",
+            "text": "已確認映射（使用者確認）：ED1用 → BGMED1.mp3。"
+        },
+        {
             "type": "playBgm",
             "name": "BGMED1.mp3"
         },

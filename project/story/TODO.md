@@ -41,7 +41,9 @@
 - 本次 ZIP 剩餘 14 張圖片已由使用者確認為各篇章主角生成圖的來源，全部改列 `generated-source` 並從 `unknown/` 移除；各角色生成圖輸出或尚未落地狀態見永久 `project/story/manifest.md` 與本次 run 的 `work/asset-usage.md`。`師匠.png` 另已確認為店長「東方不敗」，接入 `shirou_3`。
 - `yuedu_ai_4` 的 `便利店.jpg` 與 `熟悉的街角.png` 原始比例不是 runtime 的 544×416；本次以可追溯的等比置中裁切產生 `yuedu_convenience_store.png`、`yuedu_familiar_corner.png` 並接入，待視覺驗收確認裁切是否接受。既有 `mikage_bookstore.jpg` 尺寸問題亦仍保留待辦。
 - `ruka_2`、`ruka_3`、`ruka_4` 與 `sena_3` 的泛用小巷使用 `ruka_generic_alley_placeholder.png`；`ruka_4` 的昏暗商業地點使用 `ruka_commercial_interior_dark_placeholder.png`；`sena_1`／`sena_4` 的旅店內部使用 `sena_hotel_interior_placeholder.png`。這些檔案由既有 544×416 背景複製，待正式地點背景替換，完成條件是保留唯一檔名、更新 IR／floor／manifest 並通過 `node scripts/manage_story_ir.js`。
-- `ruka_1`、`ruka_2`、`ruka_4` 與 `sena_3` 的來源 CG 尚無正式素材，暫用唯一命名的 `*_cg_*_placeholder.png`；`ruka_2` 的 `GET WILD` 尚無音檔，暫以已登錄 `great_mission_heroic.mp3` 播放。完成條件是取得正式素材後替換對應檔案／BGM、更新 manifest 與 IR，並重新完成圖片／音訊與遊戲內驗證。
+- `ruka_1`、`ruka_2`、`ruka_4` 與 `sena_3` 的來源 CG 尚無正式素材，暫用唯一命名的 `*_cg_*_placeholder.png`；`ruka_2` 的 `GET WILD` 已接入使用者提供的 `Get_Wild.mp3`，原曲／授權追溯仍待補。完成條件是取得正式素材授權資訊或完成人工驗收，並重新完成圖片／音訊與遊戲內驗證。
+
+- BGM 映射狀態：`可露凱 unwelcome school → Unwelcome_School.mp3`、`月讀愛 EXCITE → EXCITE.mp3` 已由使用者提供正式檔案並接入；`月讀愛 希望之花 → BGMYume.mp3`、`綿貫咲耶 陰森的神明大祭 → BGMWitch.mp3`、`神秘香蕉人 目標是成為寶可夢大師最後10秒 → BGMRun.mp3` 仍是候選，詳見 `.codex/task-questions/20260824-221212-bgm-mapping-candidates.md`。
 
 ## 待實作演出或小遊戲
 

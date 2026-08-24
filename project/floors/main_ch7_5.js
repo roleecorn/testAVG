@@ -5408,6 +5408,10 @@ main.floors.main_ch7_5=
             "text": "TODO: 【BGM：關羽之歌】"
         },
         {
+            "type": "comment",
+            "text": "已確認映射（使用者確認）：關羽之歌 → BGMKanu.mp3。"
+        },
+        {
             "type": "playBgm",
             "name": "BGMKanu.mp3"
         },
