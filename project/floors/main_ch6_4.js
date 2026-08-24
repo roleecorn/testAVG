@@ -10,13 +10,13 @@ main.floors.main_ch6_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_wedding.png",
+            "name": "CH6_L343.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "next_to_you_emotional.mp3",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch6_4=
         },
         {
             "type": "playBgm",
-            "name": "next_to_you_emotional.mp3"
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_wedding.png",
+            "image": "CH6_L343.png",
             "loc": [
                 0,
                 0
@@ -336,7 +336,7 @@ main.floors.main_ch6_4=
         "一道金屬彈片的「喀噠」聲響了",
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "BGMED1.mp3",
             "keep": true
         },
         {
@@ -834,18 +834,13 @@ main.floors.main_ch6_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_wedding.png",
+            "image": "CH6_L343.png",
             "loc": [
                 0,
                 0
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "playBgm",
-            "name": "next_to_you_emotional.mp3",
-            "keep": true
         },
         "在反應過來時，身體就已經換上了西裝站在紅毯上",
         "一旁的警察拿著婚戒放到了他的手中，用動作跟言語催促著他往前",
@@ -889,7 +884,7 @@ main.floors.main_ch6_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH6_L350.png",
+            "image": "CH6_L349.png",
             "loc": [
                 112,
                 50,
@@ -1046,11 +1041,6 @@ main.floors.main_ch6_4=
         },
         "結局",
         {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
-        },
-        {
             "type": "hideImage",
             "code": 30,
             "time": 150
@@ -1125,7 +1115,7 @@ main.floors.main_ch6_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH6_L377.png",
+            "image": "CH6_L374.png",
             "loc": [
                 112,
                 50,

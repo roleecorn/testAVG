@@ -10,13 +10,13 @@ main.floors.main_ch2_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_arcade.png",
+            "name": "CH2_L258.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "warped_surreal.mp3",
+    "bgm": "BGMWORC.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch2_3=
         },
         {
             "type": "playBgm",
-            "name": "warped_surreal.mp3"
+            "name": "BGMWORC.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_arcade.png",
+            "image": "CH2_L258.png",
             "loc": [
                 0,
                 0
@@ -338,7 +338,7 @@ main.floors.main_ch2_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_arcade.png",
+            "image": "CH2_L258.png",
             "loc": [
                 0,
                 0
@@ -622,6 +622,118 @@ main.floors.main_ch2_3=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         "\t[梗平]我的錢啊！！！",
         {
             "type": "hideImage",
@@ -712,7 +824,7 @@ main.floors.main_ch2_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -821,7 +933,7 @@ main.floors.main_ch2_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0

@@ -10,13 +10,13 @@ main.floors.main_ch2_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_bookstore_a.png",
+            "name": "CH3_L66.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "twists_suspense.mp3",
+    "bgm": "BGMUZUUZU.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch2_2=
         },
         {
             "type": "playBgm",
-            "name": "twists_suspense.mp3"
+            "name": "BGMUZUUZU.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a.png",
+            "image": "CH3_L66.png",
             "loc": [
                 0,
                 0
@@ -338,7 +338,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -472,7 +472,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_warehouse_district_day.png",
+            "image": "CH1_L60.png",
             "loc": [
                 0,
                 0
@@ -603,7 +603,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -810,7 +810,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_family_restaurant_interior.png",
+            "image": "CH2_L163.png",
             "loc": [
                 0,
                 0
@@ -1398,7 +1398,7 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street_night.png",
+                            "image": "CH1_L353.png",
                             "loc": [
                                 0,
                                 0

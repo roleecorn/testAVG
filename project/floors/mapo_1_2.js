@@ -10,13 +10,13 @@ main.floors.mapo_1_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "dark_alleys_tension.ogg",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.mapo_1_2=
         },
         {
             "type": "playBgm",
-            "name": "dark_alleys_tension.ogg"
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -332,7 +332,7 @@ main.floors.mapo_1_2=
         },
         {
             "type": "playBgm",
-            "name": "twists_suspense.mp3",
+            "name": "BGMUZUUZU.mp3",
             "keep": true
         },
         {
@@ -343,7 +343,7 @@ main.floors.mapo_1_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_warehouse_district_day.png",
+            "image": "CH1_L60.png",
             "loc": [
                 0,
                 0
@@ -1167,11 +1167,6 @@ main.floors.mapo_1_2=
             "time": 500
         },
         {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
-        },
-        {
             "type": "hideImage",
             "code": 30,
             "time": 150
@@ -1179,7 +1174,7 @@ main.floors.mapo_1_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -1199,6 +1194,10 @@ main.floors.mapo_1_2=
             ],
             "opacity": 1,
             "time": 0
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMYume.mp3"
         },
         "\t[梗平]蘭斯、克莉絲，你們有看見東山嗎？",
         {
@@ -1659,6 +1658,10 @@ main.floors.mapo_1_2=
             "direction": "up",
             "time": 0,
             "silent": true
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMYocho.mp3"
         }
     ]
 }

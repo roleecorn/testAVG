@@ -10,13 +10,13 @@ main.floors.main_ch7_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_bookstore_a_interior.png",
+            "name": "CH2_L295.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "twists_suspense.mp3",
+    "bgm": "BGMYocho.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch7_2=
         },
         {
             "type": "playBgm",
-            "name": "twists_suspense.mp3"
+            "name": "BGMYocho.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -338,7 +338,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -468,7 +468,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_commercial_interior_day.png",
+            "image": "CH1_L401.png",
             "loc": [
                 0,
                 0
@@ -704,7 +704,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_family_restaurant_interior.png",
+            "image": "CH2_L163.png",
             "loc": [
                 0,
                 0
@@ -890,7 +890,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -1242,7 +1242,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -1671,7 +1671,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -1874,7 +1874,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -2109,7 +2109,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe_rabbit_interior.png",
+            "image": "CH1_L360.png",
             "loc": [
                 0,
                 0
@@ -2787,7 +2787,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe_rabbit_interior.png",
+            "image": "CH1_L360.png",
             "loc": [
                 0,
                 0
@@ -2972,7 +2972,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_phone_message.png",
+            "image": "CH3_L86.png",
             "loc": [
                 0,
                 0
@@ -3000,6 +3000,18 @@ main.floors.main_ch7_2=
             "direction": "up",
             "time": 0,
             "silent": true
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMUZUUZU.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMYume.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMYume.mp3"
         }
     ]
 }

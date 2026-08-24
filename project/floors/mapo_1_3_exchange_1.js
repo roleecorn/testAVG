@@ -10,13 +10,13 @@ main.floors.mapo_1_3_exchange_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_mapo_shop.png",
+            "name": "CH1_L189.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "bossa_casual_shop.mp3",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.mapo_1_3_exchange_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3"
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_mapo_shop.png",
+            "image": "CH1_L189.png",
             "loc": [
                 0,
                 0
@@ -331,11 +331,6 @@ main.floors.mapo_1_3_exchange_1=
             "text": "【主線 CH1 1-3 麻婆豆腐店（交流後）】"
         },
         {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
-        },
-        {
             "type": "hideImage",
             "code": 30,
             "time": 150
@@ -343,7 +338,7 @@ main.floors.mapo_1_3_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0

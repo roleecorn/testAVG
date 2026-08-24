@@ -10,13 +10,13 @@ main.floors.main_ch3_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "bossa_casual_shop.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch3_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3"
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -332,7 +332,7 @@ main.floors.main_ch3_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "BGMWitch.mp3",
             "keep": true
         },
         {
@@ -343,7 +343,7 @@ main.floors.main_ch3_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -528,7 +528,7 @@ main.floors.main_ch3_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe.png",
+            "image": "CH1_L360.png",
             "loc": [
                 0,
                 0
@@ -767,7 +767,7 @@ main.floors.main_ch3_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0

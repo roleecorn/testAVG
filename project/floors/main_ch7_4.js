@@ -10,13 +10,13 @@ main.floors.main_ch7_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_maid_cafe.png",
+            "name": "CH6_L68.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "battle_theme_a.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch7_4=
         },
         {
             "type": "playBgm",
-            "name": "battle_theme_a.mp3"
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_maid_cafe.png",
+            "image": "CH6_L68.png",
             "loc": [
                 0,
                 0
@@ -338,7 +338,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_maid_cafe.png",
+            "image": "CH6_L68.png",
             "loc": [
                 0,
                 0
@@ -409,7 +409,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_warehouse_district.png",
+            "image": "CH4_L142.png",
             "loc": [
                 0,
                 0
@@ -844,7 +844,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_maid_cafe.png",
+            "image": "CH6_L68.png",
             "loc": [
                 0,
                 0
@@ -1063,7 +1063,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_warehouse_district.png",
+            "image": "CH4_L142.png",
             "loc": [
                 0,
                 0
@@ -1280,7 +1280,7 @@ main.floors.main_ch7_4=
         "列車前方，腳步聲越來越清晰",
         {
             "type": "playBgm",
-            "name": "BGMREBOOT2014.mp3",
+            "name": "BGMWitch.mp3",
             "keep": true
         },
         {
@@ -1306,10 +1306,8 @@ main.floors.main_ch7_4=
             "code": 30,
             "image": "CH7_L605.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -1480,10 +1478,8 @@ main.floors.main_ch7_4=
             "code": 30,
             "image": "CH7_L622.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -1510,6 +1506,118 @@ main.floors.main_ch7_4=
             ],
             "titlefont": 22,
             "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
             "lineHeight": 22,
             "fixedLines": 2,
             "time": 10,
@@ -1586,6 +1694,118 @@ main.floors.main_ch7_4=
             ],
             "titlefont": 22,
             "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
             "lineHeight": 22,
             "fixedLines": 2,
             "time": 10,
@@ -1677,7 +1897,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_warehouse_district.png",
+            "image": "CH4_L142.png",
             "loc": [
                 0,
                 0
@@ -1725,7 +1945,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L642.png",
+            "image": "CH7_L643.png",
             "loc": [
                 112,
                 50,
@@ -2009,7 +2229,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -2316,7 +2536,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L690.png",
+            "image": "CH7_L691.png",
             "loc": [
                 112,
                 50,
@@ -2469,7 +2689,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L706.png",
+            "image": "CH7_L707.png",
             "loc": [
                 112,
                 50,
@@ -2561,7 +2781,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L714.png",
+            "image": "CH7_L715.png",
             "loc": [
                 112,
                 50,
@@ -2618,7 +2838,7 @@ main.floors.main_ch7_4=
         },
         {
             "type": "playBgm",
-            "name": "BGMMeikyoshisui.mp3",
+            "name": "BGMREBOOT2014.mp3",
             "keep": true
         },
         {
@@ -2642,7 +2862,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L725.png",
+            "image": "CH7_L726.png",
             "loc": [
                 112,
                 50,
@@ -2974,7 +3194,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L748.png",
+            "image": "CH7_L749.png",
             "loc": [
                 112,
                 50,
@@ -3127,7 +3347,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L690.png",
+            "image": "CH7_L691.png",
             "loc": [
                 112,
                 50,
@@ -3172,7 +3392,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_maid_cafe.png",
+            "image": "CH6_L68.png",
             "loc": [
                 0,
                 0
@@ -3334,7 +3554,7 @@ main.floors.main_ch7_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_phone_message.png",
+            "image": "CH3_L86.png",
             "loc": [
                 0,
                 0
@@ -3401,6 +3621,42 @@ main.floors.main_ch7_4=
             "direction": "up",
             "time": 0,
             "silent": true
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMBOOM.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMTANK.mp3"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMMeikyoshisui.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWitch.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMUZUUZU.mp3"
+        },
+        {
+            "type": "pauseBgm"
         }
     ]
 }

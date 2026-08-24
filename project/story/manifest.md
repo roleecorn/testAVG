@@ -8,6 +8,16 @@
 
 每個角色區段使用相同表格；一個原始資源一列，產生多個最終檔名時在「最後命名／路徑」完整列出。穩定紀錄鍵格式為 `<character-id>:<原始資源 SHA-256>:<raw 相對路徑>`。
 
+## main-story／20260824 主線追加素材 run
+
+主線來源不是角色原始 TXT；本段只保存素材追溯入口，不作為劇情來源。原始 ZIP：`主線追加-20260824T085831Z-1-001.zip`；SHA-256：`AF72FC7ABECFFDBB32D15DCAA79157521AABCE4F627621DA2DB8E0BE32B23F22`；fresh run：`20260824-183110`。逐檔格式、尺寸、SHA-256、差異狀態、目前命名與用途見 `tmp/character-story-import/主線追加-20260824T085831Z-1-001/20260824-183110/work/run-manifest.md`。
+
+| Run | 原始資源 | 種類 | 差異／落地結果 | Story IR／驗證 |
+|---|---|---|---|---|
+| 20260824-183110 | `主線追加/BGM/*.mp3`（24） | BGM | 20 new、4 identical-existing；接入 `project/bgms/` 並登錄 `project/data.js` | `project/story-ir/main/main-story.json`；`validate_story.js` passed |
+| 20260824-183110 | `主線追加/更改、追加CG與背景代辦/*.png`（43） | CG／背景 | 依目前首個權威指令行號接入；三筆跨行號 mapping 及 `CH2_L306→CH2_L295` 規則見 run manifest | `validate_story_source.js` passed；110 line assets |
+| 20260824-183110 | 失效歷史 `CH<N>_L<N>.png` | stale lineage | 移至 `project/images/unknown/main-story-stale/`，保留舊檔與追溯紀錄，不註冊／不引用 | `project/data.js`、Story IR 已清除舊引用 |
+
 ## 20260823-192556 支線立繪替換追蹤
 
 本次只處理支線角色；半身／裁切 raw 參考圖只用於身份與外觀，正式輸出均經固定 `anime-expression-grid`、`split_emotion_image.py`、`remove_bk.py`。下列新生成表取代先前立繪；原始列保留作血緣。唐三因切割結果出現跨格鞋部，未寫入。

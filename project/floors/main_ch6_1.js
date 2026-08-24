@@ -10,13 +10,13 @@ main.floors.main_ch6_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_bookstore_a.png",
+            "name": "CH3_L66.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "waking_the_devil_crisis.mp3",
+    "bgm": "BGMYocho.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch6_1=
         },
         {
             "type": "playBgm",
-            "name": "waking_the_devil_crisis.mp3"
+            "name": "BGMYocho.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a.png",
+            "image": "CH3_L66.png",
             "loc": [
                 0,
                 0
@@ -332,7 +332,7 @@ main.floors.main_ch6_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "BGMTree.mp3",
             "keep": true
         },
         {
@@ -343,7 +343,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -475,7 +475,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe_rabbit_interior.png",
+            "image": "CH1_L360.png",
             "loc": [
                 0,
                 0
@@ -853,7 +853,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_maid_cafe.png",
+            "image": "CH6_L68.png",
             "loc": [
                 0,
                 0
@@ -1330,7 +1330,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -1605,7 +1605,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -1739,6 +1739,14 @@ main.floors.main_ch6_1=
             "direction": "up",
             "time": 0,
             "silent": true
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMTree.mp3"
         }
     ]
 }

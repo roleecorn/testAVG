@@ -10,13 +10,13 @@ main.floors.main_ch3_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "warped_surreal.mp3",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch3_3=
         },
         {
             "type": "playBgm",
-            "name": "warped_surreal.mp3"
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -332,7 +332,7 @@ main.floors.main_ch3_3=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "BGMBOOM.mp3",
             "keep": true
         },
         {
@@ -343,7 +343,7 @@ main.floors.main_ch3_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0

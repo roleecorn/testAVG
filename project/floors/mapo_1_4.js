@@ -10,13 +10,13 @@ main.floors.mapo_1_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_cafe.png",
+            "name": "CH1_L360.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "flags_drama.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.mapo_1_4=
         },
         {
             "type": "playBgm",
-            "name": "flags_drama.mp3"
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe.png",
+            "image": "CH1_L360.png",
             "loc": [
                 0,
                 0
@@ -338,7 +338,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe_rabbit_interior.png",
+            "image": "CH1_L360.png",
             "loc": [
                 0,
                 0
@@ -855,7 +855,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_commercial_interior_day.png",
+            "image": "CH1_L401.png",
             "loc": [
                 0,
                 0
@@ -1040,7 +1040,7 @@ main.floors.mapo_1_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_riverside_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -1207,11 +1207,6 @@ main.floors.mapo_1_4=
                         },
                         "梗平伸手握住了啤酒，但隨著一股強大的力量，梗平被拖進了下水道，隨後失去意識",
                         {
-                            "type": "playBgm",
-                            "name": "battle_theme_a.mp3",
-                            "keep": true
-                        },
-                        {
                             "type": "setCurtain",
                             "color": [
                                 0,
@@ -1222,6 +1217,17 @@ main.floors.mapo_1_4=
                             "time": 500
                         },
                         {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "CH1_L438.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
                             "type": "setCurtain",
                             "color": [
                                 0,
@@ -1230,6 +1236,39 @@ main.floors.mapo_1_4=
                                 0
                             ],
                             "time": 500
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "CH1_L438.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "CH1_L438.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "CH1_L438.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
                         },
                         "[不知過了多久，梗平艱難的張開了眼睛］",
                         {
@@ -1518,7 +1557,7 @@ main.floors.mapo_1_4=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_thunder_crocodile_action_cg.png",
+                            "image": "CH1_L472.png",
                             "sloc": [
                                 0,
                                 0,
@@ -1601,11 +1640,6 @@ main.floors.mapo_1_4=
                         },
                         "總之，梗平被鱷魚追殺了好一陣子後，總算找到了出路",
                         "梗平艱難的從下水道出來，許久不見的陽光照射在他的身上",
-                        {
-                            "type": "playBgm",
-                            "name": "bossa_casual_shop.mp3",
-                            "keep": true
-                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -1783,6 +1817,14 @@ main.floors.mapo_1_4=
             "direction": "up",
             "time": 0,
             "silent": true
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWitch.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWORC.mp3"
         }
     ]
 }

@@ -5,31 +5,31 @@
     "files": [
       {
         "path": "project/mainStory/CH1",
-        "sha256": "c971f6f60ccdef8e6a5a3bf523eddc4055a89485862967e059b450c9812ec396"
+        "sha256": "dd0471d4a4a829182cb35876d6e2056ea8c0ed26432d8165107d07b38d5db323"
       },
       {
         "path": "project/mainStory/CH2",
-        "sha256": "64f98e474c095e943429ff061d984f3bdaffe4e186c31a1b1df390eebe0bf74c"
+        "sha256": "800a54e6d2d1a2434832141b368683681c8d35f0ef8e5a2302eda25a53cfd656"
       },
       {
         "path": "project/mainStory/CH3",
-        "sha256": "d15ab3aaa76243e788dd86a35259dae40a428fdedf6db809a4eb03adca31f7e6"
+        "sha256": "c5a256eaa17e6e69f309187deb30c68784cdd44ab3438c25a726ea9c80fa1546"
       },
       {
         "path": "project/mainStory/CH4",
-        "sha256": "0ea24a3271a8f4595e02f588e88da0610740f52b7d13972fabefb526b4e9416d"
+        "sha256": "01db047b0220fcb65d86de1c2e394c475c329233993e214f346c18735003c416"
       },
       {
         "path": "project/mainStory/CH5",
-        "sha256": "ca0bd77a7e4cd4af99a3e7bf47ea003a06e0b904d87be20bfcce8c34a46a107f"
+        "sha256": "98f45164205a9d61da7603bb76addfc80aa4cf689591279257dabeddcc326fcb"
       },
       {
         "path": "project/mainStory/CH6",
-        "sha256": "1ba385ba78ff5e9746ee5c968ec3b10fb304081819e03e6b8651c26bce1b22e2"
+        "sha256": "ce0fe7414b20f8df3645754c9495b60e280da583807ee6a7d6d8d7354af952d4"
       },
       {
         "path": "project/mainStory/CH7",
-        "sha256": "f0d38b57175c34b710ba0535ef25d5c6c10c2bf8452abddd03972dbbf11f11fe"
+        "sha256": "0a0d4dfae698d08d9cbf844afaf2ec12d968aaa2c784b2f9915a58092af1067f"
       }
     ]
   },
@@ -85,13 +85,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_station.png",
+            "name": "CH1_L13.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "map": [
           [
@@ -391,13 +391,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_station.png",
+          "image": "CH1_L13.png",
           "loc": [
             0,
             0
@@ -410,11 +410,6 @@
           "text": "【主線 CH1 1-1 車站】"
         },
         {
-          "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -423,7 +418,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_station_akihabara.png",
+          "image": "CH1_L13.png",
           "loc": [
             0,
             0
@@ -970,7 +965,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -1204,13 +1199,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "dark_alleys_tension.ogg",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "map": [
           [
@@ -1510,13 +1505,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "dark_alleys_tension.ogg"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -1530,7 +1525,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "twists_suspense.mp3",
+          "name": "BGMUZUUZU.mp3",
           "keep": true
         },
         {
@@ -1542,7 +1537,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_warehouse_district_day.png",
+          "image": "CH1_L60.png",
           "loc": [
             0,
             0
@@ -2599,11 +2594,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -2612,7 +2602,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -2636,6 +2626,10 @@
           ],
           "opacity": 1,
           "time": 0
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "dialogue",
@@ -3238,6 +3232,10 @@
           ],
           "direction": "up",
           "time": 0
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMYocho.mp3"
         }
       ]
     },
@@ -3254,13 +3252,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_mapo_shop.png",
+            "name": "CH1_L189.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "map": [
           [
@@ -3560,13 +3558,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3"
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_mapo_shop.png",
+          "image": "CH1_L189.png",
           "loc": [
             0,
             0
@@ -3587,7 +3585,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_mapo_shop_interior.png",
+          "image": "CH1_L189.png",
           "loc": [
             0,
             0
@@ -3599,7 +3597,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "ms_ch1_mapo_shop_entrance_action_cg.png",
+          "image": "CH1_L189.png",
           "sloc": [
             0,
             0,
@@ -3949,7 +3947,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "battle_theme_a.mp3",
+          "name": "BGMRun.mp3",
           "keep": true
         },
         {
@@ -4151,7 +4149,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_chinese_cooking_show.png",
+                  "image": "CH1_L228.png",
                   "loc": [
                     0,
                     0
@@ -5542,11 +5540,6 @@
           ]
         },
         {
-          "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -5555,7 +5548,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_mapo_shop_interior.png",
+          "image": "CH1_L189.png",
           "loc": [
             0,
             0
@@ -6052,7 +6045,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -6090,6 +6083,10 @@
         {
           "kind": "function.call",
           "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'mapo_1_3_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMRun.mp3"
         }
       ]
     },
@@ -6106,13 +6103,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_mapo_shop.png",
+            "name": "CH1_L189.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "map": [
           [
@@ -6412,13 +6409,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_mapo_shop.png",
+          "image": "CH1_L189.png",
           "loc": [
             0,
             0
@@ -6431,11 +6428,6 @@
           "text": "【主線 CH1 1-3 麻婆豆腐店（交流後）】"
         },
         {
-          "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -6444,7 +6436,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -6530,13 +6522,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_cafe.png",
+            "name": "CH1_L360.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "flags_drama.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "map": [
           [
@@ -6836,13 +6828,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "flags_drama.mp3"
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_cafe.png",
+          "image": "CH1_L360.png",
           "loc": [
             0,
             0
@@ -6863,7 +6855,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_cafe_rabbit_interior.png",
+          "image": "CH1_L360.png",
           "loc": [
             0,
             0
@@ -7518,7 +7510,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_commercial_interior_day.png",
+          "image": "CH1_L401.png",
           "loc": [
             0,
             0
@@ -7743,7 +7735,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_riverside_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -7971,13 +7963,56 @@
                   "text": "梗平伸手握住了啤酒，但隨著一股強大的力量，梗平被拖進了下水道，隨後失去意識"
                 },
                 {
-                  "kind": "bgm.play",
-                  "name": "battle_theme_a.mp3",
-                  "keep": true
-                },
-                {
                   "kind": "comment",
                   "text": "【過場】"
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH1_L438.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH1_L438.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH1_L438.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH1_L438.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
                 },
                 {
                   "kind": "narration",
@@ -8372,7 +8407,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch1_thunder_crocodile_action_cg.png",
+                  "image": "CH1_L472.png",
                   "sloc": [
                     0,
                     0,
@@ -8474,11 +8509,6 @@
                 {
                   "kind": "narration",
                   "text": "梗平艱難的從下水道出來，許久不見的陽光照射在他的身上"
-                },
-                {
-                  "kind": "bgm.play",
-                  "name": "bossa_casual_shop.mp3",
-                  "keep": true
                 },
                 {
                   "kind": "image.show",
@@ -8708,6 +8738,14 @@
           ],
           "direction": "up",
           "time": 0
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWitch.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWORC.mp3"
         }
       ]
     },
@@ -8724,13 +8762,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "twists_suspense.mp3",
+        "bgm": "BGMYocho.mp3",
         "ratio": 1,
         "map": [
           [
@@ -9030,13 +9068,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "twists_suspense.mp3"
+          "name": "BGMYocho.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -9049,11 +9087,6 @@
           "text": "【主線 CH1 1-5 掉落物】"
         },
         {
-          "kind": "bgm.play",
-          "name": "twists_suspense.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -9062,7 +9095,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -9151,13 +9184,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_riverside.png",
+            "name": "CH4_L79.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "map": [
           [
@@ -9457,13 +9490,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_riverside.png",
+          "image": "CH4_L79.png",
           "loc": [
             0,
             0
@@ -9476,11 +9509,6 @@
           "text": "【主線 CH2 2-1 咖啡廳早晨】"
         },
         {
-          "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -9489,7 +9517,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_riverside.png",
+          "image": "CH4_L79.png",
           "loc": [
             0,
             0
@@ -9641,7 +9669,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -9770,7 +9798,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_cafe_rabbit_interior.png",
+          "image": "CH1_L360.png",
           "loc": [
             0,
             0
@@ -10914,13 +10942,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_bookstore_a.png",
+            "name": "CH3_L66.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "twists_suspense.mp3",
+        "bgm": "BGMUZUUZU.mp3",
         "ratio": 1,
         "map": [
           [
@@ -11220,13 +11248,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "twists_suspense.mp3"
+          "name": "BGMUZUUZU.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a.png",
+          "image": "CH3_L66.png",
           "loc": [
             0,
             0
@@ -11247,7 +11275,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -11411,7 +11439,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_warehouse_district_day.png",
+          "image": "CH1_L60.png",
           "loc": [
             0,
             0
@@ -11567,7 +11595,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -11831,7 +11859,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_family_restaurant_interior.png",
+          "image": "CH2_L163.png",
           "loc": [
             0,
             0
@@ -12569,7 +12597,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_street_night.png",
+                  "image": "CH1_L353.png",
                   "loc": [
                     0,
                     0
@@ -13261,13 +13289,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_arcade.png",
+            "name": "CH2_L258.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "warped_surreal.mp3",
+        "bgm": "BGMWORC.mp3",
         "ratio": 1,
         "map": [
           [
@@ -13567,13 +13595,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "warped_surreal.mp3"
+          "name": "BGMWORC.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_arcade.png",
+          "image": "CH2_L258.png",
           "loc": [
             0,
             0
@@ -13594,7 +13622,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_arcade.png",
+          "image": "CH2_L258.png",
           "loc": [
             0,
             0
@@ -13948,6 +13976,126 @@
           "time": 0
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "我的錢啊！！！"
@@ -14047,7 +14195,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -14183,7 +14331,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -14296,13 +14444,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_bookstore_a_interior.png",
+            "name": "CH2_L295.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "dark_alleys_tension.ogg",
+        "bgm": "BGMKyoheiTranslation.mp3",
         "ratio": 1,
         "map": [
           [
@@ -14602,13 +14750,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "dark_alleys_tension.ogg"
+          "name": "BGMKyoheiTranslation.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -14629,7 +14777,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -15220,7 +15368,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMKyoheiTranslation.mp3",
+          "name": "BGMWORC.mp3",
           "keep": true
         },
         {
@@ -15363,7 +15511,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -15688,11 +15836,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "bgm.play",
-                  "name": "twists_suspense.mp3",
-                  "keep": true
-                },
-                {
                   "kind": "image.hide",
                   "code": 30,
                   "time": 150
@@ -15701,7 +15844,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_museum.png",
+                  "image": "CH2_L390.png",
                   "loc": [
                     0,
                     0
@@ -16018,7 +16161,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_museum.png",
+                  "image": "CH2_L390.png",
                   "loc": [
                     0,
                     0
@@ -16120,7 +16263,55 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_museum.png",
+                  "image": "CH2_L390.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L419.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L419.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L419.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH2_L419.png",
                   "loc": [
                     0,
                     0
@@ -16314,7 +16505,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_museum.png",
+                  "image": "CH2_L390.png",
                   "loc": [
                     0,
                     0
@@ -16539,11 +16730,6 @@
               "text": "天在呼喚、地在呼喚、人在呼喚，呼喚我打敗邪惡！",
               "events": [
                 {
-                  "kind": "bgm.play",
-                  "name": "bossa_casual_shop.mp3",
-                  "keep": true
-                },
-                {
                   "kind": "image.show",
                   "role": "portrait",
                   "code": 20,
@@ -16675,7 +16861,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_cafe_rabbit_interior.png",
+                  "image": "CH1_L360.png",
                   "loc": [
                     0,
                     0
@@ -17053,7 +17239,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_street_night.png",
+                  "image": "CH1_L353.png",
                   "loc": [
                     0,
                     0
@@ -17118,6 +17304,34 @@
               ]
             }
           ]
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWORC.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMIB.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMTree.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWORC.mp3"
+        },
+        {
+          "kind": "bgm.pause"
         }
       ]
     },
@@ -17134,13 +17348,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_bookstore_a_interior.png",
+            "name": "CH2_L295.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "dark_alleys_tension.ogg",
+        "bgm": "BGMIB.mp3",
         "ratio": 1,
         "map": [
           [
@@ -17440,13 +17654,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "dark_alleys_tension.ogg"
+          "name": "BGMIB.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -17459,11 +17673,6 @@
           "text": "【主線 CH2 2-4 書店A內部（交流後）】"
         },
         {
-          "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -17472,7 +17681,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -17566,13 +17775,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "map": [
           [
@@ -17872,13 +18081,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3"
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -17892,7 +18101,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
+          "name": "BGMWitch.mp3",
           "keep": true
         },
         {
@@ -17904,7 +18113,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -18125,7 +18334,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_cafe.png",
+          "image": "CH1_L360.png",
           "loc": [
             0,
             0
@@ -18419,7 +18628,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -18473,13 +18682,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "map": [
           [
@@ -18779,13 +18988,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -18798,11 +19007,6 @@
           "text": "【主線 CH3 3-1 自爆篇（交流後）】"
         },
         {
-          "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -18811,7 +19015,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -18885,7 +19089,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_bookstore_a_interior.png",
+                  "image": "CH2_L295.png",
                   "loc": [
                     0,
                     0
@@ -19168,7 +19372,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_phone_message.png",
+                  "image": "CH3_L86.png",
                   "loc": [
                     0,
                     0
@@ -19263,7 +19467,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_bookstore_a_interior.png",
+                  "image": "CH2_L295.png",
                   "loc": [
                     0,
                     0
@@ -19320,11 +19524,6 @@
                   "kind": "image.hide",
                   "code": 20,
                   "time": 0
-                },
-                {
-                  "kind": "bgm.play",
-                  "name": "battle_theme_a.mp3",
-                  "keep": true
                 },
                 {
                   "kind": "narration",
@@ -20285,7 +20484,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_street_night.png",
+                  "image": "CH1_L353.png",
                   "loc": [
                     0,
                     0
@@ -20548,7 +20747,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_bar.png",
+                  "image": "CH3_L175.png",
                   "loc": [
                     0,
                     0
@@ -20719,7 +20918,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_street_night.png",
+                  "image": "CH1_L353.png",
                   "loc": [
                     0,
                     0
@@ -20921,7 +21120,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_training_room.png",
+                  "image": "CH2_L409.png",
                   "loc": [
                     0,
                     0
@@ -21277,11 +21476,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "bgm.play",
-                  "name": "battle_theme_a.mp3",
-                  "keep": true
-                },
-                {
                   "kind": "image.hide",
                   "code": 30,
                   "time": 150
@@ -21290,7 +21484,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_street_night.png",
+                  "image": "CH1_L353.png",
                   "loc": [
                     0,
                     0
@@ -22097,7 +22291,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_training_room.png",
+                  "image": "CH2_L409.png",
                   "loc": [
                     0,
                     0
@@ -22972,11 +23166,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "bgm.play",
-                  "name": "bossa_casual_shop.mp3",
-                  "keep": true
-                },
-                {
                   "kind": "image.hide",
                   "code": 30,
                   "time": 150
@@ -22985,7 +23174,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_bar.png",
+                  "image": "CH3_L175.png",
                   "loc": [
                     0,
                     0
@@ -23304,7 +23493,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_street_night.png",
+                  "image": "CH1_L353.png",
                   "loc": [
                     0,
                     0
@@ -23538,7 +23727,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_family_restaurant_interior.png",
+                  "image": "CH2_L163.png",
                   "loc": [
                     0,
                     0
@@ -23889,7 +24078,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_street_night.png",
+                  "image": "CH1_L353.png",
                   "loc": [
                     0,
                     0
@@ -24765,7 +24954,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_street_day.png",
+                  "image": "CH1_L42.png",
                   "loc": [
                     0,
                     0
@@ -25135,13 +25324,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "next_to_you_emotional.mp3",
+        "bgm": "BGMGintama.mp3",
         "ratio": 1,
         "map": [
           [
@@ -25441,13 +25630,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "next_to_you_emotional.mp3"
+          "name": "BGMGintama.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -25468,18 +25657,13 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "bgm.play",
-          "name": "next_to_you_emotional.mp3",
-          "keep": true
         },
         {
           "kind": "narration",
@@ -26019,7 +26203,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -26214,6 +26398,10 @@
           ],
           "direction": "up",
           "time": 0
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMGintama.mp3"
         }
       ]
     },
@@ -26230,13 +26418,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "warped_surreal.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "map": [
           [
@@ -26536,13 +26724,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "warped_surreal.mp3"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -26556,7 +26744,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
+          "name": "BGMBOOM.mp3",
           "keep": true
         },
         {
@@ -26568,7 +26756,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -28009,13 +28197,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "great_mission_heroic.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "map": [
           [
@@ -28315,13 +28503,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "great_mission_heroic.mp3"
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -28335,7 +28523,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
+          "name": "BGMRakisuta.mp3",
           "keep": true
         },
         {
@@ -28347,7 +28535,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -28526,7 +28714,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
+          "name": "BGMDuel.mp3",
           "keep": true
         },
         {
@@ -28538,7 +28726,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -28786,7 +28974,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -28961,7 +29149,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_riverside.png",
+          "image": "CH4_L79.png",
           "loc": [
             0,
             0
@@ -28971,7 +29159,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "battle_theme_a.mp3",
+          "name": "BGMKanu.mp3",
           "keep": true
         },
         {
@@ -29457,18 +29645,13 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_hospital.png",
+          "image": "CH4_L107.png",
           "loc": [
             0,
             0
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
         },
         {
           "kind": "narration",
@@ -29867,7 +30050,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -29968,18 +30151,13 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_warehouse_district.png",
+                  "image": "CH4_L142.png",
                   "loc": [
                     0,
                     0
                   ],
                   "opacity": 1,
                   "time": 250
-                },
-                {
-                  "kind": "bgm.play",
-                  "name": "twists_suspense.mp3",
-                  "keep": true
                 },
                 {
                   "kind": "narration",
@@ -30211,11 +30389,6 @@
                   "time": 250
                 },
                 {
-                  "kind": "bgm.play",
-                  "name": "bossa_casual_shop.mp3",
-                  "keep": true
-                },
-                {
                   "kind": "narration",
                   "text": "當梗平下一次醒來時，眼前是金璧輝煌的天花板"
                 },
@@ -30361,7 +30534,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "scene_mapo_cg.png",
+                  "image": "CH4_L168.png",
                   "sloc": [
                     0,
                     65,
@@ -30607,11 +30780,6 @@
                   "text": "【過場】"
                 },
                 {
-                  "kind": "bgm.play",
-                  "name": "twists_suspense.mp3",
-                  "keep": true
-                },
-                {
                   "kind": "image.hide",
                   "code": 30,
                   "time": 150
@@ -30620,7 +30788,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_warehouse_district.png",
+                  "image": "CH4_L142.png",
                   "loc": [
                     0,
                     0
@@ -30921,7 +31089,7 @@
             "y": 0
           }
         ],
-        "bgm": "flags_drama.mp3",
+        "bgm": "BGMWitch.mp3",
         "ratio": 1,
         "map": [
           [
@@ -31221,7 +31389,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "flags_drama.mp3"
+          "name": "BGMWitch.mp3"
         },
         {
           "kind": "background.show",
@@ -31248,7 +31416,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_warehouse_district.png",
+          "image": "CH4_L142.png",
           "loc": [
             0,
             0
@@ -31258,14 +31426,14 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
+          "name": "BGMYume.mp3",
           "keep": true
         },
         {
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH4_L209.png",
+          "image": "CH4_L207.png",
           "loc": [
             112,
             50,
@@ -31274,6 +31442,18 @@
           ],
           "opacity": 1,
           "time": 250
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMYocho.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWhisper.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWitch.mp3"
         },
         {
           "kind": "narration",
@@ -31565,8 +31745,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "next_to_you_emotional.mp3",
-          "keep": true
+          "name": "BGMWhisper.mp3"
         },
         {
           "kind": "narration",
@@ -31855,7 +32034,7 @@
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "map": [
           [
@@ -32155,7 +32334,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3"
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
@@ -32175,7 +32354,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
+          "name": "BGMRakisuta.mp3",
           "keep": true
         },
         {
@@ -32347,7 +32526,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_cafe_rabbit_interior.png",
+          "image": "CH1_L360.png",
           "loc": [
             0,
             0
@@ -32442,7 +32621,7 @@
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMWORC.mp3",
         "ratio": 1,
         "map": [
           [
@@ -32742,7 +32921,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3"
+          "name": "BGMWORC.mp3"
         },
         {
           "kind": "background.show",
@@ -32761,11 +32940,6 @@
           "text": "【主線 CH5 5-1 五日無戰事篇（交流後）】"
         },
         {
-          "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -32774,7 +32948,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -32999,7 +33173,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -33081,7 +33255,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -33205,7 +33379,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_arcade.png",
+                  "image": "CH2_L258.png",
                   "loc": [
                     0,
                     0
@@ -33512,7 +33686,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_bookstore_a_interior.png",
+                  "image": "CH2_L295.png",
                   "loc": [
                     0,
                     0
@@ -33722,13 +33896,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_bookstore_a.png",
+            "name": "CH3_L66.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "waking_the_devil_crisis.mp3",
+        "bgm": "BGMYocho.mp3",
         "ratio": 1,
         "map": [
           [
@@ -34028,13 +34202,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "waking_the_devil_crisis.mp3"
+          "name": "BGMYocho.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a.png",
+          "image": "CH3_L66.png",
           "loc": [
             0,
             0
@@ -34048,7 +34222,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
+          "name": "BGMTree.mp3",
           "keep": true
         },
         {
@@ -34060,7 +34234,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -34216,7 +34390,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_cafe_rabbit_interior.png",
+          "image": "CH1_L360.png",
           "loc": [
             0,
             0
@@ -34727,7 +34901,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_maid_cafe.png",
+          "image": "CH6_L68.png",
           "loc": [
             0,
             0
@@ -35290,7 +35464,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -35613,7 +35787,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -35791,6 +35965,14 @@
           ],
           "direction": "up",
           "time": 0
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMRakisuta.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMTree.mp3"
         }
       ]
     },
@@ -35807,13 +35989,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "flags_drama.mp3",
+        "bgm": "BGMKanu.mp3",
         "ratio": 1,
         "map": [
           [
@@ -36113,13 +36295,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "flags_drama.mp3"
+          "name": "BGMKanu.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -36804,7 +36986,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "ms_bg_street_day.png",
+                  "image": "CH1_L42.png",
                   "loc": [
                     0,
                     0
@@ -36992,7 +37174,7 @@
               "events": [
                 {
                   "kind": "bgm.play",
-                  "name": "next_to_you_emotional.mp3",
+                  "name": "BGMWORC.mp3",
                   "keep": true
                 },
                 {
@@ -37479,6 +37661,18 @@
                   ],
                   "opacity": 1,
                   "time": 0
+                },
+                {
+                  "kind": "background.show",
+                  "role": "image",
+                  "code": 1,
+                  "image": "CH6_L217.png",
+                  "loc": [
+                    0,
+                    0
+                  ],
+                  "opacity": 1,
+                  "time": 250
                 },
                 {
                   "kind": "dialogue",
@@ -38104,7 +38298,7 @@
                 },
                 {
                   "kind": "bgm.play",
-                  "name": "bossa_casual_shop.mp3",
+                  "name": "BGMHaru.mp3",
                   "keep": true
                 },
                 {
@@ -38342,6 +38536,18 @@
           ],
           "direction": "up",
           "time": 0
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMGintama.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMHaru.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMGintama.mp3"
         }
       ]
     },
@@ -38364,7 +38570,7 @@
             "y": 0
           }
         ],
-        "bgm": "next_to_you_emotional.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "map": [
           [
@@ -38664,7 +38870,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "next_to_you_emotional.mp3"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
@@ -38691,7 +38897,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -38908,7 +39114,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_warehouse_district.png",
+          "image": "CH4_L142.png",
           "loc": [
             0,
             0
@@ -39099,7 +39305,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "battle_theme_a.mp3",
+          "name": "BGMRun.mp3",
           "keep": true
         },
         {
@@ -39234,7 +39440,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -39531,13 +39737,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_wedding.png",
+            "name": "CH6_L343.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "next_to_you_emotional.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "map": [
           [
@@ -39837,13 +40043,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "next_to_you_emotional.mp3"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_wedding.png",
+          "image": "CH6_L343.png",
           "loc": [
             0,
             0
@@ -39873,7 +40079,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
+          "name": "BGMED1.mp3",
           "keep": true
         },
         {
@@ -40439,18 +40645,13 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_wedding.png",
+          "image": "CH6_L343.png",
           "loc": [
             0,
             0
           ],
           "opacity": 1,
           "time": 250
-        },
-        {
-          "kind": "bgm.play",
-          "name": "next_to_you_emotional.mp3",
-          "keep": true
         },
         {
           "kind": "narration",
@@ -40514,7 +40715,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH6_L350.png",
+          "image": "CH6_L349.png",
           "loc": [
             112,
             50,
@@ -40727,11 +40928,6 @@
           "text": "結局"
         },
         {
-          "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
-        },
-        {
           "kind": "image.hide",
           "code": 30,
           "time": 150
@@ -40829,7 +41025,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH6_L377.png",
+          "image": "CH6_L374.png",
           "loc": [
             112,
             50,
@@ -40959,13 +41155,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street_day.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "map": [
           [
@@ -41265,13 +41461,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -41296,7 +41492,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_phone_message.png",
+          "image": "CH3_L86.png",
           "loc": [
             0,
             0
@@ -41385,7 +41581,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -41555,6 +41751,22 @@
             "letterSpacing": 0,
             "animateTime": 120
           }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMTodomenoichigeki.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWORC.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMYume.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMTodomenoichigeki.mp3"
         },
         {
           "kind": "dialogue",
@@ -41736,7 +41948,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_mapo_shop_interior.png",
+          "image": "CH1_L189.png",
           "loc": [
             0,
             0
@@ -42626,7 +42838,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -42966,6 +43178,10 @@
           ],
           "direction": "up",
           "time": 0
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMYume.mp3"
         }
       ]
     },
@@ -42982,13 +43198,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_bookstore_a_interior.png",
+            "name": "CH2_L295.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "twists_suspense.mp3",
+        "bgm": "BGMYocho.mp3",
         "ratio": 1,
         "map": [
           [
@@ -43288,13 +43504,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "twists_suspense.mp3"
+          "name": "BGMYocho.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -43315,7 +43531,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -43455,7 +43671,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_commercial_interior_day.png",
+          "image": "CH1_L401.png",
           "loc": [
             0,
             0
@@ -43737,7 +43953,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_family_restaurant_interior.png",
+          "image": "CH2_L163.png",
           "loc": [
             0,
             0
@@ -43950,7 +44166,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -44388,7 +44604,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -44926,7 +45142,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -45186,7 +45402,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -45464,7 +45680,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_cafe_rabbit_interior.png",
+          "image": "CH1_L360.png",
           "loc": [
             0,
             0
@@ -46288,7 +46504,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_cafe_rabbit_interior.png",
+          "image": "CH1_L360.png",
           "loc": [
             0,
             0
@@ -46506,7 +46722,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_phone_message.png",
+          "image": "CH3_L86.png",
           "loc": [
             0,
             0
@@ -46561,6 +46777,18 @@
           ],
           "direction": "up",
           "time": 0
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMYume.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMYume.mp3"
         }
       ]
     },
@@ -46577,13 +46805,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street_day.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "dark_alleys_tension.ogg",
+        "bgm": "BGMRakisuta.mp3",
         "ratio": 1,
         "map": [
           [
@@ -46883,13 +47111,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "dark_alleys_tension.ogg"
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -46910,7 +47138,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -47036,7 +47264,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -47863,7 +48091,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -48111,7 +48339,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -48769,7 +48997,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -48836,7 +49064,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_maid_cafe.png",
+          "image": "CH6_L68.png",
           "loc": [
             0,
             0
@@ -48903,7 +49131,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_commercial_interior_day.png",
+          "image": "CH1_L401.png",
           "loc": [
             0,
             0
@@ -48970,7 +49198,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_mapo_shop_interior.png",
+          "image": "CH1_L189.png",
           "loc": [
             0,
             0
@@ -49037,7 +49265,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_convenience_store.png",
+          "image": "CH1_L401.png",
           "loc": [
             0,
             0
@@ -49094,7 +49322,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_night.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -49472,6 +49700,22 @@
           "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMDuel.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMBOOM.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
+        },
+        {
           "kind": "narration",
           "text": "惠惠走遠後東山加入了斂屍的行列"
         },
@@ -49618,6 +49862,22 @@
           ],
           "direction": "up",
           "time": 0
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
+        },
+        {
+          "kind": "bgm.pause"
         }
       ]
     },
@@ -49634,13 +49894,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_maid_cafe.png",
+            "name": "CH6_L68.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "battle_theme_a.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "map": [
           [
@@ -49940,13 +50200,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "battle_theme_a.mp3"
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_maid_cafe.png",
+          "image": "CH6_L68.png",
           "loc": [
             0,
             0
@@ -49967,7 +50227,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_maid_cafe.png",
+          "image": "CH6_L68.png",
           "loc": [
             0,
             0
@@ -50073,7 +50333,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_warehouse_district.png",
+          "image": "CH4_L142.png",
           "loc": [
             0,
             0
@@ -50651,7 +50911,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_maid_cafe.png",
+          "image": "CH6_L68.png",
           "loc": [
             0,
             0
@@ -50906,7 +51166,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_warehouse_district.png",
+          "image": "CH4_L142.png",
           "loc": [
             0,
             0
@@ -51197,7 +51457,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMREBOOT2014.mp3",
+          "name": "BGMWitch.mp3",
           "keep": true
         },
         {
@@ -51224,15 +51484,13 @@
           "time": 0
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "background.show",
+          "role": "image",
           "code": 30,
           "image": "CH7_L605.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -51455,15 +51713,13 @@
           "text": "接著與笑容滿面的惠惠四目相接"
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "background.show",
+          "role": "image",
           "code": 30,
           "image": "CH7_L622.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -51491,6 +51747,126 @@
             ],
             "titlefont": 22,
             "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
             "lineHeight": 22,
             "fixedLines": 2,
             "time": 10,
@@ -51588,6 +51964,126 @@
           }
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "桶至學長",
           "text": "畜生啊—————"
@@ -51667,7 +52163,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_warehouse_district.png",
+          "image": "CH4_L142.png",
           "loc": [
             0,
             0
@@ -51730,7 +52226,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L642.png",
+          "image": "CH7_L643.png",
           "loc": [
             112,
             50,
@@ -52088,7 +52584,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -52492,7 +52988,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L690.png",
+          "image": "CH7_L691.png",
           "loc": [
             112,
             50,
@@ -52698,7 +53194,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L706.png",
+          "image": "CH7_L707.png",
           "loc": [
             112,
             50,
@@ -52818,7 +53314,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L714.png",
+          "image": "CH7_L715.png",
           "loc": [
             112,
             50,
@@ -52899,7 +53395,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMMeikyoshisui.mp3",
+          "name": "BGMREBOOT2014.mp3",
           "keep": true
         },
         {
@@ -52929,7 +53425,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L725.png",
+          "image": "CH7_L726.png",
           "loc": [
             112,
             50,
@@ -53356,7 +53852,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L748.png",
+          "image": "CH7_L749.png",
           "loc": [
             112,
             50,
@@ -53545,7 +54041,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L690.png",
+          "image": "CH7_L691.png",
           "loc": [
             112,
             50,
@@ -53583,7 +54079,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_maid_cafe.png",
+          "image": "CH6_L68.png",
           "loc": [
             0,
             0
@@ -53765,7 +54261,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_phone_message.png",
+          "image": "CH3_L86.png",
           "loc": [
             0,
             0
@@ -53881,6 +54377,42 @@
           ],
           "direction": "up",
           "time": 0
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMBOOM.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMTANK.mp3"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMMeikyoshisui.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMRakisuta.mp3"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMWitch.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
+        },
+        {
+          "kind": "bgm.pause"
         }
       ]
     },
@@ -53897,13 +54429,13 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_street_day.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
           }
         ],
-        "bgm": "next_to_you_emotional.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "map": [
           [
@@ -54203,13 +54735,13 @@
         },
         {
           "kind": "bgm.play",
-          "name": "next_to_you_emotional.mp3"
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -54230,7 +54762,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -54285,7 +54817,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L798.png",
+          "image": "CH7_L799.png",
           "loc": [
             112,
             50,
@@ -54350,7 +54882,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_maid_cafe.png",
+          "image": "CH6_L68.png",
           "loc": [
             0,
             0
@@ -54684,7 +55216,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L824.png",
+          "image": "CH7_L825.png",
           "loc": [
             112,
             50,
@@ -55217,7 +55749,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L850.png",
+          "image": "CH7_L851.png",
           "loc": [
             112,
             50,
@@ -55355,15 +55887,13 @@
           "time": 0
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "background.show",
+          "role": "image",
           "code": 30,
-          "image": "CH7_L863.png",
+          "image": "CH7_L864.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -55391,7 +55921,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_maid_cafe.png",
+          "image": "CH6_L68.png",
           "loc": [
             0,
             0
@@ -56995,7 +57525,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L952.png",
+          "image": "CH7_L953.png",
           "loc": [
             112,
             50,
@@ -57258,7 +57788,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMKyoheiTranslation.mp3",
+          "name": "BGMRakisuta.mp3",
           "keep": true
         },
         {
@@ -57661,15 +58191,13 @@
           "time": 0
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "background.show",
+          "role": "image",
           "code": 30,
-          "image": "CH7_L991.png",
+          "image": "CH7_L992.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -58249,6 +58777,126 @@
           }
         },
         {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 12,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 12,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 12,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 12,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
           "kind": "dialogue",
           "speaker": "？？？",
           "text": "叩叩叩"
@@ -58308,7 +58956,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L1041.png",
+          "image": "CH7_L1042.png",
           "loc": [
             112,
             50,
@@ -58331,7 +58979,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L1044.png",
+          "image": "CH7_L1045.png",
           "loc": [
             112,
             50,
@@ -58369,6 +59017,126 @@
             ],
             "titlefont": 22,
             "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
             "lineHeight": 22,
             "fixedLines": 2,
             "time": 10,
@@ -58521,15 +59289,13 @@
           "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
         },
         {
-          "kind": "image.show",
-          "role": "cg",
+          "kind": "background.show",
+          "role": "image",
           "code": 30,
-          "image": "CH7_L1058.png",
+          "image": "CH7_L1059.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -58808,7 +59574,7 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH7_L1074.png",
+          "image": "CH7_L1075.png",
           "loc": [
             112,
             50,
@@ -58936,7 +59702,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -59121,7 +59887,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_bookstore_a_interior.png",
+          "image": "CH2_L295.png",
           "loc": [
             0,
             0
@@ -59142,7 +59908,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMBOINBOIN.mp3",
+          "name": "BGMKyoheiTranslation.mp3",
           "keep": true
         },
         {
@@ -59756,7 +60522,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -59997,7 +60763,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_live_stage.png",
+          "image": "CH7_L1093.png",
           "loc": [
             0,
             0
@@ -60193,7 +60959,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_street_day.png",
+          "image": "CH1_L42.png",
           "loc": [
             0,
             0
@@ -62736,7 +63502,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_wedding.png",
+          "image": "CH6_L343.png",
           "loc": [
             0,
             0
@@ -63628,24 +64394,248 @@
           "text": "———END———"
         },
         {
-          "kind": "narration",
-          "text": "這團的結論"
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_tbd.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
         },
         {
           "kind": "narration",
-          "text": "幾乎所有事件都是由東山開始"
+          "text": "總之這劇本其實是COC村規團錄"
         },
         {
           "kind": "narration",
-          "text": "沒有梗平的犧牲無法結束"
+          "text": "一切都是PL與骰子女神的抉擇可沒有半分虛假"
         },
         {
           "kind": "narration",
-          "text": "雖然看起來很巧但他就是發生了"
+          "text": "這團幾乎所有事件都是由東山開始"
         },
         {
           "kind": "narration",
-          "text": "想必這也是命運石之門的選擇吧"
+          "text": "由桶至學長負責徒勞無功 "
+        },
+        {
+          "kind": "narration",
+          "text": "雖然梗平看起來沒啥用、但都承包了關鍵點沒有他無法善了"
+        },
+        {
+          "kind": "narration",
+          "text": "看起來很巧但他就是發生了"
+        },
+        {
+          "kind": "narration",
+          "text": "想必這也是命運石之門的選擇吧—"
+        },
+        {
+          "kind": "narration",
+          "text": "G組活動作品到此全劇終"
+        },
+        {
+          "kind": "narration",
+          "text": "感謝各位的參與與觀看，真的辛苦了"
+        },
+        {
+          "kind": "comment",
+          "text": "【返回標題畫面】"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMTodomenoichigeki.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMRun.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMBOINBOIN.mp3"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMGintama.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMKanu.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMHaru.mp3"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMRakisuta.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMKIRAKIRA.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMED2.mp3"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMKyoheiTranslation.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMKanu.mp3"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMHaru.mp3"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
         }
       ]
     }

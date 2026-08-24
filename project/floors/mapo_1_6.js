@@ -10,13 +10,13 @@ main.floors.mapo_1_6=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_riverside.png",
+            "name": "CH4_L79.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "bossa_casual_shop.mp3",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.mapo_1_6=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3"
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_riverside.png",
+            "image": "CH4_L79.png",
             "loc": [
                 0,
                 0
@@ -331,11 +331,6 @@ main.floors.mapo_1_6=
             "text": "【主線 CH2 2-1 咖啡廳早晨】"
         },
         {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
-        },
-        {
             "type": "hideImage",
             "code": 30,
             "time": 150
@@ -343,7 +338,7 @@ main.floors.mapo_1_6=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_riverside.png",
+            "image": "CH4_L79.png",
             "loc": [
                 0,
                 0
@@ -473,7 +468,7 @@ main.floors.mapo_1_6=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -586,7 +581,7 @@ main.floors.mapo_1_6=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe_rabbit_interior.png",
+            "image": "CH1_L360.png",
             "loc": [
                 0,
                 0

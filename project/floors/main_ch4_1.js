@@ -10,13 +10,13 @@ main.floors.main_ch4_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "great_mission_heroic.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch4_1=
         },
         {
             "type": "playBgm",
-            "name": "great_mission_heroic.mp3"
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -332,7 +332,7 @@ main.floors.main_ch4_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "BGMRakisuta.mp3",
             "keep": true
         },
         {
@@ -343,7 +343,7 @@ main.floors.main_ch4_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -471,7 +471,7 @@ main.floors.main_ch4_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "BGMDuel.mp3",
             "keep": true
         },
         {
@@ -482,7 +482,7 @@ main.floors.main_ch4_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -687,7 +687,7 @@ main.floors.main_ch4_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -796,7 +796,7 @@ main.floors.main_ch4_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_riverside.png",
+            "image": "CH4_L79.png",
             "loc": [
                 0,
                 0
@@ -806,7 +806,7 @@ main.floors.main_ch4_1=
         },
         {
             "type": "playBgm",
-            "name": "battle_theme_a.mp3",
+            "name": "BGMKanu.mp3",
             "keep": true
         },
         "跑的河邊的梗平，看見了一臉自信的表妹拿著一把魚竿",
@@ -1209,18 +1209,13 @@ main.floors.main_ch4_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_hospital.png",
+            "image": "CH4_L107.png",
             "loc": [
                 0,
                 0
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
         },
         "梗平醒了過來後，發現眼前是陌生的天花板",
         "一個長著兔耳的女人走了過來，驚訝地看著醒來的梗平",
@@ -1542,7 +1537,7 @@ main.floors.main_ch4_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -1640,18 +1635,13 @@ main.floors.main_ch4_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_warehouse_district.png",
+                            "image": "CH4_L142.png",
                             "loc": [
                                 0,
                                 0
                             ],
                             "opacity": 1,
                             "time": 250
-                        },
-                        {
-                            "type": "playBgm",
-                            "name": "twists_suspense.mp3",
-                            "keep": true
                         },
                         "梗平乖乖等到了11點後，才前往了雜貨店",
                         "到了雜貨店後，梗平發現其他人都已經到達了",
@@ -1839,11 +1829,6 @@ main.floors.main_ch4_1=
                             "opacity": 1,
                             "time": 250
                         },
-                        {
-                            "type": "playBgm",
-                            "name": "bossa_casual_shop.mp3",
-                            "keep": true
-                        },
                         "當梗平下一次醒來時，眼前是金璧輝煌的天花板",
                         {
                             "type": "showImage",
@@ -1956,7 +1941,7 @@ main.floors.main_ch4_1=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "scene_mapo_cg.png",
+                            "image": "CH4_L168.png",
                             "sloc": [
                                 0,
                                 65,
@@ -2164,11 +2149,6 @@ main.floors.main_ch4_1=
                             "time": 500
                         },
                         {
-                            "type": "playBgm",
-                            "name": "twists_suspense.mp3",
-                            "keep": true
-                        },
-                        {
                             "type": "hideImage",
                             "code": 30,
                             "time": 150
@@ -2176,7 +2156,7 @@ main.floors.main_ch4_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_warehouse_district.png",
+                            "image": "CH4_L142.png",
                             "loc": [
                                 0,
                                 0

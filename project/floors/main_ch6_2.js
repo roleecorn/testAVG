@@ -10,13 +10,13 @@ main.floors.main_ch6_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "flags_drama.mp3",
+    "bgm": "BGMKanu.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch6_2=
         },
         {
             "type": "playBgm",
-            "name": "flags_drama.mp3"
+            "name": "BGMKanu.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -870,7 +870,7 @@ main.floors.main_ch6_2=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street_day.png",
+                            "image": "CH1_L42.png",
                             "loc": [
                                 0,
                                 0
@@ -1011,7 +1011,7 @@ main.floors.main_ch6_2=
                     "action": [
                         {
                             "type": "playBgm",
-                            "name": "next_to_you_emotional.mp3",
+                            "name": "BGMWORC.mp3",
                             "keep": true
                         },
                         {
@@ -1388,6 +1388,17 @@ main.floors.main_ch6_2=
                             ],
                             "opacity": 1,
                             "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "CH6_L217.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
                         },
                         "\t[東山]前面只是開開玩笑而已，現在看來你的覺悟就只有這種程度而已",
                         {
@@ -1885,7 +1896,7 @@ main.floors.main_ch6_2=
                         },
                         {
                             "type": "playBgm",
-                            "name": "bossa_casual_shop.mp3",
+                            "name": "BGMHaru.mp3",
                             "keep": true
                         },
                         "在結束了友人們的圍攻後，梗平的大腦從死機狀態運轉了起來",
@@ -2070,6 +2081,18 @@ main.floors.main_ch6_2=
             "direction": "up",
             "time": 0,
             "silent": true
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMGintama.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMHaru.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMGintama.mp3"
         }
     ]
 }

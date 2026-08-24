@@ -10,13 +10,13 @@ main.floors.mapo_1_5=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "twists_suspense.mp3",
+    "bgm": "BGMYocho.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.mapo_1_5=
         },
         {
             "type": "playBgm",
-            "name": "twists_suspense.mp3"
+            "name": "BGMYocho.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -331,11 +331,6 @@ main.floors.mapo_1_5=
             "text": "【主線 CH1 1-5 掉落物】"
         },
         {
-            "type": "playBgm",
-            "name": "twists_suspense.mp3",
-            "keep": true
-        },
-        {
             "type": "hideImage",
             "code": 30,
             "time": 150
@@ -343,7 +338,7 @@ main.floors.mapo_1_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0

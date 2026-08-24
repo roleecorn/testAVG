@@ -16,7 +16,7 @@ main.floors.main_ch5_1_exchange_1=
             "y": 0
         }
     ],
-    "bgm": "bossa_casual_shop.mp3",
+    "bgm": "BGMWORC.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,7 +313,7 @@ main.floors.main_ch5_1_exchange_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3"
+            "name": "BGMWORC.mp3"
         },
         {
             "type": "showImage",
@@ -331,11 +331,6 @@ main.floors.main_ch5_1_exchange_1=
             "text": "【主線 CH5 5-1 五日無戰事篇（交流後）】"
         },
         {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
-        },
-        {
             "type": "hideImage",
             "code": 30,
             "time": 150
@@ -343,7 +338,7 @@ main.floors.main_ch5_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -511,7 +506,7 @@ main.floors.main_ch5_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -540,7 +535,7 @@ main.floors.main_ch5_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -656,7 +651,7 @@ main.floors.main_ch5_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_arcade.png",
+                            "image": "CH2_L258.png",
                             "loc": [
                                 0,
                                 0
@@ -900,7 +895,7 @@ main.floors.main_ch5_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_bookstore_a_interior.png",
+                            "image": "CH2_L295.png",
                             "loc": [
                                 0,
                                 0

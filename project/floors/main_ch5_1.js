@@ -16,7 +16,7 @@ main.floors.main_ch5_1=
             "y": 0
         }
     ],
-    "bgm": "bossa_casual_shop.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,7 +313,7 @@ main.floors.main_ch5_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3"
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
@@ -332,7 +332,7 @@ main.floors.main_ch5_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "BGMRakisuta.mp3",
             "keep": true
         },
         {
@@ -475,7 +475,7 @@ main.floors.main_ch5_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_cafe_rabbit_interior.png",
+            "image": "CH1_L360.png",
             "loc": [
                 0,
                 0

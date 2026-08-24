@@ -16,7 +16,7 @@ main.floors.main_ch6_3=
             "y": 0
         }
     ],
-    "bgm": "next_to_you_emotional.mp3",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,7 +313,7 @@ main.floors.main_ch6_3=
         },
         {
             "type": "playBgm",
-            "name": "next_to_you_emotional.mp3"
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
@@ -338,7 +338,7 @@ main.floors.main_ch6_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -521,7 +521,7 @@ main.floors.main_ch6_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_warehouse_district.png",
+            "image": "CH4_L142.png",
             "loc": [
                 0,
                 0
@@ -662,7 +662,7 @@ main.floors.main_ch6_3=
         },
         {
             "type": "playBgm",
-            "name": "battle_theme_a.mp3",
+            "name": "BGMRun.mp3",
             "keep": true
         },
         "梗平來到了牆壁另一邊後，看見了一個熟悉的人",
@@ -785,7 +785,7 @@ main.floors.main_ch6_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0

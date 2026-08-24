@@ -2,6 +2,14 @@
 
 主線劇本轉換或補寫時，TODO、待確認人物、缺素材與未定演出統一記錄在這裡。不要只把待辦寫在對話框內。
 
+## 20260824 主線更新紀錄
+
+- 更新基準：`4d9fc9e3d05a3d6e71ef3d9fac32700387ccfc12`；已稽核目前 `project/mainStory/CH1`～`CH7` 全部來源差異，來源文字未修改。
+- ZIP run：`tmp/character-story-import/主線追加-20260824T085831Z-1-001/20260824-183110/work/run-manifest.md`；原始 ZIP SHA-256：`AF72FC7ABECFFDBB32D15DCAA79157521AABCE4F627621DA2DB8E0BE32B23F22`。
+- 已接入 24 首 BGM、43 張 ZIP 圖片；`CH3_L257.png → CH2_L258.png`、`CH7_L863.png → CH7_L864.png`、`CH7_L991.png → CH7_L992.png`，其餘依目前首個權威指令行號命名。原始 `CH2_L306.png` 因同一背景首次權威出現於 CH2:295，落地為 `CH2_L295.png`，完整血緣保留在 run manifest。
+- 因來源行號失效而停用的歷史檔案移至 `project/images/unknown/main-story-stale/`，未再註冊或引用。
+- 驗證證據：`validate_story_source.js`（110 個有效行號素材）、`generate_main_story.js --check`（28 floors）、`validate_story.js`、`git diff --check` 均通過。
+
 ## 待確認人物
 
 - 目前尚未整理。

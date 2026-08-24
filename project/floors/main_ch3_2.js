@@ -10,13 +10,13 @@ main.floors.main_ch3_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "next_to_you_emotional.mp3",
+    "bgm": "BGMGintama.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch3_2=
         },
         {
             "type": "playBgm",
-            "name": "next_to_you_emotional.mp3"
+            "name": "BGMGintama.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -338,18 +338,13 @@ main.floors.main_ch3_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "playBgm",
-            "name": "next_to_you_emotional.mp3",
-            "keep": true
         },
         "失魂落魄的梗平拖著沉重的步伐走出了馬的膝蓋，癱坐在路邊",
         {
@@ -773,7 +768,7 @@ main.floors.main_ch3_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -924,6 +919,10 @@ main.floors.main_ch3_2=
             "direction": "up",
             "time": 0,
             "silent": true
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMGintama.mp3"
         }
     ]
 }

@@ -10,13 +10,13 @@ main.floors.main_ch7_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street_day.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "bossa_casual_shop.mp3",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch7_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3"
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -342,7 +342,7 @@ main.floors.main_ch7_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_phone_message.png",
+            "image": "CH3_L86.png",
             "loc": [
                 0,
                 0
@@ -392,7 +392,7 @@ main.floors.main_ch7_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -531,6 +531,22 @@ main.floors.main_ch7_1=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMTodomenoichigeki.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWORC.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMYume.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMTodomenoichigeki.mp3"
         },
         "\t[東山]我的錢包啊啊啊啊啊啊啊啊啊",
         {
@@ -688,7 +704,7 @@ main.floors.main_ch7_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_mapo_shop_interior.png",
+            "image": "CH1_L189.png",
             "loc": [
                 0,
                 0
@@ -1418,7 +1434,7 @@ main.floors.main_ch7_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -1683,6 +1699,10 @@ main.floors.main_ch7_1=
             "direction": "up",
             "time": 0,
             "silent": true
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMYume.mp3"
         }
     ]
 }

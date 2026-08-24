@@ -10,13 +10,13 @@ main.floors.main_ch3_1_exchange_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "bossa_casual_shop.mp3",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch3_1_exchange_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3"
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -331,11 +331,6 @@ main.floors.main_ch3_1_exchange_1=
             "text": "【主線 CH3 3-1 自爆篇（交流後）】"
         },
         {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
-        },
-        {
             "type": "hideImage",
             "code": 30,
             "time": 150
@@ -343,7 +338,7 @@ main.floors.main_ch3_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -422,7 +417,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_bookstore_a_interior.png",
+                            "image": "CH2_L295.png",
                             "loc": [
                                 0,
                                 0
@@ -627,7 +622,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_phone_message.png",
+                            "image": "CH3_L86.png",
                             "loc": [
                                 0,
                                 0
@@ -673,7 +668,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_bookstore_a_interior.png",
+                            "image": "CH2_L295.png",
                             "loc": [
                                 0,
                                 0
@@ -717,11 +712,6 @@ main.floors.main_ch3_1_exchange_1=
                             "type": "hideImage",
                             "code": 20,
                             "time": 0
-                        },
-                        {
-                            "type": "playBgm",
-                            "name": "battle_theme_a.mp3",
-                            "keep": true
                         },
                         "一個留著黑色直髮的女人走進了店，站到了梗平的正前方",
                         {
@@ -1495,7 +1485,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street_night.png",
+                            "image": "CH1_L353.png",
                             "loc": [
                                 0,
                                 0
@@ -1714,7 +1704,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_bar.png",
+                            "image": "CH3_L175.png",
                             "loc": [
                                 0,
                                 0
@@ -1861,7 +1851,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street_night.png",
+                            "image": "CH1_L353.png",
                             "loc": [
                                 0,
                                 0
@@ -2028,7 +2018,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_training_room.png",
+                            "image": "CH2_L409.png",
                             "loc": [
                                 0,
                                 0
@@ -2314,11 +2304,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "playBgm",
-                            "name": "battle_theme_a.mp3",
-                            "keep": true
-                        },
-                        {
                             "type": "hideImage",
                             "code": 30,
                             "time": 150
@@ -2326,7 +2311,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street_night.png",
+                            "image": "CH1_L353.png",
                             "loc": [
                                 0,
                                 0
@@ -2941,7 +2926,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_training_room.png",
+                            "image": "CH2_L409.png",
                             "loc": [
                                 0,
                                 0
@@ -3600,11 +3585,6 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 500
                         },
                         {
-                            "type": "playBgm",
-                            "name": "bossa_casual_shop.mp3",
-                            "keep": true
-                        },
-                        {
                             "type": "hideImage",
                             "code": 30,
                             "time": 150
@@ -3612,7 +3592,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_bar.png",
+                            "image": "CH3_L175.png",
                             "loc": [
                                 0,
                                 0
@@ -3886,7 +3866,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street_night.png",
+                            "image": "CH1_L353.png",
                             "loc": [
                                 0,
                                 0
@@ -4073,7 +4053,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_family_restaurant_interior.png",
+                            "image": "CH2_L163.png",
                             "loc": [
                                 0,
                                 0
@@ -4332,7 +4312,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street_night.png",
+                            "image": "CH1_L353.png",
                             "loc": [
                                 0,
                                 0
@@ -5014,7 +4994,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street_day.png",
+                            "image": "CH1_L42.png",
                             "loc": [
                                 0,
                                 0

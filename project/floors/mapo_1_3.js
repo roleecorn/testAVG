@@ -10,13 +10,13 @@ main.floors.mapo_1_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_mapo_shop.png",
+            "name": "CH1_L189.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "bossa_casual_shop.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.mapo_1_3=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3"
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_mapo_shop.png",
+            "image": "CH1_L189.png",
             "loc": [
                 0,
                 0
@@ -338,7 +338,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_mapo_shop_interior.png",
+            "image": "CH1_L189.png",
             "loc": [
                 0,
                 0
@@ -349,7 +349,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "ms_ch1_mapo_shop_entrance_action_cg.png",
+            "image": "CH1_L189.png",
             "sloc": [
                 0,
                 0,
@@ -630,7 +630,7 @@ main.floors.mapo_1_3=
         },
         {
             "type": "playBgm",
-            "name": "battle_theme_a.mp3",
+            "name": "BGMRun.mp3",
             "keep": true
         },
         {
@@ -799,7 +799,7 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_chinese_cooking_show.png",
+                            "image": "CH1_L228.png",
                             "loc": [
                                 0,
                                 0
@@ -1860,11 +1860,6 @@ main.floors.mapo_1_3=
             ]
         },
         {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
-        },
-        {
             "type": "hideImage",
             "code": 30,
             "time": 150
@@ -1872,7 +1867,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_mapo_shop_interior.png",
+            "image": "CH1_L189.png",
             "loc": [
                 0,
                 0
@@ -2272,7 +2267,7 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -2305,6 +2300,10 @@ main.floors.mapo_1_3=
         {
             "type": "function",
             "function": "function () { core.plugin.beginCharacterExchange({ floorId: 'mapo_1_3_exchange_1', loc: [6, 10], direction: 'up', time: 500 }); }"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMRun.mp3"
         }
     ]
 }

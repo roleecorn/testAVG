@@ -16,7 +16,7 @@ main.floors.main_ch4_2=
             "y": 0
         }
     ],
-    "bgm": "flags_drama.mp3",
+    "bgm": "BGMWitch.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,7 +313,7 @@ main.floors.main_ch4_2=
         },
         {
             "type": "playBgm",
-            "name": "flags_drama.mp3"
+            "name": "BGMWitch.mp3"
         },
         {
             "type": "showImage",
@@ -338,7 +338,7 @@ main.floors.main_ch4_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_warehouse_district.png",
+            "image": "CH4_L142.png",
             "loc": [
                 0,
                 0
@@ -348,13 +348,13 @@ main.floors.main_ch4_2=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "BGMYume.mp3",
             "keep": true
         },
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH4_L209.png",
+            "image": "CH4_L207.png",
             "loc": [
                 112,
                 50,
@@ -363,6 +363,18 @@ main.floors.main_ch4_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMYocho.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWhisper.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWitch.mp3"
         },
         "再次睜開眼睛時，眼前是一名身高超過兩米的修女，修女的身後白髮的雜貨店老闆在與人通著電話",
         "在老闆與修女打了一個手勢後，修女走了過來幫梗平解開了繩子",
@@ -598,8 +610,7 @@ main.floors.main_ch4_2=
         },
         {
             "type": "playBgm",
-            "name": "next_to_you_emotional.mp3",
-            "keep": true
+            "name": "BGMWhisper.mp3"
         },
         "黑色的高級加長禮車行駛在首都的高速公路上",
         "半夢半醒間，梗平瞥見了窗戶外標示的路牌",

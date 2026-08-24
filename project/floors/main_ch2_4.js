@@ -10,13 +10,13 @@ main.floors.main_ch2_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_bookstore_a_interior.png",
+            "name": "CH2_L295.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "dark_alleys_tension.ogg",
+    "bgm": "BGMKyoheiTranslation.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch2_4=
         },
         {
             "type": "playBgm",
-            "name": "dark_alleys_tension.ogg"
+            "name": "BGMKyoheiTranslation.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -338,7 +338,7 @@ main.floors.main_ch2_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -781,7 +781,7 @@ main.floors.main_ch2_4=
         },
         {
             "type": "playBgm",
-            "name": "BGMKyoheiTranslation.mp3",
+            "name": "BGMWORC.mp3",
             "keep": true
         },
         {
@@ -909,7 +909,7 @@ main.floors.main_ch2_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -1169,11 +1169,6 @@ main.floors.main_ch2_4=
                             "time": 500
                         },
                         {
-                            "type": "playBgm",
-                            "name": "twists_suspense.mp3",
-                            "keep": true
-                        },
-                        {
                             "type": "hideImage",
                             "code": 30,
                             "time": 150
@@ -1181,7 +1176,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_museum.png",
+                            "image": "CH2_L390.png",
                             "loc": [
                                 0,
                                 0
@@ -1441,7 +1436,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_museum.png",
+                            "image": "CH2_L390.png",
                             "loc": [
                                 0,
                                 0
@@ -1516,7 +1511,51 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_museum.png",
+                            "image": "CH2_L390.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "CH2_L419.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "CH2_L419.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "CH2_L419.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "CH2_L419.png",
                             "loc": [
                                 0,
                                 0
@@ -1681,7 +1720,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_museum.png",
+                            "image": "CH2_L390.png",
                             "loc": [
                                 0,
                                 0
@@ -1856,11 +1895,6 @@ main.floors.main_ch2_4=
                     "text": "天在呼喚、地在呼喚、人在呼喚，呼喚我打敗邪惡！",
                     "action": [
                         {
-                            "type": "playBgm",
-                            "name": "bossa_casual_shop.mp3",
-                            "keep": true
-                        },
-                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "keng_neutral_portrait.png",
@@ -1979,7 +2013,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_cafe_rabbit_interior.png",
+                            "image": "CH1_L360.png",
                             "loc": [
                                 0,
                                 0
@@ -2271,7 +2305,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "ms_bg_street_night.png",
+                            "image": "CH1_L353.png",
                             "loc": [
                                 0,
                                 0
@@ -2326,6 +2360,34 @@ main.floors.main_ch2_4=
                     ]
                 }
             ]
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWORC.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMIB.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMTree.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWORC.mp3"
+        },
+        {
+            "type": "pauseBgm"
         }
     ]
 }

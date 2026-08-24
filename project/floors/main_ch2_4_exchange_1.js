@@ -10,13 +10,13 @@ main.floors.main_ch2_4_exchange_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_bookstore_a_interior.png",
+            "name": "CH2_L295.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "dark_alleys_tension.ogg",
+    "bgm": "BGMIB.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch2_4_exchange_1=
         },
         {
             "type": "playBgm",
-            "name": "dark_alleys_tension.ogg"
+            "name": "BGMIB.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -331,11 +331,6 @@ main.floors.main_ch2_4_exchange_1=
             "text": "【主線 CH2 2-4 書店A內部（交流後）】"
         },
         {
-            "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
-        },
-        {
             "type": "hideImage",
             "code": 30,
             "time": 150
@@ -343,7 +338,7 @@ main.floors.main_ch2_4_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0

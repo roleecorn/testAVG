@@ -10,13 +10,13 @@ main.floors.main_ch7_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street_day.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "dark_alleys_tension.ogg",
+    "bgm": "BGMRakisuta.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch7_3=
         },
         {
             "type": "playBgm",
-            "name": "dark_alleys_tension.ogg"
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -338,7 +338,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -453,7 +453,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -1086,7 +1086,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -1292,7 +1292,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -1820,7 +1820,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -1892,7 +1892,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_maid_cafe.png",
+            "image": "CH6_L68.png",
             "loc": [
                 0,
                 0
@@ -1964,7 +1964,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_commercial_interior_day.png",
+            "image": "CH1_L401.png",
             "loc": [
                 0,
                 0
@@ -2036,7 +2036,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_mapo_shop_interior.png",
+            "image": "CH1_L189.png",
             "loc": [
                 0,
                 0
@@ -2108,7 +2108,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_convenience_store.png",
+            "image": "CH1_L401.png",
             "loc": [
                 0,
                 0
@@ -2170,7 +2170,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_night.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -2450,6 +2450,22 @@ main.floors.main_ch7_3=
             "type": "comment",
             "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
         },
+        {
+            "type": "playBgm",
+            "name": "BGMDuel.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMUZUUZU.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMBOOM.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMUZUUZU.mp3"
+        },
         "惠惠走遠後東山加入了斂屍的行列",
         {
             "type": "showImage",
@@ -2562,6 +2578,22 @@ main.floors.main_ch7_3=
             "direction": "up",
             "time": 0,
             "silent": true
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMUZUUZU.mp3"
+        },
+        {
+            "type": "pauseBgm"
         }
     ]
 }

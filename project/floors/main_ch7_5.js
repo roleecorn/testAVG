@@ -10,13 +10,13 @@ main.floors.main_ch7_5=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_street_day.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
         }
     ],
-    "bgm": "next_to_you_emotional.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -313,12 +313,12 @@ main.floors.main_ch7_5=
         },
         {
             "type": "playBgm",
-            "name": "next_to_you_emotional.mp3"
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -338,7 +338,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -379,7 +379,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L798.png",
+            "image": "CH7_L799.png",
             "loc": [
                 112,
                 50,
@@ -443,7 +443,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_maid_cafe.png",
+            "image": "CH6_L68.png",
             "loc": [
                 0,
                 0
@@ -707,7 +707,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L824.png",
+            "image": "CH7_L825.png",
             "loc": [
                 112,
                 50,
@@ -1126,7 +1126,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L850.png",
+            "image": "CH7_L851.png",
             "loc": [
                 112,
                 50,
@@ -1222,12 +1222,10 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L863.png",
+            "image": "CH7_L864.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -1266,7 +1264,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_maid_cafe.png",
+            "image": "CH6_L68.png",
             "loc": [
                 0,
                 0
@@ -2605,7 +2603,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L952.png",
+            "image": "CH7_L953.png",
             "loc": [
                 112,
                 50,
@@ -2831,7 +2829,7 @@ main.floors.main_ch7_5=
         },
         {
             "type": "playBgm",
-            "name": "BGMKyoheiTranslation.mp3",
+            "name": "BGMRakisuta.mp3",
             "keep": true
         },
         {
@@ -3157,12 +3155,10 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L991.png",
+            "image": "CH7_L992.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -3616,6 +3612,118 @@ main.floors.main_ch7_5=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 12,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 12,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 12,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 12,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
         "\t[？？？]叩叩叩",
         {
             "type": "showImage",
@@ -3657,7 +3765,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L1041.png",
+            "image": "CH7_L1042.png",
             "loc": [
                 112,
                 50,
@@ -3676,7 +3784,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L1044.png",
+            "image": "CH7_L1045.png",
             "loc": [
                 112,
                 50,
@@ -3709,6 +3817,118 @@ main.floors.main_ch7_5=
             ],
             "titlefont": 22,
             "textfont": 24,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
             "lineHeight": 22,
             "fixedLines": 2,
             "time": 10,
@@ -3849,15 +4069,16 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L1058.png",
+            "image": "CH7_L1059.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "resumeBgm"
         },
         "正當眾人一籌莫展之際，梗平推開了女咖的大門",
         {
@@ -4068,7 +4289,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH7_L1074.png",
+            "image": "CH7_L1075.png",
             "loc": [
                 112,
                 50,
@@ -4185,7 +4406,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -4333,7 +4554,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_bookstore_a_interior.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -4348,7 +4569,7 @@ main.floors.main_ch7_5=
         "場內擠滿了眾多肥宅，細看甚至能在場地上方發現瀰漫著的裊裊白煙",
         {
             "type": "playBgm",
-            "name": "BGMBOINBOIN.mp3",
+            "name": "BGMKyoheiTranslation.mp3",
             "keep": true
         },
         "肥宅前方的舞台上，循環撥放著一些螢幕都放不下的碩大凶險，台上的男人則不斷說著同樣的台詞",
@@ -4841,7 +5062,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -5017,7 +5238,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_live_stage.png",
+            "image": "CH7_L1093.png",
             "loc": [
                 0,
                 0
@@ -5199,7 +5420,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_street_day.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -7268,7 +7489,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_wedding.png",
+            "image": "CH6_L343.png",
             "loc": [
                 0,
                 0
@@ -8058,10 +8279,213 @@ main.floors.main_ch7_5=
             "time": 0
         },
         "———END———",
-        "這團的結論",
-        "幾乎所有事件都是由東山開始",
-        "沒有梗平的犧牲無法結束",
-        "雖然看起來很巧但他就是發生了",
-        "想必這也是命運石之門的選擇吧"
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_tbd.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        "總之這劇本其實是COC村規團錄",
+        "一切都是PL與骰子女神的抉擇可沒有半分虛假",
+        "這團幾乎所有事件都是由東山開始",
+        "由桶至學長負責徒勞無功 ",
+        "雖然梗平看起來沒啥用、但都承包了關鍵點沒有他無法善了",
+        "看起來很巧但他就是發生了",
+        "想必這也是命運石之門的選擇吧—",
+        "G組活動作品到此全劇終",
+        "感謝各位的參與與觀看，真的辛苦了",
+        {
+            "type": "comment",
+            "text": "【返回標題畫面】"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMTodomenoichigeki.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMRun.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMBOINBOIN.mp3"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMGintama.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMKanu.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMHaru.mp3"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMKIRAKIRA.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMED2.mp3"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMKyoheiTranslation.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMKanu.mp3"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMHaru.mp3"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        }
     ]
 }
