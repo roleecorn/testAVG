@@ -1,10 +1,17 @@
 ﻿# 圖片與立繪
 
+## 角色立繪生成後端限制
+
+- 本專案禁止使用 ComfyUI 生成、重生成或驗收角色立繪；不得啟動、接入或以 `127.0.0.1:8188` 作為角色美術生成後端。
+- 本專案既有支線角色的六表情生成路徑是 `anime-expression-grid` → 內建 `imagegen`；這不是 ComfyUI，也不要求本機生成後端。主線角色立繪應沿用同一條路徑，除非使用者另行指定其他工具。
+
 ## 劇情需求驅動與圖片使用閉環
 
 所有涉及圖片的新增與更新都必須由劇情需求驅動，不限 ZIP 流程。固定順序是：完整理解使用者需求與權威劇情來源、建立標示人物／背景／道具／CG 的 draft Story IR／scene 視覺需求、依需求從既有或輸入圖片的檔名與內容配對素材、直接接入或生成所需素材，最後才把會被 runtime 使用的圖片放入 `project/images/`。不得先依手邊圖片決定劇情演出，也不得先整批複製圖片到 `project/images/` 再尋找用途。
 
 角色劇情 ZIP 依相同全域原則逐角色執行；ZIP 的完整來源圖片盤點只增加逐張分類與追溯要求，不改變需求先於素材的決策順序。
+
+角色立繪生成前置條件：必須先解壓本次 ZIP，從 `raw/` 找到該角色的實際參考圖，逐角色核對性別、髮型、髮色、臉部、服裝、體型、物種與辨識配件。角色名稱、職業、劇本文字與檔名不可作為生成參考；找不到參考圖時停止該角色，不得靠名稱猜外觀。
 
 - 直接使用：來源圖成為 runtime 圖時，必須放入 `project/images/`、登錄於 `project/data.js -> main.images`，並由該角色最終 Story IR 的 `image.show`／`background.show` 及對應 floor scene 實際引用。
 - 作為生成來源：原圖留在原始 ZIP／`tmp/character-story-import/`，使用 `asset-usage.md` 記錄來源相對路徑、SHA-256、生成輸出與對應 scene／事件；只有生成後且同時完成 `project/images/ → main.images → scene` 的 runtime 圖進入專案圖片目錄。
@@ -70,7 +77,7 @@ Runtime 圖片需放在 `project/images`，登錄到 `project/data.js -> main.im
 目前遊戲畫布是 544×416（17×13）。每張正式地點背景都是完整畫面，必須輸出為 544×416；不得把任何 416×416 佔位圖或舞台素材當成背景規格。任何 416×416 地點背景都是錯誤素材，必須納入檢查與替換範圍。各類圖片必須分開定位，不能共用角色或 CG 的座標規則：
 
 - 地點背景固定為 544×416，使用 `loc: [0, 0]` 或樓層 `images` 的 `x: 0, y: 0`，完整覆蓋 AVG 畫布；不得裁切、留白或只覆蓋左側區域。
-- 角色立繪只使用一個全局普通「當前發言者」槽。人物 alpha bbox 的可見內容左右置中於畫面，且可見 bottom 錨定於畫面外的 `portraitBottomY: 440`。alpha bbox 只負責對齊；所有人物統一套用單一全局 `portraitScale`，人物圖層位於下方對話框 UI 後方，下半身由 416px 畫面底部裁切。
+- 角色立繪只使用一個全局普通「當前發言者」槽。人物 alpha bbox 的可見內容左右置中於畫面，且可見 top 位於畫面上緣下方約 20%；可見 bottom 可錨定到畫面外，腳與下半身被 416px 畫面底部裁切屬正常。alpha bbox 只負責對齊；所有人物統一套用單一全局 `portraitScale`，人物圖層位於下方對話框 UI 後方。
 - AVG 中央 CG 面板使用 `loc: [112, 50, 320, 220]`，可見比例為 16:11。來源不是 16:11 時要用 `sloc` 中央裁切，不可直接拉伸；416×312 來源的標準裁切是 `sloc: [0, 13, 416, 286]`。
 - 一般持續 CG 與固定一秒動作 CG 共用上述面板位置；差異在停留流程，不在畫面範圍。固定一秒動作 CG 仍須使用不可跳過的一秒 `sleep` 後立即清除。
 - 對話框固定在畫面下方，不再為左右人物槽預留水平空間。新版全局 layout config 的 544×416 基準為 `x=16, y=295, width=512, fixedLines=2`；`x=96, width=352` 是禁止回用的舊窄框值。
@@ -103,7 +110,7 @@ visiblePortraitX = (viewportWidth - visibleSourceWidth * portraitScale) / 2
 visiblePortraitY = portraitBottomY - visibleSourceHeight * portraitScale
 ```
 
-`portraitScale` 固定為 `0.92`，`portraitBottomY` 固定為 `440`。後者刻意位於 416px viewport 外，使完整全身素材在遊戲內呈現附圖式的大型腰／腿部裁切構圖；一般素材的頭頂目標約為畫面上緣 5–10%。它們可由全局 layout config 統一調整，但不可依各角色、各表情或圖片寬高產生不同倍率或偏移。如此才能保留素材中原有的人物身高差。透明 padding 不得影響可見內容的置中與底邊；最後必須滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleBottom === portraitBottomY`。canvas alpha 不可讀時才退回整張來源矩形。
+`portraitScale` 與人物底部錨點必須由共用 layout 統一計算，使可見人物 top 約落在 `viewportHeight * 0.20` 以下；完整素材的腳可超出 viewport 並被裁切。不可依各角色、各表情或圖片寬高產生不同倍率或偏移。透明 padding 不得影響可見內容的置中與 top 對齊；最後必須滿足 `visibleCenterX === viewportWidth / 2` 與 `visibleTop ≈ viewportHeight * 0.20`。canvas alpha 不可讀時才退回整張來源矩形。
 
 整份 layout config 集中保存下列已定稿欄位；後續不得由個別 floor 覆蓋：
 

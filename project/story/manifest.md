@@ -8,6 +8,28 @@
 
 每個角色區段使用相同表格；一個原始資源一列，產生多個最終檔名時在「最後命名／路徑」完整列出。穩定紀錄鍵格式為 `<character-id>:<原始資源 SHA-256>:<raw 相對路徑>`。
 
+## 20260823-192556 支線立繪替換追蹤
+
+本次只處理支線角色；半身／裁切 raw 參考圖只用於身份與外觀，正式輸出均經固定 `anime-expression-grid`、`split_emotion_image.py`、`remove_bk.py`。下列新生成表取代先前立繪；原始列保留作血緣。唐三因切割結果出現跨格鞋部，未寫入。
+
+去背規則已更新：只使用綠幕 HSV 候選，不再把近白色像素列為背景；以邊界連通區為主，並只將超過影像面積 0.2% 的大型封閉綠色區塊補判為背景，小型綠色角色細節保留。重新輸出證據位於 `work/deback-v3/`。
+
+| 角色 | 生成表 SHA-256 | 最終替換檔案 | 狀態 |
+|---|---|---|---|
+| 藍湘 | `a8abf5d1bb6a555ee14460abc05e09a5d52a5501b34fc924ab28a0f5235b8f89` | `project/images/lanxiang_{smile,angry,sad,surprised,panic,normal}.png` | full-body／RGBA／active |
+| 神秘香蕉人 | `0883ff2aa643541e156701a0236b406ae3a0f00293ae402090ce7fb118175160` | `project/images/banana_{smile,angry,sad,surprised,panic,normal}.png` | full-body／RGBA／active |
+| NoiR | `0874389bd028ca4db1f9248a7010bf5d8726f821ba2609936f8ef6085497fb53` | `project/images/noir_{smile,angry,sad,surprised,panic,normal}.png` | full-body／RGBA／active |
+| 茜 | `85e8beb7b205708ceee5ef5d4487d871d85ad288abc6fdd43ee24e472eadcbd9` | `project/images/akane_{smile,angry,sad,surprised,panic,normal}.png` | full-body／RGBA／active |
+| 綿貫咲耶 | `a8d6dfe4349fff21734ee80eb64a4a1365d19e3874890a72d8a013b1d5a65c2c` | `project/images/watanuki_sakuya_{smile,angry,sad,surprised,panic,normal}.png` | full-body／RGBA／active |
+| 御影凛珠 | `0e8629aa2c5fe9e47d5921b35f70cddcefae7639474e63d6570679111eb23ed4` | `project/images/mikage_rinju_{smile,angry,sad,surprised,panic,normal}.png` | full-body／RGBA／active |
+| 地子 | `360adc256aa5cd7cefd97519c71740afa9648de3c734db281ba1489f87c6a746` | `project/images/dizi_{smile,angry,sad,surprised,panic,normal}.png` | full-body／RGBA／active |
+| 衛宮士郎 | `d6398a267af249aa762aa29989ac1de7ba65573a9e0b570fcd1e36de04b27cf3` | `project/images/shirou_{smile,angry,sad,surprised,panic,normal}.png` | full-body／RGBA／active |
+| 岡部倫太郎 | `fc660155c7afb938ab9c42858fec752050a460f864d0eaf702114d1b153541f8` | `project/images/okabe_{smile,angry,sad,surprised,panic,normal}.png` | full-body／RGBA／active |
+| IDW | `91367dc90b2118d15ec37f537ffe99e5ee5a2c591124152223ab4b31a699488a` | `project/images/idw_{smile,angry,sad,surprised,panic,normal}.png` | full-body／RGBA／active |
+| 柏崎星奈 | `8aa17a7bfa1d57f8a2107a81e23768c26794d090413dc22ab5beaec9e67e46d8` | `project/images/sena_{smile,surprised,panic,normal}.png` | full-body／RGBA／active |
+| 蘭斯／Sill | `9a22ba400c5be762ed4dce6119fa0b9c58e0e03612154d579cc2c0f632214d8a` | `project/images/ms_portrait_lance_{smile,angry,sad,surprised,panic,normal}.png` | not applied／原檔已恢復 |
+| 菈菈安瑟姆 | `61a7c0999e9e571c46bb9bddb547d60c9788e95ce8f78118070e8393a504f6e0` | `project/images/lala_{smile,angry,sad,surprised,panic,normal}.png` | user-confirmed／full-body／RGBA／active |
+
 ## `akane`／茜
 
 - 劇情來源：`project/story/茜.txt`
@@ -122,7 +144,8 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | shirou:db3dace9c043debdbf1fa693843d7540179f3990367112d7b9b019718ac613ad:10. 鍛刀大賽(情緒)/鍛刀大賽.txt | 20260816-174815 | 10. 鍛刀大賽(情緒)/鍛刀大賽.txt | db3dace9c043debdbf1fa693843d7540179f3990367112d7b9b019718ac613ad | script | updated | authoritative-source | project/story/鍛刀大賽.txt | source／shirou_1..4 | work/script-manifest.md + 鍛刀大賽.diff | active |
 | shirou:38699e60062503afc0bed267c816c597a4eee3db5350c4129eb60480482abb63:10. 鍛刀大賽(情緒)/唐三.png | 20260816-174815 | 10. 鍛刀大賽(情緒)/唐三.png | 38699e60062503afc0bed267c816c597a4eee3db5350c4129eb60480482abb63 | portrait | new | direct | project/images/shirou_tangsan.png | shirou_3／唐三 | work/asset-usage.md + IR／floor refs | active |
-| shirou:33a36d86fa8fe59fcef8bf1822f364b825fac46f7a52dfee0a3d5c9a7c887185:10. 鍛刀大賽(情緒)/師匠.png | 20260816-174815 | 10. 鍛刀大賽(情緒)/師匠.png | 33a36d86fa8fe59fcef8bf1822f364b825fac46f7a52dfee0a3d5c9a7c887185 | portrait | new | direct | project/images/shirou_shisho.png | shirou_3／店長「東方不敗」 | work/asset-usage.md + user confirmation + IR／floor refs | active |
+| shirou:33a36d86fa8fe59fcef8bf1822f364b825fac46f7a52dfee0a3d5c9a7c887185:10. 鍛刀大賽(情緒)/師匠.png | 20260816-174815 | 10. 鍛刀大賽(情緒)/師匠.png | 33a36d86fa8fe59fcef8bf1822f364b825fac46f7a52dfee0a3d5c9a7c887185 | portrait | new | direct | project/images/shirou_shisho.png | shirou_3／店長「東方不敗」 | work/asset-usage.md + user confirmation + IR／floor refs | superseded |
+| shirou:6b7ee87dfb5290d903c7865b9949eb1b324eaaa1a07f412f0c2a86e70d106107:20260823-192556:師匠-expression-grid | 20260823-192556 | 10. 鍛刀大賽(情緒)/師匠.png | 33a36d86fa8fe59fcef8bf1822f364b825fac46f7a52dfee0a3d5c9a7c887185 | portrait | changed-existing | generated-source | project/images/shirou_shisho.png | shirou_3／店長「東方不敗」 | raw reference → anime-expression-grid → split → remove_bk; replacement-run/original-assets; Story IR/data refs unchanged | active |
 | shirou:5be7e2c77364dbe0af64dc490a6d7dfb48aae4c97a5c9901e11973fb351d82e3:10. 鍛刀大賽(情緒)/干將·莫邪.png | 20260816-174815 | 10. 鍛刀大賽(情緒)/干將·莫邪.png | 5be7e2c77364dbe0af64dc490a6d7dfb48aae4c97a5c9901e11973fb351d82e3 | prop | identical-existing | direct | project/images/shirou_blades.png | shirou_2／shirou_3 | work/asset-usage.md + IR／floor refs | active |
 | shirou:37f91d8f17b138743238226dfb2a334817e0ff2955656453b8a84f74ed6a1be5:10. 鍛刀大賽(情緒)/武士刀.png | 20260816-174815 | 10. 鍛刀大賽(情緒)/武士刀.png | 37f91d8f17b138743238226dfb2a334817e0ff2955656453b8a84f74ed6a1be5 | prop | identical-existing | direct | project/images/tournament_katana.png | shirou_3 | work/asset-usage.md + IR／floor refs | active |
 | shirou:58cf979a4acdd7f3778b3c9ea56c10bc4c9576f64a9c2883357e1b50085af4ad:10. 鍛刀大賽(情緒)/良秀.png | 20260816-174815 | 10. 鍛刀大賽(情緒)/良秀.png | 58cf979a4acdd7f3778b3c9ea56c10bc4c9576f64a9c2883357e1b50085af4ad | portrait | new | direct | project/images/shirou_liangxiu.png | shirou_3／良秀 | work/asset-usage.md + IR／floor refs | active |
@@ -150,7 +173,8 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | yuedu-ai:b7a6bf596480df831943349fab4ae1d4f4caa9db0da123bec605fda1d7402964:6.月讀愛/月讀愛.txt | 20260816-174815 | 6.月讀愛/月讀愛.txt | b7a6bf596480df831943349fab4ae1d4f4caa9db0da123bec605fda1d7402964 | script | updated | authoritative-source | project/story/月讀愛.txt | source／yuedu_ai_1..4 | work/script-manifest.md + 月讀愛.diff | active |
 | yuedu-ai:ed1c9a9aeb20fc3c18df592e76ca8948dc0b50c6be9e3b3fb2dcfbe2be4556c7:6.月讀愛/圖檔/便利店.jpg | 20260816-174815 | 6.月讀愛/圖檔/便利店.jpg | ed1c9a9aeb20fc3c18df592e76ca8948dc0b50c6be9e3b3fb2dcfbe2be4556c7 | background | new | generated-source | project/images/yuedu_convenience_store.png | yuedu_ai_4 | work/asset-usage.md + IR／floor refs; 544x416 crop | active |
-| yuedu-ai:c06c1b7eed084b9ffe3357766b5e577e9198b5f5abe43787a9bd34f7f52ab:6.月讀愛/圖檔/月讀愛.png | 20260816-174815 | 6.月讀愛/圖檔/月讀愛.png | c06c1b7eed084b9ffe3357766b5e577e9198b5f5abe43787a9bd34f7f52ab | portrait | new | generated-source | project/images/yuedu_angry.png, project/images/yuedu_happy.png, project/images/yuedu_panic.png, project/images/yuedu_sad.png, project/images/yuedu_smile.png, project/images/yuedu_surprised.png | yuedu_ai_1..4 | work/asset-usage.md + user-confirmed protagonist generation source | active |
+| yuedu-ai:c06c1b7eed084b9ffe3357766b5e577e9198b5f5abe43787a9bd34f7f52ab:6.月讀愛/圖檔/月讀愛.png | 20260816-174815 | 6.月讀愛/圖檔/月讀愛.png | c06c1b7eed084b9ffe3357766b5e577e9198b5f5abe43787a9bd34f7f52ab | portrait | new | generated-source | project/images/yuedu_angry.png, project/images/yuedu_happy.png, project/images/yuedu_panic.png, project/images/yuedu_sad.png, project/images/yuedu_smile.png, project/images/yuedu_surprised.png | yuedu_ai_1..4 | prior generated-source record | superseded |
+| yuedu-ai:398bb6ec5b85aaedbf409ce102b5e2995f0a8526d48be284d71e3d8d0ef5d625:20260823-192556:月讀愛-expression-grid | 20260823-192556 | 6.月讀愛/圖檔/月讀愛.png | c06c1b7eed084b9ffe3357766b5e577e9198b5f5abe43787a9bd34f7f52ab | portrait | changed-existing | generated-source | project/images/yuedu_angry.png, project/images/yuedu_happy.png, project/images/yuedu_panic.png, project/images/yuedu_sad.png, project/images/yuedu_smile.png, project/images/yuedu_surprised.png | yuedu_ai_1..4 | raw reference → anime-expression-grid → split → remove_bk; replacement-run/original-assets; Story IR/data refs unchanged | active |
 | yuedu-ai:65e51b8c9d04878f7a772f2d50ec95b173b6ced17358893162f3ba9ab17b650d:6.月讀愛/圖檔/熟悉的街角.png | 20260816-174815 | 6.月讀愛/圖檔/熟悉的街角.png | 65e51b8c9d04878f7a772f2d50ec95b173b6ced17358893162f3ba9ab17b650d | background | new | generated-source | project/images/yuedu_familiar_corner.png | yuedu_ai_4 | work/asset-usage.md + IR／floor refs; 544x416 crop + event switch | active |
 
 ## `ruka`／漆原瑠華
@@ -163,7 +187,8 @@
 | ruka:24047268ba24a72d0e3129bd444ae571a9008413cd5d53ea66c562f953c29cb1:13.漆原瑠華/漆原瑠華.txt | 20260816-174815 | 13.漆原瑠華/漆原瑠華.txt | 24047268ba24a72d0e3129bd444ae571a9008413cd5d53ea66c562f953c29cb1 | script | new | authoritative-source (superseded by current full source) | prior work text | - | prior run record | superseded |
 | ruka:79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025:13.漆原瑠華/圖檔/漆原瑠華.png | 20260816-174815 | 13.漆原瑠華/圖檔/漆原瑠華.png | 79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025 | portrait | new | generated-source (superseded by current run evidence) | prior work output | - | prior run record | superseded |
 | ruka:87082e827dd4b81a2299aa3ef48f6ea3623147e3e19786b95bcea91d3b1ac3fb:13.漆原瑠華/漆原瑠華.txt:20260816-201520 | 20260816-201520 | 13.漆原瑠華/漆原瑠華.txt | 87082e827dd4b81a2299aa3ef48f6ea3623147e3e19786b95bcea91d3b1ac3fb | script | new | authoritative-source | project/story/漆原瑠華.txt | ruka_1..ruka_4 | work/script-manifest.md; source SHA 7378c6f3...; manage_story_ir | active |
-| ruka:79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025:13.漆原瑠華/圖檔/漆原瑠華.png:20260816-201520 | 20260816-201520 | 13.漆原瑠華/圖檔/漆原瑠華.png | 79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025 | portrait | new | generated-source | project/images/ruka_{smile,angry,sad,surprised,panic,normal}.png | ruka_2..ruka_4 | intake-manifest; expression-validation; IR/floor/data chain | active |
+| ruka:79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025:13.漆原瑠華/圖檔/漆原瑠華.png:20260816-201520 | 20260816-201520 | 13.漆原瑠華/圖檔/漆原瑠華.png | 79d08ff2ee3ec8ce8ac0279e85ac865d2e18ff0cd5397ed58ddc28686ae55025 | portrait | new | generated-source | project/images/ruka_{smile,angry,sad,surprised,panic,normal}.png | ruka_2..ruka_4 | prior generated-source record | superseded |
+| ruka:b8a7906c1ba0611f5de59be5f5170de9c8efb8e9ba1102d2cc2a10705c76854f:20260823-192556:漆原瑠華-expression-grid | 20260823-192556 | 13.漆原瑠華/圖檔/漆原瑠華.png | b8a7906c1ba0611f5de59be5f5170de9c8efb8e9ba1102d2cc2a10705c76854f | portrait | changed-existing | generated-source | project/images/ruka_{smile,angry,sad,surprised,panic,normal}.png | ruka_2..ruka_4 | raw reference → anime-expression-grid → split → remove_bk; replacement-run/original-assets; Story IR/data refs unchanged | active |
 
 ## `idw`／IDW
 

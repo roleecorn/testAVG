@@ -1,5 +1,11 @@
 # 角色劇情 TODO
 
+## Resolved：portrait-generation-backend
+
+- ComfyUI 已由使用者明確禁止，不得用於角色立繪生成、重生成或驗收。
+- 主線與支線統一沿用 `anime-expression-grid` → 內建 `imagegen`，不要求本機生成後端；ComfyUI 不得使用。
+- Evidence: `.codex/task-questions/20260823-230151-portrait-generation-backend.md`。
+
 ## Open：20260823 最新角色支線 ZIP
 
 - Fresh run：`tmp/character-story-import/drive-download-20260823T111855Z-1-001/20260823-192556`；原始 ZIP SHA-256：`49CE655BDA170D9FA6264AFB84C82CA518685748D800E11257F02C9E3B54CEC6`。
@@ -28,6 +34,8 @@
 
 
 ## 待補素材
+
+- Open：本次支線角色六表情生成仍有局部阻塞。`茱茱` 的 raw 參考圖被內建 imagegen 以 `sexual` 類別拒絕；`良秀` 生成結果身份漂移；唐三因切割結果出現跨格鞋部而暫不替換。菈菈安瑟姆已由使用者確認符合要求，並完成固定流程後替換既有 `project/images/` 同名素材。其餘已確認角色亦已完成 `split_emotion_image.py` → `remove_bk.py` 後替換；原檔保存在本次 run `work/bulk-replacement/original-assets/`。`師匠`、`月讀愛`、`漆原瑠華` 的前一批替換原檔仍在 `work/replacement-run/original-assets/`。Evidence：`.codex/task-questions/20260824-000000-character-portrait-grid.md`、`tmp/character-story-import/drive-download-20260823T111855Z-1-001/20260823-192556/work/bulk-replacement/`。
 
 - `watanuki_sakuya_1`～`watanuki_sakuya_4`：神社場景尚無可重用的 544×416 正式背景；目前仍使用 1438×810 的 `watanuki_shrine_bg.jpg`，待繪製神社背景後替換。
 - 本次 ZIP 剩餘 14 張圖片已由使用者確認為各篇章主角生成圖的來源，全部改列 `generated-source` 並從 `unknown/` 移除；各角色生成圖輸出或尚未落地狀態見永久 `project/story/manifest.md` 與本次 run 的 `work/asset-usage.md`。`師匠.png` 另已確認為店長「東方不敗」，接入 `shirou_3`。

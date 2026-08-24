@@ -3507,8 +3507,12 @@ events.prototype._resolveAvgPortraitGeometry = function (image, sx, sy, sw, sh, 
         h = sh * speakerScale;
         var speakerCenter = core._PX_ / 2;
         var x = speakerCenter - (speakerBounds.left + speakerBounds.width / 2) * speakerScale;
-        var portraitBottomY = speakerLayout.portraitBottomY == null ? core._PY_ : speakerLayout.portraitBottomY;
-        var y = portraitBottomY - speakerBounds.bottom * speakerScale;
+        // The current-speaker portrait is top-anchored at 20% of the viewport.
+        // Use the visible alpha bbox so transparent padding does not affect the
+        // requested screen position.
+        var portraitTopRatio = speakerLayout.portraitTopRatio == null ? 0.2 : speakerLayout.portraitTopRatio;
+        var portraitTopY = core._PY_ * portraitTopRatio;
+        var y = portraitTopY - speakerBounds.top * speakerScale;
         return { x: x, y: y, w: w, h: h };
     }
     return { x: this._resolveImageAvgXLoc(loc[0], w), y: this._resolveImageTextTopLoc(loc[1], h), w: w, h: h };

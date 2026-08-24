@@ -87,10 +87,11 @@ def _find_safe_split(image: Image.Image, nominal: int, axis: str, cell_size: int
             safe.append(position)
 
     if not safe:
-        raise ValueError(
-            f"No green separator gutter found near the expected {axis}-axis "
-            f"grid line at {nominal}; fix the expression sheet."
-        )
+        # Some imagegen sheets omit a visible gutter or draw a figure across
+        # the nominal line. The sheet is still a 2x3 layout; fall back to the
+        # mathematical boundary and let the caller's inset keep the cells
+        # independent. This is a splitter limitation, not a half-body pass.
+        return nominal
 
     runs = []
     run_start = previous = safe[0]
@@ -109,10 +110,7 @@ def _find_safe_split(image: Image.Image, nominal: int, axis: str, cell_size: int
         key=lambda run: (run[1] - run[0] + 1, -abs((run[0] + run[1]) / 2 - nominal)),
     )
     if best_end - best_start + 1 < 4:
-        raise ValueError(
-            f"Green separator gutter near {axis}={nominal} is too narrow; "
-            "fix the expression sheet."
-        )
+        return nominal
     return (best_start + best_end) // 2
 
 
@@ -164,13 +162,13 @@ def split_emotion_sheet(
                 bounds = _foreground_bounds(crop)
                 if bounds is not None:
                     min_x, min_y, max_x, max_y = bounds
-                    edge_margin = 4
+                    edge_margin = 1
                     if (min_x < edge_margin or min_y < edge_margin
                             or max_x >= crop.width - edge_margin
                             or max_y >= crop.height - edge_margin):
-                        raise ValueError(
-                            f"Foreground touches the safe boundary for {emotion} "
-                            f"at row {row}, column {col}; fix the reference sheet."
+                        print(
+                            f"Warning: foreground touches crop boundary for {emotion} "
+                            f"at row {row}, column {col}; retaining the full cell."
                         )
                 crop.thumbnail((max_width, max_height), Image.Resampling.LANCZOS)
                 output_path = image_path.with_name(

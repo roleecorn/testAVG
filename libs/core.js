@@ -247,7 +247,7 @@ function core () {
                 "dialogueFixedLines": 2,
                 "portraitDialogueGap": 0,
                 "portraitScale": 0.92,
-                "portraitBottomY": 440
+                "portraitTopRatio": 0.2
             },
         },
         "globalAttribute": {

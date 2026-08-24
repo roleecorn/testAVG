@@ -20,11 +20,11 @@ AVG 推薦畫面策略：
 
 - 現行畫布：544×416（17×13）。
 - 場景背景：必須是 544×416，放樓層 `images` 的 `canvas: "bg"`、`x: 0, y: 0`，或用 `showImage` 編號 1、`loc: [0, 0]` 顯示，並完整覆蓋畫布。416×416 背景或 placeholder 均為錯誤，必須替換，不得縮放、裁切或保留作為相容方案。
-- 角色立繪：只保留一個普通當前發言者槽。人物可見 bbox 左右置中於畫面，且可見 bottom 錨定於畫面外的 `portraitBottomY: 440`，由 416px viewport 裁切下半身。每句有立繪的台詞固定使用 `showImage(本句 code) → dialogue → hideImage(同一 code)`；只管理本句實際顯示的圖片，不清空所有可能人物 code。
+- 角色立繪：只保留一個普通當前發言者槽。人物可見 bbox 左右置中於畫面，且可見 top 錨定於畫面高度的 20%（`portraitTopRatio: 0.2`）。每句有立繪的台詞固定使用 `showImage(本句 code) → dialogue → hideImage(同一 code)`；只管理本句實際顯示的圖片，不清空所有可能人物 code。
 - CG：用 `showImage` 編號 25-40，中央面板固定為 `loc: [112, 50, 320, 220]`；來源先以 16:11 的 `sloc` 裁切，必要時蓋過色調。
 - 固定一秒動作 CG：沿用同一個 320×220 面板，事件順序固定為 `showImage` → `sleep(1000, noSkip)` → `hideImage`。
 
-主線 scene 與角色支線 scene 共用上述唯一版面與逐句生命週期契約；觸發流程不同不構成背景、立繪、對話框或 CG 座標例外。人物圖層位於 UI／對話框之後，可見 bbox 的水平中心等於畫面水平中心，可見 bottom 等於 `portraitBottomY: 440`。所有立繪必須套用相同的全局 `portraitScale: 0.92`；標準構圖的頭頂約落在畫面上緣 5–10%，下半身延伸到對話框後並被畫面底部裁切。alpha bbox 只用於對齊，不可依圖片尺寸各自縮放。舊的左右槽、依 `dialogueY` 錨定、128px 可見寬度與 25% 對話框遮擋規則全部廢止。
+主線 scene 與角色支線 scene 共用上述唯一版面與逐句生命週期契約；觸發流程不同不構成背景、立繪、對話框或 CG 座標例外。人物圖層位於 UI／對話框之後，可見 bbox 的水平中心等於畫面水平中心，可見 top 等於 `viewportHeight * portraitTopRatio`。所有立繪必須套用相同的全局 `portraitScale: 0.92`；alpha bbox 只用於對齊，不可依圖片尺寸各自縮放。舊的左右槽、依 `dialogueY` 錨定、128px 可見寬度與 25% 對話框遮擋規則全部廢止。
 
 每個地點使用自己的背景檔與精確名稱 mapping。共用 generic 背景只能複製成 placeholder；正式背景替換不得修改共用來源，以免同時改變其他地點。
 - 黑幕/白幕轉場：用 `setCurtain` 或高編號 `showImage`。

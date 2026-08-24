@@ -94,33 +94,64 @@ def remove_green_screen(
         dtype=np.uint8
     )
 
-    # 綠色區域為 255，非綠色區域為 0
-    green_mask = cv2.inRange(
+    # 只建立綠幕候選區域。不可把近白色像素當成背景：白衣、白眼、白髮
+    # 與亮色裝飾都可能落入近白色範圍，必須保留。
+    green_candidate = cv2.inRange(
         hsv,
         lower_green,
         upper_green
     )
+    background_candidate = green_candidate.copy()
 
-    # 修補背景 Mask
+    # 只修補綠幕候選中的細小抗鋸齒／格線斷點；不擴張白色或角色區域。
     if morph_size > 1:
-        kernel = np.ones(
+        close_kernel = np.ones(
+            (max(3, morph_size + 2), max(3, morph_size + 2)),
+            dtype=np.uint8
+        )
+        open_kernel = np.ones(
             (morph_size, morph_size),
             dtype=np.uint8
         )
 
-        # 填補綠幕中的小孔洞
-        green_mask = cv2.morphologyEx(
-            green_mask,
+        background_candidate = cv2.morphologyEx(
+            background_candidate,
             cv2.MORPH_CLOSE,
-            kernel
+            close_kernel
         )
 
-        # 移除零星綠色雜點
-        green_mask = cv2.morphologyEx(
-            green_mask,
+        background_candidate = cv2.morphologyEx(
+            background_candidate,
             cv2.MORPH_OPEN,
-            kernel
+            open_kernel
         )
+
+    # 只把接觸四邊的綠色連通元件視為背景，保留主體內部的綠色。
+    components, labels, stats, _ = cv2.connectedComponentsWithStats(
+        background_candidate,
+        connectivity=8,
+    )
+    background_labels = set()
+    height, width = background_candidate.shape
+    for x in range(width):
+        if background_candidate[0, x]:
+            background_labels.add(int(labels[0, x]))
+        if background_candidate[height - 1, x]:
+            background_labels.add(int(labels[height - 1, x]))
+    for y in range(height):
+        if background_candidate[y, 0]:
+            background_labels.add(int(labels[y, 0]))
+        if background_candidate[y, width - 1]:
+            background_labels.add(int(labels[y, width - 1]))
+    # 角色內部的小片綠色（眼睛、飾品、衣料）不能因為顏色相似被刪除；
+    # 但被角色輪廓包住、未接觸邊界的大塊綠幕仍應透明化。以影像面積
+    # 的 0.2% 作為下限，避免把細小角色細節當成背景。
+    large_component_min = max(512, (height * width) // 500)
+    for label in range(1, components):
+        if int(stats[label, cv2.CC_STAT_AREA]) >= large_component_min:
+            background_labels.add(label)
+    background_labels.discard(0)
+    green_mask = np.isin(labels, list(background_labels)).astype(np.uint8) * 255
 
     # 綠色背景透明，其他區域不透明
     alpha = 255 - green_mask
