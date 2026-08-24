@@ -25,6 +25,18 @@ const DEFAULT_AVG_LAYOUT = Object.freeze({
     animateTime: 120,
   },
 });
+const COMMON_AVG_MAP = Object.freeze(Array.from(
+  { length: AVG_MAP_HEIGHT },
+  () => Object.freeze(Array(AVG_MAP_WIDTH).fill(0)),
+));
+const COMMON_PRESENTATION = Object.freeze({
+  transitions: Object.freeze({
+    "【過場】": Object.freeze({ kind: "fade", color: Object.freeze([0, 0, 0, 1]), time: 500 }),
+    "【過場：一段時間過後】": Object.freeze({ kind: "clock", name: "floor-transition.mp4" }),
+    "【白色慢速過場】": Object.freeze({ kind: "fade", color: Object.freeze([255, 255, 255, 1]), time: 2000 }),
+    "TODO: 【白色慢速過場】": Object.freeze({ kind: "fade", color: Object.freeze([255, 255, 255, 1]), time: 2000 }),
+  }),
+});
 
 function irToText(node) {
   return node.kind === "dialogue" ? `\t[${node.speaker}]${node.text}` : node.text;
@@ -339,20 +351,42 @@ function validateAvgFloorDimensions(floor, location) {
   if (floor.width !== AVG_MAP_WIDTH || floor.height !== AVG_MAP_HEIGHT) {
     throw new Error(`${label}: expected ${AVG_MAP_WIDTH}x${AVG_MAP_HEIGHT}`);
   }
-  if (!Array.isArray(floor.map) || floor.map.length !== AVG_MAP_HEIGHT || floor.map.some((row) => !Array.isArray(row) || row.length !== AVG_MAP_WIDTH)) {
+  if (floor.map !== undefined && (!Array.isArray(floor.map) || floor.map.length !== AVG_MAP_HEIGHT || floor.map.some((row) => !Array.isArray(row) || row.length !== AVG_MAP_WIDTH))) {
     throw new Error(`${label}: map dimensions do not match ${AVG_MAP_WIDTH}x${AVG_MAP_HEIGHT}`);
   }
 }
 
-function validateBundle(bundle) {
+function floorWithCommonFields(floor) {
+  const result = {};
+  let mapInserted = false;
+  const mapAnchor = floor.bgmap !== undefined || floor.fgmap !== undefined ? "ratio" : "height";
+  for (const [key, value] of Object.entries(floor)) {
+    if (key === "map") continue;
+    result[key] = value;
+    if (key === mapAnchor) {
+      result.map = COMMON_AVG_MAP.map((row) => [...row]);
+      mapInserted = true;
+    }
+  }
+  if (!mapInserted) result.map = COMMON_AVG_MAP.map((row) => [...row]);
+  return result;
+}
+
+function validateBundle(bundle, { allowGeneratorOwnedFields = true } = {}) {
   if (!bundle || bundle.storyIrVersion !== STORY_IR_VERSION) throw new Error(`Story IR version must be ${STORY_IR_VERSION}`);
   if (!bundle.source || !Array.isArray(bundle.source.files) || !bundle.source.files.length) throw new Error("Story IR requires source.files");
   if (!Array.isArray(bundle.scenes) || !bundle.scenes.length) throw new Error("Story IR requires scenes");
+  if (!allowGeneratorOwnedFields && Object.prototype.hasOwnProperty.call(bundle, "presentation")) {
+    throw new Error("Story IR must not contain generator-owned bundle presentation");
+  }
   const ids = new Set();
   bundle.scenes.forEach((scene, index) => {
     if (!scene.id || ids.has(scene.id)) throw new Error(`scenes[${index}]: missing or duplicate id`);
     ids.add(scene.id);
     if (!scene.floor || typeof scene.floor !== "object" || !Array.isArray(scene.events)) throw new Error(`scenes[${index}]: floor/events missing`);
+    if (!allowGeneratorOwnedFields && Object.prototype.hasOwnProperty.call(scene.floor, "map")) {
+      throw new Error(`scenes[${index}].floor must not contain generator-owned map`);
+    }
     validateAvgFloorDimensions(scene.floor, `scenes[${index}].floor`);
     scene.events.forEach((node, nodeIndex) => validateNode(node, `scenes[${index}].events[${nodeIndex}]`));
     if (bundle.source.kind === "character") validateCharacterSceneLifecycle(scene, `scenes[${index}]`);
@@ -406,15 +440,15 @@ function validateProjectReferences(root, bundle) {
 
 function bundleToFloors(bundle) {
   validateBundle(bundle);
-  const transitions = bundle.presentation?.transitions || {};
+  const transitions = COMMON_PRESENTATION.transitions;
   return bundle.scenes.map((scene) => ({
-    ...scene.floor,
+    ...floorWithCommonFields(scene.floor),
     eachArrive: irToEvents(ensureAvgLayout(normalizeBgmLifecycle(normalizePortraitLifecycle(scene.events))), transitions),
   }));
 }
 
 function readBundle(file) {
-  return validateBundle(JSON.parse(fs.readFileSync(file, "utf8")));
+  return validateBundle(JSON.parse(fs.readFileSync(file, "utf8")), { allowGeneratorOwnedFields: false });
 }
 
-module.exports = { bundleToFloors, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences };
+module.exports = { bundleToFloors, floorWithCommonFields, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validateProjectReferences };

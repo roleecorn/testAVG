@@ -17,11 +17,13 @@
 
 Story IR 必須納入 Git，主線以 `project/story-ir/main/CH1.json`～`CH7.json` 按章保存，支線放在 `project/story-ir/character/`。每份 IR 都要保存權威來源的 repo-relative 路徑與 SHA-256；來源雜湊不符時禁止產生 floor。Story IR 是 Agent 建立的語意翻譯文件，不是由 floor／engine event 反推的衍生產物；不得反向覆蓋來源文本。
 
+所有 scene 共通的 bundle-level `presentation` 與 `scene.floor.map` 不屬於 Story IR；共用 generator 會在 floor 輸出階段注入固定 presentation 與 17×13 全零 map。只有台詞節點本身的 `presentation` 屬於個別演出語意，仍可存在於 Story IR。
+
 ## Story IR 建立權責
 
 Story IR 的建立與更新由 Agent 負責。原始劇情檔案修改不超過 100 行時，Agent 必須自行完成語意建立／更新，不得使用自動生成；超過 100 行時，自動化程式可產生草稿，但不得覆寫已確認 IR，且 Agent 必須逐行核對原文後採用。Repository 不得保留來源／floor／event 反向寫入 Story IR 的 executable path。
 
-主線 Story IR 固定按章拆分；每個 `CH<N>.json` 是獨立、可驗證的 bundle，只保存對應 `project/mainStory/CH<N>` 的來源紀錄與 scenes。生成器在輸出 floor 前依 CH1～CH7 順序合併 bundle，並拒絕重複 scene ID 或不一致的 presentation。一般語意更新仍由 Agent 負責；本次既有單一主線 bundle 的結構遷移經使用者明確授權，完成後不保留任何反向拆分入口。
+主線 Story IR 固定按章拆分；每個 `CH<N>.json` 是獨立、可驗證的 bundle，只保存對應 `project/mainStory/CH<N>` 的來源紀錄與 scenes。生成器在輸出 floor 前依 CH1～CH7 順序合併 bundle，並由共用 generator 注入 presentation 與 map；不從 IR 讀取這兩項共通欄位。一般語意更新仍由 Agent 負責；本次既有單一主線 bundle 的結構遷移經使用者明確授權，完成後不保留任何反向拆分入口。
 
 ## Story IR 與 scene／floor 原子性契約
 

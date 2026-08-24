@@ -5,7 +5,7 @@ const { execFileSync } = require("child_process");
 const { isDeepStrictEqual } = require("util");
 const { bundleToFloors, readBundle, validateBundle, validateProjectReferences } = require("./story_ir");
 const { characterStories, irFile } = require("./manage_story_ir");
-const { mainStoryIrFiles, mergeMainStoryBundles, readMainStoryBundles } = require("./main_story_ir");
+const { mainStoryIrFiles, mergeMainStoryBundles, readMainStoryBundles, stripCommonFields } = require("./main_story_ir");
 
 const root = path.resolve(__dirname, "..");
 const ownershipFile = path.join(root, "project", "story-ownership.json");
@@ -184,9 +184,29 @@ function currentMainStoryBundle() {
   return mergeMainStoryBundles(readMainStoryBundles());
 }
 
-function isMainStoryIrOnlyReorganization(changedIr, previousMainBundle) {
-  if (!previousMainBundle || !changedIr.length || !changedIr.every((file) => file.startsWith("project/story-ir/main/"))) return false;
-  return isDeepStrictEqual(previousMainBundle, currentMainStoryBundle());
+function headStoryIrCanonical() {
+  const characters = {};
+  for (const story of characterStories) {
+    const file = slash(path.relative(root, irFile(story)));
+    const text = execFileSync("git", ["-c", `safe.directory=${slash(root)}`, "-c", "core.autocrlf=false", "-c", "core.safecrlf=false", "show", `HEAD:${file}`], {
+      cwd: root,
+      encoding: "utf8",
+      maxBuffer: 32 * 1024 * 1024,
+    });
+    characters[story.slug] = stripCommonFields(validateBundle(JSON.parse(text)));
+  }
+  return { main: headMainStoryBundle(), characters };
+}
+
+function currentStoryIrCanonical() {
+  const characters = {};
+  for (const story of characterStories) characters[story.slug] = stripCommonFields(readBundle(irFile(story)));
+  return { main: currentMainStoryBundle(), characters };
+}
+
+function isStoryIrOnlyCommonFieldReorganization(changedIr, previousCanonical) {
+  if (!previousCanonical || !changedIr.length) return false;
+  return isDeepStrictEqual(previousCanonical, currentStoryIrCanonical());
 }
 
 function validateTransactions(changed, ownership) {
@@ -201,8 +221,8 @@ function validateTransactions(changed, ownership) {
   )));
   const changedIr = [...changed].filter((file) => matchesAny(file, ownership.storyIr.paths));
 
-  const mainStoryIrOnlyReorganization = isMainStoryIrOnlyReorganization(changedIr, headMainStoryBundle());
-  if (changedIr.length && !expected.size && !mainStoryIrOnlyReorganization) {
+  const storyIrOnlyCommonFieldReorganization = isStoryIrOnlyCommonFieldReorganization(changedIr, headStoryIrCanonical());
+  if (changedIr.length && !expected.size && !storyIrOnlyCommonFieldReorganization) {
     throw new Error(`Story IR changed without a derived floor change: ${changedIr.join(", ")}`);
   }
   for (const file of expected) {

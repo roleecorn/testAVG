@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const { isDeepStrictEqual } = require("util");
 const { readBundle, validateBundle } = require("./story_ir");
 
 const root = path.resolve(__dirname, "..");
@@ -26,17 +25,13 @@ function mainStoryIrFiles() {
 
 function mergeMainStoryBundles(bundles) {
   if (!Array.isArray(bundles) || !bundles.length) throw new Error("Main-story Story IR requires at least one chapter bundle");
-  const first = bundles[0];
-  const presentation = first.presentation;
+  const first = stripCommonFields(bundles[0]);
   const scenes = [];
   const sceneIds = new Set();
   for (const [bundleIndex, bundle] of bundles.entries()) {
     validateBundle(bundle);
     if (bundle.source.kind !== "main") throw new Error(`Main-story bundle ${bundleIndex} must have source.kind main`);
-    if (!isDeepStrictEqual(bundle.presentation, presentation)) {
-      throw new Error(`Main-story bundle ${bundleIndex} has a different presentation configuration`);
-    }
-    for (const scene of bundle.scenes) {
+    for (const scene of stripCommonFields(bundle).scenes) {
       if (sceneIds.has(scene.id)) throw new Error(`Duplicate main-story scene id: ${scene.id}`);
       sceneIds.add(scene.id);
       scenes.push(scene);
@@ -50,6 +45,17 @@ function mergeMainStoryBundles(bundles) {
     },
     scenes,
   });
+}
+
+function stripCommonFields(bundle) {
+  const { presentation, ...withoutPresentation } = bundle;
+  return {
+    ...withoutPresentation,
+    scenes: withoutPresentation.scenes.map((scene) => {
+      const { map, ...floor } = scene.floor;
+      return { ...scene, floor };
+    }),
+  };
 }
 
 function readMainStoryBundles() {
@@ -68,4 +74,5 @@ module.exports = {
   mergeMainStoryBundles,
   readMainStoryBundle,
   readMainStoryBundles,
+  stripCommonFields,
 };

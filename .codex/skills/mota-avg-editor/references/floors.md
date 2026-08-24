@@ -73,7 +73,7 @@ node scripts/generate_main_story.js --check
 node scripts/manage_story_ir.js
 ```
 
-主線生成器的輸入是 `project/story-ir/main/CH1.json`～`CH7.json`。它會按章合併已驗證 bundle 後輸出所有主線 floor；不要把主線恢復成單一 `main-story.json`，也不要直接修改生成出的 floor。
+主線生成器的輸入是 `project/story-ir/main/CH1.json`～`CH7.json`。它會按章合併已驗證 bundle，並由共用 generator 注入所有 scene 共通的 presentation 與 17×13 全零 map，再輸出主線 floor；不要把主線恢復成單一 `main-story.json`，也不要直接修改生成出的 floor。
 
 驗證至少要確認主線與角色支線 Story IR 的來源 SHA-256、schema、素材／跳轉註冊及 floor round-trip，並確認 `width === 17`、`height === 13`、`map.length === 13`，且每列長度皆為 17。
 
