@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH1",
-        "sha256": "dd0471d4a4a829182cb35876d6e2056ea8c0ed26432d8165107d07b38d5db323"
+        "sha256": "d406ba01d60481ec14f51093110de8b4b426efd7e8881ef70041d5f5f90f00a2"
       }
     ]
   },
@@ -2672,7 +2672,7 @@
         },
         {
           "kind": "narration",
-          "text": "表妹走到了倒在地板上的A面前"
+          "text": "表妹走到了倒在地板上的東山面前"
         },
         {
           "kind": "dialogue",
@@ -2736,7 +2736,7 @@
         },
         {
           "kind": "narration",
-          "text": "表妹隨後用了一樣的方式「解救」了B、C"
+          "text": "表妹隨後用了一樣的方式「解救」了蘭斯跟克莉絲"
         },
         {
           "kind": "narration",
