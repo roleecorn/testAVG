@@ -1142,13 +1142,6 @@ main.floors.main_ch6_4=
             "time": 500
         },
         {
-            "type": "comment",
-            "text": "【開始禁止任何玩家操作】"
-        },
-        {
-            "type": "lockControl"
-        },
-        {
             "type": "hideToolbar"
         },
         {
@@ -1215,13 +1208,6 @@ main.floors.main_ch6_4=
         "\t[？？？]……………",
         "\t[？？？]你還在啊？",
         "\t[？？？]那麼，我們開始吧—",
-        {
-            "type": "comment",
-            "text": "【結束禁止玩家操作】"
-        },
-        {
-            "type": "unlockControl"
-        },
         {
             "type": "playTransitionVideo"
         },

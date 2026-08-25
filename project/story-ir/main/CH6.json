@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH6",
-        "sha256": "810e4aae172aafaaf9e5355c646bbb5b0cbb77b82ee2c9a0fcbb348cebd816a6"
+        "sha256": "28a84faadf6fb5f298d6082147bcbd25a4d0bd6c42ac0b022586349f0808a8e0"
       }
     ]
   },
@@ -3690,13 +3690,6 @@
           "text": "【過場】"
         },
         {
-          "kind": "comment",
-          "text": "【開始禁止任何玩家操作】"
-        },
-        {
-          "kind": "control.lock"
-        },
-        {
           "kind": "toolbar.hide"
         },
         {
@@ -3798,13 +3791,6 @@
           "kind": "dialogue",
           "speaker": "？？？",
           "text": "那麼，我們開始吧—"
-        },
-        {
-          "kind": "comment",
-          "text": "【結束禁止玩家操作】"
-        },
-        {
-          "kind": "control.unlock"
         },
         {
           "kind": "transition.video"
