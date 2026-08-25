@@ -124,6 +124,8 @@ function irToEvent(node, options = {}) {
     case "ending.roll": return cleanUndefined({ type: "endingRoll", code: node.code, image: node.image, width: node.width, x: node.x, y: node.y });
     case "control.lock": return { type: "lockControl" };
     case "control.unlock": return { type: "unlockControl" };
+    case "toolbar.hide": return { type: "hideToolbar" };
+    case "toolbar.show": return { type: "showToolbar" };
     case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time, silent: true });
     case "comment": return { type: "comment", text: node.text };
     case "function.call": return cleanUndefined({ type: "function", function: node.function, async: node.async });
@@ -331,7 +333,7 @@ function ensureAvgLayout(events) {
 const ALLOWED_KINDS = new Set([
   "narration", "dialogue", "layout.set", "bgm.play", "bgm.pause", "bgm.resume",
   "sound.play", "sound.stop", "background.show", "image.show", "image.hide", "wait",
-  "ending.roll", "control.lock", "control.unlock",
+  "ending.roll", "control.lock", "control.unlock", "toolbar.hide", "toolbar.show",
   "goto", "comment", "function.call", "character.exchange", "akiba.event.complete", "akiba.return", "transition.video", "choice",
 ]);
 

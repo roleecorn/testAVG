@@ -3231,6 +3231,18 @@ control.prototype.hideStatusBar = function (showToolbox) {
     }
 }
 
+////// 隱藏 AVG 劇情中的工具列 //////
+control.prototype.hideToolbar = function () {
+    if (main.mode == 'editor' || !core.dom.toolBar) return;
+    core.dom.toolBar.style.display = 'none';
+}
+
+////// 顯示 AVG 劇情中的工具列 //////
+control.prototype.showToolbar = function () {
+    if (main.mode == 'editor' || !core.dom.toolBar) return;
+    core.dom.toolBar.style.display = 'block';
+}
+
 ////// 更新状态栏的勇士图标 //////
 control.prototype.updateHeroIcon = function (name) {
     name = name || "hero.png";

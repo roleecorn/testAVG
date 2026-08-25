@@ -109,6 +109,8 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 | `ending.roll` | `code`, `image` | 顯示長圖並依目前 BGM 剩餘時間滾動至底部；`width`、`x`、`y` 可選 |
 | `control.lock` | 無 | 鎖定玩家操作 |
 | `control.unlock` | 無 | 恢復玩家操作 |
+| `toolbar.hide` | 無 | 僅隱藏 AVG 工具列，不改變狀態列 |
+| `toolbar.show` | 無 | 顯示 AVG 工具列 |
 | `choice` | `prompt`, `options` | 選項與分支 |
 | `goto` | `floorId` | 場景或流程跳轉 |
 | `comment` | `text` | 明確允許的非玩家可見製作備註 |

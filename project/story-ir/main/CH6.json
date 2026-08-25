@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH6",
-        "sha256": "69d9a94d599659a04c27b2d622be0c3b48a6e51f996675f6a8be96ba01fcff79"
+        "sha256": "e831683b35c5eb4f51f79891c1b025fa5c39dfd8c1eea3bc490869fb87d703e2"
       }
     ]
   },
@@ -3697,6 +3697,9 @@
           "kind": "control.lock"
         },
         {
+          "kind": "toolbar.hide"
+        },
+        {
           "kind": "comment",
           "text": "【開始滾動ending.png，在上一首BGM結束時恰好到達底部】"
         },
@@ -3726,6 +3729,9 @@
         {
           "kind": "comment",
           "text": "【白色慢速過場】"
+        },
+        {
+          "kind": "toolbar.show"
         },
         {
           "kind": "comment",

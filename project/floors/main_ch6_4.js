@@ -1149,6 +1149,9 @@ main.floors.main_ch6_4=
             "type": "lockControl"
         },
         {
+            "type": "hideToolbar"
+        },
+        {
             "type": "comment",
             "text": "【開始滾動ending.png，在上一首BGM結束時恰好到達底部】"
         },
@@ -1194,6 +1197,9 @@ main.floors.main_ch6_4=
                 0
             ],
             "time": 2000
+        },
+        {
+            "type": "showToolbar"
         },
         {
             "type": "comment",

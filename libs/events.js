@@ -2596,6 +2596,16 @@ events.prototype._action_hideStatusBar = function (data, x, y, prefix) {
     core.doAction();
 }
 
+events.prototype._action_hideToolbar = function (data, x, y, prefix) {
+    core.hideToolbar();
+    core.doAction();
+}
+
+events.prototype._action_showToolbar = function (data, x, y, prefix) {
+    core.showToolbar();
+    core.doAction();
+}
+
 events.prototype._action_showHero = function (data, x, y, prefix) {
     data.opacity = 1;
     return this._action_setHeroOpacity(data, x, y, prefix);
