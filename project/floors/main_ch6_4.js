@@ -1172,13 +1172,6 @@ main.floors.main_ch6_4=
             "time": 0
         },
         {
-            "type": "comment",
-            "text": "【結束禁止玩家操作】"
-        },
-        {
-            "type": "unlockControl"
-        },
-        {
             "type": "setCurtain",
             "color": [
                 255,
@@ -1222,6 +1215,13 @@ main.floors.main_ch6_4=
         "\t[？？？]……………",
         "\t[？？？]你還在啊？",
         "\t[？？？]那麼，我們開始吧—",
+        {
+            "type": "comment",
+            "text": "【結束禁止玩家操作】"
+        },
+        {
+            "type": "unlockControl"
+        },
         {
             "type": "playTransitionVideo"
         },
