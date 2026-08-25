@@ -1538,6 +1538,12 @@ ui.prototype.drawTextBox = function (content, config) {
     posInfo.xoffset = hPos.xoffset;
     posInfo.yoffset = vPos.yoffset - 4;
 
+    if (main.mode == 'play' && core.control && core.control.updateDialogueAutoButtonPosition
+        && core.status.event && core.status.event.id == 'action'
+        && core.status.event.data && core.status.event.data.type == 'text') {
+        core.control.updateDialogueAutoButtonPosition(vPos.top);
+    }
+
     if (ctx && main.mode == 'play') {
         ctx.canvas.setAttribute('_text_left', hPos.left);
         ctx.canvas.setAttribute('_text_top', vPos.top);

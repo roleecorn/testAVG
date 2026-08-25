@@ -413,6 +413,15 @@ control.prototype._isDialogueComplete = function () {
     return this._isDialogueAutoTarget() && event.interval == null && event.animateUI == null;
 }
 
+control.prototype.updateDialogueAutoButtonPosition = function (dialogueTop) {
+    var button = main.dom.autoBtn;
+    if (!button || dialogueTop == null) return;
+    var scale = parseFloat(core.domStyle.scale) || 1;
+    // 跟隨對話框上緣；-10px 讓按鈕略微跨在外框內側。
+    button.style.top = Math.round(dialogueTop * scale - 10) + 'px';
+    button.style.bottom = 'auto';
+}
+
 control.prototype.stopDialogueAuto = function () {
     if (core.status && core.status.dialogueAutoTimer != null) {
         clearTimeout(core.status.dialogueAutoTimer);

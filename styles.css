@@ -447,9 +447,9 @@ p#name {
 #autoBtn {
     display: none;
     position: absolute;
-    /* AVG 對話框固定在 x=16..528、y=295..411；按鈕置於右上內側。 */
+    /* Auto 的 top 由目前對話框高度動態更新，按鈕固定在右上內側。 */
+    top: 0;
     right: 64px;
-    bottom: 190px;
     z-index: 180;
     box-sizing: border-box;
     min-width: 84px;
