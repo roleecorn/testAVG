@@ -1165,6 +1165,17 @@ main.floors.main_ch6_4=
             "time": 0
         },
         {
+            "type": "showImage",
+            "code": 1,
+            "image": "CH6_L385.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
             "type": "setCurtain",
             "color": [
                 255,
@@ -1186,10 +1197,6 @@ main.floors.main_ch6_4=
         },
         {
             "type": "showToolbar"
-        },
-        {
-            "type": "comment",
-            "text": "【背景：旁白(表)】"
         },
         {
             "type": "comment",

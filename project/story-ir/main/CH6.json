@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH6",
-        "sha256": "28a84faadf6fb5f298d6082147bcbd25a4d0bd6c42ac0b022586349f0808a8e0"
+        "sha256": "38e7dcd305d6b11c4be3961f5c583396f4f100d6913b8ef83ecfe478518e262a"
       }
     ]
   },
@@ -3713,15 +3713,23 @@
           "time": 0
         },
         {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH6_L385.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "comment",
           "text": "【白色慢速過場】"
         },
         {
           "kind": "toolbar.show"
-        },
-        {
-          "kind": "comment",
-          "text": "【背景：旁白(表)】"
         },
         {
           "kind": "comment",

@@ -615,6 +615,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"CH6_L343.png",
 			"CH6_L349.png",
 			"CH6_L374.png",
+			"CH6_L385.png",
 			"CH6_L68.png",
 			"CH6_L69.png",
 			"CH6_L77.png",
