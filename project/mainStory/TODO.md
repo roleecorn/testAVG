@@ -28,11 +28,15 @@
 - BGM 映射已確認：`CH3 3-1 春日影 → BGMHaru.mp3`、`CH3 3-3 鐵達尼號 → BGMWhisper.mp3`、`CH6 6-4 ED1用 → BGMED1.mp3`、`CH7 7-5 關羽之歌 → BGMKanu.mp3`；原始 TODO 保留作來源追溯，詳見 `.codex/task-questions/20260824-221212-bgm-mapping-candidates.md`。
 
 - `project/images/ms_ch1_mapo_shop_entrance_cg.png`：暫用複製 CG，來源為 `project/images/scene_mapo_cg.png`；之後需要替換成「麻婆豆腐店門口」正式 CG。
-- `project/images/ms_ch1_keng_2_5_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「2.5 梗平」正式 CG。
+- Historical（主線已不再引用）：`project/images/ms_ch1_keng_2_5_cg.png` 曾為暫用複製 CG，來源為 `project/images/scene_badend.png`；目前 `CH1:270` 已改用正式 `CH1_L270.png`。
 - `project/images/ms_ch1_thunder_crocodile_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「放大的鱷魚圖」正式 CG。
-- `project/images/ms_ch1_keng_join_cg.png`：專案目前沒有現有 GIF 可複製，母檔暫用複製靜態圖，來源為 `project/images/scene_tournament.png`；之後需要替換成「梗平參戰」正式 CG，再執行 `python scripts/build_action_cgs.py`。
-- `project/images/ms_ch2_keng_bicycle_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「梗平被腳踏車撞飛」正式 CG。
-- `project/images/ms_ch2_eri_sunset_cg.png`：暫用複製 CG，來源為 `project/images/scene_badend.png`；之後需要替換成「夕陽下的神祕少女」正式 CG。
+- Historical（主線已不再引用）：`project/images/ms_ch1_keng_join_cg.png` 曾為暫用複製母檔，來源為 `project/images/scene_tournament.png`；目前 `CH1:256` 已改用正式 `CH1_L256.png`。
+- Historical（主線已不再引用）：`project/images/ms_ch2_keng_bicycle_cg.png` 曾為暫用複製 CG，來源為 `project/images/scene_badend.png`；目前 `CH2:210` 已改用正式 `CH2_L210.png`。
+- Historical（主線已不再引用）：`project/images/ms_ch2_eri_sunset_cg.png` 曾為暫用複製 CG，來源為 `project/images/scene_badend.png`；目前 `CH2:222` 已改用正式 `CH2_L222.png`。
+- Resolved: `main-story-formal-static-cg-replacement`
+  - Scope: `project/mainStory/CH1:256`、`CH1:270`、`CH2:210`、`CH2:222` 的動作版 CG 暫代引用。
+  - Current: Story IR／floor 已改用已確認的正式靜態檔 `CH1_L256.png`、`CH1_L270.png`、`CH2_L210.png`、`CH2_L222.png`；原 `ms_*_action_cg.png` 仍保留在素材庫，但不再由主線引用。
+  - Evidence: `project/story-ir/main/CH1.json`、`CH2.json`、對應 floor；`node scripts/validate_story.js`、`node scripts/generate_main_story.js --check` 通過。
 - `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。
 - `project/mainStory/CH1` 新增的日／夜與室內背景：目前以既有同類背景複製成唯一檔名，待替換秋葉原車站、街道、倉庫區、中華料理店、料理節目、兔子咖啡廳、商業地點與河邊夜景正式素材。
 - `project/mainStory/CH1` 的手機簡訊、梗平躲藏、黑衣人、紅色麻婆碗、梗平VS宿儺、兔子攻擊、紙箱、紙箱人、小丑等 CG：目前以 `project/images/scene_mapo_cg.png` 複製素材暫代，待替換正式素材。

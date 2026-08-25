@@ -2098,7 +2098,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch1_keng_join_action_cg.png",
+                  "image": "CH1_L256.png",
                   "sloc": [
                     0,
                     0,
@@ -2243,7 +2243,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch1_keng_2_5_action_cg.png",
+                  "image": "CH1_L270.png",
                   "sloc": [
                     0,
                     0,

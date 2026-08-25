@@ -1732,7 +1732,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch2_keng_bicycle_action_cg.png",
+                  "image": "CH2_L210.png",
                   "sloc": [
                     0,
                     0,
@@ -1837,7 +1837,7 @@
                   "kind": "image.show",
                   "role": "cg",
                   "code": 30,
-                  "image": "ms_ch2_eri_sunset_action_cg.png",
+                  "image": "CH2_L222.png",
                   "sloc": [
                     0,
                     0,

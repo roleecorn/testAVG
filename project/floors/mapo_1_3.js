@@ -1087,7 +1087,7 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_keng_join_action_cg.png",
+                            "image": "CH1_L256.png",
                             "sloc": [
                                 0,
                                 0,
@@ -1279,7 +1279,7 @@ main.floors.mapo_1_3=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch1_keng_2_5_action_cg.png",
+                            "image": "CH1_L270.png",
                             "sloc": [
                                 0,
                                 0,

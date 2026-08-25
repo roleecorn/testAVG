@@ -1407,7 +1407,7 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch2_keng_bicycle_action_cg.png",
+                            "image": "CH2_L210.png",
                             "sloc": [
                                 0,
                                 0,
@@ -1526,7 +1526,7 @@ main.floors.main_ch2_2=
                         {
                             "type": "showImage",
                             "code": 30,
-                            "image": "ms_ch2_eri_sunset_action_cg.png",
+                            "image": "CH2_L222.png",
                             "sloc": [
                                 0,
                                 0,
