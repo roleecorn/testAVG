@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH7",
-        "sha256": "0c0cd8a99417b1d18ded9d998ca5746abb0da6ab7ac21b4f027e179307ef67f8"
+        "sha256": "1db9f5651d39b96e4e674c6dae87f0301d6d7ff2d57a3691731f55d5dbecb341"
       }
     ]
   },
@@ -11717,7 +11717,7 @@
         {
           "kind": "dialogue",
           "speaker": "桶至學長",
-          "text": "：………………",
+          "text": "………………",
           "portrait": {
             "code": 20,
             "image": "ms_portrait_tongzhi_normal.png",

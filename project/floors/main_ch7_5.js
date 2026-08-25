@@ -6223,7 +6223,7 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 0
         },
-        "\t[桶至學長]：………………",
+        "\t[桶至學長]………………",
         {
             "type": "hideImage",
             "code": 20,
