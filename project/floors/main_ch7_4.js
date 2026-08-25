@@ -1404,7 +1404,7 @@ main.floors.main_ch7_4=
         },
         {
             "type": "showImage",
-            "code": 30,
+            "code": 1,
             "image": "CH7_L622.png",
             "loc": [
                 0,
@@ -1836,7 +1836,7 @@ main.floors.main_ch7_4=
                 0
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
         },
         "\t[惠惠]獎勵時間—",
         {

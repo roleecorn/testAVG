@@ -333,7 +333,7 @@ main.floors.main_ch6_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH2_L295.png",
+            "image": "CH3_L66.png",
             "loc": [
                 0,
                 0

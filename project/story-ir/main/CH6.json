@@ -2466,7 +2466,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH2_L295.png",
+          "image": "CH3_L66.png",
           "loc": [
             0,
             0
@@ -2886,7 +2886,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "CH6_L343.png",
+            "name": "CH1_L353.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -2942,14 +2942,10 @@
           }
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3"
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH6_L343.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -2979,8 +2975,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMED1.mp3",
-          "keep": true
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "dialogue",
@@ -3445,6 +3440,10 @@
           "time": 250
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMED1.mp3"
+        },
+        {
           "kind": "narration",
           "text": "在反應過來時，身體就已經換上了西裝站在紅毯上"
         },
@@ -3477,15 +3476,13 @@
           "text": "梗平拿著婚戒一步步走向紅毯的另一端"
         },
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
           "image": "CH6_L349.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -3495,13 +3492,20 @@
           "text": "紅毯尾端的貝琪慢慢轉了過來，讓梗平看得有些失神"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
           "kind": "narration",
           "text": "一旁的修女則念起了誓詞"
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH6_L343.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
         },
         {
           "kind": "comment",
@@ -3648,15 +3652,13 @@
           }
         },
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
           "image": "CH6_L374.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -3670,11 +3672,6 @@
           "kind": "dialogue",
           "speaker": "貝琪",
           "text": "那......我們走吧"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "narration",

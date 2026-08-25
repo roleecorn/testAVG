@@ -5519,7 +5519,7 @@
         {
           "kind": "background.show",
           "role": "image",
-          "code": 30,
+          "code": 1,
           "image": "CH7_L622.png",
           "loc": [
             0,
@@ -5980,7 +5980,7 @@
             0
           ],
           "opacity": 1,
-          "time": 250
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -11738,7 +11738,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH6_L343.png",
+          "image": "CH6_L217.png",
           "loc": [
             0,
             0
@@ -11897,6 +11897,18 @@
           }
         },
         {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH1_L42.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -11945,6 +11957,10 @@
             "image": "keng_neutral_portrait.png",
             "expression": "normal"
           }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "dialogue",
@@ -12458,7 +12474,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_wedding.png",
+          "image": "CH6_L343.png",
           "loc": [
             0,
             0
@@ -12529,10 +12545,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "bgm.pause",

@@ -10,7 +10,7 @@ main.floors.main_ch6_4=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "CH6_L343.png",
+            "name": "CH1_L353.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -312,13 +312,9 @@ main.floors.main_ch6_4=
             "animateTime": 120
         },
         {
-            "type": "playBgm",
-            "name": "BGMRakisuta.mp3"
-        },
-        {
             "type": "showImage",
             "code": 1,
-            "image": "CH6_L343.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -336,8 +332,7 @@ main.floors.main_ch6_4=
         "一道金屬彈片的「喀噠」聲響了",
         {
             "type": "playBgm",
-            "name": "BGMED1.mp3",
-            "keep": true
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
@@ -837,6 +832,10 @@ main.floors.main_ch6_4=
             ],
             "time": 500
         },
+        {
+            "type": "playBgm",
+            "name": "BGMED1.mp3"
+        },
         "在反應過來時，身體就已經換上了西裝站在紅毯上",
         "一旁的警察拿著婚戒放到了他的手中，用動作跟言語催促著他往前",
         {
@@ -878,24 +877,28 @@ main.floors.main_ch6_4=
         "梗平拿著婚戒一步步走向紅毯的另一端",
         {
             "type": "showImage",
-            "code": 30,
+            "code": 1,
             "image": "CH6_L349.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
         },
         "紅毯尾端的貝琪慢慢轉了過來，讓梗平看得有些失神",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         "一旁的修女則念起了誓詞",
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "CH6_L343.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
         {
             "type": "comment",
             "text": "TODO: 【此處應有梗平、貝琪立繪替換，未製作完成，忽略本句】"
@@ -1103,24 +1106,17 @@ main.floors.main_ch6_4=
         },
         {
             "type": "showImage",
-            "code": 30,
+            "code": 1,
             "image": "CH6_L374.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
         },
         "\t[梗平]啊，好像開始入場了",
         "\t[貝琪]那......我們走吧",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         "梗平突破了百般困難，搜尋失蹤人口、歷經破產",
         "還有解決肥宅們的暴動問題，甚至結了個婚",
         "但現在的他與自己的戀人，跟所有人一樣享受著Comike",

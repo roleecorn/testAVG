@@ -6250,7 +6250,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH6_L343.png",
+            "image": "CH6_L217.png",
             "loc": [
                 0,
                 0
@@ -6503,6 +6503,17 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
+            "type": "showImage",
+            "code": 1,
+            "image": "CH1_L42.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -6565,6 +6576,10 @@ main.floors.main_ch7_5=
             "type": "hideImage",
             "code": 20,
             "time": 0
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "showImage",
@@ -7289,7 +7304,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_wedding.png",
+            "image": "CH6_L343.png",
             "loc": [
                 0,
                 0
@@ -7434,10 +7449,6 @@ main.floors.main_ch7_5=
                 0
             ],
             "time": 500
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "pauseBgm"

@@ -46,6 +46,19 @@
 -  - Source: root `CH7_L626.png`（1080×743，SHA-256：`F8DB1B475886801B32261FEED1E348ACDBDB62BAD4FCF1D8D3554114BB1A385A`）。
   - Current: 已取代為 `project/images/CH7_L626.png`（1080×743，SHA-256：`8D5EE2BB7F89F2C260EED9A190233043C44453B284F35B70AFD2E26FF76222C1`）。既有 `project/data.js` 登錄與 Story IR／floor 引用維持一致。
   - Evidence: `node scripts/validate_story.js` 與 `node scripts/generate_main_story.js --check` 通過；`.codex/task-questions/20260825-102710-ch7-media-bugs.md` Q5 已 resolved。
+- Resolved: `main-story-ch6-3-bright-bookstore`
+  - Scope: `project/mainStory/CH6:262` 的 `【背景：泛用書店內部(明亮)】`。
+  - Current: Story IR／floor 已改用首次權威素材 `project/images/CH3_L66.png`，不再誤用暗色 `CH2_L295.png`。
+  - Evidence: `project/story-ir/main/CH6.json`、`project/floors/main_ch6_3.js`；`node scripts/validate_story.js`、`node scripts/generate_main_story.js --check`、`node scripts/validate_story_alignment.js` 通過。
+- Resolved: `main-story-ch6-4-background-and-bgm`
+  - Scope: `project/mainStory/CH6:312`、`317`、`349`、`374` 的背景／BGM／演出型別。
+  - Source: root `CH6_L349.png`（1080×826，SHA-256：`6F127DB3002B354F750BAD5D6072143D322D028BF4C7827744C254E5E47B3775`）與 `CH6_L374.png`（1080×826，SHA-256：`C6E3AC95E80D108D3294D22F6885A475D244AC32EA9C5101237D04F3AD9FA46E`）。
+  - Current: `312` 改用 `CH1_L353.png`、`317` 改回 `BGMRakisuta.mp3`；`349` 與 `374` 改為完整背景事件並移除 CG hide，runtime 素材各縮放為 544×416，SHA-256 分別為 `172A4E59FBDA80D29F9DB09A2D539259EBC4A09A734DAFC51F8FF130EE6AED45`、`CE1FF5C1E7F55A886283C6DD855D5CFF66A2BA2F4F0AFA3FC81F9AB51A1156E2`。
+  - Evidence: `project/story-ir/main/CH6.json`、`project/floors/main_ch6_4.js`；`node scripts/validate_story.js`、`node scripts/generate_main_story.js --check`、`node scripts/validate_story_alignment.js` 通過。
+- Resolved: `main-story-ch7-background-switch-followup`
+  - Scope: `project/mainStory/CH7:622`、`638`、`1215`、`1230`、`1233`、`1282`。
+  - Current: `622` 背景改回主背景層 `code 1`，避免 626 的 CG hide 連帶清除背景；`638` 切換時間改為 0，避免女僕咖啡廳靜態底圖閃現；`1215` 使用 `CH6_L217.png`、`1230` 補上 `CH1_L42.png`、`1233` 補上 `BGMRakisuta.mp3`、`1282` 改用正式婚禮背景 `CH6_L343.png`。
+  - Evidence: `project/story-ir/main/CH7.json`、`project/floors/main_ch7_4.js`、`project/floors/main_ch7_5.js`；遊戲內重現仍併入 `.codex/task-questions/20260825-102710-ch7-media-bugs.md` Q2。
 - `project/mainStory/CH1 1-3`：來源要求「麻婆」立繪，但 `project/images/` 尚無可確認的麻婆角色立繪，該句暫不顯示立繪。
 - `project/mainStory/CH1 1-4`：來源標記 `河邊(夜))` 多一個右括號，生成器暫以 `河邊(夜)` mapping 處理，未改寫來源。
 - `project/mainStory/CH2`～`CH7` 新增的泛用／日夜／室內背景名稱：目前映射到既有同類背景資產，待替換正式專用素材。
