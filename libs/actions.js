@@ -2177,7 +2177,7 @@ actions.prototype._clickSwitchs_sounds = function (x, y) {
     var topIndex = this._getChoicesTopIndex(choices.length);
     var selection = y - topIndex;
     if (this._out(x)) {
-        if (selection != 2) return;
+        if (selection != 1) return;
     }
     if (selection >= 0 && selection < choices.length) {
         var width = choices[selection].width;
@@ -2186,26 +2186,18 @@ actions.prototype._clickSwitchs_sounds = function (x, y) {
         core.status.event.selection = selection;
         switch (selection) {
             case 0:
-                return this._clickSwitchs_sounds_bgm();
-            case 1:
                 return this._clickSwitchs_sounds_se();
-            case 2:
+            case 1:
                 if (x == leftGrid || x == leftGrid + 1) return this._clickSwitchs_sounds_userVolume(-1);
                 if (x == rightGrid || x == rightGrid + 1) return this._clickSwitchs_sounds_userVolume(1);
                 return;
-            case 3:
+            case 2:
                 core.status.event.selection = 0;
                 core.playSound('取消');
                 core.ui._drawSwitchs();
                 return;
         }
     }
-}
-
-actions.prototype._clickSwitchs_sounds_bgm = function () {
-    core.triggerBgm();
-    core.playSound('确定');
-    core.ui._drawSwitchs_sounds();
 }
 
 actions.prototype._clickSwitchs_sounds_se = function () {
@@ -2236,11 +2228,11 @@ actions.prototype._keyUpSwitchs_sounds = function (keycode) {
     }
     if (keycode == 37) {
         switch (core.status.event.selection) {
-            case 2: core.playSound('确定'); return this._clickSwitchs_sounds_userVolume(-1);
+            case 1: core.playSound('确定'); return this._clickSwitchs_sounds_userVolume(-1);
         }
     } else if (keycode == 39) {
         switch (core.status.event.selection) {
-            case 2: core.playSound('确定'); return this._clickSwitchs_sounds_userVolume(1);
+            case 1: core.playSound('确定'); return this._clickSwitchs_sounds_userVolume(1);
         }
     }
     this._selectChoices(core.status.event.ui.choices.length, keycode, this._clickSwitchs_sounds);

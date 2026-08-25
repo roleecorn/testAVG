@@ -23,7 +23,6 @@ function main() {
         body: document.body,
         gameGroup: document.getElementById('gameGroup'),
         mainTips: document.getElementById('mainTips'),
-        musicBtn: document.getElementById('musicBtn'),
         enlargeBtn: document.createElement('img'),
         startPanel: document.getElementById('startPanel'),
         startTop: document.getElementById('startTop'),
@@ -972,14 +971,6 @@ main.prototype.listen = function () {
     main.dom.replayGame.onclick = function () {
         main.core.control.checkBgm();
         main.core.chooseReplayFile();
-    };
-
-    main.dom.musicBtn.onclick = function () {
-        try {
-            if (main.core) main.core.triggerBgm();
-        } catch (ee) {
-            console.error(ee);
-        }
     };
 
     if (main.dom.autoBtn) {

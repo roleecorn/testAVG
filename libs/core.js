@@ -71,7 +71,7 @@ function core () {
     }
     this.musicStatus = {
         'audioContext': null, // WebAudioContext
-        'bgmStatus': false, // 是否播放BGM
+        'bgmStatus': true, // BGM 始終啟用；音量可調整為 0
         'soundStatus': true, // 是否播放SE
         'playingBgm': null, // 正在播放的BGM
         'pauseTime': 0, // 上次暂停的时间
@@ -310,8 +310,6 @@ core.prototype.init = function (coreData, callback) {
             core._afterLoadResources(callback);
         });
     });
-    core.dom.musicBtn.style.display = 'block';
-    core.setMusicBtn();
 }
 
 core.prototype._init_flags = function () {
@@ -413,7 +411,9 @@ core.prototype._init_platform = function () {
     core.platform.isOnline = location.protocol.indexOf("http") == 0;
     if (!core.platform.isOnline) alert("请勿直接打开html文件！使用启动服务或者APP进行离线游戏。");
     window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.msAudioContext;
-    core.musicStatus.bgmStatus = core.getLocalStorage('bgmStatus', true);
+    // BGM is always enabled; players may still set the volume to 0.
+    core.musicStatus.bgmStatus = true;
+    core.setLocalStorage('bgmStatus', true);
     core.musicStatus.soundStatus = core.getLocalStorage('soundStatus', true);
     //新增 userVolume 默认值0.7
     core.musicStatus.userVolume = core.getLocalStorage('userVolume', 0.7);

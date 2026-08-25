@@ -55,7 +55,6 @@ events.prototype._startGame_start = function (hard, seed, route, callback) {
     var todo = [];
     if (core.flags.startUsingCanvas) {
         core.hideStatusBar();
-        core.dom.musicBtn.style.display = 'block';
         core.push(todo, core.firstData.startCanvas);
     }
     core.push(todo, { "type": "function", "function": "function() { core.events._startGame_setHard(); }" })

@@ -385,8 +385,6 @@ control.prototype._showStartAnimate_resetDom = function () {
     core.status.played = false;
     core.clearStatus();
     core.clearMap('all');
-    core.dom.musicBtn.style.display = 'block';
-    core.setMusicBtn();
     // 重置音量
     core.events.setVolume(0.5, 0);
     core.updateStatusBar();
@@ -2921,20 +2919,6 @@ control.prototype.screenFlash = function (color, time, times, moveMode, callback
 control.prototype.playBgm = function (bgm, startTime, loop) {
     bgm = core.getMappedName(bgm);
     if (main.mode != 'play' || !core.material.bgms[bgm]) return;
-    // 如果不允许播放
-    if (!core.musicStatus.bgmStatus) {
-        try {
-            core.musicStatus.playingBgm = bgm;
-            core.musicStatus.lastBgm = bgm;
-            core.material.bgms[bgm].pause();
-        }
-        catch (e) {
-            console.error(e);
-        }
-        return;
-    }
-    this.setMusicBtn();
-
     try {
         this._playBgm_play(bgm, startTime, loop);
     }
@@ -2999,7 +2983,6 @@ control.prototype.pauseBgm = function () {
         console.log("无法暂停BGM");
         console.error(e);
     }
-    this.setMusicBtn();
 }
 
 ////// 恢复背景音乐的播放 //////
@@ -3018,10 +3001,11 @@ control.prototype.resumeBgm = function (resumeTime) {
         console.log("无法恢复BGM");
         console.error(e);
     }
-    this.setMusicBtn();
 }
 
 control.prototype.setMusicBtn = function () {
+    // The player-facing BGM button was removed; keep this legacy API inert.
+    return;
     if (core.musicStatus.bgmStatus)
         core.dom.musicBtn.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAABWVBMVEX///9iYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmL///8AAAC5ubn+/v6xsbEtLS0MDAxmZmZoaGhvb2/c3Nzd3d38/Pz9/f0oKCgpKSl0dHR1dXW6urrb29v7+/v09PTv7+/39/cgICACAgImJibh4eGFhYWGhoaHh4eOjo5paWm7u7vDw8PMzMwyMjI7OztAQEDe3t5FRUVMTEzj4+Pl5eXm5ubp6enr6+tcXFzi4uL19fVeXl74+PgjIyNkZGQGBgaSkpKYmJiampqenp4DAwMwMDBnZ2cICAivr68eHh63t7cLCwsSEhLw8PBhYWEUFBQVFRXNzc3Pz8/Z2dna2toaGhqkpKSlpaWpqamrq6tFOUNAAAAAc3RSTlMAAwQFBhUWGxwkJSYyO0dISVBRUmpvj5CSk5SVoaOlpqiysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKyA0IuUgAAAVdJREFUeF5NkVVbw0AQRTcQrLR4IIEGcidJoaUuQHF3d3d3+P/CkuxCzss8nG++mbnDBJXhNt2CpbeFK1kQpSEKidlc8S9qdATRa6UIdQMoxEpDA0Ov3wUAPfW+qLWACydNv9zMrzkJwPK6FB3oHyOfXfuNxvoBQ+GmBYinhHB77TmiVBxoYUw1AYcEq332AS8OYKosAuTT0nza9uU2USYPRJgGxEiSOFywJ3mNARozgBJJzkfLvfu8JgGDWcC9FEsjWzR+y80gYDEAA8QZ3N6kmP1Fs3fEASB7pob7Hh+Wz5L0ci17Or05J7bH6B6dZv05XWK3rG+myV05Ert592Qo55sPuoIr7hEZHHtieIPWy0RU9DLwc3Mnck/vi8/E8XNrDWQtEVnL/ySKMrv0jPwPp870fprcyYifmiEmqGpHkI5q9ofSFIUk2qiwIGpEMyxYhhZRRcMPz89RJ2s9W8wAAAAASUVORK5CYII=";
     else
@@ -3030,14 +3014,10 @@ control.prototype.setMusicBtn = function () {
 
 ////// 更改背景音乐的播放 //////
 control.prototype.triggerBgm = function () {
-    if (main.mode != 'play') return;
-
-    core.musicStatus.bgmStatus = !core.musicStatus.bgmStatus;
-    if (core.musicStatus.bgmStatus)
-        this.resumeBgm();
-    else
-        this.pauseBgm();
-    core.setLocalStorage('bgmStatus', core.musicStatus.bgmStatus);
+    // Player BGM mute is intentionally disabled. Volume can still be set to 0.
+    core.musicStatus.bgmStatus = true;
+    core.setLocalStorage('bgmStatus', true);
+    return false;
 }
 
 ////// 播放音频 //////
@@ -3465,14 +3445,6 @@ control.prototype._resize_gameGroup = function (obj) {
     floorMsgGroup.style.fontSize = 16 * core.domStyle.scale + "px";
     // startPanel
     core.dom.startPanel.style.fontSize = 16 * core.domStyle.scale + "px";
-    // musicBtn
-    if (core.domStyle.isVertical || core.domStyle.scale < 1) {
-        core.dom.musicBtn.style.right = core.dom.musicBtn.style.bottom = "3px";
-    }
-    else {
-        core.dom.musicBtn.style.right = (obj.clientWidth - totalWidth) / 2 + "px";
-        core.dom.musicBtn.style.bottom = (obj.clientHeight - totalHeight) / 2 - 27 + "px";
-    }
 }
 
 control.prototype._resize_canvas = function (obj) {

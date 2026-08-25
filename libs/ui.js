@@ -2043,7 +2043,6 @@ ui.prototype._drawSwitchs = function () {
 ui.prototype._drawSwitchs_sounds = function () {
     core.status.event.id = 'switchs-sounds';
     var choices = [
-        "音乐： " + (core.musicStatus.bgmStatus ? "[ON]" : "[OFF]"),
         "音效： " + (core.musicStatus.soundStatus ? "[ON]" : "[OFF]"),
         // 显示为 0~10 十挡
         " <     音量：" + Math.round(Math.sqrt(100 * core.musicStatus.userVolume)) + "     > ",
