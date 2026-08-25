@@ -4812,6 +4812,10 @@
           "text": "【過場】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMWitch.mp3"
+        },
+        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -5241,8 +5245,8 @@
           "text": "【過場】"
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMWitch.mp3"
+          "kind": "bgm.pause",
+          "until": "play"
         },
         {
           "kind": "background.show",
@@ -5390,10 +5394,6 @@
         {
           "kind": "narration",
           "text": "列車前方，腳步聲越來越清晰"
-        },
-        {
-          "kind": "bgm.pause",
-          "until": "play"
         },
         {
           "kind": "bgm.play",
@@ -5702,10 +5702,6 @@
           }
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMBOOM.mp3"
-        },
-        {
           "kind": "dialogue",
           "speaker": "惠惠",
           "text": "Ex～plosion—！"
@@ -5934,6 +5930,10 @@
           "kind": "image.hide",
           "code": 30,
           "time": 150
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMBOOM.mp3"
         },
         {
           "kind": "image.show",
@@ -9422,18 +9422,6 @@
           "name": "BGMRakisuta.mp3"
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMTodomenoichigeki.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMRun.mp3"
-        },
-        {
-          "kind": "bgm.pause",
-          "until": "play"
-        },
-        {
           "kind": "image.show",
           "role": "cg",
           "code": 30,
@@ -9631,6 +9619,10 @@
             "image": "dongshan_normal.png",
             "expression": "normal"
           }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMTodomenoichigeki.mp3"
         },
         {
           "kind": "comment",
@@ -10153,6 +10145,10 @@
           "text": "【過場】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMRun.mp3"
+        },
+        {
           "kind": "comment",
           "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
         },
@@ -10379,6 +10375,10 @@
           "time": 250
         },
         {
+          "kind": "bgm.pause",
+          "until": "play"
+        },
+        {
           "kind": "dialogue",
           "speaker": "店長",
           "text": "你們找回了『聖典』嗎",
@@ -10452,7 +10452,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH2_L295.png",
+          "image": "CH7_L1093.png",
           "loc": [
             0,
             0
@@ -11209,10 +11209,6 @@
           "name": "BGMKanu.mp3"
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMHaru.mp3"
-        },
-        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "蒼天啊！拯救了肥宅爺Comike卻要沒了嗎！",
@@ -11251,6 +11247,10 @@
             "image": "dongshan_normal.png",
             "expression": "normal"
           }
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMHaru.mp3"
         },
         {
           "kind": "comment",
@@ -11735,6 +11735,18 @@
           }
         },
         {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH6_L343.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
           "kind": "dialogue",
           "speaker": "東山",
           "text": "………『為别人著想的心』對吧？",
@@ -12077,7 +12089,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_police_station.png",
+          "image": "ms_bg_station_akihabara.png",
           "loc": [
             0,
             0
@@ -12446,7 +12458,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH6_L343.png",
+          "image": "ms_bg_wedding.png",
           "loc": [
             0,
             0

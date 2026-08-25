@@ -387,6 +387,20 @@ main.floors.main_ch7_4=
             "time": 500
         },
         {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWitch.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "CH4_L142.png",
@@ -396,16 +410,6 @@ main.floors.main_ch7_4=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
         },
         {
             "type": "showImage",
@@ -1038,8 +1042,7 @@ main.floors.main_ch7_4=
             "time": 500
         },
         {
-            "type": "playBgm",
-            "name": "BGMWitch.mp3"
+            "type": "pauseBgm"
         },
         {
             "type": "showImage",
@@ -1256,9 +1259,6 @@ main.floors.main_ch7_4=
         "……………………",
         "喀噠—喀噠—喀噠— ",
         "列車前方，腳步聲越來越清晰",
-        {
-            "type": "pauseBgm"
-        },
         {
             "type": "playBgm",
             "name": "BGMREBOOT2014.mp3",
@@ -1568,10 +1568,6 @@ main.floors.main_ch7_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "playBgm",
-            "name": "BGMBOOM.mp3"
-        },
         "\t[惠惠]Ex～plosion—！",
         {
             "type": "hideImage",
@@ -1779,6 +1775,10 @@ main.floors.main_ch7_4=
             "type": "hideImage",
             "code": 30,
             "time": 150
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMBOOM.mp3"
         },
         {
             "type": "showImage",

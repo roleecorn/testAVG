@@ -3154,17 +3154,6 @@ main.floors.main_ch7_5=
             "name": "BGMRakisuta.mp3"
         },
         {
-            "type": "playBgm",
-            "name": "BGMTodomenoichigeki.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMRun.mp3"
-        },
-        {
-            "type": "pauseBgm"
-        },
-        {
             "type": "showImage",
             "code": 30,
             "image": "CH7_L308.png",
@@ -3462,6 +3451,10 @@ main.floors.main_ch7_5=
             "type": "hideImage",
             "code": 20,
             "time": 0
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMTodomenoichigeki.mp3"
         },
         {
             "type": "comment",
@@ -3996,6 +3989,10 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
+            "type": "playBgm",
+            "name": "BGMRun.mp3"
+        },
+        {
             "type": "comment",
             "text": "【BGM預定地：()切換BGM或到7-5結束前連續播放此首BGM】"
         },
@@ -4340,6 +4337,9 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
+            "type": "pauseBgm"
+        },
+        {
             "type": "showImage",
             "code": 20,
             "image": "ms_portrait_tencho_normal.png",
@@ -4468,7 +4468,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH2_L295.png",
+            "image": "CH7_L1093.png",
             "loc": [
                 0,
                 0
@@ -5424,10 +5424,6 @@ main.floors.main_ch7_5=
             "name": "BGMKanu.mp3"
         },
         {
-            "type": "playBgm",
-            "name": "BGMHaru.mp3"
-        },
-        {
             "type": "showImage",
             "code": 20,
             "image": "keng_surprised_portrait.png",
@@ -5498,6 +5494,10 @@ main.floors.main_ch7_5=
             "type": "hideImage",
             "code": 20,
             "time": 0
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMHaru.mp3"
         },
         {
             "type": "comment",
@@ -6249,6 +6249,17 @@ main.floors.main_ch7_5=
         },
         {
             "type": "showImage",
+            "code": 1,
+            "image": "CH6_L343.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
             "expression": "normal",
@@ -6738,7 +6749,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_police_station.png",
+            "image": "ms_bg_station_akihabara.png",
             "loc": [
                 0,
                 0
@@ -7278,7 +7289,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH6_L343.png",
+            "image": "ms_bg_wedding.png",
             "loc": [
                 0,
                 0
