@@ -486,7 +486,9 @@ loader.prototype.loadOneMusic = function (name) {
     music.preload = 'none';
     if (main.bgmRemote) music.src = main.bgmRemoteRoot + core.firstData.name + '/' + name;
     else music.src = 'project/bgms/' + name;
-    music.loop = 'loop';
+    // Existing BGM remains looping by default. Individual playBgm events may
+    // opt out with loop:false without changing the behavior of old saves.
+    music.loop = true;
     core.material.bgms[name] = music;
 }
 

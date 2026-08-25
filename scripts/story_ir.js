@@ -91,7 +91,7 @@ function irToEvent(node, options = {}) {
         : value;
     }
     case "layout.set": return { type: "setText", ...node.value };
-    case "bgm.play": return cleanUndefined({ type: "playBgm", name: node.name, keep: node.keep });
+    case "bgm.play": return cleanUndefined({ type: "playBgm", name: node.name, keep: node.keep, loop: node.loop });
     case "bgm.pause": return { type: "pauseBgm" };
     case "bgm.resume": return { type: "resumeBgm" };
     case "sound.play": return cleanUndefined({ type: "playSound", name: node.name, stop: node.stop, pitch: node.pitch, sync: node.sync });
@@ -121,6 +121,9 @@ function irToEvent(node, options = {}) {
       async: node.async,
     });
     case "wait": return cleanUndefined({ type: "sleep", time: node.time, noSkip: node.noSkip });
+    case "ending.roll": return cleanUndefined({ type: "endingRoll", code: node.code, image: node.image, width: node.width, x: node.x, y: node.y });
+    case "control.lock": return { type: "lockControl" };
+    case "control.unlock": return { type: "unlockControl" };
     case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time, silent: true });
     case "comment": return { type: "comment", text: node.text };
     case "function.call": return cleanUndefined({ type: "function", function: node.function, async: node.async });
@@ -328,6 +331,7 @@ function ensureAvgLayout(events) {
 const ALLOWED_KINDS = new Set([
   "narration", "dialogue", "layout.set", "bgm.play", "bgm.pause", "bgm.resume",
   "sound.play", "sound.stop", "background.show", "image.show", "image.hide", "wait",
+  "ending.roll", "control.lock", "control.unlock",
   "goto", "comment", "function.call", "character.exchange", "akiba.event.complete", "akiba.return", "transition.video", "choice",
 ]);
 
@@ -387,6 +391,19 @@ function validateNode(node, location) {
   }
   if ((node.kind === "bgm.play" || node.kind === "sound.play") && typeof node.name !== "string") {
     throw new Error(`${location}: ${node.kind}.name must be a string`);
+  }
+  if (node.kind === "bgm.play" && node.loop !== undefined && typeof node.loop !== "boolean") {
+    throw new Error(`${location}: bgm.play.loop must be boolean when provided`);
+  }
+  if (node.kind === "ending.roll") {
+    if (!Number.isInteger(node.code) || typeof node.image !== "string" || !node.image) {
+      throw new Error(`${location}: ending.roll requires integer code and image`);
+    }
+    for (const field of ["width", "x", "y"]) {
+      if (node[field] !== undefined && (!Number.isFinite(node[field]) || (field === "width" && node[field] <= 0))) {
+        throw new Error(`${location}: ending.roll.${field} must be numeric${field === "width" ? " and positive" : ""}`);
+      }
+    }
   }
   if ((node.kind === "background.show" || node.kind === "image.show") && (typeof node.code !== "number" || typeof node.image !== "string")) {
     throw new Error(`${location}: ${node.kind} requires numeric code and image`);
@@ -549,6 +566,9 @@ function validateProjectReferences(root, bundle) {
       if (!images.has(node.image) || !fs.existsSync(path.join(root, "project", "images", node.image))) {
         throw new Error(`${location}: unregistered or missing image ${node.image}`);
       }
+    }
+    if (node.kind === "ending.roll" && (!images.has(node.image) || !fs.existsSync(path.join(root, "project", "images", node.image)))) {
+      throw new Error(`${location}: unregistered or missing image ${node.image}`);
     }
     if (node.kind === "bgm.play" && (!bgms.has(node.name) || !fs.existsSync(path.join(root, "project", "bgms", node.name)))) {
       throw new Error(`${location}: unregistered or missing BGM ${node.name}`);

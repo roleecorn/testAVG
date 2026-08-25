@@ -97,7 +97,7 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 | `narration` | `text` | 玩家可見旁白 |
 | `dialogue` | `speaker`, `text` | 角色台詞；文字特效放在 `presentation`，人物情緒／圖片選擇放在 `portrait`，不放位置或生命周期 |
 | `layout.set` | `value` | 共用對話框樣式與 AVG 版面 |
-| `bgm.play` | `name` | 播放背景音樂；`keep` 可選，若存在須在正規化階段解析完成 |
+| `bgm.play` | `name` | 播放背景音樂；`keep`、`loop` 可選，`loop` 省略時循環播放，設為 `false` 時只播放一次 |
 | `bgm.pause` | 無 | 暫停目前 BGM |
 | `bgm.resume` | 無 | 恢復 BGM |
 | `sound.play` | `name` | 播放音效；`stop`、`pitch`、`sync` 可選 |
@@ -106,6 +106,9 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 | `image.show` | `code`, `image`, `role` | 顯示非普通對話綁定的立繪、CG 或 GIF；普通台詞立繪由 generator 自動補入 |
 | `image.hide` | `code` | 隱藏指定圖片層 |
 | `wait` | `time` | 等待；`noSkip` 可選 |
+| `ending.roll` | `code`, `image` | 顯示長圖並依目前 BGM 剩餘時間滾動至底部；`width`、`x`、`y` 可選 |
+| `control.lock` | 無 | 鎖定玩家操作 |
+| `control.unlock` | 無 | 恢復玩家操作 |
 | `choice` | `prompt`, `options` | 選項與分支 |
 | `goto` | `floorId` | 場景或流程跳轉 |
 | `comment` | `text` | 明確允許的非玩家可見製作備註 |
@@ -138,6 +141,7 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 | 自然語言意圖範例 | Story IR | 引擎事件 |
 | --- | --- | --- |
 | `使用BGM：opening.mp3`、`播放背景音樂 opening.mp3` | `{"kind":"bgm.play","name":"opening.mp3","keep":true}` | `{"type":"playBgm","name":"opening.mp3","keep":true}` |
+| `播放一次 BGM：ending.mp3` | `{"kind":"bgm.play","name":"ending.mp3","loop":false}` | `{"type":"playBgm","name":"ending.mp3","loop":false}` |
 | `BGM暫停`、`暫停背景音樂` | `{"kind":"bgm.pause"}` | `{"type":"pauseBgm"}` |
 | `恢復BGM`、`繼續背景音樂` | `{"kind":"bgm.resume"}` | `{"type":"resumeBgm"}` |
 | `播放音效：heartbeat.mp3`、`使用 heartbeat 音效` | `{"kind":"sound.play","name":"heartbeat.mp3"}` | `{"type":"playSound","name":"heartbeat.mp3"}` |

@@ -1814,6 +1814,72 @@ events.prototype._precompile_showImage = function (data) {
     return data;
 }
 
+// ------ 依目前BGM剩餘時間滾動一張長圖 ------
+// This is intentionally opt-in. Existing showImage/moveImage events keep
+// their original behavior and existing BGM events keep looping by default.
+events.prototype._action_endingRoll = function (data, x, y, prefix) {
+    var image = core.getMappedName(data.image);
+    var material = core.material.images.images[image];
+    var code = data.code == null ? 40 : data.code;
+    if (!material) return core.doAction();
+
+    var viewportWidth = core._PX_, viewportHeight = core._PY_;
+    var width = data.width || viewportWidth;
+    var height = Math.max(viewportHeight, Math.round(material.height * width / material.width));
+    var left = data.x == null ? Math.floor((viewportWidth - width) / 2) : data.x;
+    var top = data.y == null ? 0 : data.y;
+    var bottom = viewportHeight - height;
+    core.showImage(code, data.image, null, [left, top, width, height], 1, 0);
+
+    var canvasName = "image" + (code + 100);
+    var audioName = core.musicStatus.playingBgm;
+    var audio = audioName && core.material.bgms[audioName];
+    var finished = false;
+    var timer = null;
+    var finish = function () {
+        if (finished) return;
+        finished = true;
+        if (timer != null) clearInterval(timer);
+        core.status.event.interval = null;
+        core.relocateCanvas(canvasName, left, bottom);
+        core.doAction();
+    };
+
+    if (!audio || audio.ended) {
+        return finish();
+    }
+
+    // This event is used only where the source requires the current track to
+    // finish; force the opt-in track to remain one-shot as a safety net for
+    // hand-authored event JSON.
+    audio.loop = false;
+    var startTime = null;
+    var duration = null;
+    timer = window.setInterval(function () {
+        if (audio.ended) return finish();
+        if (!isFinite(audio.duration) || audio.duration <= 0) return;
+        if (startTime == null) {
+            startTime = audio.currentTime;
+            duration = audio.duration - startTime;
+            if (duration <= 0) return finish();
+        }
+        if (audio.currentTime >= audio.duration - 0.01) return finish();
+        var progress = Math.max(0, Math.min(1, (audio.currentTime - startTime) / duration));
+        core.relocateCanvas(canvasName, left, Math.round(top + (bottom - top) * progress));
+    }, 10);
+    core.status.event.interval = timer;
+}
+
+events.prototype._action_lockControl = function (data, x, y, prefix) {
+    core.lockControl();
+    core.doAction();
+}
+
+events.prototype._action_unlockControl = function (data, x, y, prefix) {
+    core.unlockControl();
+    core.doAction();
+}
+
 events.prototype._action_showTextImage = function (data, x, y, prefix) {
     var loc = this.__action_getLoc(data.loc, 0, 0, prefix);
     if (core.isReplaying()) data.time = 0;
@@ -1986,7 +2052,7 @@ events.prototype._action_insert = function (data, x, y, prefix) {
 }
 
 events.prototype._action_playBgm = function (data, x, y, prefix) {
-    core.playBgm(data.name, data.startTime || 0);
+    core.playBgm(data.name, data.startTime || 0, data.loop);
     core.setFlag("__bgm__", data.keep ? data.name : null);
     core.doAction();
 }

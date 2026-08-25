@@ -2918,7 +2918,7 @@ control.prototype.screenFlash = function (color, time, times, moveMode, callback
 }
 
 ////// 播放背景音乐 //////
-control.prototype.playBgm = function (bgm, startTime) {
+control.prototype.playBgm = function (bgm, startTime, loop) {
     bgm = core.getMappedName(bgm);
     if (main.mode != 'play' || !core.material.bgms[bgm]) return;
     // 如果不允许播放
@@ -2936,7 +2936,7 @@ control.prototype.playBgm = function (bgm, startTime) {
     this.setMusicBtn();
 
     try {
-        this._playBgm_play(bgm, startTime);
+        this._playBgm_play(bgm, startTime, loop);
     }
     catch (e) {
         console.log("无法播放BGM " + bgm);
@@ -2945,9 +2945,10 @@ control.prototype.playBgm = function (bgm, startTime) {
     }
 }
 
-control.prototype._playBgm_play = function (bgm, startTime) {
+control.prototype._playBgm_play = function (bgm, startTime, loop) {
     // 如果当前正在播放，且和本BGM相同，直接忽略
     if (core.musicStatus.playingBgm == bgm && !core.material.bgms[core.musicStatus.playingBgm].paused) {
+        core.material.bgms[bgm].loop = loop !== false;
         return;
     }
     // 如果正在播放中，暂停
@@ -2958,6 +2959,7 @@ control.prototype._playBgm_play = function (bgm, startTime) {
     core.loader.loadBgm(bgm);
     // 播放当前BGM
     core.material.bgms[bgm].volume = core.musicStatus.userVolume * core.musicStatus.designVolume;
+    core.material.bgms[bgm].loop = loop !== false;
     core.material.bgms[bgm].currentTime = startTime || 0;
     core.material.bgms[bgm].play();
     core.musicStatus.playingBgm = bgm;

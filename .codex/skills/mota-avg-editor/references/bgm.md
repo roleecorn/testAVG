@@ -101,6 +101,13 @@ main.floors.scene_intro = {
 - `name`: BGM 檔名，或 `main.nameMap` 中的別名。
 - `startTime`: 從第幾秒開始播放；可省略，省略時等同 `0`。
 - `keep`: 是否把這首設為持續 BGM。為 `true` 時會寫入 `flag:__bgm__`，直到下一個 `playBgm` 事件改寫或清除。
+- `loop`: 是否循環播放；可省略，省略時為 `true` 以維持既有事件相容性。設為 `false` 時播放至檔案結束後停止一次。
+
+只播放一次的 BGM：
+
+```js
+{"type": "playBgm", "name": "ending.mp3", "loop": false}
+```
 
 最常用的 AVG 寫法是在 `eachArrive` 開頭插入 BGM：
 
@@ -121,7 +128,7 @@ main.floors.scene_intro = {
 實作上，事件引擎會執行：
 
 ```js
-core.playBgm(data.name, data.startTime || 0);
+core.playBgm(data.name, data.startTime || 0, data.loop);
 core.setFlag("__bgm__", data.keep ? data.name : null);
 ```
 

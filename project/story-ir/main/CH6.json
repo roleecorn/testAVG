@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH6",
-        "sha256": "ce0fe7414b20f8df3645754c9495b60e280da583807ee6a7d6d8d7354af952d4"
+        "sha256": "69d9a94d599659a04c27b2d622be0c3b48a6e51f996675f6a8be96ba01fcff79"
       }
     ]
   },
@@ -3440,7 +3440,8 @@
         },
         {
           "kind": "bgm.play",
-          "name": "BGMED1.mp3"
+          "name": "BGMED1.mp3",
+          "loop": false
         },
         {
           "kind": "narration",
@@ -3685,73 +3686,119 @@
           "text": "但現在的他與自己的戀人，跟所有人一樣享受著Comike"
         },
         {
-          "kind": "narration",
-          "text": "秋葉原之旅　END"
+          "kind": "comment",
+          "text": "【過場】"
         },
         {
           "kind": "comment",
-          "text": "【結尾演出字幕，未製作完成，忽略本句】"
+          "text": "【開始禁止任何玩家操作】"
+        },
+        {
+          "kind": "control.lock"
         },
         {
           "kind": "comment",
-          "text": "TODO: 【BGM：ED1用】"
+          "text": "【開始滾動ending.png，在上一首BGM結束時恰好到達底部】"
+        },
+        {
+          "kind": "ending.roll",
+          "code": 40,
+          "image": "ending.png",
+          "width": 544
+        },
+        {
+          "kind": "wait",
+          "time": 3000,
+          "noSkip": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 40,
+          "time": 0
         },
         {
           "kind": "comment",
-          "text": "已確認映射（使用者確認）：ED1用 → BGMED1.mp3。"
+          "text": "【結束禁止玩家操作】"
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMED1.mp3"
+          "kind": "control.unlock"
+        },
+        {
+          "kind": "comment",
+          "text": "【白色慢速過場】"
+        },
+        {
+          "kind": "comment",
+          "text": "【背景：旁白(表)】"
+        },
+        {
+          "kind": "comment",
+          "text": "【以下13句話不使用立繪】"
         },
         {
           "kind": "dialogue",
-          "speaker": "結尾演出字幕",
-          "text": "都是旁白的那個版本 (我是打算END2把誰寫的跟所有分支製作寫進去啦所以1都旁白這樣，還是?"
+          "speaker": "？？？",
+          "text": "辛苦你了，穿過重重困難看到現在"
         },
         {
-          "kind": "narration",
-          "text": "總之辛苦你了，穿過重重困難看到現在"
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "能到達這裡的，想必都是有過人毅力的勇者吧"
         },
         {
-          "kind": "narration",
-          "text": "能到達這裡的想必都是過人的勇者"
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "你說劇情在幹尛…？"
         },
         {
-          "kind": "narration",
-          "text": "你說劇情在幹尛？"
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "雖然看起來很複雜，但至此只有『一條』正確的道路"
         },
         {
-          "kind": "narration",
-          "text": "雖然看起來很複雜，但梗平線只有『一條』正確的道路啦…"
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "梗平沒看見的秋葉原想必也發生了不少事情吧…"
         },
         {
-          "kind": "narration",
-          "text": "梗平沒看見的秋葉原發生了什麼？"
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "…你不會好奇嗎？"
         },
         {
-          "kind": "narration",
-          "text": "如果想知道就繼續吧，不會耽誤你太多時間的(振聲)"
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "如果想知道就繼續吧…"
         },
         {
-          "kind": "narration",
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "不會耽誤你太多時間的(振聲)"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
           "text": "或者你也可以點取ALT+F4跳過這些…"
         },
         {
-          "kind": "narration",
+          "kind": "dialogue",
+          "speaker": "？？？",
           "text": "……………"
         },
         {
-          "kind": "narration",
+          "kind": "dialogue",
+          "speaker": "？？？",
           "text": "……………"
         },
         {
-          "kind": "narration",
+          "kind": "dialogue",
+          "speaker": "？？？",
           "text": "你還在啊？"
         },
         {
-          "kind": "narration",
-          "text": "那麼我們開始吧—"
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "那麼，我們開始吧—"
         },
         {
           "kind": "transition.video"
