@@ -397,6 +397,22 @@ control.prototype._isDialogueAutoTarget = function () {
     return !!(event && event.id == 'action' && event.data && event.data.type == 'text');
 }
 
+control.prototype._getDialogueAutoMode = function () {
+    var mode = parseInt(core.status.dialogueAuto, 10);
+    if (isNaN(mode)) mode = core.status.dialogueAuto ? 1 : 0;
+    return Math.max(0, Math.min(3, mode));
+}
+
+control.prototype._getDialogueAutoDelay = function () {
+    // 三段速度：數字越大代表等待越短、播放越快。
+    return [0, 7500, 5000, 2500][this._getDialogueAutoMode()];
+}
+
+control.prototype._isDialogueComplete = function () {
+    var event = core.status && core.status.event;
+    return this._isDialogueAutoTarget() && event.interval == null && event.animateUI == null;
+}
+
 control.prototype.stopDialogueAuto = function () {
     if (core.status && core.status.dialogueAutoTimer != null) {
         clearTimeout(core.status.dialogueAutoTimer);
@@ -412,26 +428,41 @@ control.prototype.updateDialogueAutoButton = function () {
     var button = main.dom.autoBtn;
     if (!button) return;
     var visible = core.isPlaying() && this._isDialogueAutoTarget();
+    var mode = this._getDialogueAutoMode();
+    var marks = mode > 0 ? ' ' + new Array(mode + 1).join('>') : '';
     button.style.display = visible ? 'block' : 'none';
-    button.classList.toggle('active', !!core.status.dialogueAuto && visible);
-    button.innerText = core.status.dialogueAuto ? 'AUTO ON' : 'AUTO';
+    button.classList.toggle('active', mode > 0 && visible);
+    button.dataset.mode = mode;
+    button.setAttribute('aria-label', mode > 0 ? '自動播放 ' + marks.trim() : '啟用自動播放');
+    var text = button.querySelector('.autoBtnText');
+    var modeMarks = button.querySelector('.autoBtnMarks');
+    if (text) text.textContent = 'Auto';
+    if (modeMarks) modeMarks.textContent = marks;
 }
 
 control.prototype.scheduleDialogueAuto = function () {
     this.stopDialogueAuto();
     this.updateDialogueAutoButton();
-    if (!core.status.dialogueAuto || !this._isDialogueAutoTarget()) return;
+    if (this._getDialogueAutoMode() === 0 || !this._isDialogueAutoTarget()) return;
     core.status.dialogueAutoTimer = setTimeout(function () {
         core.status.dialogueAutoTimer = null;
-        if (core.status.dialogueAuto) core.autoAdvanceDialogue();
-    }, 2500);
+        if (core.control._getDialogueAutoMode() > 0) core.autoAdvanceDialogue();
+    }, this._getDialogueAutoDelay());
     this.updateDialogueAutoButton();
 }
 
 control.prototype.toggleDialogueAuto = function () {
     if (!this._isDialogueAutoTarget()) return;
-    core.status.dialogueAuto = !core.status.dialogueAuto;
-    if (core.status.dialogueAuto) this.scheduleDialogueAuto();
+    var previousMode = this._getDialogueAutoMode();
+    var mode = (previousMode + 1) % 4;
+    core.status.dialogueAuto = mode;
+    if (mode > 0 && previousMode === 0 && this._isDialogueComplete()) {
+        // 初次開啟且台詞已播完時，直接進入下一句，不再等待 Auto 間隔。
+        this.stopDialogueAuto();
+        core.autoAdvanceDialogue();
+        this.updateDialogueAutoButton();
+    }
+    else if (mode > 0) this.scheduleDialogueAuto();
     else this.stopDialogueAuto();
     this.updateDialogueAutoButton();
 }

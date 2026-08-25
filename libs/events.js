@@ -1500,7 +1500,7 @@ events.prototype._action_text = function (data, x, y, prefix) {
 }
 
 events.prototype.autoAdvanceDialogue = function () {
-    if (!core.status.dialogueAuto || !core.status.event || core.status.event.id != 'action'
+    if (core.control._getDialogueAutoMode() === 0 || !core.status.event || core.status.event.id != 'action'
         || core.status.event.data.type != 'text') return;
     if (core.status.event.animateUI) {
         core.control.scheduleDialogueAuto();

@@ -224,7 +224,8 @@ function core () {
             'ui': null,
             'interval': null,
         },
-        'dialogueAuto': false,
+        // 0 = 關閉；1/2/3 = Auto > / Auto >> / Auto >>>
+        'dialogueAuto': 0,
         'dialogueAutoTimer': null,
         'autoEvents': [],
         'textAttribute': {

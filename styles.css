@@ -447,22 +447,62 @@ p#name {
 #autoBtn {
     display: none;
     position: absolute;
-    right: 16px;
-    bottom: 72px;
+    /* AVG 對話框固定在 x=16..528、y=295..411；按鈕置於右下內側。 */
+    right: 64px;
+    bottom: 52px;
     z-index: 180;
-    padding: 4px 9px;
-    border: 1px solid rgba(255, 255, 255, 0.75);
-    border-radius: 4px;
-    color: #FFFFFF;
-    background: rgba(0, 0, 0, 0.62);
-    font-size: 12px;
-    line-height: 18px;
+    box-sizing: border-box;
+    min-width: 84px;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid rgba(216, 218, 246, 0.78);
+    border-radius: 16px;
+    color: #F2F1FF;
+    background: rgba(25, 29, 64, 0.84);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), inset 0 1px rgba(255, 255, 255, 0.1);
+    font: 700 12px/32px "Segoe UI", "Microsoft JhengHei", sans-serif;
+    letter-spacing: 0.04em;
     cursor: pointer;
+    text-align: center;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#autoBtn:hover {
+    border-color: rgba(231, 231, 255, 0.95);
+    background: rgba(37, 41, 83, 0.9);
+}
+
+#autoBtn:active {
+    background: rgba(18, 21, 51, 0.92);
+}
+
+#autoBtn:focus-visible {
+    outline: 1px solid rgba(231, 231, 255, 0.95);
+    outline-offset: 2px;
+}
+
+#autoBtn .autoBtnText,
+#autoBtn .autoBtnMarks {
+    position: relative;
+    z-index: 1;
+}
+
+#autoBtn .autoBtnMarks {
+    color: #DAD9F4;
+    font-size: 12px;
+    letter-spacing: 0.04em;
 }
 
 #autoBtn.active {
     color: #FFE58A;
-    border-color: #FFE58A;
+    border-color: rgba(255, 229, 138, 0.92);
+    background: rgba(35, 37, 76, 0.9);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.34), inset 0 1px rgba(255, 255, 255, 0.12);
+}
+
+#autoBtn.active .autoBtnMarks {
+    color: #FFE58A;
 }
 
 @-webkit-keyframes next {
