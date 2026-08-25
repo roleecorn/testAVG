@@ -4001,7 +4001,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "CH1_L42.png",
+            "name": "CH1_L353.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -4064,7 +4064,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH1_L42.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -4086,7 +4086,7 @@
             0
           ],
           "opacity": 1,
-          "time": 250
+          "time": 0
         },
         {
           "kind": "narration",
@@ -4375,7 +4375,7 @@
             0
           ],
           "opacity": 1,
-          "time": 250
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -4502,7 +4502,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "CH1_L42.png",
+            "name": "CH1_L353.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -4565,7 +4565,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH1_L42.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0
@@ -4587,7 +4587,7 @@
             0
           ],
           "opacity": 1,
-          "time": 250
+          "time": 0
         },
         {
           "kind": "narration",
@@ -5159,18 +5159,6 @@
         {
           "kind": "narration",
           "text": "正當同樣的話題準備繼續輪迴下去時"
-        },
-        {
-          "kind": "comment",
-          "text": "TODO: 【BGM：鐵達尼號】"
-        },
-        {
-          "kind": "comment",
-          "text": "已確認映射（使用者確認）：鐵達尼號 → BGMWhisper.mp3。"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMWhisper.mp3"
         },
         {
           "kind": "layout.set",

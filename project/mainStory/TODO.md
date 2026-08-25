@@ -37,6 +37,10 @@
   - Scope: `project/mainStory/CH1:256`、`CH1:270`、`CH2:210`、`CH2:222` 的動作版 CG 暫代引用。
   - Current: Story IR／floor 已改用已確認的正式靜態檔 `CH1_L256.png`、`CH1_L270.png`、`CH2_L210.png`、`CH2_L222.png`；原 `ms_*_action_cg.png` 仍保留在素材庫，但不再由主線引用。
   - Evidence: `project/story-ir/main/CH1.json`、`CH2.json`、對應 floor；`node scripts/validate_story.js`、`node scripts/generate_main_story.js --check` 通過。
+- Resolved: `main-story-background-transition-followup`
+  - Scope: `project/mainStory/CH2:115`、`CH3:484`、`CH3:524`、`CH3:540`、`CH4:53`、`CH4:190`、`CH4:207`、`CH5:58`、`CH5:72`、`CH5:114` 的背景初始層、切換順序與切換時間；以及 `CH3:607` 未標示卻誤播 `BGMWhisper`。
+  - Current: 各 continuation floor 的初始背景已與該段第一個正式背景一致；CH4-1 書店背景改用 `CH3_L66.png`、CH5-1 群組訊息改用 `CH3_L86.png`、CH5-1 書店改用 `CH3_L66.png`；CH3 夜街與 CH4 鐵道切換改為不產生前景閃現；移除來源未標示的 `BGMWhisper.mp3`，保留來源 CH3:610 的 `BGMBOOM`。
+  - Evidence: `project/story-ir/main/CH2.json`～`CH5.json`、對應 floor；`node scripts/validate_story.js`、`node scripts/validate_story_alignment.js`、`node scripts/generate_main_story.js --check` 通過。
 - `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。
 - `project/mainStory/CH1` 新增的日／夜與室內背景：目前以既有同類背景複製成唯一檔名，待替換秋葉原車站、街道、倉庫區、中華料理店、料理節目、兔子咖啡廳、商業地點與河邊夜景正式素材。
 - `project/mainStory/CH1` 的手機簡訊、梗平躲藏、黑衣人、紅色麻婆碗、梗平VS宿儺、兔子攻擊、紙箱、紙箱人、小丑等 CG：目前以 `project/images/scene_mapo_cg.png` 複製素材暫代，待替換正式素材。

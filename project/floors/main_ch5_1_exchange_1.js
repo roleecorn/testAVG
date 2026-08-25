@@ -10,7 +10,7 @@ main.floors.main_ch5_1_exchange_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_vehicle_interior.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch5_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_vehicle_interior.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
@@ -496,7 +496,7 @@ main.floors.main_ch5_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH1_L42.png",
+            "image": "CH3_L86.png",
             "loc": [
                 0,
                 0
@@ -832,7 +832,7 @@ main.floors.main_ch5_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "CH2_L295.png",
+                            "image": "CH3_L66.png",
                             "loc": [
                                 0,
                                 0

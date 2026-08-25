@@ -10,7 +10,7 @@ main.floors.main_ch3_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "CH1_L42.png",
+            "name": "CH1_L353.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch3_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH1_L42.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -339,7 +339,7 @@ main.floors.main_ch3_3=
                 0
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
         },
         "梗平來到了ANIsister的門口，發現友人們跟表妹早已在現場等待",
         "同時現場還有一位令人意外的人物，梗平同社團的統至學長",
@@ -1272,18 +1272,6 @@ main.floors.main_ch3_3=
         "他們又討論了四十分鐘",
         "距離開始討論，已經過去了三個小時",
         "正當同樣的話題準備繼續輪迴下去時",
-        {
-            "type": "comment",
-            "text": "TODO: 【BGM：鐵達尼號】"
-        },
-        {
-            "type": "comment",
-            "text": "已確認映射（使用者確認）：鐵達尼號 → BGMWhisper.mp3。"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMWhisper.mp3"
-        },
         {
             "type": "setText",
             "avg": true,

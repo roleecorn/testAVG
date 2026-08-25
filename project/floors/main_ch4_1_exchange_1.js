@@ -512,7 +512,7 @@ main.floors.main_ch4_1_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH2_L295.png",
+            "image": "CH3_L66.png",
             "loc": [
                 0,
                 0
@@ -1983,7 +1983,7 @@ main.floors.main_ch4_1_exchange_1=
                                 0
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
                         },
                         "梗平來到了雜貨店的後方，發現這裡正好在倉庫區與鐵路中間",
                         {

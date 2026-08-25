@@ -10,7 +10,7 @@ main.floors.main_ch4_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_vehicle_interior.png",
+            "name": "CH4_L142.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch4_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_vehicle_interior.png",
+            "image": "CH4_L142.png",
             "loc": [
                 0,
                 0

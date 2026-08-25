@@ -10,7 +10,7 @@ main.floors.main_ch2_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "CH3_L66.png",
+            "name": "CH1_L42.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch2_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH3_L66.png",
+            "image": "CH1_L42.png",
             "loc": [
                 0,
                 0
