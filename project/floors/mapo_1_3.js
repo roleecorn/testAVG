@@ -344,35 +344,6 @@ main.floors.mapo_1_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "CH1_L189.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "sleep",
-            "time": 1000,
-            "noSkip": true
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 30,
             "image": "CH1_L190.png",
             "loc": [
                 112,

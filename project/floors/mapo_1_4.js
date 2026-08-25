@@ -359,7 +359,7 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[不知道是誰的？]你就是梗平吧",
+        "\t[三角]你就是梗平吧",
         {
             "type": "hideImage",
             "code": 20,
@@ -396,7 +396,7 @@ main.floors.mapo_1_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[不知道是誰的？]說什麼啊你，看下面",
+        "\t[三角]說什麼啊你，看下面",
         {
             "type": "hideImage",
             "code": 20,

@@ -1605,36 +1605,6 @@
           "kind": "image.show",
           "role": "cg",
           "code": 30,
-          "image": "CH1_L189.png",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "wait",
-          "time": 1000,
-          "noSkip": true
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
           "image": "CH1_L190.png",
           "loc": [
             112,
@@ -3180,7 +3150,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "不知道是誰的？",
+          "speaker": "三角",
           "text": "你就是梗平吧",
           "portrait": {
             "code": 20,
@@ -3204,7 +3174,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "不知道是誰的？",
+          "speaker": "三角",
           "text": "說什麼啊你，看下面",
           "portrait": {
             "code": 20,
