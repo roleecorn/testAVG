@@ -36,16 +36,16 @@
 - `project/bgms/ms_ch2_gallery_opening.mp3`：暫用複製 BGM，來源為 `project/bgms/spacetime_mystery.mp3`；之後需要替換成美術館開場正式 BGM。
 - `project/mainStory/CH1` 新增的日／夜與室內背景：目前以既有同類背景複製成唯一檔名，待替換秋葉原車站、街道、倉庫區、中華料理店、料理節目、兔子咖啡廳、商業地點與河邊夜景正式素材。
 - `project/mainStory/CH1` 的手機簡訊、梗平躲藏、黑衣人、紅色麻婆碗、梗平VS宿儺、兔子攻擊、紙箱、紙箱人、小丑等 CG：目前以 `project/images/scene_mapo_cg.png` 複製素材暫代，待替換正式素材。
-- Open: `main-story-ch7-4-background-tongzhi-smile`
+- Resolved: `main-story-ch7-4-background-tongzhi-smile`
   - Scope: `project/mainStory/CH7:622` 的 `【背景：桶至學長壯烈的微笑】`。
-  - Current: `project/images/CH7_L622.png`（SHA-256：`C23950F69C4916C384A1D4BCE05544CD5BCD1F89326FD4B05DB59B9EC28779D5`）已接入，但內容被回報為前代舊圖。
-  - Expected: 使用者提供新版完整 544×416 背景，或核准生成新版素材後取代並完成遊戲內驗收。
-  - Evidence: `.codex/task-questions/20260825-102710-ch7-media-bugs.md` Q4；目前維持 open。
-- Open: `main-story-ch7-4-cg-huihui-explosion-switch`
+  - Source: root `CH7_L622.png`（1080×826，SHA-256：`AB4A8D6201E1558A2AE5B96D03233A57DB92A345C8F0FFD46C9E9485B1AA4961`）。
+  - Current: 已縮放並取代為 `project/images/CH7_L622.png`（544×416，SHA-256：`9FCAC7158BA47B5FA168262B320CAC70A22B09ECF9159689B8C4D2230147BFD1`）。既有 `project/data.js` 登錄與 Story IR／floor 引用維持一致。
+  - Evidence: `node scripts/validate_story.js` 與 `node scripts/generate_main_story.js --check` 通過；`.codex/task-questions/20260825-102710-ch7-media-bugs.md` Q4 已 resolved。
+- Resolved: `main-story-ch7-4-cg-huihui-explosion-switch`
   - Scope: `project/mainStory/CH7:626` 的 `【CG：惠惠按下爆炸開關 出現】`。
-  - Current: `project/images/CH7_L626.png`（SHA-256：`AB4A8D6201E1558A2AE5B96D03233A57DB92A345C8F0FFD46C9E9485B1AA4961`）已接入，但內容被回報為前代舊圖。
-  - Expected: 使用者提供新版完整 CG，或核准生成新版素材後取代並完成遊戲內驗收。
-  - Evidence: `.codex/task-questions/20260825-102710-ch7-media-bugs.md` Q5；目前維持 open。
+-  - Source: root `CH7_L626.png`（1080×743，SHA-256：`F8DB1B475886801B32261FEED1E348ACDBDB62BAD4FCF1D8D3554114BB1A385A`）。
+  - Current: 已取代為 `project/images/CH7_L626.png`（1080×743，SHA-256：`8D5EE2BB7F89F2C260EED9A190233043C44453B284F35B70AFD2E26FF76222C1`）。既有 `project/data.js` 登錄與 Story IR／floor 引用維持一致。
+  - Evidence: `node scripts/validate_story.js` 與 `node scripts/generate_main_story.js --check` 通過；`.codex/task-questions/20260825-102710-ch7-media-bugs.md` Q5 已 resolved。
 - `project/mainStory/CH1 1-3`：來源要求「麻婆」立繪，但 `project/images/` 尚無可確認的麻婆角色立繪，該句暫不顯示立繪。
 - `project/mainStory/CH1 1-4`：來源標記 `河邊(夜))` 多一個右括號，生成器暫以 `河邊(夜)` mapping 處理，未改寫來源。
 - `project/mainStory/CH2`～`CH7` 新增的泛用／日夜／室內背景名稱：目前映射到既有同類背景資產，待替換正式專用素材。
@@ -54,11 +54,12 @@
   - Temporary: `project/images/ms_bg_live_stage.png` 為舊暫代背景，已不再由 CH7-5 IR 引用。
   - Expected: 正式 `LIVE大舞台` 背景；目前改用既有正式 `project/images/CH7_L1093.png`，仍待遊戲內驗收確認。
   - Evidence: `project/story-ir/main/CH7.json` 的 CH7-5 1093／1153 兩處背景、`project/floors/main_ch7_5.js`；資產替換完成但 question file `20260825-102710-ch7-media-bugs.md` 維持 open。
-- Open: `main-story-background-police-station`
-  - Scope: `project/mainStory/CH7 7-5` 的 `【背景：派出所】`。
-  - Temporary: `project/story-ir/main/CH7.json` 暫改用已登錄的 `project/images/ms_bg_station_akihabara.png`，避免顯示舊版「街道／倉庫區」文字替代圖；`ms_bg_police_station.png` 保留供既有可露凱支線使用。
-  - Expected: 正式 `派出所` 背景；完成驗收後替換圖片並通過遊戲內驗證。
-  - Evidence: `project/story-ir/main/CH7.json`、`project/floors/main_ch7_5.js`、question file `20260825-102710-ch7-media-bugs.md`；目前維持 open。
+- Resolved: `main-story-background-police-station`
+  - Scope: `project/mainStory/CH7 7-5` 的 `【背景：派出所】`，以及 `kelukai_2`／`kelukai_3`／`kelukai_4` 三個既有可露凱場景。
+  - Source: built-in imagegen 產生的派出所室內背景（原始輸出 1434×1097，SHA-256：`01FBA6EA150293D6248BD83C56E0A053067E00C7057DD1F6D2EE73FA981D6D97`）。
+  - Current: 已縮放為 544×416 並寫入 `project/images/ms_bg_police_station.png`（SHA-256：`1B46375BE63778A7FBD0D242247A3C3B3A3CF1F752E481EE43D6DEE94696E877`）；CH7-5 Story IR 改用此正式檔名，可露凱既有引用同步使用新圖。
+  - Cleanup: 移除不再被任何 Story IR／floor 使用的暫代 `ms_bg_station_akihabara.png` 及其 `project/data.js` 登錄。
+  - Evidence: `node scripts/generate_main_story.js`、`node scripts/validate_story.js` 與 `node scripts/generate_main_story.js --check` 通過；question file Q1 已 resolved。
 - Open: `main-story-costume-portraits`
   - Scope: `project/mainStory/CH3 3-1`、`project/mainStory/CH6 6-4`、`project/mainStory/CH7 7-5` 的服裝狀態角色標籤。
   - Missing: 正式服裝梗平／貝琪／前輩／桶至學長立繪與角色 mapping；目前不使用未驗收素材。

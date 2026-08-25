@@ -667,7 +667,6 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"ms_bg_mapo_shop_interior.png",
 			"ms_bg_warehouse_district_day.png",
 			"ms_bg_street_day.png",
-			"ms_bg_station_akihabara.png",
 			"ms_ch1_keng_join_cg.png",
 			"ms_bg_wedding.png",
 			"ms_bg_maid_cafe.png",

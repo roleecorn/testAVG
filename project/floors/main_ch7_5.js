@@ -6749,7 +6749,7 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_station_akihabara.png",
+            "image": "ms_bg_police_station.png",
             "loc": [
                 0,
                 0
