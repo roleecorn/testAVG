@@ -1,0 +1,310 @@
+{
+  "storyIrVersion": 1,
+  "source": {
+    "kind": "character",
+    "files": [
+      {
+        "path": "project/story/夾克子.txt",
+        "sha256": "10deea1ea60d9c9611df90b09bc9c0191aefebd730dea7b9848705b0362e0493"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "jiakezi_1",
+      "floor": {
+        "floorId": "jiakezi_1",
+        "title": "初遇劇本殺",
+        "name": "初遇劇本殺",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          { "name": "ms_bg_becky_mansion.png", "canvas": "bg", "x": 0, "y": 0 }
+        ],
+        "ratio": 1,
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        { "kind": "narration", "text": "梗平在四周遊蕩時，注意到有個金色長髮帶著大帽子的少女，身穿著簡單色調的輕便佯裝，似乎有些拘謹想問人，卻又有些害羞的樣子。" },
+        { "kind": "dialogue", "speaker": "梗平", "text": "（難不成是有甚麼困難嗎？）", "portrait": { "code": 10, "image": "keng_neutral_portrait.png", "expression": "normal" } },
+        { "kind": "narration", "text": "梗平好奇的靠了過去，這才發現少女似乎正在發著傳單。" },
+        { "kind": "dialogue", "speaker": "梗平", "text": "（靠！原來是傳銷啊！難怪沒有人想要理會！）", "portrait": { "code": 10, "image": "keng_angry_portrait.png", "expression": "angry" } },
+        { "kind": "narration", "text": "然而就在梗平想要離開的時候，金髮少女發現了梗平，一路小跑了過來，噠噠噠的聲音從後背傳來。" },
+        { "kind": "dialogue", "speaker": "金髮少女", "text": "「不好意思，小哥哥，有沒有興趣參加劇本殺呢？我們正在尋找有興趣的一起參與，第一次體驗是免費的喔！」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+        {
+          "kind": "choice",
+          "prompt": "梗平決定",
+          "options": [
+            {
+              "text": "禮貌地拒絕",
+              "events": [
+                { "kind": "dialogue", "speaker": "梗平", "text": "「不了，我對這個活動沒有興趣，謝謝你的邀請。」", "portrait": { "code": 10, "image": "keng_neutral_portrait.png", "expression": "normal" } },
+                { "kind": "narration", "text": "話雖如此，但是對方再次湊了上來，十分熱情地想要留住梗平。" },
+                { "kind": "dialogue", "speaker": "金髮少女", "text": "「欸？那真是太可惜了，明明就差一人就可以湊滿人了呢，真的不行嗎？小哥哥～遊玩時有提供零食飲料喔～」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+                { "kind": "narration", "text": "看著眼前少女的熱邀，梗平決定" },
+                {
+                  "kind": "choice",
+                  "prompt": "梗平決定",
+                  "options": [
+                    {
+                      "text": "粗魯的拒絕",
+                      "events": [
+                        { "kind": "dialogue", "speaker": "梗平", "text": "「就說不要參加了！說不聽阿？現在我可沒有時間玩這種過家家遊戲。」", "portrait": { "code": 10, "image": "keng_angry_portrait.png", "expression": "angry" } },
+                        { "kind": "narration", "text": "梗平最受不了的就是這種像是漁夫推包包，強賣包包的人了。" },
+                        { "kind": "narration", "text": "於是梗平甚至帶有些生氣地推開少女走了。" },
+                        { "kind": "narration", "text": "一直到了晚上，梗平覺得房間內有些悶，便到了街上散步吹風。" },
+                        { "kind": "narration", "text": "今天正好是個月缺之夜，而路上的街燈也時不時地閃爍著。" },
+                        { "kind": "narration", "text": "梗平走著走著，看了眼時間，也差不多回去了，就在此時，身後傳來輕巧的腳步聲。" },
+                        { "kind": "dialogue", "speaker": "？？？", "text": "「今天真是個適合吹風散步，月黑風高的好日子，你不也這麼覺得嗎？屍體先生？」", "portrait": { "code": 20, "image": "jiakezi_normal.png", "expression": "normal" } },
+                        { "kind": "narration", "text": "原以為是同樣喜歡在夜間散步的同好，然而對方接近自己時卻說了如此毛骨悚然的話，而這個聲音是如此的熟悉。" },
+                        { "kind": "narration", "text": "伴隨著金屬棍棒的敲擊聲，梗平失去了意識。" },
+                        { "kind": "narration", "text": "．．．．．．" },
+                        { "kind": "dialogue", "speaker": "？？？", "text": "「啊！發現屍體了！所以這次的線索是什麼啊？附近怎麼沒有鋪克牌？」" },
+                        { "kind": "dialogue", "speaker": "？？？", "text": "「看樣貌，似乎是毒殺呢！你看臉色都發青了！」" },
+                        { "kind": "dialogue", "speaker": "？？？", "text": "「所以犯人是擁有毒藥的人嗎？」" },
+                        { "kind": "dialogue", "speaker": "？？？", "text": "「不一定，你看這邊的血跡是鮮紅色的，根據線索毒殺的話血液會呈黑色！」" },
+                        { "kind": "narration", "text": "BE：完美的參與者" },
+                        { "kind": "comment", "text": "【返回分支選項二】：巢狀選項結束後返回外層選項流程。" }
+                      ]
+                    },
+                    {
+                      "text": "接受邀請",
+                      "events": [
+                        { "kind": "dialogue", "speaker": "梗平", "text": "「好吧，既然你都這麼熱情邀請了，如果拒絕怪奇怪的。」", "portrait": { "code": 10, "image": "keng_neutral_portrait.png", "expression": "normal" } },
+                        { "kind": "dialogue", "speaker": "金髮少女", "text": "「真是太好了！謝謝你的參與！那麼還請收下這封邀請函，然後請在邀請函上所述的時間來到這地方來！」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+                        { "kind": "narration", "text": "金髮少女非常的開心，隨後哼著不知道甚麼的旋律走了。" },
+                        { "kind": "narration", "text": "梗平看著邀請函上的文字介紹，" },
+                        { "kind": "narration", "text": "「危言聳聽！紅魔館中的驚悚駭人事件！絕對給人帶來前所未有的觀感體驗！」" },
+                        { "kind": "narration", "text": "「請在ＯＯ月ＸＸ日晚上六點前往紅魔館！」" },
+                        { "kind": "narration", "text": "時間是下個禮拜嗎？完全就像是小孩子扮家家一般的宣傳單嘛。" },
+                        { "kind": "function.call", "function": "function () { core.plugin.addAkibaEvent({\"id\":\"jiakezi_2\",\"title\":\"紅魔館的劇本殺\",\"locations\":[\"kaidan_cave\"],\"floorId\":\"jiakezi_2\",\"once\":true }); }" }
+                      ]
+                    },
+                    {
+                      "text": "再次禮貌地拒絕",
+                      "events": [
+                        { "kind": "dialogue", "speaker": "金髮少女", "text": "「好吧，是我冒犯了，那還請小哥哥有美好的一天。」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+                        { "kind": "narration", "text": "經過這段小插曲後，梗平離開了此處。" },
+                        { "kind": "narration", "text": "並沒有甚麼特別的事情發生。" },
+                        { "kind": "narration", "text": "一個禮拜後。" },
+                        { "kind": "narration", "text": "報紙上刊登了，本市內出現多起死亡事件，每位死者的死亡方式不同，一時間搞得人心惶惶的。" },
+                        { "kind": "narration", "text": "但是跟梗平沒有關係，畢竟梗平很宅，不會得罪人。" },
+                        { "kind": "narration", "text": "NE：社恐的勝利宣言" },
+                        { "kind": "comment", "text": "【整體事件結束】：本場支線流程結束。" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "粗魯的拒絕",
+              "events": [
+                { "kind": "dialogue", "speaker": "梗平", "text": "「就說不要參加了！說不聽阿？現在我可沒有時間玩這種過家家遊戲。」", "portrait": { "code": 10, "image": "keng_angry_portrait.png", "expression": "angry" } },
+                { "kind": "narration", "text": "梗平最受不了的就是這種像是漁夫推包包，強賣包包的人了。" },
+                { "kind": "narration", "text": "於是梗平甚至帶有些生氣地推開少女走了。" },
+                { "kind": "narration", "text": "一直到了晚上，梗平覺得房間內有些悶，便到了街上散步吹風。" },
+                { "kind": "narration", "text": "今天正好是個月缺之夜，而路上的街燈也時不時地閃爍著。" },
+                { "kind": "narration", "text": "梗平走著走著，看了眼時間，也差不多回去了，就在此時，身後傳來輕巧的腳步聲。" },
+                { "kind": "dialogue", "speaker": "？？？", "text": "「今天真是個適合吹風散步，月黑風高的好日子，你不也這麼覺得嗎？屍體先生？」", "portrait": { "code": 20, "image": "jiakezi_normal.png", "expression": "normal" } },
+                { "kind": "narration", "text": "原以為是同樣喜歡在夜間散步的同好，然而對方接近自己時卻說了如此毛骨悚然的話，而這個聲音是如此的熟悉。" },
+                { "kind": "narration", "text": "伴隨著金屬棍棒的敲擊聲，梗平失去了意識。" },
+                { "kind": "narration", "text": "．．．．．．" },
+                { "kind": "dialogue", "speaker": "？？？", "text": "「啊！發現屍體了！所以這次的線索是什麼啊？附近怎麼沒有鋪克牌？」" },
+                { "kind": "dialogue", "speaker": "？？？", "text": "「看樣貌，似乎是毒殺呢！你看臉色都發青了！」" },
+                { "kind": "dialogue", "speaker": "？？？", "text": "「所以犯人是擁有毒藥的人嗎？」" },
+                { "kind": "dialogue", "speaker": "？？？", "text": "「不一定，你看這邊的血跡是鮮紅色的，根據線索毒殺的話血液會呈黑色！」" },
+                { "kind": "narration", "text": "BE：完美的參與者" },
+                { "kind": "comment", "text": "【返回分支選項二】：初始選項的分支已結束。" }
+              ]
+            },
+            {
+              "text": "接受邀請",
+              "events": [
+                { "kind": "dialogue", "speaker": "梗平", "text": "「好吧，既然你都這麼熱情邀請了，如果拒絕怪奇怪的。」", "portrait": { "code": 10, "image": "keng_neutral_portrait.png", "expression": "normal" } },
+                { "kind": "dialogue", "speaker": "金髮少女", "text": "「真是太好了！謝謝你的參與！那麼還請收下這封邀請函，然後請在邀請函上所述的時間來到這地方來！」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+                { "kind": "narration", "text": "金髮少女非常的開心，隨後哼著不知道甚麼的旋律走了。" },
+                { "kind": "narration", "text": "梗平看著邀請函上的文字介紹，" },
+                { "kind": "narration", "text": "「危言聳聽！紅魔館中的驚悚駭人事件！絕對給人帶來前所未有的觀感體驗！」" },
+                { "kind": "narration", "text": "「請在ＯＯ月ＸＸ日晚上六點前往紅魔館！」" },
+                { "kind": "narration", "text": "時間是下個禮拜嗎？完全就像是小孩子扮家家一般的宣傳單嘛。" },
+                { "kind": "function.call", "function": "function () { core.plugin.addAkibaEvent({\"id\":\"jiakezi_2\",\"title\":\"紅魔館的劇本殺\",\"locations\":[\"kaidan_cave\"],\"floorId\":\"jiakezi_2\",\"once\":true }); }" }
+              ]
+            }
+          ]
+        },
+        { "kind": "akiba.event.complete", "eventId": "jiakezi_1" },
+        { "kind": "akiba.return" }
+      ]
+    },
+    {
+      "id": "jiakezi_2",
+      "floor": {
+        "floorId": "jiakezi_2",
+        "title": "紅魔館的劇本殺",
+        "name": "紅魔館的劇本殺",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          { "name": "ms_bg_becky_mansion.png", "canvas": "bg", "x": 0, "y": 0 }
+        ],
+        "ratio": 1,
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        { "kind": "narration", "text": "耿平看著手中的邀請函前往了紅魔館。" },
+        { "kind": "narration", "text": "恩……此時的時間是……" },
+        {
+          "kind": "choice",
+          "prompt": "梗平抵達紅魔館的時間",
+          "options": [
+            {
+              "text": "比預期來的早",
+              "events": [
+                { "kind": "narration", "text": "為了避免遲到導致讓那位金髮女孩傷心，於是提早抵達了紅魔館。" },
+                { "kind": "narration", "text": "金髮少女已經在此等候" },
+                { "kind": "dialogue", "speaker": "金髮少女", "text": "「真是感謝您的到來呢，不過其他人還沒到，不如先到裡面坐著休息吧，旁邊桌上的飲料與零食都可以享用。」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+                { "kind": "narration", "text": "金髮少女客氣地招待耿平，而她似乎還在等其他參與者的到來。" },
+                { "kind": "dialogue", "speaker": "梗平", "text": "「那我就先進去了。」", "portrait": { "code": 10, "image": "keng_neutral_portrait.png", "expression": "normal" } },
+                { "kind": "narration", "text": "在遊戲室內，是由七張椅子圍繞著一張桌子擺放的形式，在六個座位前各自擺放著一張白紙以及一個木盒。" },
+                { "kind": "narration", "text": "這木盒做工非常精緻，不過也有使用過的痕跡，可能是給玩家進行遊戲時用的。" },
+                { "kind": "narration", "text": "隨著玩家們陸續抵達，伴隨著眾人落坐。" },
+                { "kind": "narration", "text": "金髮少女是最後進來落坐剩餘的空位置上。" },
+                { "kind": "narration", "text": "隨後作為遊戲主持人的GM發話。" },
+                { "kind": "dialogue", "speaker": "GM", "text": "「請各位打開擺在面前的盒子，取出身分卡後，告知大家自己的身分，。」" },
+                { "kind": "narration", "text": "梗平的木盒中放著一張卡片、一張紙。" },
+                { "kind": "narration", "text": "梗平看著紙張上的說明。" },
+                { "kind": "narration", "text": "（卡片：你的身分是侍者，是這棟洋館的工作人員，你很清楚這棟洋館內沒有行兇用的凶器。）" },
+                { "kind": "narration", "text": "梗平看了說明後，便告知了其他人自己的身分，而其他人也都陸續回應自己的身分。" },
+                { "kind": "narration", "text": "有來自鄰國的公主看起來有些神秘，有帶著刀負著護衛的侍衛，有跟公主有衝突的王子。" },
+                { "kind": "narration", "text": "最後大家看像金髮女子，她看了眼手中的卡片，隨後說：" },
+                { "kind": "dialogue", "speaker": "金髮女子", "text": "「我的身分是，陽光開朗大男孩，特長似乎是微笑。」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+                { "kind": "narration", "text": "金髮少女露出一個非常尷尬又不失禮貌的笑容出來。" },
+                { "kind": "function.call", "function": "function () { core.plugin.addAkibaEvent({\"id\":\"jiakezi_3\",\"title\":\"劇本殺真相\",\"locations\":[\"kaidan_cave\"],\"floorId\":\"jiakezi_3\",\"once\":true }); }" }
+              ]
+            },
+            {
+              "text": "來的剛剛好",
+              "events": [
+                { "kind": "narration", "text": "梗平看著時間很充裕，於是先是到了附近買了吃的喝的，甚至可能還玩了一下。" },
+                { "kind": "narration", "text": "前往紅魔館時只是晚了十分鐘左右，這點時間應該不至於遊戲開始了吧？" },
+                { "kind": "narration", "text": "梗平如此想著，接著前往了紅魔館，而當耿平抵達後，只見金髮少女還在門口等待著。" },
+                { "kind": "dialogue", "speaker": "金髮少女", "text": "「歡迎歡迎！時間來的剛剛好呢！」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+                { "kind": "narration", "text": "金髮少女開心的向耿平打招呼。" },
+                { "kind": "dialogue", "speaker": "耿平", "text": "「路上耽誤了些時間，遊戲開始了嗎？」", "portrait": { "code": 10, "image": "keng_neutral_portrait.png", "expression": "normal" } },
+                { "kind": "dialogue", "speaker": "金髮少女", "text": "「正要開始呢！你正好是最後到達的人！」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+                { "kind": "narration", "text": "金髮少女如此說著，便帶著耿平前往了會議室。" },
+                { "kind": "narration", "text": "隨著會議室的門打開，金髮少女帶著耿平進去。" },
+                { "kind": "dialogue", "speaker": "金髮少女", "text": "「來看看你今晚吃了什麼好料的吧。」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+                { "kind": "narration", "text": "．．．．．．" },
+                { "kind": "dialogue", "speaker": "？？？", "text": "「哇！沒想到凶器就藏在這個箱子裡嗎？還有血呢！」" },
+                { "kind": "dialogue", "speaker": "？？？", "text": "「只是染料吧？」" },
+                { "kind": "dialogue", "speaker": "？？？", "text": "「不過兇手也太蠢了，竟然就把凶器匕首放在跟屍體同個房間，深怕有人找不到呢。」" },
+                { "kind": "dialogue", "speaker": "？？？", "text": "「那個……不好意思，那把匕首似乎是我的。」" },
+                { "kind": "dialogue", "speaker": "眾人", "text": "「欸？」" },
+                { "kind": "dialogue", "speaker": "？？？", "text": "「我的設定是剛來到城堡，就不小心弄丟護身匕首的護衛。」" },
+                { "kind": "narration", "text": "BE：第七個小兵人" }
+              ]
+            }
+          ]
+        },
+        { "kind": "akiba.event.complete", "eventId": "jiakezi_2" },
+        { "kind": "akiba.return" }
+      ]
+    },
+    {
+      "id": "jiakezi_3",
+      "floor": {
+        "floorId": "jiakezi_3",
+        "title": "劇本殺真相",
+        "name": "劇本殺真相",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          { "name": "ms_bg_becky_mansion.png", "canvas": "bg", "x": 0, "y": 0 }
+        ],
+        "ratio": 1,
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        { "kind": "narration", "text": "伴隨著金髮少女的介紹結束，大家開始在房間內開始尋找線索。" },
+        { "kind": "narration", "text": "隨著大家移動到隔壁房間會議室時，臥倒在地上的屍體被發現了。" },
+        { "kind": "narration", "text": "氣氛開始變得焦灼起來，每一個人都在爭辯，為了自己的所作所為開脫。" },
+        { "kind": "narration", "text": "唯獨那金髮少女……事不關己的樣子，坐在位置上把玩著剪刀，彷彿事情與她無關。" },
+        { "kind": "narration", "text": "伴隨著線索逐一公開，討論也變得更加激烈。" },
+        { "kind": "narration", "text": "在現場中，最有嫌疑的三人為，公主、侍衛和王子。" },
+        { "kind": "dialogue", "speaker": "GM", "text": "「請各位輪流發言，來解釋自己所做的一切事情。」" },
+        { "kind": "dialogue", "speaker": "公主", "text": "「我來到這是為了來暗殺王子的，因為不滿政治婚姻而帶了瓶毒藥打算偷偷下毒。」" },
+        { "kind": "dialogue", "speaker": "侍衛", "text": "「我與王子同行的目的只是他的護衛，至於為甚麼匕首出現在兇殺現場，這一點我完全不知道。」" },
+        { "kind": "dialogue", "speaker": "王子", "text": "「為了能夠把公主帶回國，我準備了繩索與暗器，但是都還沒用就有人死了！」" },
+        { "kind": "dialogue", "speaker": "耿平", "text": "（在線索沒有錯誤的情況下，犯人肯定是這三人之中的其中一人，至於旁邊那位……）", "portrait": { "code": 10, "image": "keng_neutral_portrait.png", "expression": "normal" } },
+        { "kind": "narration", "text": "耿平看向了金髮少女，只見對方正閒得發慌，甚至已經將一隻手支在桌上，撐著自己的半張臉在看他們討論。" },
+        { "kind": "narration", "text": "似乎是感知到耿平在看金髮少女，金髮少女先是稍微睜大了點眼睛，隨後向耿平露出笑容。" },
+        { "kind": "narration", "text": "伴隨著公主、侍衛和王子的辯解結束，大家看向了金髮少女，金髮少女則無辜地露出微笑說" },
+        { "kind": "dialogue", "speaker": "金髮少女", "text": "「我一直坐在這邊，除了拍照線索之外，甚至都沒上廁所，身上也沒穿外衣，凶器又不在懷裡，這場遊戲跟我有啥幾巴關係？」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+        { "kind": "narration", "text": "對於金髮少女的反駁，大家都不好說些甚麼。" },
+        { "kind": "narration", "text": "最後得出結論，應該是公主的毒藥再來的路上不小心撒了幾滴出來，剛好滴在死者要喝的飲料裡面，所以死者死了。" },
+        { "kind": "narration", "text": "大家開心的互相交換聯絡方式，並跟ＧＭ復盤整盤遊戲，唯獨那個一直在旁觀的金髮少女，一直在往這偷笑著。" },
+        { "kind": "narration", "text": "．．．．．．" },
+        { "kind": "narration", "text": "隨著活動結束，其實梗平也不清楚自己到底是來這裡做什麼的，呼理呼塗地就完成了一場遊戲。" },
+        { "kind": "narration", "text": "一直到最後離開時，金髮少女說會收拾殘局讓大家先回去休息就好。" },
+        { "kind": "narration", "text": "不過在離開關上門的時候，彷彿聽到了有人說了一句……" },
+        { "kind": "dialogue", "speaker": "金髮少女", "text": "「笨蛋。」", "portrait": { "code": 20, "image": "jiakezi_smile.png", "expression": "smile" } },
+        { "kind": "narration", "text": "TE：蓬萊人形" },
+        { "kind": "narration", "text": "事件結束" },
+        { "kind": "akiba.event.complete", "eventId": "jiakezi_3" },
+        { "kind": "akiba.return" }
+      ]
+    }
+  ]
+}

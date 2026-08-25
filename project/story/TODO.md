@@ -21,6 +21,16 @@
 
 ## 待確認人物
 
+- Open: `jiakezi-runtime-slug`
+  - Scope: `project/story-ir/character/jiakezi.json`、`scripts/manage_story_ir.js`、`project/floors/jiakezi_1.js`～`jiakezi_3.js`、`project/data.js`、`project/akiba-event-meta.json`
+  - Done when: 使用者確認「夾克子」的正式 repository character ID；若不同於 `jiakezi`，同步重命名 IR／floor／事件／立繪並通過完整驗證。
+  - Evidence: `.codex/task-questions/20260825-223700-linlan-branch.md` Q3；本次來源與支線已先以可逆 `jiakezi` 接入。
+
+- Open: `jiakezi-red-mansion-location`
+  - Scope: `project/akiba-event-meta.json`、`project/story-ir/character/jiakezi.json`、`project/floors/jiakezi_1.js`～`jiakezi_3.js`
+  - Done when: 確認 `紅魔館` 是否應映射到 `kaidan_cave`／「紅色洋館」，或提供正式 Akiba location ID。
+  - Evidence: `.codex/task-questions/20260825-223700-linlan-branch.md` Q2；目前三段支線均以 `kaidan_cave` 作暫時可觸發入口。
+
 - `lala`／菈菈安瑟姆：已確認 ZIP 的 `菈菈安瑟姆.txt` 為權威來源；同名 DOCX 僅在 TXT 不存在時作為 fallback。已完成 `project/story/菈菈安瑟姆.txt`、Story IR、立繪、配角素材與 `lala_1`～`lala_4` floor 接入。
 - 本次 fresh ZIP run（`drive-download-20260816T121208Z-1-001.zip`，SHA-256 `569AE6B26AE94E1712D45C69A51B32FC2DCD43F261E68FEE91280878D67DB5DF`，run `20260816-201520`）已完成 `ruka`／漆原瑠華、`idw`／IDW、`sena`／柏崎星奈 三份來源、Story IR、floor、Akiba 首段入口與表情圖接入；漆原來源中的自報姓名字面 `漆原?華` 已由使用者確認為預期內容，保留原文。詳見 `.codex/task-questions/20260816-201520-zip-story.md`。
 - Open: `akiba-horses-knee-kasou-identity`
@@ -34,6 +44,11 @@
 
 
 ## 待補素材
+
+- Open: `jiakezi-red-mansion-background`
+  - Scope: `project/story-ir/character/jiakezi.json`、`project/floors/jiakezi_1.js`～`jiakezi_3.js`
+  - Done when: 取得並驗收紅魔館正式 544×416 地點背景後，替換 `ms_bg_becky_mansion.png` 並重新生成／驗證三個 scene；不得覆寫其他地點背景。
+  - Evidence: 本次 ZIP 只提供角色 PNG；`work/visual-requirements.md`、`work/asset-usage.md`；現行 placeholder 已註冊且尺寸 544×416。
 
 - Open：本次支線角色六表情生成仍有局部阻塞。`茱茱` 的 raw 參考圖被內建 imagegen 以 `sexual` 類別拒絕；`良秀` 生成結果身份漂移；唐三因切割結果出現跨格鞋部而暫不替換。菈菈安瑟姆已由使用者確認符合要求，並完成固定流程後替換既有 `project/images/` 同名素材。其餘已確認角色亦已完成 `split_emotion_image.py` → `remove_bk.py` 後替換；原檔保存在本次 run `work/bulk-replacement/original-assets/`。`師匠`、`月讀愛`、`漆原瑠華` 的前一批替換原檔仍在 `work/replacement-run/original-assets/`。Evidence：`.codex/task-questions/20260824-000000-character-portrait-grid.md`、`tmp/character-story-import/drive-download-20260823T111855Z-1-001/20260823-192556/work/bulk-replacement/`。
 

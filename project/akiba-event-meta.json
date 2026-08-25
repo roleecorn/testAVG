@@ -123,6 +123,13 @@
       "locations": ["rabbit_house"],
       "floorId": "lala_1",
       "once": true
+    },
+    {
+      "id": "jiakezi_1",
+      "title": "初遇劇本殺",
+      "locations": ["kaidan_cave"],
+      "floorId": "jiakezi_1",
+      "once": true
     }
   ]
 }

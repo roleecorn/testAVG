@@ -41,6 +41,16 @@
 | 蘭斯／Sill | `9a22ba400c5be762ed4dce6119fa0b9c58e0e03612154d579cc2c0f632214d8a` | `project/images/ms_portrait_lance_{smile,angry,sad,surprised,panic,normal}.png` | not applied／原檔已恢復 |
 | 菈菈安瑟姆 | `61a7c0999e9e571c46bb9bddb547d60c9788e95ce8f78118070e8393a504f6e0` | `project/images/lala_{smile,angry,sad,surprised,panic,normal}.png` | user-confirmed／full-body／RGBA／active |
 
+## `jiakezi`／夾克子
+
+- 劇情來源：`project/story/夾克子.txt`
+- 資源追蹤狀態：`active`（背景／ID mapping 仍有 Open TODO）
+
+| 紀錄鍵 | ZIP 序號／run | 原始相對路徑 | 原始 SHA-256 | 種類 | 差異狀態 | 使用方式 | 最後命名／路徑 | Story IR scene／用途 | 驗證證據 | 狀態 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| jiakezi:10deea1ea60d9c9611df90b09bc9c0191aefebd730dea7b9848705b0362e0493:18.夾克子(Linlan)/夾克子.txt | 20260825-223512 | 18.夾克子(Linlan)/夾克子.txt | 10deea1ea60d9c9611df90b09bc9c0191aefebd730dea7b9848705b0362e0493 | script | new | authoritative-source | project/story/夾克子.txt | source／jiakezi_1..3 | run `work/script-manifest.md`; source hash validation | active |
+| jiakezi:8a71380d8a2de629e4178e334428590a9135b7c5e08df5758a2d83782f30e4cd:18.夾克子(Linlan)/圖檔/夾克子.png | 20260825-223512 | 18.夾克子(Linlan)/圖檔/夾克子.png | 8a71380d8a2de629e4178e334428590a9135b7c5e08df5758a2d83782f30e4cd | portrait | new | generated-source | project/images/jiakezi_normal.png, project/images/jiakezi_smile.png, project/images/jiakezi_surprised.png | jiakezi_1..3; portrait code 20 | run `work/asset-usage.md`; `project/images`／`main.images`／IR／floor chain | active |
+
 ## `akane`／茜
 
 - 劇情來源：`project/story/茜.txt`
