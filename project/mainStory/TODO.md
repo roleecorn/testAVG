@@ -59,6 +59,14 @@
   - Scope: `project/mainStory/CH7:622`、`638`、`1215`、`1230`、`1233`、`1282`。
   - Current: `622` 背景改回主背景層 `code 1`，避免 626 的 CG hide 連帶清除背景；`638` 切換時間改為 0，避免女僕咖啡廳靜態底圖閃現；`1215` 使用 `CH6_L217.png`、`1230` 補上 `CH1_L42.png`、`1233` 補上 `BGMRakisuta.mp3`、`1282` 改用正式婚禮背景 `CH6_L343.png`。
   - Evidence: `project/story-ir/main/CH7.json`、`project/floors/main_ch7_4.js`、`project/floors/main_ch7_5.js`；遊戲內重現仍併入 `.codex/task-questions/20260825-102710-ch7-media-bugs.md` Q2。
+- Resolved: `main-story-ch6-1-bgm-sequence`
+  - Scope: `project/mainStory/CH6:14`、`29`、`67` 的 BGM 順序。
+  - Current: `BGMYocho` 保留在 6-1 開場；`BGMTree` 移至第一段內容結束後的過場；`BGMRakisuta` 補回女僕咖啡廳過場前，移除錯置在轉樓層後的播放事件。
+  - Evidence: `project/story-ir/main/CH6.json`、`project/floors/main_ch6_1.js`；`node scripts/validate_story.js`、`node scripts/validate_story_alignment.js` 通過。
+- Resolved: `main-story-ch6-2-background-switch-and-size`
+  - Scope: `project/mainStory/CH6:114`、`217`、`243` 的背景顯示與尺寸。
+  - Current: 6-2 初始夜街與 243 夜街統一使用 `CH1_L353.png`；`CH6_L217.png` 由 1024×775 正規化為 544×416，供 CH6-2／CH7-5 共用。
+  - Evidence: `project/story-ir/main/CH6.json`、`project/floors/main_ch6_2.js`、`project/images/CH6_L217.png`；完整主線驗證與生成器檢查通過。
 - `project/mainStory/CH1 1-3`：來源要求「麻婆」立繪，但 `project/images/` 尚無可確認的麻婆角色立繪，該句暫不顯示立繪。
 - `project/mainStory/CH1 1-4`：來源標記 `河邊(夜))` 多一個右括號，生成器暫以 `河邊(夜)` mapping 處理，未改寫來源。
 - `project/mainStory/CH2`～`CH7` 新增的泛用／日夜／室內背景名稱：目前映射到既有同類背景資產，待替換正式專用素材。

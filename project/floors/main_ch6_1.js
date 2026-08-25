@@ -10,7 +10,7 @@ main.floors.main_ch6_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "CH3_L66.png",
+            "name": "CH2_L295.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch6_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH3_L66.png",
+            "image": "CH2_L295.png",
             "loc": [
                 0,
                 0
@@ -329,22 +329,6 @@ main.floors.main_ch6_1=
         {
             "type": "comment",
             "text": "【主線 CH6 6-1 肥宅潮】"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMTree.mp3",
-            "keep": true
-        },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "CH2_L295.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
         },
         "正當梗平經過大門深鎖的ANIsister時，原本封閉的鐵門出現了騷動",
         {
@@ -453,6 +437,20 @@ main.floors.main_ch6_1=
             "time": 500
         },
         {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMTree.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L360.png",
@@ -462,16 +460,6 @@ main.floors.main_ch6_1=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
         },
         "梗平跑了咖啡廳後，立刻拿桌椅堵住了門",
         "如此大的動靜，讓正在睡覺的智乃與三角都醒了過來",
@@ -788,6 +776,20 @@ main.floors.main_ch6_1=
             "time": 500
         },
         {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "CH6_L68.png",
@@ -797,16 +799,6 @@ main.floors.main_ch6_1=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
         },
         {
             "type": "showImage",
@@ -1676,10 +1668,6 @@ main.floors.main_ch6_1=
             "direction": "up",
             "time": 0,
             "silent": true
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMRakisuta.mp3"
         }
     ]
 }

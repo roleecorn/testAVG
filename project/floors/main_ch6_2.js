@@ -10,7 +10,7 @@ main.floors.main_ch6_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "CH1_L42.png",
+            "name": "CH1_L353.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch6_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH1_L42.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0
@@ -1779,6 +1779,17 @@ main.floors.main_ch6_2=
                             "type": "hideImage",
                             "code": 20,
                             "time": 0
+                        },
+                        {
+                            "type": "showImage",
+                            "code": 1,
+                            "image": "CH1_L353.png",
+                            "loc": [
+                                0,
+                                0
+                            ],
+                            "opacity": 1,
+                            "time": 250
                         },
                         {
                             "type": "setText",
