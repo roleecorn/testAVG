@@ -1915,6 +1915,26 @@ main.floors.main_ch4_1_exchange_1=
                             "time": 150
                         },
                         {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
+                        },
+                        {
                             "type": "changeFloor",
                             "floorId": "main_ch4_1",
                             "loc": [

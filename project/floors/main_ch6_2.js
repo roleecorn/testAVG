@@ -976,6 +976,26 @@ main.floors.main_ch6_2=
                             "time": 150
                         },
                         {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
+                        },
+                        {
                             "type": "changeFloor",
                             "floorId": "main_ch6_2",
                             "loc": [

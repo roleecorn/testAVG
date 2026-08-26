@@ -815,6 +815,10 @@
                   "time": 150
                 },
                 {
+                  "kind": "comment",
+                  "text": "【過場】"
+                },
+                {
                   "kind": "goto",
                   "floorId": "mapo_1_6",
                   "loc": [
@@ -1924,6 +1928,10 @@
                   "kind": "image.hide",
                   "code": 30,
                   "time": 150
+                },
+                {
+                  "kind": "comment",
+                  "text": "【過場】"
                 },
                 {
                   "kind": "goto",
@@ -3921,6 +3929,10 @@
                   "kind": "image.hide",
                   "code": 30,
                   "time": 150
+                },
+                {
+                  "kind": "comment",
+                  "text": "【過場】"
                 },
                 {
                   "kind": "goto",

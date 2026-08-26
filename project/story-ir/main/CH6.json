@@ -1693,6 +1693,10 @@
                   "time": 150
                 },
                 {
+                  "kind": "comment",
+                  "text": "【過場】"
+                },
+                {
                   "kind": "goto",
                   "floorId": "main_ch6_2",
                   "loc": [

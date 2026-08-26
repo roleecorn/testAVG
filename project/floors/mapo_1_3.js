@@ -1692,6 +1692,26 @@ main.floors.mapo_1_3=
                             "time": 150
                         },
                         {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "time": 500
+                        },
+                        {
+                            "type": "setCurtain",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "time": 500
+                        },
+                        {
                             "type": "changeFloor",
                             "floorId": "mapo_1_3",
                             "loc": [
