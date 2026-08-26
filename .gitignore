@@ -68,3 +68,12 @@ compress.js
 _server/config.json
 *.zip
 drive-download-20260823T111855Z-1-001
+work
+主線用角色參考/
+
+# Character-art intermediate files: keep the green-screen split inputs local;
+# commit the original expression sheets and transparent final cutouts instead.
+art/characters/**/*_expression_sheet_*.png
+
+# Python runtime cache
+__pycache__/
