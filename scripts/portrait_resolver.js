@@ -34,6 +34,7 @@ const GENERATED_PORTRAITS = {
   肥宅C: "otaku_c", 色情刊物檢察官: "adult_book_prosecutor", 芹澤: "serizawa", 蘭斯: "lance", 記者: "reporter",
   警察: "police", 貝琪: "becky", "貝琪(婚紗)": "becky_wedding", 醫生: "doctor", 雜貨店老闆: "shopkeeper",
   香坂輪: "kousaka_rin", 麻婆: "mapo", 麻婆店長: "mapo",
+  惠惠: "huihui", 來島澄: "laidao_cheng", 李嚴: "liyan",
 };
 for (const [speaker, id] of Object.entries(GENERATED_PORTRAITS)) CHARACTER_PORTRAITS[speaker] = portraitSet(id);
 

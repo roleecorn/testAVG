@@ -12,12 +12,12 @@
 - Classification: `blocking`（僅阻塞受影響角色）
 - Status: `open`
 - Source: `project/mainStory/CH1`～`CH7`；`主線用角色參考/`
-- Affected scope: `梗平`、`表妹` 的角色身份核對、表情生成、`project/images/` 替換與主線接入；`惠惠`／`慧慧.jpg`、`來島澄`／`來島橙.png`、`李嚴`／`面具廚師.png` 的血緣命名確認。
-- Temporary handling: 已從主線權威來源完成角色清單；先處理其他能由參考圖確認的角色。對缺少參考圖的角色不生成、不替換、不套用相似角色；對名稱不一致者暫以來源內容與圖像外觀確認後作為候選，不把檔名當成身份證據。
-- Decision needed: 請確認 `梗平`、`表妹` 的正式參考圖；並確認 `慧慧.jpg` 是否是主線 `惠惠`、`來島橙.png` 是否是主線 `來島澄`、`面具廚師.png` 是否是主線 `李嚴`。
-- Decision / current direction: 等待確認；本次先完成非受影響角色。
-- Remaining work: 取得或確認兩名缺圖角色的參考圖，確認兩個名稱不一致的參考資源後，重新生成與接入受影響角色。
-- Completion evidence: pending while open
+- Affected scope: `梗平`、`表妹` 的角色身份核對、表情生成、`project/images/` 替換與主線接入；惠惠／慧慧.jpg、來島澄／來島橙.png、李嚴／面具廚師.png 的對應已完成。
+- Temporary handling: 已從主線權威來源完成角色清單；對缺少參考圖的角色不生成、不替換、不套用相似角色。使用者已明確確認三組名稱不一致的參考圖對應，三人已依確認完成生成與主線接入。
+- Decision needed: 仍需取得 `梗平`、`表妹` 的正式參考圖。
+- Decision / current direction: 使用者已確認 `慧慧.jpg`→惠惠、`來島橙.png`→來島澄、`面具廚師.png`→李嚴；三人已完成。本 question 仍因梗平／表妹缺圖維持 open。
+- Remaining work: 取得兩名缺圖角色的參考圖，完成其生成與接入。
+- Completion evidence: 惠惠／來島澄／李嚴：`art/characters/<id>/`、`project/images/ms_portrait_<id>_*.png`、`project/story-ir/main/CH1.json`／`CH3.json`／`CH7.json`、對應 floor；完整驗證待本次任務結束補記。
 - Resolved at: pending while open
 
 ## Promotion

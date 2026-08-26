@@ -11,6 +11,7 @@
   - Evidence: 需補架構設計、遷移計畫、實作 diff，以及 Story IR／floor／TODO round-trip 驗證。
 - `20260823-023000-main-shared-portrait-resolver.md` Q1：`project/timeline.json` 仍因 `EPERM` 無法由主線 generator 更新；解除檔案鎖定／ACL 後重新產生並驗證。
 - `20260823-023000-main-shared-portrait-resolver.md` Q2：東山 source → Story IR 情緒決策表仍待修復；目前不在 emitter 階段用函數或文字 regex 猜測情緒。
+- `20260827-004750-mainline-portrait-validation.md` Q1：`node scripts/validate_story.js` 仍在既有 CH1 offset 786 與 CH2 offset 2404 的來源↔IR 文字對位檢查失敗；本次三角色立繪專項檢查與生成器檢查已通過，需另行核對並修復對應 Story IR／floor。
 
 ## Resolved
 

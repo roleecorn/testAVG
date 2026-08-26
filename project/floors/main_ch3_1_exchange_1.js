@@ -2067,7 +2067,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_smile.png",
+                            "expression": "smile",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]欸歡迎歡迎",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -2579,7 +2596,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_angry.png",
+                            "expression": "angry",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]三日月你別鬧了，能變回去的梗平。",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -2782,10 +2816,44 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_panic.png",
+                            "expression": "panic",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]千萬不要第一天上班就墮落了啊",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         "另外三人匆匆忙忙地把觸手怪們都擊退了之後，找到了在角落的梗平",
                         "梗平衣服破破爛爛的，一個人不知道在想些甚麼",
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_smile.png",
+                            "expression": "smile",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]給，這是你的一份",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -2804,7 +2872,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_smile.png",
+                            "expression": "smile",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]沒事，新人剛開始都這樣的",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -2823,7 +2908,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]不知道，打完她就不在這了，估計去打柏青哥了吧",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -2940,7 +3042,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_smile.png",
+                            "expression": "smile",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]嘛，他是新人，不用那麼生氣了",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -2977,7 +3096,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_surprised.png",
+                            "expression": "surprised",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]欸",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -3086,7 +3222,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]三日月，不用那麼。",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -3106,7 +3259,24 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "說完後梗平便奪門而出，剩下在場的三個人",
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_sad.png",
+                            "expression": "sad",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]梗平......",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -3125,7 +3295,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_sad.png",
+                            "expression": "sad",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]三日月......",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -3288,7 +3475,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_panic.png",
+                            "expression": "panic",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]欸，那個先冷靜下吧，我們好好坐下談談怎麼樣。",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -3308,7 +3512,24 @@ main.floors.main_ch3_1_exchange_1=
                             "time": 0
                         },
                         "於是香坂輪也跟著摔門而出",
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_angry.png",
+                            "expression": "angry",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]為什麼，三日月你要發那麼大的脾氣，就不能多一點包容嗎，每次都這樣",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -3936,7 +4157,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_panic.png",
+                            "expression": "panic",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]三日月！",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -4010,7 +4248,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]有離開過啊，不過後面我自己回去了",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -4029,7 +4284,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_sad.png",
+                            "expression": "sad",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]回去之後盡是重複的無聊事，然後我就不想繼續待在原來的地方了",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -4048,7 +4320,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_smile.png",
+                            "expression": "smile",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]會啊，不過最後還是會跟她一起收拾爛攤子的。",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -4319,7 +4608,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_smile.png",
+                            "expression": "smile",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]謝謝你梗平，救了我們。",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -4853,7 +5159,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_smile.png",
+                            "expression": "smile",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]好！",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -5017,7 +5340,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_smile.png",
+                            "expression": "smile",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]那個，我知道有家性價比很高的烤肉店，要不我們去那吃吧。",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -5036,7 +5376,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_surprised.png",
+                            "expression": "surprised",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]哈？",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -5111,7 +5468,24 @@ main.floors.main_ch3_1_exchange_1=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_laidao_cheng_smile.png",
+                            "expression": "smile",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[來島澄]快把她抓住，她一定還有錢的",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         "梗平看著這個狀況嘆了口氣，陷入了沉思",
                         {
                             "type": "showImage",

@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH1",
-        "sha256": "d406ba01d60481ec14f51093110de8b4b426efd7e8881ef70041d5f5f90f00a2"
+        "sha256": "32cf02373062eb84c4003687bad14d54fa7dd6de645007461f876748aa86be1c"
       }
     ]
   },
@@ -2070,7 +2070,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "李嚴",
-                  "text": "要視具體情況而定，不過我認為是梗平。"
+                  "text": "要視具體情況而定，不過我認為是梗平。",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_liyan_normal.png",
+                    "expression": "normal"
+                  }
                 },
                 {
                   "kind": "dialogue",

@@ -14,10 +14,10 @@
 ## 待確認人物
 
 - Open: `mainline-character-portrait-reference-gap`
-  - Scope: `project/mainStory/CH1`～`CH7` 的 `梗平`、`表妹`，以及參考圖名稱 `慧慧.jpg`／`來島橙.png`／`面具廚師.png` 對應來源角色 `惠惠`／`來島澄`／`李嚴` 的核對。
-  - Current: 主線權威來源已先完成角色清單；其餘可確認角色可繼續生成。缺少正式參考圖的角色不可猜測外觀或套用相似角色。
-  - Done when: 補齊 `梗平`、`表妹` 的正式參考圖，並確認兩組來源名稱／參考檔名對應後，完成表情生成、`project/images/`、`main.images`、Story IR／floor 使用鏈與遊戲內驗證。
-  - Evidence: `project/mainStory/mainline-character-inventory.md`；`.codex/task-questions/20260826-205037-mainline-character-portraits.md` Q1；目前維持 open。
+  - Scope: `project/mainStory/CH1`～`CH7` 的 `梗平`、`表妹`；惠惠／來島澄／李嚴的參考圖對應已不再是缺口。
+  - Current: 主線權威來源已先完成角色清單；`慧慧.jpg`→惠惠、`來島橙.png`→來島澄、`面具廚師.png`→李嚴 已由使用者確認，三人已完成六表情生成、`project/images/`、`main.images`、Story IR／floor 使用鏈。缺少正式參考圖的角色不可猜測外觀或套用相似角色。
+  - Done when: 補齊 `梗平`、`表妹` 的正式參考圖，並完成其表情生成、`project/images/`、`main.images`、Story IR／floor 使用鏈與遊戲內驗證。
+  - Evidence: `project/mainStory/mainline-character-inventory.md`；`art/characters/mainline-generation.md`；`.codex/task-questions/20260826-205037-mainline-character-portraits.md` Q1；本次主線驗證待完成後補記。
 
 ## 待補劇情
 

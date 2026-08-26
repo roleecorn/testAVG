@@ -1756,7 +1756,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "欸歡迎歡迎"
+                  "text": "欸歡迎歡迎",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_smile.png",
+                    "expression": "smile"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2082,7 +2087,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "三日月你別鬧了，能變回去的梗平。"
+                  "text": "三日月你別鬧了，能變回去的梗平。",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_angry.png",
+                    "expression": "angry"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2213,7 +2223,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "千萬不要第一天上班就墮落了啊"
+                  "text": "千萬不要第一天上班就墮落了啊",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_panic.png",
+                    "expression": "panic"
+                  }
                 },
                 {
                   "kind": "narration",
@@ -2226,7 +2241,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "給，這是你的一份"
+                  "text": "給，這是你的一份",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_smile.png",
+                    "expression": "smile"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2241,7 +2261,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "沒事，新人剛開始都這樣的"
+                  "text": "沒事，新人剛開始都這樣的",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_smile.png",
+                    "expression": "smile"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2256,7 +2281,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "不知道，打完她就不在這了，估計去打柏青哥了吧"
+                  "text": "不知道，打完她就不在這了，估計去打柏青哥了吧",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_normal.png",
+                    "expression": "normal"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2333,7 +2363,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "嘛，他是新人，不用那麼生氣了"
+                  "text": "嘛，他是新人，不用那麼生氣了",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_smile.png",
+                    "expression": "smile"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2358,7 +2393,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "欸"
+                  "text": "欸",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_surprised.png",
+                    "expression": "surprised"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2423,7 +2463,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "三日月，不用那麼。"
+                  "text": "三日月，不用那麼。",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_normal.png",
+                    "expression": "normal"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2442,7 +2487,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "梗平......"
+                  "text": "梗平......",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_sad.png",
+                    "expression": "sad"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2457,7 +2507,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "三日月......"
+                  "text": "三日月......",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_sad.png",
+                    "expression": "sad"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2552,7 +2607,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "欸，那個先冷靜下吧，我們好好坐下談談怎麼樣。"
+                  "text": "欸，那個先冷靜下吧，我們好好坐下談談怎麼樣。",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_panic.png",
+                    "expression": "panic"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -2571,7 +2631,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "為什麼，三日月你要發那麼大的脾氣，就不能多一點包容嗎，每次都這樣"
+                  "text": "為什麼，三日月你要發那麼大的脾氣，就不能多一點包容嗎，每次都這樣",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_angry.png",
+                    "expression": "angry"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -3007,7 +3072,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "三日月！"
+                  "text": "三日月！",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_panic.png",
+                    "expression": "panic"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -3060,7 +3130,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "有離開過啊，不過後面我自己回去了"
+                  "text": "有離開過啊，不過後面我自己回去了",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_normal.png",
+                    "expression": "normal"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -3075,7 +3150,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "回去之後盡是重複的無聊事，然後我就不想繼續待在原來的地方了"
+                  "text": "回去之後盡是重複的無聊事，然後我就不想繼續待在原來的地方了",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_sad.png",
+                    "expression": "sad"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -3090,7 +3170,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "會啊，不過最後還是會跟她一起收拾爛攤子的。"
+                  "text": "會啊，不過最後還是會跟她一起收拾爛攤子的。",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_smile.png",
+                    "expression": "smile"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -3365,7 +3450,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "謝謝你梗平，救了我們。"
+                  "text": "謝謝你梗平，救了我們。",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_smile.png",
+                    "expression": "smile"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -3727,7 +3817,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "好！"
+                  "text": "好！",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_smile.png",
+                    "expression": "smile"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -3830,7 +3925,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "那個，我知道有家性價比很高的烤肉店，要不我們去那吃吧。"
+                  "text": "那個，我知道有家性價比很高的烤肉店，要不我們去那吃吧。",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_smile.png",
+                    "expression": "smile"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -3845,7 +3945,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "哈？"
+                  "text": "哈？",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_surprised.png",
+                    "expression": "surprised"
+                  }
                 },
                 {
                   "kind": "dialogue",
@@ -3898,7 +4003,12 @@
                 {
                   "kind": "dialogue",
                   "speaker": "來島澄",
-                  "text": "快把她抓住，她一定還有錢的"
+                  "text": "快把她抓住，她一定還有錢的",
+                  "portrait": {
+                    "code": 20,
+                    "image": "ms_portrait_laidao_cheng_smile.png",
+                    "expression": "smile"
+                  }
                 },
                 {
                   "kind": "narration",

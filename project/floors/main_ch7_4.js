@@ -519,7 +519,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]hey，你們到了啊？搬運工有點缺呢，這樣可能拿不多喔",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -538,8 +555,42 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]劫火車喔！明天似乎有什麼大事所以連鐵路的警備都被調走了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]據可靠消息指出雜貨店的老闆娘打算稱這段空窗『進貨』的樣子",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -558,7 +609,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_angry.png",
+            "expression": "angry",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]接下來我們只要敲掉鐵軌，等車經過翻覆拿了就跑",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "惠惠一邊說著一邊露出了掩蓋不住的亢奮神情",
         {
             "type": "showImage",
@@ -633,7 +701,24 @@ main.floors.main_ch7_4=
             "code": 30,
             "time": 150
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_surprised.png",
+            "expression": "surprised",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]就是它沒錯！但離到達應該還有時間啊…",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -652,7 +737,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_angry.png",
+            "expression": "angry",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]不可能！那可是全秋葉原最強的hacker耶！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -671,7 +773,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_panic.png",
+            "expression": "panic",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]這下我們不得不面對『工作人員』了，還繼續嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -1218,7 +1337,24 @@ main.floors.main_ch7_4=
             "time": 0
         },
         "桶至學長抬頭看向了遠方，然後朝著『工作人員』邁開步伐",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_surprised.png",
+            "expression": "surprised",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]沒想到只花了一天你們就攻克爆炸會被迴避掉的難關了嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -1585,7 +1721,24 @@ main.floors.main_ch7_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]Ex～plosion—！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "hideImage",
             "code": 30,
@@ -1855,7 +2008,24 @@ main.floors.main_ch7_4=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]獎勵時間—",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -1929,7 +2099,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]大傢伙！好耶！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -1966,7 +2153,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]我會我來！表妹你力大，填裝就交給你了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "連同肩上的桶至學長，抱著從貨櫃搜刮來的幾把好槍的表妹、與滿手傑士塔威的惠惠爭相上了車",
         {
             "type": "showImage",
@@ -1986,7 +2190,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]引擎正常、出力正常、機械裝置作動良好！ヨシ！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -2695,7 +2916,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_angry.png",
+            "expression": "angry",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]上一個這麼說的墳頭的草已經比大鱷魚高了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -2752,7 +2990,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]咿哈—",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "轟鳴聲響起",
         {
             "type": "showImage",
@@ -2945,7 +3200,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]情不自禁",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -3247,7 +3519,24 @@ main.floors.main_ch7_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]這波炸爽了～",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,

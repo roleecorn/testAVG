@@ -4334,7 +4334,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "這邊在做什麼？"
+          "text": "這邊在做什麼？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_surprised.png",
+            "expression": "surprised"
+          }
         },
         {
           "kind": "dialogue",
@@ -4372,7 +4377,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "啊！傑士塔威被搶過去了"
+          "text": "啊！傑士塔威被搶過去了",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_panic.png",
+            "expression": "panic"
+          }
         },
         {
           "kind": "dialogue",
@@ -4469,7 +4479,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "NICE爆炸！我給79分！"
+          "text": "NICE爆炸！我給79分！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile"
+          }
         },
         {
           "kind": "image.hide",
@@ -4479,12 +4494,22 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "美中不足的地方應該是有一半的人閃過了呢"
+          "text": "美中不足的地方應該是有一半的人閃過了呢",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "這力道攻堅應該不夠用吧？"
+          "text": "這力道攻堅應該不夠用吧？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal"
+          }
         },
         {
           "kind": "dialogue",
@@ -4499,7 +4524,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "我知道明天有個好機會能提升火力喔？來不？"
+          "text": "我知道明天有個好機會能提升火力喔？來不？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile"
+          }
         },
         {
           "kind": "dialogue",
@@ -4514,7 +4544,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "你不問我是啥嗎？"
+          "text": "你不問我是啥嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_surprised.png",
+            "expression": "surprised"
+          }
         },
         {
           "kind": "dialogue",
@@ -4529,7 +4564,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "那總之明天晚上11點在鐵道旁的雜貨店後面會合，多找點人喔—"
+          "text": "那總之明天晚上11點在鐵道旁的雜貨店後面會合，多找點人喔—",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal"
+          }
         },
         {
           "kind": "comment",
@@ -4892,7 +4932,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "hey，你們到了啊？搬運工有點缺呢，這樣可能拿不多喔"
+          "text": "hey，你們到了啊？搬運工有點缺呢，這樣可能拿不多喔",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal"
+          }
         },
         {
           "kind": "dialogue",
@@ -4907,12 +4952,22 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "劫火車喔！明天似乎有什麼大事所以連鐵路的警備都被調走了"
+          "text": "劫火車喔！明天似乎有什麼大事所以連鐵路的警備都被調走了",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "據可靠消息指出雜貨店的老闆娘打算稱這段空窗『進貨』的樣子"
+          "text": "據可靠消息指出雜貨店的老闆娘打算稱這段空窗『進貨』的樣子",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal"
+          }
         },
         {
           "kind": "dialogue",
@@ -4927,7 +4982,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "接下來我們只要敲掉鐵軌，等車經過翻覆拿了就跑"
+          "text": "接下來我們只要敲掉鐵軌，等車經過翻覆拿了就跑",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_angry.png",
+            "expression": "angry"
+          }
         },
         {
           "kind": "narration",
@@ -4989,7 +5049,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "就是它沒錯！但離到達應該還有時間啊…"
+          "text": "就是它沒錯！但離到達應該還有時間啊…",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_surprised.png",
+            "expression": "surprised"
+          }
         },
         {
           "kind": "dialogue",
@@ -5004,7 +5069,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "不可能！那可是全秋葉原最強的hacker耶！"
+          "text": "不可能！那可是全秋葉原最強的hacker耶！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_angry.png",
+            "expression": "angry"
+          }
         },
         {
           "kind": "dialogue",
@@ -5019,7 +5089,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "這下我們不得不面對『工作人員』了，還繼續嗎？"
+          "text": "這下我們不得不面對『工作人員』了，還繼續嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_panic.png",
+            "expression": "panic"
+          }
         },
         {
           "kind": "dialogue",
@@ -5359,7 +5434,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "沒想到只花了一天你們就攻克爆炸會被迴避掉的難關了嗎？"
+          "text": "沒想到只花了一天你們就攻克爆炸會被迴避掉的難關了嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_surprised.png",
+            "expression": "surprised"
+          }
         },
         {
           "kind": "dialogue",
@@ -5711,7 +5791,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "Ex～plosion—！"
+          "text": "Ex～plosion—！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile"
+          }
         },
         {
           "kind": "image.hide",
@@ -5992,7 +6077,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "獎勵時間—"
+          "text": "獎勵時間—",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile"
+          }
         },
         {
           "kind": "dialogue",
@@ -6050,7 +6140,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "大傢伙！好耶！"
+          "text": "大傢伙！好耶！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile"
+          }
         },
         {
           "kind": "dialogue",
@@ -6075,7 +6170,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "我會我來！表妹你力大，填裝就交給你了"
+          "text": "我會我來！表妹你力大，填裝就交給你了",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile"
+          }
         },
         {
           "kind": "narration",
@@ -6094,7 +6194,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "引擎正常、出力正常、機械裝置作動良好！ヨシ！"
+          "text": "引擎正常、出力正常、機械裝置作動良好！ヨシ！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal"
+          }
         },
         {
           "kind": "dialogue",
@@ -6563,7 +6668,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "上一個這麼說的墳頭的草已經比大鱷魚高了"
+          "text": "上一個這麼說的墳頭的草已經比大鱷魚高了",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_angry.png",
+            "expression": "angry"
+          }
         },
         {
           "kind": "dialogue",
@@ -6616,7 +6726,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "咿哈—"
+          "text": "咿哈—",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile"
+          }
         },
         {
           "kind": "narration",
@@ -6786,7 +6901,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "情不自禁"
+          "text": "情不自禁",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile"
+          }
         },
         {
           "kind": "dialogue",
@@ -7011,7 +7131,12 @@
         {
           "kind": "dialogue",
           "speaker": "惠惠",
-          "text": "這波炸爽了～"
+          "text": "這波炸爽了～",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile"
+          }
         },
         {
           "kind": "dialogue",

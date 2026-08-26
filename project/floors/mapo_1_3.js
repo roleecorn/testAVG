@@ -1029,7 +1029,24 @@ main.floors.mapo_1_3=
                             "code": 20,
                             "time": 0
                         },
+                        {
+                            "type": "showImage",
+                            "code": 20,
+                            "image": "ms_portrait_liyan_normal.png",
+                            "expression": "normal",
+                            "loc": [
+                                "portraitSpeakerX",
+                                "portraitSpeakerY"
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
                         "\t[李嚴]要視具體情況而定，不過我認為是梗平。",
+                        {
+                            "type": "hideImage",
+                            "code": 20,
+                            "time": 0
+                        },
                         {
                             "type": "showImage",
                             "code": 20,

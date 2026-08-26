@@ -2136,7 +2136,24 @@ main.floors.main_ch7_3=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_surprised.png",
+            "expression": "surprised",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]這邊在做什麼？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -2174,7 +2191,24 @@ main.floors.main_ch7_3=
             "code": 30,
             "time": 150
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_panic.png",
+            "expression": "panic",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]啊！傑士塔威被搶過去了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -2322,14 +2356,65 @@ main.floors.main_ch7_3=
             "opacity": 1,
             "time": 250
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]NICE爆炸！我給79分！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "hideImage",
             "code": 30,
             "time": 150
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]美中不足的地方應該是有一半的人閃過了呢",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]這力道攻堅應該不夠用吧？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -2348,7 +2433,24 @@ main.floors.main_ch7_3=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]我知道明天有個好機會能提升火力喔？來不？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -2367,7 +2469,24 @@ main.floors.main_ch7_3=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_surprised.png",
+            "expression": "surprised",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]你不問我是啥嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -2386,7 +2505,24 @@ main.floors.main_ch7_3=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_huihui_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[惠惠]那總之明天晚上11點在鐵道旁的雜貨店後面會合，多找點人喔—",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "【BGM預定地：()切換BGM或到7-3結束前連續播放此首BGM】"
