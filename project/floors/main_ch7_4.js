@@ -1400,7 +1400,22 @@ main.floors.main_ch7_4=
         "準備按下變身按鈕的桶至學長，在最後的最後",
         "回頭看了一眼身後的夥伴們",
         {
-            "type": "pauseBgm"
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[桶至學長]……………",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
         },
         {
             "type": "showImage",
@@ -1441,8 +1456,10 @@ main.floors.main_ch7_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        "\t[桶至學長]……………",
         "接著與笑容滿面的惠惠四目相接",
+        {
+            "type": "pauseBgm"
+        },
         {
             "type": "showImage",
             "code": 30,

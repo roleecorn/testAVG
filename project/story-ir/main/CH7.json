@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH7",
-        "sha256": "1db9f5651d39b96e4e674c6dae87f0301d6d7ff2d57a3691731f55d5dbecb341"
+        "sha256": "d9007f253893b6c5ad15e1fb14f1e23b557fc692de864f6f46327d2dfe1d37fd"
       }
     ]
   },
@@ -5515,8 +5515,14 @@
           "text": "回頭看了一眼身後的夥伴們"
         },
         {
-          "kind": "bgm.pause",
-          "until": "play"
+          "kind": "dialogue",
+          "speaker": "桶至學長",
+          "text": "……………",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "expression": "normal"
+          }
         },
         {
           "kind": "background.show",
@@ -5561,13 +5567,12 @@
           }
         },
         {
-          "kind": "dialogue",
-          "speaker": "桶至學長",
-          "text": "……………"
-        },
-        {
           "kind": "narration",
           "text": "接著與笑容滿面的惠惠四目相接"
+        },
+        {
+          "kind": "bgm.pause",
+          "until": "play"
         },
         {
           "kind": "image.show",
