@@ -343,13 +343,11 @@ main.floors.main_ch4_2=
         },
         {
             "type": "showImage",
-            "code": 30,
+            "code": 1,
             "image": "CH4_L207.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250

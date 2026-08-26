@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH4",
-        "sha256": "01db047b0220fcb65d86de1c2e394c475c329233993e214f346c18735003c416"
+        "sha256": "c9852a8b91ef0ab819c54305226d9391364256afc0c624cdea0285d65717def8"
       }
     ]
   },
@@ -1844,15 +1844,13 @@
           "time": 250
         },
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
           "image": "CH4_L207.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250

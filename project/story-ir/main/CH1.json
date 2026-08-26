@@ -3100,7 +3100,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "三角",
+          "speaker": "？",
           "text": "你就是梗平吧",
           "portrait": {
             "code": 20,
@@ -3124,7 +3124,7 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "三角",
+          "speaker": "？",
           "text": "說什麼啊你，看下面",
           "portrait": {
             "code": 20,
