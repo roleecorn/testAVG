@@ -205,10 +205,36 @@ function irToEvents(nodes, transitions = {}, options = {}) {
       if (!fade) throw new Error(`Unsupported transition for ${node.text}`);
       events.push(fade);
       if (transition.kind === "clock") continue;
-      const next = nodes[index + 1];
-      if (next && next.kind === "background.show") {
-        events.push(irToEvent(next, options));
-        index += 1;
+      if (node.holdUntilBackground) {
+        let nextIndex = index + 1;
+        while (nextIndex < nodes.length
+          && [
+            "comment",
+            "bgm.play",
+            "bgm.pause",
+            "bgm.resume",
+            "sound.play",
+            "sound.stop",
+          ].includes(nodes[nextIndex].kind)
+          && !(
+            nodes[nextIndex].kind === "comment"
+            && transitions[nodes[nextIndex].text]
+          )) {
+          nextIndex += 1;
+        }
+        if (nodes[nextIndex] && nodes[nextIndex].kind === "background.show") {
+          for (let passthroughIndex = index + 1; passthroughIndex < nextIndex; passthroughIndex += 1) {
+            events.push(irToEvent(nodes[passthroughIndex], options));
+          }
+          events.push(irToEvent(nodes[nextIndex], options));
+          index = nextIndex;
+        }
+      } else {
+        const next = nodes[index + 1];
+        if (next && next.kind === "background.show") {
+          events.push(irToEvent(next, options));
+          index += 1;
+        }
       }
       events.push(cleanUndefined({
         type: "setCurtain",

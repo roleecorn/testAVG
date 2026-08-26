@@ -4202,7 +4202,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH1_L401.png",
+          "image": "CH2_L409.png",
           "loc": [
             0,
             0
@@ -5528,7 +5528,7 @@
             0
           ],
           "opacity": 1,
-          "time": 250
+          "time": 0
         },
         {
           "kind": "layout.set",
@@ -11749,114 +11749,68 @@
           "time": 250
         },
         {
-          "kind": "dialogue",
-          "speaker": "東山",
-          "text": "………『為别人著想的心』對吧？",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "kind": "comment",
+          "text": "【下面11句不使用立繪】"
+        },
+        {
+          "kind": "image.hide",
+          "code": 20,
+          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "可你在與異性互動的時候完全沒有做到啊",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "………『為别人著想的心』對吧？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "可你在與異性互動的時候完全沒有做到啊"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "………………",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
+          "text": "………………"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "聽好了梗平。如果你真的有那一顆熱忱的心",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "聽好了梗平。如果你真的有那一顆熱忱的心"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "夢想成為守護一切的那個人，保護自己所重視的這些",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "夢想成為守護一切的那個人，保護自己所重視的這些"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "就更應該為自己的言行負起責任",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "就更應該為自己的言行負起責任"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "但…結婚什麼的…",
-          "portrait": {
-            "code": 20,
-            "image": "keng_surprised_portrait.png",
-            "expression": "surprised"
-          }
+          "text": "但…結婚什麼的…"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下完全沒有準備啊…",
-          "portrait": {
-            "code": 20,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal"
-          }
+          "text": "在下完全沒有準備啊…"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "要讓別人幸福什麼的",
-          "portrait": {
-            "code": 20,
-            "image": "keng_surprised_portrait.png",
-            "expression": "surprised"
-          }
+          "text": "要讓別人幸福什麼的"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "從現在開始準備就好了",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "從現在開始準備就好了"
         },
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "那個重視朋友的你、那個勇氣十足的你、那個願意為了保護秋葉原而四處奔走的你—",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "那個重視朋友的你、那個勇氣十足的你、那個願意為了保護秋葉原而四處奔走的你—"
         },
         {
           "kind": "layout.set",
@@ -11891,12 +11845,7 @@
         {
           "kind": "dialogue",
           "speaker": "東山",
-          "text": "怎麼可能沒辦法讓人幸福！",
-          "portrait": {
-            "code": 20,
-            "image": "dongshan_normal.png",
-            "expression": "normal"
-          }
+          "text": "怎麼可能沒辦法讓人幸福！"
         },
         {
           "kind": "background.show",
@@ -12767,7 +12716,8 @@
         },
         {
           "kind": "comment",
-          "text": "TODO: 【白色慢速過場】"
+          "text": "TODO: 【白色慢速過場】",
+          "holdUntilBackground": true
         },
         {
           "kind": "comment",

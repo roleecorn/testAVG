@@ -1411,7 +1411,7 @@ main.floors.main_ch7_4=
                 0
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
         },
         {
             "type": "setText",

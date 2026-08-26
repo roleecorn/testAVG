@@ -1909,7 +1909,7 @@ main.floors.main_ch7_3=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH1_L401.png",
+            "image": "CH2_L409.png",
             "loc": [
                 0,
                 0
