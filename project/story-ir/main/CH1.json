@@ -668,7 +668,7 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好，我們快去拯救A吧",
+          "text": "好，我們快去拯救東山吧",
           "portrait": {
             "code": 20,
             "image": "keng_neutral_portrait.png",
@@ -1296,7 +1296,7 @@
         {
           "kind": "dialogue",
           "speaker": "蘭斯",
-          "text": "還沒找到A，我先吃飯，傳地址給你們"
+          "text": "還沒找到東山，我先吃飯，傳地址給你們"
         },
         {
           "kind": "image.hide",
@@ -1685,7 +1685,7 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等一下，在下已經完全明白A之前喊救命的原因了，是好吃到喊救命",
+          "text": "等一下，在下已經完全明白東山之前喊救命的原因了，是好吃到喊救命",
           "portrait": {
             "code": 20,
             "image": "keng_panic_portrait.png",

@@ -463,7 +463,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]好，我們快去拯救A吧",
+        "\t[梗平]好，我們快去拯救東山吧",
         {
             "type": "hideImage",
             "code": 20,
@@ -1344,7 +1344,7 @@ main.floors.mapo_1_2=
             "opacity": 1,
             "time": 250
         },
-        "\t[蘭斯]還沒找到A，我先吃飯，傳地址給你們",
+        "\t[蘭斯]還沒找到東山，我先吃飯，傳地址給你們",
         {
             "type": "hideImage",
             "code": 30,
