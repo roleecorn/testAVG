@@ -1733,36 +1733,6 @@
                   "role": "cg",
                   "code": 30,
                   "image": "CH2_L210.png",
-                  "sloc": [
-                    0,
-                    0,
-                    416,
-                    286
-                  ],
-                  "loc": [
-                    112,
-                    50,
-                    320,
-                    220
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
-                  "kind": "wait",
-                  "time": 1000,
-                  "noSkip": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "cg",
-                  "code": 30,
-                  "image": "CH2_L210.png",
                   "loc": [
                     112,
                     50,
@@ -1776,6 +1746,11 @@
                   "kind": "dialogue",
                   "speaker": "路人",
                   "text": "麥克——！"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
                 },
                 {
                   "kind": "dialogue",
@@ -1838,36 +1813,6 @@
                   "role": "cg",
                   "code": 30,
                   "image": "CH2_L222.png",
-                  "sloc": [
-                    0,
-                    0,
-                    416,
-                    286
-                  ],
-                  "loc": [
-                    112,
-                    50,
-                    320,
-                    220
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
-                  "kind": "wait",
-                  "time": 1000,
-                  "noSkip": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "cg",
-                  "code": 30,
-                  "image": "CH2_L222.png",
                   "loc": [
                     112,
                     50,
@@ -1880,6 +1825,11 @@
                 {
                   "kind": "narration",
                   "text": "在夕陽照射下，彷彿散發著粒子的藍髮少女"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
                 },
                 {
                   "kind": "dialogue",
@@ -3537,6 +3487,36 @@
                   "text": "【下一句字放大】"
                 },
                 {
+                  "kind": "layout.set",
+                  "value": {
+                    "avg": true,
+                    "position": "down",
+                    "offset": 0,
+                    "align": "left",
+                    "bold": true,
+                    "background": "winskin.png",
+                    "title": [
+                      255,
+                      225,
+                      80,
+                      1
+                    ],
+                    "text": [
+                      255,
+                      255,
+                      255,
+                      1
+                    ],
+                    "titlefont": 22,
+                    "textfont": 24,
+                    "lineHeight": 22,
+                    "fixedLines": 2,
+                    "time": 10,
+                    "letterSpacing": 0,
+                    "animateTime": 120
+                  }
+                },
+                {
                   "kind": "dialogue",
                   "speaker": "IB",
                   "text": "一起走吧？",
@@ -3544,6 +3524,36 @@
                     "code": 20,
                     "image": "ms_portrait_ib_normal.png",
                     "expression": "normal"
+                  }
+                },
+                {
+                  "kind": "layout.set",
+                  "value": {
+                    "avg": true,
+                    "position": "down",
+                    "offset": 0,
+                    "align": "left",
+                    "bold": true,
+                    "background": "winskin.png",
+                    "title": [
+                      255,
+                      225,
+                      80,
+                      1
+                    ],
+                    "text": [
+                      255,
+                      255,
+                      255,
+                      1
+                    ],
+                    "titlefont": 22,
+                    "textfont": 16,
+                    "lineHeight": 22,
+                    "fixedLines": 2,
+                    "time": 10,
+                    "letterSpacing": 0,
+                    "animateTime": 120
                   }
                 },
                 {
@@ -3612,7 +3622,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "CH2_L390.png",
+                  "image": "CH2_L409.png",
                   "loc": [
                     0,
                     0
@@ -3683,61 +3693,13 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "CH2_L390.png",
-                  "loc": [
-                    0,
-                    0
-                  ],
-                  "opacity": 1,
-                  "time": 250
-                },
-                {
-                  "kind": "background.show",
-                  "role": "image",
-                  "code": 1,
                   "image": "CH2_L419.png",
                   "loc": [
                     0,
                     0
                   ],
                   "opacity": 1,
-                  "time": 250
-                },
-                {
-                  "kind": "background.show",
-                  "role": "image",
-                  "code": 1,
-                  "image": "CH2_L419.png",
-                  "loc": [
-                    0,
-                    0
-                  ],
-                  "opacity": 1,
-                  "time": 250
-                },
-                {
-                  "kind": "background.show",
-                  "role": "image",
-                  "code": 1,
-                  "image": "CH2_L419.png",
-                  "loc": [
-                    0,
-                    0
-                  ],
-                  "opacity": 1,
-                  "time": 250
-                },
-                {
-                  "kind": "background.show",
-                  "role": "image",
-                  "code": 1,
-                  "image": "CH2_L419.png",
-                  "loc": [
-                    0,
-                    0
-                  ],
-                  "opacity": 1,
-                  "time": 250
+                  "time": 0
                 },
                 {
                   "kind": "narration",
@@ -3829,7 +3791,7 @@
                   "kind": "background.show",
                   "role": "image",
                   "code": 1,
-                  "image": "CH2_L390.png",
+                  "image": "CH2_L409.png",
                   "loc": [
                     0,
                     0
@@ -4251,7 +4213,7 @@
                     0
                   ],
                   "opacity": 1,
-                  "time": 250
+                  "time": 0
                 },
                 {
                   "kind": "dialogue",
@@ -4301,7 +4263,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "CH2_L295.png",
+            "name": "CH1_L353.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -4364,7 +4326,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH2_L295.png",
+          "image": "CH1_L353.png",
           "loc": [
             0,
             0

@@ -1190,6 +1190,10 @@ main.floors.main_ch7_5=
             "time": 500
         },
         {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
+        },
+        {
             "type": "showImage",
             "code": 20,
             "image": "dongshan_normal.png",
@@ -2648,10 +2652,6 @@ main.floors.main_ch7_5=
                 0
             ],
             "time": 500
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "pauseBgm"
@@ -7292,6 +7292,9 @@ main.floors.main_ch7_5=
             "time": 0
         },
         {
+            "type": "pauseBgm"
+        },
+        {
             "type": "setCurtain",
             "color": [
                 0,
@@ -7449,9 +7452,6 @@ main.floors.main_ch7_5=
                 0
             ],
             "time": 500
-        },
-        {
-            "type": "pauseBgm"
         },
         {
             "type": "playBgm",

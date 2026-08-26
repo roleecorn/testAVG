@@ -331,11 +331,6 @@ main.floors.mapo_1_2=
             "text": "【主線 CH1 1-2 倉庫區】"
         },
         {
-            "type": "playBgm",
-            "name": "BGMUZUUZU.mp3",
-            "keep": true
-        },
-        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L60.png",
@@ -499,6 +494,11 @@ main.floors.mapo_1_2=
                 {
                     "text": "門，很理所當然的全都鎖著",
                     "action": [
+                        {
+                            "type": "playBgm",
+                            "name": "BGMUZUUZU.mp3",
+                            "keep": true
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -1120,6 +1120,20 @@ main.floors.mapo_1_2=
             "time": 500
         },
         {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMYume.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L42.png",
@@ -1129,16 +1143,6 @@ main.floors.mapo_1_2=
             ],
             "opacity": 1,
             "time": 250
-        },
-        {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
         },
         "從倉庫出來的兩人遇到了同行的蘭斯跟克莉絲 ",
         {
@@ -1152,10 +1156,6 @@ main.floors.mapo_1_2=
             ],
             "opacity": 1,
             "time": 0
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMYume.mp3"
         },
         "\t[梗平]蘭斯、克莉絲，你們有看見東山嗎？",
         {

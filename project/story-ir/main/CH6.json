@@ -1905,23 +1905,6 @@
                   }
                 },
                 {
-                  "kind": "dialogue",
-                  "speaker": "東山",
-                  "text": "......",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
-                },
-                {
-                  "kind": "image.show",
-                  "role": "portrait",
-                  "code": 20,
-                  "image": "dongshan_normal.png",
-                  "expression": "normal"
-                },
-                {
                   "kind": "bgm.play",
                   "name": "BGMGintama.mp3"
                 },
@@ -1938,213 +1921,123 @@
                   "time": 250
                 },
                 {
+                  "kind": "comment",
+                  "text": "【下面22句不使用立繪】"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 20,
+                  "time": 0
+                },
+                {
+                  "kind": "dialogue",
+                  "speaker": "東山",
+                  "text": "......"
+                },
+                {
                   "kind": "dialogue",
                   "speaker": "東山",
                   "text": "前面只是開開玩笑而已，現在看來你的覺悟就只有這種程度而已"
                 },
                 {
-                  "kind": "image.hide",
-                  "code": 20
+                  "kind": "dialogue",
+                  "speaker": "東山",
+                  "text": "且不論假面騎士確實存在這一點，對你而言重要的不是他存在與否吧"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "且不論假面騎士確實存在這一點，對你而言重要的不是他存在與否吧",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "你不是追逐著假面騎士那一份一往無前的勇氣才走到今天的嗎？"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "你不是追逐著假面騎士那一份一往無前的勇氣才走到今天的嗎？",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "東山",
-                  "text": "你剛剛說的話不只是否認假面騎士的存在，你連自己的信念都要否定嗎？",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "你剛剛說的話不只是否認假面騎士的存在，你連自己的信念都要否定嗎？"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "我......",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
+                  "text": "我......"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "今天你去結婚這件事不只是拯救Comike而已",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "今天你去結婚這件事不只是拯救Comike而已"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "也是你作為一個男人該負起的責任",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "也是你作為一個男人該負起的責任"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "而且啊，貝琪真的是一個非常好的女孩",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "而且啊，貝琪真的是一個非常好的女孩"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "願意這樣耐心聆聽、欣賞並參與你的愛好的人，以後可能沒有了",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "願意這樣耐心聆聽、欣賞並參與你的愛好的人，以後可能沒有了"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "今村梗平，你到底在害怕什麼",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "今村梗平，你到底在害怕什麼"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "說喜歡當然不是沒有......",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
+                  "text": "說喜歡當然不是沒有......"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "可是在下害怕啊，在下害怕在下沒有那個能力",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_panic_portrait.png",
-                    "expression": "panic"
-                  }
+                  "text": "可是在下害怕啊，在下害怕在下沒有那個能力"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "在下完全沒有準備啊，要給其他人幸福什麼的......",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_surprised_portrait.png",
-                    "expression": "surprised"
-                  }
+                  "text": "在下完全沒有準備啊，要給其他人幸福什麼的......"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "你的話肯定做得到的",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "你的話肯定做得到的"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "雖然我們時不時就會挖苦你兩句",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "雖然我們時不時就會挖苦你兩句"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "雖然你平常很孬，還喜歡亂喝酒",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "雖然你平常很孬，還喜歡亂喝酒"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "但你，我的朋友，你是一個很有正義感又有擔當的人",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "但你，我的朋友，你是一個很有正義感又有擔當的人"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "我們都相信你作為假面騎士給大家帶來幸福的能力",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "我們都相信你作為假面騎士給大家帶來幸福的能力"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "東山",
-                  "text": "所以，不要害怕，你可以的",
-                  "portrait": {
-                    "code": 20,
-                    "image": "dongshan_normal.png",
-                    "expression": "normal"
-                  }
+                  "text": "所以，不要害怕，你可以的"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "......",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
+                  "text": "......"
                 },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "在下會負起責任的",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
+                  "text": "在下會負起責任的"
                 },
                 {
                   "kind": "layout.set",
@@ -2179,12 +2072,7 @@
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
-                  "text": "在下不會逃跑的，在下做得到",
-                  "portrait": {
-                    "code": 20,
-                    "image": "keng_neutral_portrait.png",
-                    "expression": "normal"
-                  }
+                  "text": "在下不會逃跑的，在下做得到"
                 },
                 {
                   "kind": "background.show",

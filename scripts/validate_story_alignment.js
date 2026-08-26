@@ -260,6 +260,48 @@ function semanticAnchorItems(trace) {
   ));
 }
 
+function bgmLineOrderItems(trace) {
+  const result = [];
+  trace.forEach((item, index) => {
+    if (item.type !== "anchor" || !(
+      item.value.key.startsWith("bgm.play:")
+      || item.value.key === "bgm.pause"
+      || item.value.key === "bgm.resume"
+    )) return;
+    const nextText = trace.slice(index + 1).find((candidate) => candidate.type === "text");
+    result.push({
+      key: item.value.key,
+      line: item.value.line,
+      sceneId: item.value.sceneId,
+      nextText: nextText ? nextText.value : "",
+    });
+  });
+  return result;
+}
+
+function compareBgmLineOrdering(source, ir, label) {
+  const expected = bgmLineOrderItems(source);
+  const actual = bgmLineOrderItems(ir);
+  const errors = [];
+  let actualIndex = 0;
+  expected.forEach((sourceItem) => {
+    while (actualIndex < actual.length && actual[actualIndex].key !== sourceItem.key) actualIndex += 1;
+    if (actualIndex >= actual.length) {
+      errors.push(`${label}: source line ${sourceItem.line} ${sourceItem.key} has no IR BGM instruction in line order`);
+      return;
+    }
+    const irItem = actual[actualIndex];
+    if (normalizeText(sourceItem.nextText) !== normalizeText(irItem.nextText)) {
+      errors.push(`${label}: source line ${sourceItem.line} ${sourceItem.key} should precede "${sourceItem.nextText}"; IR precedes "${irItem.nextText}" (${irItem.sceneId || "unknown scene"})`);
+    }
+    actualIndex += 1;
+  });
+  if (actual.length > expected.length) {
+    errors.push(`${label}: IR contains ${actual.length - expected.length} extra BGM instruction(s) in line order`);
+  }
+  return errors;
+}
+
 function textSignature(trace) {
   return trace.filter((item) => item.type === "text").map((item) => item.value).join("");
 }
@@ -395,6 +437,7 @@ function validateMainStoryAlignment(data) {
     const ir = buildIrTrace(bundle, chapter, data, mappings, sourceDirectives);
     const label = `main CH${chapter}`;
     errors.push(...compareAnchors(source, ir, label));
+    errors.push(...compareBgmLineOrdering(source, ir, label));
     const sourceText = textSignature(source);
     const irText = textSignature(ir);
     if (sourceText !== irText) {
@@ -438,6 +481,8 @@ if (require.main === module) main();
 module.exports = {
   buildIrTrace,
   buildSourceTrace,
+  bgmLineOrderItems,
+  compareBgmLineOrdering,
   compareAnchors,
   exchangeResumeBgmItems,
   findMainlineExchangeDestinations,

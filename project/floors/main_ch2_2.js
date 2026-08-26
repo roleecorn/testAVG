@@ -1408,35 +1408,6 @@ main.floors.main_ch2_2=
                             "type": "showImage",
                             "code": 30,
                             "image": "CH2_L210.png",
-                            "sloc": [
-                                0,
-                                0,
-                                416,
-                                286
-                            ],
-                            "loc": [
-                                112,
-                                50,
-                                320,
-                                220
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 30,
-                            "image": "CH2_L210.png",
                             "loc": [
                                 112,
                                 50,
@@ -1447,6 +1418,11 @@ main.floors.main_ch2_2=
                             "time": 250
                         },
                         "\t[路人]麥克——！",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -1527,35 +1503,6 @@ main.floors.main_ch2_2=
                             "type": "showImage",
                             "code": 30,
                             "image": "CH2_L222.png",
-                            "sloc": [
-                                0,
-                                0,
-                                416,
-                                286
-                            ],
-                            "loc": [
-                                112,
-                                50,
-                                320,
-                                220
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 30,
-                            "image": "CH2_L222.png",
                             "loc": [
                                 112,
                                 50,
@@ -1566,6 +1513,11 @@ main.floors.main_ch2_2=
                             "time": 250
                         },
                         "在夕陽照射下，彷彿散發著粒子的藍髮少女",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "showImage",
                             "code": 20,

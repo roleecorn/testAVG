@@ -1324,36 +1324,6 @@ main.floors.main_ch6_2=
                             "time": 0
                         },
                         {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        "\t[東山]......",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        {
                             "type": "playBgm",
                             "name": "BGMGintama.mp3"
                         },
@@ -1368,372 +1338,32 @@ main.floors.main_ch6_2=
                             "opacity": 1,
                             "time": 250
                         },
+                        {
+                            "type": "comment",
+                            "text": "【下面22句不使用立繪】"
+                        },
+                        "\t[東山]......",
                         "\t[東山]前面只是開開玩笑而已，現在看來你的覺悟就只有這種程度而已",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]且不論假面騎士確實存在這一點，對你而言重要的不是他存在與否吧",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]你不是追逐著假面騎士那一份一往無前的勇氣才走到今天的嗎？",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]你剛剛說的話不只是否認假面騎士的存在，你連自己的信念都要否定嗎？",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[梗平]我......",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]今天你去結婚這件事不只是拯救Comike而已",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]也是你作為一個男人該負起的責任",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]而且啊，貝琪真的是一個非常好的女孩",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]願意這樣耐心聆聽、欣賞並參與你的愛好的人，以後可能沒有了",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]今村梗平，你到底在害怕什麼",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[梗平]說喜歡當然不是沒有......",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_panic_portrait.png",
-                            "expression": "panic",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[梗平]可是在下害怕啊，在下害怕在下沒有那個能力",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_surprised_portrait.png",
-                            "expression": "surprised",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[梗平]在下完全沒有準備啊，要給其他人幸福什麼的......",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]你的話肯定做得到的",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]雖然我們時不時就會挖苦你兩句",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]雖然你平常很孬，還喜歡亂喝酒",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]但你，我的朋友，你是一個很有正義感又有擔當的人",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]我們都相信你作為假面騎士給大家帶來幸福的能力",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "dongshan_normal.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[東山]所以，不要害怕，你可以的",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[梗平]......",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[梗平]在下會負起責任的",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
                         {
                             "type": "setText",
                             "avg": true,
@@ -1762,24 +1392,7 @@ main.floors.main_ch6_2=
                             "letterSpacing": 0,
                             "animateTime": 120
                         },
-                        {
-                            "type": "showImage",
-                            "code": 20,
-                            "image": "keng_neutral_portrait.png",
-                            "expression": "normal",
-                            "loc": [
-                                "portraitSpeakerX",
-                                "portraitSpeakerY"
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
                         "\t[梗平]在下不會逃跑的，在下做得到",
-                        {
-                            "type": "hideImage",
-                            "code": 20,
-                            "time": 0
-                        },
                         {
                             "type": "showImage",
                             "code": 1,

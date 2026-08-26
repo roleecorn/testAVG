@@ -1766,9 +1766,9 @@ main.floors.main_ch4_1_exchange_1=
                             "image": "CH4_L168.png",
                             "sloc": [
                                 0,
-                                65,
-                                416,
-                                286
+                                0,
+                                1024,
+                                696
                             ],
                             "loc": [
                                 112,

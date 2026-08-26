@@ -10,7 +10,7 @@ main.floors.main_ch2_4_exchange_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "CH2_L295.png",
+            "name": "CH1_L353.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -318,7 +318,7 @@ main.floors.main_ch2_4_exchange_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH2_L295.png",
+            "image": "CH1_L353.png",
             "loc": [
                 0,
                 0

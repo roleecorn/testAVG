@@ -577,11 +577,6 @@
           "text": "【主線 CH1 1-2 倉庫區】"
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMUZUUZU.mp3",
-          "keep": true
-        },
-        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -697,6 +692,11 @@
             {
               "text": "門，很理所當然的全都鎖著",
               "events": [
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMUZUUZU.mp3",
+                  "keep": true
+                },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
@@ -1158,6 +1158,10 @@
           "text": "【過場】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMYume.mp3"
+        },
+        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -1179,10 +1183,6 @@
           "code": 20,
           "image": "keng_neutral_portrait.png",
           "expression": "normal"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMYume.mp3"
         },
         {
           "kind": "dialogue",
@@ -1520,7 +1520,7 @@
             "y": 0
           }
         ],
-        "bgm": "BGMRakisuta.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -2099,36 +2099,6 @@
                   "role": "cg",
                   "code": 30,
                   "image": "CH1_L256.png",
-                  "sloc": [
-                    0,
-                    0,
-                    416,
-                    286
-                  ],
-                  "loc": [
-                    112,
-                    50,
-                    320,
-                    220
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
-                  "kind": "wait",
-                  "time": 1000,
-                  "noSkip": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "cg",
-                  "code": 30,
-                  "image": "CH1_L256.png",
                   "loc": [
                     112,
                     50,
@@ -2141,6 +2111,11 @@
                 {
                   "kind": "wait",
                   "time": 1500
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
                 },
                 {
                   "kind": "dialogue",
@@ -2244,36 +2219,6 @@
                   "role": "cg",
                   "code": 30,
                   "image": "CH1_L270.png",
-                  "sloc": [
-                    0,
-                    0,
-                    416,
-                    286
-                  ],
-                  "loc": [
-                    112,
-                    50,
-                    320,
-                    220
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
-                  "kind": "wait",
-                  "time": 1000,
-                  "noSkip": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "cg",
-                  "code": 30,
-                  "image": "CH1_L270.png",
                   "loc": [
                     112,
                     50,
@@ -2286,6 +2231,11 @@
                 {
                   "kind": "narration",
                   "text": "梗平，滿身瘡痍"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 150
                 },
                 {
                   "kind": "dialogue",
@@ -2629,6 +2579,10 @@
           ]
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMRakisuta.mp3"
+        },
+        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -2881,10 +2835,6 @@
             "image": "keng_neutral_portrait.png",
             "expression": "normal"
           }
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "character.exchange",
@@ -3793,6 +3743,10 @@
                   }
                 },
                 {
+                  "kind": "bgm.play",
+                  "name": "BGMWitch.mp3"
+                },
+                {
                   "kind": "narration",
                   "text": "等到眼睛適應黑暗，梗平開始觀察四周"
                 },
@@ -3982,36 +3936,6 @@
                   "role": "cg",
                   "code": 30,
                   "image": "CH1_L472.png",
-                  "sloc": [
-                    0,
-                    0,
-                    416,
-                    286
-                  ],
-                  "loc": [
-                    112,
-                    50,
-                    320,
-                    220
-                  ],
-                  "opacity": 1,
-                  "time": 0
-                },
-                {
-                  "kind": "wait",
-                  "time": 1000,
-                  "noSkip": true
-                },
-                {
-                  "kind": "image.hide",
-                  "code": 30,
-                  "time": 0
-                },
-                {
-                  "kind": "image.show",
-                  "role": "cg",
-                  "code": 30,
-                  "image": "CH1_L472.png",
                   "loc": [
                     112,
                     50,
@@ -4057,6 +3981,10 @@
                 {
                   "kind": "narration",
                   "text": "梗平艱難的從下水道出來，許久不見的陽光照射在他的身上"
+                },
+                {
+                  "kind": "bgm.play",
+                  "name": "BGMWORC.mp3"
                 },
                 {
                   "kind": "dialogue",
@@ -4208,14 +4136,6 @@
           ],
           "direction": "up",
           "time": 0
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMWitch.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMWORC.mp3"
         }
       ]
     },

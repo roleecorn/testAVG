@@ -397,7 +397,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "CH2_L295.png",
+                            "image": "CH3_L66.png",
                             "loc": [
                                 0,
                                 0
@@ -1958,7 +1958,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "CH2_L409.png",
+                            "image": "CH3_L66.png",
                             "loc": [
                                 0,
                                 0
@@ -2878,7 +2878,7 @@ main.floors.main_ch3_1_exchange_1=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "CH2_L409.png",
+                            "image": "CH3_L66.png",
                             "loc": [
                                 0,
                                 0

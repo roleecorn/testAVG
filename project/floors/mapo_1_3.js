@@ -16,7 +16,7 @@ main.floors.mapo_1_3=
             "y": 0
         }
     ],
-    "bgm": "BGMRakisuta.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -1088,35 +1088,6 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 30,
                             "image": "CH1_L256.png",
-                            "sloc": [
-                                0,
-                                0,
-                                416,
-                                286
-                            ],
-                            "loc": [
-                                112,
-                                50,
-                                320,
-                                220
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 30,
-                            "image": "CH1_L256.png",
                             "loc": [
                                 112,
                                 50,
@@ -1129,6 +1100,11 @@ main.floors.mapo_1_3=
                         {
                             "type": "sleep",
                             "time": 1500
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
                         },
                         {
                             "type": "showImage",
@@ -1280,35 +1256,6 @@ main.floors.mapo_1_3=
                             "type": "showImage",
                             "code": 30,
                             "image": "CH1_L270.png",
-                            "sloc": [
-                                0,
-                                0,
-                                416,
-                                286
-                            ],
-                            "loc": [
-                                112,
-                                50,
-                                320,
-                                220
-                            ],
-                            "opacity": 1,
-                            "time": 0
-                        },
-                        {
-                            "type": "sleep",
-                            "time": 1000,
-                            "noSkip": true
-                        },
-                        {
-                            "type": "hideImage",
-                            "code": 30,
-                            "time": 0
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 30,
-                            "image": "CH1_L270.png",
                             "loc": [
                                 112,
                                 50,
@@ -1319,6 +1266,11 @@ main.floors.mapo_1_3=
                             "time": 250
                         },
                         "梗平，滿身瘡痍",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 150
+                        },
                         {
                             "type": "showImage",
                             "code": 20,
@@ -1821,6 +1773,10 @@ main.floors.mapo_1_3=
             ]
         },
         {
+            "type": "playBgm",
+            "name": "BGMRakisuta.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "CH1_L189.png",
@@ -2243,10 +2199,6 @@ main.floors.mapo_1_3=
             "type": "hideImage",
             "code": 20,
             "time": 0
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMRakisuta.mp3"
         },
         {
             "type": "function",

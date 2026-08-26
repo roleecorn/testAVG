@@ -297,14 +297,6 @@
           }
         },
         {
-          "kind": "bgm.play",
-          "name": "BGMTodomenoichigeki.mp3"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMWORC.mp3"
-        },
-        {
           "kind": "dialogue",
           "speaker": "東山",
           "text": "我的錢包啊啊啊啊啊啊啊啊啊"
@@ -723,6 +715,10 @@
           }
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMTodomenoichigeki.mp3"
+        },
+        {
           "kind": "comment",
           "text": "【BGM預定地：()】"
         },
@@ -958,8 +954,14 @@
           "text": "【BGM預定地：()切換BGM或到7-1結束前連續播放此首BGM】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMWORC.mp3"
+        },
+        {
           "kind": "background.show",
           "role": "image",
+          "code": 1,
+          "image": "CH1_L353.png",
           "code": 1,
           "image": "CH1_L353.png",
           "loc": [
@@ -1161,7 +1163,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "CH2_L295.png",
+            "name": "CH3_L66.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -1224,7 +1226,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH2_L295.png",
+          "image": "CH3_L66.png",
           "loc": [
             0,
             0
@@ -1240,7 +1242,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH2_L295.png",
+          "image": "CH3_L66.png",
           "loc": [
             0,
             0
@@ -3044,7 +3046,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "CH1_L42.png",
+            "name": "CH3_L66.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -3676,7 +3678,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH2_L295.png",
+          "image": "CH3_L66.png",
           "loc": [
             0,
             0
@@ -3946,6 +3948,10 @@
           }
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
+        },
+        {
           "kind": "dialogue",
           "speaker": "克莉絲",
           "text": "太糟糕了吧",
@@ -3974,10 +3980,6 @@
             "image": "keng_surprised_portrait.png",
             "expression": "surprised"
           }
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMUZUUZU.mp3"
         },
         {
           "kind": "dialogue",
@@ -4128,7 +4130,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH2_L295.png",
+          "image": "CH3_L66.png",
           "loc": [
             0,
             0
@@ -7939,6 +7941,10 @@
           "time": 250
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMRakisuta.mp3"
+        },
+        {
           "kind": "dialogue",
           "speaker": "東山",
           "text": "不行了差距甚大啊…",
@@ -9017,10 +9023,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMRakisuta.mp3"
         },
         {
           "kind": "bgm.pause",
@@ -12467,6 +12469,10 @@
           }
         },
         {
+          "kind": "bgm.pause",
+          "until": "play"
+        },
+        {
           "kind": "comment",
           "text": "【過場】"
         },
@@ -12545,10 +12551,6 @@
         {
           "kind": "comment",
           "text": "【過場】"
-        },
-        {
-          "kind": "bgm.pause",
-          "until": "play"
         },
         {
           "kind": "bgm.play",

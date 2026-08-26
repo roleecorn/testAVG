@@ -1269,6 +1269,34 @@ main.floors.main_ch2_4=
                             "text": "【下一句字放大】"
                         },
                         {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 24,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
+                        },
+                        {
                             "type": "showImage",
                             "code": 20,
                             "image": "ms_portrait_ib_normal.png",
@@ -1285,6 +1313,34 @@ main.floors.main_ch2_4=
                             "type": "hideImage",
                             "code": 20,
                             "time": 0
+                        },
+                        {
+                            "type": "setText",
+                            "avg": true,
+                            "position": "down",
+                            "offset": 0,
+                            "align": "left",
+                            "bold": true,
+                            "background": "winskin.png",
+                            "title": [
+                                255,
+                                225,
+                                80,
+                                1
+                            ],
+                            "text": [
+                                255,
+                                255,
+                                255,
+                                1
+                            ],
+                            "titlefont": 22,
+                            "textfont": 16,
+                            "lineHeight": 22,
+                            "fixedLines": 2,
+                            "time": 10,
+                            "letterSpacing": 0,
+                            "animateTime": 120
                         },
                         {
                             "type": "showImage",
@@ -1391,7 +1447,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "CH2_L390.png",
+                            "image": "CH2_L409.png",
                             "loc": [
                                 0,
                                 0
@@ -1471,57 +1527,13 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "CH2_L390.png",
-                            "loc": [
-                                0,
-                                0
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 1,
                             "image": "CH2_L419.png",
                             "loc": [
                                 0,
                                 0
                             ],
                             "opacity": 1,
-                            "time": 250
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 1,
-                            "image": "CH2_L419.png",
-                            "loc": [
-                                0,
-                                0
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 1,
-                            "image": "CH2_L419.png",
-                            "loc": [
-                                0,
-                                0
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 1,
-                            "image": "CH2_L419.png",
-                            "loc": [
-                                0,
-                                0
-                            ],
-                            "opacity": 1,
-                            "time": 250
+                            "time": 0
                         },
                         "梗平被迫進入了畫中",
                         {
@@ -1665,7 +1677,7 @@ main.floors.main_ch2_4=
                         {
                             "type": "showImage",
                             "code": 1,
-                            "image": "CH2_L390.png",
+                            "image": "CH2_L409.png",
                             "loc": [
                                 0,
                                 0
@@ -2260,7 +2272,7 @@ main.floors.main_ch2_4=
                                 0
                             ],
                             "opacity": 1,
-                            "time": 250
+                            "time": 0
                         },
                         {
                             "type": "showImage",

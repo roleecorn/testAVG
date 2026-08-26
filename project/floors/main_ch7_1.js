@@ -522,14 +522,6 @@ main.floors.main_ch7_1=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "playBgm",
-            "name": "BGMTodomenoichigeki.mp3"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMWORC.mp3"
-        },
         "\t[東山]我的錢包啊啊啊啊啊啊啊啊啊",
         {
             "type": "setText",
@@ -1151,6 +1143,10 @@ main.floors.main_ch7_1=
             "time": 0
         },
         {
+            "type": "playBgm",
+            "name": "BGMTodomenoichigeki.mp3"
+        },
+        {
             "type": "comment",
             "text": "【BGM預定地：()】"
         },
@@ -1402,6 +1398,10 @@ main.floors.main_ch7_1=
         {
             "type": "comment",
             "text": "【BGM預定地：()切換BGM或到7-1結束前連續播放此首BGM】"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMWORC.mp3"
         },
         {
             "type": "showImage",
