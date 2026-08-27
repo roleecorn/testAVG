@@ -1,7 +1,14 @@
 const assert = require("assert/strict");
-const { bundleToFloors, normalizePortraitLifecycle, validateBundle, validatePortraitOutputCompat } = require("./story_ir");
+const { bundleToFloors, imageDimensionsFromBuffer, normalizePortraitLifecycle, validateBundle, validatePortraitOutputCompat } = require("./story_ir");
 
 const map = Array.from({ length: 13 }, () => Array(17).fill(0));
+
+const pngHeader = Buffer.alloc(24);
+Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]).copy(pngHeader, 0);
+pngHeader.writeUInt32BE(544, 16);
+pngHeader.writeUInt32BE(416, 20);
+assert.deepEqual(imageDimensionsFromBuffer(pngHeader), { width: 544, height: 416 });
+assert.equal(imageDimensionsFromBuffer(Buffer.from("not an image")), null);
 
 function bundle(events) {
   return {

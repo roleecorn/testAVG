@@ -5,6 +5,8 @@ const vm = require("vm");
 const STORY_IR_VERSION = 1;
 const AVG_MAP_WIDTH = 17;
 const AVG_MAP_HEIGHT = 13;
+const AVG_BACKGROUND_WIDTH = 544;
+const AVG_BACKGROUND_HEIGHT = 416;
 const PORTRAIT_CODES = new Set([10, 11, 12, 20]);
 const PORTRAIT_OPACITY = 1;
 const PORTRAIT_TIME = 0;
@@ -40,6 +42,65 @@ const COMMON_PRESENTATION = Object.freeze({
     "TODO: 【白色慢速過場】": Object.freeze({ kind: "fade", color: Object.freeze([255, 255, 255, 1]), time: 2000 }),
   }),
 });
+
+function readUInt24LE(buffer, offset) {
+  return buffer[offset] | (buffer[offset + 1] << 8) | (buffer[offset + 2] << 16);
+}
+
+function imageDimensionsFromBuffer(buffer) {
+  if (buffer.length >= 24 && buffer.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))) {
+    return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) };
+  }
+  if (buffer.length >= 10 && (buffer.subarray(0, 6).toString("ascii") === "GIF87a" || buffer.subarray(0, 6).toString("ascii") === "GIF89a")) {
+    return { width: buffer.readUInt16LE(6), height: buffer.readUInt16LE(8) };
+  }
+  if (buffer.length >= 30 && buffer.subarray(0, 4).toString("ascii") === "RIFF" && buffer.subarray(8, 12).toString("ascii") === "WEBP") {
+    if (buffer.subarray(12, 16).toString("ascii") === "VP8X") {
+      return { width: readUInt24LE(buffer, 24) + 1, height: readUInt24LE(buffer, 27) + 1 };
+    }
+    return null;
+  }
+  if (buffer.length >= 2 && buffer[0] === 0xff && buffer[1] === 0xd8) {
+    let offset = 2;
+    while (offset + 3 < buffer.length) {
+      if (buffer[offset] !== 0xff) {
+        offset += 1;
+        continue;
+      }
+      while (buffer[offset] === 0xff) offset += 1;
+      const marker = buffer[offset];
+      offset += 1;
+      if (marker === 0xd8 || marker === 0xd9 || marker === 0x01 || (marker >= 0xd0 && marker <= 0xd7)) continue;
+      if (offset + 1 >= buffer.length) return null;
+      const segmentLength = buffer.readUInt16BE(offset);
+      if (segmentLength < 2 || offset + segmentLength > buffer.length) return null;
+      const isStartOfFrame = (marker >= 0xc0 && marker <= 0xc3)
+        || (marker >= 0xc5 && marker <= 0xc7)
+        || (marker >= 0xc9 && marker <= 0xcb)
+        || (marker >= 0xcd && marker <= 0xcf);
+      if (isStartOfFrame && segmentLength >= 7) {
+        return { width: buffer.readUInt16BE(offset + 5), height: buffer.readUInt16BE(offset + 3) };
+      }
+      offset += segmentLength;
+    }
+  }
+  return null;
+}
+
+function readImageDimensions(file) {
+  return imageDimensionsFromBuffer(fs.readFileSync(file));
+}
+
+function validateBackgroundImageSize(file, location) {
+  const dimensions = readImageDimensions(file);
+  if (!dimensions) {
+    throw new Error(`${location}: unable to read background image dimensions for ${path.basename(file)}`);
+  }
+  if (dimensions.width !== AVG_BACKGROUND_WIDTH || dimensions.height !== AVG_BACKGROUND_HEIGHT) {
+    throw new Error(`${location}: background image ${path.basename(file)} must be ${AVG_BACKGROUND_WIDTH}x${AVG_BACKGROUND_HEIGHT}; got ${dimensions.width}x${dimensions.height}`);
+  }
+  return dimensions;
+}
 
 function irToText(node) {
   return node.kind === "dialogue" ? `\t[${node.speaker}]${node.text}` : node.text;
@@ -589,11 +650,20 @@ function validateProjectReferences(root, bundle) {
   const bgms = new Set(data.bgms || []);
   const sounds = new Set(data.sounds || []);
   const floorIds = new Set(data.floorIds || []);
+  const validatedBackgrounds = new Set();
+  const validateImageReference = (image, location, isBackground) => {
+    const file = path.join(root, "project", "images", image);
+    if (!images.has(image) || !fs.existsSync(file)) {
+      throw new Error(`${location}: unregistered or missing image ${image}`);
+    }
+    if (isBackground && !validatedBackgrounds.has(image)) {
+      validateBackgroundImageSize(file, location);
+      validatedBackgrounds.add(image);
+    }
+  };
   const visit = (node, location) => {
     if (node.kind === "background.show" || node.kind === "image.show") {
-      if (!images.has(node.image) || !fs.existsSync(path.join(root, "project", "images", node.image))) {
-        throw new Error(`${location}: unregistered or missing image ${node.image}`);
-      }
+      validateImageReference(node.image, location, node.kind === "background.show");
     }
     if (node.kind === "ending.roll" && (!images.has(node.image) || !fs.existsSync(path.join(root, "project", "images", node.image)))) {
       throw new Error(`${location}: unregistered or missing image ${node.image}`);
@@ -620,9 +690,7 @@ function validateProjectReferences(root, bundle) {
       throw new Error(`scenes[${sceneIndex}].floor.bgm: unregistered or missing BGM ${scene.floor.bgm}`);
     }
     for (const image of scene.floor.images || []) {
-      if (!images.has(image.name) || !fs.existsSync(path.join(root, "project", "images", image.name))) {
-        throw new Error(`scenes[${sceneIndex}].floor.images: unregistered or missing image ${image.name}`);
-      }
+      validateImageReference(image.name, `scenes[${sceneIndex}].floor.images`, image.canvas === "bg");
     }
     scene.events.forEach((node, nodeIndex) => visit(node, `scenes[${sceneIndex}].events[${nodeIndex}]`));
   });
@@ -650,4 +718,4 @@ function readBundle(file, { allowLegacyLifecycle = false } = {}) {
   });
 }
 
-module.exports = { bundleToFloors, floorWithCommonFields, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, validateAvgFloorDimensions, validateBundle, validateCharacterSceneLifecycle, validatePortraitOutputCompat, validateProjectReferences };
+module.exports = { bundleToFloors, floorWithCommonFields, imageDimensionsFromBuffer, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, readImageDimensions, validateAvgFloorDimensions, validateBackgroundImageSize, validateBundle, validateCharacterSceneLifecycle, validatePortraitOutputCompat, validateProjectReferences };

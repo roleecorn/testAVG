@@ -40,6 +40,12 @@
 
 ## 待補劇情
 
+- Open: `noir-source-ir-hash-drift`
+  - Scope: `project/story/NoiR.txt`、`project/story-ir/character/noir.json` 及對應 `noir_1`～`noir_4` floor。
+  - Current: `node scripts/validate_story_source.js` 顯示來源內容 SHA-256 與 Story IR 不一致；本次未修改權威來源或反向猜測 IR。
+  - Done when: 依完整、可確認的來源內容完成來源核對與 Story IR／floor 原子更新，或以完整新來源整檔覆蓋後同步更新。
+  - Evidence: `.codex/task-questions/20260827-214029-background-dimension-validator.md` Q2；目前維持 open。
+
 - `huangmo_1`／`huangmo_2` runtime floor 與 Akiba 入口已依使用者指示移除；權威來源與既有 Story IR 保留作歷史追溯，未自動改寫 IR。
 
 
@@ -52,7 +58,11 @@
 
 - Open：本次支線角色六表情生成仍有局部阻塞。`茱茱` 的 raw 參考圖被內建 imagegen 以 `sexual` 類別拒絕；`良秀` 生成結果身份漂移；唐三因切割結果出現跨格鞋部而暫不替換。菈菈安瑟姆已由使用者確認符合要求，並完成固定流程後替換既有 `project/images/` 同名素材。其餘已確認角色亦已完成 `split_emotion_image.py` → `remove_bk.py` 後替換；原檔保存在本次 run `work/bulk-replacement/original-assets/`。`師匠`、`月讀愛`、`漆原瑠華` 的前一批替換原檔仍在 `work/replacement-run/original-assets/`。Evidence：`.codex/task-questions/20260824-000000-character-portrait-grid.md`、`tmp/character-story-import/drive-download-20260823T111855Z-1-001/20260823-192556/work/bulk-replacement/`。
 
-- `watanuki_sakuya_1`～`watanuki_sakuya_4`：神社場景尚無可重用的 544×416 正式背景；目前仍使用 1438×810 的 `watanuki_shrine_bg.jpg`，待繪製神社背景後替換。
+- Resolved: `watanuki-background-dimension-validator`
+  - Scope: `watanuki_sakuya_1`～`watanuki_sakuya_4`、`project/images/watanuki_shrine_bg.jpg`。
+  - Current: 神社背景已保留既有檔名與引用，正規化為 `544×416`；內容格式仍為 PNG。
+  - Done when: 已完成尺寸修復並通過 `node scripts/manage_story_ir.js`；完整故事驗證另受 `noir-source-ir-hash-drift` 阻塞。
+  - Evidence: `.codex/task-questions/20260827-214029-background-dimension-validator.md` Q1；2026-08-27 已完成。
 - 本次 ZIP 剩餘 14 張圖片已由使用者確認為各篇章主角生成圖的來源，全部改列 `generated-source` 並從 `unknown/` 移除；各角色生成圖輸出或尚未落地狀態見永久 `project/story/manifest.md` 與本次 run 的 `work/asset-usage.md`。`師匠.png` 另已確認為店長「東方不敗」，接入 `shirou_3`。
 - `yuedu_ai_4` 的 `便利店.jpg` 與 `熟悉的街角.png` 原始比例不是 runtime 的 544×416；本次以可追溯的等比置中裁切產生 `yuedu_convenience_store.png`、`yuedu_familiar_corner.png` 並接入，待視覺驗收確認裁切是否接受。既有 `mikage_bookstore.jpg` 尺寸問題亦仍保留待辦。
 - `ruka_2`、`ruka_3`、`ruka_4` 與 `sena_3` 的泛用小巷使用 `ruka_generic_alley_placeholder.png`；`ruka_4` 的昏暗商業地點使用 `ruka_commercial_interior_dark_placeholder.png`；`sena_1`／`sena_4` 的旅店內部使用 `sena_hotel_interior_placeholder.png`。這些檔案由既有 544×416 背景複製，待正式地點背景替換，完成條件是保留唯一檔名、更新 IR／floor／manifest 並通過 `node scripts/manage_story_ir.js`。
