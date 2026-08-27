@@ -10,7 +10,7 @@ main.floors.noir_3=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_tournament_venue.png",
+            "name": "ms_bg_street.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -310,7 +310,7 @@ main.floors.noir_3=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        "夜色依舊籠罩着後巷，鋼琴的投影在空氣中閃爍。",
+        "夜色依舊籠罩着後巷，鋼琴的投影在空氣中閃爍",
         {
             "type": "showImage",
             "code": 10,
@@ -322,13 +322,13 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]你到了呀",
+        "\t[梗平]你到了呀。",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
-        "NoiR的身影浮現，她沒有立刻演奏，而是低下頭，灰色瞳孔映着微光。",
+        "NoiR的身影浮現，她沒有立刻演奏，而是低下頭，灰色瞳孔映着微光",
         {
             "type": "showImage",
             "code": 20,
@@ -340,24 +340,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]我一直有一個夢想……能在真正的舞台上演奏。",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_sad.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]不是孤單的後巷，而是能讓音符迴盪在廣闊的空間裡。（望向天空）",
+        "\t[NoiR]我一直有一個夢想……能在真正的舞台上演奏。",
         {
             "type": "hideImage",
             "code": 20,
@@ -374,64 +357,13 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]哪怕只有一個人聽，也好。",
+        "\t[NoiR]不是孤單的後巷，而是能讓音符迴盪在廣闊的空間裡。",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_smile.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]不過我這種的人怎麼可能呢，哈哈",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]那就跟我來吧。我知道一個地方。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（帶着NoiR，悄悄推開劇院的大門。）",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        "舞台中央，NoiR的鋼琴再次成形。",
+        "NoiR望向天空，目光直抵遠方",
         {
             "type": "showImage",
             "code": 20,
@@ -443,7 +375,24 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]這裡...真的可以嗎？如果你被發現...",
+        "\t[NoiR]哪怕只有一個人聽，也好。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "noir_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[NoiR]不過我這種的人怎麼可能呢，哈哈。",
         {
             "type": "hideImage",
             "code": 20,
@@ -460,12 +409,21 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]他們跑不過我，儘管彈吧。這裡屬於你。",
+        "\t[梗平]那就跟在下來吧，在下知道一個地方！",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_tournament_venue.png",
+            "opacity": 1,
+            "time": 0
+        },
+        "梗平帶着NoiR，悄悄推開劇院的大門",
+        "舞台中央，NoiR的鋼琴再次成形",
         {
             "type": "showImage",
             "code": 20,
@@ -477,41 +435,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]這就是我夢想的舞台...",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_surprised_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]而我，會成為你的專屬聽眾。無論你彈什麼，我都會聽到最後。",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]一直也會？",
+        "\t[NoiR]這裡...真的可以嗎？如果你被發現...",
         {
             "type": "hideImage",
             "code": 20,
@@ -528,7 +452,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]一直也會",
+        "\t[梗平]他們跑不過我，儘管彈吧，這裡只屬於你。",
         {
             "type": "hideImage",
             "code": 10,
@@ -545,7 +469,75 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]那麼我的專屬聽眾，請就坐吧",
+        "\t[NoiR]這就是我夢想的舞台...",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]而我，會成為你的專屬聽眾無論你彈什麼，我都會聽到最後。",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "noir_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[NoiR]一直也會？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]一直也會！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "noir_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[NoiR]那麼我的專屬聽眾，請就坐吧。",
         {
             "type": "hideImage",
             "code": 20,
@@ -571,14 +563,14 @@ main.floors.noir_3=
             "time": 0
         },
         "...",
-        "NoiR指尖落下琴鍵，旋律在劇院中迴盪。",
         {
             "type": "hideImage",
             "code": 30,
             "time": 0,
             "async": true
         },
-        "（她彈的是他們最初相識時的那段音樂，旋律在空曠的場館裡顯得格外鮮明。）",
+        "NoiR指尖落下琴鍵，旋律在劇院中迴盪",
+        "她彈的是他們最初相識時的那段音樂，旋律在空曠的場館裡顯得格外鮮明",
         {
             "type": "showImage",
             "code": 20,
@@ -590,7 +582,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]音樂不需要舞台大小，只要有人聽，就足夠了。",
+        "\t[NoiR]音樂不需要舞台大小，只要有人聽，就足夠了。",
         {
             "type": "hideImage",
             "code": 20,
@@ -626,14 +618,14 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]嗯，因為我們都喜歡音樂。而音樂就是我們的共同語言。",
+        "\t[梗平]嗯，因為我們都喜歡音樂。而音樂，就是我們的共同語言。",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
-        "（隨後曲風一轉...是那動漫的一首ED）",
-        "琴聲填滿空曠的劇院，沒有掌聲，卻有兩人共同的喜悅。",
+        "隨後曲風一轉...是那動漫的一首ED",
+        "琴聲填滿空曠的劇院，沒有掌聲，卻有兩人共同的喜悅",
         "演奏結束了，然而NoiR的手指並沒有從琴鍵上抬起",
         {
             "type": "showImage",
@@ -646,7 +638,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]那首ED，是你為了我而自學的嗎？",
+        "\t[梗平]那首ED，是你為了在下而自學的嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -655,7 +647,7 @@ main.floors.noir_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "noir_smile.png",
+            "image": "noir_normal.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -663,7 +655,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]今天剛學會的歌能夠在這裏派上用場真的太好了（點頭）",
+        "\t[NoiR]今天剛學會的歌能夠在這裏派上用場真的太好了[點頭]",
         {
             "type": "hideImage",
             "code": 20,
@@ -672,7 +664,7 @@ main.floors.noir_3=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -686,13 +678,15 @@ main.floors.noir_3=
             "code": 10,
             "time": 0
         },
+        "然而，梗平察覺到了NoiR眼神中的一絲不捨",
         {
             "type": "hideImage",
             "code": 30,
             "time": 0,
             "async": true
         },
-        "（然而，梗平察覺到了NoiR眼神中的一絲不捨）",
+        "NoiR沉默良久，手才從琴鍵上緩緩抬起",
+        "最後一個音符消散時，NoiR的身影逐漸透明，她露出滿意的微笑",
         {
             "type": "showImage",
             "code": 20,
@@ -704,25 +698,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]（沉默良久，手才從琴鍵上緩緩抬起）",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        "最後一個音符消散時，NoiR的身影逐漸透明，她露出滿意的微笑。",
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_sad.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]抱歉呢...似乎到此為止了。",
+        "\t[NoiR]抱歉呢...似乎到此為止了...",
         {
             "type": "hideImage",
             "code": 20,
@@ -739,7 +715,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]今晚的夢想，已經足夠了。",
+        "\t[NoiR]今晚的夢想，已經足夠了。",
         {
             "type": "hideImage",
             "code": 20,
@@ -748,7 +724,7 @@ main.floors.noir_3=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -773,7 +749,42 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]你大概已經意識到了吧，我並不是人。",
+        "\t[NoiR]你大概已經意識到了吧，我並不是人。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "梗平像是在否定些甚麼一樣，低下了頭",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "noir_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[NoiR]抬起頭吧，梗平先生。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "noir_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[NoiR]我們的樂章並不會就此結束，這只是兩段樂章之間的間奏。",
         {
             "type": "hideImage",
             "code": 20,
@@ -790,57 +801,6 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（低下了頭）",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]抬起頭吧，梗平先生。",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]我們的樂章並不會就此結束，這只是兩段樂章之間的間奏。",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_surprised_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[梗平]不要停下來，繼續彈奏下去啊！",
         {
             "type": "hideImage",
@@ -850,7 +810,7 @@ main.floors.noir_3=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -864,6 +824,7 @@ main.floors.noir_3=
             "code": 10,
             "time": 0
         },
+        "NoiR搖了搖頭",
         {
             "type": "showImage",
             "code": 20,
@@ -875,34 +836,17 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]（搖了搖頭）",
+        "\t[NoiR]我有梗平先生你做我的專屬觀眾，已經滿足了。",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]我有梗平先生你做我的專屬觀眾已經滿足了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        "（梗平跑到舞台下嘗試爬上去）",
+        "梗平跑到舞台下嘗試爬上去，但高度落差讓他難以爬上舞台",
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -919,7 +863,7 @@ main.floors.noir_3=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -927,7 +871,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]因為成佛了所以拋下了你的專屬聽眾離開太不負責任了！",
+        "\t[梗平]因為成佛了，所以拋下了你的專屬聽眾離開，太不負責任了！",
         {
             "type": "hideImage",
             "code": 10,
@@ -936,7 +880,7 @@ main.floors.noir_3=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -961,7 +905,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]因為有你，我已經不會再感到孤獨了",
+        "\t[NoiR]因為有你，我已經不會再感到孤獨了。",
         {
             "type": "hideImage",
             "code": 20,
@@ -970,7 +914,7 @@ main.floors.noir_3=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -978,7 +922,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我不會拋下你一個的！",
+        "\t[梗平]在下不會拋下你一個的！",
         {
             "type": "hideImage",
             "code": 10,
@@ -995,7 +939,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]你知道樂譜上休止符的作用嗎？",
+        "\t[NoiR]你知道樂譜上休止符的作用嗎？",
         {
             "type": "hideImage",
             "code": 20,
@@ -1012,7 +956,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]那不是永別，只是下一段音樂到來之前的一段空白。",
+        "\t[NoiR]那不是永別，只是下一段音樂到來之前的一段空白。",
         {
             "type": "hideImage",
             "code": 20,
@@ -1021,7 +965,7 @@ main.floors.noir_3=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1038,7 +982,7 @@ main.floors.noir_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "noir_smile.png",
+            "image": "noir_normal.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1046,7 +990,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]謝謝你...我不會忘記你和我的這段時光的",
+        "\t[NoiR]謝謝你...我不會忘記你和我的這段時光的...",
         {
             "type": "hideImage",
             "code": 20,
@@ -1055,7 +999,7 @@ main.floors.noir_3=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1063,7 +1007,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]如果NoiR你離我而去的話，我的音樂之魂！",
+        "\t[梗平]如果NoiR你離在下而去的話，在下的音樂之魂！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1080,17 +1024,17 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]一定要記得我哦（低聲）",
+        "\t[NoiR]一定要記得我哦。",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
-        "（梗平爬上去了）",
+        "梗平用盡了自身所有的力氣，終於爬上了舞台",
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1098,7 +1042,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]我想一直作為你的永遠的觀眾！",
+        "\t[梗平]在下想一直作為你的永遠的觀眾！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1115,35 +1059,19 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]さようなら（低聲）",
+        "\t[NoiR]さようなら...",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]…（閉上了雙眼，連帶着幾點淚光從臉頰滑落）",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        "隨着夜風輕拂，她的身影連帶着鋼琴緩緩消散。",
-        "（卡刷一聲,有一個東西跌在地上）",
+        "少女閉上了雙眼，連帶着幾點淚光從臉頰滑落",
+        "隨着夜風輕拂，她的身影連帶着鋼琴緩緩消散",
+        "卡刷一聲,有一個東西跌在地上",
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1151,7 +1079,7 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（撿起）是NoiR的髮夾！",
+        "\t[梗平]是NoiR的髮夾！",
         {
             "type": "hideImage",
             "code": 10,
@@ -1176,16 +1104,17 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "（髮夾是一個黑白琴鍵的造型，連帶着稍微濕潤的觸感）",
+        "髮夾是一個黑白琴鍵的造型，連帶着稍微濕潤的觸感",
         {
             "type": "hideImage",
             "code": 30,
-            "time": 0
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1193,14 +1122,14 @@ main.floors.noir_3=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]NoiR！你在哪裏！我聽不見你的聲音！",
+        "\t[梗平]NoiR！你在哪裏！在下聽不見你的聲音！",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
-        "但是任憑梗平呼叫，只有他的聲音在劇院中迴響。",
-        "直到最後只剩下梗平敲打地板的聲音。",
+        "但是任憑梗平呼叫，只有他的聲音在劇院中迴響",
+        "直到最後只剩下梗平敲打地板的聲音",
         {
             "type": "function",
             "function": "function () { core.plugin.completeAkibaEvent('noir_3'); }"

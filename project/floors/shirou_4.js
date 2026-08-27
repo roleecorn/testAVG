@@ -297,14 +297,11 @@ main.floors.shirou_4=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_mapo_shop.png",
-            "opacity": 1,
-            "time": 0
-        },
         "在一段時間後之後，士郎終於能出院了",
+        {
+            "type": "comment",
+            "text": "【下面那句話開始，士郎的立繪切換為士郎(後日談)】"
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -316,7 +313,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]其實不是大問題啦，只是背部肌肉移位了 2 公分而已。",
+        "\t[士郎]其實不是大問題啦，只是背部肌肉移位了 2 公分而已。",
         {
             "type": "hideImage",
             "code": 20,
@@ -325,7 +322,7 @@ main.floors.shirou_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_panic_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -333,7 +330,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]肌肉移位兩公分還叫沒大問題！？你這傢伙根本是鐵打的吧！",
+        "\t[梗平]肌肉移位兩公分還叫沒大問題！？你這傢伙根本是打鐵的吧！",
         {
             "type": "hideImage",
             "code": 10,
@@ -350,7 +347,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]不過話說回來，你出院得剛好，看看這個！",
+        "\t[梗平]不過話說回來，你出院得剛好，看看這個！",
         {
             "type": "hideImage",
             "code": 10,
@@ -369,7 +366,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]這就是...冠軍獎品？你真的把它們全都拿到了？",
+        "\t[士郎]這就是...冠軍獎品？你真的把它們全都拿到了？",
         {
             "type": "hideImage",
             "code": 20,
@@ -386,7 +383,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]那當然！本大爺當天可是頂著無數人的掌聲",
+        "\t[梗平]那當然！本大爺當天可是頂著無數人的掌聲...",
         {
             "type": "hideImage",
             "code": 10,
@@ -403,7 +400,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗](還有那個被抬走的唐三和滿身是傷的良秀的死亡凝視)，硬是把這寶貝搬回來的！",
+        "\t[梗平](還有那個被抬走的唐三和滿身是傷的良秀的死亡凝視)，硬是把這寶貝搬回來的！",
         {
             "type": "hideImage",
             "code": 10,
@@ -421,7 +418,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]不過比起打鐵和炒菜，本大爺現在有個更宏大的計畫！",
+        "\t[梗平]不過比起打鐵和炒菜，本大爺現在有個更宏大的計畫！",
         {
             "type": "hideImage",
             "code": 10,
@@ -438,7 +435,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]我想组一個樂隊進行『Global Live』全球巡迴直播，現在萬事俱備，你要不要也來當個鼓手？",
+        "\t[梗平]我想组一個樂隊進行『Global Live』全球巡迴直播，現在萬事俱備，你要不要也來當個鼓手？",
         {
             "type": "hideImage",
             "code": 10,
@@ -455,7 +452,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]鼓手？可我完全不會打鼓啊...",
+        "\t[士郎]鼓手？可我完全不會打鼓啊...",
         {
             "type": "hideImage",
             "code": 20,
@@ -472,7 +469,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]少來了！你那打鐵的速度、精準度，還有那種能把鋼材捶到完美的節奏感，天生就是打鼓的料！再說了，你不是連Trace On magic都能用嗎？",
+        "\t[梗平]少來了！你那打鐵的速度、精準度，還有那種能把鋼材捶到完美的節奏感，天生就是打鼓的料！再說了，你不是連Trace On Magic都能用嗎？",
         {
             "type": "hideImage",
             "code": 10,
@@ -481,7 +478,7 @@ main.floors.shirou_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_panic_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -489,7 +486,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]區區兩根鼓棒算什麼！",
+        "\t[梗平]區區兩根鼓棒算什麼！",
         {
             "type": "hideImage",
             "code": 10,
@@ -508,7 +505,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]...真是拿你沒辦法。先說好，如果節奏亂了",
+        "\t[士郎]...真是拿你沒辦法。先說好，如果節奏亂了。",
         {
             "type": "hideImage",
             "code": 20,
@@ -525,7 +522,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]可別怪我用『投影魔術』變出一整套爵士鼓來砸你",
+        "\t[士郎]可別怪我用『投影魔術』變出一整套爵士郎鼓來砸你。",
         {
             "type": "hideImage",
             "code": 20,
@@ -534,7 +531,7 @@ main.floors.shirou_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_smile_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -542,7 +539,7 @@ main.floors.shirou_4=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]哈哈！這才是我認識的士郎！走，帶你去練團室！",
+        "\t[梗平]哈哈！這才是我認識的士郎！走，帶你去練團室！",
         {
             "type": "hideImage",
             "code": 10,

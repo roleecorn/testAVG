@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/鍛刀大賽.txt",
-        "sha256": "082281207bef3dc1f0ef9ff5e13313fa277fb214de9f0125cc4136140c00b12c"
+        "sha256": "8c303a5aec5be472136b96301da181f06d386554086dbec51b2cee1206668263"
       }
     ]
   },
@@ -65,28 +65,17 @@
           }
         },
         {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_mapo_shop.png",
-          "opacity": 1,
-          "time": 0
+          "kind": "narration",
+          "text": "經過中華料理店時，被一陣鏗鏘聲吸引"
         },
         {
           "kind": "narration",
-          "text": "經過中華料理店時，被一陣鏗鏘聲吸引",
-          "presentation": {}
-        },
-        {
-          "kind": "narration",
-          "text": "棄爐灶旁蹲著一位紅髮少年",
-          "presentation": {}
+          "text": "棄爐灶旁蹲著一位紅髮少年"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "在中華料理店後門當街打鐵？",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -94,9 +83,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "...啊！",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -104,9 +92,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "抱歉嚇到你了，我是士郎。",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -114,9 +101,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "你這是在煉銅打鋼還是準備切菜啊？",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -124,14 +110,12 @@
         },
         {
           "kind": "narration",
-          "text": "士郎不好意思地擦汗笑了笑",
-          "presentation": {}
+          "text": "士郎不好意思地擦汗笑了笑"
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "你看後門牆上這張海報",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "你看後門牆上這張海報。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -139,54 +123,12 @@
         },
         {
           "kind": "narration",
-          "text": "海報寫著『第一屆中華料理店廚刀鍛造大賽』。",
-          "presentation": {}
+          "text": "海報寫著『第一屆中華料理店廚刀鍛造大賽』"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "中華料理店自己舉辦鍛刀大賽！？這活動名稱聽起來就充滿槽點啊！",
-          "presentation": {},
-          "portrait": {
-            "code": 10,
-            "image": "keng_panic_portrait.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "士",
-          "text": "冠軍獎品是夢幻級的『WOK』與稀有隕鐵鋼材。",
-          "presentation": {},
-          "portrait": {
-            "code": 20,
-            "image": "shirou_normal.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "士",
-          "text": "但大賽規定一定要兩人組隊參賽，既然你來了就剛好過來幫幫忙吧。",
-          "presentation": {},
-          "portrait": {
-            "code": 20,
-            "image": "shirou_normal.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "士",
-          "text": "只要來個過場就好了",
-          "presentation": {},
-          "portrait": {
-            "code": 20,
-            "image": "shirou_normal.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗",
-          "text": "兩人組隊？難怪你蹲在這裡發愁。",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -194,9 +136,44 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
+          "text": "冠軍獎品是夢幻級的『WOK』與稀有隕鐵鋼材。",
+          "portrait": {
+            "code": 20,
+            "image": "shirou_normal.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "士郎",
+          "text": "但大賽規定一定要至少兩人組隊參賽，既然你來了就剛好過來幫幫忙吧。",
+          "portrait": {
+            "code": 20,
+            "image": "shirou_normal.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "士郎",
+          "text": "只要來個過場就好了。",
+          "portrait": {
+            "code": 20,
+            "image": "shirou_normal.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "至少兩人組隊？難怪你蹲在這裡發愁。",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "士郎",
           "text": "求求你了，如果沒有那個『WOK』的話，瓦搭西！",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -204,14 +181,12 @@
         },
         {
           "kind": "narration",
-          "text": "士郎立刻滑跪到梗平面前",
-          "presentation": {}
+          "text": "士郎立刻滑跪到梗平面前"
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "那個鋼材一定能賣到好價錢，贏到的話那個給你。",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "那個鋼材一定能賣到好價錢，贏的話那個給你！",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -219,9 +194,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "你想怎樣用也沒有問題。",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "你想怎樣用也沒有問題！",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -229,39 +203,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "既然你缺一個搞笑...啊不，熱血副手，在下就陪你玩一把吧！",
-          "presentation": {},
-          "portrait": {
-            "code": 10,
-            "image": "keng_smile_portrait.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "士",
-          "text": "真的嗎？太感謝你了，梗平！我剛好缺一個值得信任的搭檔。",
-          "presentation": {},
-          "portrait": {
-            "code": 20,
-            "image": "shirou_normal.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "士",
-          "text": "你對火候掌控或風箱操作有了解嗎？",
-          "presentation": {},
-          "portrait": {
-            "code": 20,
-            "image": "shirou_normal.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗",
-          "text": "完全不懂！不過要我加油打氣，這無疑令人振奮的",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -269,9 +212,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "哈哈，有熱情就足夠了！",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "真的嗎？太感謝你了，梗平！我剛好缺一個值得信任的搭檔。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -279,9 +221,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "那我們約好在比賽那天就在這邊等吧，請多指教！",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "你對火候掌控或風箱操作有了解嗎？",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -289,12 +230,38 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "沒問題，在下一定準時到場，不會掉鏈子的！",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "完全不懂！不過要我加油打氣，這無疑令人振奮的！",
           "portrait": {
             "code": 10,
-            "image": "keng_smile_portrait.png"
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "士郎",
+          "text": "啊哈哈，有熱情就足夠了！",
+          "portrait": {
+            "code": 20,
+            "image": "shirou_normal.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "士郎",
+          "text": "那我們約好在比賽那天就在這邊等吧，請多指教！",
+          "portrait": {
+            "code": 20,
+            "image": "shirou_normal.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒問題，在下一定準時到場，不掉鏈子！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
           }
         },
         {
@@ -365,38 +332,26 @@
           }
         },
         {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_mapo_shop.png",
-          "opacity": 1,
-          "time": 0
+          "kind": "narration",
+          "text": "士郎的打鐵聲源源不絕，只需要經過附近梗平已經能準確定位到士郎來打鐵的秘密(?)基地"
         },
         {
           "kind": "narration",
-          "text": "士郎的打鐵聲源源不絕，只需要經過附近梗平已經能準確定位到士郎來打鐵的秘密(?)基地",
-          "presentation": {}
-        },
-        {
-          "kind": "narration",
-          "text": "梗平興高采烈地湊上前。",
-          "presentation": {}
+          "text": "梗平興高采烈地湊上前"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "唷！還在練習打鐵嗎？",
-          "presentation": {},
           "portrait": {
             "code": 10,
-            "image": "keng_smile_portrait.png"
+            "image": "keng_neutral_portrait.png"
           }
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "打鐵不單止需要一時的學習，更要持續不斷的鍛鍊",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "打鐵不單止需要一時的學習，更要持續不斷的鍛鍊。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -404,9 +359,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "而且僅僅是這樣水平的話還遠遠不夠去奪冠",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "僅僅是這樣水平的話，還遠遠不夠去奪冠。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -414,9 +368,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "在下也忘了沒問你，這比賽除了要組隊參賽外還有其他規限嗎？",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -424,9 +377,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "刀形、材料那些有沒有限制？",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -434,9 +386,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "沒有的兄弟沒有的，賽制聽說到時候現場會公佈不過用具也要自己攜帶",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "沒有的兄弟沒有的，賽制聽說到時候現場會公佈，不過用具也要自己攜帶。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -444,9 +395,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "不過用來煮飯切菜的廚刀，刀形果然還是中式菜刀吧",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "用來煮飯切菜的廚刀，刀形果然還是中式菜刀吧。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -454,9 +404,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "No, Niet, Nein!!!既然如此，這個就是你的誤區了",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "No, Niet, Nein!!!既然如此，這個就是你的誤區了。",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -464,19 +413,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "鍛刀是自由的！即使是廚刀也只是一個名稱，只要刀夠好那他就什麼都能做到口牙！",
-          "presentation": {},
-          "portrait": {
-            "code": 10,
-            "image": "keng_panic_portrait.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗",
-          "text": "就讓我們鍛造出世界上第一把規格外的廚刀",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -484,9 +422,17 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "梗平",
+          "text": "就讓我們鍛造出世界上第一把規格外的廚刀。",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "士郎",
           "text": "何ヰ味？",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -494,9 +440,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "廚刀只要能把東西切開就好，像你這樣打鐵的要想的就多了",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "廚刀只要能把東西切開就好，像你這樣打鐵的要想的就多了。",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -504,9 +449,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "還有拍蒜那些的用法啦",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "還有拍蒜那些的用法啦。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -514,9 +458,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "這樣把刀背加厚，給我發揮你的想像力呀kora!",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -524,9 +467,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "廚刀的重點不是廚不廚，交上去的是刀就夠了。相信我就對了",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "廚刀的重點不是廚不廚，交上去的是刀就夠了。相信我就對了!",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -534,9 +476,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "是這樣的嗎？這不對吧",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "是這樣的嗎？這不對吧!",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -544,9 +485,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "料理也是需要創新的，等我一下",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "料理也是需要創新的，等我一下。",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -554,14 +494,12 @@
         },
         {
           "kind": "narration",
-          "text": "梗平隨後快速翻找手機的相簿",
-          "presentation": {}
+          "text": "梗平隨後快速翻找手機的相簿"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "士郎！你快看這張！你能打出來嗎？",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "士郎！快看這張！能打出來嗎？",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -589,9 +527,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "構造雖然很誇張...重心偏前但如果修改刀脊弧度並重組力學結構的話...好像可行。",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -605,9 +542,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "都說是可行的了。",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -615,9 +551,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "按你所說，只要不妨礙切肉的效率就算外型再誇張也無妨。",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "按你所說，只要不妨礙切肉的效率，就算外型再誇張也無妨。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -625,9 +560,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "畢竟最終要測試用刀的是我們。所以我們能夠熟練使用類似的刀型就可以了",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "畢竟最終要測試用刀的是我們。所以，我們能夠熟練使用類似的刀型就可以了。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -635,29 +569,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "啊！？汝不早言！",
-          "presentation": {},
-          "portrait": {
-            "code": 10,
-            "image": "keng_panic_portrait.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "士",
-          "text": "阿對了，我剛剛收到了其他隊伍的名單你要看看嗎？",
-          "presentation": {},
-          "portrait": {
-            "code": 20,
-            "image": "shirou_normal.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗",
-          "text": "反正也看不懂吧。不過聽一聽一定總比沒有好",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -665,9 +578,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "總括而言現在參賽隊伍包括我們有三隊",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "阿對了，我剛剛收到了其他隊伍的名單，你要看看嗎？",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -675,9 +587,17 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "另外兩隻的隊名是唐家三少以及蜘蛛巢相親相愛一家親",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "反正也看不懂，不過聽一聽一定總比沒有好。",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "士郎",
+          "text": "總括而言現在參賽隊伍包括我們，有三隊。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -685,9 +605,17 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "士郎",
+          "text": "另外兩隻的隊名是「唐家三少」以及「蜘蛛巢相親相愛一家親」。",
+          "portrait": {
+            "code": 20,
+            "image": "shirou_normal.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
           "text": "那是名門望族小組以及家庭參賽小組嗎？",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -695,9 +623,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "不知道，網上也找不到太多資訊",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "不知道，網上也找不到太多資訊。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -705,9 +632,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "有傳言說，他們是從其他國家遠道而來為了爭奪隕鐵的人",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "不過有傳言說，他們是從其他國家遠道而來為了爭奪隕鐵的人。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -715,9 +641,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "不過謝啦，給了我那麼多的靈感。那麼比賽的時候再見吧",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "謝啦，給了我那麼多的靈感。比賽的時候再見吧。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -762,58 +687,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "shirou_e01_cg.jpeg",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "shirou_e02_cg.jpeg",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -843,36 +716,17 @@
           }
         },
         {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_mapo_shop.png",
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_tournament_venue.png",
-          "opacity": 1,
-          "time": 0
+          "kind": "narration",
+          "text": "梗平如約準時在比賽開始前到了比賽場地"
         },
         {
           "kind": "narration",
-          "text": "梗平如約準時在比賽開始前到了比賽場地",
-          "presentation": {}
-        },
-        {
-          "kind": "narration",
-          "text": "而他找到了正在中華料理店前在準備工具的士郎",
-          "presentation": {}
+          "text": "而他找到了正在中華料理店前在準備工具的士郎"
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "Aibo 你準備好了嗎？",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -880,9 +734,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "上啊士郎，給這群傳統鐵匠一點二次元震撼！",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -898,24 +751,20 @@
         },
         {
           "kind": "narration",
-          "text": "走了一會他們到了比賽場地，梗平看了一眼四周",
-          "presentation": {}
+          "text": "走了一會他們到了比賽場地，梗平看了一眼四周"
         },
         {
           "kind": "narration",
-          "text": "空地之上，坐在評判席上的是中華料理店的老闆以及收購所的老闆",
-          "presentation": {}
+          "text": "空地之上，坐在評判席上的是中華料理店的老闆以及收購所的老闆"
         },
         {
           "kind": "narration",
-          "text": "然後映入眼簾是分隔了三個區域的區間",
-          "presentation": {}
+          "text": "然後映入眼簾是分隔了三個區域的區間"
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "中間哪個間隔就是我們的了",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "中間那個間隔就是我們的了。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -923,15 +772,13 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "時間到了選手請各自就位，我很期待各位的作品",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "時間到了選手請各自就位，我很期待各位的作品。"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "(他是在看在下嗎？)",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -939,15 +786,13 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "旁邊這位會作為本次比賽的安檢員東方不敗，確保你們不會受傷。",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "旁邊這位會作為本次比賽的安檢員，東方不敗。確保不會有人比賽而受傷。"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "(這個人的氣勢太可怕了)",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -955,14 +800,12 @@
         },
         {
           "kind": "narration",
-          "text": "（東方不敗聽見後點了點頭)",
-          "presentation": {}
+          "text": "（東方不敗後點了點頭)"
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "接下來就交給我吧，我會證明給他們看二次元的力量的",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "接下來就交給我吧，我會證明二次元的力量給他們看！",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -970,9 +813,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "士郎，不要輸呀！我也開始燃起來了！",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -980,50 +822,42 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "那麼接下來我會公佈本次賽程，比賽分為兩部分",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "那麼接下來我會公佈本次賽程，比賽分為兩部分。"
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "第一部分會要求每組大致斷打出刀型然後交給我審核",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "第一部分會要求每組大致斷打出刀型交給我審核。"
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "雖說如此這次比賽也不會限制各位選手對刀型的自由度追求，其後淘汰一位進度最差的",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "雖說如此，這次比賽不會限制各位選手對刀型的自由度追求，其後淘汰一位進度最差的。"
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "畢竟在料理界時間可是金錢，達不到標準的人沒有存在的價值",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "畢竟在料理界，時間可是金錢，達不到標準的人沒有存在的價值。"
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "第二回合將會要求各位完善以及打磨到完整整把廚刀",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "第二回合將會要求各位完善，以及打磨到完整的整把廚刀。"
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "然後每組派出一位代表展示你們的刀的鋒利程度以及對刀的使用",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "然後每組派出一位代表，展示刀的鋒利程度以及對刀的使用。"
         },
         {
           "kind": "narration",
-          "text": "這時候，左邊傳來幾位少爺的嘲笑聲",
-          "presentation": {}
+          "text": "這時候，左邊傳來幾位少爺的嘲笑聲"
         },
         {
           "kind": "dialogue",
           "speaker": "唐三",
           "text": "都什麼時代了，我們煉器直接用我們魂環科技的設備就好了。",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_tangsan.png"
@@ -1033,7 +867,6 @@
           "kind": "dialogue",
           "speaker": "唐三",
           "text": "用火爐的原始人，哈哈哈！",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_tangsan.png"
@@ -1043,7 +876,6 @@
           "kind": "dialogue",
           "speaker": "唐三",
           "text": "隕鐵鋼材將會是我們的了！",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_tangsan.png"
@@ -1051,19 +883,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "少爺小組居然拿著高科技設備嘲笑我們的老風箱！",
-          "presentation": {},
-          "portrait": {
-            "code": 10,
-            "image": "keng_smile_portrait.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗",
-          "text": "士郎，給他們看看我們這幾天磨練出來的真正厲害！",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1071,9 +892,17 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "梗平",
+          "text": "士郎，給他們看看我們這幾天磨練出來的真正厲害！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "士郎",
           "text": "鍛造的本質不在於機器有多先進，而在於對鋼材與料理心意。",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1081,9 +910,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "看我們直接在第一階段把他淘汰出去",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "看我們直接在第一階段把他淘汰出去。",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1093,7 +921,6 @@
           "kind": "dialogue",
           "speaker": "東方不敗",
           "text": "3!2!1! Game Start!!!",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_shisho.png"
@@ -1101,19 +928,16 @@
         },
         {
           "kind": "narration",
-          "text": "時間一分一秒的過去",
-          "presentation": {}
+          "text": "時間一分一秒的過去"
         },
         {
           "kind": "narration",
-          "text": "和設想的不同，左邊傳來的不是打鐵聲，右邊傳來的更只有吵架的聲音",
-          "presentation": {}
+          "text": "和設想的不同，左邊傳來的不是打鐵聲，右邊傳來的更只有吵架的聲音"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "看起來有在認真打鐵的只有我們這組了，這裏還是鍛刀大賽嗎？",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1121,9 +945,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "只要好好打鐵就能贏了！",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1131,52 +954,43 @@
         },
         {
           "kind": "narration",
-          "text": "突然左邊傳來慘叫，連帶著爆炸聲以及燒焦的味道",
-          "presentation": {}
+          "text": "突然左邊傳來慘叫，連帶著爆炸聲以及燒焦的味道"
         },
         {
           "kind": "narration",
-          "text": "東方不敗閃身而過眨眼功夫便從評判席衝了向左邊的間隔",
-          "presentation": {}
+          "text": "東方不敗閃身而過眨眼功夫便從評判席衝了向左邊的間隔"
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "唐家三少小組因為用具故障直接被抬離場了。",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "唐家三少小組因為用具故障直接被抬離場了。"
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "只是技術性調整，沒有人會在這次比賽中受到傷害",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "只是技術性調整，沒有人會在這次比賽中受到傷害。"
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "另外兩組可以直接進入第二階段",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "另外兩組可以直接進入第二階段。"
         },
         {
           "kind": "narration",
-          "text": "與此同時右邊間隔的咒罵聲越發起勁",
-          "presentation": {}
+          "text": "與此同時右邊間隔的咒罵聲越發起勁"
         },
         {
           "kind": "narration",
-          "text": "梗平只能大概聽到什麼券、什麼藝術、什麼家人呀犧牲呀",
-          "presentation": {}
+          "text": "梗平只能大概聽到什麼券、什麼藝術、什麼家人呀犧牲呀"
         },
         {
           "kind": "narration",
-          "text": "還有什麼指令呀之類的不明所以的東西",
-          "presentation": {}
+          "text": "還有什麼指令呀之類的不明所以的東西"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "相親相愛？看來只有內訌自爆的部分吧",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "相親相愛？看來只有內訌自爆的部分吧！",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1184,9 +998,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "呼，進度良好",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "呼，進度良好。",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1194,9 +1007,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "局勢大好呀，現在。已經完全沒有落敗的可能了",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "局勢大好呀，現在已經完全沒有落敗的可能了。",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1204,14 +1016,12 @@
         },
         {
           "kind": "narration",
-          "text": "時間已經到比賽的最後五分鐘",
-          "presentation": {}
+          "text": "時間已經到比賽最後的五分鐘"
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "現在只差刀刃淬火的一步，只要成功了就完成了！",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "現在只差刀刃淬火的一步，只要成功就完成了！",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1239,9 +1049,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "過來讓我看看，完成度也太高了吧！",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1255,9 +1064,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "最後一步就由在下來吧",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1265,59 +1073,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "畢竟在下什麼也沒有幫上忙，而且水淬之力我也不是沒有聽過",
-          "presentation": {},
-          "portrait": {
-            "code": 10,
-            "image": "keng_panic_portrait.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "士",
-          "text": "小心點，他還熱。最後一步就交給你了",
-          "presentation": {},
-          "portrait": {
-            "code": 20,
-            "image": "shirou_normal.png"
-          }
-        },
-        {
-          "kind": "narration",
-          "text": "梗平輕輕的把刀刃慢慢從尖端浸入水中，雙刀慢慢冷卻了下來硬化",
-          "presentation": {}
-        },
-        {
-          "kind": "narration",
-          "text": "水焠的過程不久，而士郎一眼便看出不幸地ㄧㄧ刀歪了",
-          "presentation": {}
-        },
-        {
-          "kind": "narration",
-          "text": "是由於兩邊不均勻的冷卻導致的，都是運氣的問題",
-          "presentation": {}
-        },
-        {
-          "kind": "narration",
-          "text": "完成的時候時間也剛好結束了",
-          "presentation": {}
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗",
-          "text": "怎麼辦好？這個可是比不上那把刀呀",
-          "presentation": {},
-          "portrait": {
-            "code": 10,
-            "image": "keng_panic_portrait.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗",
-          "text": "現在的時間也不夠再打一對刀出來",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1325,9 +1082,51 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "只能動用殺手鐧了嗎",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "小心點，他還沒降溫，最後一步就交給你了。",
+          "portrait": {
+            "code": 20,
+            "image": "shirou_normal.png"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "梗平輕輕的把刀刃慢慢從尖端浸入水中，雙刀慢慢冷卻硬化"
+        },
+        {
+          "kind": "narration",
+          "text": "水焠沒有花太多時間，士郎一眼便看出ㄧㄧ刀歪了"
+        },
+        {
+          "kind": "narration",
+          "text": "是由於兩邊不均勻的冷卻導致的，都是運氣的問題"
+        },
+        {
+          "kind": "narration",
+          "text": "完成的時候時間也剛好結束了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "怎麼辦好？這個可比不上那把刀！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "現在的時間也不夠再打一對刀出來呀！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "士郎",
+          "text": "只能動用殺手鐧了嗎？",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1335,9 +1134,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "接下來我將以紅色形態出擊！",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1345,9 +1143,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "啊？",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "啊？！",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1355,9 +1152,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "給我五...不，三分鐘！",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1365,20 +1161,17 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "那麼請第一組的代表出來吧",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "那麼請第一組的代表出來吧。"
         },
         {
           "kind": "narration",
-          "text": "蜘蛛巢相親相愛一家親的代表滿身傷痕，拿著一把日本武士刀出列",
-          "presentation": {}
+          "text": "蜘蛛巢相親相愛一家親的代表滿身傷痕，拿著一把日本武士郎刀出列"
         },
         {
           "kind": "dialogue",
           "speaker": "良秀",
           "text": "在下良秀",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_liangxiu.png"
@@ -1386,9 +1179,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "請蜘蛛巢相親相愛一家親小組的代表盡可能切開面前的豬肉，限時三分鐘",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "請蜘蛛巢相親相愛一家親小組的代表盡可能切開面前的豬肉，限時五分鐘。"
         },
         {
           "kind": "image.show",
@@ -1412,8 +1204,7 @@
         },
         {
           "kind": "narration",
-          "text": "良秀拔出了那把腰間的刀，透明的刀刃折射著背後的景色",
-          "presentation": {}
+          "text": "良秀拔出了那把腰間的刀，透明的刀刃折射著背後的景色"
         },
         {
           "kind": "image.hide",
@@ -1423,24 +1214,20 @@
         },
         {
           "kind": "narration",
-          "text": "一刀，豬肉一分為二，如同切牛油般被斬開",
-          "presentation": {}
+          "text": "一刀，豬肉一分為二，如同切牛油般被斬開"
         },
         {
           "kind": "narration",
-          "text": "又一刀，在豬肉下落之前又分成再兩份",
-          "presentation": {}
+          "text": "又一刀，在豬肉下落之前又分成再兩份"
         },
         {
           "kind": "narration",
-          "text": "三分鐘內無數的斬擊穿過豬肉，梗平不可置信的看着",
-          "presentation": {}
+          "text": "三分鐘內無數的斬擊穿過豬肉，梗平不可置信的看着"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "贏不了真的贏不了",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "贏不了，真的贏不了。",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1448,29 +1235,45 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "Trace On!",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
           }
         },
         {
-          "kind": "narration",
-          "text": "背後傳來一聲",
-          "presentation": {}
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "shirou_e01_cg.jpeg",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "narration",
-          "text": "梗平轉過頭去發現士郎的左臂發出淡淡藍光",
-          "presentation": {}
+          "text": "背後傳來一聲"
+        },
+        {
+          "kind": "narration",
+          "text": "梗平轉過頭去，發現士郎的左臂發出淡淡藍光"
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "\"I am the bone of my sword.\"",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1478,9 +1281,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "\"Steel is my body, and fire is my blood.\"",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1488,9 +1290,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "\"I have created over a thousand blades.\"",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1498,9 +1299,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "\"Unknown to Death,\"\"Nor known to Life.\"",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "\"Unknown to Death, nor known to Life.\"",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1508,9 +1308,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "\"Have withstood pain to create many weapons.\"",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1518,29 +1317,52 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "\"Yet, those hands will never hold anything.\"",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
           }
         },
         {
-          "kind": "dialogue",
-          "speaker": "梗",
-          "text": "你在做什麼呀！這是魔法嗎？",
-          "presentation": {},
-          "portrait": {
-            "code": 10,
-            "image": "keng_panic_portrait.png"
-          }
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "梗平",
+          "text": "你在做什麼？是魔法嗎？",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "shirou_e02_cg.jpeg",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "士郎",
           "text": "\"So as I pray, Unlimited Blade Works.\"",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1548,34 +1370,36 @@
         },
         {
           "kind": "narration",
-          "text": "隨後兩把比完美更完美的干將·莫邪從地上投影出來",
-          "presentation": {}
+          "text": "隨後兩把比完美更完美的干將·莫邪從地上投影出來"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "為什麼不一開始就用紅色形態呀！",
-          "presentation": {},
           "portrait": {
             "code": 10,
-            "image": "keng_panic_portrait.png"
+            "image": "keng_neutral_portrait.png"
           }
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "如果你能投影的話為什麼一開始還要打鐵呀！",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "如果你能投影的話, 為什麼一開始還要打鐵呀！",
           "portrait": {
             "code": 10,
-            "image": "keng_panic_portrait.png"
+            "image": "keng_neutral_portrait.png"
           }
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "不打鐵是不能體會到這種辛酸的，接下來就靠你了",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "不打鐵，是不能體會到這種辛酸的。接下來就靠你了...",
           "portrait": {
             "code": 20,
             "image": "shirou_normal.png"
@@ -1583,30 +1407,12 @@
         },
         {
           "kind": "narration",
-          "text": "士郎，倒下",
-          "presentation": {}
+          "text": "士郎，倒下"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "士！郎！明明有這麼方便的東西你不一早拿出來用做什麼呀！",
-          "presentation": {},
-          "portrait": {
-            "code": 10,
-            "image": "keng_panic_portrait.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "麻",
-          "text": "那麼第二組的代表出來吧",
-          "presentation": {}
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗",
-          "text": "是要時候開始表演了嗎？我的瘋狗刀法...",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "士郎！郎！明明有這麼方便的東西，你不一早拿出來用做什麼呀！？",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1614,15 +1420,27 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "不，只要你們能展現出這把刀能一刀切開豬肉，你們就贏了",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "那麼第二組的代表出來吧。"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
+          "text": "是要時候開始表演了嗎？我的瘋狗刀法！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_neutral_portrait.png"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "麻婆",
+          "text": "不，只要你們能展現出這把刀能一刀切開豬肉就贏了。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
           "text": "？",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1630,26 +1448,22 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "良秀的刀所斬過的食材似乎無法正常的食用以及烹飪並不能勝任作為廚刀",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "良秀的刀所斬過的食材，似乎無法正常的食用以及烹飪，並不能勝任作為廚刀。"
         },
         {
           "kind": "narration",
-          "text": "梗平輕輕一劃，豬肉被切開了",
-          "presentation": {}
+          "text": "梗平輕輕一劃，豬肉被切開了"
         },
         {
           "kind": "dialogue",
-          "speaker": "麻",
-          "text": "那麼你就是優勝者了，恭喜",
-          "presentation": {}
+          "speaker": "麻婆",
+          "text": "那麼你就是優勝者了，恭喜。"
         },
         {
           "kind": "dialogue",
           "speaker": "東方不敗",
-          "text": "恭喜",
-          "presentation": {},
+          "text": "恭喜。",
           "portrait": {
             "code": 20,
             "image": "shirou_shisho.png"
@@ -1658,8 +1472,7 @@
         {
           "kind": "dialogue",
           "speaker": "唐三",
-          "text": "恭喜",
-          "presentation": {},
+          "text": "恭喜！",
           "portrait": {
             "code": 20,
             "image": "shirou_tangsan.png"
@@ -1668,8 +1481,7 @@
         {
           "kind": "dialogue",
           "speaker": "良秀",
-          "text": "恭喜",
-          "presentation": {},
+          "text": "恭喜！",
           "portrait": {
             "code": 20,
             "image": "shirou_liangxiu.png"
@@ -1677,13 +1489,11 @@
         },
         {
           "kind": "narration",
-          "text": "大家拍著手圍著梗平，看來直到大家都力竭之前他會在眾人的擁戴下不能離去",
-          "presentation": {}
+          "text": "大家拍著手圍著梗平，看來直到大家都力竭之前，都會在眾人的擁戴下不能離去"
         },
         {
           "kind": "narration",
-          "text": "而倒下的士郎在之後也被送往醫院",
-          "presentation": {}
+          "text": "而倒下的士郎在之後也被送往醫院"
         },
         {
           "kind": "akiba.event.complete",
@@ -1753,23 +1563,17 @@
           }
         },
         {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_mapo_shop.png",
-          "opacity": 1,
-          "time": 0
+          "kind": "narration",
+          "text": "在一段時間後之後，士郎終於能出院了"
         },
         {
-          "kind": "narration",
-          "text": "在一段時間後之後，士郎終於能出院了",
-          "presentation": {}
+          "kind": "comment",
+          "text": "【下面那句話開始，士郎的立繪切換為士郎(後日談)】"
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "其實不是大問題啦，只是背部肌肉移位了 2 公分而已。",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_later.png"
@@ -1777,19 +1581,17 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "肌肉移位兩公分還叫沒大問題！？你這傢伙根本是鐵打的吧！",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "肌肉移位兩公分還叫沒大問題！？你這傢伙根本是打鐵的吧！",
           "portrait": {
             "code": 10,
-            "image": "keng_panic_portrait.png"
+            "image": "keng_neutral_portrait.png"
           }
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "不過話說回來，你出院得剛好，看看這個！",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1797,19 +1599,16 @@
         },
         {
           "kind": "narration",
-          "text": "梗平神秘兮兮地從背後拖出一個沉甸甸的大包裹",
-          "presentation": {}
+          "text": "梗平神秘兮兮地從背後拖出一個沉甸甸的大包裹"
         },
         {
           "kind": "narration",
-          "text": "一把大得能直接把人蓋進去、亮得能當鏡子照的夢幻『WOK』炒鍋，赫然出現在士郎面前",
-          "presentation": {}
+          "text": "一把大得能直接把人蓋進去、亮得能當鏡子照的夢幻『WOK』炒鍋，赫然出現在士郎面前"
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "這就是...冠軍獎品？你真的把它們全都拿到了？",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_later.png"
@@ -1817,9 +1616,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "那當然！本大爺當天可是頂著無數人的掌聲",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "那當然！本大爺當天可是頂著無數人的掌聲...",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1827,9 +1625,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "(還有那個被抬走的唐三和滿身是傷的良秀的死亡凝視)，硬是把這寶貝搬回來的！",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1837,14 +1634,12 @@
         },
         {
           "kind": "narration",
-          "text": "梗平拍了拍包裹，隨後眼神一轉，搭上士郎的肩膀",
-          "presentation": {}
+          "text": "梗平拍了拍包裹，隨後眼神一轉，搭上士郎的肩膀"
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "不過比起打鐵和炒菜，本大爺現在有個更宏大的計畫！",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1852,9 +1647,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "我想组一個樂隊進行『Global Live』全球巡迴直播，現在萬事俱備，你要不要也來當個鼓手？",
-          "presentation": {},
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1862,9 +1656,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
+          "speaker": "士郎",
           "text": "鼓手？可我完全不會打鼓啊...",
-          "presentation": {},
           "portrait": {
             "code": 20,
             "image": "shirou_later.png"
@@ -1872,9 +1665,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
-          "text": "少來了！你那打鐵的速度、精準度，還有那種能把鋼材捶到完美的節奏感，天生就是打鼓的料！再說了，你不是連Trace On magic都能用嗎？",
-          "presentation": {},
+          "speaker": "梗平",
+          "text": "少來了！你那打鐵的速度、精準度，還有那種能把鋼材捶到完美的節奏感，天生就是打鼓的料！再說了，你不是連Trace On Magic都能用嗎？",
           "portrait": {
             "code": 10,
             "image": "keng_neutral_portrait.png"
@@ -1882,29 +1674,25 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "區區兩根鼓棒算什麼！",
-          "presentation": {},
           "portrait": {
             "code": 10,
-            "image": "keng_panic_portrait.png"
+            "image": "keng_neutral_portrait.png"
           }
         },
         {
           "kind": "narration",
-          "text": "...",
-          "presentation": {}
+          "text": "..."
         },
         {
           "kind": "narration",
-          "text": "士郎看著梗平熱烈又期待的眼神，無奈地揉了揉肩膀，嘴角微微揚起",
-          "presentation": {}
+          "text": "士郎看著梗平熱烈又期待的眼神，無奈地揉了揉肩膀，嘴角微微揚起"
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "...真是拿你沒辦法。先說好，如果節奏亂了",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "...真是拿你沒辦法。先說好，如果節奏亂了。",
           "portrait": {
             "code": 20,
             "image": "shirou_later.png"
@@ -1912,9 +1700,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "士",
-          "text": "可別怪我用『投影魔術』變出一整套爵士鼓來砸你",
-          "presentation": {},
+          "speaker": "士郎",
+          "text": "可別怪我用『投影魔術』變出一整套爵士郎鼓來砸你。",
           "portrait": {
             "code": 20,
             "image": "shirou_later.png"
@@ -1922,23 +1709,20 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "梗",
+          "speaker": "梗平",
           "text": "哈哈！這才是我認識的士郎！走，帶你去練團室！",
-          "presentation": {},
           "portrait": {
             "code": 10,
-            "image": "keng_smile_portrait.png"
+            "image": "keng_neutral_portrait.png"
           }
         },
         {
           "kind": "narration",
-          "text": "陽光穿透醫院後門，昔日響徹街道的敲打金屬聲",
-          "presentation": {}
+          "text": "陽光穿透醫院後門，昔日響徹街道的敲打金屬聲"
         },
         {
           "kind": "narration",
-          "text": "如今在兩人的笑聲中，悄然化作了前往世界舞台的全新節奏",
-          "presentation": {}
+          "text": "如今在兩人的笑聲中，悄然化作了前往世界舞台的全新節奏"
         },
         {
           "kind": "akiba.event.complete",

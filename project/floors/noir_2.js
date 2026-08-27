@@ -310,12 +310,12 @@ main.floors.noir_2=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        "隔日，梗平早早就來到後巷。",
-        "鋼琴的投影在空氣中浮現，NoiR的身影隨之出現。",
+        "隔日，梗平早早就來到後巷",
+        "鋼琴的投影在空氣中浮現，NoiR的身影隨之出現",
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -323,7 +323,7 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]哎呀，這裡怎麼突然冒出個幽靈啊？",
+        "\t[梗平]呀！這裡怎麼突然冒出個幽靈啊？",
         {
             "type": "hideImage",
             "code": 10,
@@ -332,7 +332,7 @@ main.floors.noir_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "noir_surprised.png",
+            "image": "noir_normal.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -340,10 +340,28 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]呀！你——你怎麼在這裡！（猛地一顫）",
+        "\t[NoiR]呀！你——你怎麼在這裡！",
         {
             "type": "hideImage",
             "code": 20,
+            "time": 0
+        },
+        "兩人都因為意料之外的場景嚇了一跳",
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]不是你約在下在這邊等的嗎？",
+        {
+            "type": "hideImage",
+            "code": 10,
             "time": 0
         },
         {
@@ -357,24 +375,7 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]不是你約我在這邊等的嗎？",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]但是想不到居然能看見這麼珍貴的場面",
+        "\t[梗平]但是想不到居然能看見這麼珍貴的場面。",
         {
             "type": "hideImage",
             "code": 10,
@@ -383,7 +384,7 @@ main.floors.noir_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "noir_surprised.png",
+            "image": "noir_normal.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -391,7 +392,7 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]真是的...你這個膽小鬼居然敢反擊。（鼓起臉頰）",
+        "\t[NoiR]真是的...你這個膽小鬼居然敢反擊[鼓起臉頰]",
         {
             "type": "hideImage",
             "code": 20,
@@ -425,17 +426,17 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]算了...既然你都來了，就坐下來聽吧。",
+        "\t[NoiR]算了...既然你都來了，就坐下來聽吧。",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
-        "（梗平靜靜聆聽，心裡突然冒出一個念頭。）",
+        "梗平靜靜聆聽，心裡突然冒出一個念頭",
         {
             "type": "showImage",
             "code": 20,
-            "image": "noir_sad.png",
+            "image": "noir_normal.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -443,13 +444,13 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]有你在，好像不那麼孤單了。",
+        "\t[NoiR]有你在，好像不那麼孤單了。",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
-        "梗平突然想起什麼，眼神閃爍。",
+        "梗平突然想起什麼，眼神閃爍",
         {
             "type": "showImage",
             "code": 10,
@@ -478,7 +479,7 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]動漫OP嗎？雖然有點不同，但如果你有樂譜的話我可以試試。",
+        "\t[NoiR]動漫OP嗎？雖然有點不同，但如果你有樂譜的話我可以試試。",
         {
             "type": "hideImage",
             "code": 20,
@@ -495,7 +496,7 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（在網上找了樂譜）",
+        "\t[梗平][在網上找了樂譜]",
         {
             "type": "hideImage",
             "code": 10,
@@ -512,12 +513,13 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]這個聽起來是個有點傷心的故事呢（看着琴譜）",
+        "\t[NoiR]這個聽起來是個有點傷心的故事呢。",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
+        "NoiR看着琴譜歪著頭說道，梗平輕輕點了頭回應",
         {
             "type": "showImage",
             "code": 10,
@@ -529,51 +531,34 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]（輕輕點了頭）",
+        "\t[梗平]如果這樣會破壞了你的心情的話就算了吧。",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "noir_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[NoiR]不會，但是這次我是第一次彈別人所喜歡的歌曲，彈得不好可不要笑話我。[苦笑]",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "NoiR的指尖落下，熟悉的旋律在後巷響起，帶着一種奇妙的溫暖",
         {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]如果這樣會破壞了你的心情的話就算了吧",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_smile.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]不會，但是這次我是第一次彈別人所喜歡的歌曲，彈得不好可不要笑話我（苦笑）",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        "（NoiR的指尖落下，熟悉的旋律在後巷響起，帶着一種奇妙的溫暖。）",
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_angry_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -598,7 +583,7 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]音樂就是這樣吧，能讓人心裡亮起燈火。",
+        "\t[NoiR]音樂就是這樣，能讓人心裡亮起燈火。",
         {
             "type": "hideImage",
             "code": 20,
@@ -615,7 +600,7 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]也是能夠連接眾人的扭帶，不論語言不論國籍。",
+        "\t[NoiR]也是能夠連接眾人的扭帶，不論語言，不論國籍。",
         {
             "type": "hideImage",
             "code": 20,
@@ -632,7 +617,7 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]所以我想用更多人聽見我的音樂（稍為露出了失望的表情）",
+        "\t[NoiR]所以我想用更多人聽見我的音樂[稍為露出了失望的表情]",
         {
             "type": "hideImage",
             "code": 20,
@@ -649,12 +634,13 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]那個...我這段時間都可以繼續過來陪你。",
+        "\t[梗平]那個...在下這段時間都可以繼續過來陪你。",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
+        "NoiR瞬間眼前一亮",
         {
             "type": "showImage",
             "code": 20,
@@ -666,24 +652,7 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]（眼前一亮）",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_surprised.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]有什麼想聽的歌我都會盡量滿足你的，畢竟你可是我的專屬聽眾",
+        "\t[NoiR]有什麼想聽的歌我都會盡量滿足你的，畢竟你可是我的專屬聽眾。",
         {
             "type": "hideImage",
             "code": 20,
@@ -700,29 +669,13 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]那麼請做好心理準備了",
+        "\t[梗平]那麼請做好心理準備了。",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗平]（拿出近五千首收藏的歌單逐一介紹）",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
+        "梗平拿出近五千首收藏的假面騎士歌單逐一介紹，對面的少女目光逐漸呆滯",
         {
             "type": "showImage",
             "code": 20,
@@ -734,24 +687,7 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[N]（呆.png）",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]時候差不多了，明天...還會來嗎？",
+        "\t[NoiR]時候差不多了，明天...還會來嗎？",
         {
             "type": "hideImage",
             "code": 20,
@@ -768,29 +704,13 @@ main.floors.noir_2=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗平]當然會，至少在這段時間我一直都在",
+        "\t[梗平]當然會。至少這段時間，在下一直都在。",
         {
             "type": "hideImage",
             "code": 10,
             "time": 0
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "noir_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[N]（臉紅）",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
+        "梗平揮手告別，NoiR的臉也泛起了紅暈",
         "...",
         {
             "type": "function",

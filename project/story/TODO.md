@@ -40,11 +40,15 @@
 
 ## 待補劇情
 
-- Open: `noir-source-ir-hash-drift`
+- Resolved: `noir-source-ir-hash-drift`
   - Scope: `project/story/NoiR.txt`、`project/story-ir/character/noir.json` 及對應 `noir_1`～`noir_4` floor。
-  - Current: `node scripts/validate_story_source.js` 顯示來源內容 SHA-256 與 Story IR 不一致；本次未修改權威來源或反向猜測 IR。
-  - Done when: 依完整、可確認的來源內容完成來源核對與 Story IR／floor 原子更新，或以完整新來源整檔覆蓋後同步更新。
-  - Evidence: `.codex/task-questions/20260827-214029-background-dimension-validator.md` Q2；目前維持 open。
+  - Current: 已依外部來源 commit `4a13f5088e43ad4acda297dc49b23f9f230fa8f4` 完整核對來源，並將來源 SHA-256 `6f11bfdfb6afa39554d755ee28005a10a52a195d28ef7d579ab4fa85e376411a` 同步至 IR；未修改權威來源。
+  - Evidence: `.codex/task-questions/20260828-015230-story-update-4a13-000058.md` Q1；`node scripts/validate_story.js` 通過。
+
+- Resolved: `shirou-source-ir-hash-drift`
+  - Scope: `project/story/鍛刀大賽.txt`、`project/story-ir/character/shirou.json` 及對應 `shirou_1`～`shirou_4` floor。
+  - Current: 已依外部來源 commit `000058731d9569484dcf097ce8705cac03d8ab4d` 完整核對來源，並將來源 SHA-256 `8c303a5aec5be472136b96301da181f06d386554086dbec51b2cee1206668263` 同步至 IR；未修改權威來源。
+  - Evidence: `.codex/task-questions/20260828-015230-story-update-4a13-000058.md` Q1；`node scripts/validate_story.js` 通過。
 
 - `huangmo_1`／`huangmo_2` runtime floor 與 Akiba 入口已依使用者指示移除；權威來源與既有 Story IR 保留作歷史追溯，未自動改寫 IR。
 

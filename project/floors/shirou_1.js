@@ -297,13 +297,6 @@ main.floors.shirou_1=
             "letterSpacing": 0,
             "animateTime": 120
         },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_mapo_shop.png",
-            "opacity": 1,
-            "time": 0
-        },
         "經過中華料理店時，被一陣鏗鏘聲吸引",
         "棄爐灶旁蹲著一位紅髮少年",
         {
@@ -317,7 +310,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]在中華料理店後門當街打鐵？",
+        "\t[梗平]在中華料理店後門當街打鐵？",
         {
             "type": "hideImage",
             "code": 10,
@@ -334,7 +327,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]...啊！",
+        "\t[士郎]...啊！",
         {
             "type": "hideImage",
             "code": 20,
@@ -351,7 +344,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]抱歉嚇到你了，我是士郎。",
+        "\t[士郎]抱歉嚇到你了，我是士郎。",
         {
             "type": "hideImage",
             "code": 20,
@@ -368,7 +361,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]你這是在煉銅打鋼還是準備切菜啊？",
+        "\t[梗平]你這是在煉銅打鋼還是準備切菜啊？",
         {
             "type": "hideImage",
             "code": 10,
@@ -386,17 +379,17 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]你看後門牆上這張海報",
+        "\t[士郎]你看後門牆上這張海報。",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
-        "海報寫著『第一屆中華料理店廚刀鍛造大賽』。",
+        "海報寫著『第一屆中華料理店廚刀鍛造大賽』",
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_panic_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -404,7 +397,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]中華料理店自己舉辦鍛刀大賽！？這活動名稱聽起來就充滿槽點啊！",
+        "\t[梗平]中華料理店自己舉辦鍛刀大賽！？這活動名稱聽起來就充滿槽點啊！",
         {
             "type": "hideImage",
             "code": 10,
@@ -421,7 +414,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]冠軍獎品是夢幻級的『WOK』與稀有隕鐵鋼材。",
+        "\t[士郎]冠軍獎品是夢幻級的『WOK』與稀有隕鐵鋼材。",
         {
             "type": "hideImage",
             "code": 20,
@@ -438,7 +431,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]但大賽規定一定要兩人組隊參賽，既然你來了就剛好過來幫幫忙吧。",
+        "\t[士郎]但大賽規定一定要至少兩人組隊參賽，既然你來了就剛好過來幫幫忙吧。",
         {
             "type": "hideImage",
             "code": 20,
@@ -455,7 +448,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]只要來個過場就好了",
+        "\t[士郎]只要來個過場就好了。",
         {
             "type": "hideImage",
             "code": 20,
@@ -472,7 +465,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]兩人組隊？難怪你蹲在這裡發愁。",
+        "\t[梗平]至少兩人組隊？難怪你蹲在這裡發愁。",
         {
             "type": "hideImage",
             "code": 10,
@@ -489,7 +482,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]求求你了，如果沒有那個『WOK』的話，瓦搭西！",
+        "\t[士郎]求求你了，如果沒有那個『WOK』的話，瓦搭西！",
         {
             "type": "hideImage",
             "code": 20,
@@ -507,7 +500,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]那個鋼材一定能賣到好價錢，贏到的話那個給你。",
+        "\t[士郎]那個鋼材一定能賣到好價錢，贏的話那個給你！",
         {
             "type": "hideImage",
             "code": 20,
@@ -524,58 +517,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]你想怎樣用也沒有問題。",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_smile_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[梗]既然你缺一個搞笑...啊不，熱血副手，在下就陪你玩一把吧！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "shirou_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[士]真的嗎？太感謝你了，梗平！我剛好缺一個值得信任的搭檔。",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "shirou_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[士]你對火候掌控或風箱操作有了解嗎？",
+        "\t[士郎]你想怎樣用也沒有問題！",
         {
             "type": "hideImage",
             "code": 20,
@@ -592,7 +534,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]完全不懂！不過要我加油打氣，這無疑令人振奮的",
+        "\t[梗平]既然你缺一個搞笑...啊不，熱血副手，在下就陪你玩一把吧！",
         {
             "type": "hideImage",
             "code": 10,
@@ -609,7 +551,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]哈哈，有熱情就足夠了！",
+        "\t[士郎]真的嗎？太感謝你了，梗平！我剛好缺一個值得信任的搭檔。",
         {
             "type": "hideImage",
             "code": 20,
@@ -626,7 +568,7 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[士]那我們約好在比賽那天就在這邊等吧，請多指教！",
+        "\t[士郎]你對火候掌控或風箱操作有了解嗎？",
         {
             "type": "hideImage",
             "code": 20,
@@ -635,7 +577,7 @@ main.floors.shirou_1=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_smile_portrait.png",
+            "image": "keng_neutral_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -643,7 +585,58 @@ main.floors.shirou_1=
             "opacity": 1,
             "time": 0
         },
-        "\t[梗]沒問題，在下一定準時到場，不會掉鏈子的！",
+        "\t[梗平]完全不懂！不過要我加油打氣，這無疑令人振奮的！",
+        {
+            "type": "hideImage",
+            "code": 10,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "shirou_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[士郎]啊哈哈，有熱情就足夠了！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "shirou_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[士郎]那我們約好在比賽那天就在這邊等吧，請多指教！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 10,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[梗平]沒問題，在下一定準時到場，不掉鏈子！",
         {
             "type": "hideImage",
             "code": 10,
