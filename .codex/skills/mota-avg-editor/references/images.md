@@ -5,6 +5,14 @@
 - 本專案禁止使用 ComfyUI 生成、重生成或驗收角色立繪；不得啟動、接入或以 `127.0.0.1:8188` 作為角色美術生成後端。
 - 本專案既有支線角色的六表情生成路徑是 `anime-expression-grid` → 內建 `imagegen`；這不是 ComfyUI，也不要求本機生成後端。主線角色立繪應沿用同一條路徑，除非使用者另行指定其他工具。
 
+## 立繪去背 GPU 執行規則
+
+- 本機已確認可以使用 GPU 執行 `remove_bk.py` 的 `isnet-anime` 去背；立繪去背一律使用 `CUDAExecutionProvider`，禁止改用 `CPUExecutionProvider` 產出任何 runtime 素材。若 CUDA 初始化失敗，該批次必須停止並回報，不能用 CPU 繞過問題。
+- GPU 初始化最容易卡關的位置是 ONNX Runtime 建立 session 前後的 CUDA 相依 DLL 載入，尤其是 CUDA／cuBLAS／cuDNN DLL 未在程序搜尋路徑時。症狀包括 `CUDAExecutionProvider` 建立失敗、缺少 DLL 的錯誤、第一張圖長時間無輸出，或 session provider 沒有列出 CUDA。
+- 本機已驗證可用的 CUDA DLL 位置是 `D:\coding\ai-models\ComfyUI\app\.venv\Lib\site-packages\torch\lib`。執行 `remove_bk.py` 時使用 `--cuda-dll-directory` 指向該目錄；程式會先加入 DLL 搜尋路徑並 preload DLL，再建立只使用 CUDA 的 session。
+- 每次批次開始前都要確認 `ort.get_available_providers()` 包含 `CUDAExecutionProvider`，且建立後的 session provider 以 `CUDAExecutionProvider` 為唯一執行 provider。若檢查不通過，視為環境初始化問題，先修正 DLL／驅動／provider，不得降級到 CPU。
+- `remove_bk.py` 的 GPU 去背是必要流程，不是可選優化；不得因 CUDA 啟動較慢、缺 DLL 或 provider 初始化失敗而改用 CPU 去背。可採取的解法只有補正既有 CUDA DLL 搜尋路徑、preload DLL、確認 GPU／驅動與 ONNX Runtime GPU 安裝，然後重新執行。
+
 ## 劇情需求驅動與圖片使用閉環
 
 所有涉及圖片的新增與更新都必須由劇情需求驅動，不限 ZIP 流程。固定順序是：完整理解使用者需求與權威劇情來源、建立標示人物／背景／道具／CG 的 draft Story IR／scene 視覺需求、依需求從既有或輸入圖片的檔名與內容配對素材、直接接入或生成所需素材，最後才把會被 runtime 使用的圖片放入 `project/images/`。不得先依手邊圖片決定劇情演出，也不得先整批複製圖片到 `project/images/` 再尋找用途。
@@ -205,7 +213,7 @@ visiblePortraitY = portraitBottomY - visibleSourceHeight * portraitScale
 
 ```powershell
 python split_emotion_image.py tmp/character-story-import/<zip>/art/角色.png --keep-original
-python remove_bk.py tmp/character-story-import/<zip>/art/角色_smile.png tmp/character-story-import/<zip>/art/角色_smile_transparent.png
+python remove_bk.py tmp/character-story-import/<zip>/art/角色_smile.png tmp/character-story-import/<zip>/art/角色_smile_transparent.png --cuda-dll-directory "D:\coding\ai-models\ComfyUI\app\.venv\Lib\site-packages\torch\lib"
 # 其餘 angry／sad／surprised／panic／normal 同樣逐張去背
 ```
 

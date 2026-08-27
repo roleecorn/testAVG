@@ -58,8 +58,15 @@ def get_session(cuda_dll_directory: str | None = None) -> tuple[object, list[str
     sess_opts.graph_optimization_level = ort.GraphOptimizationLevel.ORT_DISABLE_ALL
     sess_opts.intra_op_num_threads = 4
     sess_opts.inter_op_num_threads = 1
+    # Do not silently place unsupported model nodes on the CPU provider.
+    # The provider list may still display ORT's built-in CPU provider, but CPU
+    # execution must be disabled for this GPU-only asset pipeline.
+    sess_opts.add_session_config_entry("session.disable_cpu_ep_fallback", "1")
 
-    requested = ["CUDAExecutionProvider", "CPUExecutionProvider"]
+    # This host has a working GPU path. CPU fallback is forbidden for portrait
+    # background removal because it can silently produce a CPU result after a
+    # CUDA DLL/provider initialization problem.
+    requested = ["CUDAExecutionProvider"]
     _SESSION = new_session(
         MODEL_NAME,
         sess_opts=sess_opts,
@@ -67,9 +74,9 @@ def get_session(cuda_dll_directory: str | None = None) -> tuple[object, list[str
     )
     _SESSION_PROVIDERS = list(_SESSION.inner_session.get_providers())
 
-    if "CUDAExecutionProvider" not in _SESSION_PROVIDERS:
+    if not _SESSION_PROVIDERS or _SESSION_PROVIDERS[0] != "CUDAExecutionProvider":
         raise RuntimeError(
-            "isnet-anime session did not initialize CUDA. "
+            "isnet-anime session did not initialize CUDA as the primary provider. "
             f"Session providers: {_SESSION_PROVIDERS}"
         )
 
