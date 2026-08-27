@@ -27,6 +27,12 @@
 
 ## 待補素材
 
+- Open: `main-story-ch7-5-moon-surface-cg`
+  - Scope: `project/mainStory/CH7` CH7-5 `【CG：畫面拉遠到月球表面】`、`project/story-ir/main/CH7.json`、`project/floors/main_ch7_5.js`。
+  - Current: 目前引用 `project/images/scene_mapo_cg.png` 作為可玩的暫代圖；repository 沒有可確認為月球表面的正式 CG，該檔為 416×416 且語意不符。
+  - Done when: 提供或確認正式月球表面 CG，接入 `project/images/`、`project/data.js`、Story IR／floor，並完成 16:11 面板裁切與 `node scripts/validate_story.js`。
+  - Evidence: `.codex/task-questions/20260827-210841-mainline-background-size-and-moon-cg.md` Q1；目前維持 open。
+
 - `BGM-20260822T150228Z-1-001.zip` 內四首 BGM 已接入來源指令，但 ZIP 未附原曲／作者／授權資訊；請補充授權以完成公開發行追溯，詳見 `.codex/task-questions/20260822-231945-bgm-zip-import.md`。
 
 - BGM 映射已確認：`CH3 3-1 春日影 → BGMHaru.mp3`、`CH3 3-3 鐵達尼號 → BGMWhisper.mp3`、`CH6 6-4 ED1用 → BGMED1.mp3`、`CH7 7-5 關羽之歌 → BGMKanu.mp3`；原始 TODO 保留作來源追溯，詳見 `.codex/task-questions/20260824-221212-bgm-mapping-candidates.md`。
