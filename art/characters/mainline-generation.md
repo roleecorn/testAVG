@@ -1,6 +1,6 @@
 # 主線角色立繪生成追溯
 
-- 日期：2026-08-26～2026-08-27（Asia/Taipei）
+- 日期：2026-08-26～2026-08-28（Asia/Taipei）
 - 權威角色清單：`project/mainStory/CH1`～`CH7`
 - 角色參考來源：`主線用角色參考/`
 - 生成工具：Codex 內建 `imagegen`
@@ -39,10 +39,11 @@
 | 慧慧.jpg | `huihui/`（對應主線角色「惠惠」；使用者已確認） |
 | 來島橙.png | `laidao_cheng/`（對應主線角色「來島澄」；使用者已確認） |
 | 面具廚師.png | `liyan/`（對應主線角色「李嚴」；使用者已確認） |
+| 表妹.jfif | `suou/`（對應主線角色「表妹」；使用者於 2026-08-28 指定） |
 
 ## 暫停項目與既有映射備註
 
-- 未生成：梗平 base、表妹；參考圖缺失。
+- 未生成：梗平 base；仍缺少正式參考圖。
 - 已完成：惠惠、來島澄、李嚴；三組參考圖對應關係已由使用者確認，並已生成、拆分、以 `rembg/isnet-anime` GPU 去背及接入主線。
 - 尚未生成：梗平 base、表妹；參考圖仍缺少。
 - 肥宅群組保留既有 IR／runtime 檔名；現有主線 IR 存在 `ms_portrait_otaku_a_normal.png`、`ms_portrait_otaku_b_normal.png` 的跨角色共用映射。本次只替換檔案內容，未自行修改 IR 或重生 floor；若要拆成角色專用檔名，需另行確認語意後走 IR → validator → generator 流程。
@@ -69,3 +70,11 @@
 - `huihui/`、`laidao_cheng/`、`liyan/` 各生成一張 2×3 六表情母片，格位順序為 `smile`、`angry`、`sad`、`surprised`、`panic`、`normal`。
 - 三組各 6 張切分圖均以 `remove_bk.py` 的 `rembg/isnet-anime` GPU 流程輸出 RGBA PNG；六表情成品完整保留於 `art/characters/<id>/`。
 - 主線使用位置依權威來源／現有 Story IR 確認：李嚴 1 個普通對話節點（CH1）、來島澄 22 個（CH3）、惠惠 25 個（CH7）；已依語意使用 `normal`、`smile`、`angry`、`sad`、`surprised`、`panic`，實際引用的 12 張檔案寫入 `project/images/ms_portrait_<id>_<expression>.png` 並登錄 `main.images`。
+
+## 表妹補生成（2026-08-28）
+
+- 角色參考：`主線用角色參考/表妹.jfif`，JPEG、1024×1024，SHA-256：`b23d9678494d3bbaccb9593136cc40a1cd1d7ca6368597da3daaa7f7b9e67da7`。三視圖設定表用於鎖定短鮑伯髮、後側長辮、白色護頸、紫色外套、雙層橘裙、黑褲襪與白靴；設定表文字與武器不進立繪。
+- 生成母片：`art/characters/suou/suou_expression_sheet.png`，1024×1536 RGB、SHA-256：`854e899ee99d37759b523058fe1d7f621f1acfd5cb634aa6640ce61c894806bd`。以 `anime-expression-grid` 生成，格位為 `smile`、`angry`、`sad`、`surprised`、`panic`、`normal`。
+- 後處理：`split_emotion_image.py` 使用綠幕 gutter 偵測切割；`remove_bk.py` 使用 `isnet-anime`，ONNX session 以 `CUDAExecutionProvider` 為首，輸出六張 RGBA PNG。透明度驗證：`validate_png_alpha.py` 六張均通過。
+- runtime 替換：保留既有 `suou_*_portrait.png` 檔名與 Story IR／floor／`main.images` 引用；`normal→suou_happy_portrait.png`、`panic→suou_goofy_portrait.png`，其餘依表情同名。輸出與原檔備份見 `work/mainline-portrait-update-20260828-004505/`。
+- 新 runtime SHA-256：`suou_happy_portrait.png` `bd58f2482b23161e5b5a0dbbacbc12c73c80b41681973f77930095f54c1342c0`；`suou_angry_portrait.png` `28dbc5b333909ff790957f76b958a042bbe42e7bce3b75d9dc1aef95286fe929`；`suou_sad_portrait.png` `117aa7b7359d6fdf004129f0a408b32a202fbea89b2ed144ee30c56a0b881fd9`；`suou_surprised_portrait.png` `3cdc7480b03e676094fac3fd736b2bf37f7b5cea1c3eb722e51a5d31703e6b38`；`suou_goofy_portrait.png` `43d8f50d78e3946896ec3656f807b48702e98baecfbeda34090ff0c04d47b721`；`suou_smile_portrait.png` `8cba4e3ca7ecc1b2eaddbbc64c1c5cf0fa9e3db9483003e83f4a6d42e6f3872d`。
