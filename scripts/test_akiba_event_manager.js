@@ -149,6 +149,38 @@ function testCharacterExchangeDefaultsToTwoEvents() {
   assert.equal(core.actions.at(-1).floorId, "Akiba");
 }
 
+function testCharacterExchangeRestartsAfterTimelineJump() {
+  const { core, plugin } = createPlugin({
+    mainline_exchange_active: true,
+    mainline_exchange_count: 0,
+    mainline_exchange_target: 2,
+    mainline_exchange_destination: {
+      floorId: "main_ch2_4_exchange_1",
+      loc: [6, 10],
+      direction: "up",
+      time: 500,
+    },
+  }, ["main_ch3_1_exchange_1"]);
+
+  assert.equal(plugin.beginCharacterExchange({
+    floorId: "main_ch3_1_exchange_1",
+    loc: [6, 10],
+    direction: "up",
+    time: 500,
+  }), true);
+  assert.equal(core.flags.mainline_exchange_active, true);
+  assert.equal(core.flags.mainline_exchange_count, 0);
+  assert.equal(core.flags.mainline_exchange_target, 2);
+  assert.deepEqual(core.flags.mainline_exchange_destination, {
+    floorId: "main_ch3_1_exchange_1",
+    loc: [6, 10],
+    direction: "up",
+    time: 500,
+    transitionVideo: false,
+  });
+  assert.equal(core.actions.at(-1).floorId, "Akiba");
+}
+
 function testIdleClockRestoresOrContinues() {
   const { core, plugin } = createPlugin({
     akiba_event_state_initialized: true,
@@ -509,6 +541,7 @@ testVersionMigrationPreservesProgress();
 testVersionMigrationAppliesLocationOverrides();
 testCompletionCountsOnlyOnce();
 testCharacterExchangeDefaultsToTwoEvents();
+testCharacterExchangeRestartsAfterTimelineJump();
 testIdleClockRestoresOrContinues();
 testIdleClockDoesNotAdvanceOutsideExchange();
 testEveryRegularLocationHasMiniGame();
