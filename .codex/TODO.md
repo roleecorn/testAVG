@@ -4,6 +4,7 @@
 
 ## Open
 
+- `20260827-220503-replay-fast-forward-stall.md` Q1：錄像回放 x24 快進存在可重入路徑；`libs/control.js` 的同步移動回呼會直接進入下一步，`project/functions.js` → `libs/events.js` 的 `core.trigger` 又會對同一回呼排程延遲重入，可能造成 replay 動作被重複消費、移動被 `heroMoving` 直接略過或同步遞迴卡死。需在取得 runtime 變更授權後加入單一完成回呼／replay re-entry 防護，並用實際 `.h5route` 驗證。
 - `priority-1-agent-owned-story-ir-and-todo-maintenance`
   - Scope: `scripts/generate_main_story.js`、`scripts/manage_story_ir.js`、`scripts/story_ir.js`、`project/story-ir/`、`project/mainStory/TODO.md`、`project/story/TODO.md`
   - Requirement: Story IR 初版與後續更新由 Agent 依來源語意與 Git log 建立／維護；生成器只負責通用驗證、正規化與 floor emitter，不得硬編劇情語意或重建／覆寫 TODO。
@@ -12,6 +13,7 @@
 - `20260823-023000-main-shared-portrait-resolver.md` Q1：`project/timeline.json` 仍因 `EPERM` 無法由主線 generator 更新；解除檔案鎖定／ACL 後重新產生並驗證。
 - `20260823-023000-main-shared-portrait-resolver.md` Q2：東山 source → Story IR 情緒決策表仍待修復；目前不在 emitter 階段用函數或文字 regex 猜測情緒。
 - `20260827-004750-mainline-portrait-validation.md` Q1：`node scripts/validate_story.js` 仍在既有 CH1 offset 786 與 CH2 offset 2404 的來源↔IR 文字對位檢查失敗；本次三角色立繪專項檢查與生成器檢查已通過，需另行核對並修復對應 Story IR／floor。
+- `20260827-234300-portrait-update.md` Q3：`node scripts/validate_story.js` 在既有 `project/story/NoiR.txt` 與 `project/story-ir/character/noir.json` SHA-256 不一致處停止；本次立繪替換未修改該來源或 IR，需另案依完整來源重新核對。
 
 ## Resolved
 
