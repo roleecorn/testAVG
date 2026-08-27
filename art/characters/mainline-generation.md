@@ -7,6 +7,7 @@
 - 專案流程：`anime-expression-grid`；固定使用 `.codex/skills/anime-expression-grid/assets/style.png` 作為唯一畫風／版面參考
 - 母片格式：2 欄 × 3 列，全身、綠幕、無文字；格位順序：`smile`、`angry`、`sad`、`surprised`、`panic`、`normal`
 - 後處理：`split_emotion_image.py` 拆格，`remove_bk.py` 使用 `rembg` 的 `isnet-anime` 模型去背並輸出 RGBA PNG；目前 GPU 測試透過 `CUDAExecutionProvider` 執行
+- 去背流程完整說明：[`rembg-isnet-anime-gpu-workflow.md`](rembg-isnet-anime-gpu-workflow.md)
 - runtime 接入：既有角色保留原有 `project/images/` 檔名並僅替換檔案內容；本次新增惠惠、來島澄、李嚴的正式檔名並更新 Story IR／floor 使用鏈；主線來源未修改
 
 ## 已完成的來源對照

@@ -15,6 +15,8 @@
 
 ## Resolved
 
+- `20260827-012537-portrait-rebuild-no-cpu.md` Q1：依新增 GPU workflow 使用 `D:\coding\ai-models\ComfyUI\app\.venv\Lib\site-packages\torch\lib` 的 CUDA DLL，完成 bodyguard、dio、strongman_b 三組母片六格重切與 18 張 `isnet-anime` GPU 去背；runtime 與 `art/characters` 成品均驗證為 RGBA，且重建結果與原檔位元相同。
+
 - `20260823-023000-main-shared-portrait-resolver.md` Q3：排除使用者指定移出範圍的 `huangmo_1/2` 後，56 個角色支線 floor 已由共用 emitter 重建並通過 Story IR round-trip 驗證；`huangmo_1/2` 保持無 diff。
 - `20260816-195916-character-scene-return-validation.md` Q1：新增 typed Akiba lifecycle IR 節點與終端路徑驗證，並修復 `lala_1`～`lala_4`、`okabe_1`～`okabe_4`、`shirou_1`～`shirou_4` 的回傳流程；角色 IR、floor、Akiba 管理器與主線檢查均通過。
 - `20260811-103543-akiba-minigame-study.md` Q4：原先把 `<canvas>` fallback 文字誤判為實際畫面；內建瀏覽器已完成「公園清潔隊」通關、計分與返回地圖的實機驗收。
