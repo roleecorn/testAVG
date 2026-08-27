@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "locationOverrides": {
     "dizi_1": ["prize_exchange"],
     "dizi_2": ["prize_exchange"],
@@ -129,6 +129,13 @@
       "title": "初遇劇本殺",
       "locations": ["kaidan_cave"],
       "floorId": "jiakezi_1",
+      "once": true
+    },
+    {
+      "id": "lance_1",
+      "title": "特攝研的怪人",
+      "locations": ["sento"],
+      "floorId": "lance_1",
       "once": true
     }
   ]

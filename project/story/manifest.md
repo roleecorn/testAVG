@@ -19,6 +19,17 @@
 | 20260824-183110 | 主線背景 runtime 正規化（24） | background | 依 AVG 畫布契約保留完整構圖，直接縮放為 `544x416`；原始來源血緣不變，runtime 輸出 SHA-256 見 run manifest | `project/story-ir/main/CH1.json`～`CH7.json` 的 `background.show`；`validate_story.js` |
 | 20260824-183110 | 失效歷史 `CH<N>_L<N>.png` | stale lineage | 移至 `project/images/unknown/main-story-stale/`，保留舊檔與追溯紀錄，不註冊／不引用 | `project/data.js`、Story IR 已清除舊引用 |
 
+## `lance`／蘭斯
+
+- 劇情來源：`project/story/蘭斯支線.txt`
+- 資源追蹤狀態：`active`（正式 CG／場景背景仍以 placeholder 接入，見 `project/story/TODO.md`）
+
+| 紀錄鍵 | ZIP 序號／run | 原始相對路徑 | 原始 SHA-256 | 種類 | 差異狀態 | 使用方式 | 最後命名／路徑 | Story IR scene／用途 | 驗證證據 | 狀態 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| lance:3d518716fee3ed2776d1492252dba02feddc6502044eab30f133515f289b8143:project/story/蘭斯支線.txt | user source commit `8ba01a41` | project/story/蘭斯支線.txt | 3d518716fee3ed2776d1492252dba02feddc6502044eab30f133515f289b8143 | script | new | authoritative-source | project/story/蘭斯支線.txt | lance_1..4 | `tmp/character-story-import/lance-story-update/20260828-010839/work/source-audit.md`; `validate_story.js` | active |
+| lance:4ff25367fab2d84644d3f473bdd49b5af1005d0de298e81caa23fa72cb525d2c:17.蘭斯/圖檔/Sill-01_(2).png | 20260823-192556 | 17.蘭斯/圖檔/Sill-01_(2).png | 4ff25367fab2d84644d3f473bdd49b5af1005d0de298e81caa23fa72cb525d2c | portrait | new | direct | project/images/lance_sill_normal.png（PNG／RGBA／327×897） | lance_2／希露首次出場；lance_3～4／希露對話 | raw image visual check; `project/images`／`main.images`／IR／floor chain | active |
+| lance:7ffb301fb9c4388e5c9c7953841c774dea0a49b363b72c5037a2704b78e234f1:17.蘭斯/圖檔/Cg00011.png | 20260823-192556 | 17.蘭斯/圖檔/Cg00011.png | 7ffb301fb9c4388e5c9c7953841c774dea0a49b363b72c5037a2704b78e234f1 | cg | new | unknown-todo | 未加入 `project/images/`；原始檔保留於 intake raw | 目前來源未引用；待確認是否屬於蘭斯支線正式 CG | `.codex/task-questions/20260828-010839-lance-story-update.md` | pending |
+
 ## 20260823-192556 支線立繪替換追蹤
 
 本次只處理支線角色；半身／裁切 raw 參考圖只用於身份與外觀，正式輸出均經固定 `anime-expression-grid`、`split_emotion_image.py`、`remove_bk.py`。下列新生成表取代先前立繪；原始列保留作血緣。唐三因切割結果出現跨格鞋部，未寫入。

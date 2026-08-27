@@ -197,11 +197,19 @@ function headStoryIrCanonical() {
   const characters = {};
   for (const story of characterStories) {
     const file = slash(path.relative(root, irFile(story)));
-    const text = execFileSync("git", ["-c", `safe.directory=${slash(root)}`, "-c", "core.autocrlf=false", "-c", "core.safecrlf=false", "show", `HEAD:${file}`], {
-      cwd: root,
-      encoding: "utf8",
-      maxBuffer: 32 * 1024 * 1024,
-    });
+    let text;
+    try {
+      text = execFileSync("git", ["-c", `safe.directory=${slash(root)}`, "-c", "core.autocrlf=false", "-c", "core.safecrlf=false", "show", `HEAD:${file}`], {
+        cwd: root,
+        encoding: "utf8",
+        maxBuffer: 32 * 1024 * 1024,
+      });
+    } catch (error) {
+      // A newly added character Story IR has no HEAD canonical baseline.
+      // The transaction validator below still requires its generated floors.
+      if (error && error.status === 128 && String(error.stderr || "").includes("not in 'HEAD'")) continue;
+      throw error;
+    }
     characters[story.slug] = stripCommonFields(validateBundle(JSON.parse(text)));
   }
   return { main: headMainStoryBundle(), characters };

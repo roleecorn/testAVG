@@ -51,6 +51,12 @@
 
 ## 待補素材
 
+- Open: `lance-story-placeholder-assets`
+  - Scope: `project/story-ir/character/lance.json`、`project/floors/lance_1.js`～`lance_4.js`、`project/images/lance_*_placeholder.png`、`lance_sill_normal.png`
+  - Current: `蘭斯支線.txt` 已完成四段支線與 `lance_1`～`lance_4` 接入；希露使用 `Sill-01_(2).png` 的直接素材。澡堂、特攝研社辦、走廊、路邊、車站口、祭典會場、小餐館、黑幕、瑪麗亞之牆、小巷、庭院、宅邸背景，以及 `克莉絲迎擊` CG 尚以唯一命名 placeholder 接通。
+  - Done when: 取得正式 544×416 場景背景與 `克莉絲迎擊` CG，逐一替換對應檔案或 IR 引用，保留唯一地點檔名與素材血緣，並通過完整故事驗證及遊戲內入口驗證。
+  - Evidence: `tmp/character-story-import/lance-story-update/20260828-010839/work/source-audit.md`、`.codex/task-questions/20260828-010839-lance-story-update.md`、`project/story/manifest.md`。
+
 - Open: `jiakezi-red-mansion-background`
   - Scope: `project/story-ir/character/jiakezi.json`、`project/floors/jiakezi_1.js`～`jiakezi_3.js`
   - Done when: 取得並驗收紅魔館正式 544×416 地點背景後，替換 `ms_bg_becky_mansion.png` 並重新生成／驗證三個 scene；不得覆寫其他地點背景。
