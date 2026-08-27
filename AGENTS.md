@@ -173,7 +173,19 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 
 若本次有來源變動但無法同步產生對應 IR 與 scene／floor，必須停止受影響分支，不得先提交 IR，也不得把未完成交易的來源檔案單獨提交。
 
-劇情更新完成後一律建立兩個 commit：第一個內容 commit 提交本次依規則新增／整檔覆蓋的來源（若有）、IR、scene／floor、必要入口／註冊、TODO、驗證紀錄與其他必要修正；第二個 commit 僅更新本節的基準 commit，將第一個 commit 的完整雜湊寫入下方。完成第二個 commit 後，下一次更新以該雜湊為新的起點。
+「劇情更新完成」本身就表示 hash drift 已全部解決：從有效 baseline 到目前狀態的 `project/mainStory/` 與 `project/story/` 所有權威來源，都已完成對應 Story IR、scene／floor 的同步，且完整驗證不再存在任何來源 SHA-256 mismatch、Story IR stale/hash drift 或其他同步阻塞。只完成部分角色、部分來源或部分衍生物，仍屬未完成的劇情更新。
+
+### 內容 commit 與 baseline commit 定義
+
+「內容 commit」是記錄上述「劇情更新完成」狀態的一次可交付劇情內容交易，不是任意碰到劇情目錄、validator、素材或 TODO 的 commit。它必須把本次權威來源變動（若有）、語意 Story IR、對應 scene／floor，以及必要的入口、註冊、素材與追溯 metadata 依 `來源 → IR → scene／floor` 原子鏈在同一個 commit 內完成；若來源早已由外部 commit 提交，仍必須在本次內容 commit 追溯其完整路徑與 SHA-256，並提交本次對應的 IR／scene／floor 交易。只修改 validator、測試、素材尺寸、TODO、task question 或其他工具而沒有對應劇情來源／IR／scene／floor 交易的 commit，不是內容 commit；只要仍有任何 hash drift，劇情更新就尚未完成，也不得把該批變更稱為完成內容 commit。
+
+「baseline commit」是內容 commit 之後的 metadata-only commit，只能修改本文件的基準 hash。它代表該 baseline 指向的內容 commit 及其之前，所有 `project/mainStory/` 與 `project/story/` 權威來源都已完成對應 Story IR、scene／floor 的同步；它不是用來忽略既有未完成工作、切斷 hash drift，或把非內容修正標記成已同步。
+
+只有在劇情更新已達上述完成定義、內容 commit 的完整交易驗證成功，且 `node scripts/validate_story.js` 通過時，才可建立 baseline-only commit。任何 hash drift 即使不是本次修改、不是目前角色，或早已存在，也不得以「既有問題」為理由略過；遇到此情況代表劇情更新尚未完成，必須維持原 baseline、不得建立完成內容 commit 或 baseline commit，並保留 question／TODO 直到完整同步與驗證完成。
+
+若現存 `AGENTS.md` 基準曾在未滿足上述門檻時被推進，該 hash 只視為歷史上的失效標記，不得繼續當作「已同步」邊界，也不得只處理它之後的變動來掩蓋更早的 drift；必須先從最近可證明有效的邊界完成完整來源／IR／scene／floor 修復與驗證，再建立新的合法 baseline。
+
+劇情更新完成且通過上述門檻後，才建立兩個 commit：第一個內容 commit 提交本次依規則新增／整檔覆蓋的來源（若有）、IR、scene／floor、必要入口／註冊、TODO、驗證紀錄與其他必要修正；第二個 commit 僅更新本節的基準 commit，將第一個內容 commit 的完整雜湊寫入下方。完成第二個 commit 後，下一次更新以該雜湊為新的起點。
 
 目前基準 commit：
 

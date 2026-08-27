@@ -41,6 +41,9 @@
 - 劇本製作指令已轉成事件，不會以 `【CG：...】`、`【GIF：...】`、`【背景：...】` 等文字直接顯示給玩家。
 - 修改保持在使用者授權與本次任務範圍內；局部修改沒有造成整檔重排或無關生成器輸出。
 - 已檢查 `git diff --name-only`、`git diff --stat` 與 `git diff --check`；若使用者要求提交，也已檢查 staged diff 與 commit 邊界。
+- 若建立內容 commit，該 commit 必須是完整的來源／IR／scene／floor 劇情交易；validator-only、test-only、asset-only、TODO-only 或 task-question-only 變更不得命名或視為內容 commit。
+- 劇情更新完成的定義就是該更新邊界內所有 hash drift 已解決；只完成部分來源、IR 或 floor 仍屬未完成，不得宣稱內容 commit 已完成。
+- 若建立 baseline-only commit，`node scripts/validate_story.js` 必須成功，且全域不得存在任何來源 SHA-256 mismatch、Story IR stale/hash drift 或其他權威來源與中間產物不同步的阻塞；任何既有 drift 都會阻止內容 commit 與 baseline 推進，不能因不屬於本次修改而略過。
 - 若本次有 Story IR 變更，已在 `git diff --cached --name-only` 與 `git show --stat --name-only <commit>` 中確認同一 commit 包含其對應 scene／floor，且已驗證事件入口可觸發；若無法做到，該 IR 變更未提交。
 - 任務中的每項疑慮均已寫入 `.codex/task-questions/`；未解項目已匯總到正確的長期 TODO。
 - 所有阻塞疑慮都已解決，或受影響分支已停止並明確回報；非阻塞疑慮沒有被當成猜測授權。

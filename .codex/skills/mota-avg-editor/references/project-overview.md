@@ -91,7 +91,7 @@ AI 產生內容時，優先產生「可貼進事件 JSON 區」或「可直接�
 對 AVG 最穩定的做法：
 
 - 主線與角色支線一律先由 Agent 進行「語意翻譯／Story IR 建立」：完整閱讀自然語言來源、上下文與 Git log，將意圖寫入相同 schema 的 Story IR。這裡的「正規化」只表示把不同自然語言表達統一成可驗證語意，不代表由自動化程式完成。完成指令、必要參數、素材與流程驗證後，再由 emitter 確定性轉為事件 JSON。
-- 劇情更新是「來源變動 → Agent 語意 Story IR → scene／floor」的單一交易：Agent 先依基準 commit 盤點 `project/mainStory/` 與 `project/story/` 的變動；若本次輸入含已確認完整新來源，可先新增或整檔覆蓋來源，再由 Agent 同步更新 IR 與對應 scene／floor。若來源由本次任務落地，必須和 IR、對應 scene／floor 一起 staging／提交；若來源早已由外部 commit 提交，則只追溯其 path／SHA-256。禁止 source-only、IR-only 或延後補 floor 的 commit。emitter 只讀已驗證 IR，不得用 refresh／bootstrap 自動寫回 IR。
+- 劇情更新是「來源變動 → Agent 語意 Story IR → scene／floor」的單一交易：Agent 先依基準 commit 盤點 `project/mainStory/` 與 `project/story/` 的變動；但必須先證明該基準是沒有任何來源 SHA-256 mismatch、stale IR 或 hash drift 的有效同步邊界；失效的歷史 baseline 不得用來忽略更早的來源變動，應先從最近可證明有效的邊界修復。劇情更新只有在該邊界內所有權威來源都完成 IR／scene／floor 同步，且所有 hash drift 全部解決、完整驗證成功時才算完成。若本次輸入含已確認完整新來源，可先新增或整檔覆蓋來源，再由 Agent 同步更新 IR 與對應 scene／floor。若來源由本次任務落地，必須和 IR、對應 scene／floor 一起 staging／提交；若來源早已由外部 commit 提交，則只追溯其 path／SHA-256。禁止 source-only、IR-only 或延後補 floor 的 commit；只修改 validator、測試、素材、TODO 或 task question 而沒有來源／IR／scene／floor 交易的 commit，不是內容 commit。baseline 只可由已完成劇情更新且通過完整 `node scripts/validate_story.js` 的內容 commit 推進；任何既有 drift 都必須維持原 baseline、不得建立完成內容或 baseline-only commit。emitter 只讀已驗證 IR，不得用 refresh／bootstrap 自動寫回 IR。
 - 自然語言理解只存在 Agent 的語意翻譯／Story IR 建立階段。事件 emitter 不得重新猜測原文語意，也不得為了支援單一劇情指令在 emitter 中增加硬編碼語意；若 Story IR 無法表達某項演出，先更新共用 schema／runtime 能力或停止受影響範圍並落入 question／TODO，不能用 generator 特例取代語意 IR，也不能降級成玩家可見旁白或台詞。
 - 每個場景用一個樓層，或每個章節用一個樓層。
 - 全專案只有一套標準 AVG 版面，主線與角色支線都使用 `17x13`；兩者只在觸發方式與來源檔案位置不同。`map` 全部填 `0`，只保留一張背景圖和劇情事件。既有 13 格內容保留在左側，右側四格補 `0`。

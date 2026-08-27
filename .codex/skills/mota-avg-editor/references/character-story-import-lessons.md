@@ -42,4 +42,4 @@ DOCX 轉 TXT 必須直接解析 `word/document.xml` 的段落節點，保留 `w:
 4. Story IR、對應 floor、入口、圖片註冊與永久 manifest 同批更新。
 5. 執行 `node scripts/validate_story.js`；成功才可宣稱交易驗證通過。
 
-角色 ZIP 交易需要提交時，先提交包含來源／IR／floor／素材／入口／metadata 的內容 commit，再建立只更新 `AGENTS.md` 基準雜湊的 baseline commit；不要把基準更新混入內容 commit。
+角色 ZIP 交易需要提交時，只有在劇情更新完成（本次更新邊界內所有 hash drift 均已解決）後，才可先提交包含來源／IR／floor／素材／入口／metadata 的內容 commit，再建立只更新 `AGENTS.md` 基準雜湊的 baseline commit；不要把基準更新混入內容 commit。內容 commit 不包含 validator-only、asset-only、TODO-only 或 task-question-only 修正；任何來源 SHA-256 mismatch、stale IR 或 hash drift（包括既有 drift）都表示劇情更新尚未完成，必須阻止內容與 baseline commit 推進。
