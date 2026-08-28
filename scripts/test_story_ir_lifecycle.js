@@ -1,5 +1,14 @@
 const assert = require("assert/strict");
-const { bundleToFloors, imageDimensionsFromBuffer, normalizePortraitLifecycle, validateBundle, validatePortraitOutputCompat } = require("./story_ir");
+const {
+  AVG_LAYOUT_RUNTIME_DEFAULTS,
+  bundleToFloors,
+  imageDimensionsFromBuffer,
+  normalizePortraitLifecycle,
+  validateAvgLayoutConfig,
+  validateBundle,
+  validateGeneratedAvgLayout,
+  validatePortraitOutputCompat,
+} = require("./story_ir");
 
 const map = Array.from({ length: 13 }, () => Array(17).fill(0));
 
@@ -9,6 +18,12 @@ pngHeader.writeUInt32BE(544, 16);
 pngHeader.writeUInt32BE(416, 20);
 assert.deepEqual(imageDimensionsFromBuffer(pngHeader), { width: 544, height: 416 });
 assert.equal(imageDimensionsFromBuffer(Buffer.from("not an image")), null);
+
+assert.doesNotThrow(() => validateAvgLayoutConfig({ ...AVG_LAYOUT_RUNTIME_DEFAULTS }));
+assert.throws(
+  () => validateAvgLayoutConfig({ ...AVG_LAYOUT_RUNTIME_DEFAULTS, dialogueWidth: 352 }),
+  /dialogueWidth: expected 512, got 352/,
+);
 
 function bundle(events) {
   return {
@@ -38,6 +53,14 @@ assert.throws(
 assert.throws(
   () => validateBundle(bundle([{ kind: "character.exchange", destination: { floorId: "next", loc: [1, 1], direction: "up" } }]), { allowLegacyLifecycle: false }),
   /character\.exchange is main-story-only/,
+);
+assert.throws(
+  () => validateBundle(bundle([
+    { kind: "layout.set", value: { avg: true, dialogueWidth: 352 } },
+    { kind: "akiba.event.complete", eventId: "example_1" },
+    { kind: "akiba.return" },
+  ])),
+  /global AVG geometry is generator-owned and must not be stored in Story IR/,
 );
 
 assert.doesNotThrow(() => validatePortraitOutputCompat({ version: 1, omitCommonFieldsForScenes: ["example_1"] }, new Set(["example_1"])));
@@ -165,5 +188,17 @@ assert.deepEqual(generatedPortraitFloor.eachArrive[1], {
   opacity: 1,
   time: 0,
 });
+assert.doesNotThrow(() => validateGeneratedAvgLayout([generatedPortraitFloor]));
+
+const malformedGeneratedFloor = JSON.parse(JSON.stringify(generatedPortraitFloor));
+malformedGeneratedFloor.eachArrive.find((event) => event && event.type === "setText").dialogueWidth = 352;
+assert.throws(
+  () => validateGeneratedAvgLayout([malformedGeneratedFloor]),
+  /dialogueWidth: global AVG geometry is generator-owned and must not be stored in a setText event/,
+);
+assert.throws(
+  () => validateGeneratedAvgLayout([{ floorId: "missing_layout", eachArrive: ["普通台詞"] }]),
+  /missing generated AVG setText event/,
+);
 
 console.log("Story IR lifecycle tests passed.");

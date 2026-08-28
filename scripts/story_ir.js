@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { isDeepStrictEqual } = require("util");
 const vm = require("vm");
 
 const STORY_IR_VERSION = 1;
@@ -11,6 +12,20 @@ const PORTRAIT_CODES = new Set([10, 11, 12, 20]);
 const PORTRAIT_OPACITY = 1;
 const PORTRAIT_TIME = 0;
 const PORTRAIT_OUTPUT_COMPAT_FILE = path.join(__dirname, "portrait-output-compat.json");
+const AVG_LAYOUT_RUNTIME_DEFAULTS = Object.freeze({
+  dialogueX: 16,
+  dialogueY: 295,
+  dialogueWidth: 512,
+  dialogueFixedLines: 2,
+  portraitDialogueGap: 0,
+  portraitScale: 0.92,
+  portraitTopRatio: 0.2,
+});
+const AVG_LAYOUT_GEOMETRY_KEYS = new Set([
+  "dialogueX", "dialogueY", "dialogueWidth", "dialogueFixedLines",
+  "portraitDialogueGap", "portraitScale", "portraitTopRatio", "portraitBottomY",
+  "portraitSpeakerX", "portraitSpeakerY", "x", "y", "width", "height",
+]);
 const DEFAULT_AVG_LAYOUT = Object.freeze({
   kind: "layout.set",
   value: {
@@ -417,6 +432,127 @@ function ensureAvgLayout(events) {
   return [{ ...DEFAULT_AVG_LAYOUT, value: { ...DEFAULT_AVG_LAYOUT.value } }, ...events];
 }
 
+function validateAvgLayoutConfig(config, location = "avgLayout") {
+  if (!config || typeof config !== "object" || Array.isArray(config)) {
+    throw new Error(`${location}: expected an object`);
+  }
+  for (const [key, expected] of Object.entries(AVG_LAYOUT_RUNTIME_DEFAULTS)) {
+    if (!Object.prototype.hasOwnProperty.call(config, key)) {
+      throw new Error(`${location}.${key}: missing global AVG layout value`);
+    }
+    if (!isDeepStrictEqual(config[key], expected)) {
+      throw new Error(`${location}.${key}: expected ${JSON.stringify(expected)}, got ${JSON.stringify(config[key])}`);
+    }
+  }
+  return config;
+}
+
+function validateAvgTextStyle(value, location) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    throw new Error(`${location}: setText value must be an object`);
+  }
+  for (const [key, expected] of Object.entries(DEFAULT_AVG_LAYOUT.value)) {
+    if (key === "textfont") continue;
+    if (!Object.prototype.hasOwnProperty.call(value, key)) {
+      throw new Error(`${location}.${key}: missing canonical AVG text style value`);
+    }
+    if (!isDeepStrictEqual(value[key], expected)) {
+      throw new Error(`${location}.${key}: expected ${JSON.stringify(expected)}, got ${JSON.stringify(value[key])}`);
+    }
+  }
+  if (!Number.isFinite(value.textfont) || value.textfont <= 0) {
+    throw new Error(`${location}.textfont: expected a positive number`);
+  }
+  if (value.fixedLines !== undefined && value.fixedLines !== AVG_LAYOUT_RUNTIME_DEFAULTS.dialogueFixedLines) {
+    throw new Error(`${location}.fixedLines: expected ${AVG_LAYOUT_RUNTIME_DEFAULTS.dialogueFixedLines}, got ${JSON.stringify(value.fixedLines)}`);
+  }
+  for (const key of AVG_LAYOUT_GEOMETRY_KEYS) {
+    if (Object.prototype.hasOwnProperty.call(value, key)) {
+      throw new Error(`${location}.${key}: global AVG geometry is generator-owned and must not be stored in a setText event`);
+    }
+  }
+}
+
+function validateAvgLayoutIrOwnership(nodes, location) {
+  for (const [index, node] of (nodes || []).entries()) {
+    const nodeLocation = `${location}[${index}]`;
+    if (node.kind === "layout.set") {
+      if (!node.value || typeof node.value !== "object" || Array.isArray(node.value)) {
+        throw new Error(`${nodeLocation}.value: layout.set value must be an object`);
+      }
+      for (const key of AVG_LAYOUT_GEOMETRY_KEYS) {
+        if (Object.prototype.hasOwnProperty.call(node.value, key)) {
+          throw new Error(`${nodeLocation}.value.${key}: global AVG geometry is generator-owned and must not be stored in Story IR`);
+        }
+      }
+      if (node.value.fixedLines !== undefined && node.value.fixedLines !== AVG_LAYOUT_RUNTIME_DEFAULTS.dialogueFixedLines) {
+        throw new Error(`${nodeLocation}.value.fixedLines: expected ${AVG_LAYOUT_RUNTIME_DEFAULTS.dialogueFixedLines}, got ${JSON.stringify(node.value.fixedLines)}`);
+      }
+    }
+    if (node.kind === "dialogue" && node.presentation && typeof node.presentation === "object") {
+      for (const key of AVG_LAYOUT_GEOMETRY_KEYS) {
+        if (Object.prototype.hasOwnProperty.call(node.presentation, key)) {
+          throw new Error(`${nodeLocation}.presentation.${key}: global AVG geometry is generator-owned and must not be stored in dialogue IR`);
+        }
+      }
+    }
+    if (node.kind === "choice") {
+      node.options.forEach((option, optionIndex) => validateAvgLayoutIrOwnership(
+        option.events,
+        `${nodeLocation}.options[${optionIndex}].events`,
+      ));
+    }
+  }
+}
+
+function validateGeneratedAvgLayout(floors, location = "generated AVG floors") {
+  if (!Array.isArray(floors)) throw new Error(`${location}: expected an array of floors`);
+  const visit = (events, eventLocation, state) => {
+    for (const [index, event] of (events || []).entries()) {
+      const currentLocation = `${eventLocation}[${index}]`;
+      if (typeof event === "string") continue;
+      if (!event || typeof event !== "object" || Array.isArray(event)) {
+        throw new Error(`${currentLocation}: generated event must be an object`);
+      }
+      if (event.type === "setText") {
+        validateAvgTextStyle(event, currentLocation);
+        state.hasSetText = true;
+      }
+      if (event.type === "showImage" && PORTRAIT_CODES.has(event.code)) {
+        if (!isDeepStrictEqual(event.loc, ["portraitSpeakerX", "portraitSpeakerY"])) {
+          throw new Error(`${currentLocation}.loc: portrait must use the generator-owned semantic slot`);
+        }
+        if (event.sloc !== undefined) {
+          throw new Error(`${currentLocation}.sloc: portrait position must not be emitted as a numeric slot`);
+        }
+        if (event.opacity !== undefined && event.opacity !== PORTRAIT_OPACITY) {
+          throw new Error(`${currentLocation}.opacity: expected ${PORTRAIT_OPACITY}, got ${JSON.stringify(event.opacity)}`);
+        }
+        if (event.time !== undefined && event.time !== PORTRAIT_TIME) {
+          throw new Error(`${currentLocation}.time: expected ${PORTRAIT_TIME}, got ${JSON.stringify(event.time)}`);
+        }
+      }
+      if (event.type === "choices") {
+        event.choices.forEach((choice, choiceIndex) => visit(
+          choice.action,
+          `${currentLocation}.choices[${choiceIndex}].action`,
+          state,
+        ));
+      }
+    }
+  };
+  for (const [floorIndex, floor] of floors.entries()) {
+    const floorLocation = `${location}[${floorIndex}]${floor && floor.floorId ? `(${floor.floorId})` : ""}`;
+    if (!floor || typeof floor !== "object" || !Array.isArray(floor.eachArrive)) {
+      throw new Error(`${floorLocation}: generated floor must contain eachArrive`);
+    }
+    const state = { hasSetText: false };
+    visit(floor.eachArrive, `${floorLocation}.eachArrive`, state);
+    if (!state.hasSetText) throw new Error(`${floorLocation}.eachArrive: missing generated AVG setText event`);
+  }
+  return floors;
+}
+
 const ALLOWED_KINDS = new Set([
   "narration", "dialogue", "layout.set", "bgm.play", "bgm.pause", "bgm.resume",
   "sound.play", "sound.stop", "background.show", "image.show", "image.hide", "wait",
@@ -628,6 +764,7 @@ function validateBundle(bundle, {
       throw new Error(`scenes[${index}].floor must not contain generator-owned map`);
     }
     validateAvgFloorDimensions(scene.floor, `scenes[${index}].floor`);
+    validateAvgLayoutIrOwnership(scene.events, `scenes[${index}].events`);
     scene.events.forEach((node, nodeIndex) => validateNode(node, `scenes[${index}].events[${nodeIndex}]`));
     scene.events.forEach((node, nodeIndex) => validatePortraitPositionFields(
       node,
@@ -642,10 +779,24 @@ function validateBundle(bundle, {
   return bundle;
 }
 
-function validateProjectReferences(root, bundle) {
+function readProjectMainData(root) {
   const context = {};
   vm.runInNewContext(fs.readFileSync(path.join(root, "project", "data.js"), "utf8"), context);
-  const data = Object.values(context)[0].main;
+  const dataHolder = Object.values(context).find((value) => value && value.main);
+  if (!dataHolder) throw new Error("project/data.js: unable to read main data");
+  return dataHolder.main;
+}
+
+function validateGlobalAvgLayout(root, floors) {
+  const data = readProjectMainData(root);
+  validateAvgLayoutConfig(data.styles && data.styles.avgLayout, "project/data.js styles.avgLayout");
+  if (floors !== undefined) validateGeneratedAvgLayout(floors);
+  return data.styles.avgLayout;
+}
+
+function validateProjectReferences(root, bundle) {
+  const data = readProjectMainData(root);
+  validateAvgLayoutConfig(data.styles && data.styles.avgLayout, "project/data.js styles.avgLayout");
   const images = new Set(data.images || []);
   const bgms = new Set(data.bgms || []);
   const sounds = new Set(data.sounds || []);
@@ -696,11 +847,11 @@ function validateProjectReferences(root, bundle) {
   });
 }
 
-function bundleToFloors(bundle) {
-  validateBundle(bundle);
+function bundleToFloors(bundle, { allowLegacyLifecycle = false } = {}) {
+  validateBundle(bundle, { allowLegacyLifecycle });
   const transitions = COMMON_PRESENTATION.transitions;
   const outputCompat = readPortraitOutputCompat();
-  return bundle.scenes.map((scene) => ({
+  const floors = bundle.scenes.map((scene) => ({
     ...floorWithCommonFields(scene.floor),
     eachArrive: irToEvents(
       ensureAvgLayout(normalizeBgmLifecycle(normalizePortraitLifecycle(scene.events))),
@@ -708,6 +859,7 @@ function bundleToFloors(bundle) {
       { portraitCommonFields: !outputCompat.omitCommonFieldsForScenes.includes(scene.id) },
     ),
   }));
+  return validateGeneratedAvgLayout(floors);
 }
 
 function readBundle(file, { allowLegacyLifecycle = false } = {}) {
@@ -718,4 +870,23 @@ function readBundle(file, { allowLegacyLifecycle = false } = {}) {
   });
 }
 
-module.exports = { bundleToFloors, floorWithCommonFields, imageDimensionsFromBuffer, normalizeBundlePortraitLifecycle, normalizePortraitLifecycle, readBundle, readImageDimensions, validateAvgFloorDimensions, validateBackgroundImageSize, validateBundle, validateCharacterSceneLifecycle, validatePortraitOutputCompat, validateProjectReferences };
+module.exports = {
+  AVG_LAYOUT_RUNTIME_DEFAULTS,
+  bundleToFloors,
+  floorWithCommonFields,
+  imageDimensionsFromBuffer,
+  normalizeBundlePortraitLifecycle,
+  normalizePortraitLifecycle,
+  readBundle,
+  readImageDimensions,
+  validateAvgFloorDimensions,
+  validateAvgLayoutConfig,
+  validateAvgLayoutIrOwnership,
+  validateBackgroundImageSize,
+  validateBundle,
+  validateCharacterSceneLifecycle,
+  validateGeneratedAvgLayout,
+  validateGlobalAvgLayout,
+  validatePortraitOutputCompat,
+  validateProjectReferences,
+};

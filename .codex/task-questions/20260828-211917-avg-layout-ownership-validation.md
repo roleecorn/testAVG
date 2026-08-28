@@ -2,7 +2,7 @@
 
 - Created: `2026-08-28 21:19:17 +08:00`
 - Task: `驗證角色支線 AVG 對話框設定責任邊界與自動鑑察`
-- Overall status: `open`
+- Overall status: `resolved`
 - Long-term TODO: `.codex/TODO.md`
 
 ## Questions
@@ -23,16 +23,16 @@
 ### Q2. 是否需要新增 AVG layout 專用自動鑑察？
 
 - Classification: `non-blocking`
-- Status: `open`
+- Status: `resolved`
 - Source: `scripts/story_ir.js`、`scripts/validate_story.js`；本次負向驗證結果
 - Affected scope: 共用 Story IR validator／generator 與所有主線、角色支線 AVG floor
-- Temporary handling: 目前依既有 generator 產出並以完整故事驗證確認；不把一般 Story IR 通過誤稱為 AVG layout contract 已被檢查。
-- Decision needed: 是否補一項只讀檢查，確認全局 generator AVG config 存在，且 IR 不含全局幾何／普通立繪位置欄位，同時測試缺少初始標準 layout 時的輸出？
-- Decision / current direction: 已確認目前沒有這項專用鑑察；本輪不擴大修改 validator。
-- Remaining work: 補 validator 與負向測試，並重新執行完整故事驗證。
-- Completion evidence: 記憶體內刪除東山全部 `layout.set` 或 `fixedLines` 後 `validateBundle` 仍通過；`node scripts/validate_story.js` 僅能證明現有故事交易與生成 floor 一致。
-- Resolved at: `<pending>`
+- Temporary handling: 已由共用 Story IR validator／generator 執行全局契約檢查，未把 AVG 幾何設定複製回各支線 IR。
+- Decision needed: `None`；新增只讀全局檢查，確認 `project/data.js` 的 AVG config、IR 權責邊界與生成 floor 輸出。
+- Decision / current direction: `scripts/validate_avg_layout.js` 讀取全部主線／角色支線 IR，並由 `scripts/validate_story.js` 固定執行；`scripts/story_ir.js` 同時在 `validateBundle`、`validateProjectReferences` 與 `bundleToFloors` 套用相同檢查。
+- Remaining work: `none`。
+- Completion evidence: `scripts/test_story_ir_lifecycle.js` 新增正向與負向案例，涵蓋錯誤全局矩形、IR 散落幾何值、生成 setText 散落幾何值與缺少 setText；`node scripts/validate_avg_layout.js` 掃描全部 105 個 Story IR scene（含 2 個 legacy scene 的記憶體生成檢查）；`node scripts/validate_story.js` 完整通過。
+- Resolved at: `2026-08-28 21:58:00 +08:00`
 
 ## Promotion
 
-- Q1 resolved in the Dongshan IR/floor transaction; Q2 remains promoted to `.codex/TODO.md` for cross-functional validator follow-up.
+- Q1 resolved in the Dongshan IR/floor transaction; Q2 resolved by the shared AVG layout validator and its negative tests.
