@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/茱茱.txt",
-        "sha256": "1e09da07e1f9f4b14435f82bbbdebfb446203f68a8c84bc4c7373c765c7ee1ae"
+        "sha256": "e16376110a349341eefbfd65458684cb0c0d331d2c9fd713e458b0dc6bbd50c4"
       }
     ]
   },
@@ -298,11 +298,7 @@
         {
           "kind": "dialogue",
           "speaker": "茱茱",
-          "text": "按這邊的按鈕，就能呼叫我囉！",
-          "portrait": {
-            "code": 20,
-            "image": "juju_surprised.png"
-          }
+          "text": "按這邊的按鈕，就能呼叫我囉！"
         },
         {
           "kind": "image.hide",
@@ -362,7 +358,7 @@
         "defaultGround": "ground",
         "images": [
           {
-            "name": "ms_bg_bookstore_a_interior.png",
+            "name": "ms_bg_warehouse_district.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -387,6 +383,14 @@
         "fgmap": []
       },
       "events": [
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_warehouse_district.png",
+          "opacity": 1,
+          "time": 0
+        },
         {
           "kind": "layout.set",
           "value": {
@@ -459,6 +463,14 @@
         {
           "kind": "narration",
           "text": "[兩人隨後趕往了雜貨店]"
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ms_bg_bookstore_a_interior.png",
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "comment",
@@ -771,32 +783,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "juju_attack_cg.png",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -937,13 +923,35 @@
           "text": "（茱茱抄起一旁的大斧）"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "juju_attack_cg.png",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好好好！我跳就是了！你冷靜！",
-          "portrait": {
-            "code": 10,
-            "image": "keng_surprised_portrait.png"
-          }
+          "text": "好好好！我跳就是了！你冷靜！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -1053,32 +1061,6 @@
         "fgmap": []
       },
       "events": [
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "juju_heartfelt_cg.png",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
         {
           "kind": "layout.set",
           "value": {
@@ -1238,89 +1220,99 @@
           "text": "（店主從草叢走了出來）"
         },
         {
-          "kind": "dialogue",
-          "speaker": "店主",
-          "text": "好！我接受！小伙子你滾吧！",
-          "portrait": {
-            "code": 20,
-            "image": "juju_shopkeeper.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "梗平",
-          "text": "我還沒答應呢！",
-          "portrait": {
-            "code": 10,
-            "image": "keng_surprised_portrait.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "茱茱",
-          "text": "梗平，惡魔在人間是需要他人獻祭的",
-          "portrait": {
-            "code": 20,
-            "image": "juju_normal.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "茱茱",
-          "text": "如果不是你，我早就死了",
-          "portrait": {
-            "code": 20,
-            "image": "juju_normal.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "茱茱",
-          "text": "這是報答，也是裸舞的賠禮",
-          "portrait": {
-            "code": 20,
-            "image": "juju_normal.png"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "茱茱",
-          "text": "拜託你回家，好嗎！",
-          "portrait": {
-            "code": 20,
-            "image": "juju_surprised.png"
-          }
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "juju_heartfelt_cg.png",
+          "sloc": [
+            0,
+            0,
+            416,
+            286
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
           "speaker": "店主",
-          "text": "聽到了嗎？滾吧！",
-          "portrait": {
-            "code": 20,
-            "image": "juju_shopkeeper.png"
-          }
+          "text": "好！我接受！小伙子你滾吧！"
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我知道了……",
-          "portrait": {
-            "code": 10,
-            "image": "keng_neutral_portrait.png"
-          }
+          "text": "我還沒答應呢！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "梗平，惡魔在人間是需要他人獻祭的"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "如果不是你，我早就死了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "這是報答，也是裸舞的賠禮"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "茱茱",
+          "text": "拜託你回家，好嗎！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "店主",
+          "text": "聽到了嗎？滾吧！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我知道了……"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "narration",
           "text": "(梗平沒有回頭，離開了秋葉原，只有茱茱的慘叫聲不絕於耳)"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "juju_bbcall.png",
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒想到bbcall還在我這啊…",
-          "portrait": {
-            "code": 10,
-            "image": "keng_neutral_portrait.png"
-          }
+          "text": "沒想到bbcall還在我這啊…"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "narration",

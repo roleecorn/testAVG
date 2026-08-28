@@ -284,31 +284,6 @@ main.floors.juju_3=
     "fgmap": [],
     "eachArrive": [
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "juju_attack_cg.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -530,11 +505,19 @@ main.floors.juju_3=
         "（茱茱抄起一旁的大斧）",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_surprised_portrait.png",
+            "code": 30,
+            "image": "juju_attack_cg.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
             "time": 0
@@ -542,8 +525,9 @@ main.floors.juju_3=
         "\t[梗平]好好好！我跳就是了！你冷靜！",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",

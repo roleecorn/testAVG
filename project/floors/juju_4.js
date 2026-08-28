@@ -284,31 +284,6 @@ main.floors.juju_4=
     "fgmap": [],
     "eachArrive": [
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "juju_heartfelt_cg.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -564,148 +539,47 @@ main.floors.juju_4=
         "（店主從草叢走了出來）",
         {
             "type": "showImage",
-            "code": 20,
-            "image": "juju_shopkeeper.png",
+            "code": 30,
+            "image": "juju_heartfelt_cg.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
             "time": 0
         },
         "\t[店主]好！我接受！小伙子你滾吧！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_surprised_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[梗平]我還沒答應呢！",
-        {
-            "type": "hideImage",
-            "code": 10,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "juju_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[茱茱]梗平，惡魔在人間是需要他人獻祭的",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "juju_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[茱茱]如果不是你，我早就死了",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "juju_normal.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[茱茱]這是報答，也是裸舞的賠禮",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "juju_surprised.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[茱茱]拜託你回家，好嗎！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "juju_shopkeeper.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[店主]聽到了嗎？滾吧！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[梗平]我知道了……",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "(梗平沒有回頭，離開了秋葉原，只有茱茱的慘叫聲不絕於耳)",
         {
             "type": "showImage",
-            "code": 10,
-            "image": "keng_neutral_portrait.png",
+            "code": 30,
+            "image": "juju_bbcall.png",
             "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
+                112,
+                50,
+                320,
+                220
             ],
             "opacity": 1,
             "time": 0
@@ -713,8 +587,9 @@ main.floors.juju_4=
         "\t[梗平]沒想到bbcall還在我這啊…",
         {
             "type": "hideImage",
-            "code": 10,
-            "time": 0
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "（那一夜，梗平在列車上，出於懷念，按了一下bbcall ）",
         "（然後看到一坨白色的身影）",

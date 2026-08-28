@@ -685,23 +685,7 @@ main.floors.juju_1=
             "code": 20,
             "time": 0
         },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "juju_surprised.png",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
         "\t[茱茱]按這邊的按鈕，就能呼叫我囉！",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
         {
             "type": "hideImage",
             "code": 30,

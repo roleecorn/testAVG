@@ -10,7 +10,7 @@ main.floors.juju_2=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "ms_bg_bookstore_a_interior.png",
+            "name": "ms_bg_warehouse_district.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -284,6 +284,13 @@ main.floors.juju_2=
     "fgmap": [],
     "eachArrive": [
         {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_warehouse_district.png",
+            "opacity": 1,
+            "time": 0
+        },
+        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -383,6 +390,13 @@ main.floors.juju_2=
             "time": 0
         },
         "[兩人隨後趕往了雜貨店]",
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ms_bg_bookstore_a_interior.png",
+            "opacity": 1,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "【地點：古書店】"
