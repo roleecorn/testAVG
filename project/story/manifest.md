@@ -240,7 +240,7 @@
 ## `sena`／柏崎星奈
 
 - 劇情來源：`project/story/柏崎星奈.txt`
-- 資源追蹤狀態：`active`；`sena_1`～`sena_4`、Akiba 入口與表情圖已接入
+- 資源追蹤狀態：`active`；`sena_1`～`sena_4`、Akiba 入口、表情圖與本次正式 CG 已接入；新版六表情基準圖待補正尺寸
 
 | 紀錄鍵 | ZIP 序號／run | 原始相對路徑 | 原始 SHA-256 | 種類 | 差異狀態 | 使用方式 | 最後命名／路徑 | Story IR scene／用途 | 驗證證據 | 狀態 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -248,6 +248,10 @@
 | sena:6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555:15.柏崎星奈/圖檔/柏崎星奈.png | 20260816-174815 | 15.柏崎星奈/圖檔/柏崎星奈.png | 6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555 | portrait | new | generated-source (superseded by current run evidence) | prior work output | - | prior run record | superseded |
 | sena:b029382c3456645756a7a1f2ee7d70c3ba5cfc63c1dd7c6b3fdd36bb8ef03440:15.柏崎星奈/柏崎星奈.txt:20260816-201520 | 20260816-201520 | 15.柏崎星奈/柏崎星奈.txt | b029382c3456645756a7a1f2ee7d70c3ba5cfc63c1dd7c6b3fdd36bb8ef03440 | script | new | authoritative-source | project/story/柏崎星奈.txt | sena_1..sena_4 | work/script-manifest.md; source SHA 7040e0c5...; manage_story_ir | active |
 | sena:6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555:15.柏崎星奈/圖檔/柏崎星奈.png:20260816-201520 | 20260816-201520 | 15.柏崎星奈/圖檔/柏崎星奈.png | 6e95a3553d0b199634f34ccb29b599bef36a76e833f041154ff071a0002bc555 | portrait | new | generated-source | project/images/sena_{smile,sad,surprised,panic,normal}.png | sena_1..sena_4 | intake-manifest; expression-validation; IR/floor/data chain; angry candidate intake-only | active |
+| sena:b029382c3456645756a7a1f2ee7d70c3ba5cfc63c1dd7c6b3fdd36bb8ef03440:15.柏崎星奈/柏崎星奈.txt:20260828-231717 | 20260828-231717 | 15.柏崎星奈/柏崎星奈.txt | b029382c3456645756a7a1f2ee7d70c3ba5cfc63c1dd7c6b3fdd36bb8ef03440 | script | identical | authoritative-source unchanged | project/story/柏崎星奈.txt | sena_1..sena_4 | `work/run-manifest.md`; empty normalized full diff; source unchanged | active |
+| sena:59c1f1b974c298ba803b7d4e70510d78504b8a42ed2ba8ea77c225ef51ea8424:15.柏崎星奈/圖檔/一塊布.png:20260828-231717 | 20260828-231717 | 15.柏崎星奈/圖檔/一塊布.png | 59c1f1b974c298ba803b7d4e70510d78504b8a42ed2ba8ea77c225ef51ea8424 | cg | new | direct | project/images/sena_cloth_cg.png | sena_3／一塊布 CG | `work/intake-manifest.md`; RGB PNG 1080×826; IR/floor/data chain | active |
+| sena:3b1c24b7cd31e7fb6195be04007e10d387f8b62e913a7bc9540016c8cc756c7b:15.柏崎星奈/圖檔/鏡子.png:20260828-231717 | 20260828-231717 | 15.柏崎星奈/圖檔/鏡子.png | 3b1c24b7cd31e7fb6195be04007e10d387f8b62e913a7bc9540016c8cc756c7b | cg | new | direct | project/images/sena_mirror_cg.png | sena_3／鏡子 CG ×4 | `work/intake-manifest.md`; RGBA PNG 1080×826; IR/floor/data chain | active |
+| sena:7c3267dfd940fd28729357591e7ef83e249de73c6ee3a9f2f2f9609d99a0790a:15.柏崎星奈/圖檔/柏崎星奈.jpg:20260828-231717 | 20260828-231717 | 15.柏崎星奈/圖檔/柏崎星奈.jpg | 7c3267dfd940fd28729357591e7ef83e249de73c6ee3a9f2f2f9609d99a0790a | portrait-reference | unresolved | pending six-expression source | unknown/sena/15.柏崎星奈/圖檔/柏崎星奈.jpg | expression generation pending | `work/asset-usage.md`; RGB JPEG 842×1264; splitter rejected non-divisible 2×3 dimensions | open |
 
 ## 本次 run：地子／月讀愛 CG 接入
 

@@ -648,12 +648,12 @@ main.floors.sena_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "sena_cg_cloth_placeholder.png",
+            "image": "sena_cloth_cg.png",
             "sloc": [
                 0,
-                65,
-                416,
-                286
+                42,
+                1080,
+                742
             ],
             "loc": [
                 112,
@@ -760,12 +760,12 @@ main.floors.sena_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "sena_cg_mirror_placeholder.png",
+            "image": "sena_mirror_cg.png",
             "sloc": [
                 0,
-                65,
-                416,
-                286
+                42,
+                1080,
+                742
             ],
             "loc": [
                 112,
@@ -786,12 +786,12 @@ main.floors.sena_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "sena_cg_mirror_placeholder.png",
+            "image": "sena_mirror_cg.png",
             "sloc": [
                 0,
-                65,
-                416,
-                286
+                42,
+                1080,
+                742
             ],
             "loc": [
                 112,
@@ -933,12 +933,12 @@ main.floors.sena_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "sena_cg_mirror_placeholder.png",
+            "image": "sena_mirror_cg.png",
             "sloc": [
                 0,
-                65,
-                416,
-                286
+                42,
+                1080,
+                742
             ],
             "loc": [
                 112,
@@ -975,12 +975,12 @@ main.floors.sena_3=
         {
             "type": "showImage",
             "code": 30,
-            "image": "sena_cg_mirror_placeholder.png",
+            "image": "sena_mirror_cg.png",
             "sloc": [
                 0,
-                65,
-                416,
-                286
+                42,
+                1080,
+                742
             ],
             "loc": [
                 112,

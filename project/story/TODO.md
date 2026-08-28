@@ -55,6 +55,12 @@
 
 ## 待補素材
 
+- Open: `sena-portrait-grid-update`
+  - Scope: `unknown/sena/15.柏崎星奈/圖檔/柏崎星奈.jpg`、`project/images/sena_{smile,angry,sad,surprised,panic,normal}.png`、`project/story-ir/character/sena.json`
+  - Current: 本次 fresh ZIP 的新角色表情基準圖為 RGB JPEG、`842×1264`、SHA-256 `7c3267dfd940fd28729357591e7ef83e249de73c6ee3a9f2f2f9609d99a0790a`；`split_emotion_image.py` 因高度不是 3 的倍數而拒絕，未自行裁切或補像素。原圖已原樣隔離至 `unknown/sena/15.柏崎星奈/圖檔/柏崎星奈.jpg`。
+  - Done when: 取得可安全分割的完整 2×3 表情圖後，完成 `split_emotion_image.py` → 每張 CUDA `remove_bk.py` → 只接入 Story IR 實際引用的表情 → `project/data.js`／floor／manifest 閉環，並通過 `node scripts/validate_story.js`。
+  - Evidence: `.codex/task-questions/20260828-232433-sena-asset-update.md` Q1；`tmp/character-story-import/15.柏崎星奈-20260828T151529Z-1-001/20260828-231717/work/intake-manifest.md`、`work/asset-usage.md`。
+
 - Open: `lance-story-placeholder-assets`
   - Scope: `project/story-ir/character/lance.json`、`project/floors/lance_1.js`～`lance_4.js`、`project/images/lance_*_placeholder.png`、`lance_sill_normal.png`
   - Current: `蘭斯支線.txt` 已完成四段支線與 `lance_1`～`lance_4` 接入；希露使用 `Sill-01_(2).png` 的直接素材。澡堂、特攝研社辦、走廊、路邊、車站口、祭典會場、小餐館、黑幕、瑪麗亞之牆、小巷、庭院、宅邸背景，以及 `克莉絲迎擊` CG 尚以唯一命名 placeholder 接通。
