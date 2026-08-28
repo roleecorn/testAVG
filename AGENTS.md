@@ -189,6 +189,6 @@ python -c "from pathlib import Path; print(Path(r'<path>').read_text(encoding='u
 
 目前基準 commit：
 
-d87452d1f3a69346eec0cfe56ea866ca284ac7d6
+cd9b5bcd68c5eae66672a38de7b4efedf4a25a80
 
 所有劇情更新的內容 commit 都必須遵守來源變動 → Story IR → scene／floor 的原子性：只要 Story IR 有變更，就必須同一 commit 更新對應 scene／floor；Agent 不得反向編修來源。若來源是本次由 Agent 依規則新增或整檔覆蓋，也必須納入同一內容 commit，不得建立 source-only 或 IR-only commit。
