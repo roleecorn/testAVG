@@ -1222,39 +1222,6 @@ main.floors.mapo_1_4=
                             ],
                             "time": 500
                         },
-                        {
-                            "type": "showImage",
-                            "code": 1,
-                            "image": "CH1_L438.png",
-                            "loc": [
-                                0,
-                                0
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 1,
-                            "image": "CH1_L438.png",
-                            "loc": [
-                                0,
-                                0
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
-                        {
-                            "type": "showImage",
-                            "code": 1,
-                            "image": "CH1_L438.png",
-                            "loc": [
-                                0,
-                                0
-                            ],
-                            "opacity": 1,
-                            "time": 250
-                        },
                         "不知過了多久，梗平艱難的張開了眼睛",
                         {
                             "type": "showImage",
