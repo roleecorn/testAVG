@@ -3605,6 +3605,10 @@
           "time": 0
         },
         {
+          "kind": "comment",
+          "text": "【白色慢速過場】"
+        },
+        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -3615,10 +3619,6 @@
           ],
           "opacity": 1,
           "time": 0
-        },
-        {
-          "kind": "comment",
-          "text": "【白色慢速過場】"
         },
         {
           "kind": "toolbar.show"

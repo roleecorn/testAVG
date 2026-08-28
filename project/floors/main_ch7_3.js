@@ -1577,7 +1577,7 @@ main.floors.main_ch7_3=
         {
             "type": "hideImage",
             "code": 30,
-            "time": 150
+            "time": 500
         },
         {
             "type": "showImage",
@@ -2081,9 +2081,26 @@ main.floors.main_ch7_3=
         },
         {
             "type": "comment",
-            "text": "TODO: 【下句店員使用月讀愛立繪】"
+            "text": "【下句店員使用月讀愛立繪】"
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "yuedu_happy.png",
+            "expression": "happy",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[店員]要順便帶手啤酒嗎—",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "setCurtain",
             "color": [

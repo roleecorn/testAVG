@@ -45,9 +45,14 @@ function parseSourceDirective(raw) {
   }
   if (normalizedHead === "CG" || normalizedHead.startsWith("CG")) {
     let cg = separator ? value : body.replace(/^CG[_\s]*/i, "");
-    const action = cg.match(/\s*(出現|消失)$/);
+    const action = cg.match(/[\s　_]+(出現|消失)(?:[\s　_]+使用(\d+(?:\.\d+)?)秒)?$/);
     if (action) cg = cg.slice(0, action.index).trim();
-    return { kind: action && action[1] === "消失" ? "cg.hide" : "cg.show", name: cg, full };
+    return {
+      kind: action && action[1] === "消失" ? "cg.hide" : "cg.show",
+      name: cg,
+      ...(action && action[2] ? { time: Math.round(Number(action[2]) * 1000) } : {}),
+      full,
+    };
   }
   if (/^過場(?:：.*)?$/.test(body)) return { kind: "transition", name: body, full };
   if (body === "人物交流時間") return { kind: "exchange", name: body, full };

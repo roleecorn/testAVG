@@ -1,7 +1,13 @@
 const assert = require("assert/strict");
-const { buildIrTrace, buildSourceTrace, compareAnchors, textSignature } = require("./validate_story_alignment");
+const { buildIrTrace, buildSourceTrace, compareAnchors, textSignature, parseSourceDirective } = require("./validate_story_alignment");
 
 const data = { bgms: ["BGMYume.mp3", "BGMWitch.mp3"], nameMap: {} };
+assert.deepEqual(parseSourceDirective("【CG：傑士塔威 消失 使用0.5秒】"), {
+  kind: "cg.hide",
+  name: "傑士塔威",
+  time: 500,
+  full: "【CG：傑士塔威 消失 使用0.5秒】",
+});
 const sourceLines = [
   "1-1",
   "【BGM：BGMYume】",

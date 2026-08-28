@@ -36,7 +36,7 @@ function sourceDirective(line) {
   }
   if (text.startsWith("【CG：") && text.endsWith("】")) {
     const body = text.slice("【CG：".length, -1).trim();
-    const match = body.match(/^(.*?)[\s　_]+(出現|消失)$/);
+    const match = body.match(/^(.*?)[\s　_]+(出現|消失)(?:[\s　]+使用(\d+(?:\.\d+)?)秒)?$/);
     if (!match || match[2] !== "出現") return null;
     return { kind: "cg", name: match[1].trim() };
   }

@@ -1165,6 +1165,16 @@ main.floors.main_ch6_4=
             "time": 0
         },
         {
+            "type": "setCurtain",
+            "color": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "time": 2000
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "CH6_L385.png",
@@ -1174,16 +1184,6 @@ main.floors.main_ch6_4=
             ],
             "opacity": 1,
             "time": 0
-        },
-        {
-            "type": "setCurtain",
-            "color": [
-                255,
-                255,
-                255,
-                1
-            ],
-            "time": 2000
         },
         {
             "type": "setCurtain",

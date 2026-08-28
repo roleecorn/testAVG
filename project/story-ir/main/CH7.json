@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH7",
-        "sha256": "d9007f253893b6c5ad15e1fb14f1e23b557fc692de864f6f46327d2dfe1d37fd"
+        "sha256": "787b1d6df079887a339c4f7a5bb02c0a0a4f90fd759f4f68567f60579f73bda9"
       }
     ]
   },
@@ -1312,7 +1312,7 @@
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "CH1_L401.png",
+          "image": "CH2_L409.png",
           "loc": [
             0,
             0
@@ -1765,7 +1765,8 @@
         },
         {
           "kind": "comment",
-          "text": "【過場】"
+          "text": "【過場】",
+          "holdUntilBackground": true
         },
         {
           "kind": "comment",
@@ -1860,15 +1861,13 @@
           }
         },
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
           "image": "CH7_L199.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -1880,11 +1879,6 @@
         {
           "kind": "narration",
           "text": "IB關上了門"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "dialogue",
@@ -1985,15 +1979,13 @@
           }
         },
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
           "image": "CH7_L199.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -2009,20 +2001,13 @@
           "text": "……………"
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
           "image": "CH7_L218.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
@@ -2030,11 +2015,6 @@
         {
           "kind": "narration",
           "text": "裡面的肥宅同時轉過了頭"
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
         },
         {
           "kind": "dialogue",
@@ -4008,7 +3988,7 @@
         {
           "kind": "image.hide",
           "code": 30,
-          "time": 150
+          "time": 500
         },
         {
           "kind": "dialogue",
@@ -4294,12 +4274,17 @@
         },
         {
           "kind": "comment",
-          "text": "TODO: 【下句店員使用月讀愛立繪】"
+          "text": "【下句店員使用月讀愛立繪】"
         },
         {
           "kind": "dialogue",
           "speaker": "店員",
-          "text": "要順便帶手啤酒嗎—"
+          "text": "要順便帶手啤酒嗎—",
+          "portrait": {
+            "code": 20,
+            "image": "yuedu_happy.png",
+            "expression": "happy"
+          }
         },
         {
           "kind": "comment",

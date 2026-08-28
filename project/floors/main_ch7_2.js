@@ -448,7 +448,7 @@ main.floors.main_ch7_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "CH1_L401.png",
+            "image": "CH2_L409.png",
             "loc": [
                 0,
                 0
@@ -1201,16 +1201,6 @@ main.floors.main_ch7_2=
             "time": 500
         },
         {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 500
-        },
-        {
             "type": "comment",
             "text": "【BGM預定地：()】"
         },
@@ -1228,6 +1218,16 @@ main.floors.main_ch7_2=
             ],
             "opacity": 1,
             "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 500
         },
         "推著警察帶頭，眾人進入了ANIsister。井然有序的環境看似無異卻出奇安靜",
         "眾人的腳步聲迴盪這碩大的賣場中，與外頭市街的熱絡相比，更增添了一絲弔詭",
@@ -1342,24 +1342,17 @@ main.floors.main_ch7_2=
         },
         {
             "type": "showImage",
-            "code": 30,
+            "code": 1,
             "image": "CH7_L199.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
         },
         "IB打開了門",
         "IB關上了門",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         {
             "type": "showImage",
             "code": 20,
@@ -1526,13 +1519,11 @@ main.floors.main_ch7_2=
         },
         {
             "type": "showImage",
-            "code": 30,
+            "code": 1,
             "image": "CH7_L199.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
@@ -1540,29 +1531,17 @@ main.floors.main_ch7_2=
         "\t[蘭斯]你們知不知道一個叫IB哥—",
         "\t[蘭斯]……………",
         {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
             "type": "showImage",
-            "code": 30,
+            "code": 1,
             "image": "CH7_L218.png",
             "loc": [
-                112,
-                50,
-                320,
-                220
+                0,
+                0
             ],
             "opacity": 1,
             "time": 250
         },
         "裡面的肥宅同時轉過了頭",
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
         {
             "type": "showImage",
             "code": 20,

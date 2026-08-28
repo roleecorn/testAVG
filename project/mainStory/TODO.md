@@ -13,6 +13,12 @@
 
 ## 待確認人物
 
+- Open: `main-story-sankaku-puppet-portrait`
+  - Scope: `project/mainStory/CH1:364-371`、`project/images/ms_portrait_sankaku_*.png`、`project/story-ir/main/CH1.json`、`project/floors/mapo_1_4.js`。
+  - Current: 來源描述三角手上抓著手偶並使用手偶說話；目前新版三角六表情立繪未見手偶，未猜測補畫或替換素材。
+  - Done when: 確認是否需要手偶；若需要，提供／確認可追溯素材後完成六表情資產、`main.images`、Story IR／floor 使用鏈與遊戲內驗證。
+  - Evidence: `.codex/task-questions/20260828-184205-main-story-ch7-media-review.md` Q1；`ms_portrait_sankaku_normal.png` 等六張現有圖已目視核對。
+
 - Open: `mainline-character-portrait-reference-gap`
   - Scope: `project/mainStory/CH1`～`CH7` 的 `梗平`；表妹已不再是缺口。惠惠／來島澄／李嚴的參考圖對應已不再是缺口。
   - Current: 主線權威來源已先完成角色清單；`表妹.jfif` 已由使用者指定為表妹三視圖參考，已完成六表情生成、`project/images/`、`main.images`、既有 Story IR／floor 使用鏈保持不變。`慧慧.jpg`→惠惠、`來島橙.png`→來島澄、`面具廚師.png`→李嚴 已由使用者確認並完成。缺少正式參考圖的角色不可猜測外觀或套用相似角色。
