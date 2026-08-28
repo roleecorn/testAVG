@@ -275,3 +275,15 @@
 |---|---|---|---|---|
 | 可露凱（原 416） | `project/story/可露凱.txt`，SHA `af70af9d7b4b72a30c46d8279f076032b3975e6291aae2b46774a330a3bd57c2` | `project/story-ir/character/kelukai.json` | `kelukai_1`～`kelukai_4`，`police_station` | 完整來源已轉入 IR；runtime slug `kelukai` |
 | 神秘香蕉人 | `project/story/神秘香蕉人.txt`，SHA `6c2fa82800b144db0ba6d7ede21e03f066a6f3b0228ecca6f47ecd9ce0bc0157` | `project/story-ir/character/mysterious-banana.json` | `mysterious_banana_1`～`mysterious_banana_4`，`park` | 六表情、CG／背景裁切已接入；來源列出的缺少 CG 另列 TODO |
+
+## `dongshan`／東山
+
+- 劇情來源：`project/story/檢察官VS東山.txt`
+- 資源追蹤狀態：`active`；`dongshan_1`～`dongshan_3`、`horses_knee` Akiba 入口與三張 CG 已接入
+
+| 紀錄鍵 | ZIP 序號／run | 原始相對路徑 | 原始 SHA-256 | 種類 | 差異狀態 | 使用方式 | 最後命名／路徑 | Story IR scene／用途 | 驗證證據 | 狀態 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| dongshan:27bdd8b675bf5116aa6beef2230c2890b2368725dd6fdbc25b78b887c2ff54c8:20260828-205641:script | `19.檢察官VS東山-20260828T125443Z-1-001` / `20260828-205641` | `19.檢察官VS東山/檢察官VS東山.txt` | `27bdd8b675bf5116aa6beef2230c2890b2368725dd6fdbc25b78b887c2ff54c8` | script | new | authoritative-source | `project/story/檢察官VS東山.txt` | source／`dongshan_1`～`dongshan_3` | `work/script-manifest.md`、`work/line-audit.md`、`node scripts/validate_story.js` | active |
+| dongshan:a786f44fb9a1fcd9289d6dbd85c3909ef5f57a972fa045483cd149792835ac64 | `19.檢察官VS東山-20260828T125443Z-1-001` / `20260828-205641` | `19.檢察官VS東山/圖檔/東山掏本子.png` | `a786f44fb9a1fcd9289d6dbd85c3909ef5f57a972fa045483cd149792835ac64` | cg | new | direct | `project/images/dongshan_book_reveal_cg.png` | `dongshan_2`／source lines 122–125 | `work/intake-manifest.md`、`work/asset-usage.md`、IR／floor／data refs | active |
+| dongshan:48bccf5947d18368aa7dcafaa105eb9089e449efdf75b3b08f10dca49e39a36 | `19.檢察官VS東山-20260828T125443Z-1-001` / `20260828-205641` | `19.檢察官VS東山/圖檔/書店血戰.png` | `48bccf5947d18368aa7dcafaa105eb9089e449efdf75b3b08f10dca49e39a36` | cg | new | direct | `project/images/dongshan_bookstore_battle_cg.png` | `dongshan_1`／source lines 75–77 | `work/intake-manifest.md`、`work/asset-usage.md`、IR／floor／data refs | active |
+| dongshan:b49ca1f83db04550904011f525fe2879a7d21f468bd4d1d17af513dde65badb1 | `19.檢察官VS東山-20260828T125443Z-1-001` / `20260828-205641` | `19.檢察官VS東山/圖檔/腐妞出擊.png` | `b49ca1f83db04550904011f525fe2879a7d21f468bd4d1d17af513dde65badb1` | cg | new | direct | `project/images/dongshan_clerk_assault_cg.png` | `dongshan_3`／source lines 231–233 | `work/intake-manifest.md`、`work/asset-usage.md`、IR／floor／data refs | active |

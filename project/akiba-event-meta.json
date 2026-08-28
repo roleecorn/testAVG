@@ -13,6 +13,13 @@
   },
   "activeEvents": [
     {
+      "id": "dongshan_1",
+      "title": "書店初戰",
+      "locations": ["horses_knee"],
+      "floorId": "dongshan_1",
+      "once": true
+    },
+    {
       "id": "kelukai_1",
       "title": "抓到大的才有意義",
       "locations": ["police_station"],

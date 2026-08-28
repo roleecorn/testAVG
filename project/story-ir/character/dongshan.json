@@ -1,0 +1,2176 @@
+{
+  "storyIrVersion": 1,
+  "source": {
+    "kind": "character",
+    "files": [
+      {
+        "path": "project/story/檢察官VS東山.txt",
+        "sha256": "27bdd8b675bf5116aa6beef2230c2890b2368725dd6fdbc25b78b887c2ff54c8"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "dongshan_1",
+      "floor": {
+        "floorId": "dongshan_1",
+        "title": "書店初戰",
+        "name": "書店初戰",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "ms_bg_bookstore_a_interior.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "comment",
+          "text": "source line 1: 場景：馬的膝蓋 → location horses_knee"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 2: 好感度1 → scene title 書店初戰"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 3: 【背景：泛用書店內部(明亮)】 → floor background ms_bg_bookstore_a_interior.png"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "變身！變身！卡面來打——變身！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "......是殭屍嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "何出此問！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "一直對著書架，做出僵硬重複的動作，好像腦子已經壞掉了",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "真失禮啊！這是假面騎士變身動作的練習！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "對著假面騎士初代全套漫畫典藏版練習，是再合適不過了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "至於為什麼不買回家對著練習，是因為我沒錢",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "誒~~這樣啊~~",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "店員輕飄飄地回到櫃檯後面"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "變身！呼…感覺有些熱了啊",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "店家，你這裡沒有桌上型的風扇嗎？快點拿一台來",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "也能將我的圍巾吹得更飄揚一些",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "叮鈴叮鈴"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "喔誒，是梗平，又在傻…",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "哼，東山，是什麼風把你吹來了馬的膝蓋，莫非是",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "LO之風…",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "comment",
+          "text": "source line 20: 下一句使用大字"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "kora這種事別大庭廣眾地說出來！",
+          "presentation": {
+            "textfont": 24
+          },
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "大庭廣眾說不得，你生出的LO百合本卻要拿到大庭廣眾之下賣嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "COMIKE是里之世界，對常識來說是像常世的地方無所謂啦",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "不好意思，我把原稿拿過來了，想商量一下印刷的事情…",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "東山，來裡屋",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "兩位少女拿著罪惡之原件去裡面的房間了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "書店之奧處嗎…不知是怎樣的地方",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "但這一切和假面騎士毫無關係！變身！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "叮鈴叮鈴"
+        },
+        {
+          "kind": "narration",
+          "text": "隨著一位客人進店，梗平高高舉起的手被抓住了！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "什－打斷變身的練習是進階內容，不要妨礙我！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_surprised_portrait.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "染髮男性一個人對著書架反覆做謎之行為，現在以擾亂風紀的罪名拿下你！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "書店哪裡有什麼風紀可言！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "那就以猥褻書架的罪名！胯部搖動的幅度很可疑喔！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你是警察嗎？那還不快放手，卡面來打一直都是警察的同伴！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "在梗平痛衫上的人物攝人心魄的目光中，檢察官不禁放開了手"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "這麼說，你也是在巡查嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "當然了，我的目光一直注視著秋葉原有沒有犯罪發生",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "我…我懂你，我也恪盡職守地日復一日巡查著…",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "你能明白嗎，吾友！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "有沒有罪惡的LO小黃本被擺上架…",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "什…什麼…",
+          "portrait": {
+            "code": 20,
+            "image": "keng_surprised_portrait.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "——那印刷就拜託你了！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "東山從裡屋出來了"
+        },
+        {
+          "kind": "narration",
+          "text": "她手中拿著罪惡的原件！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "不、不行啊東山！不能拿著那個回到這邊來！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "別讓這個女人看見你手中loli們黏黏糊糊的百合本原稿啊！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "不用你提醒！眼前這個漫畫家的存在本身，就已經比任何原稿都要淫穢了！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "嚇——？怎麼會剛好找到這裡，你這個多事的BBA！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "BA、BBA？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "已經過保存期限了就別出來亂逛啦！搭訕的人會食物中毒！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "東山趁機跑路"
+        },
+        {
+          "kind": "narration",
+          "text": "然而書店只有一個出口"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "今天你的身體和原稿哪一邊會頁數更多，敬請期待吧",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "可惡",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "此時，一個身影擋在兩人中間了！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "怎麼會──你要妨礙我嗎！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "comment",
+          "text": "source line 58: 下一句使用大字"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "梗平！ FIGHT！",
+          "presentation": {
+            "textfont": 24
+          },
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "呵…我應該告訴過你了，我是卡面來打",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "如果你是正義的夥伴，就不該放過那個女人手中的ORIGIN·SIN！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "剛嚐過小學營養午餐牛奶的舌頭，可是會捲到一起的喔！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "呵，別搞錯了，刊物稽查員小姐…",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "東山是個什麼經驗也沒有的少女！她畫出來的舌頭，沒有任何reality！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "reality？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "也就是現實性！那充滿了幻想、妄想和空想的角色，和現實中的loli已經不能說是同一物種！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "就算是兩根外星意麵纏在一起你也要管嗎，警察小姐！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "只要有一絲不清正廉潔的地方，就算是幻想的盡頭我也會追過去的！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這樣啊，那我就跟東山聯手擊潰你的幻想！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "啊我趕著把原稿拿回去先走了，加油梗平",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "叮鈴叮鈴"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "你被戰友丟下了啊，卡面來打",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "…… ……",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "sad"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這只是讓保護對像先走，要上了！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "comment",
+          "text": "source line 75: CG：書店血戰 出現"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dongshan_bookstore_battle_cg.png",
+          "sloc": [
+            6,
+            0,
+            1012,
+            696
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "那一天在書店血戰的兩人中，只有檢察官站著走出書店"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 77: CG：書店血戰 消失"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "呼姆呼……",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "店員小姐好像把這些畫成了漫畫"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 79: scene dongshan_1 full transcription boundary"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.plugin.addAkibaEvent({ id: 'dongshan_2', title: '本子反擊', locations: ['horses_knee'], floorId: 'dongshan_2', once: true }); }"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "dongshan_1"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    },
+    {
+      "id": "dongshan_2",
+      "floor": {
+        "floorId": "dongshan_2",
+        "title": "本子反擊",
+        "name": "本子反擊",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "ms_bg_bookstore_a_interior.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "comment",
+          "text": "source line 82: 好感度2 → scene title 本子反擊"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 83: 【背景：泛用書店內部(明亮)】 → floor background ms_bg_bookstore_a_interior.png"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "你在看什麼書？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "《關鍵時刻被朋友拋下該怎樣治癒內心》",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "叮鈴叮鈴"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "又是你啊",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "有何貴幹，東山的LO本不會擺上這裡的書架吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "印刷是很麻煩的，那傢伙還會來好幾次",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "現在她人就在裡屋呢",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "是嗎（無關心）",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "你打算怎麼做？正在治癒內心的卡面來打？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我不是說過了嗎",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "梗平啪地合上書本"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我是警察的同伴",
+          "portrait": {
+            "code": 20,
+            "image": "keng_smile_portrait.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "就讓我跟你一起狙擊忘恩負義的SIN ARTIST吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_smile_portrait.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "兩人無言碰拳"
+        },
+        {
+          "kind": "narration",
+          "text": "東山從裡屋出來了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "這充滿年上感和清爽笨蛋感的空氣…",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "檢察官和梗平，我知道你們躲在店裡埋伏我",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "（什麼！她是怎麼察覺我完美的隱身的！）",
+          "portrait": {
+            "code": 20,
+            "image": "keng_surprised_portrait.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "剛才的對話全聽見了",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "庫庫庫…我早就料到這局面，準備了對策",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "無論你使出什麼手段，今天也要讓你伏誅",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "立刻停止你罪惡的印刷計畫！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "要阻止文明的進步嗎原始人檢察官，畫的力量可是很強大的",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "你到底想說什麼！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "comment",
+          "text": "source line 108: 下一句使用大字"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "接招吧！",
+          "presentation": {
+            "textfont": 24
+          },
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "東山亮出一本成人本草稿！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "無聊，和我刀下的累累死屍沒有任何差別！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "唔，唔喔喔喔喔喔",
+          "portrait": {
+            "code": 20,
+            "image": "keng_panic_portrait.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "看來，正確的武器、對正確的對象起效了呢",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "這、這到底是！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "草稿封面上畫的半脫女子穿著假面騎士cosplay"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "咕，我不承認！我絕對不會接受這種東西的存在喔喔喔！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_panic_portrait.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "梗平再起不能"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "先幹掉一個叛徒。下一個就是你了，檢察官！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "色情刊物檢察官、大步走向東山！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "吼吼，沒有逃走，反而向我靠近了過來嗎，向我這個天才漫畫家東山！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "不要靠近你，怎麼把你暴打一頓呢",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "comment",
+          "text": "source line 122: CG：東山掏本子 出現"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dongshan_book_reveal_cg.png",
+          "sloc": [
+            6,
+            0,
+            1012,
+            696
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "東山拿出了一本小薄本"
+        },
+        {
+          "kind": "narration",
+          "text": "封面畫著和檢察官相似的西裝眼鏡娘"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 125: CG：東山掏本子 消失"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "我沒拿蔡O文出來已經很仁慈了。這其實是O之契約者的本子，但是！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "跟我一樣沒有任何經驗的old lady能抵擋這份相似性嗎！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "所以你上次撂下我走人是生氣我說的話嗎",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "別、別開玩笑了！這種羞辱對我根本不算什麼！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "哦呀，誰說要抵禦的是羞辱了？",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "檢察官停下了腳步！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "看啊，你能不好奇這裡面的內容嗎",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "和你相似的女人被這樣那樣，你能抵抗住誘惑不去想嗎？對像是辣妹？還是老成的OL？又或者被矮個子蘿莉輕易擺平？",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "被自己的妄想吞噬殆盡！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "檢察官、攥緊了拳頭！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "別得意忘形了！你以為我還沒準備針對你的武器嗎！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "（為什麼這傢伙的臉這麼紅、果然店裡太熱了嗎）",
+          "portrait": {
+            "code": 20,
+            "image": "keng_surprised_portrait.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "（我只是想威嚇一下、沒想到妄想開關已經全開了可怕）",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "色情刊物檢察官、丟出大量的紙張"
+        },
+        {
+          "kind": "narration",
+          "text": "包圍了自己和梗平！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "吃我聖書頁攻擊，然後我已經完全封死了書店的大門",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "你已經被我封印了，是我贏了，色情漫畫家·東山",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "別開玩笑了，中二也有個限度，我根本不在乎這種東西",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "看我直接跨過去…",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "每一張聖書頁都是寫滿了情色刊物管制法的文件"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "嚇——！太卑鄙了吧！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "東山像看到髒東西的貓一樣跳到一旁"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "只要等我消化完妄想…就能將東山緝捕歸案…",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我已經不行了，但你無需為此煩惱，稽查員小姐",
+          "portrait": {
+            "code": 20,
+            "image": "keng_panic_portrait.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那本子裡全是東山所謂「清湯寡水」的內容，她只是在虛張聲勢！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "什麼？你看過嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "之前東山給我展示和吐槽過（作為反面教材）",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "沒想到，這會成為她今日致命的弱點…",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "換言之你看過工口本子對吧",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "所以說只是…嗯？難道說你想要",
+          "portrait": {
+            "code": 20,
+            "image": "keng_surprised_portrait.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "骯髒的心靈，進洗衣機滾筒洗滌一遍吧！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "梗平被檢察官幹掉了"
+        },
+        {
+          "kind": "narration",
+          "text": "聖書頁的字跡被梗平的血蓋掉了"
+        },
+        {
+          "kind": "narration",
+          "text": "東山得以通過並離開了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "我不會忘記你的犧牲的",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_sad.png",
+            "expression": "sad"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "呼姆呼……",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "店員小姐好像畫了漫畫的第二話"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 162: scene dongshan_2 full transcription boundary"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.plugin.addAkibaEvent({ id: 'dongshan_3', title: '殭屍決戰', locations: ['horses_knee'], floorId: 'dongshan_3', once: true }); }"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "dongshan_2"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    },
+    {
+      "id": "dongshan_3",
+      "floor": {
+        "floorId": "dongshan_3",
+        "title": "殭屍決戰",
+        "name": "殭屍決戰",
+        "canFlyTo": false,
+        "canFlyFrom": false,
+        "canUseQuickShop": false,
+        "cannotViewMap": true,
+        "defaultGround": "ground",
+        "images": [
+          {
+            "name": "ms_bg_bookstore_a_interior.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "bgm": "bossa_casual_shop.mp3",
+        "ratio": 1,
+        "width": 17,
+        "height": 13,
+        "firstArrive": [],
+        "parallelDo": "",
+        "events": {},
+        "changeFloor": {},
+        "beforeBattle": {},
+        "afterBattle": {},
+        "afterGetItem": {},
+        "afterOpenDoor": {},
+        "autoEvent": {},
+        "cannotMove": {},
+        "cannotMoveIn": {},
+        "bgmap": [],
+        "fgmap": []
+      },
+      "events": [
+        {
+          "kind": "comment",
+          "text": "source line 165: 好感度3 → scene title 殭屍決戰"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 166: 【背景：泛用書店內部(明亮)】 → floor background ms_bg_bookstore_a_interior.png"
+        },
+        {
+          "kind": "narration",
+          "text": "情色刊物檢察官、東山和梗平在馬的膝蓋書店"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "好熱、好熱——",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "空氣異常的焦灼"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "慢著，我想先聲明—",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "這次我不會幫你們任何一方了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "想保持中立嗎",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "這可由不得你",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "不，我是孤高的假面騎士",
+          "portrait": {
+            "code": 20,
+            "image": "keng_smile_portrait.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "兩邊都是怪人時，沒有袖手旁觀的道理",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我要同時幹掉你們兩個人！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "又在犯傻，我印刷的事談完了可以先回去嗎",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "呵呵呵…",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "也就是說這家書店從這一刻開始",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "正式進入戰國時代了！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "三人在書店進行了一番血戰"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "接招！卡面來打KICK！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "嗚哇，從書架頂上跳下來是犯規的吧！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "接招！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "納尼，這隻流星錘的繩索…是用色情漫畫鞣製而成的！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "敵人的屍體會變成我的武器！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "這女人…比我還傷風敗俗，輸了",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "大概幾個小時以後—"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "外賣員",
+          "text": "您好，兩份拉麵送到了——"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "哈… 哈… 誰叫的拉麵？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "不是我，原稿會變臭的",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我叫的，打了這麼長時間，肚子都餓了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_smile_portrait.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "（——嗯？只叫了兩碗拉麵也就是說，這傢伙）",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "（打算邀請我們之中的一個人一起吃）",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "（趁機跟那個人締結同盟嗎，看不出這男人有兩把刷子，可是…）",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "（拉麵什麼的品味也太差了吧！）",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "梗平拿著兩碗拉麵走近兩人"
+        },
+        {
+          "kind": "narration",
+          "text": "把拉麵扣在她們頭上！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "什—！這竟然是化學武器！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "竟然是鹽味拉麵，要用給我用醬油的！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "高看你了，你這個野蠻人梗平！ 1000塚一碗的話給我更有效率地利用啊！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "此言差矣，不知兩位有沒有註意到",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "兩位吵鬧起來以前，每次都是我先待在書店裡",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "那又怎樣！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "所以每次都有很多時間跟店員交談",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "了解到這位小姐，是位狂熱的殭屍愛好者－",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "呼姆呼——",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_smile.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "店員小姐從櫃檯後面出來了"
+        },
+        {
+          "kind": "narration",
+          "text": "拎著電鋸"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "具體來說，是「只要看到殭屍就會把它毆打成馬賽克」的愛好者",
+          "portrait": {
+            "code": 20,
+            "image": "keng_smile_portrait.png",
+            "expression": "smile"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "而拉麵扣在頭上的你們兩人，看起來簡直與殭屍無異",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "什—— 這是犯規的吧！裁判，抗議！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "裁判搖搖晃晃向三人走來"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "僵—屍？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "要用火燒本能寺終結戰國時代嗎你這光秀！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "無妨，就讓我將這間書店的罪惡一舉擊敗！",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_angry.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "我也要動真格了，一起上吧店員小姐",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "將這兩個奪走我們平靜看書時光的巨惡一網打盡！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "變——身！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_serious_portrait.png",
+            "expression": "angry"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "書店店員​​轉向梗平"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "僵—屍？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "是假面騎士！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "啊－－想起來了",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "一直對著書架做這個動作，好像腦子已經壞掉了",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "comment",
+          "text": "source line 225: 下一句使用大字"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "書店店員",
+          "text": "是殭屍",
+          "presentation": {
+            "textfont": 24
+          },
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_bookstore_clerk_surprised.png",
+            "expression": "surprised"
+          }
+        },
+        {
+          "kind": "comment",
+          "text": "source line 227: 下一句使用大字"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "色情刊物檢察官",
+          "text": "這傢伙已經興奮起來了！",
+          "presentation": {
+            "textfont": 24
+          },
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_adult_book_prosecutor_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "comment",
+          "text": "source line 229: 下一句使用大字"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "快逃啊啊",
+          "presentation": {
+            "textfont": 24
+          },
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_panic.png",
+            "expression": "panic"
+          }
+        },
+        {
+          "kind": "comment",
+          "text": "source line 231: CG：腐妞出擊 出現"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dongshan_clerk_assault_cg.png",
+          "sloc": [
+            6,
+            0,
+            1012,
+            696
+          ],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "narration",
+          "text": "三個人都被店員小姐幹掉了"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 233: CG：腐妞出擊 消失"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "narration",
+          "text": "由於店員小姐的漫畫染成紅色，下期休刊"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 234: scene dongshan_3 full transcription boundary"
+        },
+        {
+          "kind": "akiba.event.complete",
+          "eventId": "dongshan_3"
+        },
+        {
+          "kind": "akiba.return"
+        }
+      ]
+    }
+  ]
+}

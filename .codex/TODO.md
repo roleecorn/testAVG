@@ -4,6 +4,7 @@
 
 ## Open
 
+- `20260828-211917-avg-layout-ownership-validation.md` Q2：已確認目前沒有專用 AVG layout 鑑察；`validateBundle` 不會攔截缺少 scene layout 或 `fixedLines` 的 IR。需補只讀 validator／負向測試，檢查全局 generator AVG config 與 IR 不得散落全局幾何設定。
 - `20260827-220503-replay-fast-forward-stall.md` Q1：錄像回放 x24 快進存在可重入路徑；`libs/control.js` 的同步移動回呼會直接進入下一步，`project/functions.js` → `libs/events.js` 的 `core.trigger` 又會對同一回呼排程延遲重入，可能造成 replay 動作被重複消費、移動被 `heroMoving` 直接略過或同步遞迴卡死。需在取得 runtime 變更授權後加入單一完成回呼／replay re-entry 防護，並用實際 `.h5route` 驗證。
 - `priority-1-agent-owned-story-ir-and-todo-maintenance`
   - Scope: `scripts/generate_main_story.js`、`scripts/manage_story_ir.js`、`scripts/story_ir.js`、`project/story-ir/`、`project/mainStory/TODO.md`、`project/story/TODO.md`
@@ -16,6 +17,8 @@
 - `20260827-234300-portrait-update.md` Q3：`node scripts/validate_story.js` 在既有 `project/story/NoiR.txt` 與 `project/story-ir/character/noir.json` SHA-256 不一致處停止；本次立繪替換未修改該來源或 IR，需另案依完整來源重新核對。
 
 ## Resolved
+
+- `20260828-211917-avg-layout-ownership-validation.md` Q1：東山 IR 原先把全局 AVG layout 複製成 12 個場景 `layout.set`，造成 generator 無法在 scene 開頭注入標準設定；已改為移除這些節點，6 個「下一句使用大字」改由 dialogue `presentation.textfont: 24` 表達，三個東山 floor 重新由 generator 產生並通過 `node scripts/validate_story.js`。
 
 - `20260827-012537-portrait-rebuild-no-cpu.md` Q1：依新增 GPU workflow 使用 `D:\coding\ai-models\ComfyUI\app\.venv\Lib\site-packages\torch\lib` 的 CUDA DLL，完成 bodyguard、dio、strongman_b 三組母片六格重切與 18 張 `isnet-anime` GPU 去背；runtime 與 `art/characters` 成品均驗證為 RGBA，且重建結果與原檔位元相同。
 
