@@ -1,0 +1,37 @@
+{
+  "character_id": "kelukai",
+  "display_name": "可露凱",
+  "date": "2026-08-29",
+  "tool": "OpenAI built-in imagegen",
+  "request": "Correct hair from white/silver to very pale cool light blue while preserving each CG's composition and all non-hair details.",
+  "color_target": {
+    "description": "very pale cool ice-blue/light-blue with softly deeper pale-blue shadows and near-white blue-tinted highlights",
+    "reference_hex": "#D8ECFF"
+  },
+  "edits": [
+    {
+      "id": "alley_dash",
+      "input": "project/images/kelukai_alley_dash_cg.png",
+      "input_sha256": "67dba0ee88938464511d5157d525f1afa8bb2513614382cafb58d0feeb5f585b",
+      "generated_archive": "C:/Users/jeff7/.codex/generated_images/01a04cc1-e4a6-7fd2-b4a5-53bf22b2aade/exec-73e24d5e-28ef-4320-ac69-0f8f5856fcdc.png",
+      "output_sha256": "93ee91feea6cf2d150bf9ee5b9221a9b180b1685ec93386e9b092d807207b476",
+      "prompt": "Change only the female character's hair from white/silver to very pale cool ice-blue (#D8ECFF), retaining softly deeper pale-blue shadows and near-white blue-tinted highlights; preserve hairstyle, face, golden eye, expression, anatomy, pose, beret, outfit, background speed lines, lighting, composition, crop, line art, and style; do not recolor motion streaks, skin, clothing, or background; add or remove nothing."
+    },
+    {
+      "id": "flashback_strike",
+      "input": "project/images/kelukai_flashback_strike_cg.png",
+      "input_sha256": "f6978902b4eabb52cefd9f10f81ae3c49ca344e5f8533410aa452896e0dbdd18",
+      "generated_archive": "C:/Users/jeff7/.codex/generated_images/01a04cc1-e4a6-7fd2-b4a5-53bf22b2aade/exec-6c599915-d4f0-4fb4-84a1-eac0c4d4690e.png",
+      "output_sha256": "1354f373e8b6ea4db7b07812f37cae8fdaffa24c731457ce791e7c5f907e22fc",
+      "prompt": "Change only the female character's visible hair from white/silver to very pale cool ice-blue (#D8ECFF), retaining softly deeper pale-blue shadows and near-white blue-tinted highlights; preserve hairstyle, face, red glowing eyes, expression, hand pose, beret, uniform, device, glow effects, lighting, composition, crop, line art, and style; do not recolor skin, effects, clothing, device, or background; add or remove nothing."
+    },
+    {
+      "id": "stalker_confrontation",
+      "input": "project/images/kelukai_stalker_confrontation_cg.png",
+      "input_sha256": "cc39699e33d7f73b2b03239e6d090358234bc00b5b9517b3c4e9218ed069d5b2",
+      "generated_archive": "C:/Users/jeff7/.codex/generated_images/01a04cc1-e4a6-7fd2-b4a5-53bf22b2aade/exec-79bab1a4-4220-4ca4-a986-bff50c3dd5ec.png",
+      "output_sha256": "3a18943b319677960b01b77c72a96e64efb3eccac4dd6b3952d69a9a1df7a7a1",
+      "prompt": "Change only the female character's hair from white/silver to very pale cool ice-blue (#D8ECFF), retaining softly deeper pale-blue shadows and near-white blue-tinted highlights; preserve hairstyle, face, golden eyes, expression, anatomy, pose, beret, tactical outfit, rifle, street background, lighting, perspective, composition, crop, line art, and style; do not recolor sky, highlights, weapon, skin, clothing, or background; add or remove nothing."
+    }
+  ]
+}

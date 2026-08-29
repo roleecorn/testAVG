@@ -1,0 +1,95 @@
+{
+  "prompt_id": "ae719c4e-be29-4479-955d-1d27349407b0",
+  "workflow": {
+    "1": {
+      "class_type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "Illustrious-XL-v0.1.safetensors"
+      }
+    },
+    "2": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "masterpiece, best quality, polished visual novel action CG, clean anime lineart, detailed cel shading, cinematic lighting, 1girl, same character: young adult woman, long straight silver hair, blunt bangs, golden eyes, black beret with small red insignia, black tactical police uniform with high collar and red piping, dark navy short pleated skirt, black thigh-high stockings, black tactical boots, black gloves, utility pouches, athletic slim build, stern focused expression, dynamically pinning one fully clothed adult male suspect face-down on a Tokyo back alley pavement, controlling his wrist behind his back, decisive police takedown, impact dust and speed lines, dusk, dramatic low camera, wide landscape composition, character face clearly visible, no gore, no text",
+        "clip": [
+          "1",
+          1
+        ]
+      }
+    },
+    "3": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "worst quality, low quality, blurry, photorealistic, 3d, chibi, child, loli, nude, cleavage, fetish, gore, blood, extra fingers, missing fingers, bad hands, bad anatomy, extra limbs, fused limbs, multiple girls, duplicate character, different hair color, short hair, different eye color, different outfit, police hat, modern blue police uniform, watermark, logo, text, speech bubble",
+        "clip": [
+          "1",
+          1
+        ]
+      }
+    },
+    "4": {
+      "class_type": "EmptyLatentImage",
+      "inputs": {
+        "width": 1024,
+        "height": 704,
+        "batch_size": 4
+      }
+    },
+    "5": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 41620260829,
+        "steps": 28,
+        "cfg": 5.5,
+        "sampler_name": "dpmpp_2m",
+        "scheduler": "karras",
+        "denoise": 1.0,
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "2",
+          0
+        ],
+        "negative": [
+          "3",
+          0
+        ],
+        "latent_image": [
+          "4",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "5",
+          0
+        ],
+        "vae": [
+          "1",
+          2
+        ]
+      }
+    },
+    "7": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "filename_prefix": "kelukai_takedown_calibration",
+        "images": [
+          "6",
+          0
+        ]
+      }
+    }
+  },
+  "saved": [
+    "tmp\\kelukai-cg\\calibration\\kelukai_takedown_calibration_00001_.png",
+    "tmp\\kelukai-cg\\calibration\\kelukai_takedown_calibration_00002_.png",
+    "tmp\\kelukai-cg\\calibration\\kelukai_takedown_calibration_00003_.png",
+    "tmp\\kelukai-cg\\calibration\\kelukai_takedown_calibration_00004_.png"
+  ]
+}

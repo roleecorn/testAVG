@@ -12,6 +12,7 @@ const steps = [
   ["python", ["scripts/compress_cgs.py", "--check"]],
   ["python", ["scripts/build_action_cgs.py", "--check"]],
   [process.execPath, ["scripts/test_story_ir_lifecycle.js"]],
+  [process.execPath, ["scripts/test_avg_effect_runtime.js"]],
   [process.execPath, ["scripts/validate_story_architecture.js", ...process.argv.slice(2)]],
 ];
 

@@ -23,6 +23,9 @@ ASSETS = (
     ("ms_ch2_keng_bicycle_cg.png", "ms_ch2_keng_bicycle_action_cg.png"),
     ("ms_ch2_eri_sunset_cg.png", "ms_ch2_eri_sunset_action_cg.png"),
     ("watanuki_shrine_cg1.jpg", "watanuki_shrine_cg1_action_cg.png"),
+    ("kelukai_alley_dash_cg.png", "kelukai_alley_dash_action_cg.png"),
+    ("kelukai_flashback_strike_cg.png", "kelukai_flashback_strike_action_cg.png"),
+    ("kelukai_stalker_confrontation_cg.png", "kelukai_stalker_confrontation_action_cg.png"),
 )
 
 
@@ -116,7 +119,11 @@ def main() -> None:
         return
 
     manifest = expected_manifest()
-    MANIFEST_PATH.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    MANIFEST_PATH.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
     print(f"Built {len(ASSETS)} action CGs and updated {MANIFEST_PATH.relative_to(ROOT)}.")
 
 

@@ -1,0 +1,95 @@
+{
+  "prompt_id": "c3b313d7-7992-4629-911b-2ceb09a2a087",
+  "workflow": {
+    "1": {
+      "class_type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "Illustrious-XL-v0.1.safetensors"
+      }
+    },
+    "2": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "masterpiece, best quality, very aesthetic, anime visual novel CG, solo, 1girl, adult woman, (long straight silver hair:1.4), (blunt bangs:1.2), (golden eyes:1.3), (black beret with red insignia:1.35), (black tactical police uniform:1.3), high collar, red piping, dark navy pleated skirt, black thighhighs, black tactical boots, black gloves, utility pouches, slim athletic body, stern expression, running, sprinting, lunging forward, from side, hair flowing, dynamic pose, speed lines, impact dust, Tokyo alley at dusk, cinematic lighting, detailed background, wide shot, landscape, full body, centered 16:11 safe composition",
+        "clip": [
+          "1",
+          1
+        ]
+      }
+    },
+    "3": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "text": "worst quality, low quality, normal quality, blurry, photorealistic, 3d, chibi, child, loli, short hair, bob cut, hair bun, no hat, cap, peaked cap, blue uniform, bare legs, nude, cleavage, fetish, gore, blood, extra fingers, missing fingers, bad hands, bad anatomy, extra limbs, fused limbs, multiple girls, duplicate, watermark, logo, text, speech bubble, standing still, sitting",
+        "clip": [
+          "1",
+          1
+        ]
+      }
+    },
+    "4": {
+      "class_type": "EmptyLatentImage",
+      "inputs": {
+        "width": 1024,
+        "height": 704,
+        "batch_size": 4
+      }
+    },
+    "5": {
+      "class_type": "KSampler",
+      "inputs": {
+        "seed": 41620261001,
+        "steps": 32,
+        "cfg": 5.5,
+        "sampler_name": "dpmpp_2m",
+        "scheduler": "karras",
+        "denoise": 1.0,
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "2",
+          0
+        ],
+        "negative": [
+          "3",
+          0
+        ],
+        "latent_image": [
+          "4",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "5",
+          0
+        ],
+        "vae": [
+          "1",
+          2
+        ]
+      }
+    },
+    "7": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "filename_prefix": "kelukai_alley_dash_batch",
+        "images": [
+          "6",
+          0
+        ]
+      }
+    }
+  },
+  "saved": [
+    "tmp\\kelukai-cg\\alley-batch\\kelukai_alley_dash_batch_00001_.png",
+    "tmp\\kelukai-cg\\alley-batch\\kelukai_alley_dash_batch_00002_.png",
+    "tmp\\kelukai-cg\\alley-batch\\kelukai_alley_dash_batch_00003_.png",
+    "tmp\\kelukai-cg\\alley-batch\\kelukai_alley_dash_batch_00004_.png"
+  ]
+}

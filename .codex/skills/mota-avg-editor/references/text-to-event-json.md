@@ -102,6 +102,10 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 | `bgm.resume` | 無 | 恢復 BGM |
 | `sound.play` | `name` | 播放音效；`stop`、`pitch`、`sync` 可選 |
 | `sound.stop` | 無 | 停止音效 |
+| `screen.shake` | `direction`, `time`, `speed`, `power` | 震動固定地圖層與當下可見的 AVG 背景／立繪／CG；對話 UI 保持穩定 |
+| `screen.tint` | `color` | 將 RGBA 色調覆蓋於 AVG 圖層之上；`time`、`moveMode`、`keep`、`async` 可選 |
+| `screen.reset` | 無 | 以可選的 `time`／`moveMode` 恢復無色調畫面 |
+| `screen.flash` | `color`, `time` | 在 AVG 圖層上執行一次或多次閃光；`time` 必須是 3 的倍數，`times`、`moveMode`、`async` 可選 |
 | `background.show` | `code`, `image` | 顯示或切換背景 |
 | `image.show` | `code`, `image`, `role` | 顯示非普通對話綁定的立繪、CG 或 GIF；普通台詞立繪由 generator 自動補入 |
 | `image.hide` | `code` | 隱藏指定圖片層 |

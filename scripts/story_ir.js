@@ -172,6 +172,10 @@ function irToEvent(node, options = {}) {
     case "bgm.resume": return { type: "resumeBgm" };
     case "sound.play": return cleanUndefined({ type: "playSound", name: node.name, stop: node.stop, pitch: node.pitch, sync: node.sync });
     case "sound.stop": return { type: "stopSound" };
+    case "screen.shake": return cleanUndefined({ type: "avgShake", direction: node.direction, time: node.time, speed: node.speed, power: node.power, async: node.async });
+    case "screen.tint": return cleanUndefined({ type: "setCurtain", color: node.color, time: node.time, moveMode: node.moveMode, keep: node.keep, async: node.async });
+    case "screen.reset": return cleanUndefined({ type: "setCurtain", time: node.time, moveMode: node.moveMode, async: node.async });
+    case "screen.flash": return cleanUndefined({ type: "screenFlash", color: node.color, time: node.time, times: node.times, moveMode: node.moveMode, async: node.async });
     case "background.show":
     case "image.show":
       return cleanUndefined({
@@ -555,7 +559,7 @@ function validateGeneratedAvgLayout(floors, location = "generated AVG floors") {
 
 const ALLOWED_KINDS = new Set([
   "narration", "dialogue", "layout.set", "bgm.play", "bgm.pause", "bgm.resume",
-  "sound.play", "sound.stop", "background.show", "image.show", "image.hide", "wait",
+  "sound.play", "sound.stop", "screen.shake", "screen.tint", "screen.reset", "screen.flash", "background.show", "image.show", "image.hide", "wait",
   "ending.roll", "control.lock", "control.unlock", "toolbar.hide", "toolbar.show",
   "goto", "comment", "function.call", "character.exchange", "akiba.event.complete", "akiba.return", "transition.video", "choice",
 ]);
@@ -619,6 +623,28 @@ function validateNode(node, location) {
   }
   if (node.kind === "bgm.play" && node.loop !== undefined && typeof node.loop !== "boolean") {
     throw new Error(`${location}: bgm.play.loop must be boolean when provided`);
+  }
+  if (node.kind === "screen.shake") {
+    const directions = new Set(["horizontal", "vertical", "diagonal1", "diagonal2", "random"]);
+    if (node.direction !== undefined && !directions.has(node.direction)) throw new Error(`${location}: screen.shake.direction is invalid`);
+    for (const field of ["time", "speed", "power"]) {
+      if (node[field] !== undefined && (!Number.isFinite(node[field]) || node[field] <= 0)) {
+        throw new Error(`${location}: screen.shake.${field} must be a positive number`);
+      }
+    }
+  }
+  if (node.kind === "screen.tint" || node.kind === "screen.flash") {
+    if (!Array.isArray(node.color) || node.color.length !== 4 || node.color.some((value) => !Number.isFinite(value))) {
+      throw new Error(`${location}: ${node.kind}.color must be a four-number RGBA array`);
+    }
+    if (node.color[3] < 0 || node.color[3] > 1) throw new Error(`${location}: ${node.kind}.color alpha must be between 0 and 1`);
+  }
+  if (node.kind === "screen.tint" || node.kind === "screen.reset") {
+    if (node.time !== undefined && (!Number.isFinite(node.time) || node.time < 0)) throw new Error(`${location}: ${node.kind}.time must be non-negative`);
+  }
+  if (node.kind === "screen.flash") {
+    if (!Number.isInteger(node.time) || node.time <= 0 || node.time % 3 !== 0) throw new Error(`${location}: screen.flash.time must be a positive multiple of 3`);
+    if (node.times !== undefined && (!Number.isInteger(node.times) || node.times <= 0)) throw new Error(`${location}: screen.flash.times must be a positive integer`);
   }
   if (node.kind === "ending.roll") {
     if (!Number.isInteger(node.code) || typeof node.image !== "string" || !node.image) {

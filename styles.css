@@ -343,7 +343,8 @@ p#name {
 }
 
 #curtain {
-    z-index: 125;
+    /* Above AVG action CGs (code 30 => z-index 130), below the dialogue UI. */
+    z-index: 135;
 }
 
 #ui {

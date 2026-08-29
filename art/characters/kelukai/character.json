@@ -1,0 +1,49 @@
+{
+  "character_id": "kelukai",
+  "display_name": "可露凱",
+  "asset_type": "visual-novel action CG set",
+  "backend": "ComfyUI http://127.0.0.1:8188",
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "model": "Illustrious-XL-v0.1.safetensors",
+  "vae": "checkpoint default",
+  "loras": [],
+  "resolution": {
+    "width": 1024,
+    "height": 704
+  },
+  "style_lock": "polished anime visual novel action CG, clean lineart, detailed cel shading, cinematic lighting, wide 16:11-safe composition",
+  "identity_lock": "young adult woman, long straight very pale cool light-blue hair with ice-blue shadows and blue-tinted near-white highlights, blunt bangs, golden eyes, black beret with small red insignia, athletic slim build",
+  "outfit_lock": "black tactical police uniform with high collar and red piping, dark navy pleated skirt, black thigh-high stockings, black tactical boots, black gloves, utility pouches",
+  "negative_prompt": "worst quality, low quality, blurry, photorealistic, 3d, chibi, child, loli, nude, cleavage, fetish, gore, blood, extra fingers, missing fingers, bad hands, bad anatomy, extra limbs, fused limbs, duplicate character, different hair color, short hair, different eye color, different outfit, blue police uniform, watermark, logo, text, speech bubble",
+  "generation": {
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "steps": 32,
+    "cfg": 6.0,
+    "seed_policy": "fixed base seed 41620260832 with scene-specific offsets"
+  },
+  "post_edit": {
+    "date": "2026-08-29",
+    "tool": "OpenAI built-in imagegen",
+    "scope": "hair-color correction only",
+    "color_target": "very pale cool light blue / ice blue, approximately #D8ECFF with softly deeper pale-blue shadows",
+    "metadata": "art/characters/kelukai/hair-color-correction.json"
+  },
+  "variants": [
+    {
+      "id": "alley_dash",
+      "scene": "kelukai_2",
+      "action": "dashes past Keng toward the off-screen suspect immediately before the takedown"
+    },
+    {
+      "id": "flashback_strike",
+      "scene": "kelukai_3",
+      "action": "younger Kelukai presses the strike control as white light floods the command position"
+    },
+    {
+      "id": "stalker_confrontation",
+      "scene": "kelukai_4",
+      "action": "walks directly toward the distant stalker with calm authority"
+    }
+  ]
+}

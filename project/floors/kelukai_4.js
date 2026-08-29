@@ -317,7 +317,12 @@ main.floors.kelukai_4=
         },
         {
             "type": "comment",
-            "text": "source line 603: 藍衣警察把一張紀錄放到桌上"
+            "text": "source line 605: 藍衣警察把紀錄放到桌上，搭配文件落桌提示音"
+        },
+        {
+            "type": "playSound",
+            "name": "item.mp3",
+            "pitch": 70
         },
         "\t[藍衣警察]附近店員來反映。",
         "\t[藍衣警察]最近有個男人一直在店門口等她。",
@@ -527,7 +532,12 @@ main.floors.kelukai_4=
         },
         {
             "type": "comment",
-            "text": "source line 650: 可露凱重新拿起紀錄"
+            "text": "source line 652: 輕微紙張聲，表現可露凱重新拿起紀錄"
+        },
+        {
+            "type": "playSound",
+            "name": "item.mp3",
+            "pitch": 70
         },
         {
             "type": "showImage",
@@ -626,7 +636,12 @@ main.floors.kelukai_4=
         },
         {
             "type": "comment",
-            "text": "source line 674: 可露凱起身"
+            "text": "source line 676: 短促動作音，帶出可露凱果斷起身"
+        },
+        {
+            "type": "playSound",
+            "name": "floor.mp3",
+            "pitch": 90
         },
         {
             "type": "showImage",
@@ -706,11 +721,36 @@ main.floors.kelukai_4=
         },
         {
             "type": "comment",
-            "text": "source line 688: 場景切換"
+            "text": "source line 690: 250毫秒淡出至黑，切換店鋪前背景後300毫秒淡入"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 250
+        },
+        {
+            "type": "showImage",
+            "code": 5,
+            "image": "kelukai_shopfront_day_bg.png",
+            "loc": [
+                0,
+                0,
+                544,
+                416
+            ]
+        },
+        {
+            "type": "setCurtain",
+            "time": 300
         },
         {
             "type": "comment",
-            "text": "source line 689: 地點:秋葉原・店鋪前"
+            "text": "source line 691: 地點:秋葉原・店鋪前"
         },
         {
             "type": "playBgm",
@@ -720,7 +760,21 @@ main.floors.kelukai_4=
         "\t[店員]就是他。",
         {
             "type": "comment",
-            "text": "source line 694: 鏡頭:街道另一側站著一名男子"
+            "text": "source line 696: 畫面微暗再恢復，聚焦街道另一側的男子"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0.15
+            ],
+            "time": 180
+        },
+        {
+            "type": "setCurtain",
+            "time": 180
         },
         {
             "type": "showImage",
@@ -788,7 +842,11 @@ main.floors.kelukai_4=
         "\t[店員]有一次我快到家才發現他還在後面。",
         {
             "type": "comment",
-            "text": "source line 711: 停頓"
+            "text": "source line 713: 停頓"
+        },
+        {
+            "type": "sleep",
+            "time": 650
         },
         "\t[藍衣警察]這個妳剛剛怎麼沒說？",
         "\t[店員]我……",
@@ -826,7 +884,40 @@ main.floors.kelukai_4=
         },
         {
             "type": "comment",
-            "text": "source line 724: 可露凱朝男子走去"
+            "text": "source line 726: 可露凱朝男子走去"
+        },
+        {
+            "type": "comment",
+            "text": "source line 727: 行為CG：可露凱迎面走向男子，要求對方出示證件"
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "kelukai_stalker_confrontation_action_cg.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "sleep",
+            "time": 1000,
+            "noSkip": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0
         },
         {
             "type": "showImage",
@@ -861,7 +952,21 @@ main.floors.kelukai_4=
         },
         {
             "type": "comment",
-            "text": "source line 732: 場景短暫切換"
+            "text": "source line 735: 短促淡黑後切入對峙近景"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0.88
+            ],
+            "time": 120
+        },
+        {
+            "type": "setCurtain",
+            "time": 180
         },
         {
             "type": "showImage",
@@ -928,18 +1033,47 @@ main.floors.kelukai_4=
         "\t[男子]……",
         {
             "type": "comment",
-            "text": "source line 747: 停頓"
+            "text": "source line 750: 停頓"
+        },
+        {
+            "type": "sleep",
+            "time": 500
         },
         "事情最後沒有變成什麼大案子。",
         "沒有逮捕，也沒有值得特別寫上一筆的功勞。",
         "男人在被警告與確認身分後離開，附近巡邏也多了一個需要注意的人。",
         {
             "type": "comment",
-            "text": "source line 753: 場景切換"
+            "text": "source line 756: 300毫秒淡出至黑，返回警察局值班區後350毫秒淡入"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 300
+        },
+        {
+            "type": "showImage",
+            "code": 5,
+            "image": "ms_bg_police_station.png",
+            "loc": [
+                0,
+                0,
+                544,
+                416
+            ]
+        },
+        {
+            "type": "setCurtain",
+            "time": 350
         },
         {
             "type": "comment",
-            "text": "source line 754: 地點:秋葉原警察局・值班區"
+            "text": "source line 757: 地點:秋葉原警察局・值班區"
         },
         {
             "type": "playBgm",
@@ -1009,12 +1143,20 @@ main.floors.kelukai_4=
         },
         {
             "type": "comment",
-            "text": "source line 767: SE:警察局大門打開"
+            "text": "source line 770: SE:警察局大門打開"
+        },
+        {
+            "type": "playSound",
+            "name": "door.mp3"
         },
         "\t[店員]那個……",
         {
             "type": "comment",
-            "text": "source line 771: 店員走進來"
+            "text": "source line 774: 開門聲後停頓300毫秒，再讓店員開口"
+        },
+        {
+            "type": "sleep",
+            "time": 300
         },
         {
             "type": "showImage",
@@ -1102,7 +1244,11 @@ main.floors.kelukai_4=
         "\t[店員]喔……",
         {
             "type": "comment",
-            "text": "source line 797: 店員明顯有些失望"
+            "text": "source line 800: 店員失望時停頓350毫秒"
+        },
+        {
+            "type": "sleep",
+            "time": 350
         },
         {
             "type": "showImage",
@@ -1154,11 +1300,19 @@ main.floors.kelukai_4=
         "\t[店員]謝謝妳，可露凱警官。",
         {
             "type": "comment",
-            "text": "source line 810: 店員離開"
+            "text": "source line 813: 店員離場後停頓300毫秒"
+        },
+        {
+            "type": "sleep",
+            "time": 300
         },
         {
             "type": "comment",
-            "text": "source line 812: 停頓"
+            "text": "source line 815: 停頓"
+        },
+        {
+            "type": "sleep",
+            "time": 700
         },
         "\t[藍衣警察]被指名了耶。",
         {
@@ -1373,7 +1527,7 @@ main.floors.kelukai_4=
         },
         {
             "type": "comment",
-            "text": "source: project/story/可露凱.txt lines 595-end; full transcription"
+            "text": "source: project/story/可露凱.txt lines 597-end; full transcription"
         },
         {
             "type": "function",

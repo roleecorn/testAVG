@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/可露凱.txt",
-        "sha256": "af70af9d7b4b72a30c46d8279f076032b3975e6291aae2b46774a330a3bd57c2"
+        "sha256": "72fdda17a0c83fff7c1cf5315508e36927e5d4a7451c9e23a719bfe30e421c6a"
       }
     ]
   },
@@ -77,7 +77,12 @@
         },
         {
           "kind": "comment",
-          "text": "source line 11: 顯示CG 扒手-A"
+          "text": "source line 11: 畫面微暗，將注意力集中到扒手動作"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 0.22],
+          "time": 150
         },
         {
           "kind": "narration",
@@ -85,7 +90,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 13: 扒手-A 消失"
+          "text": "source line 13: 150毫秒恢復正常亮度"
+        },
+        {
+          "kind": "screen.reset",
+          "time": 150
         },
         {
           "kind": "bgm.pause"
@@ -140,11 +149,20 @@
         },
         {
           "kind": "comment",
-          "text": "source line 30: 梗平立繪:後悔"
+          "text": "source line 30: 畫面短暫微暗，壓出梗平後悔的停頓"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 0.18],
+          "time": 150
         },
         {
           "kind": "narration",
           "text": "沒有反應。"
+        },
+        {
+          "kind": "screen.reset",
+          "time": 150
         },
         {
           "kind": "dialogue",
@@ -189,7 +207,12 @@
         },
         {
           "kind": "comment",
-          "text": "source line 41: 扒手朝梗平走來"
+          "text": "source line 41: 畫面在扒手逼近時逐漸壓暗200毫秒"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 0.22],
+          "time": 200
         },
         {
           "kind": "dialogue",
@@ -211,7 +234,34 @@
         },
         {
           "kind": "comment",
-          "text": "source line 46: 梗平立繪震動 或 畫面震動"
+          "text": "source line 46: 警示音、梗平驚恐立繪與街景橫向震動450毫秒"
+        },
+        {
+          "kind": "sound.play",
+          "name": "error.mp3",
+          "stop": true,
+          "pitch": 115
+        },
+        {
+          "kind": "image.show",
+          "role": "portrait",
+          "code": 20,
+          "image": "keng_neutral_portrait.png"
+        },
+        {
+          "kind": "screen.shake",
+          "direction": "horizontal",
+          "time": 450,
+          "speed": 50,
+          "power": 8
+        },
+        {
+          "kind": "image.hide",
+          "code": 20
+        },
+        {
+          "kind": "screen.reset",
+          "time": 180
         },
         {
           "kind": "comment",
@@ -233,7 +283,22 @@
         },
         {
           "kind": "comment",
-          "text": "source line 50: 場景切換"
+          "text": "source line 50: 220毫秒淡出至黑，切換警察局值班區後260毫秒淡入"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 1],
+          "time": 220
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "ms_bg_police_station.png",
+          "loc": [0, 0, 544, 416]
+        },
+        {
+          "kind": "screen.reset",
+          "time": 260
         },
         {
           "kind": "comment",
@@ -249,6 +314,10 @@
         {
           "kind": "comment",
           "text": "source line 55: SE:大門被撞開"
+        },
+        {
+          "kind": "sound.play",
+          "name": "door.mp3"
         },
         {
           "kind": "dialogue",
@@ -337,7 +406,16 @@
         },
         {
           "kind": "comment",
-          "text": "source line 77: 鏡頭:警察局門外"
+          "text": "source line 77: 畫面短促暗轉，視線切向警察局門外"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 0.75],
+          "time": 90
+        },
+        {
+          "kind": "screen.reset",
+          "time": 150
         },
         {
           "kind": "narration",
@@ -700,7 +778,12 @@
         },
         {
           "kind": "comment",
-          "text": "source line 151: 可露凱把幾張照片丟到桌上"
+          "text": "source line 151: 可露凱把照片甩到桌上，搭配文件落桌提示音"
+        },
+        {
+          "kind": "sound.play",
+          "name": "item.mp3",
+          "pitch": 75
         },
         {
           "kind": "dialogue",
@@ -803,7 +886,12 @@
         },
         {
           "kind": "comment",
-          "text": "source line 172: 可露凱推過另一張監視器截圖"
+          "text": "source line 172: 低沉紙張滑動音，表現監視器截圖推上桌"
+        },
+        {
+          "kind": "sound.play",
+          "name": "item.mp3",
+          "pitch": 65
         },
         {
           "kind": "dialogue",
@@ -834,7 +922,12 @@
         },
         {
           "kind": "comment",
-          "text": "source line 180: 鏡頭拉近"
+          "text": "source line 180: 短促提示音模擬監視器畫面切換"
+        },
+        {
+          "kind": "sound.play",
+          "name": "confirm.mp3",
+          "pitch": 85
         },
         {
           "kind": "dialogue",
@@ -928,7 +1021,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 201: 另一個警察從旁邊探頭"
+          "text": "source line 201: 插話前停頓250毫秒"
+        },
+        {
+          "kind": "wait",
+          "time": 250
         },
         {
           "kind": "dialogue",
@@ -993,7 +1090,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 220: 藍衣警察離開"
+          "text": "source line 220: 離場後停頓250毫秒"
+        },
+        {
+          "kind": "wait",
+          "time": 250
         },
         {
           "kind": "dialogue",
@@ -1051,7 +1152,22 @@
         },
         {
           "kind": "comment",
-          "text": "source line 234: 場景切換"
+          "text": "source line 234: 300毫秒淡出至黑，切換後巷傍晚背景後350毫秒淡入"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 1],
+          "time": 300
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "kelukai_alley_evening_bg.png",
+          "loc": [0, 0, 544, 416]
+        },
+        {
+          "kind": "screen.reset",
+          "time": 350
         },
         {
           "kind": "comment",
@@ -1063,7 +1179,7 @@
         },
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
+          "name": "dark_alleys_tension.ogg",
           "keep": true
         },
         {
@@ -1294,6 +1410,10 @@
           "text": "source line 289: 停頓:1秒"
         },
         {
+          "kind": "wait",
+          "time": 1000
+        },
+        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "警察——！！",
@@ -1344,7 +1464,14 @@
         },
         {
           "kind": "comment",
-          "text": "source line 305: SE:奔跑聲"
+          "text": "source line 305: 街景低幅橫向震動300毫秒，表現急促奔跑"
+        },
+        {
+          "kind": "screen.shake",
+          "direction": "horizontal",
+          "time": 300,
+          "speed": 32,
+          "power": 4
         },
         {
           "kind": "dialogue",
@@ -1366,7 +1493,44 @@
         },
         {
           "kind": "comment",
-          "text": "source line 311: SE:撞擊聲"
+          "text": "source line 311: 撞擊音與短促斜向重震"
+        },
+        {
+          "kind": "sound.play",
+          "name": "attack.mp3",
+          "stop": true,
+          "pitch": 90
+        },
+        {
+          "kind": "comment",
+          "text": "source line 312: 行為CG：可露凱從梗平身旁疾衝而過，撲向畫外的男人"
+        },
+        {
+          "kind": "screen.shake",
+          "direction": "diagonal1",
+          "time": 300,
+          "speed": 45,
+          "power": 8
+        },
+        {
+          "kind": "image.show",
+          "code": 30,
+          "image": "kelukai_alley_dash_action_cg.png",
+          "role": "cg",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "wait",
+          "time": 1000,
+          "noSkip": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0
         },
         {
           "kind": "narration",
@@ -1392,7 +1556,7 @@
         },
         {
           "kind": "comment",
-          "text": "source line 318: 可露凱立繪:憤怒"
+          "text": "source line 319: 可露凱立繪:憤怒"
         },
         {
           "kind": "dialogue",
@@ -1459,7 +1623,13 @@
         },
         {
           "kind": "comment",
-          "text": "source line 332: 可露凱拿槍指向梗平"
+          "text": "source line 333: 可露凱拿槍指向梗平，搭配紅色警示閃光"
+        },
+        {
+          "kind": "screen.flash",
+          "color": [255, 48, 48, 0.55],
+          "time": 300,
+          "times": 1
         },
         {
           "kind": "dialogue",
@@ -1589,11 +1759,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 359: 第二篇結束"
+          "text": "source line 360: 第二篇結束"
         },
         {
           "kind": "comment",
-          "text": "source line 361: 地點:警察局"
+          "text": "source line 362: 地點:警察局"
         },
         {
           "kind": "comment",
@@ -1624,7 +1794,7 @@
     {
       "n": "3",
       "title": "以前的可露凱",
-      "start": 362,
+      "start": 363,
       "events": [
         {
           "kind": "bgm.play",
@@ -1709,7 +1879,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 384: 梗平從門口探頭"
+          "text": "source line 385: 梗平插話前停頓250毫秒"
+        },
+        {
+          "kind": "wait",
+          "time": 250
         },
         {
           "kind": "dialogue",
@@ -1969,7 +2143,12 @@
         },
         {
           "kind": "comment",
-          "text": "source line 452: SE:腳步聲"
+          "text": "source line 453: 低沉腳步提示音由遠而近"
+        },
+        {
+          "kind": "sound.play",
+          "name": "floor.mp3",
+          "pitch": 60
         },
         {
           "kind": "dialogue",
@@ -2046,7 +2225,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 474: 停頓:1秒"
+          "text": "source line 475: 停頓:1秒"
+        },
+        {
+          "kind": "wait",
+          "time": 1000
         },
         {
           "kind": "dialogue",
@@ -2167,7 +2350,7 @@
         },
         {
           "kind": "comment",
-          "text": "source line 502: 可露凱立繪:平靜"
+          "text": "source line 503: 可露凱立繪:平靜"
         },
         {
           "kind": "dialogue",
@@ -2324,7 +2507,12 @@
         },
         {
           "kind": "comment",
-          "text": "source line 534: 可露凱拿起文件"
+          "text": "source line 535: 輕微紙張聲，表現可露凱拿起文件"
+        },
+        {
+          "kind": "sound.play",
+          "name": "item.mp3",
+          "pitch": 60
         },
         {
           "kind": "dialogue",
@@ -2364,7 +2552,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 544: 停頓:1秒"
+          "text": "source line 545: 停頓:1秒"
+        },
+        {
+          "kind": "wait",
+          "time": 1000
         },
         {
           "kind": "dialogue",
@@ -2426,19 +2618,32 @@
         },
         {
           "kind": "comment",
-          "text": "source line 559: 場景切換"
+          "text": "source line 560: 350毫秒淡出至黑後進入回憶"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 1],
+          "time": 350
         },
         {
           "kind": "comment",
-          "text": "source line 560: 畫面轉黑"
+          "text": "source line 561: 回憶段落使用低飽和冷灰藍色調，UI保持清晰"
         },
         {
           "kind": "comment",
-          "text": "source line 561: 回憶演出"
+          "text": "source line 562: BGM暫停，改以安靜壓迫感呈現"
         },
         {
           "kind": "comment",
-          "text": "source line 562: 使用低飽和濾鏡"
+          "text": "source line 563: 回憶演出開始"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [72, 88, 110, 0.48],
+          "time": 300
         },
         {
           "kind": "dialogue",
@@ -2457,7 +2662,13 @@
         },
         {
           "kind": "comment",
-          "text": "source line 569: SE:通訊雜訊"
+          "text": "source line 570: 低頻通訊警示音"
+        },
+        {
+          "kind": "sound.play",
+          "name": "error.mp3",
+          "stop": true,
+          "pitch": 65
         },
         {
           "kind": "dialogue",
@@ -2527,7 +2738,51 @@
         },
         {
           "kind": "comment",
-          "text": "source line 588: 畫面瞬間轉白"
+          "text": "source line 588: 行為CG：年輕的可露凱按下攻擊按鈕，白光照亮她的側臉"
+        },
+        {
+          "kind": "image.show",
+          "code": 30,
+          "image": "kelukai_flashback_strike_action_cg.png",
+          "role": "cg",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "wait",
+          "time": 1000,
+          "noSkip": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0
+        },
+        {
+          "kind": "comment",
+          "text": "source line 590: 爆炸音、全畫面白閃與短促斜向震動"
+        },
+        {
+          "kind": "sound.play",
+          "name": "bomb.mp3",
+          "stop": true,
+          "pitch": 90
+        },
+        {
+          "kind": "screen.shake",
+          "direction": "diagonal1",
+          "time": 360,
+          "speed": 52,
+          "power": 10,
+          "async": true
+        },
+        {
+          "kind": "screen.flash",
+          "color": [255, 255, 255, 1],
+          "time": 450,
+          "times": 1
         },
         {
           "kind": "narration",
@@ -2535,19 +2790,24 @@
         },
         {
           "kind": "comment",
-          "text": "source line 590: 畫面正常化"
+          "text": "source line 592: 白光緩慢退為黑幕，結束回憶"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 1],
+          "time": 600
         },
         {
           "kind": "comment",
-          "text": "source line 592: 第三篇結束"
+          "text": "source line 594: 第三篇結束"
         },
         {
           "kind": "comment",
-          "text": "source line 594: 地點:秋葉原警察局"
+          "text": "source line 596: 地點:秋葉原警察局"
         },
         {
           "kind": "comment",
-          "text": "source: project/story/可露凱.txt lines 362-end; full transcription"
+          "text": "source: project/story/可露凱.txt lines 363-end; full transcription"
         },
         {
           "kind": "function.call",
@@ -2574,7 +2834,7 @@
     {
       "n": "4",
       "title": "指名",
-      "start": 595,
+      "start": 597,
       "events": [
         {
           "kind": "bgm.play",
@@ -2608,7 +2868,12 @@
         },
         {
           "kind": "comment",
-          "text": "source line 603: 藍衣警察把一張紀錄放到桌上"
+          "text": "source line 605: 藍衣警察把紀錄放到桌上，搭配文件落桌提示音"
+        },
+        {
+          "kind": "sound.play",
+          "name": "item.mp3",
+          "pitch": 70
         },
         {
           "kind": "dialogue",
@@ -2784,7 +3049,12 @@
         },
         {
           "kind": "comment",
-          "text": "source line 650: 可露凱重新拿起紀錄"
+          "text": "source line 652: 輕微紙張聲，表現可露凱重新拿起紀錄"
+        },
+        {
+          "kind": "sound.play",
+          "name": "item.mp3",
+          "pitch": 70
         },
         {
           "kind": "dialogue",
@@ -2867,7 +3137,12 @@
         },
         {
           "kind": "comment",
-          "text": "source line 674: 可露凱起身"
+          "text": "source line 676: 短促動作音，帶出可露凱果斷起身"
+        },
+        {
+          "kind": "sound.play",
+          "name": "floor.mp3",
+          "pitch": 90
         },
         {
           "kind": "dialogue",
@@ -2921,11 +3196,26 @@
         },
         {
           "kind": "comment",
-          "text": "source line 688: 場景切換"
+          "text": "source line 690: 250毫秒淡出至黑，切換店鋪前背景後300毫秒淡入"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 1],
+          "time": 250
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "kelukai_shopfront_day_bg.png",
+          "loc": [0, 0, 544, 416]
+        },
+        {
+          "kind": "screen.reset",
+          "time": 300
         },
         {
           "kind": "comment",
-          "text": "source line 689: 地點:秋葉原・店鋪前"
+          "text": "source line 691: 地點:秋葉原・店鋪前"
         },
         {
           "kind": "bgm.play",
@@ -2939,7 +3229,16 @@
         },
         {
           "kind": "comment",
-          "text": "source line 694: 鏡頭:街道另一側站著一名男子"
+          "text": "source line 696: 畫面微暗再恢復，聚焦街道另一側的男子"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 0.15],
+          "time": 180
+        },
+        {
+          "kind": "screen.reset",
+          "time": 180
         },
         {
           "kind": "dialogue",
@@ -2999,7 +3298,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 711: 停頓"
+          "text": "source line 713: 停頓"
+        },
+        {
+          "kind": "wait",
+          "time": 650
         },
         {
           "kind": "dialogue",
@@ -3041,7 +3344,31 @@
         },
         {
           "kind": "comment",
-          "text": "source line 724: 可露凱朝男子走去"
+          "text": "source line 726: 可露凱朝男子走去"
+        },
+        {
+          "kind": "comment",
+          "text": "source line 727: 行為CG：可露凱迎面走向男子，要求對方出示證件"
+        },
+        {
+          "kind": "image.show",
+          "code": 30,
+          "image": "kelukai_stalker_confrontation_action_cg.png",
+          "role": "cg",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "wait",
+          "time": 1000,
+          "noSkip": true
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -3068,7 +3395,16 @@
         },
         {
           "kind": "comment",
-          "text": "source line 732: 場景短暫切換"
+          "text": "source line 735: 短促淡黑後切入對峙近景"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 0.88],
+          "time": 120
+        },
+        {
+          "kind": "screen.reset",
+          "time": 180
         },
         {
           "kind": "dialogue",
@@ -3123,7 +3459,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 747: 停頓"
+          "text": "source line 750: 停頓"
+        },
+        {
+          "kind": "wait",
+          "time": 500
         },
         {
           "kind": "narration",
@@ -3139,11 +3479,26 @@
         },
         {
           "kind": "comment",
-          "text": "source line 753: 場景切換"
+          "text": "source line 756: 300毫秒淡出至黑，返回警察局值班區後350毫秒淡入"
+        },
+        {
+          "kind": "screen.tint",
+          "color": [0, 0, 0, 1],
+          "time": 300
+        },
+        {
+          "kind": "background.show",
+          "code": 5,
+          "image": "ms_bg_police_station.png",
+          "loc": [0, 0, 544, 416]
+        },
+        {
+          "kind": "screen.reset",
+          "time": 350
         },
         {
           "kind": "comment",
-          "text": "source line 754: 地點:秋葉原警察局・值班區"
+          "text": "source line 757: 地點:秋葉原警察局・值班區"
         },
         {
           "kind": "bgm.play",
@@ -3193,7 +3548,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 767: SE:警察局大門打開"
+          "text": "source line 770: SE:警察局大門打開"
+        },
+        {
+          "kind": "sound.play",
+          "name": "door.mp3"
         },
         {
           "kind": "dialogue",
@@ -3202,7 +3561,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 771: 店員走進來"
+          "text": "source line 774: 開門聲後停頓300毫秒，再讓店員開口"
+        },
+        {
+          "kind": "wait",
+          "time": 300
         },
         {
           "kind": "dialogue",
@@ -3296,7 +3659,11 @@
         },
         {
           "kind": "comment",
-          "text": "source line 797: 店員明顯有些失望"
+          "text": "source line 800: 店員失望時停頓350毫秒"
+        },
+        {
+          "kind": "wait",
+          "time": 350
         },
         {
           "kind": "dialogue",
@@ -3342,11 +3709,19 @@
         },
         {
           "kind": "comment",
-          "text": "source line 810: 店員離開"
+          "text": "source line 813: 店員離場後停頓300毫秒"
+        },
+        {
+          "kind": "wait",
+          "time": 300
         },
         {
           "kind": "comment",
-          "text": "source line 812: 停頓"
+          "text": "source line 815: 停頓"
+        },
+        {
+          "kind": "wait",
+          "time": 700
         },
         {
           "kind": "dialogue",
@@ -3481,7 +3856,7 @@
         },
         {
           "kind": "comment",
-          "text": "source: project/story/可露凱.txt lines 595-end; full transcription"
+          "text": "source: project/story/可露凱.txt lines 597-end; full transcription"
         },
         {
           "kind": "akiba.event.complete",

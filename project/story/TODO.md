@@ -17,7 +17,7 @@
 - DOCX 提取流程已正規化：`scripts/extract_docx_text.py` 直接按 `word/document.xml` 段落輸出 UTF-8 無 BOM、LF-only TXT，保留空段落、手動換行與 tab；舊有含字面 `\\n` 的提取物不得再使用。地子已改用正規化提取結果覆蓋來源。香蕉人／茜 DOCX 與 TXT 版本不一致，保留 TXT 作為已確認來源並記錄 DOCX 比對證據。
 - TXT 編碼也已正規化：`scripts/normalize_story_text.py` 先嚴格辨識 UTF-8／UTF-8 BOM，失敗時以 CP950 解碼，再輸出 UTF-8 無 BOM、LF-only；已修復漆原瑠華／柏崎星奈的 `�` 來源問題，並重新同步所有本次來源 SHA。
 - 本次 ZIP 提供的圖片目前已全部離開 `unknown/`；既有角色與兩個新角色的素材已完成 `project/images → data.js → Story IR → floor` 閉環。
-- 可露凱與神秘香蕉人的部分 SE、特殊鏡頭與來源列出的缺少 CG 仍待正式素材／演出規格；台詞、旁白、段落流程與可解析 BGM／背景已完整進入 IR，缺少正式素材的項目不得誤標為已完成。
+- 可露凱的可見 AVG 震動、色調／閃光、轉場與可對應既有素材的 SE 已於 2026-08-29 重新設計並接入；後巷傍晚與店鋪前仍待正式背景，另列 `kelukai-location-backgrounds`。神秘香蕉人的部分 SE、特殊鏡頭與來源列出的缺少 CG 仍待正式素材／演出規格；缺少正式素材的項目不得誤標為已完成。
 
 ## 待確認人物
 
@@ -54,6 +54,12 @@
 
 
 ## 待補素材
+
+- Open: `kelukai-location-backgrounds`
+  - Scope: `project/images/kelukai_alley_evening_bg.png`、`project/images/kelukai_shopfront_day_bg.png`、`project/story-ir/character/kelukai.json`、`project/floors/kelukai_2.js`、`project/floors/kelukai_4.js`。
+  - Current: 為讓後巷傍晚與店鋪前轉場可實際切換，本次分別以 `ms_bg_street_night.png`、`ms_bg_street_day.png` 複製成唯一命名的 544×416 可玩背景；演出、註冊與 scene 引用已接通，但內容仍是同構暫代圖。
+  - Done when: 取得兩張符合可露凱場景的正式背景，原檔名替換並目視驗收轉場、角色可讀性與 CG 前後連續性，再通過 `node scripts/validate_story.js`。
+  - Evidence: `project/story/manifest.md` 的可露凱背景紀錄、Story IR／floor 的 `background.show` 與本次完整驗證。
 
 - Open: `sena-portrait-grid-update`
   - Scope: `unknown/sena/15.柏崎星奈/圖檔/柏崎星奈.jpg`、`project/images/sena_{smile,angry,sad,surprised,panic,normal}.png`、`project/story-ir/character/sena.json`

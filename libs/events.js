@@ -2631,6 +2631,10 @@ events.prototype._action_vibrate = function (data, x, y, prefix) {
     this.__action_doAsyncFunc(data.async, core.vibrate, data.direction, data.time, data.speed, data.power);
 }
 
+events.prototype._action_avgShake = function (data, x, y, prefix) {
+    this.__action_doAsyncFunc(data.async, core.avgShake, data.direction, data.time, data.speed, data.power);
+}
+
 events.prototype._action_sleep = function (data, x, y, prefix) {
     core.timeout.sleepTimeout = setTimeout(function () {
         core.timeout.sleepTimeout = null;
@@ -3870,6 +3874,76 @@ events.prototype.vibrate = function (direction, time, speed, power, callback) {
 
     core.animateFrame.lastAsyncId = animate;
     core.animateFrame.asyncId[animate] = cb;
+}
+
+////// AVG 畫面震動：固定地圖層與 showImage 動態圖層一起移動，UI 保持穩定 //////
+events.prototype.avgShake = function (direction, time, speed, power, callback) {
+    if (core.isReplaying()) {
+        if (callback) callback();
+        return;
+    }
+    if (!time) time = 1000;
+    speed = speed || 10;
+    power = power || 10;
+    var shakeInfo = { duration: parseInt(time / 10), speed: speed, power: power, direction: 1, shake: 0 };
+    if (direction == 'random') {
+        direction = ['horizontal', 'vertical', 'diagonal1', 'diagonal2'][Math.floor(Math.random() * 4)];
+    }
+    var dynamicLayers = Object.keys(core.dymCanvas || {}).filter(function (name) {
+        return /^image\d+$/.test(name) && core.dymCanvas[name] && core.dymCanvas[name].canvas;
+    }).map(function (name) {
+        var canvas = core.dymCanvas[name].canvas;
+        return {
+            canvas: canvas,
+            transform: canvas.style.transform || '',
+            webkitTransform: canvas.style.webkitTransform || '',
+            OTransform: canvas.style.OTransform || '',
+            MozTransform: canvas.style.MozTransform || ''
+        };
+    });
+    var translated = function (value, base) {
+        return value + (base && base != 'none' ? ' ' + base : '');
+    };
+    var applyDynamicTranslate = function (x, y) {
+        var scale = core.domStyle.scale || 1;
+        var value = 'translate(' + (x * scale) + 'px,' + (y * scale) + 'px)';
+        dynamicLayers.forEach(function (layer) {
+            layer.canvas.style.transform = translated(value, layer.transform);
+            layer.canvas.style.webkitTransform = translated(value, layer.webkitTransform);
+            layer.canvas.style.OTransform = translated(value, layer.OTransform);
+            layer.canvas.style.MozTransform = translated(value, layer.MozTransform);
+        });
+    };
+    var restore = function () {
+        core.addGameCanvasTranslate(0, 0);
+        dynamicLayers.forEach(function (layer) {
+            layer.canvas.style.transform = layer.transform;
+            layer.canvas.style.webkitTransform = layer.webkitTransform;
+            layer.canvas.style.OTransform = layer.OTransform;
+            layer.canvas.style.MozTransform = layer.MozTransform;
+        });
+        if (callback) callback();
+    };
+    var animate = setInterval(function () {
+        core.events._vibrate_update(shakeInfo);
+        var offsetX = 0, offsetY = 0;
+        switch (direction) {
+            case 'vertical': offsetY = shakeInfo.shake; break;
+            case 'diagonal1': offsetX = offsetY = shakeInfo.shake; break;
+            case 'diagonal2': offsetX = -shakeInfo.shake; offsetY = shakeInfo.shake; break;
+            default: offsetX = shakeInfo.shake; break;
+        }
+        core.addGameCanvasTranslate(offsetX, offsetY);
+        applyDynamicTranslate(offsetX, offsetY);
+        if (shakeInfo.duration === 0 && shakeInfo.shake == 0) {
+            delete core.animateFrame.asyncId[animate];
+            clearInterval(animate);
+            restore();
+        }
+    }, 10);
+
+    core.animateFrame.lastAsyncId = animate;
+    core.animateFrame.asyncId[animate] = restore;
 }
 
 events.prototype._vibrate_update = function (shakeInfo) {

@@ -38,6 +38,29 @@ assert.doesNotThrow(() => validateBundle(bundle([
   { kind: "akiba.return" },
 ])));
 
+const effectFloor = bundleToFloors(bundle([
+  { kind: "screen.tint", color: [0, 0, 0, 1], time: 220 },
+  { kind: "screen.shake", direction: "horizontal", time: 450, speed: 50, power: 8 },
+  { kind: "screen.flash", color: [255, 255, 255, 1], time: 450, times: 1 },
+  { kind: "screen.reset", time: 260 },
+  { kind: "akiba.event.complete", eventId: "example_1" },
+  { kind: "akiba.return" },
+])).find((floor) => floor.floorId === "example_1");
+assert.deepEqual(effectFloor.eachArrive.slice(1, 5), [
+  { type: "setCurtain", color: [0, 0, 0, 1], time: 220 },
+  { type: "avgShake", direction: "horizontal", time: 450, speed: 50, power: 8 },
+  { type: "screenFlash", color: [255, 255, 255, 1], time: 450, times: 1 },
+  { type: "setCurtain", time: 260 },
+]);
+assert.throws(
+  () => validateBundle(bundle([
+    { kind: "screen.flash", color: [255, 255, 255, 1], time: 451 },
+    { kind: "akiba.event.complete", eventId: "example_1" },
+    { kind: "akiba.return" },
+  ])),
+  /screen\.flash\.time must be a positive multiple of 3/,
+);
+
 assert.doesNotThrow(() => validateBundle(bundle([
   { kind: "function.call", function: "function () { core.plugin.completeAkibaEvent('example_1'); }" },
   { kind: "function.call", function: "function () { core.plugin.returnToAkiba(); }" },

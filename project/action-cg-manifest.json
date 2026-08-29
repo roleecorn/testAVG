@@ -146,6 +146,66 @@
         416,
         286
       ]
+    },
+    {
+      "master": "kelukai_alley_dash_cg.png",
+      "output": "kelukai_alley_dash_action_cg.png",
+      "masterSha256": "93ee91feea6cf2d150bf9ee5b9221a9b180b1685ec93386e9b092d807207b476",
+      "outputSha256": "214b994df6ffa244c548d2d9154a2a49520079f9385b1b497d66b3bfeb3ddcdf",
+      "sourceSize": [
+        1511,
+        1041
+      ],
+      "crop": [
+        0,
+        1,
+        1511,
+        1039
+      ],
+      "outputSize": [
+        416,
+        286
+      ]
+    },
+    {
+      "master": "kelukai_flashback_strike_cg.png",
+      "output": "kelukai_flashback_strike_action_cg.png",
+      "masterSha256": "1354f373e8b6ea4db7b07812f37cae8fdaffa24c731457ce791e7c5f907e22fc",
+      "outputSha256": "da6796534c2b472fe5b2c62d9757ad182ac03feda6faf3c10eebfc2d7f17352a",
+      "sourceSize": [
+        1512,
+        1040
+      ],
+      "crop": [
+        0,
+        0,
+        1512,
+        1039
+      ],
+      "outputSize": [
+        416,
+        286
+      ]
+    },
+    {
+      "master": "kelukai_stalker_confrontation_cg.png",
+      "output": "kelukai_stalker_confrontation_action_cg.png",
+      "masterSha256": "3a18943b319677960b01b77c72a96e64efb3eccac4dd6b3952d69a9a1df7a7a1",
+      "outputSha256": "cbb057f4694f44d30d66b4480bf819e2875ee4243a05c5a5387c436ff3c38dfd",
+      "sourceSize": [
+        1510,
+        1041
+      ],
+      "crop": [
+        0,
+        1,
+        1510,
+        1039
+      ],
+      "outputSize": [
+        416,
+        286
+      ]
     }
   ]
 }

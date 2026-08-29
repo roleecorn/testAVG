@@ -363,12 +363,26 @@ main.floors.kelukai_1=
         },
         {
             "type": "comment",
-            "text": "source line 11: 顯示CG 扒手-A"
+            "text": "source line 11: 畫面微暗，將注意力集中到扒手動作"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0.22
+            ],
+            "time": 150
         },
         "就在梗平為自己的生存計畫感到滿意時，他看見前面一個男人把手伸進了別人的外套口袋。",
         {
             "type": "comment",
-            "text": "source line 13: 扒手-A 消失"
+            "text": "source line 13: 150毫秒恢復正常亮度"
+        },
+        {
+            "type": "setCurtain",
+            "time": 150
         },
         {
             "type": "pauseBgm"
@@ -438,9 +452,23 @@ main.floors.kelukai_1=
         },
         {
             "type": "comment",
-            "text": "source line 30: 梗平立繪:後悔"
+            "text": "source line 30: 畫面短暫微暗，壓出梗平後悔的停頓"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0.18
+            ],
+            "time": 150
         },
         "沒有反應。",
+        {
+            "type": "setCurtain",
+            "time": 150
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -504,7 +532,17 @@ main.floors.kelukai_1=
         },
         {
             "type": "comment",
-            "text": "source line 41: 扒手朝梗平走來"
+            "text": "source line 41: 畫面在扒手逼近時逐漸壓暗200毫秒"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0.22
+            ],
+            "time": 200
         },
         {
             "type": "showImage",
@@ -538,7 +576,38 @@ main.floors.kelukai_1=
         },
         {
             "type": "comment",
-            "text": "source line 46: 梗平立繪震動 或 畫面震動"
+            "text": "source line 46: 警示音、梗平驚恐立繪與街景橫向震動450毫秒"
+        },
+        {
+            "type": "playSound",
+            "name": "error.mp3",
+            "stop": true,
+            "pitch": 115
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ]
+        },
+        {
+            "type": "avgShake",
+            "direction": "horizontal",
+            "time": 450,
+            "speed": 50,
+            "power": 8
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "setCurtain",
+            "time": 180
         },
         {
             "type": "comment",
@@ -566,7 +635,32 @@ main.floors.kelukai_1=
         },
         {
             "type": "comment",
-            "text": "source line 50: 場景切換"
+            "text": "source line 50: 220毫秒淡出至黑，切換警察局值班區後260毫秒淡入"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 220
+        },
+        {
+            "type": "showImage",
+            "code": 5,
+            "image": "ms_bg_police_station.png",
+            "loc": [
+                0,
+                0,
+                544,
+                416
+            ]
+        },
+        {
+            "type": "setCurtain",
+            "time": 260
         },
         {
             "type": "comment",
@@ -582,6 +676,10 @@ main.floors.kelukai_1=
         {
             "type": "comment",
             "text": "source line 55: SE:大門被撞開"
+        },
+        {
+            "type": "playSound",
+            "name": "door.mp3"
         },
         {
             "type": "showImage",
@@ -724,7 +822,21 @@ main.floors.kelukai_1=
         },
         {
             "type": "comment",
-            "text": "source line 77: 鏡頭:警察局門外"
+            "text": "source line 77: 畫面短促暗轉，視線切向警察局門外"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0.75
+            ],
+            "time": 90
+        },
+        {
+            "type": "setCurtain",
+            "time": 150
         },
         "扒手看到警察局，根本沒有追進來，轉身就跑。",
         {

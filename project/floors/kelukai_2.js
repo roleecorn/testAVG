@@ -347,7 +347,12 @@ main.floors.kelukai_2=
         },
         {
             "type": "comment",
-            "text": "source line 151: 可露凱把幾張照片丟到桌上"
+            "text": "source line 151: 可露凱把照片甩到桌上，搭配文件落桌提示音"
+        },
+        {
+            "type": "playSound",
+            "name": "item.mp3",
+            "pitch": 75
         },
         {
             "type": "showImage",
@@ -516,7 +521,12 @@ main.floors.kelukai_2=
         },
         {
             "type": "comment",
-            "text": "source line 172: 可露凱推過另一張監視器截圖"
+            "text": "source line 172: 低沉紙張滑動音，表現監視器截圖推上桌"
+        },
+        {
+            "type": "playSound",
+            "name": "item.mp3",
+            "pitch": 65
         },
         {
             "type": "showImage",
@@ -565,7 +575,12 @@ main.floors.kelukai_2=
         },
         {
             "type": "comment",
-            "text": "source line 180: 鏡頭拉近"
+            "text": "source line 180: 短促提示音模擬監視器畫面切換"
+        },
+        {
+            "type": "playSound",
+            "name": "confirm.mp3",
+            "pitch": 85
         },
         {
             "type": "showImage",
@@ -719,7 +734,11 @@ main.floors.kelukai_2=
         },
         {
             "type": "comment",
-            "text": "source line 201: 另一個警察從旁邊探頭"
+            "text": "source line 201: 插話前停頓250毫秒"
+        },
+        {
+            "type": "sleep",
+            "time": 250
         },
         "\t[藍衣警察]又抓普通人來幫忙？",
         {
@@ -788,7 +807,11 @@ main.floors.kelukai_2=
         "\t[藍衣警察]是是是。",
         {
             "type": "comment",
-            "text": "source line 220: 藍衣警察離開"
+            "text": "source line 220: 離場後停頓250毫秒"
+        },
+        {
+            "type": "sleep",
+            "time": 250
         },
         {
             "type": "showImage",
@@ -882,7 +905,32 @@ main.floors.kelukai_2=
         },
         {
             "type": "comment",
-            "text": "source line 234: 場景切換"
+            "text": "source line 234: 300毫秒淡出至黑，切換後巷傍晚背景後350毫秒淡入"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 300
+        },
+        {
+            "type": "showImage",
+            "code": 5,
+            "image": "kelukai_alley_evening_bg.png",
+            "loc": [
+                0,
+                0,
+                544,
+                416
+            ]
+        },
+        {
+            "type": "setCurtain",
+            "time": 350
         },
         {
             "type": "comment",
@@ -894,7 +942,7 @@ main.floors.kelukai_2=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
+            "name": "dark_alleys_tension.ogg",
             "keep": true
         },
         "照片裡的男人真的出現在其中一間二手店後方。",
@@ -1238,6 +1286,10 @@ main.floors.kelukai_2=
             "text": "source line 289: 停頓:1秒"
         },
         {
+            "type": "sleep",
+            "time": 1000
+        },
+        {
             "type": "showImage",
             "code": 20,
             "image": "keng_neutral_portrait.png",
@@ -1302,7 +1354,14 @@ main.floors.kelukai_2=
         "學生掙脫了後馬上逃離了",
         {
             "type": "comment",
-            "text": "source line 305: SE:奔跑聲"
+            "text": "source line 305: 街景低幅橫向震動300毫秒，表現急促奔跑"
+        },
+        {
+            "type": "avgShake",
+            "direction": "horizontal",
+            "time": 300,
+            "speed": 32,
+            "power": 4
         },
         {
             "type": "showImage",
@@ -1336,7 +1395,53 @@ main.floors.kelukai_2=
         },
         {
             "type": "comment",
-            "text": "source line 311: SE:撞擊聲"
+            "text": "source line 311: 撞擊音與短促斜向重震"
+        },
+        {
+            "type": "playSound",
+            "name": "attack.mp3",
+            "stop": true,
+            "pitch": 90
+        },
+        {
+            "type": "comment",
+            "text": "source line 312: 行為CG：可露凱從梗平身旁疾衝而過，撲向畫外的男人"
+        },
+        {
+            "type": "avgShake",
+            "direction": "diagonal1",
+            "time": 300,
+            "speed": 45,
+            "power": 8
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "kelukai_alley_dash_action_cg.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "sleep",
+            "time": 1000,
+            "noSkip": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0
         },
         "下一秒，男人已經被可露凱壓在地上。",
         {
@@ -1371,7 +1476,7 @@ main.floors.kelukai_2=
         },
         {
             "type": "comment",
-            "text": "source line 318: 可露凱立繪:憤怒"
+            "text": "source line 319: 可露凱立繪:憤怒"
         },
         {
             "type": "showImage",
@@ -1480,7 +1585,18 @@ main.floors.kelukai_2=
         },
         {
             "type": "comment",
-            "text": "source line 332: 可露凱拿槍指向梗平"
+            "text": "source line 333: 可露凱拿槍指向梗平，搭配紅色警示閃光"
+        },
+        {
+            "type": "screenFlash",
+            "color": [
+                255,
+                48,
+                48,
+                0.55
+            ],
+            "time": 300,
+            "times": 1
         },
         {
             "type": "showImage",
@@ -1694,11 +1810,11 @@ main.floors.kelukai_2=
         },
         {
             "type": "comment",
-            "text": "source line 359: 第二篇結束"
+            "text": "source line 360: 第二篇結束"
         },
         {
             "type": "comment",
-            "text": "source line 361: 地點:警察局"
+            "text": "source line 362: 地點:警察局"
         },
         {
             "type": "comment",

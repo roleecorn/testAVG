@@ -69,3 +69,9 @@
 {"type": "animate", "name": "thunder", "loc": [6, 6]}
 ```
 
+### AVG 畫面效果
+
+AVG 的背景、立繪與 CG 是 `showImage` 動態圖層，不能用只移動固定地圖 canvas 的原生 `vibrate` 充當可見震動。Story IR 應使用 `screen.shake`，由 emitter 輸出 `avgShake`，同時移動固定地圖層與當下可見的 `image*` 動態圖層，並讓對話 UI 保持穩定。
+
+淡黑轉場、回憶色調與閃光分別使用 `screen.tint`／`screen.reset`／`screen.flash`。這些節點會輸出引擎原生的 `setCurtain`／`screenFlash` 事件；`curtain` 必須位於 action CG 上方、對話 UI 下方，確保效果能覆蓋 CG 又不影響文字閱讀。
+

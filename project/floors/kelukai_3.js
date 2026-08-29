@@ -380,7 +380,11 @@ main.floors.kelukai_3=
         "\t[藍衣警察]不用這麼嚴重吧。",
         {
             "type": "comment",
-            "text": "source line 384: 梗平從門口探頭"
+            "text": "source line 385: 梗平插話前停頓250毫秒"
+        },
+        {
+            "type": "sleep",
+            "time": 250
         },
         {
             "type": "showImage",
@@ -673,7 +677,12 @@ main.floors.kelukai_3=
         "\t[藍衣警察]不過也別太怪她。",
         {
             "type": "comment",
-            "text": "source line 452: SE:腳步聲"
+            "text": "source line 453: 低沉腳步提示音由遠而近"
+        },
+        {
+            "type": "playSound",
+            "name": "floor.mp3",
+            "pitch": 60
         },
         {
             "type": "showImage",
@@ -771,7 +780,11 @@ main.floors.kelukai_3=
         },
         {
             "type": "comment",
-            "text": "source line 474: 停頓:1秒"
+            "text": "source line 475: 停頓:1秒"
+        },
+        {
+            "type": "sleep",
+            "time": 1000
         },
         {
             "type": "showImage",
@@ -970,7 +983,7 @@ main.floors.kelukai_3=
         },
         {
             "type": "comment",
-            "text": "source line 502: 可露凱立繪:平靜"
+            "text": "source line 503: 可露凱立繪:平靜"
         },
         {
             "type": "showImage",
@@ -1229,7 +1242,12 @@ main.floors.kelukai_3=
         },
         {
             "type": "comment",
-            "text": "source line 534: 可露凱拿起文件"
+            "text": "source line 535: 輕微紙張聲，表現可露凱拿起文件"
+        },
+        {
+            "type": "playSound",
+            "name": "item.mp3",
+            "pitch": 60
         },
         {
             "type": "showImage",
@@ -1293,7 +1311,11 @@ main.floors.kelukai_3=
         },
         {
             "type": "comment",
-            "text": "source line 544: 停頓:1秒"
+            "text": "source line 545: 停頓:1秒"
+        },
+        {
+            "type": "sleep",
+            "time": 1000
         },
         {
             "type": "showImage",
@@ -1388,26 +1410,55 @@ main.floors.kelukai_3=
         },
         {
             "type": "comment",
-            "text": "source line 559: 場景切換"
+            "text": "source line 560: 350毫秒淡出至黑後進入回憶"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 350
         },
         {
             "type": "comment",
-            "text": "source line 560: 畫面轉黑"
+            "text": "source line 561: 回憶段落使用低飽和冷灰藍色調，UI保持清晰"
         },
         {
             "type": "comment",
-            "text": "source line 561: 回憶演出"
+            "text": "source line 562: BGM暫停，改以安靜壓迫感呈現"
         },
         {
             "type": "comment",
-            "text": "source line 562: 使用低飽和濾鏡"
+            "text": "source line 563: 回憶演出開始"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                72,
+                88,
+                110,
+                0.48
+            ],
+            "time": 300
         },
         "\t[系統]目標預計兩分鐘後離開區域。",
         "\t[系統]友軍撤離確認未完成。",
         "\t[士兵A]偵察隊頻道還有訊號。",
         {
             "type": "comment",
-            "text": "source line 569: SE:通訊雜訊"
+            "text": "source line 570: 低頻通訊警示音"
+        },
+        {
+            "type": "playSound",
+            "name": "error.mp3",
+            "stop": true,
+            "pitch": 65
         },
         "\t[通訊中的少女]隊長——！！",
         "\t[通訊中的少女]聽得到嗎——！！",
@@ -1477,24 +1528,92 @@ main.floors.kelukai_3=
         },
         {
             "type": "comment",
-            "text": "source line 588: 畫面瞬間轉白"
+            "text": "source line 588: 行為CG：年輕的可露凱按下攻擊按鈕，白光照亮她的側臉"
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "kelukai_flashback_strike_action_cg.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "sleep",
+            "time": 1000,
+            "noSkip": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0
+        },
+        {
+            "type": "comment",
+            "text": "source line 590: 爆炸音、全畫面白閃與短促斜向震動"
+        },
+        {
+            "type": "playSound",
+            "name": "bomb.mp3",
+            "stop": true,
+            "pitch": 90
+        },
+        {
+            "type": "avgShake",
+            "direction": "diagonal1",
+            "time": 360,
+            "speed": 52,
+            "power": 10,
+            "async": true
+        },
+        {
+            "type": "screenFlash",
+            "color": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "time": 450,
+            "times": 1
         },
         "然後，爆炸與強烈的白光淹沒了一切",
         {
             "type": "comment",
-            "text": "source line 590: 畫面正常化"
+            "text": "source line 592: 白光緩慢退為黑幕，結束回憶"
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "time": 600
         },
         {
             "type": "comment",
-            "text": "source line 592: 第三篇結束"
+            "text": "source line 594: 第三篇結束"
         },
         {
             "type": "comment",
-            "text": "source line 594: 地點:秋葉原警察局"
+            "text": "source line 596: 地點:秋葉原警察局"
         },
         {
             "type": "comment",
-            "text": "source: project/story/可露凱.txt lines 362-end; full transcription"
+            "text": "source: project/story/可露凱.txt lines 363-end; full transcription"
         },
         {
             "type": "function",

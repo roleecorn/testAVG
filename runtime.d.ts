@@ -1114,6 +1114,8 @@ declare class events {
      * @param callback 抖动平息后的回调函数，可选
      */
     vibrate(direction?: string, time?: number, speed?: number, power?: number, callback?: () => void): void
+    /** Shake fixed map canvases and visible AVG showImage layers while keeping the dialogue UI stable. */
+    avgShake(direction?: string, time?: number, speed?: number, power?: number, callback?: () => void): void
 
     /**
      * 强制移动主角（包括后退），这个函数的作者已经看不懂这个函数了
