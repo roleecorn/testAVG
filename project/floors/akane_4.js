@@ -288,10 +288,10 @@ main.floors.akane_4=
             "code": 30,
             "image": "akane_walk_together_cg.jpg",
             "sloc": [
+                7,
                 0,
-                0,
-                416,
-                286
+                1233,
+                848
             ],
             "loc": [
                 112,

@@ -126,6 +126,26 @@
         416,
         286
       ]
+    },
+    {
+      "master": "watanuki_shrine_cg1.jpg",
+      "output": "watanuki_shrine_cg1_action_cg.png",
+      "masterSha256": "3b81441f44e945d562a864a27dc4e6a8d0e479069666bc8e0485c02d0826d5ac",
+      "outputSha256": "c2e4d1cda202bc599d3ce5e67dc169e8cd595d4c36f6d411565d403c916d781c",
+      "sourceSize": [
+        1600,
+        800
+      ],
+      "crop": [
+        218,
+        0,
+        1381,
+        800
+      ],
+      "outputSize": [
+        416,
+        286
+      ]
     }
   ]
 }

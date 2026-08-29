@@ -508,10 +508,10 @@ main.floors.juju_3=
             "code": 30,
             "image": "juju_attack_cg.png",
             "sloc": [
+                7,
                 0,
-                0,
-                416,
-                286
+                1233,
+                848
             ],
             "loc": [
                 112,

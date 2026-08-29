@@ -693,9 +693,9 @@ main.floors.shirou_3=
             "image": "shirou_blades.png",
             "sloc": [
                 0,
-                0,
-                416,
-                286
+                16,
+                516,
+                354
             ],
             "loc": [
                 112,
@@ -912,9 +912,9 @@ main.floors.shirou_3=
             "image": "tournament_katana.png",
             "sloc": [
                 0,
-                0,
-                416,
-                286
+                78,
+                500,
+                343
             ],
             "loc": [
                 112,
@@ -976,8 +976,8 @@ main.floors.shirou_3=
             "sloc": [
                 0,
                 0,
-                416,
-                286
+                916,
+                630
             ],
             "loc": [
                 112,
@@ -1122,8 +1122,8 @@ main.floors.shirou_3=
             "sloc": [
                 0,
                 0,
-                416,
-                286
+                882,
+                606
             ],
             "loc": [
                 112,

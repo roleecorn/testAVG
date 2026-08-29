@@ -4,6 +4,7 @@
 
 ## Open
 
+- `20260829-010636-mobile-cg-display.md` Q1：用戶回報手機環境 CG 無法正常顯示，已確認受影響角色為茱茱與藍湘。已新增 `scripts/validate_cg_layout.js` 並接入 `node scripts/validate_story.js`；全專案 139 個 CG 事件的固定裁切與非標準面板 warning 已全部清除，所有角色 floor 已同步，綿貫 action-CG 也已納入 master/output 生成與 manifest 驗證。仍需用回報的手機系統／瀏覽器在 `juju_3`、`juju_4`、`lanxiang_2`、`lanxiang_4` 實機確認完整顯示；若仍有空白、遮擋或縮放問題，再另行取得 runtime 修改授權。
 - `20260827-220503-replay-fast-forward-stall.md` Q1：錄像回放 x24 快進存在可重入路徑；`libs/control.js` 的同步移動回呼會直接進入下一步，`project/functions.js` → `libs/events.js` 的 `core.trigger` 又會對同一回呼排程延遲重入，可能造成 replay 動作被重複消費、移動被 `heroMoving` 直接略過或同步遞迴卡死。需在取得 runtime 變更授權後加入單一完成回呼／replay re-entry 防護，並用實際 `.h5route` 驗證。
 - `priority-1-agent-owned-story-ir-and-todo-maintenance`
   - Scope: `scripts/generate_main_story.js`、`scripts/manage_story_ir.js`、`scripts/story_ir.js`、`project/story-ir/`、`project/mainStory/TODO.md`、`project/story/TODO.md`

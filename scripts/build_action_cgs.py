@@ -22,6 +22,7 @@ ASSETS = (
     ("ms_ch1_thunder_crocodile_cg.png", "ms_ch1_thunder_crocodile_action_cg.png"),
     ("ms_ch2_keng_bicycle_cg.png", "ms_ch2_keng_bicycle_action_cg.png"),
     ("ms_ch2_eri_sunset_cg.png", "ms_ch2_eri_sunset_action_cg.png"),
+    ("watanuki_shrine_cg1.jpg", "watanuki_shrine_cg1_action_cg.png"),
 )
 
 

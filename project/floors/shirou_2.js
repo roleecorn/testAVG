@@ -612,9 +612,9 @@ main.floors.shirou_2=
             "image": "shirou_blades.png",
             "sloc": [
                 0,
-                0,
-                416,
-                286
+                16,
+                516,
+                354
             ],
             "loc": [
                 112,
