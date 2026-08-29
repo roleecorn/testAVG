@@ -254,7 +254,14 @@ main.floors.kelukai_1=
             0
         ]
     ],
-    "images": [],
+    "images": [
+        {
+            "name": "ms_bg_street.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+        }
+    ],
     "eachArrive": [
         {
             "type": "setText",

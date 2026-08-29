@@ -66,6 +66,8 @@ main.floors.scene_intro =
 
 `floorId`、檔名、`main.floors.<floorId>` 必須一致。`width/height` 必須符合 `map` 的列數與每列長度。標準 AVG floor 固定使用 17x13（544×416）；不要讓舊生成器重新寫回 13x13。若由舊 13x13 floor 擴充，只能在每列右側追加四個 `0`，不得遷移既有事件或落點座標。原本就不是 13x13 的大地圖不套用此規則。
 
+每個 AVG floor 必須在 `images` 預載一張 `canvas: "bg"`、`x: 0`、`y: 0` 的初始背景。引擎會先繪製 floor map，之後才執行 `eachArrive`；若只在 `eachArrive` 開頭使用 `showImage` 顯示背景，進場第一幀仍可能露出預設石磚。後續場景內背景切換可以繼續使用 `showImage`，但不能取代 floor-level 初始背景。
+
 主線生成後必須執行：
 
 ```powershell

@@ -168,8 +168,8 @@ function headFloorMap() {
       if (error && error.status === 128 && String(error.stderr || "").includes("not in 'HEAD'")) continue;
       throw error;
     }
-    const bundle = validateBundle(JSON.parse(text));
-    for (const floor of bundleToFloors(bundle)) floors.set(floor.floorId, floor);
+    const bundle = validateBundle(JSON.parse(text), { allowMissingInitialBackground: true });
+    for (const floor of bundleToFloors(bundle, { allowMissingInitialBackground: true })) floors.set(floor.floorId, floor);
   }
   return floors;
 }
@@ -210,7 +210,7 @@ function headStoryIrCanonical() {
       if (error && error.status === 128 && String(error.stderr || "").includes("not in 'HEAD'")) continue;
       throw error;
     }
-    characters[story.slug] = stripCommonFields(validateBundle(JSON.parse(text)));
+    characters[story.slug] = stripCommonFields(validateBundle(JSON.parse(text), { allowMissingInitialBackground: true }));
   }
   return { main: headMainStoryBundle(), characters };
 }

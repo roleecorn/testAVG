@@ -29,7 +29,17 @@ function bundle(events) {
   return {
     storyIrVersion: 1,
     source: { kind: "character", files: [{ path: "project/story/example.txt", sha256: "test" }] },
-    scenes: [{ id: "example_1", floor: { floorId: "example_1", width: 17, height: 13, map }, events }],
+    scenes: [{
+      id: "example_1",
+      floor: {
+        floorId: "example_1",
+        width: 17,
+        height: 13,
+        map,
+        images: [{ name: "example_bg.png", canvas: "bg", x: 0, y: 0 }],
+      },
+      events,
+    }],
   };
 }
 
@@ -37,6 +47,16 @@ assert.doesNotThrow(() => validateBundle(bundle([
   { kind: "akiba.event.complete", eventId: "example_1" },
   { kind: "akiba.return" },
 ])));
+const missingInitialBackground = bundle([
+  { kind: "akiba.event.complete", eventId: "example_1" },
+  { kind: "akiba.return" },
+]);
+missingInitialBackground.scenes[0].floor.images = [];
+assert.throws(
+  () => validateBundle(missingInitialBackground),
+  /requires a preloaded canvas:bg background at \(0,0\) before eachArrive/,
+);
+assert.doesNotThrow(() => validateBundle(missingInitialBackground, { allowMissingInitialBackground: true }));
 
 const effectFloor = bundleToFloors(bundle([
   { kind: "screen.tint", color: [0, 0, 0, 1], time: 220 },
@@ -213,6 +233,18 @@ assert.deepEqual(generatedPortraitFloor.eachArrive[1], {
 });
 assert.doesNotThrow(() => validateGeneratedAvgLayout([generatedPortraitFloor]));
 
+const generatedWithoutEntryBackground = JSON.parse(JSON.stringify(generatedPortraitFloor));
+generatedWithoutEntryBackground.images = [];
+assert.throws(
+  () => validateGeneratedAvgLayout([generatedWithoutEntryBackground]),
+  /requires a preloaded canvas:bg background at \(0,0\) before eachArrive/,
+);
+assert.doesNotThrow(() => validateGeneratedAvgLayout(
+  [generatedWithoutEntryBackground],
+  "historical generated AVG floors",
+  { allowMissingInitialBackground: true },
+));
+
 const malformedGeneratedFloor = JSON.parse(JSON.stringify(generatedPortraitFloor));
 malformedGeneratedFloor.eachArrive.find((event) => event && event.type === "setText").dialogueWidth = 352;
 assert.throws(
@@ -220,7 +252,11 @@ assert.throws(
   /dialogueWidth: global AVG geometry is generator-owned and must not be stored in a setText event/,
 );
 assert.throws(
-  () => validateGeneratedAvgLayout([{ floorId: "missing_layout", eachArrive: ["普通台詞"] }]),
+  () => validateGeneratedAvgLayout([{
+    floorId: "missing_layout",
+    images: [{ name: "example_bg.png", canvas: "bg", x: 0, y: 0 }],
+    eachArrive: ["普通台詞"],
+  }]),
   /missing generated AVG setText event/,
 );
 

@@ -721,7 +721,14 @@
         "name": "抓到大的才有意義",
         "width": 17,
         "height": 13,
-        "images": []
+        "images": [
+          {
+            "name": "ms_bg_street.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ]
       }
     },
     {
@@ -1788,7 +1795,14 @@
         "name": "免費助手",
         "width": 17,
         "height": 13,
-        "images": []
+        "images": [
+          {
+            "name": "ms_bg_police_station.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ]
       }
     },
     {
@@ -2828,7 +2842,14 @@
         "name": "以前的可露凱",
         "width": 17,
         "height": 13,
-        "images": []
+        "images": [
+          {
+            "name": "ms_bg_police_station.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ]
       }
     },
     {
@@ -3873,7 +3894,14 @@
         "name": "指名",
         "width": 17,
         "height": 13,
-        "images": []
+        "images": [
+          {
+            "name": "ms_bg_police_station.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+          }
+        ]
       }
     }
   ]

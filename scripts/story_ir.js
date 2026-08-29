@@ -509,7 +509,9 @@ function validateAvgLayoutIrOwnership(nodes, location) {
   }
 }
 
-function validateGeneratedAvgLayout(floors, location = "generated AVG floors") {
+function validateGeneratedAvgLayout(floors, location = "generated AVG floors", {
+  allowMissingInitialBackground = false,
+} = {}) {
   if (!Array.isArray(floors)) throw new Error(`${location}: expected an array of floors`);
   const visit = (events, eventLocation, state) => {
     for (const [index, event] of (events || []).entries()) {
@@ -550,6 +552,7 @@ function validateGeneratedAvgLayout(floors, location = "generated AVG floors") {
     if (!floor || typeof floor !== "object" || !Array.isArray(floor.eachArrive)) {
       throw new Error(`${floorLocation}: generated floor must contain eachArrive`);
     }
+    if (!allowMissingInitialBackground) validateInitialFloorBackground(floor, floorLocation);
     const state = { hasSetText: false };
     visit(floor.eachArrive, `${floorLocation}.eachArrive`, state);
     if (!state.hasSetText) throw new Error(`${floorLocation}.eachArrive: missing generated AVG setText event`);
@@ -726,6 +729,19 @@ function validateAvgFloorDimensions(floor, location) {
   }
 }
 
+function validateInitialFloorBackground(floor, location) {
+  const hasInitialBackground = Array.isArray(floor.images) && floor.images.some((image) => (
+    image
+    && typeof image.name === "string"
+    && image.canvas === "bg"
+    && image.x === 0
+    && image.y === 0
+  ));
+  if (!hasInitialBackground) {
+    throw new Error(`${location}.images: AVG scene requires a preloaded canvas:bg background at (0,0) before eachArrive to prevent default-map flash`);
+  }
+}
+
 function floorWithCommonFields(floor) {
   const result = {};
   let mapInserted = false;
@@ -774,6 +790,7 @@ function validateBundle(bundle, {
   allowGeneratorOwnedFields = true,
   allowPortraitPosition = true,
   allowLegacyLifecycle = true,
+  allowMissingInitialBackground = false,
 } = {}) {
   if (!bundle || bundle.storyIrVersion !== STORY_IR_VERSION) throw new Error(`Story IR version must be ${STORY_IR_VERSION}`);
   if (!bundle.source || !Array.isArray(bundle.source.files) || !bundle.source.files.length) throw new Error("Story IR requires source.files");
@@ -790,6 +807,7 @@ function validateBundle(bundle, {
       throw new Error(`scenes[${index}].floor must not contain generator-owned map`);
     }
     validateAvgFloorDimensions(scene.floor, `scenes[${index}].floor`);
+    if (!allowMissingInitialBackground) validateInitialFloorBackground(scene.floor, `scenes[${index}].floor`);
     validateAvgLayoutIrOwnership(scene.events, `scenes[${index}].events`);
     scene.events.forEach((node, nodeIndex) => validateNode(node, `scenes[${index}].events[${nodeIndex}]`));
     scene.events.forEach((node, nodeIndex) => validatePortraitPositionFields(
@@ -873,8 +891,11 @@ function validateProjectReferences(root, bundle) {
   });
 }
 
-function bundleToFloors(bundle, { allowLegacyLifecycle = false } = {}) {
-  validateBundle(bundle, { allowLegacyLifecycle });
+function bundleToFloors(bundle, {
+  allowLegacyLifecycle = false,
+  allowMissingInitialBackground = false,
+} = {}) {
+  validateBundle(bundle, { allowLegacyLifecycle, allowMissingInitialBackground });
   const transitions = COMMON_PRESENTATION.transitions;
   const outputCompat = readPortraitOutputCompat();
   const floors = bundle.scenes.map((scene) => ({
@@ -885,7 +906,7 @@ function bundleToFloors(bundle, { allowLegacyLifecycle = false } = {}) {
       { portraitCommonFields: !outputCompat.omitCommonFieldsForScenes.includes(scene.id) },
     ),
   }));
-  return validateGeneratedAvgLayout(floors);
+  return validateGeneratedAvgLayout(floors, "generated AVG floors", { allowMissingInitialBackground });
 }
 
 function readBundle(file, { allowLegacyLifecycle = false } = {}) {

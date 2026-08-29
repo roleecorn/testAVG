@@ -20,7 +20,7 @@ function main() {
   ];
   const floors = bundles.flatMap((bundle) => bundleToFloors(bundle, { allowLegacyLifecycle: true }));
   validateGlobalAvgLayout(root, floors);
-  console.log(`Validated global AVG layout for ${floors.length} generated floors.`);
+  console.log(`Validated global AVG layout and preloaded entry backgrounds for ${floors.length} generated floors.`);
 }
 
 if (require.main === module) main();

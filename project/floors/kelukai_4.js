@@ -254,7 +254,14 @@ main.floors.kelukai_4=
             0
         ]
     ],
-    "images": [],
+    "images": [
+        {
+            "name": "ms_bg_police_station.png",
+            "canvas": "bg",
+            "x": 0,
+            "y": 0
+        }
+    ],
     "eachArrive": [
         {
             "type": "setText",
