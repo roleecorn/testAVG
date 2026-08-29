@@ -1,10 +1,11 @@
 {
-  "version": 5,
+  "version": 6,
   "locationOverrides": {
     "dizi_1": ["prize_exchange"],
     "dizi_2": ["prize_exchange"],
     "dizi_3": ["prize_exchange"],
     "dizi_4": ["prize_exchange"],
+    "juju_1": ["warehouse_district"],
     "lanxiang_1": ["mahjong_parlor"],
     "ruka_1": ["maid_cafe"],
     "ruka_2": ["maid_cafe"],
@@ -64,14 +65,14 @@
     {
       "id": "juju_1",
       "title": "惡魔迷路",
-      "locations": ["mahjong_parlor"],
+      "locations": ["warehouse_district"],
       "floorId": "juju_1",
       "once": true
     },
     {
       "id": "lanxiang_1",
       "title": "巷口救星",
-      "locations": ["warehouse_district"],
+      "locations": ["mahjong_parlor"],
       "floorId": "lanxiang_1",
       "once": true
     },

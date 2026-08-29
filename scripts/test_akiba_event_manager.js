@@ -72,6 +72,34 @@ function testFreshInitialization() {
   );
 }
 
+function testInitialCharacterLocations() {
+  const expectedLocations = {
+    lala_1: "rabbit_house",
+    noir_1: "music_venue",
+    watanuki_sakuya_1: "shrine",
+    mikage_rinju_1: "melon_shop",
+    kelukai_1: "police_station",
+    akane_1: "elevated_train",
+    okabe_1: "game_center",
+    dizi_1: "prize_exchange",
+    idw_1: "restaurant",
+    juju_1: "warehouse_district",
+    ruka_1: "maid_cafe",
+    shirou_1: "chinese_restaurant",
+    sena_1: "hotel",
+    lanxiang_1: "mahjong_parlor",
+    jiakezi_1: "kaidan_cave",
+    mysterious_banana_1: "park",
+    yuedu_ai_1: "convenience_24h",
+    lance_1: "sento",
+    dongshan_1: "horses_knee",
+  };
+  for (const event of eventMeta.activeEvents) {
+    if (expectedLocations[event.id]) assert.deepEqual(event.locations, [expectedLocations[event.id]]);
+  }
+  assert.equal(Object.keys(expectedLocations).length, eventMeta.activeEvents.length);
+}
+
 function testVersionMigrationPreservesProgress() {
   const completed = ["juju_1"];
   const { core, plugin } = createPlugin({
@@ -103,15 +131,18 @@ function testVersionMigrationAppliesLocationOverrides() {
     akiba_active_events: [
       { id: "ruka_2", title: "巷口救星", locations: ["warehouse_district"], floorId: "ruka_2", once: true },
       { id: "dizi_2", title: "被編寫的命運", locations: ["music_venue"], floorId: "dizi_2", once: true },
+      { id: "juju_1", title: "惡魔迷路", locations: ["mahjong_parlor"], floorId: "juju_1", once: true },
       { id: "lanxiang_1", title: "巷口救星", locations: ["warehouse_district"], floorId: "lanxiang_1", once: true },
     ],
   }, ["ruka_2", "dizi_2", "lanxiang_1"]);
   plugin.initAkibaEventState();
   assert(plugin.getActiveAkibaEventsAtLocation("maid_cafe").some((entry) => entry.id === "ruka_2"));
   assert(plugin.getActiveAkibaEventsAtLocation("prize_exchange").some((entry) => entry.id === "dizi_2"));
+  assert(plugin.getActiveAkibaEventsAtLocation("warehouse_district").some((entry) => entry.id === "juju_1"));
   assert(plugin.getActiveAkibaEventsAtLocation("mahjong_parlor").some((entry) => entry.id === "lanxiang_1"));
   assert(!plugin.getActiveAkibaEventsAtLocation("warehouse_district").some((entry) => entry.id === "ruka_2"));
   assert(!plugin.getActiveAkibaEventsAtLocation("music_venue").some((entry) => entry.id === "dizi_2"));
+  assert(!plugin.getActiveAkibaEventsAtLocation("mahjong_parlor").some((entry) => entry.id === "juju_1"));
   assert(!plugin.getActiveAkibaEventsAtLocation("warehouse_district").some((entry) => entry.id === "lanxiang_1"));
 }
 
@@ -537,6 +568,7 @@ function testPoliceStationOffersShootingRange() {
 }
 
 testFreshInitialization();
+testInitialCharacterLocations();
 testVersionMigrationPreservesProgress();
 testVersionMigrationAppliesLocationOverrides();
 testCompletionCountsOnlyOnce();
