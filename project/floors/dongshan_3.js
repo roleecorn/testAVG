@@ -1262,10 +1262,10 @@ main.floors.dongshan_3=
             "code": 30,
             "image": "dongshan_clerk_assault_cg.png",
             "sloc": [
-                6,
                 0,
-                1012,
-                696
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,

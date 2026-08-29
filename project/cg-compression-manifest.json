@@ -1,0 +1,3012 @@
+{
+  "version": 1,
+  "authority": "Story IR CG references are the input inventory; this manifest records runtime compression provenance.",
+  "targetRatio": "16:11",
+  "outputSize": [
+    416,
+    286
+  ],
+  "jpegQuality": 90,
+  "assets": [
+    {
+      "image": "CH1_L112.png",
+      "sourceSha256BeforeCompression": "c8ae15be8a12fc380c45466d24d813e22567185c399cea8832407be7c6fb5893",
+      "sourceBytesBeforeCompression": 562166,
+      "sourceSize": [
+        1280,
+        880
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1280,
+        880
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "3d6a75b2c8a3cef2e8e3ba6fe746880a23b0df2642476b3a967315099ae0964e",
+      "outputBytes": 115610
+    },
+    {
+      "image": "CH1_L119.png",
+      "sourceSha256BeforeCompression": "83610e41c0f96f3098e33ade2d526bfa1892d26243912a1ad9ca670a1816e710",
+      "sourceBytesBeforeCompression": 98331,
+      "sourceSize": [
+        1920,
+        1080
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        175,
+        0,
+        1745,
+        1080
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "3a6145d903b18584303c39e0363f3dc004220232ce255a0fba7816772643d908",
+      "outputBytes": 14986
+    },
+    {
+      "image": "CH1_L190.png",
+      "sourceSha256BeforeCompression": "68d3cfb25680391117c66da734385790beb07e5fa4c17b43c6c40518b96ae6bf",
+      "sourceBytesBeforeCompression": 210275,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "24ee395df7348900bb42def5f1089bd57f2f106917b6585e8a5f1aec01180beb",
+      "outputBytes": 61330
+    },
+    {
+      "image": "CH1_L209.png",
+      "sourceSha256BeforeCompression": "1908c5ef25eacb8631866fac6c48175b89b0f6932446cd4504af05b6639a9aee",
+      "sourceBytesBeforeCompression": 1529977,
+      "sourceSize": [
+        1117,
+        768
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1117,
+        767
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "4474198af009b944f0020b969957bc6d8a52143f141f9036141788c5299c1f21",
+      "outputBytes": 252576
+    },
+    {
+      "image": "CH1_L256.png",
+      "sourceSha256BeforeCompression": "567549e27bcd2cad34eafb115a3238001c4e87b66a39f375c6974b96af046eab",
+      "sourceBytesBeforeCompression": 585152,
+      "sourceSize": [
+        1280,
+        880
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1280,
+        880
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "a85ee57870fba69240e75c879414de5c353421ac1f97640a1c19e2a24bb03947",
+      "outputBytes": 115791
+    },
+    {
+      "image": "CH1_L266.png",
+      "sourceSha256BeforeCompression": "5af504d207c2c3f24975cc3464c7e89a191e2cc135b1453ad37a3c2057359e30",
+      "sourceBytesBeforeCompression": 547392,
+      "sourceSize": [
+        1280,
+        880
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1280,
+        880
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "8b802b00be63c40181ca387ac70944a26048a541ec1648535c7e5723373cbf51",
+      "outputBytes": 88101
+    },
+    {
+      "image": "CH1_L270.png",
+      "sourceSha256BeforeCompression": "e1c1112ae92f08d07a994902d113353157d1af19442b41699dd0d1ac86e1be1b",
+      "sourceBytesBeforeCompression": 2098850,
+      "sourceSize": [
+        1280,
+        880
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1280,
+        880
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "98b41baf6555591fc4080f12db671581966b41bb6913e1a3e39613b44cc2788c",
+      "outputBytes": 257049
+    },
+    {
+      "image": "CH1_L377.png",
+      "sourceSha256BeforeCompression": "de217c602a437ba86fcf6223d2915f0d1d4cd962e90f0c92ef207cc2f4df0ac5",
+      "sourceBytesBeforeCompression": 1156008,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "42799131f649dddeb80ce823007f48a7c3ba7930842b0179048bfca1f51e062d",
+      "outputBytes": 184577
+    },
+    {
+      "image": "CH1_L44.png",
+      "sourceSha256BeforeCompression": "e6d57bbe777519978e98499321a649ea0aeeaac46590c95ba742d0c671d33b49",
+      "sourceBytesBeforeCompression": 167428,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "a9fa2bb78194ba40306b46a92dc6c29323ba20b37682b441dd8a622beb0f173a",
+      "outputBytes": 43078
+    },
+    {
+      "image": "CH1_L450.png",
+      "sourceSha256BeforeCompression": "eb09893f5ce6d6552143d561ca0883cfc13a0d24a7454066cf2db6beb221d3cb",
+      "sourceBytesBeforeCompression": 178768,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "bcaf75457456edf37a8d1d2e3a45a60a3f03e4cf7f3ed44061cf968106f7d6f1",
+      "outputBytes": 47650
+    },
+    {
+      "image": "CH1_L453.png",
+      "sourceSha256BeforeCompression": "50e687804a64322c97c01ea581825cfe26ec2d6bc7d4afcbb55aee0b2ba6daa1",
+      "sourceBytesBeforeCompression": 225164,
+      "sourceSize": [
+        1280,
+        880
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1280,
+        880
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "30154cfa098b001df50bfc06dd8656e3b2d20dcf769b2af57baac4cd8b61390e",
+      "outputBytes": 35254
+    },
+    {
+      "image": "CH1_L459.png",
+      "sourceSha256BeforeCompression": "beb0b3d9a47c68c2e7d82a604e82dcffd9140a473f67ebbbd54f1a53c9161597",
+      "sourceBytesBeforeCompression": 717630,
+      "sourceSize": [
+        1280,
+        880
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1280,
+        880
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "7d7dda163a7f666620ec33ca3275272097eb12bdd966b6e266b8d78985e7bf20",
+      "outputBytes": 141417
+    },
+    {
+      "image": "CH1_L472.png",
+      "sourceSha256BeforeCompression": "77c29427fab8b9f27e988c281046ea0fa88e085bfad47c21aae41539c30cc7f1",
+      "sourceBytesBeforeCompression": 995924,
+      "sourceSize": [
+        1280,
+        880
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1280,
+        880
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "8c6e58e3c8e08fef26ae044a8795347201d0e210aa16794e25683362dac4d862",
+      "outputBytes": 173817
+    },
+    {
+      "image": "CH1_L67.png",
+      "sourceSha256BeforeCompression": "05dffc185fdc085f520ebc2a15aa7f64a147f3152f09e6692292a9bc7e4e4c4d",
+      "sourceBytesBeforeCompression": 464176,
+      "sourceSize": [
+        1248,
+        848
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        7,
+        0,
+        1240,
+        848
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "5cc089477ae48a004c1ad0c3471596ff66cf302d99c49feb7d3678935720a99c",
+      "outputBytes": 49959
+    },
+    {
+      "image": "CH2_L117.png",
+      "sourceSha256BeforeCompression": "7180aef7d17fca25b07f15ce67f3c16de9ddbcd0f9047b62fba46cae43a669d6",
+      "sourceBytesBeforeCompression": 197027,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "c41c10b3352c93ab708393050e3c90ffa8717ff698b8fb2dc614d1080d8136ee",
+      "outputBytes": 47134
+    },
+    {
+      "image": "CH2_L210.png",
+      "sourceSha256BeforeCompression": "a68df14ee8e9e3e45fd599f40ff5fc86b8160e8aeda09429c5bfeb0221f4cd8a",
+      "sourceBytesBeforeCompression": 1946107,
+      "sourceSize": [
+        1512,
+        1040
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1512,
+        1039
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "35a3cbcb38e56e11ec8d060ee52869faae9ace43ade893eb5b7e358d1f4a5b50",
+      "outputBytes": 186267
+    },
+    {
+      "image": "CH2_L222.png",
+      "sourceSha256BeforeCompression": "0d60eb23ef1793e8344dcc084626064dda24e19cd5818bb3ce5b26bdc9796afa",
+      "sourceBytesBeforeCompression": 1630483,
+      "sourceSize": [
+        1216,
+        832
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        3,
+        0,
+        1213,
+        832
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "66908130a1844c01e4723d6af14b714e723eb901fe2ef283962326137fdba9b4",
+      "outputBytes": 154275
+    },
+    {
+      "image": "CH2_L271.png",
+      "sourceSha256BeforeCompression": "d18c1a4d6884125b59c9295d1ce68b8efb402c35b7618c2a3d95b02470b58469",
+      "sourceBytesBeforeCompression": 218836,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "4ac581ec0ddba2856fe0c5c8d8120f2b7af68d135faadd5d1cb2fff47ed60578",
+      "outputBytes": 66164
+    },
+    {
+      "image": "CH2_L291.png",
+      "sourceSha256BeforeCompression": "9f326c36a48a7aa79cf2ca04f35f66b22440a28954cea3188c28905bdd39c2e6",
+      "sourceBytesBeforeCompression": 1418645,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "9146ce80cfe91662f93065ea0455fe20943b083b0e0f630b0ec696c5909bf490",
+      "outputBytes": 201941
+    },
+    {
+      "image": "CH2_L299.png",
+      "sourceSha256BeforeCompression": "dea1a54abefeb363ef74b6b89d031bf18437516d191f18f1d86b9fefbe8f0776",
+      "sourceBytesBeforeCompression": 1521574,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "55e8531c9c6ad7757e9f3628c2c9f366d8752df865ceeebaad5833e84ce1ac5e",
+      "outputBytes": 257209
+    },
+    {
+      "image": "CH2_L32.png",
+      "sourceSha256BeforeCompression": "5127a87912fda91f7cce6ed08dbaa2642b7e20913ff453bba3bf2523f874961e",
+      "sourceBytesBeforeCompression": 264796,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "16a50ee6d3f325ca3c1db5e08362eeeed773eb5ae9f90b2ff4c6f44264539ab7",
+      "outputBytes": 78450
+    },
+    {
+      "image": "CH2_L344.png",
+      "sourceSha256BeforeCompression": "7094b18a7cc42f6f4e9e5626c9b905ea9e16ddf3d699100d0f105dcdcaec3869",
+      "sourceBytesBeforeCompression": 989136,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "a36f0e15505363e8748ee73c6fd7d60726930ef625a7b31953f2095c1d3ba457",
+      "outputBytes": 182261
+    },
+    {
+      "image": "CH2_L347.png",
+      "sourceSha256BeforeCompression": "98e56354ddc792902d1abbc3db5ddfcb2bfa6eae231cae1cc547be90ae7734dc",
+      "sourceBytesBeforeCompression": 1187850,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "729a515edad74079b37c11de5501510f65b0fdc9f0915d5a031c912486d84d58",
+      "outputBytes": 180560
+    },
+    {
+      "image": "CH2_L350.png",
+      "sourceSha256BeforeCompression": "a038b0b77856e24a3e1db8cd3994e90e943b4a598e0f73908759873ad5019563",
+      "sourceBytesBeforeCompression": 1126818,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "cd5b83f4d31855cb06e8999f83d09035753a757397670da1c36e6ae7d9e3ac70",
+      "outputBytes": 166010
+    },
+    {
+      "image": "CH2_L357.png",
+      "sourceSha256BeforeCompression": "79daad15ce290cd21e208536579a1cab0b5c20aba1de368ffbedb91e485b0a66",
+      "sourceBytesBeforeCompression": 1962356,
+      "sourceSize": [
+        1512,
+        1040
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1512,
+        1039
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "fa609ef252c50a40158cd56219d1e8bfbb11c0aca963656f4bcfb4a82c6a1532",
+      "outputBytes": 180336
+    },
+    {
+      "image": "CH2_L412.png",
+      "sourceSha256BeforeCompression": "6dfcac0816d5f7557b416bd448cfd8339eac16eb8085076ae274ed61570b0e48",
+      "sourceBytesBeforeCompression": 142745,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "89f3c3b69055d0b79059bb971821fcdaa7f9c866652c263059c3821f894b94c1",
+      "outputBytes": 44815
+    },
+    {
+      "image": "CH2_L436.png",
+      "sourceSha256BeforeCompression": "06117680e8d8f69f06719e0ccdd222bbdac92ee139bd3d2750cddf613a455242",
+      "sourceBytesBeforeCompression": 126256,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "df216746d78f80efffbf625343bfe1405e1f6f89e7e8728ccb62bb396c9d8d31",
+      "outputBytes": 41509
+    },
+    {
+      "image": "CH2_L464.png",
+      "sourceSha256BeforeCompression": "c3bdaf771fb15091561095ba0e6979da763aff6da3b3acc42d2f84c5a5e0f1f3",
+      "sourceBytesBeforeCompression": 128618,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "76b8f3fafa2ffb9b1d19d6bcff13066393a7bfc9a5ce507d84cc476e08c76e03",
+      "outputBytes": 37852
+    },
+    {
+      "image": "CH3_L139.png",
+      "sourceSha256BeforeCompression": "c81ce79191535b9d8bc4bd84fe5064b237b125928ff6201c9146333c70e6f7ae",
+      "sourceBytesBeforeCompression": 244252,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "901667e638ed4419d9e1b0c752a828473263e7ba4004fc3d55a73c7b95acca39",
+      "outputBytes": 66222
+    },
+    {
+      "image": "CH3_L231.png",
+      "sourceSha256BeforeCompression": "28c61b33e74ffaf434b026c07ee8a609a4bc30948aeb0a0a1c2d3ae9974a8e1c",
+      "sourceBytesBeforeCompression": 895272,
+      "sourceSize": [
+        1280,
+        880
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1280,
+        880
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "b0ea2f11874bcb64a4a7bc4015a6279b43c4daf8198c2ce2f9ba0e851c91a7ae",
+      "outputBytes": 168791
+    },
+    {
+      "image": "CH3_L472.png",
+      "sourceSha256BeforeCompression": "0b1de13fd3038ce01b17d15191bbf0c255df24afb6988864a2dc7dbc9570c988",
+      "sourceBytesBeforeCompression": 145935,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "3b87cfc248c1f438edf01c94ef0ee00f768ba3739b6e1d4dd7e61d7720ae9675",
+      "outputBytes": 49145
+    },
+    {
+      "image": "CH3_L565.png",
+      "sourceSha256BeforeCompression": "211f0b580d3acb5f872bb34efa557aaebb13ea1922595a04ecbda1938ca07d53",
+      "sourceBytesBeforeCompression": 883796,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "228d413270320f2aae740fc8dfba46373b33484a1fbe11dac92252937b5482c2",
+      "outputBytes": 171034
+    },
+    {
+      "image": "CH3_L611.png",
+      "sourceSha256BeforeCompression": "db5387f3102d63579f1254f50050dafdb9f33c18b6fa42cbbd10260c9d1136d4",
+      "sourceBytesBeforeCompression": 1293198,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "110857275107e7a37b0079116501615ca91fc30da546fe8f3b59269a01c7aa1b",
+      "outputBytes": 193147
+    },
+    {
+      "image": "CH3_L614.png",
+      "sourceSha256BeforeCompression": "094f4ba95160f220e85bb2bca6431ba1845df89ed89f425363a8bceefa05f672",
+      "sourceBytesBeforeCompression": 1398913,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "bae9e4a73366d50487fe10d8a5141409b9fe255e1a7fd988a8d00e4efe16de08",
+      "outputBytes": 220698
+    },
+    {
+      "image": "CH3_L92.png",
+      "sourceSha256BeforeCompression": "e203ab6ff5c3268ffe963e4a8fd1d32732dc30d13c5689bc8aa12167b2d9997b",
+      "sourceBytesBeforeCompression": 226120,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "ca6794373807d3b7f0c68ddbb3cee390fa3c6dd16fbcd6d64e92c28a5ca3b848",
+      "outputBytes": 72069
+    },
+    {
+      "image": "CH4_L102.png",
+      "sourceSha256BeforeCompression": "d8182e9519410047f5cbcdf8870138544bfd270b77532ed7cd52bc3fb6396e19",
+      "sourceBytesBeforeCompression": 1461211,
+      "sourceSize": [
+        1280,
+        880
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1280,
+        880
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "92c71c65091bdfb12457522addb051214bdf77fb41562fd572a4bd336ec16f88",
+      "outputBytes": 213486
+    },
+    {
+      "image": "CH4_L168.png",
+      "sourceSha256BeforeCompression": "82d57d9e43fbf46ba42f355afddff1b64a695f56ebe45fb0d7fe9d438589ef15",
+      "sourceBytesBeforeCompression": 269081,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "65f5f781ec964829986c452601333f90961410ffdcb2c198f8a597851fdc8fd9",
+      "outputBytes": 72864
+    },
+    {
+      "image": "CH4_L237.png",
+      "sourceSha256BeforeCompression": "355a160306d1145532d045b6de3c4eca136908fe069af2aee5a5600c66a57aed",
+      "sourceBytesBeforeCompression": 142253,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "15988751654cf75bddadcc9f1484e401d1e3e812bc9c871a9f96f7e12812563a",
+      "outputBytes": 45027
+    },
+    {
+      "image": "CH5_L116.png",
+      "sourceSha256BeforeCompression": "6b6f1dfb5198d5f74066ebaead9969ae67933080afb2e2360b1e81adbdadbb41",
+      "sourceBytesBeforeCompression": 252644,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "ceaf4c6aa508d68602b82152a1786e3c04fc6c996755b8c5ae6ee9d582651417",
+      "outputBytes": 63870
+    },
+    {
+      "image": "CH5_L50.png",
+      "sourceSha256BeforeCompression": "25f86bc0e571154af0480cd3770369c2046891ea8a974c9fd1247bdb243c94bf",
+      "sourceBytesBeforeCompression": 3082402,
+      "sourceSize": [
+        1511,
+        1041
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        1,
+        1511,
+        1039
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "91839562af5198f65a27be08d4af3ed99da79fdc8fe6ec08d5d1db9ba66d40d4",
+      "outputBytes": 262022
+    },
+    {
+      "image": "CH5_L97.png",
+      "sourceSha256BeforeCompression": "b92c97c8b85af12cba27f7db73742086b7efb5e56e3c3820bfd16cb63599f230",
+      "sourceBytesBeforeCompression": 1704558,
+      "sourceSize": [
+        1280,
+        880
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1280,
+        880
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "b43006c61d9fb142b82de02d7c0a2663b95b5352482c59133ba961f62c8749ec",
+      "outputBytes": 240032
+    },
+    {
+      "image": "CH6_L288.png",
+      "sourceSha256BeforeCompression": "1557fdc5832758b91c2be83f0a20b352bd0d9f965ad61b3802de5222e1bd72eb",
+      "sourceBytesBeforeCompression": 157349,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "9a87b0e7b4877843d0caf4b0ec595376069f5237e2f7b967cef4a209e80e2457",
+      "outputBytes": 49093
+    },
+    {
+      "image": "CH6_L319.png",
+      "sourceSha256BeforeCompression": "413f7c74fc0a95501f2173ee4c475c9e0b6ba08b3177be3c06a57b8fd905c074",
+      "sourceBytesBeforeCompression": 1171418,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "822ab2d0007a69baba90fa35faa2cf5c7c36a1f561cdc6c93742ce16c8b60401",
+      "outputBytes": 212312
+    },
+    {
+      "image": "CH6_L69.png",
+      "sourceSha256BeforeCompression": "7a93472adefc526e98c806d67f4be55d04ab3a48d054f5b0372d5f4675b0bde9",
+      "sourceBytesBeforeCompression": 72767,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "a078fdef82cfd5adfebfbdc39ac64660f50352c558ed5026acf3ef0cceef45ed",
+      "outputBytes": 22963
+    },
+    {
+      "image": "CH6_L77.png",
+      "sourceSha256BeforeCompression": "023837afd2c1939c4f669ca85f130641f8709752fca1e7a571631bf3af3d54ba",
+      "sourceBytesBeforeCompression": 188140,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "2d323c2f3d41087c5b976f593d2e42163a8a58601fdb4226212ee46dc2685069",
+      "outputBytes": 51609
+    },
+    {
+      "image": "CH6_L89.png",
+      "sourceSha256BeforeCompression": "f92266822196846dc426e5fea8201a8c3a7296042e99151408e781015e74fa13",
+      "sourceBytesBeforeCompression": 1841236,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "f426e58349ebc2dc4f0f65b3caf86c9481ee40057ea13a69746ab98b9c35653b",
+      "outputBytes": 274069
+    },
+    {
+      "image": "CH7_L1041.png",
+      "sourceSha256BeforeCompression": "91e86eec5a0f39fb6b65799a8ea4eea93de9e20d2dda7d2456bc4ce327d20db5",
+      "sourceBytesBeforeCompression": 1855225,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "167c21e76ba20e0be44abacfdd2137173d33be4bb1bd4394190beeb17dde0537",
+      "outputBytes": 284501
+    },
+    {
+      "image": "CH7_L1044.png",
+      "sourceSha256BeforeCompression": "92ca2e64022efbbe27cfa3f4a3dbe86e245455552058fa5a9728cbb0b74f01ce",
+      "sourceBytesBeforeCompression": 1661927,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "a3f01173b98a8871260c2165f37fcddf35c66a53ce102da805c8613b91ef9c65",
+      "outputBytes": 236528
+    },
+    {
+      "image": "CH7_L1074.png",
+      "sourceSha256BeforeCompression": "5e81deb9c466696a2fedf2a437dfba26ecab32c728ae0783fa155e38528a85e4",
+      "sourceBytesBeforeCompression": 1057903,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "0ebee08b14256898b3493875782bf04b2a2e83bd90abe8c3160e35f4047c8733",
+      "outputBytes": 161088
+    },
+    {
+      "image": "CH7_L111.png",
+      "sourceSha256BeforeCompression": "fdccc67745e5d9a3376cccef3bf3d76a038acf3e12dba30d1f58eec78edf9541",
+      "sourceBytesBeforeCompression": 1096497,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "9376772010cf53e316772fbc6c72cef7da2e080415dc51fc2b80d6b1848202f8",
+      "outputBytes": 182853
+    },
+    {
+      "image": "CH7_L1126.png",
+      "sourceSha256BeforeCompression": "80f80e898e6abefe148f39c0ce1cdcdde78d54105590064a074c61be834fa76b",
+      "sourceBytesBeforeCompression": 1403530,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "123ad631085eea67e6c0d8f05a7876f64f888839c8795af70366cdee8257ee63",
+      "outputBytes": 213574
+    },
+    {
+      "image": "CH7_L1162.png",
+      "sourceSha256BeforeCompression": "4ca3bf31da125f66d5d02af4fd678a57f911f570d87d213ad440ad55575e7369",
+      "sourceBytesBeforeCompression": 851340,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "424da6a06c17719bf2454be251b603a4167af23b39069ea19ecfb6d7fa69fcf9",
+      "outputBytes": 142828
+    },
+    {
+      "image": "CH7_L1291.png",
+      "sourceSha256BeforeCompression": "7fc5a71ff9791f2597f4f6b75d722d1e51aef28fdb502576e02047360382e16f",
+      "sourceBytesBeforeCompression": 1143336,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "aa86d689bb8b1dd8020e8c8d4c64084b207e954e87e82a67e4c12b9c350e2a41",
+      "outputBytes": 188344
+    },
+    {
+      "image": "CH7_L308.png",
+      "sourceSha256BeforeCompression": "2631ccd3185e683119fbf6166046e63850c814d6ff3c319f43550a57b4138236",
+      "sourceBytesBeforeCompression": 696618,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "9ec8fa406a9403becf62cbb431642f0ac404ae2c76c5a534b19fa27567e95fd9",
+      "outputBytes": 109114
+    },
+    {
+      "image": "CH7_L329.png",
+      "sourceSha256BeforeCompression": "f049604d1d1671509e1e39ee1ba023e8553148526d209194a39be9477a64fe4e",
+      "sourceBytesBeforeCompression": 1080171,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "babee32be24fae2c14a7bd9a04a3e5003021c3bb48a3a0bf65a36bbcce1ec00b",
+      "outputBytes": 182591
+    },
+    {
+      "image": "CH7_L355.png",
+      "sourceSha256BeforeCompression": "efcace3790789a1459f12c3cc05aa6ea587822de05d7ba0c418c4e828df5bd1e",
+      "sourceBytesBeforeCompression": 1309555,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "2468a7df18cb5f0f2d58b025587b210f8926786d47cd3c880585d6ba65ae032f",
+      "outputBytes": 184009
+    },
+    {
+      "image": "CH7_L36.png",
+      "sourceSha256BeforeCompression": "91aadbf28496b4d7109b982f56fff6eaccbba02d5a63eaebcd879d22fa7a62c4",
+      "sourceBytesBeforeCompression": 1183740,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "870fa6401eb96df9273e4f8445cf0a577e32b07e3c0853cad3ed42bb62f4676b",
+      "outputBytes": 209258
+    },
+    {
+      "image": "CH7_L422.png",
+      "sourceSha256BeforeCompression": "927bde684fdc922208bd147267f59d4c71cc52d98a356bc60b29253d46b7861c",
+      "sourceBytesBeforeCompression": 1452875,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "26a8359b0b92ea4704004713a9626e305468727780d36b0a8a31be5f81fff6f5",
+      "outputBytes": 229647
+    },
+    {
+      "image": "CH7_L45.png",
+      "sourceSha256BeforeCompression": "7be8919ff65842fc3bd341cd1c497536962f68e19fe289223cf362ec97e93e8f",
+      "sourceBytesBeforeCompression": 207068,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "c2f8a5feee7d3bbe8907a1d9d8f8cffdc11109bdc2caa7e87fbf24eeef629d57",
+      "outputBytes": 58567
+    },
+    {
+      "image": "CH7_L477.png",
+      "sourceSha256BeforeCompression": "ae742b4739947b4823b6010c50b07ed54a19a5f187728da43ca68d551048ceb7",
+      "sourceBytesBeforeCompression": 1616832,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "8c5a2a5f3e96095352042503604ee50addfcaac2730106cafaf0e07213d94c50",
+      "outputBytes": 227957
+    },
+    {
+      "image": "CH7_L550.png",
+      "sourceSha256BeforeCompression": "54184483f505e8d4bb400589203a96bfa00032b2bd8ad7d5a4cd7c7ebf16ffad",
+      "sourceBytesBeforeCompression": 1642217,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "cae0b24f60ca1910bdb3629a96c357bd8e33dc998eae8548be63a8c22ab9014b",
+      "outputBytes": 229496
+    },
+    {
+      "image": "CH7_L563.png",
+      "sourceSha256BeforeCompression": "f35ed5f41c33f87d2cf0793d078b2dbc18a2c6fe3b90d8edf97f478cc208f7a8",
+      "sourceBytesBeforeCompression": 41092,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "10be0bffa4bb207bc472b6b82aee6b9f3140a3d7dcc1071c130abee10ef561bf",
+      "outputBytes": 65904
+    },
+    {
+      "image": "CH7_L626.png",
+      "sourceSha256BeforeCompression": "8d5ee2bb7f89f2c260eed9a190233043c44453b284f35b70afd2e26ff76222c1",
+      "sourceBytesBeforeCompression": 1044626,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "92b85a1c55670ffa5219e3f88f7cb5e3105a6ec137debcde0d2cf3435fcb91e4",
+      "outputBytes": 170629
+    },
+    {
+      "image": "CH7_L642.png",
+      "sourceSha256BeforeCompression": "a2fb66f6cabe19816ec7c2ad78d4b90e5c18615231301a738da4b499cd9f5f9c",
+      "sourceBytesBeforeCompression": 1270940,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "e9e98df1aae86ccd853d307f654d0ad6b22563cb4e3405fbc68363b8217e56c0",
+      "outputBytes": 204407
+    },
+    {
+      "image": "CH7_L690.png",
+      "sourceSha256BeforeCompression": "609b92f7c472081b010574f9ab0e06d535ffb9737f185d1aab5091fe9ba56222",
+      "sourceBytesBeforeCompression": 1279049,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "6e16c23af29d56b1e61ae019e21d1266648fe5e582a5d42efef276184ba77383",
+      "outputBytes": 199115
+    },
+    {
+      "image": "CH7_L706.png",
+      "sourceSha256BeforeCompression": "3f50ca5f61635f6e75502d3e09e19c10157c25cb07f58a43317d6d56db8fdddf",
+      "sourceBytesBeforeCompression": 1475277,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "3cc871ab6637abc125165f8b4f1a05d0d9337e155a0d61b4329ece57baa5d1df",
+      "outputBytes": 230301
+    },
+    {
+      "image": "CH7_L71.png",
+      "sourceSha256BeforeCompression": "62e8775a1adfaa76b5497f6d8fdbced7029678408202f936c53e15ae91e3f30f",
+      "sourceBytesBeforeCompression": 1362909,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "c7d78777f450b1223b744b7d107c54caf2eb21971331dfbff1394e8056d2fc44",
+      "outputBytes": 179475
+    },
+    {
+      "image": "CH7_L714.png",
+      "sourceSha256BeforeCompression": "0196fd89f4564721fcd7c200f75195fc31fcb9b6ae0fbb7b1782e78b15c5889f",
+      "sourceBytesBeforeCompression": 1510569,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "93d0729e1dc2e7c973545ba1e8a78bb1f630d553b4d24654ed9b6ac73b493058",
+      "outputBytes": 228471
+    },
+    {
+      "image": "CH7_L725.png",
+      "sourceSha256BeforeCompression": "fa8fe96903a01acb2677a9e7214b1ee57c78fc5c2bb3c8203c9594ecb7251a2a",
+      "sourceBytesBeforeCompression": 1831091,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "52da328899a52abf4e0dbe6f603e0bfad678d4eaf7e5ddb97b7ea587e60e2fbb",
+      "outputBytes": 296566
+    },
+    {
+      "image": "CH7_L748.png",
+      "sourceSha256BeforeCompression": "c7b0effb0d67ba06245cf383a8b42b3a2476beb3442b65e61062261a1aa238c7",
+      "sourceBytesBeforeCompression": 1513711,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "2493e7888475c716ca035b911f3298e652cdba7a7440d0a80388bf528904b9d4",
+      "outputBytes": 254627
+    },
+    {
+      "image": "CH7_L798.png",
+      "sourceSha256BeforeCompression": "3e93fe834132fda8ef13ecc215dd3e6c4b3d27a6c925092095ad92219f7b367e",
+      "sourceBytesBeforeCompression": 1353734,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "e56446731ed7e264ce0a95e2098c82f6f5d7e0256c967dc437d6db26d7bbc7e1",
+      "outputBytes": 191487
+    },
+    {
+      "image": "CH7_L824.png",
+      "sourceSha256BeforeCompression": "fe7aee762bf4f09295022eb0d80e11c924bb52e1be596515f269453f53b0a9f9",
+      "sourceBytesBeforeCompression": 878058,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "2c9e3aa9b13dd7b57fbc3841b2ef9eb0bab16be5407d67512c1ad37f4019f69e",
+      "outputBytes": 146459
+    },
+    {
+      "image": "CH7_L850.png",
+      "sourceSha256BeforeCompression": "ed80b57133f8261e070c3b772bc5443e81a0a16d9b2c1e7e69711e8ca101ae22",
+      "sourceBytesBeforeCompression": 1603352,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "befff995163063b277937c1f605504b8390118018a9ff9603dc1c61aa3f89d22",
+      "outputBytes": 256323
+    },
+    {
+      "image": "CH7_L952.png",
+      "sourceSha256BeforeCompression": "9cb966d52c660be55d0ed47598544c90d6f4b8ef2c1e18c5e48425f8415a3ab4",
+      "sourceBytesBeforeCompression": 1578540,
+      "sourceSize": [
+        1080,
+        743
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1080,
+        742
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "2600ea496f5672182681ad0e07efa405adfcc75cfd6db747662686d54fa0d50f",
+      "outputBytes": 250112
+    },
+    {
+      "image": "akane_walk_together_cg.jpg",
+      "sourceSha256BeforeCompression": "98dffc5a87f445f533b208224580dfd5853496114e4f65a4ebef2eaf44f94b27",
+      "sourceBytesBeforeCompression": 196813,
+      "sourceSize": [
+        1248,
+        848
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        7,
+        0,
+        1240,
+        848
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "12eee18d9fc6c998a8b788ddbddf7c2125c0bee9d06c9c7e41f05ea45c339c2a",
+      "outputBytes": 56626
+    },
+    {
+      "image": "dizi_cg_ds_l1_1.png",
+      "sourceSha256BeforeCompression": "9df2631173352bd5b2a758b91fa7a35ca664e42fd5453221cd11a4a5c8b76a17",
+      "sourceBytesBeforeCompression": 4563812,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "ff0172161df7e4ce82570e36a0b7373d4e63fa1c919e006c48259947e156b956",
+      "outputBytes": 273156
+    },
+    {
+      "image": "dizi_cg_ds_l2_1.png",
+      "sourceSha256BeforeCompression": "98c1f31a597a4ae43895fd3d41e3cb9616ba1b038b60951c20cb9abaaca81a85",
+      "sourceBytesBeforeCompression": 4287766,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "319dca716fb539e5388bbb0528ab8480bdbda3997cf0859700181984d5248574",
+      "outputBytes": 259286
+    },
+    {
+      "image": "dizi_cg_ds_l3_1.png",
+      "sourceSha256BeforeCompression": "838ba7e0c9afa94efb432f66c7892cfd582eb4c12bd1b6250a6bfdd74b6fe773",
+      "sourceBytesBeforeCompression": 4522796,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "4616a4e1960e517c0d56a2fc1f8da9a12db4f4ade9bd036ae20ed91ddee27eaf",
+      "outputBytes": 292163
+    },
+    {
+      "image": "dizi_cg_ds_l3_2.png",
+      "sourceSha256BeforeCompression": "1eb62df791e89021cd293aeeed7c5b759a88f7d9dbe924d6b6dbb703230609a2",
+      "sourceBytesBeforeCompression": 4513230,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "a65c41487a2f1837523a7da4eb5beb467e1b21887259be20a5ee7bf3cf200ebe",
+      "outputBytes": 292508
+    },
+    {
+      "image": "dizi_cg_ds_l4_1_1.png",
+      "sourceSha256BeforeCompression": "415aefe352605476cd67952b8a1fa322c290d61e4d9eae584c1071f22f280ebb",
+      "sourceBytesBeforeCompression": 4056187,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "a0b49bc8354d8fb3f0ac8e7c5dc854fa52a4ad523151e410ef492233c6bbd73e",
+      "outputBytes": 263904
+    },
+    {
+      "image": "dizi_cg_ds_l4_1_2.png",
+      "sourceSha256BeforeCompression": "f99d2c05ad47cb4fb378f58de8473197245ddef897ed0957e97500fb718dbaa1",
+      "sourceBytesBeforeCompression": 3963869,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "a3f51a80f44c235fd0c6183d5a29efbf6d605edd16a86a9f47ecbeeb71cc0c25",
+      "outputBytes": 259198
+    },
+    {
+      "image": "dizi_cg_ds_l4_1_3.png",
+      "sourceSha256BeforeCompression": "89cdf788c4125c665b3f0a5ff70a723ea04c1c94b07cc69460b859b761c634a7",
+      "sourceBytesBeforeCompression": 3895132,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "ac5a4cf048bad308f8e1c41e894173c16c2b8a1684b9c9e8018a5bdb5483e540",
+      "outputBytes": 230882
+    },
+    {
+      "image": "dizi_cg_ds_l4_1_4.png",
+      "sourceSha256BeforeCompression": "8397f16d1f96772c5158108d475d66ae4f97a4aae5ab38b0fa99391463d0bac4",
+      "sourceBytesBeforeCompression": 4499262,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "640e984fc3bfc525c556bba77e48d33b920bd8c1f921279c4a2caf2bd42d3a04",
+      "outputBytes": 276812
+    },
+    {
+      "image": "dizi_cg_ds_l4_2_1.png",
+      "sourceSha256BeforeCompression": "4beb0dd1d55e91afe99ed5a2769e7683e51081ebc712050c2cbf7051e619fcc2",
+      "sourceBytesBeforeCompression": 3694322,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "1d2a0b51e9f618c643871e8707986d9cb07df5033a6d1c2b7cec2925de2d5c06",
+      "outputBytes": 213322
+    },
+    {
+      "image": "dizi_cg_ds_l4_2_2.png",
+      "sourceSha256BeforeCompression": "1d9c80204f89a30b9354ff72a760b014c058605e01d7a0112edfd8076ba820fc",
+      "sourceBytesBeforeCompression": 3693951,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "e4b3b475391b40256210f029fa9e21c6ff511dfcf0542a5fdbfd25f93eb24e89",
+      "outputBytes": 213543
+    },
+    {
+      "image": "dizi_cg_ds_l4_2_3.png",
+      "sourceSha256BeforeCompression": "eacbebf9e4728f26a0c2d3a2a645b85728b8af6e807c48421b99be747b79f3de",
+      "sourceBytesBeforeCompression": 3206409,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "f91343d7f0b2e9f9a99da930fc4089a42bcac6572751a7909746f3636e02f6dc",
+      "outputBytes": 166633
+    },
+    {
+      "image": "dizi_cg_ds_l4_3.png",
+      "sourceSha256BeforeCompression": "b1bc12a55fb53d64c305b9cc8be99b14637de757405519a399a20927943cf098",
+      "sourceBytesBeforeCompression": 4437958,
+      "sourceSize": [
+        1920,
+        1320
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        1920,
+        1320
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "ea2f782acab69de5a866bf415dffef199cbbb8d14c37d8d628e9c88a61d8441a",
+      "outputBytes": 223396
+    },
+    {
+      "image": "dongshan_book_reveal_cg.png",
+      "sourceSha256BeforeCompression": "a786f44fb9a1fcd9289d6dbd85c3909ef5f57a972fa045483cd149792835ac64",
+      "sourceBytesBeforeCompression": 225776,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "73bd986f8983e5b591649d5c7a38b0a1d21ad9c57a9c134ed8d0f796286e91dd",
+      "outputBytes": 60812
+    },
+    {
+      "image": "dongshan_bookstore_battle_cg.png",
+      "sourceSha256BeforeCompression": "48bccf5947d18368aa7dcafaa105eb9089e449efdf75b3b08f10dca49e39a36f",
+      "sourceBytesBeforeCompression": 304130,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "fa73d2a170a45b87a85ac61fc9883962509fcb0b72d1ed4beccb33de7934ee00",
+      "outputBytes": 71665
+    },
+    {
+      "image": "dongshan_clerk_assault_cg.png",
+      "sourceSha256BeforeCompression": "b49ca1f83db04550904011f525fe2879a7d21f468bd4d1d17af513dde65badb1",
+      "sourceBytesBeforeCompression": 250083,
+      "sourceSize": [
+        1024,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        6,
+        0,
+        1018,
+        696
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "6ce665e9e5b10a0e97f09df5a9c3ce6af4dcde09efc2dd19ca589b8c2138ed38",
+      "outputBytes": 78115
+    },
+    {
+      "image": "juju_attack_cg.png",
+      "sourceSha256BeforeCompression": "cfdefcc43d31895a28c2a66220c2fa0b6355c08a4b5c5142ae929ec06276b7e9",
+      "sourceBytesBeforeCompression": 1916835,
+      "sourceSize": [
+        1248,
+        848
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        7,
+        0,
+        1240,
+        848
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "c060c99ba484135cd3dc146d5b2cd84a892ec76112dc285cd5a589069b7590dd",
+      "outputBytes": 245310
+    },
+    {
+      "image": "juju_bbcall.png",
+      "sourceSha256BeforeCompression": "b90893fb0864c83584d5e07ee7cee1f783c3e04ab71f9dcc7c874f5dffa1fda0",
+      "sourceBytesBeforeCompression": 15699,
+      "sourceSize": [
+        127,
+        127
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        20,
+        127,
+        107
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "39665aa19a3562fa7e7a175ce8e46158b298bced89e8de8243793d174df79c58",
+      "outputBytes": 158840
+    },
+    {
+      "image": "juju_heartfelt_cg.png",
+      "sourceSha256BeforeCompression": "41549e4d79c45fcb5cfa86c7d53ae01a83eceefd9c1e8e114cdb0ba6e2d8b472",
+      "sourceBytesBeforeCompression": 2001340,
+      "sourceSize": [
+        1248,
+        848
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        7,
+        0,
+        1240,
+        848
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "ad09e9dc277f4aaf8f0017fad9640bbfbfdfefe506f908b409c6bd5ecda7ffd1",
+      "outputBytes": 265418
+    },
+    {
+      "image": "lance_cg_chris_attack_placeholder.png",
+      "sourceSha256BeforeCompression": "ad1fa897dde963534ecaee2aba4589a897a8c3ed003538b1feeba9de8023502e",
+      "sourceBytesBeforeCompression": 8517,
+      "sourceSize": [
+        416,
+        286
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        0,
+        416,
+        286
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "ad1fa897dde963534ecaee2aba4589a897a8c3ed003538b1feeba9de8023502e",
+      "outputBytes": 8517
+    },
+    {
+      "image": "lanxiang_goodbye_cg.png",
+      "sourceSha256BeforeCompression": "cc638e07ff60261f8d36baeb47794169ad177861d56ae06f30bb2c9510c8a8a0",
+      "sourceBytesBeforeCompression": 179542,
+      "sourceSize": [
+        1248,
+        848
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        7,
+        0,
+        1240,
+        848
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "76a210ce07ea2b51e230a94913e9d4b1d7b407037bd6ed4729eda10c834a007f",
+      "outputBytes": 51549
+    },
+    {
+      "image": "lanxiang_mahjong_cg.png",
+      "sourceSha256BeforeCompression": "06918b885bbaaa0f9dc7d85f39850328c3c88c349d84459e17238daafec7d3aa",
+      "sourceBytesBeforeCompression": 1703717,
+      "sourceSize": [
+        1248,
+        848
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        7,
+        0,
+        1240,
+        848
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "295551c665040db0c0bd1aaf7555fcac53ad133d4d531ed72d43e2295fea9999",
+      "outputBytes": 223493
+    },
+    {
+      "image": "mikage_cg8_a.png",
+      "sourceSha256BeforeCompression": "002b457c8c3acbd27fdd072a88158505870c54bf6cf3457e45a1b396a97dc460",
+      "sourceBytesBeforeCompression": 1837756,
+      "sourceSize": [
+        1248,
+        848
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        7,
+        0,
+        1240,
+        848
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "f29e3e7ff85395d62d1c9f890c61133a63cd0a69e3139c9055d1da4f31578919",
+      "outputBytes": 249186
+    },
+    {
+      "image": "mikage_cg8_b.png",
+      "sourceSha256BeforeCompression": "21181d3a21a0485f2ecb7b5d04a1518a12323cc452e42cfdeb412d3b4f9d7446",
+      "sourceBytesBeforeCompression": 1802669,
+      "sourceSize": [
+        1248,
+        848
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        7,
+        0,
+        1240,
+        848
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "870c467c242c417c0548bfe5061bf9bafc8cfc4d587f7805f0b87a8602fcb640",
+      "outputBytes": 247858
+    },
+    {
+      "image": "mikage_cg8_c.png",
+      "sourceSha256BeforeCompression": "9abade7c674e12b4bedec9d7aa47c29c49f86ddd7f4deef33a70e42194d29e09",
+      "sourceBytesBeforeCompression": 1299497,
+      "sourceSize": [
+        1249,
+        848
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        8,
+        0,
+        1241,
+        848
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "ab20e3db2ee149f03faa0bb345390631b451c67fed3e0852f5f9e6bc35ff4bec",
+      "outputBytes": 217466
+    },
+    {
+      "image": "noir_hairclip.png",
+      "sourceSha256BeforeCompression": "17262245f66b89dfc99734849a437a2f16010bf0d650553ef9a7580ebd3f2685",
+      "sourceBytesBeforeCompression": 2276083,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        23,
+        0,
+        1512,
+        1024
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "591bb9b84d6f819d7c095878e825930871e03048911ce4716ee05cff6febe1d6",
+      "outputBytes": 52104
+    },
+    {
+      "image": "noir_n01_cg.jpeg",
+      "sourceSha256BeforeCompression": "f03e6d3ddad1d1558202754186039eab52f383c09d17e9f9c85de668c88d6e80",
+      "sourceBytesBeforeCompression": 139391,
+      "sourceSize": [
+        1012,
+        696
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1012,
+        695
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "2bb28740dc936e667d3c9caad545a9835b8c6fd0918ec23b476e2380d0da76ac",
+      "outputBytes": 38103
+    },
+    {
+      "image": "noir_n02_cg.jpeg",
+      "sourceSha256BeforeCompression": "4df4ea6173271a77bb2c222adfa626a09931621a7f741bbdc7b4ad0c88a6927f",
+      "sourceBytesBeforeCompression": 679550,
+      "sourceSize": [
+        2080,
+        1433
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        1,
+        2080,
+        1431
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "16dcbde1705ac4cc5f56b404f821491ef647d571f80c7c9dcceeae1337c6db89",
+      "outputBytes": 58670
+    },
+    {
+      "image": "ruka_cg_captain_entrance_placeholder.png",
+      "sourceSha256BeforeCompression": "441152a913a7124c5633d148b43b7883d7cc917b93a414c5c15ac020a9e59a3d",
+      "sourceBytesBeforeCompression": 37856,
+      "sourceSize": [
+        416,
+        416
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        65,
+        416,
+        351
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "e5ba11e9f2761bbec1b1d02187b94f8a3c2b0c841ebdbff762dcb50575a7777e",
+      "outputBytes": 15278
+    },
+    {
+      "image": "ruka_cg_hand_on_shoulder_placeholder.png",
+      "sourceSha256BeforeCompression": "441152a913a7124c5633d148b43b7883d7cc917b93a414c5c15ac020a9e59a3d",
+      "sourceBytesBeforeCompression": 37856,
+      "sourceSize": [
+        416,
+        416
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        65,
+        416,
+        351
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "e5ba11e9f2761bbec1b1d02187b94f8a3c2b0c841ebdbff762dcb50575a7777e",
+      "outputBytes": 15278
+    },
+    {
+      "image": "ruka_cg_lap_pillow_placeholder.png",
+      "sourceSha256BeforeCompression": "441152a913a7124c5633d148b43b7883d7cc917b93a414c5c15ac020a9e59a3d",
+      "sourceBytesBeforeCompression": 37856,
+      "sourceSize": [
+        416,
+        416
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        65,
+        416,
+        351
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "e5ba11e9f2761bbec1b1d02187b94f8a3c2b0c841ebdbff762dcb50575a7777e",
+      "outputBytes": 15278
+    },
+    {
+      "image": "ruka_cg_meteor_placeholder.png",
+      "sourceSha256BeforeCompression": "441152a913a7124c5633d148b43b7883d7cc917b93a414c5c15ac020a9e59a3d",
+      "sourceBytesBeforeCompression": 37856,
+      "sourceSize": [
+        416,
+        416
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        65,
+        416,
+        351
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "e5ba11e9f2761bbec1b1d02187b94f8a3c2b0c841ebdbff762dcb50575a7777e",
+      "outputBytes": 15278
+    },
+    {
+      "image": "ruka_cg_rabbit_dark_break_placeholder.png",
+      "sourceSha256BeforeCompression": "441152a913a7124c5633d148b43b7883d7cc917b93a414c5c15ac020a9e59a3d",
+      "sourceBytesBeforeCompression": 37856,
+      "sourceSize": [
+        416,
+        416
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        65,
+        416,
+        351
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "e5ba11e9f2761bbec1b1d02187b94f8a3c2b0c841ebdbff762dcb50575a7777e",
+      "outputBytes": 15278
+    },
+    {
+      "image": "scene_mapo_cg.png",
+      "sourceSha256BeforeCompression": "441152a913a7124c5633d148b43b7883d7cc917b93a414c5c15ac020a9e59a3d",
+      "sourceBytesBeforeCompression": 37856,
+      "sourceSize": [
+        416,
+        416
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        65,
+        416,
+        351
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "e5ba11e9f2761bbec1b1d02187b94f8a3c2b0c841ebdbff762dcb50575a7777e",
+      "outputBytes": 15278
+    },
+    {
+      "image": "sena_cloth_cg.png",
+      "sourceSha256BeforeCompression": "59c1f1b974c298ba803b7d4e70510d78504b8a42ed2ba8ea77c225ef51ea8424",
+      "sourceBytesBeforeCompression": 635417,
+      "sourceSize": [
+        1080,
+        826
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        42,
+        1080,
+        784
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "f95cf8c9e889317c39e264973741556593b53a71cdee82c97681d1787cfc63f8",
+      "outputBytes": 117836
+    },
+    {
+      "image": "sena_mirror_cg.png",
+      "sourceSha256BeforeCompression": "3b1c24b7cd31e7fb6195be04007e10d387f8b62e913a7bc9540016c8cc756c7b",
+      "sourceBytesBeforeCompression": 469660,
+      "sourceSize": [
+        1080,
+        826
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        42,
+        1080,
+        784
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "364790f3c53fd19aa0cdc26efd3621abd94c86a36a00cef0523891498db5fb37",
+      "outputBytes": 72607
+    },
+    {
+      "image": "shirou_blades.png",
+      "sourceSha256BeforeCompression": "5be7e2c77364dbe0af64dc490a6d7dfb48aae4c97a5c9901e11973fb351d82e3",
+      "sourceBytesBeforeCompression": 105544,
+      "sourceSize": [
+        516,
+        387
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        16,
+        516,
+        370
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "cb3fc64dee1105f62caaedcd6aa19fa57feff156a966177ed00682764eabf1f5",
+      "outputBytes": 69900
+    },
+    {
+      "image": "shirou_e01_cg.jpeg",
+      "sourceSha256BeforeCompression": "92d2907605d657e2172b98a4822e944187ab0cd2eb30fbd88a99bfc1e69b3cbe",
+      "sourceBytesBeforeCompression": 113169,
+      "sourceSize": [
+        917,
+        630
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        916,
+        630
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "39552a97c3dcfd32e4811839b87cf6d642b5c5c2d38ec37ee1ca4c323aaf813d",
+      "outputBytes": 43736
+    },
+    {
+      "image": "shirou_e02_cg.jpeg",
+      "sourceSha256BeforeCompression": "811047a5b3733fb1ba88670e7794fb3c6a49fbe10fdb42ff8bb8b56948ae8980",
+      "sourceBytesBeforeCompression": 67073,
+      "sourceSize": [
+        882,
+        607
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        882,
+        606
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "5e2527aa0c2fc783714fef71e9a6f5cea35a2d22a6e6a6de69dcb71a017370df",
+      "outputBytes": 29405
+    },
+    {
+      "image": "tournament_katana.png",
+      "sourceSha256BeforeCompression": "37f91d8f17b138743238226dfb2a334817e0ff2955656453b8a84f74ed6a1be5",
+      "sourceBytesBeforeCompression": 212170,
+      "sourceSize": [
+        500,
+        500
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        0,
+        78,
+        500,
+        421
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "a25a536bbf4524814b9885507950ebcfec288610c230de4ccf2a387a79f73c76",
+      "outputBytes": 46905
+    },
+    {
+      "image": "watanuki_cg7_a.png",
+      "sourceSha256BeforeCompression": "ef88a154c96a0d4d577c300427e1d9da28eb5dc7ebc9c842eb9129fa3dbd5f74",
+      "sourceBytesBeforeCompression": 1787628,
+      "sourceSize": [
+        1164,
+        800
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1163,
+        800
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "534f6a905f33d59ca786c7a38af5a7f852c1a92f3faaa70f3bae19ccd85ef8fe",
+      "outputBytes": 271385
+    },
+    {
+      "image": "watanuki_cg7_b.png",
+      "sourceSha256BeforeCompression": "cb63598382a1efd730275188940006ce5bffdd29b00790cc6c8584898d3e1e93",
+      "sourceBytesBeforeCompression": 1545001,
+      "sourceSize": [
+        1248,
+        848
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        7,
+        0,
+        1240,
+        848
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "f4c04444592fcf5229dec51ac56a67e716f761a2eb6d95c30cbc1f639c3413aa",
+      "outputBytes": 240558
+    },
+    {
+      "image": "watanuki_cg7_c.png",
+      "sourceSha256BeforeCompression": "d2ac2222d45869d175974df0973f0fbd8045b2a87de500a3c81f30ca18717c57",
+      "sourceBytesBeforeCompression": 1333209,
+      "sourceSize": [
+        1117,
+        768
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1117,
+        767
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "7ed815669e5bd1f32ce0a24e196169edf45b214722fbd0d5a3d802c11b32fd46",
+      "outputBytes": 236344
+    },
+    {
+      "image": "yuedu_cg6_a.png",
+      "sourceSha256BeforeCompression": "87f4af4a1e06e0295ca40b54bafc4ee69b95bb8a99556df5a2899c8a2ff2d723",
+      "sourceBytesBeforeCompression": 1000672,
+      "sourceSize": [
+        1117,
+        768
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1117,
+        767
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "d7f81912b4819cd244649ef83e572cf9b92e27cab0094d5370ce0bcef8e06440",
+      "outputBytes": 185010
+    },
+    {
+      "image": "yuedu_cg6_b.png",
+      "sourceSha256BeforeCompression": "de1e0d9b88eafe93388eb08c292ee7bc0a4ace5888b8340fb51a846d31d4edea",
+      "sourceBytesBeforeCompression": 1027966,
+      "sourceSize": [
+        1117,
+        768
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1117,
+        767
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "29465c9b5939718e2aa1822a7acd9d36e607843c8f77870213b3763ba0e39e82",
+      "outputBytes": 189755
+    },
+    {
+      "image": "yuedu_cg6_c.png",
+      "sourceSha256BeforeCompression": "304da33345b463942a151e61f75fd5edeae477305ab88dcdb4fff5facc2baa1c",
+      "sourceBytesBeforeCompression": 1105409,
+      "sourceSize": [
+        1117,
+        768
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        0,
+        1117,
+        767
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "4e267fa7b9879cb757591006bd155a6212b5202272210746df8debc7dd76ab99",
+      "outputBytes": 199189
+    }
+  ]
+}

@@ -354,6 +354,12 @@ main.floors.main_ch6_1=
             "type": "showImage",
             "code": 30,
             "image": "CH2_L299.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -594,6 +600,12 @@ main.floors.main_ch6_1=
             "type": "showImage",
             "code": 30,
             "image": "CH1_L44.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -804,6 +816,12 @@ main.floors.main_ch6_1=
             "type": "showImage",
             "code": 30,
             "image": "CH6_L69.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -913,6 +931,12 @@ main.floors.main_ch6_1=
             "type": "showImage",
             "code": 30,
             "image": "CH6_L77.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -1170,6 +1194,12 @@ main.floors.main_ch6_1=
             "type": "showImage",
             "code": 30,
             "image": "CH6_L89.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,

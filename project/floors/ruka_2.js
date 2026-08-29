@@ -398,7 +398,7 @@ main.floors.ruka_2=
             "image": "ruka_cg_rabbit_dark_break_placeholder.png",
             "sloc": [
                 0,
-                65,
+                0,
                 416,
                 286
             ],
@@ -826,7 +826,7 @@ main.floors.ruka_2=
             "image": "ruka_cg_hand_on_shoulder_placeholder.png",
             "sloc": [
                 0,
-                65,
+                0,
                 416,
                 286
             ],

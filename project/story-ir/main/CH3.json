@@ -161,6 +161,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH2_L32.png",
           "loc": [
@@ -721,6 +722,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH3_L92.png",
                   "loc": [
@@ -1128,6 +1130,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH3_L139.png",
                   "loc": [
@@ -1950,6 +1953,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH3_L231.png",
                   "loc": [
@@ -3226,6 +3230,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L44.png",
                   "loc": [
@@ -3264,6 +3269,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L44.png",
                   "loc": [
@@ -3350,6 +3356,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L44.png",
                   "loc": [
@@ -4017,6 +4024,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH3_L472.png",
                   "loc": [
@@ -4048,6 +4056,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L119.png",
                   "loc": [
@@ -4558,6 +4567,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH1_L44.png",
           "loc": [
@@ -4934,6 +4944,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH3_L565.png",
           "loc": [
@@ -5359,6 +5370,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH3_L611.png",
           "loc": [
@@ -5382,6 +5394,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH3_L614.png",
           "loc": [

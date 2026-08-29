@@ -9,7 +9,7 @@ const { characterStories, irFile } = require("./manage_story_ir");
 const root = path.resolve(__dirname, "..");
 const CG_CODES = new Set([25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]);
 const CG_PANEL = Object.freeze({ x: 112, y: 50, width: 320, height: 220 });
-const CG_SOURCE_OUTPUT = Object.freeze({ width: 416, height: 286 });
+const CG_RUNTIME_SIZE = Object.freeze({ width: 416, height: 286 });
 const CG_ASPECT_WIDTH = 16;
 const CG_ASPECT_HEIGHT = 11;
 
@@ -48,15 +48,20 @@ function analyzeCgNode(node, dimensions, location) {
     return { errors, warnings };
   }
 
+  if (dimensions.width !== CG_RUNTIME_SIZE.width || dimensions.height !== CG_RUNTIME_SIZE.height) {
+    errors.push(`${location}: ${image}: runtime CG image must be ${CG_RUNTIME_SIZE.width}x${CG_RUNTIME_SIZE.height}, got ${dimensions.width}x${dimensions.height}`);
+  }
+
   if (!Array.isArray(node.loc) || node.loc.length !== 4 || node.loc.some((value) => !Number.isFinite(value))) {
     errors.push(`${location}: ${image}: loc must be a numeric [x, y, width, height] array`);
   } else if (!sameRect(node.loc, [CG_PANEL.x, CG_PANEL.y, CG_PANEL.width, CG_PANEL.height])) {
     warnings.push(`${location}: ${image}: non-standard CG panel loc ${formatRect(node.loc)}; canonical panel is ${formatRect([CG_PANEL.x, CG_PANEL.y, CG_PANEL.width, CG_PANEL.height])}`);
   }
 
-  const sloc = node.sloc == null
-    ? [0, 0, dimensions.width, dimensions.height]
-    : node.sloc;
+  if (node.sloc == null) {
+    errors.push(`${location}: ${image}: sloc is required for every CG and must cover the runtime canvas`);
+  }
+  const sloc = node.sloc;
   if (!Array.isArray(sloc) || sloc.length !== 4 || sloc.some((value) => !Number.isFinite(value))) {
     errors.push(`${location}: ${image}: sloc must be a numeric [x, y, width, height] array`);
     return { errors, warnings };
@@ -67,14 +72,8 @@ function analyzeCgNode(node, dimensions, location) {
     errors.push(`${location}: ${image}: sloc ${formatRect(sloc)} is outside source ${dimensions.width}x${dimensions.height}`);
     return { errors, warnings };
   }
-
-  if (node.sloc != null && !image.includes("_action_cg")) {
-    const expected = expectedCenteredCrop(dimensions.width, dimensions.height);
-    const isSmallFixedCrop = sw <= CG_SOURCE_OUTPUT.width && sh <= CG_SOURCE_OUTPUT.height
-      && (dimensions.width > sw || dimensions.height > sh);
-    if (isSmallFixedCrop && !sameRect(sloc, expected)) {
-      warnings.push(`${location}: ${image}: crop ${formatRect(sloc)} only exposes a ${sw}x${sh} source slice from ${dimensions.width}x${dimensions.height}; recommended centered 16:11 crop is ${formatRect(expected)}`);
-    }
+  if (!sameRect(sloc, [0, 0, CG_RUNTIME_SIZE.width, CG_RUNTIME_SIZE.height])) {
+    errors.push(`${location}: ${image}: sloc must be the full ${CG_RUNTIME_SIZE.width}x${CG_RUNTIME_SIZE.height} runtime canvas, got ${formatRect(sloc)}`);
   }
 
   return { errors, warnings };
@@ -87,6 +86,25 @@ function bundleFiles() {
     .sort()
     .map((file) => path.join(mainDir, file));
   return mainFiles.concat(characterStories.map(irFile));
+}
+
+function walkEventTree(events, location, visit) {
+  if (!Array.isArray(events)) return;
+  events.forEach((node, nodeIndex) => {
+    const nodeLocation = `${location}.events[${nodeIndex}]`;
+    visit(node, nodeLocation);
+    if (!node || typeof node !== "object") return;
+    if (Array.isArray(node.events)) {
+      walkEventTree(node.events, nodeLocation, visit);
+    }
+    if (Array.isArray(node.options)) {
+      node.options.forEach((option, optionIndex) => {
+        if (option && Array.isArray(option.events)) {
+          walkEventTree(option.events, `${nodeLocation}.options[${optionIndex}]`, visit);
+        }
+      });
+    }
+  });
 }
 
 function collectDiagnostics() {
@@ -104,10 +122,9 @@ function collectDiagnostics() {
       continue;
     }
     bundle.scenes.forEach((scene, sceneIndex) => {
-      scene.events.forEach((node, nodeIndex) => {
+      walkEventTree(scene.events, `${relativeFile}: scenes[${sceneIndex}](${scene.id})`, (node, location) => {
         if (!isCgNode(node)) return;
         cgCount += 1;
-        const location = `${relativeFile}: scenes[${sceneIndex}](${scene.id}).events[${nodeIndex}]`;
         const imageFile = path.join(root, "project", "images", node.image || "");
         if (!node.image || !fs.existsSync(imageFile)) {
           errors.push(`${location}: missing CG image ${node.image || "<missing image>"}`);

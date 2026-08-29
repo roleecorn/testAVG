@@ -550,8 +550,8 @@ main.floors.noir_3=
             "sloc": [
                 0,
                 0,
-                1012,
-                695
+                416,
+                286
             ],
             "loc": [
                 112,
@@ -594,9 +594,9 @@ main.floors.noir_3=
             "image": "noir_n02_cg.jpeg",
             "sloc": [
                 0,
-                1,
-                2080,
-                1430
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,
@@ -1090,10 +1090,10 @@ main.floors.noir_3=
             "code": 30,
             "image": "noir_hairclip.png",
             "sloc": [
-                64,
                 0,
-                1408,
-                1024
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,

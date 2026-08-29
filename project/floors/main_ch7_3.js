@@ -349,6 +349,12 @@ main.floors.main_ch7_3=
             "type": "showImage",
             "code": 30,
             "image": "CH7_L329.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -622,6 +628,12 @@ main.floors.main_ch7_3=
             "type": "showImage",
             "code": 30,
             "image": "CH7_L355.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -1024,6 +1036,12 @@ main.floors.main_ch7_3=
             "type": "showImage",
             "code": 30,
             "image": "CH1_L44.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -1416,6 +1434,12 @@ main.floors.main_ch7_3=
             "type": "showImage",
             "code": 30,
             "image": "CH7_L422.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -1565,6 +1589,12 @@ main.floors.main_ch7_3=
             "type": "showImage",
             "code": 30,
             "image": "CH3_L565.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -2193,6 +2223,12 @@ main.floors.main_ch7_3=
             "type": "showImage",
             "code": 30,
             "image": "CH7_L477.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -2364,6 +2400,12 @@ main.floors.main_ch7_3=
             "type": "showImage",
             "code": 30,
             "image": "CH3_L614.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,

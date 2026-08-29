@@ -9,21 +9,27 @@ assert.deepEqual(expectedCenteredCrop(1248, 848), [7, 0, 1233, 848]);
 assert.deepEqual(expectedCenteredCrop(416, 416), [0, 65, 416, 286]);
 
 const validFullImage = analyzeCgNode(
-  { kind: "image.show", code: 30, image: "example.png", loc: [CG_PANEL.x, CG_PANEL.y, CG_PANEL.width, CG_PANEL.height] },
-  { width: 1248, height: 848 },
+  { kind: "image.show", code: 30, image: "example.png", sloc: [0, 0, 416, 286], loc: [CG_PANEL.x, CG_PANEL.y, CG_PANEL.width, CG_PANEL.height] },
+  { width: 416, height: 286 },
   "valid",
 );
 assert.deepEqual(validFullImage.errors, []);
 assert.deepEqual(validFullImage.warnings, []);
 
-const suspiciousCrop = analyzeCgNode(
+const missingSloc = analyzeCgNode(
+  { kind: "image.show", code: 30, image: "example.png", loc: [112, 50, 320, 220] },
+  { width: 416, height: 286 },
+  "missing-sloc",
+);
+assert.equal(missingSloc.errors.length, 2);
+assert.match(missingSloc.errors[0], /sloc is required/);
+
+const wrongRuntimeSize = analyzeCgNode(
   { kind: "image.show", code: 30, image: "example.png", sloc: [0, 0, 416, 286], loc: [112, 50, 320, 220] },
   { width: 1248, height: 848 },
-  "suspicious",
+  "wrong-size",
 );
-assert.deepEqual(suspiciousCrop.errors, []);
-assert.equal(suspiciousCrop.warnings.length, 1);
-assert.match(suspiciousCrop.warnings[0], /recommended centered 16:11 crop is \[7, 0, 1233, 848\]/);
+assert.match(wrongRuntimeSize.errors[0], /runtime CG image must be 416x286/);
 
 const invalidCrop = analyzeCgNode(
   { kind: "image.show", code: 30, image: "example.png", sloc: [0, 0, 417, 286], loc: [112, 50, 320, 220] },

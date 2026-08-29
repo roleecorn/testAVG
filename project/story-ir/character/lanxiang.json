@@ -576,12 +576,7 @@
           "role": "cg",
           "code": 30,
           "image": "lanxiang_mahjong_cg.png",
-          "sloc": [
-            7,
-            0,
-            1233,
-            848
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1809,12 +1804,7 @@
           "role": "cg",
           "code": 30,
           "image": "lanxiang_goodbye_cg.png",
-          "sloc": [
-            7,
-            0,
-            1233,
-            848
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,

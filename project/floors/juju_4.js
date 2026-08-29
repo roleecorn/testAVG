@@ -542,10 +542,10 @@ main.floors.juju_4=
             "code": 30,
             "image": "juju_heartfelt_cg.png",
             "sloc": [
-                7,
                 0,
-                1233,
-                848
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,
@@ -575,6 +575,12 @@ main.floors.juju_4=
             "type": "showImage",
             "code": 30,
             "image": "juju_bbcall.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,

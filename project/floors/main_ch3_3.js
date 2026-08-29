@@ -743,6 +743,12 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 30,
             "image": "CH3_L565.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -1356,6 +1362,12 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 30,
             "image": "CH3_L611.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -1375,6 +1387,12 @@ main.floors.main_ch3_3=
             "type": "showImage",
             "code": 30,
             "image": "CH3_L614.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,

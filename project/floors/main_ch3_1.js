@@ -419,6 +419,12 @@ main.floors.main_ch3_1=
             "type": "showImage",
             "code": 30,
             "image": "CH2_L32.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,

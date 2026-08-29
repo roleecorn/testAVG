@@ -460,7 +460,7 @@ main.floors.ruka_1=
             "image": "ruka_cg_meteor_placeholder.png",
             "sloc": [
                 0,
-                65,
+                0,
                 416,
                 286
             ],

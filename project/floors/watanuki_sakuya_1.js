@@ -290,8 +290,8 @@ main.floors.watanuki_sakuya_1=
             "sloc": [
                 0,
                 0,
-                1163,
-                800
+                416,
+                286
             ],
             "loc": [
                 112,

@@ -587,10 +587,10 @@ main.floors.lanxiang_2=
             "code": 30,
             "image": "lanxiang_mahjong_cg.png",
             "sloc": [
-                7,
                 0,
-                1233,
-                848
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,

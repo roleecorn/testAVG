@@ -288,10 +288,10 @@ main.floors.mikage_rinju_2=
             "code": 30,
             "image": "mikage_cg8_b.png",
             "sloc": [
-                7,
                 0,
-                1233,
-                848
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,

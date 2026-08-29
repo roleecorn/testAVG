@@ -510,12 +510,7 @@
           "role": "cg",
           "code": 30,
           "image": "shirou_blades.png",
-          "sloc": [
-            0,
-            16,
-            516,
-            354
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1032,12 +1027,7 @@
           "role": "cg",
           "code": 30,
           "image": "shirou_blades.png",
-          "sloc": [
-            0,
-            16,
-            516,
-            354
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1187,12 +1177,7 @@
           "role": "cg",
           "code": 30,
           "image": "tournament_katana.png",
-          "sloc": [
-            0,
-            78,
-            500,
-            343
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1247,12 +1232,7 @@
           "role": "cg",
           "code": 30,
           "image": "shirou_e01_cg.jpeg",
-          "sloc": [
-            0,
-            0,
-            916,
-            630
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1344,12 +1324,7 @@
           "role": "cg",
           "code": 30,
           "image": "shirou_e02_cg.jpeg",
-          "sloc": [
-            0,
-            0,
-            882,
-            606
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,

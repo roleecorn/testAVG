@@ -101,6 +101,12 @@ Runtime 圖片需放在 `project/images`，登錄到 `project/data.js -> main.im
 - 衍生檔在事件中使用完整畫面 `sloc: [0, 0, 416, 286]` 與 `loc: [112, 50, 320, 220]`。母檔裁切座標只存在 manifest，不再由 floor 各自決定。
 - `python scripts/build_action_cgs.py --check` 與 `node scripts/generate_main_story.js --check` 都必須通過；只替換母檔而未重建衍生檔視為驗證失敗。
 
+### CG runtime 壓縮
+
+- 一般 CG 的 runtime 圖片由 `python scripts/compress_cgs.py` 產生；工具依已驗證 Story IR 的 `role: "cg"`／CG code 建立輸入清單，不自行修改 Story IR。
+- 壓縮不是單純降低編碼品質：先以中央裁切保留 16:11 構圖，再用高品質 Lanczos 縮放至 `416×286`；透明 PNG 維持 PNG 無損編碼，JPEG 與實際 JPEG 格式資產使用品質 90。既有副檔名與圖片註冊名稱維持不變。
+- 所有 CG 事件必須明確寫入 `sloc: [0, 0, 416, 286]`，顯示仍使用 `loc: [112, 50, 320, 220]`。`node scripts/validate_story.js` 會執行 `compress_cgs.py --check`、CG layout diagnostic 與 action-CG manifest 檢查；來源／輸出雜湊與尺寸記錄在 `project/cg-compression-manifest.json`。
+
 ### 地點背景資產
 
 - 每張正式地點背景必須是 544×416，完整覆蓋 17×13 AVG 畫布。生成、匯入或驗收時都必須檢查此尺寸；416×416 或任何其他尺寸均為錯誤，不可保留為可用 placeholder。

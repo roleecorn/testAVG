@@ -379,6 +379,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH1_L44.png",
           "loc": [
@@ -645,6 +646,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH1_L67.png",
           "loc": [
@@ -886,6 +888,7 @@
                         {
                           "kind": "image.show",
                           "role": "cg",
+                          "sloc": [0, 0, 416, 286],
                           "code": 30,
                           "image": "CH1_L112.png",
                           "loc": [
@@ -931,6 +934,7 @@
                         {
                           "kind": "image.show",
                           "role": "cg",
+                          "sloc": [0, 0, 416, 286],
                           "code": 30,
                           "image": "CH1_L119.png",
                           "loc": [
@@ -1122,6 +1126,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L119.png",
                   "loc": [
@@ -1282,6 +1287,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH1_L44.png",
           "loc": [
@@ -1410,6 +1416,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH1_L44.png",
           "loc": [
@@ -1612,6 +1619,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH1_L190.png",
           "loc": [
@@ -1790,6 +1798,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH1_L209.png",
           "loc": [
@@ -2110,6 +2119,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L256.png",
                   "loc": [
@@ -2203,6 +2213,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L266.png",
                   "loc": [
@@ -2230,6 +2241,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L270.png",
                   "loc": [
@@ -2493,6 +2505,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L119.png",
                   "loc": [
@@ -3210,6 +3223,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH1_L377.png",
           "loc": [
@@ -3764,6 +3778,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L450.png",
                   "loc": [
@@ -3787,6 +3802,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L453.png",
                   "loc": [
@@ -3834,6 +3850,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L459.png",
                   "loc": [
@@ -3915,6 +3932,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L472.png",
                   "loc": [
@@ -4037,6 +4055,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L119.png",
                   "loc": [

@@ -288,10 +288,10 @@ main.floors.watanuki_sakuya_4=
             "code": 30,
             "image": "watanuki_cg7_b.png",
             "sloc": [
-                7,
                 0,
-                1233,
-                848
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,

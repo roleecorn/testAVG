@@ -371,6 +371,12 @@ main.floors.main_ch4_1_exchange_1=
             "type": "showImage",
             "code": 30,
             "image": "CH2_L32.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -409,6 +415,12 @@ main.floors.main_ch4_1_exchange_1=
             "type": "showImage",
             "code": 30,
             "image": "CH2_L32.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -537,6 +549,12 @@ main.floors.main_ch4_1_exchange_1=
             "type": "showImage",
             "code": 30,
             "image": "CH1_L44.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -995,6 +1013,12 @@ main.floors.main_ch4_1_exchange_1=
             "type": "showImage",
             "code": 30,
             "image": "CH4_L102.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -1767,8 +1791,8 @@ main.floors.main_ch4_1_exchange_1=
                             "sloc": [
                                 0,
                                 0,
-                                1024,
-                                696
+                                416,
+                                286
                             ],
                             "loc": [
                                 112,
@@ -1899,6 +1923,12 @@ main.floors.main_ch4_1_exchange_1=
                             "type": "showImage",
                             "code": 30,
                             "image": "CH1_L119.png",
+                            "sloc": [
+                                0,
+                                0,
+                                416,
+                                286
+                            ],
                             "loc": [
                                 112,
                                 50,

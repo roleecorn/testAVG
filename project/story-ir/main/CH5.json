@@ -371,6 +371,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH2_L32.png",
           "loc": [
@@ -416,6 +417,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH5_L50.png",
           "loc": [
@@ -713,6 +715,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH5_L97.png",
                   "loc": [
@@ -752,6 +755,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L119.png",
                   "loc": [
@@ -827,6 +831,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH5_L116.png",
                   "loc": [

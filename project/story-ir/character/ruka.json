@@ -202,12 +202,7 @@
           "role": "cg",
           "code": 30,
           "image": "ruka_cg_meteor_placeholder.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -424,12 +419,7 @@
           "role": "cg",
           "code": 30,
           "image": "ruka_cg_rabbit_dark_break_placeholder.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -737,12 +727,7 @@
           "role": "cg",
           "code": 30,
           "image": "ruka_cg_hand_on_shoulder_placeholder.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1964,12 +1949,7 @@
           "role": "cg",
           "code": 30,
           "image": "ruka_cg_captain_entrance_placeholder.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -2051,12 +2031,7 @@
           "role": "cg",
           "code": 30,
           "image": "ruka_cg_lap_pillow_placeholder.png",
-          "sloc": [
-            0,
-            65,
-            416,
-            286
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,

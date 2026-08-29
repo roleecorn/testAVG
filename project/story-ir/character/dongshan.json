@@ -701,12 +701,7 @@
           "role": "cg",
           "code": 30,
           "image": "dongshan_bookstore_battle_cg.png",
-          "sloc": [
-            6,
-            0,
-            1012,
-            696
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1145,12 +1140,7 @@
           "role": "cg",
           "code": 30,
           "image": "dongshan_book_reveal_cg.png",
-          "sloc": [
-            6,
-            0,
-            1012,
-            696
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -2126,12 +2116,7 @@
           "role": "cg",
           "code": 30,
           "image": "dongshan_clerk_assault_cg.png",
-          "sloc": [
-            6,
-            0,
-            1012,
-            696
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,

@@ -972,12 +972,7 @@
           "role": "cg",
           "code": 30,
           "image": "sena_cloth_cg.png",
-          "sloc": [
-            0,
-            42,
-            1080,
-            742
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1051,12 +1046,7 @@
           "role": "cg",
           "code": 30,
           "image": "sena_mirror_cg.png",
-          "sloc": [
-            0,
-            42,
-            1080,
-            742
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1081,12 +1071,7 @@
           "role": "cg",
           "code": 30,
           "image": "sena_mirror_cg.png",
-          "sloc": [
-            0,
-            42,
-            1080,
-            742
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1182,12 +1167,7 @@
           "role": "cg",
           "code": 30,
           "image": "sena_mirror_cg.png",
-          "sloc": [
-            0,
-            42,
-            1080,
-            742
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1217,12 +1197,7 @@
           "role": "cg",
           "code": 30,
           "image": "sena_mirror_cg.png",
-          "sloc": [
-            0,
-            42,
-            1080,
-            742
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,

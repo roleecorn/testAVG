@@ -119,6 +119,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH2_L299.png",
           "loc": [
@@ -286,6 +287,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH1_L44.png",
           "loc": [
@@ -465,6 +467,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH6_L69.png",
           "loc": [
@@ -538,6 +541,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH6_L77.png",
           "loc": [
@@ -751,6 +755,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH6_L89.png",
           "loc": [
@@ -1483,6 +1488,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH2_L344.png",
                   "loc": [
@@ -1506,6 +1512,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH2_L347.png",
                   "loc": [
@@ -1529,6 +1536,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH2_L350.png",
                   "loc": [
@@ -1671,6 +1679,7 @@
                 {
                   "kind": "image.show",
                   "role": "cg",
+                  "sloc": [0, 0, 416, 286],
                   "code": 30,
                   "image": "CH1_L119.png",
                   "loc": [
@@ -2555,6 +2564,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH6_L288.png",
           "loc": [
@@ -2881,6 +2891,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH6_L319.png",
           "loc": [
@@ -3276,6 +3287,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "CH2_L271.png",
           "loc": [

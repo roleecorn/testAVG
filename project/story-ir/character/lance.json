@@ -2599,12 +2599,7 @@
           "role": "cg",
           "code": 30,
           "image": "lance_cg_chris_attack_placeholder.png",
-          "sloc": [
-            0,
-            0,
-            416,
-            286
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,

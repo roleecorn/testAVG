@@ -753,7 +753,7 @@ main.floors.ruka_4=
             "image": "ruka_cg_captain_entrance_placeholder.png",
             "sloc": [
                 0,
-                65,
+                0,
                 416,
                 286
             ],
@@ -845,7 +845,7 @@ main.floors.ruka_4=
             "image": "ruka_cg_lap_pillow_placeholder.png",
             "sloc": [
                 0,
-                65,
+                0,
                 416,
                 286
             ],

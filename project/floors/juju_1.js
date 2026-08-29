@@ -670,6 +670,12 @@ main.floors.juju_1=
             "type": "showImage",
             "code": 30,
             "image": "juju_bbcall.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,

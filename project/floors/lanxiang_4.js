@@ -1158,10 +1158,10 @@ main.floors.lanxiang_4=
             "code": 30,
             "image": "lanxiang_goodbye_cg.png",
             "sloc": [
-                7,
                 0,
-                1233,
-                848
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,

@@ -274,6 +274,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "juju_bbcall.png",
           "loc": [
@@ -927,12 +928,7 @@
           "role": "cg",
           "code": 30,
           "image": "juju_attack_cg.png",
-          "sloc": [
-            7,
-            0,
-            1233,
-            848
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1224,12 +1220,7 @@
           "role": "cg",
           "code": 30,
           "image": "juju_heartfelt_cg.png",
-          "sloc": [
-            7,
-            0,
-            1233,
-            848
-          ],
+          "sloc": [0, 0, 416, 286],
           "loc": [
             112,
             50,
@@ -1292,6 +1283,7 @@
         {
           "kind": "image.show",
           "role": "cg",
+          "sloc": [0, 0, 416, 286],
           "code": 30,
           "image": "juju_bbcall.png",
           "loc": [

@@ -436,6 +436,12 @@ main.floors.mapo_1_2=
             "type": "showImage",
             "code": 30,
             "image": "CH1_L67.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -775,6 +781,12 @@ main.floors.mapo_1_2=
                                             "type": "showImage",
                                             "code": 30,
                                             "image": "CH1_L112.png",
+                                            "sloc": [
+                                                0,
+                                                0,
+                                                416,
+                                                286
+                                            ],
                                             "loc": [
                                                 112,
                                                 50,
@@ -815,6 +827,12 @@ main.floors.mapo_1_2=
                                             "type": "showImage",
                                             "code": 30,
                                             "image": "CH1_L119.png",
+                                            "sloc": [
+                                                0,
+                                                0,
+                                                416,
+                                                286
+                                            ],
                                             "loc": [
                                                 112,
                                                 50,
@@ -1099,6 +1117,12 @@ main.floors.mapo_1_2=
                             "type": "showImage",
                             "code": 30,
                             "image": "CH1_L119.png",
+                            "sloc": [
+                                0,
+                                0,
+                                416,
+                                286
+                            ],
                             "loc": [
                                 112,
                                 50,
@@ -1335,6 +1359,12 @@ main.floors.mapo_1_2=
             "type": "showImage",
             "code": 30,
             "image": "CH1_L44.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,
@@ -1535,6 +1565,12 @@ main.floors.mapo_1_2=
             "type": "showImage",
             "code": 30,
             "image": "CH1_L44.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
             "loc": [
                 112,
                 50,

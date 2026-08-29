@@ -651,9 +651,9 @@ main.floors.sena_3=
             "image": "sena_cloth_cg.png",
             "sloc": [
                 0,
-                42,
-                1080,
-                742
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,
@@ -763,9 +763,9 @@ main.floors.sena_3=
             "image": "sena_mirror_cg.png",
             "sloc": [
                 0,
-                42,
-                1080,
-                742
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,
@@ -789,9 +789,9 @@ main.floors.sena_3=
             "image": "sena_mirror_cg.png",
             "sloc": [
                 0,
-                42,
-                1080,
-                742
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,
@@ -936,9 +936,9 @@ main.floors.sena_3=
             "image": "sena_mirror_cg.png",
             "sloc": [
                 0,
-                42,
-                1080,
-                742
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,
@@ -978,9 +978,9 @@ main.floors.sena_3=
             "image": "sena_mirror_cg.png",
             "sloc": [
                 0,
-                42,
-                1080,
-                742
+                0,
+                416,
+                286
             ],
             "loc": [
                 112,
