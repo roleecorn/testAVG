@@ -443,15 +443,15 @@ p#name {
     right: 64px;
     z-index: 180;
     box-sizing: border-box;
-    min-width: 84px;
-    height: 34px;
-    padding: 0 12px;
+    min-width: 60.48px;
+    height: 24.48px;
+    padding: 0 8.64px;
     border: 1px solid rgba(216, 218, 246, 0.78);
-    border-radius: 16px;
+    border-radius: 11.52px;
     color: #F2F1FF;
     background: rgba(25, 29, 64, 0.96);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), inset 0 1px rgba(255, 255, 255, 0.1);
-    font: 700 12px/32px "Segoe UI", "Microsoft JhengHei", sans-serif;
+    font: 700 8.64px/23.04px "Segoe UI", "Microsoft JhengHei", sans-serif;
     letter-spacing: 0.04em;
     cursor: pointer;
     text-align: center;
@@ -481,7 +481,7 @@ p#name {
 
 #autoBtn .autoBtnMarks {
     color: #DAD9F4;
-    font-size: 12px;
+    font-size: 8.64px;
     letter-spacing: 0.04em;
 }
 

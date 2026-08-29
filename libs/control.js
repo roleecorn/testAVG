@@ -411,12 +411,39 @@ control.prototype._isDialogueComplete = function () {
     return this._isDialogueAutoTarget() && event.interval == null && event.animateUI == null;
 }
 
+control.prototype.updateDialogueAutoButtonSize = function () {
+    var button = main.dom.autoBtn;
+    if (!button) return;
+    var scale = parseFloat(core.domStyle.scale) || 1;
+    var sizeScale = scale * 0.72;
+    var px = function (value) { return (value * sizeScale) + 'px'; };
+
+    button.style.right = (64 * scale) + 'px';
+    button.style.minWidth = px(84);
+    button.style.height = px(34);
+    button.style.padding = '0 ' + px(12);
+    button.style.borderWidth = px(1);
+    button.style.borderRadius = px(16);
+    button.style.fontSize = px(12);
+    button.style.lineHeight = px(32);
+
+    var modeMarks = button.querySelector('.autoBtnMarks');
+    if (modeMarks) modeMarks.style.fontSize = px(12);
+
+    var dialogueTop = parseFloat(button.getAttribute('data-dialogue-top'));
+    if (!isNaN(dialogueTop)) {
+        button.style.top = Math.round((dialogueTop - 10) * scale) + 'px';
+        button.style.bottom = 'auto';
+    }
+}
+
 control.prototype.updateDialogueAutoButtonPosition = function (dialogueTop) {
     var button = main.dom.autoBtn;
     if (!button || dialogueTop == null) return;
     var scale = parseFloat(core.domStyle.scale) || 1;
     // 跟隨對話框上緣；-10px 讓按鈕略微跨在外框內側。
-    button.style.top = Math.round(dialogueTop * scale - 10) + 'px';
+    button.setAttribute('data-dialogue-top', dialogueTop);
+    button.style.top = Math.round((dialogueTop - 10) * scale) + 'px';
     button.style.bottom = 'auto';
 }
 
@@ -3500,6 +3527,9 @@ control.prototype._resize_canvas = function (obj) {
     // resize next
     main.dom.next.style.width = main.dom.next.style.height = 5 * core.domStyle.scale + "px";
     main.dom.next.style.borderBottomWidth = main.dom.next.style.borderRightWidth = 4 * core.domStyle.scale + "px";
+    if (core.control && core.control.updateDialogueAutoButtonSize) {
+        core.control.updateDialogueAutoButtonSize();
+    }
 }
 
 control.prototype._resize_statusBar = function (obj) {
