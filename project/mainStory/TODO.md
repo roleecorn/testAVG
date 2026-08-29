@@ -13,11 +13,11 @@
 
 ## 待確認人物
 
-- Open: `main-story-sankaku-puppet-portrait`
+- Resolved: `main-story-sankaku-puppet-portrait`
   - Scope: `project/mainStory/CH1:364-371`、`project/images/ms_portrait_sankaku_*.png`、`project/story-ir/main/CH1.json`、`project/floors/mapo_1_4.js`。
-  - Current: 來源描述三角手上抓著手偶並使用手偶說話；目前新版三角六表情立繪未見手偶，未猜測補畫或替換素材。
-  - Done when: 確認是否需要手偶；若需要，提供／確認可追溯素材後完成六表情資產、`main.images`、Story IR／floor 使用鏈與遊戲內驗證。
-  - Evidence: `.codex/task-questions/20260828-184205-main-story-ch7-media-review.md` Q1；`ms_portrait_sankaku_normal.png` 等六張現有圖已目視核對。
+  - Source: 使用者提供的根目錄 `三角.png`；與既有 `主線用角色參考/三角.png` 完整內容相同，SHA-256：`463DF3B513196689FFBDB06972A5566D62ABEA9777A2F3F106DBEEE72C1A8C0F`。
+  - Current: 已依來源描述補上三角手上抓著並使用的兔子手偶；六表情 runtime 立繪、既有檔名、`main.images`、Story IR／floor 使用鏈均已更新，未改動劇本來源。
+  - Evidence: 新母圖 `art/characters/sankaku/sankaku_expression_sheet.png`（1024×1536，SHA-256：`82114319E97D7B2BA6E777606795D461EAFB89CE52F54096B199802FDE395450`）；六張成品以 `split_emotion_image.py` 綠幕 gutter 分格並由 `remove_bk.py` 的 `isnet-anime` CUDA 流程去背；`node scripts/validate_story.js` 通過。
 
 - Open: `mainline-character-portrait-reference-gap`
   - Scope: `project/mainStory/CH1`～`CH7` 的 `梗平`；表妹已不再是缺口。惠惠／來島澄／李嚴的參考圖對應已不再是缺口。

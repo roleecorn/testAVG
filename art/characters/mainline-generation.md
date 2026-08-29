@@ -78,3 +78,11 @@
 - 後處理：`split_emotion_image.py` 使用綠幕 gutter 偵測切割；`remove_bk.py` 使用 `isnet-anime`，ONNX session 以 `CUDAExecutionProvider` 為首，輸出六張 RGBA PNG。透明度驗證：`validate_png_alpha.py` 六張均通過。
 - runtime 替換：保留既有 `suou_*_portrait.png` 檔名與 Story IR／floor／`main.images` 引用；`normal→suou_happy_portrait.png`、`panic→suou_goofy_portrait.png`，其餘依表情同名。輸出與原檔備份見 `work/mainline-portrait-update-20260828-004505/`。
 - 新 runtime SHA-256：`suou_happy_portrait.png` `bd58f2482b23161e5b5a0dbbacbc12c73c80b41681973f77930095f54c1342c0`；`suou_angry_portrait.png` `28dbc5b333909ff790957f76b958a042bbe42e7bce3b75d9dc1aef95286fe929`；`suou_sad_portrait.png` `117aa7b7359d6fdf004129f0a408b32a202fbea89b2ed144ee30c56a0b881fd9`；`suou_surprised_portrait.png` `3cdc7480b03e676094fac3fd736b2bf37f7b5cea1c3eb722e51a5d31703e6b38`；`suou_goofy_portrait.png` `43d8f50d78e3946896ec3656f807b48702e98baecfbeda34090ff0c04d47b721`；`suou_smile_portrait.png` `8cba4e3ca7ecc1b2eaddbbc64c1c5cf0fa9e3db9483003e83f4a6d42e6f3872d`。
+
+## 三角手偶補生成（2026-08-29）
+
+- 使用者提供的根目錄 `三角.png` 與既有 `主線用角色參考/三角.png` 完整相同；格式／尺寸：RGB、1024×1449；SHA-256：`463DF3B513196689FFBDB06972A5566D62ABEA9777A2F3F106DBEEE72C1A8C0F`。
+- 以 Codex 內建 `imagegen` 依 `anime-expression-grid` 生成新的 2×3 綠幕母片 `art/characters/sankaku/sankaku_expression_sheet.png`；格位順序為 `smile`、`angry`、`sad`、`surprised`、`panic`、`normal`；母片格式／尺寸：RGB、1024×1536；SHA-256：`82114319E97D7B2BA6E777606795D461EAFB89CE52F54096B199802FDE395450`。
+- 先以 `split_emotion_image.py` 偵測綠幕 gutter 分格，再以 `remove_bk.py` 的 `isnet-anime`、`CUDAExecutionProvider` 去背；六格均目視確認手偶完整、沒有跨格前景，成品保留為 `art/characters/sankaku/sankaku_<expression>.png`。
+- runtime 保留原有檔名與 Story IR／floor 引用，替換 `project/images/ms_portrait_sankaku_*.png`；六張新 runtime SHA-256：`smile` `65fdc02efd4e9d08981070d62301e077289571f759df53bc560c1b3365d22cce`、`angry` `a5128c6b93f2f69e414979b17c67189872dff2fd03086585b2ba01f7c246963d`、`sad` `17258940e1b41502141b16d52ed33020688e21d123626998d427dcb5df494c26`、`surprised` `719d1c370a91aa6971e2a75220fb4e644153cfc9dfc0868936199fe048e3f818`、`panic` `ef15fb3170e4f16624373061c10bcb0a14c7a83927550dac1cc2ecd221226d18`、`normal` `fec3e85542d2d0720b982d3b89b1f13f71ee07f53c6daf1586dcff884224cc09`。
+- 驗證：`node scripts/validate_story.js`、`git diff --check`；既有 `main.images`、`project/story-ir/main/CH1.json` 與 `project/floors/mapo_1_4.js` 未需改名或重生。
