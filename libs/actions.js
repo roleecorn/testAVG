@@ -258,6 +258,7 @@ actions.prototype._sys_keyDown_lockControl = function (keyCode) {
     if (!core.status.lockControl) return false;
     // Ctrl跳过对话
     if (keyCode == 17) {
+        if (core.status.blockCtrlSkip) return true;
         this.keyDownCtrl();
         return true;
     }
@@ -823,6 +824,7 @@ actions.prototype.keyDownCtrl = function () {
 }
 
 actions.prototype._sys_keyDownCtrl = function () {
+    if (core.status.blockCtrlSkip) return true;
     if (core.status.event.id == 'text') {
         core.drawText();
         return true;

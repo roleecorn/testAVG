@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH7",
-        "sha256": "787b1d6df079887a339c4f7a5bb02c0a0a4f90fd759f4f68567f60579f73bda9"
+        "sha256": "ad69e9c820327349c8a7014b7022b7c8cce8d1a7047a1525a70748ab97dc6930"
       }
     ]
   },
@@ -12877,28 +12877,201 @@
         },
         {
           "kind": "comment",
-          "text": "TODO: 【白色慢速過場】",
-          "holdUntilBackground": true
+          "text": "【白色慢速過場】"
         },
         {
           "kind": "comment",
-          "text": "TODO: 【BGM：BGMED2】"
-        },
-        {
-          "kind": "bgm.play",
-          "name": "BGMED2.mp3"
+          "text": "【背景：ED2COMIKE】"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_tokyo_big_sight.png",
+          "image": "ED2COMIKE.png",
           "loc": [
             0,
             0
           ],
           "opacity": 1,
-          "time": 250
+          "time": 500
+        },
+        {
+          "kind": "comment",
+          "text": "【下1句話為大字】"
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "營設完了！",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "layout.set",
+          "value": {
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+              255,
+              225,
+              80,
+              1
+            ],
+            "text": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "桶至學長(女僕)",
+          "text": "我站售賣位是不是有點對不起『讀者』啊常考",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_tongzhi_maid_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "重要的是COMIKE精神啊，大家是不會在意的",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "桶至學長(女僕)",
+          "text": "再怎麼說由女裝油桶當百合攤看板娘還是太糞作了",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_tongzhi_maid_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "桶至學長(女僕)",
+          "text": "這位置不應該克莉絲來嗎？人呢？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_tongzhi_maid_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "不清楚呢…",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "但入場後解散，去追尋想要的東西，才是真正的阿宅",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "東山",
+          "text": "她也是自由的",
+          "portrait": {
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "桶至學長(女僕)",
+          "text": "還挺豁達啊乙",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_tongzhi_maid_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "narration",
+          "text": "啪啪啪啪啪啪パチパチパチClapClapClap짝짝짝짝짝짝"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "桶至學長(女僕)",
+          "text": "果然開幕的氣氛就是棒wkwk",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_tongzhi_maid_normal.png",
+            "expression": "normal"
+          }
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "蘭斯",
+          "text": "那我先去巡攤啦，有要順便帶啥？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_lance_normal.png",
+            "expression": "normal"
+          }
         },
         {
           "kind": "dialogue",
@@ -12912,28 +13085,8 @@
         },
         {
           "kind": "dialogue",
-          "speaker": "桶至學長(女僕)",
-          "text": "叫我當看板娘是不是有點對不起你的讀者啊…",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_tongzhi_maid_normal.png",
-            "expression": "normal"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "蘭斯",
-          "text": "那我先去巡攤一圈，有沒有人要啥？",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal"
-          }
-        },
-        {
-          "kind": "dialogue",
           "speaker": "東山",
-          "text": "今天可要大賣特賣喔！",
+          "text": "好—今天可要大賣特賣喔！",
           "portrait": {
             "code": 20,
             "image": "dongshan_normal.png",
@@ -12941,12 +13094,45 @@
           }
         },
         {
-          "kind": "narration",
-          "text": "東山的眼神燃起了鬥志"
+          "kind": "comment",
+          "text": "【強制改為AUTO速度1】"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { core.status.dialogueAuto = 1; core.control.scheduleDialogueAuto(); }"
+        },
+        {
+          "kind": "comment",
+          "text": "【AUTO按鍵改為Disable】"
+        },
+        {
+          "kind": "function.call",
+          "function": "function () { var button = main.dom.autoBtn; if (button) { button.disabled = true; button.setAttribute('aria-disabled', 'true'); } }"
+        },
+        {
+          "kind": "comment",
+          "text": "【BGM：BGMED2】"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMED2.mp3",
+          "loop": false
+        },
+        {
+          "kind": "comment",
+          "text": "【啟動自動播放並禁止玩家操作（包含點擊與Ctrl快進）】"
+        },
+        {
+          "kind": "control.lock",
+          "blockCtrl": true
         },
         {
           "kind": "narration",
           "text": "隨著開幕的掌聲響起"
+        },
+        {
+          "kind": "narration",
+          "text": "東山的眼神燃起了鬥志"
         },
         {
           "kind": "narration",
@@ -12962,207 +13148,242 @@
         },
         {
           "kind": "comment",
-          "text": "【結尾動畫 製作名單 還未製作先忽略下方至END的部分】"
+          "text": "【用BGMED2剩餘時間平均控制下方幻燈片，播放至BGM結束；每張圖先0.5秒淡出，再切換下一張並0.5秒淡入，兩張圖不重疊】"
         },
         {
           "kind": "comment",
-          "text": "【背景幻燈片】"
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_higashiyama_booth.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_keng_becky_transform.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_pachinko_group.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_lance_unknown_corner.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_training_group.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_dragon_boat.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_tbd.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_tbd.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_tbd.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_fruit_box_sunrise.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "comment",
-          "text": "【過場】"
-        },
-        {
-          "kind": "background.show",
-          "role": "image",
-          "code": 1,
-          "image": "ms_bg_tokyo_big_sight.png",
-          "loc": [
-            0,
-            0
-          ],
-          "opacity": 1,
-          "time": 250
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "桶至學長(女僕)",
-          "text": "……………",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_tongzhi_maid_normal.png",
-            "expression": "normal"
-          }
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "桶至學長(女僕)",
-          "text": "我們是不是忘了誰啊？",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_tongzhi_maid_normal.png",
-            "expression": "normal"
-          }
+          "text": "【顯示一張全黑image固定在後方】"
         },
         {
           "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "scene_mapo_cg.png",
-          "sloc": [0, 0, 416, 286],
+          "role": "mask",
+          "code": 1,
+          "image": "lance_black_curtain.png",
           "loc": [
-            112,
-            50,
-            320,
-            220
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "comment",
+          "text": "【隨著BGM切換下方背景、用【過場】製造類似幻燈片的效果】"
+        },
+        {
+          "kind": "ending.slideshow",
+          "code": 2,
+          "images": [
+            "ED2001.png",
+            "ED2002.png",
+            "ED2003.png",
+            "ED2004.png",
+            "ED2005.png",
+            "ED2006.png",
+            "ED2007.png",
+            "ED2008.png",
+            "ED2009.png",
+            "ED2010.png",
+            "ED2011.png",
+            "ED2012.png",
+            "ED2013.png",
+            "ED2014.png",
+            "ED2015.png",
+            "ED2016.png",
+            "ED2017.png",
+            "ED2018.png",
+            "ED2019.png",
+            "ED2020.png"
+          ],
+          "width": 544,
+          "height": 416,
+          "x": 0,
+          "y": 0,
+          "transition": 500
+        },
+        {
+          "kind": "comment",
+          "text": "【在BGM結束時停止3秒進入白色慢速過場】"
+        },
+        {
+          "kind": "wait",
+          "time": 3000,
+          "noSkip": true
+        },
+        {
+          "kind": "comment",
+          "text": "【白色慢速過場】",
+          "holdUntilBackground": true
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ED2kris1.png",
+          "loc": [
+            0,
+            0
           ],
           "opacity": 1,
           "time": 250
         },
         {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 150
+          "kind": "narration",
+          "text": "……………"
+        },
+        {
+          "kind": "narration",
+          "text": "在白色空間的克莉絲醒來"
+        },
+        {
+          "kind": "comment",
+          "text": "【背景：ED2kris2】"
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ED2kris2.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "narration",
+          "text": "……………"
+        },
+        {
+          "kind": "comment",
+          "text": "【以下到回標題畫面前均不使用立繪】"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "不是初次見面的人，妳醒了嗎…"
         },
         {
           "kind": "dialogue",
           "speaker": "克莉絲",
-          "text": "這裡是哪裡啦！？",
-          "portrait": {
-            "code": 20,
-            "image": "ms_portrait_chris_surprised.png",
-            "expression": "surprised"
-          }
+          "text": "你是……？"
         },
         {
-          "kind": "narration",
-          "text": "———END———"
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "在這『正史』裡，妳過得開心嗎？"
+        },
+        {
+          "kind": "comment",
+          "text": "【背景：ED2kris3】"
         },
         {
           "kind": "background.show",
           "role": "image",
           "code": 1,
-          "image": "ms_bg_tbd.png",
+          "image": "ED2kris3.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "在這COC團錄的世界"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "檯面上的PL與骰子決定著每個人的命運"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "追溯事件的根源，一切總是由東山而起"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "桶至學長則在無用功的道路上原地打轉"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "看似無頭蒼蠅般的梗平，恰好成為了事件終局的錨點"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "一切看起來荒誕不堪，但卻有跡可循"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "故事的終點早在起點就已經定下了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "算是有趣的故事...嗎？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "克莉絲",
+          "text": "……………"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "其他人都在這張畫布上揮灑自己的色彩"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "那麼你呢？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "這樣的故事裡，你究竟是甚麼？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "克莉絲",
+          "text": "……………"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "克莉絲",
+          "text": "我是………"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "克莉絲",
+          "text": "我不知道，我想不起來…"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "噓，別急，很快就有答案了"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "那件事...還在『外面』等著你呢"
+        },
+        {
+          "kind": "comment",
+          "text": "【背景：ED2kris4】"
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ED2kris4.png",
           "loc": [
             0,
             0
@@ -13172,163 +13393,53 @@
         },
         {
           "kind": "narration",
-          "text": "總之這劇本其實是COC村規團錄"
+          "text": "無數雙黑色的手從門中湧出，將克莉絲拖入了「門」之中"
         },
         {
-          "kind": "narration",
-          "text": "一切都是PL與骰子女神的抉擇可沒有半分虛假"
+          "kind": "dialogue",
+          "speaker": "克莉絲",
+          "text": "……………"
         },
         {
-          "kind": "narration",
-          "text": "這團幾乎所有事件都是由東山開始"
+          "kind": "comment",
+          "text": "【白色慢速過場】",
+          "holdUntilBackground": true
         },
         {
-          "kind": "narration",
-          "text": "由桶至學長負責徒勞無功 "
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "ED2kris5.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 250
         },
         {
-          "kind": "narration",
-          "text": "雖然梗平看起來沒啥用、但都承包了關鍵點沒有他無法善了"
+          "kind": "dialogue",
+          "speaker": "？？？",
+          "text": "之後再會吧！我的『偶像小姐』"
         },
         {
-          "kind": "narration",
-          "text": "看起來很巧但他就是發生了"
+          "kind": "comment",
+          "text": "【白色慢速過場】"
         },
         {
-          "kind": "narration",
-          "text": "想必這也是命運石之門的選擇吧—"
+          "kind": "comment",
+          "text": "【標題畫面換成OP2】"
         },
         {
-          "kind": "narration",
-          "text": "G組活動作品到此全劇終"
-        },
-        {
-          "kind": "narration",
-          "text": "感謝各位的參與與觀看，真的辛苦了"
+          "kind": "title.show",
+          "image": "OP2.png"
         },
         {
           "kind": "comment",
           "text": "【返回標題畫面】"
         },
         {
-          "kind": "layout.set",
-          "value": {
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-              255,
-              225,
-              80,
-              1
-            ],
-            "text": [
-              255,
-              255,
-              255,
-              1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-          }
-        },
-        {
-          "kind": "layout.set",
-          "value": {
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-              255,
-              225,
-              80,
-              1
-            ],
-            "text": [
-              255,
-              255,
-              255,
-              1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-          }
-        },
-        {
-          "kind": "layout.set",
-          "value": {
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-              255,
-              225,
-              80,
-              1
-            ],
-            "text": [
-              255,
-              255,
-              255,
-              1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-          }
-        },
-        {
-          "kind": "layout.set",
-          "value": {
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-              255,
-              225,
-              80,
-              1
-            ],
-            "text": [
-              255,
-              255,
-              255,
-              1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-          }
+          "kind": "title.return"
         }
       ]
     }

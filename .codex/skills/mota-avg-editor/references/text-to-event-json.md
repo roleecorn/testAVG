@@ -111,7 +111,8 @@ Story IR 不是可獨立交付的中間成果。任何 `project/story-ir/main/*.
 | `image.hide` | `code` | 隱藏指定圖片層 |
 | `wait` | `time` | 等待；`noSkip` 可選 |
 | `ending.roll` | `code`, `image` | 顯示長圖並依目前 BGM 剩餘時間滾動至底部；`width`、`x`、`y` 可選 |
-| `control.lock` | 無 | 鎖定玩家操作 |
+| `ending.slideshow` | `code`, `images` | 依目前 BGM 剩餘時間平均播放圖片清單，並在每張圖片間淡入淡出；`width`、`height`、`x`、`y`、`transition` 可選 |
+| `control.lock` | 無 | 鎖定玩家操作；`blockCtrl` 可選且為 `true` 時同時禁止 Ctrl 快進 |
 | `control.unlock` | 無 | 恢復玩家操作 |
 | `toolbar.hide` | 無 | 僅隱藏 AVG 工具列，不改變狀態列 |
 | `toolbar.show` | 無 | 顯示 AVG 工具列 |

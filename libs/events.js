@@ -1869,12 +1869,94 @@ events.prototype._action_endingRoll = function (data, x, y, prefix) {
     core.status.event.interval = timer;
 }
 
+// ------ 依目前BGM剩餘時間播放一組非重疊淡入淡出幻燈片 ------
+// Like endingRoll, this is opt-in and blocks the event queue until the
+// currently playing one-shot BGM reaches its natural end.
+events.prototype._action_endingSlideshow = function (data, x, y, prefix) {
+    var images = Array.isArray(data.images) ? data.images.slice() : [];
+    var code = data.code == null ? 2 : data.code;
+    var viewportWidth = core._PX_, viewportHeight = core._PY_;
+    var width = data.width || viewportWidth;
+    var height = data.height || viewportHeight;
+    var left = data.x == null ? 0 : data.x;
+    var top = data.y == null ? 0 : data.y;
+    var audioName = core.musicStatus.playingBgm;
+    var audio = audioName && core.material.bgms[audioName];
+    var finished = false;
+    var timer = null;
+    var activeIndex = 0;
+    var transition = data.transition == null ? 500 : Math.max(0, data.transition);
+
+    var canvasName = function (slot) { return "image" + (slot + 100); };
+    var finish = function () {
+        if (finished) return;
+        finished = true;
+        if (timer != null) clearInterval(timer);
+        core.status.event.interval = null;
+        core.deleteCanvas(canvasName(code));
+        core.doAction();
+    };
+    var showSlide = function (image, opacity) {
+        core.showImage(code, image, null, [left, top, width, height], opacity, 0);
+    };
+
+    if (!images.length || !audio || audio.ended) return finish();
+    // The source explicitly couples this presentation to the end of BGM.
+    audio.loop = false;
+
+    var startTime = null;
+    var duration = null;
+    var started = false;
+    var switched = false;
+    timer = window.setInterval(function () {
+        if (audio.ended) return finish();
+        if (!isFinite(audio.duration) || audio.duration <= 0) return;
+        if (startTime == null) {
+            startTime = audio.currentTime;
+            duration = audio.duration - startTime;
+            if (duration <= 0) return finish();
+        }
+        if (!started) {
+            started = true;
+            showSlide(images[activeIndex], 1);
+        }
+        var elapsed = Math.max(0, audio.currentTime - startTime);
+        if (elapsed >= duration || audio.currentTime >= audio.duration - 0.01) return finish();
+        var unit = duration / images.length;
+        var boundary = (activeIndex + 1) * unit;
+        var fadeDuration = Math.min(transition, unit / 2);
+        var fadeStart = boundary - fadeDuration * 2;
+        if (activeIndex >= images.length - 1 || elapsed < fadeStart) return;
+
+        var fadeElapsed = elapsed - fadeStart;
+        if (fadeElapsed < fadeDuration) {
+            core.setOpacity(canvasName(code), 1 - (fadeDuration ? fadeElapsed / fadeDuration : 1));
+            return;
+        }
+        // Reuse one canvas: the old image is already fully transparent before
+        // the next image is drawn, so the two slides never overlap.
+        if (!switched) {
+            switched = true;
+            showSlide(images[activeIndex + 1], 0);
+        }
+        var progress = fadeDuration ? Math.max(0, Math.min(1, (fadeElapsed - fadeDuration) / fadeDuration)) : 1;
+        core.setOpacity(canvasName(code), progress);
+        if (progress >= 1) {
+            activeIndex++;
+            switched = false;
+        }
+    }, 10);
+    core.status.event.interval = timer;
+}
+
 events.prototype._action_lockControl = function (data, x, y, prefix) {
+    if (data.blockCtrl !== undefined) core.status.blockCtrlSkip = !!data.blockCtrl;
     core.lockControl();
     core.doAction();
 }
 
 events.prototype._action_unlockControl = function (data, x, y, prefix) {
+    core.status.blockCtrlSkip = false;
     core.unlockControl();
     core.doAction();
 }
@@ -2565,6 +2647,19 @@ events.prototype._action_lose = function (data, x, y, prefix) {
 
 events.prototype._action_restart = function (data, x, y, prefix) {
     core.restart();
+}
+
+events.prototype._action_setTitleBackground = function (data, x, y, prefix) {
+    var image = core.getMappedName(data.image);
+    var source = "project/images/" + image;
+    main.styles.startBackground = source;
+    main.styles.startVerticalBackground = source;
+    if (main.dom.startBackground) {
+        main.dom.startBackground.setAttribute('__src__', source);
+        main.dom.startBackground.src = source;
+    }
+    if (core.control && core.control.stopDialogueAuto) core.control.stopDialogueAuto();
+    core.doAction();
 }
 
 events.prototype._action_function = function (data, x, y, prefix) {

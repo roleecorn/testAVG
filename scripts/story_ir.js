@@ -202,8 +202,11 @@ function irToEvent(node, options = {}) {
     });
     case "wait": return cleanUndefined({ type: "sleep", time: node.time, noSkip: node.noSkip });
     case "ending.roll": return cleanUndefined({ type: "endingRoll", code: node.code, image: node.image, width: node.width, x: node.x, y: node.y });
-    case "control.lock": return { type: "lockControl" };
+    case "ending.slideshow": return cleanUndefined({ type: "endingSlideshow", code: node.code, images: node.images, width: node.width, height: node.height, x: node.x, y: node.y, transition: node.transition });
+    case "control.lock": return cleanUndefined({ type: "lockControl", blockCtrl: node.blockCtrl });
     case "control.unlock": return { type: "unlockControl" };
+    case "title.show": return { type: "setTitleBackground", image: node.image };
+    case "title.return": return { type: "restart" };
     case "toolbar.hide": return { type: "hideToolbar" };
     case "toolbar.show": return { type: "showToolbar" };
     case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time, silent: true });
@@ -563,7 +566,7 @@ function validateGeneratedAvgLayout(floors, location = "generated AVG floors", {
 const ALLOWED_KINDS = new Set([
   "narration", "dialogue", "layout.set", "bgm.play", "bgm.pause", "bgm.resume",
   "sound.play", "sound.stop", "screen.shake", "screen.tint", "screen.reset", "screen.flash", "background.show", "image.show", "image.hide", "wait",
-  "ending.roll", "control.lock", "control.unlock", "toolbar.hide", "toolbar.show",
+  "ending.roll", "ending.slideshow", "control.lock", "control.unlock", "title.show", "title.return", "toolbar.hide", "toolbar.show",
   "goto", "comment", "function.call", "character.exchange", "akiba.event.complete", "akiba.return", "transition.video", "choice",
 ]);
 
@@ -658,6 +661,28 @@ function validateNode(node, location) {
         throw new Error(`${location}: ending.roll.${field} must be numeric${field === "width" ? " and positive" : ""}`);
       }
     }
+  }
+  if (node.kind === "ending.slideshow") {
+    if (!Number.isInteger(node.code) || !Array.isArray(node.images) || !node.images.length || node.images.some((image) => typeof image !== "string" || !image)) {
+      throw new Error(`${location}: ending.slideshow requires integer code and non-empty image list`);
+    }
+    for (const field of ["width", "height", "x", "y"]) {
+      if (node[field] !== undefined && (!Number.isFinite(node[field]) || ((field === "width" || field === "height") && node[field] <= 0))) {
+        throw new Error(`${location}: ending.slideshow.${field} must be numeric${field === "width" || field === "height" ? " and positive" : ""}`);
+      }
+    }
+    if (node.transition !== undefined && (!Number.isFinite(node.transition) || node.transition < 0)) {
+      throw new Error(`${location}: ending.slideshow.transition must be non-negative`);
+    }
+  }
+  if (node.kind === "control.lock" && node.blockCtrl !== undefined && typeof node.blockCtrl !== "boolean") {
+    throw new Error(`${location}: control.lock.blockCtrl must be boolean when provided`);
+  }
+  if (node.kind === "title.show" && (typeof node.image !== "string" || !node.image)) {
+    throw new Error(`${location}: title.show requires image`);
+  }
+  if (node.kind === "title.return" && Object.keys(node).some((key) => key !== "kind")) {
+    throw new Error(`${location}: title.return does not accept extra fields`);
   }
   if ((node.kind === "background.show" || node.kind === "image.show") && (typeof node.code !== "number" || typeof node.image !== "string")) {
     throw new Error(`${location}: ${node.kind} requires numeric code and image`);
@@ -863,6 +888,14 @@ function validateProjectReferences(root, bundle) {
     if (node.kind === "ending.roll" && (!images.has(node.image) || !fs.existsSync(path.join(root, "project", "images", node.image)))) {
       throw new Error(`${location}: unregistered or missing image ${node.image}`);
     }
+    if (node.kind === "ending.slideshow") {
+      node.images.forEach((image, imageIndex) => {
+        const file = path.join(root, "project", "images", image);
+        if (!images.has(image) || !fs.existsSync(file)) throw new Error(`${location}.images[${imageIndex}]: unregistered or missing image ${image}`);
+        validateBackgroundImageSize(file, `${location}.images[${imageIndex}]`);
+      });
+    }
+    if (node.kind === "title.show") validateImageReference(node.image, location, false);
     if (node.kind === "bgm.play" && (!bgms.has(node.name) || !fs.existsSync(path.join(root, "project", "bgms", node.name)))) {
       throw new Error(`${location}: unregistered or missing BGM ${node.name}`);
     }

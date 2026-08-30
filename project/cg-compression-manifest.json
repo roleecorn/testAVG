@@ -2684,31 +2684,6 @@
       "outputBytes": 15278
     },
     {
-      "image": "scene_mapo_cg.png",
-      "sourceSha256BeforeCompression": "441152a913a7124c5633d148b43b7883d7cc917b93a414c5c15ac020a9e59a3d",
-      "sourceBytesBeforeCompression": 37856,
-      "sourceSize": [
-        416,
-        416
-      ],
-      "sourceFormat": "PNG",
-      "sourceMode": "RGBA",
-      "crop": [
-        0,
-        65,
-        416,
-        351
-      ],
-      "outputSize": [
-        416,
-        286
-      ],
-      "outputFormat": "png",
-      "jpegQuality": null,
-      "outputSha256": "e5ba11e9f2761bbec1b1d02187b94f8a3c2b0c841ebdbff762dcb50575a7777e",
-      "outputBytes": 15278
-    },
-    {
       "image": "sena_cloth_cg.png",
       "sourceSha256BeforeCompression": "59c1f1b974c298ba803b7d4e70510d78504b8a42ed2ba8ea77c225ef51ea8424",
       "sourceBytesBeforeCompression": 635417,

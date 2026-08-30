@@ -7626,25 +7626,6 @@ main.floors.main_ch7_5=
             "time": 2000
         },
         {
-            "type": "comment",
-            "text": "TODO: 【BGM：BGMED2】"
-        },
-        {
-            "type": "playBgm",
-            "name": "BGMED2.mp3"
-        },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_tokyo_big_sight.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
             "type": "setCurtain",
             "color": [
                 0,
@@ -7653,6 +7634,280 @@ main.floors.main_ch7_5=
                 0
             ],
             "time": 2000
+        },
+        {
+            "type": "comment",
+            "text": "【背景：ED2COMIKE】"
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ED2COMIKE.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 500
+        },
+        {
+            "type": "comment",
+            "text": "【下1句話為大字】"
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 32,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[東山]營設完了！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "setText",
+            "avg": true,
+            "position": "down",
+            "offset": 0,
+            "align": "left",
+            "bold": true,
+            "background": "winskin.png",
+            "title": [
+                255,
+                225,
+                80,
+                1
+            ],
+            "text": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "titlefont": 22,
+            "textfont": 16,
+            "lineHeight": 22,
+            "fixedLines": 2,
+            "time": 10,
+            "letterSpacing": 0,
+            "animateTime": 120
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_maid_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[桶至學長(女僕)]我站售賣位是不是有點對不起『讀者』啊常考",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[東山]重要的是COMIKE精神啊，大家是不會在意的",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_maid_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[桶至學長(女僕)]再怎麼說由女裝油桶當百合攤看板娘還是太糞作了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_maid_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[桶至學長(女僕)]這位置不應該克莉絲來嗎？人呢？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[東山]不清楚呢…",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[東山]但入場後解散，去追尋想要的東西，才是真正的阿宅",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "dongshan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[東山]她也是自由的",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_maid_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[桶至學長(女僕)]還挺豁達啊乙",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "啪啪啪啪啪啪パチパチパチClapClapClap짝짝짝짝짝짝",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_maid_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[桶至學長(女僕)]果然開幕的氣氛就是棒wkwk",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_lance_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[蘭斯]那我先去巡攤啦，有要順便帶啥？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
         },
         {
             "type": "showImage",
@@ -7675,42 +7930,6 @@ main.floors.main_ch7_5=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_maid_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[桶至學長(女僕)]叫我當看板娘是不是有點對不起你的讀者啊…",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[蘭斯]那我先去巡攤一圈，有沒有人要啥？",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
             "image": "dongshan_normal.png",
             "expression": "normal",
             "loc": [
@@ -7720,149 +7939,127 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 0
         },
-        "\t[東山]今天可要大賣特賣喔！",
+        "\t[東山]好—今天可要大賣特賣喔！",
         {
             "type": "hideImage",
             "code": 20,
             "time": 0
         },
-        "東山的眼神燃起了鬥志",
+        {
+            "type": "comment",
+            "text": "【強制改為AUTO速度1】"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.status.dialogueAuto = 1; core.control.scheduleDialogueAuto(); }"
+        },
+        {
+            "type": "comment",
+            "text": "【AUTO按鍵改為Disable】"
+        },
+        {
+            "type": "function",
+            "function": "function () { var button = main.dom.autoBtn; if (button) { button.disabled = true; button.setAttribute('aria-disabled', 'true'); } }"
+        },
+        {
+            "type": "comment",
+            "text": "【BGM：BGMED2】"
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMED2.mp3",
+            "loop": false
+        },
+        {
+            "type": "comment",
+            "text": "【啟動自動播放並禁止玩家操作（包含點擊與Ctrl快進）】"
+        },
+        {
+            "type": "lockControl",
+            "blockCtrl": true
+        },
         "隨著開幕的掌聲響起",
+        "東山的眼神燃起了鬥志",
         "如織的人潮了充滿了會場的每個角落",
         "伴隨著歡聲與汗水，裊裊白煙升起",
         "今年的Comike，也一如既往的和平",
         {
             "type": "comment",
-            "text": "【結尾動畫 製作名單 還未製作先忽略下方至END的部分】"
+            "text": "【用BGMED2剩餘時間平均控制下方幻燈片，播放至BGM結束；每張圖先0.5秒淡出，再切換下一張並0.5秒淡入，兩張圖不重疊】"
         },
         {
             "type": "comment",
-            "text": "【背景幻燈片】"
+            "text": "【顯示一張全黑image固定在後方】"
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_higashiyama_booth.png",
+            "image": "lance_black_curtain.png",
             "loc": [
                 0,
                 0
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
         },
         {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_keng_becky_transform.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
+            "type": "comment",
+            "text": "【隨著BGM切換下方背景、用【過場】製造類似幻燈片的效果】"
         },
         {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_pachinko_group.png",
-            "loc": [
-                0,
-                0
+            "type": "endingSlideshow",
+            "code": 2,
+            "images": [
+                "ED2001.png",
+                "ED2002.png",
+                "ED2003.png",
+                "ED2004.png",
+                "ED2005.png",
+                "ED2006.png",
+                "ED2007.png",
+                "ED2008.png",
+                "ED2009.png",
+                "ED2010.png",
+                "ED2011.png",
+                "ED2012.png",
+                "ED2013.png",
+                "ED2014.png",
+                "ED2015.png",
+                "ED2016.png",
+                "ED2017.png",
+                "ED2018.png",
+                "ED2019.png",
+                "ED2020.png"
             ],
-            "opacity": 1,
-            "time": 250
+            "width": 544,
+            "height": 416,
+            "x": 0,
+            "y": 0,
+            "transition": 500
         },
         {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_lance_unknown_corner.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
+            "type": "comment",
+            "text": "【在BGM結束時停止3秒進入白色慢速過場】"
         },
         {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_training_group.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_dragon_boat.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_tbd.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_tbd.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_tbd.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "showImage",
-            "code": 1,
-            "image": "ms_bg_fruit_box_sunrise.png",
-            "loc": [
-                0,
-                0
-            ],
-            "opacity": 1,
-            "time": 250
+            "type": "sleep",
+            "time": 3000,
+            "noSkip": true
         },
         {
             "type": "setCurtain",
             "color": [
-                0,
-                0,
-                0,
+                255,
+                255,
+                255,
                 1
             ],
-            "time": 500
+            "time": 2000
         },
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_tokyo_big_sight.png",
+            "image": "ED2kris1.png",
             "loc": [
                 0,
                 0
@@ -7878,91 +8075,18 @@ main.floors.main_ch7_5=
                 0,
                 0
             ],
-            "time": 500
+            "time": 2000
         },
+        "……………",
+        "在白色空間的克莉絲醒來",
         {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_tongzhi_maid_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
+            "type": "comment",
+            "text": "【背景：ED2kris2】"
         },
-        "\t[桶至學長(女僕)]……………",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_tongzhi_maid_normal.png",
-            "expression": "normal",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[桶至學長(女僕)]我們是不是忘了誰啊？",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "scene_mapo_cg.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 250
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 150
-        },
-        {
-            "type": "showImage",
-            "code": 20,
-            "image": "ms_portrait_chris_surprised.png",
-            "expression": "surprised",
-            "loc": [
-                "portraitSpeakerX",
-                "portraitSpeakerY"
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        "\t[克莉絲]這裡是哪裡啦！？",
-        {
-            "type": "hideImage",
-            "code": 20,
-            "time": 0
-        },
-        "———END———",
         {
             "type": "showImage",
             "code": 1,
-            "image": "ms_bg_tbd.png",
+            "image": "ED2kris2.png",
             "loc": [
                 0,
                 0
@@ -7970,130 +8094,129 @@ main.floors.main_ch7_5=
             "opacity": 1,
             "time": 250
         },
-        "總之這劇本其實是COC村規團錄",
-        "一切都是PL與骰子女神的抉擇可沒有半分虛假",
-        "這團幾乎所有事件都是由東山開始",
-        "由桶至學長負責徒勞無功 ",
-        "雖然梗平看起來沒啥用、但都承包了關鍵點沒有他無法善了",
-        "看起來很巧但他就是發生了",
-        "想必這也是命運石之門的選擇吧—",
-        "G組活動作品到此全劇終",
-        "感謝各位的參與與觀看，真的辛苦了",
+        "……………",
+        {
+            "type": "comment",
+            "text": "【以下到回標題畫面前均不使用立繪】"
+        },
+        "\t[？？？]不是初次見面的人，妳醒了嗎…",
+        "\t[克莉絲]你是……？",
+        "\t[？？？]在這『正史』裡，妳過得開心嗎？",
+        {
+            "type": "comment",
+            "text": "【背景：ED2kris3】"
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ED2kris3.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        "\t[？？？]在這COC團錄的世界",
+        "\t[？？？]檯面上的PL與骰子決定著每個人的命運",
+        "\t[？？？]追溯事件的根源，一切總是由東山而起",
+        "\t[？？？]桶至學長則在無用功的道路上原地打轉",
+        "\t[？？？]看似無頭蒼蠅般的梗平，恰好成為了事件終局的錨點",
+        "\t[？？？]一切看起來荒誕不堪，但卻有跡可循",
+        "\t[？？？]故事的終點早在起點就已經定下了",
+        "\t[？？？]算是有趣的故事...嗎？",
+        "\t[克莉絲]……………",
+        "\t[？？？]其他人都在這張畫布上揮灑自己的色彩",
+        "\t[？？？]那麼你呢？",
+        "\t[？？？]這樣的故事裡，你究竟是甚麼？",
+        "\t[克莉絲]……………",
+        "\t[克莉絲]我是………",
+        "\t[克莉絲]我不知道，我想不起來…",
+        "\t[？？？]噓，別急，很快就有答案了",
+        "\t[？？？]那件事...還在『外面』等著你呢",
+        {
+            "type": "comment",
+            "text": "【背景：ED2kris4】"
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ED2kris4.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        "無數雙黑色的手從門中湧出，將克莉絲拖入了「門」之中",
+        "\t[克莉絲]……………",
+        {
+            "type": "setCurtain",
+            "color": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "time": 2000
+        },
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "ED2kris5.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 250
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 2000
+        },
+        "\t[？？？]之後再會吧！我的『偶像小姐』",
+        {
+            "type": "setCurtain",
+            "color": [
+                255,
+                255,
+                255,
+                1
+            ],
+            "time": 2000
+        },
+        {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 2000
+        },
+        {
+            "type": "comment",
+            "text": "【標題畫面換成OP2】"
+        },
+        {
+            "type": "setTitleBackground",
+            "image": "OP2.png"
+        },
         {
             "type": "comment",
             "text": "【返回標題畫面】"
         },
         {
-            "type": "setText",
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-                255,
-                225,
-                80,
-                1
-            ],
-            "text": [
-                255,
-                255,
-                255,
-                1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-        },
-        {
-            "type": "setText",
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-                255,
-                225,
-                80,
-                1
-            ],
-            "text": [
-                255,
-                255,
-                255,
-                1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-        },
-        {
-            "type": "setText",
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-                255,
-                225,
-                80,
-                1
-            ],
-            "text": [
-                255,
-                255,
-                255,
-                1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
-        },
-        {
-            "type": "setText",
-            "avg": true,
-            "position": "down",
-            "offset": 0,
-            "align": "left",
-            "bold": true,
-            "background": "winskin.png",
-            "title": [
-                255,
-                225,
-                80,
-                1
-            ],
-            "text": [
-                255,
-                255,
-                255,
-                1
-            ],
-            "titlefont": 22,
-            "textfont": 32,
-            "lineHeight": 22,
-            "fixedLines": 2,
-            "time": 10,
-            "letterSpacing": 0,
-            "animateTime": 120
+            "type": "restart"
         }
     ]
 }

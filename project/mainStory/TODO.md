@@ -128,8 +128,9 @@
   - Scope: CH1～CH5 的 `【人物交流時間】` 統一按單一完整流程處理；交流結束返回 continuation scene 後，來源緊接的 BGM／演出從該 scene 開頭播放，支線不在本次範圍。
   - Evidence: `project/story-ir/main/CH1.json`～`CH5.json`、對應生成 floor、`node scripts/test_story_alignment.js`、`node scripts/validate_story_alignment.js`。
 - Open: `main-story-exchange-and-headline-presentation`
-  - Scope: CH7 headline 的刪除線／換行／大字組合，以及 `【返回標題畫面】` 尚未完成；CH1～CH5 `【人物交流時間】` 已依完整流程約束接入。
-  - Done when: 確認 runtime 可用的語意表達後完成 IR／floor；無法表達的部分持續保留原始指令與 task-question。
+  - Scope: CH7 ED2 權威來源的自動播放、Ctrl 禁止、BGM 剩餘時間平均幻燈片、不重疊轉場、OP2 標題背景切換與 `【返回標題畫面】` 已完成；仍保留 CH7 headline 的刪除線／換行／大字組合待處理；CH1～CH5 `【人物交流時間】` 已依完整流程約束接入。
+  - Done when: 完成 CH7 headline 的刪除線／換行／大字組合並通過完整驗證；ED2 source → IR → floor、`OP2.png` 接入與標題返回已完成，不再屬於本項阻塞。
+  - Evidence: `.codex/task-questions/20260830-132316-ch7-ed2-update.md` Q1–Q2；`project/story-ir/main/CH7.json`、`project/floors/main_ch7_5.js`、`project/images/OP2.png`；`node scripts/validate_story.js`、`node scripts/validate_story_alignment.js`、`node scripts/generate_main_story.js --check`、`node scripts/test_avg_effect_runtime.js` 通過。
 
 - `project/mainStory/CH1 1-4`：下水道雷霆大鱷魚戰鬥目前依原稿以旁白略過，之後可補正式戰鬥或小遊戲。
 - `project/mainStory/CH3 3-3`：統至分析傑士塔威的橋段可補獨立小遊戲。
