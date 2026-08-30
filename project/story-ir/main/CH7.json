@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH7",
-        "sha256": "ad69e9c820327349c8a7014b7022b7c8cce8d1a7047a1525a70748ab97dc6930"
+        "sha256": "6040a928a356ac0ccd37c2b1a9a97e2e05f1ca6da6dd86f78d49438c2043a663"
       }
     ]
   },
@@ -13148,7 +13148,7 @@
         },
         {
           "kind": "comment",
-          "text": "【用BGMED2剩餘時間平均控制下方幻燈片，播放至BGM結束；每張圖先0.5秒淡出，再切換下一張並0.5秒淡入，兩張圖不重疊】"
+          "text": "【用BGMED2剩餘時間平均控制下方幻燈片，播放至BGM結束；不進行淡入淡出，兩張圖不重疊】"
         },
         {
           "kind": "comment",
@@ -13199,7 +13199,7 @@
           "height": 416,
           "x": 0,
           "y": 0,
-          "transition": 500
+          "transition": 0
         },
         {
           "kind": "comment",

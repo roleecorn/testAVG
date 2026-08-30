@@ -7985,7 +7985,7 @@ main.floors.main_ch7_5=
         "今年的Comike，也一如既往的和平",
         {
             "type": "comment",
-            "text": "【用BGMED2剩餘時間平均控制下方幻燈片，播放至BGM結束；每張圖先0.5秒淡出，再切換下一張並0.5秒淡入，兩張圖不重疊】"
+            "text": "【用BGMED2剩餘時間平均控制下方幻燈片，播放至BGM結束；不進行淡入淡出，兩張圖不重疊】"
         },
         {
             "type": "comment",
@@ -8035,7 +8035,7 @@ main.floors.main_ch7_5=
             "height": 416,
             "x": 0,
             "y": 0,
-            "transition": 500
+            "transition": 0
         },
         {
             "type": "comment",
