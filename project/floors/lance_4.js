@@ -1330,6 +1330,10 @@ main.floors.lance_4=
         "一個傭人從轉角走出來，當他看到四個黑色緊身衣人時立刻放聲大叫",
         "很快地，一群穿西裝的壯漢立刻也跑上來圍住了梗平一行人",
         {
+            "type": "playBgm",
+            "name": "BGMRun.mp3"
+        },
+        {
             "type": "showImage",
             "code": 10,
             "image": "keng_neutral_portrait.png",
@@ -2301,6 +2305,20 @@ main.floors.lance_4=
             "time": 2000
         },
         {
+            "type": "setCurtain",
+            "color": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "time": 2000
+        },
+        {
+            "type": "playBgm",
+            "name": "BGMGintama.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "lance_alley_night_bg_placeholder.png",
@@ -2312,16 +2330,6 @@ main.floors.lance_4=
             ],
             "opacity": 1,
             "time": 0
-        },
-        {
-            "type": "setCurtain",
-            "color": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "time": 2000
         },
         "一行人正大光明地從正門離開，然後回到了吉普車旁換回原本的衣服",
         "\t[臨也]我先回去了，下次去東京找你們玩的時候幫我導覽吧",

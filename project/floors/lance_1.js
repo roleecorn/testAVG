@@ -16,7 +16,7 @@ main.floors.lance_1=
             "y": 0
         }
     ],
-    "bgm": "bossa_casual_shop.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -312,8 +312,7 @@ main.floors.lance_1=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",
@@ -475,6 +474,10 @@ main.floors.lance_1=
             "time": 0
         },
         "從門外傳來許多女性叫喊的聲音",
+        {
+            "type": "playBgm",
+            "name": "BGMUZUUZU.mp3"
+        },
         {
             "type": "setCurtain",
             "color": [
@@ -904,6 +907,10 @@ main.floors.lance_1=
             "standalone": true
         },
         {
+            "type": "playBgm",
+            "name": "BGMYume.mp3"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "lance_bathhouse_bg_placeholder.png",
@@ -915,10 +922,6 @@ main.floors.lance_1=
             ],
             "opacity": 1,
             "time": 0
-        },
-        {
-            "type": "comment",
-            "text": "【此場景人物皆裸上半身】"
         },
         {
             "type": "showImage",

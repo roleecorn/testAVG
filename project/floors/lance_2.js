@@ -16,7 +16,7 @@ main.floors.lance_2=
             "y": 0
         }
     ],
-    "bgm": "bossa_casual_shop.mp3",
+    "bgm": "BGMYume.mp3",
     "ratio": 1,
     "map": [
         [
@@ -312,8 +312,7 @@ main.floors.lance_2=
         },
         {
             "type": "playBgm",
-            "name": "bossa_casual_shop.mp3",
-            "keep": true
+            "name": "BGMYume.mp3"
         },
         {
             "type": "showImage",

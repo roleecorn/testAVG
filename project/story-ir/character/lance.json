@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/story/蘭斯支線.txt",
-        "sha256": "3d518716fee3ed2776d1492252dba02feddc6502044eab30f133515f289b8143"
+        "sha256": "e6080123bfc7dba769bf88ee4ba9d2b4fb6be6b8ea00e1ae8e517e740d8374c8"
       }
     ]
   },
@@ -29,7 +29,7 @@
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -50,8 +50,7 @@
       "events": [
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
@@ -166,6 +165,10 @@
         {
           "kind": "narration",
           "text": "從門外傳來許多女性叫喊的聲音"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMUZUUZU.mp3"
         },
         {
           "kind": "comment",
@@ -469,6 +472,10 @@
           "text": "【過場：一段時間過後】"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMYume.mp3"
+        },
+        {
           "kind": "background.show",
           "role": "background",
           "code": 1,
@@ -481,10 +488,6 @@
           ],
           "opacity": 1,
           "time": 0
-        },
-        {
-          "kind": "comment",
-          "text": "【此場景人物皆裸上半身】"
         },
         {
           "kind": "dialogue",
@@ -572,7 +575,7 @@
             "y": 0
           }
         ],
-        "bgm": "bossa_casual_shop.mp3",
+        "bgm": "BGMYume.mp3",
         "ratio": 1,
         "width": 17,
         "height": 13,
@@ -593,8 +596,7 @@
       "events": [
         {
           "kind": "bgm.play",
-          "name": "bossa_casual_shop.mp3",
-          "keep": true
+          "name": "BGMYume.mp3"
         },
         {
           "kind": "background.show",
@@ -2555,6 +2557,10 @@
           "text": "很快地，一群穿西裝的壯漢立刻也跑上來圍住了梗平一行人"
         },
         {
+          "kind": "bgm.play",
+          "name": "BGMRun.mp3"
+        },
+        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "糟了！",
@@ -3212,6 +3218,10 @@
         {
           "kind": "comment",
           "text": "【白色慢速過場】"
+        },
+        {
+          "kind": "bgm.play",
+          "name": "BGMGintama.mp3"
         },
         {
           "kind": "background.show",
