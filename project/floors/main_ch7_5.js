@@ -8065,7 +8065,7 @@ main.floors.main_ch7_5=
                 0
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
         },
         {
             "type": "setCurtain",
@@ -8092,7 +8092,7 @@ main.floors.main_ch7_5=
                 0
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
         },
         "……………",
         {
@@ -8115,7 +8115,7 @@ main.floors.main_ch7_5=
                 0
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
         },
         "\t[？？？]在這COC團錄的世界",
         "\t[？？？]檯面上的PL與骰子決定著每個人的命運",
@@ -8147,7 +8147,7 @@ main.floors.main_ch7_5=
                 0
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
         },
         "無數雙黑色的手從門中湧出，將克莉絲拖入了「門」之中",
         "\t[克莉絲]……………",
@@ -8170,7 +8170,7 @@ main.floors.main_ch7_5=
                 0
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
         },
         {
             "type": "setCurtain",
