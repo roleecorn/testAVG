@@ -509,7 +509,7 @@ main.floors.main_ch5_1=
         "梗平將工具歸了位後，離開了炭烤蜜瓜兔子",
         {
             "type": "function",
-            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"main_ch5_1_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}, 2); }"
+            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"main_ch5_1_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}, 6); }"
         }
     ]
 }

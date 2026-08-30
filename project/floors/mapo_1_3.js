@@ -2275,7 +2275,7 @@ main.floors.mapo_1_3=
         },
         {
             "type": "function",
-            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"mapo_1_3_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}); }"
+            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"mapo_1_3_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}, 6); }"
         }
     ]
 }

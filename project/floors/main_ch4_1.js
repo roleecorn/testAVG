@@ -457,7 +457,7 @@ main.floors.main_ch4_1=
         },
         {
             "type": "function",
-            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"main_ch4_1_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}, 2); }"
+            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"main_ch4_1_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}, 6); }"
         }
     ]
 }

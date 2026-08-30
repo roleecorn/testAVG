@@ -2392,7 +2392,7 @@ main.floors.main_ch2_4=
                         },
                         {
                             "type": "function",
-                            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"main_ch2_4_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}); }"
+                            "function": "function () { core.plugin.beginCharacterExchange({\"floorId\":\"main_ch2_4_exchange_1\",\"loc\":[6,10],\"direction\":\"up\",\"time\":500}, 6); }"
                         }
                     ]
                 }

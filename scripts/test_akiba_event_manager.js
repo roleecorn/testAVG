@@ -154,7 +154,7 @@ function testCompletionCountsOnlyOnce() {
     akiba_active_events: [event("noir_1")],
     mainline_exchange_active: true,
     mainline_exchange_count: 0,
-    mainline_exchange_target: 2,
+    mainline_exchange_target: 6,
   });
 
   plugin.completeAkibaEvent("noir_1");
@@ -163,7 +163,7 @@ function testCompletionCountsOnlyOnce() {
   assert.deepEqual(core.flags.akiba_completed_events, ["noir_1"]);
 }
 
-function testCharacterExchangeDefaultsToTwoEvents() {
+function testCharacterExchangeDefaultsToSixEvents() {
   const { core, plugin } = createPlugin({}, ["main_ch2_4_exchange_1"]);
 
   plugin.beginCharacterExchange({
@@ -174,7 +174,7 @@ function testCharacterExchangeDefaultsToTwoEvents() {
 
   assert.equal(core.flags.mainline_exchange_active, true);
   assert.equal(core.flags.mainline_exchange_count, 0);
-  assert.equal(core.flags.mainline_exchange_target, 2);
+  assert.equal(core.flags.mainline_exchange_target, 6);
   assert.deepEqual(core.events.value, []);
   assert.equal(core.actions.at(-1).type, "changeFloor");
   assert.equal(core.actions.at(-1).floorId, "Akiba");
@@ -184,7 +184,7 @@ function testCharacterExchangeRestartsAfterTimelineJump() {
   const { core, plugin } = createPlugin({
     mainline_exchange_active: true,
     mainline_exchange_count: 0,
-    mainline_exchange_target: 2,
+    mainline_exchange_target: 6,
     mainline_exchange_destination: {
       floorId: "main_ch2_4_exchange_1",
       loc: [6, 10],
@@ -201,7 +201,7 @@ function testCharacterExchangeRestartsAfterTimelineJump() {
   }), true);
   assert.equal(core.flags.mainline_exchange_active, true);
   assert.equal(core.flags.mainline_exchange_count, 0);
-  assert.equal(core.flags.mainline_exchange_target, 2);
+  assert.equal(core.flags.mainline_exchange_target, 6);
   assert.deepEqual(core.flags.mainline_exchange_destination, {
     floorId: "main_ch3_1_exchange_1",
     loc: [6, 10],
@@ -226,7 +226,7 @@ function testIdleClockRestoresOrContinues() {
     akiba_return_y: 10,
     mainline_exchange_active: true,
     mainline_exchange_count: 0,
-    mainline_exchange_target: 2,
+    mainline_exchange_target: 6,
     mainline_exchange_destination: {
       floorId: "main_ch3_1_exchange_1",
       loc: [6, 10],
@@ -243,8 +243,17 @@ function testIdleClockRestoresOrContinues() {
     direction: "left",
   });
 
+  for (let expectedCount = 2; expectedCount <= 5; expectedCount++) {
+    core.actions.length = 0;
+    assert.equal(plugin.advanceCharacterExchangeWithIdleClock(), true);
+    assert.equal(core.flags.mainline_exchange_count, expectedCount);
+    assert.equal(core.flags.mainline_exchange_active, true);
+    assert.equal(core.actions.at(-1).type, "changePos");
+  }
+
   core.actions.length = 0;
   assert.equal(plugin.advanceCharacterExchangeWithIdleClock(), true);
+  assert.equal(core.flags.mainline_exchange_count, 6);
   assert.equal(core.flags.mainline_exchange_active, false);
   assert.deepEqual(core.actions.at(-1), [{
     type: "changeFloor",
@@ -341,7 +350,7 @@ function testLocationChoiceKeepsStoryEventAndMiniGame() {
   assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), ["park_story", "玩「公園清潔隊」", "離開"]);
 }
 
-function testRabbitHouseOffersRcVoiceTest() {
+function testRabbitHouseOmitsRcVoiceTest() {
   const { core, plugin } = createPlugin({
     akiba_event_state_initialized: true,
     akiba_event_state_version: eventMeta.version,
@@ -354,11 +363,8 @@ function testRabbitHouseOffersRcVoiceTest() {
   const choiceEvent = core.actions.at(-1);
   assert.deepEqual(choiceEvent.choices.map((choice) => choice.text), [
     "玩「炭火烤蜜瓜麵包」",
-    "測試「RC Voice 展示」",
     "離開",
   ]);
-  assert.equal(choiceEvent.choices[1].action[0].async, true);
-  assert(choiceEvent.choices[1].action[0].function.includes("startAkibaRcVoiceDemo('project/rc-voice-demo.json')"));
 }
 
 function testRabbitHouseRcVoiceReturnsToInteractionOrigin() {
@@ -572,14 +578,14 @@ testInitialCharacterLocations();
 testVersionMigrationPreservesProgress();
 testVersionMigrationAppliesLocationOverrides();
 testCompletionCountsOnlyOnce();
-testCharacterExchangeDefaultsToTwoEvents();
+testCharacterExchangeDefaultsToSixEvents();
 testCharacterExchangeRestartsAfterTimelineJump();
 testIdleClockRestoresOrContinues();
 testIdleClockDoesNotAdvanceOutsideExchange();
 testEveryRegularLocationHasMiniGame();
 testLocationChoiceIncludesMiniGameWithoutStoryEvent();
 testLocationChoiceKeepsStoryEventAndMiniGame();
-testRabbitHouseOffersRcVoiceTest();
+testRabbitHouseOmitsRcVoiceTest();
 testRabbitHouseRcVoiceReturnsToInteractionOrigin();
 testStoryRcVoiceUsesCallerProvidedJsonPath();
 testGameCenterOffersBothArcadeGames();

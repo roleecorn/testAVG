@@ -395,7 +395,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 				return false;
 			}
 			var target = parseInt(targetCount, 10);
-			if (!(target > 0)) target = 2;
+			if (!(target > 0)) target = 6;
 			// 時間線可以直接切入下一個主線 scene，跳過上一回合的正常返回流程。
 			// 此時舊的 active flag 仍可能存在；主線 scene 的新入口應以目前目的地
 			// 重新建立交流狀態，否則會被舊回合的 guard 擋住而沒有可執行的後續事件。
@@ -441,7 +441,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 		this.isCharacterExchangeComplete = function () {
 			if (!core.getFlag('mainline_exchange_active', false)) return false;
 			var count = core.getFlag('mainline_exchange_count', 0) || 0;
-			var target = core.getFlag('mainline_exchange_target', 2) || 2;
+			var target = core.getFlag('mainline_exchange_target', 6) || 6;
 			return count >= target;
 		}
 
@@ -496,7 +496,6 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			var placeName = core.getFlag('akiba_last_placeName', '未知地點');
 			var availableEvents = this.getActiveAkibaEventsAtLocation(locationId);
 			var miniGames = this.getAkibaMiniGameDefinitions ? this.getAkibaMiniGameDefinitions(locationId) : [];
-			var hasRcVoiceTest = locationId === 'rabbit_house';
 			if (!miniGames.length && this.getAkibaMiniGameDefinition) {
 				var legacyMiniGame = this.getAkibaMiniGameDefinition(locationId);
 				if (legacyMiniGame) miniGames.push(legacyMiniGame);
@@ -514,7 +513,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 				return;
 			}
 
-			if (availableEvents.length === 0 && miniGames.length === 0 && !hasRcVoiceTest) {
+			if (availableEvents.length === 0 && miniGames.length === 0) {
 				core.insertAction([
 					text,
 					{
@@ -544,16 +543,6 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 					}]
 				});
 			});
-			if (hasRcVoiceTest) {
-				choices.push({
-					"text": "測試「RC Voice 展示」",
-					"action": [{
-						"type": "function",
-						"async": true,
-						"function": "function () { core.plugin.startAkibaRcVoiceDemo('project/rc-voice-demo.json'); }"
-					}]
-				});
-			}
 			choices.push({
 				"text": "離開",
 				"action": [{

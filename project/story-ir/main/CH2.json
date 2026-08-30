@@ -4276,7 +4276,8 @@
                     "loc": [6, 10],
                     "direction": "up",
                     "time": 500
-                  }
+                  },
+                  "targetCount": 6
                 }
               ]
             }
