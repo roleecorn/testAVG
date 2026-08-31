@@ -1,0 +1,39 @@
+{
+  "character_id": "ruka",
+  "display_name": "漆原瑠華",
+  "asset_family": "character-story-cg",
+  "model": "Illustrious-XL-v0.1.safetensors",
+  "vae": "checkpoint VAE",
+  "loras": [],
+  "resolution": {"width": 1024, "height": 704},
+  "style_lock": "polished anime visual novel CG, clean confident line art, crisp cel shading, expressive faces, cinematic 16:11 composition, restrained dramatic lighting, full color, Japanese light-novel game illustration",
+  "identity_lock": "Ruka Urushibara, androgynous young adult male maid with delicate feminine appearance, pale skin, short black bob haircut with subtle teal highlights, sharp black cat-ear maid headband, violet-blue eyes",
+  "outfit_lock": "white ruffled blouse with red neck ribbon, black corset waist, layered white frilled apron over a black skirt, black wristband, white stockings, black Mary Jane shoes",
+  "supporting_character_locks": {
+    "keng": "young blond man with messy shoulder-length blond hair, expressive face, white graphic T-shirt, blue-gray jeans, black sneakers",
+    "captain": "slender black-haired man in a black-and-white gothic maid uniform with white frilled headband, stern expression, fast martial-arts presence"
+  },
+  "negative_prompt": "low quality, worst quality, blurry, bad anatomy, extra limbs, extra fingers, missing fingers, malformed hands, duplicate characters, fused bodies, changed hair color, changed eye color, changed outfit, cat tail, animal ears except the black cat-ear maid headband, armor, sexualized pose, gore, blood, logo, watermark, text, subtitles, speech bubble, frame, border",
+  "generation": {
+    "backend": "ComfyUI local API",
+    "backend_url": "http://127.0.0.1:8188",
+    "gpu": "NVIDIA GeForce RTX 4060",
+    "steps": 28,
+    "cfg": 5.5,
+    "sampler": "euler",
+    "scheduler": "normal",
+    "seed_policy": "fixed per variant; same checkpoint and style lock across the batch"
+  },
+  "hosted_fallback": {
+    "authorized_by_user": true,
+    "date": "2026-08-31",
+    "backend": "built-in hosted imagegen",
+    "reference_images": [
+      "project/images/ruka_normal.png",
+      "project/images/keng_surprised_portrait.png",
+      "project/images/ms_portrait_captain_normal.png"
+    ],
+    "final_runtime_size": "416x286",
+    "source_outputs": "C:/Users/jeff7/.codex/generated_images/01a05841-76b4-7d31-8525-bf3911d31d0e/"
+  }
+}
