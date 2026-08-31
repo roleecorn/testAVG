@@ -1063,7 +1063,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 		"title": "秋葉原之旅",
 		"name": "mapo_tofu",
 		"version": "Ver 2.10.3",
-		"floorId": "Akiba",
+		"floorId": "mapo_1_1",
 		"hero": {
 			"image": "hero.png",
 			"animate": false,
