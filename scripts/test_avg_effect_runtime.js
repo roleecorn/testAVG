@@ -239,9 +239,11 @@ async function main() {
   assert.equal(startCallbackCount, 1);
 
   assert.match(indexSource, /id='bonusGame'/);
-  assert.match(indexSource, /main\.js\?v=2\.10\.3-mapo14/);
-  assert.match(mainSource, /this\.version = '2\.10\.3-mapo14'/);
-  assert.match(mainSource, /getGlobal\('main_ch8_bonus_unlocked', false\)/);
+  assert.match(indexSource, /main\.js\?v=2\.10\.3-mapo16/);
+  assert.match(mainSource, /this\.version = '2\.10\.3-mapo16'/);
+  assert.match(mainSource, /getLocalStorage\('main_ch8_bonus_unlocked', false\)/);
+  assert.match(mainSource, /main\.core\.init\(coreData, function \(\) \{\s*main\.refreshBonusStartButton\(\)/);
+  assert.doesNotMatch(mainSource, /bonusGame\.onclick[\s\S]{0,120}if \(!main\.refreshBonusStartButton\(\)\) return/);
   assert.match(mainSource, /floorId: 'main_ch8_bonus'/);
 
   console.log("AVG effect runtime tests passed.");

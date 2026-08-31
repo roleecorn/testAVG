@@ -2,7 +2,7 @@
 function main() {
     //------------------------ 用户修改内容 ------------------------//
 
-    this.version = '2.10.3-mapo14'; // 游戏版本号；如果更改了游戏内容建议修改此version以免造成缓存问题。
+    this.version = '2.10.3-mapo16'; // 游戏版本号；如果更改了游戏内容建议修改此version以免造成缓存问题。
 
     this.useCompress = false; // 是否使用压缩文件
     // 当你即将发布你的塔时，请使用“JS代码压缩工具”将所有js代码进行压缩，然后将这里的useCompress改为true。
@@ -278,7 +278,10 @@ main.prototype.init = function (mode, callback) {
                 ].forEach(function (t) {
                     coreData[t] = main[t];
                 });
-                main.core.init(coreData, callback);
+                main.core.init(coreData, function () {
+                    main.refreshBonusStartButton();
+                    if (callback) callback();
+                });
                 main.core.resize();
                 // 自动放缩最大化
                 if (!main.replayChecking) {
@@ -492,8 +495,8 @@ main.prototype.refreshBonusStartButton = function () {
     if (!main.dom.bonusGame) return false;
     var unlocked = !!(
         main.core &&
-        main.core.getGlobal &&
-        main.core.getGlobal('main_ch8_bonus_unlocked', false)
+        main.core.getLocalStorage &&
+        main.core.getLocalStorage('main_ch8_bonus_unlocked', false)
     );
     main.dom.bonusGame.style.display = unlocked ? 'block' : 'none';
     return unlocked;
@@ -991,7 +994,6 @@ main.prototype.listen = function () {
 
     ////// 点击“通關連動特典”时 //////
     main.dom.bonusGame.onclick = function () {
-        if (!main.refreshBonusStartButton()) return;
         main.core.control.checkBgm();
         main.core.events.startGame('', null, null, null, {
             floorId: 'main_ch8_bonus',
