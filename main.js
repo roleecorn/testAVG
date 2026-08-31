@@ -2,7 +2,7 @@
 function main() {
     //------------------------ 用户修改内容 ------------------------//
 
-    this.version = '2.10.3-mapo13'; // 游戏版本号；如果更改了游戏内容建议修改此version以免造成缓存问题。
+    this.version = '2.10.3-mapo14'; // 游戏版本号；如果更改了游戏内容建议修改此version以免造成缓存问题。
 
     this.useCompress = false; // 是否使用压缩文件
     // 当你即将发布你的塔时，请使用“JS代码压缩工具”将所有js代码进行压缩，然后将这里的useCompress改为true。
@@ -49,6 +49,7 @@ function main() {
         playGame: document.getElementById('playGame'),
         loadGame: document.getElementById('loadGame'),
         replayGame: document.getElementById('replayGame'),
+        bonusGame: document.getElementById('bonusGame'),
         levelChooseButtons: document.getElementById('levelChooseButtons'),
         data: document.getElementById('data'),
         statusLabels: document.getElementsByClassName('statusLabel'),
@@ -487,8 +488,23 @@ main.prototype.createOnChoiceAnimation = function () {
 };
 
 ////// 选项 //////
+main.prototype.refreshBonusStartButton = function () {
+    if (!main.dom.bonusGame) return false;
+    var unlocked = !!(
+        main.core &&
+        main.core.getGlobal &&
+        main.core.getGlobal('main_ch8_bonus_unlocked', false)
+    );
+    main.dom.bonusGame.style.display = unlocked ? 'block' : 'none';
+    return unlocked;
+};
+
 main.prototype.selectButton = function (index) {
     var select = function (children) {
+        children = Array.prototype.filter.call(children, function (child) {
+            return child.style.display != 'none';
+        });
+        if (children.length == 0) return;
         index = (index + children.length) % children.length;
         for (var i = 0; i < children.length; ++i) {
             children[i].classList.remove('onChoiceAnimate');
@@ -971,6 +987,16 @@ main.prototype.listen = function () {
     main.dom.replayGame.onclick = function () {
         main.core.control.checkBgm();
         main.core.chooseReplayFile();
+    };
+
+    ////// 点击“通關連動特典”时 //////
+    main.dom.bonusGame.onclick = function () {
+        if (!main.refreshBonusStartButton()) return;
+        main.core.control.checkBgm();
+        main.core.events.startGame('', null, null, null, {
+            floorId: 'main_ch8_bonus',
+            heroLoc: { direction: 'up', x: 6, y: 10 }
+        });
     };
 
     if (main.dom.autoBtn) {

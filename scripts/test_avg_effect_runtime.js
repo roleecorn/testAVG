@@ -6,6 +6,8 @@ const vm = require("vm");
 const root = path.resolve(__dirname, "..");
 const source = fs.readFileSync(path.join(root, "libs", "events.js"), "utf8");
 const actionsSource = fs.readFileSync(path.join(root, "libs", "actions.js"), "utf8");
+const mainSource = fs.readFileSync(path.join(root, "main.js"), "utf8");
+const indexSource = fs.readFileSync(path.join(root, "index.html"), "utf8");
 
 function trackedStyle(initialTransform = "") {
   const history = [];
@@ -200,6 +202,47 @@ async function main() {
   assert.equal(titleSandbox.main.dom.startBackground.src, "project/images/OP2.png");
   assert.equal(titleAutoStopped, 1);
   assert.equal(titleActionCount, 1);
+
+  const startTarget = {};
+  let startCallbackCount = 0;
+  const startSandbox = {
+    console,
+    main: { mode: "play", isCompetition: false },
+    core: {
+      firstData: {
+        floorId: "mapo_1_1",
+        hero: { loc: { direction: "up", x: 6, y: 10 } },
+        name: "mapo_tofu",
+        version: "Ver 2.10.3",
+      },
+      ui: { closePanel() {} },
+      changeFloor(floorId, stair, heroLoc, time, callback) {
+        startTarget.floorId = floorId;
+        startTarget.heroLoc = heroLoc;
+        callback();
+      },
+      insertAction() {},
+    },
+  };
+  vm.createContext(startSandbox);
+  vm.runInContext(source, startSandbox, { filename: "libs/events.js" });
+  startSandbox.events.prototype._startGame_afterStart.call({
+    _startGame_upload() {},
+  }, () => {
+    startCallbackCount += 1;
+  }, {
+    floorId: "main_ch8_bonus",
+    heroLoc: { direction: "up", x: 6, y: 10 },
+  });
+  assert.equal(startTarget.floorId, "main_ch8_bonus");
+  assert.deepEqual(startTarget.heroLoc, { direction: "up", x: 6, y: 10 });
+  assert.equal(startCallbackCount, 1);
+
+  assert.match(indexSource, /id='bonusGame'/);
+  assert.match(indexSource, /main\.js\?v=2\.10\.3-mapo14/);
+  assert.match(mainSource, /this\.version = '2\.10\.3-mapo14'/);
+  assert.match(mainSource, /getGlobal\('main_ch8_bonus_unlocked', false\)/);
+  assert.match(mainSource, /floorId: 'main_ch8_bonus'/);
 
   console.log("AVG effect runtime tests passed.");
 }

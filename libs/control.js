@@ -504,6 +504,7 @@ control.prototype.toggleDialogueAuto = function () {
 control.prototype._showStartAnimate_finished = function (start, callback) {
     core.dom.startTop.style.display = 'none';
     core.dom.startButtonGroup.style.display = 'block';
+    if (main.refreshBonusStartButton) main.refreshBonusStartButton();
     main.selectedButton = null;
     main.selectButton(0);
     if (start) core.startGame();

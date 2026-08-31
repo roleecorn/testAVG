@@ -21,7 +21,7 @@ events.prototype.resetGame = function (hero, hard, floorId, maps, values) {
 }
 
 ////// 游戏开始事件 //////
-events.prototype.startGame = function (hard, seed, route, callback) {
+events.prototype.startGame = function (hard, seed, route, callback, startInfo) {
     main.dom.levelChooseButtons.style.display = 'none';
     main.dom.startButtonGroup.style.display = 'none';
     hard = hard || "";
@@ -31,16 +31,16 @@ events.prototype.startGame = function (hard, seed, route, callback) {
     // 无动画的开始游戏
     if (core.flags.startUsingCanvas || route != null) {
         core.dom.startPanel.style.display = 'none';
-        this._startGame_start(hard, seed, route, callback);
+        this._startGame_start(hard, seed, route, callback, startInfo);
     }
     else {
         core.hideStartAnimate(function () {
-            core.events._startGame_start(hard, seed, route, callback);
+            core.events._startGame_start(hard, seed, route, callback, startInfo);
         });
     }
 }
 
-events.prototype._startGame_start = function (hard, seed, route, callback) {
+events.prototype._startGame_start = function (hard, seed, route, callback, startInfo) {
     core.resetGame(core.firstData.hero, hard, null, core.cloneArray(core.initStatus.maps));
     core.setHeroLoc('x', -1);
     core.setHeroLoc('y', -1);
@@ -60,7 +60,7 @@ events.prototype._startGame_start = function (hard, seed, route, callback) {
     core.push(todo, { "type": "function", "function": "function() { core.events._startGame_setHard(); }" })
     core.push(todo, core.firstData.startText);
     this.insertAction(todo, null, null, function () {
-        core.events._startGame_afterStart(callback);
+        core.events._startGame_afterStart(callback, startInfo);
     });
 
     if (route != null) core.startReplay(route);
@@ -82,9 +82,12 @@ events.prototype._startGame_setHard = function () {
     core.setFlag('__hardColor__', hardColor);
 }
 
-events.prototype._startGame_afterStart = function (callback) {
+events.prototype._startGame_afterStart = function (callback, startInfo) {
+    startInfo = startInfo || {};
+    var floorId = startInfo.floorId || core.firstData.floorId;
+    var heroLoc = startInfo.heroLoc || core.firstData.hero.loc;
     core.ui.closePanel();
-    core.changeFloor(core.firstData.floorId, null, core.firstData.hero.loc, null, function () {
+    core.changeFloor(floorId, null, heroLoc, null, function () {
         // 插入一个空事件避免直接回放录像出错
         core.insertAction([]);
         if (callback) callback();
