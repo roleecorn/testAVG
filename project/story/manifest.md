@@ -22,7 +22,7 @@
 ## `lance`／蘭斯
 
 - 劇情來源：`project/story/蘭斯支線.txt`
-- 資源追蹤狀態：`active`（正式 CG／場景背景仍以 placeholder 接入，見 `project/story/TODO.md`）
+- 資源追蹤狀態：`active`（本次已整合可用正式素材；路邊、車站口、小餐館、瑪麗亞之牆、小巷夜景仍為 placeholder，見 `project/story/TODO.md`）
 
 | 紀錄鍵 | ZIP 序號／run | 原始相對路徑 | 原始 SHA-256 | 種類 | 差異狀態 | 使用方式 | 最後命名／路徑 | Story IR scene／用途 | 驗證證據 | 狀態 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -30,6 +30,58 @@
 | lance:e6080123bfc7dba769bf88ee4ba9d2b4fb6be6b8ea00e1ae8e517e740d8374c8:project/story/蘭斯支線.txt | external commit `4f788b2a` | project/story/蘭斯支線.txt | e6080123bfc7dba769bf88ee4ba9d2b4fb6be6b8ea00e1ae8e517e740d8374c8 | script | updated | authoritative-source | project/story/蘭斯支線.txt | lance_1..4 | source delta: 6 BGM directives added and 1 obsolete bathing note removed; `node scripts/validate_story.js` | active |
 | lance:4ff25367fab2d84644d3f473bdd49b5af1005d0de298e81caa23fa72cb525d2c:17.蘭斯/圖檔/Sill-01_(2).png | 20260823-192556 | 17.蘭斯/圖檔/Sill-01_(2).png | 4ff25367fab2d84644d3f473bdd49b5af1005d0de298e81caa23fa72cb525d2c | portrait | new | direct | project/images/lance_sill_normal.png（PNG／RGBA／327×897） | lance_2／希露首次出場；lance_3～4／希露對話 | raw image visual check; `project/images`／`main.images`／IR／floor chain | active |
 | lance:7ffb301fb9c4388e5c9c7953841c774dea0a49b363b72c5037a2704b78e234f1:17.蘭斯/圖檔/Cg00011.png | 20260823-192556 | 17.蘭斯/圖檔/Cg00011.png | 7ffb301fb9c4388e5c9c7953841c774dea0a49b363b72c5037a2704b78e234f1 | cg | new | unknown-todo | 未加入 `project/images/`；原始檔保留於 intake raw | 目前來源未引用；待確認是否屬於蘭斯支線正式 CG | `.codex/task-questions/20260828-010839-lance-story-update.md` | pending |
+
+## 20260831-213117 蘭斯支線素材更新追蹤
+
+本次輸入為使用者放在 repository root 的 `蘭斯支線/` 資料夾；未修改權威來源 `project/story/蘭斯支線.txt`。背景原圖以等比保留內容的直接 resize 輸出為 runtime `544×416`；`克莉絲迎擊.png` 保留為 master `lance_chris_attack_cg.png`，並由 `scripts/build_action_cgs.py` 生成 `lance_chris_attack_action_cg.png`（`416×286`）。角色 PNG 均為原始 RGBA 透明素材，未經自動表情切割。
+
+| 原始相對路徑 | 原始 SHA-256 | 原始格式／尺寸 | 差異狀態 | 最後命名／路徑 | Story IR 用途 | 狀態 |
+|---|---|---|---|---|---|---|
+| `蘭斯支線/澡堂.png` | `0a55793b387934fd1914325c885f2d4c1beae26ff5356d05acf6cd4074d8cb36` | PNG／RGB／1536×1024 | new | `project/images/lance_bathhouse_bg.png` | lance_1、lance_3／澡堂背景 | active |
+| `蘭斯支線/特攝研社辦內.png` | `a1274eb35e8b53ea649bdaae68cba28a5cf5ebdb71a51a4bd7a32ed040bbdee1` | PNG／RGB／1536×1024 | new | `project/images/lance_tokusatsu_club_bg.png` | lance_1／特攝研社辦背景 | active |
+| `蘭斯支線/走廊.png` | `2b75e6ed8b59d846e71e8a91fecfd36bc28d9cd6685e3f62f9413212bb7966fd` | PNG／RGB／1536×1024 | new | `project/images/lance_hallway_bg.png` | lance_1／走廊背景 | active |
+| `蘭斯支線/庭院(夜).png` | `d365f5e83e7f6839ab57e87ccc1d986d45a64077da8797950feac3c1a850ec0e` | PNG／RGB／1402×1122 | new | `project/images/lance_courtyard_night_bg.png` | lance_4／庭院夜景 | active |
+| `蘭斯支線/宅邸內.png` | `37a41bfa4e5942dce78b4d4ee9df1f9dbef28aba3ae07566f04bad3703705402` | PNG／RGB／1672×941 | new | `project/images/lance_mansion_interior_bg.png` | lance_4／宅邸內 | active |
+| `蘭斯支線/祭典會場.png` | `2d9fa52fc6ac48426b135d7bf8370986fb523457527576deb114f478202e350e` | PNG／RGB／1536×1024 | new | `project/images/lance_festival_bg.png` | lance_2／祭典會場 | active |
+| `蘭斯支線/克莉絲迎擊.png` | `3cbd78169c1b11dd23ba0141a03ff5f0c52d219fc81ad29b45e04c37e95902b0` | PNG／RGB／1672×941 | new | `project/images/lance_chris_attack_cg.png`；generated `lance_chris_attack_action_cg.png`／416×286 | lance_4／克莉絲迎擊短 CG | active |
+| `蘭斯支線/蘭斯(半裸).png` | `bd26bb1ddf62169cf0cd7a9af498cc5b566eb83dc468752130fa09036fdbbcd3` | PNG／RGBA／947×1660 | new | `project/images/lance_bathhouse_lance.png` | lance_1、lance_3／澡堂蘭斯 | active |
+| `蘭斯支線/梗(半裸).png` | `95a6c584ef93e1bf0d4c783cebc3e850cf2c7094edbb53eefb2c62d3f42503e2` | PNG／RGBA／947×1660 | new | `project/images/lance_bathhouse_keng.png` | lance_1、lance_3／澡堂梗 | active |
+| `蘭斯支線/蘭斯(黑衣)_angry.png` | `a66c26faf4f9761dea877d229385b2e4ac86a467be84a86e5b627d4e79737827` | PNG／RGBA／401×500 | new | `project/images/lance_black_suit_angry.png` | lance_4／黑衣蘭斯 angry | active |
+| `蘭斯支線/蘭斯(黑衣)_normal.png` | `b0d5584627e94ed4d9743227eedcdfe6ae458e0f9e6ec2afcfb775e92761adb6` | PNG／RGBA／251×518 | new | `project/images/lance_black_suit_normal.png` | lance_4／黑衣蘭斯 normal | active |
+| `蘭斯支線/蘭斯(黑衣)_panic.png` | `23ab26c83c67b0c9eed09b942269660a85d19f93e4abd94593b90282c265453f` | PNG／RGBA／420×511 | new | `project/images/lance_black_suit_panic.png` | lance_4／黑衣蘭斯 panic | active |
+| `蘭斯支線/蘭斯(黑衣)_sad.png` | `cc0b6bcd440b3530f7ce0d711f366c59566028d2a8aef4f15fe525f216879b01` | PNG／RGBA／174×518 | new | `project/images/lance_black_suit_sad.png` | lance_4／黑衣蘭斯 sad | active |
+| `蘭斯支線/蘭斯(黑衣)_smile.png` | `e33523065226acacd16367bbfcdfc38a97fe4a440a0f652247631eee58a963e4` | PNG／RGBA／266×515 | new | `project/images/lance_black_suit_smile.png` | lance_4／黑衣蘭斯 smile | active |
+| `蘭斯支線/蘭斯(黑衣)_surprised.png` | `e2fba57fc6c7ef21ab533371dcc436d2f8e9ed7953a23cb81fb3d4d7c0d91810` | PNG／RGBA／345×496 | new | `project/images/lance_black_suit_surprised.png` | lance_4／黑衣蘭斯 surprised | active |
+| `蘭斯支線/梗(黑衣)_angry.png` | `79a19be08024becd3ccf90cd2de531cfa1745e54a639a8405cf71bd645d4b2fd` | PNG／RGBA／389×474 | new | `project/images/keng_black_suit_angry.png` | lance_4／黑衣梗 angry | active |
+| `蘭斯支線/梗(黑衣)_normal.png` | `080e4388c3d857d934cebd5ac5cea46d41d9a200ef0390f708809b7a53e34981` | PNG／RGBA／329×535 | new | `project/images/keng_black_suit_normal.png` | lance_4／黑衣梗 normal | active |
+| `蘭斯支線/梗(黑衣)_panic.png` | `44195af23f9321e22f6b7ca4c6e5043aa346a981ab8c8682441e564c9cb0e52e` | PNG／RGBA／400×513 | new | `project/images/keng_black_suit_panic.png` | lance_4／黑衣梗 panic | active |
+| `蘭斯支線/梗(黑衣)_sad.png` | `a96d80ffd705506e3918c5ca77b9e290a303afed006514271363d851b466ae48` | PNG／RGBA／427×377 | new | `project/images/keng_black_suit_sad.png` | lance_4／黑衣梗 sad | active |
+| `蘭斯支線/梗(黑衣)_smile.png` | `11261c3f84206a553797da204ce2bd3335345edbb3c86548dfb95e74bbff72bc` | PNG／RGBA／296×536 | new | `project/images/keng_black_suit_smile.png` | lance_4／黑衣梗 smile | active |
+| `蘭斯支線/梗(黑衣)_surprised.png` | `7b2f368a684aefe48ef95f4c5bd68a52150ca3b7e5085154f885983f8b84e619` | PNG／RGBA／385×473 | new | `project/images/keng_black_suit_surprised.png` | lance_4／黑衣梗 surprised | active |
+| `蘭斯支線/統(黑衣)_angry.png` | `f0b24fbf60f604552f556a9d2ea18f003aab25fc17152e55c3539c30a01507ac` | PNG／RGBA／428×492 | new | `project/images/tongzhi_black_suit_angry.png` | lance_4／黑衣統 angry | active |
+| `蘭斯支線/統(黑衣)_normal.png` | `fa6197df65c556e518f54f0458ee65ee4780cada57990babd2180d2896c7541e` | PNG／RGBA／251×518 | new | `project/images/tongzhi_black_suit_normal.png` | lance_4／黑衣統 normal | active |
+| `蘭斯支線/統(黑衣)_panic.png` | `18701bb6d4b6e5bcf7d319e39bee6634de4d7859bea8f4d90caac778b68c02d6` | PNG／RGBA／327×505 | new | `project/images/tongzhi_black_suit_panic.png` | lance_4／黑衣統 panic | active |
+| `蘭斯支線/統(黑衣)_sad.png` | `93007e7d3110546a59866895c9a22eee6daab7251f1e28f152c6028ee6951e6f` | PNG／RGBA／305×492 | new | `project/images/tongzhi_black_suit_sad.png` | lance_4／黑衣統 sad | active |
+| `蘭斯支線/統(黑衣)_smile.png` | `00377f9801d3d6faa4c6e8232250f81a53bf20836e8fdf79ad2b666fd2343a49` | PNG／RGBA／339×506 | new | `project/images/tongzhi_black_suit_smile.png` | lance_4／黑衣統 smile | active |
+| `蘭斯支線/統(黑衣)_surprised.png` | `8d9a75619a543620a942a61625bc58b1921abdf447ee5e11dc3b2e43ef1bcfe2` | PNG／RGBA／397×484 | new | `project/images/tongzhi_black_suit_surprised.png` | lance_4／黑衣統 surprised | active |
+| `蘭斯支線/克(黑衣)_angry.png` | `d526e255e90a82454aec1785b32de6a36c5c94a11705b46c847fef3a2178ba0c` | PNG／RGBA／437×481 | new | `project/images/chris_black_suit_angry.png` | lance_4／黑衣克莉絲 angry | active |
+| `蘭斯支線/克(黑衣)_normal.png` | `242b0c432bdf73bc1782c65c3c5e363b6d9b8601a2745a3808da82b74ded2376` | PNG／RGBA／336×510 | new | `project/images/chris_black_suit_normal.png` | lance_4／黑衣克莉絲 normal | active |
+| `蘭斯支線/克(黑衣)_panic.png` | `6405ef84cba56990769aad1fbf48e8cd474b71f91cfb50892757d76d6beb2eb0` | PNG／RGBA／390×496 | new | `project/images/chris_black_suit_panic.png` | lance_4／黑衣克莉絲 panic | active |
+| `蘭斯支線/克(黑衣)_sad.png` | `5c30cb220e5f189256d6b0f1eb86f84ee9ff4db745c5916c2d7e336fb41b8a2d` | PNG／RGBA／401×454 | new | `project/images/chris_black_suit_sad.png` | lance_4／黑衣克莉絲 sad | active |
+| `蘭斯支線/克(黑衣)_smile.png` | `3b73b6f1573217706fb09c8d7a68a26bf61c36dbd1d1c1b0959863cbd6d05a47` | PNG／RGBA／309×510 | new | `project/images/chris_black_suit_smile.png` | lance_4／黑衣克莉絲 smile | active |
+| `蘭斯支線/克(黑衣)_surprised.png` | `1ea91b4bab6c110f275f63753349928553bd8c2c990fa1c328e5701ebc1738a3` | PNG／RGBA／348×482 | new | `project/images/chris_black_suit_surprised.png` | lance_4／黑衣克莉絲 surprised | active |
+| `蘭斯支線/臨也_angry.png` | `0a826ef8a59e1176fd934d9c3199ae04443072eca0b11f84cdbbed52ea2bcd6b` | PNG／RGBA／432×482 | new | `project/images/lance_liyan_angry.png` | lance_4／臨也 angry | active |
+| `蘭斯支線/臨也_normal.png` | `693708a2729cd63a197299e1ea6640764525ae9e404db43752c34ef28b1e06d7` | PNG／RGBA／251×557 | new | `project/images/lance_liyan_normal.png` | lance_4／臨也 normal | active |
+| `蘭斯支線/臨也_panic.png` | `27571a8c5ee0dc25e25dad61777f6d794ec5a948b4cf7d9816c618a8cbc2bad4` | PNG／RGBA／416×534 | new | `project/images/lance_liyan_panic.png` | lance_4／臨也 panic | active |
+| `蘭斯支線/臨也_sad.png` | `5bb4956d4fc9ecd7d32849094c9e07992f64164a84279d3a33842167d90e4d68` | PNG／RGBA／515×407 | new | `project/images/lance_liyan_sad.png` | lance_4／臨也 sad | active |
+| `蘭斯支線/臨也_smile.png` | `033258f227de3303b4c4f8501699bff0eba40aa8c99bd16a6807acdd931bed95` | PNG／RGBA／300×514 | new | `project/images/lance_liyan_smile.png` | lance_4／臨也 smile | active |
+| `蘭斯支線/臨也_surprised.png` | `5301db524d994b4d0dccc101d5d9452aadcd51e3cdd3fc0f5761e1c8025ab72a` | PNG／RGBA／411×477 | new | `project/images/lance_liyan_surprised.png` | lance_4／臨也 surprised | active |
+| `蘭斯支線/希露_angry.png` | `a65a40435c074edfad6fb5935ab2e447c23789342be722865d16112fbbfb6227` | PNG／RGBA／400×516 | new | `project/images/lance_sill_angry.png` | lance_2～4／希露 angry | active |
+| `蘭斯支線/希露_normal.png` | `7fe8c1ba01074efdd2a3f13137fe4a971d07d0bc5a53912833ff9377a8f406cc` | PNG／RGBA／264×578 | new | `project/images/lance_sill_normal.png` | lance_2～4／希露 normal，取代舊直接素材 | active／supersedes prior |
+| `蘭斯支線/希露_panic.png` | `b69d35f2b1fb1daff2a524afdda3ee678adf12c9ee6fc4eaf2241852d10cd959` | PNG／RGBA／353×562 | new | `project/images/lance_sill_panic.png` | lance_2～4／希露 panic | active |
+| `蘭斯支線/希露_sad.png` | `8bde6cf4d8671ac32d774256c1cceed2a8e69cdad9f4ca35c3a6aed24c42bfa4` | PNG／RGBA／453×436 | new | `project/images/lance_sill_sad.png` | lance_2～4／希露 sad | active |
+| `蘭斯支線/希露_smile.png` | `e1497456137bb4385c0bd358175333c0c050df5d5f1fc0a0a2b0182dc39c5611` | PNG／RGBA／355×513 | new | `project/images/lance_sill_smile.png` | lance_2～4／希露 smile | active |
+| `蘭斯支線/希露_surprised.png` | `2cd3e58f2e71a408122d2ffb36b9e0a9f46af5eef2672285156951922b0fba63` | PNG／RGBA／320×468 | new | `project/images/lance_sill_surprised.png` | lance_2～4／希露 surprised | active |
 
 ## 20260823-192556 支線立繪替換追蹤
 

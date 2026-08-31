@@ -68,10 +68,10 @@
   - Evidence: `.codex/task-questions/20260828-232433-sena-asset-update.md` Q1；`tmp/character-story-import/15.柏崎星奈-20260828T151529Z-1-001/20260828-231717/work/intake-manifest.md`、`work/asset-usage.md`。
 
 - Open: `lance-story-placeholder-assets`
-  - Scope: `project/story-ir/character/lance.json`、`project/floors/lance_1.js`～`lance_4.js`、`project/images/lance_*_placeholder.png`、`lance_sill_normal.png`
-  - Current: `蘭斯支線.txt` 已完成四段支線與 `lance_1`～`lance_4` 接入；希露使用 `Sill-01_(2).png` 的直接素材。澡堂、特攝研社辦、走廊、路邊、車站口、祭典會場、小餐館、黑幕、瑪麗亞之牆、小巷、庭院、宅邸背景，以及 `克莉絲迎擊` CG 尚以唯一命名 placeholder 接通。
-  - Done when: 取得正式 544×416 場景背景與 `克莉絲迎擊` CG，逐一替換對應檔案或 IR 引用，保留唯一地點檔名與素材血緣，並通過完整故事驗證及遊戲內入口驗證。
-  - Evidence: `tmp/character-story-import/lance-story-update/20260828-010839/work/source-audit.md`、`.codex/task-questions/20260828-010839-lance-story-update.md`、`project/story/manifest.md`。
+  - Scope: `project/story-ir/character/lance.json`、`project/floors/lance_1.js`～`lance_4.js`、蘭斯支線場景／角色素材。
+  - Current: root `蘭斯支線/` 提供的 45 張 PNG 已全部置入 `project/images/` 並被蘭斯 Story IR／floor 或 action-CG manifest 使用；已接入澡堂、特攝研社辦、走廊、祭典會場、庭院（夜）、宅邸內正式背景與 `克莉絲迎擊` action CG。路邊、車站口、小餐館、瑪麗亞之牆、小巷夜景仍使用唯一命名 placeholder，因本次輸入沒有這五個地點的圖片。
+  - Done when: 取得上述五個剩餘地點的正式 544×416 背景，逐一替換對應 IR 引用，保留素材血緣，並通過完整故事驗證及遊戲內入口驗證。
+  - Evidence: `tmp/character-story-import/lance-material-update/20260831-213117/work/source-audit.md`、`.codex/task-questions/20260831-213117-lance-material-update.md`、`project/story/manifest.md`。
 
 - Open: `jiakezi-red-mansion-background`
   - Scope: `project/story-ir/character/jiakezi.json`、`project/floors/jiakezi_1.js`～`jiakezi_3.js`

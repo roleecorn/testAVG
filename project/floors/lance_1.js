@@ -10,7 +10,7 @@ main.floors.lance_1=
     "defaultGround": "ground",
     "images": [
         {
-            "name": "lance_bathhouse_bg_placeholder.png",
+            "name": "lance_bathhouse_bg.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -317,7 +317,7 @@ main.floors.lance_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "lance_bathhouse_bg_placeholder.png",
+            "image": "lance_bathhouse_bg.png",
             "loc": [
                 0,
                 0,
@@ -330,7 +330,7 @@ main.floors.lance_1=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
+            "image": "lance_bathhouse_keng.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -348,7 +348,7 @@ main.floors.lance_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_bathhouse_lance.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -366,7 +366,7 @@ main.floors.lance_1=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
+            "image": "lance_bathhouse_keng.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -384,7 +384,7 @@ main.floors.lance_1=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
+            "image": "lance_bathhouse_keng.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -407,7 +407,7 @@ main.floors.lance_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "lance_tokusatsu_club_bg_placeholder.png",
+            "image": "lance_tokusatsu_club_bg.png",
             "loc": [
                 0,
                 0,
@@ -491,7 +491,7 @@ main.floors.lance_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "lance_hallway_bg_placeholder.png",
+            "image": "lance_hallway_bg.png",
             "loc": [
                 0,
                 0,
@@ -537,7 +537,7 @@ main.floors.lance_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "lance_tokusatsu_club_bg_placeholder.png",
+            "image": "lance_tokusatsu_club_bg.png",
             "loc": [
                 0,
                 0,
@@ -913,7 +913,7 @@ main.floors.lance_1=
         {
             "type": "showImage",
             "code": 1,
-            "image": "lance_bathhouse_bg_placeholder.png",
+            "image": "lance_bathhouse_bg.png",
             "loc": [
                 0,
                 0,

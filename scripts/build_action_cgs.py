@@ -26,6 +26,7 @@ ASSETS = (
     ("kelukai_alley_dash_cg.png", "kelukai_alley_dash_action_cg.png"),
     ("kelukai_flashback_strike_cg.png", "kelukai_flashback_strike_action_cg.png"),
     ("kelukai_stalker_confrontation_cg.png", "kelukai_stalker_confrontation_action_cg.png"),
+    ("lance_chris_attack_cg.png", "lance_chris_attack_action_cg.png"),
 )
 
 

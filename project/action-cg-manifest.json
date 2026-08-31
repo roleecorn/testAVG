@@ -206,6 +206,26 @@
         416,
         286
       ]
+    },
+    {
+      "master": "lance_chris_attack_cg.png",
+      "output": "lance_chris_attack_action_cg.png",
+      "masterSha256": "3cbd78169c1b11dd23ba0141a03ff5f0c52d219fc81ad29b45e04c37e95902b0",
+      "outputSha256": "c931f792e802694bb43ef3a9231b363bb783ca1c021f8ace0872b0af355a2c9d",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "crop": [
+        152,
+        0,
+        1520,
+        941
+      ],
+      "outputSize": [
+        416,
+        286
+      ]
     }
   ]
 }

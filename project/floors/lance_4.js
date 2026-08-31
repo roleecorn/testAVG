@@ -1016,7 +1016,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "tongzhi_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -1034,8 +1034,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_chris_normal.png",
-            "expression": "normal",
+            "image": "chris_black_suit_smile.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1054,7 +1054,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -1072,7 +1072,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -1087,14 +1087,65 @@ main.floors.lance_4=
             "code": 20,
             "time": 0
         },
-        "\t[臨也]可以稱呼我臨也喔，難得老弟想幹些蠢事",
-        "\t[臨也]我才提前潛入調查好一切了喔",
-        "\t[臨也]所以別一副吃到蟲子的臉了嘛，蘭斯～",
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_liyan_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]可以稱呼我臨也喔，難得老弟想幹些蠢事",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_normal.png",
             "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]我才提前潛入調查好一切了喔",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]所以別一副吃到蟲子的臉了嘛，蘭斯～",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1111,7 +1162,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -1139,7 +1190,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "lance_courtyard_night_bg_placeholder.png",
+            "image": "lance_courtyard_night_bg.png",
             "loc": [
                 0,
                 0,
@@ -1160,14 +1211,65 @@ main.floors.lance_4=
             "time": 500
         },
         "一行人進入了宅邸，躲在庭院的陰影處討論計畫",
-        "\t[臨也]希露大概是在他的房間，但我不確定",
-        "\t[臨也]證據交給我吧，我還有幫手",
-        "\t[臨也]如果希露不在房間就麻煩了呢",
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_liyan_surprised.png",
+            "expression": "surprised",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]希露大概是在他的房間，但我不確定",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_normal.png",
             "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]證據交給我吧，我還有幫手",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_panic.png",
+            "expression": "panic",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]如果希露不在房間就麻煩了呢",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_black_suit_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1181,12 +1283,29 @@ main.floors.lance_4=
             "code": 20,
             "time": 0
         },
-        "\t[臨也]不知道，加油吧",
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_liyan_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]不知道，加油吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1203,7 +1322,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -1221,8 +1340,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
+            "image": "keng_black_suit_smile.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1239,8 +1358,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1267,7 +1386,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "lance_mansion_interior_bg_placeholder.png",
+            "image": "lance_mansion_interior_bg.png",
             "loc": [
                 0,
                 0,
@@ -1292,8 +1411,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1311,8 +1430,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1336,8 +1455,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
+            "image": "keng_black_suit_panic.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1354,7 +1473,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_chris_normal.png",
+            "image": "chris_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -1372,8 +1491,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
+            "image": "keng_black_suit_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1390,8 +1509,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_chris_normal.png",
-            "expression": "normal",
+            "image": "chris_black_suit_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1408,7 +1527,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 30,
-            "image": "lance_cg_chris_attack_placeholder.png",
+            "image": "lance_chris_attack_action_cg.png",
             "sloc": [
                 0,
                 0,
@@ -1425,10 +1544,20 @@ main.floors.lance_4=
             "time": 0
         },
         {
+            "type": "sleep",
+            "time": 1000,
+            "noSkip": true
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_chris_normal.png",
-            "expression": "normal",
+            "image": "chris_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1443,15 +1572,31 @@ main.floors.lance_4=
             "time": 0
         },
         {
+            "type": "showImage",
+            "code": 20,
+            "image": "tongzhi_black_suit_angry.png",
+            "expression": "angry",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "sleep",
+            "time": 250
+        },
+        {
             "type": "hideImage",
-            "code": 30,
+            "code": 20,
             "time": 0
         },
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "expression": "normal",
+            "image": "tongzhi_black_suit_panic.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1468,8 +1613,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_smile.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1486,8 +1631,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
+            "image": "keng_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1504,8 +1649,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_chris_normal.png",
-            "expression": "normal",
+            "image": "chris_black_suit_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1522,8 +1667,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_chris_normal.png",
-            "expression": "normal",
+            "image": "chris_black_suit_panic.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1540,8 +1685,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
+            "image": "keng_black_suit_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1558,8 +1703,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "expression": "normal",
+            "image": "tongzhi_black_suit_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1577,8 +1722,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_chris_normal.png",
-            "expression": "normal",
+            "image": "chris_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1616,8 +1761,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
+            "image": "keng_black_suit_panic.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1634,7 +1779,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -1652,8 +1797,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "expression": "normal",
+            "image": "tongzhi_black_suit_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1670,8 +1815,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
+            "image": "keng_black_suit_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1688,8 +1833,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
-            "expression": "normal",
+            "image": "tongzhi_black_suit_smile.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1706,8 +1851,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
+            "image": "keng_black_suit_panic.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1726,8 +1871,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_panic.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1744,8 +1889,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
+            "image": "keng_black_suit_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1772,7 +1917,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 1,
-            "image": "lance_courtyard_night_bg_placeholder.png",
+            "image": "lance_courtyard_night_bg.png",
             "loc": [
                 0,
                 0,
@@ -1795,7 +1940,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -1813,8 +1958,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1832,8 +1977,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1850,8 +1995,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1870,8 +2015,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1888,7 +2033,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -1906,8 +2051,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1924,7 +2069,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -1942,8 +2087,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1960,8 +2105,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1978,8 +2123,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1996,8 +2141,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2014,7 +2159,7 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -2032,8 +2177,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2050,8 +2195,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_smile.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2068,8 +2213,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_smile.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2086,8 +2231,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_smile.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2105,8 +2250,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2123,8 +2268,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2141,8 +2286,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_smile.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2159,8 +2304,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 10,
-            "image": "keng_neutral_portrait.png",
-            "expression": "normal",
+            "image": "keng_black_suit_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2182,8 +2327,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2200,8 +2345,8 @@ main.floors.lance_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_black_suit_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2222,8 +2367,42 @@ main.floors.lance_4=
         "\t[???]噗——",
         "從人群中站出來，走到劍拔弩張的兩方中間的是臨也",
         "臨也抱著肚子，止不住地大笑著",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[臨也]呼，不行，哈哈哈哈哈，蘭斯老弟是認真的啊",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_panic.png",
+            "expression": "panic",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[臨也]哈哈哈，恩，哈哈哈哈哈，等我一下，讓我，哈，喘一下",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "setCurtain",
             "color": [
@@ -2244,23 +2423,142 @@ main.floors.lance_4=
             ],
             "time": 500
         },
-        "\t[臨也]恩，沒事了，我們來談正經事吧",
-        "\t[臨也]老人家，這個你應該認得吧",
-        "臨也從懷裡拿出一本黑色的書，書中間夾滿了各種便條",
-        "老人看到書的瞬間臉色大變",
-        "\t[老人]怎麼可能，你為什麼……",
-        "\t[臨也]讓我們全身而退，包括希露，以後再也不得干涉他們的生活",
-        "\t[臨也]然後我就不追究這裡面的東西了",
-        "\t[老人]你……！那裏面可是也包括了你們本家的東西啊！",
-        "\t[臨也]我用最簡單讓你明白的話說吧",
-        "\t[臨也]我是被父親授權才來的喔～",
-        "\t[老人]……我知道了",
-        "老人比了手勢，然後被抓住的桶子和克莉絲被放開，來到了蘭斯身邊",
-        "\t[臨也]好了，我們走吧，蘭斯要回老家一趟嗎？",
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
+            "image": "lance_liyan_sad.png",
+            "expression": "sad",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]恩，沒事了，我們來談正經事吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_surprised.png",
+            "expression": "surprised",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]老人家，這個你應該認得吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "臨也從懷裡拿出一本黑色的書，書中間夾滿了各種便條",
+        "老人看到書的瞬間臉色大變",
+        "\t[老人]怎麼可能，你為什麼……",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_angry.png",
+            "expression": "angry",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]讓我們全身而退，包括希露，以後再也不得干涉他們的生活",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]然後我就不追究這裡面的東西了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "\t[老人]你……！那裏面可是也包括了你們本家的東西啊！",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_angry.png",
+            "expression": "angry",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]我用最簡單讓你明白的話說吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]我是被父親授權才來的喔～",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        "\t[老人]……我知道了",
+        "老人比了手勢，然後被抓住的桶子和克莉絲被放開，來到了蘭斯身邊",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]好了，我們走吧，蘭斯要回老家一趟嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_black_suit_normal.png",
             "expression": "normal",
             "loc": [
                 "portraitSpeakerX",
@@ -2275,12 +2573,29 @@ main.floors.lance_4=
             "code": 20,
             "time": 0
         },
-        "\t[臨也]那就沒辦法了，有空可以邀請他們回來玩啊",
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_lance_normal.png",
-            "expression": "normal",
+            "image": "lance_liyan_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        "\t[臨也]那就沒辦法了，有空可以邀請他們回來玩啊",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_black_suit_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2332,7 +2647,24 @@ main.floors.lance_4=
             "time": 0
         },
         "一行人正大光明地從正門離開，然後回到了吉普車旁換回原本的衣服",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[臨也]我先回去了，下次去東京找你們玩的時候幫我導覽吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -2351,7 +2683,24 @@ main.floors.lance_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_normal.png",
+            "expression": "normal",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[臨也]還有這個，希露的證件跟金融卡",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -2370,7 +2719,24 @@ main.floors.lance_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lance_liyan_smile.png",
+            "expression": "smile",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[臨也]這是哥哥的貼心喔～",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "一臉不爽的蘭斯收下了臨也遞來的東西，然後坐上駕駛座",
         "副駕駛是希露，後座擠了桶子梗平和克莉絲",
         {

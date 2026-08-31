@@ -778,7 +778,7 @@ main.floors.lance_2=
         {
             "type": "showImage",
             "code": 1,
-            "image": "lance_festival_bg_placeholder.png",
+            "image": "lance_festival_bg.png",
             "loc": [
                 0,
                 0,
@@ -899,8 +899,8 @@ main.floors.lance_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_surprised.png",
+            "expression": "surprised",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -937,8 +937,8 @@ main.floors.lance_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_angry.png",
+            "expression": "angry",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -955,8 +955,8 @@ main.floors.lance_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_panic.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1118,8 +1118,8 @@ main.floors.lance_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1156,8 +1156,8 @@ main.floors.lance_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1210,8 +1210,8 @@ main.floors.lance_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_smile.png",
+            "expression": "smile",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1264,8 +1264,8 @@ main.floors.lance_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1282,8 +1282,8 @@ main.floors.lance_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_panic.png",
+            "expression": "panic",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1300,8 +1300,8 @@ main.floors.lance_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lance_sill_normal.png",
-            "expression": "normal",
+            "image": "lance_sill_sad.png",
+            "expression": "sad",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

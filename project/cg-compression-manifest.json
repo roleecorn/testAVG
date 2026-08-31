@@ -2334,31 +2334,6 @@
       "outputBytes": 265418
     },
     {
-      "image": "lance_cg_chris_attack_placeholder.png",
-      "sourceSha256BeforeCompression": "ad1fa897dde963534ecaee2aba4589a897a8c3ed003538b1feeba9de8023502e",
-      "sourceBytesBeforeCompression": 8517,
-      "sourceSize": [
-        416,
-        286
-      ],
-      "sourceFormat": "PNG",
-      "sourceMode": "RGBA",
-      "crop": [
-        0,
-        0,
-        416,
-        286
-      ],
-      "outputSize": [
-        416,
-        286
-      ],
-      "outputFormat": "png",
-      "jpegQuality": null,
-      "outputSha256": "ad1fa897dde963534ecaee2aba4589a897a8c3ed003538b1feeba9de8023502e",
-      "outputBytes": 8517
-    },
-    {
       "image": "lanxiang_goodbye_cg.png",
       "sourceSha256BeforeCompression": "cc638e07ff60261f8d36baeb47794169ad177861d56ae06f30bb2c9510c8a8a0",
       "sourceBytesBeforeCompression": 179542,
