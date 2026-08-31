@@ -212,6 +212,10 @@ function irToEvent(node, options = {}) {
     case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time, silent: true });
     case "comment": return { type: "comment", text: node.text };
     case "function.call": return cleanUndefined({ type: "function", function: node.function, async: node.async });
+    case "bonus.unlock": return {
+      type: "function",
+      function: `function () { core.setFlag(${JSON.stringify(node.flag)}, true); }`,
+    };
     case "character.exchange": {
       const destination = JSON.stringify(node.destination);
       const targetCount = node.targetCount == null ? "" : `, ${node.targetCount}`;
@@ -567,7 +571,7 @@ const ALLOWED_KINDS = new Set([
   "narration", "dialogue", "layout.set", "bgm.play", "bgm.pause", "bgm.resume",
   "sound.play", "sound.stop", "screen.shake", "screen.tint", "screen.reset", "screen.flash", "background.show", "image.show", "image.hide", "wait",
   "ending.roll", "ending.slideshow", "control.lock", "control.unlock", "title.show", "title.return", "toolbar.hide", "toolbar.show",
-  "goto", "comment", "function.call", "character.exchange", "akiba.event.complete", "akiba.return", "transition.video", "choice",
+  "goto", "comment", "function.call", "bonus.unlock", "character.exchange", "akiba.event.complete", "akiba.return", "transition.video", "choice",
 ]);
 
 function validateNode(node, location) {
@@ -599,6 +603,10 @@ function validateNode(node, location) {
   }
   if (node.kind === "akiba.event.complete" && (typeof node.eventId !== "string" || !node.eventId)) {
     throw new Error(`${location}: akiba.event.complete requires eventId`);
+  }
+  if (node.kind === "bonus.unlock") {
+    if (typeof node.floorId !== "string" || !node.floorId) throw new Error(`${location}: bonus.unlock.floorId is required`);
+    if (typeof node.flag !== "string" || !node.flag) throw new Error(`${location}: bonus.unlock.flag is required`);
   }
   if (node.kind === "character.exchange") {
     const destination = node.destination;
@@ -904,6 +912,9 @@ function validateProjectReferences(root, bundle) {
     }
     if (node.kind === "goto" && typeof node.floorId === "string" && !node.floorId.startsWith(":")) {
       if (!floorIds.has(node.floorId)) throw new Error(`${location}: unregistered target floor ${node.floorId}`);
+    }
+    if (node.kind === "bonus.unlock" && !floorIds.has(node.floorId)) {
+      throw new Error(`${location}: unregistered target floor ${node.floorId}`);
     }
     if (node.kind === "function.call" && typeof node.function !== "string") throw new Error(`${location}: function.call requires source code`);
     if (node.kind === "choice") node.options.forEach((option, optionIndex) => {

@@ -4,6 +4,7 @@ const { readBundle, validateBundle } = require("./story_ir");
 
 const root = path.resolve(__dirname, "..");
 const mainStoryIrDir = path.join(root, "project", "story-ir", "main");
+const mainStoryBonusIrDir = path.join(mainStoryIrDir, "bonus");
 const MAIN_CHAPTERS = Object.freeze([1, 2, 3, 4, 5, 6, 7]);
 
 function mainStoryIrFile(chapter) {
@@ -21,6 +22,18 @@ function mainStoryIrFiles() {
     throw new Error("Main-story Story IR must contain exactly CH1.json through CH7.json");
   }
   return expected;
+}
+
+function mainStoryBonusIrFiles() {
+  if (!fs.existsSync(mainStoryBonusIrDir)) return [];
+  const actual = fs.readdirSync(mainStoryBonusIrDir)
+    .filter((name) => name.endsWith(".json"))
+    .map((name) => path.join(mainStoryBonusIrDir, name))
+    .sort((left, right) => left.localeCompare(right, "en", { numeric: true }));
+  if (actual.some((file) => path.basename(file) !== "CH8.json")) {
+    throw new Error("Main-story bonus Story IR may only contain CH8.json");
+  }
+  return actual;
 }
 
 function mergeMainStoryBundles(bundles) {
@@ -66,13 +79,20 @@ function readMainStoryBundle() {
   return mergeMainStoryBundles(readMainStoryBundles());
 }
 
+function readMainStoryBonusBundles() {
+  return mainStoryBonusIrFiles().map((file) => readBundle(file));
+}
+
 module.exports = {
   MAIN_CHAPTERS,
   mainStoryIrDir,
+  mainStoryBonusIrDir,
   mainStoryIrFile,
   mainStoryIrFiles,
+  mainStoryBonusIrFiles,
   mergeMainStoryBundles,
   readMainStoryBundle,
   readMainStoryBundles,
+  readMainStoryBonusBundles,
   stripCommonFields,
 };

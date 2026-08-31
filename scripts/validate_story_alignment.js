@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const { readMainStoryBundles } = require("./main_story_ir");
+const { readMainStoryBundles, readMainStoryBonusBundles } = require("./main_story_ir");
 
 const root = path.resolve(__dirname, "..");
 const lineAssetPattern = /^CH([1-7])_L(\d+)\.png$/;
@@ -37,7 +37,7 @@ function parseSourceDirective(raw) {
     const playValue = value.replace(/\s+(?:播放|play)$/i, "").trim();
     return { kind: stop || !playValue ? "bgm.pause" : "bgm.play", name: playValue, full };
   }
-  if (/^BGM(?:停止|STOP)$/i.test(body.replace(/[：︰:]/g, ""))) {
+  if (/^(?:BGM(?:停止|STOP)|停止BGM|停止背景音樂)$/i.test(body.replace(/[：︰:]/g, ""))) {
     return { kind: "bgm.pause", name: "", full };
   }
   if (normalizedHead === "背景") {
@@ -139,12 +139,12 @@ function sourceAnchor(directive, chapter, assets, data, mappings, line) {
   return { key: `${directive.kind}:${normalizeText(directive.name || directive.full)}`, display: directive.full, line };
 }
 
-function buildSourceTrace(lines, chapter, data, mappings, globalAssets = new Map()) {
+function buildSourceTrace(lines, chapter, data, mappings, globalAssets = new Map(), { requireHeading = true } = {}) {
   const localAssets = firstAppearanceAssets(lines, chapter, globalAssets);
   const assets = new Map(globalAssets);
   for (const [key, asset] of localAssets.entries()) if (!assets.has(key)) assets.set(key, asset);
   const items = [];
-  let storyStarted = false;
+  let storyStarted = !requireHeading;
   lines.forEach((line, index) => {
     const lineNumber = index + 1;
     const trimmed = line.trim();
@@ -160,6 +160,7 @@ function buildSourceTrace(lines, chapter, data, mappings, globalAssets = new Map
         if (text) items.push({ type: "text", value: text, line: lineNumber });
       }
       items.push({ type: "anchor", value: sourceAnchor(directive, chapter, assets, data, mappings, lineNumber) });
+      if (directive.full.includes("真的沒了")) items.push({ type: "text", value: "真的沒了", line: lineNumber });
     }
     else {
       const option = trimmed.match(/^(?:[0-9０-９]+|[一二三四五六七八九十]+)[.．、。](.*)$/);
@@ -205,16 +206,22 @@ function irAnchorForNode(node, context) {
   if (node.kind === "choice") return { key: "choice", display: "choice" };
   if (node.kind === "comment") {
     const directive = parseSourceDirective(node.text || "");
+    const ignoredKinds = ["bgm.play", "bgm.pause", "cg.show", "cg.hide", "exchange"];
     if (!directive || !context.sourceDirectives.has(directive.full)
-      || ["bgm.play", "bgm.pause", "background.show", "cg.show", "cg.hide", "exchange"].includes(directive.kind)) return null;
-    return { key: `${directive.kind}:${normalizeText(directive.name || directive.full)}`, display: node.text };
+      || ignoredKinds.includes(directive.kind)
+      || (directive.kind === "background.show" && !context.allowUnmappedDirectives)) return null;
+    const name = normalizeText(directive.name || directive.full);
+    const key = directive.kind === "background.show" && context.allowUnmappedDirectives
+      ? `background.show:source:${name}`
+      : `${directive.kind}:${name}`;
+    return { key, display: node.text };
   }
   return null;
 }
 
-function buildIrTrace(bundle, chapter, data, mappings, sourceDirectives = new Map()) {
+function buildIrTrace(bundle, chapter, data, mappings, sourceDirectives = new Map(), { allowUnmappedDirectives = false } = {}) {
   const items = [];
-  const context = { chapter, data, mappings, cgByCode: new Map(), sourceDirectives };
+  const context = { chapter, data, mappings, cgByCode: new Map(), sourceDirectives, allowUnmappedDirectives };
   const visit = (nodes, sceneId) => {
     let sceneStart = true;
     for (const node of nodes || []) {
@@ -466,8 +473,35 @@ function validateMainStoryAlignment(data) {
     }
     errors.push(...validateExchangeResumeBgm(source, bundle, label));
   }
+  for (const bundle of readMainStoryBonusBundles()) {
+    const sourceFile = bundle.source.files.find((file) => file.path.startsWith("project/mainStory/") && file.path.endsWith(".txt"));
+    if (!sourceFile) {
+      errors.push("main bonus: CH8 bundle has no project/mainStory source file");
+      continue;
+    }
+    const sourcePath = path.join(root, ...sourceFile.path.split("/"));
+    const lines = fs.readFileSync(sourcePath, "utf8").split(/\r?\n/);
+    const mappings = buildBgmMappings(bundle);
+    const source = buildSourceTrace(lines, 8, data, mappings, new Map(), { requireHeading: false });
+    const sourceDirectives = new Map();
+    source.filter((item) => item.type === "anchor").forEach((item) => {
+      const directiveText = item.value.display.split(" → ")[0];
+      const directive = parseSourceDirective(directiveText);
+      if (directive) sourceDirectives.set(directive.full, directive);
+    });
+    const ir = buildIrTrace(bundle, 8, data, mappings, sourceDirectives, { allowUnmappedDirectives: true });
+    const label = "main bonus CH8";
+    errors.push(...compareAnchors(source, ir, label));
+    errors.push(...compareBgmLineOrdering(source, ir, label));
+    const sourceText = textSignature(source);
+    const irText = textSignature(ir);
+    if (sourceText !== irText) {
+      const difference = firstDifference(sourceText, irText);
+      errors.push(`${label}: text content is not bidirectionally mapped at offset ${difference.index}; source="${difference.left}"; IR="${difference.right}"`);
+    }
+  }
   if (errors.length) throw new Error(`Story source↔IR alignment failed:\n${errors.join("\n")}`);
-  console.log("Validated bidirectional source↔IR alignment for main-story CH1–CH7.");
+  console.log("Validated bidirectional source↔IR alignment for main-story CH1–CH7 and bonus bundles.");
 }
 
 function readProjectData() {

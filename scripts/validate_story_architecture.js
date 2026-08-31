@@ -5,7 +5,7 @@ const { execFileSync } = require("child_process");
 const { isDeepStrictEqual } = require("util");
 const { bundleToFloors, readBundle, validateBundle, validatePortraitOutputCompat, validateProjectReferences } = require("./story_ir");
 const { characterStories, irFile } = require("./manage_story_ir");
-const { mainStoryIrFiles, mergeMainStoryBundles, readMainStoryBundles, stripCommonFields } = require("./main_story_ir");
+const { mainStoryIrFiles, mainStoryBonusIrFiles, mergeMainStoryBundles, readMainStoryBundles, stripCommonFields } = require("./main_story_ir");
 
 const root = path.resolve(__dirname, "..");
 const ownershipFile = path.join(root, "project", "story-ownership.json");
@@ -74,6 +74,7 @@ function renderFloor(floor) {
 function managedIrFiles() {
   return [
     ...mainStoryIrFiles(),
+    ...mainStoryBonusIrFiles(),
     ...characterStories.map((story) => irFile(story)),
   ];
 }
@@ -117,6 +118,7 @@ function validateRuntimeReachability() {
         if (node.kind === "character.exchange" && node.destination && sceneIds.has(node.destination.floorId)) {
           edges.get(scene.id).add(node.destination.floorId);
         }
+        if (node.kind === "bonus.unlock" && sceneIds.has(node.floorId)) edges.get(scene.id).add(node.floorId);
         if (node.kind === "function.call" && typeof node.function === "string") {
           for (const target of sceneIds) {
             if (node.function.includes(`'${target}'`) || node.function.includes(`"${target}"`)) edges.get(scene.id).add(target);

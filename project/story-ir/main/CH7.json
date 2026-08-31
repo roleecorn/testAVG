@@ -5,7 +5,7 @@
     "files": [
       {
         "path": "project/mainStory/CH7",
-        "sha256": "6040a928a356ac0ccd37c2b1a9a97e2e05f1ca6da6dd86f78d49438c2043a663"
+        "sha256": "8b454e8ca5b6d2405ea79a25d2acfaf53741977332a911a3618cbe1e1d2b780a"
       }
     ]
   },
@@ -13216,6 +13216,13 @@
           "holdUntilBackground": true
         },
         {
+          "kind": "comment",
+          "text": "【停止BGM】"
+        },
+        {
+          "kind": "bgm.pause"
+        },
+        {
           "kind": "background.show",
           "role": "image",
           "code": 1,
@@ -13433,6 +13440,19 @@
         {
           "kind": "title.show",
           "image": "OP2.png"
+        },
+        {
+          "kind": "comment",
+          "text": "【開放選項 \"通關連動特典：200万￥の女\"】"
+        },
+        {
+          "kind": "bonus.unlock",
+          "floorId": "main_ch8_bonus",
+          "flag": "main_ch8_bonus_unlocked"
+        },
+        {
+          "kind": "comment",
+          "text": "【\"通關連動特典：200万￥の女\"選項進入CH8】"
         },
         {
           "kind": "comment",

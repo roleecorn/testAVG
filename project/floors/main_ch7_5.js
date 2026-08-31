@@ -8057,6 +8057,13 @@ main.floors.main_ch7_5=
             "time": 2000
         },
         {
+            "type": "comment",
+            "text": "【停止BGM】"
+        },
+        {
+            "type": "pauseBgm"
+        },
+        {
             "type": "showImage",
             "code": 1,
             "image": "ED2kris1.png",
@@ -8210,6 +8217,18 @@ main.floors.main_ch7_5=
         {
             "type": "setTitleBackground",
             "image": "OP2.png"
+        },
+        {
+            "type": "comment",
+            "text": "【開放選項 \"通關連動特典：200万￥の女\"】"
+        },
+        {
+            "type": "function",
+            "function": "function () { core.setFlag(\"main_ch8_bonus_unlocked\", true); }"
+        },
+        {
+            "type": "comment",
+            "text": "【\"通關連動特典：200万￥の女\"選項進入CH8】"
         },
         {
             "type": "comment",

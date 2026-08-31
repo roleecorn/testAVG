@@ -31,6 +31,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"main_ch7_3",
 			"main_ch7_4",
 			"main_ch7_5",
+			"main_ch8_bonus",
 			"mapo_1_3_exchange_1",
 			"main_ch2_4_exchange_1",
 			"main_ch3_1_exchange_1",
@@ -135,6 +136,51 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"lance_festival_bg.png",
 			"lance_restaurant_bg_placeholder.png",
 			"lance_black_curtain.png",
+			"DLCIKAZUCHI001.png",
+			"DLCIKAZUCHI002.png",
+			"DLCIKAZUCHI003.png",
+			"DLCIKAZUCHI004.png",
+			"DLCIKAZUCHI005.png",
+			"DLCIKAZUCHI006.png",
+			"DLCIKAZUCHI007.png",
+			"DLCIKAZUCHI008.png",
+			"DLCIKAZUCHI009.png",
+			"DLCIKAZUCHI010.png",
+			"DLCIKAZUCHI011.png",
+			"DLCIKAZUCHI012.png",
+			"DLCIKAZUCHI013.png",
+			"DLCIKAZUCHI014.png",
+			"DLCIKAZUCHI015.png",
+			"DLCIKAZUCHI016.png",
+			"DLCIKAZUCHI017.png",
+			"DLCIKAZUCHI018.png",
+			"DLCIKAZUCHI019.png",
+			"DLCIKAZUCHI020.png",
+			"DLCIKAZUCHI021.png",
+			"DLCIKAZUCHI022.png",
+			"DLCIKAZUCHI023.png",
+			"DLCIKAZUCHI024.png",
+			"DLCIKAZUCHI025.png",
+			"DLCIKAZUCHI026.png",
+			"DLCIKAZUCHI027.png",
+			"DLCIKAZUCHI028.png",
+			"DLCIKAZUCHI029.png",
+			"DLCIKAZUCHI030.png",
+			"DLCIKAZUCHI031.png",
+			"DLCIKAZUCHI032.png",
+			"DLCIKAZUCHI033.png",
+			"DLCIKAZUCHI034.png",
+			"DLCIKAZUCHI035.png",
+			"DLCIKAZUCHI036.png",
+			"DLCIKAZUCHI037.png",
+			"DLCIKAZUCHI038.png",
+			"DLCIKAZUCHI039.png",
+			"DLCIKAZUCHI040.png",
+			"DLCIKAZUCHI041.png",
+			"DLCIKAZUCHI042.png",
+			"DLCIKAZUCHI043.png",
+			"DLCIKAZUCHI044.png",
+			"DLCIKAZUCHI045.png",
 			"lance_maria_wall_bg_placeholder.png",
 			"lance_alley_night_bg_placeholder.png",
 			"lance_courtyard_night_bg.png",
@@ -918,6 +964,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"BGMDuel.mp3",
 			"BGMED1.mp3",
 			"BGMED2.mp3",
+			"BGMDLCIKAZUCHI.mp3",
 			"BGMGintama.mp3",
 			"BGMHaru.mp3",
 			"BGMIB.mp3",
@@ -1196,9 +1243,9 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 					{
 						"type": "fillRect",
 						"x": 230,
-						"y": 250,
+						"y": 210,
 						"width": 150,
-						"height": 142,
+						"height": 182,
 						"radius": 10,
 						"style": [
 							50,
@@ -1210,9 +1257,9 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 					{
 						"type": "strokeRect",
 						"x": 230,
-						"y": 250,
+						"y": 210,
 						"width": 150,
-						"height": 142,
+						"height": 182,
 						"radius": 10,
 						"style": [
 							255,
@@ -1225,7 +1272,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 					{
 						"type": "fillBoldText",
 						"x": 305,
-						"y": 290,
+						"y": 250,
 						"style": [
 							255,
 							255,
@@ -1238,16 +1285,40 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 					{
 						"type": "fillBoldText",
 						"x": 305,
-						"y": 330,
+						"y": 290,
 						"font": "bold 25px Verdana",
 						"text": "读取存档"
 					},
 					{
 						"type": "fillBoldText",
 						"x": 305,
-						"y": 370,
+						"y": 330,
 						"font": "bold 25px Verdana",
 						"text": "回放录像"
+					}
+				]
+			},
+			{
+				"type": "if",
+				"condition": "core.hasFlag('main_ch8_bonus_unlocked')",
+				"true": [
+					{
+						"type": "previewUI",
+						"action": [
+							{
+								"type": "fillBoldText",
+								"x": 305,
+								"y": 370,
+								"style": [
+									255,
+									255,
+									255,
+									1
+								],
+								"font": "bold 25px Verdana",
+								"text": "通關連動特典：200万￥の女"
+							}
+						]
 					}
 				]
 			},
@@ -1260,7 +1331,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 						"image": "winskin.png",
 						"code": 1,
 						"x": 245,
-						"y": "261 + 40*flag:selection",
+						"y": "221 + 40*flag:selection",
 						"width": 120,
 						"height": 40
 					},
@@ -1319,6 +1390,31 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 														]
 													}
 												]
+											},
+											{
+												"case": "3",
+												"action": [
+													{
+														"type": "comment",
+														"text": "在“通關連動特典：200万￥の女”确定"
+													},
+													{
+														"type": "if",
+														"condition": "core.hasFlag('main_ch8_bonus_unlocked')",
+														"true": [
+															{
+																"type": "changeFloor",
+																"floorId": "main_ch8_bonus",
+																"loc": [
+																	6,
+																	10
+																],
+																"direction": "up",
+																"time": 0
+															}
+														]
+													}
+												]
 											}
 										]
 									}
@@ -1336,7 +1432,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 									{
 										"type": "setValue",
 										"name": "flag:selection",
-										"value": "(flag:selection + 2) % 3"
+										"value": "(flag:selection + 2) % (core.hasFlag('main_ch8_bonus_unlocked') ? 4 : 3)"
 									}
 								]
 							},
@@ -1352,7 +1448,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 									{
 										"type": "setValue",
 										"name": "flag:selection",
-										"value": "(flag:selection + 1) % 3"
+										"value": "(flag:selection + 1) % (core.hasFlag('main_ch8_bonus_unlocked') ? 4 : 3)"
 									}
 								]
 							},
@@ -1363,8 +1459,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 									365
 								],
 								"py": [
-									261,
-									300
+									221,
+									260
 								],
 								"break": true,
 								"action": [
@@ -1385,8 +1481,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 									365
 								],
 								"py": [
-									301,
-									340
+									261,
+									300
 								],
 								"break": true,
 								"action": [
@@ -1406,8 +1502,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 									365
 								],
 								"py": [
-									341,
-									380
+									301,
+									340
 								],
 								"break": true,
 								"action": [
@@ -1422,6 +1518,40 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 											{
 												"type": "function",
 												"function": "function(){\ncore.chooseReplayFile()\n}"
+											}
+										]
+									}
+								]
+							},
+							{
+								"case": "mouse",
+								"px": [
+									245,
+									365
+								],
+								"py": [
+									341,
+									380
+								],
+								"break": true,
+								"action": [
+									{
+										"type": "comment",
+										"text": "点击“通關連動特典：200万￥の女”"
+									},
+									{
+										"type": "if",
+										"condition": "core.hasFlag('main_ch8_bonus_unlocked')",
+										"true": [
+											{
+												"type": "changeFloor",
+												"floorId": "main_ch8_bonus",
+												"loc": [
+													6,
+													10
+												],
+												"direction": "up",
+												"time": 0
 											}
 										]
 									}

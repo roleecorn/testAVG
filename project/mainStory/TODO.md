@@ -113,6 +113,11 @@
 
 ## 待實作演出或小遊戲
 
+- Resolved: `main-story-ch8-ending-confirmation`
+  - Scope: `project/mainStory/CH8.txt` 最後一段 `【顯示一張全黑image，跳出白色大字寫著"真的沒了"】<這句要確認>`、CH8 bonus Story IR/floor、CH7 的 bonus 解鎖入口。
+  - Done when: 確認黑幕與白字「真的沒了」的實際演出及返回標題時機，完成 `project/story-ir/main/bonus/CH8.json`、可由 CH7 解鎖入口觸發的 bonus floor 與素材註冊；CH8 不得出現在 `project/timeline.json`，並通過 `node scripts/validate_story.js`。
+  - Evidence: 使用者確認黑底白字「真的沒了」後等待 1 秒再返回標題；`.codex/task-questions/20260901-002214-main-story-ch8-bonus.md` Q1；`node scripts/validate_story.js`、`node scripts/generate_main_story.js --check` 通過。
+
 ## 20260824 `【...】` 指令稽核後續
 
 - Resolved: `main-story-ch7-bgm-directive-alignment`
