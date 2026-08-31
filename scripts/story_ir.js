@@ -212,10 +212,13 @@ function irToEvent(node, options = {}) {
     case "goto": return cleanUndefined({ type: "changeFloor", floorId: node.floorId, loc: node.loc, direction: node.direction, time: node.time, silent: true });
     case "comment": return { type: "comment", text: node.text };
     case "function.call": return cleanUndefined({ type: "function", function: node.function, async: node.async });
-    case "bonus.unlock": return {
-      type: "function",
-      function: `function () { core.setFlag(${JSON.stringify(node.flag)}, true); }`,
-    };
+    case "bonus.unlock": {
+      const setter = node.scope === "global" ? "setGlobal" : "setFlag";
+      return {
+        type: "function",
+        function: `function () { core.${setter}(${JSON.stringify(node.flag)}, true); }`,
+      };
+    }
     case "character.exchange": {
       const destination = JSON.stringify(node.destination);
       const targetCount = node.targetCount == null ? "" : `, ${node.targetCount}`;
@@ -607,6 +610,9 @@ function validateNode(node, location) {
   if (node.kind === "bonus.unlock") {
     if (typeof node.floorId !== "string" || !node.floorId) throw new Error(`${location}: bonus.unlock.floorId is required`);
     if (typeof node.flag !== "string" || !node.flag) throw new Error(`${location}: bonus.unlock.flag is required`);
+    if (node.scope !== undefined && node.scope !== "flag" && node.scope !== "global") {
+      throw new Error(`${location}: bonus.unlock.scope must be "flag" or "global" when provided`);
+    }
   }
   if (node.kind === "character.exchange") {
     const destination = node.destination;

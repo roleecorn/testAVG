@@ -13448,7 +13448,8 @@
         {
           "kind": "bonus.unlock",
           "floorId": "main_ch8_bonus",
-          "flag": "main_ch8_bonus_unlocked"
+          "flag": "main_ch8_bonus_unlocked",
+          "scope": "global"
         },
         {
           "kind": "comment",

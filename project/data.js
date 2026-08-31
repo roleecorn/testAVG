@@ -1300,7 +1300,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			},
 			{
 				"type": "if",
-				"condition": "core.hasFlag('main_ch8_bonus_unlocked')",
+				"condition": "global:main_ch8_bonus_unlocked",
 				"true": [
 					{
 						"type": "previewUI",
@@ -1400,7 +1400,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 													},
 													{
 														"type": "if",
-														"condition": "core.hasFlag('main_ch8_bonus_unlocked')",
+														"condition": "global:main_ch8_bonus_unlocked",
 														"true": [
 															{
 																"type": "changeFloor",
@@ -1432,7 +1432,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 									{
 										"type": "setValue",
 										"name": "flag:selection",
-										"value": "(flag:selection + 2) % (core.hasFlag('main_ch8_bonus_unlocked') ? 4 : 3)"
+										"value": "(flag:selection + 2) % (global:main_ch8_bonus_unlocked ? 4 : 3)"
 									}
 								]
 							},
@@ -1448,7 +1448,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 									{
 										"type": "setValue",
 										"name": "flag:selection",
-										"value": "(flag:selection + 1) % (core.hasFlag('main_ch8_bonus_unlocked') ? 4 : 3)"
+										"value": "(flag:selection + 1) % (global:main_ch8_bonus_unlocked ? 4 : 3)"
 									}
 								]
 							},
@@ -1541,7 +1541,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 									},
 									{
 										"type": "if",
-										"condition": "core.hasFlag('main_ch8_bonus_unlocked')",
+										"condition": "global:main_ch8_bonus_unlocked",
 										"true": [
 											{
 												"type": "changeFloor",

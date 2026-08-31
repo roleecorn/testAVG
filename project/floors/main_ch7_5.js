@@ -8224,7 +8224,7 @@ main.floors.main_ch7_5=
         },
         {
             "type": "function",
-            "function": "function () { core.setFlag(\"main_ch8_bonus_unlocked\", true); }"
+            "function": "function () { core.setGlobal(\"main_ch8_bonus_unlocked\", true); }"
         },
         {
             "type": "comment",
