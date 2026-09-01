@@ -173,8 +173,6 @@
 	}
 
 	function isNodeUnlocked(node) {
-		if (currentTimeline && currentTimeline.data && currentTimeline.data.options && currentTimeline.data.options.allowUnvisited) return true;
-		if (node.alwaysUnlocked) return true;
 		if (node.unlockFlag) return !!core.getFlag(node.unlockFlag);
 		return core.hasVisitedFloor(node.floorId);
 	}

@@ -10,7 +10,6 @@
 	"nodeGap": 188,
 	"laneGap": 126,
 	"chapterPadding": 72,
-	"allowUnvisited": true,
 	"chapters": [
 		{
 			"id": "main_ch1",
