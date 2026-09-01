@@ -307,23 +307,263 @@ main.floors.mysterious_banana_3=
             ]
         },
         "明明晴空萬里卻天雷頻頻，此般異象似乎在預示著甚麼，但我們的梗平完全不在乎",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]神秘香蕉人，在下來了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]好，梗平少年，隨我來吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "兩人走在公園的小路上準備前往決戰場所，雖然氣氛凝重，但為了緩解緊張還是聊了起來",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]我們的敵人，是起司有限公司",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]起司有限公司，不是起司股份有限公司嗎，真是奇怪的名字",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]我們是要前往他們的辦公大樓嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]沒錯，從超酷印度豹口中得知後，我又去調查了一下",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]確實到有人在那天看到水伊布被抱進去的身影",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]沒想到曾被我拋棄的過去會追上來",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]他們是犯人對吧，原來你知道那家公司嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]當然，畢竟我可曾是那家公司的CEO阿",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]甚麼！？那為什麼會...",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]之後再說吧，我們到了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "映入眼簾的是一棟經典的辦公大樓...在公園的正中央",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]什麼鬼！在下之前都沒發現這裡還有棟大樓，應該說為什麼這裡會有棟大樓？？？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]現代科技，很厲害吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]對了，梗平少年，這個先交給你",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 353: CG：伊布腰帶 出現"
@@ -358,14 +598,126 @@ main.floors.mysterious_banana_3=
             "time": 0,
             "async": true
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]這是我曾經用過的腰帶，我已經無法再使用，就交給你了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]喔喔！是傳承腰帶的事件",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]謝拉，話說為什麼你沒辦法用，果然腰帶是有意志的嗎！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]不，只是因為我變胖了繫不上",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]痾，總感覺瞬間Low掉了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]順帶一提不用擔心我，我有聖劍嘎裡棒和這個變身頭巾",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "香蕉人展示了變身頭巾",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]感覺更Low了阿喂！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 364: 過場"
@@ -382,11 +734,91 @@ main.floors.mysterious_banana_3=
             ]
         },
         "兩人藏在公司大門外的草叢，面面相覷",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]門外一個警衛都沒有，地上還很髒亂",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]真的是這裡嗎？不，也有非法組織被佔領的可能性",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]一定是這裡，我感受到了水伊布的氣息",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]走吧！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]欸，等等我啊！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 5,
@@ -399,8 +831,40 @@ main.floors.mysterious_banana_3=
             ]
         },
         "神秘香蕉人迫不及待的衝了進去，梗平緊隨其後",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]水伊布！！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]...怎麼甚麼人都沒有",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[廣播]滋滋滋",
         "伴隨著雜音，大樓內響起了廣播開始",
         {
@@ -408,7 +872,23 @@ main.floors.mysterious_banana_3=
             "text": "source line 378: 下面一句不使用立繪"
         },
         "\t[廣播]哈哈哈，好久不見了，香蕉人",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]這個聲音，是奇多嗎！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 381: 下面三句不使用立繪"
@@ -417,10 +897,74 @@ main.floors.mysterious_banana_3=
         "\t[廣播]所以我們就來面對面談一談吧，電梯已經準備好了",
         "\t[廣播]我，等著你來",
         "伴隨著喀擦聲，廣播關閉了",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]可惡！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]神秘香蕉人，你認識他嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]熟的不得了，可惡，為什麼是你",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]先走吧，我在電梯裡跟你說明",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 390: 過場"
@@ -440,43 +984,587 @@ main.floors.mysterious_banana_3=
             "type": "comment",
             "text": "source line 392: 此處插入電梯BGM"
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]首先，你知道伊布嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]恩，總之是一種寶可夢對吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]有八種進化型態，加上基礎型態是九種",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]是，但這並不是全部",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]這個世界上的伊布是獨一無二的，每種都只有一隻",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]據傳他們由寶可夢森林的獸控妖精 王·比利，簡稱森之妖精所飼養，並在其死後各自傳承了一部份力量",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]只要八隻匯聚在一起就能使用妖精王力量的一部份",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]哪來的七龍珠啊！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]等等，也就是說你曾經收集過嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]沒錯，這家公司就是我創立來搜集伊布的",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]我們當時包含水伊布在內蒐集了一半，雖然從一般伊布上沒發現，但除此之外的伊布體內都發現了力量",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]公司上下都很興奮，認為妖精王之力已經勢在必得",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]開發班甚至已經以伊布腰帶為首開發出了多種力量腰帶",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]但是，公司最終變成了這個樣子，你也跑去住公園",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]這就代表最後沒成功對吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]說不成功其實不對，是我自己阻止的",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]為什麼？難道聚集伊布會毀滅世界還是被惡人利用嗎",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]應該說我只是意識到自己就是那個惡人吧...",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]那個時候我終於從非洲大陸遠征回來，正要去找開發班組長討論進度的時候",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]我剛好看到了被關在籠子裡實驗的伊布們，正想靠近觸摸的時候卻被月亮伊布威嚇了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]我才發現妖精伊布的緞帶萎靡，水伊布的身體混卓，一般伊布奄奄一息",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]直到那時我才意識到自己所做的只是在剝削他們而已，簡直是獸控的恥辱...",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]在下懂了，所以你才解散了公司對吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]但現在又是怎麼回事，難道有其他人在蒐集伊布嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]不，當我說出緣由並嘗試解散公司時",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "神秘香蕉人雖然大部分人都表示理解，但還有一群人不希望停止",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]也就是偷走水伊布的那些人嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]對，以公司二把手奇多為首加上貓科二人組以及其他人的貓派",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]為了展現各自的決心，解散和續行方進行了一場驚天動地的對決",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]想必是一場酣暢淋漓的戰鬥吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]沒錯，我們進行了三天三夜的神聖獸控問答大戰，最後只剩我站在場上奪得了勝利",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]在下放棄吐槽了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]說到底你們拿到力量到底是想要達成甚麼願望阿",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]那是...",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "就在神秘香蕉人說到一半，電梯到達頂樓了",
         "\t[電梯語音]頂樓，到了，頂樓，到了",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]想必奇多會親自跟你講，我們走吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 430: 過場"
@@ -492,7 +1580,23 @@ main.floors.mysterious_banana_3=
                 416
             ]
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]為什麼一出電梯門就是更衣室阿",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 433: 此處插入決戰BGM"
@@ -502,17 +1606,81 @@ main.floors.mysterious_banana_3=
             "text": "source line 434: 下面一句不使用立繪"
         },
         "\t[神秘香蕉人]你終於來了，香蕉人",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]好久不見了，奇多",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 437: 下面一句不使用立繪"
         },
         "\t[神秘香蕉人]我已經捨棄那個名字了，現在請叫我",
         "\t[超濃起司]超 濃 起 司",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]喂超濃起司，你到底想聚集伊布的力量幹嘛",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[超濃起司]喔？這個又是誰",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]這位是梗平少年，是位令人期待的獸控新人",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]不要瞎掰好嗎，在下只是來幫忙的",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[超濃起司]齁，既然香蕉人這麼期待那我就好心跟他講解吧",
         "\t[超濃起司]我，以及香蕉人曾經的夢想就是",
         {
@@ -520,14 +1688,78 @@ main.floors.mysterious_banana_3=
             "text": "source line 446: 下一句使用大字"
         },
         "\t[超濃起司]創造一個只屬於獸控的世界！！",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]欸...為什麼",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[超濃起司]新人是不會理解的罷，在這世界被排擠，被唾棄，只能在角落聚集取暖的痛苦",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]奇多...你還在追逐那個夢想",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[超濃起司]閉嘴，你這個叛徒，你知道有多少人是為了這個夢想才聚集到你身邊的嗎？",
         "\t[超濃起司]你就這樣說放棄就放棄，我是不會接受的",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]即便你知道實現夢想的過程會讓伊布們感到痛苦也要繼續嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[超濃起司]為了達成宿願，那些都是必要的犧牲，我會在新世界補償他們的",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]夠了，奇多，把水伊布還給我",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[超濃起司]如果你想要，那就自己來拿",
         {
             "type": "comment",
@@ -538,14 +1770,62 @@ main.floors.mysterious_banana_3=
         "Vaporeon、Jolteon、Flareon、Espeon、Umbreon、Leafeon、Glaceon、Sylveon",
         "Forest Fairy",
         "Billy Herrington",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]Henshin!",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "自由頭巾也緊隨其後發動了特效",
         "It's Freeeeeee Time!!!",
         "BBBBanana Guyyyyy",
         "Ricardo Milos!",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]居然是同時變身，嗚，好刺眼，但不足以干擾我看現場特攝的決心",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "一陣白光閃過，梗平的眼前出現了",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]終於能看到讓我期待已久的皮套大戰了嗎！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 471: CG：森之妖精與香蕉君對峙 出現"
@@ -564,47 +1844,351 @@ main.floors.mysterious_banana_3=
         "\t[森之妖精]不過，在我創造新世界之前，就讓我用這份偉力讓你為曾經的錯誤悔改吧",
         "\t[森之妖精]七彩昇華齊聚鼎 - 妖♂精♂光♂束",
         "妖精光束擊中了神秘香蕉人的所在位置，並揚起了煙霧",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]甚麼，神秘香蕉人！沒事吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]不對，有煙無傷定律，他肯定沒事",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "正如梗平所說，神秘香蕉人在千鈞一髮之際拔出了聖劍嘎裡棒並擋下了光束",
         "\t[森之妖精]你居然重新拔出了聖劍，但無所謂，即便聖劍也不是我森之妖精力量的對手",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[香蕉君]口氣♂真大，等我把你打倒後就讓你自己♂掰開(腰帶)向我投降",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[香蕉君](梗平少年，就拜託你了)",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "拿著香蕉拉珠和起司巨棒的兩個肌肉男開始了今天動地的悶熱摔♂角",
         "而神秘香蕉人給了梗平的眼神，只讓他感到後門一緊，並沒有傳遞到什麼想法",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]等等，這是要在下幹嘛嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]在下真的不太想加入那個空間一起摔角...怎麼辦好呢",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "分歧選項",
         "1.只是看著",
         "2.嘗試用用看伊布腰帶",
         "1",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]總之只是旁觀就好吧，神秘香蕉人會自己處理完的",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]OMO",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "隨著時間過去，神秘香蕉人逐漸落入下風",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]嗚挖阿阿阿！！！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]感受到了嗎？這份被你放棄的森之妖精的力量，哈哈哈哈哈！",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]可...可惡，到底為什麼",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]梗平少年，為什麼你只是看著，難道你背叛了嗎！？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "梗平不語，只是看著",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]......",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平](不是，在下只是不想加入那個悶熱的戰鬥而已，你怎麼輸了阿)",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]喔？你也對新世界感興趣嗎？",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]等一下，這是誤會",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]沒事，我懂得，你是在隱忍吧，為了創造新世界而蟄伏在香蕉人身邊",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]不！不是！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]不需要害羞，你做得很好，我會帶你前往新世界的，和我，一 起 去",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]快，停下來！拜託！！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]BOY♂NEXT♂DOOR",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]你不要過來阿阿阿阿阿！！！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "BE：精神錯亂而死",
         {
             "type": "comment",
             "text": "source line 518: 返回分歧選項"
         },
         "2",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]總之先試試這個腰帶吧，裝上來試試看...",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "伊布腰帶開始發出提示音",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]痾，Henshin?",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "候選映射（待人工確認）：目標是成為寶可夢大師最後10秒 → BGMRun.mp3；依變身／動作高潮情境推定。"
@@ -615,8 +2199,40 @@ main.floors.mysterious_banana_3=
             "keep": true
         },
         "Eevee Mode",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]這是甚麼鬼阿，只是加上尾巴而已",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]這樣真的能幫忙嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 529: 劇情推進"
@@ -638,18 +2254,114 @@ main.floors.mysterious_banana_3=
             "keep": true
         },
         "就在梗平成功變身的當下，神秘香蕉人被打飛了",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]嗚挖阿阿阿！！！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]神秘香蕉人，不！！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]哈哈哈，你也不過如此，打倒你之後已經沒有人能阻止我了",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]給在下等等，就由我路人耿平來阻止你",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]喔？就由你和那個腰帶嗎，別笑死我了",
         "\t[森之妖精]伊布腰帶不過是個初代試作品罷了，初代比較強這種事只會在幻想裡出現",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平](可惡，他說的對，即便變身了在下也沒感受到甚麼力量，但是...)",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]哼，那又如何，英雄可不能臨陣脫逃阿",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]我敬你的勇氣，就這樣化成灰吧",
         "\t[森之妖精]七彩昇華齊聚鼎 - 妖♂精♂光♂束",
         "一道光束朝梗平飛來",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]梗平少年！！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[伊布梗平]嗚喔喔喔喔喔！！！",
         "然而光束並沒有打中梗平，而是被吸收到了伊布腰帶中",
         "突然間，梗平全身發出了白光",
@@ -661,22 +2373,166 @@ main.floors.mysterious_banana_3=
             "text": "source line 553: 梗平的立繪切換為梗平(肌肉)"
         },
         "恭喜！梗平進化為肌肉♂妖精 梗平了",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]肌肉在閃閃發光！！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森♂之妖精]怎麼可能，為什麼會發生這種事！",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]我懂了！我們沒有在一般伊布身上找到任何力量的原因",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]當初森之妖精 王·比利就是打算把伊布作為核心匯聚力量",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]也就是說梗平少年現在才是完全體，奇多，你已經輸了！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]我才不信有這麼巧合的事，一發不行就連續發射",
         "\t[森之妖精]妖♂精♂光♂束 妖♂精♂光♂束 妖♂精♂光♂束",
         "三發光束打在肌肉♂梗平身上，但他毫髮無損",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]完全沒有傷害，而且感覺...我能夠做到同樣的事",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]吃我的，梗平♂光線！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]嗚，可惡",
         "\t[森之妖精]妖♂精♂光♂束阿阿阿！",
         "森之妖精對波輸了的同時被打退一段距離，雖說梗平佔據上風，但對方終究也只是小傷而已",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]這個，難道說是伊布的可能性之光！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]可能性光束只要有一點可能性就能成真，就算用的腰帶是輸出比較低的初版腰帶也沒關係",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]所以才能及時發波並打退妖♂精♂光♂束嗎！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[森之妖精]就算真的發生這種反轉又怎麼樣",
         "\t[森之妖精]這點傷害，是打不倒我的，我還是可以創造只屬於我們的新世界！",
         "\t[肌肉梗平]沒錯，所以，就用這個來收尾吧",
@@ -687,7 +2543,23 @@ main.floors.mysterious_banana_3=
         "伊布腰帶發出了提示音",
         "FULL POWER",
         "Prepare",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]撒，來細數你的罪惡吧！！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[梗平&伊布腰帶提示音]RIDERRRR KICKKKKK!!!",
         {
             "type": "comment",
@@ -741,35 +2613,291 @@ main.floors.mysterious_banana_3=
         "\t[梗平]這樣就，結束了",
         "梗平的驚天兩踢使得超濃起司被解除變身，神秘香蕉人確認戰鬥結束也走了過來",
         "\t[神秘香蕉人]謝謝你，梗平少年，多虧了你才能阻止奇多的計畫",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]不用客氣，倒是抱歉，伊布腰帶被我弄壞了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]沒事，那只是個試作品而已，真正的伊布不在裡面",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]那水伊布呢？我們快去找他們吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 598: CG：無限伊布手套 出現"
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]已經找到了，就在這裡呢",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source line 600: CG：無限伊布手套 消失"
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]接下來只要解放水伊布並放生其他伊布，這件事就結束了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]你說得......",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[超濃起司]香蕉...人......",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]還沒倒下嗎！？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]不用擔心，梗平少年，他已經喪失戰鬥力了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[超濃起司]結束...我吧...",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]我不會這麼做的，只要奇多你悔過就好",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[超濃起司]呵，我才...不要...",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]為什麼你不理解，你不也曾是個愛好動物的獸控嗎？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[超濃起司]這不是...從你...開始的...故事嗎......",
         "\t[超濃起司]一個人...逃跑...太卑鄙了......",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]......",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]神秘香蕉人...",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]梗平少年，再次謝謝你，最後只要把伊布們放生就結束了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]請你在一切塵埃落定後再來公園一趟，只是...在此之前",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "banana_sad.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[神秘香蕉人]讓我和曾經的朋友說說話吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]恩，下次見",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "comment",
             "text": "source: project/story/神秘香蕉人.txt lines 332-end; full transcription"

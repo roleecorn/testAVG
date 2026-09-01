@@ -1152,7 +1152,23 @@ main.floors.lanxiang_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]是嗎…那…有緣再見？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -1172,7 +1188,23 @@ main.floors.lanxiang_4=
             "opacity": 1,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "lanxiang_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[藍湘]嗯！有緣再見！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "hideImage",
             "code": 30,

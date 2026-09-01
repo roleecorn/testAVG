@@ -41,27 +41,47 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "公園阿，方便清場和拍攝"
+          "text": "公園阿，方便清場和拍攝",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "還有足夠的空間打動作戲，可以說公園就是特攝作品的聖地阿"
+          "text": "還有足夠的空間打動作戲，可以說公園就是特攝作品的聖地阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "按照套路，接下來肯定會從草叢跳出邪惡組織的怪人"
+          "text": "按照套路，接下來肯定會從草叢跳出邪惡組織的怪人",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "然後在老百姓被傷害的當下，假面騎士颯爽登場"
+          "text": "然後在老百姓被傷害的當下，假面騎士颯爽登場",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒錯，事件會發生在現在，就在這裡！"
+          "text": "沒錯，事件會發生在現在，就在這裡！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -78,12 +98,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗯！？甚麼...難道說"
+          "text": "嗯！？甚麼...難道說",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "怪人阿，放馬過來！！"
+          "text": "怪人阿，放馬過來！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -116,7 +144,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "...這是甚麼？"
+          "text": "...這是甚麼？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -126,12 +158,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "什麼，為什麼這種地方會有水伊布"
+          "text": "什麼，為什麼這種地方會有水伊布",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不算了，是我太神經質了，果然事件是不會隨便發生的阿"
+          "text": "不算了，是我太神經質了，果然事件是不會隨便發生的阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -149,7 +189,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "阿阿阿！！！"
+          "text": "阿阿阿！！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -169,47 +213,83 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那個，不好意思，我還以為你是怪人"
+          "text": "那個，不好意思，我還以為你是怪人",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "沒甚麼，不如說怪人也是個不錯的稱呼呢"
+          "text": "沒甚麼，不如說怪人也是個不錯的稱呼呢",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "欸..."
+          "text": "欸...",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(怎麼回事，這傢伙有點怪怪的)"
+          "text": "(怎麼回事，這傢伙有點怪怪的)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "總之先問候一下，我是那邊水伊布的主人，叫我神秘香蕉人就好"
+          "text": "總之先問候一下，我是那邊水伊布的主人，叫我神秘香蕉人就好",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喔喔...在下是梗平，你好"
+          "text": "喔喔...在下是梗平，你好",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "請多指教，梗平少年"
+          "text": "請多指教，梗平少年",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "對了，你還沒回答我呢"
+          "text": "對了，你還沒回答我呢",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "所以...你知道嗎"
+          "text": "所以...你知道嗎",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "narration",
@@ -230,12 +310,20 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "這樣啊，沒想到能在這裡遇到同好"
+          "text": "這樣啊，沒想到能在這裡遇到同好",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "來吧，和我一起前往天堂吧"
+          "text": "來吧，和我一起前往天堂吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "narration",
@@ -258,12 +346,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等等，你們要做甚麼，不...不要！"
+          "text": "等等，你們要做甚麼，不...不要！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "救命呀阿阿阿！！！"
+          "text": "救命呀阿阿阿！！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -292,22 +388,38 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "原來只是路過嗎？"
+          "text": "原來只是路過嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "但沒關係，相逢即是有緣，如果你有興趣的話，下次再來吧"
+          "text": "但沒關係，相逢即是有緣，如果你有興趣的話，下次再來吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我帶你進入 新♂世♂界"
+          "text": "我帶你進入 新♂世♂界",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "甚麼鬼"
+          "text": "甚麼鬼",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -331,12 +443,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒想到會遇到這種事，雖然說想遇到事件但不是這種類型的阿"
+          "text": "沒想到會遇到這種事，雖然說想遇到事件但不是這種類型的阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "為了安全起見，我還是盡量遠離公園吧"
+          "text": "為了安全起見，我還是盡量遠離公園吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -350,12 +470,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "！難道說真的發生事件了嗎？"
+          "text": "！難道說真的發生事件了嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等等，我來了！"
+          "text": "等等，我來了！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -379,7 +507,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喂！你沒事吧，到底發生甚麼事了"
+          "text": "喂！你沒事吧，到底發生甚麼事了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -397,17 +529,29 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "可惡，發生了甚麼事"
+          "text": "可惡，發生了甚麼事",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "神秘香蕉人，你還好嗎？"
+          "text": "神秘香蕉人，你還好嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我在這裡...請幫幫我"
+          "text": "我在這裡...請幫幫我",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "background.show",
@@ -427,62 +571,110 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "阿...你是剛剛的..."
+          "text": "阿...你是剛剛的...",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒錯，我叫梗平，只是個路過的一般人，給我記好了"
+          "text": "沒錯，我叫梗平，只是個路過的一般人，給我記好了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "所以，你需要幫助嗎？"
+          "text": "所以，你需要幫助嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "水伊布被擄走了...明明他是...(啪"
+          "text": "水伊布被擄走了...明明他是...(啪",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "痾，你為什麼打我？連我爸爸都沒有打過我"
+          "text": "痾，你為什麼打我？連我爸爸都沒有打過我",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "吵死了，幾萬字的背景故事根本不重要"
+          "text": "吵死了，幾萬字的背景故事根本不重要",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "水伊布被擄走了對吧，告訴我，你需要幫助嗎？"
+          "text": "水伊布被擄走了對吧，告訴我，你需要幫助嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "嗚...恩，請幫幫我吧"
+          "text": "嗚...恩，請幫幫我吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好，告訴我你需要甚麼幫助"
+          "text": "好，告訴我你需要甚麼幫助",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "請協助我找回被擄走的水伊布，為此我需要力量，請幫我找來一根香蕉吧"
+          "text": "請協助我找回被擄走的水伊布，為此我需要力量，請幫我找來一根香蕉吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "公園裡就有香蕉樹，拜託你了"
+          "text": "公園裡就有香蕉樹，拜託你了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好，我必會完成"
+          "text": "好，我必會完成",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "background.show",
@@ -502,12 +694,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "恩，雖然是找了找，但沒想到公園裡還真的有香蕉樹"
+          "text": "恩，雖然是找了找，但沒想到公園裡還真的有香蕉樹",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下看看..."
+          "text": "在下看看...",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -537,17 +737,29 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "就是這個吧...嗯？"
+          "text": "就是這個吧...嗯？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等等，這不是芭蕉嗎？神秘香蕉人要的是香蕉阿"
+          "text": "等等，這不是芭蕉嗎？神秘香蕉人要的是香蕉阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "算了，都拔下來就吃掉吧"
+          "text": "算了，都拔下來就吃掉吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -556,22 +768,38 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "恩，味道還不錯，甜甜的"
+          "text": "恩，味道還不錯，甜甜的",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不過全身有點發癢...好癢"
+          "text": "不過全身有點發癢...好癢",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好癢好癢好癢好癢癢癢癢癢癢..."
+          "text": "好癢好癢好癢好癢癢癢癢癢癢...",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "...癢，好吃"
+          "text": "...癢，好吃",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -588,12 +816,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "就是這個吧"
+          "text": "就是這個吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不過這香蕉還真長阿，一般來說有這麼長的香蕉嗎？"
+          "text": "不過這香蕉還真長阿，一般來說有這麼長的香蕉嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -602,12 +838,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "......"
+          "text": "......",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "還是當作沒看到吧，恩"
+          "text": "還是當作沒看到吧，恩",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -620,22 +864,38 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "就是這個吧...個頭拉"
+          "text": "就是這個吧...個頭拉",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這不是新阿姆斯特朗旋風噴射阿姆斯特朗炮嗎？完成度真高阿喂"
+          "text": "這不是新阿姆斯特朗旋風噴射阿姆斯特朗炮嗎？完成度真高阿喂",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "為什麼會有香蕉長成這個樣子啦"
+          "text": "為什麼會有香蕉長成這個樣子啦",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不過那裏的洞..."
+          "text": "不過那裏的洞...",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -644,7 +904,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這是甚麼...好討厭的感覺阿阿阿！！！"
+          "text": "這是甚麼...好討厭的感覺阿阿阿！！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -672,27 +936,47 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "神秘香蕉人，在下拿來了，就是這個對吧"
+          "text": "神秘香蕉人，在下拿來了，就是這個對吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "沒錯，這就是我需要的"
+          "text": "沒錯，這就是我需要的",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "謝謝你，梗平少年，這樣就可以奪回水伊布了"
+          "text": "謝謝你，梗平少年，這樣就可以奪回水伊布了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "擄走水伊布的人，你已經有線索了嗎？"
+          "text": "擄走水伊布的人，你已經有線索了嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "恩，他們襲擊我的時候掉了點東西"
+          "text": "恩，他們襲擊我的時候掉了點東西",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "narration",
@@ -701,17 +985,29 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "結果就算退休了，從前的恩怨也不會消失嗎..."
+          "text": "結果就算退休了，從前的恩怨也不會消失嗎...",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "梗平少年，如果你還願意幫我，請在隔天前來一趟"
+          "text": "梗平少年，如果你還願意幫我，請在隔天前來一趟",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "在此之前...我需要去見幾個人"
+          "text": "在此之前...我需要去見幾個人",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "comment",
@@ -774,22 +1070,38 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "梗平少年，你來了阿"
+          "text": "梗平少年，你來了阿",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "當然，英雄可不能臨陣脫逃阿"
+          "text": "當然，英雄可不能臨陣脫逃阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那麼，你找到甚麼信息了嗎？"
+          "text": "那麼，你找到甚麼信息了嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "當然，先上車再說吧"
+          "text": "當然，先上車再說吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "comment",
@@ -809,27 +1121,47 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "根據我得到的信息，奪去伊布的人恐怕是與我有舊怨的兩人"
+          "text": "根據我得到的信息，奪去伊布的人恐怕是與我有舊怨的兩人",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我想請你幫忙對付其中一位，能拜託你嗎？"
+          "text": "我想請你幫忙對付其中一位，能拜託你嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒問題，交給我吧"
+          "text": "沒問題，交給我吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "那一位是個十分擅長程式咒法的咒術師，還請務必小心"
+          "text": "那一位是個十分擅長程式咒法的咒術師，還請務必小心",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(為什麼會有奇幻戰鬥作品的要素拉)"
+          "text": "(為什麼會有奇幻戰鬥作品的要素拉)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -839,7 +1171,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "好，我們下車吧。梗平少年，還請務必小心"
+          "text": "好，我們下車吧。梗平少年，還請務必小心",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "narration",
@@ -848,32 +1184,56 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "就是這裡了，進去吧"
+          "text": "就是這裡了，進去吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "廢棄工廠阿，還挺浪漫"
+          "text": "廢棄工廠阿，還挺浪漫",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "對在下來說就像是來到了主題公園一樣，真令人興奮"
+          "text": "對在下來說就像是來到了主題公園一樣，真令人興奮",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "興奮很好，但對方絕非等閒之輩，別大意"
+          "text": "興奮很好，但對方絕非等閒之輩，別大意",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "大門就在那裏，四周也無埋伏，我們直接突入吧"
+          "text": "大門就在那裏，四周也無埋伏，我們直接突入吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "好！"
+          "text": "好！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "background.show",
@@ -902,7 +1262,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "不過就到此為止了"
+          "text": "不過就到此為止了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -950,12 +1314,20 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "貓科雙人組，沒想到還會再見到你們..."
+          "text": "貓科雙人組，沒想到還會再見到你們...",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喂，怪人，你們究竟把水伊布藏到哪去了"
+          "text": "喂，怪人，你們究竟把水伊布藏到哪去了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -970,27 +1342,47 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "果然是約定俗成的戰鬥回嗎"
+          "text": "果然是約定俗成的戰鬥回嗎",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "那麼，梗平少年…"
+          "text": "那麼，梗平少年…",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下知道，Scratch就交給在下吧"
+          "text": "在下知道，Scratch就交給在下吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "拜託你了"
+          "text": "拜託你了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "超酷印度豹，吃我聖劍EX嘎裡棒吧Oraaaaa!!"
+          "text": "超酷印度豹，吃我聖劍EX嘎裡棒吧Oraaaaa!!",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1000,12 +1392,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒錯，像素怪人"
+          "text": "沒錯，像素怪人",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我是路過的一般人梗平，給我記好了！"
+          "text": "我是路過的一般人梗平，給我記好了！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1019,12 +1419,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "什麼！？"
+          "text": "什麼！？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "（連續的短瞬移，哪來的投射咒法啊！）"
+          "text": "（連續的短瞬移，哪來的投射咒法啊！）",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1038,17 +1446,29 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗚挖阿阿！！！"
+          "text": "嗚挖阿阿！！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(可惡，眼睛跟得上但來不及反應)"
+          "text": "(可惡，眼睛跟得上但來不及反應)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(思考，快思考阿梗平，對方有甚麼弱點...)"
+          "text": "(思考，快思考阿梗平，對方有甚麼弱點...)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -1074,7 +1494,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "呼...呼哈哈哈！！"
+          "text": "呼...呼哈哈哈！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1084,7 +1508,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不，在下已經想到解決你的方法了"
+          "text": "不，在下已經想到解決你的方法了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1098,12 +1526,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(沒錯，那個腰帶肯定就是他的能力來源)"
+          "text": "(沒錯，那個腰帶肯定就是他的能力來源)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(只要我能把它拔下來的話！)"
+          "text": "(只要我能把它拔下來的話！)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1113,7 +1549,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒錯，所以現在在下要靠近你了，給我等著！"
+          "text": "沒錯，所以現在在下要靠近你了，給我等著！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1123,7 +1563,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不靠近你，就沒辦法痛揍你一頓阿"
+          "text": "不靠近你，就沒辦法痛揍你一頓阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1149,12 +1593,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(沒有遠程武器，要是不能接觸到我確實拿他沒辦法)"
+          "text": "(沒有遠程武器，要是不能接觸到我確實拿他沒辦法)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(那只要讓他自己接觸到在下就好了！)"
+          "text": "(那只要讓他自己接觸到在下就好了！)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1174,7 +1626,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗚！！！"
+          "text": "嗚！！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -1187,12 +1643,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(如果能找到規律的話，就可以等他自己過來了)"
+          "text": "(如果能找到規律的話，就可以等他自己過來了)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(前後左右前後左右...現在只要忍耐)"
+          "text": "(前後左右前後左右...現在只要忍耐)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1202,12 +1666,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(就是這裡！)"
+          "text": "(就是這裡！)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "吃在下的，Force Stop Punch 阿！！！"
+          "text": "吃在下的，Force Stop Punch 阿！！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -1229,7 +1701,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "哼，這樣你就不能再維持那個速度了"
+          "text": "哼，這樣你就不能再維持那個速度了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1247,7 +1723,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "說起來撿腰帶事件也是經典事件阿...這樣的話"
+          "text": "說起來撿腰帶事件也是經典事件阿...這樣的話",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -1272,7 +1752,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "和你打的話，用這條比較好吧"
+          "text": "和你打的話，用這條比較好吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1282,7 +1766,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "Henshin！"
+          "text": "Henshin！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -1303,37 +1791,65 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "......"
+          "text": "......",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗯？怎麼甚麼事都沒有發生"
+          "text": "嗯？怎麼甚麼事都沒有發生",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗯？怎麼甚麼事都沒有發生"
+          "text": "嗯？怎麼甚麼事都沒有發生",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗯？怎麼甚麼事都沒有發生"
+          "text": "嗯？怎麼甚麼事都沒有發生",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗯？怎麼甚麼事都沒有發生"
+          "text": "嗯？怎麼甚麼事都沒有發生",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗯？怎麼甚麼事都沒有發生"
+          "text": "嗯？怎麼甚麼事都沒有發生",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗯？怎麼甚麼事都沒有發生"
+          "text": "嗯？怎麼甚麼事都沒有發生",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -1359,12 +1875,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "和你打的話，用這條比較好吧"
+          "text": "和你打的話，用這條比較好吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "Henshin！"
+          "text": "Henshin！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -1390,12 +1914,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喔喔！全身充滿了力量"
+          "text": "喔喔！全身充滿了力量",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "如果是現在的話肯定就能做到！"
+          "text": "如果是現在的話肯定就能做到！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -1421,7 +1953,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "RIDER~~ KICK!!!"
+          "text": "RIDER~~ KICK!!!",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -1438,12 +1974,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "真是一場酣暢淋漓的戰鬥阿，可惜腰帶也跟著消失了"
+          "text": "真是一場酣暢淋漓的戰鬥阿，可惜腰帶也跟著消失了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不，這種八成只是期間限定的臨時腰帶吧，遲早會找到只屬於在下的腰帶的"
+          "text": "不，這種八成只是期間限定的臨時腰帶吧，遲早會找到只屬於在下的腰帶的",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -1452,22 +1996,38 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "梗平少年，你沒事吧"
+          "text": "梗平少年，你沒事吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒事，你打倒超酷印度豹了？"
+          "text": "沒事，你打倒超酷印度豹了？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "沒錯，我比退休前弱了不少所以多花了點時間，但還是在聖劍的時限到前打倒他了"
+          "text": "沒錯，我比退休前弱了不少所以多花了點時間，但還是在聖劍的時限到前打倒他了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "聖劍EX嘎裡棒暫時喪失了力量，如果還有同夥就不好了，我們趕緊撤退吧"
+          "text": "聖劍EX嘎裡棒暫時喪失了力量，如果還有同夥就不好了，我們趕緊撤退吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "narration",
@@ -1480,42 +2040,74 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(原來那東西還會縮小的嗎？)"
+          "text": "(原來那東西還會縮小的嗎？)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "話說，我不小心把敵人踢飛了，沒辦法審問，抱歉阿"
+          "text": "話說，我不小心把敵人踢飛了，沒辦法審問，抱歉阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "不用擔心，我已經從超酷印度豹口中得知了水伊布被綁的地點"
+          "text": "不用擔心，我已經從超酷印度豹口中得知了水伊布被綁的地點",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "只是為了取回水伊布，我得去取回曾被我封印的裝備"
+          "text": "只是為了取回水伊布，我得去取回曾被我封印的裝備",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "需要在下幫忙嗎？"
+          "text": "需要在下幫忙嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "不，這件事得我自己來"
+          "text": "不，這件事得我自己來",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "感謝你，梗平少年，我們明天公園見"
+          "text": "感謝你，梗平少年，我們明天公園見",
+          "portrait": {
+            "code": 20,
+            "image": "banana_smile.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喔"
+          "text": "喔",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -1586,12 +2178,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "神秘香蕉人，在下來了"
+          "text": "神秘香蕉人，在下來了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "好，梗平少年，隨我來吧"
+          "text": "好，梗平少年，隨我來吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "narration",
@@ -1600,52 +2200,92 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我們的敵人，是起司有限公司"
+          "text": "我們的敵人，是起司有限公司",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "起司有限公司，不是起司股份有限公司嗎，真是奇怪的名字"
+          "text": "起司有限公司，不是起司股份有限公司嗎，真是奇怪的名字",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我們是要前往他們的辦公大樓嗎？"
+          "text": "我們是要前往他們的辦公大樓嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "沒錯，從超酷印度豹口中得知後，我又去調查了一下"
+          "text": "沒錯，從超酷印度豹口中得知後，我又去調查了一下",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "確實到有人在那天看到水伊布被抱進去的身影"
+          "text": "確實到有人在那天看到水伊布被抱進去的身影",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "沒想到曾被我拋棄的過去會追上來"
+          "text": "沒想到曾被我拋棄的過去會追上來",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "他們是犯人對吧，原來你知道那家公司嗎？"
+          "text": "他們是犯人對吧，原來你知道那家公司嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "當然，畢竟我可曾是那家公司的CEO阿"
+          "text": "當然，畢竟我可曾是那家公司的CEO阿",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "甚麼！？那為什麼會..."
+          "text": "甚麼！？那為什麼會...",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "之後再說吧，我們到了"
+          "text": "之後再說吧，我們到了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "narration",
@@ -1654,17 +2294,29 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "什麼鬼！在下之前都沒發現這裡還有棟大樓，應該說為什麼這裡會有棟大樓？？？"
+          "text": "什麼鬼！在下之前都沒發現這裡還有棟大樓，應該說為什麼這裡會有棟大樓？？？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "現代科技，很厲害吧"
+          "text": "現代科技，很厲害吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "對了，梗平少年，這個先交給你"
+          "text": "對了，梗平少年，這個先交給你",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "comment",
@@ -1697,32 +2349,56 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "這是我曾經用過的腰帶，我已經無法再使用，就交給你了"
+          "text": "這是我曾經用過的腰帶，我已經無法再使用，就交給你了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喔喔！是傳承腰帶的事件"
+          "text": "喔喔！是傳承腰帶的事件",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "謝拉，話說為什麼你沒辦法用，果然腰帶是有意志的嗎！"
+          "text": "謝拉，話說為什麼你沒辦法用，果然腰帶是有意志的嗎！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "不，只是因為我變胖了繫不上"
+          "text": "不，只是因為我變胖了繫不上",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "痾，總感覺瞬間Low掉了"
+          "text": "痾，總感覺瞬間Low掉了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "順帶一提不用擔心我，我有聖劍嘎裡棒和這個變身頭巾"
+          "text": "順帶一提不用擔心我，我有聖劍嘎裡棒和這個變身頭巾",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "narration",
@@ -1731,7 +2407,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "感覺更Low了阿喂！"
+          "text": "感覺更Low了阿喂！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -1755,27 +2435,47 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "門外一個警衛都沒有，地上還很髒亂"
+          "text": "門外一個警衛都沒有，地上還很髒亂",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "真的是這裡嗎？不，也有非法組織被佔領的可能性"
+          "text": "真的是這裡嗎？不，也有非法組織被佔領的可能性",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "一定是這裡，我感受到了水伊布的氣息"
+          "text": "一定是這裡，我感受到了水伊布的氣息",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "走吧！"
+          "text": "走吧！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "欸，等等我啊！"
+          "text": "欸，等等我啊！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "background.show",
@@ -1795,12 +2495,20 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "水伊布！！"
+          "text": "水伊布！！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "...怎麼甚麼人都沒有"
+          "text": "...怎麼甚麼人都沒有",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -1823,7 +2531,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "這個聲音，是奇多嗎！"
+          "text": "這個聲音，是奇多嗎！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "comment",
@@ -1851,22 +2563,38 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "可惡！"
+          "text": "可惡！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "神秘香蕉人，你認識他嗎？"
+          "text": "神秘香蕉人，你認識他嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "熟的不得了，可惡，為什麼是你"
+          "text": "熟的不得了，可惡，為什麼是你",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "先走吧，我在電梯裡跟你說明"
+          "text": "先走吧，我在電梯裡跟你說明",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "comment",
@@ -1890,127 +2618,227 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "首先，你知道伊布嗎？"
+          "text": "首先，你知道伊布嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "恩，總之是一種寶可夢對吧"
+          "text": "恩，總之是一種寶可夢對吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "有八種進化型態，加上基礎型態是九種"
+          "text": "有八種進化型態，加上基礎型態是九種",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "是，但這並不是全部"
+          "text": "是，但這並不是全部",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "這個世界上的伊布是獨一無二的，每種都只有一隻"
+          "text": "這個世界上的伊布是獨一無二的，每種都只有一隻",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "據傳他們由寶可夢森林的獸控妖精 王·比利，簡稱森之妖精所飼養，並在其死後各自傳承了一部份力量"
+          "text": "據傳他們由寶可夢森林的獸控妖精 王·比利，簡稱森之妖精所飼養，並在其死後各自傳承了一部份力量",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "只要八隻匯聚在一起就能使用妖精王力量的一部份"
+          "text": "只要八隻匯聚在一起就能使用妖精王力量的一部份",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "哪來的七龍珠啊！"
+          "text": "哪來的七龍珠啊！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等等，也就是說你曾經收集過嗎？"
+          "text": "等等，也就是說你曾經收集過嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "沒錯，這家公司就是我創立來搜集伊布的"
+          "text": "沒錯，這家公司就是我創立來搜集伊布的",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我們當時包含水伊布在內蒐集了一半，雖然從一般伊布上沒發現，但除此之外的伊布體內都發現了力量"
+          "text": "我們當時包含水伊布在內蒐集了一半，雖然從一般伊布上沒發現，但除此之外的伊布體內都發現了力量",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "公司上下都很興奮，認為妖精王之力已經勢在必得"
+          "text": "公司上下都很興奮，認為妖精王之力已經勢在必得",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "開發班甚至已經以伊布腰帶為首開發出了多種力量腰帶"
+          "text": "開發班甚至已經以伊布腰帶為首開發出了多種力量腰帶",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "但是，公司最終變成了這個樣子，你也跑去住公園"
+          "text": "但是，公司最終變成了這個樣子，你也跑去住公園",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這就代表最後沒成功對吧"
+          "text": "這就代表最後沒成功對吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "說不成功其實不對，是我自己阻止的"
+          "text": "說不成功其實不對，是我自己阻止的",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "為什麼？難道聚集伊布會毀滅世界還是被惡人利用嗎"
+          "text": "為什麼？難道聚集伊布會毀滅世界還是被惡人利用嗎",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "應該說我只是意識到自己就是那個惡人吧..."
+          "text": "應該說我只是意識到自己就是那個惡人吧...",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "那個時候我終於從非洲大陸遠征回來，正要去找開發班組長討論進度的時候"
+          "text": "那個時候我終於從非洲大陸遠征回來，正要去找開發班組長討論進度的時候",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我剛好看到了被關在籠子裡實驗的伊布們，正想靠近觸摸的時候卻被月亮伊布威嚇了"
+          "text": "我剛好看到了被關在籠子裡實驗的伊布們，正想靠近觸摸的時候卻被月亮伊布威嚇了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我才發現妖精伊布的緞帶萎靡，水伊布的身體混卓，一般伊布奄奄一息"
+          "text": "我才發現妖精伊布的緞帶萎靡，水伊布的身體混卓，一般伊布奄奄一息",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "直到那時我才意識到自己所做的只是在剝削他們而已，簡直是獸控的恥辱..."
+          "text": "直到那時我才意識到自己所做的只是在剝削他們而已，簡直是獸控的恥辱...",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下懂了，所以你才解散了公司對吧"
+          "text": "在下懂了，所以你才解散了公司對吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "但現在又是怎麼回事，難道有其他人在蒐集伊布嗎？"
+          "text": "但現在又是怎麼回事，難道有其他人在蒐集伊布嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "不，當我說出緣由並嘗試解散公司時"
+          "text": "不，當我說出緣由並嘗試解散公司時",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "narration",
@@ -2019,42 +2847,74 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "也就是偷走水伊布的那些人嗎？"
+          "text": "也就是偷走水伊布的那些人嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "對，以公司二把手奇多為首加上貓科二人組以及其他人的貓派"
+          "text": "對，以公司二把手奇多為首加上貓科二人組以及其他人的貓派",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "為了展現各自的決心，解散和續行方進行了一場驚天動地的對決"
+          "text": "為了展現各自的決心，解散和續行方進行了一場驚天動地的對決",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "想必是一場酣暢淋漓的戰鬥吧"
+          "text": "想必是一場酣暢淋漓的戰鬥吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "沒錯，我們進行了三天三夜的神聖獸控問答大戰，最後只剩我站在場上奪得了勝利"
+          "text": "沒錯，我們進行了三天三夜的神聖獸控問答大戰，最後只剩我站在場上奪得了勝利",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下放棄吐槽了"
+          "text": "在下放棄吐槽了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "說到底你們拿到力量到底是想要達成甚麼願望阿"
+          "text": "說到底你們拿到力量到底是想要達成甚麼願望阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "那是..."
+          "text": "那是...",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "narration",
@@ -2068,7 +2928,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "想必奇多會親自跟你講，我們走吧"
+          "text": "想必奇多會親自跟你講，我們走吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "comment",
@@ -2088,7 +2952,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "為什麼一出電梯門就是更衣室阿"
+          "text": "為什麼一出電梯門就是更衣室阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -2106,7 +2974,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "好久不見了，奇多"
+          "text": "好久不見了，奇多",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "comment",
@@ -2125,7 +2997,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喂超濃起司，你到底想聚集伊布的力量幹嘛"
+          "text": "喂超濃起司，你到底想聚集伊布的力量幹嘛",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2135,12 +3011,20 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "這位是梗平少年，是位令人期待的獸控新人"
+          "text": "這位是梗平少年，是位令人期待的獸控新人",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不要瞎掰好嗎，在下只是來幫忙的"
+          "text": "不要瞎掰好嗎，在下只是來幫忙的",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2164,7 +3048,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "欸...為什麼"
+          "text": "欸...為什麼",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2174,7 +3062,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "奇多...你還在追逐那個夢想"
+          "text": "奇多...你還在追逐那個夢想",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2189,7 +3081,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "即便你知道實現夢想的過程會讓伊布們感到痛苦也要繼續嗎？"
+          "text": "即便你知道實現夢想的過程會讓伊布們感到痛苦也要繼續嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2199,7 +3095,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "夠了，奇多，把水伊布還給我"
+          "text": "夠了，奇多，把水伊布還給我",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2234,7 +3134,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "Henshin!"
+          "text": "Henshin!",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "narration",
@@ -2255,7 +3159,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "居然是同時變身，嗚，好刺眼，但不足以干擾我看現場特攝的決心"
+          "text": "居然是同時變身，嗚，好刺眼，但不足以干擾我看現場特攝的決心",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -2264,7 +3172,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "終於能看到讓我期待已久的皮套大戰了嗎！"
+          "text": "終於能看到讓我期待已久的皮套大戰了嗎！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -2309,12 +3221,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "甚麼，神秘香蕉人！沒事吧"
+          "text": "甚麼，神秘香蕉人！沒事吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不對，有煙無傷定律，他肯定沒事"
+          "text": "不對，有煙無傷定律，他肯定沒事",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -2328,12 +3248,20 @@
         {
           "kind": "dialogue",
           "speaker": "香蕉君",
-          "text": "口氣♂真大，等我把你打倒後就讓你自己♂掰開(腰帶)向我投降"
+          "text": "口氣♂真大，等我把你打倒後就讓你自己♂掰開(腰帶)向我投降",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "香蕉君",
-          "text": "(梗平少年，就拜託你了)"
+          "text": "(梗平少年，就拜託你了)",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "narration",
@@ -2346,12 +3274,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等等，這是要在下幹嘛嗎？"
+          "text": "等等，這是要在下幹嘛嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "在下真的不太想加入那個空間一起摔角...怎麼辦好呢"
+          "text": "在下真的不太想加入那個空間一起摔角...怎麼辦好呢",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -2372,12 +3308,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "總之只是旁觀就好吧，神秘香蕉人會自己處理完的"
+          "text": "總之只是旁觀就好吧，神秘香蕉人會自己處理完的",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "OMO"
+          "text": "OMO",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -2386,7 +3330,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "嗚挖阿阿阿！！！"
+          "text": "嗚挖阿阿阿！！！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2396,12 +3344,20 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "可...可惡，到底為什麼"
+          "text": "可...可惡，到底為什麼",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "梗平少年，為什麼你只是看著，難道你背叛了嗎！？"
+          "text": "梗平少年，為什麼你只是看著，難道你背叛了嗎！？",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "narration",
@@ -2410,12 +3366,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "......"
+          "text": "......",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(不是，在下只是不想加入那個悶熱的戰鬥而已，你怎麼輸了阿)"
+          "text": "(不是，在下只是不想加入那個悶熱的戰鬥而已，你怎麼輸了阿)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2425,7 +3389,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等一下，這是誤會"
+          "text": "等一下，這是誤會",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2435,7 +3403,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不！不是！"
+          "text": "不！不是！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2445,7 +3417,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "快，停下來！拜託！！"
+          "text": "快，停下來！拜託！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2455,7 +3431,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "你不要過來阿阿阿阿阿！！！"
+          "text": "你不要過來阿阿阿阿阿！！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -2472,7 +3452,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "總之先試試這個腰帶吧，裝上來試試看..."
+          "text": "總之先試試這個腰帶吧，裝上來試試看...",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -2481,7 +3465,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "痾，Henshin?"
+          "text": "痾，Henshin?",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -2499,12 +3487,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這是甚麼鬼阿，只是加上尾巴而已"
+          "text": "這是甚麼鬼阿，只是加上尾巴而已",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這樣真的能幫忙嗎？"
+          "text": "這樣真的能幫忙嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -2533,12 +3529,20 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "嗚挖阿阿阿！！！"
+          "text": "嗚挖阿阿阿！！！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "神秘香蕉人，不！！"
+          "text": "神秘香蕉人，不！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2548,7 +3552,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "給在下等等，就由我路人耿平來阻止你"
+          "text": "給在下等等，就由我路人耿平來阻止你",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2563,12 +3571,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(可惡，他說的對，即便變身了在下也沒感受到甚麼力量，但是...)"
+          "text": "(可惡，他說的對，即便變身了在下也沒感受到甚麼力量，但是...)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "哼，那又如何，英雄可不能臨陣脫逃阿"
+          "text": "哼，那又如何，英雄可不能臨陣脫逃阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2587,7 +3603,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "梗平少年！！"
+          "text": "梗平少年！！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2627,7 +3647,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "肌肉在閃閃發光！！"
+          "text": "肌肉在閃閃發光！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2637,17 +3661,29 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我懂了！我們沒有在一般伊布身上找到任何力量的原因"
+          "text": "我懂了！我們沒有在一般伊布身上找到任何力量的原因",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "當初森之妖精 王·比利就是打算把伊布作為核心匯聚力量"
+          "text": "當初森之妖精 王·比利就是打算把伊布作為核心匯聚力量",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "也就是說梗平少年現在才是完全體，奇多，你已經輸了！"
+          "text": "也就是說梗平少年現在才是完全體，奇多，你已經輸了！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2666,12 +3702,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "完全沒有傷害，而且感覺...我能夠做到同樣的事"
+          "text": "完全沒有傷害，而且感覺...我能夠做到同樣的事",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "吃我的，梗平♂光線！"
+          "text": "吃我的，梗平♂光線！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2690,17 +3734,29 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "這個，難道說是伊布的可能性之光！"
+          "text": "這個，難道說是伊布的可能性之光！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "可能性光束只要有一點可能性就能成真，就算用的腰帶是輸出比較低的初版腰帶也沒關係"
+          "text": "可能性光束只要有一點可能性就能成真，就算用的腰帶是輸出比較低的初版腰帶也沒關係",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "所以才能及時發波並打退妖♂精♂光♂束嗎！"
+          "text": "所以才能及時發波並打退妖♂精♂光♂束嗎！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2736,7 +3792,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "撒，來細數你的罪惡吧！！"
+          "text": "撒，來細數你的罪惡吧！！",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2829,17 +3889,29 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "不用客氣，倒是抱歉，伊布腰帶被我弄壞了"
+          "text": "不用客氣，倒是抱歉，伊布腰帶被我弄壞了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "沒事，那只是個試作品而已，真正的伊布不在裡面"
+          "text": "沒事，那只是個試作品而已，真正的伊布不在裡面",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "那水伊布呢？我們快去找他們吧"
+          "text": "那水伊布呢？我們快去找他們吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -2848,7 +3920,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "已經找到了，就在這裡呢"
+          "text": "已經找到了，就在這裡呢",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "comment",
@@ -2857,12 +3933,20 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "接下來只要解放水伊布並放生其他伊布，這件事就結束了"
+          "text": "接下來只要解放水伊布並放生其他伊布，這件事就結束了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "你說得......"
+          "text": "你說得......",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2872,12 +3956,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "還沒倒下嗎！？"
+          "text": "還沒倒下嗎！？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "不用擔心，梗平少年，他已經喪失戰鬥力了"
+          "text": "不用擔心，梗平少年，他已經喪失戰鬥力了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2887,7 +3979,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我不會這麼做的，只要奇多你悔過就好"
+          "text": "我不會這麼做的，只要奇多你悔過就好",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2897,7 +3993,11 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "為什麼你不理解，你不也曾是個愛好動物的獸控嗎？"
+          "text": "為什麼你不理解，你不也曾是個愛好動物的獸控嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -2912,32 +4012,56 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "......"
+          "text": "......",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "神秘香蕉人..."
+          "text": "神秘香蕉人...",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "梗平少年，再次謝謝你，最後只要把伊布們放生就結束了"
+          "text": "梗平少年，再次謝謝你，最後只要把伊布們放生就結束了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "請你在一切塵埃落定後再來公園一趟，只是...在此之前"
+          "text": "請你在一切塵埃落定後再來公園一趟，只是...在此之前",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "讓我和曾經的朋友說說話吧"
+          "text": "讓我和曾經的朋友說說話吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_sad.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "恩，下次見"
+          "text": "恩，下次見",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -2996,12 +4120,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "恩，不知道神秘香蕉人和超濃起司的恩怨究竟怎麼樣了"
+          "text": "恩，不知道神秘香蕉人和超濃起司的恩怨究竟怎麼樣了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "比起BE我還是比較喜歡HE阿，希望他們能好好談開"
+          "text": "比起BE我還是比較喜歡HE阿，希望他們能好好談開",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -3010,7 +4142,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "神秘香蕉人，在下來了"
+          "text": "神秘香蕉人，在下來了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3020,12 +4156,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "痾，超濃起司！你不是被我們打倒了嗎？"
+          "text": "痾，超濃起司！你不是被我們打倒了嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "雖然我現在啥都沒有就是個普通人，但如果你陰險卑鄙又小氣的話就來由我來做你的對手"
+          "text": "雖然我現在啥都沒有就是個普通人，但如果你陰險卑鄙又小氣的話就來由我來做你的對手",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3035,7 +4179,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我可沒有那麼天真，你這種反派就是會這麼說然後等掉進陷阱後從背後捅一刀的類型吧"
+          "text": "我可沒有那麼天真，你這種反派就是會這麼說然後等掉進陷阱後從背後捅一刀的類型吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3077,7 +4225,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "唉...好吧"
+          "text": "唉...好吧",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3087,7 +4239,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "為什麼，你不是拋棄那個名字了嗎？"
+          "text": "為什麼，你不是拋棄那個名字了嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3124,47 +4280,83 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "梗平少年，你如約而至了"
+          "text": "梗平少年，你如約而至了",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "沒錯，你處理完了嗎，還有這是怎麼回事？"
+          "text": "沒錯，你處理完了嗎，還有這是怎麼回事？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "這個嘛...只是我發現現在撿回夢想也不是甚麼壞事"
+          "text": "這個嘛...只是我發現現在撿回夢想也不是甚麼壞事",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我以為你是反對派，怎麼突然這麼說"
+          "text": "我以為你是反對派，怎麼突然這麼說",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "在你離開後，我和奇多重新聊了會，我才發覺自己辜負了那些把夢想託付給我的人"
+          "text": "在你離開後，我和奇多重新聊了會，我才發覺自己辜負了那些把夢想託付給我的人",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "所以，這次我想再來一次，不是用伊布們的力量，而是自己來建立新世界"
+          "text": "所以，這次我想再來一次，不是用伊布們的力量，而是自己來建立新世界",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "就從這座公園開始"
+          "text": "就從這座公園開始",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這樣啊，只要沒影響到別人是挺好的，不過拜託你別對路人作神祕問答了"
+          "text": "這樣啊，只要沒影響到別人是挺好的，不過拜託你別對路人作神祕問答了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "這個......"
+          "text": "這個......",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3179,7 +4371,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "等等，奇多，我明白了，再來我可不是甚麼獸控新人"
+          "text": "等等，奇多，我明白了，再來我可不是甚麼獸控新人",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3189,17 +4385,29 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "好了好了，梗平少年很為難的"
+          "text": "好了好了，梗平少年很為難的",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "抱歉，在牽扯到這件事上奇多有點容易變得偏執"
+          "text": "抱歉，在牽扯到這件事上奇多有點容易變得偏執",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我知道你也有自己的目標，所以這個，請拿著吧"
+          "text": "我知道你也有自己的目標，所以這個，請拿著吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "comment",
@@ -3232,37 +4440,65 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這個？不是一根普通的樹枝嗎？"
+          "text": "這個？不是一根普通的樹枝嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "你可以把他當成我們獸控間的信物來使用，不管發生甚麼事，只要折斷我們就會立刻趕過去幫你"
+          "text": "你可以把他當成我們獸控間的信物來使用，不管發生甚麼事，只要折斷我們就會立刻趕過去幫你",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "這樣啊，幫大忙了，感謝你"
+          "text": "這樣啊，幫大忙了，感謝你",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "不，要是沒有你幫忙我就不會重新拾起這個未完成的夢想以及與故友的友情"
+          "text": "不，要是沒有你幫忙我就不會重新拾起這個未完成的夢想以及與故友的友情",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "我才應該說謝謝你，梗平少年"
+          "text": "我才應該說謝謝你，梗平少年",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喔，不客氣，那掰拉，獸控香蕉人"
+          "text": "喔，不客氣，那掰拉，獸控香蕉人",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "好，我們隨時歡迎你，再見"
+          "text": "好，我們隨時歡迎你，再見",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "comment",
@@ -3276,12 +4512,20 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "這樣就好，我們已經被他幫得夠多了，他肯定也在追逐自己的夢想吧"
+          "text": "這樣就好，我們已經被他幫得夠多了，他肯定也在追逐自己的夢想吧",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "要是強行留他下來不就重蹈覆轍了嗎？再說，他可只是個路過的一般人啊"
+          "text": "要是強行留他下來不就重蹈覆轍了嗎？再說，他可只是個路過的一般人啊",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3291,12 +4535,20 @@
         {
           "kind": "dialogue",
           "speaker": "神秘香蕉人",
-          "text": "沒事，這次我們有很多時間慢慢去修正的"
+          "text": "沒事，這次我們有很多時間慢慢去修正的",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "獸控香蕉人",
-          "text": "好大家，來撿樹枝囉！"
+          "text": "好大家，來撿樹枝囉！",
+          "portrait": {
+            "code": 20,
+            "image": "banana_normal.png"
+          }
         },
         {
           "kind": "dialogue",
@@ -3321,17 +4573,29 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "......"
+          "text": "......",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "是包餃子結局阿~隨然並沒有討厭，但總感覺缺了甚麼"
+          "text": "是包餃子結局阿~隨然並沒有討厭，但總感覺缺了甚麼",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "象徵故事還沒結束的彩蛋，又或是新敵人的登場之類的"
+          "text": "象徵故事還沒結束的彩蛋，又或是新敵人的登場之類的",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "narration",
@@ -3340,12 +4604,20 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "嗯！？甚麼...難道說"
+          "text": "嗯！？甚麼...難道說",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "甚麼阿，是伊布阿"
+          "text": "甚麼阿，是伊布阿",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -3379,17 +4651,29 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "喔，你是想和我道謝嗎？"
+          "text": "喔，你是想和我道謝嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "我做的事沒甚麼大不了的，不過是做了一般人都能做到的事罷了"
+          "text": "我做的事沒甚麼大不了的，不過是做了一般人都能做到的事罷了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "哼，那麼，再見了"
+          "text": "哼，那麼，再見了",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",
@@ -3398,7 +4682,11 @@
         {
           "kind": "dialogue",
           "speaker": "梗平",
-          "text": "(現在的我，帥得要死阿)"
+          "text": "(現在的我，帥得要死阿)",
+          "portrait": {
+            "code": 20,
+            "image": "keng_neutral_portrait.png"
+          }
         },
         {
           "kind": "comment",

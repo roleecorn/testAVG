@@ -447,6 +447,17 @@ main.floors.idw_4=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]！",
         {
             "type": "hideImage",
@@ -570,6 +581,17 @@ main.floors.idw_4=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]才不怕！",
         {
             "type": "hideImage",
@@ -657,6 +679,17 @@ main.floors.idw_4=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]這是正常的！",
         {
@@ -747,6 +780,17 @@ main.floors.idw_4=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]！",
         {
@@ -1553,6 +1597,17 @@ main.floors.idw_4=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]為什麼！",
         {
             "type": "hideImage",
@@ -1640,6 +1695,17 @@ main.floors.idw_4=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]可是大聲比較快！",
         {
@@ -1762,6 +1828,17 @@ main.floors.idw_4=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]所以有效！",
         {
@@ -1940,6 +2017,17 @@ main.floors.idw_4=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]梗————平————！！！",
         {

@@ -360,7 +360,23 @@ main.floors.shirou_3=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]時間到了選手請各自就位，我很期待各位的作品。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -378,7 +394,23 @@ main.floors.shirou_3=
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]旁邊這位會作為本次比賽的安檢員，東方不敗。確保不會有人比賽而受傷。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -431,12 +463,108 @@ main.floors.shirou_3=
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]那麼接下來我會公佈本次賽程，比賽分為兩部分。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]第一部分會要求每組大致斷打出刀型交給我審核。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]雖說如此，這次比賽不會限制各位選手對刀型的自由度追求，其後淘汰一位進度最差的。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]畢竟在料理界，時間可是金錢，達不到標準的人沒有存在的價值。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]第二回合將會要求各位完善，以及打磨到完整的整把廚刀。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]然後每組派出一位代表，展示刀的鋒利程度以及對刀的使用。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "這時候，左邊傳來幾位少爺的嘲笑聲",
         {
             "type": "showImage",
@@ -612,9 +740,57 @@ main.floors.shirou_3=
         },
         "突然左邊傳來慘叫，連帶著爆炸聲以及燒焦的味道",
         "東方不敗閃身而過眨眼功夫便從評判席衝了向左邊的間隔",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]唐家三少小組因為用具故障直接被抬離場了。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]只是技術性調整，沒有人會在這次比賽中受到傷害。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]另外兩組可以直接進入第二階段。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "與此同時右邊間隔的咒罵聲越發起勁",
         "梗平只能大概聽到什麼券、什麼藝術、什麼家人呀犧牲呀",
         "還有什麼指令呀之類的不明所以的東西",
@@ -886,7 +1062,23 @@ main.floors.shirou_3=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]那麼請第一組的代表出來吧。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "蜘蛛巢相親相愛一家親的代表滿身傷痕，拿著一把日本武士郎刀出列",
         {
             "type": "showImage",
@@ -905,7 +1097,23 @@ main.floors.shirou_3=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]請蜘蛛巢相親相愛一家親小組的代表盡可能切開面前的豬肉，限時五分鐘。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 30,
@@ -1227,7 +1435,23 @@ main.floors.shirou_3=
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]那麼第二組的代表出來吧。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -1245,7 +1469,23 @@ main.floors.shirou_3=
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]不，只要你們能展現出這把刀能一刀切開豬肉就贏了。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -1263,9 +1503,41 @@ main.floors.shirou_3=
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]良秀的刀所斬過的食材，似乎無法正常的食用以及烹飪，並不能勝任作為廚刀。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "梗平輕輕一劃，豬肉被切開了",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_mapo_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[麻婆]那麼你就是優勝者了，恭喜。",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,

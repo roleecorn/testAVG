@@ -371,6 +371,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]歡迎光臨打喵！",
         {
             "type": "hideImage",
@@ -460,6 +471,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]啊，又被嚇到了！",
         {
             "type": "hideImage",
@@ -548,6 +570,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]有！",
         {
             "type": "hideImage",
@@ -619,6 +652,17 @@ main.floors.idw_2=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]今天要吃什麼！",
         {
@@ -810,6 +854,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]不行！",
         {
             "type": "hideImage",
@@ -897,6 +952,17 @@ main.floors.idw_2=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]臉不行！",
         {
@@ -1037,6 +1103,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]我不是小孩！",
         {
             "type": "hideImage",
@@ -1158,6 +1235,17 @@ main.floors.idw_2=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]不知道！",
         {
@@ -1423,6 +1511,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]喔！",
         {
             "type": "hideImage",
@@ -1510,6 +1609,17 @@ main.floors.idw_2=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]可是要兩個人吃！",
         {
@@ -1633,6 +1743,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]可以！",
         {
             "type": "hideImage",
@@ -1722,6 +1843,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]老闆！我要休息！",
         {
             "type": "hideImage",
@@ -1793,6 +1925,17 @@ main.floors.idw_2=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]我要提前！",
         {
@@ -1866,6 +2009,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]六分鐘！",
         {
             "type": "hideImage",
@@ -1937,6 +2091,17 @@ main.floors.idw_2=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]五分鐘！",
         {
@@ -2027,6 +2192,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]是小火車！",
         {
             "type": "hideImage",
@@ -2115,6 +2291,17 @@ main.floors.idw_2=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]不要",
         {
             "type": "hideImage",
@@ -2202,6 +2389,17 @@ main.floors.idw_2=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]是我的！",
         {
@@ -2295,10 +2493,26 @@ main.floors.idw_2=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]給我————！",
         {
             "type": "hideImage",
             "code": 10,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
             "time": 0
         },
         {

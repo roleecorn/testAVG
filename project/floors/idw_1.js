@@ -357,6 +357,17 @@ main.floors.idw_1=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]歡迎光臨打喵!",
         {
             "type": "hideImage",
@@ -432,10 +443,26 @@ main.floors.idw_1=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]嗚啊啊啊!!!!!!",
         {
             "type": "hideImage",
             "code": 10,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
             "time": 0
         },
         {
@@ -519,6 +546,17 @@ main.floors.idw_1=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]請問要點什麼呢!",
         {
@@ -624,6 +662,17 @@ main.floors.idw_1=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]要內用還是外帶!",
         {
@@ -734,10 +783,26 @@ main.floors.idw_1=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "keng_neutral_portrait.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[梗平]喔喔喔喔喔喔!",
         {
             "type": "hideImage",
             "code": 10,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 20,
             "time": 0
         },
         {

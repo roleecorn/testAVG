@@ -327,11 +327,59 @@ main.floors.ruka_4=
             "time": 0
         },
         "尚未開始營業的女僕咖啡廳，門被粗暴地推開了",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]學長！",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "桶子倒在店中央，身上還穿著女僕裝，他孱弱地舉起手",
         "梗平蹲下身，握住了桶子的手",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]梗平……",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]去拯救漆原吧……",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -349,9 +397,57 @@ main.floors.ruka_4=
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]我大意了，沒有閃，想不到他們居然不講武德……",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]他們是來找——咳！咳咳！，店長家祖傳的『玉龍機殼』，漆原阻止了他們……",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]傳說中的，防撞防塵防水防靜電防火防爆防電波防小人防邪靈的『玉龍機殼』……",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -369,8 +465,40 @@ main.floors.ruka_4=
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]絕對……不可以讓他們拿到……",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]守護好……",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "桶子的手失去支撐的力量，無力地垂下了",
         {
             "type": "showImage",
@@ -783,7 +911,23 @@ main.floors.ruka_4=
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_captain_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[兵長]你是誰啊？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -801,7 +945,23 @@ main.floors.ruka_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_captain_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[兵長]回去了，其他人我都幹掉了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -1221,11 +1381,75 @@ main.floors.ruka_4=
             "time": 0
         },
         "梗平離開了瑪麗亞之牆，其他女僕（男）目送梗平離開",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]這個難不成是那個？",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         "\t[艾主席]哪個？",
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_captain_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[兵長]無聊，準備開店了",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]恩……應該是我感覺錯了而已吧",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "ms_portrait_tongzhi_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[桶至學長]真的有人喜歡上梗平這件事",
+        {
+            "type": "hideImage",
+            "code": 20,
+            "time": 0
+        },
         {
             "type": "function",
             "function": "function () { core.plugin.completeAkibaEvent('ruka_4'); }"

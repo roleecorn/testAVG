@@ -1054,6 +1054,10 @@
           "kind": "dialogue",
           "speaker": "M‧A‧STER",
           "text": "你說那個委託？已經結束了哦，之前已經有人把東西還回來了。",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_master_normal.png"
+          },
           "presentation": {}
         },
         {
@@ -1078,6 +1082,10 @@
           "kind": "dialogue",
           "speaker": "表妹",
           "text": "你們在找那頭熊嗎，已經搞定了哦。",
+          "portrait": {
+            "code": 20,
+            "image": "suou_happy_portrait.png"
+          },
           "presentation": {}
         },
         {
@@ -1102,18 +1110,30 @@
           "kind": "dialogue",
           "speaker": "警察",
           "text": "你們也是看見那個招牌廣告來的人嗎？",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_police_normal.png"
+          },
           "presentation": {}
         },
         {
           "kind": "dialogue",
           "speaker": "警察",
           "text": "那是打折輕鬆賺錢的招牌騙人過來給他們當做印刷奴隸的犯罪套路哦。",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_police_normal.png"
+          },
           "presentation": {}
         },
         {
           "kind": "dialogue",
           "speaker": "警察",
           "text": "世上怎麼可能有在幾天裡賺到幾百萬的普通打工呢，早點回去吧。",
+          "portrait": {
+            "code": 20,
+            "image": "ms_portrait_police_normal.png"
+          },
           "presentation": {}
         },
         {

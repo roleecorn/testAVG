@@ -441,6 +441,17 @@ main.floors.idw_3=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]！",
         {
             "type": "hideImage",
@@ -563,6 +574,17 @@ main.floors.idw_3=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]打喵！",
         {
             "type": "hideImage",
@@ -651,6 +673,17 @@ main.floors.idw_3=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]還沒買！",
         {
             "type": "hideImage",
@@ -738,6 +771,17 @@ main.floors.idw_3=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]不知道打喵！",
         {
@@ -843,6 +887,17 @@ main.floors.idw_3=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]迷路了喵！",
         {
@@ -999,6 +1054,17 @@ main.floors.idw_3=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]打喵!",
         {
@@ -1248,6 +1314,17 @@ main.floors.idw_3=
             "letterSpacing": 0,
             "animateTime": 120
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]店————長————！！！",
         {
             "type": "hideImage",
@@ -1354,6 +1431,17 @@ main.floors.idw_3=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]這樣比較容易被找到！",
         {
@@ -1647,6 +1735,17 @@ main.floors.idw_3=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]所以才要大聲一點啊！",
         {
             "type": "hideImage",
@@ -1734,6 +1833,17 @@ main.floors.idw_3=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]可是習慣了！",
         {
@@ -1859,6 +1969,17 @@ main.floors.idw_3=
             "animateTime": 120,
             "textfont": 32
         },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[IDW]找到了！",
         {
             "type": "hideImage",
@@ -1946,6 +2067,17 @@ main.floors.idw_3=
             "letterSpacing": 0,
             "animateTime": 120,
             "textfont": 32
+        },
+        {
+            "type": "showImage",
+            "code": 20,
+            "image": "idw_normal.png",
+            "loc": [
+                "portraitSpeakerX",
+                "portraitSpeakerY"
+            ],
+            "opacity": 1,
+            "time": 0
         },
         "\t[IDW]都一樣！",
         {
