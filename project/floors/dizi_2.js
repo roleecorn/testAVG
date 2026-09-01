@@ -284,31 +284,6 @@ main.floors.dizi_2=
     "fgmap": [],
     "eachArrive": [
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l2_1.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -336,6 +311,25 @@ main.floors.dizi_2=
             "animateTime": 120
         },
         "[幾天後，梗平在追查「修卡幹部喜歡在後巷進行秘密交易」的情報時，再次遇見了地子。她正靠在牆上，無聊地踢著地上的小石子。]",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l2_1.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -420,6 +414,12 @@ main.floors.dizi_2=
             "type": "hideImage",
             "code": 10,
             "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "[梗平的眼中閃爍著崇拜的光芒。]",
         {

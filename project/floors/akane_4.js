@@ -284,31 +284,6 @@ main.floors.akane_4=
     "fgmap": [],
     "eachArrive": [
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "akane_walk_together_cg.jpg",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -391,6 +366,25 @@ main.floors.akane_4=
             "code": 20,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "akane_walk_together_cg.jpg",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "旅途沒有真正的終點，也沒有真正的起點，任何一秒的改變，都會創造無數量化的可能性，但僅此一次，也唯獨一次，能夠記得就好。",
         {
             "type": "showImage",
@@ -429,6 +423,12 @@ main.floors.akane_4=
         },
         "茜所搭乘的列車，不會因為梗平而停下，但茜願意為了梗平而重來，重新一場不同的旅行。",
         "\t[End]讓帷幕落下吧，盛大的遊行慶典！",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "function",
             "function": "function () { core.plugin.completeAkibaEvent('akane_4'); }"

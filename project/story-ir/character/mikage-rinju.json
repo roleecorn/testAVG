@@ -49,27 +49,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "mikage_cg8_a.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -207,6 +186,21 @@
           }
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "mikage_cg8_a.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "嗯？怎麼回事……那個女孩子是被欺負所以跟著嗎？好奇怪的感覺…",
@@ -214,6 +208,12 @@
             "code": 10,
             "image": "keng_neutral_portrait.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -283,27 +283,6 @@
         "fgmap": []
       },
       "events": [
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "mikage_cg8_b.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
         {
           "kind": "layout.set",
           "value": {
@@ -584,27 +563,6 @@
         "fgmap": []
       },
       "events": [
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "mikage_cg8_c.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
         {
           "kind": "layout.set",
           "value": {
@@ -1182,6 +1140,21 @@
           }
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "mikage_cg8_b.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "御影凛珠",
           "text": "………嘖。",
@@ -1211,6 +1184,12 @@
             "code": 20,
             "image": "mikage_rinju_normal.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -1352,6 +1331,21 @@
           }
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "mikage_cg8_c.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "narration",
           "text": "[御影凛珠嘴角動了一下。我不知道那算不算笑，]"
         },
@@ -1389,6 +1383,12 @@
         {
           "kind": "narration",
           "text": "[少女快步走向收銀台結帳。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "narration",

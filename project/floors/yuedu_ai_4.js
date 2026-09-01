@@ -284,31 +284,6 @@ main.floors.yuedu_ai_4=
     "fgmap": [],
     "eachArrive": [
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "yuedu_cg6_c.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -336,6 +311,25 @@ main.floors.yuedu_ai_4=
             "animateTime": 120
         },
         "梗平仿佛被什麼吸引又來到這裡……那是酒的魅惑……",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "yuedu_cg6_b.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -386,6 +380,12 @@ main.floors.yuedu_ai_4=
             "type": "hideImage",
             "code": 20,
             "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",
@@ -652,6 +652,25 @@ main.floors.yuedu_ai_4=
                         },
                         {
                             "type": "showImage",
+                            "code": 30,
+                            "image": "yuedu_cg6_c.png",
+                            "sloc": [
+                                0,
+                                0,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
                             "code": 20,
                             "image": "yuedu_surprised.png",
                             "loc": [
@@ -700,6 +719,12 @@ main.floors.yuedu_ai_4=
                             "type": "hideImage",
                             "code": 20,
                             "time": 0
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0,
+                            "async": true
                         },
                         {
                             "type": "showImage",
@@ -1003,6 +1028,25 @@ main.floors.yuedu_ai_4=
                         "(梗↗平↘小↗弟↘)",
                         {
                             "type": "showImage",
+                            "code": 30,
+                            "image": "yuedu_cg6_c.png",
+                            "sloc": [
+                                0,
+                                0,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
                             "code": 20,
                             "image": "yuedu_surprised.png",
                             "loc": [
@@ -1076,6 +1120,12 @@ main.floors.yuedu_ai_4=
                             "type": "hideImage",
                             "code": 20,
                             "time": 0
+                        },
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0,
+                            "async": true
                         },
                         {
                             "type": "showImage",

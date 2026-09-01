@@ -49,27 +49,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "yuedu_cg6_a.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -253,27 +232,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "yuedu_cg6_b.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -312,6 +270,21 @@
           }
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "yuedu_cg6_a.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "月讀愛",
           "text": "哦哦，梗平呢！終於想找個酒友嗎？怎樣，累了吧，先來喝一杯，呼呼～",
@@ -319,6 +292,12 @@
             "code": 20,
             "image": "yuedu_surprised.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -466,27 +445,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "yuedu_cg6_c.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -514,6 +472,21 @@
             "letterSpacing": 0,
             "animateTime": 120
           }
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "yuedu_cg6_b.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -559,6 +532,12 @@
             "code": 20,
             "image": "yuedu_surprised.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -800,27 +779,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "yuedu_cg6_c.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -854,6 +812,21 @@
           "text": "梗平仿佛被什麼吸引又來到這裡……那是酒的魅惑……"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "yuedu_cg6_b.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "月讀愛",
           "text": "哦也？今天也來嗎？遇到什麼好事嗎？梗平小弟。",
@@ -879,6 +852,12 @@
             "code": 20,
             "image": "yuedu_surprised.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -1017,18 +996,33 @@
                   "kind": "narration",
                   "text": "(希望之花🌸)"
                 },
-                {
-                  "kind": "dialogue",
-                  "speaker": "梗平",
-                  "text": "那可當然呢！",
-                  "portrait": {
-                    "code": 10,
-                    "image": "keng_surprised_portrait.png"
-                  }
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "月讀愛",
+        {
+          "kind": "dialogue",
+          "speaker": "梗平",
+          "text": "那可當然呢！",
+          "portrait": {
+            "code": 10,
+            "image": "keng_surprised_portrait.png"
+          }
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "yuedu_cg6_c.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
                   "text": "有點詠唱文的意味呢～那就來玩玩吧！那個！",
                   "portrait": {
                     "code": 20,
@@ -1044,15 +1038,21 @@
                     "image": "keng_neutral_portrait.png"
                   }
                 },
-                {
-                  "kind": "dialogue",
-                  "speaker": "月讀愛",
-                  "text": "哼哼～團長，車已經準備好了！",
-                  "portrait": {
-                    "code": 20,
-                    "image": "yuedu_surprised.png"
-                  }
-                },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "哼哼～團長，車已經準備好了！",
+          "portrait": {
+            "code": 20,
+            "image": "yuedu_surprised.png"
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",
@@ -1234,13 +1234,28 @@
             {
               "text": "梗↗平↘小↗弟↘",
               "events": [
-                {
-                  "kind": "narration",
-                  "text": "(梗↗平↘小↗弟↘)"
-                },
-                {
-                  "kind": "dialogue",
-                  "speaker": "月讀愛",
+        {
+          "kind": "narration",
+          "text": "(梗↗平↘小↗弟↘)"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "yuedu_cg6_c.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
                   "text": "梗↗平↘小↗弟↘為什麼你沒有接受適應手術就能喝酒？",
                   "portrait": {
                     "code": 20,
@@ -1273,15 +1288,21 @@
                     "image": "yuedu_surprised.png"
                   }
                 },
-                {
-                  "kind": "dialogue",
-                  "speaker": "月讀愛",
-                  "text": "為什麼你會遇上那些事情呢！",
-                  "portrait": {
-                    "code": 20,
-                    "image": "yuedu_surprised.png"
-                  }
-                },
+        {
+          "kind": "dialogue",
+          "speaker": "月讀愛",
+          "text": "為什麼你會遇上那些事情呢！",
+          "portrait": {
+            "code": 20,
+            "image": "yuedu_surprised.png"
+          }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
                 {
                   "kind": "dialogue",
                   "speaker": "梗平",

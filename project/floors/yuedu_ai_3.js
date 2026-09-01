@@ -284,31 +284,6 @@ main.floors.yuedu_ai_3=
     "fgmap": [],
     "eachArrive": [
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "yuedu_cg6_c.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -334,6 +309,25 @@ main.floors.yuedu_ai_3=
             "time": 10,
             "letterSpacing": 0,
             "animateTime": 120
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "yuedu_cg6_b.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
         },
         {
             "type": "showImage",
@@ -419,6 +413,12 @@ main.floors.yuedu_ai_3=
             "type": "hideImage",
             "code": 20,
             "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",

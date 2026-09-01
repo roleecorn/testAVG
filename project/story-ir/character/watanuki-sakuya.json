@@ -49,27 +49,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "watanuki_cg7_a.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -124,6 +103,21 @@
           "time": 0
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "watanuki_cg7_a.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "嗚哇！？修卡的襲擊嗎！讓我來解決這件事吧！",
@@ -140,6 +134,12 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -678,27 +678,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "watanuki_cg7_c.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -962,27 +941,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "watanuki_cg7_b.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -1014,6 +972,21 @@
         {
           "kind": "narration",
           "text": "[某處傳來奇怪音樂，梗平回想起在神社初遇的那番景象，不自覺地走到神社。]"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "watanuki_cg7_c.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -1061,6 +1034,12 @@
           }
         },
         {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
+        {
           "kind": "dialogue",
           "speaker": "綿貫咲耶",
           "text": "後ろの正面だあれ？-（在後面的那個人是誰？）",
@@ -1095,6 +1074,21 @@
           "time": 0
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "watanuki_cg7_a.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "真是充滿詭異的音樂與景象…這個到底是什麼祭典啊…",
@@ -1102,6 +1096,12 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -1205,6 +1205,21 @@
                   }
                 },
                 {
+                  "kind": "image.show",
+                  "role": "cg",
+                  "code": 30,
+                  "image": "watanuki_cg7_b.png",
+                  "sloc": [0, 0, 416, 286],
+                  "loc": [
+                    112,
+                    50,
+                    320,
+                    220
+                  ],
+                  "opacity": 1,
+                  "time": 0
+                },
+                {
                   "kind": "dialogue",
                   "speaker": "綿貫咲耶",
                   "text": "果然和艾瑪醬很相似呢…梗平先生…那麼，請在一旁享受「開花之儀」吧。",
@@ -1243,6 +1258,12 @@
                 {
                   "kind": "narration",
                   "text": "[在迷幻光影與滲人歌聲中迷失的梗平，仿佛身體變得菠蘿菠蘿…意識遠去…]"
+                },
+                {
+                  "kind": "image.hide",
+                  "code": 30,
+                  "time": 0,
+                  "async": true
                 },
                 {
                   "kind": "narration",

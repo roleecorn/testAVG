@@ -284,206 +284,6 @@ main.floors.dizi_4=
     "fgmap": [],
     "eachArrive": [
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l4_1_1.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l4_1_2.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l4_1_3.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l4_1_4.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l4_2_1.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l4_2_2.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l4_2_3.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l4_3.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -670,8 +470,52 @@ main.floors.dizi_4=
             "time": 0
         },
         "[店長「東方不敗」從一堆模型中抬頭，看著眼前氣喘吁吁的梗平，愣了一下。但他身經百戰，立刻就從梗平的眼神中讀懂了這是一場「對決」。他嘴角微微上揚，露出一抹豪邁的笑容，緩緩站起身。]",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l4_1_1.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[店長「東方不敗」]哼哼哼……流派，東方不敗！",
         "[梗平的DNA彷彿被這句台詞觸動，體內的熱血瞬間沸騰，不由自主地接了下去]",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l4_1_2.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -687,6 +531,31 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
+            "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l4_1_3.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
             "time": 0
         },
         "\t[店長「東方不敗」]全新！",
@@ -710,7 +579,38 @@ main.floors.dizi_4=
         "\t[「東方不敗」＆梗平]天破俠亂！",
         "[梗平猛地將拳頭砸在櫃檯上，「東方不敗」也同時伸出拳頭與他對上。]",
         "[金色而閃耀的拳頭與拳頭，在櫃檯上碰觸，但背景卻是燃燒的烈火與爆發的鬥氣]",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l4_1_4.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[「東方不敗」＆梗平]看吧！東方正鮮紅的燃燒起來！",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
         "[店裡的其他客人和店員先是一愣，而後，爆發出熾烈的掌聲和歡呼。一場在旁人眼中是同好間的即興狂歡、在梗平眼中攸關Comike存亡的「戰鬥」就此展開。]",
         "\t[店長「東方不敗」]年輕人，不錯的鬥氣！但想阻止老夫的計畫，你還早了一百年！除非你能拿出足以撼動我靈魂的「寶物」！",
         {
@@ -752,6 +652,25 @@ main.floors.dizi_4=
             "time": 0
         },
         "[地子這時才慢悠悠地晃了過來，臉上是忍俊不禁的表情。]",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l4_2_1.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -805,6 +724,31 @@ main.floors.dizi_4=
         },
         "[她說出「朋友」這個詞時，稍微頓了一下，然後遞給梗平一瓶運動飲料。]",
         {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l4_2_2.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
             "type": "showImage",
             "code": 20,
             "image": "dizi_normal.png",
@@ -823,6 +767,12 @@ main.floors.dizi_4=
         },
         "[地子的微笑仍然如此甜美，但似乎少了幾分顏色。]",
         "[地子的身影，就像是遊戲中完成任務後消失的NPC，迅速地融入了背景的人潮之中，再也無法尋覓。梗平獨自站在原地，手中還握著那瓶地子遞給他的、帶著一絲冰涼的運動飲料。]",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
         {
             "type": "showImage",
             "code": 10,
@@ -963,6 +913,25 @@ main.floors.dizi_4=
         {
             "type": "hideImage",
             "code": 10,
+            "time": 0
+        },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l4_3.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
             "time": 0
         },
         "[他將空瓶子小心翼翼地放進口袋——這可是與戰友羈絆的證明。]",

@@ -2134,31 +2134,6 @@
       "outputBytes": 213543
     },
     {
-      "image": "dizi_cg_ds_l4_2_3.png",
-      "sourceSha256BeforeCompression": "eacbebf9e4728f26a0c2d3a2a645b85728b8af6e807c48421b99be747b79f3de",
-      "sourceBytesBeforeCompression": 3206409,
-      "sourceSize": [
-        1920,
-        1320
-      ],
-      "sourceFormat": "PNG",
-      "sourceMode": "RGBA",
-      "crop": [
-        0,
-        0,
-        1920,
-        1320
-      ],
-      "outputSize": [
-        416,
-        286
-      ],
-      "outputFormat": "png",
-      "jpegQuality": null,
-      "outputSha256": "f91343d7f0b2e9f9a99da930fc4089a42bcac6572751a7909746f3636e02f6dc",
-      "outputBytes": 166633
-    },
-    {
       "image": "dizi_cg_ds_l4_3.png",
       "sourceSha256BeforeCompression": "b1bc12a55fb53d64c305b9cc8be99b14637de757405519a399a20927943cf098",
       "sourceBytesBeforeCompression": 4437958,

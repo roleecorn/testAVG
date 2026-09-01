@@ -284,31 +284,6 @@ main.floors.watanuki_sakuya_1=
     "fgmap": [],
     "eachArrive": [
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "watanuki_cg7_a.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -366,6 +341,25 @@ main.floors.watanuki_sakuya_1=
         },
         {
             "type": "showImage",
+            "code": 30,
+            "image": "watanuki_cg7_a.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "showImage",
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
@@ -397,6 +391,12 @@ main.floors.watanuki_sakuya_1=
             "type": "hideImage",
             "code": 10,
             "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",

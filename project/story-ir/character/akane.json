@@ -749,27 +749,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "akane_walk_together_cg.jpg",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -846,6 +825,21 @@
           }
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "akane_walk_together_cg.jpg",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "narration",
           "text": "旅途沒有真正的終點，也沒有真正的起點，任何一秒的改變，都會創造無數量化的可能性，但僅此一次，也唯獨一次，能夠記得就好。"
         },
@@ -879,6 +873,12 @@
           "kind": "dialogue",
           "speaker": "End",
           "text": "讓帷幕落下吧，盛大的遊行慶典！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "akiba.event.complete",

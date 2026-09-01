@@ -55,6 +55,12 @@
 
 ## 待補素材
 
+- Open: `dizi-cg-l4-2-3-source-marker`
+  - Scope: `project/images/dizi_cg_ds_l4_2_3.png`、`project/data.js`、`project/story/manifest.md`。
+  - Current: 本次 fresh ZIP 的 `CG-DS-L4-2-3.png` 為 1920×1320 RGBA，現有 runtime 檔案與 ZIP identical-existing；但權威來源 `project/story/比那名居地子.txt` 沒有對應出現／消失標記，因此未接入地子 Story IR。暫保留檔案與血緣，不以素材自行新增劇情。
+  - Done when: 使用者確認正式出現／消失位置，或確認為未使用素材後完成隔離、登錄與 manifest 更新，並通過 `node scripts/validate_story.js`。
+  - Evidence: `.codex/task-questions/20260901-101102-dizi-cg.md` Q1；本次 ZIP SHA-256 `B090E5E37C7540462596B631D594AB530A7E55C306785B4BB3FD682A8E28F1FE`。
+
 - Open: `kelukai-location-backgrounds`
   - Scope: `project/images/kelukai_alley_evening_bg.png`、`project/images/kelukai_shopfront_day_bg.png`、`project/story-ir/character/kelukai.json`、`project/floors/kelukai_2.js`、`project/floors/kelukai_4.js`。
   - Current: 為讓後巷傍晚與店鋪前轉場可實際切換，本次分別以 `ms_bg_street_night.png`、`ms_bg_street_day.png` 複製成唯一命名的 544×416 可玩背景；演出、註冊與 scene 引用已接通，但內容仍是同構暫代圖。

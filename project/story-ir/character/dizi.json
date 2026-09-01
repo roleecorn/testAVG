@@ -308,27 +308,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l2_1.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -360,6 +339,21 @@
         {
           "kind": "narration",
           "text": "[幾天後，梗平在追查「修卡幹部喜歡在後巷進行秘密交易」的情報時，再次遇見了地子。她正靠在牆上，無聊地踢著地上的小石子。]"
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l2_1.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -405,6 +399,12 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "narration",
@@ -506,48 +506,6 @@
       },
       "events": [
         {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l3_1.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l3_2.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
           "kind": "layout.set",
           "value": {
             "avg": true,
@@ -621,6 +579,21 @@
           }
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l3_1.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "地子",
           "text": "哈哈……哈哈哈哈哈！你、你真的去說了啊！哎唷，肚子好痛……",
@@ -628,6 +601,12 @@
             "code": 20,
             "image": "dizi_surprised.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "narration",
@@ -678,6 +657,21 @@
           }
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l3_2.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "地子",
           "text": "別想太多。看你這個Bug跑得這麼賣力，給你的潤滑劑。畢竟，你要是你當機了，我後面的路線怎麼跑？",
@@ -694,6 +688,12 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "narration",
@@ -780,174 +780,6 @@
         "fgmap": []
       },
       "events": [
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l4_1_1.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l4_1_2.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l4_1_3.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l4_1_4.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l4_2_1.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l4_2_2.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l4_2_3.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
-        {
-          "kind": "image.show",
-          "role": "cg",
-          "code": 30,
-          "image": "dizi_cg_ds_l4_3.png",
-          "sloc": [0, 0, 416, 286],
-          "loc": [
-            112,
-            50,
-            320,
-            220
-          ],
-          "opacity": 1,
-          "time": 0
-        },
-        {
-          "kind": "image.hide",
-          "code": 30,
-          "time": 0,
-          "async": true
-        },
         {
           "kind": "layout.set",
           "value": {
@@ -1087,6 +919,21 @@
           "text": "[店長「東方不敗」從一堆模型中抬頭，看著眼前氣喘吁吁的梗平，愣了一下。但他身經百戰，立刻就從梗平的眼神中讀懂了這是一場「對決」。他嘴角微微上揚，露出一抹豪邁的笑容，緩緩站起身。]"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_1_1.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "店長「東方不敗」",
           "text": "哼哼哼……流派，東方不敗！"
@@ -1096,13 +943,55 @@
           "text": "[梗平的DNA彷彿被這句台詞觸動，體內的熱血瞬間沸騰，不由自主地接了下去]"
         },
         {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_1_2.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "梗平",
           "text": "王者之風！",
           "portrait": {
             "code": 10,
-            "image": "keng_surprised_portrait.png"
+          "image": "keng_surprised_portrait.png"
           }
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_1_3.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -1132,9 +1021,36 @@
           "text": "[金色而閃耀的拳頭與拳頭，在櫃檯上碰觸，但背景卻是燃燒的烈火與爆發的鬥氣]"
         },
         {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_1_4.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "「東方不敗」＆梗平",
           "text": "看吧！東方正鮮紅的燃燒起來！"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "narration",
@@ -1185,6 +1101,21 @@
           "text": "[地子這時才慢悠悠地晃了過來，臉上是忍俊不禁的表情。]"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_2_1.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "地子",
           "text": "幹得不錯嘛，Bug君。你成功為這個「地圖」增加了一段有趣的隨機事件了呢。",
@@ -1216,6 +1147,27 @@
           "text": "[她說出「朋友」這個詞時，稍微頓了一下，然後遞給梗平一瓶運動飲料。]"
         },
         {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_2_2.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "地子",
           "text": "真遺憾，我的劇情就到這為止了──主角君，之後，也要邂逅不同的人，好好努力喔。",
@@ -1231,6 +1183,12 @@
         {
           "kind": "narration",
           "text": "[地子的身影，就像是遊戲中完成任務後消失的NPC，迅速地融入了背景的人潮之中，再也無法尋覓。梗平獨自站在原地，手中還握著那瓶地子遞給他的、帶著一絲冰涼的運動飲料。]"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "time": 0,
+          "async": true
         },
         {
           "kind": "dialogue",
@@ -1327,6 +1285,21 @@
             "code": 10,
             "image": "keng_surprised_portrait.png"
           }
+        },
+        {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "dizi_cg_ds_l4_3.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [
+            112,
+            50,
+            320,
+            220
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "narration",

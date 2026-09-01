@@ -761,6 +761,25 @@ main.floors.mikage_rinju_4=
         },
         {
             "type": "showImage",
+            "code": 30,
+            "image": "mikage_cg8_b.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "showImage",
             "code": 20,
             "image": "mikage_rinju_normal.png",
             "loc": [
@@ -810,6 +829,12 @@ main.floors.mikage_rinju_4=
             "type": "hideImage",
             "code": 20,
             "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",
@@ -1067,6 +1092,25 @@ main.floors.mikage_rinju_4=
             "code": 10,
             "time": 0
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "mikage_cg8_c.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "[御影凛珠嘴角動了一下。我不知道那算不算笑，]",
         "[但那是第一次在她臉上看到接近柔軟的東西。]",
         {
@@ -1121,6 +1165,12 @@ main.floors.mikage_rinju_4=
             "time": 0
         },
         "[少女快步走向收銀台結帳。]",
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
         "[梗平站在原地，手裡還握著那本《假面騎士BLACK SUN》設定集。]",
         "[低頭看了看封面上那隻黑色的蝗蟲為原型的昭和RIDER]",
         {

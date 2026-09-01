@@ -284,56 +284,6 @@ main.floors.dizi_3=
     "fgmap": [],
     "eachArrive": [
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l3_1.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
-            "type": "showImage",
-            "code": 30,
-            "image": "dizi_cg_ds_l3_2.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -432,6 +382,25 @@ main.floors.dizi_3=
         },
         {
             "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l3_1.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "showImage",
             "code": 20,
             "image": "dizi_surprised.png",
             "loc": [
@@ -446,6 +415,12 @@ main.floors.dizi_3=
             "type": "hideImage",
             "code": 20,
             "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "[地子終於忍不住，靠著電線桿笑了起來，連眼淚都流出來了。]",
         {
@@ -520,6 +495,25 @@ main.floors.dizi_3=
         },
         {
             "type": "showImage",
+            "code": 30,
+            "image": "dizi_cg_ds_l3_2.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "showImage",
             "code": 20,
             "image": "dizi_normal.png",
             "loc": [
@@ -551,6 +545,12 @@ main.floors.dizi_3=
             "type": "hideImage",
             "code": 10,
             "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "[梗平一口氣將罐裝咖啡喝完，冰涼的液體流過喉嚨，為他過熱的騎士之魂降溫。]",
         {

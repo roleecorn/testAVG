@@ -284,31 +284,6 @@ main.floors.watanuki_sakuya_4=
     "fgmap": [],
     "eachArrive": [
         {
-            "type": "showImage",
-            "code": 30,
-            "image": "watanuki_cg7_b.png",
-            "sloc": [
-                0,
-                0,
-                416,
-                286
-            ],
-            "loc": [
-                112,
-                50,
-                320,
-                220
-            ],
-            "opacity": 1,
-            "time": 0
-        },
-        {
-            "type": "hideImage",
-            "code": 30,
-            "time": 0,
-            "async": true
-        },
-        {
             "type": "setText",
             "avg": true,
             "position": "down",
@@ -336,6 +311,25 @@ main.floors.watanuki_sakuya_4=
             "animateTime": 120
         },
         "[某處傳來奇怪音樂，梗平回想起在神社初遇的那番景象，不自覺地走到神社。]",
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "watanuki_cg7_c.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -422,6 +416,12 @@ main.floors.watanuki_sakuya_4=
             "time": 0
         },
         {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
+        },
+        {
             "type": "showImage",
             "code": 20,
             "image": "watanuki_sakuya_normal.png",
@@ -469,6 +469,25 @@ main.floors.watanuki_sakuya_4=
         },
         {
             "type": "showImage",
+            "code": 30,
+            "image": "watanuki_cg7_a.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
+            "type": "showImage",
             "code": 10,
             "image": "keng_surprised_portrait.png",
             "loc": [
@@ -483,6 +502,12 @@ main.floors.watanuki_sakuya_4=
             "type": "hideImage",
             "code": 10,
             "time": 0
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         {
             "type": "showImage",
@@ -664,6 +689,25 @@ main.floors.watanuki_sakuya_4=
                         },
                         {
                             "type": "showImage",
+                            "code": 30,
+                            "image": "watanuki_cg7_b.png",
+                            "sloc": [
+                                0,
+                                0,
+                                416,
+                                286
+                            ],
+                            "loc": [
+                                112,
+                                50,
+                                320,
+                                220
+                            ],
+                            "opacity": 1,
+                            "time": 0
+                        },
+                        {
+                            "type": "showImage",
                             "code": 20,
                             "image": "watanuki_sakuya_normal.png",
                             "loc": [
@@ -731,6 +775,12 @@ main.floors.watanuki_sakuya_4=
                             "time": 0
                         },
                         "[在迷幻光影與滲人歌聲中迷失的梗平，仿佛身體變得菠蘿菠蘿…意識遠去…]",
+                        {
+                            "type": "hideImage",
+                            "code": 30,
+                            "time": 0,
+                            "async": true
+                        },
                         "[梗平只是在自己家中再次醒來，手握著一朵白雛菊，那到底是什麼一回事？]"
                     ]
                 },
