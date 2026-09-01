@@ -1223,7 +1223,7 @@ main.floors.main_ch7_2=
                 0
             ],
             "opacity": 1,
-            "time": 250
+            "time": 0
         },
         {
             "type": "setCurtain",
@@ -1359,6 +1359,17 @@ main.floors.main_ch7_2=
         },
         "IB打開了門",
         "IB關上了門",
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "CH2_L295.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,
@@ -1548,6 +1559,17 @@ main.floors.main_ch7_2=
             "time": 250
         },
         "裡面的肥宅同時轉過了頭",
+        {
+            "type": "showImage",
+            "code": 1,
+            "image": "CH2_L295.png",
+            "loc": [
+                0,
+                0
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         {
             "type": "showImage",
             "code": 20,

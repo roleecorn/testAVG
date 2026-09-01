@@ -1791,7 +1791,7 @@
             0
           ],
           "opacity": 1,
-          "time": 250
+          "time": 0
         },
         {
           "kind": "narration",
@@ -1884,6 +1884,18 @@
         {
           "kind": "narration",
           "text": "IB關上了門"
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH2_L295.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -2020,6 +2032,18 @@
         {
           "kind": "narration",
           "text": "裡面的肥宅同時轉過了頭"
+        },
+        {
+          "kind": "background.show",
+          "role": "image",
+          "code": 1,
+          "image": "CH2_L295.png",
+          "loc": [
+            0,
+            0
+          ],
+          "opacity": 1,
+          "time": 0
         },
         {
           "kind": "dialogue",
