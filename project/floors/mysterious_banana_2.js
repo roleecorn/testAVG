@@ -318,7 +318,7 @@ main.floors.mysterious_banana_2=
         {
             "type": "showImage",
             "code": 5,
-            "image": "banana_grass_bg.png",
+            "image": "ms_bg_vehicle_interior.png",
             "loc": [
                 0,
                 0,
@@ -343,7 +343,7 @@ main.floors.mysterious_banana_2=
         {
             "type": "showImage",
             "code": 5,
-            "image": "banana_grass_bg.png",
+            "image": "ms_bg_warehouse_district_day.png",
             "loc": [
                 0,
                 0,
@@ -365,6 +365,25 @@ main.floors.mysterious_banana_2=
             "text": "source line 196: CG：貓科雙人組 出現"
         },
         {
+            "type": "showImage",
+            "code": 30,
+            "image": "banana_cats.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
             "type": "comment",
             "text": "source line 197: 下面一句不使用立繪"
         },
@@ -372,6 +391,12 @@ main.floors.mysterious_banana_2=
         {
             "type": "comment",
             "text": "source line 199: CG：貓科雙人組 消失"
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "\t[神秘香蕉人]貓科雙人組，沒想到還會再見到你們...",
         "\t[梗平]喂，怪人，你們究竟把水伊布藏到哪去了",

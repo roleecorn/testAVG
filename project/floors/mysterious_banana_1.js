@@ -256,7 +256,7 @@ main.floors.mysterious_banana_1=
     ],
     "images": [
         {
-            "name": "banana_grass_bg.png",
+            "name": "banana_park_center.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -328,10 +328,35 @@ main.floors.mysterious_banana_1=
             "type": "comment",
             "text": "source line 21: CG：水伊布_速度線 出現"
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "banana_eevee_speed.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "草叢間出現了一隻白色的水伊布",
         {
             "type": "comment",
             "text": "source line 23: CG：水伊布_速度線 消失"
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "\t[梗平]...這是甚麼？",
         "\t[水伊布]vu vu vu？",

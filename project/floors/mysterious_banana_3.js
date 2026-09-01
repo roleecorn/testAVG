@@ -256,7 +256,7 @@ main.floors.mysterious_banana_3=
     ],
     "images": [
         {
-            "name": "banana_elevator_bg.png",
+            "name": "banana_park_center.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -328,10 +328,35 @@ main.floors.mysterious_banana_3=
             "type": "comment",
             "text": "source line 353: CG：伊布腰帶 出現"
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "banana_eevee_belt.jpg",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "香蕉人遞出了伊布腰帶",
         {
             "type": "comment",
             "text": "source line 355: CG：伊布腰帶 消失"
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "\t[神秘香蕉人]這是我曾經用過的腰帶，我已經無法再使用，就交給你了",
         "\t[梗平]喔喔！是傳承腰帶的事件",
@@ -403,7 +428,7 @@ main.floors.mysterious_banana_3=
         {
             "type": "showImage",
             "code": 5,
-            "image": "banana_grass_bg.png",
+            "image": "banana_elevator_bg.png",
             "loc": [
                 0,
                 0,
@@ -669,6 +694,25 @@ main.floors.mysterious_banana_3=
             "text": "source line 580: CG：肌肉梗平飛踢與妖精胸肌 出現"
         },
         {
+            "type": "showImage",
+            "code": 30,
+            "image": "banana_muscle_keng.jpg",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
+        {
             "type": "comment",
             "text": "source line 581: 下面七句不使用立繪"
         },
@@ -682,6 +726,12 @@ main.floors.mysterious_banana_3=
         {
             "type": "comment",
             "text": "source line 589: CG：肌肉梗平飛踢與妖精胸肌 消失"
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "\t[超濃起司]嗚挖阿阿阿！！",
         {

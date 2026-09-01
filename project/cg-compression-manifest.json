@@ -1884,6 +1884,156 @@
       "outputBytes": 56626
     },
     {
+      "image": "banana_branch.jpg",
+      "sourceSha256BeforeCompression": "c2fe71532614284ddd1d9c230c9fc07cc60dbbdd48359a34d9e7eda2ccc9eef9",
+      "sourceBytesBeforeCompression": 464328,
+      "sourceSize": [
+        1408,
+        768
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        145,
+        0,
+        1262,
+        768
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "c8c96a92d0587be97340619cb90195790e9b4a96790dd4317150a02d16feb139",
+      "outputBytes": 31908
+    },
+    {
+      "image": "banana_cats.png",
+      "sourceSha256BeforeCompression": "8561dbda8e66cb3fc70d817c5fd2ccf80973cefde285d073c4e57f68eabf3443",
+      "sourceBytesBeforeCompression": 2231204,
+      "sourceSize": [
+        1275,
+        832
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        32,
+        0,
+        1242,
+        832
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "518bd59025b0295d7c72efe73408ed78ae063e42d924a0add903c5fc1c71fa67",
+      "outputBytes": 226364
+    },
+    {
+      "image": "banana_eevee_belt.jpg",
+      "sourceSha256BeforeCompression": "b35b9f8a003f3c8765fdd228cb99b98a7de664ccfaa102e64405225c02dcd8d0",
+      "sourceBytesBeforeCompression": 554650,
+      "sourceSize": [
+        1408,
+        768
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        145,
+        0,
+        1262,
+        768
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "fef78953e499de2369802cb53d355776c3348edb667064050126c234a4018b32",
+      "outputBytes": 27724
+    },
+    {
+      "image": "banana_eevee_grass.png",
+      "sourceSha256BeforeCompression": "e9a2c226dec453e86b1107466ce1ee53c45400794de32f275a13f14c050736bc",
+      "sourceBytesBeforeCompression": 1870203,
+      "sourceSize": [
+        1372,
+        784
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        116,
+        0,
+        1256,
+        784
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "9e845df9b0e9b62a50077de5b614b80d50a844a23c8676c7aaee05cb835c9216",
+      "outputBytes": 238663
+    },
+    {
+      "image": "banana_eevee_speed.png",
+      "sourceSha256BeforeCompression": "301797b8457134c7403a8f2603eed29d37b9bb715203ad4ee5544551efbbf5e7",
+      "sourceBytesBeforeCompression": 2033371,
+      "sourceSize": [
+        1372,
+        784
+      ],
+      "sourceFormat": "PNG",
+      "sourceMode": "RGBA",
+      "crop": [
+        116,
+        0,
+        1256,
+        784
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "png",
+      "jpegQuality": null,
+      "outputSha256": "461cf5389ac451bfc7c405ca9875e8f9495fab4ad9cb5a7843c389d270134f8f",
+      "outputBytes": 259268
+    },
+    {
+      "image": "banana_muscle_keng.jpg",
+      "sourceSha256BeforeCompression": "08549bf8889183ce913299be423d921a41a32d7a67a13f98aaf3ddb047fb6770",
+      "sourceBytesBeforeCompression": 417922,
+      "sourceSize": [
+        736,
+        1409
+      ],
+      "sourceFormat": "JPEG",
+      "sourceMode": "RGB",
+      "crop": [
+        0,
+        451,
+        736,
+        957
+      ],
+      "outputSize": [
+        416,
+        286
+      ],
+      "outputFormat": "jpeg",
+      "jpegQuality": 90,
+      "outputSha256": "b374b705f5b7991f251872b94b5644ec0ae77c89593f4611970017b02b56844b",
+      "outputBytes": 21789
+    },
+    {
       "image": "dizi_cg_ds_l1_1.png",
       "sourceSha256BeforeCompression": "9df2631173352bd5b2a758b91fa7a35ca664e42fd5453221cd11a4a5c8b76a17",
       "sourceBytesBeforeCompression": 4563812,

@@ -256,7 +256,7 @@ main.floors.mysterious_banana_4=
     ],
     "images": [
         {
-            "name": "banana_grass_bg.png",
+            "name": "banana_park_center.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -377,10 +377,35 @@ main.floors.mysterious_banana_4=
             "type": "comment",
             "text": "source line 665: CG：樹枝 出現"
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "banana_branch.jpg",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "獲得了 猛獸♂樹枝",
         {
             "type": "comment",
             "text": "source line 667: CG：樹枝 消失"
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "\t[梗平]這個？不是一根普通的樹枝嗎？",
         "\t[神秘香蕉人]你可以把他當成我們獸控間的信物來使用，不管發生甚麼事，只要折斷我們就會立刻趕過去幫你",
@@ -425,10 +450,35 @@ main.floors.mysterious_banana_4=
             "type": "comment",
             "text": "source line 691: CG：伊布_草叢 出現"
         },
+        {
+            "type": "showImage",
+            "code": 30,
+            "image": "banana_eevee_grass.png",
+            "sloc": [
+                0,
+                0,
+                416,
+                286
+            ],
+            "loc": [
+                112,
+                50,
+                320,
+                220
+            ],
+            "opacity": 1,
+            "time": 0
+        },
         "\t[伊布]Eeveeeee~",
         {
             "type": "comment",
             "text": "source line 693: CG：伊布_草叢 消失"
+        },
+        {
+            "type": "hideImage",
+            "code": 30,
+            "time": 0,
+            "async": true
         },
         "\t[梗平]喔，你是想和我道謝嗎？",
         "\t[梗平]我做的事沒甚麼大不了的，不過是做了一般人都能做到的事罷了",

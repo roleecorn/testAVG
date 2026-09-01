@@ -90,12 +90,28 @@
           "text": "source line 21: CG：水伊布_速度線 出現"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_eevee_speed.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "narration",
           "text": "草叢間出現了一隻白色的水伊布"
         },
         {
           "kind": "comment",
           "text": "source line 23: CG：水伊布_速度線 消失"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -723,7 +739,7 @@
         "height": 13,
         "images": [
           {
-            "name": "banana_grass_bg.png",
+            "name": "banana_park_center.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -782,7 +798,7 @@
         {
           "kind": "background.show",
           "code": 5,
-          "image": "banana_grass_bg.png",
+          "image": "ms_bg_vehicle_interior.png",
           "loc": [
             0,
             0,
@@ -862,7 +878,7 @@
         {
           "kind": "background.show",
           "code": 5,
-          "image": "banana_grass_bg.png",
+          "image": "ms_bg_warehouse_district_day.png",
           "loc": [
             0,
             0,
@@ -903,6 +919,16 @@
           "text": "source line 196: CG：貓科雙人組 出現"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_cats.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "comment",
           "text": "source line 197: 下面一句不使用立繪"
         },
@@ -914,6 +940,12 @@
         {
           "kind": "comment",
           "text": "source line 199: CG：貓科雙人組 消失"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -1639,12 +1671,28 @@
           "text": "source line 353: CG：伊布腰帶 出現"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_eevee_belt.jpg",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "narration",
           "text": "香蕉人遞出了伊布腰帶"
         },
         {
           "kind": "comment",
           "text": "source line 355: CG：伊布腰帶 消失"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -1827,7 +1875,7 @@
         {
           "kind": "background.show",
           "code": 5,
-          "image": "banana_grass_bg.png",
+          "image": "banana_elevator_bg.png",
           "loc": [
             0,
             0,
@@ -2700,6 +2748,16 @@
           "text": "source line 580: CG：肌肉梗平飛踢與妖精胸肌 出現"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_muscle_keng.jpg",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "comment",
           "text": "source line 581: 下面七句不使用立繪"
         },
@@ -2738,6 +2796,12 @@
         {
           "kind": "comment",
           "text": "source line 589: CG：肌肉梗平飛踢與妖精胸肌 消失"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -2901,7 +2965,7 @@
         "height": 13,
         "images": [
           {
-            "name": "banana_elevator_bg.png",
+            "name": "banana_park_center.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
@@ -3142,12 +3206,28 @@
           "text": "source line 665: CG：樹枝 出現"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_branch.jpg",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "narration",
           "text": "獲得了 猛獸♂樹枝"
         },
         {
           "kind": "comment",
           "text": "source line 667: CG：樹枝 消失"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -3272,6 +3352,16 @@
           "text": "source line 691: CG：伊布_草叢 出現"
         },
         {
+          "kind": "image.show",
+          "role": "cg",
+          "code": 30,
+          "image": "banana_eevee_grass.png",
+          "sloc": [0, 0, 416, 286],
+          "loc": [112, 50, 320, 220],
+          "opacity": 1,
+          "time": 0
+        },
+        {
           "kind": "dialogue",
           "speaker": "伊布",
           "text": "Eeveeeee~"
@@ -3279,6 +3369,12 @@
         {
           "kind": "comment",
           "text": "source line 693: CG：伊布_草叢 消失"
+        },
+        {
+          "kind": "image.hide",
+          "code": 30,
+          "async": true,
+          "time": 0
         },
         {
           "kind": "dialogue",
@@ -3330,7 +3426,7 @@
         "height": 13,
         "images": [
           {
-            "name": "banana_grass_bg.png",
+            "name": "banana_park_center.png",
             "canvas": "bg",
             "x": 0,
             "y": 0
