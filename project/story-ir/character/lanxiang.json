@@ -596,7 +596,7 @@
           "text": "胡！斷么九",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -605,7 +605,7 @@
           "text": "唉唷～梗平，你也太沒夢想了吧～",
           "portrait": {
             "code": 20,
-            "image": "lanxiang_normal.png"
+            "image": "lanxiang_smile.png"
           }
         },
         {
@@ -618,7 +618,7 @@
           "text": "胡！小三元",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -627,7 +627,7 @@
           "text": "呃…沒事，只是運氣好而已，繼續！",
           "portrait": {
             "code": 20,
-            "image": "lanxiang_normal.png"
+            "image": "lanxiang_smile.png"
           }
         },
         {
@@ -640,7 +640,7 @@
           "text": "胡！國士無雙！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -649,7 +649,7 @@
           "text": "啊！！！",
           "portrait": {
             "code": 20,
-            "image": "lanxiang_normal.png"
+            "image": "lanxiang_surprised.png"
           }
         },
         {
@@ -1824,7 +1824,7 @@
           "text": "是嗎…那…有緣再見？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1848,7 +1848,7 @@
           "text": "嗯！有緣再見！",
           "portrait": {
             "code": 20,
-            "image": "lanxiang_normal.png"
+            "image": "lanxiang_sad.png"
           }
         },
         {

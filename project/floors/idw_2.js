@@ -474,7 +474,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -656,7 +656,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -857,7 +857,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -956,7 +956,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1106,7 +1106,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1613,7 +1613,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1746,7 +1746,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1846,7 +1846,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_panic.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1929,7 +1929,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2012,7 +2012,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2095,7 +2095,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2195,7 +2195,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2294,7 +2294,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2393,7 +2393,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2496,7 +2496,7 @@ main.floors.idw_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_angry_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

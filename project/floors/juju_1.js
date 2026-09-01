@@ -688,7 +688,7 @@ main.floors.juju_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "juju_normal.png",
+            "image": "juju_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -705,7 +705,7 @@ main.floors.juju_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "juju_normal.png",
+            "image": "juju_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

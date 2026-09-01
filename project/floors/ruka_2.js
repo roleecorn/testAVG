@@ -376,7 +376,7 @@ main.floors.ruka_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_sankaku_normal.png",
+            "image": "ms_portrait_sankaku_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -410,7 +410,7 @@ main.floors.ruka_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_sankaku_normal.png",
+            "image": "ms_portrait_sankaku_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

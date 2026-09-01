@@ -209,7 +209,7 @@
           "text": "嗚啊啊啊!!!!!!",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -492,7 +492,7 @@
           "text": "喔喔喔喔喔喔!",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -957,7 +957,7 @@
           "text": "啊，又被嚇到了！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_surprised.png"
           }
         },
         {
@@ -1126,7 +1126,7 @@
           "text": "今天要吃什麼！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -1267,7 +1267,7 @@
           "text": "不行！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_angry.png"
           }
         },
         {
@@ -1354,7 +1354,7 @@
           "text": "臉不行！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_angry.png"
           }
         },
         {
@@ -1468,7 +1468,7 @@
           "text": "我不是小孩！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_angry.png"
           }
         },
         {
@@ -1864,7 +1864,7 @@
           "text": "可是要兩個人吃！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_surprised.png"
           }
         },
         {
@@ -1969,7 +1969,7 @@
           "text": "可以！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -2060,7 +2060,7 @@
           "text": "老闆！我要休息！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_panic.png"
           }
         },
         {
@@ -2143,7 +2143,7 @@
           "text": "我要提前！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -2226,7 +2226,7 @@
           "text": "六分鐘！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -2309,7 +2309,7 @@
           "text": "五分鐘！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -2400,7 +2400,7 @@
           "text": "是小火車！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -2487,7 +2487,7 @@
           "text": "不要",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_angry.png"
           }
         },
         {
@@ -2574,7 +2574,7 @@
           "text": "是我的！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -2665,7 +2665,7 @@
           "text": "給我————！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -2931,7 +2931,7 @@
           "text": "！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_surprised.png"
           }
         },
         {
@@ -3036,7 +3036,7 @@
           "text": "打喵！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -3123,7 +3123,7 @@
           "text": "還沒買！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_panic.png"
           }
         },
         {
@@ -3210,7 +3210,7 @@
           "text": "不知道打喵！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_panic.png"
           }
         },
         {
@@ -3306,7 +3306,7 @@
           "text": "迷路了喵！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_panic.png"
           }
         },
         {
@@ -3429,7 +3429,7 @@
           "text": "打喵!",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -3613,7 +3613,7 @@
           "text": "店————長————！！！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_panic.png"
           }
         },
         {
@@ -3718,7 +3718,7 @@
           "text": "這樣比較容易被找到！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -3913,7 +3913,7 @@
           "text": "所以才要大聲一點啊！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -4000,7 +4000,7 @@
           "text": "可是習慣了！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -4113,7 +4113,7 @@
           "text": "找到了！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -4200,7 +4200,7 @@
           "text": "都一樣！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_angry.png"
           }
         },
         {
@@ -4482,7 +4482,7 @@
           "text": "！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_surprised.png"
           }
         },
         {
@@ -4591,7 +4591,7 @@
           "text": "才不怕！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_angry.png"
           }
         },
         {
@@ -4773,7 +4773,7 @@
           "text": "！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_surprised.png"
           }
         },
         {
@@ -5250,7 +5250,7 @@
           "text": "為什麼！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_angry.png"
           }
         },
         {
@@ -5337,7 +5337,7 @@
           "text": "可是大聲比較快！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -5442,7 +5442,7 @@
           "text": "所以有效！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_smile.png"
           }
         },
         {
@@ -5582,7 +5582,7 @@
           "text": "梗————平————！！！",
           "portrait": {
             "code": 20,
-            "image": "idw_normal.png"
+            "image": "idw_panic.png"
           }
         },
         {

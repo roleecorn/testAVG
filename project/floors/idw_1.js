@@ -446,7 +446,7 @@ main.floors.idw_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -786,7 +786,7 @@ main.floors.idw_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

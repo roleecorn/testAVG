@@ -771,7 +771,7 @@
           "text": "時間到了選手請各自就位，我很期待各位的作品。",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_mapo_normal.png"
+            "image": "ms_portrait_mapo_smile.png"
           }
         },
         {
@@ -856,7 +856,7 @@
           "text": "畢竟在料理界，時間可是金錢，達不到標準的人沒有存在的價值。",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_mapo_normal.png"
+            "image": "ms_portrait_mapo_angry.png"
           }
         },
         {
@@ -1487,7 +1487,7 @@
           "text": "良秀的刀所斬過的食材，似乎無法正常的食用以及烹飪，並不能勝任作為廚刀。",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_mapo_normal.png"
+            "image": "ms_portrait_mapo_angry.png"
           }
         },
         {
@@ -1500,7 +1500,7 @@
           "text": "那麼你就是優勝者了，恭喜。",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_mapo_normal.png"
+            "image": "ms_portrait_mapo_smile.png"
           }
         },
         {

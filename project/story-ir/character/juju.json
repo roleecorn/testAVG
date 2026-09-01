@@ -292,7 +292,7 @@
           "text": "這真是太好了，來，這個bbcall給你",
           "portrait": {
             "code": 20,
-            "image": "juju_normal.png"
+            "image": "juju_smile.png"
           }
         },
         {
@@ -306,7 +306,7 @@
           "text": "按這邊的按鈕，就能呼叫我囉！",
           "portrait": {
             "code": 20,
-            "image": "juju_normal.png"
+            "image": "juju_smile.png"
           }
         },
         {
@@ -952,7 +952,7 @@
           "text": "好好好！我跳就是了！你冷靜！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -1257,7 +1257,7 @@
           "text": "我還沒答應呢！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -1266,7 +1266,7 @@
           "text": "梗平，惡魔在人間是需要他人獻祭的",
           "portrait": {
             "code": 20,
-            "image": "juju_normal.png"
+            "image": "juju_sad.png"
           }
         },
         {
@@ -1275,7 +1275,7 @@
           "text": "如果不是你，我早就死了",
           "portrait": {
             "code": 20,
-            "image": "juju_normal.png"
+            "image": "juju_sad.png"
           }
         },
         {
@@ -1284,7 +1284,7 @@
           "text": "這是報答，也是裸舞的賠禮",
           "portrait": {
             "code": 20,
-            "image": "juju_normal.png"
+            "image": "juju_smile.png"
           }
         },
         {
@@ -1293,7 +1293,7 @@
           "text": "拜託你回家，好嗎！",
           "portrait": {
             "code": 20,
-            "image": "juju_normal.png"
+            "image": "juju_sad.png"
           }
         },
         {
@@ -1311,7 +1311,7 @@
           "text": "我知道了……",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1345,7 +1345,7 @@
           "text": "沒想到bbcall還在我這啊…",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {

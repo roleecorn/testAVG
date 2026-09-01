@@ -605,7 +605,7 @@ main.floors.lanxiang_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_smile_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -622,7 +622,7 @@ main.floors.lanxiang_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lanxiang_normal.png",
+            "image": "lanxiang_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -640,7 +640,7 @@ main.floors.lanxiang_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_smile_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -657,7 +657,7 @@ main.floors.lanxiang_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lanxiang_normal.png",
+            "image": "lanxiang_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -675,7 +675,7 @@ main.floors.lanxiang_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_smile_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -692,7 +692,7 @@ main.floors.lanxiang_2=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lanxiang_normal.png",
+            "image": "lanxiang_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

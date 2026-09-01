@@ -1155,7 +1155,7 @@ main.floors.lanxiang_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_serious_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1191,7 +1191,7 @@ main.floors.lanxiang_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "lanxiang_normal.png",
+            "image": "lanxiang_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

@@ -576,7 +576,7 @@ main.floors.juju_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_angry_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -593,7 +593,7 @@ main.floors.juju_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "juju_normal.png",
+            "image": "juju_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -610,7 +610,7 @@ main.floors.juju_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "juju_normal.png",
+            "image": "juju_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -627,7 +627,7 @@ main.floors.juju_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "juju_normal.png",
+            "image": "juju_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -644,7 +644,7 @@ main.floors.juju_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "juju_normal.png",
+            "image": "juju_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -678,7 +678,7 @@ main.floors.juju_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_serious_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -721,7 +721,7 @@ main.floors.juju_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

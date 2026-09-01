@@ -401,7 +401,7 @@
           "text": "不勞動者不得食，給我自己想辦法！",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_sankaku_normal.png"
+            "image": "ms_portrait_sankaku_angry.png"
           }
         },
         {
@@ -419,7 +419,7 @@
           "text": "我才不要只會喝酒的廢物！",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_sankaku_normal.png"
+            "image": "ms_portrait_sankaku_angry.png"
           }
         },
         {
@@ -1592,7 +1592,7 @@
           "text": "學長！",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png"
+            "image": "ms_portrait_tongzhi_surprised.png"
           }
         },
         {
@@ -1609,7 +1609,7 @@
           "text": "梗平……",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png"
+            "image": "ms_portrait_tongzhi_sad.png"
           }
         },
         {
@@ -1618,7 +1618,7 @@
           "text": "去拯救漆原吧……",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png"
+            "image": "ms_portrait_tongzhi_sad.png"
           }
         },
         {
@@ -1636,7 +1636,7 @@
           "text": "我大意了，沒有閃，想不到他們居然不講武德……",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png"
+            "image": "ms_portrait_tongzhi_panic.png"
           }
         },
         {
@@ -1645,7 +1645,7 @@
           "text": "他們是來找——咳！咳咳！，店長家祖傳的『玉龍機殼』，漆原阻止了他們……",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png"
+            "image": "ms_portrait_tongzhi_panic.png"
           }
         },
         {
@@ -1672,7 +1672,7 @@
           "text": "絕對……不可以讓他們拿到……",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png"
+            "image": "ms_portrait_tongzhi_angry.png"
           }
         },
         {
@@ -1681,7 +1681,7 @@
           "text": "守護好……",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png"
+            "image": "ms_portrait_tongzhi_sad.png"
           }
         },
         {
@@ -2014,7 +2014,7 @@
           "text": "你是誰啊？",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_captain_normal.png"
+            "image": "ms_portrait_captain_surprised.png"
           }
         },
         {
@@ -2032,7 +2032,7 @@
           "text": "回去了，其他人我都幹掉了",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_captain_normal.png"
+            "image": "ms_portrait_captain_angry.png"
           }
         },
         {
@@ -2308,7 +2308,7 @@
           "text": "這個難不成是那個？",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png"
+            "image": "ms_portrait_tongzhi_surprised.png"
           }
         },
         {
@@ -2331,7 +2331,7 @@
           "text": "恩……應該是我感覺錯了而已吧",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png"
+            "image": "ms_portrait_tongzhi_sad.png"
           }
         },
         {
@@ -2340,7 +2340,7 @@
           "text": "真的有人喜歡上梗平這件事",
           "portrait": {
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png"
+            "image": "ms_portrait_tongzhi_surprised.png"
           }
         },
         {

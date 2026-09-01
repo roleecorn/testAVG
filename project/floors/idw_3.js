@@ -444,7 +444,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -577,7 +577,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -676,7 +676,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_panic.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -775,7 +775,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_panic.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -891,7 +891,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_panic.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1058,7 +1058,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1317,7 +1317,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_panic.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1435,7 +1435,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1738,7 +1738,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1837,7 +1837,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1972,7 +1972,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -2071,7 +2071,7 @@ main.floors.idw_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "idw_normal.png",
+            "image": "idw_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

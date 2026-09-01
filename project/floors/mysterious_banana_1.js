@@ -379,7 +379,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_smile_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -405,7 +405,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -422,7 +422,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_angry_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -473,7 +473,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -491,7 +491,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -531,7 +531,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -580,7 +580,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -597,7 +597,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -614,7 +614,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -720,7 +720,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -737,7 +737,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -761,7 +761,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -778,7 +778,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -838,7 +838,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -855,7 +855,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -930,7 +930,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -947,7 +947,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_smile_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -980,7 +980,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1003,7 +1003,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_angry_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1020,7 +1020,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1037,7 +1037,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1066,7 +1066,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1117,7 +1117,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1134,7 +1134,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1151,7 +1151,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_angry_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1185,7 +1185,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1374,7 +1374,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_smile_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1391,7 +1391,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1408,7 +1408,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1425,7 +1425,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1465,7 +1465,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1522,7 +1522,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1539,7 +1539,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1556,7 +1556,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_angry_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1573,7 +1573,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_surprised_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1591,7 +1591,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1662,7 +1662,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1714,7 +1714,7 @@ main.floors.mysterious_banana_1=
         {
             "type": "showImage",
             "code": 20,
-            "image": "banana_normal.png",
+            "image": "banana_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

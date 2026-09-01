@@ -525,7 +525,7 @@ main.floors.juju_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "keng_neutral_portrait.png",
+            "image": "keng_panic_portrait.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

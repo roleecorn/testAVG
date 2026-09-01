@@ -80,7 +80,7 @@
           "text": "沒錯，事件會發生在現在，就在這裡！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -101,7 +101,7 @@
           "text": "嗯！？甚麼...難道說",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -110,7 +110,7 @@
           "text": "怪人阿，放馬過來！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -147,7 +147,7 @@
           "text": "...這是甚麼？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -161,7 +161,7 @@
           "text": "什麼，為什麼這種地方會有水伊布",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -192,7 +192,7 @@
           "text": "阿阿阿！！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -225,7 +225,7 @@
           "text": "沒甚麼，不如說怪人也是個不錯的稱呼呢",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -234,7 +234,7 @@
           "text": "欸...",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -243,7 +243,7 @@
           "text": "(怎麼回事，這傢伙有點怪怪的)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -313,7 +313,7 @@
           "text": "這樣啊，沒想到能在這裡遇到同好",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -322,7 +322,7 @@
           "text": "來吧，和我一起前往天堂吧",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -349,7 +349,7 @@
           "text": "等等，你們要做甚麼，不...不要！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -358,7 +358,7 @@
           "text": "救命呀阿阿阿！！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -409,7 +409,7 @@
           "text": "我帶你進入 新♂世♂界",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -418,7 +418,7 @@
           "text": "甚麼鬼",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -473,7 +473,7 @@
           "text": "！難道說真的發生事件了嗎？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -482,7 +482,7 @@
           "text": "等等，我來了！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -510,7 +510,7 @@
           "text": "喂！你沒事吧，到底發生甚麼事了",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -532,7 +532,7 @@
           "text": "可惡，發生了甚麼事",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -541,7 +541,7 @@
           "text": "神秘香蕉人，你還好嗎？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -550,7 +550,7 @@
           "text": "我在這裡...請幫幫我",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_sad.png"
           }
         },
         {
@@ -574,7 +574,7 @@
           "text": "阿...你是剛剛的...",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_surprised.png"
           }
         },
         {
@@ -601,7 +601,7 @@
           "text": "水伊布被擄走了...明明他是...(啪",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_sad.png"
           }
         },
         {
@@ -610,7 +610,7 @@
           "text": "痾，你為什麼打我？連我爸爸都沒有打過我",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_surprised.png"
           }
         },
         {
@@ -619,7 +619,7 @@
           "text": "吵死了，幾萬字的背景故事根本不重要",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -637,7 +637,7 @@
           "text": "嗚...恩，請幫幫我吧",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_sad.png"
           }
         },
         {
@@ -771,7 +771,7 @@
           "text": "恩，味道還不錯，甜甜的",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -780,7 +780,7 @@
           "text": "不過全身有點發癢...好癢",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -789,7 +789,7 @@
           "text": "好癢好癢好癢好癢癢癢癢癢癢...",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -798,7 +798,7 @@
           "text": "...癢，好吃",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -828,7 +828,7 @@
           "text": "不過這香蕉還真長阿，一般來說有這麼長的香蕉嗎？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -867,7 +867,7 @@
           "text": "就是這個吧...個頭拉",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -876,7 +876,7 @@
           "text": "這不是新阿姆斯特朗旋風噴射阿姆斯特朗炮嗎？完成度真高阿喂",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -885,7 +885,7 @@
           "text": "為什麼會有香蕉長成這個樣子啦",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -894,7 +894,7 @@
           "text": "不過那裏的洞...",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -907,7 +907,7 @@
           "text": "這是甚麼...好討厭的感覺阿阿阿！！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -957,7 +957,7 @@
           "text": "謝謝你，梗平少年，這樣就可以奪回水伊布了",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -988,7 +988,7 @@
           "text": "結果就算退休了，從前的恩怨也不會消失嗎...",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_sad.png"
           }
         },
         {
@@ -1082,7 +1082,7 @@
           "text": "當然，英雄可不能臨陣脫逃阿",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1124,7 +1124,7 @@
           "text": "根據我得到的信息，奪去伊布的人恐怕是與我有舊怨的兩人",
           "portrait": {
             "code": 20,
-            "image": "banana_smile.png"
+            "image": "banana_normal.png"
           }
         },
         {
@@ -1142,7 +1142,7 @@
           "text": "沒問題，交給我吧",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1151,7 +1151,7 @@
           "text": "那一位是個十分擅長程式咒法的咒術師，還請務必小心",
           "portrait": {
             "code": 20,
-            "image": "banana_smile.png"
+            "image": "banana_normal.png"
           }
         },
         {
@@ -1160,7 +1160,7 @@
           "text": "(為什麼會有奇幻戰鬥作品的要素拉)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -1196,7 +1196,7 @@
           "text": "廢棄工廠阿，還挺浪漫",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1205,7 +1205,7 @@
           "text": "對在下來說就像是來到了主題公園一樣，真令人興奮",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1214,7 +1214,7 @@
           "text": "興奮很好，但對方絕非等閒之輩，別大意",
           "portrait": {
             "code": 20,
-            "image": "banana_smile.png"
+            "image": "banana_normal.png"
           }
         },
         {
@@ -1232,7 +1232,7 @@
           "text": "好！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1265,7 +1265,7 @@
           "text": "不過就到此為止了",
           "portrait": {
             "code": 20,
-            "image": "banana_smile.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -1317,7 +1317,7 @@
           "text": "貓科雙人組，沒想到還會再見到你們...",
           "portrait": {
             "code": 20,
-            "image": "banana_smile.png"
+            "image": "banana_surprised.png"
           }
         },
         {
@@ -1326,7 +1326,7 @@
           "text": "喂，怪人，你們究竟把水伊布藏到哪去了",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -1363,7 +1363,7 @@
           "text": "在下知道，Scratch就交給在下吧",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1381,7 +1381,7 @@
           "text": "超酷印度豹，吃我聖劍EX嘎裡棒吧Oraaaaa!!",
           "portrait": {
             "code": 20,
-            "image": "banana_smile.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -1395,7 +1395,7 @@
           "text": "沒錯，像素怪人",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1404,7 +1404,7 @@
           "text": "我是路過的一般人梗平，給我記好了！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1422,7 +1422,7 @@
           "text": "什麼！？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -1431,7 +1431,7 @@
           "text": "（連續的短瞬移，哪來的投射咒法啊！）",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -1449,7 +1449,7 @@
           "text": "嗚挖阿阿！！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -1458,7 +1458,7 @@
           "text": "(可惡，眼睛跟得上但來不及反應)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -1467,7 +1467,7 @@
           "text": "(思考，快思考阿梗平，對方有甚麼弱點...)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1497,7 +1497,7 @@
           "text": "呼...呼哈哈哈！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1511,7 +1511,7 @@
           "text": "不，在下已經想到解決你的方法了",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1529,7 +1529,7 @@
           "text": "(沒錯，那個腰帶肯定就是他的能力來源)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1538,7 +1538,7 @@
           "text": "(只要我能把它拔下來的話！)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1552,7 +1552,7 @@
           "text": "沒錯，所以現在在下要靠近你了，給我等著！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -1566,7 +1566,7 @@
           "text": "不靠近你，就沒辦法痛揍你一頓阿",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -1596,7 +1596,7 @@
           "text": "(沒有遠程武器，要是不能接觸到我確實拿他沒辦法)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1605,7 +1605,7 @@
           "text": "(那只要讓他自己接觸到在下就好了！)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1629,7 +1629,7 @@
           "text": "嗚！！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -1646,7 +1646,7 @@
           "text": "(如果能找到規律的話，就可以等他自己過來了)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1655,7 +1655,7 @@
           "text": "(前後左右前後左右...現在只要忍耐)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1669,7 +1669,7 @@
           "text": "(就是這裡！)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -1678,7 +1678,7 @@
           "text": "吃在下的，Force Stop Punch 阿！！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -1704,7 +1704,7 @@
           "text": "哼，這樣你就不能再維持那個速度了",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -1769,7 +1769,7 @@
           "text": "Henshin！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1794,7 +1794,7 @@
           "text": "......",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -1803,7 +1803,7 @@
           "text": "嗯？怎麼甚麼事都沒有發生",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -1812,7 +1812,7 @@
           "text": "嗯？怎麼甚麼事都沒有發生",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -1821,7 +1821,7 @@
           "text": "嗯？怎麼甚麼事都沒有發生",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -1830,7 +1830,7 @@
           "text": "嗯？怎麼甚麼事都沒有發生",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -1839,7 +1839,7 @@
           "text": "嗯？怎麼甚麼事都沒有發生",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -1848,7 +1848,7 @@
           "text": "嗯？怎麼甚麼事都沒有發生",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -1887,7 +1887,7 @@
           "text": "Henshin！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1917,7 +1917,7 @@
           "text": "喔喔！全身充滿了力量",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1926,7 +1926,7 @@
           "text": "如果是現在的話肯定就能做到！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1956,7 +1956,7 @@
           "text": "RIDER~~ KICK!!!",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1977,7 +1977,7 @@
           "text": "真是一場酣暢淋漓的戰鬥阿，可惜腰帶也跟著消失了",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -1986,7 +1986,7 @@
           "text": "不，這種八成只是期間限定的臨時腰帶吧，遲早會找到只屬於在下的腰帶的",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -2026,7 +2026,7 @@
           "text": "聖劍EX嘎裡棒暫時喪失了力量，如果還有同夥就不好了，我們趕緊撤退吧",
           "portrait": {
             "code": 20,
-            "image": "banana_smile.png"
+            "image": "banana_sad.png"
           }
         },
         {
@@ -2043,7 +2043,7 @@
           "text": "(原來那東西還會縮小的嗎？)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -2052,7 +2052,7 @@
           "text": "話說，我不小心把敵人踢飛了，沒辦法審問，抱歉阿",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -2088,7 +2088,7 @@
           "text": "不，這件事得我自己來",
           "portrait": {
             "code": 20,
-            "image": "banana_smile.png"
+            "image": "banana_sad.png"
           }
         },
         {
@@ -2181,7 +2181,7 @@
           "text": "神秘香蕉人，在下來了",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -2212,7 +2212,7 @@
           "text": "起司有限公司，不是起司股份有限公司嗎，真是奇怪的名字",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -2257,7 +2257,7 @@
           "text": "他們是犯人對吧，原來你知道那家公司嗎？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -2275,7 +2275,7 @@
           "text": "甚麼！？那為什麼會...",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -2297,7 +2297,7 @@
           "text": "什麼鬼！在下之前都沒發現這裡還有棟大樓，應該說為什麼這裡會有棟大樓？？？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -2306,7 +2306,7 @@
           "text": "現代科技，很厲害吧",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -2361,7 +2361,7 @@
           "text": "喔喔！是傳承腰帶的事件",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -2370,7 +2370,7 @@
           "text": "謝拉，話說為什麼你沒辦法用，果然腰帶是有意志的嗎！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -2379,7 +2379,7 @@
           "text": "不，只是因為我變胖了繫不上",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -2388,7 +2388,7 @@
           "text": "痾，總感覺瞬間Low掉了",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -2410,7 +2410,7 @@
           "text": "感覺更Low了阿喂！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -2447,7 +2447,7 @@
           "text": "真的是這裡嗎？不，也有非法組織被佔領的可能性",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -2465,7 +2465,7 @@
           "text": "走吧！",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -2474,7 +2474,7 @@
           "text": "欸，等等我啊！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -2498,7 +2498,7 @@
           "text": "水伊布！！",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_panic.png"
           }
         },
         {
@@ -2507,7 +2507,7 @@
           "text": "...怎麼甚麼人都沒有",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -2534,7 +2534,7 @@
           "text": "這個聲音，是奇多嗎！",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_surprised.png"
           }
         },
         {
@@ -2566,7 +2566,7 @@
           "text": "可惡！",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -2584,7 +2584,7 @@
           "text": "熟的不得了，可惡，為什麼是你",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -2684,7 +2684,7 @@
           "text": "哪來的七龍珠啊！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -2738,7 +2738,7 @@
           "text": "但是，公司最終變成了這個樣子，你也跑去住公園",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -2765,7 +2765,7 @@
           "text": "為什麼？難道聚集伊布會毀滅世界還是被惡人利用嗎",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -2859,7 +2859,7 @@
           "text": "對，以公司二把手奇多為首加上貓科二人組以及其他人的貓派",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -2868,7 +2868,7 @@
           "text": "為了展現各自的決心，解散和續行方進行了一場驚天動地的對決",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -2877,7 +2877,7 @@
           "text": "想必是一場酣暢淋漓的戰鬥吧",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -2886,7 +2886,7 @@
           "text": "沒錯，我們進行了三天三夜的神聖獸控問答大戰，最後只剩我站在場上奪得了勝利",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -2955,7 +2955,7 @@
           "text": "為什麼一出電梯門就是更衣室阿",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -2977,7 +2977,7 @@
           "text": "好久不見了，奇多",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -3000,7 +3000,7 @@
           "text": "喂超濃起司，你到底想聚集伊布的力量幹嘛",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -3014,7 +3014,7 @@
           "text": "這位是梗平少年，是位令人期待的獸控新人",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -3023,7 +3023,7 @@
           "text": "不要瞎掰好嗎，在下只是來幫忙的",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -3051,7 +3051,7 @@
           "text": "欸...為什麼",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -3084,7 +3084,7 @@
           "text": "即便你知道實現夢想的過程會讓伊布們感到痛苦也要繼續嗎？",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -3098,7 +3098,7 @@
           "text": "夠了，奇多，把水伊布還給我",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -3137,7 +3137,7 @@
           "text": "Henshin!",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -3162,7 +3162,7 @@
           "text": "居然是同時變身，嗚，好刺眼，但不足以干擾我看現場特攝的決心",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -3175,7 +3175,7 @@
           "text": "終於能看到讓我期待已久的皮套大戰了嗎！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -3224,7 +3224,7 @@
           "text": "甚麼，神秘香蕉人！沒事吧",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -3251,7 +3251,7 @@
           "text": "口氣♂真大，等我把你打倒後就讓你自己♂掰開(腰帶)向我投降",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -3277,7 +3277,7 @@
           "text": "等等，這是要在下幹嘛嗎？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -3320,7 +3320,7 @@
           "text": "OMO",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -3333,7 +3333,7 @@
           "text": "嗚挖阿阿阿！！！",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_panic.png"
           }
         },
         {
@@ -3347,7 +3347,7 @@
           "text": "可...可惡，到底為什麼",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -3356,7 +3356,7 @@
           "text": "梗平少年，為什麼你只是看著，難道你背叛了嗎！？",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -3378,7 +3378,7 @@
           "text": "(不是，在下只是不想加入那個悶熱的戰鬥而已，你怎麼輸了阿)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -3392,7 +3392,7 @@
           "text": "等一下，這是誤會",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -3406,7 +3406,7 @@
           "text": "不！不是！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -3420,7 +3420,7 @@
           "text": "快，停下來！拜託！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -3434,7 +3434,7 @@
           "text": "你不要過來阿阿阿阿阿！！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -3468,7 +3468,7 @@
           "text": "痾，Henshin?",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -3490,7 +3490,7 @@
           "text": "這是甚麼鬼阿，只是加上尾巴而已",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -3532,7 +3532,7 @@
           "text": "嗚挖阿阿阿！！！",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_panic.png"
           }
         },
         {
@@ -3541,7 +3541,7 @@
           "text": "神秘香蕉人，不！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_panic_portrait.png"
           }
         },
         {
@@ -3555,7 +3555,7 @@
           "text": "給在下等等，就由我路人耿平來阻止你",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -3574,7 +3574,7 @@
           "text": "(可惡，他說的對，即便變身了在下也沒感受到甚麼力量，但是...)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -3583,7 +3583,7 @@
           "text": "哼，那又如何，英雄可不能臨陣脫逃阿",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -3606,7 +3606,7 @@
           "text": "梗平少年！！",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_surprised.png"
           }
         },
         {
@@ -3650,7 +3650,7 @@
           "text": "肌肉在閃閃發光！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -3664,7 +3664,7 @@
           "text": "我懂了！我們沒有在一般伊布身上找到任何力量的原因",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -3682,7 +3682,7 @@
           "text": "也就是說梗平少年現在才是完全體，奇多，你已經輸了！",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -3705,7 +3705,7 @@
           "text": "完全沒有傷害，而且感覺...我能夠做到同樣的事",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -3714,7 +3714,7 @@
           "text": "吃我的，梗平♂光線！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -3737,7 +3737,7 @@
           "text": "這個，難道說是伊布的可能性之光！",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_surprised.png"
           }
         },
         {
@@ -3755,7 +3755,7 @@
           "text": "所以才能及時發波並打退妖♂精♂光♂束嗎！",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -3795,7 +3795,7 @@
           "text": "撒，來細數你的罪惡吧！！",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -3892,7 +3892,7 @@
           "text": "不用客氣，倒是抱歉，伊布腰帶被我弄壞了",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -3945,7 +3945,7 @@
           "text": "你說得......",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -3959,7 +3959,7 @@
           "text": "還沒倒下嗎！？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -3996,7 +3996,7 @@
           "text": "為什麼你不理解，你不也曾是個愛好動物的獸控嗎？",
           "portrait": {
             "code": 20,
-            "image": "banana_sad.png"
+            "image": "banana_angry.png"
           }
         },
         {
@@ -4024,7 +4024,7 @@
           "text": "神秘香蕉人...",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -4060,7 +4060,7 @@
           "text": "恩，下次見",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -4132,7 +4132,7 @@
           "text": "比起BE我還是比較喜歡HE阿，希望他們能好好談開",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -4145,7 +4145,7 @@
           "text": "神秘香蕉人，在下來了",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -4159,7 +4159,7 @@
           "text": "痾，超濃起司！你不是被我們打倒了嗎？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -4168,7 +4168,7 @@
           "text": "雖然我現在啥都沒有就是個普通人，但如果你陰險卑鄙又小氣的話就來由我來做你的對手",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -4182,7 +4182,7 @@
           "text": "我可沒有那麼天真，你這種反派就是會這麼說然後等掉進陷阱後從背後捅一刀的類型吧",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -4228,7 +4228,7 @@
           "text": "唉...好吧",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -4242,7 +4242,7 @@
           "text": "為什麼，你不是拋棄那個名字了嗎？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -4283,7 +4283,7 @@
           "text": "梗平少年，你如約而至了",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -4301,7 +4301,7 @@
           "text": "這個嘛...只是我發現現在撿回夢想也不是甚麼壞事",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -4310,7 +4310,7 @@
           "text": "我以為你是反對派，怎麼突然這麼說",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -4319,7 +4319,7 @@
           "text": "在你離開後，我和奇多重新聊了會，我才發覺自己辜負了那些把夢想託付給我的人",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_sad.png"
           }
         },
         {
@@ -4328,7 +4328,7 @@
           "text": "所以，這次我想再來一次，不是用伊布們的力量，而是自己來建立新世界",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -4337,7 +4337,7 @@
           "text": "就從這座公園開始",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -4355,7 +4355,7 @@
           "text": "這個......",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_surprised.png"
           }
         },
         {
@@ -4374,7 +4374,7 @@
           "text": "等等，奇多，我明白了，再來我可不是甚麼獸控新人",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_angry_portrait.png"
           }
         },
         {
@@ -4388,7 +4388,7 @@
           "text": "好了好了，梗平少年很為難的",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -4397,7 +4397,7 @@
           "text": "抱歉，在牽扯到這件事上奇多有點容易變得偏執",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_sad.png"
           }
         },
         {
@@ -4406,7 +4406,7 @@
           "text": "我知道你也有自己的目標，所以這個，請拿著吧",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -4443,7 +4443,7 @@
           "text": "這個？不是一根普通的樹枝嗎？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -4461,7 +4461,7 @@
           "text": "這樣啊，幫大忙了，感謝你",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -4470,7 +4470,7 @@
           "text": "不，要是沒有你幫忙我就不會重新拾起這個未完成的夢想以及與故友的友情",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_sad.png"
           }
         },
         {
@@ -4479,7 +4479,7 @@
           "text": "我才應該說謝謝你，梗平少年",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -4488,7 +4488,7 @@
           "text": "喔，不客氣，那掰拉，獸控香蕉人",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -4497,7 +4497,7 @@
           "text": "好，我們隨時歡迎你，再見",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -4524,7 +4524,7 @@
           "text": "要是強行留他下來不就重蹈覆轍了嗎？再說，他可只是個路過的一般人啊",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_sad.png"
           }
         },
         {
@@ -4538,7 +4538,7 @@
           "text": "沒事，這次我們有很多時間慢慢去修正的",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -4547,7 +4547,7 @@
           "text": "好大家，來撿樹枝囉！",
           "portrait": {
             "code": 20,
-            "image": "banana_normal.png"
+            "image": "banana_smile.png"
           }
         },
         {
@@ -4585,7 +4585,7 @@
           "text": "是包餃子結局阿~隨然並沒有討厭，但總感覺缺了甚麼",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_serious_portrait.png"
           }
         },
         {
@@ -4607,7 +4607,7 @@
           "text": "嗯！？甚麼...難道說",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_surprised_portrait.png"
           }
         },
         {
@@ -4654,7 +4654,7 @@
           "text": "喔，你是想和我道謝嗎？",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -4672,7 +4672,7 @@
           "text": "哼，那麼，再見了",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {
@@ -4685,7 +4685,7 @@
           "text": "(現在的我，帥得要死阿)",
           "portrait": {
             "code": 20,
-            "image": "keng_neutral_portrait.png"
+            "image": "keng_smile_portrait.png"
           }
         },
         {

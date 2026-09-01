@@ -363,7 +363,7 @@ main.floors.shirou_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_mapo_normal.png",
+            "image": "ms_portrait_mapo_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -517,7 +517,7 @@ main.floors.shirou_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_mapo_normal.png",
+            "image": "ms_portrait_mapo_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1506,7 +1506,7 @@ main.floors.shirou_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_mapo_normal.png",
+            "image": "ms_portrait_mapo_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1524,7 +1524,7 @@ main.floors.shirou_3=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_mapo_normal.png",
+            "image": "ms_portrait_mapo_smile.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"

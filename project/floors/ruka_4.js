@@ -330,7 +330,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "ms_portrait_tongzhi_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -349,7 +349,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "ms_portrait_tongzhi_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -366,7 +366,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "ms_portrait_tongzhi_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -400,7 +400,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "ms_portrait_tongzhi_panic.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -417,7 +417,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "ms_portrait_tongzhi_panic.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -468,7 +468,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "ms_portrait_tongzhi_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -485,7 +485,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "ms_portrait_tongzhi_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -914,7 +914,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_captain_normal.png",
+            "image": "ms_portrait_captain_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -948,7 +948,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_captain_normal.png",
+            "image": "ms_portrait_captain_angry.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1384,7 +1384,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "ms_portrait_tongzhi_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1419,7 +1419,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "ms_portrait_tongzhi_sad.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
@@ -1436,7 +1436,7 @@ main.floors.ruka_4=
         {
             "type": "showImage",
             "code": 20,
-            "image": "ms_portrait_tongzhi_normal.png",
+            "image": "ms_portrait_tongzhi_surprised.png",
             "loc": [
                 "portraitSpeakerX",
                 "portraitSpeakerY"
